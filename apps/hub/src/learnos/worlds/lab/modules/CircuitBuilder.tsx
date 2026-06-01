@@ -51,12 +51,12 @@ export default function CircuitBuilder() {
         ctx.beginPath(); ctx.arc(c.x, c.y, 25, 0, Math.PI * 2); ctx.fillStyle = isOn && c.type === 'bulb' ? '#FEF3C7' : '#FFFFFF'; ctx.fill();
         ctx.strokeStyle = '#CBD5E1'; ctx.stroke(); ctx.font = '20px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(LIB.find(l => l.type === c.type)?.emoji || '', c.x, c.y);
       });
-      drawLumoOwl(ctx, w - 40, h - 40, 20, lumo.lumoEmotion, 'physics', t / 1000);
+      drawLumoOwl(ctx, w - 40, h - 40, 20, lumo.guideEmotion, 'physics', t / 1000);
       frame = requestAnimationFrame(render);
     };
     frame = requestAnimationFrame(render);
     return () => cancelAnimationFrame(frame);
-  }, [comps, wires, isOn, lumo.lumoEmotion]);
+  }, [comps, wires, isOn, lumo.guideEmotion]);
 
   const handleTap = (e: any) => {
     const r = canvasRef.current!.getBoundingClientRect();

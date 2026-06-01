@@ -36,7 +36,7 @@ export default function DiscoveryShell({ module, children, showGoDeeper = true }
       </div>
       {children}
       {showGoDeeper && gd && <GoDeeper content={gd} module={module} />}
-      <LumoSageBubble visible={lumo.lumoVisible} message={lumo.lumoMessage} name={lumo.lumoName} emotion={lumo.lumoEmotion} onDismiss={lumo.dismiss} />
+      <LumoSageBubble visible={lumo.peacockVisible} message={lumo.peacockMessage} name={lumo.peacockName} emotion={lumo.peacockEmotion} onDismiss={lumo.dismiss} />
       <ParentCorner onExit={() => navigate('/discovery')} />
       <AnimatePresence>{showBreak && (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-50 bg-slate-900/98 flex flex-col items-center justify-center p-8 text-center">

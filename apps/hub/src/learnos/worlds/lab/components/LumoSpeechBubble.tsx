@@ -25,3 +25,4 @@ export function PeacockSpeechBubble({ visible, message, name, onDismiss, positio
     </AnimatePresence>
   );
 }
+export const LumoSpeechBubble = PeacockSpeechBubble;

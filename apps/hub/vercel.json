@@ -1,49 +1,59 @@
 {
-  "buildCommand": "pnpm build",
-  "outputDirectory": "dist",
-  "framework": "vite",
-  "installCommand": "pnpm install",
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" }
-      ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/physics/(.*)",
-      "destination": "https://jigyasu-physics.vercel.app/$1"
-    },
-    {
-      "source": "/toys/(.*)",
-      "destination": "https://jigyasu-toys.vercel.app/$1"
-    },
-    {
-      "source": "/bio/(.*)",
-      "destination": "https://jigyasu-bio.vercel.app/$1"
-    },
-    {
-      "source": "/math/(.*)",
-      "destination": "https://jigyasu-math.vercel.app/$1"
-    },
-    {
-      "source": "/chem/(.*)",
-      "destination": "https://jigyasu-chem.vercel.app/$1"
-    },
-    {
-      "source": "/cosmos/(.*)",
-      "destination": "https://jigyasu-cosmos.vercel.app/$1"
-    },
-    {
-      "source": "/camp/(.*)",
-      "destination": "https://jigyasu-camp.vercel.app/$1"
-    },
-    {
-      "source": "/api/(.*)",
-      "destination": "https://jigyasu-api.up.railway.app/$1"
-    }
-  ]
+    "version":  2,
+    "cleanUrls":  true,
+    "trailingSlash":  false,
+    "rewrites":  [
+                     {
+                         "source":  "/physics/(.*)",
+                         "destination":  "https://physics-jigyasu.vercel.app/$1"
+                     },
+                     {
+                         "source":  "/biology/(.*)",
+                         "destination":  "https://biology-jigyasu.vercel.app/$1"
+                     },
+                     {
+                         "source":  "/math/(.*)",
+                         "destination":  "https://math-jigyasu.vercel.app/$1"
+                     },
+                     {
+                         "source":  "/chemistry/(.*)",
+                         "destination":  "https://chemistry-jigyasu.vercel.app/$1"
+                     },
+                     {
+                         "source":  "/cosmos/(.*)",
+                         "destination":  "https://cosmos-jigyasu.vercel.app/$1"
+                     },
+                     {
+                         "source":  "/toys/(.*)",
+                         "destination":  "https://toys-jigyasu.vercel.app/$1"
+                     },
+                     {
+                         "source":  "/camp/(.*)",
+                         "destination":  "https://camp-jigyasu.vercel.app/$1"
+                     },
+                     {
+                         "source":  "/(.*)",
+                         "destination":  "/index.html"
+                     }
+                 ],
+    "headers":  [
+                    {
+                        "source":  "/(.*)",
+                        "headers":  [
+                                        {
+                                            "key":  "X-Content-Type-Options",
+                                            "value":  "nosniff"
+                                        },
+                                        {
+                                            "key":  "X-Frame-Options",
+                                            "value":  "DENY"
+                                        },
+                                        {
+                                            "key":  "X-XSS-Protection",
+                                            "value":  "1; mode=block"
+                                        }
+                                    ]
+                    }
+                ],
+    "framework":  "vite"
 }

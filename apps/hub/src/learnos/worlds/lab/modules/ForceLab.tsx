@@ -32,12 +32,12 @@ export default function ForceLab() {
       ctx.clearRect(0, 0, w, h); ctx.fillStyle = '#F8FAFC'; ctx.fillRect(0, 0, w, h);
       ctx.fillStyle = '#E2E8F0'; ctx.fillRect(0, 150, w, 50);
       ctx.font = '50px sans-serif'; ctx.fillText(scenario.boxEmoji, px, 140);
-      drawLumoOwl(ctx, w - 30, 30, 15, lumo.lumoEmotion, 'physics', now / 1000);
+      drawLumoOwl(ctx, w - 30, 30, 15, lumo.guideEmotion, 'physics', now / 1000);
       frame = requestAnimationFrame(render);
     };
     frame = requestAnimationFrame(render);
     return () => cancelAnimationFrame(frame);
-  }, [f, m, scenario, v, px, lumo.lumoEmotion]);
+  }, [f, m, scenario, v, px, lumo.guideEmotion]);
 
   return (
     <LabShell module="force-lab" subject="physics">

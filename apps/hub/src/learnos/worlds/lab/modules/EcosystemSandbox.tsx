@@ -47,12 +47,12 @@ export default function EcosystemSandbox() {
         ctx.fillStyle = '#BBF7D0'; ctx.fillRect(150, 28 + i * 30, 100, 15);
         ctx.fillStyle = '#22C55E'; ctx.fillRect(150, 28 + i * 30, (count / org.maxPopulation) * 100, 15);
       });
-      drawLumoOwl(ctx, w - 40, h - 40, 20, lumo.lumoEmotion, 'biology', t / 1000);
+      drawLumoOwl(ctx, w - 40, h - 40, 20, lumo.guideEmotion, 'biology', t / 1000);
       frame = requestAnimationFrame(render);
     };
     frame = requestAnimationFrame(render);
     return () => cancelAnimationFrame(frame);
-  }, [pops, lumo.lumoEmotion]);
+  }, [pops, lumo.guideEmotion]);
 
   return (
     <LabShell module="ecosystem-sandbox" subject="biology">

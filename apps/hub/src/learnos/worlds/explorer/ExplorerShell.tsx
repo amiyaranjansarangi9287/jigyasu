@@ -56,10 +56,10 @@ export default function ExplorerShell({ concept, children }: ExplorerShellProps)
 
       {/* Lumo peer bubble */}
       <LumoPeerBubble
-        visible={lumo.lumoVisible}
-        message={lumo.lumoMessage}
-        name={lumo.lumoName}
-        emotion={lumo.lumoEmotion}
+        visible={lumo.peacockVisible}
+        message={lumo.peacockMessage}
+        name={lumo.peacockName}
+        emotion={lumo.peacockEmotion}
         onDismiss={lumo.dismiss}
       />
 

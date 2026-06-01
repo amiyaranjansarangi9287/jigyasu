@@ -26,7 +26,7 @@ export default function LabShell({ module, children, showLumo = true }: LabShell
   return (
     <div className="relative min-h-screen bg-slate-50 flex flex-col">
       {children}
-      {showLumo && <LumoSpeechBubble visible={lumo.lumoVisible} message={lumo.lumoMessage} name={lumo.lumoName} onDismiss={lumo.dismiss} />}
+      {showLumo && <LumoSpeechBubble visible={lumo.guideVisible} message={lumo.guideMessage} name={lumo.guideName} onDismiss={lumo.dismiss} />}
       <ParentCorner onExit={() => navigate('/lab')} />
       <button onClick={() => navigate('/lab')} className="fixed bottom-6 left-6 z-40 w-12 h-12 rounded-xl bg-white shadow-lg border border-slate-200 flex items-center justify-center text-sm font-bold text-slate-600 hover:bg-slate-50 transition-colors" aria-label="Back to Lab Zero">← Lab</button>
       <AnimatePresence>

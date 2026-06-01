@@ -112,7 +112,7 @@ function ExplorationComponent() {
       {/* Explanation */}
       <div className="bg-blue-50 rounded-2xl p-5 text-center">
         <div className="text-sm text-blue-600 font-bold">
-          Density < 1.0 = Floats • Density > 1.0 = Sinks
+          Density &lt; 1.0 = Floats • Density &gt; 1.0 = Sinks
         </div>
         <div className="text-sm text-blue-400 mt-2">
           Water has density = 1.0. Objects lighter than water float!

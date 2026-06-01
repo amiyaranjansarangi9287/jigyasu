@@ -60,7 +60,7 @@ export class JigyasuDB extends Dexie {
       favorites: 'id, appId, activityId, addedAt',
       telemetry_queue: 'id, eventType, queuedAt, attempts',
       userProfile: 'id'
-    }).upgrade(tx => {
+    }).upgrade(_tx => {
       // Version 4 adds nextReviewDate index to progress
     });
   }

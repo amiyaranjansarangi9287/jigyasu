@@ -233,7 +233,7 @@ class GamificationSystem {
           target: 1,
           current: 0,
         },
-        unlocked: false,
+        
       },
       {
         id: 'streak_7',
@@ -246,7 +246,7 @@ class GamificationSystem {
           target: 7,
           current: 0,
         },
-        unlocked: false,
+        
       },
       {
         id: 'wonder_10',
@@ -259,7 +259,7 @@ class GamificationSystem {
           target: 10,
           current: 0,
         },
-        unlocked: false,
+        
       },
       {
         id: 'explorer',
@@ -272,7 +272,7 @@ class GamificationSystem {
           target: 6,
           current: 0,
         },
-        unlocked: false,
+        
       },
       {
         id: 'time_master',
@@ -285,7 +285,7 @@ class GamificationSystem {
           target: 36000, // 10 hours in seconds
           current: 0,
         },
-        unlocked: false,
+        
       },
     ];
   }
