@@ -1,0 +1,31 @@
+// src/core/modules/biology.ts
+import type { ModuleDef } from '../ModuleRegistry';
+
+export const biologyModules: ModuleDef[] = [
+  { id: 'cell-map', worldId: 'biology', title: 'Cell Explorer', description: '14 organelles, plant vs animal', emoji: '🗺️', color: 'from-blue-500 to-cyan-500', bgColor: 'bg-blue-50', path: '/biology/cell-map', estimatedMinutes: 15 },
+  { id: 'dna-visualizer', worldId: 'biology', title: 'DNA Visualizer', description: 'Helix, transcription, codons', emoji: '🧬', color: 'from-purple-500 to-pink-500', bgColor: 'bg-purple-50', path: '/biology/dna-visualizer', estimatedMinutes: 20 },
+  { id: 'mitosis', worldId: 'biology', title: 'Mitosis', description: '6 phases of cell division', emoji: '🧪', color: 'from-red-500 to-rose-500', bgColor: 'bg-red-50', path: '/biology/mitosis', estimatedMinutes: 15 },
+  { id: 'meiosis', worldId: 'biology', title: 'Meiosis', description: '9 stages, crossing over', emoji: '🔀', color: 'from-violet-500 to-purple-500', bgColor: 'bg-violet-50', path: '/biology/meiosis', estimatedMinutes: 20 },
+  { id: 'respiration', worldId: 'biology', title: 'Cell Respiration', description: 'Glycolysis → Krebs → ETC', emoji: '🔋', color: 'from-yellow-500 to-amber-500', bgColor: 'bg-yellow-50', path: '/biology/respiration', estimatedMinutes: 25 },
+  { id: 'photosynthesis', worldId: 'biology', title: 'Photosynthesis', description: 'Light, water, CO₂ controls', emoji: '🧫', color: 'from-green-600 to-lime-500', bgColor: 'bg-green-50', path: '/biology/photosynthesis', estimatedMinutes: 20 },
+  { id: 'punnett-square', worldId: 'biology', title: 'Punnett Square', description: '8 traits, offspring predictions', emoji: '🎲', color: 'from-indigo-500 to-blue-500', bgColor: 'bg-indigo-50', path: '/biology/punnett-square', estimatedMinutes: 15 },
+  { id: 'crispr', worldId: 'biology', title: 'CRISPR Editor', description: 'Edit genes, real-world targets', emoji: '✂️', color: 'from-red-500 to-orange-500', bgColor: 'bg-red-50', path: '/biology/crispr', estimatedMinutes: 25 },
+  { id: 'evolution-tree', worldId: 'biology', title: 'Evolution Tree', description: 'Phylogenetic tree of life', emoji: '🌳', color: 'from-amber-500 to-orange-500', bgColor: 'bg-amber-50', path: '/biology/evolution-tree', estimatedMinutes: 20 },
+  { id: 'brain', worldId: 'biology', title: 'Brain Explorer', description: '8 regions, neural facts', emoji: '🧠', color: 'from-purple-600 to-indigo-500', bgColor: 'bg-purple-50', path: '/biology/brain', estimatedMinutes: 20 },
+  { id: 'heart', worldId: 'biology', title: 'Heart & Blood', description: 'Blood flow animation', emoji: '🫀', color: 'from-red-600 to-pink-500', bgColor: 'bg-red-50', path: '/biology/heart', estimatedMinutes: 15 },
+  { id: 'digestive', worldId: 'biology', title: 'Digestive Journey', description: '8 organs, follow your food', emoji: '🦷', color: 'from-orange-500 to-yellow-500', bgColor: 'bg-orange-50', path: '/biology/digestive', estimatedMinutes: 20 },
+  { id: 'immune-defense', worldId: 'biology', title: 'Immune Defense', description: 'Tower defense vs pathogens', emoji: '🛡️', color: 'from-teal-500 to-cyan-500', bgColor: 'bg-teal-50', path: '/biology/immune-defense', estimatedMinutes: 25 },
+  { id: 'body-quiz', worldId: 'biology', title: 'Body Quiz', description: '10 questions, all systems', emoji: '❤️', color: 'from-pink-500 to-red-500', bgColor: 'bg-pink-50', path: '/biology/body-quiz', estimatedMinutes: 10 },
+  { id: 'molecule-3d', worldId: 'biology', title: '3D Molecules', description: 'Rotate 5 molecules in 3D', emoji: '🔬', color: 'from-orange-500 to-yellow-500', bgColor: 'bg-orange-50', path: '/biology/molecule-3d', estimatedMinutes: 15 },
+  { id: 'microscope', worldId: 'biology', title: 'Microscope', description: '4 specimens, zoom & pan', emoji: '🔎', color: 'from-indigo-500 to-violet-500', bgColor: 'bg-indigo-50', path: '/biology/microscope', estimatedMinutes: 15 },
+  { id: 'enzyme-lab', worldId: 'biology', title: 'Enzyme Lab', description: 'Temp, pH, substrate effects', emoji: '⚗️', color: 'from-emerald-500 to-teal-500', bgColor: 'bg-emerald-50', path: '/biology/enzyme-lab', estimatedMinutes: 20 },
+  { id: 'plant-anatomy', worldId: 'biology', title: 'Plant Anatomy', description: 'Flower, leaf, stem, root', emoji: '🌻', color: 'from-green-500 to-lime-500', bgColor: 'bg-green-50', path: '/biology/plant-anatomy', estimatedMinutes: 15 },
+  { id: 'ecosystem', worldId: 'biology', title: 'Ecosystem', description: '17 species, weather events', emoji: '🌿', color: 'from-green-500 to-emerald-500', bgColor: 'bg-green-50', path: '/biology/ecosystem', estimatedMinutes: 25 },
+  { id: 'biomes', worldId: 'biology', title: 'Biomes', description: '8 world biomes explored', emoji: '🏔️', color: 'from-sky-500 to-blue-500', bgColor: 'bg-sky-50', path: '/biology/biomes', estimatedMinutes: 20 },
+  { id: 'carbon-cycle', worldId: 'biology', title: 'Carbon Cycle', description: 'CO₂ flows, reservoirs, impacts', emoji: '♻️', color: 'from-gray-500 to-slate-500', bgColor: 'bg-gray-50', path: '/biology/carbon-cycle', estimatedMinutes: 20 },
+  { id: 'water-cycle', worldId: 'biology', title: 'Water Cycle', description: 'Control sun, watch the cycle', emoji: '💧', color: 'from-blue-500 to-cyan-500', bgColor: 'bg-blue-50', path: '/biology/water-cycle', estimatedMinutes: 15 },
+  { id: 'climate', worldId: 'biology', title: 'Climate Sim', description: 'Emissions, sea level, what-if', emoji: '🌡️', color: 'from-orange-600 to-red-500', bgColor: 'bg-orange-50', path: '/biology/climate', estimatedMinutes: 25 },
+  { id: 'food-chain', worldId: 'biology', title: 'Food Chain', description: '3-level arcade survival', emoji: '🏊', color: 'from-cyan-500 to-blue-500', bgColor: 'bg-cyan-50', path: '/biology/food-chain', estimatedMinutes: 15 },
+  { id: 'metamorphosis', worldId: 'biology', title: 'Metamorphosis', description: 'Butterfly, frog, dragonfly', emoji: '🦋', color: 'from-pink-500 to-purple-500', bgColor: 'bg-pink-50', path: '/biology/metamorphosis', estimatedMinutes: 15 },
+  { id: 'microbe-match', worldId: 'biology', title: 'Microbe Match', description: '12 microbes, 3 difficulties', emoji: '🦠', color: 'from-lime-500 to-green-500', bgColor: 'bg-lime-50', path: '/biology/microbe-match', estimatedMinutes: 10 },
+];

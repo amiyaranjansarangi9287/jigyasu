@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /private/
+Disallow: /admin/
+
+Crawl-delay: 1
+
+Sitemap: https://jigyasu.app/sitemap.xml

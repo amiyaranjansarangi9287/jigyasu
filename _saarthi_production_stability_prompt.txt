@@ -1,0 +1,45 @@
+Saarthi mentorship note: production stability pass for Jigyasu.
+
+Context:
+- The user wants the website production-ready quickly. Our priority is working software first, mentorship second.
+- Recent changes hardened child-facing activity flow, consent/privacy initialization, and Playwright reliability.
+
+What changed:
+1. In apps/hub/src/kidscamp/App.tsx:
+   - Removed unused hook outputs/imports so lint signals stay meaningful.
+   - Added the missing setSelectedActivity dependency to handleStartActivity.
+   - Added a key to ActivityGallery so changed initial filters remount the gallery instead of syncing props into state with an effect.
+
+2. In apps/hub/src/kidscamp/components/ActivityGallery.tsx:
+   - Removed the synchronous setState-in-effect filter sync.
+   - Wrapped the difficulty switch case in a block.
+
+3. In apps/hub/src/kidscamp/components/ActivityMode.tsx:
+   - Initialized timer state from saved progress instead of setting it in mount effect.
+   - Cleared interval refs after clearInterval.
+   - Moved confetti randomization out of render and into the completion event.
+
+4. In apps/hub/src/learnos/hooks/useIdleTimer.ts and TimeCapsule.tsx:
+   - Removed ref writes and Date.now work from render paths where possible.
+   - Kept timer updates in subscriptions/callbacks instead of synchronous effect state churn.
+
+5. In apps/hub/src/learnos/shared/ui/CookieConsent.tsx and landing/LandingPage.tsx:
+   - Initialized consent banner visibility with lazy state initializers from localStorage.
+   - This avoids extra render cycles and keeps privacy UI deterministic on first paint.
+
+6. In playwright.config.ts:
+   - Moved smoke tests to strict port 3100 with reuseExistingServer=false.
+   - This prevents accidentally testing a different app already running on port 3000.
+
+Verification:
+- Targeted ESLint passed for all touched production files.
+- corepack pnpm --filter @jigyasu/hub build passed.
+- corepack pnpm exec playwright test hub.spec.ts --project=chromium passed.
+
+Thinking pattern to learn:
+- When React lint reports setState-in-effect, ask: can this be lazy initial state, derived render state, or an event/subscription update?
+- When render uses Math.random or Date.now, ask: should this value be created once, on an event, or from deterministic input?
+- When a test fails with an unexpected page, inspect the accessibility snapshot before touching app code.
+- For child-facing stability, prioritize bugs that cause lost progress, broken timers, blank screens, wrong routes, or test false positives.
+
+Please analyze this pass and suggest the next production-stability cluster by balancing child impact, implementation risk, and verification coverage.

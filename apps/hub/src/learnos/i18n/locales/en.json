@@ -1,0 +1,439 @@
+{
+  "common": {
+    "app_name": "LearnOS",
+    "tagline": "Install Wonder.",
+    "tagline_secondary": "Jigyasu Balak — Curious Child",
+    "loading": "Loading...",
+    "error": "Oops! Something went wrong 🙈",
+    "retry": "Try again",
+    "back": "Back",
+    "next": "Next",
+    "done": "Done",
+    "skip": "Skip",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "yes": "Yes",
+    "no": "No",
+    "offline": "You are offline",
+    "offline_message": "Playing offline. Progress saved.",
+    "language": "Language"
+  },
+  "family": {
+    "welcome": "Welcome to LearnOS",
+    "who_is_learning": "Who is learning today?",
+    "add_child": "Add a learner",
+    "child_name": "What is your name?",
+    "choose_avatar": "Choose your avatar",
+    "choose_language": "Choose your language",
+    "dashboard": "Dashboard",
+    "sessions_today": "Sessions today",
+    "wonder_level": "Wonder Level",
+    "last_active": "Last active",
+    "total_minutes": "Total minutes",
+    "lumo_name": "Your guide's name",
+    "lumo_enabled": "Guide enabled"
+  },
+  "worlds": {
+    "tiny": "Tiny World",
+    "early": "Adventure Academy",
+    "lab": "Lab Zero",
+    "discovery": "Discovery Engine",
+    "academy": "The Academy",
+    "explorer": "Explorer"
+  },
+  "wonder": {
+    "early_explorer": "Early Explorer",
+    "growing_wonder": "Growing Wonder",
+    "high_wonder": "High Wonder",
+    "deep_wonder": "Deep Wonder"
+  },
+  "lumo": {
+    "default_name": "Lumo",
+    "toggle_on": "Guide: On",
+    "toggle_off": "Guide: Off",
+    "rename": "Rename your guide",
+    "after_mistake": "What if you changed just one thing?",
+    "before_breakthrough": "You are very close. Try one thing.",
+    "after_discovery": "You found it. That is exactly how scientists learn.",
+    "cross_concept": "Does this remind you of something else you discovered?"
+  },
+  "session": {
+    "break_time": "Time for a little rest!",
+    "well_done": "Well done today!",
+    "come_back": "Come back tomorrow for more wonder."
+  },
+  "parent": {
+    "summary_title": "Today's Wonder",
+    "discoveries": "discoveries today",
+    "suggestion": "Try this next",
+    "offline_note": "All progress saved locally",
+    "sync_note": "Will sync when connected"
+  },
+  "tiny": {
+    "parent": {
+      "session_summary": "Today's Wonder",
+      "animals_discovered": "animals discovered",
+      "colors_mixed": "colors mixed",
+      "shapes_matched": "shapes matched",
+      "break_time": "Rest time!",
+      "session_end": "Great exploring today!",
+      "come_back": "Come back soon for more wonder"
+    },
+    "modules": {
+      "tap_world": "Tap World",
+      "color_mixer": "Color Mixer",
+      "shape_sorter": "Shape Sorter",
+      "animal_orchestra": "Animal Orchestra",
+      "bubble_world": "Bubble World",
+      "weather_maker": "Weather Maker",
+      "farm_friends": "Farm Friends",
+      "day_and_night": "Day and Night"
+    },
+    "notifications": {
+      "animal_first_discovery": "discovered a new animal!",
+      "all_colors_mixed": "mixed all the colors!",
+      "all_shapes_matched": "matched all the shapes!",
+      "orchestra_complete": "made all the animals sing together!",
+      "great_session": "had a wonderful learning session!",
+      "night_discovered": "discovered what happens when the sun goes to sleep!",
+      "farm_complete": "found every single farm animal — all 13 of them!",
+      "bubbles_popped": "popped bubbles and discovered letters, numbers, and animals!",
+      "weather_complete": "tried all four types of weather today!"
+    },
+    "garden": {
+      "title": "Wonder Garden",
+      "growing": "Your garden is growing!",
+      "all_discovered": "All discoveries found!",
+      "keep_exploring": "Keep exploring to grow your garden"
+    },
+    "session": {
+      "break_coming": "Almost time for a rest...",
+      "well_done": "Wonderful exploring!",
+      "discoveries_today": "Today's discoveries",
+      "come_back": "Come back tomorrow!"
+    },
+    "weather": {
+      "sun": "Sunny",
+      "rain": "Rainy",
+      "snow": "Snowy",
+      "wind": "Windy"
+    }
+  },
+  "early": {
+    "modules": {
+      "story_builder": "Story Builder",
+      "number_line": "Number Line",
+      "alphabet_forest": "Alphabet Forest",
+      "mini_chef": "Mini Chef",
+      "pattern_patrol": "Pattern Patrol",
+      "word_scramble": "Word Scramble",
+      "plant_growth": "Plant Growth",
+      "water_cycle": "Water Cycle",
+      "habitat_heroes": "Habitat Heroes",
+      "shadow_detective": "Shadow Detective",
+      "magnet_explorer": "Magnet Explorer",
+      "coin_counter": "Coin Counter"
+    },
+    "pip": {
+      "greeting": "Ooh! What shall we discover today?",
+      "success": "YOU DID IT! That was amazing!",
+      "mistake": "Ooh! Interesting! Let's try again!",
+      "hint": "What if we try something different?",
+      "break_soon": "One more thing before we rest?",
+      "well_done": "Wonderful exploring today!"
+    },
+    "plant": {
+      "grow": "Grow!",
+      "needs_water": "The plant is thirsty!",
+      "needs_sun": "It needs more sunlight!"
+    },
+    "water_cycle": {
+      "follow_droppy": "Follow Droppy's journey!",
+      "complete": "Water Cycle Complete!"
+    },
+    "habitats": {
+      "choose": "Choose a habitat!",
+      "all_explored": "All Habitats Explored!"
+    },
+    "shadow": {
+      "move_light": "Move the light!",
+      "great_work": "Shadow Detective! Amazing!"
+    },
+    "magnet": {
+      "magnetic": "Magnetic",
+      "not_magnetic": "Not Magnetic",
+      "scientist": "Magnet Scientist!"
+    },
+    "shop": {
+      "welcome": "Welcome to my shop!",
+      "pay_now": "Pay Now!",
+      "purchased": "Purchased!"
+    },
+    "adventure_map": {
+      "title": "Adventure Map",
+      "achievements": "achievements"
+    }
+  },
+  "lab": {
+    "world_name": "Lab Zero",
+    "tagline": "Think like a scientist",
+    "modules": {
+      "circuit_builder": "Circuit Builder",
+      "fraction_kitchen": "Fraction Kitchen",
+      "ecosystem_sandbox": "Ecosystem Sandbox",
+      "force_lab": "Force Lab",
+      "weather_station": "Weather Station",
+      "timeline_explorer": "Timeline Explorer"
+    },
+    "lumo": {
+      "after_mistake": "What if you changed just one variable?",
+      "stuck": "What do you know for certain right now?",
+      "discovery": "You worked that out yourself. That is exactly how scientists think.",
+      "cross_concept": "Does this connect to something you have learned before?"
+    }
+  },
+  "discovery": {
+    "world_name": "The Discovery Engine",
+    "tagline": "Junior scientists at work",
+    "map_title": "Concept Constellation",
+    "all_subjects": "All",
+    "modules_explored": "modules explored",
+    "go_deeper": "Go Deeper",
+    "rabbit_holes": "rabbit holes",
+    "unsolved_question": "Unsolved Question",
+    "connected_to": "Connected to",
+    "connection_found": "Connection found!"
+  },
+  "academy": {
+    "world_name": "The Academy",
+    "tagline": "Deep understanding. Real mastery.",
+    "beauty": "The beauty",
+    "explore_mode": "Explore Mode",
+    "exam_mode": "Exam Mode",
+    "depth": {
+      "surface": "Surface",
+      "mechanism": "Mechanism",
+      "principle": "Principle",
+      "frontier": "Frontier"
+    },
+    "report": { "title": "Academy Report", "readiness": "Exam Readiness" },
+    "challenge": { "title": "Challenge Mode", "create": "Create New Challenge" }
+  },
+  "explorer": {
+    "world_name": "Explorer",
+    "welcome_title": "Welcome to Explorer",
+    "welcome_message": "A space for curiosity with no deadlines, no grades, and no wrong answers.",
+    "begin": "Begin Exploring",
+    "continue_where_left": "Continue where you left off",
+    "everything": "Everything",
+    "time_estimate": "min",
+    "visited": "Visited",
+    "completed": "Completed",
+    "explored": "explored",
+    "of": "of",
+    "what_here_for": "What are you here for today?",
+    "lenses": {
+      "always_wondered": "Things I Always Wondered About",
+      "everyday_science": "Science Behind Everyday Life",
+      "my_children": "What My Children Are Learning",
+      "never_understood": "Topics I Never Quite Got",
+      "visual_math": "Mathematics Made Visual",
+      "history_of_ideas": "History of Great Ideas"
+    },
+    "concept": {
+      "history": "History of the idea",
+      "everyday": "Where you see this every day",
+      "indian_context": "Indian context",
+      "thinking_prompt": "Something to think about",
+      "reflect": "Tap to reflect",
+      "save_thought": "Save this thought",
+      "saved": "Saved to your time capsule",
+      "write_thinking": "Write your thinking here — no right answer..."
+    },
+    "lumo": {
+      "sharing": "finds this fascinating",
+      "connecting": "sees a connection",
+      "questioning": "wonders"
+    }
+  },
+  "crosscutting": {
+    "daily_warmup": {
+      "title": "Daily Warm-Up",
+      "subtitle": "3 minutes every day",
+      "today": "Today",
+      "start": "Let's Go!",
+      "family_quiz": "Family Quiz — play together!",
+      "done": "Done for today!",
+      "come_back": "Come back tomorrow",
+      "correct": "Correct!",
+      "next": "Next",
+      "complete": "Complete!"
+    },
+    "mistake_museum": {
+      "title": "Mistake Museum",
+      "subtitle": "Famous wrong ideas",
+      "wrong_belief": "The Wrong Belief",
+      "how_long": "How long it lasted",
+      "why_sense": "Why it made sense",
+      "overturned": "How it was overturned",
+      "indian_connection": "Indian Connection",
+      "quote": "Being wrong is how knowledge grows"
+    },
+    "concept_gossip": {
+      "title": "Concept Gossip",
+      "subtitle": "What if ideas could talk?",
+      "start": "Start the conversation",
+      "next": "Next",
+      "replay": "Replay conversation",
+      "next_conv": "Next conversation"
+    },
+    "time_capsule": {
+      "title": "Time Capsule",
+      "subtitle": "Seal what you know today",
+      "create": "Create New Time Capsule",
+      "what_reflecting": "What are you reflecting on?",
+      "write_now": "Write what you know right now",
+      "seal_for": "Seal for",
+      "seal": "Seal It",
+      "ready_open": "Ready to Open!",
+      "opens_in": "Opens in",
+      "opened": "Previously opened",
+      "past_you_wrote": "Past you wrote",
+      "how_changed": "How has your understanding changed?"
+    },
+    "teach_me": {
+      "title": "Teach Me Mode",
+      "subtitle": "Explain a concept to Max",
+      "max_name": "Max",
+      "max_description": "Max knows nothing. Max asks genuine questions.",
+      "teach_what": "What will you teach Max today?",
+      "max_asks": "Max asks",
+      "submit": "Submit Answer",
+      "clear_explanation": "Clear explanation — Max understood!",
+      "good_start": "Good start — add more detail next time",
+      "teach_another": "Teach another concept",
+      "teaching_test": "Teaching is the deepest test of understanding."
+    }
+  },
+  "landing": {
+    "header": {
+      "nav_worlds": "Worlds",
+      "nav_how": "How it works",
+      "nav_parents": "For parents",
+      "nav_voices": "Voices",
+      "start_free": "Start free",
+      "switch_language": "Switch language"
+    },
+    "hero": {
+      "badge": "New • 6 languages • Ages 2–99",
+      "title_part1": "Learning that fits",
+      "title_part2": "every mind",
+      "description": "Tiny humans, curious teens and lifelong learners — all welcome. Pick a world, pick a language, and dive into bite-sized lessons designed to delight.",
+      "cta_pick_world": "Pick your world",
+      "cta_see_how": "See how it works",
+      "stat_learners": "Active learners",
+      "stat_lessons": "Lessons completed",
+      "stat_rating": "Parent rating",
+      "lesson_label": "Lesson",
+      "question_prompt": "What sound does this make?",
+      "streak_label": "streak!",
+      "streak_keep": "Keep going",
+      "badge_label": "Math whiz",
+      "badge_unlocked": "New badge unlocked"
+    },
+    "language": {
+      "step": "Step 1",
+      "title": "Choose your language",
+      "description": "Switch anytime — every lesson is fully localised.",
+      "selected": "Selected"
+    },
+    "worlds": {
+      "title": "Pick your world",
+      "description": "Each world is a different way to learn. There are no wrong choices here.",
+      "tiny_name": "Tiny World",
+      "tiny_desc": "Ages 2–5 • Tap, play, discover",
+      "early_name": "Adventure Academy",
+      "early_desc": "Ages 5–8 • Stories, puzzles, exploration",
+      "lab_name": "Lab Zero",
+      "lab_desc": "Ages 8–12 • Hands-on science experiments",
+      "discovery_name": "Discovery Engine",
+      "discovery_desc": "Ages 12–15 • Deep dives, connections",
+      "academy_name": "The Academy",
+      "academy_desc": "Ages 15+ • Exam prep, mastery",
+      "explorer_name": "Explorer",
+      "explorer_desc": "All ages • Curiosity-driven learning",
+      "physics_name": "Physics World",
+      "physics_desc": "Forces, energy, quantum wonders",
+      "biology_name": "Biology World",
+      "biology_desc": "Cells, ecosystems, DNA",
+      "math_name": "Math World",
+      "math_desc": "Numbers, geometry, puzzles"
+    },
+    "features": {
+      "title": "Built different",
+      "zero_friction": "Zero friction",
+      "zero_friction_desc": "No signup, no login, no barriers",
+      "privacy_first": "Privacy first",
+      "privacy_first_desc": "No tracking, no ads, no data selling",
+      "works_offline": "Works offline",
+      "works_offline_desc": "Progress saved locally, syncs later",
+      "six_languages": "6 languages",
+      "six_languages_desc": "English, Hindi, Tamil, Telugu, Kannada, Odia"
+    },
+    "how_it_works": {
+      "title": "How it works",
+      "step1_title": "Pick a world",
+      "step1_desc": "Choose from Tiny World to The Academy — or just explore freely.",
+      "step2_title": "Pick a language",
+      "step2_desc": "Every lesson is available in 6 Indian languages.",
+      "step3_title": "Start learning",
+      "step3_desc": "Bite-sized lessons, interactive simulations, zero pressure.",
+      "step4_title": "Come back tomorrow",
+      "step4_desc": "Daily warm-ups, streaks, and wonder gardens keep you engaged."
+    },
+    "parents": {
+      "title": "For parents",
+      "subtitle": "Real learning, real peace of mind",
+      "safe": "Safe by design",
+      "safe_desc": "No ads, no tracking, no external links",
+      "educational": "Educationally sound",
+      "educational_desc": "Built on constructivist learning principles",
+      "transparent": "Fully transparent",
+      "transparent_desc": "See exactly what your child is learning",
+      "privacy": "Privacy guaranteed",
+      "privacy_desc": "All data stays on your device unless you choose to share"
+    },
+    "footer": {
+      "built_with": "Built with",
+      "for_india": "for India",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "contact": "Contact",
+      "copyright": "LearnOS — Free forever"
+    },
+    "privacy": {
+      "title": "We respect your privacy",
+      "description": "We don't track you, sell your data, or show ads. All progress is saved locally on your device.",
+      "accept": "Accept",
+      "decline": "Decline"
+    },
+    "continue": {
+      "title": "Continue learning",
+      "description": "Pick up where you left off",
+      "resume": "Resume",
+      "start_new": "Start something new"
+    },
+    "testimonials": {
+      "quote1": "My 3-year-old asks for 'the owl game' every morning. I love that I never have to worry about ads popping up.",
+      "name1": "Priya M.",
+      "role1": "Parent of Aanya, 3",
+      "quote2": "I'm 14 and I actually finished a whole algebra unit on the bus. The streaks are weirdly motivating.",
+      "name2": "Daniel K.",
+      "role2": "Learner, 14",
+      "quote3": "Picked up Tamil at 42. Lessons are short enough to do over my morning chai. Highly recommend.",
+      "name3": "Ravi S.",
+      "role3": "Lifelong learner"
+    }
+  }
+}

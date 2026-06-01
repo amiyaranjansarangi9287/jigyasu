@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigyasu — You are offline</title>
+    <meta name="theme-color" content="#4F46E5">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #4F46E5;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        p { font-size: 1.2rem; max-width: 500px; line-height: 1.5; opacity: 0.9; }
+        .button {
+            margin-top: 30px;
+            padding: 12px 24px;
+            background-color: white;
+            color: #4F46E5;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: opacity 0.2s;
+        }
+        .button:active { opacity: 0.8; }
+    </style>
+</head>
+<body>
+    <h1>You're Offline</h1>
+    <p>Don't worry! Jigyasu is built to work without internet. Just return to the home screen and keep learning.</p>
+    <a href="/" class="button">Go to Home</a>
+    
+    <script>
+        // Auto-redirect if network comes back online
+        window.addEventListener('online', () => {
+            window.location.reload();
+        });
+    </script>
+</body>
+</html>

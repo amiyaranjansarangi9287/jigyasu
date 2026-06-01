@@ -1,0 +1,77 @@
+/* Performance Optimizations */
+
+/* Image optimization */
+img {
+  max-width: 100%;
+  height: auto;
+  content-visibility: auto;
+}
+
+/* Optimize animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* GPU acceleration for animations */
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Optimize rendering */
+.rendering-optimized {
+  contain: layout style paint;
+}
+
+/* Prevent layout thrashing */
+.layout-stable {
+  position: relative;
+}
+
+/* Optimize text rendering */
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reduce reflows */
+.no-reflow {
+  contain: strict;
+}
+
+/* Optimize scrolling */
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .smooth-scroll {
+    scroll-behavior: auto;
+  }
+}
+
+/* Image placeholder for lazy loading */
+img[src=""] {
+  visibility: hidden;
+}
+
+/* Critical CSS inlining hint */
+.critical {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
+}
+
+/* Non-critical content */
+.non-critical {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 1000px;
+}

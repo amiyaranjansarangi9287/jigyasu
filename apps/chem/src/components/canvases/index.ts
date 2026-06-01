@@ -1,0 +1,9 @@
+export { default as StatesOfMatterCanvas } from './StatesOfMatterCanvas';
+export { default as AcidBaseLabCanvas } from './AcidBaseLabCanvas';
+export { default as MoleculeBuilderCanvas } from './MoleculeBuilderCanvas';
+export { default as MixturesSolutionsCanvas } from './MixturesSolutionsCanvas';
+export { default as ChemicalReactionsCanvas } from './ChemicalReactionsCanvas';
+export { default as PeriodicTableCanvas } from './PeriodicTableCanvas';
+export { default as CombustionLabCanvas } from './CombustionLabCanvas';
+export { default as PolymersPlasticsCanvas } from './PolymersPlasticsCanvas';
+export { default as ChromatographyCanvas } from './ChromatographyCanvas';

@@ -1,0 +1,21 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# Jigyasu Security Headers
+#
+# This file is read by Netlify and Cloudflare Pages automatically.
+# For NGINX (cloud server), translate each directive to:
+#   add_header Header-Name "value" always;
+#
+# Why these headers matter for a children's educational platform:
+#   X-Frame-Options      → Prevents embedding in malicious iframes (clickjacking)
+#   X-Content-Type       → Prevents MIME-type sniffing attacks
+#   Referrer-Policy      → Controls what URL is sent to external sites
+#   Permissions-Policy   → Explicitly forbids mic/camera/location access
+#   Content-Security-Policy → Restricts which scripts/resources can execute
+# ═══════════════════════════════════════════════════════════════════════════════
+
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self' https://*.ingest.sentry.io; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; worker-src 'self'; manifest-src 'self'

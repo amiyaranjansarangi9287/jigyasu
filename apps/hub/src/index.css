@@ -1,0 +1,200 @@
+@import url('https://fonts.cdnfonts.com/css/opendyslexic');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;900&family=Inter:wght@400;500;700;900&display=swap');
+@import "tailwindcss";
+@import "./styles/DesignSystem.css";
+@import "./styles/Accessibility.css";
+@import "./styles/Layout.css";
+@import "./styles/Typography.css";
+@import "./styles/Performance.css";
+
+/* Dark Mode Support */
+@theme {
+  --color-dark-bg: #0f172a;
+  --color-dark-surface: #1e293b;
+  --color-dark-text: #f1f5f9;
+  --color-dark-text-secondary: #94a3b8;
+}
+
+/* Dark mode class-based implementation */
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+.dark .bg-white {
+  background-color: #1e293b !important;
+}
+
+.dark .bg-slate-50 {
+  background-color: #1e293b !important;
+}
+
+.dark .bg-slate-100 {
+  background-color: #334155 !important;
+}
+
+.dark .text-slate-900 {
+  color: #f1f5f9 !important;
+}
+
+.dark .text-slate-700 {
+  color: #cbd5e1 !important;
+}
+
+.dark .text-slate-600 {
+  color: #94a3b8 !important;
+}
+
+.dark .text-slate-500 {
+  color: #64748b !important;
+}
+
+.dark .border-slate-100 {
+  border-color: #334155 !important;
+}
+
+.dark .border-slate-200 {
+  border-color: #475569 !important;
+}
+
+.dark .border-indigo-100 {
+  border-color: #3730a3 !important;
+}
+
+.dark .bg-indigo-50 {
+  background-color: #312e81 !important;
+}
+
+.dark .bg-orange-50 {
+  background-color: #7c2d12 !important;
+}
+
+.dark .bg-slate-900 {
+  background-color: #0f172a !important;
+}
+
+.dark .bg-slate-800 {
+  background-color: #1e293b !important;
+}
+
+.dark .text-white {
+  color: #f1f5f9 !important;
+}
+
+.dark .text-slate-300 {
+  color: #cbd5e1 !important;
+}
+
+.dark .text-slate-400 {
+  color: #94a3b8 !important;
+}
+
+.dark .text-slate-200 {
+  color: #e2e8f0 !important;
+}
+
+.dark .bg-slate-800\/60 {
+  background-color: rgba(30, 41, 59, 0.6) !important;
+}
+
+/* Smooth transition for theme changes */
+* {
+  transition-property: color, background-color, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+/* Skip to content link for keyboard users */
+.skip-to-content {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4F46E5;
+  color: white;
+  padding: 1rem 2rem;
+  z-index: 9999;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: top 0.3s;
+}
+
+.skip-to-content:focus {
+  top: 1rem;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: #f8fafc;
+  min-width: 320px;
+}
+
+/* High Contrast Mode Implementation */
+html.high-contrast {
+  --bg-primary: #000000;
+  --text-primary: #ffffff;
+  --bg-secondary: #1a1a1a;
+  --text-secondary: #ffffff;
+  --border-color: #ffffff;
+  --bg-surface: #000000;
+  --text-surface: #ffffff;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+html.high-contrast body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+html.high-contrast * {
+  color: #ffffff !important;
+  background-color: #000000 !important;
+  border-color: #ffffff !important;
+}
+
+html.high-contrast img,
+html.high-contrast svg {
+  filter: contrast(1.2) saturate(1.1);
+  background-color: transparent !important;
+}
+
+html.high-contrast button,
+html.high-contrast a,
+html.high-contrast input,
+html.high-contrast select,
+html.high-contrast textarea {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+}
+
+html.high-contrast button:hover,
+html.high-contrast a:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Dyslexia Font Implementation */
+html.dyslexia-font {
+  --font-sans: 'OpenDyslexic', 'Nunito', ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-sans) !important;
+}
+
+@utility perspective-1000 {
+  perspective: 1000px;
+}
+
+@utility preserve-3d {
+  transform-style: preserve-3d;
+}
+
+@utility backface-hidden {
+  backface-visibility: hidden;
+}

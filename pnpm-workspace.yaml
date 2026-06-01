@@ -1,0 +1,16 @@
+packages:
+  - 'apps/hub'
+  - 'apps/camp'
+  - 'apps/toys'
+  - 'apps/bio'
+  - 'apps/math'
+  - 'apps/physics'
+  - 'apps/chem'
+  - 'apps/cosmos'
+  - 'apps/backend'
+  - 'packages/*'
+allowBuilds:
+  '0': esbuild
+  esbuild: set this to true or false
+  ffmpeg-static: set this to true or false
+  sharp: set this to true or false

@@ -1,0 +1,162 @@
+import { useState, useEffect, ReactNode } from 'react';
+import { cn } from '@jigyasu/utils';
+
+export interface NavbarProps {
+  brandIcon: ReactNode;
+  brandText: string;
+  brandClassName?: string;
+  onBrandClick: () => void;
+  
+  desktopCenter?: ReactNode;
+  desktopRight?: ReactNode;
+  mobileRight?: ReactNode;
+  mobileMenuContent?: ReactNode | (({ close }: { close: () => void }) => ReactNode);
+
+  theme?: 'camp' | 'toys' | 'learn';
+}
+
+export function Navbar({
+  brandIcon,
+  brandText,
+  brandClassName,
+  onBrandClick,
+  desktopCenter,
+  desktopRight,
+  mobileRight,
+  mobileMenuContent,
+  theme = 'learn'
+}: NavbarProps) {
+  const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const getNavClasses = () => {
+    if (!scrolled) return 'bg-transparent py-4 border-b border-transparent';
+    
+    switch (theme) {
+      case 'toys':
+        return 'bg-white/90 backdrop-blur-xl border-b border-gray-200/60 shadow-lg shadow-black/[0.03] py-0 h-16';
+      case 'camp':
+      default:
+        return 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg py-2';
+    }
+  };
+
+  const getBrandClasses = () => {
+    if (!scrolled) return 'text-white drop-shadow-lg';
+    
+    switch (theme) {
+      case 'toys':
+        return 'bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent';
+      case 'camp':
+      default:
+        return 'text-gray-900 dark:text-white';
+    }
+  };
+
+  const mobileMenuButtonColor = scrolled 
+    ? 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800'
+    : 'text-white hover:bg-white/10';
+
+  return (
+    <>
+      <nav
+        className={cn(
+          'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
+          getNavClasses()
+        )}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-full min-h-[4rem]">
+            {/* Logo */}
+            <button
+              onClick={onBrandClick}
+              className="flex items-center gap-2 group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500"
+            >
+              <div className={cn("transition-transform group-hover:scale-105", brandClassName)}>
+                {brandIcon}
+              </div>
+              <span
+                className={cn(
+                  "text-xl font-bold transition-colors",
+                  getBrandClasses()
+                )}
+              >
+                {brandText}
+              </span>
+            </button>
+
+            {/* Desktop Center Nav */}
+            {desktopCenter && (
+              <div className="hidden md:flex items-center gap-1 flex-1 justify-center ml-8">
+                {desktopCenter}
+              </div>
+            )}
+
+            {/* Right side buttons */}
+            <div className="flex items-center gap-2">
+              <div className="hidden md:flex items-center gap-2">
+                {desktopRight}
+              </div>
+              <div className="md:hidden flex items-center gap-1">
+                {mobileRight}
+              </div>
+
+              {/* Mobile menu button */}
+              {mobileMenuContent && (
+                <button
+                  onClick={() => setMobileMenuOpen(true)}
+                  className={cn(
+                    'md:hidden p-2 rounded-full transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500',
+                    mobileMenuButtonColor
+                  )}
+                  aria-label="Open menu"
+                >
+                  <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && mobileMenuContent && (
+        <div className="fixed inset-0 z-[60] md:hidden">
+          <div
+            className="absolute inset-0 bg-black/50 backdrop-blur-sm transition-opacity"
+            onClick={() => setMobileMenuOpen(false)}
+          />
+          <div className="absolute right-0 top-0 bottom-0 w-72 bg-white dark:bg-gray-900 shadow-2xl animate-slide-in-mobile overflow-y-auto">
+            <div className="p-4 border-b border-gray-100 dark:border-gray-800 flex items-center justify-between sticky top-0 bg-white dark:bg-gray-900 z-10">
+              <span className="text-lg font-bold text-gray-900 dark:text-white">Menu</span>
+              <button
+                onClick={() => setMobileMenuOpen(false)}
+                className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500"
+              >
+                <svg className="w-6 h-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            {/* The wrapper here provides the close function to the children if they need it */}
+            <div className="pb-8">
+              {typeof mobileMenuContent === 'function' 
+                ? mobileMenuContent({ close: () => setMobileMenuOpen(false) }) 
+                : mobileMenuContent}
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}

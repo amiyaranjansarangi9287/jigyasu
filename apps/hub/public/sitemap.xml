@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Home / Landing -->
+  <url>
+    <loc>https://jigyasu.app/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-06-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jigyasu.app/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://jigyasu.app/?lang=hi" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://jigyasu.app/?lang=ta" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://jigyasu.app/?lang=te" />
+    <xhtml:link rel="alternate" hreflang="kn" href="https://jigyasu.app/?lang=kn" />
+    <xhtml:link rel="alternate" hreflang="or" href="https://jigyasu.app/?lang=or" />
+  </url>
+
+  <!-- Family Home / World Hub -->
+  <url>
+    <loc>https://jigyasu.app/home</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-06-01</lastmod>
+  </url>
+
+  <!-- About / Mission -->
+  <url>
+    <loc>https://jigyasu.app/about</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-01</lastmod>
+  </url>
+
+  <!-- Learning Worlds -->
+  <url>
+    <loc>https://jigyasu.app/tiny</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-01</lastmod>
+  </url>
+  <url>
+    <loc>https://jigyasu.app/early</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-01</lastmod>
+  </url>
+  <url>
+    <loc>https://jigyasu.app/lab</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-01</lastmod>
+  </url>
+  <url>
+    <loc>https://jigyasu.app/discovery</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-01</lastmod>
+  </url>
+  <url>
+    <loc>https://jigyasu.app/academy</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-01</lastmod>
+  </url>
+  <url>
+    <loc>https://jigyasu.app/explorer</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-01</lastmod>
+  </url>
+  <url>
+    <loc>https://jigyasu.app/biology</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-01</lastmod>
+  </url>
+  <url>
+    <loc>https://jigyasu.app/math</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-01</lastmod>
+  </url>
+  <url>
+    <loc>https://jigyasu.app/physics</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-01</lastmod>
+  </url>
+  <url>
+    <loc>https://jigyasu.app/chemistry</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-01</lastmod>
+  </url>
+  <url>
+    <loc>https://jigyasu.app/cosmos</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-01</lastmod>
+  </url>
+  <url>
+    <loc>https://jigyasu.app/toys</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-01</lastmod>
+  </url>
+  <url>
+    <loc>https://jigyasu.app/camp</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-01</lastmod>
+  </url>
+</urlset>

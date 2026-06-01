@@ -1,0 +1,163 @@
+/* Layout & Spacing Consistency Fixes */
+
+/* Ensure consistent vertical rhythm */
+* {
+  box-sizing: border-box;
+}
+
+/* Fix inconsistent padding in cards */
+.card {
+  padding: 1.5rem !important;
+}
+
+/* Fix inconsistent button padding */
+.btn {
+  padding: 0.75rem 1.5rem !important;
+  min-height: 2.75rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem !important;
+  min-height: 2.25rem !important;
+}
+
+.btn-lg {
+  padding: 1rem 2rem !important;
+  min-height: 3.25rem !important;
+}
+
+/* Fix inconsistent form input padding */
+input,
+select,
+textarea {
+  padding: 0.75rem 1rem !important;
+  min-height: 2.75rem !important;
+}
+
+/* Fix inconsistent spacing between sections */
+section {
+  padding: 3rem 1rem !important;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 4rem 1.5rem !important;
+  }
+}
+
+/* Fix inconsistent grid gaps */
+.grid {
+  gap: 1.5rem !important;
+}
+
+.grid-gap-sm {
+  gap: 1rem !important;
+}
+
+.grid-gap-lg {
+  gap: 2rem !important;
+}
+
+/* Fix inconsistent flex gaps */
+.flex {
+  gap: 1rem !important;
+}
+
+.flex-gap-sm {
+  gap: 0.5rem !important;
+}
+
+.flex-gap-lg {
+  gap: 1.5rem !important;
+}
+
+/* Ensure consistent container max-widths */
+.container {
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 1rem !important;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 1.5rem !important;
+  }
+}
+
+/* Fix inconsistent modal padding */
+.modal {
+  padding: 2rem !important;
+}
+
+/* Fix inconsistent list item spacing */
+li {
+  padding: 0.5rem 0 !important;
+}
+
+/* Ensure consistent badge sizing */
+.badge {
+  padding: 0.25rem 0.75rem !important;
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+}
+
+/* Fix inconsistent avatar sizing */
+.avatar-sm {
+  width: 2rem !important;
+  height: 2rem !important;
+}
+
+.avatar-md {
+  width: 3rem !important;
+  height: 3rem !important;
+}
+
+.avatar-lg {
+  width: 4rem !important;
+  height: 4rem !important;
+}
+
+/* Ensure consistent icon sizing */
+.icon-sm {
+  width: 1rem !important;
+  height: 1rem !important;
+}
+
+.icon-md {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+}
+
+.icon-lg {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+
+/* Fix inconsistent table cell padding */
+th,
+td {
+  padding: 0.75rem 1rem !important;
+}
+
+/* Ensure consistent divider thickness */
+hr,
+.divider {
+  height: 1px !important;
+  border: none !important;
+  background-color: #e5e7eb !important;
+}
+
+/* Fix inconsistent progress bar height */
+.progress-bar {
+  height: 0.5rem !important;
+  border-radius: 0.25rem !important;
+}
+
+/* Ensure consistent tooltip padding */
+.tooltip {
+  padding: 0.5rem 0.75rem !important;
+  font-size: 0.875rem !important;
+}

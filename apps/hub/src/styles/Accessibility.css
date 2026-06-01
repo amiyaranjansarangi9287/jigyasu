@@ -1,0 +1,93 @@
+/* Accessibility Enhancements - Color Contrast & Focus States */
+
+/* Ensure all text meets WCAG AA contrast ratios (4.5:1 for normal text, 3:1 for large text) */
+
+/* Fix low contrast placeholder text */
+::placeholder {
+  color: #6b7280 !important;
+  opacity: 1 !important;
+}
+
+/* Fix low contrast disabled states */
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+}
+
+/* Ensure focus indicators are visible and meet contrast requirements */
+*:focus-visible {
+  outline: 3px solid #4F46E5 !important;
+  outline-offset: 2px !important;
+}
+
+/* Fix low contrast borders */
+.border-gray-200 {
+  border-color: #d1d5db !important;
+}
+
+/* Fix low contrast text in badges */
+.badge {
+  min-height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+}
+
+/* Ensure all links have sufficient contrast */
+a {
+  color: #4F46E5 !important;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #4338ca !important;
+}
+
+/* Fix low contrast error messages */
+.text-red-400 {
+  color: #dc2626 !important;
+}
+
+/* Fix low contrast success messages */
+.text-green-400 {
+  color: #16a34a !important;
+}
+
+/* Fix low contrast warning messages */
+.text-yellow-400 {
+  color: #ca8a04 !important;
+}
+
+/* Ensure form labels have sufficient contrast */
+label {
+  color: #1f2937 !important;
+  font-weight: 500 !important;
+}
+
+/* Fix low contrast helper text */
+.text-gray-400 {
+  color: #6b7280 !important;
+}
+
+/* Ensure all icons have sufficient contrast when used as standalone elements */
+.icon-standalone {
+  color: #1f2937 !important;
+}
+
+/* Fix low contrast in dark mode */
+@media (prefers-color-scheme: dark) {
+  .text-gray-400 {
+    color: #9ca3af !important;
+  }
+  
+  .border-gray-200 {
+    border-color: #4b5563 !important;
+  }
+  
+  label {
+    color: #f9fafb !important;
+  }
+}
