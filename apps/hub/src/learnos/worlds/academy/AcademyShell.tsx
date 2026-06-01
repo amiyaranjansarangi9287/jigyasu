@@ -47,8 +47,9 @@ export default function AcademyShell({ module, children }: Props) {
         </div>
       ) : <main className="flex-1 overflow-hidden">{children}</main>}
 
-      <LumoAncientGlow visible={lumo.lumoVisible} message={lumo.lumoMessage} name={lumo.lumoName} emotion={lumo.lumoEmotion} onDismiss={lumo.dismiss} />
+      <LumoAncientGlow visible={lumo.peacockVisible} message={lumo.peacockMessage} name={lumo.peacockName} emotion={lumo.peacockEmotion} onDismiss={lumo.dismiss} />
       <ParentCorner onExit={() => navigate('/academy')} />
     </div>
   );
 }
+
