@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "description": "Jigyasu - Install Wonder. Unified offline-first educational platform.",
+  "engines": {
+    "node": ">=20.x"
+  },
+  "packageManager": "pnpm@9.1.0",
   "scripts": {
     "dev": "pnpm --parallel -r dev",
     "build": "pnpm -r build",
