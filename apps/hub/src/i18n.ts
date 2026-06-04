@@ -109,151 +109,85 @@ export function formatTime(date: Date, locale?: string): string {
   return formatters.time.format(date);
 }
 
+import en from './learnos/i18n/locales/en.json';
+import hi from './learnos/i18n/locales/hi.json';
+import kn from './learnos/i18n/locales/kn.json';
+import te from './learnos/i18n/locales/te.json';
+import ta from './learnos/i18n/locales/ta.json';
+import mr from './learnos/i18n/locales/mr.json';
+import bn from './learnos/i18n/locales/bn.json';
+import gu from './learnos/i18n/locales/gu.json';
+import ml from './learnos/i18n/locales/ml.json';
+import pa from './learnos/i18n/locales/pa.json';
+import as from './learnos/i18n/locales/as.json';
+import ur from './learnos/i18n/locales/ur.json';
+import sa from './learnos/i18n/locales/sa.json';
+import sat from './learnos/i18n/locales/sat.json';
+import ne from './learnos/i18n/locales/ne.json';
+import kok from './learnos/i18n/locales/kok.json';
+import brx from './learnos/i18n/locales/brx.json';
+import doi from './learnos/i18n/locales/doi.json';
+import ks from './learnos/i18n/locales/ks.json';
+import mai from './learnos/i18n/locales/mai.json';
+import sd from './learnos/i18n/locales/sd.json';
+import mni from './learnos/i18n/locales/mni.json';
+import od from './learnos/i18n/locales/od.json';
+import es from './learnos/i18n/locales/es.json';
+import fr from './learnos/i18n/locales/fr.json';
+
 const resources = {
-  en: {
-    translation: {
-      "welcome_title": "Welcome to Jigyasu!",
-      "welcome_subtitle": "The Universe of Learning",
-      "choose_avatar": "Choose your Avatar",
-      "enter_name": "What is your name?",
-      "lets_go": "Let's Go!",
-      "global_xp": "Global XP",
-      "where_to_go": "Where do you want to go today, {{name}}?",
-      "science_lab": "Science Lab",
-      "math_kingdom": "Math Kingdom",
-      "bioverse": "BioVerse",
-      "chemlab": "ChemLab",
-      "cosmoslab": "CosmosLab",
-      "toys_games": "Toys & Games"
-    }
-  },
-  hi: {
-    translation: {
-      "welcome_title": "जिज्ञासु में आपका स्वागत है!",
-      "welcome_subtitle": "सीखने का ब्रह्मांड",
-      "choose_avatar": "अपना अवतार चुनें",
-      "enter_name": "आपका नाम क्या है?",
-      "lets_go": "चलिए शुरू करते हैं!",
-      "global_xp": "ग्लोबल XP",
-      "where_to_go": "आज आप कहाँ जाना चाहते हैं, {{name}}?",
-      "science_lab": "विज्ञान प्रयोगशाला",
-      "math_kingdom": "गणित साम्राज्य",
-      "bioverse": "जीव विज्ञान",
-      "chemlab": "रसायन विज्ञान",
-      "cosmoslab": "ब्रह्मांड",
-      "toys_games": "खिलौने और खेल"
-    }
-  },
-  kn: {
-    translation: {
-      "welcome_title": "ಜಿಜ್ಞಾಸುಗೆ ಸ್ವಾಗತ!",
-      "welcome_subtitle": "ಕಲಿಕೆಯ ಬ್ರಹ್ಮಾಂಡ",
-      "choose_avatar": "ನಿಮ್ಮ ಅವತಾರವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
-      "enter_name": "ನಿಮ್ಮ ಹೆಸರೇನು?",
-      "lets_go": "ಹೋಗೋಣ!",
-      "global_xp": "ಜಾಗತಿಕ XP",
-      "where_to_go": "ಇಂದು ನೀವು ಎಲ್ಲಿಗೆ ಹೋಗಲು ಬಯಸುತ್ತೀರಿ, {{name}}?",
-      "science_lab": "ವಿಜ್ಞಾನ ಪ್ರಯೋಗಾಲಯ",
-      "math_kingdom": "ಗಣಿತ ಸಾಮ್ರಾಜ್ಯ",
-      "bioverse": "ಜೀವಶಾಸ್ತ್ರ",
-      "chemlab": "ರಸಾಯನಶಾಸ್ತ್ರ",
-      "cosmoslab": "ಬ್ರಹ್ಮಾಂಡ",
-      "toys_games": "ಆಟಿಕೆಗಳು ಮತ್ತು ಆಟಗಳು"
-    }
-  },
-  te: {
-    translation: {
-      "welcome_title": "జిజ్ఞాసు కు స్వాగతం!",
-      "welcome_subtitle": "అభ్యాస విశ్వం",
-      "choose_avatar": "మీ అవతార్ ఎంచుకోండి",
-      "enter_name": "మీ పేరు ఏమిటి?",
-      "lets_go": "వెళ్దాం!",
-      "global_xp": "గ్లోబల్ XP",
-      "where_to_go": "ఈ రోజు మీరు ఎక్కడికి వెళ్లాలనుకుంటున్నారు, {{name}}?",
-      "science_lab": "సైన్స్ ల్యాబ్",
-      "math_kingdom": "గణిత రాజ్యం",
-      "bioverse": "జీవశాస్త్రం",
-      "chemlab": "రసాయన శాస్త్రం",
-      "cosmoslab": "విశ్వం",
-      "toys_games": "బొమ్మలు & ఆటలు"
-    }
-  },
-  ta: {
-    translation: {
-      "welcome_title": "ஜிக்யாசுவிற்கு வரவேற்கிறோம்!",
-      "welcome_subtitle": "கற்றலின் பிரபஞ்சம்",
-      "choose_avatar": "உங்கள் அவதாரத்தை தேர்வு செய்யவும்",
-      "enter_name": "உங்கள் பெயர் என்ன?",
-      "lets_go": "போகலாம்!",
-      "global_xp": "உலகளாவிய XP",
-      "where_to_go": "இன்று நீங்கள் எங்கே செல்ல விரும்புகிறீர்கள், {{name}}?",
-      "science_lab": "அறிவியல் ஆய்வகம்",
-      "math_kingdom": "கணித ராஜ்யம்",
-      "bioverse": "உயிரியல்",
-      "chemlab": "வேதியியல்",
-      "cosmoslab": "பிரபஞ்சம்",
-      "toys_games": "பொம்மைகள் & விளையாட்டுகள்"
-    }
-  },
-  or: {
-    translation: {
-      "welcome_title": "ଜିଜ୍ଞାସୁକୁ ସ୍ୱାଗତ!",
-      "welcome_subtitle": "ଶିକ୍ଷାର ବ୍ରହ୍ମାଣ୍ଡ",
-      "choose_avatar": "ଆପଣଙ୍କର ଅବତାର ବାଛନ୍ତୁ",
-      "enter_name": "ଆପଣଙ୍କ ନାମ କଣ?",
-      "lets_go": "ଚାଲନ୍ତୁ!",
-      "global_xp": "ଗ୍ଲୋବାଲ XP",
-      "where_to_go": "ଆଜି ଆପଣ କେଉଁଠାକୁ ଯିବାକୁ ଚାହୁଁଛନ୍ତି, {{name}}?",
-      "science_lab": "ବିଜ୍ଞାନ ପରୀକ୍ଷାଗାର",
-      "math_kingdom": "ଗଣିତ ରାଜ୍ୟ",
-      "bioverse": "ଜୀବ ବିଜ୍ଞାନ",
-      "chemlab": "ରସାୟନ ବିଜ୍ଞାନ",
-      "cosmoslab": "ବ୍ରହ୍ମାଣ୍ଡ",
-      "toys_games": "ଖେଳନା ଏବଂ ଖେଳ"
-    }
-  },
-  es: {
-    translation: {
-      "welcome_title": "¡Bienvenido a Jigyasu!",
-      "welcome_subtitle": "El Universo del Aprendizaje",
-      "choose_avatar": "Elige tu Avatar",
-      "enter_name": "¿Cuál es tu nombre?",
-      "lets_go": "¡Vamos!",
-      "global_xp": "XP Global",
-      "where_to_go": "¿A dónde quieres ir hoy, {{name}}?",
-      "science_lab": "Laboratorio de Ciencias",
-      "math_kingdom": "Reino de las Matemáticas",
-      "bioverse": "BioVerso",
-      "chemlab": "Laboratorio de Química",
-      "cosmoslab": "Laboratorio de Cosmos",
-      "toys_games": "Juguetes y Juegos"
-    }
-  },
-  fr: {
-    translation: {
-      "welcome_title": "Bienvenue à Jigyasu!",
-      "welcome_subtitle": "L'univers de l'apprentissage",
-      "choose_avatar": "Choisis ton Avatar",
-      "enter_name": "Comment t'appelles-tu?",
-      "lets_go": "C'est parti!",
-      "global_xp": "XP Global",
-      "where_to_go": "Où veux-tu aller aujourd'hui, {{name}}?",
-      "science_lab": "Laboratoire de Sciences",
-      "math_kingdom": "Royaume des Mathématiques",
-      "bioverse": "BioVers",
-      "chemlab": "Laboratoire de Chimie",
-      "cosmoslab": "Laboratoire du Cosmos",
-      "toys_games": "Jouets et Jeux"
-    }
-  }
+  en: { translation: en },
+  hi: { translation: hi },
+  kn: { translation: kn },
+  te: { translation: te },
+  ta: { translation: ta },
+  mr: { translation: mr },
+  bn: { translation: bn },
+  gu: { translation: gu },
+  ml: { translation: ml },
+  pa: { translation: pa },
+  as: { translation: as },
+  ur: { translation: ur },
+  sa: { translation: sa },
+  sat: { translation: sat },
+  ne: { translation: ne },
+  kok: { translation: kok },
+  brx: { translation: brx },
+  doi: { translation: doi },
+  ks: { translation: ks },
+  mai: { translation: mai },
+  sd: { translation: sd },
+  mni: { translation: mni },
+  od: { translation: od },
+  es: { translation: es },
+  fr: { translation: fr }
 };
 
+// Safely get initial language from localStorage
+let initialLang = 'en';
+try {
+  // First try the learner-storage which is used by Zustand
+  const learnerStorageRaw = localStorage.getItem('learner-storage');
+  if (learnerStorageRaw) {
+    const parsed = JSON.parse(learnerStorageRaw);
+    if (parsed && parsed.state && parsed.state.language) {
+      initialLang = parsed.state.language;
+    }
+  }
+  // Fallback to legacy key
+  if (initialLang === 'en') {
+    initialLang = localStorage.getItem('learnos-language') || 'en';
+  }
+} catch (e) {
+  console.warn('Failed to read initial language from localStorage', e);
+}
+
 i18n
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
     fallbackLng: 'en',
+    lng: initialLang,
     interpolation: {
       escapeValue: false 
     },

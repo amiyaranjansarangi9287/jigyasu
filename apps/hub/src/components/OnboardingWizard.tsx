@@ -1,5 +1,8 @@
 import { useState, type FormEvent } from 'react';
+import { createPortal } from 'react-dom';
 import { useTranslation } from 'react-i18next';
+import { useLearnerStore } from '../learnos/store/learnerStore';
+import { Button } from '@jigyasu/ui';
 
 const AVATARS = ['rocket', 'robot', 'unicorn', 'dino', 'lion', 'star', 'alien', 'fox'] as const;
 const AVATAR_EMOJI: Record<(typeof AVATARS)[number], string> = {
@@ -19,7 +22,7 @@ const LANGUAGES = [
   { code: 'kn', label: 'Kannada' },
   { code: 'te', label: 'Telugu' },
   { code: 'ta', label: 'Tamil' },
-  { code: 'or', label: 'Odia' },
+  { code: 'od', label: 'Odia' },
   { code: 'es', label: 'Spanish' },
   { code: 'fr', label: 'French' },
 ];
@@ -29,10 +32,11 @@ interface OnboardingWizardProps {
 }
 
 export default function OnboardingWizard({ onComplete }: OnboardingWizardProps) {
-  const { t } = useTranslation();
+  const { t, i18n: i18nHook } = useTranslation();
   const [name, setName] = useState('');
   const [avatar, setAvatar] = useState<(typeof AVATARS)[number]>('robot');
-  const [lang, setLang] = useState('en');
+  const [lang, setLang] = useState(i18nHook.resolvedLanguage || i18nHook.language || 'en');
+  const setLearnerStoreLanguage = useLearnerStore(state => state.setLanguage);
   const [ageTier, setAgeTier] = useState('6-8');
   const isChild = ['3-5', '6-8', '9-12', '13-17'].includes(ageTier);
   const [parentConsent, setParentConsent] = useState(false);
@@ -57,16 +61,17 @@ export default function OnboardingWizard({ onComplete }: OnboardingWizardProps) 
     }
   };
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-sm p-4">
-      <div className={`bg-white rounded-3xl shadow-2xl max-w-lg w-full p-8 border-4 relative ${isChild ? 'border-sky-400' : 'border-slate-800'}`}>
+  const wizardContent = (
+    <div className="fixed inset-0 z-[100] overflow-y-auto bg-slate-900/60 backdrop-blur-sm">
+      <div className="flex min-h-full items-center justify-center p-4 py-8">
+        <div className={`bg-white rounded-3xl shadow-2xl max-w-lg w-full p-8 border-4 relative ${isChild ? 'border-sky-400' : 'border-slate-800'}`}>
         <div className={`absolute -top-4 -right-4 text-white text-sm font-bold px-3 py-1 rounded-full shadow-lg flex items-center gap-1 ${isChild ? 'bg-green-500' : 'bg-slate-700'}`}>
           <span aria-hidden="true">{'\u{1F6E1}\uFE0F'}</span> {t('private_badge', '100% Private (Saved Locally)')}
         </div>
 
         <div className="flex justify-center mb-6">
           <div className={`w-24 h-24 rounded-full flex items-center justify-center text-5xl shadow-inner ${isChild ? 'bg-sky-100' : 'bg-slate-100'}`} aria-hidden="true">
-            {isChild ? '\u{1F989}' : '\u{1F393}'}
+            {isChild ? '\u{1F99A}' : '\u{1F393}'}
           </div>
         </div>
 
@@ -75,31 +80,22 @@ export default function OnboardingWizard({ onComplete }: OnboardingWizardProps) 
 
         <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="profile-nickname" className="block text-sm font-bold text-slate-700 mb-2">
-                {t('enter_name', "What's your nickname?")}
-              </label>
-              <input
-                id="profile-nickname"
-                type="text"
-                value={name}
-                onChange={(event) => setName(event.target.value)}
-                className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-sky-400 focus:ring-4 focus:ring-sky-100 transition-all outline-none text-lg font-medium"
-                placeholder="e.g. Explorer"
-                autoComplete="off"
-                maxLength={24}
-                required
-              />
-            </div>
-
-            <div>
               <label htmlFor="profile-language" className="block text-sm font-bold text-slate-700 mb-2">
                 {t('language', 'Language')}
               </label>
               <select
                 id="profile-language"
                 value={lang}
-                onChange={(event) => setLang(event.target.value)}
-                className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 bg-white focus:border-sky-400 focus:ring-4 focus:ring-sky-100 transition-all outline-none text-lg font-medium"
+                onChange={(e) => {
+                  const newLang = e.target.value;
+                  
+                  setLang(newLang);
+                  setLearnerStoreLanguage(newLang as any);
+                  i18nHook.changeLanguage(newLang).then(() => {
+                  }).catch(e => {
+                  });
+                }}
+                className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 bg-white focus:border-sky-400 focus:ring-4 focus:ring-sky-100 transition-all outline-none text-lg font-medium mb-6"
               >
                 {LANGUAGES.map((language) => (
                   <option key={language.code} value={language.code}>
@@ -110,8 +106,27 @@ export default function OnboardingWizard({ onComplete }: OnboardingWizardProps) 
             </div>
 
             <div>
+              <label htmlFor="profile-nickname" className="block text-sm font-bold text-slate-700 mb-2">
+                {t('enter_name', "What's your nickname?")}
+              </label>
+              <input
+                id="profile-nickname"
+                type="text"
+                value={name}
+                onChange={(event) => setName(event.target.value)}
+                className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-sky-400 focus:ring-4 focus:ring-sky-100 transition-all outline-none text-lg font-medium"
+                placeholder={t('enter_name_placeholder', 'e.g. Explorer')}
+                autoComplete="off"
+                maxLength={24}
+                required
+              />
+            </div>
+
+
+
+            <div>
               <label htmlFor="profile-age" className="block text-sm font-bold text-slate-700 mb-2">
-                Age Group
+                {t('age_group', 'Age Group')}
               </label>
               <select
                 id="profile-age"
@@ -119,11 +134,11 @@ export default function OnboardingWizard({ onComplete }: OnboardingWizardProps) 
                 onChange={(event) => setAgeTier(event.target.value)}
                 className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 bg-white focus:border-sky-400 focus:ring-4 focus:ring-sky-100 transition-all outline-none text-lg font-medium"
               >
-                <option value="3-5">3-5 years</option>
-                <option value="6-8">6-8 years</option>
-                <option value="9-12">9-12 years</option>
-                <option value="13-17">13-17 years</option>
-                <option value="18+">Adult (18+)</option>
+                <option value="3-5">{t('age_3_5', '3-5 years')}</option>
+                <option value="6-8">{t('age_6_8', '6-8 years')}</option>
+                <option value="9-12">{t('age_9_12', '9-12 years')}</option>
+                <option value="13-17">{t('age_13_17', '13-17 years')}</option>
+                <option value="18+">{t('age_18_plus', 'Adult (18+)')}</option>
               </select>
             </div>
 
@@ -168,16 +183,24 @@ export default function OnboardingWizard({ onComplete }: OnboardingWizardProps) 
             )}
 
             <div className="flex justify-center pt-4">
-              <button
+              <Button
                 type="submit"
+                variant={isChild ? 'info' : 'dark'}
+                size="lg"
                 disabled={!name.trim() || (isChild && !parentConsent)}
-                className={`text-white font-bold text-xl px-8 py-3 rounded-full shadow-lg transition-all hover:scale-105 disabled:cursor-not-allowed disabled:opacity-50 ${isChild ? 'bg-sky-500 hover:bg-sky-600 shadow-sky-500/30' : 'bg-slate-800 hover:bg-slate-900 shadow-slate-800/30'}`}
+                className="px-10 rounded-full"
               >
                 {t('lets_go', "Let's Go!")}
-              </button>
+              </Button>
             </div>
           </form>
+        </div>
       </div>
     </div>
   );
+
+  if (typeof document !== 'undefined') {
+    return createPortal(wizardContent, document.body);
+  }
+  return wizardContent;
 }
