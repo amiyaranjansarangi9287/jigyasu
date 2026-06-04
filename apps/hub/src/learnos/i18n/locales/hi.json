@@ -1,439 +1,2656 @@
 {
   "common": {
-    "app_name": "LearnOS",
-    "tagline": "Install Wonder.",
-    "tagline_secondary": "Jigyasu Balak — Curious Child",
-    "loading": "Loading...",
+    "app_name": "लर्नओएस",
+    "tagline": "आश्चर्य स्थापित करें.",
+    "tagline_secondary": "जिज्ञासु बालक - जिज्ञासु बालक",
+    "loading": "लोड हो रहा है...",
     "error": "उफ़! कुछ गलत हो गया 🙈",
-    "retry": "Try again",
-    "back": "Back",
-    "next": "Next",
-    "done": "Done",
-    "skip": "Skip",
-    "close": "Close",
-    "save": "Save",
-    "cancel": "Cancel",
-    "yes": "Yes",
-    "no": "No",
-    "offline": "You are offline",
-    "offline_message": "Playing offline. Progress saved.",
-    "language": "Language"
+    "retry": "पुनः प्रयास करें",
+    "back": "पीछे",
+    "next": "अगला",
+    "done": "हो गया",
+    "skip": "छोडना",
+    "close": "बंद करना",
+    "save": "बचाना",
+    "cancel": "रद्द करना",
+    "yes": "हाँ",
+    "no": "नहीं",
+    "offline": "आप संपर्क में नहीं हैं",
+    "offline_message": "ऑफ़लाइन खेल रहे हैं. प्रगति सहेजी गई.",
+    "language": "भाषा"
   },
   "family": {
-    "welcome": "Welcome to LearnOS",
-    "who_is_learning": "Who is learning today?",
-    "add_child": "Add a learner",
-    "child_name": "What is your name?",
-    "choose_avatar": "Choose your avatar",
-    "choose_language": "Choose your language",
-    "dashboard": "Dashboard",
-    "sessions_today": "Sessions today",
-    "wonder_level": "Wonder Level",
-    "last_active": "Last active",
-    "total_minutes": "Total minutes",
-    "lumo_name": "Your guide's name",
-    "lumo_enabled": "Guide enabled"
+    "welcome": "लर्नओएस में आपका स्वागत है",
+    "who_is_learning": "आज कौन सीख रहा है?",
+    "add_child": "एक शिक्षार्थी जोड़ें",
+    "child_name": "आपका क्या नाम है?",
+    "choose_avatar": "अपना अवतार चुनें",
+    "choose_language": "अपनी भाषा चुनें",
+    "dashboard": "डैशबोर्ड",
+    "sessions_today": "सत्र आज",
+    "wonder_level": "आश्चर्य स्तर",
+    "last_active": "अंतिम सक्रिय",
+    "total_minutes": "कुल मिनट",
+    "lumo_name": "आपके गाइड का नाम",
+    "lumo_enabled": "गाइड सक्षम"
   },
   "worlds": {
-    "tiny": "Tiny World",
-    "early": "Adventure Academy",
-    "lab": "Lab Zero",
-    "discovery": "Discovery Engine",
-    "academy": "The Academy",
-    "explorer": "Explorer"
+    "tiny": "छोटी सी दुनिया",
+    "early": "साहसिक अकादमी",
+    "lab": "लैब जीरो",
+    "discovery": "डिस्कवरी इंजन",
+    "academy": "अकादमी",
+    "explorer": "एक्सप्लोरर"
   },
   "wonder": {
-    "early_explorer": "Early Explorer",
-    "growing_wonder": "Growing Wonder",
-    "high_wonder": "High Wonder",
-    "deep_wonder": "Deep Wonder"
+    "early_explorer": "प्रारंभिक एक्सप्लोरर",
+    "growing_wonder": "बढ़ता आश्चर्य",
+    "high_wonder": "उच्च आश्चर्य",
+    "deep_wonder": "गहरा आश्चर्य"
   },
   "lumo": {
-    "default_name": "Lumo",
-    "toggle_on": "Guide: On",
-    "toggle_off": "Guide: Off",
-    "rename": "Rename your guide",
-    "after_mistake": "What if you changed just one thing?",
-    "before_breakthrough": "You are very close. Try one thing.",
-    "after_discovery": "You found it. That is exactly how scientists learn.",
-    "cross_concept": "Does this remind you of something else you discovered?"
+    "default_name": "लुमो",
+    "toggle_on": "मार्गदर्शक: चालू",
+    "toggle_off": "मार्गदर्शक: बंद",
+    "rename": "अपने गाइड का नाम बदलें",
+    "after_mistake": "यदि आपने केवल एक चीज़ बदल दी तो क्या होगा?",
+    "before_breakthrough": "आप बहुत करीब हैं. एक चीज़ आज़माएं.",
+    "after_discovery": "आपने इसे पा लिया। वैज्ञानिक बिल्कुल इसी तरह सीखते हैं।",
+    "cross_concept": "क्या यह आपको आपके द्वारा खोजी गई किसी और चीज़ की याद दिलाता है?"
   },
   "session": {
-    "break_time": "Time for a little rest!",
-    "well_done": "Well done today!",
-    "come_back": "Come back tomorrow for more wonder."
+    "break_time": "थोड़ा आराम करने का समय!",
+    "well_done": "आज बहुत बढ़िया!",
+    "come_back": "अधिक आश्चर्य के लिए कल वापस आएँ।"
   },
   "parent": {
-    "summary_title": "Today's Wonder",
-    "discoveries": "discoveries today",
-    "suggestion": "Try this next",
-    "offline_note": "All progress saved locally",
-    "sync_note": "Will sync when connected"
+    "summary_title": "आज का आश्चर्य",
+    "discoveries": "आज की खोजें",
+    "suggestion": "इसे आगे आज़माएँ",
+    "offline_note": "सारी प्रगति स्थानीय स्तर पर सहेजी गई",
+    "sync_note": "कनेक्ट होने पर सिंक हो जाएगा"
   },
   "tiny": {
     "parent": {
-      "session_summary": "Today's Wonder",
-      "animals_discovered": "animals discovered",
-      "colors_mixed": "colors mixed",
-      "shapes_matched": "shapes matched",
-      "break_time": "Rest time!",
-      "session_end": "Great exploring today!",
-      "come_back": "Come back soon for more wonder"
+      "session_summary": "आज का आश्चर्य",
+      "animals_discovered": "जानवरों की खोज की गई",
+      "colors_mixed": "रंग मिश्रित",
+      "shapes_matched": "आकृतियों का मिलान हुआ",
+      "break_time": "विश्राम समय!",
+      "session_end": "आज बढ़िया खोज!",
+      "come_back": "अधिक आश्चर्य के लिए शीघ्र वापस आएँ"
     },
     "modules": {
-      "tap_world": "Tap World",
-      "color_mixer": "Color Mixer",
-      "shape_sorter": "Shape Sorter",
-      "animal_orchestra": "Animal Orchestra",
-      "bubble_world": "Bubble World",
-      "weather_maker": "Weather Maker",
-      "farm_friends": "Farm Friends",
-      "day_and_night": "Day and Night"
+      "tap_world": "विश्व टैप करें",
+      "color_mixer": "रंग मिक्सर",
+      "shape_sorter": "आकार सॉर्टर",
+      "animal_orchestra": "पशु आर्केस्ट्रा",
+      "bubble_world": "बुलबुला दुनिया",
+      "weather_maker": "मौसम निर्माता",
+      "farm_friends": "खेत मित्र",
+      "day_and_night": "दिन और रात"
     },
     "notifications": {
-      "animal_first_discovery": "discovered a new animal!",
-      "all_colors_mixed": "mixed all the colors!",
-      "all_shapes_matched": "matched all the shapes!",
-      "orchestra_complete": "made all the animals sing together!",
-      "great_session": "had a wonderful learning session!",
-      "night_discovered": "discovered what happens when the sun goes to sleep!",
-      "farm_complete": "found every single farm animal — all 13 of them!",
-      "bubbles_popped": "popped bubbles and discovered letters, numbers, and animals!",
-      "weather_complete": "tried all four types of weather today!"
+      "animal_first_discovery": "एक नया जानवर खोजा!",
+      "all_colors_mixed": "सारे रंग मिला दिये!",
+      "all_shapes_matched": "सभी आकृतियों का मिलान!",
+      "orchestra_complete": "सभी जानवरों को एक साथ गाने पर मजबूर किया!",
+      "great_session": "सीखने का एक अद्भुत सत्र रहा!",
+      "night_discovered": "पता चला कि जब सूरज सो जाता है तो क्या होता है!",
+      "farm_complete": "हर एक खेत का जानवर मिला - उनमें से सभी 13!",
+      "bubbles_popped": "बुलबुले फोड़े और अक्षरों, संख्याओं और जानवरों की खोज की!",
+      "weather_complete": "आज सभी चार प्रकार के मौसम आज़माए!"
     },
     "garden": {
-      "title": "Wonder Garden",
-      "growing": "Your garden is growing!",
-      "all_discovered": "All discoveries found!",
-      "keep_exploring": "Keep exploring to grow your garden"
+      "title": "वंडर गार्डन",
+      "growing": "आपका बगीचा बढ़ रहा है!",
+      "all_discovered": "सभी खोजें मिल गईं!",
+      "keep_exploring": "अपने बगीचे को विकसित करने के लिए खोज करते रहें"
     },
     "session": {
-      "break_coming": "Almost time for a rest...",
-      "well_done": "Wonderful exploring!",
-      "discoveries_today": "Today's discoveries",
-      "come_back": "Come back tomorrow!"
+      "break_coming": "आराम करने का लगभग समय हो गया है...",
+      "well_done": "अद्भुत खोज!",
+      "discoveries_today": "आज की खोजें",
+      "come_back": "कल फिर आना!"
     },
     "weather": {
-      "sun": "Sunny",
-      "rain": "Rainy",
-      "snow": "Snowy",
-      "wind": "Windy"
+      "sun": "धूप वाला",
+      "rain": "बरसाती",
+      "snow": "हिमाच्छन्न",
+      "wind": "तूफ़ानी"
+    },
+    "focused_screen_reader": "{{module}} पर केंद्रित है। खेलने के लिए Enter दबाएं।",
+    "default_screen_reader": "नन्ही दुनिया (Tiny World)। मॉड्यूल का पता लगाने के लिए एरो कीज़ (arrow keys) का उपयोग करें।",
+    "hide_labels": "लेबल छिपाएं",
+    "show_labels": "लेबल दिखाएं",
+    "zones": {
+      "tap-world": "टैप वर्ल्ड",
+      "color-mixer": "रंग मिक्सर",
+      "shape-sorter": "आकार सॉर्टर",
+      "animal-orchestra": "पशु आर्केस्ट्रा",
+      "bubble-world": "बबल वर्ल्ड",
+      "weather-maker": "मौसम निर्माता",
+      "farm-friends": "खेत के दोस्त",
+      "day-and-night": "दिन और रात"
     }
   },
   "early": {
     "modules": {
-      "story_builder": "Story Builder",
-      "number_line": "Number Line",
-      "alphabet_forest": "Alphabet Forest",
-      "mini_chef": "Mini Chef",
-      "pattern_patrol": "Pattern Patrol",
-      "word_scramble": "Word Scramble",
-      "plant_growth": "Plant Growth",
-      "water_cycle": "Water Cycle",
-      "habitat_heroes": "Habitat Heroes",
-      "shadow_detective": "Shadow Detective",
-      "magnet_explorer": "Magnet Explorer",
-      "coin_counter": "Coin Counter"
+      "story_builder": "कहानी निर्माता",
+      "number_line": "संख्या रेखा",
+      "alphabet_forest": "वर्णमाला वन",
+      "mini_chef": "मिनी शेफ",
+      "pattern_patrol": "पैटर्न गश्ती",
+      "word_scramble": "शब्द पहेली",
+      "plant_growth": "पौधों का विकास",
+      "water_cycle": "जल चक्र",
+      "habitat_heroes": "पर्यावास नायक",
+      "shadow_detective": "छाया जासूस",
+      "magnet_explorer": "चुंबक खोजकर्ता",
+      "coin_counter": "सिक्का काउंटर"
     },
     "pip": {
-      "greeting": "Ooh! What shall we discover today?",
-      "success": "YOU DID IT! That was amazing!",
-      "mistake": "Ooh! Interesting! Let's try again!",
-      "hint": "What if we try something different?",
-      "break_soon": "One more thing before we rest?",
-      "well_done": "Wonderful exploring today!"
+      "greeting": "ओह! आज हम क्या खोजेंगे?"
     },
     "plant": {
-      "grow": "Grow!",
-      "needs_water": "The plant is thirsty!",
-      "needs_sun": "It needs more sunlight!"
+      "grow": "बढ़ना!",
+      "needs_water": "पौधा प्यासा है!",
+      "needs_sun": "इसे अधिक धूप की आवश्यकता है!"
     },
     "water_cycle": {
-      "follow_droppy": "Follow Droppy's journey!",
-      "complete": "Water Cycle Complete!"
+      "follow_droppy": "ड्रॉपी की यात्रा का अनुसरण करें!",
+      "complete": "जल चक्र पूरा!"
     },
     "habitats": {
-      "choose": "Choose a habitat!",
-      "all_explored": "All Habitats Explored!"
+      "choose": "एक निवास स्थान चुनें!",
+      "all_explored": "सभी आवासों का अन्वेषण किया गया!"
     },
     "shadow": {
-      "move_light": "Move the light!",
-      "great_work": "Shadow Detective! Amazing!"
+      "move_light": "प्रकाश को हिलाओ!",
+      "great_work": "छाया जासूस! अद्भुत!"
     },
     "magnet": {
-      "magnetic": "Magnetic",
-      "not_magnetic": "Not Magnetic",
-      "scientist": "Magnet Scientist!"
+      "magnetic": "चुंबकीय",
+      "not_magnetic": "चुंबकीय नहीं",
+      "scientist": "चुंबक वैज्ञानिक!"
     },
     "shop": {
-      "welcome": "Welcome to my shop!",
-      "pay_now": "Pay Now!",
-      "purchased": "Purchased!"
+      "welcome": "मेरी दुकान में आपका स्वागत है!",
+      "pay_now": "अब भुगतान करें!",
+      "purchased": "खरीदा!"
     },
     "adventure_map": {
-      "title": "Adventure Map",
-      "achievements": "achievements"
-    }
+      "title": "साहसिक मानचित्र",
+      "achievements": "उपलब्धियों"
+    },
+    "title": "एडवेंचर अकादमी"
   },
   "lab": {
-    "world_name": "Lab Zero",
-    "tagline": "Think like a scientist",
+    "world_name": "लैब जीरो",
+    "tagline": "एक वैज्ञानिक की तरह सोचें",
     "modules": {
-      "circuit_builder": "Circuit Builder",
-      "fraction_kitchen": "Fraction Kitchen",
-      "ecosystem_sandbox": "Ecosystem Sandbox",
-      "force_lab": "Force Lab",
-      "weather_station": "Weather Station",
-      "timeline_explorer": "Timeline Explorer"
+      "number-line": {
+        "title": "संख्या रेखा",
+        "desc": "थर्मामीटर, लिफ्ट, ऊंचाई"
+      },
+      "shapes": {
+        "title": "आकार सॉर्टर",
+        "desc": "वास्तुकला, पैकेजिंग, कला"
+      },
+      "fractions": {
+        "title": "पिज़्ज़ा फ्रैक्शंस",
+        "desc": "खाना बाँटना, समय बताना, संगीत"
+      },
+      "states-of-matter": {
+        "title": "पदार्थ की अवस्थाएँ",
+        "desc": "बर्फ का पिघलना, उबलता पानी, बादल"
+      },
+      "light-shadows": {
+        "title": "प्रकाश और छाया",
+        "desc": "धूपघड़ी, ग्रहण, फोटोग्राफी"
+      }
     },
     "lumo": {
-      "after_mistake": "What if you changed just one variable?",
-      "stuck": "What do you know for certain right now?",
-      "discovery": "You worked that out yourself. That is exactly how scientists think.",
-      "cross_concept": "Does this connect to something you have learned before?"
+      "after_mistake": "यदि आपने केवल एक वेरिएबल बदला तो क्या होगा?",
+      "stuck": "आप अभी निश्चित रूप से क्या जानते हैं?",
+      "discovery": "आपने इसे स्वयं ही हल कर लिया। ठीक यही वैज्ञानिक भी सोचते हैं।",
+      "cross_concept": "क्या यह आपके द्वारा पहले सीखी गई किसी चीज़ से जुड़ा है?"
+    },
+    "title": "लैब ज़ीरो (Lab Zero)",
+    "stats": "{{count}} अन्वेषण के लिए प्रयोग",
+    "grid": "ग्रिड",
+    "path": "पथ",
+    "search_placeholder": "प्रयोग, विषय, टैग खोजें...",
+    "results_count": "{{total}} में से {{filtered}} प्रयोग",
+    "matching": "\"{{search}}\" से मेल खा रहा है",
+    "subjects": {
+      "all": "सभी",
+      "physics": "भौतिकी",
+      "math": "गणित",
+      "biology": "जीव विज्ञान",
+      "earth-science": "पृथ्वी",
+      "chemistry": "रसायन विज्ञान",
+      "computer-science": "कोड"
+    },
+    "difficulties": {
+      "all": "सभी स्तर",
+      "beginner": "शुरुआती",
+      "intermediate": "मध्यवर्ती",
+      "advanced": "उन्नत"
+    },
+    "tags": {
+      "numbers": "संख्याएँ",
+      "addition": "जोड़",
+      "subtraction": "घटाव",
+      "geometry": "ज्यामिति",
+      "fractions": "भिन्न",
+      "multiplication": "गुणा",
+      "division": "भाग",
+      "pi": "पाई",
+      "circles": "वृत्त",
+      "gravity": "गुरुत्वाकर्षण",
+      "matter": "पदार्थ",
+      "light": "प्रकाश",
+      "optics": "प्रकाशिकी",
+      "sound": "ध्वनि",
+      "waves": "तरंगें",
+      "density": "घनत्व",
+      "space": "अंतरिक्ष",
+      "astronomy": "खगोल विज्ञान",
+      "earth": "पृथ्वी",
+      "biology": "जीव विज्ञान",
+      "animals": "जानवर",
+      "plants": "पौधे",
+      "anatomy": "शारीरिकी",
+      "machines": "मशीनें",
+      "forces": "बल",
+      "magnetism": "चुंबकत्व",
+      "history": "इतिहास",
+      "coding": "कोडिंग",
+      "logic": "तर्क",
+      "philosophy": "दर्शन",
+      "chemistry": "रसायन विज्ञान",
+      "electricity": "विद्युत",
+      "circuits": "सर्किट",
+      "weather": "मौसम",
+      "ecology": "पारिस्थितिकी",
+      "statistics": "सांख्यिकी",
+      "data": "डेटा"
     }
   },
   "discovery": {
-    "world_name": "The Discovery Engine",
-    "tagline": "Junior scientists at work",
-    "map_title": "Concept Constellation",
-    "all_subjects": "All",
-    "modules_explored": "modules explored",
-    "go_deeper": "Go Deeper",
-    "rabbit_holes": "rabbit holes",
-    "unsolved_question": "Unsolved Question",
-    "connected_to": "Connected to",
-    "connection_found": "Connection found!"
+    "world_name": "डिस्कवरी इंजन",
+    "tagline": "काम पर कनिष्ठ वैज्ञानिक",
+    "map_title": "संकल्पना नक्षत्र",
+    "all_subjects": "सभी",
+    "modules_explored": "मॉड्यूल का पता लगाया गया",
+    "go_deeper": "गहरे जाना",
+    "rabbit_holes": "खरगोश के बिल",
+    "unsolved_question": "अनसुलझा प्रश्न",
+    "connected_to": "से जुड़ा",
+    "connection_found": "कनेक्शन मिल गया!",
+    "title": "डिस्कवरी इंजन",
+    "explore": "अन्वेषण करें →",
+    "report": "रिपोर्ट",
+    "modules": {
+      "black-holes": {
+        "title": "ब्लैक होल",
+        "hook": "क्या होता है जब गुरुत्वाकर्षण टूट जाता है?"
+      },
+      "quantum-realm": {
+        "title": "क्वांटम क्षेत्र",
+        "hook": "जहाँ कण भूतों की तरह काम करते हैं।"
+      },
+      "dna": {
+        "title": "डीएनए (DNA)",
+        "hook": "जीवन का कोड।"
+      },
+      "evolution": {
+        "title": "क्रमागत उन्नति",
+        "hook": "जीवन कैसे अनुकूल होता है।"
+      },
+      "ai": {
+        "title": "एआई (AI)",
+        "hook": "मशीनें जो सीखती हैं।"
+      }
+    }
   },
   "academy": {
-    "world_name": "The Academy",
-    "tagline": "Deep understanding. Real mastery.",
-    "beauty": "The beauty",
-    "explore_mode": "Explore Mode",
-    "exam_mode": "Exam Mode",
+    "world_name": "अकादमी",
+    "tagline": "गहरी समझ. असली महारत.",
+    "beauty": "खूबसूरत",
+    "explore_mode": "अन्वेषण मोड",
+    "exam_mode": "परीक्षा मोड",
     "depth": {
-      "surface": "Surface",
-      "mechanism": "Mechanism",
-      "principle": "Principle",
-      "frontier": "Frontier"
+      "surface": "सतह",
+      "mechanism": "तंत्र",
+      "principle": "सिद्धांत",
+      "frontier": "सीमांत"
     },
-    "report": { "title": "Academy Report", "readiness": "Exam Readiness" },
-    "challenge": { "title": "Challenge Mode", "create": "Create New Challenge" }
+    "report": "📋 रिपोर्ट",
+    "challenge": {
+      "title": "चुनौती मोड",
+      "create": "नई चुनौती बनाएं"
+    },
+    "title": "अकादमी",
+    "exam": "📝 परीक्षा",
+    "explore": "🔬 अन्वेषण करें",
+    "challenges": "🎯 चुनौतियाँ",
+    "subjects": {
+      "all": "सभी",
+      "mathematics": "गणित",
+      "physics": "भौतिकी",
+      "chemistry": "रसायन विज्ञान",
+      "biology": "जीव विज्ञान",
+      "economics": "अर्थशास्त्र",
+      "english": "अंग्रेज़ी"
+    },
+    "modules": {
+      "calculus": {
+        "title": "कैलकुलस",
+        "hook": "परिवर्तन का गणित।",
+        "examRelevance": "कार्य, सीमाएँ, डेरिवेटिव"
+      }
+    }
   },
   "explorer": {
-    "world_name": "Explorer",
-    "welcome_title": "Welcome to Explorer",
-    "welcome_message": "A space for curiosity with no deadlines, no grades, and no wrong answers.",
-    "begin": "Begin Exploring",
-    "continue_where_left": "Continue where you left off",
-    "everything": "Everything",
-    "time_estimate": "min",
-    "visited": "Visited",
-    "completed": "Completed",
-    "explored": "explored",
-    "of": "of",
-    "what_here_for": "What are you here for today?",
+    "world_name": "भविष्य के खोजकर्ता",
+    "welcome_title": "भविष्य के खोजकर्ता",
+    "welcome_message": "आपकी व्यक्तिगत सीखने की यात्रा में आपका स्वागत है।",
+    "begin": "शुरू करें",
+    "continue_where_left": "वहीं से जारी रखें जहां आपने छोड़ा था...",
+    "everything": "सब कुछ",
+    "time_estimate": "मिनट",
+    "visited": "दौरा किया",
+    "completed": "पुरा होना।",
+    "explored": "खोज लिया",
+    "of": "में से",
+    "what_here_for": "आज आप यहाँ किस लिये आये हैं?",
     "lenses": {
-      "always_wondered": "Things I Always Wondered About",
-      "everyday_science": "Science Behind Everyday Life",
-      "my_children": "What My Children Are Learning",
-      "never_understood": "Topics I Never Quite Got",
-      "visual_math": "Mathematics Made Visual",
-      "history_of_ideas": "History of Great Ideas"
+      "always_wondered": "वे चीज़ें जिनके बारे में मैं हमेशा आश्चर्य करता था",
+      "everyday_science": "रोजमर्रा की जिंदगी के पीछे का विज्ञान",
+      "my_children": "मेरे बच्चे क्या सीख रहे हैं",
+      "never_understood": "वे विषय जो मुझे कभी नहीं मिले",
+      "visual_math": "गणित ने दृश्य बनाया",
+      "history_of_ideas": "महान विचारों का इतिहास"
     },
     "concept": {
-      "history": "History of the idea",
-      "everyday": "Where you see this every day",
-      "indian_context": "Indian context",
-      "thinking_prompt": "Something to think about",
-      "reflect": "Tap to reflect",
-      "save_thought": "Save this thought",
-      "saved": "Saved to your time capsule",
-      "write_thinking": "Write your thinking here — no right answer..."
+      "history": "विचार का इतिहास",
+      "everyday": "जहां ये आपको हर दिन देखने को मिलता है",
+      "indian_context": "भारतीय सन्दर्भ",
+      "thinking_prompt": "के बारे में सोचने के लिए कुछ",
+      "reflect": "प्रतिबिंबित करने के लिए टैप करें",
+      "save_thought": "इस विचार को सहेजें",
+      "saved": "आपके टाइम कैप्सूल में सहेजा गया",
+      "write_thinking": "अपनी सोच यहां लिखें - कोई सही उत्तर नहीं..."
     },
     "lumo": {
-      "sharing": "finds this fascinating",
-      "connecting": "sees a connection",
-      "questioning": "wonders"
+      "sharing": "यह आकर्षक लगता है",
+      "connecting": "एक कनेक्शन देखता है",
+      "questioning": "चमत्कार"
+    },
+    "welcome_subtitle": "हर अवधारणा आपके रोजमर्रा के जीवन में किसी न किसी चीज़ से जुड़ती है।",
+    "concepts": {
+      "relativity": {
+        "title": "सापेक्षता",
+        "hook": "समय यात्रा वास्तविक है।"
+      }
     }
   },
   "crosscutting": {
     "daily_warmup": {
-      "title": "Daily Warm-Up",
-      "subtitle": "3 minutes every day",
-      "today": "Today",
-      "start": "Let's Go!",
-      "family_quiz": "Family Quiz — play together!",
-      "done": "Done for today!",
-      "come_back": "Come back tomorrow",
-      "correct": "Correct!",
-      "next": "Next",
-      "complete": "Complete!"
+      "title": "दैनिक वार्म-अप",
+      "subtitle": "हर दिन 3 मिनट",
+      "today": "आज",
+      "start": "चल दर!",
+      "family_quiz": "पारिवारिक प्रश्नोत्तरी - एक साथ खेलें!",
+      "done": "आज के लिए हो गया!",
+      "come_back": "कल फिर आना",
+      "correct": "सही!",
+      "next": "अगला",
+      "complete": "पूरा!"
     },
     "mistake_museum": {
-      "title": "Mistake Museum",
-      "subtitle": "Famous wrong ideas",
-      "wrong_belief": "The Wrong Belief",
-      "how_long": "How long it lasted",
-      "why_sense": "Why it made sense",
-      "overturned": "How it was overturned",
-      "indian_connection": "Indian Connection",
-      "quote": "Being wrong is how knowledge grows"
+      "title": "गलती संग्रहालय",
+      "subtitle": "प्रसिद्ध ग़लत विचार",
+      "wrong_belief": "ग़लत विश्वास",
+      "how_long": "यह कितने समय तक चला",
+      "why_sense": "यह क्यों समझ में आया",
+      "overturned": "इसे कैसे पलट दिया गया",
+      "indian_connection": "भारतीय कनेक्शन",
+      "quote": "गलत होने से ज्ञान बढ़ता है"
     },
     "concept_gossip": {
-      "title": "Concept Gossip",
-      "subtitle": "What if ideas could talk?",
-      "start": "Start the conversation",
-      "next": "Next",
-      "replay": "Replay conversation",
-      "next_conv": "Next conversation"
+      "title": "संकल्पना गपशप",
+      "subtitle": "क्या होगा यदि विचार बात कर सकें?",
+      "start": "बातचीत शुरू करें",
+      "next": "अगला",
+      "replay": "बातचीत दोबारा चलाएं",
+      "next_conv": "अगली बातचीत"
     },
     "time_capsule": {
-      "title": "Time Capsule",
-      "subtitle": "Seal what you know today",
-      "create": "Create New Time Capsule",
-      "what_reflecting": "What are you reflecting on?",
-      "write_now": "Write what you know right now",
-      "seal_for": "Seal for",
-      "seal": "Seal It",
-      "ready_open": "Ready to Open!",
-      "opens_in": "Opens in",
-      "opened": "Previously opened",
-      "past_you_wrote": "Past you wrote",
-      "how_changed": "How has your understanding changed?"
+      "title": "समय कैप्सूल",
+      "subtitle": "आज आप जो जानते हैं उस पर मुहर लगाएं",
+      "create": "नया टाइम कैप्सूल बनाएं",
+      "what_reflecting": "आप किस पर विचार कर रहे हैं?",
+      "write_now": "जो आप अभी जानते हैं उसे लिखें",
+      "seal_for": "के लिए सील",
+      "seal": "इसे सील करें",
+      "ready_open": "खोलने के लिए तैयार!",
+      "opens_in": "में खुलता है",
+      "opened": "पहले खोला गया",
+      "past_you_wrote": "अतीत आपने लिखा",
+      "how_changed": "आपकी समझ कैसे बदल गई है?"
     },
     "teach_me": {
-      "title": "Teach Me Mode",
-      "subtitle": "Explain a concept to Max",
-      "max_name": "Max",
-      "max_description": "Max knows nothing. Max asks genuine questions.",
-      "teach_what": "What will you teach Max today?",
-      "max_asks": "Max asks",
-      "submit": "Submit Answer",
-      "clear_explanation": "Clear explanation — Max understood!",
-      "good_start": "Good start — add more detail next time",
-      "teach_another": "Teach another concept",
-      "teaching_test": "Teaching is the deepest test of understanding."
+      "title": "मुझे सिखाओ मोड",
+      "subtitle": "मैक्स को एक अवधारणा समझाएं",
+      "max_name": "अधिकतम",
+      "max_description": "मैक्स को कुछ नहीं पता. मैक्स वास्तविक प्रश्न पूछता है।",
+      "teach_what": "आज आप मैक्स को क्या सिखाएँगे?",
+      "max_asks": "मैक्स पूछता है",
+      "submit": "उत्तर सबमिट करें",
+      "clear_explanation": "स्पष्ट स्पष्टीकरण - मैक्स समझ गया!",
+      "good_start": "अच्छी शुरुआत - अगली बार और अधिक विवरण जोड़ें",
+      "teach_another": "एक और अवधारणा सिखाओ",
+      "teaching_test": "शिक्षण समझ की सबसे गहरी परीक्षा है।"
     }
   },
   "landing": {
     "header": {
-      "nav_worlds": "Worlds",
-      "nav_how": "How it works",
-      "nav_parents": "For parents",
-      "nav_voices": "Voices",
-      "start_free": "Start free",
-      "switch_language": "Switch language"
+      "nav_worlds": "दुनिया (Worlds)",
+      "nav_how": "यह कैसे काम करता है",
+      "nav_parents": "माता-पिता के लिए",
+      "nav_voices": "विचार (Voices)",
+      "start_free": "मुफ़्त शुरू करें",
+      "switch_language": "भाषा बदलें"
     },
     "hero": {
-      "badge": "New • 6 languages • Ages 2–99",
-      "title_part1": "Learning that fits",
-      "title_part2": "every mind",
-      "description": "Tiny humans, curious teens and lifelong learners — all welcome. Pick a world, pick a language, and dive into bite-sized lessons designed to delight.",
-      "cta_pick_world": "Pick your world",
-      "cta_see_how": "See how it works",
-      "stat_learners": "Active learners",
-      "stat_lessons": "Lessons completed",
-      "stat_rating": "Parent rating",
-      "lesson_label": "Lesson",
-      "question_prompt": "What sound does this make?",
-      "streak_label": "streak!",
-      "streak_keep": "Keep going",
-      "badge_label": "Math whiz",
-      "badge_unlocked": "New badge unlocked"
+      "badge": "नया • 6 भाषाएँ • उम्र 2–99",
+      "title_part1": "हर मन के अनुकूल",
+      "title_part2": "सीखने का तरीका",
+      "description": "छोटे बच्चों, जिज्ञासु किशोरों और जीवन भर सीखने वालों — सभी का स्वागत है। एक दुनिया चुनें, एक भाषा चुनें, और आनंदित करने वाले छोटे-छोटे पाठों में गोता लगाएँ।",
+      "cta_pick_world": "अपनी दुनिया चुनें",
+      "cta_see_how": "देखें यह कैसे काम करता है",
+      "stat_learners": "सक्रिय शिक्षार्थी",
+      "stat_lessons": "पाठ पूरे किए",
+      "stat_rating": "अभिभावक रेटिंग",
+      "lesson_label": "पाठ",
+      "question_prompt": "यह कैसी आवाज़ करता है?",
+      "streak_label": "स्ट्रीक!",
+      "streak_keep": "जारी रखें",
+      "badge_label": "मैथ विज",
+      "badge_unlocked": "नया बैज अनलॉक हुआ"
     },
     "language": {
-      "step": "Step 1",
-      "title": "Choose your language",
-      "description": "Switch anytime — every lesson is fully localised.",
-      "selected": "Selected"
+      "step": "चरण 1",
+      "title": "अपनी भाषा चुनें",
+      "description": "कभी भी बदलें — प्रत्येक पाठ पूरी तरह से स्थानीयकृत है।",
+      "selected": "चयनित"
     },
     "worlds": {
-      "title": "Pick your world",
-      "description": "Each world is a different way to learn. There are no wrong choices here.",
-      "tiny_name": "Tiny World",
-      "tiny_desc": "Ages 2–5 • Tap, play, discover",
-      "early_name": "Adventure Academy",
-      "early_desc": "Ages 5–8 • Stories, puzzles, exploration",
-      "lab_name": "Lab Zero",
-      "lab_desc": "Ages 8–12 • Hands-on science experiments",
-      "discovery_name": "Discovery Engine",
-      "discovery_desc": "Ages 12–15 • Deep dives, connections",
-      "academy_name": "The Academy",
-      "academy_desc": "Ages 15+ • Exam prep, mastery",
-      "explorer_name": "Explorer",
-      "explorer_desc": "All ages • Curiosity-driven learning",
-      "physics_name": "Physics World",
-      "physics_desc": "Forces, energy, quantum wonders",
-      "biology_name": "Biology World",
-      "biology_desc": "Cells, ecosystems, DNA",
-      "math_name": "Math World",
-      "math_desc": "Numbers, geometry, puzzles"
+      "tiny_name": "नन्ही दुनिया (Tiny World)",
+      "tiny_desc": "बच्चों के लिए ध्वनियों, आकारों और रंगों के साथ प्रारंभिक शिक्षा।",
+      "early_name": "एडवेंचर अकादमी (Adventure Academy)",
+      "early_desc": "पढ़ने, गिनने और कहानियों के माध्यम से बुनियादी कौशल।",
+      "lab_name": "लैब जीरो (Lab Zero)",
+      "lab_desc": "विज्ञान, तर्क और मज़ेदार पहेलियों के माध्यम से अन्वेषण।",
+      "discovery_name": "डिस्कवरी इंजन (Discovery Engine)",
+      "discovery_desc": "इतिहास, भूगोल और संस्कृति के बारे में जानें।",
+      "academy_name": "द अकादमी (The Academy)",
+      "academy_desc": "उन्नत गणित और लेखन अभ्यास के साथ परीक्षा की तैयारी।",
+      "explorer_name": "एक्सप्लोरर (Explorer)",
+      "explorer_desc": "कोडिंग, भाषाएँ और वित्तीय ज्ञान सीखें।",
+      "biology_name": "जीव विज्ञान (BioVerse)",
+      "biology_desc": "कोशिकाओं, डीएनए और पारिस्थितिक तंत्र का अन्वेषण करें।",
+      "math_name": "गणित साम्राज्य (Math Kingdom)",
+      "math_desc": "ज्यामिति, बीजगणित और गणित का जादू।",
+      "physics_name": "भौतिकी सैंडबॉक्स (Physics Sandbox)",
+      "physics_desc": "बलों, तरंगों और क्वांटम विज्ञान के साथ खेलें।",
+      "enter_world": "दुनिया में प्रवेश करें",
+      "ages": {
+        "2_5": "उम्र २-५",
+        "5_8": "उम्र ५-८",
+        "8_10": "उम्र ८-१०",
+        "10_13": "उम्र १०-१३",
+        "13_15": "उम्र १३-१५",
+        "15_plus": "उम्र १५+",
+        "10_18": "उम्र १०-१८",
+        "5_18": "उम्र ५-१८"
+      },
+      "skills": {
+        "colours": "रंग",
+        "shapes": "आकार",
+        "sounds": "ध्वनि",
+        "reading": "पढ़ना",
+        "counting": "गिनती",
+        "stories": "कहानियां",
+        "science": "विज्ञान",
+        "logic": "तर्क",
+        "puzzles": "पहेलियाँ",
+        "geography": "भूगोल",
+        "history": "इतिहास",
+        "culture": "संस्कृति",
+        "math": "गणित",
+        "writing": "लेखन",
+        "exams": "परीक्षाएं",
+        "coding": "कोडिंग",
+        "languages": "भाषाएँ",
+        "finance": "वित्त",
+        "biology": "जीव विज्ञान",
+        "genetics": "जेनेटिक्स",
+        "ecology": "इकोलॉजी",
+        "arithmetic": "अंकगणित",
+        "algebra": "बीजगणित",
+        "geometry": "ज्यामिति",
+        "mechanics": "यांत्रिकी",
+        "waves": "तरंगें",
+        "quantum": "क्वांटम"
+      },
+      "step": "चरण 2",
+      "title": "अपनी दुनिया चुनें",
+      "description": "प्रत्येक दुनिया सीखने का एक अलग तरीका है। यहां कोई गलत विकल्प नहीं हैं."
+    },
+    "review": {
+      "title": "समीक्षा करने का समय!",
+      "due": "अभी देय",
+      "empty_title": "आप बिल्कुल अद्यतित हैं!",
+      "empty_desc": "अभी किसी भी गतिविधि की समीक्षा करने की आवश्यकता नहीं है। अपने ज्ञान का निर्माण करने के लिए नई दुनिया की खोज करते रहें!",
+      "mastered": "महारत हासिल की",
+      "familiar": "परिचित"
     },
     "features": {
-      "title": "Built different",
-      "zero_friction": "Zero friction",
-      "zero_friction_desc": "No signup, no login, no barriers",
-      "privacy_first": "Privacy first",
-      "privacy_first_desc": "No tracking, no ads, no data selling",
-      "works_offline": "Works offline",
-      "works_offline_desc": "Progress saved locally, syncs later",
-      "six_languages": "6 languages",
-      "six_languages_desc": "English, Hindi, Tamil, Telugu, Kannada, Odia"
+      "title": "सबसे अलग",
+      "zero_friction": "कोई रुकावट नहीं",
+      "zero_friction_desc": "कोई साइनअप नहीं, कोई लॉगिन नहीं, कोई बाधा नहीं",
+      "privacy_first": "गोपनीयता सबसे पहले",
+      "privacy_first_desc": "कोई ट्रैकिंग नहीं, कोई विज्ञापन नहीं, कोई डेटा बिक्री नहीं",
+      "works_offline": "ऑफ़लाइन काम करता है",
+      "works_offline_desc": "प्रगति स्थानीय रूप से सहेजी जाती है, बाद में सिंक होती है",
+      "six_languages": "6 भाषाएँ",
+      "six_languages_desc": "अंग्रेजी, हिंदी, तमिल, तेलुगु, कन्नड़, ओडिया"
     },
     "how_it_works": {
-      "title": "How it works",
-      "step1_title": "Pick a world",
-      "step1_desc": "Choose from Tiny World to The Academy — or just explore freely.",
-      "step2_title": "Pick a language",
-      "step2_desc": "Every lesson is available in 6 Indian languages.",
-      "step3_title": "Start learning",
-      "step3_desc": "Bite-sized lessons, interactive simulations, zero pressure.",
-      "step4_title": "Come back tomorrow",
-      "step4_desc": "Daily warm-ups, streaks, and wonder gardens keep you engaged."
+      "title": "यह कैसे काम करता है",
+      "step1_title": "एक दुनिया चुनें",
+      "step1_desc": "छोटे संसार से द अकादमी तक चुनें — या बस स्वतंत्र रूप से अन्वेषण करें।",
+      "step2_title": "एक भाषा चुनें",
+      "step2_desc": "हर पाठ 6 भारतीय भाषाओं में उपलब्ध है।",
+      "step3_title": "सीखना शुरू करें",
+      "step3_desc": "छोटे-छोटे पाठ, इंटरैक्टिव सिमुलेशन, कोई दबाव नहीं।",
+      "step4_title": "कल वापस आएं",
+      "step4_desc": "दैनिक वार्म-अप, स्ट्रीक्स, और वंडर गार्डन आपको जोड़े रखते हैं।"
     },
     "parents": {
-      "title": "For parents",
-      "subtitle": "Real learning, real peace of mind",
-      "safe": "Safe by design",
-      "safe_desc": "No ads, no tracking, no external links",
-      "educational": "Educationally sound",
-      "educational_desc": "Built on constructivist learning principles",
-      "transparent": "Fully transparent",
-      "transparent_desc": "See exactly what your child is learning",
-      "privacy": "Privacy guaranteed",
-      "privacy_desc": "All data stays on your device unless you choose to share"
+      "title": "माता-पिता के लिए",
+      "subtitle": "असली सीख, सच्ची शांति",
+      "safe": "डिज़ाइन से सुरक्षित",
+      "safe_desc": "कोई विज्ञापन नहीं, कोई ट्रैकिंग नहीं, कोई बाहरी लिंक नहीं",
+      "educational": "शैक्षिक रूप से ठोस",
+      "educational_desc": "रचनात्मक सीखने के सिद्धांतों पर आधारित",
+      "transparent": "पूरी तरह पारदर्शी",
+      "transparent_desc": "देखें आपका बच्चा ठीक क्या सीख रहा है",
+      "privacy": "गोपनीयता की गारंटी",
+      "privacy_desc": "सभी डेटा आपके डिवाइस पर रहता है जब तक आप साझा नहीं करते"
     },
     "footer": {
-      "built_with": "Built with",
-      "for_india": "for India",
-      "privacy": "Privacy",
-      "terms": "Terms",
-      "contact": "Contact",
-      "copyright": "LearnOS — Free forever"
+      "built_with": "द्वारा निर्मित",
+      "for_india": "भारत के लिए",
+      "privacy": "गोपनीयता",
+      "terms": "शर्तें",
+      "contact": "संपर्क करें",
+      "copyright": "LearnOS — हमेशा के लिए मुफ़्त"
     },
     "privacy": {
-      "title": "We respect your privacy",
-      "description": "We don't track you, sell your data, or show ads. All progress is saved locally on your device.",
-      "accept": "Accept",
-      "decline": "Decline"
+      "title": "हम आपकी निजता का सम्मान करते हैं",
+      "description": "हम आपको ट्रैक नहीं करते, आपका डेटा नहीं बेचते, या विज्ञापन नहीं दिखाते। सभी प्रगति आपके डिवाइस पर सहेजी जाती है।",
+      "accept": "स्वीकार करें",
+      "decline": "अस्वीकार करें"
     },
     "continue": {
-      "title": "Continue learning",
-      "description": "Pick up where you left off",
-      "resume": "Resume",
-      "start_new": "Start something new"
+      "title": "सीखना जारी रखें",
+      "description": "जहाँ आपने छोड़ा था वहीं से शुरू करें",
+      "resume": "फिर से शुरू",
+      "start_new": "कुछ नया शुरू करें"
     },
     "testimonials": {
-      "quote1": "My 3-year-old asks for 'the owl game' every morning. I love that I never have to worry about ads popping up.",
-      "name1": "Priya M.",
-      "role1": "Parent of Aanya, 3",
-      "quote2": "I'm 14 and I actually finished a whole algebra unit on the bus. The streaks are weirdly motivating.",
-      "name2": "Daniel K.",
-      "role2": "Learner, 14",
-      "quote3": "Picked up Tamil at 42. Lessons are short enough to do over my morning chai. Highly recommend.",
-      "name3": "Ravi S.",
-      "role3": "Lifelong learner"
+      "quote1": "मेरा 3 साल का बच्चा हर सुबह 'उल्लू का खेल' मांगता है। मुझे अच्छा लगता है कि विज्ञापनों की चिंता नहीं करनी पड़ती।",
+      "name1": "प्रिया एम.",
+      "role1": "आन्या (3) की माँ",
+      "quote2": "मैं 14 साल का हूँ और मैंने बस में पूरा बीजगणित अध्याय खत्म कर लिया। स्ट्रीक्स अजीब रूप से प्रेरक हैं।",
+      "name2": "डैनियल के.",
+      "role2": "शिक्षार्थी, 14",
+      "quote3": "42 की उम्र में तमिल सीखना शुरू किया। पाठ इतने छोटे हैं कि मैं सुबह की चाय पर कर सकता हूँ। बहुत बढ़िया।",
+      "name3": "रवि एस.",
+      "role3": "जीवन भर सीखने वाला"
     }
-  }
+  },
+  "biology": {
+    "title": "बायोवर्स (BioVerse)",
+    "subtitle": "आपका जीव विज्ञान सीखने का ब्रह्मांड",
+    "stats": "{{count}} मॉड्यूल • मैप • 3D • गेम • लैब • सिमुलेटर",
+    "new_badge": "नया",
+    "search_placeholder": "🔍 मॉड्यूल खोजें... (जैसे 'DNA', 'गेम', 'क्विज़')",
+    "clear_search": "खोज साफ़ करें",
+    "found_modules_one": "1 मॉड्यूल मिला",
+    "found_modules_other": "{{count}} मॉड्यूल मिले",
+    "no_modules": "कोई मॉड्यूल नहीं मिला",
+    "explored": "खोजा गया",
+    "keep_exploring": "खोजते रहें!",
+    "footer": "🧬 बायोवर्स — {{count}} इंटरैक्टिव जीव विज्ञान मॉड्यूल",
+    "dashboard": {
+      "level": "स्तर",
+      "xp": "एक्सपी (XP)",
+      "explored": "खोजा",
+      "streak": "स्ट्रीक",
+      "badges": "बैज"
+    },
+    "categories": {
+      "cell": "🧬 कोशिका विज्ञान (Cell Biology)",
+      "genetics": "🎲 आनुवंशिकी और विकास (Genetics)",
+      "body": "🫀 मानव शरीर (Human Body)",
+      "lab": "🔬 लैब और उपकरण (Lab & Tools)",
+      "plant": "🌱 पादप जीव विज्ञान (Plant Biology)",
+      "ecology": "🌍 पारिस्थितिकी और जलवायु (Ecology)",
+      "animals": "🦋 जीवन चक्र और जानवर (Life Cycles & Animals)"
+    },
+    "tags": {
+      "Map": "मैप",
+      "Visualizer": "विज़ुअलाइज़र",
+      "Simulator": "सिमुलेटर",
+      "Lab": "लैब",
+      "Calculator": "कैलकुलेटर",
+      "3D": "3डी",
+      "Timeline": "टाइमलाइन",
+      "Game": "गेम",
+      "Quiz": "क्विज़",
+      "Diagram": "आरेख",
+      "Strategy": "रणनीति",
+      "Arcade": "आर्केड"
+    },
+    "modules": {
+      "cell-map": {
+        "title": "सेल एक्सप्लोरर",
+        "desc": "14 अंगक, पौधा बनाम जानवर"
+      },
+      "dna-visualizer": {
+        "title": "डीएनए विज़ुअलाइज़र",
+        "desc": "हेलिक्स, प्रतिलेखन, कोडन"
+      },
+      "mitosis": {
+        "title": "माइटोसिस",
+        "desc": "कोशिका विभाजन के 6 चरण"
+      },
+      "meiosis": {
+        "title": "मेयोसिस",
+        "desc": "9 चरण, क्रॉसिंग ओवर"
+      },
+      "respiration": {
+        "title": "सेलुलर श्वसन",
+        "desc": "ग्लाइकोलाइसिस → क्रेब्स → ईटीसी"
+      },
+      "photosynthesis": {
+        "title": "प्रकाश संश्लेषण",
+        "desc": "प्रकाश, पानी, CO₂ नियंत्रण"
+      },
+      "punnett-square": {
+        "title": "पुननेट स्क्वायर",
+        "desc": "8 लक्षण, संतानों की भविष्यवाणी"
+      },
+      "crispr": {
+        "title": "CRISPR एडिटर",
+        "desc": "जीन संपादित करें"
+      },
+      "evolution-tree": {
+        "title": "विकास वृक्ष",
+        "desc": "जीवन का फाइलोजेनेटिक पेड़"
+      },
+      "brain": {
+        "title": "ब्रेन एक्सप्लोरर",
+        "desc": "8 क्षेत्र, तंत्रिका तथ्य"
+      },
+      "heart": {
+        "title": "हृदय और रक्त",
+        "desc": "रक्त प्रवाह एनीमेशन"
+      },
+      "digestive": {
+        "title": "पाचन यात्रा",
+        "desc": "8 अंग, अपने भोजन का पालन करें"
+      },
+      "immune-defense": {
+        "title": "प्रतिरक्षा रक्षा",
+        "desc": "रोगजनकों के खिलाफ टावर रक्षा"
+      },
+      "body-quiz": {
+        "title": "बॉडी क्विज़",
+        "desc": "10 प्रश्न, सभी प्रणालियां"
+      },
+      "molecule-3d": {
+        "title": "3D अणु",
+        "desc": "3D में 5 अणु घुमाएं"
+      },
+      "microscope": {
+        "title": "माइक्रोस्कोप",
+        "desc": "4 नमूने, ज़ूम और पैन"
+      },
+      "enzyme-lab": {
+        "title": "एंजाइम लैब",
+        "desc": "तापमान, पीएच, प्रभाव"
+      },
+      "plant-anatomy": {
+        "title": "पौधों की शारीरिक रचना",
+        "desc": "फूल, पत्ती, तना, जड़"
+      },
+      "ecosystem": {
+        "title": "पारिस्थितिकी तंत्र",
+        "desc": "17 प्रजातियां, मौसम की घटनाएं"
+      },
+      "biomes": {
+        "title": "बायोम",
+        "desc": "8 विश्व बायोम"
+      },
+      "carbon-cycle": {
+        "title": "कार्बन चक्र",
+        "desc": "CO₂ प्रवाह, प्रभाव"
+      },
+      "water-cycle": {
+        "title": "जल चक्र",
+        "desc": "सूरज को नियंत्रित करें"
+      },
+      "climate": {
+        "title": "जलवायु सिम",
+        "desc": "उत्सर्जन, समुद्र का स्तर"
+      },
+      "food-chain": {
+        "title": "खाद्य श्रृंखला",
+        "desc": "3-स्तरीय आर्केड अस्तित्व"
+      },
+      "metamorphosis": {
+        "title": "कायांतरण",
+        "desc": "तितली, मेंढक, ड्रैगनफ्लाई"
+      },
+      "microbe-match": {
+        "title": "माइक्रोब मैच",
+        "desc": "12 रोगाणु, 3 कठिनाइयां"
+      }
+    }
+  },
+  "math": {
+    "title_part1": "स्वागत है",
+    "title_part2": "गणित साम्राज्य में!",
+    "subtitle": "एक अनोखी दुनिया जहाँ संख्याएँ नाचती हैं, पैटर्न छिपते हैं, और हर गणित की समस्या एक साहसिक कार्य है! 🌟",
+    "footer": "सभी स्तरों के गणित के जादूगरों के लिए 💜 के साथ बनाया गया ✨",
+    "footer_stats": "50+ गतिविधियाँ · 350+ चुनौतियाँ · उम्र 5–18+",
+    "stats": {
+      "activities": "गतिविधियाँ",
+      "challenges": "चुनौतियाँ",
+      "fun_level": "मज़ा स्तर"
+    },
+    "did_you_know": "✨ क्या आप जानते हैं?",
+    "facts": {
+      "fact1": "<strong class=\"text-white\">111,111,111 × 111,111,111</strong> = 12,345,678,987,654,321 — एक पूर्ण विलोमपद!",
+      "fact2": "त्रिज्या <strong class=\"text-white\">\"z\"</strong> और ऊंचाई <strong class=\"text-white\">\"a\"</strong> वाले पिज्जा का आयतन = Pi × z × z × a",
+      "fact3": "<strong class=\"text-white\">\"हंड्रेड (hundred)\"</strong> शब्द पुराने नॉर्स शब्द <strong class=\"text-white\">\"hundrath\"</strong> से आया है जिसका अर्थ 120 है!"
+    },
+    "header": {
+      "title": "गणित साम्राज्य (Math Kingdom)",
+      "subtitle": "जहाँ संख्याएँ जीवंत हो उठती हैं! ✨"
+    },
+    "tabs": {
+      "home": {
+        "label": "होम",
+        "desc": "स्वागत है"
+      },
+      "daily": {
+        "label": "दैनिक",
+        "desc": "दैनिक चुनौती"
+      },
+      "explorers": {
+        "label": "अन्वेषण",
+        "desc": "दृश्य विषय"
+      },
+      "map": {
+        "label": "मैप",
+        "desc": "क्षेत्रों का अन्वेषण करें"
+      },
+      "visualizer": {
+        "label": "3डी",
+        "desc": "गणित को 3D में देखें"
+      },
+      "skills": {
+        "label": "कौशल",
+        "desc": "बुनियाद बनाएँ"
+      },
+      "advanced": {
+        "label": "उन्नत",
+        "desc": "उच्च स्तर"
+      },
+      "game": {
+        "label": "गेम",
+        "desc": "घड़ी से दौड़ें"
+      },
+      "pattern": {
+        "label": "पैटर्न",
+        "desc": "पैटर्न खोजें"
+      },
+      "worksheet": {
+        "label": "प्रिंट",
+        "desc": "वर्कशीट"
+      }
+    },
+    "features": {
+      "daily": {
+        "title": "दैनिक चुनौती",
+        "description": "हर दिन एक नई चुनौती! अपनी लकीर बनाएं और हर सुबह एक नई समस्या के साथ अपने कौशल को तेज करें!"
+      },
+      "explorers": {
+        "title": "एक्सप्लोरर गिल्ड",
+        "description": "20 दृश्य रोमांच! सिक्कों की गिनती से लेकर शतरंज की रणनीति, खेल के आँकड़े और इंजीनियरिंग गणित तक।"
+      },
+      "map": {
+        "title": "एडवेंचर मैप",
+        "description": "गणित साम्राज्य का अन्वेषण करें! जोड़ वन, घटाव गुफाओं और बहुत कुछ के माध्यम से यात्रा करें। सितारे कमाने के लिए चुनौतियां हल करें!"
+      },
+      "visualizer": {
+        "title": "3D मैथ विज़ुअलाइज़र",
+        "description": "संख्याओं को जीवंत होते देखें! जोड़ को टॉवर बनाते हुए, गुणा को ग्रिड बनाते हुए देखें — सब 3D में!"
+      },
+      "skills": {
+        "title": "स्किल्स अकादमी",
+        "description": "मूल गणित की नींव बनाएं! पहाड़े याद करें, संख्या बांड बढ़ाएं और पिज्जा के साथ भिन्न का अन्वेषण करें!"
+      },
+      "advanced": {
+        "title": "उन्नत गणित",
+        "description": "बीजगणित, त्रिकोणमिति, वैक्टर, मैट्रिक्स, लॉग, कैलकुलस, जटिल संख्याएं, सांख्यिकी, प्रायिकता — साथ ही SAT/ACT अभ्यास और मैथ ओलंपियाड!"
+      },
+      "game": {
+        "title": "नंबर क्रंच क्वेस्ट",
+        "description": "घड़ी के खिलाफ दौड़ें! जितनी जल्दी हो सके गणित की पहेलियों को हल करें। दिग्गज जादूगर की स्थिति तक पहुंचें!"
+      },
+      "pattern": {
+        "title": "पैटर्न और मेमोरी",
+        "description": "संख्या अनुक्रमों में छिपे पैटर्न खोजें! इसके अलावा अपने दिमाग को प्रशिक्षित करने के लिए मेमोरी मैच खेलें!"
+      }
+    },
+    "start_exploring": "अन्वेषण शुरू करें →",
+    "preparing": "आपके गणित के रोमांच की तैयारी..."
+  },
+  "physics": {
+    "title": "फ़िज़िक्स वर्स (PhysicsVerse)",
+    "subtitle": "इंटरैक्टिव भौतिकी सिमुलेशन और प्रयोग",
+    "stats": "{{count}} मॉड्यूल • 8 श्रेणियां • सिमुलेटर • प्रयोगशालाएं • 3D विज़ुअलाइज़र",
+    "to_explore": "अन्वेषण करें",
+    "dashboard": {
+      "level": "स्तर",
+      "xp": "एक्सपी",
+      "explored": "खोज लिया",
+      "streak": "सिलसिला",
+      "badges": "बैज"
+    },
+    "keep_exploring": "अन्वेषण करते रहें!",
+    "search_placeholder": "🔍 मॉड्यूल खोजें... ('तरंग', 'सर्किट', 'क्वांटम' आज़माएं)",
+    "clear_search": "खोज मिटाएं",
+    "found_modules_one": "1 मॉड्यूल मिला",
+    "found_modules_other": "{{count}} मॉड्यूल मिले",
+    "no_modules": "कोई मॉड्यूल नहीं मिला",
+    "explored": "खोज लिया",
+    "footer": "⚛️ फ़िज़िक्स वर्स — {{count}} इंटरैक्टिव भौतिकी मॉड्यूल • React + Tailwind + Canvas",
+    "modules": {
+      "daily": {
+        "title": "दैनिक चुनौती",
+        "desc": "हर दिन नई भौतिकी पहेली!"
+      },
+      "projectile-motion": {
+        "title": "प्रक्षेप्य गति",
+        "desc": "लॉन्च कोण, वेग, प्रक्षेपवक्र"
+      },
+      "newtons-laws": {
+        "title": "न्यूटन के नियम",
+        "desc": "F=ma, क्रिया-प्रतिक्रिया, जड़त्व"
+      },
+      "pendulum-lab": {
+        "title": "पेंडुलम लैब",
+        "desc": "अवधि, लंबाई, गुरुत्वाकर्षण प्रभाव"
+      },
+      "collision-sim": {
+        "title": "टक्कर सिम्युलेटर",
+        "desc": "लोचदार और अलोचदार, संवेग"
+      },
+      "energy-skate": {
+        "title": "ऊर्जा स्केट पार्क",
+        "desc": "KE, PE, ऊर्जा का संरक्षण"
+      },
+      "inclined-plane": {
+        "title": "आनत तल",
+        "desc": "बल, घर्षण, त्वरण"
+      },
+      "wave-interference": {
+        "title": "तरंग व्यतिकरण",
+        "desc": "रचनात्मक और विनाशकारी"
+      },
+      "sound-waves": {
+        "title": "ध्वनि तरंगें",
+        "desc": "आवृत्ति, आयाम, पिच"
+      },
+      "doppler-effect": {
+        "title": "डॉपलर प्रभाव",
+        "desc": "चलती स्रोत, आवृत्ति बदलाव"
+      },
+      "standing-waves": {
+        "title": "अप्रगामी तरंगें",
+        "desc": "नोड्स, एंटीनोड्स, हार्मोनिक्स"
+      },
+      "resonance-lab": {
+        "title": "अनुनाद लैब",
+        "desc": "प्राकृतिक आवृत्ति, प्रवर्धन"
+      },
+      "circuit-builder": {
+        "title": "सर्किट बिल्डर",
+        "desc": "श्रृंखला, समानांतर, घटक"
+      },
+      "magnetic-fields": {
+        "title": "चुंबकीय क्षेत्र",
+        "desc": "क्षेत्र रेखाएं, ध्रुव, ताकत"
+      },
+      "ohms-law": {
+        "title": "ओम का नियम",
+        "desc": "V=IR, प्रतिरोध, धारा"
+      },
+      "em-induction": {
+        "title": "ईएम प्रेरण (EM Induction)",
+        "desc": "फैराडे, लेन्ज, जनरेटर"
+      },
+      "motor-generator": {
+        "title": "मोटर और जनरेटर",
+        "desc": "AC/DC, रूपांतरण, दक्षता"
+      },
+      "heat-transfer": {
+        "title": "ऊष्मा संचरण",
+        "desc": "चालन, संवहन, विकिरण"
+      },
+      "gas-laws": {
+        "title": "गैस नियम",
+        "desc": "PV=nRT, बॉयल, चार्ल्स"
+      },
+      "heat-engine": {
+        "title": "हीट इंजन",
+        "desc": "कार्नॉट चक्र, दक्षता"
+      },
+      "phase-change": {
+        "title": "चरण परिवर्तन",
+        "desc": "पिघलना, उबलना, उर्ध्वपातन"
+      },
+      "lens-sim": {
+        "title": "लेंस सिम्युलेटर",
+        "desc": "उत्तल, अवतल, फोकल लंबाई"
+      },
+      "mirror-lab": {
+        "title": "मिरर लैब",
+        "desc": "समतल, अवतल, उत्तल दर्पण"
+      },
+      "prism-dispersion": {
+        "title": "प्रिज्म और विक्षेपण",
+        "desc": "स्पेक्ट्रम, अपवर्तन, तरंग दैर्ध्य"
+      },
+      "human-eye": {
+        "title": "मानव नेत्र",
+        "desc": "लेंस, रेटिना, दृष्टि दोष"
+      },
+      "interference-patterns": {
+        "title": "व्यतिकरण पैटर्न",
+        "desc": "डबल-स्लिट, विवर्तन"
+      },
+      "atomic-structure": {
+        "title": "परमाणु संरचना",
+        "desc": "नाभिक, इलेक्ट्रॉन, कक्षक"
+      },
+      "photoelectric": {
+        "title": "प्रकाशवैद्युत प्रभाव",
+        "desc": "आइंस्टीन, फोटॉन, कार्य फलन"
+      },
+      "quantum-tunneling": {
+        "title": "क्वांटम टनलिंग",
+        "desc": "बाधा प्रवेश, प्रायिकता"
+      },
+      "nuclear-decay": {
+        "title": "परमाणु क्षय",
+        "desc": "अल्फा, बीटा, गामा, आधा जीवन"
+      },
+      "buoyancy-lab": {
+        "title": "उत्प्लावकता लैब",
+        "desc": "आर्किमिडीज, घनत्व, विस्थापन"
+      },
+      "bernoulli": {
+        "title": "बर्नौली का सिद्धांत",
+        "desc": "दबाव, वेग, लिफ्ट"
+      },
+      "viscosity": {
+        "title": "श्यानता",
+        "desc": "द्रव प्रतिरोध, प्रवाह दर"
+      },
+      "surface-tension": {
+        "title": "पृष्ठ तनाव",
+        "desc": "केशिका क्रिया, बूंदें"
+      },
+      "orbital-mechanics": {
+        "title": "कक्षीय यांत्रिकी",
+        "desc": "कक्षाएँ, वेग, पलायन"
+      },
+      "black-hole": {
+        "title": "ब्लैक होल",
+        "desc": "इवेंट होराइजन, स्पैगेटिफिकेशन"
+      },
+      "planetary-motion": {
+        "title": "ग्रहीय गति",
+        "desc": "केप्लर के नियम, अण्डाकार कक्षाएँ"
+      },
+      "gravity-wells": {
+        "title": "गुरुत्वाकर्षण कुएं",
+        "desc": "स्पेसटाइम वक्रता, द्रव्यमान"
+      },
+      "particle-accelerator": {
+        "title": "कण त्वरक",
+        "desc": "मौलिक कणों की खोज करें!"
+      }
+    },
+    "categories": {
+      "mechanics": "⚙️ यांत्रिकी (Mechanics)",
+      "waves": "🌊 तरंगें और ध्वनि",
+      "electricity": "⚡ विद्युत और चुंबकत्व",
+      "thermo": "🔥 ऊष्मप्रवैगिकी (Thermodynamics)",
+      "optics": "🔍 प्रकाशिकी (Optics)",
+      "modern": "⚛️ आधुनिक भौतिकी",
+      "fluids": "💧 द्रव यांत्रिकी",
+      "space": "🚀 अंतरिक्ष और गुरुत्वाकर्षण"
+    },
+    "tags": {
+      "Daily": "दैनिक",
+      "Simulator": "सिम्युलेटर",
+      "Interactive": "इंटरएक्टिव",
+      "Lab": "लैब",
+      "Park": "पार्क",
+      "Visualizer": "विज़ुअलाइज़र",
+      "Builder": "बिल्डर",
+      "Diagram": "आरेख",
+      "3D": "3डी",
+      "🔥 Flagship": "🔥 प्रमुख"
+    }
+  },
+  "math_modules": {
+    "TimesTableTrainer": {
+      "title": "पहाड़े मास्टर",
+      "subtitle": "एक-एक करके गुणा के पहाड़े सीखें!",
+      "practice": "अभ्यास",
+      "speedQuiz": "स्पीड क्विज़",
+      "chooseTable": "अपना पहाड़ा चुनें:",
+      "hide": "छिपाएं",
+      "show": "दिखाएं",
+      "fullTable": "पूरा पहाड़ा",
+      "correct": "सही!",
+      "wrong": "❌ यह {{answer}} है — फिर से प्रयास करें!",
+      "hideHint": "संकेत छिपाएं",
+      "peekHint": "💡 उत्तर देखें",
+      "answerIs": "उत्तर: {{answer}}",
+      "tableHeading": "{{table}} का पहाड़ा",
+      "redMistakes": "🔴 लाल = की गई गलतियाँ (इन्हें दोहराएं!)",
+      "speedQuizTitle": "स्पीड क्विज़",
+      "quizDesc1": "60 सेकंड में अधिक से अधिक गुणा के प्रश्नों के उत्तर दें!",
+      "quizDesc2": "सभी पहाड़े एक साथ!",
+      "startBtn": "शुरू करें!",
+      "timesUp": "समय समाप्त!",
+      "champ": "🌟 पहाड़े चैंपियन!",
+      "wizard": "🧙 गणित के जादूगर!",
+      "keepPracticing": "🌱 अभ्यास करते रहें!",
+      "tryAgain": "फिर से प्रयास करें"
+    },
+    "FractionPizza": {
+      "title": "🍕 भिन्न पिज़्ज़ा पार्टी",
+      "subtitle": "पिज़्ज़ा के टुकड़े खाकर भिन्न (Fractions) सीखें!",
+      "explore": "खोजें",
+      "challenge": "चुनौती",
+      "numSlices": "टुकड़ों की संख्या",
+      "challengeLabel": "चुनौती:",
+      "eatSlices": "कुल {{den}} टुकड़ों में से <span className=\"text-orange-400\">{{num}}</span> टुकड़े खाएं",
+      "correct": "सही!",
+      "tooMany": "❌ बहुत अधिक!",
+      "breakdown": "📊 भिन्न विवरण",
+      "eaten": "खाया गया:",
+      "remaining": "बचा हुआ:",
+      "percentage": "प्रतिशत:",
+      "decimal": "दशमलव:",
+      "equivFractions": "🔄 समतुल्य भिन्न",
+      "funFact": "💡 <strong>रोचक तथ्य:</strong>",
+      "factStart": "खाने के लिए पिज़्ज़ा के टुकड़ों पर क्लिक करें!",
+      "factWhole": "आपने पूरा पिज़्ज़ा खा लिया! 🎉",
+      "factUnit": "एक टुकड़े को 'इकाई भिन्न' कहा जाता है",
+      "factHalf": "आपने बिल्कुल आधा पिज़्ज़ा खाया है!",
+      "factDefault": "भिन्न संपूर्ण के हिस्से दिखाते हैं"
+    },
+    "NumberCrunchGame": {
+      "title": "🎮 नंबर क्रंच क्वेस्ट",
+      "subtitle": "गणित की पहेलियों को हल करने के लिए समय से मुकाबला करें!",
+      "ready": "तैयार हैं, गणित के जादूगर?",
+      "readyDesc1": "60 सेकंड में अधिक से अधिक गणित के सवालों के जवाब दें!",
+      "readyDesc2": "बोनस अंकों के लिए कॉम्बो बनाएं! 🔥",
+      "speed": "⚡ <strong>गति</strong> — घड़ी पर 60 सेकंड",
+      "combos": "🔥 <strong>कॉम्बो</strong> — स्ट्रीक गुणक 5x तक",
+      "adaptive": "📈 <strong>अनुकूली</strong> — जैसे-जैसे आप आगे बढ़ते हैं कठिन होता जाता है",
+      "highScore": "🏆 <strong>उच्च स्कोर</strong> — अपना सर्वश्रेष्ठ प्रदर्शन करें!",
+      "startBtn": "🚀 क्वेस्ट शुरू करें!",
+      "level": "स्तर {{level}}",
+      "pts": "✨ +{{pts}} अंक!",
+      "answerIs": "❌ उत्तर: {{answer}}",
+      "questComplete": "क्वेस्ट पूरी हुई!",
+      "finalScore": "⭐ अंतिम स्कोर",
+      "accuracy": "✅ सटीकता",
+      "bestStreak": "🔥 सर्वश्रेष्ठ स्ट्रीक",
+      "questions": "📊 प्रश्न",
+      "maxLevel": "📈 अधिकतम स्तर",
+      "legendary": "🌟 महान गणित जादूगर! 🌟",
+      "grand": "🧙 संख्याओं के महान जादूगर!",
+      "apprentice": "📚 प्रशिक्षु गणितज्ञ!",
+      "keepPracticing": "🌱 अभ्यास करते रहें, युवा जादूगर!",
+      "playAgain": "🔄 फिर से खेलें!"
+    },
+    "AlgebraArena": {
+      "title": "🧮 बीजगणित अरीना",
+      "subtitle": "x का मान निकालें — समीकरण को संतुलित करें!",
+      "balance": "⚖️ दोनों पक्ष बराबर होने चाहिए",
+      "findX": "मान निकालें <span className=\"text-purple-400 font-bold\">x</span>",
+      "hideSteps": "🙈 हल छिपाएं",
+      "showSteps": "📝 हल करने के चरण दिखाएं",
+      "correct": "✨ x = {{ans}} सही है! ✨",
+      "wrong": "❌ फिर से प्रयास करें! संकेत के लिए चरणों की जाँच करें।",
+      "skip": "छोड़ें →",
+      "diffBasic": "मूलभूत",
+      "diffBasicDesc": "1-चरण: 3x=12",
+      "diffInter": "माध्यमिक",
+      "diffInterDesc": "2-चरण: 2x+3=11",
+      "diffAdv": "उन्नत",
+      "diffAdvDesc": "कई चरण, x², घातांक"
+    },
+    "NumberBondsGarden": {
+      "title": "🌻 नंबर बॉन्ड्स गार्डन",
+      "subtitle": "लक्ष्य तक जोड़ने वाले नंबरों को मिलाकर फूल उगाएं!",
+      "targetSum": "लक्ष्य योग",
+      "exploreMode": "🔍 एक्सप्लोर",
+      "matchMode": "🎮 मैच",
+      "reset": "🔄 रीसेट",
+      "allBonds": "🌱 सभी बॉन्ड जो {{target}} बनाते हैं",
+      "visualDots": "📊 दृश्य: डॉट्स के साथ {{target}} बनाना",
+      "matchedScore": "🌸 मिलान किया गया: {{score}}",
+      "pickInstruction": "प्रत्येक पक्ष से एक चुनें जो मिलकर <span className=\"text-green-400 font-bold\">{{target}}</span> बन जाए",
+      "pickNumber": "🔵 एक नंबर चुनें",
+      "matchIt": "🟠 इसे मिलाएं",
+      "gardenComplete": "गार्डन पूरा हुआ!",
+      "grewAll": "आपने सभी फूल उगाए!"
+    },
+    "SkillsAcademy": {
+      "title": "🎓 कौशल अकादमी",
+      "subtitle": "कदम दर कदम अपनी गणित की नींव बनाएं!",
+      "times": "पहाड़े",
+      "timesDesc": "गुणा में महारत",
+      "bonds": "नंबर बॉन्ड्स",
+      "bondsDesc": "जोड़ने के जोड़े",
+      "fractions": "भिन्न",
+      "fractionsDesc": "पिज्जा भिन्न"
+    },
+    "PatternHub": {
+      "patterns": "पैटर्न पहेलियाँ",
+      "patternsShort": "पैटर्न",
+      "memory": "मेमोरी मैच",
+      "memoryShort": "मेमोरी"
+    },
+    "ExplorersHub": {
+      "title": "🧭 एक्सप्लोरर गिल्ड",
+      "subtitle": "२० दृश्य रोमांच — बुनियादी बातों से लेकर व्यावहारिक गणित तक।"
+    },
+    "Visualizer3D": {
+      "title": "📊 3D गणित विज़ुअलाइज़र",
+      "subtitle": "गणित को 3D में जीवंत होते हुए देखें!",
+      "numberA": "नंबर A",
+      "numberB": "नंबर B",
+      "operation": "संक्रिया (Operation)",
+      "add": "जोड़ें",
+      "sub": "घटाएं",
+      "mul": "गुणा",
+      "div": "भाग",
+      "blocks": "ब्लॉक्स",
+      "bars3d": "3D बार्स",
+      "spheres": "गोले (Spheres)",
+      "showing": "(दिखा रहे हैं {{count}} में से {{display}})",
+      "factAdd": "💡 {{numA}} और {{numB}} को जोड़ना {{numA}} सेब 🍎 और {{numB}} संतरे 🍊 = {{result}} फल मिलाने जैसा है!",
+      "factSub": "💡 यदि आपके पास {{numA}} कुकीज़ 🍪 थीं और आपने {{numB}} खा लीं, तो आपके पास {{result}} बचेंगी!",
+      "factMul": "💡 {{numA}} × {{numB}} का मतलब है {{numB}} के {{numA}} समूह — यह कुल {{result}} है! 🎯",
+      "factDiv": "💡 {{numB}} दोस्तों के बीच {{numA}} पिज्जा 🍕 बांटना = हर एक को {{result}}!"
+    },
+    "AdventureMap": {
+      "title": "🗺️ मैथ किंगडम एडवेंचर मैप",
+      "subtitle": "किसी क्षेत्र की चुनौती को हल करने के लिए उस पर क्लिक करें!",
+      "zones": {
+        "addition-forest": {
+          "name": "जोड़ का जंगल (Addition Forest)",
+          "description": "जादुई पेड़ अपने छल्लों को जोड़कर बढ़ते हैं!",
+          "challenge": "🌳 एक पेड़ में 15 छल्ले हैं। यह 27 और बढ़ता है। कुल कितने छल्ले हुए?"
+        },
+        "subtraction-caves": {
+          "name": "घटाव की गुफाएं (Subtraction Caves)",
+          "description": "चमगादड़ हर रात गुफा से निकलते हैं। कितने बचे हैं?",
+          "challenge": "🦇 गुफा में 83 चमगादड़ रहते थे। 47 उड़ गए। कितने बचे हैं?"
+        },
+        "multiply-mountains": {
+          "name": "गुणा के पहाड़ (Multiply Mountains)",
+          "description": "प्रत्येक पर्वत की चोटी पर जादुई क्रिस्टल के समूह हैं!",
+          "challenge": "⛰️ 7 चोटियों में से प्रत्येक पर 8 क्रिस्टल हैं। कुल कितने क्रिस्टल हैं?"
+        },
+        "division-desert": {
+          "name": "विभाजन रेगिस्तान (Division Desert)",
+          "description": "रेगिस्तान के खोजकर्ताओं के बीच खजाना समान रूप से साझा करें!",
+          "challenge": "🏜️ 96 सोने के सिक्के 8 खोजकर्ताओं के बीच बांटे गए। प्रत्येक को कितने मिले?"
+        },
+        "fraction-falls": {
+          "name": "अंश झरने (Fraction Falls)",
+          "description": "झरना समान धाराओं में विभाजित हो जाता है!",
+          "challenge": "🌊 झरने का 1/4 + 1/4 + 1/2 क्या है?"
+        }
+      },
+      "conquered": "पहले ही जीत लिया!",
+      "answer": "उत्तर: {{answer}}",
+      "correct": "✨ शानदार! आप एक गणित विज़ार्ड हैं! ✨",
+      "wrong": "🤔 फिर से प्रयास करें, बहादुर खोजकर्ता!"
+    },
+    "DailyChallenge": {
+      "title": "🎯 दैनिक चुनौती",
+      "subtitle": "हर दिन एक नई चुनौती!",
+      "day": "दिन",
+      "streak": "लगातार (Streak)",
+      "resetsIn": "में रीसेट",
+      "needHint": "💡 कोई संकेत चाहिए?",
+      "complete": "दैनिक चुनौती पूरी हुई!",
+      "streakDays": "🔥 {{streak}} दिन की स्ट्रीक!",
+      "comeBack": "नई चुनौती के लिए कल वापस आएं! ⏰",
+      "hintIsolate": "घटाकर x को अलग करें, फिर भाग दें",
+      "hintPrime": "ये अभाज्य संख्याएँ (prime numbers) हैं",
+      "hintPyth": "a² + b² = c² का प्रयोग करें",
+      "hintMultiFirst": "याद रखें: जोड़ने से पहले गुणा!"
+    },
+    "WorksheetGenerator": {
+      "title": "📝 वर्कशीट जनरेटर",
+      "subtitle": "किसी भी विषय के लिए प्रिंट करने योग्य अभ्यास शीट उत्पन्न करें!",
+      "chooseTopic": "विषय चुनें",
+      "numProblems": "प्रश्नों की संख्या",
+      "maxNum": "अधिकतम संख्या",
+      "generate": "📄 वर्कशीट जनरेट करें",
+      "print": "🖨️ प्रिंट करें",
+      "hideAnswers": "🙈 छुपाएं",
+      "showAnswers": "👁️ उत्तर",
+      "worksheetTitle": "📝 गणित की वर्कशीट — {{topic}}",
+      "name": "नाम",
+      "date": "तारीख",
+      "score": "स्कोर",
+      "generatedBy": "व्हिमसिकल मैथ किंगडम द्वारा निर्मित 🧙‍♂️",
+      "topics": {
+        "addition": "जोड़",
+        "subtraction": "घटाव",
+        "multiplication": "गुणा",
+        "division": "भाग",
+        "mixed": "मिश्रित",
+        "fractions": "भिन्न",
+        "algebra": "बीजगणित",
+        "exponents": "घातांक"
+      }
+    }
+  },
+  "switch_profile": "प्रोफ़ाइल बदलें",
+  "hub": "हब",
+  "daily_streak": "दैनिक स्ट्रीक",
+  "daily_goal": "दैनिक लक्ष्य",
+  "search": "खोजें",
+  "age_group": "आयु वर्ग",
+  "age_3_5": "3-5 वर्ष",
+  "age_6_8": "6-8 वर्ष",
+  "age_9_12": "9-12 वर्ष",
+  "age_13_17": "13-17 वर्ष",
+  "age_18_plus": "वयस्क (18+)",
+  "maker_space": {
+    "badge": "घर पर किड्स कैंप",
+    "spark_creativity": "रचनात्मकता जगाएं।",
+    "build_memories": "यादें बनाएं।",
+    "description": "विज्ञान, कला, निर्माण और बाहरी रोमांच में {activitiesCount}+ व्यावहारिक गतिविधियों की खोज करें। 3-12 वर्ष की आयु के लिए बिल्कुल सही - कोई स्क्रीन नहीं, बस शुद्ध रचनात्मक मज़ा!",
+    "get_started": "शुरू करें",
+    "explore_weeks": "प्रोजेक्ट सप्ताह देखें",
+    "activities": "गतिविधियाँ",
+    "creative_pillars": "रचनात्मक स्तंभ",
+    "screen_free": "स्क्रीन-मुक्त मज़ा",
+    "scroll_explore": "खोजने के लिए स्क्रॉल करें"
+  },
+  "activities": "गतिविधियां",
+  "project_weeks": "प्रोजेक्ट सप्ताह",
+  "my_progress": "मेरी प्रगति",
+  "all_activities": "सभी गतिविधियां",
+  "difficulty_easy": "आसान",
+  "difficulty_medium": "मध्यम",
+  "difficulty_hard": "कठिन",
+  "ages": "आयु",
+  "min": "मिनट",
+  "hour": "घंटा",
+  "hours": "घंटे",
+  "play": "खेल",
+  "steps": "चरण",
+  "completed": "पूर्ण",
+  "in_progress": "प्रगति पर",
+  "rebuild": "फिर से बनाएँ",
+  "continue": "जारी रखें",
+  "start": "शुरू करें",
+  "save_to_favorites": "पसंदीदा में सहेजें",
+  "remove_favorite": "पसंदीदा से हटाएँ",
+  "pillar_sciencelab": "इंटरएक्टिव लैब्स",
+  "pillar_outdoorquest": "आउटडोर गतिविधि",
+  "pillar_artstudio": "आर्ट स्टूडियो",
+  "pillar_toybox": "टॉय बॉक्स",
+  "explore_projects": "विज्ञान, कला, निर्माण और बाहरी रोमांच से जुड़े {{count}} व्यावहारिक प्रोजेक्ट देखें",
+  "search_activities": "गतिविधियां खोजें...",
+  "filters": "फ़िल्टर",
+  "profile_suffix": " की प्रोफ़ाइल",
+  "ready_next_adventure": "अगले रोमांच के लिए तैयार हैं?",
+  "your_recent_activity": "आपकी हाल की गतिविधि",
+  "no_activity_yet": "अभी तक कोई गतिविधि नहीं!",
+  "no_activity_desc": "आपने अभी तक कोई लर्निंग पथ या मेकर स्पेस गतिविधि शुरू नहीं की है। शुरू करने का समय आ गया है!",
+  "explore_learning_paths": "लर्निंग पथ एक्सप्लोर करें",
+  "day_streak": "दिन की स्ट्रीक",
+  "keep_it_up": "इसे बनाए रखें!",
+  "data_privacy": "डेटा और गोपनीयता",
+  "parental_controls": "माता-पिता का नियंत्रण",
+  "no_profile_found": "कोई प्रोफ़ाइल नहीं मिली। कृपया पहले एक प्रोफ़ाइल सेट करें।",
+  "go_home": "होम पर जाएं",
+  "parent_dashboard": "अभिभावक डैशबोर्ड",
+  "back": "पीछे",
+  "tier": "स्तर",
+  "time_spent": "सीखने में बिताया गया समय",
+  "minutes": "मिनट",
+  "tracked_locally": "आपके डिवाइस पर सुरक्षित रूप से ट्रैक किया गया",
+  "modules_completed": "पूर्ण किए गए मॉड्यूल",
+  "account_management": "खाता प्रबंधन",
+  "edit_profile": "प्रोफ़ाइल संपादित करें",
+  "clear_data": "सभी डेटा साफ़ करें",
+  "clear_data_confirm_title": "सभी डेटा साफ़ करें?",
+  "clear_data_confirm_desc": "यह आपकी सभी प्रगति, उपलब्धियों और प्रोफ़ाइल डेटा को स्थायी रूप से हटा देगा। इस कार्रवाई को पूर्ववत नहीं किया जा सकता।",
+  "cancel": "रद्द करें",
+  "confirm_clear": "डेटा साफ़ करें",
+  "learning_paths": "सीखने के रास्ते",
+  "learning_paths_desc": "ज्ञान की संरचित दुनिया में गोता लगाएँ। इंटरैक्टिव कहानियों और पाठों के माध्यम से कदम दर कदम अवधारणाओं में महारत हासिल करें।",
+  "go_to_learning_paths": "सीखने के रास्तों पर जाएं →",
+  "what_youll_discover": "आप क्या खोजेंगे:",
+  "tiny_world": "छोटा संसार (उम्र 3-5)",
+  "tiny_world_desc": "वर्णमाला, रंग, आकार और प्रारंभिक भावनात्मक कौशल।",
+  "adventure_academy": "एडवेंचर अकादमी (उम्र 6-8)",
+  "adventure_academy_desc": "गणित की खोज, बुनियादी विज्ञान और पढ़ने की समझ।",
+  "lab_zero": "लैब ज़ीरो (उम्र 9-12)",
+  "lab_zero_desc": "भौतिकी, उन्नत गणित और कोडिंग मूल बातें।",
+  "maker_space_desc": "अपनी आस्तीन ऊपर रोल करें! हमारे व्यावहारिक इंटरैक्टिव 3डी लैब्स और आउटडोर अन्वेषणों में बनाएं, सृजन करें और प्रयोग करें।",
+  "go_to_maker_space": "मेकर स्पेस पर जाएं →",
+  "what_youll_create": "आप क्या बनाएंगे:",
+  "interactive_lab": "इंटरएक्टिव लैब",
+  "interactive_lab_desc": "भौतिकी सिमुलेशन और रसायन विज्ञान प्रयोग।",
+  "art_studio": "कला स्टूडियो",
+  "art_studio_desc": "डिजिटल पेंटिंग और रचनात्मक परियोजनाएं।",
+  "outdoor_quest": "बाहरी खोज",
+  "outdoor_quest_desc": "प्रकृति अन्वेषण और पर्यावरण विज्ञान।",
+  "nav_home": "होम",
+  "nav_learn": "सीखें",
+  "nav_create": "बनाएं",
+  "nav_profile": "प्रोफ़ाइल",
+  "welcome_back": "वापसी पर स्वागत है",
+  "ready_to_continue": "क्या आप अपना रोमांच जारी रखने के लिए तैयार हैं?",
+  "continue_learning": "सीखना जारी रखें",
+  "resume": "फिर से शुरू करें",
+  "start_learning": "सीखना शुरू करें",
+  "recent_activity": "हाल की गतिविधि",
+  "search_placeholder": "दुनिया, विषय, कौशल खोजें...",
+  "no_results_found": "\"{{query}}\" के लिए कोई परिणाम नहीं मिला",
+  "enter": "प्रवेश करें",
+  "about": {
+    "mission": "हमारा मिशन",
+    "what_we_built": "हमने क्या बनाया है",
+    "support": "समर्थन",
+    "tagline": "आश्चर्य स्थापित करें।",
+    "quote": "\"हर बच्चा एक वैज्ञानिक के रूप में पैदा होता है। तब तक हम उसे मार नहीं देते।\"",
+    "quote_author": "— कार्ल सागन",
+    "intro_p1": "जिज्ञासु केवल एक और एडटेक प्लेटफॉर्म नहीं है। यह भारत में सीखने के तरीके को फिर से परिभाषित करने का एक प्रयास है।",
+    "intro_p2": "हमने इसे इसलिए बनाया क्योंकि हमारा मानना है कि जिज्ञासा एक विशेषाधिकार नहीं है, यह एक मौलिक अधिकार है।",
+    "values_title": "मूल सिद्धांत",
+    "values": [
+      {
+        "title": "आश्चर्य (Wonder)",
+        "desc": "हम उत्तरों के साथ नहीं, बल्कि सवालों के साथ शुरुआत करते हैं। हर अवधारणा एक परिभाषा के साथ नहीं, बल्कि एक रहस्य के साथ शुरू होती है।"
+      },
+      {
+        "title": "समानता (Equity)",
+        "desc": "एक मंच। सभी के लिए। ओडिशा के एक गांव में एक बच्चा और बेंगलुरु के एक अपार्टमेंट में एक बच्चा एक ही सुंदर अवधारणा, एक ही सिमुलेशन, एक ही खुशी देखना चाहिए।"
+      },
+      {
+        "title": "सम्मान (Respect)",
+        "desc": "कोई ग्रेड नहीं, कोई निर्णय नहीं, कोई शर्म नहीं। हर सीखने वाला समान है। 6 साल का बच्चा जो रंग खोज रहा है। 40 साल का व्यक्ति जो हमेशा गुरुत्वाकर्षण को समझना चाहता था। दोनों का यहाँ स्वागत है।"
+      },
+      {
+        "title": "धैर्य (Patience)",
+        "desc": "सीखने में उतना ही समय लगता है जितना लगता है। समझने पर कोई उलटी गिनती टाइमर नहीं। तेजी से आगे बढ़ने का कोई दबाव नहीं। अवधारणा हमेशा प्रतीक्षा करती है।"
+      },
+      {
+        "title": "खुशी (Joy)",
+        "desc": "यदि सीखना आनंददायक नहीं है, तो डिज़ाइन में कुछ गड़बड़ है - सीखने वाले के साथ नहीं। विज्ञान आनंददायक है। गणित आनंददायक है। खोज आनंददायक है।"
+      },
+      {
+        "title": "पहचान (Identity)",
+        "desc": "भारतीय वैज्ञानिक, भारतीय उदाहरण, भारतीय भाषाएं, भारतीय वास्तविकताएं। यह भारत के लिए अनुवादित कोई वैश्विक मंच नहीं है। यह भारत के लिए, भारत से बनाया गया है।"
+      }
+    ],
+    "diff_title": "हम कैसे अलग हैं",
+    "differences": [
+      {
+        "title": "बिल्कुल मुफ्त",
+        "desc": "जिज्ञासु पर सीखने का कोई \"गरीब संस्करण\" और \"अमीर संस्करण\" नहीं है। सब कुछ मुफ्त है। हमेशा के लिए। सभी के लिए। यह एक विशेषता नहीं है। यह एक सिद्धांत है।"
+      },
+      {
+        "title": "वेबसाइट पहले",
+        "desc": "व्हाट्सएप के माध्यम से साझा किया गया एक लिंक किसी गांव के बच्चे तक पहुंच सकता है। कोई स्थापना नहीं, कोई भंडारण दबाव नहीं, कोई ऐप स्टोर बाधा नहीं। बस खोलें और सीखें।"
+      },
+      {
+        "title": "6 भारतीय भाषाएँ",
+        "desc": "पहले दिन से अंग्रेजी, हिंदी, तमिल, तेलुगु, कन्नड़ और ओडिया। समझना शिक्षार्थी के सबसे करीब की भाषा में शुरू होता है।"
+      },
+      {
+        "title": "ऑफ़लाइन पहले",
+        "desc": "2G कनेक्शन पर और इंटरनेट चले जाने के बाद काम करने के लिए डिज़ाइन किया गया। क्योंकि ग्रामीण भारत में, सीखना विश्वसनीय इंटरनेट की प्रतीक्षा नहीं कर सकता।"
+      },
+      {
+        "title": "हर उम्र के लिए",
+        "desc": "उम्र 2 से 80+। बच्चे, माता-पिता, दादा-दादी, वयस्क जिन्होंने जल्दी स्कूल छोड़ दिया लेकिन कभी आश्चर्य करना नहीं छोड़ा। समझने की कोई आयु सीमा नहीं है।"
+      },
+      {
+        "title": "दृश्य और संवादात्मक",
+        "desc": "आप केवल देखते नहीं हैं। आप आश्चर्य करते हैं, परीक्षण करते हैं, खोजते हैं, और समझाते हैं। हर अवधारणा चलती है, प्रतिक्रिया करती है, और वास्तविक जीवन से जुड़ती है।"
+      }
+    ],
+    "support_title": "जिज्ञासु का समर्थन करें",
+    "support_p1": "जिज्ञासु को एक छोटे से भावुक दल द्वारा बनाया जा रहा है जो मानते हैं कि भारत के हर बच्चे को विश्व स्तरीय, हर्षित, खोज-आधारित शिक्षा तक मुफ्त पहुंच का अधिकार है।",
+    "support_p2": "हमारा दृष्टिकोण भारत के हर बच्चे को विज्ञान और गणित के जादू तक मुफ्त में पहुंचाना है। यदि यह आपको प्रेरित करता है, तो हम आपसे सुनना चाहते हैं।",
+    "email_us": "हमें ईमेल करें:",
+    "support_labels": {
+      "who": "कौन",
+      "who_desc": "एक संक्षिप्त परिचय — व्यक्ति, संगठन, शिक्षक, या परोपकारी।",
+      "why": "क्यों",
+      "why_desc": "जिज्ञासु क्यों? भारत में समान शिक्षा आपके लिए व्यक्तिगत रूप से क्यों मायने रखती है?",
+      "how": "कैसे",
+      "how_desc": "आप कैसे योगदान करने की कल्पना करते हैं? व्यक्तिगत समर्थन, सीएसआर साझेदारी, भाषा अनुवाद, स्कूलों के लिए उपकरण, या कुछ और?"
+    }
+  },
+  "gallery": {
+    "age_group": "आयु वर्ग",
+    "all": "सभी",
+    "difficulty": "कठिनाई",
+    "easy": "आसान",
+    "medium": "मध्यम",
+    "hard": "कठिन",
+    "sort_by": "क्रमबद्ध करें",
+    "popular": "सबसे लोकप्रिय",
+    "rating": "उच्चतम रेटेड",
+    "name": "नाम (A-Z)",
+    "quickest": "सबसे तेज",
+    "clear_all": "सभी फ़िल्टर साफ़ करें",
+    "clear": "फ़िल्टर साफ़ करें",
+    "showing": "दिखा रहा है",
+    "activities_count": "गतिविधियाँ",
+    "no_found": "कोई गतिविधि नहीं मिली",
+    "try_adjusting": "अपने फ़िल्टर या खोज शब्दों को समायोजित करने का प्रयास करें"
+  },
+  "pillar_showcase": {
+    "interactive_learning": "इंटरएक्टिव लर्निंग",
+    "explore": "इंटरएक्टिव वातावरण का अन्वेषण करें",
+    "dive_into": "हमारे हैंड्स-ऑन सिमुलेशन लैब, डिजिटल कला स्टूडियो और भौतिक निर्माता स्थानों में गोता लगाएँ। करके, बनाकर और प्रयोग करके सीखें।",
+    "labs": "लैब्स",
+    "enter_lab": "लैब में प्रवेश करें",
+    "toybox": {
+      "tagline": "अद्भुत हस्तनिर्मित खिलौने बनाएं",
+      "preview": [
+        "लकड़ी की कारें",
+        "कठपुतलियां",
+        "पहेलियाँ"
+      ]
+    },
+    "sciencelab": {
+      "tagline": "इंटरएक्टिव सिमुलेशन और प्रयोग चलाएं",
+      "preview": [
+        "भौतिकी लैब",
+        "रसायन विज्ञान लैब",
+        "जीव विज्ञान लैब",
+        "ब्रह्मांड लैब"
+      ]
+    },
+    "artstudio": {
+      "tagline": "अपनी रचनात्मकता व्यक्त करें",
+      "preview": [
+        "पेंटिंग",
+        "ओरिगामी",
+        "मूर्तिकला"
+      ]
+    },
+    "outdoorquest": {
+      "tagline": "प्रकृति और रोमांच का अन्वेषण करें",
+      "preview": [
+        "खजाने की खोज",
+        "बागवानी",
+        "तारे देखना"
+      ]
+    }
+  },
+  "camp_weeks": {
+    "project_weeks": "प्रोजेक्ट सप्ताह",
+    "structured_journeys": "संरचित प्रोजेक्ट यात्राएं",
+    "follow_curated": "हमारी क्यूरेटेड 5-दिवसीय प्रोजेक्ट योजनाओं का पालन करें। स्कूल की छुट्टियों, सप्ताहांत, या जब भी आपको संरचित हैंड्स-ऑन मज़ा की आवश्यकता हो, के लिए बिल्कुल सही!",
+    "completed": "पूरा हुआ",
+    "in_progress": "प्रगति पर",
+    "do_again": "फिर से करें",
+    "continue": "जारी रखें",
+    "start_week": "सप्ताह शुरू करें",
+    "days_of_activities": "गतिविधियों के 5 दिन",
+    "day": "दिन",
+    "all_ages": "सभी उम्र",
+    "ages": "उम्र",
+    "summer_champion": "बधाई हो, आपने समर चैंपियन बैज अर्जित किया है!",
+    "complete_all": "समर चैंपियन अर्जित करने के लिए सभी 4 प्रोजेक्ट सप्ताह पूरे करें",
+    "badge": "बैज!"
+  },
+  "nav_maker_space": "मेकर स्पेस",
+  "landing_page": {
+    "privacy_first": "गोपनीयता पहले:",
+    "privacy_desc": "हम अपने सर्वर पर कोई भी व्यक्तिगत डेटा कैप्चर या स्टोर नहीं करते हैं। आपका उपनाम, अवतार और प्रगति आपके अपने डिवाइस पर सुरक्षित रूप से सहेजे जाते हैं।"
+  },
+  "footer": {
+    "desc": "भारत के हर बच्चे के लिए मुफ्त दृश्य STEM शिक्षण। ऑफ़लाइन काम करता है। 6 भारतीय भाषाएँ।",
+    "information": "जानकारी",
+    "privacy": "गोपनीयता",
+    "about": "हमारे बारे में",
+    "contact": "संपर्क",
+    "made_with": "के लिए ❤️ के साथ बनाया गया।"
+  },
+  "testimonials": {
+    "coming_soon": "जल्द आ रहा है",
+    "share_exp": "अपना अनुभव साझा करें",
+    "building_with_love": "हम जिग्यासु को प्यार से बना रहे हैं। एक बार जब हम लॉन्च करेंगे, तो हम यहाँ शिक्षार्थियों और माता-पिता से वास्तविक कहानियाँ प्रदर्शित करेंगे।",
+    "ready": "आज कुछ नया सीखने के लिए तैयार हैं?",
+    "no_signup": "कोई साइन-अप नहीं। कोई डाउनलोड आवश्यक नहीं। ऐप खोलें और 10 सेकंड से कम समय में अपनी भाषा में शुरू करें।",
+    "pick_world": "अपनी दुनिया चुनें →",
+    "get_app": "ऐप प्राप्त करें"
+  },
+  "kidscamp": {
+    "ages": {
+      "title1": "लिटिल एक्सप्लोरर्स",
+      "desc1": "माता-पिता के मार्गदर्शन के साथ सरल, संवेदी गतिविधियां। जिज्ञासु बच्चों के लिए बिल्कुल सही!",
+      "title2": "जूनियर क्रिएटर्स",
+      "desc2": "स्पष्ट चरण-दर-चरण निर्देशों के साथ मजेदार प्रोजेक्ट। बनाने के माध्यम से आत्मविश्वास का निर्माण!",
+      "title3": "एडवेंचर बिल्डर्स",
+      "desc3": "स्वतंत्र निर्माताओं के लिए जटिल प्रोजेक्ट जो वास्तविक चुनौतियों के लिए तैयार हैं!",
+      "title4": "भविष्य के इनोवेटर्स",
+      "desc4": "किशोरों के लिए उन्नत प्रोजेक्ट, कोडिंग और वास्तविक दुनिया के कौशल!",
+      "title5": "आजीवन शिक्षार्थी",
+      "desc5": "गहन ज्ञान, पेशेवर कौशल और उन्नत अवधारणाएं।",
+      "whos_making": "आज कौन बना रहा है? 🎨",
+      "whos_making_modal": "आज कौन बना रहा है?",
+      "select_age": "अपने बच्चे के कौशल स्तर से मेल खाने वाली व्यक्तिगत गतिविधियों के लिए आयु वर्ग का चयन करें",
+      "clear_selection": "चयन साफ़ करें (सभी आयु दिखाएं)",
+      "feat1_0": "माता-पिता द्वारा निर्देशित गतिविधियां",
+      "feat1_1": "संवेदी अन्वेषण",
+      "feat1_2": "बड़े, रंगीन कदम",
+      "feat1_3": "अतिरिक्त सुरक्षा सुझाव",
+      "feat2_0": "अर्ध-स्वतंत्र",
+      "feat2_1": "उपलब्धि बैज",
+      "feat2_2": "कौशल निर्माण",
+      "feat2_3": "रचनात्मक स्वतंत्रता",
+      "feat3_0": "स्वतंत्र कार्य",
+      "feat3_1": "उन्नत तकनीक",
+      "feat3_2": "STEM अवधारणाएं",
+      "feat3_3": "असली उपकरण",
+      "feat4_0": "स्व-निर्देशित सीखना",
+      "feat4_1": "उन्नत STEM",
+      "feat4_2": "वास्तविक दुनिया के अनुप्रयोग",
+      "feat4_3": "सहकर्मी चुनौतियां",
+      "feat5_0": "स्व-निर्देशित सीखना",
+      "feat5_1": "उन्नत अवधारणाएं",
+      "feat5_2": "पेशेवर कौशल",
+      "feat5_3": "निपुणता"
+    },
+    "footer": {
+      "activities": "गतिविधियाँ",
+      "resources": "संसाधन",
+      "all_activities": "सभी गतिविधियाँ →",
+      "project_weeks": "प्रोजेक्ट सप्ताह",
+      "printable_checklists": "प्रिंट करने योग्य चेकलिस्ट",
+      "safety_tips": "सुरक्षा सुझाव",
+      "material_substitutes": "सामग्री विकल्प",
+      "faqs": "अक्सर पूछे जाने वाले प्रश्न"
+    },
+    "featured": {
+      "built": "बनाया गया",
+      "in_progress": "प्रगति पर",
+      "build_again": "🔄 फिर से बनाएं",
+      "continue": "▶ जारी रखें",
+      "start_building": "🔨 बनाना शुरू करें",
+      "staff_picks": "स्टाफ़ की पसंद",
+      "title": "विशेष गतिविधियाँ",
+      "desc": "हमारे सबसे लोकप्रिय प्रोजेक्ट जिन्हें हर जगह परिवारों द्वारा पसंद किया जाता है",
+      "view_details": "विवरण देखें"
+    },
+    "modal": {
+      "completed": "पूरा हुआ",
+      "in_progress": "प्रगति पर",
+      "reviews": "समीक्षाएँ",
+      "ages": "उम्र",
+      "materials_needed": "आवश्यक सामग्री",
+      "opt": "(वैकल्पिक)",
+      "more": "और",
+      "steps": "चरण",
+      "more_steps": "और चरण...",
+      "what_youll_learn": "आप क्या सीखेंगे",
+      "cross_pillar": "क्रॉस-पिलर कनेक्शन",
+      "cross_pillar_desc": "यह गतिविधि अन्य स्तंभों के साथ जुड़ती है! कनेक्टर उपलब्धि को अनलॉक करने के लिए संबंधित गतिविधियों को पूरा करें।",
+      "build_again": "फिर से बनाएँ",
+      "continue": "जारी रखें",
+      "start_activity": "गतिविधि शुरू करें",
+      "completed_excl": "पूरा हुआ!",
+      "days": "दिन",
+      "showcase": "शोकेस",
+      "day": "दिन",
+      "done": "✓ हो गया",
+      "start": "🚀 शुरू करें",
+      "preview": "पूर्वावलोकन",
+      "materials_week": "इस सप्ताह के लिए सामग्री",
+      "tip_gather": "सुझाव: एक आसान अनुभव के लिए सप्ताह की शुरुआत में ही सारी सामग्री इकट्ठा कर लें!",
+      "week_complete": "सप्ताह पूरा हुआ!",
+      "amazing_job": "पूरा करने में अद्भुत काम",
+      "earned": "आपने अर्जित किया है",
+      "badge": "बैज!",
+      "continue_exploring": "खोजना जारी रखें",
+      "ready_next": "अपनी अगली गतिविधि के लिए तैयार हैं?",
+      "start_day": "🚀 दिन शुरू करें",
+      "what_you_learn": "आप क्या सीखेंगे"
+    },
+    "activity_mode": {
+      "great_job": "बहुत बढ़िया!",
+      "back": "वापस",
+      "pause_timer": "टाइमर रोकें",
+      "resume_timer": "टाइमर फिर से शुरू करें",
+      "reset_activity": "गतिविधि रीसेट करें",
+      "complete": "% पूरा हुआ",
+      "steps_remaining": "चरण शेष",
+      "step1": "चरण 1: सामग्री इकट्ठा करें",
+      "before_begin": "शुरू करने से पहले",
+      "check_off": "जब आप उन्हें इकट्ठा करते हैं तो प्रत्येक वस्तु को चेक करें। यदि आपके पास कुछ छूट रहा है तो चिंता न करें - वैसे भी शुरू करने के लिए 'अभी छोड़ें' पर टैप करें!",
+      "optional": "वैकल्पिक",
+      "items": "सामान",
+      "safety_notes": "सुरक्षा संबंधी नोट्स",
+      "lets_build": "चलो बनाएँ!",
+      "check": "जांचें",
+      "more_items": "और आइटम",
+      "skip_now": "अभी छोड़ें",
+      "steps": "चरण",
+      "estimated_time": "अनुमानित समय:",
+      "pro_tip": "विशेषज्ञ टिप",
+      "parent_help": "माता-पिता की मदद चाहिए",
+      "parent_help_desc": "इस चरण में सुरक्षा या जटिलता के लिए वयस्क की सहायता की आवश्यकता हो सकती है।",
+      "completed_undo": "पूरा हुआ! (अनडू करने के लिए टैप करें)",
+      "mark_done": "पूर्ण के रूप में चिह्नित करें",
+      "skip_step": "चरण छोड़ें",
+      "previous": "पिछला",
+      "next": "अगला",
+      "amazing_work": "अद्भुत काम!",
+      "you_completed": "आपने पूरा कर लिया",
+      "total_time": "कुल समय",
+      "steps_done": "चरण पूर्ण",
+      "pillar": "स्तंभ",
+      "skills": "कौशल जिनका आपने अभ्यास किया",
+      "whats_next": "आगे क्या?",
+      "whats_next_desc": "अपनी उपलब्धियों को देखने के लिए कार्यशाला में अपनी प्रगति की जाँच करें, या उसी स्तंभ में और अधिक गतिविधियों का अन्वेषण करें!",
+      "build_again": "🔄 फिर से बनाएँ",
+      "done_back": "✨ हो गया — गतिविधियों पर वापस जाएँ",
+      "reset_progress": "प्रगति रीसेट करें?",
+      "reset_desc": "यह इस गतिविधि के लिए आपकी सभी प्रगति को मिटा देगा। आप शुरू से शुरू करेंगे।",
+      "cancel": "रद्द करें",
+      "reset": "रीसेट करें",
+      "save_exit": "सहेजें और बाहर निकलें?",
+      "save_exit_desc": "आपकी प्रगति स्वचालित रूप से सहेजी जाती है! आप इस गतिविधि को कभी भी वहीं से जारी रख सकते हैं जहाँ आपने छोड़ा था।",
+      "keep_building": "बनाना जारी रखें",
+      "save_exit_btn": "सहेजें और बाहर निकलें",
+      "step": "चरण",
+      "of": "में से"
+    },
+    "toddler": {
+      "title": "लिटिल एक्सप्लोरर्स",
+      "ages": "उम्र 3-5",
+      "exit_zone": "बाहर निकलें",
+      "welcome": "स्वागत है, छोटे एक्सप्लोरर! 👋",
+      "welcome_desc": "आइए आज कुछ अद्भुत बनाएँ! नीचे से एक गतिविधि चुनें।",
+      "what_to_do": "आप क्या करना चाहते हैं? 🤔",
+      "all_fun": "सब मज़ेदार!",
+      "activities_count": "गतिविधियाँ",
+      "all_activities": "सभी गतिविधियाँ",
+      "activities_suffix": "गतिविधियाँ",
+      "done": "हो गया!",
+      "started": "शुरू हो गया!",
+      "easy": "आसान",
+      "with_grownup": "एक वयस्क के साथ",
+      "again": "🔄 फिर से!",
+      "keep_going": "▶️ करते रहें!",
+      "lets_go": "🎨 चलो शुरू करें!",
+      "no_activities": "इस श्रेणी के लिए कोई गतिविधि नहीं मिली!",
+      "show_all": "सभी गतिविधियाँ दिखाएं",
+      "keep_creative": "रचनात्मक बने रहें!",
+      "made_with": "छोटे निर्माताओं के लिए ❤️ के साथ बनाया गया"
+    },
+    "favorites": {
+      "title": "पसंदीदा",
+      "empty": "अभी तक कोई पसंदीदा नहीं!",
+      "empty_desc": "किसी भी गतिविधि को यहां सहेजने के लिए उस पर बने दिल के आइकन को टैप करें।"
+    },
+    "settings": {
+      "title": "सेटिंग्स",
+      "theme": "थीम",
+      "light": "लाइट",
+      "dark": "डार्क",
+      "system": "सिस्टम",
+      "sound_effects": "ध्वनि प्रभाव",
+      "sound_desc": "क्रियाओं पर ध्वनियाँ बजाएं",
+      "made_with": "रचनात्मक परिवारों के लिए ❤️ के साथ बनाया गया"
+    },
+    "workshop": {
+      "title": "मेरी प्रगति",
+      "completed": "पूरा हुआ",
+      "total_time": "कुल समय",
+      "pillar_progress": "स्तंभ प्रगति",
+      "minutes": "मिनट",
+      "achievements": "उपलब्धियां"
+    },
+    "testimonials": {
+      "happy_campers": "खुशहाल कैंपर्स",
+      "title": "हमारा समुदाय क्या कहता है",
+      "desc": "उन हजारों खुशहाल परिवारों से जुड़ें जिन्होंने एक साथ निर्माण और सीखने का आनंद खोजा है।",
+      "built": "बनाया गया:",
+      "activities_done": "गतिविधियाँ पूरी कीं",
+      "avg_rating": "औसत रेटिंग",
+      "countries": "देश",
+      "recommend": "अनुशंसा करें"
+    },
+    "app": {
+      "easy": "आसान",
+      "ask_grownup": "इस गतिविधि में मदद करने के लिए किसी बड़े से कहें!",
+      "lets_make_it": "चलो इसे बनाते हैं!",
+      "new_badge": "वाह! नया बैज!",
+      "achievement_unlocked": "उपलब्धि हासिल की!"
+    },
+    "campWeeks": {
+      "ocean-explorers": {
+        "name": "महासागर अन्वेषक",
+        "description": "समुद्र-थीम वाले रोमांच के एक सप्ताह में गोता लगाएँ! समुद्री जीव बनाएं, जल विज्ञान का अन्वेषण करें, और समुद्री जीवन के बारे में जानें।",
+        "day1": {
+          "title": "पेपर प्लेट मछली",
+          "description": "पेपर प्लेट्स से रंगीन उष्णकटिबंधीय मछली बनाकर अपने समुद्री रोमांच की शुरुआत करें!"
+        },
+        "day2": {
+          "title": "पानी के नीचे ज्वालामुखी",
+          "description": "पानी के नीचे ज्वालामुखी विस्फोट बनाएँ! समुद्र-थीम वाला लावा बनाते समय रासायनिक प्रतिक्रियाओं के बारे में जानें।"
+        },
+        "day3": {
+          "title": "रेनस्टिक लहरें",
+          "description": "एक रेनस्टिक बनाएँ जो समुद्र की लहरों की तरह आवाज़ करती है! विश्राम और संगीत के लिए बिल्कुल सही।"
+        },
+        "day4": {
+          "title": "बीच ट्रेज़र हंट",
+          "description": "एक बीच-थीम वाले स्कैवेंजर हंट पर जाएं! गोले, चिकने पत्थर और समुद्री खजाने खोजें।"
+        },
+        "day5": {
+          "title": "महासागर डायरैमा शोकेस",
+          "description": "अपने सभी समुद्री जीवों की विशेषता वाले एक महासागर डायरैमा को बनाने के लिए जो कुछ भी आपने सीखा है उसे मिलाएं!"
+        },
+        "theme": "🌊 महासागर खोजकर्ता",
+        "materials": {
+          "mat_0": "पेपर की प्लेटे",
+          "mat_1": "बेकिंग सोडा और सिरका",
+          "mat_2": "कार्डबोर्ड ट्यूब",
+          "mat_3": "चावल या सेम",
+          "mat_4": "नीला रंग",
+          "mat_5": "गत्ते के डिब्बे का बक्सा",
+          "mat_6": "निर्माण कागज",
+          "mat_7": "सीपियाँ या सीप के आकार का पास्ता",
+          "mat_8": "नीला सिलोफ़न"
+        }
+      },
+      "space-mission": {
+        "name": "अंतरिक्ष मिशन",
+        "description": "अंतरिक्ष अन्वेषण की आकाशगंगा में ब्लास्ट ऑफ करें! रॉकेट बनाएं, ग्रहों के बारे में जानें, और ब्रह्मांड के रहस्यों की खोज करें।",
+        "day1": {
+          "title": "पेपर रॉकेट शिप",
+          "description": "अपना खुद का रॉकेट जहाज डिजाइन और बनाएं! वायुगतिकी और अंतरिक्ष यात्रा के बारे में जानें।"
+        },
+        "day2": {
+          "title": "बैलून रॉकेट रेस",
+          "description": "कमरे में बैलून रॉकेट लॉन्च करें! थ्रस्ट और न्यूटन के तीसरे नियम के बारे में जानें।"
+        },
+        "day3": {
+          "title": "आकाशगंगा पेंटिंग",
+          "description": "नमक पेंटिंग तकनीक के साथ आश्चर्यजनक आकाशगंगा कला बनाएं! सितारों को चमकाएं और नेबुला को घुमाएं।"
+        },
+        "day4": {
+          "title": "स्टारगेजिंग नाइट",
+          "description": "असली रात के आकाश का अन्वेषण करें! तारामंडल खोजें और दूर के सितारों और ग्रहों के बारे में जानें।"
+        },
+        "day5": {
+          "title": "एलियन पपेट शो",
+          "description": "एलियन सॉक पपेट बनाएं और एक अंतरिक्ष साहसिक पपेट शो प्रस्तुत करें! ब्रह्मांड से कहानियां बताने के लिए अपनी कल्पना का उपयोग करें।"
+        },
+        "theme": "🚀अंतरिक्ष मिशन",
+        "materials": {
+          "mat_0": "कार्डबोर्ड ट्यूब",
+          "mat_1": "गुब्बारे",
+          "mat_2": "डोरी",
+          "mat_3": "तिनके",
+          "mat_4": "नमक",
+          "mat_5": "जल रंग",
+          "mat_6": "काली मिर्च",
+          "mat_7": "मोज़े",
+          "mat_8": "चाहत भरी नज़रों से देखना",
+          "mat_9": "अनुभव किया",
+          "mat_10": "स्टार चार्ट या ऐप"
+        }
+      },
+      "backyard-safari": {
+        "name": "बैकयार्ड सफारी",
+        "description": "अपने खुद के पिछवाड़े में एक जंगली साहसिक यात्रा पर निकलें! अपने दरवाजे के ठीक बाहर कीड़े, पौधे और आकर्षक पारिस्थितिकी तंत्र की खोज करें।",
+        "day1": {
+          "title": "बग होटल निर्माण",
+          "description": "लाभदायक कीड़ों के लिए एक आरामदायक घर बनाएं! हमारे बगीचों में मदद करने वाले कीड़ों के बारे में जानें।"
+        },
+        "day2": {
+          "title": "डांसिंग रेजिन कीड़े",
+          "description": "सोडा में \"कीड़ों\" को ऊपर और नीचे नाचते हुए देखें! उछाल और गैसों के बारे में जानें।"
+        },
+        "day3": {
+          "title": "पशु मास्क",
+          "description": "अपने पसंदीदा सफारी जानवरों के मास्क बनाएं! शेर, हाथी या तितलियों में बदलें।"
+        },
+        "day4": {
+          "title": "प्रकृति स्कैवेंजर हंट",
+          "description": "अपनी बैकयार्ड सफारी का अन्वेषण करें! कीड़े, पौधे और जानवरों के निशान खोजें।"
+        },
+        "day5": {
+          "title": "सफारी दूरबीन और फील्ड गाइड",
+          "description": "अपनी खुद की सफारी दूरबीन और प्रकृति फील्ड गाइड बनाएं! इस सप्ताह आपके द्वारा खोजे गए सभी जीवों का दस्तावेजीकरण करें।"
+        },
+        "theme": "🦋 पिछवाड़े की सफ़ारी",
+        "materials": {
+          "mat_0": "लाठियाँ और टहनियाँ",
+          "mat_1": "देवदारू शंकु",
+          "mat_2": "खाली डिब्बे",
+          "mat_3": "साफ़ सोडा",
+          "mat_4": "किशमिश",
+          "mat_5": "पेपर की प्लेटे",
+          "mat_6": "रँगना",
+          "mat_7": "कार्डबोर्ड ट्यूब",
+          "mat_8": "नोटबुक",
+          "mat_9": "आवर्धक लेंस"
+        }
+      },
+      "maker-week": {
+        "name": "मेकर वीक",
+        "description": "अपनी इंजीनियरिंग टोपी पहनें! हाथों-हाथ बनाने के माध्यम से अद्भुत उपकरणों का निर्माण, प्रयोग और निर्माण करें।",
+        "day1": {
+          "title": "रबर बैंड कार",
+          "description": "रबर बैंड ऊर्जा द्वारा संचालित कार बनाएं! संग्रहीत ऊर्जा और गति के बारे में जानें।"
+        },
+        "day2": {
+          "title": "कैटापल्ट चुनौती",
+          "description": "एक काम करने वाली गुलेल का निर्माण करें! लीवर के बारे में जानें और कमरे में पोमपोम लॉन्च करें।"
+        },
+        "day3": {
+          "title": "एग ड्रॉप इंजीनियरिंग",
+          "description": "अंडे को ऊंचाई से गिरने से बचाने के लिए एक उपकरण डिजाइन करें! वास्तविक समस्याओं को हल करने के लिए इंजीनियरिंग सिद्धांतों को लागू करें।"
+        },
+        "day4": {
+          "title": "मार्बल रन",
+          "description": "मोड़, घुमाव और ड्रॉप्स के साथ एक महाकाव्य मार्बल रन इंजीनियर करें! गुरुत्वाकर्षण और गति के साथ प्रयोग करें।"
+        },
+        "day5": {
+          "title": "आविष्कार सम्मेलन",
+          "description": "अपने सभी आविष्कारों का प्रदर्शन करें! एक नया रोबोट या उपकरण बनाएं जो आपने जो सीखा है उसे मिलाता है।"
+        },
+        "theme": "🔧निर्माता सप्ताह",
+        "materials": {
+          "mat_0": "प्लास्टिक की बोतलें",
+          "mat_1": "बोतल कैप्स",
+          "mat_2": "रबर बैंड",
+          "mat_3": "आइसक्रीम पर लकड़ी का खोंचा",
+          "mat_4": "प्लास्टिक के चम्मच",
+          "mat_5": "अंडे",
+          "mat_6": "कुशनिंग सामग्री",
+          "mat_7": "कार्डबोर्ड ट्यूब",
+          "mat_8": "पत्थर",
+          "mat_9": "पुनरावर्तनीय"
+        }
+      }
+    },
+    "pillars": {
+      "toybox": {
+        "title": "खिलौना बक्सा",
+        "desc": "शून्य से अद्भुत हस्तनिर्मित खिलौने बनाएं"
+      },
+      "sciencelab": {
+        "title": "इंटरएक्टिव लैब्स",
+        "desc": "जिज्ञासु लैब्स का अन्वेषण करें: भौतिकी, रसायन विज्ञान, जीव विज्ञान और बहुत कुछ!"
+      },
+      "artstudio": {
+        "title": "कला स्टूडियो",
+        "desc": "कला और शिल्प के माध्यम से अपनी रचनात्मकता व्यक्त करें"
+      },
+      "outdoorquest": {
+        "title": "बाहरी गतिविधि",
+        "desc": "प्रकृति और बाहरी रोमांच का अन्वेषण करें"
+      }
+    },
+    "camp_weeks": {
+      "earn_champion": "🏆 समर चैंपियन बैज अर्जित करने के लिए सभी 4 प्रोजेक्ट सप्ताह पूरे करें!"
+    },
+    "title": "जिज्ञासु"
+  },
+  "welcome_title": "जिज्ञासु में आपका स्वागत है!",
+  "welcome_subtitle": "सीखने का ब्रह्मांड",
+  "choose_avatar": "अपना अवतार चुनें",
+  "enter_name": "आपका नाम क्या है?",
+  "lets_go": "चलिए शुरू करते हैं!",
+  "global_xp": "ग्लोबल XP",
+  "where_to_go": "आज आप कहाँ जाना चाहते हैं, {{name}}?",
+  "science_lab": "विज्ञान प्रयोगशाला",
+  "math_kingdom": "गणित साम्राज्य",
+  "bioverse": "जीव विज्ञान",
+  "chemlab": "रसायन विज्ञान",
+  "cosmoslab": "ब्रह्मांड",
+  "toys_games": "खिलौने और खेल",
+  "nav_help": "सहायता",
+  "nav_impact": "प्रभाव",
+  "pillar_toybox_desc": "शुरुआत से अद्भुत हस्तनिर्मित खिलौने बनाएं",
+  "pillar_sciencelab_desc": "जिज्ञासु लैब्स का अन्वेषण करें: भौतिकी, रसायन विज्ञान, जीवविज्ञान और बहुत कुछ!",
+  "pillar_artstudio_desc": "कला और शिल्प के माध्यम से अपनी रचनात्मकता व्यक्त करें",
+  "pillar_outdoorquest_desc": "प्रकृति और बाहरी रोमांच का अन्वेषण करें",
+  "parent_permission": "स्थानीय प्रोफ़ाइल बनाने के लिए मेरे पास मेरे माता-पिता/अभिभावक की अनुमति है।",
+  "about.values.0.title": "आश्चर्य",
+  "about.values.0.desc": "हम सवालों से शुरू करते हैं...",
+  "about.values.1.title": "हिस्सेदारी",
+  "about.values.1.desc": "एक मंच...",
+  "about.values.2.title": "आदर",
+  "about.values.2.desc": "कोई ग्रेड नहीं...",
+  "about.values.3.title": "धैर्य",
+  "about.values.3.desc": "सीखने में समय लगता है...",
+  "about.values.4.title": "आनंद",
+  "about.values.4.desc": "यदि सीखना आनंददायक नहीं है...",
+  "about.values.5.title": "पहचान",
+  "about.values.5.desc": "भारतीय वैज्ञानिक...",
+  "about.differences.0.title": "डिज़ाइन द्वारा निःशुल्क",
+  "about.differences.0.desc": "कोई ख़राब संस्करण नहीं है...",
+  "about.differences.1.title": "वेबसाइट प्रथम",
+  "about.differences.1.desc": "एक लिंक साझा किया गया...",
+  "about.differences.2.title": "6 भारतीय भाषाएँ",
+  "about.differences.2.desc": "अंग्रेजी, हिंदी, तमिल...",
+  "about.differences.3.title": "सबसे पहले ऑफलाइन",
+  "about.differences.3.desc": "2जी पर काम करने के लिए डिज़ाइन किया गया...",
+  "about.differences.4.title": "हर उम्र के लिए",
+  "about.differences.4.desc": "आयु 2 से 80+...",
+  "about.differences.5.title": "दृश्य और इंटरैक्टिव",
+  "about.differences.5.desc": "आप सिर्फ देखते नहीं...",
+  "about.support_labels.who": "WHO",
+  "about.support_labels.who_desc": "एक संक्षिप्त परिचय...",
+  "about.support_labels.why": "क्यों",
+  "about.support_labels.why_desc": "जिज्ञासु क्यों?",
+  "about.support_labels.how": "कैसे",
+  "about.support_labels.how_desc": "आप कैसे कल्पना करते हैं...",
+  "about.mission": "उद्देश्य",
+  "about.what_we_built": "हमने क्या बनाया",
+  "about.support": "सहायता",
+  "about.tagline": "आश्चर्य स्थापित करें.",
+  "about.join_mission": "मिशन से जुड़ें",
+  "about.relationships": "हम लेन-देन से पहले रिश्तों में विश्वास करते हैं।",
+  "private_badge": "100% निजी (स्थानीय रूप से सहेजा गया)",
+  "language": "भाषा",
+  "enter_name_placeholder": "जैसे एक्सप्लोरर",
+  "privacy_policy": "गोपनीयता नीति",
+  "privacy_intro": "परिचय",
+  "privacy_intro_text": "जिज्ञासु आपका स्वागत है. हम आपकी गोपनीयता की रक्षा करने और बच्चों के लिए एक सुरक्षित शैक्षिक वातावरण सुनिश्चित करने के लिए प्रतिबद्ध हैं। यह गोपनीयता नीति बताती है कि हम अपने प्लेटफ़ॉर्म पर जानकारी कैसे एकत्र करते हैं, उपयोग करते हैं और उसकी सुरक्षा कैसे करते हैं। हमारी गोपनीयता प्रथाओं को बच्चों के ऑनलाइन गोपनीयता संरक्षण अधिनियम (सीओपीपीए) और डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम (डीपीडीपी अधिनियम) के सिद्धांतों के साथ संरेखित करने के लिए डिज़ाइन किया गया है।",
+  "privacy_collection": "जानकारी हम एकत्रित करते हैं",
+  "privacy_collection_text": "हम अपनी शैक्षिक सेवा प्रदान करने के लिए आवश्यक न्यूनतम जानकारी ही एकत्र करते हैं:",
+  "privacy_profile_data": "स्थानीय प्रोफ़ाइल डेटा",
+  "privacy_profile_data_text": "नाम, अवतार और सीखने की प्रगति आपके डिवाइस पर स्थानीय रूप से संग्रहीत की जाती है। हम इस डेटा को अपने सर्वर पर प्रसारित नहीं करते हैं।",
+  "privacy_analytics": "अनाम विश्लेषिकी",
+  "privacy_analytics_text": "सामान्य उपयोग पैटर्न को समझने के लिए हम गोपनीयता-प्रथम, कुकी रहित विश्लेषण (प्रशंसनीय) का उपयोग करते हैं। किसी भी व्यक्तिगत पहचान योग्य जानकारी (पीआईआई) को ट्रैक या संग्रहीत नहीं किया जाता है।",
+  "privacy_parent_rights": "माता-पिता/अभिभावक अधिकार",
+  "privacy_parent_rights_text": "हम बाल गोपनीयता कानूनों के तहत माता-पिता और अभिभावकों के अधिकारों का सम्मान करते हैं। माता-पिता का अधिकार है:",
+  "privacy_right_review": "हमने उनके बच्चे से जो भी जानकारी एकत्र की है उसकी समीक्षा करें।",
+  "privacy_right_refuse": "अपने बच्चे की जानकारी को आगे एकत्र करने या उपयोग करने से मना करें।",
+  "privacy_third_parties": "तृतीय-पक्ष सेवाएँ",
+  "privacy_third_parties_text": "हम तीसरे पक्ष को डेटा नहीं बेचते हैं, न ही विज्ञापन चलाते हैं। हमारे द्वारा उपयोग की जाने वाली सभी तृतीय-पक्ष सेवाओं (जैसे कि बुनियादी साइट होस्टिंग और एनालिटिक्स के लिए) का उनकी गोपनीयता अनुपालन के लिए कड़ाई से मूल्यांकन किया जाता है और उन्हें हमारे उपयोगकर्ताओं के डेटा को अपने उद्देश्यों के लिए उपयोग करने की अनुमति नहीं है।",
+  "privacy_retention": "डेटा प्रतिधारण",
+  "privacy_retention_text": "क्योंकि सीखने का डेटा आपके डिवाइस पर स्थानीय रूप से संग्रहीत होता है, इसे तब तक बनाए रखा जाता है जब तक कि आप अपने ब्राउज़र के स्थानीय संग्रहण को साफ़ नहीं कर देते या ऐप के भीतर प्रोफ़ाइल को स्पष्ट रूप से हटा नहीं देते। प्लेटफ़ॉर्म को बेहतर बनाने में हमारी सहायता के लिए अज्ञात समग्र विश्लेषण डेटा को अनिश्चित काल तक रखा जाता है।",
+  "privacy_contact": "हमसे संपर्क करें",
+  "privacy_contact_text": "यदि इस गोपनीयता नीति के बारे में आपके कोई प्रश्न या चिंताएं हैं, तो कृपया हमसेprivacy@jigyasu.app पर संपर्क करें।",
+  "terms_of_service": "सेवा की शर्तें",
+  "terms_acceptance": "शर्तों की स्वीकृति",
+  "terms_acceptance_text": "जिज्ञासु तक पहुंच या उपयोग करके, आप इन सेवा की शर्तों से बंधे होने के लिए सहमत हैं। यदि आप इन शर्तों से सहमत नहीं हैं, तो कृपया हमारे मंच का उपयोग न करें।",
+  "terms_acceptable_use": "स्वीकार्य उपयोग नीति",
+  "terms_acceptable_use_text": "जिज्ञासु बच्चों और वयस्कों के लिए बनाया गया एक शैक्षिक मंच है। उपयोगकर्ता इससे सहमत हैं:",
+  "terms_use_1": "प्लेटफ़ॉर्म का उपयोग केवल शैक्षिक, गैर-व्यावसायिक उद्देश्यों के लिए करें।",
+  "terms_use_2": "सेवा या सर्वर में हस्तक्षेप या बाधा डालने का प्रयास न करें।",
+  "terms_use_3": "किसी भी तरह से प्लेटफ़ॉर्म का उपयोग न करें जो लागू कानूनों या विनियमों का उल्लंघन करता हो।",
+  "terms_content": "सामग्री दिशानिर्देश",
+  "terms_liability": "दायित्व की सीमा",
+  "terms_liability_text": "कानून द्वारा अनुमत पूर्ण सीमा तक, जिज्ञासु आपके उपयोग या सेवा का उपयोग करने में असमर्थता के परिणामस्वरूप होने वाली किसी भी प्रत्यक्ष, अप्रत्यक्ष, आकस्मिक, विशेष, परिणामी या दंडात्मक क्षति के लिए उत्तरदायी नहीं होगा।",
+  "terms_termination": "समापन",
+  "terms_termination_text": "हम बिना किसी सूचना के किसी भी समय सेवा को संशोधित करने या बंद करने का अधिकार सुरक्षित रखते हैं। यदि आप शर्तों का उल्लंघन करते हैं तो हम बिना किसी पूर्व सूचना या दायित्व के, किसी भी कारण से, बिना किसी सीमा के सेवा तक आपकी पहुंच को तुरंत समाप्त या निलंबित कर सकते हैं।",
+  "terms_governing_law": "शासी कानून",
+  "terms_governing_law_text": "इन शर्तों को कानूनी प्रावधानों के टकराव की परवाह किए बिना, भारत के कानूनों के अनुसार शासित और समझा जाएगा।",
+  "terms_contact": "संपर्क जानकारी",
+  "terms_contact_text": "इन शर्तों के बारे में किसी भी प्रश्न के लिए, कृपया हमसे कानूनी@jigyasu.app पर संपर्क करें।",
+  "share_whatsapp": "परिवार के साथ साझा करें",
+  "share_title": "अपनी प्रगति साझा करें",
+  "share_description": "व्हाट्सएप पर परिवार के साथ अपनी शिक्षा का जश्न मनाएं!",
+  "preview": "पूर्व दर्शन:",
+  "send_whatsapp": "व्हाट्सएप पर भेजें",
+  "share_note": "यह व्हाट्सएप को एक नए टैब में खोलता है। कोई डेटा एकत्र नहीं किया जाता है.",
+  "setup_profile": "आइए आपकी स्थानीय प्रोफ़ाइल सेट करें (कोई क्लाउड ट्रैकिंग नहीं!)",
+  "gallery.all": "सभी",
+  "gallery.age_group": "आयु वर्ग",
+  "gallery.difficulty": "कठिनाई",
+  "gallery.sort_by": "इसके अनुसार क्रमबद्ध करें",
+  "gallery.popular": "सबसे लोकप्रिय",
+  "gallery.rating": "उच्चतम रेटेड",
+  "gallery.name": "नाम (ए-जेड)",
+  "gallery.quickest": "सबसे तेज़ पहले",
+  "gallery.clear_all": "सभी फ़िल्टर साफ़ करें",
+  "gallery.showing": "दिखा",
+  "gallery.activities_count": "गतिविधियाँ",
+  "gallery.clear": "फ़िल्टर साफ़ करें",
+  "gallery.no_found": "कोई गतिविधि नहीं मिली",
+  "gallery.try_adjusting": "अपने फ़िल्टर या खोज शब्द समायोजित करने का प्रयास करें",
+  "kidscamp.modal.reviews": "समीक्षा",
+  "kidscamp.modal.materials_needed": "आवश्यक सामग्री",
+  "kidscamp.modal.opt": "(ऑप्ट)",
+  "kidscamp.modal.more": "अधिक",
+  "kidscamp.modal.steps": "कदम",
+  "kidscamp.modal.more_steps": "अधिक कदम...",
+  "kidscamp.modal.cross_pillar": "क्रॉस-पिलर कनेक्शन",
+  "kidscamp.modal.cross_pillar_desc": "यह गतिविधि अन्य स्तंभों से जुड़ती है! कनेक्टर उपलब्धि को अनलॉक करने के लिए संबंधित गतिविधियाँ पूरी करें।",
+  "kidscamp.modal.build_again": "पुनः निर्माण करें",
+  "kidscamp.modal.continue": "जारी रखना",
+  "kidscamp.modal.start_activity": "गतिविधि प्रारंभ करें",
+  "kidscamp.modal.what_you_learn": "आप क्या सीखेंगे",
+  "kidscamp.activity_mode.great_job": "अच्छा काम!",
+  "kidscamp.activity_mode.back": "पीछे",
+  "kidscamp.activity_mode.pause_timer": "टाइमर रोकें",
+  "kidscamp.activity_mode.resume_timer": "टाइमर फिर से शुरू करें",
+  "kidscamp.activity_mode.reset_activity": "गतिविधि रीसेट करें",
+  "kidscamp.activity_mode.complete": "% पूरा",
+  "kidscamp.activity_mode.steps_remaining": "चरण शेष",
+  "kidscamp.activity_mode.step1": "चरण 1: सामग्री इकट्ठा करें",
+  "kidscamp.activity_mode.before_begin": "आरंभ करने से पहले",
+  "kidscamp.activity_mode.optional": "वैकल्पिक",
+  "kidscamp.activity_mode.items": "सामान",
+  "kidscamp.activity_mode.safety_notes": "सुरक्षा नोट",
+  "kidscamp.activity_mode.check": "जाँच करना",
+  "kidscamp.activity_mode.more_items": "ज्यादा वस्तुएं",
+  "kidscamp.activity_mode.steps": "कदम",
+  "kidscamp.activity_mode.step": "कदम",
+  "kidscamp.activity_mode.of": "का",
+  "kidscamp.activity_mode.estimated_time": "अनुमानित समय:",
+  "kidscamp.activity_mode.pro_tip": "प्रो टिप",
+  "kidscamp.activity_mode.parent_help": "माता-पिता की मदद की जरूरत है",
+  "kidscamp.activity_mode.completed_undo": "पुरा होना! (पूर्ववत करने के लिए टैप करें)",
+  "kidscamp.activity_mode.mark_done": "पूर्ण हुआ चिह्नित करें",
+  "kidscamp.activity_mode.skip_step": "चरण छोड़ें",
+  "kidscamp.activity_mode.previous": "पहले का",
+  "kidscamp.activity_mode.next": "अगला",
+  "kidscamp.activity_mode.amazing_work": "अद्भुत कार्य!",
+  "kidscamp.activity_mode.you_completed": "आपने पूरा कर लिया",
+  "kidscamp.activity_mode.total_time": "कुल समय",
+  "kidscamp.activity_mode.steps_done": "चरण पूर्ण",
+  "kidscamp.activity_mode.pillar": "स्तंभ",
+  "kidscamp.activity_mode.skills": "आपके द्वारा अभ्यास किया गया कौशल",
+  "kidscamp.activity_mode.build_again": "🔄 फिर से निर्माण करें",
+  "kidscamp.activity_mode.done_back": "✨ हो गया - गतिविधियों पर वापस जाएँ",
+  "kidscamp.activity_mode.reset_progress": "प्रगति रीसेट करें?",
+  "kidscamp.activity_mode.reset_desc": "इससे इस गतिविधि के लिए आपकी सारी प्रगति साफ़ हो जाएगी. आप शुरुआत से शुरू करेंगे.",
+  "kidscamp.activity_mode.cancel": "रद्द करना",
+  "kidscamp.activity_mode.reset": "रीसेट करें",
+  "kidscamp.activity_mode.save_exit": "सहेजें और बाहर निकलें?",
+  "kidscamp.activity_mode.save_exit_desc": "आपकी प्रगति स्वचालित रूप से सहेजी जाती है! आप इस गतिविधि को जहां से छोड़ा था वहां से किसी भी समय जारी रख सकते हैं।",
+  "kidscamp.activity_mode.keep_building": "निर्माण करते रहो",
+  "kidscamp.activity_mode.save_exit_btn": "सहेजें और बाहर निकलें",
+  "kidscamp.activity_mode.lets_build": "🚀 आइए निर्माण करें!",
+  "kidscamp.activity_mode.whats_next": "आगे क्या होगा?",
+  "kidscamp.ages.title1": "छोटे खोजकर्ता",
+  "kidscamp.ages.desc1": "माता-पिता के मार्गदर्शन के साथ सरल, संवेदी गतिविधियाँ। जिज्ञासु बच्चों के लिए बिल्कुल सही!",
+  "kidscamp.ages.feat1_0": "माता-पिता द्वारा निर्देशित गतिविधियाँ",
+  "kidscamp.ages.feat1_1": "संवेदी अन्वेषण",
+  "kidscamp.ages.feat1_2": "बड़े, रंगीन कदम",
+  "kidscamp.ages.feat1_3": "अतिरिक्त सुरक्षा युक्तियाँ",
+  "kidscamp.ages.title2": "कनिष्ठ रचनाकार",
+  "kidscamp.ages.desc2": "स्पष्ट चरण-दर-चरण निर्देशों के साथ मज़ेदार परियोजनाएँ। निर्माण के माध्यम से आत्मविश्वास का निर्माण!",
+  "kidscamp.ages.feat2_0": "अर्द्ध स्वतंत्र",
+  "kidscamp.ages.feat2_1": "उपलब्धि बैज",
+  "kidscamp.ages.feat2_2": "कौशल विकास",
+  "kidscamp.ages.feat2_3": "रचनात्मक स्वतंत्रता",
+  "kidscamp.ages.title3": "साहसिक बिल्डर्स",
+  "kidscamp.ages.desc3": "स्वतंत्र निर्माताओं के लिए जटिल परियोजनाएँ वास्तविक चुनौतियों के लिए तैयार हैं!",
+  "kidscamp.ages.feat3_0": "स्वतंत्र कार्य",
+  "kidscamp.ages.feat3_1": "उन्नत तकनीकें",
+  "kidscamp.ages.feat3_2": "एसटीईएम अवधारणाएँ",
+  "kidscamp.ages.feat3_3": "असली उपकरण",
+  "kidscamp.ages.title4": "भविष्य के नवप्रवर्तक",
+  "kidscamp.ages.desc4": "किशोरों के लिए उन्नत परियोजनाएँ, कोडिंग और वास्तविक दुनिया के कौशल!",
+  "kidscamp.ages.feat4_0": "स्व-निर्देशित शिक्षा",
+  "kidscamp.ages.feat4_1": "उन्नत स्टेम",
+  "kidscamp.ages.feat4_2": "वास्तविक दुनिया के अनुप्रयोग",
+  "kidscamp.ages.feat4_3": "साथियों की चुनौतियाँ",
+  "kidscamp.ages.title5": "आजीवन सीखने वाले",
+  "kidscamp.ages.desc5": "गहन जानकारी, पेशेवर कौशल और उन्नत अवधारणाएँ।",
+  "kidscamp.ages.feat5_0": "स्व-निर्देशित शिक्षा",
+  "kidscamp.ages.feat5_1": "उन्नत अवधारणाएँ",
+  "kidscamp.ages.feat5_2": "व्यावसायिक कौशल",
+  "kidscamp.ages.feat5_3": "प्रभुत्व",
+  "kidscamp.ages.clear_selection": "स्पष्ट चयन (सभी आयु दिखाएं)",
+  "kidscamp.ages.whos_making_modal": "आज कौन बना रहा है?",
+  "kidscamp.ages.whos_making": "आज कौन बना रहा है? 🎨",
+  "kidscamp.ages.select_age": "वैयक्तिकृत गतिविधियों के लिए एक आयु समूह चुनें जो आपके बच्चे के कौशल स्तर से मेल खाता हो",
+  "kidscamp.modal.completed_excl": "पुरा होना!",
+  "kidscamp.modal.days": "दिन",
+  "kidscamp.modal.showcase": "शोकेस",
+  "kidscamp.modal.day": "दिन",
+  "kidscamp.modal.done": "✓ हो गया",
+  "kidscamp.modal.start": "🚀शुरू करें",
+  "kidscamp.modal.preview": "पूर्व दर्शन",
+  "kidscamp.modal.tip_gather": "💡 टिप: एक बेहतर अनुभव के लिए सप्ताह की शुरुआत में सभी सामग्री इकट्ठा कर लें!",
+  "kidscamp.modal.week_complete": "सप्ताह पूरा!",
+  "kidscamp.modal.amazing_job": "अद्भुत कार्य पूरा हुआ",
+  "kidscamp.modal.earned": "आपने अर्जित कर लिया है",
+  "kidscamp.modal.badge": "बिल्ला!",
+  "kidscamp.modal.continue_exploring": "अन्वेषण जारी रखें",
+  "kidscamp.modal.ready_next": "क्या आप अपनी अगली गतिविधि के लिए तैयार हैं?",
+  "kidscamp.modal.start_day": "🚀 प्रारंभ दिवस",
+  "camp_weeks.completed": "पुरा होना।",
+  "camp_weeks.in_progress": "प्रगति पर है",
+  "camp_weeks.do_again": "फिर से करो",
+  "camp_weeks.continue": "जारी रखना",
+  "camp_weeks.start_week": "आरंभ सप्ताह",
+  "camp_weeks.project_weeks": "प्रोजेक्ट सप्ताह",
+  "camp_weeks.structured_journeys": "संरचित परियोजना यात्राएँ",
+  "camp_weeks.follow_curated": "हमारी क्यूरेटेड 5-दिवसीय परियोजना योजनाओं का पालन करें। स्कूल की छुट्टियों, सप्ताहांत, या जब भी आपको संरचित व्यावहारिक मनोरंजन की आवश्यकता हो, के लिए बिल्कुल सही!",
+  "camp_weeks.days_of_activities": "गतिविधियों के 5 दिन",
+  "camp_weeks.day": "दिन",
+  "camp_weeks.all_ages": "सभी उम्र",
+  "camp_weeks.ages": "युग",
+  "kidscamp.camp_weeks.earn_champion": "🏆 समर चैंपियन बैज अर्जित करने के लिए सभी 4 प्रोजेक्ट सप्ताह पूरे करें!",
+  "kidscamp.favorites.title": "पसंदीदा",
+  "kidscamp.favorites.empty": "अभी तक कोई पसंदीदा नहीं!",
+  "kidscamp.favorites.empty_desc": "किसी भी गतिविधि को यहां सहेजने के लिए उस पर दिल के आइकन पर टैप करें।",
+  "kidscamp.featured.built": "बनाना",
+  "kidscamp.featured.in_progress": "प्रगति पर है",
+  "kidscamp.featured.build_again": "🔄 फिर से निर्माण करें",
+  "kidscamp.featured.continue": "▶ जारी रखें",
+  "kidscamp.featured.start_building": "🔨निर्माण शुरू करें",
+  "kidscamp.featured.staff_picks": "कर्मचारियों की पसंद",
+  "kidscamp.featured.title": "विशेष गतिविधियां",
+  "kidscamp.featured.desc": "हमारी सबसे लोकप्रिय परियोजनाएँ हर जगह परिवारों द्वारा पसंद की गईं",
+  "kidscamp.featured.view_details": "विवरण देखें",
+  "footer.desc": "भारत में प्रत्येक बच्चे के लिए निःशुल्क विज़ुअल STEM शिक्षा। ऑफ़लाइन काम करता है. 6 भारतीय भाषाएँ।",
+  "kidscamp.footer.activities": "गतिविधियाँ",
+  "kidscamp.footer.all_activities": "सभी गतिविधियाँ →",
+  "kidscamp.footer.resources": "संसाधन",
+  "kidscamp.footer.project_weeks": "प्रोजेक्ट सप्ताह",
+  "kidscamp.footer.printable_checklists": "मुद्रण योग्य जाँच सूचियाँ",
+  "kidscamp.footer.safety_tips": "सुरक्षा टिप्स",
+  "kidscamp.footer.material_substitutes": "सामग्री विकल्प",
+  "kidscamp.footer.faqs": "पूछे जाने वाले प्रश्न",
+  "footer.information": "जानकारी",
+  "footer.privacy": "गोपनीयता",
+  "footer.about": "हमारे बारे में",
+  "footer.made_with": "भारत के लिए ❤️ के साथ बनाया गया।",
+  "maker_space.badge": "घर पर बच्चों का शिविर",
+  "maker_space.spark_creativity": "स्पार्क रचनात्मकता.",
+  "maker_space.build_memories": "यादें बनाएं.",
+  "maker_space.get_started": "शुरू हो जाओ",
+  "maker_space.explore_weeks": "प्रोजेक्ट सप्ताहों का अन्वेषण करें",
+  "maker_space.activities": "गतिविधियाँ",
+  "maker_space.creative_pillars": "रचनात्मक स्तंभ",
+  "maker_space.screen_free": "स्क्रीन-मुक्त मज़ा",
+  "maker_space.scroll_explore": "अन्वेषण करने के लिए स्क्रॉल करें",
+  "kidscamp.title": "जिज्ञासु",
+  "pillar_showcase.toybox.tagline": "अद्भुत हस्तनिर्मित खिलौने बनाएं",
+  "pillar_showcase.toybox.preview.0": "लकड़ी की गाड़ियाँ",
+  "pillar_showcase.toybox.preview.1": "कठपुतलियों",
+  "pillar_showcase.toybox.preview.2": "पहेलियाँ",
+  "pillar_showcase.sciencelab.tagline": "इंटरैक्टिव सिमुलेशन और प्रयोग चलाएँ",
+  "pillar_showcase.sciencelab.preview.0": "भौतिकी प्रयोगशाला",
+  "pillar_showcase.sciencelab.preview.1": "रसायन विज्ञान प्रयोगशाला",
+  "pillar_showcase.sciencelab.preview.2": "जीवविज्ञान प्रयोगशाला",
+  "pillar_showcase.sciencelab.preview.3": "कॉसमॉस लैब",
+  "pillar_showcase.artstudio.tagline": "अपनी रचनात्मकता व्यक्त करें",
+  "pillar_showcase.artstudio.preview.0": "चित्रकारी",
+  "pillar_showcase.artstudio.preview.1": "origami",
+  "pillar_showcase.artstudio.preview.2": "मूर्ति",
+  "pillar_showcase.outdoorquest.tagline": "प्रकृति और रोमांच का अन्वेषण करें",
+  "pillar_showcase.outdoorquest.preview.0": "मेहतर शिकार करता है",
+  "pillar_showcase.outdoorquest.preview.1": "बागवानी",
+  "pillar_showcase.outdoorquest.preview.2": "स्टारगेज़िंग",
+  "pillar_showcase.interactive_learning": "इंटरैक्टिव लर्निंग",
+  "pillar_showcase.explore": "इंटरएक्टिव वातावरण का अन्वेषण करें",
+  "pillar_showcase.dive_into": "हमारे व्यावहारिक सिमुलेशन लैब, डिजिटल आर्ट स्टूडियो और भौतिक निर्माता स्थानों में गोता लगाएँ। कार्य करके, निर्माण करके और प्रयोग करके सीखें।",
+  "pillar_showcase.labs": "एलएबी",
+  "pillar_showcase.enter_lab": "लैब दर्ज करें",
+  "kidscamp.settings.title": "सेटिंग्स",
+  "kidscamp.settings.theme": "विषय",
+  "kidscamp.settings.light": "रोशनी",
+  "kidscamp.settings.dark": "अँधेरा",
+  "kidscamp.settings.system": "प्रणाली",
+  "kidscamp.settings.sound_effects": "ध्वनि प्रभाव",
+  "kidscamp.settings.sound_desc": "क्रियाओं पर ध्वनियाँ चलाएँ",
+  "kidscamp.settings.made_with": "रचनात्मक परिवारों के लिए ❤️ के साथ बनाया गया",
+  "kidscamp.testimonials.happy_campers": "हैप्पी कैम्पर्स",
+  "kidscamp.testimonials.title": "हमारा समुदाय क्या कहता है",
+  "kidscamp.testimonials.desc": "उन हजारों खुशहाल परिवारों से जुड़ें जिन्होंने एक साथ निर्माण और सीखने की खुशी की खोज की है।",
+  "kidscamp.testimonials.built": "बनाना:",
+  "kidscamp.testimonials.activities_done": "गतिविधियां पूरी हो गईं",
+  "kidscamp.testimonials.avg_rating": "औसत रेटिंग",
+  "kidscamp.testimonials.countries": "देशों",
+  "kidscamp.testimonials.recommend": "अनुशंसा करना",
+  "kidscamp.toddler.activities_count": "गतिविधियाँ",
+  "kidscamp.toddler.activities_suffix": "गतिविधियाँ",
+  "kidscamp.toddler.all_activities": "🎉सभी गतिविधियाँ",
+  "kidscamp.workshop.title": "मेरी तरक्की",
+  "kidscamp.workshop.completed": "पुरा होना।",
+  "kidscamp.workshop.minutes": "एम",
+  "kidscamp.workshop.total_time": "कुल समय",
+  "kidscamp.workshop.pillar_progress": "स्तंभ प्रगति",
+  "kidscamp.workshop.achievements": "उपलब्धियों",
+  "getting_adventure_ready": "आपका साहसिक कार्य तैयार हो रहा है...",
+  "format": "वेब",
+  "quality": "कम",
+  "kidscamp.app.easy": "आसान",
+  "kidscamp.app.ask_grownup": "इस गतिविधि में मदद के लिए किसी वयस्क से पूछें!",
+  "kidscamp.app.new_badge": "वाह! नया बैज!",
+  "kidscamp.app.achievement_unlocked": "खुली उपलब्धि!",
+  "kidscamp.app.lets_make_it": "चलो यह करते हैं!",
+  "kidscamp.toddler.title": "छोटे खोजकर्ता",
+  "kidscamp.toddler.ages": "उम्र 3-5",
+  "kidscamp.toddler.exit_zone": "निकास क्षेत्र",
+  "kidscamp.toddler.welcome": "आपका स्वागत है, लिटिल एक्सप्लोरर! 👋",
+  "kidscamp.toddler.what_to_do": "आप क्या करना चाहते हैं? 🤔",
+  "kidscamp.toddler.all_fun": "सारा मज़ा!",
+  "kidscamp.toddler.done_badge": "हो गया!",
+  "kidscamp.toddler.started_badge": "शुरू कर दिया!",
+  "kidscamp.toddler.play_again": "फिर से चालू करें",
+  "kidscamp.toddler.play_now": "अब खेलते हैं!",
+  "kidscamp.toddler.welcome_desc": "आइए आज कुछ अद्भुत बनाएं! नीचे कोई गतिविधि चुनें.",
+  "landing.principles.title": "मुख्य डिज़ाइन सिद्धांत",
+  "footer.contact": "संपर्क",
+  "landing.header.nav_worlds": "संसारों",
+  "landing.header.nav_how": "यह काम किस प्रकार करता है",
+  "landing.header.nav_parents": "अभिभावक",
+  "landing.header.nav_voices": "आवाज़ें",
+  "landing.header.switch_language": "भाषा बदलें",
+  "landing.header.start_free": "निःशुल्क प्रारंभ करें",
+  "landing_page.privacy_first": "गोपनीयता पहले:",
+  "landing_page.privacy_desc": "हम अपने सर्वर पर किसी भी व्यक्तिगत डेटा को कैप्चर या संग्रहीत नहीं करते हैं। आपका उपनाम, अवतार और प्रगति आपके अपने डिवाइस पर सुरक्षित रूप से सहेजी गई है।",
+  "landing.language.step": "चरण 3",
+  "landing.language.title": "अपनी भाषा चुनें",
+  "landing.language.description": "सीखने के लिए अपनी पसंदीदा भाषा चुनें",
+  "landing.language.selected": "चयनित",
+  "landing.review.title": "समीक्षा का समय!",
+  "landing.review.empty_desc": "अभी किसी भी गतिविधि को आपकी समीक्षा की आवश्यकता नहीं है। अपना ज्ञान बढ़ाने के लिए नई दुनिया की खोज करते रहें!",
+  "landing.review.due": "अभी बकाया है",
+  "landing.review.mastered": "महारत हासिल",
+  "landing.review.familiar": "परिचित",
+  "landing.review.empty_title": "आप सब फंस गए हैं!",
+  "testimonials.coming_soon": "जल्द आ रहा है",
+  "testimonials.share_exp": "अपना अनुभव साझा करें",
+  "testimonials.building_with_love": "हम प्यार से जिज्ञासु का निर्माण कर रहे हैं। एक बार लॉन्च होने के बाद, हम यहां शिक्षार्थियों और अभिभावकों की वास्तविक कहानियाँ पेश करेंगे।",
+  "testimonials.ready": "आज कुछ सीखने के लिए तैयार हैं?",
+  "testimonials.no_signup": "कोई साइन-अप नहीं. कोई डाउनलोड आवश्यक नहीं है. ऐप खोलें और 10 सेकंड के अंदर अपनी भाषा में शुरुआत करें।",
+  "testimonials.pick_world": "अपनी दुनिया चुनें →",
+  "testimonials.get_app": "अबेदन पत्र लो",
+  "landing.worlds.step": "चरण दो",
+  "landing.worlds.show_all": "सभी दुनियाओं का अन्वेषण करें \\u2193",
+  "academy.title": "अकादमी",
+  "academy.exam": "📝परीक्षा",
+  "academy.explore": "🔬 अन्वेषण करें",
+  "academy.report": "📋रिपोर्ट",
+  "academy.challenges": "🎯 चुनौतियाँ",
+  "biology.title": "बायोवर्स",
+  "biology.subtitle": "आपका इमर्सिव बायोलॉजी लर्निंग यूनिवर्स",
+  "biology.new_badge": "नया",
+  "biology.dashboard.level": "स्तर",
+  "biology.dashboard.xp": "एक्सपी",
+  "biology.dashboard.explored": "पता लगाया",
+  "biology.dashboard.streak": "धारी",
+  "biology.dashboard.badges": "बैज",
+  "biology.keep_exploring": "अन्वेषण करते रहें!",
+  "biology.clear_search": "स्पष्ट खोज",
+  "biology.found_modules_one": "1 मॉड्यूल मिला",
+  "biology.no_modules": "कोई मॉड्यूल नहीं मिला",
+  "biology.explored": "का पता लगाया",
+  "biology.search_placeholder": "🔍 खोज मॉड्यूल... ('डीएनए', 'गेम', 'क्विज़' आज़माएं)",
+  "discovery.title": "डिस्कवरी इंजन",
+  "discovery.explore": "अन्वेषण करें →",
+  "discovery.report": "प्रतिवेदन",
+  "algebra-scales": "सही जवाब",
+  "carbon-cycle": "कैनवास_इंटरैक्शन",
+  "cell-city": "कैनवास_इंटरैक्शन",
+  "chemical-balancer": "सही जवाब",
+  "literary-analysis": "सही जवाब",
+  "number-systems": "कैनवास_इंटरैक्शन",
+  "periodic-table": "कैनवास_इंटरैक्शन",
+  "early.title": "साहसिक अकादमी",
+  "explorer.welcome_subtitle": "प्रत्येक अवधारणा आपके रोजमर्रा के जीवन में किसी न किसी चीज़ से जुड़ती है।",
+  "explorer.world_name": "भविष्य के खोजकर्ता",
+  "explorer.of": "का",
+  "explorer.explored": "का पता लगाया",
+  "explorer.continue_where_left": "वहीं जारी रखें जहां आपने छोड़ा था...",
+  "explorer.time_estimate": "मिन",
+  "lab.title": "लैब जीरो",
+  "lab.grid": "ग्रिड",
+  "lab.path": "पथ",
+  "lab.search_placeholder": "प्रयोग, विषय, टैग खोजें...",
+  "buoyancy-lab": "कैनवास_इंटरैक्शन",
+  "circuit-builder": "सही जवाब",
+  "code-story": "सही जवाब",
+  "ecosystem-sandbox": "कैनवास_इंटरैक्शन",
+  "force-lab": "कैनवास_इंटरैक्शन",
+  "fraction-kitchen": "सही जवाब",
+  "human-body": "कैनवास_इंटरैक्शन",
+  "lever-explorer": "सही जवाब",
+  "multiplication-lab": "सही जवाब",
+  "statistics-playground": "कैनवास_इंटरैक्शन",
+  "timeline-explorer": "सही जवाब",
+  "weather-station": "सही जवाब",
+  "math_modules.AdventureMap.title": "🗺️मैथ किंगडम एडवेंचर मैप",
+  "math_modules.AdventureMap.subtitle": "किसी ज़ोन की चुनौती को हल करने के लिए उस पर क्लिक करें!",
+  "math_modules.AdventureMap.conquered": "पहले ही जीत लिया गया!",
+  "math_modules.AdventureMap.correct": "✨शानदार! आप गणित के जादूगर हैं! ✨",
+  "math_modules.AdventureMap.wrong": "🤔 पुनः प्रयास करें, बहादुर खोजकर्ता!",
+  "math_modules.AlgebraArena.balance": "⚖️ दोनों पक्ष बराबर होने चाहिए",
+  "math_modules.AlgebraArena.diffBasic": "बुनियादी",
+  "math_modules.AlgebraArena.diffBasicDesc": "1-चरण: 3x=12",
+  "math_modules.AlgebraArena.diffInter": "मध्यवर्ती",
+  "math_modules.AlgebraArena.diffInterDesc": "2-चरण: 2x+3=11",
+  "math_modules.AlgebraArena.diffAdv": "विकसित",
+  "math_modules.AlgebraArena.diffAdvDesc": "बहु-चरण, x², शक्तियाँ",
+  "math_modules.AlgebraArena.title": "🧮 बीजगणित अखाड़ा",
+  "math_modules.AlgebraArena.subtitle": "x के लिए हल करें - समीकरण को संतुलित करें!",
+  "math_modules.AlgebraArena.hideSteps": "🙈 कदम छिपाएँ",
+  "math_modules.AlgebraArena.showSteps": "📝 समाधान चरण दिखाएं",
+  "math_modules.AlgebraArena.wrong": "❌ पुनः प्रयास करें! संकेत के लिए चरणों की जाँच करें.",
+  "math_modules.AlgebraArena.skip": "छोड़ें →",
+  "math_modules.DailyChallenge.title": "🎯दैनिक चुनौती",
+  "math_modules.DailyChallenge.subtitle": "हर दिन एक नई चुनौती!",
+  "math_modules.DailyChallenge.day": "दिन",
+  "math_modules.DailyChallenge.streak": "धारी",
+  "math_modules.DailyChallenge.resetsIn": "में रीसेट करता है",
+  "math_modules.DailyChallenge.needHint": "💡 संकेत चाहिए?",
+  "math_modules.DailyChallenge.complete": "दैनिक चुनौती पूर्ण!",
+  "math_modules.DailyChallenge.comeBack": "एक नई चुनौती के लिए कल वापस आएँ! ⏰",
+  "math_modules.ExplorersHub.title": "🧭 खोजकर्ता गिल्ड",
+  "math_modules.ExplorersHub.subtitle": "20 दृश्य रोमांच - व्यावहारिक गणित के माध्यम से नींव।",
+  "math_modules.FractionPizza.title": "🍕 फ्रैक्शन पिज़्ज़ा पार्टी",
+  "math_modules.FractionPizza.subtitle": "पिज़्ज़ा के टुकड़े खाकर भिन्न सीखें!",
+  "math_modules.FractionPizza.explore": "अन्वेषण करना",
+  "math_modules.FractionPizza.challenge": "चुनौती",
+  "math_modules.FractionPizza.numSlices": "स्लाइस की संख्या",
+  "math_modules.FractionPizza.challengeLabel": "चुनौती:",
+  "math_modules.FractionPizza.correct": "सही!",
+  "math_modules.FractionPizza.tooMany": "❌ बहुत सारे!",
+  "math_modules.FractionPizza.breakdown": "📊 अंश टूटना",
+  "math_modules.FractionPizza.eaten": "खाया:",
+  "math_modules.FractionPizza.remaining": "शेष:",
+  "math_modules.FractionPizza.percentage": "प्रतिशत:",
+  "math_modules.FractionPizza.decimal": "दशमलव:",
+  "math_modules.FractionPizza.equivFractions": "🔄 समतुल्य भिन्न",
+  "math_modules.FractionPizza.funFact": "💡<strong>मजेदार तथ्य:</strong>",
+  "math_modules.FractionPizza.factStart": "उन्हें खाने के लिए स्लाइस पर क्लिक करें!",
+  "math_modules.FractionPizza.factWhole": "आपने पूरा पिज़्ज़ा खा लिया! 🎉",
+  "math_modules.FractionPizza.factHalf": "आपने बिल्कुल आधा खा लिया!",
+  "math_modules.FractionPizza.factDefault": "भिन्न पूर्ण के कुछ भाग दर्शाते हैं",
+  "math_modules.FractionPizza.factUnit": "एक टुकड़े को 'इकाई अंश' कहा जाता है",
+  "math.header.title": "मठ साम्राज्य",
+  "math.header.subtitle": "जहाँ संख्याएँ जीवंत हो उठती हैं! ✨",
+  "math.tabs.home.label": "घर",
+  "common.app_name": "लर्नओएस",
+  "math.preparing": "आपके गणित साहसिक कार्य की तैयारी...",
+  "math.footer": "सभी स्तरों के गणित के जादूगरों के लिए 💜 के साथ बनाया गया ✨",
+  "math.footer_stats": "50+ गतिविधियाँ · 350+ चुनौतियाँ · उम्र 5-18+",
+  "math.features.daily.title": "दैनिक चुनौती",
+  "math.features.daily.description": "हर दिन एक नई चुनौती! हर सुबह एक नई समस्या के साथ अपनी लय बनाएं और अपने कौशल को निखारें!",
+  "math.features.explorers.title": "खोजकर्ता गिल्ड",
+  "math.features.explorers.description": "20 दृश्य रोमांच! सिक्के गिनने से लेकर शतरंज की रणनीति, खेल आँकड़े और इंजीनियरिंग गणित तक।",
+  "math.features.map.title": "साहसिक मानचित्र",
+  "math.features.map.description": "मठ साम्राज्य का अन्वेषण करें! अतिरिक्त वन, घटाव गुफाओं और बहुत कुछ के माध्यम से यात्रा करें। सितारे अर्जित करने के लिए चुनौतियों का समाधान करें!",
+  "math.features.visualizer.title": "3डी गणित विज़ुअलाइज़र",
+  "math.features.visualizer.description": "देखें संख्याएँ जीवंत हो उठें! जोड़कर टावर बनाते हुए देखें, गुणन से ग्रिड बनाते हुए देखें, और विभाजन से समूहों को विभाजित करते हुए देखें - सब कुछ 3डी में!",
+  "math.features.skills.title": "कौशल अकादमी",
+  "math.features.skills.description": "मुख्य गणित नींव बनाएँ! समय सारणी में महारत हासिल करें, संख्या बांड बढ़ाएं, और पिज़्ज़ा के साथ भिन्नों का पता लगाएं!",
+  "math.features.advanced.title": "उन्नत गणित",
+  "math.features.advanced.description": "बीजगणित, ट्रिग, वैक्टर, मैट्रिक्स, लॉग, कैलकुलस, जटिल संख्याएं, सांख्यिकी, संभाव्यता - साथ ही एसएटी/एसीटी अभ्यास और गणित ओलंपियाड!",
+  "math.features.game.title": "नंबर क्रंच क्वेस्ट",
+  "math.features.game.description": "समय के विपरीत दौड़ें! जितनी जल्दी हो सके गणित की पहेलियाँ हल करें। कॉम्बो बनाएं और महान जादूगर का दर्जा हासिल करें!",
+  "math.features.pattern.title": "पैटर्न और मेमोरी",
+  "math.features.pattern.description": "संख्या अनुक्रमों में छिपे हुए पैटर्न की खोज करें - प्रत्येक प्रकार का एक सनकी विषय है! अपने दिमाग को प्रशिक्षित करने के लिए मेमोरी मैच भी खेलें!",
+  "math.title_part1": "आपका स्वागत है",
+  "math.title_part2": "गणित साम्राज्य!",
+  "math.subtitle": "एक सनकी दुनिया जहां संख्याएं नृत्य करती हैं, पैटर्न छिपते हैं, और गणित की हर समस्या एक साहसिक कार्य है जो हल होने की प्रतीक्षा कर रहा है! 🌟",
+  "math.stats.activities": "गतिविधियाँ",
+  "math.stats.challenges": "चुनौतियां",
+  "math.stats.fun_level": "मज़ा स्तर",
+  "math.start_exploring": "अन्वेषण प्रारंभ करें →",
+  "math.did_you_know": "✨ क्या आप जानते हैं?",
+  "math_modules.NumberBondsGarden.title": "🌻 नंबर बांड गार्डन",
+  "math_modules.NumberBondsGarden.subtitle": "लक्ष्य तक पहुंचने वाली संख्याओं को जोड़कर फूल उगाएं!",
+  "math_modules.NumberBondsGarden.targetSum": "लक्ष्य योग",
+  "math_modules.NumberBondsGarden.exploreMode": "🔍 अन्वेषण करें",
+  "math_modules.NumberBondsGarden.matchMode": "🎮मैच",
+  "math_modules.NumberBondsGarden.reset": "🔄 रीसेट करें",
+  "math_modules.NumberBondsGarden.pickNumber": "🔵 एक नंबर चुनें",
+  "math_modules.NumberBondsGarden.matchIt": "🟠इसका मिलान करें",
+  "math_modules.NumberBondsGarden.gardenComplete": "बगीचा पूरा!",
+  "math_modules.NumberBondsGarden.grewAll": "आपने सभी फूल उगाये!",
+  "math_modules.NumberCrunchGame.title": "🎮 नंबर क्रंच क्वेस्ट",
+  "math_modules.NumberCrunchGame.subtitle": "गणित की पहेलियों को हल करने के लिए समय के विरुद्ध दौड़ें!",
+  "math_modules.NumberCrunchGame.ready": "तैयार, गणित जादूगर?",
+  "math_modules.NumberCrunchGame.readyDesc1": "60 सेकंड में जितना संभव हो उतने गणित प्रश्नों के उत्तर दें!",
+  "math_modules.NumberCrunchGame.readyDesc2": "बोनस अंक के लिए कॉम्बो बनाएं! 🔥",
+  "math_modules.NumberCrunchGame.startBtn": "खोज प्रारंभ करें!",
+  "math_modules.NumberCrunchGame.questComplete": "अनुसंधान पूर्ण!",
+  "math_modules.NumberCrunchGame.finalScore": "⭐ अंतिम स्कोर",
+  "math_modules.NumberCrunchGame.accuracy": "✅ सटीकता",
+  "math_modules.NumberCrunchGame.bestStreak": "🔥सर्वश्रेष्ठ स्ट्रीक",
+  "math_modules.NumberCrunchGame.questions": "📊 प्रश्न",
+  "math_modules.NumberCrunchGame.maxLevel": "📈 अधिकतम स्तर",
+  "math_modules.NumberCrunchGame.legendary": "🌟महान गणित जादूगर! 🌟",
+  "math_modules.NumberCrunchGame.grand": "🧙 संख्याओं का महान जादूगर!",
+  "math_modules.NumberCrunchGame.apprentice": "📚 प्रशिक्षु गणितज्ञ!",
+  "math_modules.NumberCrunchGame.keepPracticing": "🌱अभ्यास करते रहो, युवा जादूगर!",
+  "math_modules.NumberCrunchGame.playAgain": "फिर से चालू करें!",
+  "math_modules.PatternHub.patterns": "पैटर्न पहेलियाँ",
+  "math_modules.PatternHub.patternsShort": "पैटर्न्स",
+  "math_modules.PatternHub.memory": "स्मृति मिलान",
+  "math_modules.PatternHub.memoryShort": "याद",
+  "math_modules.WorksheetGenerator.topics.addition": "जोड़ना",
+  "math_modules.WorksheetGenerator.topics.subtraction": "घटाव",
+  "math_modules.WorksheetGenerator.topics.multiplication": "गुणा",
+  "math_modules.WorksheetGenerator.topics.division": "विभाजन",
+  "math_modules.WorksheetGenerator.topics.mixed": "मिश्रित",
+  "math_modules.WorksheetGenerator.topics.fractions": "भिन्न",
+  "math_modules.WorksheetGenerator.topics.algebra": "बीजगणित",
+  "math_modules.WorksheetGenerator.topics.exponents": "घातांक",
+  "math_modules.WorksheetGenerator.title": "📝 वर्कशीट जेनरेटर",
+  "math_modules.WorksheetGenerator.subtitle": "किसी भी विषय के लिए मुद्रण योग्य अभ्यास पत्रक तैयार करें!",
+  "math_modules.WorksheetGenerator.chooseTopic": "विषय चुनें",
+  "math_modules.WorksheetGenerator.numProblems": "समस्याओं की संख्या",
+  "math_modules.WorksheetGenerator.maxNum": "अधिकतम संख्या",
+  "math_modules.WorksheetGenerator.generate": "📄 वर्कशीट जेनरेट करें",
+  "math_modules.WorksheetGenerator.print": "🖨️प्रिंट करें",
+  "math_modules.WorksheetGenerator.hideAnswers": "🙈छिपाओ",
+  "math_modules.WorksheetGenerator.showAnswers": "👁️ उत्तर",
+  "math_modules.WorksheetGenerator.name": "नाम",
+  "math_modules.WorksheetGenerator.date": "तारीख",
+  "math_modules.WorksheetGenerator.score": "अंक",
+  "math_modules.WorksheetGenerator.generatedBy": "व्हिम्सिकल मैथ किंगडम 🧙‍♂️ द्वारा उत्पन्न",
+  "math_modules.SkillsAcademy.times": "समय तालिकाएँ",
+  "math_modules.SkillsAcademy.timesDesc": "मास्टर गुणन",
+  "math_modules.SkillsAcademy.bonds": "संख्या बांड",
+  "math_modules.SkillsAcademy.bondsDesc": "अतिरिक्त जोड़े",
+  "math_modules.SkillsAcademy.fractions": "भिन्न",
+  "math_modules.SkillsAcademy.fractionsDesc": "पिज़्ज़ा अंश",
+  "math_modules.SkillsAcademy.title": "🎓 कौशल अकादमी",
+  "math_modules.SkillsAcademy.subtitle": "चरण दर चरण अपनी गणित की नींव बनाएं!",
+  "math_modules.TimesTableTrainer.title": "टाइम्स टेबल मास्टर",
+  "math_modules.TimesTableTrainer.subtitle": "एक समय में एक तालिका से गुणन में महारत हासिल करें!",
+  "math_modules.TimesTableTrainer.practice": "अभ्यास",
+  "math_modules.TimesTableTrainer.speedQuiz": "गति प्रश्नोत्तरी",
+  "math_modules.TimesTableTrainer.chooseTable": "अपनी तालिका चुनें:",
+  "math_modules.TimesTableTrainer.hide": "छिपाना",
+  "math_modules.TimesTableTrainer.show": "दिखाओ",
+  "math_modules.TimesTableTrainer.fullTable": "पूरी मेज",
+  "math_modules.TimesTableTrainer.correct": "सही!",
+  "math_modules.TimesTableTrainer.hideHint": "संकेत छिपाएँ",
+  "math_modules.TimesTableTrainer.peekHint": "💡उत्तर पर नजर डालें",
+  "math_modules.TimesTableTrainer.redMistakes": "🔴 लाल = गलतियाँ की गईं (इनकी समीक्षा करें!)",
+  "math_modules.TimesTableTrainer.speedQuizTitle": "गति प्रश्नोत्तरी",
+  "math_modules.TimesTableTrainer.quizDesc1": "60 सेकंड में यथासंभव अधिक से अधिक गुणन प्रश्नों के उत्तर दें!",
+  "math_modules.TimesTableTrainer.quizDesc2": "सभी टेबल एक साथ मिश्रित!",
+  "math_modules.TimesTableTrainer.startBtn": "शुरू करना!",
+  "math_modules.TimesTableTrainer.champ": "🌟 टाइम्स टेबल चैंपियन!",
+  "math_modules.TimesTableTrainer.wizard": "🧙 गणित के जादूगर!",
+  "math_modules.TimesTableTrainer.keepPracticing": "🌱अभ्यास करते रहो!",
+  "math_modules.TimesTableTrainer.tryAgain": "पुनः प्रयास करें",
+  "math_modules.TimesTableTrainer.timesUp": "समय पूर्ण हुआ!",
+  "math_modules.Visualizer3D.add": "जोड़ना",
+  "math_modules.Visualizer3D.sub": "उप",
+  "math_modules.Visualizer3D.mul": "एमयूएल",
+  "math_modules.Visualizer3D.div": "डिव",
+  "math_modules.Visualizer3D.title": "📊 3डी गणित विज़ुअलाइज़र",
+  "math_modules.Visualizer3D.subtitle": "3डी में गणित को जीवंत होते हुए देखें!",
+  "math_modules.Visualizer3D.numberA": "नंबर ए",
+  "math_modules.Visualizer3D.operation": "संचालन",
+  "math_modules.Visualizer3D.numberB": "नंबर बी",
+  "math_modules.Visualizer3D.blocks": "ब्लाकों",
+  "math_modules.Visualizer3D.bars3d": "3डी बार्स",
+  "math_modules.Visualizer3D.spheres": "क्षेत्रों",
+  "physics.title": "भौतिकी श्लोक",
+  "physics.subtitle": "इंटरएक्टिव भौतिकी सिमुलेशन और प्रयोग",
+  "physics.to_explore": "पता लगाने के लिए",
+  "physics.dashboard.level": "स्तर",
+  "physics.dashboard.xp": "एक्सपी",
+  "physics.dashboard.explored": "पता लगाया",
+  "physics.dashboard.streak": "धारी",
+  "physics.dashboard.badges": "बैज",
+  "physics.keep_exploring": "अन्वेषण करते रहें!",
+  "physics.clear_search": "स्पष्ट खोज",
+  "physics.found_modules_one": "1 मॉड्यूल मिला",
+  "physics.no_modules": "कोई मॉड्यूल नहीं मिला",
+  "physics.explored": "का पता लगाया",
+  "physics.search_placeholder": "🔍 खोज मॉड्यूल... ('वेव', 'सर्किट', 'क्वांटम' आज़माएं)",
+  "tiny.default_screen_reader": "छोटी सी दुनिया. मॉड्यूल का पता लगाने के लिए तीर कुंजियों का उपयोग करें।",
+  "tiny.hide_labels": "लेबल छिपाएं",
+  "tiny.show_labels": "लेबल दिखाएँ",
+  "cookie_consent.title": "लर्नओएस आपकी गोपनीयता का सम्मान करता है।",
+  "cookie_consent.desc1": "हम आपकी प्रगति को केवल इस डिवाइस पर स्थानीय रूप से संग्रहीत करते हैं।",
+  "cookie_consent.desc2": "कोई भी व्यक्तिगत डेटा एकत्र नहीं किया जाता है या किसी सर्वर पर नहीं भेजा जाता है।",
+  "cookie_consent.desc3": "अनाम उपयोग आँकड़े (दृश्य, व्यतीत किया गया समय) हमें ऐप को बेहतर बनाने में मदद करते हैं।",
+  "cookie_consent.accept": "समझ गया!",
+  "cookie_consent.decline": "कोई आँकड़े नहीं",
+  "floating_buttons.analytics": "एनालिटिक्स",
+  "floating_buttons.impact": "प्रभाव",
+  "kidscamp.pillars.toybox": "खिलौना बॉक्स",
+  "kidscamp.pillars.sciencelab": "इंटरएक्टिव लैब्स",
+  "kidscamp.pillars.artstudio": "आर्टस्टूडियो",
+  "kidscamp.pillars.outdoorquest": "बाहर की गतिविधि",
+  "maker_space.description": "विज्ञान, कला, भवन निर्माण और बाहरी रोमांचों से संबंधित {{activitiesCount}}+ व्यावहारिक गतिविधियों की खोज करें। 3-12 वर्ष की आयु के लिए बिल्कुल उपयुक्त - कोई स्क्रीन नहीं, केवल शुद्ध रचनात्मक मनोरंजन!",
+  "avatar_store": "अवतार स्टोर",
+  "avatar_store_desc": "नए लुक को अनलॉक करने के लिए अपना XP खर्च करें!",
+  "equipped": "लैस",
+  "equip": "लैस",
+  "unlock": "अनलॉक",
+  "clear_browser_data": "ब्राउज़र डेटा कैसे साफ़ करें",
+  "chrome_edge": "क्रोम/एज",
+  "clear_chrome": "सेटिंग्स → गोपनीयता → ब्राउज़िंग डेटा साफ़ करें",
+  "firefox": "फ़ायरफ़ॉक्स",
+  "clear_firefox": "विकल्प → गोपनीयता → डेटा साफ़ करें",
+  "safari": "सफ़ारी",
+  "clear_safari": "प्राथमिकताएँ → गोपनीयता → वेबसाइट डेटा प्रबंधित करें",
+  "close_browser_data_instructions": "ब्राउज़र डेटा निर्देश बंद करें",
+  "got_it": "समझ गया",
+  "are_you_sure": "क्या आपको यकीन है?",
+  "delete_warning": "यह आपकी सभी सीखने की प्रगति, प्रोफ़ाइल और सेटिंग्स को स्थायी रूप से हटा देगा। इस एक्शन को वापस नहीं किया जा सकता।",
+  "confirm_delete_all_data": "सभी डेटा हटाने की पुष्टि करें",
+  "deleting": "हटाया जा रहा है...",
+  "yes_delete_all_data": "हाँ, मेरा सारा डेटा हटा दें",
+  "cancel_data_deletion": "डेटा हटाना रद्द करें",
+  "delete_my_data": "मेरा डेटा हटाएं",
+  "delete_data_desc": "इस डिवाइस से अपनी सभी सीखने की प्रगति, प्रोफ़ाइल और सेटिंग्स को स्थायी रूप से हटा दें।",
+  "delete_all_my_data": "मेरा सारा डेटा हटा दें",
+  "delete_all_data": "सभी डेटा हटाएँ",
+  "learn_clear_browser_data": "जानें कि ब्राउज़र डेटा को मैन्युअल रूप से कैसे साफ़ करें",
+  "weekly_leaderboard": "साप्ताहिक लीडरबोर्ड",
+  "stack_up_friends": "देखें कि आप दोस्तों के सामने कैसे खड़े होते हैं!",
+  "leaderboard_you": "आप",
+  "set_parental_pin": "पैतृक पिन सेट करें",
+  "pin_description": "माता-पिता के नियंत्रण को बदलने या समय सीमा को बायपास करने के लिए इस पिन की आवश्यकता होगी।",
+  "enter_pin": "पिन दर्ज करें (4 अंक)",
+  "use_4_numbers": "केवल 4 अंकों का प्रयोग करें",
+  "confirm_pin": "पिन की पुष्टि करें",
+  "cancel_pin_setup": "पिन सेटअप रद्द करें",
+  "save_pin": "पिन सहेजें",
+  "parental_controls_title": "माता-पिता का नियंत्रण",
+  "daily_time_limit": "दैनिक समय सीमा",
+  "daily_time_limit_minutes": "दैनिक समय सीमा मिनटों में",
+  "time_limit_desc": "इस समय के बाद शिक्षण सत्र रुक जाएगा। पिन से बढ़ाया जा सकता है.",
+  "allowed_learning_worlds": "अनुमत सीखने की दुनिया",
+  "allowed_worlds_desc": "उम्र की उपयुक्तता के आधार पर चुनें कि आपका बच्चा किन दुनियाओं तक पहुँच सकता है।",
+  "gamification_settings": "गेमिफ़िकेशन सेटिंग्स",
+  "enable_gamification": "गेमिफ़िकेशन सक्षम करें",
+  "gamification_desc": "एक्सपी अंक, स्तर और प्रगति ट्रैकिंग",
+  "enable_streaks": "धारियाँ सक्षम करें",
+  "streaks_desc": "दैनिक स्ट्रीक ट्रैकिंग और पुरस्कार",
+  "enable_badges": "बैज सक्षम करें",
+  "badges_desc": "उपलब्धि बैज और पुरस्कार",
+  "pin_protection": "पिन सुरक्षा",
+  "pin_enabled_desc": "पिन सुरक्षा सक्षम है. परिवर्तनों के लिए पिन की आवश्यकता होती है.",
+  "pin_disabled_desc": "इन सेटिंग्स को बदलने या समय सीमा को बायपास करने के लिए पिन की आवश्यकता है।",
+  "disable_pin_protection": "पिन सुरक्षा अक्षम करें",
+  "enable_pin_protection": "पिन सुरक्षा सक्षम करें",
+  "disable_pin": "पिन अक्षम करें",
+  "set_pin": "पिन सेट करें",
+  "save_parental_settings": "अभिभावकीय नियंत्रण सेटिंग सहेजें",
+  "save_settings": "सेटिंग्स सेव करें",
+  "reset_default_settings": "डिफ़ॉल्ट सेटिंग्स पर रीसेट करें",
+  "reset": "रीसेट करें",
+  "avatar_robo": "रोबो",
+  "avatar_fox": "लोमड़ी",
+  "avatar_unicorn": "एक तंगावाला",
+  "avatar_dragon": "अजगर",
+  "avatar_hero": "नायक",
+  "avatar_astronaut": "अंतरिक्ष यात्री",
+  "world_tiny": "छोटी सी दुनिया",
+  "world_early": "प्रारंभिक विश्व",
+  "world_lab": "लैब वर्ल्ड",
+  "world_discovery": "डिस्कवरी वर्ल्ड",
+  "world_academy": "अकादमी विश्व",
+  "world_explorer": "एक्सप्लोरर वर्ल्ड",
+  "world_biology": "जीव विज्ञान विश्व",
+  "world_math": "मठ साम्राज्य",
+  "world_physics": "भौतिकी विश्व",
+  "need_more_xp": "आपको {{राशि}} अधिक XP की आवश्यकता है!",
+  "maker_space.ad_free": "विज्ञापन-मुक्त मनोरंजन"
 }

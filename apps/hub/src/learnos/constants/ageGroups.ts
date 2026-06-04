@@ -30,7 +30,7 @@ export const AGE_GROUPS = {
     route: '/lab',
     color: '#3B82F6',
     bgColor: '#F8FAFC',
-    lumoVariant: 'owl' as const,
+    lumoVariant: 'peacock' as const,
     maxSessionMinutes: 20,
     minTouchTarget: 44,
   },

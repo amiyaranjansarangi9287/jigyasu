@@ -270,8 +270,8 @@ export const achievements: Achievement[] = [
     condition: 'Begin an activity before 7:00 AM'
   },
   {
-    id: 'night-owl',
-    name: 'Night Owl',
+    id: 'night-peacock',
+    name: 'Night Peacock',
     description: 'Complete an activity after 9 PM',
     icon: '🦉',
     pillar: 'global',

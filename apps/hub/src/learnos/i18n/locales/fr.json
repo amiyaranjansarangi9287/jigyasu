@@ -1,0 +1,15 @@
+{
+  "welcome_title": "Bienvenue à Jigyasu!",
+  "welcome_subtitle": "L'univers de l'apprentissage",
+  "choose_avatar": "Choisis ton Avatar",
+  "enter_name": "Comment t'appelles-tu?",
+  "lets_go": "C'est parti!",
+  "global_xp": "XP Global",
+  "where_to_go": "Où veux-tu aller aujourd'hui, {{name}}?",
+  "science_lab": "Laboratoire de Sciences",
+  "math_kingdom": "Royaume des Mathématiques",
+  "bioverse": "BioVers",
+  "chemlab": "Laboratoire de Chimie",
+  "cosmoslab": "Laboratoire du Cosmos",
+  "toys_games": "Jouets et Jeux"
+}
