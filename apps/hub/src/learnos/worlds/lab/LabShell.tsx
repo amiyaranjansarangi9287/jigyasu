@@ -32,7 +32,7 @@ export default function LabShell({ module, children, showLumo = true }: LabShell
       <AnimatePresence>
         {showBreak && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-50 bg-slate-900/95 flex flex-col items-center justify-center p-8">
-            <div className="text-center max-w-sm"><div className="text-6xl mb-4">🦉</div><h2 className="text-2xl font-bold text-white mb-2">Great Work Today</h2><p className="text-slate-400 text-sm mb-8">You've been doing science for 20 minutes. Your brain deserves a rest.</p>
+            <div className="text-center max-w-sm"><div className="text-6xl mb-4">🦚</div><h2 className="text-2xl font-bold text-white mb-2">Great Work Today</h2><p className="text-slate-400 text-sm mb-8">You've been doing science for 20 minutes. Your brain deserves a rest.</p>
               <div className="flex gap-3">
                 <button onClick={dismissBreak} className="flex-1 py-3 bg-blue-600 text-white font-bold rounded-xl">5 More Minutes</button>
                 <button onClick={() => navigate('/lab')} className="flex-1 py-3 bg-slate-700 text-white font-bold rounded-xl">Go to Lab Home</button>

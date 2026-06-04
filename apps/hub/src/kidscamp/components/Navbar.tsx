@@ -27,7 +27,7 @@ export default function Navbar({
   onAgeClick,
 }: NavbarProps) {
   const { language, setLanguage } = useLearnerStore();
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [pillarsDropdownOpen, setPillarsDropdownOpen] = useState(false);
@@ -76,7 +76,7 @@ export default function Navbar({
                     : 'text-white drop-shadow-lg'
                 }`}
               >
-                Maker Space
+                {t('kidscamp.title', 'Jigyasu')}
               </span>
             </button>
 
@@ -93,7 +93,7 @@ export default function Navbar({
                       : 'text-white/90 hover:text-white hover:bg-white/10'
                   }`}
                 >
-                  Activities
+                  {t('activities', 'Activities')}
                   <svg
                     className={`w-4 h-4 transition-transform ${pillarsDropdownOpen ? 'rotate-180' : ''}`}
                     fill="none"
@@ -113,7 +113,7 @@ export default function Navbar({
                       }}
                       className="w-full px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700 font-medium text-gray-900 dark:text-white border-b border-gray-100 dark:border-gray-700"
                     >
-                      All Activities
+                      {t('all_activities', 'All Activities')}
                     </button>
                     {pillars.map((pillar) => (
                       <button
@@ -125,7 +125,7 @@ export default function Navbar({
                         className="w-full px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700 flex items-center gap-3"
                       >
                         <span className="text-xl">{pillar.icon}</span>
-                        <span className="text-gray-700 dark:text-gray-200">{pillar.name}</span>
+                        <span className="text-gray-700 dark:text-gray-200">{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
                       </button>
                     ))}
                   </div>
@@ -140,7 +140,7 @@ export default function Navbar({
                     : 'text-white/90 hover:text-white hover:bg-white/10'
                 }`}
               >
-                Project Weeks
+                {t('project_weeks', 'Project Weeks')}
               </button>
 
               <button
@@ -151,7 +151,7 @@ export default function Navbar({
                     : 'text-white/90 hover:text-white hover:bg-white/10'
                 }`}
               >
-                My Progress
+                {t('my_progress', 'My Progress')}
                 {completedCount > 0 && (
                   <span className="bg-gradient-to-r from-orange-500 to-pink-500 text-white text-sm px-2 py-0.5 rounded-full">
                     {completedCount}
@@ -291,7 +291,7 @@ export default function Navbar({
                     className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800"
                   >
                     <span className="text-2xl">{pillar.icon}</span>
-                    <span className="text-gray-700 dark:text-gray-200">{pillar.name}</span>
+                    <span className="text-gray-700 dark:text-gray-200">{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
                   </button>
                 ))}
               </div>

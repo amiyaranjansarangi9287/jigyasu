@@ -1,6 +1,7 @@
 // src/worlds/physics/components/Home.tsx
 import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { BADGE_INFO, getLevelTitle, ALL_MODULE_IDS, type UserProgress } from '../lib/progress';
 
 const modules = [
@@ -69,8 +70,21 @@ const categories = [
 const floatingEmojis = ['⚛️', '🔬', '🧲', '⚡', '🌊', '🔥', '🚀', '🪐', '💡', '🔭', '🌈', '💧', '🎯', '🕰️', '🔔', '🚢', '💨', '🍯', '🛰️', '🕳️', '🌌', '☢️', '🌀'];
 
 export default function Home({ onNavigate, progress }: { onNavigate: (id: string) => void; progress?: UserProgress }) {
+  const { t } = useTranslation();
   const [particles, setParticles] = useState<{ id: number; emoji: string; x: number; delay: number; duration: number }[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
+
+  const translatedModules = useMemo(() => modules.map(m => ({
+    ...m,
+    title: t(`physics.modules.${m.id}.title`, m.title),
+    desc: t(`physics.modules.${m.id}.desc`, m.desc),
+    tag: t(`physics.tags.${m.tag}`, m.tag),
+  })), [t]);
+
+  const translatedCategories = useMemo(() => categories.map(c => ({
+    ...c,
+    title: t(`physics.categories.${c.id}`, c.title),
+  })), [t]);
 
   useEffect(() => {
     setParticles(
@@ -81,10 +95,10 @@ export default function Home({ onNavigate, progress }: { onNavigate: (id: string
     );
   }, []);
 
-  const newCount = modules.filter(m => !progress?.modulesVisited[m.id]?.visited).length;
+  const newCount = translatedModules.filter(m => !progress?.modulesVisited[m.id]?.visited).length;
 
   const filteredModules = searchQuery.trim()
-    ? modules.filter(m =>
+    ? translatedModules.filter(m =>
         m.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         m.desc.toLowerCase().includes(searchQuery.toLowerCase()) ||
         m.tag.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -111,12 +125,12 @@ export default function Home({ onNavigate, progress }: { onNavigate: (id: string
             <motion.div className="text-4xl md:text-5xl mb-2"
               animate={{ rotateY: [0, 360] }} transition={{ repeat: Infinity, duration: 8, ease: 'linear' }}>⚛️</motion.div>
             <h1 className="text-3xl md:text-5xl font-black text-white mb-1">
-              Physics<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">Verse</span>
+              {t('physics.title', 'PhysicsVerse').replace('Verse', '')}<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">{t('physics.title', 'PhysicsVerse').includes('Verse') ? 'Verse' : ''}</span>
             </h1>
-            <p className="text-sm md:text-base text-gray-400 max-w-md mx-auto mb-1">Interactive Physics Simulations & Experiments</p>
+            <p className="text-sm md:text-base text-gray-400 max-w-md mx-auto mb-1">{t('physics.subtitle', 'Interactive Physics Simulations & Experiments')}</p>
             <p className="text-sm text-cyan-400/80 font-medium tracking-[0.15em] uppercase">
-              {modules.length} Modules • 8 Categories • Simulators • Labs • 3D Visualizers
-              {newCount > 0 && <span className="ml-1.5 px-1.5 py-0.5 bg-cyan-500/20 text-cyan-400 rounded-full">{newCount} TO EXPLORE</span>}
+              {t('physics.stats', '{{count}} Modules • 8 Categories • Simulators • Labs • 3D Visualizers', { count: translatedModules.length })}
+              {newCount > 0 && <span className="ml-1.5 px-1.5 py-0.5 bg-cyan-500/20 text-cyan-400 rounded-full">{newCount} {t('physics.to_explore', 'TO EXPLORE')}</span>}
             </p>
           </motion.div>
         </div>
@@ -129,35 +143,35 @@ export default function Home({ onNavigate, progress }: { onNavigate: (id: string
             className="bg-gradient-to-r from-gray-900 via-blue-950/30 to-gray-900 rounded-2xl border border-blue-500/20 p-4">
             <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
               <div className="text-center">
-                <div className="text-sm text-gray-500 uppercase font-bold">Level</div>
+                <div className="text-sm text-gray-500 uppercase font-bold">{t('physics.dashboard.level', 'Level')}</div>
                 <div className="text-2xl font-black text-blue-400">{progress.level}</div>
                 <div className="text-sm text-gray-500">{getLevelTitle(progress.level)}</div>
               </div>
               <div className="text-center">
-                <div className="text-sm text-gray-500 uppercase font-bold">XP</div>
+                <div className="text-sm text-gray-500 uppercase font-bold">{t('physics.dashboard.xp', 'XP')}</div>
                 <div className="text-2xl font-black text-yellow-400">{progress.xp}</div>
                 <div className="w-full h-1.5 bg-gray-800 rounded-full mt-1 overflow-hidden">
                   <div className="h-full bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full transition-all" style={{ width: `${(progress.xp % 100)}%` }} />
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-sm text-gray-500 uppercase font-bold">Explored</div>
+                <div className="text-sm text-gray-500 uppercase font-bold">{t('physics.dashboard.explored', 'Explored')}</div>
                 <div className="text-2xl font-black text-cyan-400">
                   {Object.values(progress.modulesVisited).filter(m => m.visited).length}<span className="text-sm text-gray-600">/{ALL_MODULE_IDS.length}</span>
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-sm text-gray-500 uppercase font-bold">Streak</div>
+                <div className="text-sm text-gray-500 uppercase font-bold">{t('physics.dashboard.streak', 'Streak')}</div>
                 <div className="text-2xl font-black text-orange-400">
                   {progress.streak > 0 ? `${progress.streak}🔥` : '—'}
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-sm text-gray-500 uppercase font-bold">Badges</div>
+                <div className="text-sm text-gray-500 uppercase font-bold">{t('physics.dashboard.badges', 'Badges')}</div>
                 <div className="flex justify-center gap-1 mt-1 flex-wrap">
                   {progress.badges.length > 0 ? progress.badges.slice(0, 6).map(b => (
                     <span key={b} className="text-base" title={BADGE_INFO[b]?.name || b}>{BADGE_INFO[b]?.emoji || '🏅'}</span>
-                  )) : <span className="text-gray-600 text-sm">Keep exploring!</span>}
+                  )) : <span className="text-gray-600 text-sm">{t('physics.keep_exploring', 'Keep exploring!')}</span>}
                 </div>
               </div>
             </div>
@@ -170,14 +184,14 @@ export default function Home({ onNavigate, progress }: { onNavigate: (id: string
         <div className="relative max-w-md mx-auto">
           <input
             type="text"
-            placeholder="🔍 Search modules... (try 'wave', 'circuit', 'quantum')"
+            placeholder={t('physics.search_placeholder', "🔍 Search modules... (try 'wave', 'circuit', 'quantum')")}
             value={searchQuery}
             onChange={e => setSearchQuery(e.target.value)}
             className="w-full px-4 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/30 transition-all"
           />
           {searchQuery && (
             <button onClick={() => setSearchQuery('')}
-              className="absolute right-2 top-1/2 -translate-y-1/2 min-w-[44px] min-h-[44px] flex items-center justify-center text-gray-500 hover:text-white" aria-label="Clear search">✕</button>
+              className="absolute right-2 top-1/2 -translate-y-1/2 min-w-[44px] min-h-[44px] flex items-center justify-center text-gray-500 hover:text-white" aria-label={t('physics.clear_search', "Clear search")}>✕</button>
           )}
         </div>
       </div>
@@ -187,7 +201,7 @@ export default function Home({ onNavigate, progress }: { onNavigate: (id: string
         {filteredModules ? (
           <div className="mb-6">
             <h3 className="text-sm font-bold text-gray-400 mb-3 pl-1">
-              {filteredModules.length > 0 ? `Found ${filteredModules.length} module${filteredModules.length !== 1 ? 's' : ''}` : 'No modules found'}
+              {filteredModules.length > 0 ? (filteredModules.length === 1 ? t('physics.found_modules_one', 'Found 1 module') : t('physics.found_modules_other', 'Found {{count}} modules', { count: filteredModules.length })) : t('physics.no_modules', 'No modules found')}
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2.5">
               {filteredModules.map((mod) => {
@@ -208,8 +222,8 @@ export default function Home({ onNavigate, progress }: { onNavigate: (id: string
           </div>
         ) : (
         <>
-        {categories.map((cat, catIdx) => {
-          const catModules = modules.filter(m => m.cat === cat.id);
+        {translatedCategories.map((cat, catIdx) => {
+          const catModules = translatedModules.filter(m => m.cat === cat.id);
           if (catModules.length === 0) return null;
           const catVisited = catModules.filter(m => progress?.modulesVisited[m.id]?.visited).length;
           return (
@@ -221,7 +235,7 @@ export default function Home({ onNavigate, progress }: { onNavigate: (id: string
               <div className="flex items-center gap-2 mb-2.5 pl-1">
                 <h3 className="text-sm font-bold text-white">{cat.title}</h3>
                 {progress && catVisited > 0 && (
-                  <span className="text-sm text-gray-500 bg-gray-800 px-2 py-0.5 rounded-full">{catVisited}/{catModules.length} explored</span>
+                  <span className="text-sm text-gray-500 bg-gray-800 px-2 py-0.5 rounded-full">{catVisited}/{catModules.length} {t('physics.explored', 'explored')}</span>
                 )}
               </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2.5">
@@ -258,7 +272,7 @@ export default function Home({ onNavigate, progress }: { onNavigate: (id: string
         )}
       </div>
       <div className="border-t border-gray-800 py-3 text-center">
-        <p className="text-sm text-gray-600">⚛️ PhysicsVerse — {modules.length} Interactive Physics Modules • React + Tailwind + Canvas</p>
+        <p className="text-sm text-gray-600">{t('physics.footer', '⚛️ PhysicsVerse — {{count}} Interactive Physics Modules • React + Tailwind + Canvas', { count: translatedModules.length })}</p>
       </div>
     </div>
   );

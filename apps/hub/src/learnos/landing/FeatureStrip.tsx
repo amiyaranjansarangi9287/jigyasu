@@ -13,7 +13,7 @@ export default function FeatureStrip() {
   return (
     <section className="mx-auto max-w-6xl px-5 py-10">
       <div className="mb-4 text-center">
-        <span className="text-sm font-bold uppercase tracking-wider text-brand">Core Design Principles</span>
+        <span className="text-sm font-bold uppercase tracking-wider text-brand">{t('landing.principles.title', 'Core Design Principles')}</span>
       </div>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {FEATURES.map((f) => (

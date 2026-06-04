@@ -2,6 +2,7 @@
 import { useRef, useEffect, useState } from 'react';
 import ModuleWrapper from './ModuleWrapper';
 import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
+import GravityTeachingBridge from './GravityTeachingBridge';
 
 export default function GravityWells() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -162,6 +163,8 @@ export default function GravityWells() {
           {quizCorrect === false && <p className="mt-3 text-red-400 font-bold text-sm">❌ Answer: {quizQuestions[currentQuiz].options[quizQuestions[currentQuiz].correct]}</p>}
           {quizCorrect === true && currentQuiz < quizQuestions.length - 1 && <button onClick={() => { setCurrentQuiz(prev => prev + 1); setQuizAnswer(null); setQuizCorrect(null); }} className="mt-3 py-2 rounded-lg bg-violet-600 hover:bg-violet-500 text-white font-bold text-sm">Next Question →</button>}
         </div>
+
+        <GravityTeachingBridge />
       </div>
     </ModuleWrapper>
   );

@@ -55,7 +55,7 @@ export default function ExpertMode({ visible, module, onClose, onExpertEarned }:
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-50 bg-slate-900/90 flex items-end justify-center">
         <motion.div initial={{ y: 80 }} animate={{ y: 0 }} exit={{ y: 80 }} className="bg-slate-900 rounded-t-3xl w-full max-w-md p-6">
           <div className="flex items-center justify-between mb-4">
-            <div className="flex items-center gap-2"><span className="text-2xl">🦉</span><div><p className="text-white font-bold text-sm">Expert Mode</p><p className="text-slate-400 text-sm">Explain to Lumo</p></div></div>
+            <div className="flex items-center gap-2"><span className="text-2xl">🦚</span><div><p className="text-white font-bold text-sm">Expert Mode</p><p className="text-slate-400 text-sm">Explain to Lumo</p></div></div>
             <button onClick={onClose} className="text-slate-400 text-xl">✕</button>
           </div>
           <div className="flex gap-2 mb-5">{['q1','q2','done'].map((p, i) => (<div key={p} className={`flex-1 h-1.5 rounded-full ${(i === 0 && phase !== 'q1') || (i <= 1 && phase === 'done') || (i === 0 && phase === 'q1') ? 'bg-blue-500' : 'bg-slate-700'}`} />))}</div>

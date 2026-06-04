@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { useMathFeedback } from '../lib/MathContext';
 
 interface Zone {
@@ -107,6 +108,7 @@ const pathPoints2 = [
 ];
 
 export default function AdventureMap({ onComplete }: { onComplete: () => void }) {
+  const { t } = useTranslation();
   const math = useMathFeedback();
   const [zones] = useState(initialZones);
   const [selectedZone, setSelectedZone] = useState<Zone | null>(null);
@@ -163,9 +165,9 @@ export default function AdventureMap({ onComplete }: { onComplete: () => void })
       {/* Header */}
       <div className="text-center mb-6">
         <h2 className="text-3xl font-bold text-white mb-2">
-          🗺️ Math Kingdom Adventure Map
+          {t('math_modules.AdventureMap.title', '🗺️ Math Kingdom Adventure Map')}
         </h2>
-        <p className="text-purple-300 text-lg">Click on a zone to solve its challenge!</p>
+        <p className="text-purple-300 text-lg">{t('math_modules.AdventureMap.subtitle', 'Click on a zone to solve its challenge!')}</p>
         <div className="flex items-center justify-center gap-4 mt-3">
           <span className="text-yellow-400 text-xl">⭐ {stars} / {zones.length}</span>
           <div className="h-3 w-48 bg-gray-700 rounded-full overflow-hidden">
@@ -264,7 +266,7 @@ export default function AdventureMap({ onComplete }: { onComplete: () => void })
                   )}
                 </motion.div>
                 <span className="mt-1 text-sm sm:text-sm font-bold text-white bg-black/50 px-2 py-0.5 rounded-full whitespace-nowrap">
-                  {zone.name}
+                  {t(`math_modules.AdventureMap.zones.${zone.id}.name`, zone.name)}
                 </span>
               </div>
             </motion.button>
@@ -316,13 +318,13 @@ export default function AdventureMap({ onComplete }: { onComplete: () => void })
 
               <div className="text-center">
                 <span className="text-5xl">{selectedZone.emoji}</span>
-                <h3 className="text-2xl font-bold text-white mt-2">{selectedZone.name}</h3>
-                <p className="text-purple-300 mt-1 text-sm">{selectedZone.description}</p>
+                <h3 className="text-2xl font-bold text-white mt-2">{t(`math_modules.AdventureMap.zones.${selectedZone.id}.name`, selectedZone.name)}</h3>
+                <p className="text-purple-300 mt-1 text-sm">{t(`math_modules.AdventureMap.zones.${selectedZone.id}.description`, selectedZone.description)}</p>
               </div>
 
               <div className="mt-6 p-4 rounded-xl bg-white/5 border border-white/10">
                 <p className="text-white text-lg font-medium text-center">
-                  {selectedZone.challenge}
+                  {t(`math_modules.AdventureMap.zones.${selectedZone.id}.challenge`, selectedZone.challenge)}
                 </p>
               </div>
 
@@ -333,8 +335,8 @@ export default function AdventureMap({ onComplete }: { onComplete: () => void })
                   animate={{ scale: 1 }}
                 >
                   <span className="text-4xl">🏆</span>
-                  <p className="text-yellow-400 font-bold text-lg mt-2">Already Conquered!</p>
-                  <p className="text-gray-400">Answer: {selectedZone.answer}</p>
+                  <p className="text-yellow-400 font-bold text-lg mt-2">{t('math_modules.AdventureMap.conquered', 'Already Conquered!')}</p>
+                  <p className="text-gray-400">{t('math_modules.AdventureMap.answer', 'Answer: {{answer}}', { answer: selectedZone.answer })}</p>
                 </motion.div>
               ) : (
                 <div className="mt-6 grid grid-cols-2 gap-3">
@@ -365,7 +367,7 @@ export default function AdventureMap({ onComplete }: { onComplete: () => void })
                   initial={{ scale: 0 }}
                   animate={{ scale: [0, 1.3, 1] }}
                 >
-                  ✨ Brilliant! You're a Math Wizard! ✨
+                  {t('math_modules.AdventureMap.correct', '✨ Brilliant! You\'re a Math Wizard! ✨')}
                 </motion.p>
               )}
               {feedback === 'wrong' && (
@@ -375,7 +377,7 @@ export default function AdventureMap({ onComplete }: { onComplete: () => void })
                   animate={{ x: [10, -10, 10, 0] }}
                   transition={{ duration: 0.4 }}
                 >
-                  🤔 Try again, brave explorer!
+                  {t('math_modules.AdventureMap.wrong', '🤔 Try again, brave explorer!')}
                 </motion.p>
               )}
             </motion.div>

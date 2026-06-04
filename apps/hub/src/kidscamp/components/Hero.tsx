@@ -1,8 +1,10 @@
 // CampCraft - Hero Section
 
 import { useEffect, useState, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useCountUp } from '../hooks/useReveal';
-
+import { useFormatNumber } from '../../hooks/useFormatNumber';
+import { Button } from '@jigyasu/ui';
 interface HeroProps {
   onGetStarted: () => void;
   onExploreCampWeeks: () => void;
@@ -21,6 +23,8 @@ export default function Hero({
   const heroRef = useRef<HTMLDivElement>(null);
 
   // Animated counters
+  const { t } = useTranslation();
+  const formatNumber = useFormatNumber();
   const { count: activitiesCount, start: startActivities } = useCountUp(totalActivities, 2000, true);
   const { count: pillarsCount, start: startPillars } = useCountUp(totalPillars, 1500, true);
 
@@ -102,67 +106,71 @@ export default function Hero({
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
             <span className="animate-bounce-slow">🦚</span>
-            <span className="text-white/90 text-sm font-medium">Kids Camp at Home</span>
+            <span className="text-white/90 text-sm font-medium">{t('maker_space.badge', 'Kids Camp at Home')}</span>
           </div>
 
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Spark Creativity.{' '}
-            <span className="text-gradient bg-gradient-to-r from-yellow-300 via-orange-300 to-pink-300 bg-clip-text text-transparent">
-              Build Memories.
-            </span>
+            {t('maker_space.spark_creativity', 'Spark Creativity.')} {' '}
+            <span className="text-gradient bg-gradient-to-r from-yellow-300 via-orange-300 to-pink-300 bg-clip-text text-transparent">{t('maker_space.build_memories', 'Build Memories.')}</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto mb-8">
-            Discover {totalActivities}+ hands-on activities across science, art, building, and outdoor adventures. 
-            Perfect for ages 3-12 — no screens, just pure creative fun!
+            {t('maker_space.description', { activitiesCount: totalActivities, defaultValue: 'Discover ' + totalActivities + '+ hands-on activities across science, art, building, and outdoor adventures. Perfect for ages 3-12 — no screens, just pure creative fun!' })}
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <button
+            <Button
               onClick={onGetStarted}
-              className="btn btn-primary text-lg px-8 py-4 group"
+              variant="primary"
+              size="lg"
+              className="px-8 group"
             >
-              <span>Get Started</span>
-              <svg
-                className="w-5 h-5 group-hover:translate-x-1 transition-transform"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </button>
-            <button
+              <div className="flex items-center gap-2">
+                <span>{t('maker_space.get_started', 'Get Started')}</span>
+                <svg
+                  className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
+            </Button>
+            <Button
               onClick={onExploreCampWeeks}
-              className="btn bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 hover:bg-white/30 text-lg px-8 py-4"
+              variant="glass"
+              size="lg"
+              className="px-8"
             >
-              <span>📅</span>
-              <span>Explore Project Weeks</span>
-            </button>
+              <div className="flex items-center gap-2">
+                <span>📅</span>
+                <span>{t('maker_space.explore_weeks', 'Explore Project Weeks')}</span>
+              </div>
+            </Button>
           </div>
 
-          {/* Stats */}
           <div className="flex flex-wrap justify-center gap-8 md:gap-16">
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-white mb-1">
-                {activitiesCount}+
+                {formatNumber(activitiesCount)}+
               </div>
-              <div className="text-white/70 text-sm">Activities</div>
+              <div className="text-white/70 text-sm">{t('maker_space.activities', 'Activities')}</div>
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-white mb-1">
-                {pillarsCount}
+                {formatNumber(pillarsCount)}
               </div>
-              <div className="text-white/70 text-sm">Creative Pillars</div>
+              <div className="text-white/70 text-sm">{t('maker_space.creative_pillars', 'Creative Pillars')}</div>
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-white mb-1">
                 100%
               </div>
-              <div className="text-white/70 text-sm">Screen-Free Fun</div>
+              <div className="text-white/70 text-sm">{t('maker_space.ad_free', 'Ad-Free Fun')}</div>
             </div>
           </div>
         </div>
@@ -171,7 +179,7 @@ export default function Hero({
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20">
         <div className="flex flex-col items-center gap-2 text-white/60">
-          <span className="text-sm">Scroll to explore</span>
+          <span className="text-sm">{t('maker_space.scroll_explore', 'Scroll to explore')}</span>
           <div className="w-6 h-10 rounded-full border-2 border-white/40 flex items-start justify-center p-2">
             <div className="w-1.5 h-3 bg-white/60 rounded-full animate-bounce" />
           </div>

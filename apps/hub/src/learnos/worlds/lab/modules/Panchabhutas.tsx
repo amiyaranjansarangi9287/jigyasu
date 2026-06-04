@@ -307,7 +307,7 @@ export default function Panchabhutas() {
 
               <div className="p-4 rounded-xl border border-orange-500/20" style={{ backgroundColor: '#ff8c4208' }}>
                 <div className="flex items-start gap-3">
-                  <div className="shrink-0 mt-1 text-2xl">🦉</div>
+                  <div className="shrink-0 mt-1 text-2xl">🦚</div>
                   <div>
                     <div className="text-orange-400 text-sm font-bold mb-1">Lumo speaks 🕉️</div>
                     <p className="text-orange-600 text-sm leading-relaxed italic">{bhuta.anuWisdom}</p>

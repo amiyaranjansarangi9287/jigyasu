@@ -36,7 +36,7 @@ export default function SearchOverlay({ isOpen, onClose }: { isOpen: boolean, on
           <input
             ref={inputRef}
             type="text"
-            placeholder="Search worlds, topics, skills..."
+            placeholder={t('search_placeholder', 'Search worlds, topics, skills...')}
             className="flex-1 text-xl outline-none bg-transparent font-bold text-slate-800"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
@@ -48,7 +48,7 @@ export default function SearchOverlay({ isOpen, onClose }: { isOpen: boolean, on
         
         <div className="p-4 max-h-[60vh] overflow-y-auto">
           {query.length > 0 && results.length === 0 ? (
-            <div className="text-center py-10 text-slate-500 font-medium">No results found for "{query}"</div>
+            <div className="text-center py-10 text-slate-500 font-medium">{t('no_results_found', 'No results found for "{{query}}"', { query })}</div>
           ) : (
             <div className="grid gap-3">
               {(query ? results : WORLDS.slice(0, 4)).map(w => (
@@ -71,7 +71,7 @@ export default function SearchOverlay({ isOpen, onClose }: { isOpen: boolean, on
                     </div>
                   </div>
                   <div className="opacity-0 group-hover:opacity-100 transition-opacity font-bold">
-                    Enter →
+                    {t('enter', 'Enter')} →
                   </div>
                 </div>
               ))}

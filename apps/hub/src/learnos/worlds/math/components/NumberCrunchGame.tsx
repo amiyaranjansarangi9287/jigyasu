@@ -1,7 +1,9 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useMathFeedback } from '../lib/MathContext';
+import { useTranslation } from 'react-i18next';
 import WhatsNext from './shared/WhatsNext';
+import { useFormatNumber } from '../../../../hooks/useFormatNumber';
 
 interface Question {
   text: string;
@@ -10,7 +12,7 @@ interface Question {
   emoji: string;
 }
 
-const generateQuestion = (difficulty: number): Question => {
+const generateQuestion = (difficulty: number, formatNumber: (n: number) => string): Question => {
   const emojis = ['🧙‍♂️', '🐉', '🦄', '🧚', '🪄', '🏰', '⚔️', '🛡️', '🗝️', '🧪'];
   const emoji = emojis[Math.floor(Math.random() * emojis.length)];
   
@@ -24,25 +26,25 @@ const generateQuestion = (difficulty: number): Question => {
       a = Math.floor(Math.random() * maxNum) + 1;
       b = Math.floor(Math.random() * maxNum) + 1;
       answer = a + b;
-      text = `${a} + ${b}`;
+      text = `${formatNumber(a)} + ${formatNumber(b)}`;
       break;
     case 1: // subtraction
       a = Math.floor(Math.random() * maxNum) + 5;
       b = Math.floor(Math.random() * Math.min(a, maxNum)) + 1;
       answer = a - b;
-      text = `${a} - ${b}`;
+      text = `${formatNumber(a)} - ${formatNumber(b)}`;
       break;
     case 2: // multiplication
       a = Math.floor(Math.random() * Math.min(maxNum, 12)) + 1;
       b = Math.floor(Math.random() * Math.min(maxNum, 12)) + 1;
       answer = a * b;
-      text = `${a} × ${b}`;
+      text = `${formatNumber(a)} × ${formatNumber(b)}`;
       break;
     default: // division
       b = Math.floor(Math.random() * Math.min(maxNum, 10)) + 1;
       answer = Math.floor(Math.random() * Math.min(maxNum, 10)) + 1;
       a = b * answer;
-      text = `${a} ÷ ${b}`;
+      text = `${formatNumber(a)} ÷ ${formatNumber(b)}`;
       break;
   }
   
@@ -63,7 +65,9 @@ const generateQuestion = (difficulty: number): Question => {
 };
 
 export default function NumberCrunchGame() {
+  const { t } = useTranslation();
   const math = useMathFeedback();
+  const formatNumber = useFormatNumber();
   const [gameState, setGameState] = useState<'menu' | 'playing' | 'gameover'>('menu');
   const [score, setScore] = useState(0);
   const [streak, setStreak] = useState(0);
@@ -81,9 +85,9 @@ export default function NumberCrunchGame() {
   const nextQuestion = useCallback(() => {
     const newDifficulty = Math.floor(score / 50) + 1;
     setDifficulty(newDifficulty);
-    setQuestion(generateQuestion(newDifficulty));
+    setQuestion(generateQuestion(newDifficulty, formatNumber));
     setFeedback(null);
-  }, [score]);
+  }, [score, formatNumber]);
 
   useEffect(() => {
     if (gameState === 'playing') {
@@ -93,12 +97,15 @@ export default function NumberCrunchGame() {
 
   useEffect(() => {
     if (gameState !== 'playing') return;
-    if (timeLeft <= 0) {
-      setGameState('gameover');
-      return;
-    }
     const timer = setInterval(() => {
-      setTimeLeft((prev) => prev - 1);
+      setTimeLeft((prev) => {
+        if (prev <= 1) {
+          clearInterval(timer);
+          setGameState('gameover');
+          return 0;
+        }
+        return prev - 1;
+      });
     }, 1000);
     return () => clearInterval(timer);
   }, [gameState]);
@@ -164,8 +171,8 @@ export default function NumberCrunchGame() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🎮 Number Crunch Quest</h2>
-        <p className="text-purple-300 text-lg">Race against time to solve math puzzles!</p>
+        <h2 className="text-3xl font-bold text-white mb-2">{t('math_modules.NumberCrunchGame.title', '🎮 Number Crunch Quest')}</h2>
+        <p className="text-purple-300 text-lg">{t('math_modules.NumberCrunchGame.subtitle', 'Race against time to solve math puzzles!')}</p>
       </div>
 
       {/* Floating Particles */}
@@ -203,16 +210,16 @@ export default function NumberCrunchGame() {
               >
                 🧙‍♂️
               </motion.div>
-              <h3 className="text-2xl font-bold text-white mb-2">Ready, Math Wizard?</h3>
+              <h3 className="text-2xl font-bold text-white mb-2">{t('math_modules.NumberCrunchGame.ready', 'Ready, Math Wizard?')}</h3>
               <p className="text-gray-400 mb-6">
-                Answer as many math questions as you can in 60 seconds!
-                <br />Build combos for bonus points! 🔥
+                {t('math_modules.NumberCrunchGame.readyDesc1', 'Answer as many math questions as you can in 60 seconds!')}
+                <br />{t('math_modules.NumberCrunchGame.readyDesc2', 'Build combos for bonus points! 🔥')}
               </p>
               <div className="space-y-3 text-left text-sm text-gray-400 mb-6 bg-white/5 rounded-xl p-4">
-                <p>⚡ <span className="text-white">Speed</span> — 60 seconds on the clock</p>
-                <p>🔥 <span className="text-white">Combos</span> — Streak multiplier up to 5x</p>
-                <p>📈 <span className="text-white">Adaptive</span> — Gets harder as you level up</p>
-                <p>🏆 <span className="text-white">High Score</span> — Beat your best!</p>
+                <p dangerouslySetInnerHTML={{ __html: t('math_modules.NumberCrunchGame.speed', '⚡ <span className="text-white">Speed</span> — 60 seconds on the clock') }} />
+                <p dangerouslySetInnerHTML={{ __html: t('math_modules.NumberCrunchGame.combos', '🔥 <span className="text-white">Combos</span> — Streak multiplier up to 5x') }} />
+                <p dangerouslySetInnerHTML={{ __html: t('math_modules.NumberCrunchGame.adaptive', '📈 <span className="text-white">Adaptive</span> — Gets harder as you level up') }} />
+                <p dangerouslySetInnerHTML={{ __html: t('math_modules.NumberCrunchGame.highScore', '🏆 <span className="text-white">High Score</span> — Beat your best!') }} />
               </div>
               <motion.button
                 className="w-full py-4 rounded-2xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold text-xl shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-shadow"
@@ -220,7 +227,7 @@ export default function NumberCrunchGame() {
                 whileTap={{ scale: 0.97 }}
                 onClick={startGame}
               >
-                🚀 Start Quest!
+                🚀 {t('math_modules.NumberCrunchGame.startBtn', 'Start Quest!')}
               </motion.button>
             </div>
           </motion.div>
@@ -237,8 +244,8 @@ export default function NumberCrunchGame() {
             {/* Stats Bar */}
             <div className="flex flex-wrap items-center justify-between gap-2 mb-4 px-2">
               <div className="flex items-center gap-4">
-                <span className="text-yellow-400 font-bold text-lg">⭐ {score}</span>
-                <span className="text-orange-400 font-bold">🔥 {streak}</span>
+                <span className="text-yellow-400 font-bold text-lg">⭐ {formatNumber(score)}</span>
+                <span className="text-orange-400 font-bold">🔥 {formatNumber(streak)}</span>
                 {combo > 1 && (
                   <motion.span
                     className="text-pink-400 font-bold"
@@ -246,7 +253,7 @@ export default function NumberCrunchGame() {
                     initial={{ scale: 2 }}
                     animate={{ scale: 1 }}
                   >
-                    ×{combo}
+                    ×{formatNumber(combo)}
                   </motion.span>
                 )}
               </div>
@@ -256,7 +263,7 @@ export default function NumberCrunchGame() {
                   animate={timeLeft <= 10 ? { scale: [1, 1.2, 1] } : {}}
                   transition={{ duration: 0.5, repeat: Infinity }}
                 >
-                  ⏱️ {timeLeft}s
+                  ⏱️ {formatNumber(timeLeft)}s
                 </motion.span>
               </div>
             </div>
@@ -279,7 +286,7 @@ export default function NumberCrunchGame() {
             {/* Difficulty Badge */}
             <div className="text-center mb-2">
               <span className="text-sm bg-purple-500/30 text-purple-300 px-2 py-1 rounded-full">
-                Level {difficulty} {['', '🌱', '🌿', '🌳', '🔥', '💎'][Math.min(difficulty, 5)]}
+                {t('math_modules.NumberCrunchGame.level', 'Level {{level}}', { level: formatNumber(difficulty) })} {['', '🌱', '🌿', '🌳', '🔥', '💎'][Math.min(difficulty, 5)]}
               </span>
             </div>
 
@@ -322,7 +329,7 @@ export default function NumberCrunchGame() {
                     onClick={(e) => handleAnswer(option, e)}
                     disabled={feedback !== null}
                   >
-                    {option}
+                    {formatNumber(option)}
                   </motion.button>
                 ))}
               </div>
@@ -333,7 +340,7 @@ export default function NumberCrunchGame() {
                   initial={{ scale: 0 }}
                   animate={{ scale: [0, 1.5, 1] }}
                 >
-                  ✨ +{10 * combo} pts!
+                  ✨ {t('math_modules.NumberCrunchGame.pts', '+{{pts}} pts!', { pts: formatNumber(10 * combo) })}
                 </motion.p>
               )}
               {feedback === 'wrong' && (
@@ -342,7 +349,7 @@ export default function NumberCrunchGame() {
                   initial={{ x: -10 }}
                   animate={{ x: [10, -10, 5, 0] }}
                 >
-                  ❌ Answer: {question.answer}
+                  ❌ {t('math_modules.NumberCrunchGame.answerIs', 'Answer: {{answer}}', { answer: formatNumber(question.answer) })}
                 </motion.p>
               )}
             </motion.div>
@@ -366,42 +373,42 @@ export default function NumberCrunchGame() {
               >
                 🏆
               </motion.div>
-              <h3 className="text-3xl font-bold text-white mb-4">Quest Complete!</h3>
+              <h3 className="text-3xl font-bold text-white mb-4">{t('math_modules.NumberCrunchGame.questComplete', 'Quest Complete!')}</h3>
 
               <div className="space-y-3 mb-6">
                 <div className="flex justify-between items-center bg-white/5 rounded-xl px-4 py-3">
-                  <span className="text-gray-400">⭐ Final Score</span>
-                  <span className="text-2xl font-bold text-yellow-400">{score}</span>
+                  <span className="text-gray-400">{t('math_modules.NumberCrunchGame.finalScore', '⭐ Final Score')}</span>
+                  <span className="text-2xl font-bold text-yellow-400">{formatNumber(score)}</span>
                 </div>
                 <div className="flex justify-between items-center bg-white/5 rounded-xl px-4 py-3">
-                  <span className="text-gray-400">✅ Accuracy</span>
+                  <span className="text-gray-400">{t('math_modules.NumberCrunchGame.accuracy', '✅ Accuracy')}</span>
                   <span className="text-lg font-bold text-green-400">
-                    {totalAnswered > 0 ? Math.round((totalCorrect / totalAnswered) * 100) : 0}%
+                    {formatNumber(totalAnswered > 0 ? Math.round((totalCorrect / totalAnswered) * 100) : 0)}%
                   </span>
                 </div>
                 <div className="flex justify-between items-center bg-white/5 rounded-xl px-4 py-3">
-                  <span className="text-gray-400">🔥 Best Streak</span>
-                  <span className="text-lg font-bold text-orange-400">{bestStreak}</span>
+                  <span className="text-gray-400">{t('math_modules.NumberCrunchGame.bestStreak', '🔥 Best Streak')}</span>
+                  <span className="text-lg font-bold text-orange-400">{formatNumber(bestStreak)}</span>
                 </div>
                 <div className="flex justify-between items-center bg-white/5 rounded-xl px-4 py-3">
-                  <span className="text-gray-400">📊 Questions</span>
-                  <span className="text-lg font-bold text-blue-400">{totalCorrect}/{totalAnswered}</span>
+                  <span className="text-gray-400">{t('math_modules.NumberCrunchGame.questions', '📊 Questions')}</span>
+                  <span className="text-lg font-bold text-blue-400">{formatNumber(totalCorrect)}/{formatNumber(totalAnswered)}</span>
                 </div>
                 <div className="flex justify-between items-center bg-white/5 rounded-xl px-4 py-3">
-                  <span className="text-gray-400">📈 Max Level</span>
-                  <span className="text-lg font-bold text-purple-400">{difficulty}</span>
+                  <span className="text-gray-400">{t('math_modules.NumberCrunchGame.maxLevel', '📈 Max Level')}</span>
+                  <span className="text-lg font-bold text-purple-400">{formatNumber(difficulty)}</span>
                 </div>
               </div>
 
               <div className="text-center mb-6">
                 {score >= 200 ? (
-                  <p className="text-yellow-400 font-bold">🌟 Legendary Math Wizard! 🌟</p>
+                  <p className="text-yellow-400 font-bold">{t('math_modules.NumberCrunchGame.legendary', '🌟 Legendary Math Wizard! 🌟')}</p>
                 ) : score >= 100 ? (
-                  <p className="text-purple-400 font-bold">🧙 Grand Sorcerer of Numbers!</p>
+                  <p className="text-purple-400 font-bold">{t('math_modules.NumberCrunchGame.grand', '🧙 Grand Sorcerer of Numbers!')}</p>
                 ) : score >= 50 ? (
-                  <p className="text-blue-400 font-bold">📚 Apprentice Mathematician!</p>
+                  <p className="text-blue-400 font-bold">{t('math_modules.NumberCrunchGame.apprentice', '📚 Apprentice Mathematician!')}</p>
                 ) : (
-                  <p className="text-green-400 font-bold">🌱 Keep practicing, young wizard!</p>
+                  <p className="text-green-400 font-bold">{t('math_modules.NumberCrunchGame.keepPracticing', '🌱 Keep practicing, young wizard!')}</p>
                 )}
               </div>
 
@@ -411,7 +418,7 @@ export default function NumberCrunchGame() {
                 whileTap={{ scale: 0.97 }}
                 onClick={startGame}
               >
-                🔄 Play Again!
+                🔄 {t('math_modules.NumberCrunchGame.playAgain', 'Play Again!')}
               </motion.button>
             </div>
           </motion.div>

@@ -7,7 +7,7 @@ import { useLearnerStore } from '../store';
 import { LearningService } from '../services';
 import { ROUTES } from '../constants/routes';
 import { ParentCorner } from '../shared/layout';
-import { Button } from '../shared/ui';
+import { Button } from '@jigyasu/ui';
 
 const MAX_CONCEPTS = ['gravity', 'photosynthesis', 'fractions', 'magnetism', 'water-cycle'];
 

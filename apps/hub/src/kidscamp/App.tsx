@@ -2,7 +2,8 @@
 
 import { useState, useRef, useCallback } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Activity, activities } from './data/activities';
+import { Activity } from './data/activities.en';
+import { useLocalizedActivities } from '../hooks/useLocalizedData';
 import { AgeTier, PillarId } from './data/categories';
 import {
   useAgeFilter,
@@ -17,6 +18,7 @@ import {
 
 // Lazy loaded modals
 import { Suspense, lazy } from 'react';
+import { useTranslation } from 'react-i18next';
 const ActivityModal = lazy(() => import('./components/ActivityModal'));
 const SettingsModal = lazy(() => import('./components/SettingsModal'));
 const WorkshopPanel = lazy(() => import('./components/WorkshopPanel'));
@@ -35,6 +37,7 @@ import ToddlerZone from './components/ToddlerZone';
 import Footer from './components/Footer';
 
 export default function App() {
+  const { t } = useTranslation();
   // State
   const [activeActivity, setActiveActivity] = useState<Activity | null>(null);
   const [showAgeModal, setShowAgeModal] = useState(false);
@@ -47,6 +50,7 @@ export default function App() {
   const favoritesOpen = location.pathname.includes('/favorites');
   
   const activityMatch = location.pathname.match(/\/activity\/([^/]+)/);
+  const { activities } = useLocalizedActivities();
   const selectedActivity = activityMatch ? activities.find(a => a.id === activityMatch[1]) || null : null;
 
   const setWorkshopOpen = useCallback((open: boolean) => {
@@ -176,7 +180,7 @@ export default function App() {
         {selectedActivity && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
             <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={() => setSelectedActivity(null)} />
-            <div className="relative bg-white dark:bg-gray-900 rounded-3xl shadow-2xl max-w-lg w-full p-6 animate-modal-in">
+            <div className="relative bg-white dark:bg-gray-900 rounded-3xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-6 animate-modal-in">
               <button
                 onClick={() => setSelectedActivity(null)}
                 className="absolute top-4 right-4 p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700"
@@ -200,18 +204,14 @@ export default function App() {
                 </p>
 
                 <div className="flex items-center justify-center gap-4 mb-6">
-                  <span className="px-4 py-2 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-lg font-medium">
-                    Easy
-                  </span>
+                  <span className="px-4 py-2 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-lg font-medium">{t('kidscamp.app.easy', 'Easy')}</span>
                   <span className="px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-lg">
                     ⏱️ {selectedActivity.timeToMake}
                   </span>
                 </div>
 
                 <div className="bg-purple-50 dark:bg-purple-900/20 rounded-2xl p-4 mb-6">
-                  <p className="text-purple-700 dark:text-purple-300 text-lg">
-                    👨‍👩‍👧 Ask a grown-up to help you with this activity!
-                  </p>
+                  <p className="text-purple-700 dark:text-purple-300 text-lg">👨‍👩‍👧 {t('kidscamp.app.ask_grownup', 'Ask a grown-up to help you with this activity!')}</p>
                 </div>
 
                 <button
@@ -221,7 +221,7 @@ export default function App() {
                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
-                  Let's Make It!
+                  {t('kidscamp.app.lets_make_it', "Let's Make It!")}
                 </button>
               </div>
             </div>
@@ -236,8 +236,8 @@ export default function App() {
                 {toastAchievement.icon}
               </div>
               <div className="flex-1">
-                <p className="text-sm text-pink-500 font-medium uppercase">Yay! New Badge!</p>
-                <p className="font-bold text-gray-900 dark:text-white text-lg">{toastAchievement.name}</p>
+                <p className="text-sm text-pink-500 font-medium uppercase">{t('kidscamp.app.new_badge', 'Yay! New Badge!')}</p>
+                <p className="font-bold text-gray-900 dark:text-white text-lg">{t(`kidscamp.achievements.${toastAchievement.id}.name`, toastAchievement.name)}</p>
               </div>
               <button onClick={dismissToast} className="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full">
                 <svg className="w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -405,9 +405,9 @@ export default function App() {
               {toastAchievement.icon}
             </div>
             <div className="flex-1">
-              <p className="text-sm text-orange-500 font-medium uppercase">Achievement Unlocked!</p>
-              <p className="font-bold text-gray-900 dark:text-white">{toastAchievement.name}</p>
-              <p className="text-sm text-gray-500">{toastAchievement.description}</p>
+              <p className="text-sm text-orange-500 font-medium uppercase">{t('kidscamp.app.achievement_unlocked', 'Achievement Unlocked!')}</p>
+              <p className="font-bold text-gray-900 dark:text-white">{t(`kidscamp.achievements.${toastAchievement.id}.name`, toastAchievement.name)}</p>
+              <p className="text-sm text-gray-500">{t(`kidscamp.achievements.${toastAchievement.id}.description`, toastAchievement.description)}</p>
             </div>
             <button
               onClick={dismissToast}

@@ -2,6 +2,8 @@
 
 interface ImportMetaEnv {
   readonly VITE_SENTRY_DSN?: string;
+  readonly VITE_TEACHING_BRIDGE_ENABLED?: string;
+  readonly VITE_TEACHING_BRIDGE_URL?: string;
   readonly PROD: boolean;
   readonly DEV: boolean;
   readonly MODE: string;

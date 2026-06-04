@@ -1,4 +1,5 @@
 import { Theme } from '../hooks/useTheme';
+import { useTranslation } from 'react-i18next';
 
 interface Props {
   theme: Theme;
@@ -15,15 +16,16 @@ export default function SettingsModal({
   toggleSound,
   setSettingsOpen
 }: Props) {
+  const { t } = useTranslation();
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       <div
         className="absolute inset-0 bg-black/50 backdrop-blur-sm"
         onClick={() => setSettingsOpen(false)}
       />
-      <div className="relative bg-white dark:bg-gray-900 rounded-3xl shadow-2xl max-w-md w-full p-6 animate-modal-in">
+      <div className="relative bg-white dark:bg-gray-900 rounded-3xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto p-6 animate-modal-in">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-xl font-bold text-gray-900 dark:text-white">Settings</h2>
+          <h2 className="text-xl font-bold text-gray-900 dark:text-white">{t('kidscamp.settings.title', 'Settings')}</h2>
           <button
             onClick={() => setSettingsOpen(false)}
             className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
@@ -36,19 +38,19 @@ export default function SettingsModal({
 
         {/* Theme */}
         <div className="mb-6">
-          <h4 className="font-medium text-gray-900 dark:text-white mb-3">Theme</h4>
+          <h4 className="font-medium text-gray-900 dark:text-white mb-3">{t('kidscamp.settings.theme', 'Theme')}</h4>
           <div className="flex gap-2">
-            {(['light', 'dark', 'system'] as const).map((t) => (
+            {(['light', 'dark', 'system'] as const).map((themeOption) => (
               <button
-                key={t}
-                onClick={() => setTheme(t)}
+                key={themeOption}
+                onClick={() => setTheme(themeOption)}
                 className={`flex-1 py-2 px-4 rounded-xl font-medium transition-all ${
-                  theme === t
+                  theme === themeOption
                     ? 'bg-orange-500 text-white'
                     : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
                 }`}
               >
-                {t === 'light' ? '☀️' : t === 'dark' ? '🌙' : '💻'} {t.charAt(0).toUpperCase() + t.slice(1)}
+                {themeOption === 'light' ? '☀️ ' + t('kidscamp.settings.light', 'Light') : themeOption === 'dark' ? '🌙 ' + t('kidscamp.settings.dark', 'Dark') : '💻 ' + t('kidscamp.settings.system', 'System')}
               </button>
             ))}
           </div>
@@ -58,8 +60,8 @@ export default function SettingsModal({
         <div className="mb-6">
           <div className="flex items-center justify-between">
             <div>
-              <h4 className="font-medium text-gray-900 dark:text-white">Sound Effects</h4>
-              <p className="text-sm text-gray-500">Play sounds on actions</p>
+              <h4 className="font-medium text-gray-900 dark:text-white">{t('kidscamp.settings.sound_effects', 'Sound Effects')}</h4>
+              <p className="text-sm text-gray-500">{t('kidscamp.settings.sound_desc', 'Play sounds on actions')}</p>
             </div>
             <button
               onClick={toggleSound}
@@ -78,9 +80,7 @@ export default function SettingsModal({
 
         {/* App Info */}
         <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
-          <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
-            CampCraft v1.0 • Made with ❤️ for creative families
-          </p>
+          <p className="text-sm text-gray-500 dark:text-gray-400 text-center">CampCraft v1.0 • {t('kidscamp.settings.made_with', 'Made with ❤️ for creative families')}</p>
         </div>
       </div>
     </div>

@@ -41,7 +41,7 @@ export default function WelcomeSection({ profile }: WelcomeSectionProps) {
             }}
           >
             <span className="text-xl">👥</span>
-            <span className="hidden sm:inline">Switch Profile</span>
+            <span className="hidden sm:inline">{t('switch_profile', 'Switch Profile')}</span>
           </button>
           
           {lastModule && (
@@ -73,7 +73,7 @@ export default function WelcomeSection({ profile }: WelcomeSectionProps) {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-sm p-4">
           <div className="bg-white rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
             <div className="p-4 border-b border-slate-200 flex items-center justify-between">
-              <h2 className="text-xl font-bold text-slate-800">Switch Profile</h2>
+              <h2 className="text-xl font-bold text-slate-800">{t('switch_profile', 'Switch Profile')}</h2>
               <button
                 onClick={() => setShowSharedPhoneMode(false)}
                 className="text-slate-400 hover:text-slate-600 text-2xl"

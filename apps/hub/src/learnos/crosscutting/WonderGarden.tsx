@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ROUTES } from '../constants/routes';
 import { ParentCorner } from '../shared/layout';
-import { Button } from '../shared/ui';
+import { Button } from '@jigyasu/ui';
 import { CanvasHelpers } from '../shared/canvas/helpers/CanvasHelpers';
 
 interface GardenPlant {

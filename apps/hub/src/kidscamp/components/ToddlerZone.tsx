@@ -1,8 +1,10 @@
 // CampCraft - Toddler Zone (Ages 3-5 Special UI)
 
 import { useState } from 'react';
-import { activities, Activity } from '../data/activities';
+import { activities, Activity } from '../data/activities.en';
+import { useLocalizedActivities } from '../../hooks/useLocalizedData';
 import { pillars } from '../data/categories';
+import { useTranslation } from 'react-i18next';
 
 interface ToddlerZoneProps {
   onSelectActivity: (activity: Activity) => void;
@@ -21,6 +23,8 @@ export default function ToddlerZone({
   onToggleFavorite,
   getStatus
 }: ToddlerZoneProps) {
+  const { t } = useTranslation();
+  const { activities } = useLocalizedActivities();
   const [selectedPillar, setSelectedPillar] = useState<string | null>(null);
 
   // Filter activities for ages 3-5
@@ -46,9 +50,9 @@ export default function ToddlerZone({
               <span className="text-4xl animate-bounce-slow">🐣</span>
               <div>
                 <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-                  Little Explorers
+                  {t('kidscamp.toddler.title', 'Little Explorers')}
                 </h1>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Ages 3-5</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">{t('kidscamp.toddler.ages', 'Ages 3-5')}</p>
               </div>
             </div>
             <button
@@ -59,7 +63,7 @@ export default function ToddlerZone({
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
-              <span>Exit Zone</span>
+              <span>{t('kidscamp.toddler.exit_zone', 'Exit Zone')}</span>
             </button>
           </div>
         </div>
@@ -76,10 +80,10 @@ export default function ToddlerZone({
             <div className="absolute bottom-8 right-1/4 text-4xl animate-wiggle">🦋</div>
 
             <h2 className="text-3xl md:text-4xl font-bold mb-3 relative">
-              Welcome, Little Explorer! 👋
+              {t('kidscamp.toddler.welcome', 'Welcome, Little Explorer! 👋')}
             </h2>
             <p className="text-xl text-white/90 max-w-xl mx-auto relative">
-              Let's make something amazing today! Pick an activity below.
+              {t('kidscamp.toddler.welcome_desc', "Let's make something amazing today! Pick an activity below.")}
             </p>
           </div>
         </div>
@@ -89,7 +93,7 @@ export default function ToddlerZone({
       <section className="px-4 pb-8">
         <div className="max-w-5xl mx-auto">
           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 text-center">
-            What do you want to do? 🤔
+            {t('kidscamp.toddler.what_to_do', 'What do you want to do? 🤔')}
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {/* All button */}
@@ -103,10 +107,10 @@ export default function ToddlerZone({
             >
               <div className="text-5xl mb-2">🌟</div>
               <div className={`font-bold text-lg ${selectedPillar === null ? 'text-white' : 'text-gray-900 dark:text-white'}`}>
-                All Fun!
+                {t('kidscamp.toddler.all_fun', 'All Fun!')}
               </div>
               <div className={`text-sm ${selectedPillar === null ? 'text-white/80' : 'text-gray-500'}`}>
-                {toddlerActivities.length} activities
+                {toddlerActivities.length} {t('kidscamp.toddler.activities_count', 'activities')}
               </div>
             </button>
 
@@ -127,10 +131,10 @@ export default function ToddlerZone({
                 >
                   <div className="text-5xl mb-2">{pillar.icon}</div>
                   <div className={`font-bold text-lg ${selectedPillar === pillar.id ? 'text-white' : 'text-gray-900 dark:text-white'}`}>
-                    {pillar.name}
+                    {t(`pillar_${pillar.id}` as any, pillar.name || '')}
                   </div>
                   <div className={`text-sm ${selectedPillar === pillar.id ? 'text-white/80' : 'text-gray-500'}`}>
-                    {count} activities
+                    {count} {t('kidscamp.toddler.activities_count', 'activities')}
                   </div>
                 </button>
               );
@@ -144,8 +148,8 @@ export default function ToddlerZone({
         <div className="max-w-5xl mx-auto">
           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
             {selectedPillar 
-              ? `${pillars.find(p => p.id === selectedPillar)?.icon} ${pillars.find(p => p.id === selectedPillar)?.name} Activities`
-              : '🎉 All Activities'}
+              ? `${pillars.find(p => p.id === selectedPillar)?.icon} ${t(`pillar_${selectedPillar}` as any, pillars.find(p => p.id === selectedPillar)?.name || '')} ${t('kidscamp.toddler.activities_suffix', 'Activities')}`
+              : t('kidscamp.toddler.all_activities', '🎉 All Activities')}
             <span className="text-gray-400 font-normal ml-2">({filteredActivities.length})</span>
           </h3>
 
@@ -174,12 +178,12 @@ export default function ToddlerZone({
                     {/* Status Badge */}
                     {status === 'completed' && (
                       <div className="absolute top-3 left-3 px-3 py-1.5 rounded-full bg-green-500 text-white text-sm font-bold flex items-center gap-1 shadow-lg">
-                        <span>✓</span> Done!
+                        <span>✓</span> {t('kidscamp.toddler.done_badge', 'Done!')}
                       </div>
                     )}
                     {status === 'in-progress' && (
                       <div className="absolute top-3 left-3 px-3 py-1.5 rounded-full bg-orange-500 text-white text-sm font-bold shadow-lg">
-                        Started!
+                        {t('kidscamp.toddler.started_badge', 'Started!')}
                       </div>
                     )}
 
@@ -237,17 +241,17 @@ export default function ToddlerZone({
                     <div className="flex gap-3">
                       <button
                         onClick={() => onStartActivity(activity)}
-                        className={`flex-1 py-4 px-6 rounded-2xl font-bold text-lg transition-all ${
-                          status === 'completed'
-                            ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 hover:bg-green-200'
-                            : status === 'in-progress'
-                            ? 'bg-orange-500 text-white hover:bg-orange-600'
-                            : 'bg-gradient-to-r from-pink-500 to-purple-500 text-white hover:from-pink-600 hover:to-purple-600'
+                        className={`flex-1 py-3 px-4 rounded-xl flex items-center justify-center gap-2 font-bold text-lg transition-colors ${
+                          status === 'completed' 
+                            ? 'bg-green-100 text-green-700 hover:bg-green-200 dark:bg-green-900/30 dark:text-green-300' 
+                            : 'bg-gradient-to-r from-pink-400 to-purple-400 text-white hover:from-pink-500 hover:to-purple-500 shadow-md'
                         }`}
                       >
-                        {status === 'completed' ? '🔄 Again!' :
-                         status === 'in-progress' ? '▶️ Keep Going!' :
-                         '🎨 Let\'s Go!'}
+                        {status === 'completed' ? (
+                          <><span>↺</span> {t('kidscamp.toddler.play_again', 'Play Again')}</>
+                        ) : (
+                          <><span>▶</span> {t('kidscamp.toddler.play_now', 'Play Now!')}</>
+                        )}
                       </button>
                       <button
                         onClick={() => onSelectActivity(activity)}

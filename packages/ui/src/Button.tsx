@@ -4,8 +4,8 @@ import type { ReactNode } from 'react';
 
 interface ButtonProps {
   children: ReactNode;
-  onClick?: () => void;
-  variant?: 'primary' | 'secondary' | 'ghost' | 'danger';
+  onClick?: (e?: any) => void;
+  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger' | 'outline-danger' | 'info' | 'muted' | 'dark' | 'indigo' | 'glass';
   size?: 'sm' | 'md' | 'lg' | 'xl';
   disabled?: boolean;
   fullWidth?: boolean;
@@ -16,8 +16,15 @@ interface ButtonProps {
 const variants = {
   primary: 'bg-orange-500 hover:bg-orange-600 text-white shadow-lg shadow-orange-200',
   secondary: 'bg-white hover:bg-gray-50 text-gray-700 border-2 border-gray-200',
+  outline: 'bg-white hover:bg-gray-50 text-gray-700 border-2 border-gray-200',
   ghost: 'bg-transparent hover:bg-gray-100 text-gray-600',
   danger: 'bg-red-500 hover:bg-red-600 text-white',
+  'outline-danger': 'bg-white hover:bg-red-50 text-red-700 border-2 border-red-200',
+  info: 'bg-sky-500 hover:bg-sky-600 text-white shadow-lg shadow-sky-500/30',
+  muted: 'bg-slate-100 hover:bg-slate-200 text-slate-700',
+  dark: 'bg-slate-800 hover:bg-slate-900 text-white shadow-lg shadow-slate-800/30',
+  indigo: 'bg-indigo-600 hover:bg-indigo-700 text-white',
+  glass: 'bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white border-2 border-white/30 shadow-lg'
 };
 
 const sizes = {

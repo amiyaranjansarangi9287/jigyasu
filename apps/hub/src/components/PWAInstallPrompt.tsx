@@ -36,7 +36,7 @@ export function PWAInstallPrompt() {
       >
         <div className="bg-white rounded-2xl shadow-2xl border border-indigo-100 p-5">
           <div className="flex items-start gap-4">
-            <div className="text-4xl flex-shrink-0">🦉</div>
+            <div className="text-4xl flex-shrink-0">🦚</div>
             <div className="flex-1">
               <h3 className="font-bold text-indigo-900 text-lg mb-1">
                 Install Jigyasu

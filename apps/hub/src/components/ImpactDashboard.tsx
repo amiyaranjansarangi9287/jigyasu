@@ -5,8 +5,10 @@
 import { useState, useEffect } from 'react';
 import { db } from '../learnos/db';
 import type { ConceptProgress } from '../learnos/types/shared';
+import { useTranslation } from 'react-i18next';
 
 export default function ImpactDashboard() {
+  const { t } = useTranslation();
   const [totalLearners, setTotalLearners] = useState(0);
   const [modulesCompleted, setModulesCompleted] = useState(0);
   const [totalTimeSpent, setTotalTimeSpent] = useState(0);
@@ -61,10 +63,10 @@ export default function ImpactDashboard() {
     return (
       <button
         onClick={() => setIsVisible(true)}
-        className="fixed bottom-4 left-4 bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-bold z-[100] hover:bg-green-700 transition-colors"
+        className="fixed bottom-20 left-6 bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-bold z-[100] hover:bg-green-700 transition-colors"
         aria-label="Open Impact Dashboard"
       >
-        📈 Impact
+        📈 {t('floating_buttons.impact', 'Impact')}
       </button>
     );
   }

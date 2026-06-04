@@ -88,7 +88,7 @@ export default function NavigationCards() {
             {'\u{1F6E0}\uFE0F'}
           </span>
           <h2 className="text-4xl font-black text-slate-800 mb-4 tracking-tight">
-            {t('maker_space', 'Maker Space')}
+            {t('nav_maker_space', 'Maker Space')}
           </h2>
           <span className="text-lg text-slate-600 mb-8 max-w-sm font-medium">
             {t('maker_space_desc', 'Roll up your sleeves! Build, create, and experiment in our hands-on interactive 3D labs and outdoor quests.')}

@@ -39,13 +39,18 @@ export default function TimesTableTrainer() {
 
   useEffect(() => {
     if (!quizActive) return;
-    if (quizTime <= 0) {
-      setQuizActive(false);
-      return;
-    }
-    const timer = setInterval(() => setQuizTime((t) => t - 1), 1000);
+    const timer = setInterval(() => {
+      setQuizTime((t) => {
+        if (t <= 1) {
+          clearInterval(timer);
+          setQuizActive(false);
+          return 0;
+        }
+        return t - 1;
+      });
+    }, 1000);
     return () => clearInterval(timer);
-  }, [quizActive, quizTime]);
+  }, [quizActive]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

@@ -1,5 +1,6 @@
 // src/worlds/lab/LabHome.tsx
 import { useState, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ParentCorner } from '@/shared/layout';
@@ -63,6 +64,7 @@ function DifficultyBadge({ level }: { level: DifficultyLevel }) {
 }
 
 export default function LabHome() {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [activeSubject, setActiveSubject] = useState<LabSubject | 'all'>('all');
   const [activeDifficulty, setActiveDifficulty] = useState<DifficultyLevel | 'all'>('all');
@@ -106,13 +108,13 @@ export default function LabHome() {
       <div className="bg-white border-b border-slate-100 px-5 pt-6 pb-4">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-2xl font-extrabold text-slate-800">Lab Zero</h1>
-            <p className="text-sm text-slate-400 mt-0.5">{LAB_MODULES.length} experiments to explore</p>
+            <h1 className="text-2xl font-extrabold text-slate-800">{t('lab.title', 'Lab Zero')}</h1>
+            <p className="text-sm text-slate-400 mt-0.5">{t('lab.stats', '{{count}} experiments to explore', { count: LAB_MODULES.length })}</p>
           </div>
           <div className="flex gap-2">
             <button onClick={() => setViewMode(viewMode === 'grid' ? 'path' : 'grid')} className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-bold transition-all min-h-[44px] ${viewMode === 'path' ? 'bg-indigo-600 text-white' : 'bg-slate-100 text-slate-600'}`}>
               <span>{viewMode === 'path' ? '🗺️' : '📋'}</span>
-              <span className="hidden sm:inline">{viewMode === 'path' ? 'Grid' : 'Path'}</span>
+              <span className="hidden sm:inline">{viewMode === 'path' ? t('lab.grid', 'Grid') : t('lab.path', 'Path')}</span>
             </button>
           </div>
         </div>
@@ -125,7 +127,7 @@ export default function LabHome() {
               type="text"
               value={search}
               onChange={e => setSearch(e.target.value)}
-              placeholder="Search experiments, topics, tags..."
+              placeholder={t('lab.search_placeholder', 'Search experiments, topics, tags...')}
               className="w-full pl-9 pr-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-700 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-400"
             />
             {search && (
@@ -138,7 +140,7 @@ export default function LabHome() {
         <div className="flex gap-2 mt-3 overflow-x-auto no-scrollbar">
           {SUBJECTS.map(s => (
             <button key={s.id} onClick={() => setActiveSubject(s.id)} className={`flex-shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all min-h-[44px] ${activeSubject === s.id ? 'bg-blue-600 text-white' : 'bg-white text-slate-600 border border-slate-200'}`}>
-              <span>{s.emoji}</span><span>{s.label}</span>
+              <span>{s.emoji}</span><span>{t(`lab.subjects.${s.id}`, s.label)}</span>
             </button>
           ))}
         </div>
@@ -147,15 +149,15 @@ export default function LabHome() {
         <div className="flex gap-2 mt-2 overflow-x-auto no-scrollbar">
           {DIFFICULTIES.map(d => (
             <button key={d.id} onClick={() => setActiveDifficulty(d.id)} className={`flex-shrink-0 flex items-center gap-1.5 px-3 py-2 rounded-full text-sm font-bold transition-all min-h-[44px] ${activeDifficulty === d.id ? `${d.color} text-white` : 'bg-white text-slate-500 border border-slate-200'}`}>
-              <span>{d.emoji}</span><span>{d.label}</span>
+              <span>{d.emoji}</span><span>{t(`lab.difficulties.${d.id}`, d.label)}</span>
             </button>
           ))}
         </div>
 
         {/* Results count */}
         <div className="mt-2 text-sm text-slate-400">
-          {filtered.length} of {LAB_MODULES.length} experiments
-          {search && <span> matching "<span className="text-slate-600 font-medium">{search}</span>"</span>}
+          {t('lab.results_count', '{{filtered}} of {{total}} experiments', { filtered: filtered.length, total: LAB_MODULES.length })}
+          {search && <span> {t('lab.matching', 'matching "{{search}}"', { search })}</span>}
         </div>
       </div>
 
@@ -171,11 +173,11 @@ export default function LabHome() {
                   <DifficultyBadge level={m.difficulty} />
                 </div>
                 <div className="text-3xl mb-2 mt-1">{m.emoji}</div>
-                <p className="font-bold text-slate-800 text-sm leading-tight mb-1">{m.title}</p>
-                <p className="text-[11px] text-slate-400 leading-tight line-clamp-2">{m.realWorldConnection}</p>
+                <p className="font-bold text-slate-800 text-sm leading-tight mb-1">{t(`lab.modules.${m.id}.title`, m.title)}</p>
+                <p className="text-[11px] text-slate-400 leading-tight line-clamp-2">{t(`lab.modules.${m.id}.desc`, m.realWorldConnection)}</p>
                 <div className="flex flex-wrap gap-1 mt-2">
                   {m.tags.slice(0, 2).map(tag => (
-                    <span key={tag} className="text-[9px] px-1.5 py-0.5 rounded bg-slate-100 text-slate-500">{tag}</span>
+                    <span key={tag} className="text-[9px] px-1.5 py-0.5 rounded bg-slate-100 text-slate-500">{t(`lab.tags.${tag}`, tag)}</span>
                   ))}
                 </div>
               </motion.button>
@@ -227,8 +229,8 @@ export default function LabHome() {
                         </div>
                         <div className="text-2xl">{m.emoji}</div>
                         <div className="flex-1 min-w-0">
-                          <p className="font-bold text-slate-800 text-sm">{m.title}</p>
-                          <p className="text-[11px] text-slate-400 truncate">{m.realWorldConnection}</p>
+                          <p className="font-bold text-slate-800 text-sm">{t(`lab.modules.${m.id}.title`, m.title)}</p>
+                          <p className="text-[11px] text-slate-400 truncate">{t(`lab.modules.${m.id}.desc`, m.realWorldConnection)}</p>
                         </div>
                         <div className="flex-shrink-0 flex flex-col items-end gap-1">
                           <DifficultyBadge level={m.difficulty} />

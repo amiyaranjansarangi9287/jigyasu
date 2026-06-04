@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { BADGE_INFO, getLevelTitle, ALL_MODULE_IDS, type UserProgress } from '../lib/progress';
 
 const modules = [
@@ -59,13 +60,26 @@ const heroParticles = Array.from({ length: 18 }, (_, i) => ({
 }));
 
 export default function Home({ onNavigate, progress }: { onNavigate: (id: string) => void; progress?: UserProgress }) {
+  const { t } = useTranslation();
   const [searchQuery, setSearchQuery] = useState('');
 
-  const newCount = modules.filter(m => m.isNew).length;
+  const translatedModules = useMemo(() => modules.map(m => ({
+    ...m,
+    title: t(`biology.modules.${m.id}.title`, m.title),
+    desc: t(`biology.modules.${m.id}.desc`, m.desc),
+    tag: t(`biology.tags.${m.tag}`, m.tag),
+  })), [t]);
+
+  const translatedCategories = useMemo(() => categories.map(c => ({
+    ...c,
+    title: t(`biology.categories.${c.id}`, c.title),
+  })), [t]);
+
+  const newCount = translatedModules.filter(m => m.isNew).length;
 
   // Filter modules by search
   const filteredModules = searchQuery.trim()
-    ? modules.filter(m =>
+    ? translatedModules.filter(m =>
         m.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         m.desc.toLowerCase().includes(searchQuery.toLowerCase()) ||
         m.tag.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -93,12 +107,12 @@ export default function Home({ onNavigate, progress }: { onNavigate: (id: string
             <motion.div className="text-4xl md:text-5xl mb-2"
               animate={{ rotateY: [0, 360] }} transition={{ repeat: Infinity, duration: 6, ease: 'linear' }}>🧬</motion.div>
             <h1 className="text-3xl md:text-5xl font-black text-white mb-1">
-              Bio<span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Verse</span>
+              {t('biology.title', 'BioVerse').replace('Verse', '')}<span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">{t('biology.title', 'BioVerse').includes('Verse') ? 'Verse' : ''}</span>
             </h1>
-            <p className="text-sm md:text-base text-gray-400 max-w-md mx-auto mb-1">Your Immersive Biology Learning Universe</p>
+            <p className="text-sm md:text-base text-gray-400 max-w-md mx-auto mb-1">{t('biology.subtitle', 'Your Immersive Biology Learning Universe')}</p>
             <p className="text-sm text-emerald-400/80 font-medium tracking-[0.15em] uppercase">
-              {modules.length} Modules • Maps • 3D • Games • Labs • Simulators
-              {newCount > 0 && <span className="ml-1.5 px-1.5 py-0.5 bg-yellow-500/20 text-yellow-400 rounded-full">{newCount} NEW</span>}
+              {t('biology.stats', '{{count}} Modules • Maps • 3D • Games • Labs • Simulators', { count: translatedModules.length })}
+              {newCount > 0 && <span className="ml-1.5 px-1.5 py-0.5 bg-yellow-500/20 text-yellow-400 rounded-full">{newCount} {t('biology.new_badge', 'NEW')}</span>}
             </p>
           </motion.div>
         </div>
@@ -111,37 +125,37 @@ export default function Home({ onNavigate, progress }: { onNavigate: (id: string
             className="bg-gradient-to-r from-gray-900 via-emerald-950/30 to-gray-900 rounded-2xl border border-emerald-500/20 p-4">
             <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
               <div className="text-center">
-                <div className="text-sm text-gray-500 uppercase font-bold">Level</div>
+                <div className="text-sm text-gray-500 uppercase font-bold">{t('biology.dashboard.level', 'Level')}</div>
                 <div className="text-2xl font-black text-emerald-400">
                   {progress.level}
                 </div>
                 <div className="text-sm text-gray-500">{getLevelTitle(progress.level)}</div>
               </div>
               <div className="text-center">
-                <div className="text-sm text-gray-500 uppercase font-bold">XP</div>
+                <div className="text-sm text-gray-500 uppercase font-bold">{t('biology.dashboard.xp', 'XP')}</div>
                 <div className="text-2xl font-black text-yellow-400">{progress.xp}</div>
                 <div className="w-full h-1.5 bg-gray-800 rounded-full mt-1 overflow-hidden">
                   <div className="h-full bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full transition-all" style={{ width: `${(progress.xp % 100)}%` }} />
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-sm text-gray-500 uppercase font-bold">Explored</div>
+                <div className="text-sm text-gray-500 uppercase font-bold">{t('biology.dashboard.explored', 'Explored')}</div>
                 <div className="text-2xl font-black text-cyan-400">
                   {Object.values(progress.modulesVisited).filter(m => m.visited).length}<span className="text-sm text-gray-600">/{ALL_MODULE_IDS.length}</span>
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-sm text-gray-500 uppercase font-bold">Streak</div>
+                <div className="text-sm text-gray-500 uppercase font-bold">{t('biology.dashboard.streak', 'Streak')}</div>
                 <div className="text-2xl font-black text-orange-400">
                   {progress.streak > 0 ? `${progress.streak}🔥` : '—'}
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-sm text-gray-500 uppercase font-bold">Badges</div>
+                <div className="text-sm text-gray-500 uppercase font-bold">{t('biology.dashboard.badges', 'Badges')}</div>
                 <div className="flex justify-center gap-1 mt-1 flex-wrap">
                   {progress.badges.length > 0 ? progress.badges.slice(0, 6).map(b => (
                     <span key={b} className="text-base" title={BADGE_INFO[b]?.name || b}>{BADGE_INFO[b]?.emoji || '🏅'}</span>
-                  )) : <span className="text-gray-600 text-sm">Keep exploring!</span>}
+                  )) : <span className="text-gray-600 text-sm">{t('biology.keep_exploring', 'Keep exploring!')}</span>}
                 </div>
               </div>
             </div>
@@ -154,14 +168,14 @@ export default function Home({ onNavigate, progress }: { onNavigate: (id: string
         <div className="relative max-w-md mx-auto">
           <input
             type="text"
-            placeholder="🔍 Search modules... (try 'DNA', 'game', 'quiz')"
+            placeholder={t('biology.search_placeholder', "🔍 Search modules... (try 'DNA', 'game', 'quiz')")}
             value={searchQuery}
             onChange={e => setSearchQuery(e.target.value)}
             className="w-full px-4 py-2.5 rounded-xl bg-gray-900 border border-gray-800 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/30 transition-all"
           />
           {searchQuery && (
             <button onClick={() => setSearchQuery('')}
-              className="absolute right-2 top-1/2 -translate-y-1/2 min-w-[44px] min-h-[44px] flex items-center justify-center text-gray-500 hover:text-white" aria-label="Clear search">✕</button>
+              className="absolute right-2 top-1/2 -translate-y-1/2 min-w-[44px] min-h-[44px] flex items-center justify-center text-gray-500 hover:text-white" aria-label={t('biology.clear_search', "Clear search")}>✕</button>
           )}
         </div>
       </div>
@@ -172,7 +186,7 @@ export default function Home({ onNavigate, progress }: { onNavigate: (id: string
           /* Search results */
           <div className="mb-6">
             <h3 className="text-sm font-bold text-gray-400 mb-3 pl-1">
-              {filteredModules.length > 0 ? `Found ${filteredModules.length} module${filteredModules.length !== 1 ? 's' : ''}` : 'No modules found'}
+              {filteredModules.length > 0 ? (filteredModules.length === 1 ? t('biology.found_modules_one', 'Found 1 module') : t('biology.found_modules_other', 'Found {{count}} modules', { count: filteredModules.length })) : t('biology.no_modules', 'No modules found')}
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2.5">
               {filteredModules.map((mod) => {
@@ -194,8 +208,8 @@ export default function Home({ onNavigate, progress }: { onNavigate: (id: string
         ) : (
         /* Normal category view */
         <>
-        {categories.map((cat, catIdx) => {
-          const catModules = modules.filter(m => m.cat === cat.id);
+        {translatedCategories.map((cat, catIdx) => {
+          const catModules = translatedModules.filter(m => m.cat === cat.id);
           if (catModules.length === 0) return null;
           const catVisited = catModules.filter(m => progress?.modulesVisited[m.id]?.visited).length;
           return (
@@ -207,7 +221,7 @@ export default function Home({ onNavigate, progress }: { onNavigate: (id: string
               <div className="flex items-center gap-2 mb-2.5 pl-1">
                 <h3 className="text-sm font-bold text-white">{cat.title}</h3>
                 {progress && catVisited > 0 && (
-                  <span className="text-sm text-gray-500 bg-gray-800 px-2 py-0.5 rounded-full">{catVisited}/{catModules.length} explored</span>
+                  <span className="text-sm text-gray-500 bg-gray-800 px-2 py-0.5 rounded-full">{catVisited}/{catModules.length} {t('biology.explored', 'explored')}</span>
                 )}
               </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2.5">
@@ -230,7 +244,7 @@ export default function Home({ onNavigate, progress }: { onNavigate: (id: string
                       )}
                       <div className="flex items-center gap-1 mb-1.5">
                         <span className="px-2 py-0.5 rounded-full text-sm font-bold uppercase tracking-wider bg-gray-800 text-gray-500 group-hover:bg-emerald-500/20 group-hover:text-emerald-400">{mod.tag}</span>
-                        {mod.isNew && !isVisited && <span className="px-2 py-0.5 rounded-full text-sm font-bold uppercase bg-yellow-500/20 text-yellow-400 animate-pulse">NEW</span>}
+                        {mod.isNew && !isVisited && <span className="px-2 py-0.5 rounded-full text-sm font-bold uppercase bg-yellow-500/20 text-yellow-400 animate-pulse">{t('biology.new_badge', 'NEW')}</span>}
                       </div>
                       <div className="text-xl mb-1">{mod.emoji}</div>
                       <h4 className="text-sm font-bold text-white mb-0.5 group-hover:text-emerald-400 transition-colors leading-tight">{mod.title}</h4>
@@ -246,7 +260,7 @@ export default function Home({ onNavigate, progress }: { onNavigate: (id: string
         )}
       </div>
       <div className="border-t border-gray-800 py-3 text-center">
-        <p className="text-sm text-gray-600">🧬 BioVerse — {modules.length} Interactive Biology Modules • React + Tailwind</p>
+        <p className="text-sm text-gray-600">{t('biology.footer', '🧬 BioVerse — {{count}} Interactive Biology Modules • React + Tailwind', { count: translatedModules.length })}</p>
       </div>
     </div>
   );

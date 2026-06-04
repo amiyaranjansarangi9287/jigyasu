@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Button } from '@jigyasu/ui';
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -87,16 +88,14 @@ export default function Hero() {
                       </div>
                       <div className="mt-3 grid grid-cols-3 gap-2">
                         {["Moo", "Trumpet", "Bark"].map((w, i) => (
-                          <button
+                          <Button
                             key={w}
-                            className={`rounded-xl py-2 text-sm font-bold transition ${
-                              i === 1
-                                ? "bg-brand text-white shadow-md"
-                                : "bg-white text-slate-700 hover:bg-orange-50"
-                            }`}
+                            variant={i === 1 ? 'primary' : 'secondary'}
+                            size="sm"
+                            className="w-full"
                           >
                             {w}
-                          </button>
+                          </Button>
                         ))}
                       </div>
                     </div>

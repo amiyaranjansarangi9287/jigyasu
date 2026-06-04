@@ -1,4 +1,5 @@
-import { Activity } from '../data/activities';
+import { Activity } from '../data/activities.en';
+import { useTranslation } from 'react-i18next';
 
 interface Props {
   selectedActivity: Activity;
@@ -19,6 +20,7 @@ export default function ActivityModal({
   toggleFavorite,
   playClick
 }: Props) {
+  const { t } = useTranslation();
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       <div
@@ -53,12 +55,12 @@ export default function ActivityModal({
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
               </svg>
-              Completed
+              {t('completed', 'Completed')}
             </span>
           )}
           {getStatus(selectedActivity.id) === 'in-progress' && (
             <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-orange-500 text-white text-sm font-medium">
-              In Progress
+              {t('in_progress', 'In Progress')}
             </span>
           )}
 
@@ -70,7 +72,7 @@ export default function ActivityModal({
             <div className="flex items-center gap-2 text-white/80 text-sm">
               <span>★ {selectedActivity.rating}</span>
               <span>•</span>
-              <span>{selectedActivity.reviewCount} reviews</span>
+              <span>{selectedActivity.reviewCount} {t('kidscamp.modal.reviews', 'reviews')}</span>
             </div>
           </div>
         </div>
@@ -87,19 +89,19 @@ export default function ActivityModal({
               {selectedActivity.pillar === 'toybox' ? '🧸' :
                selectedActivity.pillar === 'sciencelab' ? '🔬' :
                selectedActivity.pillar === 'artstudio' ? '🎨' : '🌿'}
-              {' '}{selectedActivity.pillar.charAt(0).toUpperCase() + selectedActivity.pillar.slice(1)}
+              {' '}{t(`pillar_${selectedActivity.pillar}` as any, selectedActivity.pillar)}
             </span>
             <span className={`badge ${
               selectedActivity.difficulty === 'Easy' ? 'badge-easy' :
               selectedActivity.difficulty === 'Medium' ? 'badge-medium' : 'badge-hard'
             }`}>
-              {selectedActivity.difficulty}
+              {t(`difficulty_${selectedActivity.difficulty.toLowerCase()}` as any, selectedActivity.difficulty)}
             </span>
             <span className="badge bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-200">
               ⏱️ {selectedActivity.timeToMake}
             </span>
             <span className="badge bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-200">
-              👤 Ages {selectedActivity.ageRange}
+              👤 {t('ages', 'Ages')} {selectedActivity.ageRange}
             </span>
           </div>
 
@@ -111,18 +113,18 @@ export default function ActivityModal({
           {/* Materials Preview */}
           <div className="mb-6">
             <h4 className="font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
-              <span>📦</span> Materials Needed
+              <span>📦</span> {t('kidscamp.modal.materials_needed', 'Materials Needed')}
             </h4>
             <div className="flex flex-wrap gap-2">
               {selectedActivity.materials.slice(0, 6).map((material, i) => (
                 <span key={i} className="px-3 py-1.5 rounded-xl bg-gray-100 dark:bg-gray-800 text-sm text-gray-700 dark:text-gray-300">
                   {material.name}
-                  {material.optional && <span className="text-gray-400 ml-1">(opt)</span>}
+                  {material.optional && <span className="text-gray-400 ml-1">{t('kidscamp.modal.opt', '(opt)')}</span>}
                 </span>
               ))}
               {selectedActivity.materials.length > 6 && (
                 <span className="px-3 py-1.5 rounded-xl bg-gray-100 dark:bg-gray-800 text-sm text-gray-500">
-                  +{selectedActivity.materials.length - 6} more
+                  +{selectedActivity.materials.length - 6} {t('kidscamp.modal.more', 'more')}
                 </span>
               )}
             </div>
@@ -131,7 +133,7 @@ export default function ActivityModal({
           {/* Steps Preview */}
           <div className="mb-6">
             <h4 className="font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
-              <span>📋</span> {selectedActivity.steps.length} Steps
+              <span>📋</span> {selectedActivity.steps.length} {t('kidscamp.modal.steps', 'Steps')}
             </h4>
             <div className="space-y-2">
               {selectedActivity.steps.slice(0, 3).map((step, i) => (
@@ -145,7 +147,7 @@ export default function ActivityModal({
               ))}
               {selectedActivity.steps.length > 3 && (
                 <p className="text-sm text-gray-500 ml-9">
-                  +{selectedActivity.steps.length - 3} more steps...
+                  +{selectedActivity.steps.length - 3} {t('kidscamp.modal.more_steps', 'more steps...')}
                 </p>
               )}
             </div>
@@ -154,7 +156,7 @@ export default function ActivityModal({
           {/* Learning Outcomes */}
           <div className="mb-6">
             <h4 className="font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
-              <span>🧠</span> What You'll Learn
+              <span>🧠</span> {t('kidscamp.modal.what_you_learn', "What You'll Learn")}
             </h4>
             <div className="flex flex-wrap gap-2">
               {selectedActivity.learningOutcomes.map((outcome, i) => (
@@ -169,10 +171,10 @@ export default function ActivityModal({
           {selectedActivity.crossPillar && selectedActivity.crossPillar.length > 0 && (
             <div className="mb-6 p-4 rounded-xl bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800">
               <h4 className="font-bold text-purple-800 dark:text-purple-200 mb-2 flex items-center gap-2">
-                <span>🔗</span> Cross-Pillar Connection
+                <span>🔗</span> {t('kidscamp.modal.cross_pillar', 'Cross-Pillar Connection')}
               </h4>
               <p className="text-sm text-purple-700 dark:text-purple-300">
-                This activity connects with other pillars! Complete related activities to unlock the Connector achievement.
+                {t('kidscamp.modal.cross_pillar_desc', 'This activity connects with other pillars! Complete related activities to unlock the Connector achievement.')}
               </p>
             </div>
           )}
@@ -183,9 +185,9 @@ export default function ActivityModal({
               onClick={() => handleStartActivity(selectedActivity)}
               className="flex-1 bg-orange-500 text-white font-bold rounded-2xl hover:bg-orange-600 transition-colors text-lg py-4"
             >
-              {getStatus(selectedActivity.id) === 'completed' ? '🔄 Build Again' :
-               getStatus(selectedActivity.id) === 'in-progress' ? '▶ Continue' :
-               '🚀 Start Activity'}
+              {getStatus(selectedActivity.id) === 'completed' ? `🔄 ${t('kidscamp.modal.build_again', 'Build Again')}` :
+               getStatus(selectedActivity.id) === 'in-progress' ? `▶ ${t('kidscamp.modal.continue', 'Continue')}` :
+               `🚀 ${t('kidscamp.modal.start_activity', 'Start Activity')}`}
             </button>
             <button
               onClick={() => {

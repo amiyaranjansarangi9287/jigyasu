@@ -1,11 +1,13 @@
 // CampCraft - Activity Gallery with Filters
 
 import { useState } from 'react';
-import { activities, Activity } from '../data/activities';
+import { Activity } from '../data/activities.en';
+import { useLocalizedActivities } from '../../hooks/useLocalizedData';
 import { pillars, ageTiers, PillarId, AgeTier, Difficulty } from '../data/categories';
 import ActivityCard from './ActivityCard';
 import { useReveal } from '../hooks/useReveal';
 import { useActivityFilters } from '../hooks/useActivityFilters';
+import { useTranslation } from 'react-i18next';
 
 interface ActivityGalleryProps {
   onSelectActivity: (activity: Activity) => void;
@@ -29,7 +31,9 @@ export default function ActivityGallery({
   initialPillar = null,
   initialAge = null
 }: ActivityGalleryProps) {
+  const { t } = useTranslation();
   const { ref, isVisible } = useReveal<HTMLDivElement>();
+  const { activities } = useLocalizedActivities();
 
   const {
     filteredActivities,
@@ -61,10 +65,10 @@ export default function ActivityGallery({
           }`}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            All Activities
+            {t('all_activities', 'All Activities')}
           </h2>
           <p className="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto">
-            Explore {activities.length} hands-on projects across science, art, building, and outdoor adventures
+            {t('explore_projects', 'Explore {{count}} hands-on projects across science, art, building, and outdoor adventures', { count: activities.length })}
           </p>
         </div>
 
@@ -81,7 +85,7 @@ export default function ActivityGallery({
               }`}
             >
               <span>{pillar.icon}</span>
-              <span className="text-sm">{pillar.name}</span>
+              <span className="text-sm">{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
             </button>
           ))}
         </div>
@@ -102,7 +106,7 @@ export default function ActivityGallery({
               </svg>
               <input
                 type="text"
-                placeholder="Search activities..."
+                placeholder={t('search_activities', 'Search activities...')}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 focus:border-orange-400 focus:ring-2 focus:ring-orange-100 dark:focus:ring-orange-900/30 outline-none transition-all"
@@ -132,7 +136,7 @@ export default function ActivityGallery({
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
                 </svg>
-                <span>Filters</span>
+                <span>{t('filters', 'Filters')}</span>
                 {activeFilterCount > 0 && (
                   <span className="w-5 h-5 rounded-full bg-orange-500 text-white text-sm flex items-center justify-center">
                     {activeFilterCount}
@@ -186,9 +190,7 @@ export default function ActivityGallery({
                           ? 'bg-gray-900 dark:bg-white text-white dark:text-gray-900'
                           : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                       }`}
-                    >
-                      All
-                    </button>
+                    >{t('gallery.all', 'All')}</button>
                     {pillars.map((pillar) => (
                       <button
                         key={pillar.id}
@@ -207,9 +209,7 @@ export default function ActivityGallery({
 
                 {/* Age Filter */}
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Age Group
-                  </label>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{t('gallery.age_group', 'Age Group')}</label>
                   <div className="flex flex-wrap gap-2">
                     <button
                       onClick={() => setSelectedAge('all')}
@@ -218,9 +218,7 @@ export default function ActivityGallery({
                           ? 'bg-gray-900 dark:bg-white text-white dark:text-gray-900'
                           : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                       }`}
-                    >
-                      All
-                    </button>
+                    >{t('gallery.all', 'All')}</button>
                     {ageTiers.map((tier) => (
                       <button
                         key={tier.id}
@@ -239,9 +237,7 @@ export default function ActivityGallery({
 
                 {/* Difficulty Filter */}
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Difficulty
-                  </label>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{t('gallery.difficulty', 'Difficulty')}</label>
                   <div className="flex flex-wrap gap-2">
                     {(['all', 'Easy', 'Medium', 'Hard'] as const).map((diff) => (
                       <button
@@ -256,7 +252,7 @@ export default function ActivityGallery({
                             : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                         }`}
                       >
-                        {diff === 'all' ? 'All' : diff}
+                        {diff === 'all' ? t('gallery.all', 'All') : t(`gallery.${diff.toLowerCase()}`, diff)}
                       </button>
                     ))}
                   </div>
@@ -264,19 +260,17 @@ export default function ActivityGallery({
 
                 {/* Sort */}
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Sort By
-                  </label>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{t('gallery.sort_by', 'Sort By')}</label>
                   <select
                     value={sortBy}
                     onChange={(e) => setSortBy(e.target.value as SortOption)}
                     className="w-full px-3 py-2 rounded-xl border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white text-sm focus:border-orange-400 outline-none"
                   >
-                    <option value="popular">Most Popular</option>
-                    <option value="rating">Highest Rated</option>
-                    <option value="name">Name (A-Z)</option>
-                    <option value="difficulty">Difficulty</option>
-                    <option value="time">Quickest First</option>
+                    <option value="popular">{t('gallery.popular', 'Most Popular')}</option>
+                    <option value="rating">{t('gallery.rating', 'Highest Rated')}</option>
+                    <option value="name">{t('gallery.name', 'Name (A-Z)')}</option>
+                    <option value="difficulty">{t('gallery.difficulty', 'Difficulty')}</option>
+                    <option value="time">{t('gallery.quickest', 'Quickest First')}</option>
                   </select>
                 </div>
               </div>
@@ -287,9 +281,7 @@ export default function ActivityGallery({
                   <button
                     onClick={clearFilters}
                     className="text-sm text-orange-500 hover:text-orange-600 font-medium"
-                  >
-                    Clear all filters
-                  </button>
+                  >{t('gallery.clear_all', 'Clear all filters')}</button>
                 </div>
               )}
             </div>
@@ -299,15 +291,13 @@ export default function ActivityGallery({
         {/* Results Count */}
         <div className="flex items-center justify-between mb-6">
           <p className="text-gray-600 dark:text-gray-400">
-            Showing <span className="font-medium text-gray-900 dark:text-white">{filteredActivities.length}</span> activities
+            {t('gallery.showing', 'Showing')} <span className="font-medium text-gray-900 dark:text-white">{filteredActivities.length}</span> {t('gallery.activities_count', 'activities')}
           </p>
           {activeFilterCount > 0 && !showFilters && (
             <button
               onClick={clearFilters}
               className="text-sm text-orange-500 hover:text-orange-600 font-medium"
-            >
-              Clear filters
-            </button>
+            >{t('gallery.clear', 'Clear filters')}</button>
           )}
         </div>
 
@@ -315,15 +305,9 @@ export default function ActivityGallery({
         {filteredActivities.length === 0 ? (
           <div className="text-center py-16">
             <div className="text-6xl mb-4">🔍</div>
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-              No activities found
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-6">
-              Try adjusting your filters or search terms
-            </p>
-            <button onClick={clearFilters} className="btn btn-primary">
-              Clear All Filters
-            </button>
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{t('gallery.no_found', 'No activities found')}</h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-6">{t('gallery.try_adjusting', 'Try adjusting your filters or search terms')}</p>
+            <button onClick={clearFilters} className="btn btn-primary">{t('gallery.clear_all', 'Clear All Filters')}</button>
           </div>
         ) : viewMode === 'grid' ? (
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">

@@ -6,7 +6,7 @@ export function KidFriendlyNotFound() {
   return (
     <div className="min-h-[80vh] flex items-center justify-center bg-sky-50 p-4 sm:p-8 rounded-3xl m-4 border-4 border-sky-100">
       <div className="text-center max-w-md animate-fade-in">
-        <div className="text-8xl mb-6 animate-bounce">🦉</div>
+        <div className="text-8xl mb-6 animate-bounce">🦚</div>
         <h2 className="text-4xl font-black text-sky-900 mb-4 tracking-tight">
           Oops! Lumo is Lost!
         </h2>

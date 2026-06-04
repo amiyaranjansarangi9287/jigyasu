@@ -40,7 +40,7 @@ export default function DiscoveryShell({ module, children, showGoDeeper = true }
       <ParentCorner onExit={() => navigate('/discovery')} />
       <AnimatePresence>{showBreak && (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-50 bg-slate-900/98 flex flex-col items-center justify-center p-8 text-center">
-          <div className="max-w-sm"><div className="text-5xl mb-5">🦉</div><h2 className="text-2xl font-extrabold text-white mb-3">Productive Session</h2><p className="text-slate-400 text-sm mb-8">25 minutes of deep thinking is exceptional.</p>
+          <div className="max-w-sm"><div className="text-5xl mb-5">🦚</div><h2 className="text-2xl font-extrabold text-white mb-3">Productive Session</h2><p className="text-slate-400 text-sm mb-8">25 minutes of deep thinking is exceptional.</p>
             <div className="flex gap-3"><button onClick={dismissBreak} className="flex-1 py-3 bg-slate-800 text-slate-300 font-bold rounded-2xl border border-slate-700">5 More Minutes</button><button onClick={() => navigate('/discovery')} className="flex-1 py-3 bg-indigo-600 text-white font-bold rounded-2xl">Return to Map</button></div>
           </div>
         </motion.div>

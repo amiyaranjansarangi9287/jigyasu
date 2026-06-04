@@ -1,4 +1,6 @@
-import { Activity, activities } from '../data/activities';
+import { Activity } from '../data/activities.en';
+import { useLocalizedActivities } from '../../hooks/useLocalizedData';
+import { useTranslation } from 'react-i18next';
 
 interface Props {
   favorites: string[];
@@ -13,6 +15,8 @@ export default function FavoritesPanel({
   handleSelectActivity,
   setFavoritesOpen
 }: Props) {
+  const { t } = useTranslation();
+  const { activities } = useLocalizedActivities();
   return (
     <div className="fixed inset-0 z-50">
       <div
@@ -21,9 +25,7 @@ export default function FavoritesPanel({
       />
       <div className="absolute right-0 top-0 bottom-0 w-full max-w-md bg-white dark:bg-gray-900 shadow-2xl animate-slide-in-mobile">
         <div className="p-4 border-b border-gray-100 dark:border-gray-800 flex items-center justify-between">
-          <h2 className="text-lg font-bold text-gray-900 dark:text-white">
-            Favorites ({favoritesCount})
-          </h2>
+          <h2 className="text-lg font-bold text-gray-900 dark:text-white">{t('kidscamp.favorites.title', 'Favorites')} ({favoritesCount})</h2>
           <button
             onClick={() => setFavoritesOpen(false)}
             className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
@@ -38,8 +40,8 @@ export default function FavoritesPanel({
           {favorites.length === 0 ? (
             <div className="text-center py-12">
               <div className="text-5xl mb-4">💝</div>
-              <p className="text-gray-600 dark:text-gray-300">No favorites yet!</p>
-              <p className="text-sm text-gray-500">Tap the heart icon on any activity to save it here.</p>
+              <p className="text-gray-600 dark:text-gray-300">{t('kidscamp.favorites.empty', 'No favorites yet!')}</p>
+              <p className="text-sm text-gray-500">{t('kidscamp.favorites.empty_desc', 'Tap the heart icon on any activity to save it here.')}</p>
             </div>
           ) : (
             <div className="space-y-3">

@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { Activity } from '../data/activities';
+import { Activity } from '../data/activities.en';
 import { PillarId, AgeTier, Difficulty } from '../data/categories';
 
 type SortOption = 'name' | 'difficulty' | 'time' | 'rating' | 'popular';

@@ -38,7 +38,7 @@ export default function ExplorerHome() {
               {t('explorer.welcome_message')}
             </p>
             <p className="text-slate-600 text-sm mb-8 italic">
-              Every concept connects to something in your everyday life.
+              {t('explorer.welcome_subtitle', 'Every concept connects to something in your everyday life.')}
             </p>
             <button
               onClick={() => setShowWelcome(false)}
@@ -56,13 +56,13 @@ export default function ExplorerHome() {
         <div className="flex items-center justify-between mb-1">
           <div>
             <h1 className="text-xl font-bold text-white tracking-tight">
-              {t('explorer.world_name')}
+              {t('explorer.world_name', 'Future Explorers')}
             </h1>
           </div>
           {/* Subtle progress — not prominent */}
           {progress && progress.conceptsVisited.length > 0 && (
             <p className="text-slate-700 text-sm">
-              {progress.conceptsVisited.length} {t('explorer.of')} {EXPLORER_CONCEPTS.length} {t('explorer.explored')}
+              {progress.conceptsVisited.length} {t('explorer.of', 'of')} {EXPLORER_CONCEPTS.length} {t('explorer.explored', 'explored')}
             </p>
           )}
         </div>
@@ -86,11 +86,11 @@ export default function ExplorerHome() {
               )?.emoji}
             </span>
             <div className="flex-1 min-w-0">
-              <p className="text-slate-500 text-sm">{t('explorer.continue_where_left')}</p>
+              <p className="text-slate-500 text-sm">{t('explorer.continue_where_left', 'Continue where you left off...')}</p>
               <p className="text-slate-300 text-sm font-medium truncate">
-                {EXPLORER_CONCEPTS.find(
+                {t(`explorer.concepts.${progress.lastVisitedConcept}.title` as any, EXPLORER_CONCEPTS.find(
                   (c) => c.id === progress.lastVisitedConcept
-                )?.title}
+                )?.title || '')}
               </p>
             </div>
             <span className="text-slate-700 text-sm">→</span>
@@ -128,7 +128,7 @@ export default function ExplorerHome() {
                 <div className="flex-1 min-w-0">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-bold text-white text-sm leading-tight">
-                      {concept.title}
+                      {t(`explorer.concepts.${concept.id}.title` as any, concept.title)}
                     </p>
                     {/* Visited indicator — subtle */}
                     {visited && !completed && (
@@ -145,12 +145,12 @@ export default function ExplorerHome() {
 
                   {/* Hook — the adult-framed question */}
                   <p className="text-slate-400 text-sm leading-relaxed">
-                    {concept.hook}
+                    {t(`explorer.concepts.${concept.id}.hook` as any, concept.hook)}
                   </p>
 
                   {/* Time estimate — small, not prominent */}
                   <p className="text-slate-700 text-sm mt-2">
-                    ~{concept.estimatedMinutes} {t('explorer.time_estimate')}
+                    ~{concept.estimatedMinutes} {t('explorer.time_estimate', 'min')}
                   </p>
                 </div>
               </div>

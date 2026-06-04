@@ -1,6 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { sfx } from '../lib/soundEngine';
+import { useFormatNumber } from '../../../../hooks/useFormatNumber';
 
 interface Question {
   a: number;
@@ -9,6 +11,8 @@ interface Question {
 }
 
 export default function TimesTableTrainer() {
+  const { t } = useTranslation();
+  const formatNumber = useFormatNumber();
   const [table, setTable] = useState<number>(2);
   const [mode, setMode] = useState<'practice' | 'quiz'>('practice');
   const [question, setQuestion] = useState<Question | null>(null);
@@ -39,18 +43,35 @@ export default function TimesTableTrainer() {
 
   useEffect(() => {
     if (!quizActive) return;
-    if (quizTime <= 0) {
-      setQuizActive(false);
-      return;
-    }
-    const timer = setInterval(() => setQuizTime((t) => t - 1), 1000);
+    const timer = setInterval(() => {
+      setQuizTime((t) => {
+        if (t <= 1) {
+          clearInterval(timer);
+          setQuizActive(false);
+          return 0;
+        }
+        return t - 1;
+      });
+    }, 1000);
     return () => clearInterval(timer);
   }, [quizActive]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!question || userAnswer.trim() === '') return;
-    const parsed = parseInt(userAnswer);
+    
+    // Normalize any Indic/Devanagari numerals to Western Arabic numerals
+    const normalized = userAnswer.trim()
+      .replace(/[०-९]/g, d => String(d.charCodeAt(0) - 0x0966)) // Devanagari
+      .replace(/[০-৯]/g, d => String(d.charCodeAt(0) - 0x09E6)) // Bengali
+      .replace(/[૦-૯]/g, d => String(d.charCodeAt(0) - 0x0A66)) // Gujarati
+      .replace(/[୦-୯]/g, d => String(d.charCodeAt(0) - 0x0AE6)) // Odia
+      .replace(/[௦-௯]/g, d => String(d.charCodeAt(0) - 0x0BE6)) // Tamil
+      .replace(/[౦-౯]/g, d => String(d.charCodeAt(0) - 0x0C66)) // Telugu
+      .replace(/[೦-೯]/g, d => String(d.charCodeAt(0) - 0x0CE6)) // Kannada
+      .replace(/[൦-൯]/g, d => String(d.charCodeAt(0) - 0x0D66)); // Malayalam
+    const parsed = parseInt(normalized);
+    
     if (parsed === question.answer) {
       setFeedback('correct');
       sfx.correct();
@@ -114,8 +135,8 @@ export default function TimesTableTrainer() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🎯 Times Table Master</h2>
-        <p className="text-purple-300 text-lg">Master multiplication one table at a time!</p>
+        <h2 className="text-3xl font-bold text-white mb-2">🎯 {t('math_modules.TimesTableTrainer.title', 'Times Table Master')}</h2>
+        <p className="text-purple-300 text-lg">{t('math_modules.TimesTableTrainer.subtitle', 'Master multiplication one table at a time!')}</p>
       </div>
 
       {/* Mode toggle */}
@@ -127,7 +148,7 @@ export default function TimesTableTrainer() {
             }`}
             onClick={() => { setMode('practice'); setQuizActive(false); }}
           >
-            📚 Practice
+            📚 {t('math_modules.TimesTableTrainer.practice', 'Practice')}
           </button>
           <button
             className={`px-4 sm:px-6 py-2 rounded-xl font-medium text-sm transition-colors ${
@@ -135,7 +156,7 @@ export default function TimesTableTrainer() {
             }`}
             onClick={() => setMode('quiz')}
           >
-            ⚡ Speed Quiz
+            ⚡ {t('math_modules.TimesTableTrainer.speedQuiz', 'Speed Quiz')}
           </button>
         </div>
       </div>
@@ -143,12 +164,12 @@ export default function TimesTableTrainer() {
       {/* Table selector */}
       <div className="mb-6">
         <div className="flex items-center justify-between mb-3">
-          <p className="text-gray-400 text-sm">Choose your table:</p>
+          <p className="text-gray-400 text-sm">{t('math_modules.TimesTableTrainer.chooseTable', 'Choose your table:')}</p>
           <button
             className="text-sm text-purple-400 hover:text-purple-300"
             onClick={() => setShowAllTables(!showAllTables)}
           >
-            {showAllTables ? 'Hide' : 'Show'} full table
+            {showAllTables ? t('math_modules.TimesTableTrainer.hide', 'Hide') : t('math_modules.TimesTableTrainer.show', 'Show')} {t('math_modules.TimesTableTrainer.fullTable', 'full table')}
           </button>
         </div>
         <div className="grid grid-cols-6 sm:grid-cols-12 gap-2">
@@ -162,7 +183,7 @@ export default function TimesTableTrainer() {
               onClick={() => { setTable(n); setMistakes(new Set()); }}
             >
               {tableEmoji[n - 1]}
-              <div className="text-sm mt-0.5">×{n}</div>
+              <div className="text-sm mt-0.5">×{formatNumber(n)}</div>
             </motion.button>
           ))}
         </div>
@@ -181,10 +202,10 @@ export default function TimesTableTrainer() {
             {/* Stats */}
             <div className="flex justify-center gap-3 mb-4">
               <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">
-                ⭐ {score}
+                ⭐ {formatNumber(score)}
               </span>
               <span className="bg-white/5 px-3 py-1.5 rounded-lg text-orange-400 font-bold text-sm">
-                🔥 {streak}
+                🔥 {formatNumber(streak)}
               </span>
             </div>
 
@@ -203,16 +224,17 @@ export default function TimesTableTrainer() {
             >
               <span className="text-4xl">{tableEmoji[table - 1]}</span>
               <div className="text-4xl sm:text-5xl font-bold text-white mt-3 mb-4">
-                <span className="text-blue-400">{question.a}</span>
+                <span className="text-blue-400">{formatNumber(question.a)}</span>
                 <span className="text-purple-400 mx-2">×</span>
-                <span className="text-orange-400">{question.b}</span>
+                <span className="text-orange-400">{formatNumber(question.b)}</span>
                 <span className="text-gray-400 mx-2">=</span>
                 <span className="text-green-400">?</span>
               </div>
 
               <form onSubmit={handleSubmit} className="flex gap-2">
                 <input
-                  type="number"
+                  type="text"
+                  inputMode="numeric"
                   value={userAnswer}
                   onChange={(e) => setUserAnswer(e.target.value)}
                   className="flex-1 text-center text-2xl font-bold bg-white/10 border-2 border-white/20 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-400"
@@ -236,7 +258,7 @@ export default function TimesTableTrainer() {
                   initial={{ scale: 0 }}
                   animate={{ scale: [0, 1.3, 1] }}
                 >
-                  ✨ Correct!
+                  ✨ {t('math_modules.TimesTableTrainer.correct', 'Correct!')}
                 </motion.p>
               )}
               {feedback === 'wrong' && (
@@ -245,7 +267,7 @@ export default function TimesTableTrainer() {
                   initial={{ x: -10 }}
                   animate={{ x: [10, -10, 5, 0] }}
                 >
-                  ❌ It's {question.answer} — try again!
+                  ❌ {t('math_modules.TimesTableTrainer.wrong', "It's {{answer}} — try again!", { answer: formatNumber(question.answer) })}
                 </motion.p>
               )}
 
@@ -253,7 +275,7 @@ export default function TimesTableTrainer() {
                 className="mt-3 text-sm text-gray-500 hover:text-gray-400 underline"
                 onClick={() => setRevealed(!revealed)}
               >
-                {revealed ? 'Hide hint' : '💡 Peek at answer'}
+                {revealed ? t('math_modules.TimesTableTrainer.hideHint', 'Hide hint') : t('math_modules.TimesTableTrainer.peekHint', '💡 Peek at answer')}
               </button>
               {revealed && (
                 <motion.p
@@ -261,7 +283,7 @@ export default function TimesTableTrainer() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                 >
-                  Answer: {question.answer}
+                  {t('math_modules.TimesTableTrainer.answerIs', 'Answer: {{answer}}', { answer: formatNumber(question.answer) })}
                 </motion.p>
               )}
             </motion.div>
@@ -274,7 +296,7 @@ export default function TimesTableTrainer() {
                 animate={{ height: 'auto', opacity: 1 }}
               >
                 <h4 className="text-white font-bold mb-2 text-center">
-                  {tableEmoji[table - 1]} The {table}× Table
+                  {tableEmoji[table - 1]} {t('math_modules.TimesTableTrainer.tableHeading', 'The {{table}}× Table', { table: formatNumber(table) })}
                 </h4>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                   {Array.from({ length: 12 }, (_, i) => i + 1).map((n) => (
@@ -286,13 +308,13 @@ export default function TimesTableTrainer() {
                           : 'bg-white/5 text-gray-300'
                       }`}
                     >
-                      {table} × {n} = <span className="font-bold text-white">{table * n}</span>
+                      {formatNumber(table)} × {formatNumber(n)} = <span className="font-bold text-white">{formatNumber(table * n)}</span>
                     </div>
                   ))}
                 </div>
                 {mistakes.size > 0 && (
                   <p className="text-sm text-red-400 mt-2 text-center">
-                    🔴 Red = mistakes made (review these!)
+                    {t('math_modules.TimesTableTrainer.redMistakes', '🔴 Red = mistakes made (review these!)')}
                   </p>
                 )}
               </motion.div>
@@ -318,10 +340,10 @@ export default function TimesTableTrainer() {
                 >
                   ⚡
                 </motion.div>
-                <h3 className="text-2xl font-bold text-white mb-2">Speed Quiz</h3>
+                <h3 className="text-2xl font-bold text-white mb-2">{t('math_modules.TimesTableTrainer.speedQuizTitle', 'Speed Quiz')}</h3>
                 <p className="text-gray-400 mb-6">
-                  Answer as many multiplication questions as possible in 60 seconds!
-                  <br />All tables mixed together!
+                  {t('math_modules.TimesTableTrainer.quizDesc1', 'Answer as many multiplication questions as possible in 60 seconds!')}
+                  <br />{t('math_modules.TimesTableTrainer.quizDesc2', 'All tables mixed together!')}
                 </p>
                 <motion.button
                   className="px-8 py-3 rounded-2xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold text-lg"
@@ -329,7 +351,7 @@ export default function TimesTableTrainer() {
                   whileTap={{ scale: 0.95 }}
                   onClick={startQuiz}
                 >
-                  🚀 Start!
+                  🚀 {t('math_modules.TimesTableTrainer.startBtn', 'Start!')}
                 </motion.button>
               </div>
             ) : !quizActive && quizTime <= 0 ? (
@@ -341,10 +363,10 @@ export default function TimesTableTrainer() {
                 >
                   🏆
                 </motion.div>
-                <h3 className="text-2xl font-bold text-white mb-2">Time's Up!</h3>
-                <div className="text-5xl font-bold text-yellow-400 my-4">{quizScore}</div>
+                <h3 className="text-2xl font-bold text-white mb-2">{t('math_modules.TimesTableTrainer.timesUp', "Time's Up!")}</h3>
+                <div className="text-5xl font-bold text-yellow-400 my-4">{formatNumber(quizScore)}</div>
                 <p className="text-gray-400 mb-6">
-                  {quizScore >= 20 ? '🌟 Times Table Champion!' : quizScore >= 10 ? '🧙 Math Wizard!' : '🌱 Keep practicing!'}
+                  {quizScore >= 20 ? t('math_modules.TimesTableTrainer.champ', '🌟 Times Table Champion!') : quizScore >= 10 ? t('math_modules.TimesTableTrainer.wizard', '🧙 Math Wizard!') : t('math_modules.TimesTableTrainer.keepPracticing', '🌱 Keep practicing!')}
                 </p>
                 <motion.button
                   className="px-8 py-3 rounded-2xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold text-lg"
@@ -352,15 +374,15 @@ export default function TimesTableTrainer() {
                   whileTap={{ scale: 0.95 }}
                   onClick={() => { setQuizTime(60); setQuizScore(0); }}
                 >
-                  🔄 Try Again
+                  🔄 {t('math_modules.TimesTableTrainer.tryAgain', 'Try Again')}
                 </motion.button>
               </div>
             ) : question ? (
               <div>
                 <div className="flex justify-between mb-4">
-                  <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold">⭐ {quizScore}</span>
+                  <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold">⭐ {formatNumber(quizScore)}</span>
                   <span className={`font-bold ${quizTime > 10 ? 'text-green-400' : 'text-red-400'}`}>
-                    ⏱️ {quizTime}s
+                    ⏱️ {formatNumber(quizTime)}s
                   </span>
                 </div>
                 <div className="h-2 w-full bg-gray-700 rounded-full mb-4 overflow-hidden">
@@ -376,15 +398,16 @@ export default function TimesTableTrainer() {
                   animate={{ scale: 1 }}
                 >
                   <div className="text-4xl font-bold text-white mb-4">
-                    <span className="text-blue-400">{question.a}</span>
+                    <span className="text-blue-400">{formatNumber(question.a)}</span>
                     <span className="text-purple-400 mx-2">×</span>
-                    <span className="text-orange-400">{question.b}</span>
+                    <span className="text-orange-400">{formatNumber(question.b)}</span>
                     <span className="text-gray-400 mx-2">=</span>
                     <span className="text-green-400">?</span>
                   </div>
                   <form onSubmit={handleSubmit} className="flex gap-2">
                     <input
-                      type="number"
+                      type="text"
+                      inputMode="numeric"
                       value={userAnswer}
                       onChange={(e) => setUserAnswer(e.target.value)}
                       className="flex-1 text-center text-2xl font-bold bg-white/10 border-2 border-white/20 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-400"
@@ -407,7 +430,7 @@ export default function TimesTableTrainer() {
                     </motion.p>
                   )}
                   {feedback === 'wrong' && (
-                    <p className="mt-3 text-red-400 font-bold">Answer: {question.answer}</p>
+                    <p className="mt-3 text-red-400 font-bold">{t('math_modules.TimesTableTrainer.answerIs', 'Answer: {{answer}}', { answer: formatNumber(question.answer) })}</p>
                   )}
                 </motion.div>
               </div>

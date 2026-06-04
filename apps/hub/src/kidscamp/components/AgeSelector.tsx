@@ -1,6 +1,7 @@
 // CampCraft - Age Tier Selector
 
 import { ageTiers, AgeTier } from '../data/categories';
+import { useTranslation } from 'react-i18next';
 
 interface AgeSelectorProps {
   selectedAge: AgeTier | null;
@@ -15,47 +16,48 @@ export default function AgeSelector({
   variant = 'full',
   onClose
 }: AgeSelectorProps) {
+  const { t } = useTranslation();
   const tierDetails = {
     '3-5': {
-      title: 'Little Explorers',
-      description: 'Simple, sensory activities with parent guidance. Perfect for curious toddlers!',
-      features: ['Parent-guided activities', 'Sensory exploration', 'Big, colorful steps', 'Extra safety tips'],
+      title: t('kidscamp.ages.title1', 'Little Explorers'),
+      description: t('kidscamp.ages.desc1', 'Simple, sensory activities with parent guidance. Perfect for curious toddlers!'),
+      features: [t('kidscamp.ages.feat1_0', 'Parent-guided activities'), t('kidscamp.ages.feat1_1', 'Sensory exploration'), t('kidscamp.ages.feat1_2', 'Big, colorful steps'), t('kidscamp.ages.feat1_3', 'Extra safety tips')],
       image: '🐣',
       bgGradient: 'from-pink-400 to-purple-400',
       borderColor: 'border-pink-300',
       hoverBg: 'hover:bg-pink-50 dark:hover:bg-pink-900/20'
     },
     '6-8': {
-      title: 'Junior Creators',
-      description: 'Fun projects with clear step-by-step instructions. Building confidence through making!',
-      features: ['Semi-independent', 'Achievement badges', 'Skill building', 'Creative freedom'],
+      title: t('kidscamp.ages.title2', 'Junior Creators'),
+      description: t('kidscamp.ages.desc2', 'Fun projects with clear step-by-step instructions. Building confidence through making!'),
+      features: [t('kidscamp.ages.feat2_0', 'Semi-independent'), t('kidscamp.ages.feat2_1', 'Achievement badges'), t('kidscamp.ages.feat2_2', 'Skill building'), t('kidscamp.ages.feat2_3', 'Creative freedom')],
       image: '🌟',
       bgGradient: 'from-blue-400 to-indigo-400',
       borderColor: 'border-blue-300',
       hoverBg: 'hover:bg-blue-50 dark:hover:bg-blue-900/20'
     },
     '9-12': {
-      title: 'Adventure Builders',
-      description: 'Complex projects for independent makers ready for real challenges!',
-      features: ['Independent work', 'Advanced techniques', 'STEM concepts', 'Real tools'],
+      title: t('kidscamp.ages.title3', 'Adventure Builders'),
+      description: t('kidscamp.ages.desc3', 'Complex projects for independent makers ready for real challenges!'),
+      features: [t('kidscamp.ages.feat3_0', 'Independent work'), t('kidscamp.ages.feat3_1', 'Advanced techniques'), t('kidscamp.ages.feat3_2', 'STEM concepts'), t('kidscamp.ages.feat3_3', 'Real tools')],
       image: '🚀',
       bgGradient: 'from-orange-400 to-red-400',
       borderColor: 'border-orange-300',
       hoverBg: 'hover:bg-orange-50 dark:hover:bg-orange-900/20'
     },
     '13-17': {
-      title: 'Future Innovators',
-      description: 'Advanced projects, coding, and real-world skills for teens!',
-      features: ['Self-directed learning', 'Advanced STEM', 'Real-world applications', 'Peer challenges'],
+      title: t('kidscamp.ages.title4', 'Future Innovators'),
+      description: t('kidscamp.ages.desc4', 'Advanced projects, coding, and real-world skills for teens!'),
+      features: [t('kidscamp.ages.feat4_0', 'Self-directed learning'), t('kidscamp.ages.feat4_1', 'Advanced STEM'), t('kidscamp.ages.feat4_2', 'Real-world applications'), t('kidscamp.ages.feat4_3', 'Peer challenges')],
       image: '⚡',
       bgGradient: 'from-slate-600 to-zinc-800',
       borderColor: 'border-slate-500',
       hoverBg: 'hover:bg-slate-50 dark:hover:bg-slate-900/20'
     },
     '18+': {
-      title: 'Lifelong Learners',
-      description: 'Deep dives, professional skills, and advanced concepts.',
-      features: ['Self-directed learning', 'Advanced concepts', 'Professional skills', 'Mastery'],
+      title: t('kidscamp.ages.title5', 'Lifelong Learners'),
+      description: t('kidscamp.ages.desc5', 'Deep dives, professional skills, and advanced concepts.'),
+      features: [t('kidscamp.ages.feat5_0', 'Self-directed learning'), t('kidscamp.ages.feat5_1', 'Advanced concepts'), t('kidscamp.ages.feat5_2', 'Professional skills'), t('kidscamp.ages.feat5_3', 'Mastery')],
       image: '🎓',
       bgGradient: 'from-slate-800 to-zinc-950',
       borderColor: 'border-slate-700',
@@ -69,9 +71,7 @@ export default function AgeSelector({
         <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={onClose} />
         <div className="relative bg-white dark:bg-gray-900 rounded-3xl shadow-2xl max-w-3xl w-full p-6 animate-modal-in">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-              Who's making today?
-            </h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">{t('kidscamp.ages.whos_making_modal', "Who's making today?")}</h2>
             <button
               onClick={onClose}
               className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
@@ -107,7 +107,7 @@ export default function AgeSelector({
                         {details.title}
                       </span>
                       <span className="text-sm text-gray-500 dark:text-gray-400">
-                        Ages {tier.id}
+                        {t('ages', 'Ages')} {tier.id}
                       </span>
                     </div>
                     <p className="text-gray-600 dark:text-gray-300 text-sm mt-1">
@@ -132,9 +132,7 @@ export default function AgeSelector({
                 onSelectAge(null as unknown as AgeTier);
               }}
               className="mt-4 text-sm text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 underline"
-            >
-              Clear selection (show all ages)
-            </button>
+            >{t('kidscamp.ages.clear_selection', "Clear selection (show all ages)")}</button>
           )}
         </div>
       </div>
@@ -174,11 +172,9 @@ export default function AgeSelector({
     <section className="py-16 px-4">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Who's making today? 🎨
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">{t('kidscamp.ages.whos_making', "Who's making today? 🎨")}</h2>
           <p className="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto">
-            Select an age group for personalized activities that match your child's skill level
+            {t('kidscamp.ages.select_age', "Select an age group for personalized activities that match your child's skill level")}
           </p>
         </div>
 
@@ -215,7 +211,7 @@ export default function AgeSelector({
                     {details.title}
                   </h3>
                   <div className={`inline-block px-3 py-1 rounded-full text-sm font-medium bg-gradient-to-r ${details.bgGradient} text-white mb-3`}>
-                    Ages {tier.id}
+                    {t('ages', 'Ages')} {tier.id}
                   </div>
 
                   {/* Description */}
@@ -254,9 +250,7 @@ export default function AgeSelector({
             <button
               onClick={() => onSelectAge(null as unknown as AgeTier)}
               className="text-sm text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 underline"
-            >
-              Clear selection (show all ages)
-            </button>
+            >{t('kidscamp.ages.clear_selection', "Clear selection (show all ages)")}</button>
           </div>
         )}
       </div>

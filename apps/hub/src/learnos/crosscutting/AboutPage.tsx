@@ -51,8 +51,8 @@ const DIFFERENCE_POINTS = [
   },
   {
     emoji: '🗣️',
-    title: '6 Indian Languages',
-    desc: 'English, Hindi, Tamil, Telugu, Kannada, and Odia from day one. Understanding begins in the language closest to the learner. We added Odia because every language added means more learners included.',
+    title: '22 Indian Languages',
+    desc: 'English, Hindi, Tamil, Telugu, Kannada, Marathi, Bengali, Gujarati, Odia, and all 22 scheduled languages of India. Understanding begins in the language closest to the learner. Every language added means more learners included.',
   },
   {
     emoji: '📴',
@@ -354,7 +354,7 @@ export default function AboutPage() {
               'Monsoons, ISRO, cricket, Indian markets',
               'Aryabhata, Ramanujan, C.V. Raman, J.C. Bose',
               'APJ Abdul Kalam, Sushruta, Brahmagupta',
-              '6 Indian languages from day one',
+              'All 22 scheduled Indian languages supported',
               'Designed for 2G and shared phones',
               'Offline-first for rural learners',
             ].map((item) => (

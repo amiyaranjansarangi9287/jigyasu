@@ -1,5 +1,6 @@
 // src/worlds/discovery/DiscoveryHome.tsx
 import { useRef, useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ParentCorner } from '@/shared/layout';
@@ -9,6 +10,7 @@ import { CONSTELLATION_NODES, DISCOVERY_MODULES } from './data/discoveryContent'
 import DiscoveryReport from './DiscoveryReport';
 
 export default function DiscoveryHome() {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const { progress, getMastery } = useDiscoveryProgress();
@@ -46,7 +48,7 @@ export default function DiscoveryHome() {
   return (
     <div className="min-h-screen bg-slate-900 flex flex-col">
       <div className="px-5 pt-6 pb-3 flex justify-between items-center text-white">
-        <div><h1 className="text-xl font-extrabold">Discovery Engine</h1></div>
+        <div><h1 className="text-xl font-extrabold">{t('discovery.title', 'Discovery Engine')}</h1></div>
         <div className="bg-slate-800 px-3 py-1.5 rounded-full text-indigo-400 text-sm font-bold">{Object.values(progress?.mastery || {}).filter(Boolean).length} / 14</div>
       </div>
       <div className="flex-1 relative">
@@ -56,13 +58,13 @@ export default function DiscoveryHome() {
         ))}</div>
         <AnimatePresence>{hInfo && (
           <motion.div initial={{ opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="absolute bottom-4 left-4 right-4 bg-slate-800 rounded-2xl p-4 border border-slate-700">
-            <div className="flex items-start gap-3"><span className="text-3xl">{hInfo.emoji}</span><div className="flex-1"><p className="font-bold text-white text-sm">{hInfo.title}</p><p className="text-slate-400 text-sm mt-0.5">{hInfo.hook}</p></div><button onClick={() => navigate(`/discovery/${hInfo.path}`)} className="bg-indigo-600 text-white text-sm font-bold px-3 py-2 rounded-xl">Explore →</button></div>
+            <div className="flex items-start gap-3"><span className="text-3xl">{hInfo.emoji}</span><div className="flex-1"><p className="font-bold text-white text-sm">{t(`discovery.modules.${hInfo.id}.title`, hInfo.title)}</p><p className="text-slate-400 text-sm mt-0.5">{t(`discovery.modules.${hInfo.id}.hook`, hInfo.hook)}</p></div><button onClick={() => navigate(`/discovery/${hInfo.path}`)} className="bg-indigo-600 text-white text-sm font-bold px-3 py-2 rounded-xl">{t('discovery.explore', 'Explore →')}</button></div>
           </motion.div>
         )}</AnimatePresence>
       </div>
       <ParentCorner onExit={() => navigate('/home')} />
       <button onClick={() => setShowReport(true)} className="fixed bottom-6 right-6 z-10 w-14 h-14 rounded-2xl bg-indigo-700 border border-indigo-500 shadow-xl flex flex-col items-center justify-center gap-0.5 active:scale-95 transition-transform" aria-label="Discovery Report">
-        <span className="text-lg">🌌</span><span className="text-sm text-white font-bold">Report</span>
+        <span className="text-lg">🌌</span><span className="text-sm text-white font-bold">{t('discovery.report', 'Report')}</span>
       </button>
       <DiscoveryReport visible={showReport} onClose={() => setShowReport(false)} />
     </div>

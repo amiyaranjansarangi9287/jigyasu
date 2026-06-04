@@ -1,6 +1,6 @@
 // CampCraft - Activity Card Component
 
-import { Activity } from '../data/activities';
+import { Activity } from '../data/activities.en';
 import { pillars } from '../data/categories';
 
 interface ActivityCardProps {
@@ -17,6 +17,8 @@ import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import GestureWrapper from '../../components/GestureWrapper';
 import { HeartBurst as HeartButton } from '../../components/MicroInteractions';
+import { useTranslation } from 'react-i18next';
+import { Button, Card } from '@jigyasu/ui';
 
 export default React.memo(function ActivityCard({
   activity,
@@ -27,6 +29,7 @@ export default React.memo(function ActivityCard({
   status,
   variant = 'default'
 }: ActivityCardProps) {
+  const { t } = useTranslation();
   const pillar = pillars.find(p => p.id === activity.pillar);
 
   const difficultyColors = {
@@ -49,14 +52,14 @@ export default React.memo(function ActivityCard({
           <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
           </svg>
-          Completed
+          {t('completed', 'Completed')}
         </span>
       );
     }
     if (status === 'in-progress') {
       return (
         <span className="absolute top-3 left-3 z-10 px-2 py-1 rounded-full bg-orange-500 text-white text-sm font-medium shadow-lg">
-          In Progress
+          {t('in_progress', 'In Progress')}
         </span>
       );
     }
@@ -64,9 +67,9 @@ export default React.memo(function ActivityCard({
   };
 
   const getButtonText = () => {
-    if (status === 'completed') return '🔄 Rebuild';
-    if (status === 'in-progress') return '▶ Continue';
-    return '🚀 Start';
+    if (status === 'completed') return `🔄 ${t('rebuild', 'Rebuild')}`;
+    if (status === 'in-progress') return `▶ ${t('continue', 'Continue')}`;
+    return `🚀 ${t('start', 'Start')}`;
   };
 
   const contextMenu = (
@@ -75,13 +78,13 @@ export default React.memo(function ActivityCard({
         className="w-full text-left px-4 py-3 hover:bg-slate-50 text-slate-700 font-bold flex items-center gap-2 rounded-xl transition-colors"
         onClick={(e) => { e.stopPropagation(); onToggleFavorite(activity.id); }}
       >
-        <span className={isFavorite ? 'text-pink-500' : 'text-slate-400'}>♥</span> {isFavorite ? 'Remove Favorite' : 'Save to Favorites'}
+        <span className={isFavorite ? 'text-pink-500' : 'text-slate-400'}>♥</span> {isFavorite ? t('remove_favorite', 'Remove Favorite') : t('save_to_favorites', 'Save to Favorites')}
       </button>
       <button 
         className="w-full text-left px-4 py-3 hover:bg-slate-50 text-slate-700 font-bold flex items-center gap-2 rounded-xl transition-colors"
         onClick={(e) => { e.stopPropagation(); onStart(activity); }}
       >
-        🚀 {getButtonText()}
+        {getButtonText()}
       </button>
     </>
   );
@@ -89,9 +92,10 @@ export default React.memo(function ActivityCard({
   if (variant === 'horizontal') {
     return (
       <GestureWrapper contextMenu={contextMenu} className="w-full">
-        <div
-          className="group flex gap-4 p-4 rounded-2xl bg-white dark:bg-gray-800 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer border border-gray-100 dark:border-gray-700"
+        <Card
+          hoverable
           onClick={() => onSelect(activity)}
+          className="group flex flex-row gap-4 p-4 dark:bg-gray-800 border-gray-100 dark:border-gray-700"
         >
         {/* Image */}
         <div className="relative w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden">
@@ -110,14 +114,14 @@ export default React.memo(function ActivityCard({
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">{pillar?.icon}</span>
             <span className={`px-2 py-0.5 rounded-full text-sm font-medium ${difficultyColors[activity.difficulty]}`}>
-              {activity.difficulty}
+              {t(`difficulty_${activity.difficulty.toLowerCase()}` as any, activity.difficulty)}
             </span>
           </div>
           <h4 className="font-bold text-gray-900 dark:text-white truncate group-hover:text-orange-500 transition-colors">
             {activity.name}
           </h4>
           <p className="text-sm text-gray-500 dark:text-gray-400 line-clamp-1">
-            {activity.timeToMake} • Ages {activity.ageRange}
+            {activity.timeToMake} • {t('ages', 'Ages')} {activity.ageRange}
           </p>
         </div>
 
@@ -131,17 +135,17 @@ export default React.memo(function ActivityCard({
             }} 
             className={`p-2 rounded-full transition-colors ${isFavorite ? 'text-pink-500' : 'text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700'}`}
           />
-          <button
+          <Button
             onClick={(e) => {
               e.stopPropagation();
               onStart(activity);
             }}
-            className="btn btn-primary text-sm px-3 py-1.5"
+            size="sm"
           >
             {getButtonText()}
-          </button>
+          </Button>
         </div>
-      </div>
+      </Card>
       </GestureWrapper>
     );
   }
@@ -149,17 +153,18 @@ export default React.memo(function ActivityCard({
   if (variant === 'compact') {
     return (
       <GestureWrapper contextMenu={contextMenu} className="w-full">
-        <button
+        <Card
+          hoverable
           onClick={() => onSelect(activity)}
-        className="group text-left p-3 rounded-xl bg-white dark:bg-gray-800 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 dark:border-gray-700"
-      >
+          className="group text-left p-3 dark:bg-gray-800 border-gray-100 dark:border-gray-700"
+        >
         <div className="flex items-center gap-3">
           <span className="text-2xl">{pillar?.icon}</span>
           <div className="flex-1 min-w-0">
             <p className="font-medium text-gray-900 dark:text-white truncate group-hover:text-orange-500 transition-colors">
               {activity.name}
             </p>
-            <p className="text-sm text-gray-500">{activity.difficulty}</p>
+            <p className="text-sm text-gray-500">{t(`difficulty_${activity.difficulty.toLowerCase()}` as any, activity.difficulty)}</p>
           </div>
           {status === 'completed' && (
             <svg className="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -167,7 +172,7 @@ export default React.memo(function ActivityCard({
             </svg>
           )}
         </div>
-        </button>
+        </Card>
       </GestureWrapper>
     );
   }
@@ -175,9 +180,10 @@ export default React.memo(function ActivityCard({
   // Default card variant
   return (
     <GestureWrapper contextMenu={contextMenu} className="w-full">
-      <div
-        className="group relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer border border-gray-100 dark:border-gray-700 hover:-translate-y-1"
+      <Card
+        hoverable
         onClick={() => onSelect(activity)}
+        className="group relative dark:bg-gray-800 border-gray-100 dark:border-gray-700"
       >
       {/* Image */}
       <div className="relative h-40 overflow-hidden aspect-[16/10]">
@@ -203,20 +209,21 @@ export default React.memo(function ActivityCard({
         />
 
         {/* Quick Start Button */}
-        <button
+        <Button
           onClick={(e) => {
             e.stopPropagation();
             onStart(activity);
           }}
-          className="absolute bottom-3 right-3 z-10 btn btn-primary text-sm px-3 py-1.5 shadow-lg"
+          size="sm"
+          className="absolute bottom-3 right-3 z-10 shadow-lg"
         >
           {getButtonText()}
-        </button>
+        </Button>
 
         {/* Pillar Badge */}
         <div className="absolute bottom-3 left-3 z-10">
           <span className={`px-2.5 py-1 rounded-full text-sm font-medium flex items-center gap-1 ${pillarColors[activity.pillar]}`}>
-            {pillar?.icon} {pillar?.name}
+            {pillar?.icon} {t(`pillar_${activity.pillar}` as any, pillar?.name || '')}
           </span>
         </div>
       </div>
@@ -225,13 +232,13 @@ export default React.memo(function ActivityCard({
       <div className="p-4">
         <div className="flex items-center gap-2 mb-2">
           <span className={`px-2 py-0.5 rounded-full text-sm font-medium ${difficultyColors[activity.difficulty]}`}>
-            {activity.difficulty}
+            {t(`difficulty_${activity.difficulty.toLowerCase()}` as any, activity.difficulty)}
           </span>
           <span className="text-sm text-gray-500 dark:text-gray-400">
-            {activity.timeToMake}
+            {activity.timeToMake.replace('min', t('min', 'min')).replace('hour', t('hour', 'hour')).replace('hours', t('hours', 'hours')).replace('play', t('play', 'play'))}
           </span>
           <span className="text-sm text-gray-400 dark:text-gray-500">
-            Ages {activity.ageRange}
+            {t('ages', 'Ages')} {activity.ageRange}
           </span>
         </div>
 
@@ -254,11 +261,11 @@ export default React.memo(function ActivityCard({
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
             </svg>
-            {activity.steps.length} steps
+            {activity.steps.length} {t('steps', 'steps')}
           </div>
         </div>
       </div>
-      </div>
+      </Card>
     </GestureWrapper>
   );
 });

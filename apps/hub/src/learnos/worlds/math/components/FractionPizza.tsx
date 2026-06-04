@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation, Trans } from 'react-i18next';
 import { sfx } from '../lib/soundEngine';
 
 export default function FractionPizza() {
+  const { t } = useTranslation();
   const [slices, setSlices] = useState(8);
   const [eaten, setEaten] = useState<Set<number>>(new Set());
   const [mode, setMode] = useState<'explore' | 'challenge'>('explore');
@@ -80,8 +82,8 @@ export default function FractionPizza() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🍕 Fraction Pizza Party</h2>
-        <p className="text-purple-300 text-lg">Learn fractions by eating pizza slices!</p>
+        <h2 className="text-3xl font-bold text-white mb-2">{t('math_modules.FractionPizza.title', '🍕 Fraction Pizza Party')}</h2>
+        <p className="text-purple-300 text-lg">{t('math_modules.FractionPizza.subtitle', 'Learn fractions by eating pizza slices!')}</p>
       </div>
 
       {/* Mode toggle */}
@@ -93,7 +95,7 @@ export default function FractionPizza() {
             }`}
             onClick={() => { setMode('explore'); setChallenge(null); resetPizza(); }}
           >
-            🔍 Explore
+            🔍 {t('math_modules.FractionPizza.explore', 'Explore')}
           </button>
           <button
             className={`px-4 sm:px-6 py-2 rounded-xl font-medium text-sm ${
@@ -101,7 +103,7 @@ export default function FractionPizza() {
             }`}
             onClick={startChallenge}
           >
-            🎯 Challenge
+            🎯 {t('math_modules.FractionPizza.challenge', 'Challenge')}
           </button>
         </div>
       </div>
@@ -185,7 +187,7 @@ export default function FractionPizza() {
 
           {/* Slice selector */}
           <div className="mt-4 bg-white/5 rounded-2xl p-4 border border-white/10 w-full max-w-xs">
-            <p className="text-gray-400 text-sm mb-2 text-center">Number of slices</p>
+            <p className="text-gray-400 text-sm mb-2 text-center">{t('math_modules.FractionPizza.numSlices', 'Number of slices')}</p>
             <div className="flex items-center justify-center gap-2 flex-wrap">
               {[2, 3, 4, 6, 8, 10, 12].map((s) => (
                 <motion.button
@@ -214,9 +216,11 @@ export default function FractionPizza() {
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
             >
-              <p className="text-gray-400 text-sm mb-2">Challenge:</p>
+              <p className="text-gray-400 text-sm mb-2">{t('math_modules.FractionPizza.challengeLabel', 'Challenge:')}</p>
               <p className="text-2xl font-bold text-white text-center">
-                Eat <span className="text-orange-400">{challenge.numerator}</span> out of <span className="text-blue-400">{challenge.denominator}</span> slices
+                <Trans i18nKey="math_modules.FractionPizza.eatSlices" values={{ num: challenge.numerator, den: challenge.denominator }}>
+                  Eat <span className="text-orange-400">{challenge.numerator}</span> out of <span className="text-blue-400">{challenge.denominator}</span> slices
+                </Trans>
               </p>
               <p className="text-center text-purple-300 text-lg mt-2">
                 = <span className="font-bold">{challenge.numerator}/{challenge.denominator}</span>
@@ -229,7 +233,7 @@ export default function FractionPizza() {
                     initial={{ scale: 0 }}
                     animate={{ scale: [0, 1.3, 1] }}
                   >
-                    ✨ Correct!
+                    ✨ {t('math_modules.FractionPizza.correct', 'Correct!')}
                   </motion.span>
                 )}
                 {challengeFeedback === 'wrong' && (
@@ -238,7 +242,7 @@ export default function FractionPizza() {
                     initial={{ x: -10 }}
                     animate={{ x: [10, -10, 5, 0] }}
                   >
-                    ❌ Too many!
+                    {t('math_modules.FractionPizza.tooMany', '❌ Too many!')}
                   </motion.span>
                 )}
               </div>
@@ -246,23 +250,23 @@ export default function FractionPizza() {
           )}
 
           <div className="bg-gradient-to-br from-orange-900/20 to-red-900/20 rounded-2xl border border-orange-500/30 p-6">
-            <h3 className="text-white font-bold mb-4">📊 Fraction Breakdown</h3>
+            <h3 className="text-white font-bold mb-4">{t('math_modules.FractionPizza.breakdown', '📊 Fraction Breakdown')}</h3>
             
             <div className="space-y-3">
               <div className="flex justify-between items-center">
-                <span className="text-gray-400">Eaten:</span>
+                <span className="text-gray-400">{t('math_modules.FractionPizza.eaten', 'Eaten:')}</span>
                 <span className="text-2xl font-bold text-orange-400">{fraction}</span>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-gray-400">Remaining:</span>
+                <span className="text-gray-400">{t('math_modules.FractionPizza.remaining', 'Remaining:')}</span>
                 <span className="text-2xl font-bold text-green-400">{remainingFraction}</span>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-gray-400">Percentage:</span>
+                <span className="text-gray-400">{t('math_modules.FractionPizza.percentage', 'Percentage:')}</span>
                 <span className="text-2xl font-bold text-blue-400">{percentage}%</span>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-gray-400">Decimal:</span>
+                <span className="text-gray-400">{t('math_modules.FractionPizza.decimal', 'Decimal:')}</span>
                 <span className="text-2xl font-bold text-purple-400">{(eaten.size / slices).toFixed(2)}</span>
               </div>
             </div>
@@ -291,7 +295,7 @@ export default function FractionPizza() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
             >
-              <h4 className="text-white font-bold mb-2">🔄 Equivalent Fractions</h4>
+              <h4 className="text-white font-bold mb-2">{t('math_modules.FractionPizza.equivFractions', '🔄 Equivalent Fractions')}</h4>
               <div className="flex flex-wrap gap-2">
                 {[2, 3, 4, 5].map((multiplier) => {
                   const num = eaten.size * multiplier;
@@ -313,11 +317,12 @@ export default function FractionPizza() {
           {/* Fun facts */}
           <div className="bg-gradient-to-r from-yellow-500/10 to-amber-500/10 rounded-xl border border-yellow-500/20 p-3">
             <p className="text-sm text-yellow-300">
-              💡 <strong>Fun fact:</strong> {eaten.size === 0 ? "Click slices to eat them!" : 
-                eaten.size === slices ? "You ate the whole pizza! 🎉" :
-                eaten.size === 1 ? "One slice is called a 'unit fraction'" :
-                eaten.size * 2 === slices ? "You ate exactly half!" :
-                "Fractions show parts of a whole"}
+              <span dangerouslySetInnerHTML={{ __html: t('math_modules.FractionPizza.funFact', '💡 <strong>Fun fact:</strong>') }} />{' '}
+              {eaten.size === 0 ? t('math_modules.FractionPizza.factStart', "Click slices to eat them!") : 
+                eaten.size === slices ? t('math_modules.FractionPizza.factWhole', "You ate the whole pizza! 🎉") :
+                eaten.size === 1 ? t('math_modules.FractionPizza.factUnit', "One slice is called a 'unit fraction'") :
+                eaten.size * 2 === slices ? t('math_modules.FractionPizza.factHalf', "You ate exactly half!") :
+                t('math_modules.FractionPizza.factDefault', "Fractions show parts of a whole")}
             </p>
           </div>
         </div>

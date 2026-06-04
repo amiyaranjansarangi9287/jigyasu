@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { ROUTES } from '../constants/routes';
 import { ParentCorner } from '../shared/layout';
-import { Button } from '../shared/ui';
+import { Button, Card } from '@jigyasu/ui';
 import { MISTAKE_EXHIBITS, MistakeExhibit } from './data/mistakeMuseumContent';
 
 export default function MistakeMuseum() {
@@ -68,27 +68,31 @@ export default function MistakeMuseum() {
 
               <div className="space-y-3">
                 {MISTAKE_EXHIBITS.map((ex, i) => (
-                  <motion.button
+                  <motion.div
                     key={ex.id}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: i * 0.05 }}
-                    onClick={() => setSelectedExhibit(ex)}
-                    className={`w-full p-4 rounded-2xl text-left transition-all min-h-[72px]
-                      ${i === currentIndex
-                        ? 'bg-purple-100 border-2 border-purple-300'
-                        : 'bg-white border-2 border-gray-200 hover:border-purple-200'
-                      }`}
                   >
-                    <div className="flex items-center gap-3">
-                      <span className="text-3xl">{ex.emoji}</span>
-                      <div className="flex-1">
-                        <p className="font-bold text-gray-800 text-sm">{ex.wrongBelief}</p>
-                        <p className="text-sm text-gray-400">{ex.period}</p>
+                    <Card
+                      hoverable
+                      onClick={() => setSelectedExhibit(ex)}
+                      className={`w-full p-4 text-left min-h-[72px] transition-all
+                        ${i === currentIndex
+                          ? 'bg-purple-100 border-purple-300 ring-2 ring-purple-300'
+                          : 'border-transparent hover:border-purple-200 hover:bg-purple-50'
+                        }`}
+                    >
+                      <div className="flex items-center gap-3">
+                        <span className="text-3xl">{ex.emoji}</span>
+                        <div className="flex-1">
+                          <p className="font-bold text-gray-800 text-sm">{ex.wrongBelief}</p>
+                          <p className="text-sm text-gray-400">{ex.period}</p>
+                        </div>
+                        <span className="text-gray-300">→</span>
                       </div>
-                      <span className="text-gray-300">→</span>
-                    </div>
-                  </motion.button>
+                    </Card>
+                  </motion.div>
                 ))}
               </div>
             </motion.div>
@@ -106,7 +110,7 @@ export default function MistakeMuseum() {
                 ← Back to exhibits
               </button>
 
-              <div className="bg-white rounded-3xl p-6 shadow-sm mb-4">
+              <Card className="p-6 mb-4 border-purple-100/50">
                 <div className="text-5xl mb-4">{selectedExhibit.emoji}</div>
                 <h2 className="text-xl font-bold text-purple-700 mb-1">
                   {t('crosscutting.mistake_museum.wrong_belief')}
@@ -139,7 +143,7 @@ export default function MistakeMuseum() {
                     <p className="text-amber-800">{selectedExhibit.indianConnection}</p>
                   </div>
                 </div>
-              </div>
+              </Card>
 
               <div className="text-center py-4">
                 <p className="text-lg italic text-purple-600 font-medium">
@@ -152,14 +156,14 @@ export default function MistakeMuseum() {
                   onClick={handlePrev}
                   variant="secondary"
                   disabled={currentIndex === 0}
-                  fullWidth
+                  className="flex-1"
                 >
                   ← Previous
                 </Button>
                 <Button
                   onClick={handleNext}
                   disabled={currentIndex === MISTAKE_EXHIBITS.length - 1}
-                  fullWidth
+                  className="flex-1"
                 >
                   Next →
                 </Button>

@@ -1,10 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import GestureWrapper from '../../../../components/GestureWrapper';
 
 type Operation = '+' | '-' | '×' | '÷';
 
 export default function Visualizer3D() {
+  const { t } = useTranslation();
   const [numA, setNumA] = useState(5);
   const [numB, setNumB] = useState(3);
   const [operation, setOperation] = useState<Operation>('+');
@@ -63,7 +65,7 @@ export default function Visualizer3D() {
             ))}
           </AnimatePresence>
         </div>
-        {count > 50 && <span className="text-sm text-gray-500 mt-1">(showing 50 of {count})</span>}
+        {count > 50 && <span className="text-sm text-gray-500 mt-1">{t('math_modules.Visualizer3D.showing', '(showing {{display}} of {{count}})', { display: 50, count })}</span>}
       </div>
     );
   };
@@ -160,17 +162,17 @@ export default function Visualizer3D() {
   };
 
   const operations: { op: Operation; label: string; color: string }[] = [
-    { op: '+', label: 'Add', color: 'from-green-500 to-emerald-600' },
-    { op: '-', label: 'Sub', color: 'from-red-500 to-rose-600' },
-    { op: '×', label: 'Mul', color: 'from-blue-500 to-indigo-600' },
-    { op: '÷', label: 'Div', color: 'from-yellow-500 to-amber-600' },
+    { op: '+', label: t('math_modules.Visualizer3D.add', 'Add'), color: 'from-green-500 to-emerald-600' },
+    { op: '-', label: t('math_modules.Visualizer3D.sub', 'Sub'), color: 'from-red-500 to-rose-600' },
+    { op: '×', label: t('math_modules.Visualizer3D.mul', 'Mul'), color: 'from-blue-500 to-indigo-600' },
+    { op: '÷', label: t('math_modules.Visualizer3D.div', 'Div'), color: 'from-yellow-500 to-amber-600' },
   ];
 
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">📊 3D Math Visualizer</h2>
-        <p className="text-purple-300 text-lg">See math come alive in 3D!</p>
+        <h2 className="text-3xl font-bold text-white mb-2">{t('math_modules.Visualizer3D.title', '📊 3D Math Visualizer')}</h2>
+        <p className="text-purple-300 text-lg">{t('math_modules.Visualizer3D.subtitle', 'See math come alive in 3D!')}</p>
       </div>
 
       {/* Controls */}
@@ -178,7 +180,7 @@ export default function Visualizer3D() {
         <div className="flex flex-wrap items-center justify-center gap-4">
           {/* Number A */}
           <div className="flex flex-col items-center gap-1">
-            <label className="text-gray-400 text-sm">Number A</label>
+            <label className="text-gray-400 text-sm">{t('math_modules.Visualizer3D.numberA', 'Number A')}</label>
             <div className="flex items-center gap-2">
               <motion.button
                 whileTap={{ scale: 0.9 }}
@@ -201,7 +203,7 @@ export default function Visualizer3D() {
 
           {/* Operation */}
           <div className="flex flex-col items-center gap-1">
-            <label className="text-gray-400 text-sm">Operation</label>
+            <label className="text-gray-400 text-sm">{t('math_modules.Visualizer3D.operation', 'Operation')}</label>
             <div className="flex gap-1">
               {operations.map(({ op, label, color }) => (
                 <motion.button
@@ -222,7 +224,7 @@ export default function Visualizer3D() {
 
           {/* Number B */}
           <div className="flex flex-col items-center gap-1">
-            <label className="text-gray-400 text-sm">Number B</label>
+            <label className="text-gray-400 text-sm">{t('math_modules.Visualizer3D.numberB', 'Number B')}</label>
             <div className="flex items-center gap-2">
               <motion.button
                 whileTap={{ scale: 0.9 }}
@@ -272,9 +274,9 @@ export default function Visualizer3D() {
       {/* View Mode Switcher */}
       <div className="flex justify-center gap-2 mb-6">
         {([
-          { mode: 'blocks' as const, emoji: '🧱', label: 'Blocks' },
-          { mode: 'bars' as const, emoji: '📊', label: '3D Bars' },
-          { mode: 'circles' as const, emoji: '🔮', label: 'Spheres' },
+          { mode: 'blocks' as const, emoji: '🧱', label: t('math_modules.Visualizer3D.blocks', 'Blocks') },
+          { mode: 'bars' as const, emoji: '📊', label: t('math_modules.Visualizer3D.bars3d', '3D Bars') },
+          { mode: 'circles' as const, emoji: '🔮', label: t('math_modules.Visualizer3D.spheres', 'Spheres') },
         ]).map(({ mode, emoji, label }) => (
           <motion.button
             key={mode}
@@ -345,10 +347,10 @@ export default function Visualizer3D() {
         transition={{ delay: 0.5 }}
       >
         <span className="text-sm text-purple-300">
-          {operation === '+' && `💡 Adding ${numA} and ${numB} is like combining ${numA} apples 🍎 with ${numB} oranges 🍊 = ${result} fruits!`}
-          {operation === '-' && `💡 If you had ${numA} cookies 🍪 and ate ${numB}, you'd have ${result} left!`}
-          {operation === '×' && `💡 ${numA} × ${numB} means ${numA} groups of ${numB} — that's ${result} altogether! 🎯`}
-          {operation === '÷' && `💡 Sharing ${numA} pizzas 🍕 among ${numB} friends = ${result} each!`}
+          {operation === '+' && t('math_modules.Visualizer3D.factAdd', '💡 Adding {{numA}} and {{numB}} is like combining {{numA}} apples 🍎 with {{numB}} oranges 🍊 = {{result}} fruits!', { numA, numB, result })}
+          {operation === '-' && t('math_modules.Visualizer3D.factSub', '💡 If you had {{numA}} cookies 🍪 and ate {{numB}}, you\'d have {{result}} left!', { numA, numB, result })}
+          {operation === '×' && t('math_modules.Visualizer3D.factMul', '💡 {{numA}} × {{numB}} means {{numA}} groups of {{numB}} — that\'s {{result}} altogether! 🎯', { numA, numB, result })}
+          {operation === '÷' && t('math_modules.Visualizer3D.factDiv', '💡 Sharing {{numA}} pizzas 🍕 among {{numB}} friends = {{result}} each!', { numA, numB, result })}
         </span>
       </motion.div>
     </div>

@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useSRS } from '@jigyasu/storage';
 import { useTranslation } from 'react-i18next';
+import { Card } from '@jigyasu/ui';
 
 const MODULE_META: Record<string, { title: string; emoji: string; route: string }> = {
   'states-of-matter': { title: 'States of Matter', emoji: '🧊', route: '/3-5/states-of-matter' },
@@ -58,10 +59,11 @@ export default function SpacedRepetition() {
             const meta = MODULE_META[record.activityId] || { title: record.activityId, emoji: '📚', route: `/${record.appId}` };
             
             return (
-              <button
+              <Card
                 key={record.id}
+                hoverable
                 onClick={() => navigate(meta.route)}
-                className="flex-none snap-start group w-64 bg-white rounded-3xl p-5 border-2 border-slate-200 shadow-sm hover:shadow-lg hover:border-sky-300 transition-all text-left flex flex-col gap-3"
+                className="flex-none snap-start group w-64 p-5 text-left flex flex-col gap-3 hover:border-sky-300"
               >
                 <div className="flex justify-between items-start">
                   <div className="w-12 h-12 rounded-2xl bg-sky-100 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
@@ -76,10 +78,10 @@ export default function SpacedRepetition() {
                     {meta.title}
                   </h3>
                   <p className="text-sm text-slate-500 mt-1 flex items-center gap-1">
-                    <span>{record.masteryLevel === 3 ? '🌟 Mastered' : '⭐ Familiar'}</span>
+                    <span>{record.masteryLevel === 3 ? '🌟 ' + t('landing.review.mastered', 'Mastered') : '⭐ ' + t('landing.review.familiar', 'Familiar')}</span>
                   </p>
                 </div>
-              </button>
+              </Card>
             );
           })}
         </div>

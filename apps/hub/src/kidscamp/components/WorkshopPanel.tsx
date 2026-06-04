@@ -14,6 +14,8 @@ interface Props {
   getLockedAchievements: () => AchievementSummary[];
 }
 
+import { useTranslation } from 'react-i18next';
+
 export default function WorkshopPanel({
   setWorkshopOpen,
   getCompletedCount,
@@ -23,12 +25,13 @@ export default function WorkshopPanel({
   getUnlockedAchievements,
   getLockedAchievements
 }: Props) {
+  const { t } = useTranslation();
   return (
     <div className="fixed inset-0 z-50">
       <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={() => setWorkshopOpen(false)} />
       <div className="absolute right-0 top-0 bottom-0 w-full max-w-lg bg-white dark:bg-gray-900 shadow-2xl animate-slide-in-mobile overflow-y-auto">
         <div className="p-4 border-b border-gray-100 dark:border-gray-800 flex items-center justify-between sticky top-0 bg-white dark:bg-gray-900 z-10">
-          <h2 className="text-xl font-bold text-gray-900 dark:text-white">My Progress</h2>
+          <h2 className="text-xl font-bold text-gray-900 dark:text-white">{t('kidscamp.workshop.title', 'My Progress')}</h2>
           <button
             onClick={() => setWorkshopOpen(false)}
             className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
@@ -46,19 +49,19 @@ export default function WorkshopPanel({
               <div className="text-3xl font-bold text-orange-600 dark:text-orange-400">
                 {getCompletedCount()}
               </div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">Completed</div>
+              <div className="text-sm text-gray-600 dark:text-gray-400">{t('kidscamp.workshop.completed', 'Completed')}</div>
             </div>
             <div className="p-4 rounded-2xl bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/30">
               <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">
-                {Math.floor(getTotalTime() / 60)}m
+                {Math.floor(getTotalTime() / 60)}{t('kidscamp.workshop.minutes', 'm')}
               </div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">Total Time</div>
+              <div className="text-sm text-gray-600 dark:text-gray-400">{t('kidscamp.workshop.total_time', 'Total Time')}</div>
             </div>
           </div>
 
           {/* Pillar Progress */}
           <div>
-            <h3 className="font-bold text-gray-900 dark:text-white mb-4">Pillar Progress</h3>
+            <h3 className="font-bold text-gray-900 dark:text-white mb-4">{t('kidscamp.workshop.pillar_progress', 'Pillar Progress')}</h3>
             <div className="space-y-3">
               {[
                 { id: 'toybox', name: 'ToyBox', icon: '🧸', total: 24 },
@@ -73,7 +76,7 @@ export default function WorkshopPanel({
                     <span className="text-2xl">{pillar.icon}</span>
                     <div className="flex-1">
                       <div className="flex justify-between text-sm mb-1">
-                        <span className="font-medium text-gray-900 dark:text-white">{pillar.name}</span>
+                        <span className="font-medium text-gray-900 dark:text-white">{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
                         <span className="text-gray-500">{completed}/{pillar.total}</span>
                       </div>
                       <div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
@@ -91,8 +94,7 @@ export default function WorkshopPanel({
 
           {/* Recent Achievements */}
           <div>
-            <h3 className="font-bold text-gray-900 dark:text-white mb-4">
-              Achievements ({getAchievementProgress().unlocked}/{getAchievementProgress().total})
+            <h3 className="font-bold text-gray-900 dark:text-white mb-4">{t('kidscamp.workshop.achievements', 'Achievements')} ({getAchievementProgress().unlocked}/{getAchievementProgress().total})
             </h3>
             <div className="grid grid-cols-4 gap-3">
               {getUnlockedAchievements().slice(0, 8).map((achievement) => (

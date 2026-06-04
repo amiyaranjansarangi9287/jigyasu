@@ -3,9 +3,10 @@
 // Jigyasu About Page - Mission and Vision
 
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
-const VALUES = [
+const VALUES_DATA = [
   {
     title: 'Wonder',
     emoji: '✨',
@@ -38,7 +39,7 @@ const VALUES = [
   },
 ];
 
-const DIFFERENCE_POINTS = [
+const DIFFERENCE_POINTS_DATA = [
   {
     emoji: '🌐',
     title: 'Free by Design',
@@ -71,7 +72,7 @@ const DIFFERENCE_POINTS = [
   },
 ];
 
-const SUPPORT_QUESTIONS = [
+const SUPPORT_QUESTIONS_DATA = [
   {
     label: 'The Who',
     emoji: '👤',
@@ -97,6 +98,92 @@ const FADE_UP = {
 };
 
 export default function AboutPage() {
+  const { t } = useTranslation();
+  
+  const VALUES = [
+    {
+      title: t('about.values.0.title', 'Wonder'),
+      emoji: '✨',
+      desc: t('about.values.0.desc', 'We begin with questions...'),
+    },
+    {
+      title: t('about.values.1.title', 'Equity'),
+      emoji: '⚖️',
+      desc: t('about.values.1.desc', 'One platform...'),
+    },
+    {
+      title: t('about.values.2.title', 'Respect'),
+      emoji: '🤝',
+      desc: t('about.values.2.desc', 'No grades...'),
+    },
+    {
+      title: t('about.values.3.title', 'Patience'),
+      emoji: '🌱',
+      desc: t('about.values.3.desc', 'Learning takes time...'),
+    },
+    {
+      title: t('about.values.4.title', 'Joy'),
+      emoji: '🎉',
+      desc: t('about.values.4.desc', 'If learning is not joyful...'),
+    },
+    {
+      title: t('about.values.5.title', 'Identity'),
+      emoji: '🇮🇳',
+      desc: t('about.values.5.desc', 'Indian scientists...'),
+    }
+  ];
+
+  const DIFFERENCE_POINTS = [
+    {
+      emoji: '🌐',
+      title: t('about.differences.0.title', 'Free by Design'),
+      desc: t('about.differences.0.desc', 'There is no poor version...'),
+    },
+    {
+      emoji: '📱',
+      title: t('about.differences.1.title', 'Website First'),
+      desc: t('about.differences.1.desc', 'A link shared...'),
+    },
+    {
+      emoji: '🗣️',
+      title: t('about.differences.2.title', '6 Indian Languages'),
+      desc: t('about.differences.2.desc', 'English, Hindi, Tamil...'),
+    },
+    {
+      emoji: '📴',
+      title: t('about.differences.3.title', 'Offline First'),
+      desc: t('about.differences.3.desc', 'Designed to work on 2G...'),
+    },
+    {
+      emoji: '👨‍👩‍👧',
+      title: t('about.differences.4.title', 'For Every Age'),
+      desc: t('about.differences.4.desc', 'Ages 2 to 80+...'),
+    },
+    {
+      emoji: '🫀',
+      title: t('about.differences.5.title', 'Visual and Interactive'),
+      desc: t('about.differences.5.desc', 'You do not just watch...'),
+    }
+  ];
+
+  const SUPPORT_QUESTIONS = [
+    {
+      label: t('about.support_labels.who', 'The Who'),
+      emoji: '👤',
+      desc: t('about.support_labels.who_desc', 'A brief intro...'),
+    },
+    {
+      label: t('about.support_labels.why', 'The Why'),
+      emoji: '💡',
+      desc: t('about.support_labels.why_desc', 'Why Jigyasu?'),
+    },
+    {
+      label: t('about.support_labels.how', 'The How'),
+      emoji: '🛤️',
+      desc: t('about.support_labels.how_desc', 'How do you envision...'),
+    }
+  ];
+
   const navigate = useNavigate();
 
   return (
@@ -113,19 +200,13 @@ export default function AboutPage() {
           className="flex items-center gap-2 text-indigo-700 font-extrabold
                      text-base hover:text-indigo-900 transition-colors"
         >
-          <span className="text-xl">🦉</span>
+          <span className="text-xl">🦚</span>
           <span>Jigyasu</span>
         </button>
         <div className="flex gap-4 text-sm text-slate-500">
-          <a href="#mission" className="hover:text-indigo-700 transition-colors hidden sm:block">
-            Mission
-          </a>
-          <a href="#difference" className="hover:text-indigo-700 transition-colors hidden sm:block">
-            What We Built
-          </a>
-          <a href="#support" className="hover:text-indigo-700 transition-colors">
-            Support
-          </a>
+          <a href="#mission" className="hover:text-indigo-700 transition-colors hidden sm:block"> {t('about.mission', 'Mission')} </a>
+          <a href="#difference" className="hover:text-indigo-700 transition-colors hidden sm:block"> {t('about.what_we_built', 'What We Built')} </a>
+          <a href="#support" className="hover:text-indigo-700 transition-colors"> {t('about.support', 'Support')} </a>
         </div>
       </nav>
 
@@ -138,14 +219,12 @@ export default function AboutPage() {
           {...FADE_UP}
           className="text-center pt-16 pb-14 space-y-5"
         >
-          <div className="text-7xl">🦉</div>
+          <div className="text-7xl">🦚</div>
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight
                          text-indigo-900 leading-tight">
             Jigyasu
           </h1>
-          <p className="text-2xl font-bold text-indigo-500">
-            Install Wonder.
-          </p>
+          <p className="text-2xl font-bold text-indigo-500"> {t('about.tagline', 'Install Wonder.')} </p>
           <p className="text-lg text-slate-500 italic max-w-xl mx-auto leading-relaxed">
             "Every child is born a scientist.
             They ask why. They test everything.
@@ -411,9 +490,7 @@ export default function AboutPage() {
                      mb-16 space-y-6"
         >
           <div className="space-y-2">
-            <h2 className="text-2xl font-bold">
-              Join the Mission
-            </h2>
+            <h2 className="text-2xl font-bold"> {t('about.join_mission', 'Join the Mission')} </h2>
             <p className="text-slate-300 text-base leading-relaxed">
               If you feel connected to what Jigyasu is trying to do —
               if the idea of a free, visual, multilingual learning platform
@@ -424,9 +501,7 @@ export default function AboutPage() {
 
           {/* Key statement */}
           <div className="bg-slate-800 rounded-2xl p-5 border border-slate-700">
-            <p className="text-indigo-300 font-bold text-base mb-2">
-              We believe in relationships before transactions.
-            </p>
+            <p className="text-indigo-300 font-bold text-base mb-2"> {t('about.relationships', 'We believe in relationships before transactions.')} </p>
             <p className="text-slate-300 text-sm leading-relaxed">
               We are not collecting payments online yet. Before accepting
               any support, we want to understand who you are, why this
@@ -524,7 +599,7 @@ export default function AboutPage() {
           className="text-center space-y-5 py-8
                      border-t border-slate-100"
         >
-          <div className="text-5xl">🦉</div>
+          <div className="text-5xl">🦚</div>
           <div className="space-y-2">
             <p className="text-slate-700 text-base leading-relaxed max-w-lg mx-auto">
               Jigyasu exists for the child who could not afford tuition.

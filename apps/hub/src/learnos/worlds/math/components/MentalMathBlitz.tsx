@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { sfx } from '../lib/soundEngine';
+import { useFormatNumber } from '../../../../hooks/useFormatNumber';
 
 type Category = 'bodmas' | 'squares' | 'percentages' | 'powers' | 'mixed';
 
@@ -12,7 +13,7 @@ interface Question {
   difficulty: number;
 }
 
-const generateQuestion = (cat: Category, diff: number): Question => {
+const generateQuestion = (cat: Category, diff: number, formatNumber: (n: number) => string): Question => {
   const r = (a: number, b: number) => Math.floor(Math.random() * (b - a + 1)) + a;
   let display: string, answer: number;
 
@@ -22,42 +23,42 @@ const generateQuestion = (cat: Category, diff: number): Question => {
     case 'bodmas': {
       const type = r(0, 3 + diff);
       switch (type) {
-        case 0: { const a = r(2, 10); const b = r(1, 10); const c = r(1, 10); answer = a + b * c; display = `${a} + ${b} × ${c}`; break; }
-        case 1: { const a = r(5, 20); const b = r(1, 5); const c = r(1, 5); answer = a - b * c; display = `${a} - ${b} × ${c}`; break; }
-        case 2: { const a = r(1, 5); const b = r(1, 5); const c = r(1, 5); answer = a * (b + c); display = `${a} × (${b} + ${c})`; break; }
-        case 3: { const a = r(2, 8); const c = r(1, 10); answer = a * a + c; display = `${a}² + ${c}`; break; }
-        case 4: { const a = r(10, 50); const b = r(2, 5); const c = r(1, 10); answer = a / b + c; display = `${a} ÷ ${b} + ${c}`; if (!Number.isInteger(answer)) { answer = a + b * c; display = `${a} + ${b} × ${c}`; } break; }
-        default: { const a = r(1, 5); const b = r(1, 5); const c = r(1, 3); answer = (a + b) * c; display = `(${a} + ${b}) × ${c}`; break; }
+        case 0: { const a = r(2, 10); const b = r(1, 10); const c = r(1, 10); answer = a + b * c; display = `${formatNumber(a)} + ${formatNumber(b)} × ${formatNumber(c)}`; break; }
+        case 1: { const a = r(5, 20); const b = r(1, 5); const c = r(1, 5); answer = a - b * c; display = `${formatNumber(a)} - ${formatNumber(b)} × ${formatNumber(c)}`; break; }
+        case 2: { const a = r(1, 5); const b = r(1, 5); const c = r(1, 5); answer = a * (b + c); display = `${formatNumber(a)} × (${formatNumber(b)} + ${formatNumber(c)})`; break; }
+        case 3: { const a = r(2, 8); const c = r(1, 10); answer = a * a + c; display = `${formatNumber(a)}² + ${formatNumber(c)}`; break; }
+        case 4: { const a = r(10, 50); const b = r(2, 5); const c = r(1, 10); answer = a / b + c; display = `${formatNumber(a)} ÷ ${formatNumber(b)} + ${formatNumber(c)}`; if (!Number.isInteger(answer)) { answer = a + b * c; display = `${formatNumber(a)} + ${formatNumber(b)} × ${formatNumber(c)}`; } break; }
+        default: { const a = r(1, 5); const b = r(1, 5); const c = r(1, 3); answer = (a + b) * c; display = `(${formatNumber(a)} + ${formatNumber(b)}) × ${formatNumber(c)}`; break; }
       }
       break;
     }
     case 'squares': {
       const n = r(2, 12 + diff * 3);
-      if (r(0, 1) === 0) { answer = n * n; display = `${n}² = ?`; }
-      else { answer = n; display = `√${n * n} = ?`; }
+      if (r(0, 1) === 0) { answer = n * n; display = `${formatNumber(n)}² = ?`; }
+      else { answer = n; display = `√${formatNumber(n * n)} = ?`; }
       break;
     }
     case 'percentages': {
       const type = r(0, 2);
       switch (type) {
-        case 0: { const pct = [10, 20, 25, 50, 75][r(0, 4)]; const of = r(2, 20) * (100 / pct); answer = (pct / 100) * of; display = `${pct}% of ${of}`; break; }
-        case 1: { const a = r(10, 100); const pct = r(1, 5) * 10; answer = a + (pct / 100) * a; display = `${a} + ${pct}% of ${a}`; break; }
-        default: { const a = r(5, 50) * 2; const b = r(1, a); answer = Math.round((b / a) * 100); display = `${b} out of ${a} = ?%`; break; }
+        case 0: { const pct = [10, 20, 25, 50, 75][r(0, 4)]; const of = r(2, 20) * (100 / pct); answer = (pct / 100) * of; display = `${formatNumber(pct)}% of ${formatNumber(of)}`; break; }
+        case 1: { const a = r(10, 100); const pct = r(1, 5) * 10; answer = a + (pct / 100) * a; display = `${formatNumber(a)} + ${formatNumber(pct)}% of ${formatNumber(a)}`; break; }
+        default: { const a = r(5, 50) * 2; const b = r(1, a); answer = Math.round((b / a) * 100); display = `${formatNumber(b)} out of ${formatNumber(a)} = ?%`; break; }
       }
       break;
     }
     case 'powers': {
       const type = r(0, 2);
       switch (type) {
-        case 0: { const base = r(2, 5); const exp = r(2, 4); answer = Math.pow(base, exp); display = `${base}${toSup(exp)} = ?`; break; }
-        case 1: { const base = r(2, 5); answer = base * base * base; display = `${base}³ = ?`; break; }
-        default: { const base = r(2, 10); answer = base * base; display = `${base}² = ?`; break; }
+        case 0: { const base = r(2, 5); const exp = r(2, 4); answer = Math.pow(base, exp); display = `${formatNumber(base)}${toSup(exp)} = ?`; break; }
+        case 1: { const base = r(2, 5); answer = base * base * base; display = `${formatNumber(base)}³ = ?`; break; }
+        default: { const base = r(2, 10); answer = base * base; display = `${formatNumber(base)}² = ?`; break; }
       }
       break;
     }
     default: {
       answer = r(1, 50);
-      display = `${answer}`;
+      display = `${formatNumber(answer)}`;
     }
   }
 
@@ -85,6 +86,7 @@ function toSup(n: number): string {
 }
 
 export default function MentalMathBlitz() {
+  const formatNumber = useFormatNumber();
   const [gameState, setGameState] = useState<'menu' | 'playing' | 'results'>('menu');
   const [category, setCategory] = useState<Category>('mixed');
   const [difficulty, setDifficulty] = useState(1);
@@ -100,9 +102,9 @@ export default function MentalMathBlitz() {
 
   const nextQ = useCallback(() => {
     qRef.current++;
-    setQuestion(generateQuestion(category, difficulty));
+    setQuestion(generateQuestion(category, difficulty, formatNumber));
     setFeedback(null);
-  }, [category, difficulty]);
+  }, [category, difficulty, formatNumber]);
 
   const startGame = () => {
     setGameState('playing');
@@ -117,8 +119,16 @@ export default function MentalMathBlitz() {
 
   useEffect(() => {
     if (gameState !== 'playing') return;
-    if (timeLeft <= 0) { setGameState('results'); return; }
-    const t = setInterval(() => setTimeLeft(v => v - 1), 1000);
+    const t = setInterval(() => {
+      setTimeLeft(v => {
+        if (v <= 1) {
+          clearInterval(t);
+          setGameState('results');
+          return 0;
+        }
+        return v - 1;
+      });
+    }, 1000);
     return () => clearInterval(t);
   }, [gameState]);
 
@@ -211,8 +221,8 @@ export default function MentalMathBlitz() {
             {/* Stats bar */}
             <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
               <div className="flex gap-2">
-                <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">⭐ {score}</span>
-                <span className="bg-white/5 px-3 py-1.5 rounded-lg text-orange-400 font-bold text-sm">🔥 {streak}</span>
+                <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">⭐ {formatNumber(score)}</span>
+                <span className="bg-white/5 px-3 py-1.5 rounded-lg text-orange-400 font-bold text-sm">🔥 {formatNumber(streak)}</span>
                 <span className="bg-white/5 px-3 py-1.5 rounded-lg text-blue-400 font-bold text-sm">{getCatEmoji(question.category)}</span>
               </div>
               <motion.span
@@ -220,7 +230,7 @@ export default function MentalMathBlitz() {
                 animate={timeLeft <= 10 ? { scale: [1, 1.2, 1] } : {}}
                 transition={{ duration: 0.5, repeat: Infinity }}
               >
-                ⏱️ {timeLeft}s
+                ⏱️ {formatNumber(timeLeft)}s
               </motion.span>
             </div>
 
@@ -238,7 +248,7 @@ export default function MentalMathBlitz() {
               transition={{ type: 'spring' }}
             >
               <span className="text-sm bg-purple-500/30 text-purple-300 px-2 py-0.5 rounded-full">
-                {question.category.toUpperCase()} · Lv{question.difficulty}
+                {question.category.toUpperCase()} · Lv{formatNumber(question.difficulty)}
               </span>
               <p className="text-3xl sm:text-4xl font-bold text-white mt-4 mb-6 font-mono">{question.display}</p>
 
@@ -257,13 +267,13 @@ export default function MentalMathBlitz() {
                     onClick={() => handleAnswer(opt)}
                     disabled={feedback !== null}
                   >
-                    {opt}
+                    {formatNumber(opt)}
                   </motion.button>
                 ))}
               </div>
 
               {feedback === 'correct' && <motion.p className="mt-3 text-green-400 font-bold" initial={{ scale: 0 }} animate={{ scale: 1 }}>✨ Correct!</motion.p>}
-              {feedback === 'wrong' && <p className="mt-3 text-red-400 font-bold">❌ Answer: {question.answer}</p>}
+              {feedback === 'wrong' && <p className="mt-3 text-red-400 font-bold">❌ Answer: {formatNumber(question.answer)}</p>}
             </motion.div>
           </motion.div>
         )}
@@ -275,10 +285,10 @@ export default function MentalMathBlitz() {
               <h3 className="text-3xl font-bold text-white mb-4">Blitz Complete!</h3>
               <div className="space-y-3 mb-6">
                 {[
-                  { label: '⭐ Score', value: score, color: 'text-yellow-400' },
-                  { label: '✅ Accuracy', value: `${total > 0 ? Math.round((correct / total) * 100) : 0}%`, color: 'text-green-400' },
-                  { label: '🔥 Best Streak', value: maxStreak, color: 'text-orange-400' },
-                  { label: '📊 Questions', value: `${correct}/${total}`, color: 'text-blue-400' },
+                  { label: '⭐ Score', value: formatNumber(score), color: 'text-yellow-400' },
+                  { label: '✅ Accuracy', value: `${formatNumber(total > 0 ? Math.round((correct / total) * 100) : 0)}%`, color: 'text-green-400' },
+                  { label: '🔥 Best Streak', value: formatNumber(maxStreak), color: 'text-orange-400' },
+                  { label: '📊 Questions', value: `${formatNumber(correct)}/${formatNumber(total)}`, color: 'text-blue-400' },
                 ].map(s => (
                   <div key={s.label} className="flex justify-between items-center bg-white/5 rounded-xl px-4 py-3">
                     <span className="text-gray-400">{s.label}</span>

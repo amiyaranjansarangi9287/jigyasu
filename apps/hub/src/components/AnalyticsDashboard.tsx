@@ -5,8 +5,10 @@
 import { useState, useEffect } from 'react';
 import { db } from '../learnos/db';
 import type { LearningEvent } from '../learnos/types/events';
+import { useTranslation } from 'react-i18next';
 
 export default function AnalyticsDashboard() {
+  const { t } = useTranslation();
   const [events, setEvents] = useState<LearningEvent[]>([]);
   const [eventCounts, setEventCounts] = useState<Record<string, number>>({});
   const [sessionCount, setSessionCount] = useState(0);
@@ -45,10 +47,10 @@ export default function AnalyticsDashboard() {
     return (
       <button
         onClick={() => setIsVisible(true)}
-        className="fixed bottom-4 right-4 bg-slate-800 text-white px-4 py-2 rounded-lg text-sm font-bold z-[100] hover:bg-slate-700 transition-colors"
+        className="fixed bottom-20 right-6 bg-slate-800 text-white px-4 py-2 rounded-lg text-sm font-bold z-[100] hover:bg-slate-700 transition-colors"
         aria-label="Open Analytics Dashboard"
       >
-        📊 Analytics
+        📊 {t('floating_buttons.analytics', 'Analytics')}
       </button>
     );
   }

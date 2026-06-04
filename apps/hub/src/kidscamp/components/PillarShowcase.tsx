@@ -1,8 +1,9 @@
 // CampCraft - Pillar Showcase Section
 
 import { pillars } from '../data/categories';
-import { activities } from '../data/activities';
+import { useLocalizedActivities } from '../../hooks/useLocalizedData';
 import { useReveal } from '../hooks/useReveal';
+import { useTranslation } from 'react-i18next';
 
 interface PillarShowcaseProps {
   onSelectPillar: (pillarId: string) => void;
@@ -11,6 +12,8 @@ interface PillarShowcaseProps {
 
 export default function PillarShowcase({ onSelectPillar, selectedAge }: PillarShowcaseProps) {
   const { ref, isVisible } = useReveal<HTMLDivElement>();
+  const { activities } = useLocalizedActivities();
+  const { t } = useTranslation();
 
   const getActivityCount = (pillarId: string) => {
     let filtered = activities.filter(a => a.pillar === pillarId);
@@ -28,26 +31,26 @@ export default function PillarShowcase({ onSelectPillar, selectedAge }: PillarSh
 
   const pillarExtras = {
     toybox: {
-      tagline: 'Build amazing handcrafted toys',
-      preview: ['Wooden Cars', 'Puppets', 'Puzzles'],
+      tagline: t('pillar_showcase.toybox.tagline', 'Build amazing handcrafted toys'),
+      preview: [t('pillar_showcase.toybox.preview.0', 'Wooden Cars'), t('pillar_showcase.toybox.preview.1', 'Puppets'), t('pillar_showcase.toybox.preview.2', 'Puzzles')],
       image: '/images/blocks.webp',
       colSpan: 'md:col-span-1'
     },
     sciencelab: {
-      tagline: 'Run interactive simulations & experiments',
-      preview: ['Physics Lab', 'Chemistry Lab', 'Biology Lab', 'Cosmos Lab'],
+      tagline: t('pillar_showcase.sciencelab.tagline', 'Run interactive simulations & experiments'),
+      preview: [t('pillar_showcase.sciencelab.preview.0', 'Physics Lab'), t('pillar_showcase.sciencelab.preview.1', 'Chemistry Lab'), t('pillar_showcase.sciencelab.preview.2', 'Biology Lab'), t('pillar_showcase.sciencelab.preview.3', 'Cosmos Lab')],
       image: '/images/volcano.webp',
       colSpan: 'md:col-span-2'
     },
     artstudio: {
-      tagline: 'Express your creativity',
-      preview: ['Painting', 'Origami', 'Sculpture'],
+      tagline: t('pillar_showcase.artstudio.tagline', 'Express your creativity'),
+      preview: [t('pillar_showcase.artstudio.preview.0', 'Painting'), t('pillar_showcase.artstudio.preview.1', 'Origami'), t('pillar_showcase.artstudio.preview.2', 'Sculpture')],
       image: '/images/finger-paint.webp',
       colSpan: 'md:col-span-1'
     },
     outdoorquest: {
-      tagline: 'Explore nature and adventure',
-      preview: ['Scavenger Hunts', 'Gardening', 'Stargazing'],
+      tagline: t('pillar_showcase.outdoorquest.tagline', 'Explore nature and adventure'),
+      preview: [t('pillar_showcase.outdoorquest.preview.0', 'Scavenger Hunts'), t('pillar_showcase.outdoorquest.preview.1', 'Gardening'), t('pillar_showcase.outdoorquest.preview.2', 'Stargazing')],
       image: '/images/nature-hunt.webp',
       colSpan: 'md:col-span-2'
     }
@@ -65,14 +68,10 @@ export default function PillarShowcase({ onSelectPillar, selectedAge }: PillarSh
         >
           <div className="inline-flex items-center gap-2 bg-orange-100 dark:bg-orange-900/30 rounded-full px-4 py-2 mb-4">
             <span className="text-xl">🛠️</span>
-            <span className="text-sm font-bold text-orange-600 dark:text-orange-400 uppercase tracking-widest">Interactive Learning</span>
+            <span className="text-sm font-bold text-orange-600 dark:text-orange-400 uppercase tracking-widest">{t('pillar_showcase.interactive_learning', 'Interactive Learning')}</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-black text-gray-900 dark:text-white mb-6 tracking-tight">
-            Explore Interactive Environments
-          </h2>
-          <p className="text-gray-600 dark:text-gray-400 text-lg md:text-xl max-w-3xl mx-auto font-medium">
-            Dive into our hands-on simulation labs, digital art studios, and physical maker spaces. Learn by doing, building, and experimenting.
-          </p>
+          <h2 className="text-4xl md:text-5xl font-black text-gray-900 dark:text-white mb-6 tracking-tight">{t('pillar_showcase.explore', 'Explore Interactive Environments')}</h2>
+          <p className="text-gray-600 dark:text-gray-400 text-lg md:text-xl max-w-3xl mx-auto font-medium">{t('pillar_showcase.dive_into', 'Dive into our hands-on simulation labs, digital art studios, and physical maker spaces. Learn by doing, building, and experimenting.')}</p>
         </div>
 
         {/* Bento Box Grid */}
@@ -96,7 +95,7 @@ export default function PillarShowcase({ onSelectPillar, selectedAge }: PillarSh
                 <div className="absolute inset-0 w-full h-full">
                   <img
                     src={extras.image}
-                    alt={pillar.name}
+                    alt={t(`pillar_${pillar.id}` as any, pillar.name)}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     onError={(e) => {
                       e.currentTarget.src = '/images/fallback-placeholder.png';
@@ -114,14 +113,12 @@ export default function PillarShowcase({ onSelectPillar, selectedAge }: PillarSh
                   <span className="text-3xl">{pillar.icon}</span>
                 </div>
                 <div className="absolute top-6 right-6 px-4 py-2 rounded-full bg-white/20 backdrop-blur-md border border-white/30 shadow-lg">
-                  <span className="text-sm font-bold text-white tracking-wide">{count} Labs</span>
+                  <span className="text-sm font-bold text-white tracking-wide">{count} {t('pillar_showcase.labs', 'Labs')}</span>
                 </div>
 
                 {/* Bottom Overlay: Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-8 transform transition-transform duration-500">
-                  <h3 className="text-3xl font-bold text-white mb-2 group-hover:-translate-y-1 transition-transform duration-300">
-                    {pillar.name}
-                  </h3>
+                  <h3 className="text-3xl font-bold text-white mb-2 group-hover:-translate-y-1 transition-transform duration-300">{t(`pillar_${pillar.id}` as any, pillar.name)}</h3>
                   <p className="text-white/80 text-base md:text-lg mb-6 group-hover:-translate-y-1 transition-transform duration-300 delay-75 max-w-md">
                     {extras.tagline}
                   </p>
@@ -137,7 +134,7 @@ export default function PillarShowcase({ onSelectPillar, selectedAge }: PillarSh
                       </span>
                     ))}
                     <div className="ml-auto flex items-center text-sm font-bold text-white bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/30 group-hover:bg-white group-hover:text-slate-900 transition-colors">
-                      Enter Lab
+                      {t('pillar_showcase.enter_lab', 'Enter Lab')}
                       <svg
                         className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
                         fill="none"

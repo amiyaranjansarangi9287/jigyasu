@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { useMathFeedback } from '../lib/MathContext';
 
 interface Challenge {
@@ -142,6 +143,7 @@ function generateDailyChallenge(day: number): Challenge {
 }
 
 export default function DailyChallenge() {
+  const { t } = useTranslation();
   const math = useMathFeedback();
   const [completed, setCompleted] = useState(false);
   const [selected, setSelected] = useState<number | null>(null);
@@ -207,22 +209,22 @@ export default function DailyChallenge() {
   return (
     <div className="max-w-lg mx-auto">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🎯 Daily Challenge</h2>
-        <p className="text-purple-300 text-lg">A new challenge every day!</p>
+        <h2 className="text-3xl font-bold text-white mb-2">{t('math_modules.DailyChallenge.title', '🎯 Daily Challenge')}</h2>
+        <p className="text-purple-300 text-lg">{t('math_modules.DailyChallenge.subtitle', 'A new challenge every day!')}</p>
       </div>
 
       {/* Stats */}
       <div className="flex justify-center gap-4 mb-6">
         <div className="bg-white/5 rounded-xl px-4 py-2 border border-white/10 text-center">
-          <p className="text-gray-400 text-sm">Day</p>
+          <p className="text-gray-400 text-sm">{t('math_modules.DailyChallenge.day', 'Day')}</p>
           <p className="text-white font-bold">#{day}</p>
         </div>
         <div className="bg-orange-500/10 rounded-xl px-4 py-2 border border-orange-500/20 text-center">
-          <p className="text-gray-400 text-sm">Streak</p>
+          <p className="text-gray-400 text-sm">{t('math_modules.DailyChallenge.streak', 'Streak')}</p>
           <p className="text-orange-400 font-bold">🔥 {streak}</p>
         </div>
         <div className="bg-white/5 rounded-xl px-4 py-2 border border-white/10 text-center">
-          <p className="text-gray-400 text-sm">Resets in</p>
+          <p className="text-gray-400 text-sm">{t('math_modules.DailyChallenge.resetsIn', 'Resets in')}</p>
           <p className="text-white font-bold">{getTimeUntilReset()}</p>
         </div>
       </div>
@@ -268,7 +270,7 @@ export default function DailyChallenge() {
         {!completed && !showHint && (
           <button className="w-full mt-4 text-sm text-purple-400 hover:text-purple-300 underline decoration-dashed"
             onClick={() => setShowHint(true)}>
-            💡 Need a hint?
+            {t('math_modules.DailyChallenge.needHint', '💡 Need a hint?')}
           </button>
         )}
         {showHint && !completed && (
@@ -284,9 +286,9 @@ export default function DailyChallenge() {
             <motion.div className="mt-6 text-center"
               initial={{ scale: 0 }} animate={{ scale: 1 }}>
               <span className="text-5xl">🏆</span>
-              <p className="text-green-400 font-bold text-xl mt-2">Daily Challenge Complete!</p>
+              <p className="text-green-400 font-bold text-xl mt-2">{t('math_modules.DailyChallenge.complete', 'Daily Challenge Complete!')}</p>
               <p className="text-gray-400 text-sm mt-1">{challenge.explanation}</p>
-              <p className="text-orange-400 font-bold mt-2">🔥 {streak} day streak!</p>
+              <p className="text-orange-400 font-bold mt-2">{t('math_modules.DailyChallenge.streakDays', '🔥 {{streak}} day streak!', { streak })}</p>
             </motion.div>
           )}
         </AnimatePresence>
@@ -294,7 +296,7 @@ export default function DailyChallenge() {
 
       {completed && (
         <p className="text-center text-gray-500 mt-4 text-sm">
-          Come back tomorrow for a new challenge! ⏰
+          {t('math_modules.DailyChallenge.comeBack', 'Come back tomorrow for a new challenge! ⏰')}
         </p>
       )}
     </div>

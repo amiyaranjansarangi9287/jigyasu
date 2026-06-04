@@ -7,3 +7,6 @@ export * from './Navbar';
 export * from './Footer';
 export * from './Hero';
 export * from './ErrorBoundary';
+export * from './Button';
+export * from './Card';
+export * from './Badge';

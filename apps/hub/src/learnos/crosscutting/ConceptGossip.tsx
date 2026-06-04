@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { ROUTES } from '../constants/routes';
 import { ParentCorner } from '../shared/layout';
-import { Button } from '../shared/ui';
+import { Button, Card } from '@jigyasu/ui';
 import { CONCEPT_GOSSIPS, ConceptConversation } from './data/conceptGossipContent';
 
 export default function ConceptGossip() {
@@ -93,29 +93,31 @@ export default function ConceptGossip() {
 
               <div className="space-y-3">
                 {CONCEPT_GOSSIPS.map((gossip, i) => (
-                  <motion.button
+                  <motion.div
                     key={gossip.id}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: i * 0.05 }}
-                    onClick={() => handleSelect(gossip)}
-                    className="w-full p-4 bg-white rounded-2xl border-2 border-gray-200
-                               hover:border-rose-200 hover:bg-rose-50 transition-all
-                               text-left min-h-[72px]"
                   >
-                    <div className="flex items-center gap-3">
-                      <span className="text-3xl">{gossip.emojiA}</span>
-                      <span className="text-gray-300">↔</span>
-                      <span className="text-3xl">{gossip.emojiB}</span>
-                      <div className="flex-1 ml-2">
-                        <p className="font-bold text-gray-800 text-sm">
-                          {gossip.conceptA} & {gossip.conceptB}
-                        </p>
-                        <p className="text-sm text-gray-400">{gossip.unlocksWhen}</p>
+                    <Card
+                      hoverable
+                      onClick={() => handleSelect(gossip)}
+                      className="w-full p-4 text-left min-h-[72px] border-transparent hover:border-rose-200 hover:bg-rose-50 transition-all"
+                    >
+                      <div className="flex items-center gap-3">
+                        <span className="text-3xl">{gossip.emojiA}</span>
+                        <span className="text-gray-300">↔</span>
+                        <span className="text-3xl">{gossip.emojiB}</span>
+                        <div className="flex-1 ml-2">
+                          <p className="font-bold text-gray-800 text-sm">
+                            {gossip.conceptA} & {gossip.conceptB}
+                          </p>
+                          <p className="text-sm text-gray-400">{gossip.unlocksWhen}</p>
+                        </div>
+                        <span className="text-gray-300">→</span>
                       </div>
-                      <span className="text-gray-300">→</span>
-                    </div>
-                  </motion.button>
+                    </Card>
+                  </motion.div>
                 ))}
               </div>
             </motion.div>
@@ -137,7 +139,7 @@ export default function ConceptGossip() {
                 ← {t('crosscutting.concept_gossip.next_conv')}
               </button>
 
-              <div className="bg-white rounded-3xl p-6 shadow-sm mb-4">
+              <Card className="p-6 mb-4 border-rose-100/50">
                 <div className="flex items-center justify-center gap-4 mb-6">
                   <span className="text-4xl">{selectedGossip.emojiA}</span>
                   <span className="text-2xl text-rose-400">💬</span>
@@ -170,20 +172,20 @@ export default function ConceptGossip() {
                     );
                   })}
                 </div>
-              </div>
+              </Card>
 
               <div className="flex gap-3">
                 <Button
                   onClick={handleNextLine}
                   variant="secondary"
                   disabled={currentLine >= selectedGossip.dialogue.length - 1}
-                  fullWidth
+                  className="flex-1"
                 >
                   {t('crosscutting.concept_gossip.next')} →
                 </Button>
                 <Button
                   onClick={handleAutoPlay}
-                  fullWidth
+                  className="flex-1"
                 >
                   {isPlaying ? '⏸ Pause' : '▶ Auto-play'}
                 </Button>

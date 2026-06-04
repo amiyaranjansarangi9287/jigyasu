@@ -1,9 +1,10 @@
 // CampCraft - Camp Week Modal (Full Week Experience)
 
 import { getCampWeekById } from '../data/campWeeks';
-import { getActivityById, Activity } from '../data/activities';
+import { Activity } from '../data/activities.en';
 import { useCampWeekProgress } from '../hooks/useCampWeekProgress';
-
+import { useLocalizedActivities } from '../../hooks/useLocalizedData';
+import { useTranslation } from 'react-i18next';
 
 interface CampWeekModalProps {
   weekId: string;
@@ -18,8 +19,10 @@ export default function CampWeekModal({
   onStartActivity,
   getActivityStatus
 }: CampWeekModalProps) {
+  const { t } = useTranslation();
   const week = getCampWeekById(weekId);
   const { progress, startWeek, completeDay, isCompleted } = useCampWeekProgress(weekId);
+  const { getActivityById } = useLocalizedActivities();
 
   if (!week) {
     return null;
@@ -95,17 +98,15 @@ export default function CampWeekModal({
             <div className="text-6xl">{week.icon}</div>
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-1">
-                <h2 className="text-2xl font-bold text-white">{week.name}</h2>
+                <h2 className="text-2xl font-bold text-white">{t(`kidscamp.campWeeks.${week.id}.name`, week.name)}</h2>
                 {isCompleted && (
                   <span className="px-2 py-1 rounded-full bg-white/20 text-white text-sm flex items-center gap-1">
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    Completed!
-                  </span>
+                    </svg>{t('kidscamp.modal.completed_excl', 'Completed!')}</span>
                 )}
               </div>
-              <p className="text-white/80 text-sm mb-3">{week.description}</p>
+              <p className="text-white/80 text-sm mb-3">{t(`kidscamp.campWeeks.${week.id}.description`, week.description)}</p>
               
               {/* Progress bar */}
               <div className="flex items-center gap-3">
@@ -116,7 +117,7 @@ export default function CampWeekModal({
                   />
                 </div>
                 <span className="text-white font-medium text-sm">
-                  {completedDaysCount}/5 days
+                  {completedDaysCount}/5 {t('kidscamp.modal.days', 'days')}
                 </span>
               </div>
             </div>
@@ -146,7 +147,7 @@ export default function CampWeekModal({
                 >
                   {isShowcase && (
                     <span className="absolute -top-2 -right-2 px-2 py-0.5 rounded-full bg-gradient-to-r from-yellow-400 to-orange-400 text-white text-sm font-bold shadow-lg">
-                      ⭐ Showcase
+                      ⭐ {t('kidscamp.modal.showcase', 'Showcase')}
                     </span>
                   )}
 
@@ -167,7 +168,7 @@ export default function CampWeekModal({
                         </svg>
                       ) : (
                         <>
-                          <span className="text-sm font-medium opacity-70">Day</span>
+                          <span className="text-sm font-medium opacity-70">{t('kidscamp.modal.day', 'Day')}</span>
                           <span className="text-xl font-bold">{day.day}</span>
                         </>
                       )}
@@ -190,10 +191,10 @@ export default function CampWeekModal({
                           ? 'text-green-700 dark:text-green-300'
                           : 'text-gray-900 dark:text-white'
                       }`}>
-                        {day.title}
+                        {t(`kidscamp.campWeeks.${week.id}.day${day.day}.title`, day.title)}
                       </h4>
                       <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">
-                        {day.description}
+                        {t(`kidscamp.campWeeks.${week.id}.day${day.day}.description`, day.description)}
                       </p>
                       {activity && (
                         <p className="text-sm text-gray-500 mt-1">
@@ -213,9 +214,9 @@ export default function CampWeekModal({
                           : 'btn-secondary'
                       }`}
                     >
-                      {status === 'completed' ? '✓ Done' :
-                       status === 'in-progress' ? '▶ Continue' :
-                       isNext ? '🚀 Start' : 'Preview'}
+                      {status === 'completed' ? t('kidscamp.modal.done', '✓ Done') :
+                       status === 'in-progress' ? t('kidscamp.modal.continue', '▶ Continue') :
+                       isNext ? t('kidscamp.modal.start', '🚀 Start') : t('kidscamp.modal.preview', 'Preview')}
                     </button>
                   </div>
                 </div>
@@ -234,28 +235,22 @@ export default function CampWeekModal({
                   key={i}
                   className="px-3 py-1.5 rounded-xl bg-white dark:bg-blue-800/50 text-blue-700 dark:text-blue-200 text-sm"
                 >
-                  {material}
+                  {t(`kidscamp.campWeeks.${week.id}.mat_${i}`, material)}
                 </span>
               ))}
             </div>
-            <p className="text-sm text-blue-600 dark:text-blue-300 mt-3">
-              💡 Tip: Gather all materials at the start of the week for a smoother experience!
-            </p>
+            <p className="text-sm text-blue-600 dark:text-blue-300 mt-3">{t('kidscamp.modal.tip_gather', '💡 Tip: Gather all materials at the start of the week for a smoother experience!')}</p>
           </div>
 
           {/* Completion Message */}
           {isCompleted && (
             <div className="bg-gradient-to-r from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/30 rounded-2xl p-6 text-center">
               <div className="text-5xl mb-3">🎉</div>
-              <h4 className="text-xl font-bold text-green-800 dark:text-green-200 mb-2">
-                Week Complete!
-              </h4>
+              <h4 className="text-xl font-bold text-green-800 dark:text-green-200 mb-2">{t('kidscamp.modal.week_complete', 'Week Complete!')}</h4>
               <p className="text-green-700 dark:text-green-300 mb-4">
-                Amazing job completing {week.name}! You've earned the {week.icon} badge!
+                {t('kidscamp.modal.amazing_job', 'Amazing job completing')} {t(`kidscamp.campWeeks.${week.id}.name`, week.name)}! {t('kidscamp.modal.earned', 'You\'ve earned the')} {week.icon} {t('kidscamp.modal.badge', 'badge!')}
               </p>
-              <button onClick={onClose} className="btn btn-primary">
-                Continue Exploring
-              </button>
+              <button onClick={onClose} className="btn btn-primary">{t('kidscamp.modal.continue_exploring', 'Continue Exploring')}</button>
             </div>
           )}
 
@@ -263,9 +258,9 @@ export default function CampWeekModal({
           {!isCompleted && nextDay && (
             <div className="flex items-center justify-between p-4 bg-orange-50 dark:bg-orange-900/20 rounded-2xl">
               <div>
-                <p className="text-sm text-orange-600 dark:text-orange-300">Ready for your next activity?</p>
+                <p className="text-sm text-orange-600 dark:text-orange-300">{t('kidscamp.modal.ready_next', 'Ready for your next activity?')}</p>
                 <p className="font-bold text-gray-900 dark:text-white">
-                  Day {nextDay}: {week.days.find(d => d.day === nextDay)?.title}
+                  {t('kidscamp.modal.day', 'Day')} {nextDay}: {t(`kidscamp.campWeeks.${week.id}.day${nextDay}.title`, week.days.find(d => d.day === nextDay)?.title || '')}
                 </p>
               </div>
               <button
@@ -274,9 +269,7 @@ export default function CampWeekModal({
                   if (day) handleStartDayActivity(day);
                 }}
                 className="btn btn-primary"
-              >
-                🚀 Start Day {nextDay}
-              </button>
+              >{t('kidscamp.modal.start_day', '🚀 Start Day')} {nextDay}</button>
             </div>
           )}
         </div>

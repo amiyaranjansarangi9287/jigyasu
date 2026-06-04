@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 type Topic = 'addition' | 'subtraction' | 'multiplication' | 'division' | 'mixed' | 'fractions' | 'algebra' | 'exponents';
 
@@ -25,6 +26,7 @@ function generate(topic: Topic, count: number, maxNum: number): WorksheetProblem
 }
 
 export default function WorksheetGenerator() {
+  const { t } = useTranslation();
   const [topic, setTopic] = useState<Topic>('mixed');
   const [count, setCount] = useState(12);
   const [maxNum, setMaxNum] = useState(20);
@@ -34,14 +36,14 @@ export default function WorksheetGenerator() {
   const problems = useMemo(() => generated ? generate(topic, count, maxNum) : [], [generated, topic, count, maxNum]);
 
   const topics: { id: Topic; label: string; emoji: string }[] = [
-    { id: 'addition', label: 'Addition', emoji: '➕' },
-    { id: 'subtraction', label: 'Subtraction', emoji: '➖' },
-    { id: 'multiplication', label: 'Multiplication', emoji: '✖️' },
-    { id: 'division', label: 'Division', emoji: '➗' },
-    { id: 'mixed', label: 'Mixed', emoji: '🎲' },
-    { id: 'fractions', label: 'Fractions', emoji: '🍕' },
-    { id: 'algebra', label: 'Algebra', emoji: '🧮' },
-    { id: 'exponents', label: 'Exponents', emoji: '⚡' },
+    { id: 'addition', label: t('math_modules.WorksheetGenerator.topics.addition', 'Addition'), emoji: '➕' },
+    { id: 'subtraction', label: t('math_modules.WorksheetGenerator.topics.subtraction', 'Subtraction'), emoji: '➖' },
+    { id: 'multiplication', label: t('math_modules.WorksheetGenerator.topics.multiplication', 'Multiplication'), emoji: '✖️' },
+    { id: 'division', label: t('math_modules.WorksheetGenerator.topics.division', 'Division'), emoji: '➗' },
+    { id: 'mixed', label: t('math_modules.WorksheetGenerator.topics.mixed', 'Mixed'), emoji: '🎲' },
+    { id: 'fractions', label: t('math_modules.WorksheetGenerator.topics.fractions', 'Fractions'), emoji: '🍕' },
+    { id: 'algebra', label: t('math_modules.WorksheetGenerator.topics.algebra', 'Algebra'), emoji: '🧮' },
+    { id: 'exponents', label: t('math_modules.WorksheetGenerator.topics.exponents', 'Exponents'), emoji: '⚡' },
   ];
 
   const handlePrint = () => {
@@ -51,14 +53,14 @@ export default function WorksheetGenerator() {
   return (
     <div className="w-full">
       <div className="text-center mb-6 print:hidden">
-        <h2 className="text-3xl font-bold text-white mb-2">📝 Worksheet Generator</h2>
-        <p className="text-purple-300 text-lg">Generate printable practice sheets for any topic!</p>
+        <h2 className="text-3xl font-bold text-white mb-2">{t('math_modules.WorksheetGenerator.title', '📝 Worksheet Generator')}</h2>
+        <p className="text-purple-300 text-lg">{t('math_modules.WorksheetGenerator.subtitle', 'Generate printable practice sheets for any topic!')}</p>
       </div>
 
       {/* Controls — hidden when printing */}
       <div className="no-print space-y-4 max-w-2xl mx-auto mb-6">
         <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
-          <h4 className="text-white font-bold mb-3">Choose Topic</h4>
+          <h4 className="text-white font-bold mb-3">{t('math_modules.WorksheetGenerator.chooseTopic', 'Choose Topic')}</h4>
           <div className="flex flex-wrap gap-2">
             {topics.map(t => (
               <button key={t.id}
@@ -70,12 +72,12 @@ export default function WorksheetGenerator() {
 
         <div className="bg-white/5 rounded-2xl p-5 border border-white/10 grid grid-cols-2 gap-4">
           <div>
-            <label className="text-gray-400 text-sm">Number of problems</label>
+            <label className="text-gray-400 text-sm">{t('math_modules.WorksheetGenerator.numProblems', 'Number of problems')}</label>
             <input type="range" min="6" max="30" step="2" value={count} onChange={e => { setCount(Number(e.target.value)); setGenerated(false); }} className="w-full accent-purple-500 mt-1" />
             <p className="text-white font-bold text-center">{count}</p>
           </div>
           <div>
-            <label className="text-gray-400 text-sm">Max number</label>
+            <label className="text-gray-400 text-sm">{t('math_modules.WorksheetGenerator.maxNum', 'Max number')}</label>
             <input type="range" min="10" max="100" step="5" value={maxNum} onChange={e => { setMaxNum(Number(e.target.value)); setGenerated(false); }} className="w-full accent-blue-500 mt-1" />
             <p className="text-white font-bold text-center">{maxNum}</p>
           </div>
@@ -88,7 +90,7 @@ export default function WorksheetGenerator() {
             whileTap={{ scale: 0.95 }}
             onClick={() => setGenerated(true)}
           >
-            📄 Generate Worksheet
+            {t('math_modules.WorksheetGenerator.generate', '📄 Generate Worksheet')}
           </motion.button>
           {generated && (
             <>
@@ -98,14 +100,14 @@ export default function WorksheetGenerator() {
                 whileTap={{ scale: 0.95 }}
                 onClick={handlePrint}
               >
-                🖨️ Print
+                {t('math_modules.WorksheetGenerator.print', '🖨️ Print')}
               </motion.button>
               <motion.button
                 className={`px-4 py-3 rounded-xl text-sm font-bold ${showAnswers ? 'bg-green-500/20 text-green-300' : 'bg-white/10 text-gray-400'}`}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setShowAnswers(!showAnswers)}
               >
-                {showAnswers ? '🙈 Hide' : '👁️ Answers'}
+                {showAnswers ? t('math_modules.WorksheetGenerator.hideAnswers', '🙈 Hide') : t('math_modules.WorksheetGenerator.showAnswers', '👁️ Answers')}
               </motion.button>
             </>
           )}
@@ -118,10 +120,10 @@ export default function WorksheetGenerator() {
           {/* Header */}
           <div className="text-center mb-6 pb-4 border-b border-white/10">
             <h3 className="text-2xl font-bold text-white">
-              📝 Math Worksheet — {topics.find(t => t.id === topic)?.label}
+              {t('math_modules.WorksheetGenerator.worksheetTitle', '📝 Math Worksheet — {{topic}}', { topic: topics.find(t_ => t_.id === topic)?.label })}
             </h3>
             <p className="print-subtext text-gray-400 text-sm mt-1">
-              Name: _________________ &nbsp;&nbsp; Date: _________________ &nbsp;&nbsp; Score: ___/{count}
+              {t('math_modules.WorksheetGenerator.name', 'Name')}: _________________ &nbsp;&nbsp; {t('math_modules.WorksheetGenerator.date', 'Date')}: _________________ &nbsp;&nbsp; {t('math_modules.WorksheetGenerator.score', 'Score')}: ___/{count}
             </p>
           </div>
 
@@ -147,7 +149,7 @@ export default function WorksheetGenerator() {
           {/* Footer */}
           <div className="mt-8 pt-4 border-t border-white/10 text-center">
             <p className="print-subtext text-gray-500 text-sm">
-              Generated by Whimsical Math Kingdom 🧙‍♂️ • {new Date().toLocaleDateString()}
+              {t('math_modules.WorksheetGenerator.generatedBy', 'Generated by Whimsical Math Kingdom 🧙‍♂️')} • {new Date().toLocaleDateString()}
             </p>
           </div>
         </div>

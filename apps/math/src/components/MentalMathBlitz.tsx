@@ -117,10 +117,18 @@ export default function MentalMathBlitz() {
 
   useEffect(() => {
     if (gameState !== 'playing') return;
-    if (timeLeft <= 0) { setGameState('results'); return; }
-    const t = setInterval(() => setTimeLeft(v => v - 1), 1000);
+    const t = setInterval(() => {
+      setTimeLeft(v => {
+        if (v <= 1) {
+          clearInterval(t);
+          setGameState('results');
+          return 0;
+        }
+        return v - 1;
+      });
+    }, 1000);
     return () => clearInterval(t);
-  }, [gameState, timeLeft]);
+  }, [gameState]);
 
   const handleAnswer = (opt: number) => {
     if (feedback || !question) return;

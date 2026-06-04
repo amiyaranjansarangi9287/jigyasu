@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-
+import { Button } from '@jigyasu/ui';
 type Props = {
   onDeleteComplete?: () => void;
 };
@@ -43,24 +43,24 @@ export default function DataDeletionButton({ onDeleteComplete }: Props) {
     return (
       <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6 max-w-lg mx-auto" role="dialog" aria-labelledby="instructions-title">
         <h3 id="instructions-title" className="text-lg font-bold text-amber-900 mb-3">
-          How to Clear Browser Data
+          {t('clear_browser_data', 'How to Clear Browser Data')}
         </h3>
         <div className="space-y-3 text-sm text-amber-800">
-          <p><strong>Chrome/Edge:</strong> Settings → Privacy → Clear browsing data</p>
-          <p><strong>Firefox:</strong> Options → Privacy → Clear Data</p>
-          <p><strong>Safari:</strong> Preferences → Privacy → Manage Website Data</p>
+          <p><strong>{t('chrome_edge', 'Chrome/Edge')}:</strong> {t('clear_chrome', 'Settings → Privacy → Clear browsing data')}</p>
+          <p><strong>{t('firefox', 'Firefox')}:</strong> {t('clear_firefox', 'Options → Privacy → Clear Data')}</p>
+          <p><strong>{t('safari', 'Safari')}:</strong> {t('clear_safari', 'Preferences → Privacy → Manage Website Data')}</p>
           <p className="mt-4 text-amber-700">
-            Select "Cookies and site data" and "Cached images and files" then click Clear.
+            {t('clear_instructions_step', 'Select "Cookies and site data" and "Cached images and files" then click Clear.')}
           </p>
         </div>
-        <button
+        <Button
           onClick={() => setShowInstructions(false)}
-          className="mt-4 w-full bg-amber-600 text-white font-bold py-3 rounded-xl hover:bg-amber-700 transition"
-          aria-label="Close browser data instructions"
-          role="button"
+          fullWidth
+          className="mt-4"
+          aria-label={t('close_browser_data_instructions', 'Close browser data instructions')}
         >
-          Got it
-        </button>
+          {t('got_it', 'Got it')}
+        </Button>
       </div>
     );
   }
@@ -69,30 +69,29 @@ export default function DataDeletionButton({ onDeleteComplete }: Props) {
     return (
       <div className="bg-red-50 border border-red-200 rounded-2xl p-6 max-w-lg mx-auto" role="alertdialog" aria-labelledby="confirm-title" aria-describedby="confirm-desc">
         <h3 id="confirm-title" className="text-lg font-bold text-red-900 mb-3">
-          <span aria-hidden="true">⚠️</span> Are you sure?
+          <span aria-hidden="true">⚠️</span> {t('are_you_sure', 'Are you sure?')}
         </h3>
         <p id="confirm-desc" className="text-sm text-red-800 mb-4">
-          This will permanently delete all your learning progress, profile, and settings. 
-          This action cannot be undone.
+          {t('delete_warning', 'This will permanently delete all your learning progress, profile, and settings. This action cannot be undone.')}
         </p>
         <div className="space-y-2">
-          <button
+          <Button
             onClick={handleDelete}
             disabled={isDeleting}
-            className="w-full bg-red-600 text-white font-bold py-3 rounded-xl hover:bg-red-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
-            aria-label="Confirm delete all data"
-            role="button"
+            variant="danger"
+            fullWidth
+            aria-label={t('confirm_delete_all_data', 'Confirm delete all data')}
           >
-            {isDeleting ? 'Deleting...' : 'Yes, Delete All My Data'}
-          </button>
-          <button
+            {isDeleting ? t('deleting', 'Deleting...') : t('yes_delete_all_data', 'Yes, Delete All My Data')}
+          </Button>
+          <Button
             onClick={() => setShowConfirm(false)}
-            className="w-full bg-white text-red-700 font-bold py-3 rounded-xl border border-red-300 hover:bg-red-50 transition"
-            aria-label="Cancel data deletion"
-            role="button"
+            variant="outline-danger"
+            fullWidth
+            aria-label={t('cancel_data_deletion', 'Cancel data deletion')}
           >
-            Cancel
-          </button>
+            {t('cancel', 'Cancel')}
+          </Button>
         </div>
       </div>
     );
@@ -101,28 +100,28 @@ export default function DataDeletionButton({ onDeleteComplete }: Props) {
   return (
     <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 max-w-lg mx-auto" role="region" aria-labelledby="delete-title">
       <h3 id="delete-title" className="text-lg font-bold text-slate-900 mb-2">
-        <span aria-hidden="true">🗑️</span> Delete My Data
+        <span aria-hidden="true">🗑️</span> {t('delete_my_data', 'Delete My Data')}
       </h3>
       <p className="text-sm text-slate-600 mb-4">
-        Permanently delete all your learning progress, profile, and settings from this device.
+        {t('delete_data_desc', 'Permanently delete all your learning progress, profile, and settings from this device.')}
       </p>
       <div className="space-y-2">
-        <button
+        <Button
           onClick={() => setShowConfirm(true)}
-          className="w-full bg-red-600 text-white font-bold py-3 rounded-xl hover:bg-red-700 transition"
-          aria-label="Delete all my data"
-          role="button"
+          variant="danger"
+          fullWidth
+          aria-label={t('delete_all_my_data', 'Delete all my data')}
         >
-          Delete All Data
-        </button>
-        <button
-          aria-label="Learn how to clear browser data manually"
-          role="button"
+          {t('delete_all_data', 'Delete All Data')}
+        </Button>
+        <Button
           onClick={handleClearBrowserData}
-          className="w-full bg-white text-slate-700 font-bold py-3 rounded-xl border border-slate-300 hover:bg-slate-50 transition text-sm"
+          variant="secondary"
+          fullWidth
+          aria-label={t('learn_clear_browser_data', 'Learn how to clear browser data manually')}
         >
-          Learn how to clear browser data manually
-        </button>
+          {t('learn_clear_browser_data', 'Learn how to clear browser data manually')}
+        </Button>
       </div>
     </div>
   );

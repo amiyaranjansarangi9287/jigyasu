@@ -67,7 +67,7 @@ export default function LiteraryAnalysis() {
         {/* Question */}
         {tagged.length >= 1 && (
           <div className="bg-slate-800 rounded-2xl p-4 border border-slate-700">
-            <p className="text-white font-bold text-sm mb-3">🦉 {text.q}</p>
+            <p className="text-white font-bold text-sm mb-3">🦚 {text.q}</p>
             <div className="space-y-2">{text.opts.map((opt, i) => (
               <button key={i} onClick={() => answer === null && handleAnswer(i)} className={`w-full py-3 px-4 rounded-xl text-left text-sm font-medium min-h-[44px] transition-all ${answer === null ? 'bg-slate-700 text-slate-300' : i === text.correct ? 'bg-green-900/50 text-green-400' : answer === i ? 'bg-red-900/50 text-red-400' : 'bg-slate-700/50 text-slate-500'}`}>{opt} {answer !== null && i === text.correct && '✓'}</button>
             ))}</div>

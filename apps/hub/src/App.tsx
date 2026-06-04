@@ -136,7 +136,7 @@ function SwipeableRoutes() {
         className="flex-1 flex flex-col w-full h-full"
       >
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<ErrorBoundary><Suspense fallback={<RouteLoading label="Loading..." />}><JigyasuApp /></Suspense></ErrorBoundary>} />
+          <Route path="/" element={<ErrorBoundary><Suspense fallback={<RouteLoading label="Loading..." />}><LandingPage /></Suspense></ErrorBoundary>} />
           <Route path="/profile" element={<ErrorBoundary><ProfilePage /></ErrorBoundary>} />
           <Route path="/about" element={<ErrorBoundary><AboutPage /></ErrorBoundary>} />
           <Route path="/privacy" element={<ErrorBoundary><PrivacyPolicy /></ErrorBoundary>} />

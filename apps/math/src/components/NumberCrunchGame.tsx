@@ -93,15 +93,18 @@ export default function NumberCrunchGame() {
 
   useEffect(() => {
     if (gameState !== 'playing') return;
-    if (timeLeft <= 0) {
-      setGameState('gameover');
-      return;
-    }
     const timer = setInterval(() => {
-      setTimeLeft((prev) => prev - 1);
+      setTimeLeft((prev) => {
+        if (prev <= 1) {
+          clearInterval(timer);
+          setGameState('gameover');
+          return 0;
+        }
+        return prev - 1;
+      });
     }, 1000);
     return () => clearInterval(timer);
-  }, [gameState, timeLeft]);
+  }, [gameState]);
 
   const spawnParticles = (x: number, y: number) => {
     const newParticles = Array.from({ length: 5 }).map(() => ({

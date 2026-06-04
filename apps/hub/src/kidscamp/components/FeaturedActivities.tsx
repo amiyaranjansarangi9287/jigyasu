@@ -1,8 +1,10 @@
 // CampCraft - Featured Activities Section
 
-import { getFeaturedActivities, Activity } from '../data/activities';
+import { Activity } from '../data/activities.en';
 import { pillars } from '../data/categories';
 import { useReveal } from '../hooks/useReveal';
+import { useLocalizedActivities } from '../../hooks/useLocalizedData';
+import { useTranslation } from 'react-i18next';
 
 interface FeaturedActivitiesProps {
   onSelectActivity: (activity: Activity) => void;
@@ -20,6 +22,8 @@ export default function FeaturedActivities({
   getStatus
 }: FeaturedActivitiesProps) {
   const { ref, isVisible } = useReveal<HTMLDivElement>();
+  const { getFeaturedActivities } = useLocalizedActivities();
+  const { t } = useTranslation();
   const featured = getFeaturedActivities().slice(0, 4);
 
   const getPillar = (pillarId: string) => pillars.find(p => p.id === pillarId);
@@ -31,16 +35,12 @@ export default function FeaturedActivities({
         <span className="absolute top-3 left-3 px-2 py-1 rounded-full bg-green-500 text-white text-sm font-medium flex items-center gap-1">
           <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-          </svg>
-          Built
-        </span>
+          </svg>{t('kidscamp.featured.built', 'Built')}</span>
       );
     }
     if (status === 'in-progress') {
       return (
-        <span className="absolute top-3 left-3 px-2 py-1 rounded-full bg-orange-500 text-white text-sm font-medium">
-          In Progress
-        </span>
+        <span className="absolute top-3 left-3 px-2 py-1 rounded-full bg-orange-500 text-white text-sm font-medium">{t('kidscamp.featured.in_progress', 'In Progress')}</span>
       );
     }
     return null;
@@ -48,9 +48,9 @@ export default function FeaturedActivities({
 
   const getButtonText = (activityId: string) => {
     const status = getStatus(activityId);
-    if (status === 'completed') return '🔄 Build Again';
-    if (status === 'in-progress') return '▶ Continue';
-    return '🔨 Start Building';
+    if (status === 'completed') return t('kidscamp.featured.build_again', '🔄 Build Again');
+    if (status === 'in-progress') return t('kidscamp.featured.continue', '▶ Continue');
+    return t('kidscamp.featured.start_building', '🔨 Start Building');
   };
 
   return (
@@ -64,14 +64,10 @@ export default function FeaturedActivities({
         >
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-100 to-pink-100 dark:from-orange-900/30 dark:to-pink-900/30 rounded-full px-4 py-2 mb-4">
             <span>⭐</span>
-            <span className="text-sm font-medium text-orange-700 dark:text-orange-300">Staff Picks</span>
+            <span className="text-sm font-medium text-orange-700 dark:text-orange-300">{t('kidscamp.featured.staff_picks', 'Staff Picks')}</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Featured Activities
-          </h2>
-          <p className="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto">
-            Our most popular projects loved by families everywhere
-          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">{t('kidscamp.featured.title', 'Featured Activities')}</h2>
+          <p className="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto">{t('kidscamp.featured.desc', 'Our most popular projects loved by families everywhere')}</p>
         </div>
 
         {/* Bento Grid Layout */}
@@ -139,9 +135,7 @@ export default function FeaturedActivities({
                     <button
                       onClick={() => onSelectActivity(featured[0])}
                       className="btn bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white/30"
-                    >
-                      View Details
-                    </button>
+                    >{t('kidscamp.featured.view_details', 'View Details')}</button>
                   </div>
                 </div>
               </div>

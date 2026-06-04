@@ -17,7 +17,7 @@ export default function LabReport({ visible, onClose }: Props) {
         <motion.div initial={{ y: 100 }} animate={{ y: 0 }} exit={{ y: 100 }} className="bg-slate-900 rounded-3xl w-full max-w-md max-h-[85vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
           <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-t-3xl px-5 pt-6 pb-5">
             <div className="flex items-center justify-between mb-2"><h2 className="text-xl font-extrabold text-white">Lab Report</h2><button onClick={onClose} className="text-white/60 hover:text-white text-lg">✕</button></div>
-            <p className="text-blue-200 text-sm">🦉 Your scientific journey so far</p>
+            <p className="text-blue-200 text-sm">🦚 Your scientific journey so far</p>
           </div>
           {report && (
             <div className="p-5 space-y-4">
@@ -36,7 +36,7 @@ export default function LabReport({ visible, onClose }: Props) {
                 const cert = getCertification(m.id);
                 return (<div key={m.id} className={`rounded-xl p-2 text-center ${cert ? 'bg-slate-800' : 'bg-slate-900 opacity-40'}`}><div className="text-xl">{m.emoji}</div>{cert && <div className="text-sm mt-1" style={{ color: certColor[cert] }}>{certEmoji[cert]}</div>}</div>);
               })}</div>
-              <div className="bg-indigo-900/50 rounded-2xl p-4 border border-indigo-700/50"><div className="flex items-start gap-2"><span className="text-2xl">🦉</span><p className="text-indigo-200 text-sm italic">"Every experiment taught you something. That is science."</p></div></div>
+              <div className="bg-indigo-900/50 rounded-2xl p-4 border border-indigo-700/50"><div className="flex items-start gap-2"><span className="text-2xl">🦚</span><p className="text-indigo-200 text-sm italic">"Every experiment taught you something. That is science."</p></div></div>
               <button onClick={onClose} className="w-full py-4 bg-blue-600 text-white font-bold rounded-2xl min-h-[52px]">Back to Lab</button>
             </div>
           )}

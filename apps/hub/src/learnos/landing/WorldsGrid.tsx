@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useLearnerStore } from '../store';
 import { useTranslation } from 'react-i18next';
 import { AGE_GROUPS } from '../constants/ageGroups';
+import { Button } from '@jigyasu/ui';
 
 export const WORLDS = [
   {
@@ -109,7 +110,7 @@ const WorldCard = React.memo(function WorldCard({ w, t, handleEnter }: any) {
         <div className={`relative -mx-6 -mt-6 mb-5 h-28 overflow-hidden rounded-t-[1.4rem] bg-gradient-to-br ${w.gradient}`}>
           <div className="absolute inset-0 bg-dots opacity-40" />
           <span className="absolute right-4 top-4 rounded-full bg-white/95 px-2.5 py-1 text-sm font-bold text-slate-900 shadow-md border border-slate-200">
-            {w.key === 'tiny' ? 'Ages 2–5' : w.key === 'early' ? 'Ages 5–8' : w.key === 'lab' ? 'Ages 8–10' : w.key === 'discovery' ? 'Ages 10–13' : w.key === 'academy' ? 'Ages 13–15' : w.key === 'explorer' ? 'Ages 15+' : w.key === 'biology' ? 'Ages 10–18' : w.key === 'math' ? 'Ages 5–18' : 'Ages 10–18'}
+            {w.key === 'tiny' ? t('landing.worlds.ages.2_5') : w.key === 'early' ? t('landing.worlds.ages.5_8') : w.key === 'lab' ? t('landing.worlds.ages.8_10') : w.key === 'discovery' ? t('landing.worlds.ages.10_13') : w.key === 'academy' ? t('landing.worlds.ages.13_15') : w.key === 'explorer' ? t('landing.worlds.ages.15_plus') : w.key === 'biology' ? t('landing.worlds.ages.10_18') : w.key === 'math' ? t('landing.worlds.ages.5_18') : t('landing.worlds.ages.10_18')}
           </span>
           <span className="absolute -bottom-2 left-5 text-6xl drop-shadow-lg transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
             {w.emoji}
@@ -125,18 +126,20 @@ const WorldCard = React.memo(function WorldCard({ w, t, handleEnter }: any) {
               key={s}
               className={`rounded-full ${w.soft} px-2.5 py-1 text-sm font-semibold ${w.accent}`}
             >
-              {s}
+              {t(`landing.worlds.skills.${s.toLowerCase()}`)}
             </span>
           ))}
         </div>
 
-        <button
+        <Button
           onClick={() => handleEnter(w.key)}
           aria-label={`Enter ${t(w.nameKey)}`}
-          className="mt-5 inline-flex w-full items-center justify-center gap-1.5 rounded-xl bg-slate-900 px-4 py-2.5 text-sm font-bold text-white transition hover:bg-brand active:scale-95"
+          variant="dark"
+          fullWidth
+          className="mt-5 hover:bg-brand"
         >
-          Enter world →
-        </button>
+          {t('landing.worlds.enter_world')}
+        </Button>
       </div>
     </article>
   );
@@ -158,7 +161,7 @@ export default function WorldsGrid() {
   return (
     <section id="worlds" className="mx-auto max-w-6xl px-5 py-16">
       <div className="mx-auto max-w-2xl text-center">
-        <span className="text-sm font-bold uppercase tracking-wider text-brand">Step 2</span>
+        <span className="text-sm font-bold uppercase tracking-wider text-brand">{t('landing.worlds.step', 'Step 2')}</span>
         <h2 className="mt-2 font-display text-3xl font-bold text-slate-900 md:text-4xl">
           {t('landing.worlds.title')}
         </h2>

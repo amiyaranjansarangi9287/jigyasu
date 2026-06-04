@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import HubNav, { type HubItem } from './shared/HubNav';
 import PlaceValueExplorer from './PlaceValueExplorer';
 import ClockMaster from './ClockMaster';
@@ -58,14 +59,15 @@ const COMPONENTS: Record<string, React.FC> = {
 };
 
 export default function ExplorersHub() {
+  const { t } = useTranslation();
   const [mode, setMode] = useState('place');
   const Comp = COMPONENTS[mode] || PlaceValueExplorer;
 
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🧭 Explorers Guild</h2>
-        <p className="text-purple-300 text-lg">20 visual adventures — foundations through applied math.</p>
+        <h2 className="text-3xl font-bold text-white mb-2">{t('math_modules.ExplorersHub.title', '🧭 Explorers Guild')}</h2>
+        <p className="text-purple-300 text-lg">{t('math_modules.ExplorersHub.subtitle', '20 visual adventures — foundations through applied math.')}</p>
       </div>
 
       <HubNav items={MODES} active={mode} onSelect={setMode} layoutId="explorer-mode" />

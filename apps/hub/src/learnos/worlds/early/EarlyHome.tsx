@@ -58,7 +58,7 @@ export default function EarlyHome() {
         <div className="flex items-center gap-3 mb-1">
           <motion.div animate={{ rotate: [0, 10, -10, 0] }} transition={{ repeat: Infinity, duration: 3, delay: 2 }} className="text-4xl">🐤</motion.div>
           <div>
-            <h1 className="text-2xl font-extrabold text-indigo-800">Adventure Academy</h1>
+            <h1 className="text-2xl font-extrabold text-indigo-800">{t('early.title', 'Adventure Academy')}</h1>
           </div>
         </div>
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }} className="bg-white rounded-2xl px-4 py-2 shadow-sm border border-indigo-100 mt-3">

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useUserProfile } from '@jigyasu/storage';
-
+import { useTranslation } from 'react-i18next';
+import { useFormatNumber } from '../hooks/useFormatNumber';
+import { Button } from '@jigyasu/ui';
 const AVATARS = [
   { id: '🤖', name: 'Robo', cost: 0 },
   { id: '🦊', name: 'Fox', cost: 0 },
@@ -13,11 +15,13 @@ const AVATARS = [
 export default function AvatarStore() {
   const { profile, unlockAvatar, saveProfile } = useUserProfile();
   const [purchaseError, setPurchaseError] = useState<string | null>(null);
+  const { t } = useTranslation();
 
   if (!profile) return null;
 
   const unlocked = profile.unlockedAvatars || [];
   const currentXP = profile.xp || 0;
+  const formatNumber = useFormatNumber();
 
   const handleEquip = (avatar: string) => {
     saveProfile({ avatar });
@@ -25,7 +29,7 @@ export default function AvatarStore() {
 
   const handleBuy = async (avatar: string, cost: number) => {
     if (currentXP < cost) {
-      setPurchaseError(`You need ${cost - currentXP} more XP!`);
+      setPurchaseError(t('need_more_xp', { amount: formatNumber(cost - currentXP), defaultValue: `You need ${formatNumber(cost - currentXP)} more XP!` }));
       setTimeout(() => setPurchaseError(null), 3000);
       return;
     }
@@ -38,11 +42,11 @@ export default function AvatarStore() {
       
       <div className="flex items-center justify-between mb-6 relative z-10">
         <div>
-          <h2 className="text-2xl font-bold text-slate-800">Avatar Store</h2>
-          <p className="text-slate-500 font-medium">Spend your XP to unlock new looks!</p>
+          <h2 className="text-2xl font-bold text-slate-800">{t('avatar_store', 'Avatar Store')}</h2>
+          <p className="text-slate-500 font-medium">{t('avatar_store_desc', 'Spend your XP to unlock new looks!')}</p>
         </div>
         <div className="bg-sky-50 text-sky-600 px-4 py-2 rounded-xl font-bold border border-sky-100 flex items-center gap-2 shadow-inner">
-          <span>✨</span> {currentXP} XP
+          <span>✨</span> {formatNumber(currentXP)} XP
         </div>
       </div>
 
@@ -62,30 +66,29 @@ export default function AvatarStore() {
               isEquipped ? 'border-orange-500 bg-orange-50 scale-105 shadow-md shadow-orange-500/20' : 'border-slate-100 hover:border-slate-300 hover:-translate-y-1 bg-white'
             }`}>
               <div className="text-6xl mb-3 drop-shadow-sm">{av.id}</div>
-              <div className="font-bold text-slate-700 mb-2">{av.name}</div>
+              <div className="font-bold text-slate-700 mb-2">{t(`avatar_${av.name.toLowerCase()}`, av.name)}</div>
               
               {isEquipped ? (
-                <button disabled className="w-full bg-orange-500 text-white font-bold py-2 rounded-xl opacity-80 cursor-not-allowed">
-                  Equipped
-                </button>
+                <Button disabled fullWidth variant="primary" className="opacity-80">
+                  {t('equipped', 'Equipped')}
+                </Button>
               ) : isUnlocked ? (
-                <button 
+                <Button 
                   onClick={() => handleEquip(av.id)}
-                  className="w-full bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 font-bold py-2 rounded-xl transition-colors active:scale-95"
+                  fullWidth
+                  variant="muted"
                 >
-                  Equip
-                </button>
+                  {t('equip', 'Equip')}
+                </Button>
               ) : (
-                <button 
+                <Button 
                   onClick={() => handleBuy(av.id, av.cost)}
-                  className={`w-full font-bold py-2 rounded-xl transition-all active:scale-95 ${
-                    currentXP >= av.cost 
-                      ? 'bg-sky-500 text-white hover:bg-sky-600 shadow-lg shadow-sky-500/30' 
-                      : 'bg-slate-100 text-slate-400 cursor-not-allowed opacity-70'
-                  }`}
+                  fullWidth
+                  variant={currentXP >= av.cost ? 'info' : 'muted'}
+                  disabled={currentXP < av.cost}
                 >
-                  Unlock ({av.cost} ✨)
-                </button>
+                  {t('unlock', 'Unlock')} ({formatNumber(av.cost)} ✨)
+                </Button>
               )}
             </div>
           );

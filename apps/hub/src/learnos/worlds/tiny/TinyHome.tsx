@@ -4,6 +4,7 @@
 
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
 import { ROUTES } from '@/constants/routes';
 import WonderGarden from './WonderGarden';
@@ -20,6 +21,7 @@ const ZONES = [
 ];
 
 export default function TinyHome() {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
@@ -29,6 +31,13 @@ export default function TinyHome() {
   const [showLabels, setShowLabels] = useState(true);
   const focusedIndexRef = useRef<number | null>(null);
   const showLabelsRef = useRef(true);
+  const translationsRef = useRef<Record<string, string>>({});
+
+  useEffect(() => {
+    ZONES.forEach(z => {
+      translationsRef.current[z.module] = t(`tiny.zones.${z.module}`, z.module.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '));
+    });
+  }, [t]);
 
   // Sync state to ref for the animation loop
   useEffect(() => {
@@ -167,7 +176,7 @@ export default function TinyHome() {
 
         // Text Label
         if (showLabelsRef.current) {
-          const labelText = zone.module.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+          const labelText = translationsRef.current[zone.module] || zone.module.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
           ctx.font = 'bold 18px Nunito, system-ui, sans-serif';
           ctx.textBaseline = 'top';
           ctx.strokeStyle = 'white';
@@ -236,7 +245,7 @@ export default function TinyHome() {
   return (
     <div className="relative w-full min-h-screen bg-sky-200">
       <div className="sr-only" aria-live="polite">
-        {focusedIndex !== null ? `Focused on ${ZONES[focusedIndex].module.replace('-', ' ')}. Press Enter to play.` : 'Tiny World. Use arrow keys to explore modules.'}
+        {focusedIndex !== null ? t('tiny.focused_screen_reader', `Focused on {{module}}. Press Enter to play.`, { module: ZONES[focusedIndex].module.replace('-', ' ') }) : t('tiny.default_screen_reader', 'Tiny World. Use arrow keys to explore modules.')}
       </div>
       <canvas
         ref={canvasRef}
@@ -255,7 +264,7 @@ export default function TinyHome() {
         onClick={() => setShowLabels(!showLabels)}
         className="absolute top-6 right-20 z-10 bg-white/80 backdrop-blur px-4 py-2 rounded-full font-bold text-slate-700 shadow-sm border border-slate-200"
       >
-        {showLabels ? 'Hide Labels' : 'Show Labels'}
+        {showLabels ? t('tiny.hide_labels', 'Hide Labels') : t('tiny.show_labels', 'Show Labels')}
       </button>
 
       {/* Wonder Garden button */}

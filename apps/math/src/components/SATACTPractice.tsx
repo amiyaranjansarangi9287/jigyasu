@@ -38,10 +38,18 @@ export default function SATACTPractice() {
 
   useEffect(() => {
     if (!started || submitted) return;
-    if (timeLeft <= 0) { setSubmitted(true); return; }
-    timerRef.current = window.setInterval(() => setTimeLeft(t => t - 1), 1000);
+    timerRef.current = window.setInterval(() => {
+      setTimeLeft(t => {
+        if (t <= 1) {
+          clearInterval(timerRef.current);
+          setSubmitted(true);
+          return 0;
+        }
+        return t - 1;
+      });
+    }, 1000);
     return () => clearInterval(timerRef.current);
-  }, [started, submitted, timeLeft]);
+  }, [started, submitted]);
 
   const score = submitted ? questions.filter((q, i) => answers[i] === q.answer).length : 0;
   const q = questions[current];

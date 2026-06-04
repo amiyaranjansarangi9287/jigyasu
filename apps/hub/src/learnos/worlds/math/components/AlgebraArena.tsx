@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useMathFeedback } from '../lib/MathContext';
+import { useTranslation } from 'react-i18next';
 import WhatsNext from './shared/WhatsNext';
 
 interface Equation {
@@ -139,6 +140,7 @@ function superscript(n: number): string {
 }
 
 export default function AlgebraArena() {
+  const { t } = useTranslation();
   const math = useMathFeedback();
   const [difficulty, setDifficulty] = useState<'basic' | 'intermediate' | 'advanced'>('basic');
   const [equation, setEquation] = useState<Equation | null>(null);
@@ -175,6 +177,7 @@ export default function AlgebraArena() {
 
   // Balance scale visual
   const BalanceScale = ({ eq }: { eq: Equation }) => {
+    const { t } = useTranslation();
     const parts = eq.display.split('=');
     const solved = feedback === 'correct';
     return (
@@ -214,7 +217,7 @@ export default function AlgebraArena() {
             </motion.div>
           </motion.div>
         </div>
-        <div className="mt-8 text-gray-500 text-sm">⚖️ Both sides must be equal</div>
+        <div className="mt-8 text-gray-500 text-sm">{t('math_modules.AlgebraArena.balance', '⚖️ Both sides must be equal')}</div>
       </div>
     );
   };
@@ -222,16 +225,16 @@ export default function AlgebraArena() {
   if (!equation) return null;
 
   const diffs = [
-    { id: 'basic' as const, label: 'Basic', emoji: '🌱', desc: '1-step: 3x=12', color: 'from-green-600 to-emerald-600' },
-    { id: 'intermediate' as const, label: 'Intermediate', emoji: '⚔️', desc: '2-step: 2x+3=11', color: 'from-blue-600 to-indigo-600' },
-    { id: 'advanced' as const, label: 'Advanced', emoji: '🔥', desc: 'Multi-step, x², powers', color: 'from-red-600 to-rose-600' },
+    { id: 'basic' as const, label: t('math_modules.AlgebraArena.diffBasic', 'Basic'), emoji: '🌱', desc: t('math_modules.AlgebraArena.diffBasicDesc', '1-step: 3x=12'), color: 'from-green-600 to-emerald-600' },
+    { id: 'intermediate' as const, label: t('math_modules.AlgebraArena.diffInter', 'Intermediate'), emoji: '⚔️', desc: t('math_modules.AlgebraArena.diffInterDesc', '2-step: 2x+3=11'), color: 'from-blue-600 to-indigo-600' },
+    { id: 'advanced' as const, label: t('math_modules.AlgebraArena.diffAdv', 'Advanced'), emoji: '🔥', desc: t('math_modules.AlgebraArena.diffAdvDesc', 'Multi-step, x², powers'), color: 'from-red-600 to-rose-600' },
   ];
 
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🧮 Algebra Arena</h2>
-        <p className="text-purple-300 text-lg">Solve for x — balance the equation!</p>
+        <h2 className="text-3xl font-bold text-white mb-2">{t('math_modules.AlgebraArena.title', '🧮 Algebra Arena')}</h2>
+        <p className="text-purple-300 text-lg">{t('math_modules.AlgebraArena.subtitle', 'Solve for x — balance the equation!')}</p>
       </div>
 
       {/* Difficulty selector */}
@@ -280,7 +283,7 @@ export default function AlgebraArena() {
           >
             {equation.display}
           </motion.p>
-          <p className="text-gray-400 mt-1">Find <span className="text-purple-400 font-bold">x</span></p>
+          <p className="text-gray-400 mt-1" dangerouslySetInnerHTML={{ __html: t('math_modules.AlgebraArena.findX', 'Find <span className="text-purple-400 font-bold">x</span>') }}></p>
         </div>
 
         {/* Balance Scale */}
@@ -309,7 +312,7 @@ export default function AlgebraArena() {
         {/* Steps toggle */}
         <div className="mt-4 text-center">
           <button className="text-sm text-purple-400 hover:text-purple-300 underline decoration-dashed" onClick={() => setShowSteps(!showSteps)}>
-            {showSteps ? '🙈 Hide steps' : '📝 Show solution steps'}
+            {showSteps ? t('math_modules.AlgebraArena.hideSteps', '🙈 Hide steps') : t('math_modules.AlgebraArena.showSteps', '📝 Show solution steps')}
           </button>
         </div>
 
@@ -328,18 +331,18 @@ export default function AlgebraArena() {
 
         {feedback === 'correct' && (
           <motion.p className="mt-4 text-center text-green-400 font-bold text-lg" initial={{ scale: 0 }} animate={{ scale: [0, 1.3, 1] }}>
-            ✨ x = {equation.answer} is correct! ✨
+            {t('math_modules.AlgebraArena.correct', '✨ x = {{ans}} is correct! ✨', { ans: equation.answer })}
           </motion.p>
         )}
         {feedback === 'wrong' && (
           <motion.p className="mt-4 text-center text-red-400 font-bold" initial={{ x: -10 }} animate={{ x: [10, -10, 5, 0] }}>
-            ❌ Try again! Check the steps for a hint.
+            {t('math_modules.AlgebraArena.wrong', '❌ Try again! Check the steps for a hint.')}
           </motion.p>
         )}
       </motion.div>
 
       <div className="text-center mt-4">
-        <button className="text-gray-500 hover:text-gray-400 text-sm underline" onClick={nextEquation}>Skip →</button>
+        <button className="text-gray-500 hover:text-gray-400 text-sm underline" onClick={nextEquation}>{t('math_modules.AlgebraArena.skip', 'Skip →')}</button>
       </div>
       <WhatsNext moduleId="algebra" />
     </div>

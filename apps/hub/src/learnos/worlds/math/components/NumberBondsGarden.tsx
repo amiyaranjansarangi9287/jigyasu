@@ -1,7 +1,9 @@
 import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 export default function NumberBondsGarden() {
+  const { t } = useTranslation();
   const [target, setTarget] = useState(10);
   const [selectedNum, setSelectedNum] = useState<number | null>(null);
   const [matchedPairs, setMatchedPairs] = useState<Set<string>>(new Set());
@@ -52,13 +54,13 @@ export default function NumberBondsGarden() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🌻 Number Bonds Garden</h2>
-        <p className="text-purple-300 text-lg">Grow flowers by pairing numbers that add up to the target!</p>
+        <h2 className="text-3xl font-bold text-white mb-2">{t('math_modules.NumberBondsGarden.title', '🌻 Number Bonds Garden')}</h2>
+        <p className="text-purple-300 text-lg">{t('math_modules.NumberBondsGarden.subtitle', 'Grow flowers by pairing numbers that add up to the target!')}</p>
       </div>
 
       {/* Target selector */}
       <div className="bg-white/5 rounded-2xl border border-white/10 p-4 mb-6">
-        <p className="text-gray-400 text-sm mb-2 text-center">Target Sum</p>
+        <p className="text-gray-400 text-sm mb-2 text-center">{t('math_modules.NumberBondsGarden.targetSum', 'Target Sum')}</p>
         <div className="flex items-center justify-center gap-3 flex-wrap">
           {[5, 10, 15, 20].map((t) => (
             <motion.button
@@ -81,19 +83,19 @@ export default function NumberBondsGarden() {
             className={`px-3 py-1 rounded-lg text-sm ${mode === 'explore' ? 'bg-green-500/30 text-green-300' : 'text-gray-400'}`}
             onClick={() => setMode('explore')}
           >
-            🔍 Explore
+            {t('math_modules.NumberBondsGarden.exploreMode', '🔍 Explore')}
           </button>
           <button
             className={`px-3 py-1 rounded-lg text-sm ${mode === 'match' ? 'bg-purple-500/30 text-purple-300' : 'text-gray-400'}`}
             onClick={() => setMode('match')}
           >
-            🎮 Match
+            {t('math_modules.NumberBondsGarden.matchMode', '🎮 Match')}
           </button>
           <button
             className="px-3 py-1 rounded-lg text-sm text-gray-400 hover:text-white"
             onClick={resetGarden}
           >
-            🔄 Reset
+            {t('math_modules.NumberBondsGarden.reset', '🔄 Reset')}
           </button>
         </div>
       </div>
@@ -101,7 +103,7 @@ export default function NumberBondsGarden() {
       {/* Explore Mode - Visual number bonds */}
       {mode === 'explore' && (
         <div className="bg-gradient-to-br from-green-900/20 to-emerald-900/20 rounded-3xl border border-green-500/30 p-6">
-          <h3 className="text-center text-white font-bold mb-4">🌱 All bonds that make {target}</h3>
+          <h3 className="text-center text-white font-bold mb-4">{t('math_modules.NumberBondsGarden.allBonds', '🌱 All bonds that make {{target}}', { target })}</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {pairs.map((pair, i) => (
               <motion.div
@@ -135,7 +137,7 @@ export default function NumberBondsGarden() {
 
           {/* Visual representation */}
           <div className="mt-6 p-4 rounded-xl bg-black/20 border border-white/10">
-            <p className="text-center text-gray-400 text-sm mb-3">📊 Visual: Making {target} with dots</p>
+            <p className="text-center text-gray-400 text-sm mb-3">{t('math_modules.NumberBondsGarden.visualDots', '📊 Visual: Making {{target}} with dots', { target })}</p>
             <div className="space-y-2">
               {pairs.slice(0, Math.min(6, pairs.length)).map((pair, i) => (
                 <div key={i} className="flex items-center gap-2">
@@ -173,17 +175,16 @@ export default function NumberBondsGarden() {
         <div>
           <div className="flex items-center justify-between mb-4">
             <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">
-              🌸 Matched: {score}
+              {t('math_modules.NumberBondsGarden.matchedScore', '🌸 Matched: {{score}}', { score })}
             </span>
-            <span className="text-gray-400 text-sm">
-              Pick one from each side that adds up to <span className="text-green-400 font-bold">{target}</span>
+            <span className="text-gray-400 text-sm" dangerouslySetInnerHTML={{ __html: t('math_modules.NumberBondsGarden.pickInstruction', 'Pick one from each side that adds up to <span className="text-green-400 font-bold">{{target}}</span>', { target }) }}>
             </span>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
             {/* Left column */}
             <div className="space-y-2">
-              <p className="text-center text-gray-400 text-sm mb-2">🔵 Pick a number</p>
+              <p className="text-center text-gray-400 text-sm mb-2">{t('math_modules.NumberBondsGarden.pickNumber', '🔵 Pick a number')}</p>
               {leftNumbers.map((num, i) => {
                 const isMatched = Array.from(matchedPairs).some((p) => p.startsWith(`${num}-`));
                 const isSelected = selectedNum === num;
@@ -213,7 +214,7 @@ export default function NumberBondsGarden() {
 
             {/* Right column */}
             <div className="space-y-2">
-              <p className="text-center text-gray-400 text-sm mb-2">🟠 Match it</p>
+              <p className="text-center text-gray-400 text-sm mb-2">{t('math_modules.NumberBondsGarden.matchIt', '🟠 Match it')}</p>
               {rightNumbers.map((num, i) => {
                 const isMatched = Array.from(matchedPairs).some((p) => p.endsWith(`-${num}`));
                 const isWrong = wrongPair && wrongPair.endsWith(`-${num}`);
@@ -249,8 +250,8 @@ export default function NumberBondsGarden() {
               animate={{ scale: 1 }}
             >
               <span className="text-4xl">🌸</span>
-              <p className="text-green-400 font-bold text-xl mt-2">Garden Complete!</p>
-              <p className="text-gray-400 text-sm">You grew all the flowers!</p>
+              <p className="text-green-400 font-bold text-xl mt-2">{t('math_modules.NumberBondsGarden.gardenComplete', 'Garden Complete!')}</p>
+              <p className="text-gray-400 text-sm">{t('math_modules.NumberBondsGarden.grewAll', 'You grew all the flowers!')}</p>
             </motion.div>
           )}
         </div>

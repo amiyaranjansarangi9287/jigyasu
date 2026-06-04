@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import { testimonials } from '../data/testimonials';
 import { useReveal } from '../hooks/useReveal';
+import { useTranslation } from 'react-i18next';
 
 export default function Testimonials() {
+  const { t } = useTranslation();
   const [active, setActive] = useState(0);
   const { ref: sectionRef } = useReveal<HTMLDivElement>();
 
@@ -21,14 +23,10 @@ export default function Testimonials() {
         <div className="text-center mb-16 reveal">
           <span className="inline-flex items-center gap-2 px-5 py-2 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-400 text-sm font-bold uppercase tracking-wider rounded-full mb-5">
             <span className="w-1.5 h-1.5 bg-rose-500 rounded-full animate-pulse" />
-            Happy Campers
+            {t('kidscamp.testimonials.happy_campers', 'Happy Campers')}
           </span>
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">
-            What Our Community Says
-          </h2>
-          <p className="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
-            Join thousands of happy families who have discovered the joy of building and learning together.
-          </p>
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">{t('kidscamp.testimonials.title', 'What Our Community Says')}</h2>
+          <p className="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">{t('kidscamp.testimonials.desc', 'Join thousands of happy families who have discovered the joy of building and learning together.')}</p>
         </div>
 
         {/* Testimonial Carousel */}
@@ -60,9 +58,7 @@ export default function Testimonials() {
                 "{testimonials[active].text}"
               </p>
 
-              <p className="text-sm text-orange-500 dark:text-orange-400 font-semibold">
-                Built: {testimonials[active].toyName}
-              </p>
+              <p className="text-sm text-orange-500 dark:text-orange-400 font-semibold">{t('kidscamp.testimonials.built', 'Built:')} {testimonials[active].toyName}</p>
             </div>
           </div>
 
@@ -99,10 +95,10 @@ export default function Testimonials() {
         {/* Trust badges */}
         <div className="reveal mt-16 flex flex-wrap justify-center gap-8 sm:gap-12">
           {[
-            { number: '1,500+', label: 'Activities Done' },
-            { number: '4.8', label: 'Avg Rating' },
-            { number: '50+', label: 'Countries' },
-            { number: '99%', label: 'Recommend' },
+            { number: '1,500+', label: t('kidscamp.testimonials.activities_done', 'Activities Done') },
+            { number: '4.8', label: t('kidscamp.testimonials.avg_rating', 'Avg Rating') },
+            { number: '50+', label: t('kidscamp.testimonials.countries', 'Countries') },
+            { number: '99%', label: t('kidscamp.testimonials.recommend', 'Recommend') },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <p className="text-2xl sm:text-3xl font-extrabold bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">

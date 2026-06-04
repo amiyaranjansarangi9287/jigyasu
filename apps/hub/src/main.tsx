@@ -1,13 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './i18n'
+import { I18nextProvider } from 'react-i18next'
+import i18n from './i18n'
 import './index.css'
 import App from './App.tsx'
 import { ErrorBoundary } from '@jigyasu/ui'
 import { SentryService } from './learnos/services/sentry'
 
-// Initialize global i18n only; LearnOS module registration is lazy-loaded with LearnOS.
-import './learnos/i18n'
 
 // Initialize Sentry before React renders so startup crashes are captured.
 // No-op when VITE_SENTRY_DSN is not set (local dev without .env).
@@ -25,7 +24,9 @@ if ('serviceWorker' in navigator && import.meta.env.PROD) {
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ErrorBoundary>
-      <App />
+      <I18nextProvider i18n={i18n}>
+        <App />
+      </I18nextProvider>
     </ErrorBoundary>
   </StrictMode>,
 )

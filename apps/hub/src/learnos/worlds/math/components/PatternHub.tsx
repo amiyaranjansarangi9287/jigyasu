@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import PatternPuzzle from './PatternPuzzle';
 import MemoryMatch from './MemoryMatch';
 
 type Mode = 'patterns' | 'memory';
 
 export default function PatternHub() {
+  const { t } = useTranslation();
   const [mode, setMode] = useState<Mode>('patterns');
 
   return (
@@ -29,8 +31,8 @@ export default function PatternHub() {
             )}
             <span className="relative z-10 flex items-center gap-2">
               <span>🧩</span>
-              <span className="hidden sm:inline">Pattern Puzzles</span>
-              <span className="sm:hidden">Patterns</span>
+              <span className="hidden sm:inline">{t('math_modules.PatternHub.patterns', 'Pattern Puzzles')}</span>
+              <span className="sm:hidden">{t('math_modules.PatternHub.patternsShort', 'Patterns')}</span>
             </span>
           </motion.button>
           <motion.button
@@ -49,8 +51,8 @@ export default function PatternHub() {
             )}
             <span className="relative z-10 flex items-center gap-2">
               <span>🃏</span>
-              <span className="hidden sm:inline">Memory Match</span>
-              <span className="sm:hidden">Memory</span>
+              <span className="hidden sm:inline">{t('math_modules.PatternHub.memory', 'Memory Match')}</span>
+              <span className="sm:hidden">{t('math_modules.PatternHub.memoryShort', 'Memory')}</span>
             </span>
           </motion.button>
         </div>

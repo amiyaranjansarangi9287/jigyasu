@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import TimesTableTrainer from './TimesTableTrainer';
 import NumberBondsGarden from './NumberBondsGarden';
 import FractionPizza from './FractionPizza';
@@ -7,19 +8,20 @@ import FractionPizza from './FractionPizza';
 type Skill = 'times' | 'bonds' | 'fractions';
 
 export default function SkillsAcademy() {
+  const { t } = useTranslation();
   const [skill, setSkill] = useState<Skill>('times');
 
   const skills: { id: Skill; emoji: string; label: string; color: string; desc: string }[] = [
-    { id: 'times', emoji: '🎯', label: 'Times Tables', color: 'from-purple-500 to-pink-500', desc: 'Master multiplication' },
-    { id: 'bonds', emoji: '🌻', label: 'Number Bonds', color: 'from-green-500 to-emerald-500', desc: 'Addition pairs' },
-    { id: 'fractions', emoji: '🍕', label: 'Fractions', color: 'from-orange-500 to-red-500', desc: 'Pizza fractions' },
+    { id: 'times', emoji: '🎯', label: t('math_modules.SkillsAcademy.times', 'Times Tables'), color: 'from-purple-500 to-pink-500', desc: t('math_modules.SkillsAcademy.timesDesc', 'Master multiplication') },
+    { id: 'bonds', emoji: '🌻', label: t('math_modules.SkillsAcademy.bonds', 'Number Bonds'), color: 'from-green-500 to-emerald-500', desc: t('math_modules.SkillsAcademy.bondsDesc', 'Addition pairs') },
+    { id: 'fractions', emoji: '🍕', label: t('math_modules.SkillsAcademy.fractions', 'Fractions'), color: 'from-orange-500 to-red-500', desc: t('math_modules.SkillsAcademy.fractionsDesc', 'Pizza fractions') },
   ];
 
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🎓 Skills Academy</h2>
-        <p className="text-purple-300 text-lg">Build your math foundations step by step!</p>
+        <h2 className="text-3xl font-bold text-white mb-2">{t('math_modules.SkillsAcademy.title', '🎓 Skills Academy')}</h2>
+        <p className="text-purple-300 text-lg">{t('math_modules.SkillsAcademy.subtitle', 'Build your math foundations step by step!')}</p>
       </div>
 
       {/* Skill selector cards */}

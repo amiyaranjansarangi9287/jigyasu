@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-
+import { useFormatNumber } from '../hooks/useFormatNumber';
+import { Button } from '@jigyasu/ui';
 type Props = {
   onSave?: (settings: ParentalSettings) => void;
 };
@@ -38,6 +39,7 @@ const WORLDS = [
 
 export default function ParentalControls({ onSave }: Props) {
   const { t } = useTranslation();
+  const formatNumber = useFormatNumber();
   const [settings, setSettings] = useState<ParentalSettings>(DEFAULT_SETTINGS);
   const [showPinSetup, setShowPinSetup] = useState(false);
   const [currentPin, setCurrentPin] = useState('');
@@ -69,15 +71,15 @@ export default function ParentalControls({ onSave }: Props) {
     return (
       <div className="bg-white border border-slate-200 rounded-2xl p-6 max-w-2xl mx-auto" role="dialog" aria-labelledby="pin-title">
         <h2 id="pin-title" className="text-2xl font-bold text-slate-900 mb-4">
-          🔐 Set Parental PIN
+          🔐 {t('set_parental_pin', 'Set Parental PIN')}
         </h2>
         <p className="text-slate-600 mb-6">
-          This PIN will be required to change parental controls or bypass time limits.
+          {t('pin_description', 'This PIN will be required to change parental controls or bypass time limits.')}
         </p>
         <div className="space-y-4">
           <div>
             <label htmlFor="pin-input" className="block text-sm font-bold text-slate-700 mb-2">
-              Enter PIN (4 digits)
+              {t('enter_pin', 'Enter PIN (4 digits)')}
             </label>
             <input
               id="pin-input"
@@ -90,12 +92,12 @@ export default function ParentalControls({ onSave }: Props) {
               aria-describedby="pin-desc"
             />
             <p id="pin-desc" className="text-xs text-slate-500 mt-1">
-              Use 4 numbers only
+              {t('use_4_numbers', 'Use 4 numbers only')}
             </p>
           </div>
           <div>
             <label htmlFor="confirm-pin-input" className="block text-sm font-bold text-slate-700 mb-2">
-              Confirm PIN
+              {t('confirm_pin', 'Confirm PIN')}
             </label>
             <input
               id="confirm-pin-input"
@@ -108,30 +110,30 @@ export default function ParentalControls({ onSave }: Props) {
             />
           </div>
           <div className="flex gap-3">
-            <button
+            <Button
               onClick={() => {
                 setShowPinSetup(false);
                 setCurrentPin('');
                 setConfirmPin('');
               }}
-              className="flex-1 bg-slate-200 text-slate-700 font-bold py-3 rounded-xl hover:bg-slate-300 transition"
-              aria-label="Cancel PIN setup"
-              role="button"
+              variant="muted"
+              className="flex-1"
+              aria-label={t('cancel_pin_setup', 'Cancel PIN setup')}
             >
-              Cancel
-            </button>
-            <button
+              {t('cancel', 'Cancel')}
+            </Button>
+            <Button
               onClick={() => {
                 setSettings(prev => ({ ...prev, requirePin: true, pin: currentPin }));
                 setShowPinSetup(false);
               }}
               disabled={!currentPin || currentPin !== confirmPin}
-              className="flex-1 bg-indigo-600 text-white font-bold py-3 rounded-xl hover:bg-indigo-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
-              aria-label="Save PIN"
-              role="button"
+              variant="indigo"
+              className="flex-1"
+              aria-label={t('save_pin', 'Save PIN')}
             >
-              Save PIN
-            </button>
+              {t('save_pin', 'Save PIN')}
+            </Button>
           </div>
         </div>
       </div>
@@ -141,13 +143,13 @@ export default function ParentalControls({ onSave }: Props) {
   return (
     <div className="bg-white border border-slate-200 rounded-2xl p-6 max-w-2xl mx-auto" role="region" aria-labelledby="controls-title">
       <h2 id="controls-title" className="text-2xl font-bold text-slate-900 mb-6">
-        👨‍👩‍👧 Parental Controls
+        👨‍👩‍👧 {t('parental_controls_title', 'Parental Controls')}
       </h2>
 
       <div className="space-y-6">
         {/* Time Limits */}
         <section>
-          <h3 className="text-lg font-bold text-slate-800 mb-3">⏰ Daily Time Limit</h3>
+          <h3 className="text-lg font-bold text-slate-800 mb-3">⏰ {t('daily_time_limit', 'Daily Time Limit')}</h3>
           <div className="flex items-center gap-4">
             <input
               type="range"
@@ -157,25 +159,25 @@ export default function ParentalControls({ onSave }: Props) {
               value={settings.dailyTimeLimit}
               onChange={(e) => setSettings(prev => ({ ...prev, dailyTimeLimit: parseInt(e.target.value) }))}
               className="flex-1"
-              aria-label="Daily time limit in minutes"
+              aria-label={t('daily_time_limit_minutes', 'Daily time limit in minutes')}
               aria-valuemin={15}
               aria-valuemax={180}
               aria-valuenow={settings.dailyTimeLimit}
             />
             <span className="text-lg font-bold text-indigo-600 min-w-[80px] text-center">
-              {settings.dailyTimeLimit} min
+              {formatNumber(settings.dailyTimeLimit)} {t('min', 'min')}
             </span>
           </div>
           <p className="text-sm text-slate-500 mt-2">
-            Learning session will pause after this time. Can be extended with PIN.
+            {t('time_limit_desc', 'Learning session will pause after this time. Can be extended with PIN.')}
           </p>
         </section>
 
         {/* Allowed Worlds */}
         <section>
-          <h3 className="text-lg font-bold text-slate-800 mb-3">🌍 Allowed Learning Worlds</h3>
+          <h3 className="text-lg font-bold text-slate-800 mb-3">🌍 {t('allowed_learning_worlds', 'Allowed Learning Worlds')}</h3>
           <p className="text-sm text-slate-600 mb-4">
-            Select which worlds your child can access based on age appropriateness.
+            {t('allowed_worlds_desc', 'Select which worlds your child can access based on age appropriateness.')}
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {WORLDS.map(world => (
@@ -191,7 +193,7 @@ export default function ParentalControls({ onSave }: Props) {
                 role="button"
               >
                 <span className="text-2xl block mb-1" aria-hidden="true">{world.emoji}</span>
-                <span className="text-sm font-bold text-slate-800 block">{world.name}</span>
+                <span className="text-sm font-bold text-slate-800 block">{t(`world_${world.id}`, world.name)}</span>
                 <span className="text-xs text-slate-500">{world.ageRange}</span>
               </button>
             ))}
@@ -200,7 +202,7 @@ export default function ParentalControls({ onSave }: Props) {
 
         {/* Gamification Controls */}
         <section>
-          <h3 className="text-lg font-bold text-slate-800 mb-3">🎮 Gamification Settings</h3>
+          <h3 className="text-lg font-bold text-slate-800 mb-3">🎮 {t('gamification_settings', 'Gamification Settings')}</h3>
           <div className="space-y-3">
             <label className="flex items-center gap-3 cursor-pointer">
               <input
@@ -211,9 +213,9 @@ export default function ParentalControls({ onSave }: Props) {
                 aria-describedby="gamification-desc"
               />
               <div>
-                <span className="font-bold text-slate-800">Enable Gamification</span>
+                <span className="font-bold text-slate-800">{t('enable_gamification', 'Enable Gamification')}</span>
                 <p id="gamification-desc" className="text-sm text-slate-600">
-                  XP points, levels, and progress tracking
+                  {t('gamification_desc', 'XP points, levels, and progress tracking')}
                 </p>
               </div>
             </label>
@@ -228,9 +230,9 @@ export default function ParentalControls({ onSave }: Props) {
                 aria-describedby="streaks-desc"
               />
               <div>
-                <span className="font-bold text-slate-800">Enable Streaks</span>
+                <span className="font-bold text-slate-800">{t('enable_streaks', 'Enable Streaks')}</span>
                 <p id="streaks-desc" className="text-sm text-slate-600">
-                  Daily streak tracking and rewards
+                  {t('streaks_desc', 'Daily streak tracking and rewards')}
                 </p>
               </div>
             </label>
@@ -245,9 +247,9 @@ export default function ParentalControls({ onSave }: Props) {
                 aria-describedby="badges-desc"
               />
               <div>
-                <span className="font-bold text-slate-800">Enable Badges</span>
+                <span className="font-bold text-slate-800">{t('enable_badges', 'Enable Badges')}</span>
                 <p id="badges-desc" className="text-sm text-slate-600">
-                  Achievement badges and rewards
+                  {t('badges_desc', 'Achievement badges and rewards')}
                 </p>
               </div>
             </label>
@@ -256,48 +258,43 @@ export default function ParentalControls({ onSave }: Props) {
 
         {/* PIN Protection */}
         <section className="bg-slate-50 rounded-xl p-4 border border-slate-200">
-          <h3 className="text-lg font-bold text-slate-800 mb-3">🔐 PIN Protection</h3>
+          <h3 className="text-lg font-bold text-slate-800 mb-3">🔐 {t('pin_protection', 'PIN Protection')}</h3>
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm text-slate-700">
                 {settings.requirePin
-                  ? 'PIN protection is enabled. Changes require PIN.'
-                  : 'Require PIN to change these settings or bypass time limits.'}
+                  ? t('pin_enabled_desc', 'PIN protection is enabled. Changes require PIN.')
+                  : t('pin_disabled_desc', 'Require PIN to change these settings or bypass time limits.')}
               </p>
             </div>
-            <button
+            <Button
               onClick={() => settings.requirePin ? setSettings(prev => ({ ...prev, requirePin: false, pin: undefined })) : setShowPinSetup(true)}
-              className={`px-4 py-2 rounded-lg font-bold text-sm transition ${
-                settings.requirePin
-                  ? 'bg-red-100 text-red-700 hover:bg-red-200'
-                  : 'bg-indigo-600 text-white hover:bg-indigo-700'
-              }`}
-              aria-label={settings.requirePin ? 'Disable PIN protection' : 'Enable PIN protection'}
-              role="button"
+              variant={settings.requirePin ? 'danger' : 'indigo'}
+              size="sm"
+              aria-label={settings.requirePin ? t('disable_pin_protection', 'Disable PIN protection') : t('enable_pin_protection', 'Enable PIN protection')}
             >
-              {settings.requirePin ? 'Disable PIN' : 'Set PIN'}
-            </button>
+              {settings.requirePin ? t('disable_pin', 'Disable PIN') : t('set_pin', 'Set PIN')}
+            </Button>
           </div>
         </section>
 
         {/* Save Button */}
         <div className="flex gap-3 pt-4 border-t border-slate-200">
-          <button
+          <Button
             onClick={handleSave}
-            className="flex-1 bg-indigo-600 text-white font-bold py-3 rounded-xl hover:bg-indigo-700 transition"
-            aria-label="Save parental control settings"
-            role="button"
+            variant="indigo"
+            className="flex-1"
+            aria-label={t('save_parental_settings', 'Save parental control settings')}
           >
-            Save Settings
-          </button>
-          <button
+            {t('save_settings', 'Save Settings')}
+          </Button>
+          <Button
             onClick={() => setSettings(DEFAULT_SETTINGS)}
-            className="px-6 py-3 bg-slate-200 text-slate-700 font-bold rounded-xl hover:bg-slate-300 transition"
-            aria-label="Reset to default settings"
-            role="button"
+            variant="muted"
+            aria-label={t('reset_default_settings', 'Reset to default settings')}
           >
-            Reset
-          </button>
+            {t('reset_to_default', 'Reset to Default')}
+          </Button>
         </div>
       </div>
     </div>
