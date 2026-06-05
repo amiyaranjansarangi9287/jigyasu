@@ -20,6 +20,6 @@
       "@/*": ["src/learnos/*"]
     }
   },
-  "include": ["src", "vite.config.ts"],
+  "include": ["src"],
   "exclude": ["src/**/*.test.tsx", "src/**/*.test.ts"]
 }
