@@ -114,8 +114,8 @@ export default function CollisionSim() {
 
   useEffect(() => {
     if (!isRunning) return;
-    let b1 = { ...ball1 };
-    let b2 = { ...ball2 };
+    const b1 = { ...ball1 };
+    const b2 = { ...ball2 };
     const r1 = 20 + mass1 * 5;
     const r2 = 20 + mass2 * 5;
     const dt = 0.016;

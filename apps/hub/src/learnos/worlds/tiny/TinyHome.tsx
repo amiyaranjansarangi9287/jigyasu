@@ -62,7 +62,7 @@ export default function TinyHome() {
     const ctx = canvas.getContext('2d')!;
     ctx.scale(dpr, dpr);
 
-    let startTime = performance.now();
+    const startTime = performance.now();
 
     const animate = (timestamp: number) => {
       const time = (timestamp - startTime) / 1000;

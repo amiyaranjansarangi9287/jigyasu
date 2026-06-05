@@ -1,1 +1,0 @@
-const fs = require('fs'); const code = fs.readFileSync('.vercel/output/static/assets/index-DPsVWilZ.js', 'utf8'); const hiIndex = code.indexOf('welcome_title:Z3'); console.log('hi obj at: ' + hiIndex); const z3Index = code.indexOf('Z3='); console.log('Z3 def at: ' + z3Index);

@@ -95,7 +95,7 @@ export default function ProjectileMotion() {
     if (!isRunning) return;
     const rad = (angle * Math.PI) / 180;
     let x = 50, y = 0;
-    let vx = velocity * Math.cos(rad);
+    const vx = velocity * Math.cos(rad);
     let vy = velocity * Math.sin(rad);
     let t = 0;
     const dt = 0.05;

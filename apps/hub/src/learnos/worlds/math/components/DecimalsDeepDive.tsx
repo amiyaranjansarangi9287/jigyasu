@@ -35,7 +35,7 @@ export default function DecimalsDeepDive() {
   const fraction = useMemo(() => {
     const dec = Math.round((value % 1) * 10000);
     if (dec === 0) return { num: 0, den: 1 };
-    let num = dec, den = 10000;
+    const num = dec, den = 10000;
     const gcd = (a: number, b: number): number => b ? gcd(b, a % b) : a;
     const g = gcd(num, den);
     return { num: num / g, den: den / g };

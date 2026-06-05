@@ -1,1 +1,0 @@
-const fs = require('fs'); const code = fs.readFileSync('.vercel/output/static/assets/index-ACXL51Lb.js', 'utf8'); console.log('Gk = ' + code.match(/Gk="?([^";]+)"?/)[1]); console.log('Z3 = ' + (code.match(/Z3="?([^";]+)"?/) || ['','not found'])[1]);

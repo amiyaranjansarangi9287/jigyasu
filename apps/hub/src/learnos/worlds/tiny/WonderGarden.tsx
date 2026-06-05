@@ -45,7 +45,7 @@ export default function WonderGarden({ visible, onClose }: WonderGardenProps) {
       progress?.nightDiscovered ?? false,
     ];
 
-    let lastTime = performance.now();
+    const lastTime = performance.now();
 
     const animate = (timestamp: number) => {
       const time = (timestamp - lastTime) / 1000 + performance.now() / 1000;

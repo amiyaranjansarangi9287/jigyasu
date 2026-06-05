@@ -229,7 +229,7 @@ export default function Molecule3D() {
     const radX = (rotation.x * Math.PI) / 180;
     const radY = (rotation.y * Math.PI) / 180;
 
-    let { x, y, z } = atom;
+    const { x, y, z } = atom;
 
     // Rotate around Y
     const x1 = x * Math.cos(radY) - z * Math.sin(radY);

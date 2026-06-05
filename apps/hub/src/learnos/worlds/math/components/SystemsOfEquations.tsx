@@ -12,7 +12,7 @@ function makeChallenge() {
   const y = Math.floor(Math.random() * 11) - 5;
   const a1 = Math.floor(Math.random() * 5) + 1;
   const b1 = Math.floor(Math.random() * 5) + 1;
-  let a2 = Math.floor(Math.random() * 5) + 1;
+  const a2 = Math.floor(Math.random() * 5) + 1;
   let b2 = Math.floor(Math.random() * 5) + 1;
   if (a1 * b2 === a2 * b1) b2 += 1;
   const c1 = a1 * x + b1 * y;

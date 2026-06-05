@@ -1,8 +1,59 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
+    "version":  2,
+    "cleanUrls":  true,
+    "trailingSlash":  false,
+    "rewrites":  [
+                     {
+                         "source":  "/physics/(.*)",
+                         "destination":  "https://physics-jigyasu.vercel.app/$1"
+                     },
+                     {
+                         "source":  "/biology/(.*)",
+                         "destination":  "https://biology-jigyasu.vercel.app/$1"
+                     },
+                     {
+                         "source":  "/math/(.*)",
+                         "destination":  "https://math-jigyasu.vercel.app/$1"
+                     },
+                     {
+                         "source":  "/chemistry/(.*)",
+                         "destination":  "https://chemistry-jigyasu.vercel.app/$1"
+                     },
+                     {
+                         "source":  "/cosmos/(.*)",
+                         "destination":  "https://cosmos-jigyasu.vercel.app/$1"
+                     },
+                     {
+                         "source":  "/toys/(.*)",
+                         "destination":  "https://toys-jigyasu.vercel.app/$1"
+                     },
+                     {
+                         "source":  "/camp/(.*)",
+                         "destination":  "https://camp-jigyasu.vercel.app/$1"
+                     },
+                     {
+                         "source":  "/(.*)",
+                         "destination":  "/index.html"
+                     }
+                 ],
+    "headers":  [
+                    {
+                        "source":  "/(.*)",
+                        "headers":  [
+                                        {
+                                            "key":  "X-Content-Type-Options",
+                                            "value":  "nosniff"
+                                        },
+                                        {
+                                            "key":  "X-Frame-Options",
+                                            "value":  "DENY"
+                                        },
+                                        {
+                                            "key":  "X-XSS-Protection",
+                                            "value":  "1; mode=block"
+                                        }
+                                    ]
+                    }
+                ],
+    "framework":  "vite"
 }
