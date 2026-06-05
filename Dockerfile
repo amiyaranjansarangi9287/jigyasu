@@ -6,8 +6,9 @@ WORKDIR /usr/src/app
 FROM base AS install
 COPY . .
 
-# Run bun install
-RUN bun install
+# Run pnpm install
+RUN bun install -g pnpm@8.15.5
+RUN pnpm install --frozen-lockfile=false
 
 # Copy application source
 FROM base AS release
