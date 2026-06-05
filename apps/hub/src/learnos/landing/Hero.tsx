@@ -56,15 +56,15 @@ export default function Hero() {
             <dl className="mt-10 flex flex-wrap gap-6 text-sm">
               <div>
                 <dt className="text-slate-500">{t('landing.hero.stat_learners')}</dt>
-                <dd className="font-display text-2xl font-bold text-slate-900">Coming Soon</dd>
+                <dd className="font-display text-2xl font-bold text-slate-900">{t('landing.hero.coming_soon', 'Coming Soon')}</dd>
               </div>
               <div className="border-l border-orange-200 pl-6">
                 <dt className="text-slate-500">{t('landing.hero.stat_lessons')}</dt>
-                <dd className="font-display text-2xl font-bold text-slate-900">Coming Soon</dd>
+                <dd className="font-display text-2xl font-bold text-slate-900">{t('landing.hero.coming_soon', 'Coming Soon')}</dd>
               </div>
               <div className="border-l border-orange-200 pl-6">
                 <dt className="text-slate-500">{t('landing.hero.stat_rating')}</dt>
-                <dd className="font-display text-2xl font-bold text-slate-900">Coming Soon</dd>
+                <dd className="font-display text-2xl font-bold text-slate-900">{t('landing.hero.coming_soon', 'Coming Soon')}</dd>
               </div>
             </dl>
           </div>

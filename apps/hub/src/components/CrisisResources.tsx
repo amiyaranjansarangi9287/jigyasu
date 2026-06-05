@@ -46,7 +46,7 @@ export default function CrisisResources() {
         tabIndex={0}
       >
         <span className="text-lg" aria-hidden="true">🆘</span>
-        <span>Get Help</span>
+        <span>{t('get_help', 'Get Help')}</span>
       </button>
     );
   }

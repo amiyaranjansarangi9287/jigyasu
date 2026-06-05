@@ -32,7 +32,8 @@ export function useFormatNumber() {
         mai: 'deva',   // Maithili
         sd: 'arabext', // Sindhi
         mni: 'mtei',   // Manipuri (Meitei)
-        or: 'orya',    // Odia
+        or: 'orya',    // Odia (ISO)
+        od: 'orya',    // Odia (Custom code used in Jigyasu)
         kn: 'knda',    // Kannada
         ta: 'tamldec', // Tamil (Decimal)
         te: 'telu',    // Telugu

@@ -3,6 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect, useRef, type ReactNode } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ParentCorner } from '@/shared/layout';
+import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
+import ModuleTutorialOverlay from '../../shared/ModuleTutorialOverlay';
+import { useTutorialStore } from '../../store/tutorialStore';
 import { LumoSageBubble } from './components/LumoSageBubble';
 import { GoDeeper } from './components/GoDeeper';
 import { useDiscoverySession } from './hooks/useDiscoverySession';
@@ -16,6 +20,10 @@ export default function DiscoveryShell({ module, children, showGoDeeper = true }
   const { showBreak, trackEvent, dismissBreak } = useDiscoverySession();
   const lumo = useLumoSage();
   const trackedRef = useRef(false);
+  const { t } = useTranslation();
+  
+  const { hasCompletedTutorial, markTutorialCompleted } = useTutorialStore();
+  const [showTutorial, setShowTutorial] = useState(() => !hasCompletedTutorial(module));
 
   useEffect(() => {
     if (trackedRef.current) return;
@@ -32,7 +40,15 @@ export default function DiscoveryShell({ module, children, showGoDeeper = true }
       <div className="bg-slate-800/50 border-b border-slate-700/50 px-5 py-4 flex items-center justify-between">
         <button onClick={() => navigate('/discovery')} className="text-slate-400 hover:text-white text-sm flex items-center gap-1">← Map</button>
         <div className="text-center text-white font-bold text-sm">{mod?.emoji} {mod?.title}</div>
-        <div className="text-slate-500 text-sm uppercase">{mod?.subject}</div>
+        <div className="flex items-center gap-4">
+          <div className="text-slate-500 text-sm uppercase hidden sm:block">{mod?.subject}</div>
+          <button 
+            onClick={() => setShowTutorial(true)}
+            className="text-slate-400 hover:text-white text-sm flex items-center gap-1 font-bold"
+          >
+            <span className="text-lg">💡</span> <span className="hidden sm:inline">{t('tutorials.help', 'Help')}</span>
+          </button>
+        </div>
       </div>
       {children}
       {showGoDeeper && gd && <GoDeeper content={gd} module={module} />}
@@ -45,6 +61,18 @@ export default function DiscoveryShell({ module, children, showGoDeeper = true }
           </div>
         </motion.div>
       )}</AnimatePresence>
+      
+      {showTutorial && (
+        <ModuleTutorialOverlay
+          moduleId={module}
+          moduleTitle={mod?.title || ''}
+          onComplete={() => {
+            markTutorialCompleted(module);
+            setShowTutorial(false);
+          }}
+          onClose={() => setShowTutorial(false)}
+        />
+      )}
     </div>
   );
 }

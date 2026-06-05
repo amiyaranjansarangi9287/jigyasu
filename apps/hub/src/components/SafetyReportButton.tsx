@@ -49,7 +49,7 @@ export default function SafetyReportButton() {
         tabIndex={0}
       >
         <span className="text-lg" aria-hidden="true">📢</span>
-        <span>Report</span>
+        <span>{t('report', 'Report')}</span>
       </button>
     );
   }

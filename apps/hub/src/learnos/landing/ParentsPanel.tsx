@@ -46,9 +46,9 @@ export default function ParentsPanel() {
           <div className="relative">
             <div className="rounded-2xl bg-white/95 p-8 text-slate-800 shadow-2xl rotate-1">
               <div className="text-center space-y-3">
-                <p className="text-sm font-semibold text-slate-500">Weekly Summary</p>
-                <p className="font-display text-lg font-bold">Coming Soon</p>
-                <p className="text-sm text-slate-600">Track your child's learning journey with detailed progress reports, time spent, and achievements.</p>
+                <p className="text-sm font-semibold text-slate-500">{t('weekly_summary', 'Weekly Summary')}</p>
+                <p className="font-display text-lg font-bold">{t('landing.hero.coming_soon', 'Coming Soon')}</p>
+                <p className="text-sm text-slate-600">{t('weekly_summary_desc', "Track your child's learning journey with detailed progress reports, time spent, and achievements.")}</p>
               </div>
             </div>
           </div>

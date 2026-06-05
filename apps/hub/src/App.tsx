@@ -14,6 +14,7 @@ import TermsOfService from './components/TermsOfService';
 import ParentDashboard from './components/ParentDashboard';
 import AboutPage from './components/AboutPage';
 import SharedPhoneMode from './components/SharedPhoneMode';
+import ContactPage from './components/ContactPage';
 import MasteryIndicator, { GardenProgress } from './components/MasteryIndicator';
 import AnalyticsDashboard from './components/AnalyticsDashboard';
 import ImpactDashboard from './components/ImpactDashboard';
@@ -142,6 +143,7 @@ function SwipeableRoutes() {
           <Route path="/privacy" element={<ErrorBoundary><PrivacyPolicy /></ErrorBoundary>} />
           <Route path="/terms" element={<ErrorBoundary><TermsOfService /></ErrorBoundary>} />
           <Route path="/parents" element={<ErrorBoundary><ParentDashboard /></ErrorBoundary>} />
+          <Route path="/contact" element={<ErrorBoundary><ContactPage /></ErrorBoundary>} />
           <Route path="/execute" element={<ErrorBoundary><Suspense fallback={<RouteLoading label="Opening Maker Space" />}><KidsCampApp /></Suspense></ErrorBoundary>} />
           <Route path="/execute/*" element={<ErrorBoundary><Suspense fallback={<RouteLoading label="Opening Maker Space" />}><KidsCampApp /></Suspense></ErrorBoundary>} />
           <Route path="*" element={<ErrorBoundary><Suspense fallback={<RouteLoading label="Opening Learning Paths" />}><JigyasuApp /></Suspense></ErrorBoundary>} />

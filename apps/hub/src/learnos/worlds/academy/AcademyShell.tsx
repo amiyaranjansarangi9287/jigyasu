@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect, useState, useRef, type ReactNode } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
+import { useTranslation } from 'react-i18next';
+import ModuleTutorialOverlay from '../../shared/ModuleTutorialOverlay';
+import { useTutorialStore } from '../../store/tutorialStore';
 import { LumoAncientGlow } from './components/LumoAncientGlow';
 import { ExamBridge } from './components/ExamBridge';
 import { useAcademySession } from './hooks/useAcademySession';
@@ -22,6 +25,9 @@ export default function AcademyShell({ module, children }: Props) {
   const [showBeauty, setShowBeauty] = useState(false);
   const trackedRef = useRef(false);
   const mod = ACADEMY_MODULES.find(m => m.id === module);
+  const { t } = useTranslation();
+  const { hasCompletedTutorial, markTutorialCompleted } = useTutorialStore();
+  const [showTutorial, setShowTutorial] = useState(() => !hasCompletedTutorial(module));
 
   useEffect(() => { if (trackedRef.current) return; trackedRef.current = true; trackEvent(module, 'module_opened'); return () => { trackEvent(module, 'module_closed'); }; }, [module, trackEvent]);
 
@@ -30,6 +36,7 @@ export default function AcademyShell({ module, children }: Props) {
       <div className="flex items-center justify-between px-4 py-3 border-b border-slate-800/50">
         <button onClick={() => navigate('/academy')} className="text-slate-500 hover:text-slate-300 text-sm transition-colors min-h-[44px]">← Academy</button>
         <div className="flex items-center gap-2">
+          <button onClick={() => setShowTutorial(true)} className="text-slate-600 hover:text-slate-400 text-sm font-bold min-h-[36px] px-2 transition-colors">💡 Help</button>
           <button onClick={() => setShowBeauty(!showBeauty)} className="text-slate-600 hover:text-yellow-500 text-sm transition-colors" title="The beauty">✦</button>
           <button onClick={() => setExamMode(!examMode)} className={`px-3 py-1.5 rounded-lg text-sm font-bold min-h-[36px] transition-all ${examMode ? 'bg-indigo-900/50 text-indigo-400 border border-indigo-700' : 'text-slate-600 hover:text-slate-400'}`}>{examMode ? '📝 Exam' : '🔬 Explore'}</button>
         </div>
@@ -49,6 +56,18 @@ export default function AcademyShell({ module, children }: Props) {
 
       <LumoAncientGlow visible={lumo.peacockVisible} message={lumo.peacockMessage} name={lumo.peacockName} emotion={lumo.peacockEmotion} onDismiss={lumo.dismiss} />
       <ParentCorner onExit={() => navigate('/academy')} />
+      
+      {showTutorial && (
+        <ModuleTutorialOverlay
+          moduleId={module}
+          moduleTitle={mod?.title || ''}
+          onComplete={() => {
+            markTutorialCompleted(module);
+            setShowTutorial(false);
+          }}
+          onClose={() => setShowTutorial(false)}
+        />
+      )}
     </div>
   );
 }

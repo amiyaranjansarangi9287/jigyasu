@@ -225,11 +225,8 @@ export default function AboutPage() {
             Jigyasu
           </h1>
           <p className="text-2xl font-bold text-indigo-500"> {t('about.tagline', 'Install Wonder.')} </p>
-          <p className="text-lg text-slate-500 italic max-w-xl mx-auto leading-relaxed">
-            "Every child is born a scientist.
-            They ask why. They test everything.
-            Then school happens — and the why gets quieter.
-            We are here to keep the why loud. Forever."
+          <p className="text-lg text-slate-500 italic max-w-xl mx-auto leading-relaxed whitespace-pre-line">
+            {t('about.hero_quote', '"Every child is born a scientist.\nThey ask why. They test everything.\nThen school happens — and the why gets quieter.\nWe are here to keep the why loud. Forever."')}
           </p>
         </motion.header>
 
@@ -238,7 +235,7 @@ export default function AboutPage() {
         ═══════════════════════════════════════════ */}
         <motion.section {...FADE_UP} className="space-y-5 mb-16">
           <h2 className="text-2xl font-bold text-indigo-900">
-            Why We Are Building This
+            {t('about.why_we_build', 'Why We Are Building This')}
           </h2>
 
           <p className="text-lg leading-relaxed text-slate-700">
@@ -520,16 +517,16 @@ export default function AboutPage() {
             <p className="text-slate-200 text-base font-semibold">
               Reach out to us at:
             </p>
-            <a
-              href="mailto:contact@jigyasu.app"
+            <button
+              onClick={() => navigate('/contact')}
               className="inline-flex items-center gap-2 bg-indigo-600
                          hover:bg-indigo-500 transition-colors text-white
                          font-bold px-6 py-4 rounded-2xl text-base
                          min-h-[56px]"
             >
-              <span>✉️</span>
-              <span>contact@jigyasu.app</span>
-            </a>
+              <span>📝</span>
+              <span>{t('about.contact_form', 'Contact Us via Form')}</span>
+            </button>
           </div>
 
           {/* What to include */}
@@ -561,7 +558,7 @@ export default function AboutPage() {
           {/* Ways to support */}
           <div className="space-y-3">
             <p className="text-slate-400 text-sm font-bold uppercase tracking-wider">
-              Ways people have expressed interest in supporting:
+              {t('about.ways_to_support', 'Ways you can support us:')}
             </p>
             <div className="grid grid-cols-2 gap-2 text-sm text-slate-400">
               {[
@@ -614,12 +611,12 @@ export default function AboutPage() {
           </p>
           <p className="text-slate-400 text-sm">
             © {new Date().getFullYear()} Jigyasu ·{' '}
-            <a
-              href="mailto:contact@jigyasu.app"
+            <button
+              onClick={() => navigate('/contact')}
               className="hover:text-indigo-500 transition-colors"
             >
-              contact@jigyasu.app
-            </a>
+              {t('footer.contact', 'Contact Us')}
+            </button>
           </p>
         </motion.section>
 

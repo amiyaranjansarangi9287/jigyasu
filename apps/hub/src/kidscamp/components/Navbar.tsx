@@ -32,11 +32,7 @@ export default function Navbar({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [pillarsDropdownOpen, setPillarsDropdownOpen] = useState(false);
 
-  const handleLanguageChange = () => {
-    const nextLang = language === 'en' ? 'hi' : 'en';
-    setLanguage(nextLang);
-    i18n.changeLanguage(nextLang);
-  };
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -162,17 +158,7 @@ export default function Navbar({
 
             {/* Right side buttons */}
             <div className="flex items-center gap-2">
-              {/* Language selector button */}
-              <button
-                onClick={handleLanguageChange}
-                className={`hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
-                  scrolled
-                    ? 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700'
-                    : 'bg-white/20 text-white hover:bg-white/30'
-                }`}
-              >
-                🌐 {language?.toUpperCase() || 'EN'}
-              </button>
+
 
               {/* Age selector button */}
               <button

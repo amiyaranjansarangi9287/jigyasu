@@ -5,11 +5,11 @@ import type { Language } from '../types/shared';
 
 const LOCALE_MAP: Record<Language, string> = {
   en: 'en-IN',
-  hi: 'hi-IN',
+  hi: 'hi-IN-u-nu-deva',
   ta: 'ta-IN',
   te: 'te-IN',
   kn: 'kn-IN',
-  od: 'or-IN',
+  od: 'or-IN-u-nu-orya',
 };
 
 const CURRENCY_MAP: Record<Language, string> = {

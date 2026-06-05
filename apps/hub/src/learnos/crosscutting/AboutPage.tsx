@@ -486,7 +486,7 @@ export default function AboutPage() {
           {/* Ways to support */}
           <div className="space-y-3">
             <p className="text-slate-400 text-sm font-bold uppercase tracking-wider">
-              Ways people have expressed interest in supporting:
+              Ways you can support us:
             </p>
             <div className="grid grid-cols-2 gap-2 text-sm text-slate-400">
               {[

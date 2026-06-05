@@ -86,6 +86,9 @@ export default function Footer({ onNavigate }: FooterProps) {
               <li>
                 <a href="/about" className="hover:text-orange-400 transition-colors">{t('footer.about', 'About Us')}</a>
               </li>
+              <li>
+                <a href="/contact" className="hover:text-orange-400 transition-colors">{t('footer.contact', 'Contact Us')}</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -94,9 +97,12 @@ export default function Footer({ onNavigate }: FooterProps) {
       {/* Bottom Bar */}
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-gray-500 text-sm">
-            © {currentYear} Jigyasu. {t('footer.made_with', 'Made with ❤️ for India.')}
-          </p>
+          <div className="flex flex-col gap-1 items-center sm:items-start text-sm">
+            <p className="text-gray-500">
+              © {currentYear} Jigyasu. {t('footer.made_with', 'Made with ❤️ for India.')}
+            </p>
+            <p className="text-xs text-gray-600">Developed by <span className="font-semibold text-gray-400">Annapurna Agentic Solutions</span></p>
+          </div>
         </div>
       </div>
     </footer>

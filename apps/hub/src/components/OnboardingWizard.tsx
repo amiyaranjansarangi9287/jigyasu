@@ -80,7 +80,7 @@ export default function OnboardingWizard({ onComplete }: OnboardingWizardProps) 
 
         <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="profile-language" className="block text-sm font-bold text-slate-700 mb-2">
+              <label htmlFor="profile-language" className="block text-sm font-bold !text-slate-700 mb-2">
                 {t('language', 'Language')}
               </label>
               <select
@@ -106,7 +106,7 @@ export default function OnboardingWizard({ onComplete }: OnboardingWizardProps) 
             </div>
 
             <div>
-              <label htmlFor="profile-nickname" className="block text-sm font-bold text-slate-700 mb-2">
+              <label htmlFor="profile-nickname" className="block text-sm font-bold !text-slate-700 mb-2">
                 {t('enter_name', "What's your nickname?")}
               </label>
               <input
@@ -115,7 +115,7 @@ export default function OnboardingWizard({ onComplete }: OnboardingWizardProps) 
                 value={name}
                 onChange={(event) => setName(event.target.value)}
                 className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-sky-400 focus:ring-4 focus:ring-sky-100 transition-all outline-none text-lg font-medium"
-                placeholder={t('enter_name_placeholder', 'e.g. Explorer')}
+                placeholder={t('enter_name_placeholder', 'e.g. Kiran')}
                 autoComplete="off"
                 maxLength={24}
                 required
@@ -125,7 +125,7 @@ export default function OnboardingWizard({ onComplete }: OnboardingWizardProps) 
 
 
             <div>
-              <label htmlFor="profile-age" className="block text-sm font-bold text-slate-700 mb-2">
+              <label htmlFor="profile-age" className="block text-sm font-bold !text-slate-700 mb-2">
                 {t('age_group', 'Age Group')}
               </label>
               <select
@@ -176,7 +176,7 @@ export default function OnboardingWizard({ onComplete }: OnboardingWizardProps) 
                   className="w-6 h-6 rounded text-sky-500 focus:ring-sky-400 focus:ring-offset-2 border-slate-300"
                   required={isChild}
                 />
-                <label htmlFor="parent-consent-checkbox" className="text-sm font-medium text-slate-700 cursor-pointer select-none">
+                <label htmlFor="parent-consent-checkbox" className="text-sm font-medium !text-slate-700 cursor-pointer select-none">
                   {t('parent_permission', "I have my parent/guardian's permission to create a local profile.")}
                 </label>
               </div>

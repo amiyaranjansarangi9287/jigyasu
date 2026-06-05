@@ -466,7 +466,7 @@
       "switch_language": "Switch language"
     },
     "hero": {
-      "badge": "New • 6 languages • Ages 2–99",
+      "badge": "New • 22 languages • Ages 2–99",
       "title_part1": "Learning that fits",
       "title_part2": "every mind",
       "description": "Tiny humans, curious teens and lifelong learners — all welcome. Pick a world, pick a language, and dive into bite-sized lessons designed to delight.",
@@ -480,7 +480,8 @@
       "streak_label": "streak!",
       "streak_keep": "Keep going",
       "badge_label": "Math whiz",
-      "badge_unlocked": "New badge unlocked"
+      "badge_unlocked": "New badge unlocked",
+      "coming_soon": "Coming Soon"
     },
     "language": {
       "step": "Step 1",
@@ -558,7 +559,7 @@
       "privacy_first_desc": "No tracking, no ads, no data selling",
       "works_offline": "Works offline",
       "works_offline_desc": "Progress saved locally, syncs later",
-      "six_languages": "6 languages",
+      "six_languages": "22 languages",
       "six_languages_desc": "English, Hindi, Tamil, Telugu, Kannada, Odia"
     },
     "how_it_works": {
@@ -566,7 +567,7 @@
       "step1_title": "Pick a world",
       "step1_desc": "Choose from Tiny World to The Academy — or just explore freely.",
       "step2_title": "Pick a language",
-      "step2_desc": "Every lesson is available in 6 Indian languages.",
+      "step2_desc": "Every lesson is available in 22 Indian languages.",
       "step3_title": "Start learning",
       "step3_desc": "Bite-sized lessons, interactive simulations, zero pressure.",
       "step4_title": "Come back tomorrow",
@@ -670,7 +671,7 @@
       },
       "mitosis": {
         "title": "Mitosis",
-        "desc": "6 phases of cell division"
+        "desc": "22 phases of cell division"
       },
       "meiosis": {
         "title": "Meiosis",
@@ -1465,7 +1466,7 @@
     "ages": "Ages"
   },
   "footer": {
-    "desc": "Free visual STEM learning for every child in India. Works offline. 6 Indian languages.",
+    "desc": "Free visual STEM learning for every child in India. Works offline. 22 Indian languages.",
     "information": "Information",
     "privacy": "Privacy",
     "about": "About Us",
@@ -1569,7 +1570,7 @@
   "about.differences.0.desc": "There is no poor version...",
   "about.differences.1.title": "Website First",
   "about.differences.1.desc": "A link shared...",
-  "about.differences.2.title": "6 Indian Languages",
+  "about.differences.2.title": "22 Indian Languages",
   "about.differences.2.desc": "English, Hindi, Tamil...",
   "about.differences.3.title": "Offline First",
   "about.differences.3.desc": "Designed to work on 2G...",
@@ -1591,7 +1592,7 @@
   "about.relationships": "We believe in relationships before transactions.",
   "learning_paths": "Learning Paths",
   "learning_paths_desc": "Dive into structured worlds of knowledge. Master concepts step-by-step through interactive stories and lessons.",
-  "go_to_learning_paths": "Go to Learning Paths \\u2192",
+  "go_to_learning_paths": "Go to Learning Paths ?",
   "tiny_world": "Tiny World (Ages 3-5)",
   "tiny_world_desc": "Alphabet, colors, shapes, and early emotional skills.",
   "adventure_academy": "Adventure Academy (Ages 6-8)",
@@ -1600,7 +1601,7 @@
   "lab_zero_desc": "Physics, advanced math, and coding fundamentals.",
   "nav_maker_space": "Maker Space",
   "maker_space_desc": "Roll up your sleeves! Build, create, and experiment in our hands-on interactive 3D labs and outdoor quests.",
-  "go_to_maker_space": "Go to Maker Space \\u2192",
+  "go_to_maker_space": "Go to Maker Space ?",
   "interactive_lab": "Interactive Lab",
   "interactive_lab_desc": "Physics simulations and chemistry experiments.",
   "art_studio": "Art Studio",
@@ -1844,7 +1845,7 @@
   "kidscamp.featured.title": "Featured Activities",
   "kidscamp.featured.desc": "Our most popular projects loved by families everywhere",
   "kidscamp.featured.view_details": "View Details",
-  "footer.desc": "Free visual STEM learning for every child in India. Works offline. 6 Indian languages.",
+  "footer.desc": "Free visual STEM learning for every child in India. Works offline. 22 Indian languages.",
   "kidscamp.footer.activities": "Activities",
   "kidscamp.footer.all_activities": "All Activities →",
   "kidscamp.footer.resources": "Resources",
@@ -2291,5 +2292,48 @@
   "world_math": "Math Kingdom",
   "world_physics": "Physics World",
   "need_more_xp": "You need {{amount}} more XP!",
-  "maker_space.ad_free": "Ad-Free Fun"
+  "maker_space.ad_free": "Ad-Free Fun",
+  "about.hero_quote": "\"Every child is born a scientist.\\nThey ask why. They test everything.\\nThen school happens � and the why gets quieter.\\nWe are here to keep the why loud. Forever.\"",
+  "about.why_we_build": "Why We Are Building This",
+  "about.contact_form": "Contact Us via Form",
+  "get_help": "Get Help",
+  "report": "Report",
+  "weekly_summary": "Weekly Summary",
+  "weekly_summary_desc": "Track your child's learning journey with detailed progress reports, time spent, and achievements.",
+  "tutorials": {
+    "guide_title": "Guided Guide",
+    "skip": "Skip",
+    "back": "Back",
+    "start": "Start Exploring!",
+    "next": "Next",
+    "help": "Help",
+    "generic": {
+      "step1": {
+        "title": "Welcome!",
+        "desc": "Let's explore this world together!"
+      },
+      "step2": {
+        "title": "How to Play",
+        "desc": "Tap, drag, and interact with the elements on the screen to see what happens."
+      },
+      "step3": {
+        "title": "Discover",
+        "desc": "Be curious and try different things. What patterns can you find?"
+      }
+    },
+    "maker_space": {
+      "step1": {
+        "title": "Welcome to Maker Space!",
+        "desc": "Let's build something amazing together!"
+      },
+      "step2": {
+        "title": "Gather Materials",
+        "desc": "First, check off the materials you have. You can always skip this step and start building!"
+      },
+      "step3": {
+        "title": "Follow the Steps",
+        "desc": "Go through each step one by one. Once you are done, mark the step as completed!"
+      }
+    }
+  }
 }

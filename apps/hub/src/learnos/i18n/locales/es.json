@@ -11,5 +11,14 @@
   "bioverse": "BioVerso",
   "chemlab": "Laboratorio de Química",
   "cosmoslab": "Laboratorio de Cosmos",
-  "toys_games": "Juguetes y Juegos"
+  "toys_games": "Juguetes y Juegos",
+  "get_help": "Get Help",
+  "report": "Report",
+  "weekly_summary": "Weekly Summary",
+  "weekly_summary_desc": "Track your child's learning journey with detailed progress reports, time spent, and achievements.",
+  "landing": {
+    "hero": {
+      "coming_soon": "Coming Soon"
+    }
+  }
 }

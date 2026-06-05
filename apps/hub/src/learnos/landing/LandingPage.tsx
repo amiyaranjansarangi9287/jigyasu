@@ -47,13 +47,6 @@ export default function LandingPage() {
       <ParentsPanel />
       <Testimonials />
       <Footer />
-      {/* Privacy Note Footer */}
-      <footer className="w-full bg-slate-100 py-6 text-center text-slate-500 font-medium text-sm border-t border-slate-200">
-        <p className="flex items-center justify-center gap-2">
-          <span className="text-lg">🛡️</span> 
-          <span><strong>{t('landing_page.privacy_first', 'Privacy First:')}</strong> {t('landing_page.privacy_desc', 'We do not capture or store any personal data on our servers. Your nickname, avatar, and progress are saved securely on your own device.')}</span>
-        </p>
-      </footer>
       {showPrivacy && <PrivacyBanner onAccept={handleAccept} onDecline={handleDecline} />}
     </div>
   );

@@ -27,13 +27,16 @@ export default function Footer() {
           <div>
             <p className="font-display text-sm font-bold uppercase tracking-wider text-slate-800">{t('footer.contact', 'Contact')}</p>
             <ul className="mt-3 space-y-2 text-sm text-slate-600">
-              <li><a href="mailto:ars.jobs2019@gmail.com" className="hover:text-brand">ars.jobs2019@gmail.com</a></li>
+              <li><a href="/contact" className="hover:text-brand">{t('footer.contact', 'Contact Us')}</a></li>
             </ul>
           </div>
         </div>
 
         <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-orange-100 pt-6 text-sm text-slate-500 md:flex-row">
-          <p>© {new Date().getFullYear()} Jigyasu. {t('footer.made_with', 'Made with ❤️ for India.')}</p>
+          <div className="flex flex-col gap-1 items-center md:items-start">
+            <p>© {new Date().getFullYear()} Jigyasu. {t('footer.made_with', 'Made with ❤️ for India.')}</p>
+            <p className="text-xs text-slate-400">Developed by <span className="font-semibold text-slate-500">Annapurna Agentic Solutions</span></p>
+          </div>
         </div>
       </div>
     </footer>

@@ -5,6 +5,8 @@ import { Activity } from '../data/activities.en';
 import { pillars } from '../data/categories';
 import { useTranslation } from 'react-i18next';
 import { useActivityProgress } from '../hooks/useActivityProgress';
+import ModuleTutorialOverlay from '../../learnos/shared/ModuleTutorialOverlay';
+import { useTutorialStore } from '../../learnos/store/tutorialStore';
 
 interface ActivityModeProps {
   activity: Activity;
@@ -84,6 +86,9 @@ export default function ActivityMode({
   const [confettiPieces, setConfettiPieces] = useState<ConfettiPiece[]>([]);
   const [showExitConfirm, setShowExitConfirm] = useState(false);
   const [stepFeedback, setStepFeedback] = useState<boolean>(false);
+
+  const { hasCompletedTutorial, markTutorialCompleted } = useTutorialStore();
+  const [showTutorial, setShowTutorial] = useState(() => !hasCompletedTutorial('maker_space'));
 
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const pillar = pillars.find(p => p.id === activity.pillar);
@@ -261,6 +266,14 @@ export default function ActivityMode({
           </div>
 
           <div className="flex items-center gap-2 sm:gap-4">
+            {/* Help Button */}
+            <button
+              onClick={() => setShowTutorial(true)}
+              className="text-gray-500 hover:text-gray-900 dark:hover:text-white text-sm flex items-center gap-1 font-bold mr-2"
+            >
+              <span className="text-lg">💡</span> <span className="hidden sm:inline">{t('tutorials.help', 'Help')}</span>
+            </button>
+
             {/* Timer */}
             <div className="flex items-center gap-2">
               <div className={`font-mono text-base sm:text-lg font-medium ${timerRunning ? 'text-green-500' : 'text-gray-500 dark:text-gray-400'}`}>
@@ -774,6 +787,19 @@ export default function ActivityMode({
             </div>
           </div>
         </div>
+      )}
+
+      {/* Tutorial Overlay */}
+      {showTutorial && (
+        <ModuleTutorialOverlay
+          moduleId="maker_space"
+          moduleTitle={t('kidscamp.maker_space', 'Maker Space')}
+          onComplete={() => {
+            markTutorialCompleted('maker_space');
+            setShowTutorial(false);
+          }}
+          onClose={() => setShowTutorial(false)}
+        />
       )}
     </div>
   );

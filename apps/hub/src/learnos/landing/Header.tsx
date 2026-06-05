@@ -7,13 +7,7 @@ export default function Header() {
   const { t, i18n } = useTranslation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const handleLanguageChange = () => {
-    const nextLang = language === 'en' ? 'hi' : 'en';
-    setLanguage(nextLang);
-    i18n.changeLanguage(nextLang);
-    // Persist to localStorage for consistency
-    localStorage.setItem('learnos-language', nextLang);
-  };
+
 
   return (
     <header className="sticky top-0 z-30 backdrop-blur-md bg-cream/70 border-b border-orange-100">
@@ -31,13 +25,7 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <button
-            onClick={handleLanguageChange}
-            aria-label={`${t('landing.header.switch_language', 'Switch Language')}. Current: ${language}`}
-            className="inline-flex items-center gap-1.5 rounded-full border border-orange-200 bg-white/80 px-3.5 py-1.5 text-sm font-semibold text-slate-700 hover:border-brand hover:text-brand transition min-h-[44px]"
-          >
-            🌐 {language.toUpperCase()}
-          </button>
+
           <a
             href="#worlds"
             className="hidden sm:inline-flex items-center gap-1.5 rounded-full bg-brand px-4 py-2 text-sm font-bold text-white shadow-lg shadow-orange-300/50 hover:bg-brand-dark transition active:scale-95 min-h-[44px]"

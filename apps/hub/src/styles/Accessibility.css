@@ -61,13 +61,7 @@ a:hover {
   color: #ca8a04 !important;
 }
 
-/* Ensure form labels have sufficient contrast */
-label {
-  color: #1f2937 !important;
-  font-weight: 500 !important;
-}
-
-/* Fix low contrast helper text */
+/* Ensure all icons have sufficient contrast when used as standalone elements */
 .text-gray-400 {
   color: #6b7280 !important;
 }
@@ -85,9 +79,5 @@ label {
   
   .border-gray-200 {
     border-color: #4b5563 !important;
-  }
-  
-  label {
-    color: #f9fafb !important;
   }
 }

@@ -32,13 +32,18 @@ export function getTextDirection(lang: string): 'ltr' | 'rtl' {
  */
 export function updateFormatters(locale: string) {
   try {
-    formatters.number = new Intl.NumberFormat(locale);
-    formatters.currency = new Intl.NumberFormat(locale, { 
+    // Map locale to include native numbering systems if needed
+    let numberLocale = locale;
+    if (locale === 'od') numberLocale = 'or-IN-u-nu-orya';
+    if (locale === 'hi') numberLocale = 'hi-IN-u-nu-deva';
+    
+    formatters.number = new Intl.NumberFormat(numberLocale);
+    formatters.currency = new Intl.NumberFormat(numberLocale, { 
       style: 'currency', 
       currency: 'INR' 
     });
-    formatters.date = new Intl.DateTimeFormat(locale);
-    formatters.time = new Intl.DateTimeFormat(locale, { 
+    formatters.date = new Intl.DateTimeFormat(numberLocale);
+    formatters.time = new Intl.DateTimeFormat(numberLocale, { 
       hour: '2-digit', 
       minute: '2-digit' 
     });
