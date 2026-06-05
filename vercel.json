@@ -1,5 +1,6 @@
 {
-    "outputDirectory":  "apps/hub/dist",
-    "buildCommand":  "pnpm run build",
-    "framework":  "vite"
+  "installCommand": "pnpm install --force",
+  "buildCommand": "pnpm run build",
+  "outputDirectory": "apps/hub/dist",
+  "framework": "vite"
 }
