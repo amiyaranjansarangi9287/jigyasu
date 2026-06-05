@@ -1,0 +1,5 @@
+{
+    "outputDirectory":  "apps/hub/dist",
+    "buildCommand":  "pnpm run build",
+    "framework":  "vite"
+}
