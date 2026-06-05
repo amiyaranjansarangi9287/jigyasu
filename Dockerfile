@@ -1,24 +1,12 @@
-# Use the official Bun image
-FROM oven/bun:1 as base
+FROM oven/bun:1
 WORKDIR /usr/src/app
 
-# Install dependencies
-FROM base AS install
-COPY . .
+COPY apps/backend/package.json ./
+RUN bun install
 
-# Run pnpm install
-RUN bun install -g pnpm@8.15.5
-RUN pnpm install --frozen-lockfile=false
-
-# Copy application source
-FROM base AS release
-COPY --from=install /usr/src/app /usr/src/app
-
-WORKDIR /usr/src/app/apps/backend
+COPY apps/backend/src ./src
 
 EXPOSE 8080
-
 ENV PORT=8080
 
-# Run the app
-ENTRYPOINT ["bun", "run", "start"]
+ENTRYPOINT ["bun", "run", "src/index.ts"]
