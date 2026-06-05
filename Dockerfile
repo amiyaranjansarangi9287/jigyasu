@@ -4,8 +4,7 @@ WORKDIR /usr/src/app
 
 # Install dependencies
 FROM base AS install
-COPY package.json bun.lockb* ./
-COPY apps/backend/package.json ./apps/backend/
+COPY . .
 
 # Run bun install
 RUN bun install
@@ -13,7 +12,6 @@ RUN bun install
 # Copy application source
 FROM base AS release
 COPY --from=install /usr/src/app /usr/src/app
-COPY apps/backend /usr/src/app/apps/backend
 
 WORKDIR /usr/src/app/apps/backend
 
