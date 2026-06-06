@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port 3100 --strictPort",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && node --input-type=module -e \"import fs from 'fs'; fs.cpSync('dist', '../../dist', {recursive: true, force: true}); console.log('Mirrored to repo root!');\"",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc -b --noEmit",
