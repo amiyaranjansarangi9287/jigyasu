@@ -1,7 +1,6 @@
 {
   "buildCommand": "pnpm build",
-  "outputDirectory": "dist",
-  "framework": "vite",
+  "outputDirectory": "apps/hub/dist",
   "installCommand": "pnpm install --force",
   "headers": [
     {
@@ -44,6 +43,11 @@
     {
       "source": "/api/(.*)",
       "destination": "https://jigyasu-api.up.railway.app/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
+}
 }
