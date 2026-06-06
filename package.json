@@ -9,7 +9,7 @@
     "packageManager": "pnpm@8.15.5",
     "scripts": {
         "dev": "pnpm --parallel --filter !backend -r dev",
-        "build": "pnpm --filter @jigyasu/hub... build && node -e \"require('fs').cpSync('apps/hub/dist', 'dist', {recursive: true, force: true})\"",
+        "build": "pnpm --filter @jigyasu/hub... build",
         "lint": "pnpm -r lint",
         "test:e2e": "playwright test",
         "test:e2e:ui": "playwright test --ui"
