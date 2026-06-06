@@ -74,7 +74,7 @@ export default function NavigationCards() {
       <button
         type="button"
         className="card-wonder flex-1 relative group cursor-pointer border-0 overflow-hidden text-center"
-        onClick={() => navigate('/camp')}
+        onClick={() => navigate('/execute')}
         aria-label="Open Kids Camp"
       >
         <span className="absolute inset-0 bg-orange-50 transition-colors duration-500 group-hover:bg-orange-100 z-0" />

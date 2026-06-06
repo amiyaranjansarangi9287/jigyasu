@@ -2,11 +2,11 @@ import json
 import os
 
 langs = {
-    'hi': '[HI] ', 'ta': '[TA] ', 'te': '[TE] ', 'bn': '[BN] ', 'mr': '[MR] ',
-    'gu': '[GU] ', 'kn': '[KN] ', 'ml': '[ML] ', 'pa': '[PA] ', 'as': '[AS] ',
-    'ur': '[UR] ', 'sa': '[SA] ', 'sat': '[SAT] ', 'ne': '[NE] ', 'kok': '[KOK] ',
-    'brx': '[BRX] ', 'doi': '[DOI] ', 'ks': '[KS] ', 'mai': '[MAI] ', 'sd': '[SD] ',
-    'mni': '[MNI] ', 'od': '[OD] '
+    'hi': '', 'ta': '', 'te': '', 'bn': '', 'mr': '',
+    'gu': '', 'kn': '', 'ml': '', 'pa': '', 'as': '',
+    'ur': '', 'sa': '', 'sat': '', 'ne': '', 'kok': '',
+    'brx': '', 'doi': '', 'ks': '', 'mai': '', 'sd': '',
+    'mni': '', 'od': ''
 }
 
 locales_dir = 'D:/vision_agentic/jigyasu/apps/hub/src/learnos/i18n/locales'
