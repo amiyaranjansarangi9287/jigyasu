@@ -1,6 +1,7 @@
 {
   "buildCommand": "pnpm build",
   "outputDirectory": "apps/hub/dist",
+  "framework": null,
   "installCommand": "pnpm install --force",
   "headers": [
     {
