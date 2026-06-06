@@ -27,8 +27,29 @@ export default function ContactPage() {
           animate={{ opacity: 1, y: 0 }}
           className="flex flex-col items-center"
         >
-          <div className="w-full bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
-            <iframe aria-label='Jigyasu Feedback & Support' frameBorder="0" style={{ height: '700px', width: '100%', border: 'none' }} src='https://forms.zohopublic.in/arsjobs2019gm1/form/JigyasuFeedbackSupport/formperma/WLidd2lYcJF7F35E8PvPQVfaBL8OMgCC9yMcSokcQCc' ></iframe>
+          <div className="w-full max-w-lg bg-white rounded-3xl shadow-sm border border-slate-200 p-10 text-center space-y-6">
+            <h2 className="text-2xl font-bold text-slate-800">We'd love to hear from you</h2>
+            <p className="text-slate-600">
+              Have questions, feedback, or want to support Jigyasu? Please fill out our contact form and we'll get back to you as soon as possible.
+            </p>
+            <div className="pt-4 flex flex-col gap-4">
+              <a 
+                href="https://forms.zohopublic.in/arsjobs2019gm1/form/JigyasuFeedbackSupport/formperma/WLidd2lYcJF7F35E8PvPQVfaBL8OMgCC9yMcSokcQCc" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 transition-colors text-white font-bold px-8 py-4 rounded-2xl text-lg w-full"
+              >
+                <span>📝</span>
+                <span>Open Contact Form</span>
+              </a>
+              <a 
+                href="mailto:contact@jigyasu.app" 
+                className="inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 transition-colors text-slate-700 font-bold px-8 py-4 rounded-2xl text-lg w-full"
+              >
+                <span>✉️</span>
+                <span>Email Us Directly</span>
+              </a>
+            </div>
           </div>
         </motion.div>
       </main>

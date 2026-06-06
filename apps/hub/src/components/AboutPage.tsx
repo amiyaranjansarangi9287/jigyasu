@@ -52,8 +52,8 @@ const DIFFERENCE_POINTS_DATA = [
   },
   {
     emoji: '🗣️',
-    title: '6 Indian Languages',
-    desc: 'English, Hindi, Tamil, Telugu, Kannada, and Odia from day one. Understanding begins in the language closest to the learner. We added Odia because every language added means more learners included.',
+    title: '22 Indian Languages',
+    desc: 'Assamese, Bengali, Bodo, Dogri, Gujarati, Hindi, Kannada, Kashmiri, Konkani, Maithili, Malayalam, Manipuri, Marathi, Nepali, Odia, Punjabi, Sanskrit, Santali, Sindhi, Tamil, Telugu, and Urdu from day one. Understanding begins in the language closest to the learner.',
   },
   {
     emoji: '📴',
@@ -146,8 +146,8 @@ export default function AboutPage() {
     },
     {
       emoji: '🗣️',
-      title: t('about.differences.2.title', '6 Indian Languages'),
-      desc: t('about.differences.2.desc', 'English, Hindi, Tamil...'),
+      title: t('about.differences.2.title', '22 Indian Languages'),
+      desc: t('about.differences.2.desc', 'Assamese, Bengali, Bodo, Dogri, Gujarati, Hindi, Kannada, Kashmiri, Konkani, Maithili, Malayalam, Manipuri, Marathi, Nepali, Odia, Punjabi, Sanskrit, Santali, Sindhi, Tamil, Telugu, and Urdu from day one. Understanding begins in the language closest to the learner.'),
     },
     {
       emoji: '📴',
@@ -384,7 +384,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-indigo-900">
             What We Built — and Why
           </h2>
-          <div className="space-y-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4">
             {DIFFERENCE_POINTS.map((point) => (
               <div
                 key={point.title}
@@ -430,7 +430,7 @@ export default function AboutPage() {
               'Monsoons, ISRO, cricket, Indian markets',
               'Aryabhata, Ramanujan, C.V. Raman, J.C. Bose',
               'APJ Abdul Kalam, Sushruta, Brahmagupta',
-              '6 Indian languages from day one',
+              '22 Indian languages from day one',
               'Designed for 2G and shared phones',
               'Offline-first for rural learners',
             ].map((item) => (
