@@ -60,7 +60,7 @@ function NQueens() {
           </select>
         </div>
         <div className="flex items-center gap-3">
-          <span className={`text-sm font-bold ${solved ? 'text-green-400' : conflicts.size > 0 ? 'text-red-400' : 'text-gray-400'}`}>
+          <span className={`text-sm font-bold ${solved ? 'text-green-400' : conflicts.size > 0 ? 'text-orange-400' : 'text-gray-400'}`}>
             {solved ? '✅ Solved!' : `👑 ${queens.length}/${n}`}
           </span>
           <button className="text-sm text-gray-500 hover:text-white" onClick={() => setQueens([])}>Reset</button>
@@ -124,8 +124,8 @@ function KnightsTour() {
   return (
     <div className="max-w-lg mx-auto space-y-4">
       <div className="flex items-center justify-between bg-white/5 rounded-xl px-4 py-2 border border-white/10">
-        <span className={`text-sm font-bold ${complete ? 'text-green-400' : stuck ? 'text-red-400' : 'text-gray-400'}`}>
-          {complete ? '✅ Complete tour!' : stuck ? '❌ Stuck! Reset and try again.' : `🐴 Moves: ${path.length}/${size * size}`}
+        <span className={`text-sm font-bold ${complete ? 'text-green-400' : stuck ? 'text-orange-400' : 'text-gray-400'}`}>
+          {complete ? '✅ Complete tour!' : stuck ? '🤔 Stuck! Reset and try again.' : `🐴 Moves: ${path.length}/${size * size}`}
         </span>
         <button className="text-sm text-gray-500 hover:text-white" onClick={() => { setPath([]); setStuck(false); }}>Reset</button>
       </div>
@@ -169,20 +169,20 @@ function ChessCounting() {
 
   const [qIdx, setQIdx] = useState(0);
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
 
   const current = questions[qIdx % questions.length];
 
   const handleAnswer = (opt: number) => {
     if (feedback) return;
-    if (opt === current.a) { setFeedback('correct'); setScore(s => s + 10); setTimeout(() => { setQIdx(i => i + 1); setFeedback(null); }, 1200); }
+    if (opt === current.a) { setFeedback('correct'); setMastery(m => m + 1); setTimeout(() => { setQIdx(i => i + 1); setFeedback(null); }, 1200); }
     else { setFeedback('wrong'); setTimeout(() => setFeedback(null), 900); }
   };
 
   return (
     <div className="max-w-lg mx-auto">
-      <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {score}</span><span className="text-gray-400 text-sm">Q{(qIdx % questions.length) + 1}/{questions.length}</span></div>
-      <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-red-500/10 border-red-500/40' : 'bg-white/5 border-white/10'}`}>
+      <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {mastery}</span><span className="text-gray-400 text-sm">Q{(qIdx % questions.length) + 1}/{questions.length}</span></div>
+      <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
         <p className="text-xl font-bold text-white text-center mb-6">♟️ {current.q}</p>
         <div className="grid grid-cols-2 gap-3">
           {current.opts.sort(() => Math.random() - 0.5).map(opt => (
@@ -192,7 +192,7 @@ function ChessCounting() {
           ))}
         </div>
         {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✅ Correct!</p>}
-        {feedback === 'wrong' && <p className="text-red-400 font-bold text-center mt-4">Answer: {current.a}</p>}
+        {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Answer: {current.a}</p>}
       </div>
     </div>
   );

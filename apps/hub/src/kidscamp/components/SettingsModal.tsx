@@ -68,7 +68,7 @@ export default function SettingsModal({
               className={`w-14 h-8 rounded-full transition-colors ${
                 soundEnabled ? 'bg-orange-500' : 'bg-gray-300 dark:bg-gray-600'
               }`}
-            >
+             aria-label="Action button">
               <div
                 className={`w-6 h-6 rounded-full bg-white shadow transition-transform ${
                   soundEnabled ? 'translate-x-7' : 'translate-x-1'

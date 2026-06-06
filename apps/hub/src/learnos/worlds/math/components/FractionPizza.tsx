@@ -10,7 +10,7 @@ export default function FractionPizza() {
   const [mode, setMode] = useState<'explore' | 'challenge'>('explore');
   const [challenge, setChallenge] = useState<{ numerator: number; denominator: number } | null>(null);
   const [challengeFeedback, setChallengeFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
 
   const remaining = slices - eaten.size;
   const fraction = eaten.size > 0 ? `${eaten.size}/${slices}` : '0';
@@ -31,7 +31,7 @@ export default function FractionPizza() {
       if (newEaten.size === target && slices === challenge.denominator) {
         setChallengeFeedback('correct');
         sfx.correct();
-        setScore((s) => s + 1);
+        setMastery((s) => s + 1);
         setTimeout(() => {
           generateChallenge();
           setChallengeFeedback(null);
@@ -226,7 +226,7 @@ export default function FractionPizza() {
                 = <span className="font-bold">{challenge.numerator}/{challenge.denominator}</span>
               </p>
               <div className="flex justify-between items-center mt-3">
-                <span className="text-yellow-400 font-bold">⭐ {score}</span>
+                <span className="text-yellow-400 font-bold">⭐ {mastery}</span>
                 {challengeFeedback === 'correct' && (
                   <motion.span
                     className="text-green-400 font-bold"
@@ -242,7 +242,7 @@ export default function FractionPizza() {
                     initial={{ x: -10 }}
                     animate={{ x: [10, -10, 5, 0] }}
                   >
-                    {t('math_modules.FractionPizza.tooMany', '❌ Too many!')}
+                    {t('math_modules.FractionPizza.tooMany', '🤔 Too many!')}
                   </motion.span>
                 )}
               </div>

@@ -718,7 +718,7 @@ export default function PatternPuzzle() {
   const math = useMathFeedback();
   const [puzzle, setPuzzle] = useState<Puzzle | null>(null);
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
   const [round, setRound] = useState(0);
   const [showHint, setShowHint] = useState(false);
   const [solved, setSolved] = useState(0);
@@ -772,7 +772,7 @@ export default function PatternPuzzle() {
     if (option === puzzle.answer) {
       setFeedback('correct');
       math.correct('patterns', showHint ? 5 : 10);
-      setScore((prev) => prev + (showHint ? 5 : 10));
+      setMastery((prev) => prev + (showHint ? 5 : 10));
       setSolved((prev) => prev + 1);
       saveSnapshot(puzzle);
       setTimeout(() => newPuzzle(), 1500);
@@ -796,7 +796,7 @@ export default function PatternPuzzle() {
       <div className="flex justify-center gap-3 sm:gap-6 mb-6 flex-wrap">
         <div className="bg-white/5 rounded-xl px-4 py-2 border border-white/10">
           <span className="text-gray-400 text-sm">Score</span>
-          <p className="text-yellow-400 font-bold text-xl">⭐ {score}</p>
+          <p className="text-yellow-400 font-bold text-xl">⭐ {mastery}</p>
         </div>
         <div className="bg-white/5 rounded-xl px-4 py-2 border border-white/10">
           <span className="text-gray-400 text-sm">Solved</span>
@@ -978,7 +978,7 @@ export default function PatternPuzzle() {
               animate={{ x: [10, -10, 5, 0] }}
               exit={{ opacity: 0 }}
             >
-              <p className="text-red-400 font-bold">🤔 Not quite! Try another option!</p>
+              <p className="text-orange-400 font-bold">🤔 Not quite! Try another option!</p>
             </motion.div>
           )}
         </AnimatePresence>
@@ -1020,7 +1020,7 @@ export default function PatternPuzzle() {
                 <div className="flex items-center gap-2">
                   {snapshots.length > 0 && (
                     <button
-                      className="text-sm text-gray-400 hover:text-red-400 px-2 py-1 rounded-lg hover:bg-red-500/10"
+                      className="text-sm text-gray-400 hover:text-orange-400 px-2 py-1 rounded-lg hover:bg-red-500/10"
                       onClick={clearSnapshots}
                     >
                       🗑️ Clear

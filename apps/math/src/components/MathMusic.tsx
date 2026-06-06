@@ -79,7 +79,7 @@ export default function MathMusic() {
             <div className="flex gap-1 justify-center">
               {NOTES.map(note => (
                 <motion.button key={note.name}
-                  className="w-12 sm:w-14 h-32 rounded-b-xl bg-white hover:bg-gray-100 border border-gray-300 flex flex-col items-center justify-end pb-2 relative"
+                  className="w-12 sm:w-14 min-h-32 rounded-b-xl bg-white hover:bg-gray-100 border border-gray-300 flex flex-col items-center justify-end pb-2 relative"
                   whileTap={{ scale: 0.95, backgroundColor: note.color }}
                   onClick={() => playTone(note.freq)}>
                   <span className="text-gray-800 font-bold text-sm">{note.name}</span>

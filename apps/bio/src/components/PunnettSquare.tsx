@@ -117,7 +117,7 @@ export default function PunnettSquare() {
               {t.emoji} {t.name}
             </button>
           ))}
-          <button onClick={randomize} className="px-3 py-1.5 rounded-full text-sm font-medium bg-purple-500/20 text-purple-400 hover:bg-purple-500/30 flex items-center gap-1">
+          <button onClick={randomize} className="px-3 py-1.5 rounded-full text-sm font-medium bg-purple-500/20 text-purple-400 hover:bg-purple-500/30 flex items-center gap-1" aria-label="Shuffle">
             <Shuffle className="w-3 h-3" /> Random
           </button>
         </div>

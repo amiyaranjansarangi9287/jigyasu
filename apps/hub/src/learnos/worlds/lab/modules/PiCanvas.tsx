@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface PiCanvasProps {
   precision: number;
@@ -6,6 +7,7 @@ interface PiCanvasProps {
 }
 
 export default function PiCanvas({ precision, showUnwrap }: PiCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const rollAngleRef = useRef(0);

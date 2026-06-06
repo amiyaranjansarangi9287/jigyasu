@@ -1,5 +1,6 @@
 // src/worlds/lab/modules/MultiplicationLab.tsx
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import LabShell from '../LabShell';
 import { useLumoOwl } from '../hooks/useLumoOwl';
@@ -14,6 +15,7 @@ const ARRAYS = [
 ];
 
 export default function MultiplicationLab() {
+  const { t } = useTranslation();
   const lumo = useLumoOwl('multiplication-lab');
   const { recordMultiplication, updateCertification } = useLabProgress();
   const { trackEvent } = useLabSession();
@@ -57,7 +59,7 @@ export default function MultiplicationLab() {
           {checked && parseInt(answer) !== correct && <p className="text-center text-red-500 font-bold">Try again! Count the {a.emoji}s</p>}
         </div>
 
-        {!checked ? <button onClick={handleCheck} disabled={!answer} className={`w-full py-4 rounded-2xl font-bold text-lg min-h-[56px] ${answer ? 'bg-orange-600 text-white' : 'bg-gray-200 text-gray-500'}`}>Check</button>
+        {!checked ? <button onClick={handleCheck} disabled={!answer} className={`w-full py-4 rounded-2xl font-bold text-lg min-h-[56px] ${answer ? 'bg-orange-600 text-white' : 'bg-gray-200 text-gray-500'}`}>{t('lab.modules.MultiplicationLab.btn_Check', 'Check')}</button>
         : checked && parseInt(answer) === correct && <button onClick={() => { setIdx(p => (p + 1) % ARRAYS.length); setAnswer(''); setChecked(false); setFlipped(false); }} className="w-full py-4 bg-orange-600 text-white font-bold text-lg rounded-2xl min-h-[56px]">Next →</button>}
       </div>
     </LabShell>

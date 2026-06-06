@@ -27,9 +27,9 @@ export function Mascot({ state = 'idle', className = '', size = 'lg' }: MascotPr
 
   const sizeClasses = {
     sm: 'text-2xl h-8 w-8',
-    md: 'text-4xl h-12 w-12',
-    lg: 'text-6xl h-20 w-20',
-    xl: 'text-8xl h-32 w-32'
+    md: 'text-4xl min-h-12 w-12',
+    lg: 'text-6xl min-h-20 w-20',
+    xl: 'text-8xl min-h-32 w-32'
   };
 
   const getAnimationClasses = () => {

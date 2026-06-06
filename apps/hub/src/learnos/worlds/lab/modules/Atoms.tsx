@@ -36,7 +36,7 @@ export default function Atoms() {
         <div className="text-center mb-8">
           <div className="text-5xl mb-3">⚛️</div>
           <h1 className="text-3xl font-extrabold text-white">{t('lab.atoms.title', { defaultValue: 'Atomic Structure' })}</h1>
-          <p className="text-sm text-slate-400 mt-2">Explore the building blocks of matter!</p>
+          <p className="text-sm text-slate-400 mt-2">{t('lab.modules.Atoms.txt_Explorethe', 'Explore the building blocks of matter!')}</p>
         </div>
         <div className="flex justify-center gap-4 mb-6">
           {ELEMENTS.map(el => (
@@ -54,7 +54,7 @@ export default function Atoms() {
         </div>
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.Atoms.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-400 font-bold text-sm mb-1">Vaisheshika Atomic Theory</h3>
               <p className="text-gray-300 text-sm leading-relaxed">Maharishi Kanad (~600 BCE) proposed <strong>Paramanu</strong> — indivisible atoms — 2,000 years before Dalton! He said atoms combine to form molecules (Dyanuka), predating modern chemistry by millennia.</p>

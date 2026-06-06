@@ -122,7 +122,7 @@ export default function CarbonCycle() {
                     onMouseLeave={() => setHovered(null)}
                     onClick={() => { setSelectedNode(node); setSelectedFlow(null); }}
                   >
-                    <div className={`w-14 h-14 rounded-xl flex items-center justify-center text-2xl transition-all ${isActive ? 'ring-2' : ''}`}
+                    <div className={`w-14 min-h-14 rounded-xl flex items-center justify-center text-2xl transition-all ${isActive ? 'ring-2' : ''}`}
                       style={{ backgroundColor: node.color + '22', border: `2px solid ${isActive ? node.color : node.color + '55'}`, boxShadow: isActive ? `0 0 20px ${node.color}33` : 'none'}}>
                       {node.emoji}
                     </div>
@@ -171,7 +171,7 @@ export default function CarbonCycle() {
                   initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0 }}
                   className="bg-gray-900 rounded-2xl border border-gray-800 p-5">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl"
+                    <div className="w-12 min-h-12 rounded-xl flex items-center justify-center text-2xl"
                       style={{ backgroundColor: selectedNode.color + '22', border: `2px solid ${selectedNode.color}` }}>
                       {selectedNode.emoji}
                     </div>

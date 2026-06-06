@@ -1,5 +1,6 @@
 // src/worlds/discovery/modules/EconomicSimulation.tsx
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import DiscoveryShell from '../DiscoveryShell';
 import { useLumoSage } from '../hooks/useLumoSage';
 import { useDiscoveryProgress } from '../hooks/useDiscoveryProgress';
@@ -12,6 +13,7 @@ const EVENTS = [
 ];
 
 export default function EconomicSimulation() {
+  const { t } = useTranslation();
   const lumo = useLumoSage();
   const { recordEconomicSim, updateMastery } = useDiscoveryProgress();
   const { trackEvent } = useDiscoverySession();
@@ -35,30 +37,30 @@ export default function EconomicSimulation() {
     <DiscoveryShell module="economic-simulation">
       <div className="flex-1 flex flex-col p-5 bg-slate-900 pb-24">
         <div className="bg-slate-800 rounded-2xl p-4 border border-slate-700 mb-4">
-          <p className="text-white font-bold">📈 Economic Dashboard</p>
-          <p className="text-slate-400 text-sm mt-1">Adjust policies and apply events</p>
+          <p className="text-white font-bold">{t('discovery.modules.EconomicSimulation.txt_EconomicDa', '📈 Economic Dashboard')}</p>
+          <p className="text-slate-400 text-sm mt-1">{t('discovery.modules.EconomicSimulation.txt_Adjustpoli', 'Adjust policies and apply events')}</p>
         </div>
 
         {/* Indicators */}
         <div className="grid grid-cols-2 gap-3 mb-4">
-          <div className="bg-slate-800 rounded-xl p-3 text-center border border-slate-700"><p className="text-sm text-slate-500">GDP Growth</p><p className={`text-2xl font-bold ${gdp >= 0 ? 'text-green-400' : 'text-red-400'}`}>{gdp > 0 ? '+' : ''}{gdp}%</p></div>
-          <div className="bg-slate-800 rounded-xl p-3 text-center border border-slate-700"><p className="text-sm text-slate-500">Inflation</p><p className={`text-2xl font-bold ${inflation > 6 ? 'text-red-400' : 'text-cyan-400'}`}>{inflation}%</p></div>
+          <div className="bg-slate-800 rounded-xl p-3 text-center border border-slate-700"><p className="text-sm text-slate-500">{t('discovery.modules.EconomicSimulation.txt_GDPGrowth', 'GDP Growth')}</p><p className={`text-2xl font-bold ${gdp >= 0 ? 'text-green-400' : 'text-red-400'}`}>{gdp > 0 ? '+' : ''}{gdp}%</p></div>
+          <div className="bg-slate-800 rounded-xl p-3 text-center border border-slate-700"><p className="text-sm text-slate-500">{t('discovery.modules.EconomicSimulation.txt_Inflation', 'Inflation')}</p><p className={`text-2xl font-bold ${inflation > 6 ? 'text-red-400' : 'text-cyan-400'}`}>{inflation}%</p></div>
         </div>
 
         {/* Sliders */}
         <div className="space-y-3 mb-4">
           <div className="bg-slate-800 rounded-xl p-3 border border-slate-700">
-            <div className="flex justify-between text-sm mb-1"><span className="text-slate-400">🏦 Interest Rate</span><span className="text-white font-bold">{interest}%</span></div>
+            <div className="flex justify-between text-sm mb-1"><span className="text-slate-400">{t('discovery.modules.EconomicSimulation.spn_InterestRa', '🏦 Interest Rate')}</span><span className="text-white font-bold">{interest}%</span></div>
             <input type="range" min={1} max={15} value={interest} onChange={e => { setInterest(Number(e.target.value)); setGdp(g => Math.max(-5, g - (Number(e.target.value) - interest) * 0.3)); setInflation(i => Math.max(0, i - (Number(e.target.value) - interest) * 0.2)); }} className="w-full h-2 rounded-full appearance-none cursor-pointer" style={{ accentColor: '#6366F1' }} />
           </div>
           <div className="bg-slate-800 rounded-xl p-3 border border-slate-700">
-            <div className="flex justify-between text-sm mb-1"><span className="text-slate-400">💰 Tax Rate</span><span className="text-white font-bold">{tax}%</span></div>
+            <div className="flex justify-between text-sm mb-1"><span className="text-slate-400">{t('discovery.modules.EconomicSimulation.spn_TaxRate', '💰 Tax Rate')}</span><span className="text-white font-bold">{tax}%</span></div>
             <input type="range" min={5} max={45} value={tax} onChange={e => setTax(Number(e.target.value))} className="w-full h-2 rounded-full appearance-none cursor-pointer" style={{ accentColor: '#F59E0B' }} />
           </div>
         </div>
 
         {/* Events */}
-        <p className="text-slate-500 text-sm font-bold mb-2">APPLY EVENT</p>
+        <p className="text-slate-500 text-sm font-bold mb-2">{t('discovery.modules.EconomicSimulation.txt_APPLYEVENT', 'APPLY EVENT')}</p>
         <div className="space-y-2">
           {EVENTS.map(ev => (
             <button key={ev.id} onClick={() => applyEvent(ev)} className={`w-full bg-slate-800 rounded-xl p-3 border text-left min-h-[52px] transition-all ${activeEvent === ev.id ? 'border-indigo-500' : 'border-slate-700'}`}>

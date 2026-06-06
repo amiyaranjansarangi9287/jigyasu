@@ -27,7 +27,15 @@ export default function DailyWarmUp() {
   const [isCorrect, setIsCorrect] = useState(false);
   const [currentStreak, setCurrentStreak] = useState(streak);
 
-  const ageAdaptation = todayChallenge.question;
+  // Use age groups defined in our language store, fallback to 'explorer'
+  const ageKey = ['tiny', 'early', 'lab', 'discovery', 'academy'].includes(language) ? language : 'explorer';
+  const ageAdaptation = t(`crosscutting.data.daily_warmups.${todayChallenge.id}.ageAdaptations.${ageKey}`, { defaultValue: todayChallenge.ageAdaptations[ageKey] || todayChallenge.question });
+
+  const themeText = t(`crosscutting.data.daily_warmups.${todayChallenge.id}.theme`, { defaultValue: todayChallenge.theme });
+  const optionsText = (todayChallenge.options || []).map((opt, i) => 
+    t(`crosscutting.data.daily_warmups.${todayChallenge.id}.options.${i}`, { defaultValue: opt })
+  );
+  const promptText = todayChallenge.prompt ? t(`crosscutting.data.daily_warmups.${todayChallenge.id}.prompt`, { defaultValue: todayChallenge.prompt }) : undefined;
 
   const handleAnswer = async (index: number) => {
     const correct = index === todayChallenge.correctIndex;
@@ -103,7 +111,7 @@ export default function DailyWarmUp() {
               </p>
               <div className="bg-white rounded-3xl p-6 mb-6 shadow-sm">
                 <p className="text-sm text-gray-400 mb-1">{t('crosscutting.daily_warmup.today')}</p>
-                <p className="text-xl font-bold text-gray-800">{todayChallenge.theme}</p>
+                <p className="text-xl font-bold text-gray-800">{themeText}</p>
                 <p className="text-sm text-orange-500 mt-2">
                   ~{todayChallenge.estimatedMinutes} {t('explorer.time_estimate')}
                 </p>
@@ -122,16 +130,16 @@ export default function DailyWarmUp() {
               exit={{ opacity: 0, x: -20 }}
             >
               <div className="bg-white rounded-3xl p-6 shadow-sm mb-6">
-                <p className="text-sm text-orange-500 font-semibold mb-2">{todayChallenge.theme}</p>
+                <p className="text-sm text-orange-500 font-semibold mb-2">{themeText}</p>
                 <p className="text-xl font-bold text-gray-800 mb-4">{ageAdaptation}</p>
-                {todayChallenge.prompt && (
-                  <p className="text-sm text-gray-400 italic mb-4">💡 {todayChallenge.prompt}</p>
+                {promptText && (
+                  <p className="text-sm text-gray-400 italic mb-4">💡 {promptText}</p>
                 )}
               </div>
 
-              {todayChallenge.options && (
+              {optionsText.length > 0 && (
                 <div className="space-y-3">
-                  {todayChallenge.options.map((option, i) => (
+                  {optionsText.map((option, i) => (
                     <button
                       key={i}
                       onClick={() => handleAnswer(i)}
@@ -165,8 +173,8 @@ export default function DailyWarmUp() {
                 </h2>
                 <p className="text-gray-600">
                   {isCorrect
-                    ? 'Great thinking!'
-                    : `The answer was: ${todayChallenge.options?.[todayChallenge.correctIndex ?? 0]}`}
+                    ? t('crosscutting.daily_warmup.correct_msg', { defaultValue: 'Great thinking!' })
+                    : t('crosscutting.daily_warmup.wrong_msg', { defaultValue: 'The answer was:' }) + ` ${optionsText[todayChallenge.correctIndex ?? 0]}`}
                 </p>
               </div>
               <Button onClick={handleComplete} size="lg" fullWidth>

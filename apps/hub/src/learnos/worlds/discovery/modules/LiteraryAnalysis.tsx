@@ -1,5 +1,6 @@
 // src/worlds/discovery/modules/LiteraryAnalysis.tsx
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import DiscoveryShell from '../DiscoveryShell';
 import { useLumoSage } from '../hooks/useLumoSage';
 import { useDiscoveryProgress } from '../hooks/useDiscoveryProgress';
@@ -19,6 +20,7 @@ const DEVICES = [
 ];
 
 export default function LiteraryAnalysis() {
+  const { t } = useTranslation();
   const lumo = useLumoSage();
   const { recordLiteraryAnalysis, updateMastery } = useDiscoveryProgress();
   const { trackEvent } = useDiscoverySession();
@@ -56,10 +58,10 @@ export default function LiteraryAnalysis() {
         </div>
 
         {/* Device palette */}
-        <p className="text-slate-500 text-sm font-bold mb-2">TAG LITERARY DEVICES</p>
+        <p className="text-slate-500 text-sm font-bold mb-2">{t('discovery.modules.LiteraryAnalysis.txt_TAGLITERAR', 'TAG LITERARY DEVICES')}</p>
         <div className="grid grid-cols-2 gap-2 mb-4">{DEVICES.map(d => (
           <button key={d.id} onClick={() => handleTag(d.id)} className={`bg-slate-800 rounded-xl p-3 border text-left min-h-[52px] transition-all ${tagged.includes(d.id) ? 'border-green-600' : 'border-slate-700'}`}>
-            <div className="flex items-center gap-2"><span>{d.emoji}</span><span className="text-white text-sm font-bold">{d.name}</span>{tagged.includes(d.id) && <span className="text-green-500 text-sm ml-auto">✓</span>}</div>
+            <div className="flex items-center gap-2"><span>{d.emoji}</span><span className="text-white text-sm font-bold">{d.name}</span>{tagged.includes(d.id) && <span className="text-green-500 text-sm ml-auto">{t('discovery.modules.LiteraryAnalysis.spn_', '✓')}</span>}</div>
             <p className="text-slate-500 text-sm mt-1">{d.def}</p>
           </button>
         ))}</div>

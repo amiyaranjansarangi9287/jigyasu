@@ -59,7 +59,7 @@ export default function FoodChainDash() {
   const [gameState, setGameState] = useState<'menu' | 'playing' | 'gameover' | 'win'>('menu');
   const [player, setPlayer] = useState({ x: GAME_W / 2, y: GAME_H / 2 });
   const [entities, setEntities] = useState<Entity[]>([]);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
   const [lives, setLives] = useState(3);
   const [highScore, setHighScore] = useState(0);
   const [targetScore, setTargetScore] = useState(200);
@@ -79,7 +79,7 @@ export default function FoodChainDash() {
     setGameState('playing');
     setPlayer({ x: GAME_W / 2, y: GAME_H / 2 });
     setEntities([]);
-    setScore(0);
+    setMastery(0);
     setLives(3);
     setInvincible(false);
     setCombo(0);
@@ -201,9 +201,9 @@ export default function FoodChainDash() {
 
         if (scoreBonus > 0) {
           playCollect();
-          setScore(s => {
-            const newScore = s + Math.floor(scoreBonus);
-            if (newScore >= targetScore) {
+          setMastery(m => {
+            const newMastery = m + scoreBonus;
+            if (newMastery >= targetScore) {
               playVictory();
               if (currentLevel < levels.length - 1) {
                 setGameState('win');
@@ -211,7 +211,7 @@ export default function FoodChainDash() {
                 setGameState('win');
               }
             }
-            return newScore;
+            return newMastery;
           });
         }
 
@@ -252,12 +252,12 @@ export default function FoodChainDash() {
     setPlayer({ x: Math.max(15, Math.min(GAME_W - 15, x)), y: Math.max(15, Math.min(GAME_H - 15, y)) });
   };
 
-  // Update high score on game over
+  // Update high mastery on game over
   useEffect(() => {
     if (gameState === 'gameover' || gameState === 'win') {
-      setHighScore(h => Math.max(h, score));
+      setHighScore(h => Math.max(h, mastery));
     }
-  }, [gameState, score]);
+  }, [gameState, mastery]);
 
   if (gameState === 'menu') {
     return (
@@ -284,7 +284,7 @@ export default function FoodChainDash() {
                       <span className="text-sm bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full">
                         Food: {lvl.foods.map(f => f.emoji).join('')}
                       </span>
-                      <span className="text-sm bg-red-500/20 text-red-400 px-2 py-0.5 rounded-full">
+                      <span className="text-sm bg-red-500/20 text-orange-400 px-2 py-0.5 rounded-full">
                         Danger: {lvl.predators.map(p => p.emoji).join('')}
                       </span>
                     </div>
@@ -296,7 +296,7 @@ export default function FoodChainDash() {
 
           {highScore > 0 && (
             <div className="text-center mt-6 text-sm text-gray-400">
-              <Trophy className="w-4 h-4 inline mr-1 text-yellow-400" /> High Score: {highScore}
+              <Trophy className="w-4 h-4 inline mr-1 text-yellow-400" /> High Mastery: {highScore}
             </div>
           )}
 
@@ -335,7 +335,7 @@ export default function FoodChainDash() {
           </div>
           <div className="flex items-center gap-4">
             <div className="text-sm text-gray-400">
-              <Star className="w-3 h-3 inline mr-1 text-yellow-400" />{score}/{targetScore}
+              <Star className="w-3 h-3 inline mr-1 text-yellow-400" />{mastery}/{targetScore}
             </div>
             {invincible && <div className="text-sm text-cyan-400 font-bold animate-pulse">🛡️ Shield!</div>}
           </div>
@@ -347,9 +347,9 @@ export default function FoodChainDash() {
           style={{ aspectRatio: `${GAME_W}/${GAME_H}` }}
           onPointerMove={handlePointerMove}
         >
-          {/* Score progress bar */}
+          {/* Mastery progress bar */}
           <div className="absolute top-0 left-0 right-0 h-1 bg-gray-800/50 z-20">
-            <motion.div className="h-full bg-emerald-500" animate={{ width: `${Math.min(100, (score / targetScore) * 100)}%` }} />
+            <motion.div className="h-full bg-emerald-500" animate={{ width: `${Math.min(100, (mastery / targetScore) * 100)}%` }} />
           </div>
 
           {/* Hit flash */}
@@ -406,8 +406,8 @@ export default function FoodChainDash() {
                   : `The food chain caught up with you!`}
               </p>
               <div className="bg-gray-800 rounded-xl p-3 mb-5">
-                <div className="text-gray-500 text-sm">Score</div>
-                <div className="text-3xl font-black text-emerald-400">{score}</div>
+                <div className="text-gray-500 text-sm">Mastery</div>
+                <div className="text-3xl font-black text-emerald-400">{mastery}</div>
               </div>
               <div className="flex gap-2">
                 <button onClick={() => startGame(currentLevel)}

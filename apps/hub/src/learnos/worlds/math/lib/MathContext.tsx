@@ -119,7 +119,7 @@ export function MathProvider({ children }: { children: ReactNode }) {
               transition={{ type: 'spring', stiffness: 400, damping: 25 }}
             >
               {event.type === 'correct' && <span>✅</span>}
-              {event.type === 'wrong' && <span>❌</span>}
+              {event.type === 'wrong' && <span>🤔</span>}
               {event.type === 'levelup' && <span>🎉</span>}
               {event.type === 'celebrate' && <span>🏆</span>}
               <span>{event.message || (event.type === 'wrong' ? 'Try again!' : '')}</span>

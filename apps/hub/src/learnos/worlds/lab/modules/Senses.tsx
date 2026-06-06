@@ -34,7 +34,7 @@ export default function Senses() {
         <div className="text-center mb-8">
           <div className="text-5xl mb-3">{SENSES.find(s => s.id === sense)?.emoji}</div>
           <h1 className="text-3xl font-extrabold text-slate-800">{t('lab.senses.title', { defaultValue: 'Five Senses' })}</h1>
-          <p className="text-sm text-slate-500 mt-2">Explore how your body perceives the world!</p>
+          <p className="text-sm text-slate-500 mt-2">{t('lab.modules.Senses.txt_Explorehow', 'Explore how your body perceives the world!')}</p>
         </div>
         <div className="flex justify-center gap-3 mb-6">
           {SENSES.map(s => (
@@ -49,7 +49,7 @@ export default function Senses() {
         </div>
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.Senses.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1">Indian Philosophy of Senses</h3>
               <p className="text-gray-600 text-sm leading-relaxed">Indian philosophy describes <strong>5 Indriyas</strong> (senses) connected to 5 elements: sight→fire, hearing→space, touch→air, taste→water, smell→earth. The <strong>Tanmatras</strong> (subtle elements) theory maps senses to atomic properties — remarkably aligned with neuroscience!</p>

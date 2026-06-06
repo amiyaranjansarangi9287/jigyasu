@@ -1,9 +1,9 @@
 import { lazy, Suspense,  useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Mountain } from 'lucide-react'
-const PlateTectonicsCanvas = lazy(() => import('../../components/canvases/PlateTectonicsCanvas'));
-const AudioNarration = lazy(() => import('../../components/AudioNarration'));
-const CanvasWithNarrator = lazy(() => import('../../components/CanvasWithNarrator'));
+import PlateTectonicsCanvas from '../../components/canvases/PlateTectonicsCanvas';
+import AudioNarration from '../../components/AudioNarration';
+import CanvasWithNarrator from '../../components/CanvasWithNarrator';
 import { getConceptById } from '../../data/concepts'
 
 export default function PlateTectonics() {

@@ -406,7 +406,7 @@ export default function MitosisSimulator() {
                             className={`w-full text-left px-3 py-2 rounded-lg text-sm sm:text-sm transition-all ${
                               quizAnswer === null ? 'bg-gray-800 text-gray-300 hover:bg-gray-700 active:scale-[0.98]' :
                               i === phase.quiz!.answer ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' :
-                              quizAnswer === i ? 'bg-red-500/20 text-red-400 border border-red-500/30' :
+                              quizAnswer === i ? 'bg-red-500/20 text-orange-400 border border-red-500/30' :
                               'bg-gray-800/50 text-gray-600'
                             }`}
                             disabled={quizAnswer !== null}>
@@ -415,8 +415,8 @@ export default function MitosisSimulator() {
                         ))}
                       </div>
                       {quizAnswer !== null && (
-                        <div className={`mt-2 text-sm sm:text-sm font-bold ${quizAnswer === phase.quiz.answer ? 'text-emerald-400' : 'text-red-400'}`}>
-                          {quizAnswer === phase.quiz.answer ? '✅ Correct!' : `❌ The answer is: ${phase.quiz.options[phase.quiz.answer]}`}
+                        <div className={`mt-2 text-sm sm:text-sm font-bold ${quizAnswer === phase.quiz.answer ? 'text-emerald-400' : 'text-orange-400'}`}>
+                          {quizAnswer === phase.quiz.answer ? '✅ Correct!' : `🤔 The answer is: ${phase.quiz.options[phase.quiz.answer]}`}
                         </div>
                       )}
                     </motion.div>

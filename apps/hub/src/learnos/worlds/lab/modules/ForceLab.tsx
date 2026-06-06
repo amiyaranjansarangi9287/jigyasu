@@ -1,5 +1,6 @@
 // src/worlds/lab/modules/ForceLab.tsx
 import { useRef, useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import LabShell from '../LabShell';
 import { useLumoOwl } from '../hooks/useLumoOwl';
@@ -10,6 +11,7 @@ import { drawLumoOwl } from '../components/LumoOwlCanvas';
 import { ScientificSlider } from '../components/ScientificSlider';
 
 export default function ForceLab() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [f, setF] = useState(50); const [m, setM] = useState(5); const [sIdx, setSIdx] = useState(0);
   const [v, setV] = useState(0); const [px, setPx] = useState(50);

@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface MultiplicationCanvasProps {
   rows: number;
@@ -6,6 +7,7 @@ interface MultiplicationCanvasProps {
 }
 
 export default function MultiplicationCanvas({ rows, cols }: MultiplicationCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const rowsRef = useRef(rows);

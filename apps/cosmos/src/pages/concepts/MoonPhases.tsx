@@ -1,9 +1,9 @@
 import { lazy, Suspense,  useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Moon } from 'lucide-react'
-const MoonPhasesCanvas = lazy(() => import('../../components/canvases/MoonPhasesCanvas'));
-const AudioNarration = lazy(() => import('../../components/AudioNarration'));
-const CanvasWithNarrator = lazy(() => import('../../components/CanvasWithNarrator'));
+import MoonPhasesCanvas from '../../components/canvases/MoonPhasesCanvas';
+import AudioNarration from '../../components/AudioNarration';
+import CanvasWithNarrator from '../../components/CanvasWithNarrator';
 import { getConceptById } from '../../data/concepts'
 
 export default function MoonPhases() {

@@ -74,7 +74,7 @@ export default function Workshop({ isOpen, onClose, onSelectToy, onStartBuild }:
           <button
             onClick={onClose}
             className="w-10 h-10 rounded-xl bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 flex items-center justify-center transition-colors"
-          >
+           aria-label="Action button">
             <svg className="w-5 h-5 text-gray-600 dark:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
@@ -129,7 +129,7 @@ export default function Workshop({ isOpen, onClose, onSelectToy, onStartBuild }:
                       <img
                         src={toy.image}
                         alt={toy.name}
-                        className="w-20 h-20 rounded-xl object-cover flex-shrink-0"
+                        className="w-20 min-h-20 rounded-xl object-cover flex-shrink-0"
                       />
                       <div className="flex-1 min-w-0">
                         <h3 className="font-bold text-gray-900 dark:text-white text-sm truncate">{toy.name}</h3>
@@ -177,7 +177,7 @@ export default function Workshop({ isOpen, onClose, onSelectToy, onStartBuild }:
                       <img
                         src={toy.image}
                         alt={toy.name}
-                        className="w-full h-32 object-cover"
+                        className="w-full min-h-32 object-cover"
                       />
                       <div className="absolute top-2 right-2 px-2 py-0.5 bg-emerald-500 text-white text-xs font-bold rounded-full flex items-center gap-1">
                         <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>

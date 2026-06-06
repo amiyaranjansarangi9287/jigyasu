@@ -31,7 +31,7 @@ export default function NumberLine() {
         <div className="text-center mb-8">
           <div className="text-5xl mb-3">📏</div>
           <h1 className="text-3xl font-extrabold text-slate-800">{t('lab.numberline.title', { defaultValue: 'Number Line' })}</h1>
-          <p className="text-sm text-slate-500 mt-2">Watch the character jump to any number!</p>
+          <p className="text-sm text-slate-500 mt-2">{t('lab.modules.NumberLine.txt_Watchthech', 'Watch the character jump to any number!')}</p>
         </div>
         <div className="flex justify-center gap-3 mb-6">
           {[-10, -5, 0, 5, 10].map(n => (
@@ -48,7 +48,7 @@ export default function NumberLine() {
         </div>
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.NumberLine.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1">Indian Number Innovation</h3>
               <p className="text-gray-600 text-sm leading-relaxed">India gave the world <strong>zero</strong> and <strong>negative numbers</strong>! Brahmagupta (628 CE) defined rules for negative numbers — calling them "debt" vs "fortune." The number line concept with negatives was understood 1,000 years before Europe!</p>

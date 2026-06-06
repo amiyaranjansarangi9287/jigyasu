@@ -1,5 +1,6 @@
 // src/worlds/discovery/modules/SpeedDistanceTime.tsx
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import DiscoveryShell from '../DiscoveryShell';
 import { useLumoSage } from '../hooks/useLumoSage';
@@ -7,6 +8,7 @@ import { useDiscoveryProgress } from '../hooks/useDiscoveryProgress';
 import { ScientificSlider } from '@/worlds/lab/components/ScientificSlider';
 
 export default function SpeedDistanceTime() {
+  const { t } = useTranslation();
   const lumo = useLumoSage();
   const { recordSpeedGraph, updateMastery } = useDiscoveryProgress();
   const [speed, setSpeed] = useState(60);
@@ -26,7 +28,7 @@ export default function SpeedDistanceTime() {
           <motion.div animate={{ x: ['-20%', '120%'] }} transition={{ duration: 120/speed, repeat: Infinity, ease: 'linear' }} className="text-5xl">🚀</motion.div>
         </div>
         <div className="mb-6"><ScientificSlider label="Engine Output (Speed)" emoji="⚡" value={speed} min={10} max={120} unit="km/h" color="#6366F1" onChange={setSpeed} /></div>
-        <button onClick={handleDiscover} className="w-full py-4 bg-indigo-600 text-white font-bold rounded-2xl">Confirm Speed Discovery</button>
+        <button onClick={handleDiscover} className="w-full py-4 bg-indigo-600 text-white font-bold rounded-2xl">{t('discovery.modules.SpeedDistanceTime.btn_ConfirmSpe', 'Confirm Speed Discovery')}</button>
       </div>
     </DiscoveryShell>
   );

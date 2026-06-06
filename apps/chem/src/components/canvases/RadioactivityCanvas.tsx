@@ -104,9 +104,9 @@ export default function RadioactivityCanvas({ isPlaying }: CanvasProps) {
           </div>
 
           {/* Decay visualization */}
-          <div className="relative w-72 h-48 bg-slate-800/50 rounded-2xl border border-slate-700 overflow-hidden">
+          <div className="relative w-72 min-h-48 bg-slate-800/50 rounded-2xl border border-slate-700 overflow-hidden">
             {/* Nucleus */}
-            <motion.div className="absolute left-28 top-16 w-16 h-16 bg-gradient-to-br from-amber-500 to-red-600 rounded-full flex items-center justify-center shadow-lg"
+            <motion.div className="absolute left-28 top-16 w-16 min-h-16 bg-gradient-to-br from-amber-500 to-red-600 rounded-full flex items-center justify-center shadow-lg"
               animate={isDecaying ? { scale: [1, 0.95, 1] } : {}} transition={{ duration: 0.5, repeat: isDecaying ? Infinity : 0 }}>
               <span className="text-white font-bold text-sm">☢️</span>
             </motion.div>

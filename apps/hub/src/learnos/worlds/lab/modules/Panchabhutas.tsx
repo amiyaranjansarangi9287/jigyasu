@@ -212,7 +212,7 @@ export default function Panchabhutas() {
           <h1 className="text-3xl font-extrabold text-orange-700">
             {t('lab.panchabhutas.title', { defaultValue: 'The Panchabhutas' })}
           </h1>
-          <p className="text-sm text-orange-400 mt-1">पञ्चभूत — The Five Great Elements</p>
+          <p className="text-sm text-orange-400 mt-1">{t('lab.modules.Panchabhutas.txt_TheFiveGre', 'पञ्चभूत — The Five Great Elements')}</p>
           <p className="text-gray-500 text-sm mt-2 max-w-xl mx-auto">
             Ancient Indian philosophy meets modern chemistry. Maharishi Kanad (~600 BCE) described atoms
             2,400 years before modern science!

@@ -72,7 +72,7 @@ export default function BodyQuiz() {
   const [currentQ, setCurrentQ] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [answered, setAnswered] = useState(false);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
   const [showResults, setShowResults] = useState(false);
   const [answers, setAnswers] = useState<boolean[]>([]);
   const [streak, setStreak] = useState(0);
@@ -90,7 +90,7 @@ export default function BodyQuiz() {
     setCurrentQ(0);
     setSelectedAnswer(null);
     setAnswered(false);
-    setScore(0);
+    setMastery(0);
     setShowResults(false);
     setAnswers([]);
     setStreak(0);
@@ -106,7 +106,7 @@ export default function BodyQuiz() {
     const isCorrect = idx === question.correct;
     if (isCorrect) {
       playCorrect();
-      setScore(s => s + (streak >= 3 ? 2 : 1));
+      setMastery(m => m + 1);
       setStreak(s => { const ns = s + 1; setMaxStreak(m => Math.max(m, ns)); return ns; });
     } else {
       playWrong();
@@ -133,7 +133,7 @@ export default function BodyQuiz() {
   };
 
   const getGrade = () => {
-    const pct = (score / activeQuestions.length) * 100;
+    const pct = (mastery / activeQuestions.length) * 100;
     if (pct >= 90) return { label: 'A+', emoji: '🏆', message: 'Biology Master!' };
     if (pct >= 80) return { label: 'A', emoji: '🌟', message: 'Excellent!' };
     if (pct >= 70) return { label: 'B', emoji: '👍', message: 'Great job!' };
@@ -221,7 +221,7 @@ export default function BodyQuiz() {
 
             <div className="w-24 h-24 mx-auto rounded-full border-4 border-emerald-500 flex items-center justify-center mb-4">
               <div>
-                <div className="text-3xl font-black text-white">{score}</div>
+                <div className="text-3xl font-black text-white">{mastery}</div>
                 <div className="text-sm text-gray-400">/ {activeQuestions.length}</div>
               </div>
             </div>
@@ -236,7 +236,7 @@ export default function BodyQuiz() {
 
             <div className="flex flex-wrap justify-center gap-1.5 mb-6">
               {answers.map((correct, i) => (
-                <div key={i} className={`w-7 h-7 rounded-lg flex items-center justify-center text-sm font-bold ${correct ? 'bg-emerald-500/20 text-emerald-400' : 'bg-red-500/20 text-red-400'}`}>
+                <div key={i} className={`w-7 h-7 rounded-lg flex items-center justify-center text-sm font-bold ${correct ? 'bg-emerald-500/20 text-emerald-400' : 'bg-red-500/20 text-orange-400'}`}>
                   {correct ? '✓' : '✗'}
                 </div>
               ))}
@@ -266,7 +266,7 @@ export default function BodyQuiz() {
           <div className="flex-1">
             <div className="flex justify-between text-sm text-gray-400 mb-1">
               <span>Q{currentQ + 1}/{activeQuestions.length}</span>
-              <span>Score: {score}</span>
+              <span>Mastery: {mastery}</span>
             </div>
             <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
               <motion.div className="h-full bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full"
@@ -289,7 +289,7 @@ export default function BodyQuiz() {
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-2xl">{question.emoji}</span>
                 <span className="text-sm font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-gray-800 text-gray-400">{question.system}</span>
-                <span className={`text-sm font-bold px-2 py-0.5 rounded-full ${question.difficulty === 'easy' ? 'bg-green-500/20 text-green-400' : question.difficulty === 'medium' ? 'bg-yellow-500/20 text-yellow-400' : 'bg-red-500/20 text-red-400'}`}>
+                <span className={`text-sm font-bold px-2 py-0.5 rounded-full ${question.difficulty === 'easy' ? 'bg-green-500/20 text-green-400' : question.difficulty === 'medium' ? 'bg-yellow-500/20 text-yellow-400' : 'bg-red-500/20 text-orange-400'}`}>
                   {question.difficulty}
                 </span>
               </div>
@@ -301,7 +301,7 @@ export default function BodyQuiz() {
                   let style = 'border-gray-700 bg-gray-800/50 hover:bg-gray-700/50 hover:border-gray-600 text-gray-300';
                   if (answered) {
                     if (idx === question.correct) style = 'border-emerald-500 bg-emerald-500/10 text-emerald-400';
-                    else if (idx === selectedAnswer) style = 'border-red-500 bg-red-500/10 text-red-400';
+                    else if (idx === selectedAnswer) style = 'border-red-500 bg-red-500/10 text-orange-400';
                     else style = 'border-gray-800 bg-gray-800/30 text-gray-600';
                   }
                   return (
@@ -313,7 +313,7 @@ export default function BodyQuiz() {
                       </span>
                       {option}
                       {answered && idx === question.correct && <CheckCircle2 className="w-4 h-4 text-emerald-400 ml-auto" />}
-                      {answered && idx === selectedAnswer && idx !== question.correct && <XCircle className="w-4 h-4 text-red-400 ml-auto" />}
+                      {answered && idx === selectedAnswer && idx !== question.correct && <XCircle className="w-4 h-4 text-orange-400 ml-auto" />}
                     </motion.button>
                   );
                 })}

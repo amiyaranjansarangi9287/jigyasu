@@ -45,9 +45,7 @@ export default function BloodCirculation() {
           <h1 className="text-3xl font-extrabold text-slate-800">
             {t('lab.bloodcirculation.title', { defaultValue: 'Blood Circulation' })}
           </h1>
-          <p className="text-sm text-slate-500 mt-2">
-            Watch blood flow through your heart and body!
-          </p>
+          <p className="text-sm text-slate-500 mt-2">{t('lab.modules.BloodCirculation.txt_Watchblood', 'Watch blood flow through your heart and body!')}</p>
         </div>
 
         {/* Controls */}
@@ -72,8 +70,8 @@ export default function BloodCirculation() {
         {/* Heart rate slider */}
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
           <div className="flex items-center justify-between mb-3">
-            <span className="text-sm text-slate-400">😴 Resting (60)</span>
-            <span className="text-sm text-slate-400">🏃 Exercise (180)</span>
+            <span className="text-sm text-slate-400">{t('lab.modules.BloodCirculation.spn_Resting60', '😴 Resting (60)')}</span>
+            <span className="text-sm text-slate-400">{t('lab.modules.BloodCirculation.spn_Exercise18', '🏃 Exercise (180)')}</span>
           </div>
           <input
             type="range"
@@ -96,24 +94,24 @@ export default function BloodCirculation() {
           <div className="bg-red-50 rounded-2xl p-4 text-center">
             <div className="text-3xl mb-1">🫀</div>
             <div className="font-bold text-red-600 text-sm">100K</div>
-            <p className="text-sm text-red-400 mt-1">Beats per day</p>
+            <p className="text-sm text-red-400 mt-1">{t('lab.modules.BloodCirculation.txt_Beatsperda', 'Beats per day')}</p>
           </div>
           <div className="bg-blue-50 rounded-2xl p-4 text-center">
             <div className="text-3xl mb-1">🩸</div>
             <div className="font-bold text-blue-600 text-sm">5L</div>
-            <p className="text-sm text-blue-400 mt-1">Blood volume</p>
+            <p className="text-sm text-blue-400 mt-1">{t('lab.modules.BloodCirculation.txt_Bloodvolum', 'Blood volume')}</p>
           </div>
           <div className="bg-purple-50 rounded-2xl p-4 text-center">
             <div className="text-3xl mb-1">🌍</div>
             <div className="font-bold text-purple-600 text-sm">2.5x</div>
-            <p className="text-sm text-purple-400 mt-1">Vessels circle Earth</p>
+            <p className="text-sm text-purple-400 mt-1">{t('lab.modules.BloodCirculation.txt_Vesselscir', 'Vessels circle Earth')}</p>
           </div>
         </div>
 
         {/* Indian context */}
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.BloodCirculation.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1">Ayurvedic Connection</h3>
               <p className="text-gray-600 text-sm leading-relaxed">

@@ -33,7 +33,7 @@ export default function SystemsOfEquations() {
   const [mode, setMode] = useState<'explore' | 'challenge'>('explore');
   const [challenge, setChallenge] = useState(makeChallenge);
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
 
   const solution = useMemo(() => {
     const det = a1 * b2 - a2 * b1;
@@ -68,7 +68,7 @@ export default function SystemsOfEquations() {
   const answerChallenge = (opt: string) => {
     if (feedback) return;
     if (opt === challenge.answer) {
-      setFeedback('correct'); setScore(s => s + 15);
+      setFeedback('correct'); setMastery(m => m + 1);
       setTimeout(() => { setChallenge(makeChallenge()); setFeedback(null); }, 1200);
     } else { setFeedback('wrong'); setTimeout(() => setFeedback(null), 900); }
   };
@@ -88,8 +88,8 @@ export default function SystemsOfEquations() {
       <AnimatePresence mode="wait">
         {mode === 'challenge' ? (
           <motion.div key="ch" className="max-w-lg mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-red-500/10 border-red-500/40' : 'bg-white/5 border-white/10'}`}>
-              <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {score}</span></div>
+            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
+              <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {mastery}</span></div>
               <p className="text-white font-bold text-center mb-1 font-mono text-lg">{challenge.eq1}</p>
               <p className="text-white font-bold text-center mb-4 font-mono text-lg">{challenge.eq2}</p>
               <p className="text-gray-400 text-center text-sm mb-4">Find (x, y)</p>
@@ -101,7 +101,7 @@ export default function SystemsOfEquations() {
                 ))}
               </div>
               {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✅ Correct!</p>}
-              {feedback === 'wrong' && <p className="text-red-400 font-bold text-center mt-4">Answer: {challenge.answer}</p>}
+              {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Answer: {challenge.answer}</p>}
             </div>
           </motion.div>
         ) : (
@@ -128,7 +128,7 @@ export default function SystemsOfEquations() {
               </div>
 
               {/* Solution */}
-              <div className={`rounded-2xl p-5 border-2 text-center ${solution ? 'bg-green-500/10 border-green-500/30' : 'bg-red-500/10 border-red-500/30'}`}>
+              <div className={`rounded-2xl p-5 border-2 text-center ${solution ? 'bg-green-500/10 border-green-500/30' : 'bg-white/5 border-white/10'}`}>
                 {solution ? (
                   <>
                     <p className="text-gray-400 text-sm">Intersection</p>
@@ -137,7 +137,7 @@ export default function SystemsOfEquations() {
                     </motion.p>
                   </>
                 ) : (
-                  <p className="text-red-400 font-bold">No unique solution — lines are parallel</p>
+                  <p className="text-orange-400 font-bold">No unique solution — lines are parallel</p>
                 )}
               </div>
             </div>

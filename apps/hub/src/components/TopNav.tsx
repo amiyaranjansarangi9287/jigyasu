@@ -4,6 +4,7 @@ import { useUserProfile, useGlobalXP } from '@jigyasu/storage';
 import DailyGoalRing from './DailyGoalRing';
 import SearchOverlay from './SearchOverlay';
 import GlobalLanguageSelector from './GlobalLanguageSelector';
+import OfflineIndicator from './OfflineIndicator';
 import { useTranslation } from 'react-i18next';
 
 export default function TopNav() {
@@ -52,12 +53,17 @@ export default function TopNav() {
         {location.pathname !== '/' && (
           <span className={`ml-2 px-3 py-1 rounded-full text-sm font-bold hidden sm:block transition-colors ${
             isTransparentWithWhiteText 
-              ? 'bg-white/20 text-white hover:bg-white/30 backdrop-blur-sm' 
-              : 'bg-slate-100 text-slate-500 hover:bg-slate-200'
+              ? 'bg-white/20 text-white' 
+              : 'bg-sky-100 text-sky-700'
           }`}>
-            🏠 {t('hub', 'Hub')}
+            <span className="hidden lg:inline">{t('learn_explore', 'Learn & Explore')}</span>
+            <span className="lg:hidden">{t('explore', 'Explore')}</span>
           </span>
         )}
+      </div>
+
+      <div className="hidden md:block absolute left-1/2 -translate-x-1/2">
+        <OfflineIndicator />
       </div>
 
       <div className="flex items-center gap-4">

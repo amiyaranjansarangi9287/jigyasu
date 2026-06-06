@@ -34,7 +34,7 @@ export default function WeeklyChallenge({ onStartBuild }: WeeklyChallengeProps) 
   return (
     <section className="py-16 bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 dark:from-violet-800 dark:via-purple-800 dark:to-indigo-800 relative overflow-hidden">
       {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute top-0 left-0 w-64 min-h-64 bg-white/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-pink-500/10 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
       <div className="absolute top-1/4 right-1/4 text-6xl opacity-10 animate-float select-none">🎯</div>
 
@@ -97,14 +97,14 @@ export default function WeeklyChallenge({ onStartBuild }: WeeklyChallengeProps) 
                   <img
                     src={challengeToy.image}
                     alt={challengeToy.name}
-                    className="w-full h-48 object-cover"
+                    className="w-full min-h-48 object-cover"
                   />
                   <div className="absolute top-3 left-3 px-3 py-1 bg-amber-500 text-white text-xs font-bold rounded-full flex items-center gap-1 shadow-lg">
                     🎯 This Week
                   </div>
                   {isCompleted && (
                     <div className="absolute inset-0 bg-emerald-500/20 flex items-center justify-center">
-                      <div className="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center text-white text-3xl shadow-xl">
+                      <div className="w-16 min-h-16 bg-emerald-500 rounded-full flex items-center justify-center text-white text-3xl shadow-xl">
                         ✓
                       </div>
                     </div>

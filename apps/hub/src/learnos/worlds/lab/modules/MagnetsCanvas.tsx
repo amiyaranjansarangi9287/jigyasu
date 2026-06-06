@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface MagnetsCanvasProps {
   magnet1Pole: 'N' | 'S';
@@ -7,6 +8,7 @@ interface MagnetsCanvasProps {
 }
 
 export default function MagnetsCanvas({ magnet1Pole, magnet2Pole, distance }: MagnetsCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const particlesRef = useRef<{ x: number; y: number; vx: number; vy: number; life: number }[]>([]);

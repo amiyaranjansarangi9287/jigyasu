@@ -66,7 +66,7 @@ export default function ToyModal({ toy, onClose, isFavorite, onToggleFavorite, o
         <button
           onClick={onClose}
           className="absolute top-4 right-4 z-10 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors shadow-lg"
-        >
+         aria-label="Action button">
           <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
           </svg>
@@ -99,7 +99,7 @@ export default function ToyModal({ toy, onClose, isFavorite, onToggleFavorite, o
             </div>
             <button
               onClick={(e) => { e.stopPropagation(); onToggleFavorite(); }}
-              className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg ${
+              className={`w-12 min-h-12 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg ${
                 isFavorite
                   ? 'bg-rose-500 text-white hover:bg-rose-600'
                   : 'bg-white/90 text-gray-400 hover:text-rose-500 hover:bg-white'
@@ -236,7 +236,7 @@ export default function ToyModal({ toy, onClose, isFavorite, onToggleFavorite, o
                     <img
                       src={r.image}
                       alt={r.name}
-                      className="w-16 h-16 rounded-xl object-cover flex-shrink-0"
+                      className="w-16 min-h-16 rounded-xl object-cover flex-shrink-0"
                     />
                     <div className="min-w-0">
                       <p className="text-sm font-bold text-gray-900 group-hover:text-violet-600 transition-colors truncate">

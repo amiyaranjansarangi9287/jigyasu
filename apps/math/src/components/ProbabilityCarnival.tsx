@@ -201,7 +201,7 @@ export default function ProbabilityCarnival() {
         {mode === 'coins' && (
           <motion.div key="coins" className="max-w-lg mx-auto space-y-4" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
             <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center">
-              <motion.div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-yellow-400 to-amber-600 flex items-center justify-center text-3xl font-bold shadow-xl mb-4"
+              <motion.div className="w-20 min-h-20 mx-auto rounded-full bg-gradient-to-br from-yellow-400 to-amber-600 flex items-center justify-center text-3xl font-bold shadow-xl mb-4"
                 animate={flipping ? { rotateY: [0, 360, 720], scale: [1, 1.3, 1] } : {}} transition={{ duration: 0.5 }}>
                 {flipping ? '?' : (coinFlips[0] || '?')}
               </motion.div>
@@ -233,7 +233,7 @@ export default function ProbabilityCarnival() {
         {mode === 'dice' && (
           <motion.div key="dice" className="max-w-lg mx-auto space-y-4" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
             <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-center">
-              <motion.div className="w-20 h-20 mx-auto rounded-xl bg-white flex items-center justify-center text-5xl shadow-xl mb-4"
+              <motion.div className="w-20 min-h-20 mx-auto rounded-xl bg-white flex items-center justify-center text-5xl shadow-xl mb-4"
                 animate={rolling ? { rotate: [0, 360], scale: [1, 1.2, 1] } : {}} transition={{ duration: 0.5 }}>
                 {rolling ? '🎲' : diceEmoji[(diceRolls[0] || 1) - 1]}
               </motion.div>

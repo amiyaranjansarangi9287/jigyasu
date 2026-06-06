@@ -35,7 +35,7 @@ export default function Flashcard({ question, answer, onGrade, emoji = '🧠' }:
           className="absolute inset-0 backface-hidden bg-white rounded-3xl p-8 border-4 border-sky-400 shadow-xl flex flex-col items-center justify-center text-center"
           style={{ backfaceVisibility: 'hidden' }}
         >
-          <div className="text-5xl mb-6 bg-sky-50 w-20 h-20 rounded-full flex items-center justify-center shadow-inner">
+          <div className="text-5xl mb-6 bg-sky-50 w-20 min-h-20 rounded-full flex items-center justify-center shadow-inner">
             {emoji}
           </div>
           <h3 className="text-2xl font-black text-slate-800 leading-tight">{question}</h3>

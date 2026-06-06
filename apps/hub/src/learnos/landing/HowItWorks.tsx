@@ -25,7 +25,7 @@ export default function HowItWorks() {
         {STEPS.map((s) => (
           <li key={s.n} className="relative">
             <div className="relative rounded-2xl border border-orange-100 bg-white p-5 text-center shadow-sm">
-              <div className={`mx-auto -mt-12 flex h-16 w-16 items-center justify-center rounded-2xl ${s.color} text-3xl shadow-md ring-4 ring-cream`}>
+              <div className={`mx-auto -mt-12 flex min-h-16 w-16 items-center justify-center rounded-2xl ${s.color} text-3xl shadow-md ring-4 ring-cream`}>
                 {s.emoji}
               </div>
               <p className="mt-3 text-sm font-bold uppercase tracking-wider text-brand">Step {s.n}</p>

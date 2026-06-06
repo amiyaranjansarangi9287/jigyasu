@@ -84,7 +84,7 @@ export default function CodeStory() {
           </div>
           <AnimatePresence>{result && (
             <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className={`rounded-2xl p-4 mb-4 flex items-center gap-2 ${result === 'success' ? 'bg-green-900/30 border border-green-700' : 'bg-red-900/30 border border-red-700'}`}>
-              <span className="text-2xl">{result === 'success' ? '✅' : '❌'}</span>
+              <span className="text-2xl">{result === 'success' ? '✅' : '🤔'}</span>
               <p className={`font-bold text-sm ${result === 'success' ? 'text-green-400' : 'text-red-400'}`}>{result === 'success' ? 'Goal achieved!' : `Try again. ${ch.hint}`}</p>
             </motion.div>
           )}</AnimatePresence>

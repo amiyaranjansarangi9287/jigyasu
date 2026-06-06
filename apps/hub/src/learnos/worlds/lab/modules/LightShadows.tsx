@@ -43,9 +43,7 @@ export default function LightShadows() {
           <h1 className="text-3xl font-extrabold text-slate-800">
             {t('lab.lightshadows.title', { defaultValue: 'Light & Shadows' })}
           </h1>
-          <p className="text-sm text-slate-500 mt-2">
-            Drag the sun to see how shadows change!
-          </p>
+          <p className="text-sm text-slate-500 mt-2">{t('lab.modules.LightShadows.txt_Dragthesun', 'Drag the sun to see how shadows change!')}</p>
         </div>
 
         {/* Time indicator */}
@@ -65,24 +63,24 @@ export default function LightShadows() {
           <div className="bg-yellow-50 rounded-2xl p-4 text-center">
             <div className="text-2xl mb-1">☀️</div>
             <div className="font-bold text-yellow-600 text-sm">Light Source</div>
-            <p className="text-sm text-yellow-400 mt-1">Light travels in straight lines</p>
+            <p className="text-sm text-yellow-400 mt-1">{t('lab.modules.LightShadows.txt_Lighttrave', 'Light travels in straight lines')}</p>
           </div>
           <div className="bg-slate-50 rounded-2xl p-4 text-center">
             <div className="text-2xl mb-1">🌳</div>
             <div className="font-bold text-slate-600 text-sm">Object Blocks</div>
-            <p className="text-sm text-slate-400 mt-1">Opaque objects block light</p>
+            <p className="text-sm text-slate-400 mt-1">{t('lab.modules.LightShadows.txt_Opaqueobje', 'Opaque objects block light')}</p>
           </div>
           <div className="bg-gray-100 rounded-2xl p-4 text-center">
             <div className="text-2xl mb-1">🌑</div>
             <div className="font-bold text-gray-600 text-sm">Shadow Forms</div>
-            <p className="text-sm text-gray-400 mt-1">Dark area behind the object</p>
+            <p className="text-sm text-gray-400 mt-1">{t('lab.modules.LightShadows.txt_Darkareabe', 'Dark area behind the object')}</p>
           </div>
         </div>
 
         {/* Indian context */}
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.LightShadows.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1">Ancient Indian Shadow Science</h3>
               <p className="text-gray-600 text-sm leading-relaxed">

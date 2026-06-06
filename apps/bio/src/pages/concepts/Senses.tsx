@@ -1,9 +1,9 @@
 import { lazy, Suspense,  useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Eye } from 'lucide-react'
-const SensesCanvas = lazy(() => import('../../components/canvases/SensesCanvas'));
-const AudioNarration = lazy(() => import('../../components/AudioNarration'));
-const CanvasWithNarrator = lazy(() => import('../../components/CanvasWithNarrator'));
+import SensesCanvas from '../../components/canvases/SensesCanvas';
+import AudioNarration from '../../components/AudioNarration';
+import CanvasWithNarrator from '../../components/CanvasWithNarrator';
 import { getConceptById } from '../../data/concepts'
 
 export default function Senses() {

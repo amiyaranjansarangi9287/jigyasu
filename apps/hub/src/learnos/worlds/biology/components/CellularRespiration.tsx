@@ -294,7 +294,7 @@ export default function CellularRespiration() {
 
             {/* Fermentation note */}
             <div className="bg-red-500/10 rounded-xl p-4 border border-red-500/20">
-              <div className="text-sm text-red-400 font-bold mb-1">🍺 Without Oxygen?</div>
+              <div className="text-sm text-orange-400 font-bold mb-1">🍺 Without Oxygen?</div>
               <p className="text-sm text-gray-300">
                 <strong>Fermentation</strong> occurs! Only glycolysis runs, producing just 2 ATP. In animals → lactic acid (muscle burn). In yeast → ethanol + CO₂ (bread & beer!).
               </p>

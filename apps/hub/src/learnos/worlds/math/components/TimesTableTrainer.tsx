@@ -18,7 +18,7 @@ export default function TimesTableTrainer() {
   const [question, setQuestion] = useState<Question | null>(null);
   const [userAnswer, setUserAnswer] = useState('');
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
   const [streak, setStreak] = useState(0);
   const [mistakes, setMistakes] = useState<Set<string>>(new Set());
   const [showAllTables, setShowAllTables] = useState(false);
@@ -75,7 +75,7 @@ export default function TimesTableTrainer() {
     if (parsed === question.answer) {
       setFeedback('correct');
       sfx.correct();
-      setScore((s) => s + 1);
+      setMastery((s) => s + 1);
       setStreak((s) => s + 1);
       if (quizActive) {
         setQuizScore((s) => s + 1);
@@ -202,7 +202,7 @@ export default function TimesTableTrainer() {
             {/* Stats */}
             <div className="flex justify-center gap-3 mb-4">
               <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">
-                ⭐ {formatNumber(score)}
+                ⭐ {formatNumber(mastery)}
               </span>
               <span className="bg-white/5 px-3 py-1.5 rounded-lg text-orange-400 font-bold text-sm">
                 🔥 {formatNumber(streak)}
@@ -215,7 +215,7 @@ export default function TimesTableTrainer() {
                 feedback === 'correct'
                   ? 'bg-green-500/10 border-green-500/50'
                   : feedback === 'wrong'
-                  ? 'bg-red-500/10 border-red-500/50'
+                  ? 'bg-white/5 border-white/10'
                   : 'bg-white/5 border-white/10'
               }`}
               key={`${question.a}x${question.b}`}
@@ -263,11 +263,11 @@ export default function TimesTableTrainer() {
               )}
               {feedback === 'wrong' && (
                 <motion.p
-                  className="mt-4 text-red-400 font-bold text-xl"
+                  className="mt-4 text-orange-400 font-bold text-xl"
                   initial={{ x: -10 }}
                   animate={{ x: [10, -10, 5, 0] }}
                 >
-                  ❌ {t('math_modules.TimesTableTrainer.wrong', "It's {{answer}} — try again!", { answer: formatNumber(question.answer) })}
+                  🤔 {t('math_modules.TimesTableTrainer.wrong', "It's {{answer}} — try again!", { answer: formatNumber(question.answer) })}
                 </motion.p>
               )}
 
@@ -313,7 +313,7 @@ export default function TimesTableTrainer() {
                   ))}
                 </div>
                 {mistakes.size > 0 && (
-                  <p className="text-sm text-red-400 mt-2 text-center">
+                  <p className="text-sm text-orange-400 mt-2 text-center">
                     {t('math_modules.TimesTableTrainer.redMistakes', '🔴 Red = mistakes made (review these!)')}
                   </p>
                 )}
@@ -381,7 +381,7 @@ export default function TimesTableTrainer() {
               <div>
                 <div className="flex justify-between mb-4">
                   <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold">⭐ {formatNumber(quizScore)}</span>
-                  <span className={`font-bold ${quizTime > 10 ? 'text-green-400' : 'text-red-400'}`}>
+                  <span className={`font-bold ${quizTime > 10 ? 'text-green-400' : 'text-orange-400'}`}>
                     ⏱️ {formatNumber(quizTime)}s
                   </span>
                 </div>
@@ -430,7 +430,7 @@ export default function TimesTableTrainer() {
                     </motion.p>
                   )}
                   {feedback === 'wrong' && (
-                    <p className="mt-3 text-red-400 font-bold">{t('math_modules.TimesTableTrainer.answerIs', 'Answer: {{answer}}', { answer: formatNumber(question.answer) })}</p>
+                    <p className="mt-3 text-orange-400 font-bold">{t('math_modules.TimesTableTrainer.answerIs', 'Answer: {{answer}}', { answer: formatNumber(question.answer) })}</p>
                   )}
                 </motion.div>
               </div>

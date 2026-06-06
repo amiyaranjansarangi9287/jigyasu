@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface ElectricityCanvasProps {
   switchOn: boolean;
@@ -7,6 +8,7 @@ interface ElectricityCanvasProps {
 }
 
 export default function ElectricityCanvas({ switchOn, voltage, resistance }: ElectricityCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const switchRef = useRef(switchOn);

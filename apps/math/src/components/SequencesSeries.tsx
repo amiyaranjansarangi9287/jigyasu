@@ -122,7 +122,7 @@ export default function SequencesSeries() {
             {/* Bar visualization */}
             <div className="bg-white/5 rounded-2xl p-4 border border-white/10">
               <h4 className="text-white font-bold mb-2">📊 Visual</h4>
-              <div className="flex items-end gap-1 h-32">
+              <div className="flex items-end gap-1 min-h-32">
                 {terms.map((t, i) => (
                   <motion.div key={i} className="flex-1 flex flex-col items-center"
                     initial={{ height: 0 }} animate={{ height: 'auto' }}>

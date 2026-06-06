@@ -121,6 +121,7 @@ export default function Navbar({
                         className="w-full px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700 flex items-center gap-3"
                       >
                         <span className="text-xl">{pillar.icon}</span>
+                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
                         <span className="text-gray-700 dark:text-gray-200">{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
                       </button>
                     ))}
@@ -146,7 +147,7 @@ export default function Navbar({
                     ? 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800'
                     : 'text-white/90 hover:text-white hover:bg-white/10'
                 }`}
-              >
+               aria-label="Action button">
                 {t('my_progress', 'My Progress')}
                 {completedCount > 0 && (
                   <span className="bg-gradient-to-r from-orange-500 to-pink-500 text-white text-sm px-2 py-0.5 rounded-full">
@@ -168,7 +169,7 @@ export default function Navbar({
                     ? 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700'
                     : 'bg-white/20 text-white hover:bg-white/30'
                 }`}
-              >
+               aria-label="Action button">
                 {selectedAge ? ageLabels[selectedAge] : '👤 Age'}
                 <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -183,7 +184,7 @@ export default function Navbar({
                     ? 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800'
                     : 'text-white hover:bg-white/10'
                 }`}
-              >
+               aria-label="Action button">
                 <svg className="w-6 h-6" fill={favoritesCount > 0 ? 'currentColor' : 'none'} viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
@@ -202,7 +203,7 @@ export default function Navbar({
                     ? 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800'
                     : 'text-white hover:bg-white/10'
                 }`}
-              >
+               aria-label="Action button">
                 <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -277,6 +278,7 @@ export default function Navbar({
                     className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800"
                   >
                     <span className="text-2xl">{pillar.icon}</span>
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     <span className="text-gray-700 dark:text-gray-200">{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
                   </button>
                 ))}

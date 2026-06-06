@@ -87,12 +87,11 @@ function toSup(n: number): string {
 
 export default function MentalMathBlitz() {
   const formatNumber = useFormatNumber();
-  const [gameState, setGameState] = useState<'menu' | 'playing' | 'results'>('menu');
+  const [gameState, setGameState] = useState<'menu' | 'playing'>('menu');
   const [category, setCategory] = useState<Category>('mixed');
   const [difficulty, setDifficulty] = useState(1);
   const [question, setQuestion] = useState<Question | null>(null);
-  const [timeLeft, setTimeLeft] = useState(90);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
   const [streak, setStreak] = useState(0);
   const [maxStreak, setMaxStreak] = useState(0);
   const [correct, setCorrect] = useState(0);
@@ -108,8 +107,7 @@ export default function MentalMathBlitz() {
 
   const startGame = () => {
     setGameState('playing');
-    setTimeLeft(90);
-    setScore(0);
+    setMastery(0);
     setStreak(0);
     setMaxStreak(0);
     setCorrect(0);
@@ -117,29 +115,13 @@ export default function MentalMathBlitz() {
     nextQ();
   };
 
-  useEffect(() => {
-    if (gameState !== 'playing') return;
-    const t = setInterval(() => {
-      setTimeLeft(v => {
-        if (v <= 1) {
-          clearInterval(t);
-          setGameState('results');
-          return 0;
-        }
-        return v - 1;
-      });
-    }, 1000);
-    return () => clearInterval(t);
-  }, [gameState]);
-
   const handleAnswer = (opt: number) => {
     if (feedback || !question) return;
     setTotal(t => t + 1);
     if (opt === question.answer) {
       setFeedback('correct');
       sfx.correct();
-      const pts = (10 + difficulty * 5) * (1 + Math.floor(streak / 3));
-      setScore(s => s + pts);
+      setMastery(s => s + 1);
       setStreak(s => { const n = s + 1; setMaxStreak(m => Math.max(m, n)); return n; });
       setCorrect(c => c + 1);
       // Adaptive difficulty
@@ -149,7 +131,7 @@ export default function MentalMathBlitz() {
       setFeedback('wrong');
       sfx.wrong();
       setStreak(0);
-      setTimeout(nextQ, 800);
+      setTimeout(() => setFeedback(null), 1000);
     }
   };
 
@@ -166,8 +148,8 @@ export default function MentalMathBlitz() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🧠 Mental Math Blitz</h2>
-        <p className="text-purple-300 text-lg">Advanced speed challenges for sharp minds!</p>
+        <h2 className="text-3xl font-bold text-white mb-2">🧠 Mental Math Mastery</h2>
+        <p className="text-purple-300 text-lg">Sharpen your mind without the pressure!</p>
       </div>
 
       <AnimatePresence mode="wait">
@@ -211,7 +193,7 @@ export default function MentalMathBlitz() {
               whileTap={{ scale: 0.97 }}
               onClick={startGame}
             >
-              🚀 Start Blitz! (90 seconds)
+              🚀 Start Journey
             </motion.button>
           </motion.div>
         )}
@@ -221,23 +203,11 @@ export default function MentalMathBlitz() {
             {/* Stats bar */}
             <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
               <div className="flex gap-2">
-                <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">⭐ {formatNumber(score)}</span>
-                <span className="bg-white/5 px-3 py-1.5 rounded-lg text-orange-400 font-bold text-sm">🔥 {formatNumber(streak)}</span>
+                <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">🌟 Mastery {formatNumber(mastery)}</span>
+                <span className="bg-white/5 px-3 py-1.5 rounded-lg text-orange-400 font-bold text-sm">🔥 Streak {formatNumber(streak)}</span>
                 <span className="bg-white/5 px-3 py-1.5 rounded-lg text-blue-400 font-bold text-sm">{getCatEmoji(question.category)}</span>
               </div>
-              <motion.span
-                className={`font-bold text-lg ${timeLeft > 30 ? 'text-green-400' : timeLeft > 10 ? 'text-yellow-400' : 'text-red-400'}`}
-                animate={timeLeft <= 10 ? { scale: [1, 1.2, 1] } : {}}
-                transition={{ duration: 0.5, repeat: Infinity }}
-              >
-                ⏱️ {formatNumber(timeLeft)}s
-              </motion.span>
-            </div>
-
-            <div className="h-2 w-full bg-gray-700 rounded-full mb-4 overflow-hidden">
-              <motion.div className={`h-full rounded-full ${timeLeft > 30 ? 'bg-green-500' : timeLeft > 10 ? 'bg-yellow-500' : 'bg-red-500'}`}
-                animate={{ width: `${(timeLeft / 90) * 100}%` }}
-              />
+              <span className="text-green-400 font-bold text-sm">Take your time 🌱</span>
             </div>
 
             <motion.div
@@ -273,36 +243,8 @@ export default function MentalMathBlitz() {
               </div>
 
               {feedback === 'correct' && <motion.p className="mt-3 text-green-400 font-bold" initial={{ scale: 0 }} animate={{ scale: 1 }}>✨ Correct!</motion.p>}
-              {feedback === 'wrong' && <p className="mt-3 text-red-400 font-bold">❌ Answer: {formatNumber(question.answer)}</p>}
+              {feedback === 'wrong' && <p className="mt-3 text-red-400 font-bold">🤔 Try again!</p>}
             </motion.div>
-          </motion.div>
-        )}
-
-        {gameState === 'results' && (
-          <motion.div key="results" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} className="max-w-md mx-auto text-center">
-            <div className="bg-gradient-to-br from-purple-900/40 to-indigo-900/40 rounded-3xl border border-purple-500/30 p-8">
-              <motion.div className="text-7xl mb-3" animate={{ rotate: [0, 360] }} transition={{ duration: 2 }}>🧠</motion.div>
-              <h3 className="text-3xl font-bold text-white mb-4">Blitz Complete!</h3>
-              <div className="space-y-3 mb-6">
-                {[
-                  { label: '⭐ Score', value: formatNumber(score), color: 'text-yellow-400' },
-                  { label: '✅ Accuracy', value: `${formatNumber(total > 0 ? Math.round((correct / total) * 100) : 0)}%`, color: 'text-green-400' },
-                  { label: '🔥 Best Streak', value: formatNumber(maxStreak), color: 'text-orange-400' },
-                  { label: '📊 Questions', value: `${formatNumber(correct)}/${formatNumber(total)}`, color: 'text-blue-400' },
-                ].map(s => (
-                  <div key={s.label} className="flex justify-between items-center bg-white/5 rounded-xl px-4 py-3">
-                    <span className="text-gray-400">{s.label}</span>
-                    <span className={`text-xl font-bold ${s.color}`}>{s.value}</span>
-                  </div>
-                ))}
-              </div>
-              <p className="text-purple-300 mb-4 font-bold">
-                {score >= 500 ? '🏆 Mental Math LEGEND!' : score >= 300 ? '⚡ Lightning Calculator!' : score >= 150 ? '🧙 Math Sorcerer!' : '📚 Keep training!'}
-              </p>
-              <motion.button className="w-full py-4 rounded-2xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold text-xl" whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={startGame}>
-                🔄 Play Again
-              </motion.button>
-            </div>
           </motion.div>
         )}
       </AnimatePresence>

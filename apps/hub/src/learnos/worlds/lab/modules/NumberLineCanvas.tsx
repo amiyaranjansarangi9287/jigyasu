@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface NumberLineCanvasProps {
   position: number;
@@ -7,6 +8,7 @@ interface NumberLineCanvasProps {
 }
 
 export default function NumberLineCanvas({ position, targetPosition, showJumps }: NumberLineCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const posRef = useRef(position);

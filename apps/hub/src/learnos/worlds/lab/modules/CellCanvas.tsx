@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface CellCanvasProps {
   focusedOrganelle: string | null;
@@ -6,6 +7,7 @@ interface CellCanvasProps {
 }
 
 export default function CellCanvas({ focusedOrganelle, isPlaying }: CellCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const focusedRef = useRef(focusedOrganelle);

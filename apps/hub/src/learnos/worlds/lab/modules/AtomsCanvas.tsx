@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface AtomsCanvasProps {
   element: 'hydrogen' | 'helium' | 'carbon' | 'oxygen';
@@ -6,6 +7,7 @@ interface AtomsCanvasProps {
 }
 
 export default function AtomsCanvas({ element, showLabels }: AtomsCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const elementRef = useRef(element);

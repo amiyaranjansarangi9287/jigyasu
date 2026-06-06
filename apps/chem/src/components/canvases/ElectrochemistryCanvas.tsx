@@ -97,7 +97,7 @@ export default function ElectrochemistryCanvas({ isPlaying }: CanvasProps) {
           <p className="text-slate-400 text-sm">Make electricity from lemons!</p>
 
           {/* Lemon Battery Visualization */}
-          <div className="relative w-full max-w-md h-48 bg-slate-800/50 rounded-2xl border border-slate-700 flex items-center justify-center overflow-hidden">
+          <div className="relative w-full max-w-md min-h-48 bg-slate-800/50 rounded-2xl border border-slate-700 flex items-center justify-center overflow-hidden">
             <div className="flex items-center gap-2">
               {Array.from({ length: lemonCount }).map((_, i) => (
                 <motion.div
@@ -107,7 +107,7 @@ export default function ElectrochemistryCanvas({ isPlaying }: CanvasProps) {
                   className="relative"
                 >
                   {/* Lemon */}
-                  <div className="w-16 h-14 bg-yellow-400 rounded-full flex items-center justify-center">
+                  <div className="w-16 min-h-14 bg-yellow-400 rounded-full flex items-center justify-center">
                     <span className="text-2xl">🍋</span>
                   </div>
                   {/* Electrodes */}
@@ -218,7 +218,7 @@ export default function ElectrochemistryCanvas({ isPlaying }: CanvasProps) {
           </div>
 
           {/* Battery Visualization */}
-          <div className="relative w-72 h-48 bg-slate-800/50 rounded-2xl border border-slate-700 p-4">
+          <div className="relative w-72 min-h-48 bg-slate-800/50 rounded-2xl border border-slate-700 p-4">
             {/* Battery container */}
             <div className="absolute left-8 top-8 bottom-8 w-24 border-2 border-slate-500 rounded-lg overflow-hidden">
               {/* Electrolyte */}

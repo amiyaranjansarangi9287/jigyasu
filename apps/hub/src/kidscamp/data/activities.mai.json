@@ -1,0 +1,4506 @@
+[
+  {
+    "id": "[MAI] toybox-rainbow-blocks",
+    "name": "[MAI] Rainbow Stacking Blocks",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 1-2 hours",
+    "description": "[MAI] Create a beautiful set of rainbow-colored wooden blocks perfect for stacking, sorting, and creative play. These timeless toys spark imagination and help develop fine motor skills.",
+    "image": "[MAI] /images/blocks.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[MAI] Wooden blocks or lumber scraps",
+        "quantity": "[MAI] 12-20 pieces"
+      },
+      {
+        "name": "Sandpaper",
+        "quantity": "[MAI] Fine and medium grit"
+      },
+      {
+        "name": "[MAI] Non-toxic acrylic paint",
+        "quantity": "[MAI] Rainbow colors"
+      },
+      {
+        "name": "[MAI] Clear sealant",
+        "quantity": "[MAI] 1 can",
+        "optional": true
+      },
+      {
+        "name": "Paintbrushes",
+        "quantity": "3-4"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Prepare the Wood",
+        "description": "[MAI] Start by selecting your wooden pieces. If using lumber scraps, cut them into various shapes - rectangles, squares, triangles, and arches. Sand all surfaces smooth, starting with medium grit sandpaper and finishing with fine grit. Pay special attention to edges and corners to ensure they are rounded and safe for little hands.",
+        "tip": "[MAI] Pre-cut wooden blocks from craft stores work great and save time!",
+        "duration": "[MAI] 30 min"
+      },
+      {
+        "title": "[MAI] Plan Your Rainbow",
+        "description": "[MAI] Lay out your blocks and decide which colors will go on each piece. A classic rainbow progression (red, orange, yellow, green, blue, purple) works beautifully. Consider painting blocks of similar sizes in the same color for a cohesive set.",
+        "tip": "[MAI] Take a photo of your layout plan for reference while painting.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Apply Base Coats",
+        "description": "[MAI] Paint each block with its designated color. Apply thin, even coats and let dry completely between applications. Most blocks will need 2-3 coats for full coverage.",
+        "tip": "[MAI] Use a cardboard box to hold blocks upright while drying.",
+        "duration": "[MAI] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MAI] Add Details (Optional)",
+        "description": "[MAI] Once base coats are dry, add fun details like dots, stripes, or simple patterns. You can also leave them solid for a classic look.",
+        "duration": "[MAI] 20 min"
+      },
+      {
+        "title": "[MAI] Seal and Finish",
+        "description": "[MAI] Apply a clear, non-toxic sealant to protect the paint and make blocks more durable. Let dry completely (24 hours recommended) before play.",
+        "tip": "[MAI] Water-based polyurethane is safe once fully cured.",
+        "duration": "[MAI] 15 min",
+        "parentHelp": true
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Use only non-toxic, child-safe paints and sealants",
+      "[MAI] Ensure all edges are well-sanded and smooth",
+      "[MAI] Adult supervision required for cutting and sealing",
+      "[MAI] Allow full curing time before giving to children"
+    ],
+    "learningOutcomes": [
+      "[MAI] Fine motor skills",
+      "[MAI] Color recognition",
+      "[MAI] Spatial awareness",
+      "[MAI] Creative thinking"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] toybox-wooden-car",
+    "name": "[MAI] Wooden Auto-Rickshaw (Tuk-Tuk)",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MAI] 2-3 hours",
+    "description": "[MAI] Construct your very own wooden Auto-Rickshaw! Learn the physics of axles and wheels as you design and paint the iconic three-wheeled vehicle that navigates busy Indian streets.",
+    "image": "[MAI] /images/wooden-car.webp",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 124,
+    "materials": [
+      {
+        "name": "[MAI] Wood block",
+        "quantity": "[MAI] 6\" x 3\" x 2\""
+      },
+      {
+        "name": "[MAI] Wooden wheels",
+        "quantity": "[MAI] 4 pieces"
+      },
+      {
+        "name": "[MAI] Wooden dowels",
+        "quantity": "[MAI] 2 pieces, 4\" each"
+      },
+      {
+        "name": "Sandpaper",
+        "quantity": "[MAI] Various grits"
+      },
+      {
+        "name": "[MAI] Wood glue"
+      },
+      {
+        "name": "[MAI] Non-toxic paint",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Shape the Car Body",
+        "description": "[MAI] Draw the car profile on your wood block - a simple curved top works best. Using a saw or pre-cut the shape, then sand all surfaces smooth.",
+        "duration": "[MAI] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MAI] Drill Axle Holes",
+        "description": "[MAI] Mark where the axle holes will go on both sides of the car body. Drill straight through, ensuring holes align perfectly.",
+        "tip": "[MAI] Use a drill press for perfectly aligned holes.",
+        "duration": "[MAI] 15 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MAI] Prepare Wheels and Axles",
+        "description": "[MAI] Sand the wheels smooth. Cut dowels to length for axles, leaving room for wheels plus a small gap.",
+        "duration": "[MAI] 20 min"
+      },
+      {
+        "title": "[MAI] Assemble the Car",
+        "description": "[MAI] Insert axles through the car body. Attach wheels to each end with a dab of wood glue. Ensure wheels spin freely.",
+        "tip": "[MAI] Don't use too much glue - wheels need to spin!",
+        "duration": "[MAI] 20 min"
+      },
+      {
+        "title": "[MAI] Paint and Finish",
+        "description": "[MAI] Once glue is dry, paint your car in your favorite colors. Add details like windows, headlights, or racing stripes. Apply sealant and let cure.",
+        "duration": "[MAI] 40 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Adult supervision required for all cutting and drilling",
+      "[MAI] Wear safety glasses when using power tools",
+      "[MAI] Use non-toxic finishes only"
+    ],
+    "learningOutcomes": [
+      "[MAI] Basic woodworking",
+      "[MAI] Wheel and axle mechanics",
+      "[MAI] Planning and execution",
+      "[MAI] Fine motor skills"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] toybox-plush-bear",
+    "name": "[MAI] Cuddly Plush Bear",
+    "pillar": "toybox",
+    "category": "Plush",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MAI] 3-4 hours",
+    "description": "[MAI] Sew your own adorable teddy bear with soft fabric and button eyes. A perfect cuddly companion that makes a wonderful gift.",
+    "image": "[MAI] /images/plush-bear.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[MAI] Soft fabric (fleece or felt)",
+        "quantity": "[MAI] 1/2 yard"
+      },
+      {
+        "name": "Stuffing",
+        "quantity": "[MAI] 1 bag polyester filling"
+      },
+      {
+        "name": "Thread",
+        "quantity": "[MAI] Matching color"
+      },
+      {
+        "name": "Buttons",
+        "quantity": "[MAI] 2 for eyes"
+      },
+      {
+        "name": "[MAI] Embroidery thread",
+        "quantity": "[MAI] For nose and mouth"
+      },
+      {
+        "name": "[MAI] Needle and pins"
+      },
+      {
+        "name": "Scissors"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Cut Pattern Pieces",
+        "description": "[MAI] Print or draw a simple bear pattern. Cut out body (2), arms (4), legs (4), ears (4), and head pieces from your fabric.",
+        "duration": "[MAI] 30 min"
+      },
+      {
+        "title": "[MAI] Sew Body Parts",
+        "description": "[MAI] With right sides together, sew arm pairs, leg pairs, and ears. Leave openings for turning. Turn right side out.",
+        "duration": "[MAI] 45 min"
+      },
+      {
+        "title": "[MAI] Create the Face",
+        "description": "[MAI] Attach button eyes securely. Embroider a simple nose and smile using satin stitch.",
+        "tip": "[MAI] For younger children, embroider eyes instead of buttons for safety.",
+        "duration": "[MAI] 30 min"
+      },
+      {
+        "title": "[MAI] Assemble the Bear",
+        "description": "[MAI] Sew head pieces together, attaching ears. Join body pieces, inserting arms and legs as you go. Leave opening for stuffing.",
+        "duration": "[MAI] 45 min"
+      },
+      {
+        "title": "[MAI] Stuff and Close",
+        "description": "[MAI] Fill bear firmly with stuffing, shaping as you go. Hand-stitch the opening closed with a ladder stitch.",
+        "duration": "[MAI] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Secure button eyes very tightly or use embroidered eyes for young children",
+      "[MAI] Supervise needle use with younger sewers",
+      "[MAI] Check for loose threads or weak seams"
+    ],
+    "learningOutcomes": [
+      "[MAI] Sewing skills",
+      "[MAI] Pattern reading",
+      "[MAI] Patience and attention to detail",
+      "[MAI] Gift-giving mindset"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] toybox-recycled-robot",
+    "name": "[MAI] Recycled Robot",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 1-2 hours",
+    "description": "[MAI] Transform recyclable materials into an awesome robot friend! This eco-friendly project teaches creativity and environmental awareness.",
+    "image": "[MAI] /images/robot.webp",
+    "rating": 4.6,
+    "reviewCount": 142,
+    "materials": [
+      {
+        "name": "[MAI] Cardboard boxes",
+        "quantity": "[MAI] Various sizes"
+      },
+      {
+        "name": "[MAI] Bottle caps"
+      },
+      {
+        "name": "[MAI] Aluminum foil"
+      },
+      {
+        "name": "[MAI] Toilet paper rolls",
+        "quantity": "[MAI] 4 for limbs"
+      },
+      {
+        "name": "[MAI] Paint and markers"
+      },
+      {
+        "name": "[MAI] Glue gun",
+        "optional": true
+      },
+      {
+        "name": "[MAI] Craft glue"
+      },
+      {
+        "name": "[MAI] Pipe cleaners",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Gather Materials",
+        "description": "[MAI] Collect various recyclables - boxes, bottles, caps, tubes. Clean everything thoroughly. Lay out materials and envision your robot.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Build the Body",
+        "description": "[MAI] Select a medium box for the body and a smaller one for the head. Cover with aluminum foil or paint silver for a robotic look.",
+        "duration": "[MAI] 25 min"
+      },
+      {
+        "title": "[MAI] Add Limbs",
+        "description": "[MAI] Attach toilet paper rolls or paper towel tubes as arms and legs. Secure with glue and reinforce with tape if needed.",
+        "duration": "[MAI] 20 min"
+      },
+      {
+        "title": "[MAI] Create the Face",
+        "description": "[MAI] Use bottle caps for eyes, buttons for a nose, and draw or add a mouth. Get creative with antennae using pipe cleaners!",
+        "duration": "[MAI] 20 min"
+      },
+      {
+        "title": "[MAI] Add Details",
+        "description": "[MAI] Decorate with buttons, dials, screens drawn on paper, or any creative additions. Name your robot!",
+        "duration": "[MAI] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Adult supervision required for hot glue gun",
+      "[MAI] Wash all recyclables before use",
+      "[MAI] Check for sharp edges on cans or lids"
+    ],
+    "learningOutcomes": [
+      "[MAI] Environmental awareness",
+      "[MAI] Creative reuse",
+      "Problem-solving",
+      "[MAI] Imaginative play"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] toybox-balsa-airplane",
+    "name": "[MAI] Balsa Wood Airplane",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[MAI] 3-4 hours",
+    "description": "[MAI] Craft a beautiful balsa wood biplane that actually flies! Learn about aerodynamics while building this classic model.",
+    "image": "[MAI] /images/airplane.webp",
+    "rating": 4.8,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[MAI] Balsa wood sheets",
+        "quantity": "[MAI] 3 sheets, 1/8\" thick"
+      },
+      {
+        "name": "[MAI] Balsa wood sticks",
+        "quantity": "[MAI] Various sizes"
+      },
+      {
+        "name": "[MAI] Wood glue"
+      },
+      {
+        "name": "[MAI] Craft knife"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "Paint",
+        "optional": true
+      },
+      {
+        "name": "[MAI] Rubber bands"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Cut Wing Pieces",
+        "description": "[MAI] Trace wing templates onto balsa sheets. Carefully cut out upper and lower wings using a craft knife. Sand edges smooth.",
+        "duration": "[MAI] 40 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MAI] Build the Fuselage",
+        "description": "[MAI] Cut and assemble the body of the plane using balsa sticks. Create a frame that is sturdy but lightweight.",
+        "duration": "[MAI] 45 min"
+      },
+      {
+        "title": "[MAI] Attach Wings",
+        "description": "[MAI] Glue wings to fuselage at slight upward angles for better lift. Use struts between upper and lower wings.",
+        "tip": "[MAI] Let each glue joint dry before moving to the next.",
+        "duration": "[MAI] 30 min"
+      },
+      {
+        "title": "[MAI] Add Tail Assembly",
+        "description": "[MAI] Create and attach horizontal stabilizer and vertical tail fin. These are crucial for flight stability.",
+        "duration": "[MAI] 25 min"
+      },
+      {
+        "title": "[MAI] Finish and Test Fly",
+        "description": "[MAI] Sand entire plane smooth. Paint if desired. Add a propeller with rubber band power. Test fly and adjust as needed!",
+        "duration": "[MAI] 40 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Adult supervision required for craft knife use",
+      "[MAI] Balsa wood splinters easily - handle with care",
+      "[MAI] Fly in open areas away from people"
+    ],
+    "learningOutcomes": [
+      "[MAI] Aerodynamics basics",
+      "[MAI] Precision building",
+      "[MAI] Physics of flight",
+      "[MAI] Patience and persistence"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] toybox-dollhouse",
+    "name": "[MAI] Miniature Dollhouse",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[MAI] 4-6 hours",
+    "description": "[MAI] Construct a charming miniature dollhouse with multiple rooms. Add tiny furniture and decorations for endless imaginative play.",
+    "image": "[MAI] /images/dollhouse.webp",
+    "rating": 4.9,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[MAI] Cardboard or foam board",
+        "quantity": "[MAI] Large sheets"
+      },
+      {
+        "name": "[MAI] Craft knife"
+      },
+      {
+        "name": "Ruler"
+      },
+      {
+        "name": "Glue"
+      },
+      {
+        "name": "[MAI] Scrapbook paper",
+        "quantity": "[MAI] For wallpaper"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "[MAI] Small boxes",
+        "quantity": "[MAI] For furniture"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Design Floor Plan",
+        "description": "[MAI] Sketch your dollhouse design. Decide on number of rooms and floors. Calculate measurements for walls and floors.",
+        "duration": "[MAI] 20 min"
+      },
+      {
+        "title": "[MAI] Cut Structural Pieces",
+        "description": "[MAI] Cut out walls, floors, and roof pieces from cardboard or foam board. Include window and door openings.",
+        "duration": "[MAI] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MAI] Assemble Structure",
+        "description": "[MAI] Glue walls together, add floors to create stories. Install the roof. Reinforce corners with extra cardboard strips.",
+        "duration": "[MAI] 1 hour"
+      },
+      {
+        "title": "[MAI] Decorate Interior",
+        "description": "[MAI] Apply scrapbook paper as wallpaper. Paint trim and details. Add flooring paper or felt rugs.",
+        "duration": "[MAI] 1 hour"
+      },
+      {
+        "title": "[MAI] Create Furniture",
+        "description": "[MAI] Make tiny furniture from small boxes, spools, and scraps. Add beds, tables, chairs, and decorations.",
+        "duration": "[MAI] 1 hour"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Adult supervision for cutting",
+      "[MAI] Use sharp blades carefully with cutting mat",
+      "[MAI] Small pieces may be choking hazards for young children"
+    ],
+    "learningOutcomes": [
+      "[MAI] Architectural thinking",
+      "[MAI] Scale and proportion",
+      "[MAI] Interior design",
+      "[MAI] Long-term project planning"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] toybox-animal-puzzle",
+    "name": "[MAI] Wooden Animal Puzzle",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 1-2 hours",
+    "description": "[MAI] Create chunky wooden puzzles featuring adorable animals. Perfect for little hands learning shapes and problem-solving.",
+    "image": "[MAI] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 118,
+    "materials": [
+      {
+        "name": "Plywood",
+        "quantity": "[MAI] 1/2\" thick, 8\" x 10\""
+      },
+      {
+        "name": "[MAI] Scroll saw or jigsaw"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "[MAI] Non-toxic paint"
+      },
+      {
+        "name": "[MAI] Clear sealant"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Draw Design",
+        "description": "[MAI] Draw a simple animal shape on the plywood - elephant, cat, or dog work great. Keep shapes chunky with rounded edges.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Cut Outer Shape",
+        "description": "[MAI] Use a scroll saw to cut out the animal shape from the plywood. Sand all edges smooth.",
+        "duration": "[MAI] 20 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MAI] Create Puzzle Pieces",
+        "description": "[MAI] Draw puzzle piece divisions on the animal. Cut along these lines to create 4-8 interlocking pieces.",
+        "duration": "[MAI] 25 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MAI] Paint Pieces",
+        "description": "[MAI] Paint each puzzle piece in bright colors. You can paint both sides or just the top.",
+        "duration": "[MAI] 30 min"
+      },
+      {
+        "title": "[MAI] Seal and Assemble",
+        "description": "[MAI] Apply clear sealant to protect paint. Once dry, assemble your puzzle and test the fit!",
+        "duration": "[MAI] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Adult use only for power saws",
+      "[MAI] Sand thoroughly - no splinters",
+      "[MAI] Use child-safe paints and sealants"
+    ],
+    "learningOutcomes": [
+      "Problem-solving",
+      "[MAI] Shape recognition",
+      "[MAI] Hand-eye coordination",
+      "Patience"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] toybox-train-set",
+    "name": "[MAI] Classic Train Set",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[MAI] 4-5 hours",
+    "description": "[MAI] Build a complete wooden train set with engine, cars, and track pieces. A challenging project with rewarding results.",
+    "image": "[MAI] /images/train.webp",
+    "rating": 4.8,
+    "reviewCount": 64,
+    "materials": [
+      {
+        "name": "[MAI] Wood blocks",
+        "quantity": "[MAI] Various sizes"
+      },
+      {
+        "name": "[MAI] Wooden wheels",
+        "quantity": "20+"
+      },
+      {
+        "name": "Dowels",
+        "quantity": "[MAI] For axles and connectors"
+      },
+      {
+        "name": "[MAI] Wood glue"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "[MAI] Small hooks and eyes",
+        "quantity": "[MAI] For connecting cars"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Design Train Cars",
+        "description": "[MAI] Sketch designs for engine, coal car, cargo cars, and caboose. Plan wheel placement and connection points.",
+        "duration": "[MAI] 20 min"
+      },
+      {
+        "title": "[MAI] Cut and Shape",
+        "description": "[MAI] Cut wood blocks to size for each car. Shape the engine with a rounded front. Sand everything smooth.",
+        "duration": "[MAI] 1 hour",
+        "parentHelp": true
+      },
+      {
+        "title": "[MAI] Add Wheels",
+        "description": "[MAI] Drill holes for axles. Insert dowels and attach wheels. Ensure wheels spin freely.",
+        "duration": "[MAI] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MAI] Paint and Detail",
+        "description": "[MAI] Paint each car in classic train colors. Add windows, cargo details, and decorations.",
+        "duration": "[MAI] 1 hour"
+      },
+      {
+        "title": "[MAI] Connect Cars",
+        "description": "[MAI] Attach hooks to front and eyes to back of each car. Test connections. Create track pieces if desired.",
+        "duration": "[MAI] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Adult supervision for all cutting and drilling",
+      "[MAI] Check small parts are secure",
+      "[MAI] Test wheel attachment strength"
+    ],
+    "learningOutcomes": [
+      "[MAI] Complex project planning",
+      "[MAI] Mechanical connections",
+      "[MAI] Precision work",
+      "[MAI] Transportation history"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] toybox-marble-run",
+    "name": "[MAI] Marble Run Adventure",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MAI] 2-3 hours",
+    "description": "[MAI] Engineer an exciting marble run with twists, turns, and drops. Watch marbles race through your custom creation!",
+    "image": "[MAI] /images/marble-run.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 189,
+    "materials": [
+      {
+        "name": "[MAI] Cardboard tubes",
+        "quantity": "[MAI] 10-15 various sizes"
+      },
+      {
+        "name": "[MAI] Cardboard sheets"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "Marbles",
+        "quantity": "5-10"
+      },
+      {
+        "name": "[MAI] Base board"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Plan Your Run",
+        "description": "[MAI] Sketch the path marbles will take. Plan starting height, turns, tunnels, and landing. Remember: gravity is your friend!",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Create Track Pieces",
+        "description": "[MAI] Cut tubes in half lengthwise for open tracks. Cut various lengths. Create funnels and catch points.",
+        "duration": "[MAI] 30 min"
+      },
+      {
+        "title": "[MAI] Build Support Structure",
+        "description": "[MAI] Create cardboard supports to hold tracks at different heights. Build a sturdy base for everything.",
+        "duration": "[MAI] 30 min"
+      },
+      {
+        "title": "[MAI] Assemble the Run",
+        "description": "[MAI] Attach tracks to supports, ensuring smooth transitions. Test with marbles as you build. Adjust angles as needed.",
+        "duration": "[MAI] 45 min"
+      },
+      {
+        "title": "[MAI] Test and Improve",
+        "description": "[MAI] Run marbles through multiple times. Fix any stuck points. Add fun features like jumps or spinners!",
+        "duration": "[MAI] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Marbles are choking hazards - supervise young children",
+      "[MAI] Use scissors carefully",
+      "[MAI] Ensure structure is stable"
+    ],
+    "learningOutcomes": [
+      "[MAI] Physics and gravity",
+      "[MAI] Engineering design",
+      "Problem-solving",
+      "[MAI] Cause and effect"
+    ],
+    "crossPillar": [
+      "[MAI] sciencelab-balloon-rocket"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "toybox-tangram",
+    "name": "[MAI] Tangram Puzzle Set",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 1 hour",
+    "description": "[MAI] Create the ancient Chinese puzzle of seven shapes that form endless patterns. A timeless brain teaser!",
+    "image": "[MAI] /images/puzzle.webp",
+    "rating": 4.6,
+    "reviewCount": 92,
+    "materials": [
+      {
+        "name": "[MAI] Foam board or wood",
+        "quantity": "[MAI] 6\" x 6\" square"
+      },
+      {
+        "name": "Ruler"
+      },
+      {
+        "name": "Pencil"
+      },
+      {
+        "name": "[MAI] Craft knife or saw"
+      },
+      {
+        "name": "[MAI] Paint or markers",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Draw the Grid",
+        "description": "[MAI] Draw a 4x4 grid on your square. This helps position the seven tangram pieces correctly.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Mark Tangram Shapes",
+        "description": "[MAI] Following a tangram diagram, mark the seven shapes: 2 large triangles, 1 medium triangle, 2 small triangles, 1 square, 1 parallelogram.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Cut Pieces",
+        "description": "[MAI] Carefully cut along your marked lines to create the seven pieces. Sand or smooth edges.",
+        "duration": "[MAI] 20 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MAI] Color Pieces",
+        "description": "[MAI] Paint each piece a different color for visual appeal and easier identification.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Try Puzzles",
+        "description": "[MAI] Challenge yourself to make shapes - animals, people, objects. Look up tangram puzzles online for ideas!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Adult supervision for cutting",
+      "[MAI] Small pieces can be choking hazards"
+    ],
+    "learningOutcomes": [
+      "[MAI] Spatial reasoning",
+      "[MAI] Geometry basics",
+      "Problem-solving",
+      "[MAI] Pattern recognition"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] toybox-3d-puzzle",
+    "name": "[MAI] 3D Animal Puzzle",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MAI] 2 hours",
+    "description": "[MAI] Build a 3D puzzle that assembles into an animal sculpture. Pieces slot together without glue!",
+    "image": "[MAI] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 78,
+    "materials": [
+      {
+        "name": "[MAI] Cardboard or foam board",
+        "quantity": "[MAI] 2-3 sheets"
+      },
+      {
+        "name": "[MAI] Template printout"
+      },
+      {
+        "name": "[MAI] Craft knife"
+      },
+      {
+        "name": "[MAI] Cutting mat"
+      },
+      {
+        "name": "Paint",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Print Templates",
+        "description": "[MAI] Find or create 3D puzzle templates. Print at full size. Choose an animal like an elephant or dinosaur.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Transfer to Board",
+        "description": "[MAI] Trace or glue templates to your cardboard or foam board. Mark all slot positions clearly.",
+        "duration": "[MAI] 20 min"
+      },
+      {
+        "title": "[MAI] Cut Pieces",
+        "description": "[MAI] Carefully cut out each piece including the slots. Slots should be as wide as your material thickness.",
+        "duration": "[MAI] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MAI] Test Fit",
+        "description": "[MAI] Try assembling the puzzle. Adjust slots if pieces are too tight or loose.",
+        "duration": "[MAI] 20 min"
+      },
+      {
+        "title": "[MAI] Decorate and Finish",
+        "description": "[MAI] Disassemble, paint pieces, let dry, then reassemble your 3D sculpture!",
+        "duration": "[MAI] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Sharp blade use requires adult supervision",
+      "[MAI] Always cut on a cutting mat",
+      "[MAI] Cut away from your body"
+    ],
+    "learningOutcomes": [
+      "[MAI] 3D spatial thinking",
+      "[MAI] Assembly skills",
+      "[MAI] Following templates",
+      "[MAI] Fine motor control"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] toybox-chess-set",
+    "name": "[MAI] Wooden Chess Set",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[MAI] 6-8 hours",
+    "description": "[MAI] Carve and shape your own chess pieces, then build a board. A challenging project that creates a family heirloom!",
+    "image": "[MAI] /images/blocks.webp",
+    "rating": 4.9,
+    "reviewCount": 54,
+    "materials": [
+      {
+        "name": "[MAI] Wood blocks",
+        "quantity": "[MAI] Enough for 32 pieces"
+      },
+      {
+        "name": "[MAI] Plywood for board",
+        "quantity": "[MAI] 16\" x 16\""
+      },
+      {
+        "name": "[MAI] Carving tools"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "[MAI] Paint or wood stain"
+      },
+      {
+        "name": "[MAI] Clear finish"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Design Pieces",
+        "description": "[MAI] Sketch simplified designs for each piece type: King, Queen, Bishop, Knight, Rook, Pawn. Keep shapes recognizable but achievable.",
+        "duration": "[MAI] 30 min"
+      },
+      {
+        "title": "[MAI] Shape Pawns",
+        "description": "[MAI] Start with 16 pawns - the simplest pieces. Shape, sand smooth. Get consistent sizing.",
+        "duration": "[MAI] 1.5 hours",
+        "parentHelp": true
+      },
+      {
+        "title": "[MAI] Carve Major Pieces",
+        "description": "[MAI] Work on Kings, Queens, Bishops, Knights, and Rooks. Take your time on details.",
+        "duration": "[MAI] 3 hours",
+        "parentHelp": true
+      },
+      {
+        "title": "[MAI] Create Board",
+        "description": "[MAI] Mark 64 squares (8x8 grid) on plywood. Paint or stain alternating squares. Apply finish.",
+        "duration": "[MAI] 1.5 hours"
+      },
+      {
+        "title": "[MAI] Finish Pieces",
+        "description": "[MAI] Paint or stain pieces in two colors. Apply protective finish. Let cure completely.",
+        "duration": "[MAI] 1 hour"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Carving tools are very sharp - adult only or close supervision",
+      "[MAI] Carve away from body",
+      "[MAI] Use proper ventilation with stains and finishes"
+    ],
+    "learningOutcomes": [
+      "[MAI] Advanced woodworking",
+      "[MAI] Strategic game appreciation",
+      "[MAI] Patience and persistence",
+      "[MAI] Artistic expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] toybox-ring-toss",
+    "name": "[MAI] Ring Toss Game",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 1 hour",
+    "description": "[MAI] Build a classic ring toss game for indoor or outdoor fun. Perfect for parties and family game nights!",
+    "image": "[MAI] /images/blocks.webp",
+    "rating": 4.5,
+    "reviewCount": 108,
+    "materials": [
+      {
+        "name": "[MAI] Wooden base",
+        "quantity": "[MAI] 12\" x 12\""
+      },
+      {
+        "name": "[MAI] Wooden dowels",
+        "quantity": "[MAI] 5 pieces, 8\" tall"
+      },
+      {
+        "name": "[MAI] Rope or embroidery hoops",
+        "quantity": "[MAI] For rings"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "Drill"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Prepare Base",
+        "description": "[MAI] Sand wooden base smooth. Mark positions for 5 pegs - one center, four corners.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Install Pegs",
+        "description": "[MAI] Drill holes for dowels. Glue dowels into holes. Paint different point values on each peg.",
+        "duration": "[MAI] 25 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MAI] Create Rings",
+        "description": "[MAI] Make rings from rope (form circles and tape/glue ends) or use embroidery hoops. Make 5-6 rings.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[MAI] Paint the base and pegs in bright colors. Add numbers for scoring.",
+        "duration": "[MAI] 20 min"
+      },
+      {
+        "title": "Play!",
+        "description": "[MAI] Set up, stand back, and toss rings! Highest score wins. Adjust distance for difficulty.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Adult help needed for drilling",
+      "[MAI] Ensure pegs are secure before playing"
+    ],
+    "learningOutcomes": [
+      "[MAI] Hand-eye coordination",
+      "[MAI] Basic math (scoring)",
+      "Sportsmanship",
+      "[MAI] Motor skills"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] toybox-memory-game",
+    "name": "[MAI] Memory Matching Game",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 45 min",
+    "description": "[MAI] Create a personalized memory matching game with your own artwork. Great for brain training!",
+    "image": "[MAI] /images/blocks.webp",
+    "rating": 4.6,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "Cardstock",
+        "quantity": "[MAI] 24-32 squares"
+      },
+      {
+        "name": "[MAI] Markers or crayons"
+      },
+      {
+        "name": "Stickers",
+        "optional": true
+      },
+      {
+        "name": "[MAI] Clear contact paper",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Cut Cards",
+        "description": "[MAI] Cut cardstock into equal-sized squares (2\" x 2\" works well). Make an even number - 24 or 32 cards.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Create Pairs",
+        "description": "[MAI] Draw matching images on pairs of cards. Use shapes, animals, letters, or family photos!",
+        "duration": "[MAI] 25 min"
+      },
+      {
+        "title": "[MAI] Add Backs",
+        "description": "[MAI] Decorate all card backs identically so pairs can't be identified from behind.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Protect (Optional)",
+        "description": "[MAI] Cover cards with clear contact paper or laminate for durability.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "Play!",
+        "description": "[MAI] Shuffle and lay face down. Take turns flipping two cards. Match pairs to win!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Scissors supervision for young children"
+    ],
+    "learningOutcomes": [
+      "[MAI] Memory skills",
+      "Concentration",
+      "[MAI] Visual recognition",
+      "Turn-taking"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] toybox-kaleidoscope",
+    "name": "Kaleidoscope",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MAI] 1 hour",
+    "description": "[MAI] Build a working kaleidoscope with mirrors and colorful beads. See the world in beautiful patterns!",
+    "image": "[MAI] /images/blocks.webp",
+    "rating": 4.7,
+    "reviewCount": 96,
+    "materials": [
+      {
+        "name": "[MAI] Cardboard tube",
+        "quantity": "[MAI] 8-10\" long"
+      },
+      {
+        "name": "[MAI] Mirror sheets or reflective paper",
+        "quantity": "[MAI] 3 strips"
+      },
+      {
+        "name": "[MAI] Clear plastic discs",
+        "quantity": "2"
+      },
+      {
+        "name": "[MAI] Beads and sequins"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[MAI] Decorative paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Create Mirror Triangle",
+        "description": "[MAI] Cut three mirror strips that fit inside your tube. Tape them together to form a triangle, reflective sides facing in.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Prepare Tube",
+        "description": "[MAI] Cut a viewing hole in one end cap. The mirror triangle should fit snugly inside the tube.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Insert Mirrors",
+        "description": "[MAI] Carefully slide the mirror triangle into the tube. Secure in place.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Create Object Chamber",
+        "description": "[MAI] At the other end, sandwich beads and sequins between two clear plastic discs. Attach to tube end.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[MAI] Cover the outside with decorative paper. Add your name and designs!",
+        "duration": "[MAI] 15 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Handle mirrors carefully - edges can be sharp",
+      "[MAI] Don't look at bright lights through kaleidoscope"
+    ],
+    "learningOutcomes": [
+      "[MAI] Light and reflection",
+      "Symmetry",
+      "[MAI] Pattern recognition",
+      "[MAI] Optics basics"
+    ],
+    "crossPillar": [
+      "[MAI] sciencelab-invisible-ink"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "toybox-catapult",
+    "name": "[MAI] Wooden Catapult",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "9-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MAI] 1.5 hours",
+    "description": "[MAI] Build a working catapult that launches small objects. Learn about lever physics and stored energy!",
+    "image": "[MAI] /images/blocks.webp",
+    "rating": 4.8,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[MAI] Popsicle sticks",
+        "quantity": "15-20"
+      },
+      {
+        "name": "[MAI] Rubber bands",
+        "quantity": "5-6"
+      },
+      {
+        "name": "[MAI] Plastic spoon"
+      },
+      {
+        "name": "[MAI] Small pompoms or marshmallows",
+        "quantity": "[MAI] For launching"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Create the Base",
+        "description": "[MAI] Stack 5-7 popsicle sticks and rubber band both ends. This creates a sturdy base.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Build Launch Arm",
+        "description": "[MAI] Take 2 sticks and rubber band only ONE end. Open the other end like scissors.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Combine Base and Arm",
+        "description": "[MAI] Insert the base stack perpendicular into the launch arm opening. Secure with rubber bands.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Add Launching Cup",
+        "description": "[MAI] Attach plastic spoon to the end of the launch arm with rubber bands.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Test and Adjust",
+        "description": "[MAI] Load, aim, and launch! Adjust rubber band tension and fulcrum position for better distance.",
+        "duration": "[MAI] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Only launch soft objects like pompoms",
+      "[MAI] Never aim at people or animals",
+      "[MAI] Launch in clear areas"
+    ],
+    "learningOutcomes": [
+      "[MAI] Lever mechanics",
+      "[MAI] Potential and kinetic energy",
+      "[MAI] Engineering iteration",
+      "[MAI] Physics concepts"
+    ],
+    "crossPillar": [
+      "[MAI] sciencelab-egg-drop"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] toybox-balancing-eagle",
+    "name": "[MAI] Balancing Eagle",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 45 min",
+    "description": "[MAI] Create a bird that balances on its beak! Learn about center of gravity with this fun physics toy.",
+    "image": "[MAI] /images/airplane.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "[MAI] Cardstock or cardboard"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[MAI] Pennies or coins",
+        "quantity": "2"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[MAI] Markers for decoration"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Draw Eagle Shape",
+        "description": "[MAI] Draw a simple eagle with spread wings on cardstock. Wings should extend outward and slightly downward.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Cut Out Shape",
+        "description": "[MAI] Carefully cut out your eagle. Keep the beak pointed.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Add Weights",
+        "description": "[MAI] Tape a penny under each wing tip. These create the counterbalance.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Find Balance Point",
+        "description": "[MAI] Adjust coin position until the eagle balances on its beak when placed on your finger.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[MAI] Color your eagle with markers. Try balancing on different surfaces!",
+        "duration": "[MAI] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Scissors supervision for young children"
+    ],
+    "learningOutcomes": [
+      "[MAI] Center of gravity",
+      "[MAI] Balance and counterweight",
+      "[MAI] Physics experimentation",
+      "[MAI] Fine motor skills"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] toybox-paper-launcher",
+    "name": "[MAI] Paper Airplane Launcher",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MAI] 1 hour",
+    "description": "[MAI] Build a rubber band launcher that sends paper airplanes soaring! Combine engineering and flight.",
+    "image": "[MAI] /images/airplane.webp",
+    "rating": 4.6,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "Cardboard"
+      },
+      {
+        "name": "[MAI] Rubber bands",
+        "quantity": "[MAI] 3-5 strong ones"
+      },
+      {
+        "name": "[MAI] Popsicle sticks"
+      },
+      {
+        "name": "Paper",
+        "quantity": "[MAI] For airplanes"
+      },
+      {
+        "name": "[MAI] Tape and glue"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Build Launch Track",
+        "description": "[MAI] Create a cardboard track about 12\" long with raised edges to guide the airplane.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Create Tension System",
+        "description": "[MAI] Attach rubber bands to a crossbar at the back of the track. Create a pull-back mechanism.",
+        "duration": "[MAI] 20 min"
+      },
+      {
+        "title": "[MAI] Add Release Trigger",
+        "description": "[MAI] Design a simple trigger using popsicle sticks that holds and releases the rubber bands.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Make Paper Airplanes",
+        "description": "[MAI] Fold several paper airplanes. Test different designs to see which launches best.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Launch and Adjust",
+        "description": "[MAI] Load airplane, pull back, release! Adjust angle and tension for maximum distance.",
+        "duration": "[MAI] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Never aim at people",
+      "[MAI] Launch in open areas",
+      "[MAI] Be careful of snapping rubber bands"
+    ],
+    "learningOutcomes": [
+      "[MAI] Mechanical engineering",
+      "Aerodynamics",
+      "[MAI] Energy transfer",
+      "[MAI] Iterative design"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "toybox-kite",
+    "name": "[MAI] Diamond Kite",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MAI] 1.5 hours",
+    "description": "[MAI] Build a classic diamond kite that soars! Experience the joy of flight with this timeless project.",
+    "image": "[MAI] /images/airplane.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[MAI] Dowels or sticks",
+        "quantity": "[MAI] 2 pieces"
+      },
+      {
+        "name": "[MAI] Plastic bag or tissue paper"
+      },
+      {
+        "name": "String",
+        "quantity": "[MAI] Lots for flying!"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[MAI] Ribbon for tail"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Create Frame",
+        "description": "[MAI] Cross two sticks - vertical longer than horizontal. Tie firmly at intersection point.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Add Outline",
+        "description": "[MAI] Run string around the outside of the frame, creating the kite shape. Secure at each stick end.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Cover with Skin",
+        "description": "[MAI] Lay frame on plastic or paper. Cut with extra margin, fold over frame, and tape secure.",
+        "duration": "[MAI] 20 min"
+      },
+      {
+        "title": "[MAI] Attach Flying Line",
+        "description": "[MAI] Tie flying string to the intersection point. Create a bridle for better control if needed.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Add Tail and Fly",
+        "description": "[MAI] Attach a ribbon tail for stability. Find wind, run, and launch your kite!",
+        "duration": "[MAI] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Never fly near power lines",
+      "[MAI] Fly in open areas away from trees",
+      "[MAI] Don't fly in storms"
+    ],
+    "learningOutcomes": [
+      "Aerodynamics",
+      "[MAI] Wind and weather",
+      "[MAI] Patience and persistence",
+      "[MAI] Outdoor appreciation"
+    ],
+    "crossPillar": [
+      "[MAI] outdoorquest-nature-hunt"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] toybox-rainstick",
+    "name": "Rainstick",
+    "pillar": "toybox",
+    "category": "Musical",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 45 min",
+    "description": "[MAI] Create a musical instrument that sounds like falling rain. Perfect for relaxation and rhythm activities!",
+    "image": "[MAI] /images/blocks.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[MAI] Cardboard tube",
+        "quantity": "[MAI] Paper towel or wrapping paper roll"
+      },
+      {
+        "name": "[MAI] Rice or small beans",
+        "quantity": "[MAI] 1/4 cup"
+      },
+      {
+        "name": "[MAI] Aluminum foil"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[MAI] Decorative paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Seal One End",
+        "description": "[MAI] Cover one end of the tube tightly with paper and tape.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Create Internal Spiral",
+        "description": "[MAI] Crinkle aluminum foil into a long snake. Twist it into a spiral and insert into the tube.",
+        "tip": "[MAI] The foil creates the rain sound by slowing the rice.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Add Rice",
+        "description": "[MAI] Pour rice or beans into the tube. Experiment with amounts for different sounds.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Seal Other End",
+        "description": "[MAI] Close the open end securely with paper and tape. Shake to test - adjust if needed.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[MAI] Cover with decorative paper. Add designs inspired by rain, nature, or your own creativity!",
+        "duration": "[MAI] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Ensure ends are sealed tightly",
+      "[MAI] Small items inside can be choking hazards if opened"
+    ],
+    "learningOutcomes": [
+      "[MAI] Sound and acoustics",
+      "[MAI] Rhythm and music",
+      "[MAI] Cultural instruments",
+      "[MAI] Sensory exploration"
+    ],
+    "crossPillar": [
+      "[MAI] artstudio-nature-collage"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] toybox-sock-puppet",
+    "name": "[MAI] Sock Puppet",
+    "pillar": "toybox",
+    "category": "Puppets",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 30 min",
+    "description": "[MAI] Transform an old sock into a fun puppet character. Perfect for storytelling and imaginative play!",
+    "image": "[MAI] /images/plush-bear.webp",
+    "rating": 4.5,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[MAI] Clean sock"
+      },
+      {
+        "name": "[MAI] Googly eyes",
+        "quantity": "2"
+      },
+      {
+        "name": "[MAI] Felt scraps"
+      },
+      {
+        "name": "Yarn",
+        "quantity": "[MAI] For hair"
+      },
+      {
+        "name": "[MAI] Fabric glue"
+      },
+      {
+        "name": "Buttons",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Plan Your Character",
+        "description": "[MAI] Decide what character your puppet will be - person, animal, monster? Gather materials in matching colors.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Add Eyes",
+        "description": "[MAI] Glue googly eyes or felt circles onto the toe area of the sock.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Create Mouth",
+        "description": "[MAI] Cut an oval of felt and glue inside the sock to create a mouth. Add a felt tongue if desired!",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Add Features",
+        "description": "[MAI] Glue on yarn hair, felt ears, buttons, or other features to complete your character.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Put on a Show!",
+        "description": "[MAI] Once glue is dry, put your hand in and bring your puppet to life!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Use fabric glue rather than hot glue with young children",
+      "[MAI] Buttons can be choking hazards - consider felt alternatives for young kids"
+    ],
+    "learningOutcomes": [
+      "[MAI] Creative expression",
+      "Storytelling",
+      "[MAI] Character development",
+      "[MAI] Communication skills"
+    ],
+    "crossPillar": [
+      "[MAI] artstudio-paper-plate-animals"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] toybox-finger-puppets",
+    "name": "[MAI] Felt Finger Puppets",
+    "pillar": "toybox",
+    "category": "Puppets",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 1 hour",
+    "description": "[MAI] Create a set of adorable finger puppets from felt. Make a whole cast of characters for stories!",
+    "image": "[MAI] /images/plush-bear.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[MAI] Felt sheets",
+        "quantity": "[MAI] Various colors"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[MAI] Fabric glue or needle and thread"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "[MAI] Small embellishments",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Cut Base Shapes",
+        "description": "[MAI] Cut two finger-sized rectangles with rounded tops for each puppet. These form the body.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Glue or Sew Edges",
+        "description": "[MAI] Join the two pieces along sides and top, leaving bottom open for your finger.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Add Faces",
+        "description": "[MAI] Cut tiny felt pieces for eyes, noses, mouths. Glue in place. Use markers for details.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Create Characters",
+        "description": "[MAI] Add ears for animals, hair for people, wings for birds. Get creative!",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Perform Stories",
+        "description": "[MAI] Put puppets on all fingers and act out stories. Make a mini theater from a box!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Supervise scissors use",
+      "[MAI] Use child-safe glue"
+    ],
+    "learningOutcomes": [
+      "[MAI] Fine motor skills",
+      "Storytelling",
+      "[MAI] Character creation",
+      "Imagination"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] toybox-rubber-band-car",
+    "name": "[MAI] Rubber Band Car",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 45 min",
+    "description": "[MAI] Build a car powered by rubber band energy! Watch it zoom across the floor.",
+    "image": "[MAI] /images/wooden-car.webp",
+    "rating": 4.6,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[MAI] Water bottle or small box"
+      },
+      {
+        "name": "[MAI] Bottle caps",
+        "quantity": "[MAI] 4 for wheels"
+      },
+      {
+        "name": "[MAI] Wooden skewers",
+        "quantity": "[MAI] 2 for axles"
+      },
+      {
+        "name": "[MAI] Rubber bands",
+        "quantity": "2-3"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Prepare the Body",
+        "description": "[MAI] Clean your bottle or box. Poke holes on each side for axles to pass through.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Install Axles",
+        "description": "[MAI] Push skewers through the holes. They should spin freely.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Attach Wheels",
+        "description": "[MAI] Poke holes in bottle cap centers. Push onto skewer ends. Secure with tape or glue.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Add Rubber Band Power",
+        "description": "[MAI] Hook rubber band around rear axle. Attach other end to front of car body.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Wind and Race!",
+        "description": "[MAI] Roll car backward to wind rubber band. Release and watch it go! Race against friends.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Be careful with sharp skewer ends",
+      "[MAI] Don't aim at people when releasing"
+    ],
+    "learningOutcomes": [
+      "[MAI] Stored energy",
+      "[MAI] Simple machines",
+      "[MAI] Engineering design",
+      "[MAI] Cause and effect"
+    ],
+    "crossPillar": [
+      "[MAI] sciencelab-balloon-rocket"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] toybox-spinning-top",
+    "name": "[MAI] Wooden Spinning Top",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 30 min",
+    "description": "[MAI] Craft a classic spinning top that twirls for ages. Decorate with colorful patterns that blend when spinning!",
+    "image": "[MAI] /images/blocks.webp",
+    "rating": 4.4,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[MAI] Cardboard circles",
+        "quantity": "[MAI] 2-3 sizes"
+      },
+      {
+        "name": "[MAI] Wooden dowel or pencil"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "Glue"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Create Disc",
+        "description": "[MAI] Cut a circle from cardboard, about 3-4 inches diameter. Ensure it's perfectly round.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Add Spindle",
+        "description": "[MAI] Poke a hole in exact center. Insert dowel or sharpened pencil. Glue in place.",
+        "tip": "[MAI] Center placement is crucial for good spinning!",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Decorate Top",
+        "description": "[MAI] Draw colorful patterns - spirals, stripes, dots. Colors will blend when spinning!",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Balance and Adjust",
+        "description": "[MAI] Spin test your top. If wobbly, check center alignment. Trim edges if uneven.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Spin Competitions",
+        "description": "[MAI] Practice spinning technique. Challenge friends - longest spin wins!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Pencil points can be sharp"
+    ],
+    "learningOutcomes": [
+      "[MAI] Rotational physics",
+      "[MAI] Balance and symmetry",
+      "[MAI] Color blending",
+      "[MAI] Fine motor control"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] jigyasulab-physics",
+    "name": "[MAI] Physics Lab",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "9-12",
+    "difficulty": "Medium",
+    "timeToMake": "Interactive",
+    "description": "[MAI] Enter the Physics Lab and explore mechanics, optics, and energy interactively.",
+    "materials": [],
+    "image": "[MAI] /images/hero-camp.webp",
+    "rating": 5,
+    "reviewCount": 412,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "[MAI] Physics concepts",
+      "[MAI] Scientific thinking"
+    ],
+    "url": "/physics",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-chem",
+    "name": "[MAI] Chemistry Lab",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "Interactive",
+    "description": "[MAI] Mix elements and observe reactions in our safe, virtual Chemistry Lab.",
+    "materials": [],
+    "image": "[MAI] /images/slime.webp",
+    "rating": 4.9,
+    "reviewCount": 388,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "[MAI] Chemical reactions",
+      "[MAI] Molecular structures"
+    ],
+    "url": "/chem",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-bio",
+    "name": "[MAI] Biology Lab",
+    "pillar": "sciencelab",
+    "category": "Biology",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "Interactive",
+    "description": "[MAI] Explore the wonders of life, cells, and ecosystems in the Biology Lab.",
+    "materials": [],
+    "image": "[MAI] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 275,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Anatomy",
+      "Ecosystems"
+    ],
+    "url": "/bio",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-math",
+    "name": "[MAI] Math Lab",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "Interactive",
+    "description": "[MAI] Solve puzzles and visualize mathematical concepts in a fun, interactive way.",
+    "materials": [],
+    "image": "[MAI] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 156,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Geometry",
+      "[MAI] Problem solving"
+    ],
+    "url": "/math",
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] jigyasulab-cosmos",
+    "name": "[MAI] Cosmos Lab",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "Interactive",
+    "description": "[MAI] Travel through space, explore planets, and understand the universe.",
+    "materials": [],
+    "image": "[MAI] /images/hero-camp.webp",
+    "rating": 5,
+    "reviewCount": 501,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Astronomy",
+      "[MAI] Space exploration"
+    ],
+    "url": "/cosmos",
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] sciencelab-volcano",
+    "name": "[MAI] Erupting Volcano",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 30 min",
+    "description": "[MAI] Create an explosive volcanic eruption using kitchen chemistry! Watch the foamy lava flow and learn about chemical reactions.",
+    "image": "[MAI] /images/volcano.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 234,
+    "materials": [
+      {
+        "name": "[MAI] Baking soda",
+        "quantity": "[MAI] 3 tablespoons"
+      },
+      {
+        "name": "Vinegar",
+        "quantity": "[MAI] 1 cup"
+      },
+      {
+        "name": "[MAI] Dish soap",
+        "quantity": "[MAI] A few drops"
+      },
+      {
+        "name": "[MAI] Food coloring",
+        "quantity": "[MAI] Red and orange"
+      },
+      {
+        "name": "[MAI] Play-doh or clay",
+        "quantity": "[MAI] For volcano shape"
+      },
+      {
+        "name": "[MAI] Plastic bottle or container"
+      },
+      {
+        "name": "[MAI] Tray or pan",
+        "quantity": "[MAI] To catch overflow"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Build Your Volcano",
+        "description": "[MAI] Place plastic bottle on tray. Shape clay or play-doh around it to create a volcano mountain. Leave the bottle opening exposed at the top.",
+        "tip": "[MAI] Make it look realistic with ridges and a crater!",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Add the Lava Base",
+        "description": "[MAI] Pour baking soda into the bottle. Add a few drops of dish soap and red/orange food coloring.",
+        "duration": "[MAI] 3 min"
+      },
+      {
+        "title": "[MAI] Prepare for Eruption",
+        "description": "[MAI] Make sure everyone can see! Have your vinegar ready to pour.",
+        "duration": "[MAI] 2 min"
+      },
+      {
+        "title": "[MAI] Eruption Time!",
+        "description": "[MAI] Pour vinegar into the bottle and step back. Watch the foamy lava erupt!",
+        "duration": "[MAI] 1 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MAI] Understand the Science",
+        "description": "[MAI] The baking soda (base) reacts with vinegar (acid) to create carbon dioxide gas, which makes the bubbles and foam!",
+        "duration": "[MAI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Do this experiment on a tray or outside - it gets messy!",
+      "[MAI] Vinegar can irritate eyes - don't get too close",
+      "[MAI] Adult supervision recommended"
+    ],
+    "learningOutcomes": [
+      "[MAI] Acid-base reactions",
+      "[MAI] Chemical reactions",
+      "[MAI] Carbon dioxide production",
+      "[MAI] Scientific observation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] sciencelab-density-tower",
+    "name": "[MAI] Rainbow Density Tower",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 30 min",
+    "description": "[MAI] Stack liquids in a rainbow! Learn about density as you create layers that magically don't mix.",
+    "image": "[MAI] /images/crystal.webp",
+    "rating": 4.8,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "Honey",
+        "quantity": "[MAI] 1/4 cup"
+      },
+      {
+        "name": "[MAI] Corn syrup",
+        "quantity": "[MAI] 1/4 cup"
+      },
+      {
+        "name": "[MAI] Dish soap",
+        "quantity": "[MAI] 1/4 cup"
+      },
+      {
+        "name": "Water",
+        "quantity": "[MAI] 1/4 cup"
+      },
+      {
+        "name": "[MAI] Vegetable oil",
+        "quantity": "[MAI] 1/4 cup"
+      },
+      {
+        "name": "[MAI] Rubbing alcohol",
+        "quantity": "[MAI] 1/4 cup"
+      },
+      {
+        "name": "[MAI] Food coloring"
+      },
+      {
+        "name": "[MAI] Tall clear glass or jar"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Color Your Liquids",
+        "description": "[MAI] Add different food coloring to water, corn syrup, and rubbing alcohol. Honey and oil have natural colors.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Pour the Heaviest First",
+        "description": "[MAI] Start with honey at the bottom of your glass. Pour slowly down the side.",
+        "tip": "[MAI] Patience is key - pour very slowly!",
+        "duration": "[MAI] 3 min"
+      },
+      {
+        "title": "[MAI] Add Middle Layers",
+        "description": "[MAI] Carefully add corn syrup, then dish soap, then water. Pour down the side of the glass.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Top With Light Liquids",
+        "description": "[MAI] Add vegetable oil, then carefully add rubbing alcohol on top.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "Experiment!",
+        "description": "[MAI] Try dropping small objects - where do they float? Predict based on density!",
+        "duration": "[MAI] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Don't drink any of these liquids!",
+      "[MAI] Rubbing alcohol requires adult handling",
+      "[MAI] Wash hands after experiment"
+    ],
+    "learningOutcomes": [
+      "[MAI] Density concepts",
+      "[MAI] Liquid properties",
+      "[MAI] Scientific layering",
+      "[MAI] Prediction and observation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] sciencelab-crystals",
+    "name": "[MAI] Crystal Growing",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MAI] 30 min + 3-5 days",
+    "description": "[MAI] Grow beautiful crystals from sugar, salt, or borax! Watch amazing structures form over several days.",
+    "image": "[MAI] /images/crystal.webp",
+    "rating": 4.8,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[MAI] Borax, salt, or sugar",
+        "quantity": "[MAI] 1 cup"
+      },
+      {
+        "name": "[MAI] Hot water",
+        "quantity": "[MAI] 2 cups"
+      },
+      {
+        "name": "[MAI] Glass jar"
+      },
+      {
+        "name": "String"
+      },
+      {
+        "name": "Pencil"
+      },
+      {
+        "name": "[MAI] Pipe cleaners",
+        "optional": true
+      },
+      {
+        "name": "[MAI] Food coloring",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Create Super-Saturated Solution",
+        "description": "[MAI] Have an adult pour hot water into jar. Add borax/salt/sugar slowly, stirring until no more dissolves.",
+        "duration": "[MAI] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MAI] Prepare Crystal Seed",
+        "description": "[MAI] Tie string to pencil. Shape pipe cleaner into a form (star, heart) and tie to string. Or just use string.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Add Color (Optional)",
+        "description": "[MAI] Add food coloring to solution for colored crystals.",
+        "duration": "[MAI] 2 min"
+      },
+      {
+        "title": "[MAI] Suspend and Wait",
+        "description": "[MAI] Lower string/pipe cleaner into solution. Rest pencil across jar top. Place somewhere still.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Watch and Wait",
+        "description": "[MAI] Check daily! Crystals form as water evaporates. Full growth takes 3-5 days.",
+        "duration": "[MAI] 3-5 days"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Adult handles hot water only",
+      "[MAI] Borax is not edible - wash hands",
+      "[MAI] Don't move or disturb jar during growth"
+    ],
+    "learningOutcomes": [
+      "[MAI] Crystallization process",
+      "[MAI] Saturation concepts",
+      "[MAI] Patience and observation",
+      "[MAI] Molecular structure"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] sciencelab-slime",
+    "name": "[MAI] Slime Factory",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 15 min",
+    "description": "[MAI] Mix up oozy, stretchy, satisfying slime! Experiment with colors, glitter, and different consistencies.",
+    "image": "[MAI] /images/slime.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 312,
+    "materials": [
+      {
+        "name": "[MAI] White school glue",
+        "quantity": "[MAI] 1/2 cup"
+      },
+      {
+        "name": "[MAI] Contact lens solution (with boric acid)",
+        "quantity": "[MAI] 1 tablespoon"
+      },
+      {
+        "name": "[MAI] Baking soda",
+        "quantity": "[MAI] 1/2 teaspoon"
+      },
+      {
+        "name": "[MAI] Food coloring"
+      },
+      {
+        "name": "Glitter",
+        "optional": true
+      },
+      {
+        "name": "[MAI] Bowl and spoon"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Mix Base",
+        "description": "[MAI] Pour glue into bowl. Add food coloring and glitter if desired. Stir well.",
+        "duration": "[MAI] 3 min"
+      },
+      {
+        "title": "[MAI] Add Activator",
+        "description": "[MAI] Sprinkle in baking soda and mix. Then add contact solution and stir rapidly.",
+        "duration": "[MAI] 3 min"
+      },
+      {
+        "title": "[MAI] Knead the Slime",
+        "description": "[MAI] Once slime forms, pick it up and knead with hands. It will become less sticky.",
+        "tip": "[MAI] If too sticky, add more contact solution. If too stiff, add more glue.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Test Properties",
+        "description": "[MAI] Stretch it slowly - does it pull? Pull fast - does it snap? Poke it - does it bounce?",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Store Properly",
+        "description": "[MAI] Store in airtight container. Slime lasts 1-2 weeks with proper storage!",
+        "duration": "[MAI] 2 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Wash hands after playing",
+      "[MAI] Don't eat slime",
+      "[MAI] Play on protected surface - slime can stain"
+    ],
+    "learningOutcomes": [
+      "[MAI] Polymer chemistry",
+      "[MAI] Non-Newtonian fluids",
+      "[MAI] Following recipes",
+      "[MAI] Sensory exploration"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] sciencelab-balloon-rocket",
+    "name": "[MAI] Balloon Rocket",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 15 min",
+    "description": "[MAI] Launch a balloon across the room on a string! Learn about thrust and Newton's third law.",
+    "image": "[MAI] /images/volcano.webp",
+    "rating": 4.7,
+    "reviewCount": 187,
+    "materials": [
+      {
+        "name": "Balloon"
+      },
+      {
+        "name": "String",
+        "quantity": "[MAI] 10-15 feet"
+      },
+      {
+        "name": "Straw"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[MAI] Two chairs or posts"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Set Up Track",
+        "description": "[MAI] Thread string through straw. Tie string between two chairs, keeping it taut and level.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Prepare Balloon",
+        "description": "[MAI] Blow up balloon but don't tie it. Pinch the end to keep air in.",
+        "duration": "[MAI] 2 min"
+      },
+      {
+        "title": "[MAI] Attach to Straw",
+        "description": "[MAI] While someone holds the balloon closed, tape it to the straw on the string.",
+        "duration": "[MAI] 3 min"
+      },
+      {
+        "title": "Launch!",
+        "description": "[MAI] Release the balloon and watch it zoom along the string!",
+        "duration": "[MAI] 1 min"
+      },
+      {
+        "title": "Experiment",
+        "description": "[MAI] Try different balloon sizes, angles, or adding weight. What changes the speed?",
+        "duration": "[MAI] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Don't release balloons outdoors - harmful to wildlife",
+      "[MAI] Supervise young children with balloons"
+    ],
+    "learningOutcomes": [
+      "[MAI] Newton's third law",
+      "[MAI] Thrust and propulsion",
+      "[MAI] Variables in experiments",
+      "[MAI] Cause and effect"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] sciencelab-invisible-ink",
+    "name": "[MAI] Invisible Ink Messages",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 20 min",
+    "description": "[MAI] Write secret messages that appear when heated! Perfect for spy games and learning about chemical changes.",
+    "image": "[MAI] /images/crystal.webp",
+    "rating": 4.6,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "[MAI] Lemon juice",
+        "quantity": "[MAI] 2-3 tablespoons"
+      },
+      {
+        "name": "[MAI] White paper"
+      },
+      {
+        "name": "[MAI] Cotton swab or paintbrush"
+      },
+      {
+        "name": "[MAI] Lamp or iron",
+        "quantity": "[MAI] Heat source"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Prepare Ink",
+        "description": "[MAI] Squeeze lemon juice into a small bowl. This is your invisible ink!",
+        "duration": "[MAI] 3 min"
+      },
+      {
+        "title": "[MAI] Write Message",
+        "description": "[MAI] Dip cotton swab in lemon juice and write on white paper. Use enough juice to wet the paper.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Let Dry",
+        "description": "[MAI] Allow paper to dry completely. The message becomes invisible!",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Reveal Message",
+        "description": "[MAI] Hold paper near (not touching!) a light bulb or have adult use warm iron. Message appears brown!",
+        "duration": "[MAI] 5 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MAI] Understand Why",
+        "description": "[MAI] Heat oxidizes the lemon juice, turning it brown. The acid weakens paper where you wrote!",
+        "duration": "[MAI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Adult supervision required for heat source",
+      "[MAI] Don't touch hot lamp or iron",
+      "[MAI] Keep paper safe distance from heat"
+    ],
+    "learningOutcomes": [
+      "[MAI] Oxidation reactions",
+      "[MAI] Chemical changes",
+      "[MAI] Heat effects",
+      "[MAI] Secret communication history"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] sciencelab-magnetic-maze",
+    "name": "[MAI] Magnetic Maze",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MAI] 45 min",
+    "description": "[MAI] Build a maze and guide objects through using magnet power! Learn about magnetic forces.",
+    "image": "[MAI] /images/crystal.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "[MAI] Cardboard box lid or shallow box"
+      },
+      {
+        "name": "[MAI] Strong magnets",
+        "quantity": "2"
+      },
+      {
+        "name": "[MAI] Paper clips or small metal objects"
+      },
+      {
+        "name": "[MAI] Straws or cardboard strips"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "Tape"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Design Maze",
+        "description": "[MAI] Draw a maze path inside the box lid. Mark start and finish points.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Build Walls",
+        "description": "[MAI] Cut straws or cardboard strips and tape along maze walls to create barriers.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Add Obstacles",
+        "description": "[MAI] Include dead ends, tunnels, or challenges. Make it tricky but solvable!",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Test Magnetic Control",
+        "description": "[MAI] Place paper clip in maze. Hold magnet under the box and move it. The clip follows!",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Play and Race",
+        "description": "[MAI] Navigate through the maze using only the magnet. Time yourself or race friends!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Keep strong magnets away from electronics",
+      "[MAI] Supervise small magnet use with young children"
+    ],
+    "learningOutcomes": [
+      "[MAI] Magnetic fields",
+      "[MAI] Forces at a distance",
+      "Problem-solving",
+      "[MAI] Hand-eye coordination"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] sciencelab-solar-oven",
+    "name": "[MAI] Solar Oven Roasted Papad",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MAI] 1 hour + cooking",
+    "description": "[MAI] Harness the incredible power of the sun to build your own solar oven and perfectly roast crispy papads! Learn about solar thermal energy, reflection, and the greenhouse effect while making a tasty, traditional snack.",
+    "image": "[MAI] /images/volcano.webp",
+    "rating": 4.8,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[MAI] Pizza box"
+      },
+      {
+        "name": "[MAI] Aluminum foil"
+      },
+      {
+        "name": "[MAI] Plastic wrap"
+      },
+      {
+        "name": "[MAI] Black paper"
+      },
+      {
+        "name": "[MAI] Tape and scissors"
+      },
+      {
+        "name": "[MAI] Graham crackers, chocolate, marshmallows"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Create Flap",
+        "description": "[MAI] Cut three sides of a square in box lid, leaving one side as hinge. Fold flap up.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Line with Foil",
+        "description": "[MAI] Cover the flap's inner surface with aluminum foil, shiny side out. Smooth flat.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Create Window",
+        "description": "[MAI] Tape plastic wrap over the hole created by the flap. This traps heat inside.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Prepare Interior",
+        "description": "[MAI] Line bottom of box with black paper (absorbs heat). Add more foil on inner sides.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Cook S'mores!",
+        "description": "[MAI] Place s'more ingredients inside. Angle toward sun, prop flap to reflect light in. Wait 30-60 min!",
+        "duration": "[MAI] 30-60 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Only use on sunny days",
+      "[MAI] Contents get hot - use oven mitts",
+      "[MAI] Adult supervision when opening"
+    ],
+    "learningOutcomes": [
+      "[MAI] Solar energy",
+      "[MAI] Heat absorption and reflection",
+      "[MAI] Renewable energy concepts",
+      "[MAI] Engineering design"
+    ],
+    "crossPillar": [
+      "[MAI] outdoorquest-cloud-watching"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] sciencelab-dancing-raisins",
+    "name": "[MAI] Dancing Raisins",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 10 min",
+    "description": "[MAI] Watch raisins dance up and down in a glass! A simple experiment that demonstrates gas bubbles and density.",
+    "image": "[MAI] /images/volcano.webp",
+    "rating": 4.4,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[MAI] Clear soda (Sprite or club soda)",
+        "quantity": "[MAI] 1 glass"
+      },
+      {
+        "name": "Raisins",
+        "quantity": "[MAI] Small handful"
+      },
+      {
+        "name": "[MAI] Clear glass or jar"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Pour Soda",
+        "description": "[MAI] Fill a clear glass about 3/4 full with clear carbonated soda.",
+        "duration": "[MAI] 1 min"
+      },
+      {
+        "title": "[MAI] Drop Raisins",
+        "description": "[MAI] Drop 5-8 raisins into the soda. They'll sink to the bottom at first.",
+        "duration": "[MAI] 1 min"
+      },
+      {
+        "title": "[MAI] Watch the Dance",
+        "description": "[MAI] Wait a minute - raisins start to rise, then fall, then rise again!",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Understand Why",
+        "description": "[MAI] CO2 bubbles stick to wrinkly raisins, making them float. At top, bubbles pop and raisins sink!",
+        "duration": "[MAI] 3 min"
+      },
+      {
+        "title": "[MAI] Try Variations",
+        "description": "[MAI] Test other small objects - what else dances? Try different sodas.",
+        "duration": "[MAI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Don't drink the soda after experiment"
+    ],
+    "learningOutcomes": [
+      "[MAI] Density and buoyancy",
+      "[MAI] Carbon dioxide properties",
+      "[MAI] Observation skills",
+      "[MAI] Scientific prediction"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] sciencelab-static-butterfly",
+    "name": "[MAI] Static Electricity Butterfly",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 20 min",
+    "description": "[MAI] Make a butterfly's wings flutter using static electricity! No batteries needed - just science!",
+    "image": "[MAI] /images/crystal.webp",
+    "rating": 4.5,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[MAI] Tissue paper"
+      },
+      {
+        "name": "Cardstock"
+      },
+      {
+        "name": "Balloon"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "Markers"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Create Body",
+        "description": "[MAI] Cut a butterfly body shape from cardstock. Make it sturdy - this is the base.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Cut Tissue Wings",
+        "description": "[MAI] Cut delicate wing shapes from tissue paper. Make them light and thin.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Attach Wings",
+        "description": "[MAI] Tape wings to body at center only. Wings should be free to move on edges.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Charge Balloon",
+        "description": "[MAI] Blow up balloon and rub vigorously on your hair or wool sweater.",
+        "duration": "[MAI] 2 min"
+      },
+      {
+        "title": "[MAI] Make Wings Flutter",
+        "description": "[MAI] Hold charged balloon near tissue wings - watch them rise toward it! Move balloon to make them flutter.",
+        "duration": "[MAI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Latex allergy caution with balloons"
+    ],
+    "learningOutcomes": [
+      "[MAI] Static electricity",
+      "[MAI] Electric charges",
+      "[MAI] Attraction forces",
+      "[MAI] Conductors vs insulators"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] sciencelab-water-cycle",
+    "name": "[MAI] Water Cycle in a Bag",
+    "pillar": "sciencelab",
+    "category": "Biology",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 15 min + observation",
+    "description": "[MAI] Create a mini water cycle in a plastic bag! Watch evaporation, condensation, and precipitation happen.",
+    "image": "[MAI] /images/crystal.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[MAI] Ziplock bag",
+        "quantity": "[MAI] Quart size"
+      },
+      {
+        "name": "Water",
+        "quantity": "[MAI] 1/4 cup"
+      },
+      {
+        "name": "[MAI] Blue food coloring"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[MAI] Sunny window"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Draw Scene",
+        "description": "[MAI] Draw clouds at top of bag, sun, and waves at bottom using permanent marker.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Add Water",
+        "description": "[MAI] Pour water into bag with blue food coloring. This is your ocean!",
+        "duration": "[MAI] 2 min"
+      },
+      {
+        "title": "[MAI] Seal and Mount",
+        "description": "[MAI] Seal bag tightly. Tape to sunny window at eye level.",
+        "duration": "[MAI] 3 min"
+      },
+      {
+        "title": "[MAI] Observe Changes",
+        "description": "[MAI] Check throughout the day. Water evaporates, condenses on bag, and \"rains\" down!",
+        "duration": "Ongoing"
+      },
+      {
+        "title": "[MAI] Label the Cycle",
+        "description": "[MAI] Add labels: evaporation (water rising), condensation (droplets forming), precipitation (drops falling).",
+        "duration": "[MAI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Ensure bag is sealed to prevent leaks"
+    ],
+    "learningOutcomes": [
+      "[MAI] Water cycle stages",
+      "[MAI] Evaporation and condensation",
+      "[MAI] Solar energy effects",
+      "[MAI] Earth science basics"
+    ],
+    "crossPillar": [
+      "[MAI] outdoorquest-cloud-watching"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] sciencelab-egg-drop",
+    "name": "[MAI] Egg Drop Challenge",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[MAI] 1 hour",
+    "description": "[MAI] Design a contraption to protect an egg from a high drop! Classic engineering challenge that teaches impact absorption.",
+    "image": "[MAI] /images/volcano.webp",
+    "rating": 4.9,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[MAI] Raw eggs",
+        "quantity": "[MAI] 2-3 for testing"
+      },
+      {
+        "name": "Straws"
+      },
+      {
+        "name": "Balloons"
+      },
+      {
+        "name": "[MAI] Cotton balls"
+      },
+      {
+        "name": "[MAI] Bubble wrap"
+      },
+      {
+        "name": "[MAI] Rubber bands"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[MAI] Small box"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Study the Problem",
+        "description": "[MAI] Understand forces: impact, gravity, momentum. What slows falls? What absorbs shock?",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Design Your Device",
+        "description": "[MAI] Sketch ideas. Consider: padding, parachute, crumple zones, suspension systems.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Build Prototype",
+        "description": "[MAI] Construct your egg protection device. Secure egg inside with cushioning materials.",
+        "duration": "[MAI] 30 min"
+      },
+      {
+        "title": "[MAI] Test Drop",
+        "description": "[MAI] Start from low height. If successful, go higher! Document results.",
+        "duration": "[MAI] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "Iterate",
+        "description": "[MAI] If egg breaks, analyze why. Improve design and test again!",
+        "duration": "Ongoing"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Do drops outside - eggs are messy!",
+      "[MAI] Adult supervision for high drops",
+      "[MAI] Wash hands after handling raw eggs"
+    ],
+    "learningOutcomes": [
+      "[MAI] Engineering design process",
+      "[MAI] Force and impact",
+      "[MAI] Iterative improvement",
+      "Problem-solving"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] artstudio-finger-paint",
+    "name": "[MAI] Finger Paint Masterpiece",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-5",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 20 min",
+    "description": "[MAI] Get messy with finger paints! Create colorful artwork while developing fine motor skills and sensory exploration.",
+    "image": "[MAI] /images/finger-paint.webp",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 198,
+    "materials": [
+      {
+        "name": "[MAI] Finger paints",
+        "quantity": "[MAI] Various colors"
+      },
+      {
+        "name": "[MAI] Large paper",
+        "quantity": "[MAI] Several sheets"
+      },
+      {
+        "name": "[MAI] Smock or old shirt"
+      },
+      {
+        "name": "[MAI] Plastic tablecloth"
+      },
+      {
+        "name": "[MAI] Water bowl and towels"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Set Up Space",
+        "description": "[MAI] Cover table with plastic. Put on smock. Tape paper down so it doesn't move.",
+        "duration": "[MAI] 5 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MAI] Explore Colors",
+        "description": "[MAI] Start with one color. Dip fingers and make marks. Try dots, lines, swirls!",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Mix Colors",
+        "description": "[MAI] Add another color. See what happens when they blend! Yellow + blue = ?",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Try Techniques",
+        "description": "[MAI] Use whole hand, just fingertips, sides of hands. Make prints and patterns.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Clean Up",
+        "description": "[MAI] Wash hands. Let painting dry flat. Display your masterpiece!",
+        "duration": "[MAI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Use non-toxic, washable paints",
+      "[MAI] Supervise to prevent paint eating",
+      "[MAI] Protect floor and furniture"
+    ],
+    "learningOutcomes": [
+      "[MAI] Sensory exploration",
+      "[MAI] Color mixing",
+      "[MAI] Fine motor development",
+      "[MAI] Creative expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] artstudio-nature-collage",
+    "name": "[MAI] Nature Collage",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 30 min",
+    "description": "[MAI] Collect treasures from nature and arrange them into beautiful artwork! Combines outdoor exploration with creativity.",
+    "image": "[MAI] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[MAI] Leaves, flowers, twigs"
+      },
+      {
+        "name": "[MAI] Cardstock or cardboard",
+        "quantity": "[MAI] For base"
+      },
+      {
+        "name": "[MAI] White glue"
+      },
+      {
+        "name": "[MAI] Optional: contact paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Nature Walk",
+        "description": "[MAI] Go outside and collect natural items: leaves, petals, small twigs, seeds, grass.",
+        "tip": "[MAI] Look for different colors, textures, and shapes!",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Sort Treasures",
+        "description": "[MAI] Lay out your collection. Group by color, size, or type.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Plan Design",
+        "description": "[MAI] Arrange items on your paper WITHOUT gluing. Try different layouts.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Glue in Place",
+        "description": "[MAI] Once happy with design, glue items down one by one. Press gently.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Preserve (Optional)",
+        "description": "[MAI] Cover with clear contact paper to preserve, or let dry and display!",
+        "duration": "[MAI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Don't pick protected plants",
+      "[MAI] Wash hands after collecting",
+      "[MAI] Check for insects before bringing items inside"
+    ],
+    "learningOutcomes": [
+      "[MAI] Nature appreciation",
+      "[MAI] Design and composition",
+      "[MAI] Texture exploration",
+      "[MAI] Environmental awareness"
+    ],
+    "crossPillar": [
+      "[MAI] outdoorquest-nature-hunt"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] artstudio-tiedye",
+    "name": "[MAI] Bandhani Tie-Dye Dupatta",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MAI] 1 hour + dry time",
+    "description": "[MAI] Discover the ancient Indian art of Bandhani! Use rubber bands and vibrant natural dyes to create mesmerizing geometric patterns on a cotton dupatta or scarf.",
+    "image": "[MAI] /images/tiedye.webp",
+    "rating": 4.9,
+    "reviewCount": 223,
+    "materials": [
+      {
+        "name": "[MAI] White cotton t-shirt"
+      },
+      {
+        "name": "[MAI] Fabric dye kit",
+        "quantity": "[MAI] Multiple colors"
+      },
+      {
+        "name": "[MAI] Rubber bands",
+        "quantity": "10-20"
+      },
+      {
+        "name": "[MAI] Plastic bags"
+      },
+      {
+        "name": "Gloves"
+      },
+      {
+        "name": "[MAI] Plastic tablecloth"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Wet the Shirt",
+        "description": "[MAI] Soak shirt in water and wring out until damp. This helps dye spread evenly.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Create Pattern",
+        "description": "[MAI] For spiral: pinch center and twist entire shirt. For stripes: fold accordion-style. Secure with rubber bands.",
+        "tip": "[MAI] Tighter bands = sharper lines. More bands = more white space.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Mix Dyes",
+        "description": "[MAI] Prepare dyes according to package. Wear gloves from this point on!",
+        "duration": "[MAI] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MAI] Apply Color",
+        "description": "[MAI] Squeeze dye onto shirt sections. Use different colors in different areas. Flip and do back too.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Wait and Rinse",
+        "description": "[MAI] Bag the shirt and wait 6-24 hours. Rinse under cold water until water runs clear. Remove bands and wash.",
+        "duration": "[MAI] 24 hours"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Wear gloves - dye stains!",
+      "[MAI] Work outdoors or on protected surface",
+      "[MAI] Wash separately first few times"
+    ],
+    "learningOutcomes": [
+      "[MAI] Pattern creation",
+      "[MAI] Color theory",
+      "[MAI] Following multi-step processes",
+      "[MAI] Patience and delayed gratification"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] artstudio-paper-plate-animals",
+    "name": "[MAI] Paper Plate Animals",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 25 min",
+    "description": "[MAI] Transform simple paper plates into adorable animals! Great for parties or imaginative play.",
+    "image": "[MAI] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[MAI] Paper plates",
+        "quantity": "[MAI] 1-2 per animal"
+      },
+      {
+        "name": "[MAI] Paint or markers"
+      },
+      {
+        "name": "[MAI] Construction paper"
+      },
+      {
+        "name": "[MAI] Googly eyes"
+      },
+      {
+        "name": "[MAI] Glue and scissors"
+      },
+      {
+        "name": "[MAI] Pipe cleaners",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Choose Animal",
+        "description": "[MAI] Pick your favorite animal! Lion, pig, frog, cat, and owl are great starters.",
+        "duration": "[MAI] 2 min"
+      },
+      {
+        "title": "[MAI] Paint Base",
+        "description": "[MAI] Paint the plate the main color of your animal. Let dry.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Cut Features",
+        "description": "[MAI] Cut ears, noses, whiskers, beaks from construction paper.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Assemble Face",
+        "description": "[MAI] Glue on googly eyes and paper features. Add details with markers.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Add Extras",
+        "description": "[MAI] Attach popsicle stick for a mask, or hang as decoration!",
+        "duration": "[MAI] 3 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Supervise scissor use",
+      "[MAI] Use washable paints"
+    ],
+    "learningOutcomes": [
+      "[MAI] Animal recognition",
+      "[MAI] Following instructions",
+      "[MAI] Fine motor skills",
+      "[MAI] Creative expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] artstudio-rock-painting",
+    "name": "[MAI] Rock Painting",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 30 min",
+    "description": "[MAI] Turn ordinary rocks into colorful treasures! Paint animals, patterns, or inspirational words.",
+    "image": "[MAI] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[MAI] Smooth rocks",
+        "quantity": "3-5"
+      },
+      {
+        "name": "[MAI] Acrylic paint",
+        "quantity": "[MAI] Various colors"
+      },
+      {
+        "name": "Paintbrushes",
+        "quantity": "[MAI] Various sizes"
+      },
+      {
+        "name": "[MAI] Clear sealant",
+        "optional": true
+      },
+      {
+        "name": "[MAI] Pencil for sketching"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Find Rocks",
+        "description": "[MAI] Look for smooth, flat rocks. Wash and dry them completely.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Plan Design",
+        "description": "[MAI] Lightly sketch your design with pencil. Animals, mandalas, and words work great!",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Paint Base",
+        "description": "[MAI] Paint background color. Let dry completely before adding details.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Add Details",
+        "description": "[MAI] Paint your design. Start with larger shapes, add small details last.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Seal and Share",
+        "description": "[MAI] Optional: apply clear coat. Hide rocks for others to find or keep as decoration!",
+        "duration": "[MAI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Use acrylic paints - they're waterproof when dry",
+      "[MAI] Seal if placing outdoors"
+    ],
+    "learningOutcomes": [
+      "[MAI] Painting techniques",
+      "[MAI] Working with 3D surfaces",
+      "[MAI] Community kindness (rock hiding)",
+      "[MAI] Nature appreciation"
+    ],
+    "crossPillar": [
+      "[MAI] outdoorquest-nature-hunt"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] artstudio-origami-zoo",
+    "name": "[MAI] Origami Zoo",
+    "pillar": "artstudio",
+    "category": "[MAI] Paper Art",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MAI] 45 min",
+    "description": "[MAI] Fold paper into amazing animals with the ancient art of origami! Create a whole zoo of creatures.",
+    "image": "[MAI] /images/tiedye.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[MAI] Origami paper",
+        "quantity": "[MAI] Multiple colors"
+      },
+      {
+        "name": "Markers",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Start Simple",
+        "description": "[MAI] Begin with an easy fold like a dog face or fish. Learn basic folds: valley, mountain, squash.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Practice Precision",
+        "description": "[MAI] Fold carefully - crisp creases make better animals! Line up edges exactly.",
+        "tip": "[MAI] Use fingernail to crease sharply.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Try Animals",
+        "description": "[MAI] Make a frog that jumps! A bird that flaps! A crane for good luck!",
+        "duration": "[MAI] 20 min"
+      },
+      {
+        "title": "[MAI] Add Details",
+        "description": "[MAI] Use markers to add eyes, spots, or patterns to your animals.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Create Display",
+        "description": "[MAI] Arrange your zoo on a shelf or make a mobile to hang!",
+        "duration": "[MAI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Paper cuts possible - fold carefully"
+    ],
+    "learningOutcomes": [
+      "[MAI] Following diagrams",
+      "[MAI] Spatial reasoning",
+      "[MAI] Patience and precision",
+      "[MAI] Japanese cultural art"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] artstudio-salt-painting",
+    "name": "[MAI] Salt Painting",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 30 min",
+    "description": "[MAI] Create magical raised designs using glue and salt, then add color and watch it spread!",
+    "image": "[MAI] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "Cardstock",
+        "quantity": "[MAI] Dark colors work best"
+      },
+      {
+        "name": "[MAI] White glue"
+      },
+      {
+        "name": "[MAI] Table salt",
+        "quantity": "[MAI] 1/2 cup"
+      },
+      {
+        "name": "[MAI] Liquid watercolors or food coloring"
+      },
+      {
+        "name": "[MAI] Dropper or paintbrush"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Draw with Glue",
+        "description": "[MAI] Squeeze glue in lines to create a design - rainbow, name, shapes. Keep lines thick.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Add Salt",
+        "description": "[MAI] While glue is wet, pour salt over entire design. Shake off excess.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Let Set",
+        "description": "[MAI] Wait a few minutes for glue to start setting with salt stuck on.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Add Color",
+        "description": "[MAI] Drop liquid color onto salt. Watch it spread along the lines like magic!",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Dry and Display",
+        "description": "[MAI] Let dry completely (overnight is best). Handle gently - salt can fall off.",
+        "duration": "[MAI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Don't eat the salt after coloring",
+      "[MAI] Work on protected surface"
+    ],
+    "learningOutcomes": [
+      "[MAI] Absorption concepts",
+      "[MAI] Color spreading",
+      "[MAI] Fine motor control",
+      "[MAI] Process art"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] artstudio-pasta-jewelry",
+    "name": "[MAI] Terracotta Clay Jewelry",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 30 min",
+    "description": "[MAI] Connect with ancient Harappan traditions by sculpting your own terracotta jewelry! Shape natural clay into beautiful beads, dry them in the sun, and paint them with traditional Indian motifs.",
+    "image": "[MAI] /images/tiedye.webp",
+    "rating": 4.4,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[MAI] Tubular pasta (penne, rigatoni)",
+        "quantity": "[MAI] 30-40 pieces"
+      },
+      {
+        "name": "[MAI] Acrylic paint or food coloring"
+      },
+      {
+        "name": "[MAI] String or yarn",
+        "quantity": "[MAI] 2 feet per piece"
+      },
+      {
+        "name": "[MAI] Ziplock bags",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Color Pasta",
+        "description": "[MAI] Paint pasta or shake in bags with food coloring and rubbing alcohol. Let dry completely.",
+        "duration": "[MAI] 10 min + drying"
+      },
+      {
+        "title": "[MAI] Plan Pattern",
+        "description": "[MAI] Lay out pasta beads and plan your color pattern before stringing.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] String Beads",
+        "description": "[MAI] Thread pasta onto string. Tie a bead at one end first to stop others falling off.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Create Closure",
+        "description": "[MAI] Tie ends together for necklace, or add clasps for fancier finish.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Model and Gift",
+        "description": "[MAI] Wear your creation proudly or make gifts for friends and family!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Pasta jewelry is not edible after painting",
+      "[MAI] Handle gently - pasta can crack"
+    ],
+    "learningOutcomes": [
+      "[MAI] Pattern creation",
+      "[MAI] Fine motor skills (threading)",
+      "[MAI] Color combinations",
+      "[MAI] Gift-making mindset"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] artstudio-scratch-art",
+    "name": "[MAI] Scratch Art Cards",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MAI] 45 min",
+    "description": "[MAI] Create rainbow scratch art from scratch! Layer colors, cover with black, then scratch to reveal hidden rainbows.",
+    "image": "[MAI] /images/tiedye.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "Cardstock"
+      },
+      {
+        "name": "Crayons",
+        "quantity": "[MAI] Various colors"
+      },
+      {
+        "name": "[MAI] Black acrylic paint or black crayon"
+      },
+      {
+        "name": "[MAI] Dish soap",
+        "quantity": "[MAI] A drop"
+      },
+      {
+        "name": "[MAI] Toothpick or wooden stylus"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Color Base Layer",
+        "description": "[MAI] Cover entire paper with heavy crayon in bright colors. Press hard! No white showing.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Add Black Layer",
+        "description": "[MAI] Mix tiny bit of dish soap into black paint. Paint over all the crayon. Or use black crayon (harder work!).",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Let Dry",
+        "description": "[MAI] If using paint, let dry completely before scratching.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Scratch Design",
+        "description": "[MAI] Use toothpick to scratch away black, revealing rainbow colors beneath!",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Create Cards",
+        "description": "[MAI] Make greeting cards, bookmarks, or framed art with your scratch designs!",
+        "duration": "[MAI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Toothpicks are pointy - use carefully",
+      "[MAI] Work on protected surface"
+    ],
+    "learningOutcomes": [
+      "[MAI] Layering technique",
+      "[MAI] Subtractive art process",
+      "[MAI] Planning and patience",
+      "[MAI] Fine motor control"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] artstudio-suncatcher",
+    "name": "[MAI] Tissue Paper Suncatcher",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MAI] 40 min",
+    "description": "[MAI] Create stained glass-style art that catches sunlight! Beautiful colors glow when hung in a window.",
+    "image": "[MAI] /images/tiedye.webp",
+    "rating": 4.6,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[MAI] Clear contact paper",
+        "quantity": "[MAI] 2 sheets"
+      },
+      {
+        "name": "[MAI] Tissue paper",
+        "quantity": "[MAI] Various colors"
+      },
+      {
+        "name": "[MAI] Black cardstock",
+        "quantity": "[MAI] For frame"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[MAI] Hole punch and string"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Cut Frame",
+        "description": "[MAI] Cut a frame shape from black cardstock - circle, heart, or rectangle with center removed.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Prepare Contact Paper",
+        "description": "[MAI] Cut contact paper slightly larger than frame. Peel backing and lay sticky side up.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Add Tissue Paper",
+        "description": "[MAI] Tear or cut tissue paper pieces. Press onto contact paper in colorful pattern.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Seal and Frame",
+        "description": "[MAI] Place second contact paper on top, sticky side down. Press to seal. Trim to frame and attach frame.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Hang in Window",
+        "description": "[MAI] Punch hole in top, add string, and hang where sunlight will shine through!",
+        "duration": "[MAI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Scissors supervision for younger kids",
+      "[MAI] Contact paper is tricky - take your time"
+    ],
+    "learningOutcomes": [
+      "[MAI] Light and color",
+      "[MAI] Design composition",
+      "[MAI] Following multi-step process",
+      "[MAI] Decorative crafting"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] artstudio-clay-pots",
+    "name": "[MAI] Clay Pinch Pots",
+    "pillar": "artstudio",
+    "category": "Sculpture",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MAI] 1 hour + dry time",
+    "description": "[MAI] Shape air-dry clay into beautiful bowls and pots using the ancient pinch pot technique!",
+    "image": "[MAI] /images/finger-paint.webp",
+    "rating": 4.7,
+    "reviewCount": 109,
+    "materials": [
+      {
+        "name": "[MAI] Air-dry clay",
+        "quantity": "[MAI] 1 lb"
+      },
+      {
+        "name": "[MAI] Water bowl"
+      },
+      {
+        "name": "[MAI] Acrylic paint"
+      },
+      {
+        "name": "Paintbrushes"
+      },
+      {
+        "name": "[MAI] Rolling pin",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Prepare Clay",
+        "description": "[MAI] Knead clay until soft and pliable. Roll into a ball about the size of your fist.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Create Opening",
+        "description": "[MAI] Push thumb into center of ball. Slowly rotate and pinch walls between thumb (inside) and fingers (outside).",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Shape the Pot",
+        "description": "[MAI] Keep pinching and rotating. Even thickness is key! Smooth cracks with wet finger.",
+        "tip": "[MAI] Keep walls no thinner than 1/4 inch.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Add Details",
+        "description": "[MAI] Create texture with tools. Add handles, feet, or decorative elements.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Dry and Paint",
+        "description": "[MAI] Let dry completely (2-3 days). Paint with acrylics once fully dried.",
+        "duration": "[MAI] 15 min + drying"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Air-dry clay is non-toxic",
+      "[MAI] Handle dried pieces gently - they're fragile",
+      "[MAI] Not food-safe unless using special glazes"
+    ],
+    "learningOutcomes": [
+      "[MAI] Sculpting techniques",
+      "[MAI] Hand strength and control",
+      "[MAI] Historical pottery methods",
+      "[MAI] 3D art creation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] artstudio-collaborative-mural",
+    "name": "[MAI] Collaborative Mural",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 1 hour",
+    "description": "[MAI] Create a large artwork together! Everyone contributes to one big painting.",
+    "image": "[MAI] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 67,
+    "materials": [
+      {
+        "name": "[MAI] Large paper roll or joined sheets",
+        "quantity": "[MAI] 4-6 feet"
+      },
+      {
+        "name": "[MAI] Paint, markers, crayons"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[MAI] Smocks for everyone"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Set Up Canvas",
+        "description": "[MAI] Roll out paper on floor or tape to wall. Make it BIG - this is a group project!",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Choose Theme",
+        "description": "[MAI] Decide on a theme together: underwater, space, garden, cityscape, or abstract!",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Assign Sections",
+        "description": "[MAI] Each person gets an area to work on. Plan how sections will connect.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Create Together",
+        "description": "[MAI] Everyone works simultaneously! Add to each other's areas if invited.",
+        "duration": "[MAI] 40 min"
+      },
+      {
+        "title": "[MAI] Add Final Touches",
+        "description": "[MAI] Step back, see what's missing. Add connecting elements together.",
+        "duration": "[MAI] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Supervise shared materials",
+      "[MAI] Respect everyone's work"
+    ],
+    "learningOutcomes": [
+      "[MAI] Collaboration skills",
+      "[MAI] Respecting others' work",
+      "[MAI] Group planning",
+      "[MAI] Large-scale art thinking"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] outdoorquest-nature-hunt",
+    "name": "[MAI] Nature Scavenger Hunt",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 30 min",
+    "description": "[MAI] Explore the outdoors with a checklist of natural treasures to find! Perfect for backyards, parks, or nature trails.",
+    "image": "[MAI] /images/nature-hunt.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 234,
+    "materials": [
+      {
+        "name": "[MAI] Scavenger hunt checklist",
+        "quantity": "[MAI] Printable included!"
+      },
+      {
+        "name": "[MAI] Bag or basket"
+      },
+      {
+        "name": "[MAI] Magnifying glass",
+        "optional": true
+      },
+      {
+        "name": "[MAI] Pencil or crayon"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Print Checklist",
+        "description": "[MAI] Use our checklist or create your own: pinecone, feather, smooth rock, flower, etc.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Go Outside!",
+        "description": "[MAI] Head to backyard, park, or nature trail. Bring your checklist and collection bag.",
+        "duration": "[MAI] 2 min"
+      },
+      {
+        "title": "[MAI] Start Hunting",
+        "description": "[MAI] Check off items as you find them. Collect items you can take (no picking protected plants!).",
+        "tip": "[MAI] Look up, down, and all around - treasures are everywhere!",
+        "duration": "[MAI] 20 min"
+      },
+      {
+        "title": "[MAI] Observe Closely",
+        "description": "[MAI] Use magnifying glass to examine finds. What details do you notice?",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Share Discoveries",
+        "description": "[MAI] Show what you found! Learn names of plants and animals you discovered.",
+        "duration": "[MAI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Stay on paths and in sight of adults",
+      "[MAI] Don't touch unknown plants or animals",
+      "[MAI] Watch for poison ivy/oak",
+      "[MAI] Leave wildlife alone"
+    ],
+    "learningOutcomes": [
+      "[MAI] Nature identification",
+      "[MAI] Observation skills",
+      "[MAI] Physical activity",
+      "[MAI] Environmental appreciation"
+    ],
+    "crossPillar": [
+      "[MAI] artstudio-nature-collage"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] outdoorquest-bug-hotel",
+    "name": "[MAI] Bug Hotel",
+    "pillar": "outdoorquest",
+    "category": "Wildlife",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MAI] 45 min",
+    "description": "[MAI] Build a cozy habitat for beneficial insects! Create shelter for ladybugs, bees, and other garden helpers.",
+    "image": "[MAI] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "[MAI] Wooden crate or tin can"
+      },
+      {
+        "name": "[MAI] Sticks and twigs"
+      },
+      {
+        "name": "Pinecones"
+      },
+      {
+        "name": "[MAI] Bamboo pieces or paper straws"
+      },
+      {
+        "name": "[MAI] Dried leaves"
+      },
+      {
+        "name": "[MAI] String or wire"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Find a Base",
+        "description": "[MAI] Use a clean tin can, small wooden box, or bundle of sticks tied together.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Gather Materials",
+        "description": "[MAI] Collect natural materials: hollow sticks, pinecones, bark, dried leaves, etc.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Fill the Hotel",
+        "description": "[MAI] Pack materials tightly into your base. Different insects like different spaces!",
+        "tip": "[MAI] Hollow tubes for solitary bees, pinecones for ladybugs.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Secure Contents",
+        "description": "[MAI] Make sure everything is packed tight. Add wire or more sticks if needed.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Place in Garden",
+        "description": "[MAI] Position in a sheltered spot facing south. Off the ground prevents flooding.",
+        "duration": "[MAI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Don't disturb guests once they move in",
+      "[MAI] Place away from high-traffic areas",
+      "[MAI] Check for existing insect nests before gathering materials"
+    ],
+    "learningOutcomes": [
+      "[MAI] Insect ecology",
+      "[MAI] Habitat creation",
+      "[MAI] Beneficial insects",
+      "[MAI] Environmental stewardship"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] outdoorquest-pressed-flowers",
+    "name": "[MAI] Pressed Flower Art",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 30 min + drying",
+    "description": "[MAI] Preserve beautiful flowers and leaves by pressing! Create bookmarks, cards, or framed art.",
+    "image": "[MAI] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[MAI] Fresh flowers and leaves"
+      },
+      {
+        "name": "[MAI] Heavy books"
+      },
+      {
+        "name": "[MAI] Parchment or newspaper"
+      },
+      {
+        "name": "[MAI] Frame or cardstock",
+        "optional": true
+      },
+      {
+        "name": "[MAI] Clear contact paper",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Collect Specimens",
+        "description": "[MAI] Pick flowers and leaves on a dry day. Choose flat flowers or ones you can flatten.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Prepare for Pressing",
+        "description": "[MAI] Place flowers between parchment paper. Arrange flat - don't overlap.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Press in Books",
+        "description": "[MAI] Put paper with flowers inside heavy book. Stack more books on top.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Wait Patiently",
+        "description": "[MAI] Leave for 1-2 weeks. Check occasionally. Change paper if damp.",
+        "duration": "[MAI] 1-2 weeks"
+      },
+      {
+        "title": "[MAI] Create Art",
+        "description": "[MAI] Carefully remove pressed flowers. Arrange on cards, bookmarks, or frame!",
+        "duration": "[MAI] 15 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Don't pick from protected areas",
+      "[MAI] Pressed flowers are delicate",
+      "[MAI] Some plants cause skin irritation"
+    ],
+    "learningOutcomes": [
+      "[MAI] Botanical knowledge",
+      "[MAI] Patience and delayed gratification",
+      "[MAI] Preservation techniques",
+      "[MAI] Nature appreciation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] outdoorquest-bird-feeder",
+    "name": "[MAI] Coconut Shell Bird Feeder",
+    "pillar": "outdoorquest",
+    "category": "Wildlife",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 20 min",
+    "description": "[MAI] Repurpose an empty coconut shell into a beautiful, hanging bird feeder! Fill it with local grains and watch the incredible variety of native birds flock to your garden.",
+    "image": "[MAI] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 187,
+    "materials": [
+      {
+        "name": "[MAI] Large pinecone"
+      },
+      {
+        "name": "[MAI] Peanut butter",
+        "quantity": "[MAI] 1/4 cup"
+      },
+      {
+        "name": "Birdseed",
+        "quantity": "[MAI] 1 cup"
+      },
+      {
+        "name": "[MAI] String or yarn",
+        "quantity": "[MAI] 12 inches"
+      },
+      {
+        "name": "[MAI] Plate for rolling"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Tie Hanger",
+        "description": "[MAI] Tie string securely around top of pinecone for hanging.",
+        "duration": "[MAI] 3 min"
+      },
+      {
+        "title": "[MAI] Apply Peanut Butter",
+        "description": "[MAI] Spread peanut butter all over pinecone, getting into the scales.",
+        "tip": "[MAI] Use a butter knife or your hands (messy but fun!).",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Add Seeds",
+        "description": "[MAI] Roll coated pinecone in birdseed, pressing seeds into peanut butter.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Hang Outside",
+        "description": "[MAI] Hang from a tree branch where you can watch from a window.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Bird Watch",
+        "description": "[MAI] Keep a journal of birds that visit! Learn their names and songs.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Check for nut allergies before using peanut butter",
+      "[MAI] Alternative: use vegetable shortening",
+      "[MAI] Place where squirrels can't easily reach"
+    ],
+    "learningOutcomes": [
+      "[MAI] Bird identification",
+      "[MAI] Wildlife care",
+      "[MAI] Patience and observation",
+      "[MAI] Ecosystem understanding"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] outdoorquest-mud-kitchen",
+    "name": "[MAI] Mud Kitchen Play",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "Open-ended",
+    "description": "[MAI] Set up an outdoor play kitchen for messy, imaginative mud cooking! A classic childhood experience.",
+    "image": "[MAI] /images/nature-hunt.webp",
+    "rating": 4.5,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[MAI] Old pots and pans"
+      },
+      {
+        "name": "[MAI] Wooden spoons"
+      },
+      {
+        "name": "[MAI] Measuring cups"
+      },
+      {
+        "name": "[MAI] Water source"
+      },
+      {
+        "name": "[MAI] Dirt area"
+      },
+      {
+        "name": "[MAI] Natural additions",
+        "quantity": "[MAI] Leaves, sticks, petals"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Set Up Kitchen",
+        "description": "[MAI] Find a good spot near dirt and water. Arrange your tools. A small table helps!",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Prepare Ingredients",
+        "description": "[MAI] Gather water, dirt, and natural add-ins like leaves, petals, seeds.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Create Recipes",
+        "description": "[MAI] Make mud pies, dirt soup, nature stew! Mix, stir, pour, and create.",
+        "duration": "∞"
+      },
+      {
+        "title": "[MAI] Serve and Play",
+        "description": "[MAI] Set up a pretend restaurant. Serve your creations to stuffed animal guests!",
+        "duration": "∞"
+      },
+      {
+        "title": "[MAI] Clean Up",
+        "description": "[MAI] Hose off tools and hands. Some dirty play is good!",
+        "duration": "[MAI] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Wash hands thoroughly after play",
+      "[MAI] Don't actually eat mud creations!",
+      "[MAI] Check area for broken glass or harmful items"
+    ],
+    "learningOutcomes": [
+      "[MAI] Imaginative play",
+      "[MAI] Sensory exploration",
+      "[MAI] Scientific mixing",
+      "[MAI] Outdoor comfort"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] outdoorquest-shadow-tracing",
+    "name": "[MAI] Shadow Tracing Art",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 20 min",
+    "description": "[MAI] Use the sun to create art! Trace shadows of objects, toys, or even friends for unique silhouette artwork.",
+    "image": "[MAI] /images/nature-hunt.webp",
+    "rating": 4.4,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[MAI] Sidewalk chalk"
+      },
+      {
+        "name": "[MAI] Sunny day"
+      },
+      {
+        "name": "[MAI] Objects to trace",
+        "quantity": "[MAI] Toys, plants, etc."
+      },
+      {
+        "name": "[MAI] Paper and pencil",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Find Shadows",
+        "description": "[MAI] Go outside on a sunny day. Notice how everything has a shadow!",
+        "duration": "[MAI] 3 min"
+      },
+      {
+        "title": "[MAI] Position Objects",
+        "description": "[MAI] Place toys, plants, or pose yourself to create interesting shadow shapes.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Trace Outlines",
+        "description": "[MAI] Use chalk to trace around shadow edges on pavement.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Add Details",
+        "description": "[MAI] Color in your traced shadows. Add features, patterns, or backgrounds.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Notice Changes",
+        "description": "[MAI] Come back later - have shadows moved? Try tracing the same object at different times!",
+        "duration": "[MAI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Wear sunscreen on sunny days",
+      "[MAI] Stay hydrated",
+      "[MAI] Don't look directly at the sun"
+    ],
+    "learningOutcomes": [
+      "[MAI] Sun and shadows",
+      "[MAI] Time and Earth rotation",
+      "[MAI] Art techniques",
+      "[MAI] Scientific observation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MAI] outdoorquest-cloud-watching",
+    "name": "[MAI] Cloud Watching Journal",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 30 min",
+    "description": "[MAI] Lie back and watch the clouds! Learn cloud types, spot shapes, and create an imagination journal.",
+    "image": "[MAI] /images/nature-hunt.webp",
+    "rating": 4.3,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "Blanket"
+      },
+      {
+        "name": "[MAI] Journal or paper"
+      },
+      {
+        "name": "[MAI] Crayons or colored pencils"
+      },
+      {
+        "name": "[MAI] Cloud identification chart",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Find a Spot",
+        "description": "[MAI] Lay blanket in open area with good sky view. Lie on your back.",
+        "duration": "[MAI] 3 min"
+      },
+      {
+        "title": "[MAI] Observe Clouds",
+        "description": "[MAI] Watch the clouds move. What shapes do you see? Animals? Faces? Objects?",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Learn Cloud Types",
+        "description": "[MAI] Identify clouds: fluffy cumulus, wispy cirrus, layered stratus. What's up there today?",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Draw and Write",
+        "description": "[MAI] Sketch the shapes you see. Write stories about cloud characters.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Predict Weather",
+        "description": "[MAI] Different clouds mean different weather. What do today's clouds tell us?",
+        "duration": "[MAI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Don't cloud watch during storms",
+      "[MAI] Wear sunglasses on bright days",
+      "[MAI] Apply sunscreen"
+    ],
+    "learningOutcomes": [
+      "[MAI] Meteorology basics",
+      "[MAI] Imagination and creativity",
+      "Relaxation",
+      "[MAI] Weather prediction"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] outdoorquest-fairy-garden",
+    "name": "[MAI] Fairy Garden",
+    "pillar": "outdoorquest",
+    "category": "Garden",
+    "ageRange": "3-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MAI] 1 hour",
+    "description": "[MAI] Create a miniature magical garden for fairies! Use tiny plants, pebbles, and handmade accessories.",
+    "image": "[MAI] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[MAI] Container or garden corner"
+      },
+      {
+        "name": "[MAI] Potting soil"
+      },
+      {
+        "name": "[MAI] Small plants or moss"
+      },
+      {
+        "name": "[MAI] Pebbles and small stones"
+      },
+      {
+        "name": "[MAI] Tiny decorations",
+        "quantity": "[MAI] Shells, acorns, small figurines"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Choose Location",
+        "description": "[MAI] Pick a container (pot, wooden box) or a corner of the yard for your fairy garden.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Add Soil and Base",
+        "description": "[MAI] Fill with potting soil. Add pebbles for a path. Create landscape with hills or flat areas.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Plant Greenery",
+        "description": "[MAI] Add small plants, moss, or ground cover. Think about scale - everything should be tiny!",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Create Features",
+        "description": "[MAI] Make tiny houses from sticks, furniture from acorn caps, fences from twigs.",
+        "duration": "[MAI] 20 min"
+      },
+      {
+        "title": "[MAI] Add Inhabitants",
+        "description": "[MAI] Place fairy figurines, or leave empty for imagination! Add final decorative touches.",
+        "duration": "[MAI] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Wash hands after handling soil",
+      "[MAI] Small pieces can be choking hazards for young children"
+    ],
+    "learningOutcomes": [
+      "[MAI] Gardening basics",
+      "[MAI] Miniature design",
+      "[MAI] Imaginative play",
+      "[MAI] Caring for living things"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] outdoorquest-obstacle-course",
+    "name": "[MAI] Backyard Obstacle Course",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 30 min setup",
+    "description": "[MAI] Design and conquer your own obstacle course! Jump, crawl, balance, and race through challenges.",
+    "image": "[MAI] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 178,
+    "materials": [
+      {
+        "name": "[MAI] Hula hoops"
+      },
+      {
+        "name": "[MAI] Pool noodles"
+      },
+      {
+        "name": "[MAI] Cones or markers"
+      },
+      {
+        "name": "[MAI] Rope or string"
+      },
+      {
+        "name": "Buckets"
+      },
+      {
+        "name": "Balls"
+      },
+      {
+        "name": "Timer",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Plan Your Course",
+        "description": "[MAI] Decide on 5-8 obstacles. Include different movements: jumping, crawling, throwing, balancing.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Set Up Obstacles",
+        "description": "[MAI] Examples: hoop jump, noodle limbo, cone weave, bucket ball toss, rope hop.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Create Start/Finish",
+        "description": "[MAI] Mark clear start and finish lines. Number obstacles if doing them in order.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Test Run",
+        "description": "[MAI] Run through once yourself. Is it challenging but doable? Adjust difficulty.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "Race!",
+        "description": "[MAI] Time yourself, race friends, or try to beat your own record!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Check ground for hazards",
+      "[MAI] Age-appropriate challenges",
+      "[MAI] No obstacles near hard surfaces",
+      "[MAI] Warm up before running"
+    ],
+    "learningOutcomes": [
+      "[MAI] Physical fitness",
+      "[MAI] Course design",
+      "Sportsmanship",
+      "Problem-solving"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] outdoorquest-leaf-rubbing",
+    "name": "[MAI] Leaf Rubbing Art",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 20 min",
+    "description": "[MAI] Create beautiful impressions of leaves using crayons! A simple nature art activity perfect for all ages.",
+    "image": "[MAI] /images/nature-hunt.webp",
+    "rating": 4.5,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[MAI] Fresh leaves",
+        "quantity": "[MAI] Various shapes"
+      },
+      {
+        "name": "[MAI] White paper"
+      },
+      {
+        "name": "Crayons",
+        "quantity": "Unwrapped"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Collect Leaves",
+        "description": "[MAI] Gather leaves with interesting shapes and strong veins. Fresh leaves work best.",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Position Leaves",
+        "description": "[MAI] Place leaves vein-side up under paper. Use tape to hold paper still.",
+        "duration": "[MAI] 3 min"
+      },
+      {
+        "title": "[MAI] Rub with Crayon",
+        "description": "[MAI] Rub crayon side across paper over leaf. The leaf pattern appears!",
+        "tip": "[MAI] Use side of unwrapped crayon for best results.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Create Composition",
+        "description": "[MAI] Make multiple rubbings to create a forest, tree, or abstract design.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Identify Leaves",
+        "description": "[MAI] Look up what trees your leaves came from. Label your artwork!",
+        "duration": "[MAI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Wash hands after handling leaves",
+      "[MAI] Avoid poison ivy/oak"
+    ],
+    "learningOutcomes": [
+      "[MAI] Plant identification",
+      "[MAI] Art technique",
+      "[MAI] Texture exploration",
+      "[MAI] Nature appreciation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] outdoorquest-water-balloons",
+    "name": "[MAI] Water Balloon Games",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 30 min play",
+    "description": "[MAI] Cool off with exciting water balloon games! From toss to relay races, get ready to get wet!",
+    "image": "[MAI] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 189,
+    "materials": [
+      {
+        "name": "[MAI] Water balloons",
+        "quantity": "30-50"
+      },
+      {
+        "name": "[MAI] Water source"
+      },
+      {
+        "name": "Buckets",
+        "quantity": "2-4"
+      },
+      {
+        "name": "[MAI] Open outdoor space"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Fill Balloons",
+        "description": "[MAI] Fill balloons at outdoor faucet. Don't overfill - they pop too easily!",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Balloon Toss",
+        "description": "[MAI] Partners toss balloon back and forth, stepping back after each catch. Who lasts longest?",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Relay Race",
+        "description": "[MAI] Carry balloon on spoon across yard without dropping. Teams compete!",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Target Practice",
+        "description": "[MAI] Draw chalk targets. Throw balloons at targets for points!",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Clean Up",
+        "description": "[MAI] IMPORTANT: Pick up all balloon pieces - they're harmful to wildlife!",
+        "duration": "[MAI] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] ALWAYS clean up balloon pieces",
+      "[MAI] Balloons are choking hazards",
+      "[MAI] Don't throw at faces",
+      "[MAI] Watch for slippery areas"
+    ],
+    "learningOutcomes": [
+      "Teamwork",
+      "[MAI] Gross motor skills",
+      "Sportsmanship",
+      "[MAI] Environmental responsibility (cleanup)"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MAI] outdoorquest-stargazing",
+    "name": "[MAI] Stargazing Night",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MAI] 1 hour",
+    "description": "[MAI] Explore the night sky! Learn constellations, spot planets, and maybe catch a shooting star.",
+    "image": "[MAI] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "Blanket"
+      },
+      {
+        "name": "[MAI] Star chart or app"
+      },
+      {
+        "name": "[MAI] Red flashlight",
+        "optional": true
+      },
+      {
+        "name": "Binoculars",
+        "optional": true
+      },
+      {
+        "name": "[MAI] Hot cocoa",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MAI] Choose Location",
+        "description": "[MAI] Find dark spot away from lights. Backyard works if lights are off!",
+        "duration": "[MAI] 5 min"
+      },
+      {
+        "title": "[MAI] Let Eyes Adjust",
+        "description": "[MAI] Wait 10-15 minutes for eyes to adapt to darkness. Avoid looking at bright lights.",
+        "duration": "[MAI] 15 min"
+      },
+      {
+        "title": "[MAI] Find North Star",
+        "description": "[MAI] Locate Big Dipper, then follow pointer stars to Polaris, the North Star.",
+        "duration": "[MAI] 10 min"
+      },
+      {
+        "title": "[MAI] Hunt Constellations",
+        "description": "[MAI] Use star chart to find Orion, Cassiopeia, and seasonal constellations.",
+        "duration": "[MAI] 20 min"
+      },
+      {
+        "title": "[MAI] Watch for Movement",
+        "description": "[MAI] Satellites cross slowly. Shooting stars streak fast. Planets don't twinkle!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MAI] Stay in safe areas at night",
+      "[MAI] Adult supervision required",
+      "[MAI] Bring bug spray",
+      "[MAI] Dress warmly"
+    ],
+    "learningOutcomes": [
+      "[MAI] Astronomy basics",
+      "[MAI] Navigation history",
+      "[MAI] Patience and observation",
+      "[MAI] Wonder and curiosity"
+    ],
+    "isPremium": true
+  }
+]

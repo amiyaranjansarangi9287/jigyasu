@@ -134,7 +134,6 @@ class ABTestingFramework {
   trackExposure(experimentId: string, variant: string): void {
     // Send to analytics
     // This would integrate with the analytics utility
-    console.log(`A/B Test Exposure: ${experimentId} - ${variant}`);
   }
 
   /**
@@ -142,7 +141,6 @@ class ABTestingFramework {
    */
   trackConversion(experimentId: string, value?: number): void {
     const variant = this.getVariant(experimentId);
-    console.log(`A/B Test Conversion: ${experimentId} - ${variant} - Value: ${value}`);
   }
 
   /**

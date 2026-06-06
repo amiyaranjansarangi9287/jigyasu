@@ -113,7 +113,7 @@ export default function Hero({
         <button
           onClick={onGetStarted}
           className="btn btn-primary text-lg px-8 py-4 group"
-        >
+         aria-label="Action button">
           <span>Get Started</span>
           <svg
             className="w-5 h-5 group-hover:translate-x-1 transition-transform"
@@ -127,7 +127,7 @@ export default function Hero({
         <button
           onClick={onExploreCampWeeks}
           className="btn bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 hover:bg-white/30 text-lg px-8 py-4"
-        >
+         aria-label="Action button">
           <span>📅</span>
           <span>Explore Camp Weeks</span>
         </button>

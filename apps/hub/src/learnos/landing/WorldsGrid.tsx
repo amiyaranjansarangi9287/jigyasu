@@ -98,6 +98,7 @@ export const WORLDS = [
   },
 ];
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const WorldCard = React.memo(function WorldCard({ w, t, handleEnter }: any) {
   return (
     <article

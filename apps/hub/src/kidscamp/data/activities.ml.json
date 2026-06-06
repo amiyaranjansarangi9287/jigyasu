@@ -1,0 +1,4506 @@
+[
+  {
+    "id": "[ML] toybox-rainbow-blocks",
+    "name": "[ML] Rainbow Stacking Blocks",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 1-2 hours",
+    "description": "[ML] Create a beautiful set of rainbow-colored wooden blocks perfect for stacking, sorting, and creative play. These timeless toys spark imagination and help develop fine motor skills.",
+    "image": "[ML] /images/blocks.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[ML] Wooden blocks or lumber scraps",
+        "quantity": "[ML] 12-20 pieces"
+      },
+      {
+        "name": "Sandpaper",
+        "quantity": "[ML] Fine and medium grit"
+      },
+      {
+        "name": "[ML] Non-toxic acrylic paint",
+        "quantity": "[ML] Rainbow colors"
+      },
+      {
+        "name": "[ML] Clear sealant",
+        "quantity": "[ML] 1 can",
+        "optional": true
+      },
+      {
+        "name": "Paintbrushes",
+        "quantity": "3-4"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Prepare the Wood",
+        "description": "[ML] Start by selecting your wooden pieces. If using lumber scraps, cut them into various shapes - rectangles, squares, triangles, and arches. Sand all surfaces smooth, starting with medium grit sandpaper and finishing with fine grit. Pay special attention to edges and corners to ensure they are rounded and safe for little hands.",
+        "tip": "[ML] Pre-cut wooden blocks from craft stores work great and save time!",
+        "duration": "[ML] 30 min"
+      },
+      {
+        "title": "[ML] Plan Your Rainbow",
+        "description": "[ML] Lay out your blocks and decide which colors will go on each piece. A classic rainbow progression (red, orange, yellow, green, blue, purple) works beautifully. Consider painting blocks of similar sizes in the same color for a cohesive set.",
+        "tip": "[ML] Take a photo of your layout plan for reference while painting.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Apply Base Coats",
+        "description": "[ML] Paint each block with its designated color. Apply thin, even coats and let dry completely between applications. Most blocks will need 2-3 coats for full coverage.",
+        "tip": "[ML] Use a cardboard box to hold blocks upright while drying.",
+        "duration": "[ML] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[ML] Add Details (Optional)",
+        "description": "[ML] Once base coats are dry, add fun details like dots, stripes, or simple patterns. You can also leave them solid for a classic look.",
+        "duration": "[ML] 20 min"
+      },
+      {
+        "title": "[ML] Seal and Finish",
+        "description": "[ML] Apply a clear, non-toxic sealant to protect the paint and make blocks more durable. Let dry completely (24 hours recommended) before play.",
+        "tip": "[ML] Water-based polyurethane is safe once fully cured.",
+        "duration": "[ML] 15 min",
+        "parentHelp": true
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Use only non-toxic, child-safe paints and sealants",
+      "[ML] Ensure all edges are well-sanded and smooth",
+      "[ML] Adult supervision required for cutting and sealing",
+      "[ML] Allow full curing time before giving to children"
+    ],
+    "learningOutcomes": [
+      "[ML] Fine motor skills",
+      "[ML] Color recognition",
+      "[ML] Spatial awareness",
+      "[ML] Creative thinking"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] toybox-wooden-car",
+    "name": "[ML] Wooden Auto-Rickshaw (Tuk-Tuk)",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[ML] 2-3 hours",
+    "description": "[ML] Construct your very own wooden Auto-Rickshaw! Learn the physics of axles and wheels as you design and paint the iconic three-wheeled vehicle that navigates busy Indian streets.",
+    "image": "[ML] /images/wooden-car.webp",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 124,
+    "materials": [
+      {
+        "name": "[ML] Wood block",
+        "quantity": "[ML] 6\" x 3\" x 2\""
+      },
+      {
+        "name": "[ML] Wooden wheels",
+        "quantity": "[ML] 4 pieces"
+      },
+      {
+        "name": "[ML] Wooden dowels",
+        "quantity": "[ML] 2 pieces, 4\" each"
+      },
+      {
+        "name": "Sandpaper",
+        "quantity": "[ML] Various grits"
+      },
+      {
+        "name": "[ML] Wood glue"
+      },
+      {
+        "name": "[ML] Non-toxic paint",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Shape the Car Body",
+        "description": "[ML] Draw the car profile on your wood block - a simple curved top works best. Using a saw or pre-cut the shape, then sand all surfaces smooth.",
+        "duration": "[ML] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[ML] Drill Axle Holes",
+        "description": "[ML] Mark where the axle holes will go on both sides of the car body. Drill straight through, ensuring holes align perfectly.",
+        "tip": "[ML] Use a drill press for perfectly aligned holes.",
+        "duration": "[ML] 15 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[ML] Prepare Wheels and Axles",
+        "description": "[ML] Sand the wheels smooth. Cut dowels to length for axles, leaving room for wheels plus a small gap.",
+        "duration": "[ML] 20 min"
+      },
+      {
+        "title": "[ML] Assemble the Car",
+        "description": "[ML] Insert axles through the car body. Attach wheels to each end with a dab of wood glue. Ensure wheels spin freely.",
+        "tip": "[ML] Don't use too much glue - wheels need to spin!",
+        "duration": "[ML] 20 min"
+      },
+      {
+        "title": "[ML] Paint and Finish",
+        "description": "[ML] Once glue is dry, paint your car in your favorite colors. Add details like windows, headlights, or racing stripes. Apply sealant and let cure.",
+        "duration": "[ML] 40 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Adult supervision required for all cutting and drilling",
+      "[ML] Wear safety glasses when using power tools",
+      "[ML] Use non-toxic finishes only"
+    ],
+    "learningOutcomes": [
+      "[ML] Basic woodworking",
+      "[ML] Wheel and axle mechanics",
+      "[ML] Planning and execution",
+      "[ML] Fine motor skills"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] toybox-plush-bear",
+    "name": "[ML] Cuddly Plush Bear",
+    "pillar": "toybox",
+    "category": "Plush",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[ML] 3-4 hours",
+    "description": "[ML] Sew your own adorable teddy bear with soft fabric and button eyes. A perfect cuddly companion that makes a wonderful gift.",
+    "image": "[ML] /images/plush-bear.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[ML] Soft fabric (fleece or felt)",
+        "quantity": "[ML] 1/2 yard"
+      },
+      {
+        "name": "Stuffing",
+        "quantity": "[ML] 1 bag polyester filling"
+      },
+      {
+        "name": "Thread",
+        "quantity": "[ML] Matching color"
+      },
+      {
+        "name": "Buttons",
+        "quantity": "[ML] 2 for eyes"
+      },
+      {
+        "name": "[ML] Embroidery thread",
+        "quantity": "[ML] For nose and mouth"
+      },
+      {
+        "name": "[ML] Needle and pins"
+      },
+      {
+        "name": "Scissors"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Cut Pattern Pieces",
+        "description": "[ML] Print or draw a simple bear pattern. Cut out body (2), arms (4), legs (4), ears (4), and head pieces from your fabric.",
+        "duration": "[ML] 30 min"
+      },
+      {
+        "title": "[ML] Sew Body Parts",
+        "description": "[ML] With right sides together, sew arm pairs, leg pairs, and ears. Leave openings for turning. Turn right side out.",
+        "duration": "[ML] 45 min"
+      },
+      {
+        "title": "[ML] Create the Face",
+        "description": "[ML] Attach button eyes securely. Embroider a simple nose and smile using satin stitch.",
+        "tip": "[ML] For younger children, embroider eyes instead of buttons for safety.",
+        "duration": "[ML] 30 min"
+      },
+      {
+        "title": "[ML] Assemble the Bear",
+        "description": "[ML] Sew head pieces together, attaching ears. Join body pieces, inserting arms and legs as you go. Leave opening for stuffing.",
+        "duration": "[ML] 45 min"
+      },
+      {
+        "title": "[ML] Stuff and Close",
+        "description": "[ML] Fill bear firmly with stuffing, shaping as you go. Hand-stitch the opening closed with a ladder stitch.",
+        "duration": "[ML] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Secure button eyes very tightly or use embroidered eyes for young children",
+      "[ML] Supervise needle use with younger sewers",
+      "[ML] Check for loose threads or weak seams"
+    ],
+    "learningOutcomes": [
+      "[ML] Sewing skills",
+      "[ML] Pattern reading",
+      "[ML] Patience and attention to detail",
+      "[ML] Gift-giving mindset"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] toybox-recycled-robot",
+    "name": "[ML] Recycled Robot",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 1-2 hours",
+    "description": "[ML] Transform recyclable materials into an awesome robot friend! This eco-friendly project teaches creativity and environmental awareness.",
+    "image": "[ML] /images/robot.webp",
+    "rating": 4.6,
+    "reviewCount": 142,
+    "materials": [
+      {
+        "name": "[ML] Cardboard boxes",
+        "quantity": "[ML] Various sizes"
+      },
+      {
+        "name": "[ML] Bottle caps"
+      },
+      {
+        "name": "[ML] Aluminum foil"
+      },
+      {
+        "name": "[ML] Toilet paper rolls",
+        "quantity": "[ML] 4 for limbs"
+      },
+      {
+        "name": "[ML] Paint and markers"
+      },
+      {
+        "name": "[ML] Glue gun",
+        "optional": true
+      },
+      {
+        "name": "[ML] Craft glue"
+      },
+      {
+        "name": "[ML] Pipe cleaners",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Gather Materials",
+        "description": "[ML] Collect various recyclables - boxes, bottles, caps, tubes. Clean everything thoroughly. Lay out materials and envision your robot.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Build the Body",
+        "description": "[ML] Select a medium box for the body and a smaller one for the head. Cover with aluminum foil or paint silver for a robotic look.",
+        "duration": "[ML] 25 min"
+      },
+      {
+        "title": "[ML] Add Limbs",
+        "description": "[ML] Attach toilet paper rolls or paper towel tubes as arms and legs. Secure with glue and reinforce with tape if needed.",
+        "duration": "[ML] 20 min"
+      },
+      {
+        "title": "[ML] Create the Face",
+        "description": "[ML] Use bottle caps for eyes, buttons for a nose, and draw or add a mouth. Get creative with antennae using pipe cleaners!",
+        "duration": "[ML] 20 min"
+      },
+      {
+        "title": "[ML] Add Details",
+        "description": "[ML] Decorate with buttons, dials, screens drawn on paper, or any creative additions. Name your robot!",
+        "duration": "[ML] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Adult supervision required for hot glue gun",
+      "[ML] Wash all recyclables before use",
+      "[ML] Check for sharp edges on cans or lids"
+    ],
+    "learningOutcomes": [
+      "[ML] Environmental awareness",
+      "[ML] Creative reuse",
+      "Problem-solving",
+      "[ML] Imaginative play"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] toybox-balsa-airplane",
+    "name": "[ML] Balsa Wood Airplane",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[ML] 3-4 hours",
+    "description": "[ML] Craft a beautiful balsa wood biplane that actually flies! Learn about aerodynamics while building this classic model.",
+    "image": "[ML] /images/airplane.webp",
+    "rating": 4.8,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[ML] Balsa wood sheets",
+        "quantity": "[ML] 3 sheets, 1/8\" thick"
+      },
+      {
+        "name": "[ML] Balsa wood sticks",
+        "quantity": "[ML] Various sizes"
+      },
+      {
+        "name": "[ML] Wood glue"
+      },
+      {
+        "name": "[ML] Craft knife"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "Paint",
+        "optional": true
+      },
+      {
+        "name": "[ML] Rubber bands"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Cut Wing Pieces",
+        "description": "[ML] Trace wing templates onto balsa sheets. Carefully cut out upper and lower wings using a craft knife. Sand edges smooth.",
+        "duration": "[ML] 40 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[ML] Build the Fuselage",
+        "description": "[ML] Cut and assemble the body of the plane using balsa sticks. Create a frame that is sturdy but lightweight.",
+        "duration": "[ML] 45 min"
+      },
+      {
+        "title": "[ML] Attach Wings",
+        "description": "[ML] Glue wings to fuselage at slight upward angles for better lift. Use struts between upper and lower wings.",
+        "tip": "[ML] Let each glue joint dry before moving to the next.",
+        "duration": "[ML] 30 min"
+      },
+      {
+        "title": "[ML] Add Tail Assembly",
+        "description": "[ML] Create and attach horizontal stabilizer and vertical tail fin. These are crucial for flight stability.",
+        "duration": "[ML] 25 min"
+      },
+      {
+        "title": "[ML] Finish and Test Fly",
+        "description": "[ML] Sand entire plane smooth. Paint if desired. Add a propeller with rubber band power. Test fly and adjust as needed!",
+        "duration": "[ML] 40 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Adult supervision required for craft knife use",
+      "[ML] Balsa wood splinters easily - handle with care",
+      "[ML] Fly in open areas away from people"
+    ],
+    "learningOutcomes": [
+      "[ML] Aerodynamics basics",
+      "[ML] Precision building",
+      "[ML] Physics of flight",
+      "[ML] Patience and persistence"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] toybox-dollhouse",
+    "name": "[ML] Miniature Dollhouse",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[ML] 4-6 hours",
+    "description": "[ML] Construct a charming miniature dollhouse with multiple rooms. Add tiny furniture and decorations for endless imaginative play.",
+    "image": "[ML] /images/dollhouse.webp",
+    "rating": 4.9,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[ML] Cardboard or foam board",
+        "quantity": "[ML] Large sheets"
+      },
+      {
+        "name": "[ML] Craft knife"
+      },
+      {
+        "name": "Ruler"
+      },
+      {
+        "name": "Glue"
+      },
+      {
+        "name": "[ML] Scrapbook paper",
+        "quantity": "[ML] For wallpaper"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "[ML] Small boxes",
+        "quantity": "[ML] For furniture"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Design Floor Plan",
+        "description": "[ML] Sketch your dollhouse design. Decide on number of rooms and floors. Calculate measurements for walls and floors.",
+        "duration": "[ML] 20 min"
+      },
+      {
+        "title": "[ML] Cut Structural Pieces",
+        "description": "[ML] Cut out walls, floors, and roof pieces from cardboard or foam board. Include window and door openings.",
+        "duration": "[ML] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[ML] Assemble Structure",
+        "description": "[ML] Glue walls together, add floors to create stories. Install the roof. Reinforce corners with extra cardboard strips.",
+        "duration": "[ML] 1 hour"
+      },
+      {
+        "title": "[ML] Decorate Interior",
+        "description": "[ML] Apply scrapbook paper as wallpaper. Paint trim and details. Add flooring paper or felt rugs.",
+        "duration": "[ML] 1 hour"
+      },
+      {
+        "title": "[ML] Create Furniture",
+        "description": "[ML] Make tiny furniture from small boxes, spools, and scraps. Add beds, tables, chairs, and decorations.",
+        "duration": "[ML] 1 hour"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Adult supervision for cutting",
+      "[ML] Use sharp blades carefully with cutting mat",
+      "[ML] Small pieces may be choking hazards for young children"
+    ],
+    "learningOutcomes": [
+      "[ML] Architectural thinking",
+      "[ML] Scale and proportion",
+      "[ML] Interior design",
+      "[ML] Long-term project planning"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] toybox-animal-puzzle",
+    "name": "[ML] Wooden Animal Puzzle",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 1-2 hours",
+    "description": "[ML] Create chunky wooden puzzles featuring adorable animals. Perfect for little hands learning shapes and problem-solving.",
+    "image": "[ML] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 118,
+    "materials": [
+      {
+        "name": "Plywood",
+        "quantity": "[ML] 1/2\" thick, 8\" x 10\""
+      },
+      {
+        "name": "[ML] Scroll saw or jigsaw"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "[ML] Non-toxic paint"
+      },
+      {
+        "name": "[ML] Clear sealant"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Draw Design",
+        "description": "[ML] Draw a simple animal shape on the plywood - elephant, cat, or dog work great. Keep shapes chunky with rounded edges.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Cut Outer Shape",
+        "description": "[ML] Use a scroll saw to cut out the animal shape from the plywood. Sand all edges smooth.",
+        "duration": "[ML] 20 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[ML] Create Puzzle Pieces",
+        "description": "[ML] Draw puzzle piece divisions on the animal. Cut along these lines to create 4-8 interlocking pieces.",
+        "duration": "[ML] 25 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[ML] Paint Pieces",
+        "description": "[ML] Paint each puzzle piece in bright colors. You can paint both sides or just the top.",
+        "duration": "[ML] 30 min"
+      },
+      {
+        "title": "[ML] Seal and Assemble",
+        "description": "[ML] Apply clear sealant to protect paint. Once dry, assemble your puzzle and test the fit!",
+        "duration": "[ML] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Adult use only for power saws",
+      "[ML] Sand thoroughly - no splinters",
+      "[ML] Use child-safe paints and sealants"
+    ],
+    "learningOutcomes": [
+      "Problem-solving",
+      "[ML] Shape recognition",
+      "[ML] Hand-eye coordination",
+      "Patience"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] toybox-train-set",
+    "name": "[ML] Classic Train Set",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[ML] 4-5 hours",
+    "description": "[ML] Build a complete wooden train set with engine, cars, and track pieces. A challenging project with rewarding results.",
+    "image": "[ML] /images/train.webp",
+    "rating": 4.8,
+    "reviewCount": 64,
+    "materials": [
+      {
+        "name": "[ML] Wood blocks",
+        "quantity": "[ML] Various sizes"
+      },
+      {
+        "name": "[ML] Wooden wheels",
+        "quantity": "20+"
+      },
+      {
+        "name": "Dowels",
+        "quantity": "[ML] For axles and connectors"
+      },
+      {
+        "name": "[ML] Wood glue"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "[ML] Small hooks and eyes",
+        "quantity": "[ML] For connecting cars"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Design Train Cars",
+        "description": "[ML] Sketch designs for engine, coal car, cargo cars, and caboose. Plan wheel placement and connection points.",
+        "duration": "[ML] 20 min"
+      },
+      {
+        "title": "[ML] Cut and Shape",
+        "description": "[ML] Cut wood blocks to size for each car. Shape the engine with a rounded front. Sand everything smooth.",
+        "duration": "[ML] 1 hour",
+        "parentHelp": true
+      },
+      {
+        "title": "[ML] Add Wheels",
+        "description": "[ML] Drill holes for axles. Insert dowels and attach wheels. Ensure wheels spin freely.",
+        "duration": "[ML] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[ML] Paint and Detail",
+        "description": "[ML] Paint each car in classic train colors. Add windows, cargo details, and decorations.",
+        "duration": "[ML] 1 hour"
+      },
+      {
+        "title": "[ML] Connect Cars",
+        "description": "[ML] Attach hooks to front and eyes to back of each car. Test connections. Create track pieces if desired.",
+        "duration": "[ML] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Adult supervision for all cutting and drilling",
+      "[ML] Check small parts are secure",
+      "[ML] Test wheel attachment strength"
+    ],
+    "learningOutcomes": [
+      "[ML] Complex project planning",
+      "[ML] Mechanical connections",
+      "[ML] Precision work",
+      "[ML] Transportation history"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] toybox-marble-run",
+    "name": "[ML] Marble Run Adventure",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[ML] 2-3 hours",
+    "description": "[ML] Engineer an exciting marble run with twists, turns, and drops. Watch marbles race through your custom creation!",
+    "image": "[ML] /images/marble-run.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 189,
+    "materials": [
+      {
+        "name": "[ML] Cardboard tubes",
+        "quantity": "[ML] 10-15 various sizes"
+      },
+      {
+        "name": "[ML] Cardboard sheets"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "Marbles",
+        "quantity": "5-10"
+      },
+      {
+        "name": "[ML] Base board"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Plan Your Run",
+        "description": "[ML] Sketch the path marbles will take. Plan starting height, turns, tunnels, and landing. Remember: gravity is your friend!",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Create Track Pieces",
+        "description": "[ML] Cut tubes in half lengthwise for open tracks. Cut various lengths. Create funnels and catch points.",
+        "duration": "[ML] 30 min"
+      },
+      {
+        "title": "[ML] Build Support Structure",
+        "description": "[ML] Create cardboard supports to hold tracks at different heights. Build a sturdy base for everything.",
+        "duration": "[ML] 30 min"
+      },
+      {
+        "title": "[ML] Assemble the Run",
+        "description": "[ML] Attach tracks to supports, ensuring smooth transitions. Test with marbles as you build. Adjust angles as needed.",
+        "duration": "[ML] 45 min"
+      },
+      {
+        "title": "[ML] Test and Improve",
+        "description": "[ML] Run marbles through multiple times. Fix any stuck points. Add fun features like jumps or spinners!",
+        "duration": "[ML] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Marbles are choking hazards - supervise young children",
+      "[ML] Use scissors carefully",
+      "[ML] Ensure structure is stable"
+    ],
+    "learningOutcomes": [
+      "[ML] Physics and gravity",
+      "[ML] Engineering design",
+      "Problem-solving",
+      "[ML] Cause and effect"
+    ],
+    "crossPillar": [
+      "[ML] sciencelab-balloon-rocket"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "toybox-tangram",
+    "name": "[ML] Tangram Puzzle Set",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 1 hour",
+    "description": "[ML] Create the ancient Chinese puzzle of seven shapes that form endless patterns. A timeless brain teaser!",
+    "image": "[ML] /images/puzzle.webp",
+    "rating": 4.6,
+    "reviewCount": 92,
+    "materials": [
+      {
+        "name": "[ML] Foam board or wood",
+        "quantity": "[ML] 6\" x 6\" square"
+      },
+      {
+        "name": "Ruler"
+      },
+      {
+        "name": "Pencil"
+      },
+      {
+        "name": "[ML] Craft knife or saw"
+      },
+      {
+        "name": "[ML] Paint or markers",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Draw the Grid",
+        "description": "[ML] Draw a 4x4 grid on your square. This helps position the seven tangram pieces correctly.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Mark Tangram Shapes",
+        "description": "[ML] Following a tangram diagram, mark the seven shapes: 2 large triangles, 1 medium triangle, 2 small triangles, 1 square, 1 parallelogram.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Cut Pieces",
+        "description": "[ML] Carefully cut along your marked lines to create the seven pieces. Sand or smooth edges.",
+        "duration": "[ML] 20 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[ML] Color Pieces",
+        "description": "[ML] Paint each piece a different color for visual appeal and easier identification.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Try Puzzles",
+        "description": "[ML] Challenge yourself to make shapes - animals, people, objects. Look up tangram puzzles online for ideas!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Adult supervision for cutting",
+      "[ML] Small pieces can be choking hazards"
+    ],
+    "learningOutcomes": [
+      "[ML] Spatial reasoning",
+      "[ML] Geometry basics",
+      "Problem-solving",
+      "[ML] Pattern recognition"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] toybox-3d-puzzle",
+    "name": "[ML] 3D Animal Puzzle",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[ML] 2 hours",
+    "description": "[ML] Build a 3D puzzle that assembles into an animal sculpture. Pieces slot together without glue!",
+    "image": "[ML] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 78,
+    "materials": [
+      {
+        "name": "[ML] Cardboard or foam board",
+        "quantity": "[ML] 2-3 sheets"
+      },
+      {
+        "name": "[ML] Template printout"
+      },
+      {
+        "name": "[ML] Craft knife"
+      },
+      {
+        "name": "[ML] Cutting mat"
+      },
+      {
+        "name": "Paint",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Print Templates",
+        "description": "[ML] Find or create 3D puzzle templates. Print at full size. Choose an animal like an elephant or dinosaur.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Transfer to Board",
+        "description": "[ML] Trace or glue templates to your cardboard or foam board. Mark all slot positions clearly.",
+        "duration": "[ML] 20 min"
+      },
+      {
+        "title": "[ML] Cut Pieces",
+        "description": "[ML] Carefully cut out each piece including the slots. Slots should be as wide as your material thickness.",
+        "duration": "[ML] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[ML] Test Fit",
+        "description": "[ML] Try assembling the puzzle. Adjust slots if pieces are too tight or loose.",
+        "duration": "[ML] 20 min"
+      },
+      {
+        "title": "[ML] Decorate and Finish",
+        "description": "[ML] Disassemble, paint pieces, let dry, then reassemble your 3D sculpture!",
+        "duration": "[ML] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Sharp blade use requires adult supervision",
+      "[ML] Always cut on a cutting mat",
+      "[ML] Cut away from your body"
+    ],
+    "learningOutcomes": [
+      "[ML] 3D spatial thinking",
+      "[ML] Assembly skills",
+      "[ML] Following templates",
+      "[ML] Fine motor control"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] toybox-chess-set",
+    "name": "[ML] Wooden Chess Set",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[ML] 6-8 hours",
+    "description": "[ML] Carve and shape your own chess pieces, then build a board. A challenging project that creates a family heirloom!",
+    "image": "[ML] /images/blocks.webp",
+    "rating": 4.9,
+    "reviewCount": 54,
+    "materials": [
+      {
+        "name": "[ML] Wood blocks",
+        "quantity": "[ML] Enough for 32 pieces"
+      },
+      {
+        "name": "[ML] Plywood for board",
+        "quantity": "[ML] 16\" x 16\""
+      },
+      {
+        "name": "[ML] Carving tools"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "[ML] Paint or wood stain"
+      },
+      {
+        "name": "[ML] Clear finish"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Design Pieces",
+        "description": "[ML] Sketch simplified designs for each piece type: King, Queen, Bishop, Knight, Rook, Pawn. Keep shapes recognizable but achievable.",
+        "duration": "[ML] 30 min"
+      },
+      {
+        "title": "[ML] Shape Pawns",
+        "description": "[ML] Start with 16 pawns - the simplest pieces. Shape, sand smooth. Get consistent sizing.",
+        "duration": "[ML] 1.5 hours",
+        "parentHelp": true
+      },
+      {
+        "title": "[ML] Carve Major Pieces",
+        "description": "[ML] Work on Kings, Queens, Bishops, Knights, and Rooks. Take your time on details.",
+        "duration": "[ML] 3 hours",
+        "parentHelp": true
+      },
+      {
+        "title": "[ML] Create Board",
+        "description": "[ML] Mark 64 squares (8x8 grid) on plywood. Paint or stain alternating squares. Apply finish.",
+        "duration": "[ML] 1.5 hours"
+      },
+      {
+        "title": "[ML] Finish Pieces",
+        "description": "[ML] Paint or stain pieces in two colors. Apply protective finish. Let cure completely.",
+        "duration": "[ML] 1 hour"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Carving tools are very sharp - adult only or close supervision",
+      "[ML] Carve away from body",
+      "[ML] Use proper ventilation with stains and finishes"
+    ],
+    "learningOutcomes": [
+      "[ML] Advanced woodworking",
+      "[ML] Strategic game appreciation",
+      "[ML] Patience and persistence",
+      "[ML] Artistic expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] toybox-ring-toss",
+    "name": "[ML] Ring Toss Game",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 1 hour",
+    "description": "[ML] Build a classic ring toss game for indoor or outdoor fun. Perfect for parties and family game nights!",
+    "image": "[ML] /images/blocks.webp",
+    "rating": 4.5,
+    "reviewCount": 108,
+    "materials": [
+      {
+        "name": "[ML] Wooden base",
+        "quantity": "[ML] 12\" x 12\""
+      },
+      {
+        "name": "[ML] Wooden dowels",
+        "quantity": "[ML] 5 pieces, 8\" tall"
+      },
+      {
+        "name": "[ML] Rope or embroidery hoops",
+        "quantity": "[ML] For rings"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "Drill"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Prepare Base",
+        "description": "[ML] Sand wooden base smooth. Mark positions for 5 pegs - one center, four corners.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Install Pegs",
+        "description": "[ML] Drill holes for dowels. Glue dowels into holes. Paint different point values on each peg.",
+        "duration": "[ML] 25 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[ML] Create Rings",
+        "description": "[ML] Make rings from rope (form circles and tape/glue ends) or use embroidery hoops. Make 5-6 rings.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[ML] Paint the base and pegs in bright colors. Add numbers for scoring.",
+        "duration": "[ML] 20 min"
+      },
+      {
+        "title": "Play!",
+        "description": "[ML] Set up, stand back, and toss rings! Highest score wins. Adjust distance for difficulty.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Adult help needed for drilling",
+      "[ML] Ensure pegs are secure before playing"
+    ],
+    "learningOutcomes": [
+      "[ML] Hand-eye coordination",
+      "[ML] Basic math (scoring)",
+      "Sportsmanship",
+      "[ML] Motor skills"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] toybox-memory-game",
+    "name": "[ML] Memory Matching Game",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 45 min",
+    "description": "[ML] Create a personalized memory matching game with your own artwork. Great for brain training!",
+    "image": "[ML] /images/blocks.webp",
+    "rating": 4.6,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "Cardstock",
+        "quantity": "[ML] 24-32 squares"
+      },
+      {
+        "name": "[ML] Markers or crayons"
+      },
+      {
+        "name": "Stickers",
+        "optional": true
+      },
+      {
+        "name": "[ML] Clear contact paper",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Cut Cards",
+        "description": "[ML] Cut cardstock into equal-sized squares (2\" x 2\" works well). Make an even number - 24 or 32 cards.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Create Pairs",
+        "description": "[ML] Draw matching images on pairs of cards. Use shapes, animals, letters, or family photos!",
+        "duration": "[ML] 25 min"
+      },
+      {
+        "title": "[ML] Add Backs",
+        "description": "[ML] Decorate all card backs identically so pairs can't be identified from behind.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Protect (Optional)",
+        "description": "[ML] Cover cards with clear contact paper or laminate for durability.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "Play!",
+        "description": "[ML] Shuffle and lay face down. Take turns flipping two cards. Match pairs to win!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Scissors supervision for young children"
+    ],
+    "learningOutcomes": [
+      "[ML] Memory skills",
+      "Concentration",
+      "[ML] Visual recognition",
+      "Turn-taking"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] toybox-kaleidoscope",
+    "name": "Kaleidoscope",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[ML] 1 hour",
+    "description": "[ML] Build a working kaleidoscope with mirrors and colorful beads. See the world in beautiful patterns!",
+    "image": "[ML] /images/blocks.webp",
+    "rating": 4.7,
+    "reviewCount": 96,
+    "materials": [
+      {
+        "name": "[ML] Cardboard tube",
+        "quantity": "[ML] 8-10\" long"
+      },
+      {
+        "name": "[ML] Mirror sheets or reflective paper",
+        "quantity": "[ML] 3 strips"
+      },
+      {
+        "name": "[ML] Clear plastic discs",
+        "quantity": "2"
+      },
+      {
+        "name": "[ML] Beads and sequins"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[ML] Decorative paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Create Mirror Triangle",
+        "description": "[ML] Cut three mirror strips that fit inside your tube. Tape them together to form a triangle, reflective sides facing in.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Prepare Tube",
+        "description": "[ML] Cut a viewing hole in one end cap. The mirror triangle should fit snugly inside the tube.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Insert Mirrors",
+        "description": "[ML] Carefully slide the mirror triangle into the tube. Secure in place.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Create Object Chamber",
+        "description": "[ML] At the other end, sandwich beads and sequins between two clear plastic discs. Attach to tube end.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[ML] Cover the outside with decorative paper. Add your name and designs!",
+        "duration": "[ML] 15 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Handle mirrors carefully - edges can be sharp",
+      "[ML] Don't look at bright lights through kaleidoscope"
+    ],
+    "learningOutcomes": [
+      "[ML] Light and reflection",
+      "Symmetry",
+      "[ML] Pattern recognition",
+      "[ML] Optics basics"
+    ],
+    "crossPillar": [
+      "[ML] sciencelab-invisible-ink"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "toybox-catapult",
+    "name": "[ML] Wooden Catapult",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "9-12",
+    "difficulty": "Medium",
+    "timeToMake": "[ML] 1.5 hours",
+    "description": "[ML] Build a working catapult that launches small objects. Learn about lever physics and stored energy!",
+    "image": "[ML] /images/blocks.webp",
+    "rating": 4.8,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[ML] Popsicle sticks",
+        "quantity": "15-20"
+      },
+      {
+        "name": "[ML] Rubber bands",
+        "quantity": "5-6"
+      },
+      {
+        "name": "[ML] Plastic spoon"
+      },
+      {
+        "name": "[ML] Small pompoms or marshmallows",
+        "quantity": "[ML] For launching"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Create the Base",
+        "description": "[ML] Stack 5-7 popsicle sticks and rubber band both ends. This creates a sturdy base.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Build Launch Arm",
+        "description": "[ML] Take 2 sticks and rubber band only ONE end. Open the other end like scissors.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Combine Base and Arm",
+        "description": "[ML] Insert the base stack perpendicular into the launch arm opening. Secure with rubber bands.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Add Launching Cup",
+        "description": "[ML] Attach plastic spoon to the end of the launch arm with rubber bands.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Test and Adjust",
+        "description": "[ML] Load, aim, and launch! Adjust rubber band tension and fulcrum position for better distance.",
+        "duration": "[ML] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Only launch soft objects like pompoms",
+      "[ML] Never aim at people or animals",
+      "[ML] Launch in clear areas"
+    ],
+    "learningOutcomes": [
+      "[ML] Lever mechanics",
+      "[ML] Potential and kinetic energy",
+      "[ML] Engineering iteration",
+      "[ML] Physics concepts"
+    ],
+    "crossPillar": [
+      "[ML] sciencelab-egg-drop"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] toybox-balancing-eagle",
+    "name": "[ML] Balancing Eagle",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 45 min",
+    "description": "[ML] Create a bird that balances on its beak! Learn about center of gravity with this fun physics toy.",
+    "image": "[ML] /images/airplane.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "[ML] Cardstock or cardboard"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[ML] Pennies or coins",
+        "quantity": "2"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[ML] Markers for decoration"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Draw Eagle Shape",
+        "description": "[ML] Draw a simple eagle with spread wings on cardstock. Wings should extend outward and slightly downward.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Cut Out Shape",
+        "description": "[ML] Carefully cut out your eagle. Keep the beak pointed.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Add Weights",
+        "description": "[ML] Tape a penny under each wing tip. These create the counterbalance.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Find Balance Point",
+        "description": "[ML] Adjust coin position until the eagle balances on its beak when placed on your finger.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[ML] Color your eagle with markers. Try balancing on different surfaces!",
+        "duration": "[ML] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Scissors supervision for young children"
+    ],
+    "learningOutcomes": [
+      "[ML] Center of gravity",
+      "[ML] Balance and counterweight",
+      "[ML] Physics experimentation",
+      "[ML] Fine motor skills"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] toybox-paper-launcher",
+    "name": "[ML] Paper Airplane Launcher",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[ML] 1 hour",
+    "description": "[ML] Build a rubber band launcher that sends paper airplanes soaring! Combine engineering and flight.",
+    "image": "[ML] /images/airplane.webp",
+    "rating": 4.6,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "Cardboard"
+      },
+      {
+        "name": "[ML] Rubber bands",
+        "quantity": "[ML] 3-5 strong ones"
+      },
+      {
+        "name": "[ML] Popsicle sticks"
+      },
+      {
+        "name": "Paper",
+        "quantity": "[ML] For airplanes"
+      },
+      {
+        "name": "[ML] Tape and glue"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Build Launch Track",
+        "description": "[ML] Create a cardboard track about 12\" long with raised edges to guide the airplane.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Create Tension System",
+        "description": "[ML] Attach rubber bands to a crossbar at the back of the track. Create a pull-back mechanism.",
+        "duration": "[ML] 20 min"
+      },
+      {
+        "title": "[ML] Add Release Trigger",
+        "description": "[ML] Design a simple trigger using popsicle sticks that holds and releases the rubber bands.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Make Paper Airplanes",
+        "description": "[ML] Fold several paper airplanes. Test different designs to see which launches best.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Launch and Adjust",
+        "description": "[ML] Load airplane, pull back, release! Adjust angle and tension for maximum distance.",
+        "duration": "[ML] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Never aim at people",
+      "[ML] Launch in open areas",
+      "[ML] Be careful of snapping rubber bands"
+    ],
+    "learningOutcomes": [
+      "[ML] Mechanical engineering",
+      "Aerodynamics",
+      "[ML] Energy transfer",
+      "[ML] Iterative design"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "toybox-kite",
+    "name": "[ML] Diamond Kite",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[ML] 1.5 hours",
+    "description": "[ML] Build a classic diamond kite that soars! Experience the joy of flight with this timeless project.",
+    "image": "[ML] /images/airplane.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[ML] Dowels or sticks",
+        "quantity": "[ML] 2 pieces"
+      },
+      {
+        "name": "[ML] Plastic bag or tissue paper"
+      },
+      {
+        "name": "String",
+        "quantity": "[ML] Lots for flying!"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[ML] Ribbon for tail"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Create Frame",
+        "description": "[ML] Cross two sticks - vertical longer than horizontal. Tie firmly at intersection point.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Add Outline",
+        "description": "[ML] Run string around the outside of the frame, creating the kite shape. Secure at each stick end.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Cover with Skin",
+        "description": "[ML] Lay frame on plastic or paper. Cut with extra margin, fold over frame, and tape secure.",
+        "duration": "[ML] 20 min"
+      },
+      {
+        "title": "[ML] Attach Flying Line",
+        "description": "[ML] Tie flying string to the intersection point. Create a bridle for better control if needed.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Add Tail and Fly",
+        "description": "[ML] Attach a ribbon tail for stability. Find wind, run, and launch your kite!",
+        "duration": "[ML] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Never fly near power lines",
+      "[ML] Fly in open areas away from trees",
+      "[ML] Don't fly in storms"
+    ],
+    "learningOutcomes": [
+      "Aerodynamics",
+      "[ML] Wind and weather",
+      "[ML] Patience and persistence",
+      "[ML] Outdoor appreciation"
+    ],
+    "crossPillar": [
+      "[ML] outdoorquest-nature-hunt"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] toybox-rainstick",
+    "name": "Rainstick",
+    "pillar": "toybox",
+    "category": "Musical",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 45 min",
+    "description": "[ML] Create a musical instrument that sounds like falling rain. Perfect for relaxation and rhythm activities!",
+    "image": "[ML] /images/blocks.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[ML] Cardboard tube",
+        "quantity": "[ML] Paper towel or wrapping paper roll"
+      },
+      {
+        "name": "[ML] Rice or small beans",
+        "quantity": "[ML] 1/4 cup"
+      },
+      {
+        "name": "[ML] Aluminum foil"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[ML] Decorative paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Seal One End",
+        "description": "[ML] Cover one end of the tube tightly with paper and tape.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Create Internal Spiral",
+        "description": "[ML] Crinkle aluminum foil into a long snake. Twist it into a spiral and insert into the tube.",
+        "tip": "[ML] The foil creates the rain sound by slowing the rice.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Add Rice",
+        "description": "[ML] Pour rice or beans into the tube. Experiment with amounts for different sounds.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Seal Other End",
+        "description": "[ML] Close the open end securely with paper and tape. Shake to test - adjust if needed.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[ML] Cover with decorative paper. Add designs inspired by rain, nature, or your own creativity!",
+        "duration": "[ML] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Ensure ends are sealed tightly",
+      "[ML] Small items inside can be choking hazards if opened"
+    ],
+    "learningOutcomes": [
+      "[ML] Sound and acoustics",
+      "[ML] Rhythm and music",
+      "[ML] Cultural instruments",
+      "[ML] Sensory exploration"
+    ],
+    "crossPillar": [
+      "[ML] artstudio-nature-collage"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] toybox-sock-puppet",
+    "name": "[ML] Sock Puppet",
+    "pillar": "toybox",
+    "category": "Puppets",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 30 min",
+    "description": "[ML] Transform an old sock into a fun puppet character. Perfect for storytelling and imaginative play!",
+    "image": "[ML] /images/plush-bear.webp",
+    "rating": 4.5,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[ML] Clean sock"
+      },
+      {
+        "name": "[ML] Googly eyes",
+        "quantity": "2"
+      },
+      {
+        "name": "[ML] Felt scraps"
+      },
+      {
+        "name": "Yarn",
+        "quantity": "[ML] For hair"
+      },
+      {
+        "name": "[ML] Fabric glue"
+      },
+      {
+        "name": "Buttons",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Plan Your Character",
+        "description": "[ML] Decide what character your puppet will be - person, animal, monster? Gather materials in matching colors.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Add Eyes",
+        "description": "[ML] Glue googly eyes or felt circles onto the toe area of the sock.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Create Mouth",
+        "description": "[ML] Cut an oval of felt and glue inside the sock to create a mouth. Add a felt tongue if desired!",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Add Features",
+        "description": "[ML] Glue on yarn hair, felt ears, buttons, or other features to complete your character.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Put on a Show!",
+        "description": "[ML] Once glue is dry, put your hand in and bring your puppet to life!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Use fabric glue rather than hot glue with young children",
+      "[ML] Buttons can be choking hazards - consider felt alternatives for young kids"
+    ],
+    "learningOutcomes": [
+      "[ML] Creative expression",
+      "Storytelling",
+      "[ML] Character development",
+      "[ML] Communication skills"
+    ],
+    "crossPillar": [
+      "[ML] artstudio-paper-plate-animals"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] toybox-finger-puppets",
+    "name": "[ML] Felt Finger Puppets",
+    "pillar": "toybox",
+    "category": "Puppets",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 1 hour",
+    "description": "[ML] Create a set of adorable finger puppets from felt. Make a whole cast of characters for stories!",
+    "image": "[ML] /images/plush-bear.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[ML] Felt sheets",
+        "quantity": "[ML] Various colors"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[ML] Fabric glue or needle and thread"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "[ML] Small embellishments",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Cut Base Shapes",
+        "description": "[ML] Cut two finger-sized rectangles with rounded tops for each puppet. These form the body.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Glue or Sew Edges",
+        "description": "[ML] Join the two pieces along sides and top, leaving bottom open for your finger.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Add Faces",
+        "description": "[ML] Cut tiny felt pieces for eyes, noses, mouths. Glue in place. Use markers for details.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Create Characters",
+        "description": "[ML] Add ears for animals, hair for people, wings for birds. Get creative!",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Perform Stories",
+        "description": "[ML] Put puppets on all fingers and act out stories. Make a mini theater from a box!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Supervise scissors use",
+      "[ML] Use child-safe glue"
+    ],
+    "learningOutcomes": [
+      "[ML] Fine motor skills",
+      "Storytelling",
+      "[ML] Character creation",
+      "Imagination"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] toybox-rubber-band-car",
+    "name": "[ML] Rubber Band Car",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 45 min",
+    "description": "[ML] Build a car powered by rubber band energy! Watch it zoom across the floor.",
+    "image": "[ML] /images/wooden-car.webp",
+    "rating": 4.6,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[ML] Water bottle or small box"
+      },
+      {
+        "name": "[ML] Bottle caps",
+        "quantity": "[ML] 4 for wheels"
+      },
+      {
+        "name": "[ML] Wooden skewers",
+        "quantity": "[ML] 2 for axles"
+      },
+      {
+        "name": "[ML] Rubber bands",
+        "quantity": "2-3"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Prepare the Body",
+        "description": "[ML] Clean your bottle or box. Poke holes on each side for axles to pass through.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Install Axles",
+        "description": "[ML] Push skewers through the holes. They should spin freely.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Attach Wheels",
+        "description": "[ML] Poke holes in bottle cap centers. Push onto skewer ends. Secure with tape or glue.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Add Rubber Band Power",
+        "description": "[ML] Hook rubber band around rear axle. Attach other end to front of car body.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Wind and Race!",
+        "description": "[ML] Roll car backward to wind rubber band. Release and watch it go! Race against friends.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Be careful with sharp skewer ends",
+      "[ML] Don't aim at people when releasing"
+    ],
+    "learningOutcomes": [
+      "[ML] Stored energy",
+      "[ML] Simple machines",
+      "[ML] Engineering design",
+      "[ML] Cause and effect"
+    ],
+    "crossPillar": [
+      "[ML] sciencelab-balloon-rocket"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] toybox-spinning-top",
+    "name": "[ML] Wooden Spinning Top",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 30 min",
+    "description": "[ML] Craft a classic spinning top that twirls for ages. Decorate with colorful patterns that blend when spinning!",
+    "image": "[ML] /images/blocks.webp",
+    "rating": 4.4,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[ML] Cardboard circles",
+        "quantity": "[ML] 2-3 sizes"
+      },
+      {
+        "name": "[ML] Wooden dowel or pencil"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "Glue"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Create Disc",
+        "description": "[ML] Cut a circle from cardboard, about 3-4 inches diameter. Ensure it's perfectly round.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Add Spindle",
+        "description": "[ML] Poke a hole in exact center. Insert dowel or sharpened pencil. Glue in place.",
+        "tip": "[ML] Center placement is crucial for good spinning!",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Decorate Top",
+        "description": "[ML] Draw colorful patterns - spirals, stripes, dots. Colors will blend when spinning!",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Balance and Adjust",
+        "description": "[ML] Spin test your top. If wobbly, check center alignment. Trim edges if uneven.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Spin Competitions",
+        "description": "[ML] Practice spinning technique. Challenge friends - longest spin wins!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Pencil points can be sharp"
+    ],
+    "learningOutcomes": [
+      "[ML] Rotational physics",
+      "[ML] Balance and symmetry",
+      "[ML] Color blending",
+      "[ML] Fine motor control"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] jigyasulab-physics",
+    "name": "[ML] Physics Lab",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "9-12",
+    "difficulty": "Medium",
+    "timeToMake": "Interactive",
+    "description": "[ML] Enter the Physics Lab and explore mechanics, optics, and energy interactively.",
+    "materials": [],
+    "image": "[ML] /images/hero-camp.webp",
+    "rating": 5,
+    "reviewCount": 412,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "[ML] Physics concepts",
+      "[ML] Scientific thinking"
+    ],
+    "url": "/physics",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-chem",
+    "name": "[ML] Chemistry Lab",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "Interactive",
+    "description": "[ML] Mix elements and observe reactions in our safe, virtual Chemistry Lab.",
+    "materials": [],
+    "image": "[ML] /images/slime.webp",
+    "rating": 4.9,
+    "reviewCount": 388,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "[ML] Chemical reactions",
+      "[ML] Molecular structures"
+    ],
+    "url": "/chem",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-bio",
+    "name": "[ML] Biology Lab",
+    "pillar": "sciencelab",
+    "category": "Biology",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "Interactive",
+    "description": "[ML] Explore the wonders of life, cells, and ecosystems in the Biology Lab.",
+    "materials": [],
+    "image": "[ML] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 275,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Anatomy",
+      "Ecosystems"
+    ],
+    "url": "/bio",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-math",
+    "name": "[ML] Math Lab",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "Interactive",
+    "description": "[ML] Solve puzzles and visualize mathematical concepts in a fun, interactive way.",
+    "materials": [],
+    "image": "[ML] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 156,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Geometry",
+      "[ML] Problem solving"
+    ],
+    "url": "/math",
+    "isPremium": false
+  },
+  {
+    "id": "[ML] jigyasulab-cosmos",
+    "name": "[ML] Cosmos Lab",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "Interactive",
+    "description": "[ML] Travel through space, explore planets, and understand the universe.",
+    "materials": [],
+    "image": "[ML] /images/hero-camp.webp",
+    "rating": 5,
+    "reviewCount": 501,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Astronomy",
+      "[ML] Space exploration"
+    ],
+    "url": "/cosmos",
+    "isPremium": false
+  },
+  {
+    "id": "[ML] sciencelab-volcano",
+    "name": "[ML] Erupting Volcano",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 30 min",
+    "description": "[ML] Create an explosive volcanic eruption using kitchen chemistry! Watch the foamy lava flow and learn about chemical reactions.",
+    "image": "[ML] /images/volcano.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 234,
+    "materials": [
+      {
+        "name": "[ML] Baking soda",
+        "quantity": "[ML] 3 tablespoons"
+      },
+      {
+        "name": "Vinegar",
+        "quantity": "[ML] 1 cup"
+      },
+      {
+        "name": "[ML] Dish soap",
+        "quantity": "[ML] A few drops"
+      },
+      {
+        "name": "[ML] Food coloring",
+        "quantity": "[ML] Red and orange"
+      },
+      {
+        "name": "[ML] Play-doh or clay",
+        "quantity": "[ML] For volcano shape"
+      },
+      {
+        "name": "[ML] Plastic bottle or container"
+      },
+      {
+        "name": "[ML] Tray or pan",
+        "quantity": "[ML] To catch overflow"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Build Your Volcano",
+        "description": "[ML] Place plastic bottle on tray. Shape clay or play-doh around it to create a volcano mountain. Leave the bottle opening exposed at the top.",
+        "tip": "[ML] Make it look realistic with ridges and a crater!",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Add the Lava Base",
+        "description": "[ML] Pour baking soda into the bottle. Add a few drops of dish soap and red/orange food coloring.",
+        "duration": "[ML] 3 min"
+      },
+      {
+        "title": "[ML] Prepare for Eruption",
+        "description": "[ML] Make sure everyone can see! Have your vinegar ready to pour.",
+        "duration": "[ML] 2 min"
+      },
+      {
+        "title": "[ML] Eruption Time!",
+        "description": "[ML] Pour vinegar into the bottle and step back. Watch the foamy lava erupt!",
+        "duration": "[ML] 1 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[ML] Understand the Science",
+        "description": "[ML] The baking soda (base) reacts with vinegar (acid) to create carbon dioxide gas, which makes the bubbles and foam!",
+        "duration": "[ML] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Do this experiment on a tray or outside - it gets messy!",
+      "[ML] Vinegar can irritate eyes - don't get too close",
+      "[ML] Adult supervision recommended"
+    ],
+    "learningOutcomes": [
+      "[ML] Acid-base reactions",
+      "[ML] Chemical reactions",
+      "[ML] Carbon dioxide production",
+      "[ML] Scientific observation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] sciencelab-density-tower",
+    "name": "[ML] Rainbow Density Tower",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 30 min",
+    "description": "[ML] Stack liquids in a rainbow! Learn about density as you create layers that magically don't mix.",
+    "image": "[ML] /images/crystal.webp",
+    "rating": 4.8,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "Honey",
+        "quantity": "[ML] 1/4 cup"
+      },
+      {
+        "name": "[ML] Corn syrup",
+        "quantity": "[ML] 1/4 cup"
+      },
+      {
+        "name": "[ML] Dish soap",
+        "quantity": "[ML] 1/4 cup"
+      },
+      {
+        "name": "Water",
+        "quantity": "[ML] 1/4 cup"
+      },
+      {
+        "name": "[ML] Vegetable oil",
+        "quantity": "[ML] 1/4 cup"
+      },
+      {
+        "name": "[ML] Rubbing alcohol",
+        "quantity": "[ML] 1/4 cup"
+      },
+      {
+        "name": "[ML] Food coloring"
+      },
+      {
+        "name": "[ML] Tall clear glass or jar"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Color Your Liquids",
+        "description": "[ML] Add different food coloring to water, corn syrup, and rubbing alcohol. Honey and oil have natural colors.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Pour the Heaviest First",
+        "description": "[ML] Start with honey at the bottom of your glass. Pour slowly down the side.",
+        "tip": "[ML] Patience is key - pour very slowly!",
+        "duration": "[ML] 3 min"
+      },
+      {
+        "title": "[ML] Add Middle Layers",
+        "description": "[ML] Carefully add corn syrup, then dish soap, then water. Pour down the side of the glass.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Top With Light Liquids",
+        "description": "[ML] Add vegetable oil, then carefully add rubbing alcohol on top.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "Experiment!",
+        "description": "[ML] Try dropping small objects - where do they float? Predict based on density!",
+        "duration": "[ML] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Don't drink any of these liquids!",
+      "[ML] Rubbing alcohol requires adult handling",
+      "[ML] Wash hands after experiment"
+    ],
+    "learningOutcomes": [
+      "[ML] Density concepts",
+      "[ML] Liquid properties",
+      "[ML] Scientific layering",
+      "[ML] Prediction and observation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] sciencelab-crystals",
+    "name": "[ML] Crystal Growing",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[ML] 30 min + 3-5 days",
+    "description": "[ML] Grow beautiful crystals from sugar, salt, or borax! Watch amazing structures form over several days.",
+    "image": "[ML] /images/crystal.webp",
+    "rating": 4.8,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[ML] Borax, salt, or sugar",
+        "quantity": "[ML] 1 cup"
+      },
+      {
+        "name": "[ML] Hot water",
+        "quantity": "[ML] 2 cups"
+      },
+      {
+        "name": "[ML] Glass jar"
+      },
+      {
+        "name": "String"
+      },
+      {
+        "name": "Pencil"
+      },
+      {
+        "name": "[ML] Pipe cleaners",
+        "optional": true
+      },
+      {
+        "name": "[ML] Food coloring",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Create Super-Saturated Solution",
+        "description": "[ML] Have an adult pour hot water into jar. Add borax/salt/sugar slowly, stirring until no more dissolves.",
+        "duration": "[ML] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[ML] Prepare Crystal Seed",
+        "description": "[ML] Tie string to pencil. Shape pipe cleaner into a form (star, heart) and tie to string. Or just use string.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Add Color (Optional)",
+        "description": "[ML] Add food coloring to solution for colored crystals.",
+        "duration": "[ML] 2 min"
+      },
+      {
+        "title": "[ML] Suspend and Wait",
+        "description": "[ML] Lower string/pipe cleaner into solution. Rest pencil across jar top. Place somewhere still.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Watch and Wait",
+        "description": "[ML] Check daily! Crystals form as water evaporates. Full growth takes 3-5 days.",
+        "duration": "[ML] 3-5 days"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Adult handles hot water only",
+      "[ML] Borax is not edible - wash hands",
+      "[ML] Don't move or disturb jar during growth"
+    ],
+    "learningOutcomes": [
+      "[ML] Crystallization process",
+      "[ML] Saturation concepts",
+      "[ML] Patience and observation",
+      "[ML] Molecular structure"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] sciencelab-slime",
+    "name": "[ML] Slime Factory",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 15 min",
+    "description": "[ML] Mix up oozy, stretchy, satisfying slime! Experiment with colors, glitter, and different consistencies.",
+    "image": "[ML] /images/slime.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 312,
+    "materials": [
+      {
+        "name": "[ML] White school glue",
+        "quantity": "[ML] 1/2 cup"
+      },
+      {
+        "name": "[ML] Contact lens solution (with boric acid)",
+        "quantity": "[ML] 1 tablespoon"
+      },
+      {
+        "name": "[ML] Baking soda",
+        "quantity": "[ML] 1/2 teaspoon"
+      },
+      {
+        "name": "[ML] Food coloring"
+      },
+      {
+        "name": "Glitter",
+        "optional": true
+      },
+      {
+        "name": "[ML] Bowl and spoon"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Mix Base",
+        "description": "[ML] Pour glue into bowl. Add food coloring and glitter if desired. Stir well.",
+        "duration": "[ML] 3 min"
+      },
+      {
+        "title": "[ML] Add Activator",
+        "description": "[ML] Sprinkle in baking soda and mix. Then add contact solution and stir rapidly.",
+        "duration": "[ML] 3 min"
+      },
+      {
+        "title": "[ML] Knead the Slime",
+        "description": "[ML] Once slime forms, pick it up and knead with hands. It will become less sticky.",
+        "tip": "[ML] If too sticky, add more contact solution. If too stiff, add more glue.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Test Properties",
+        "description": "[ML] Stretch it slowly - does it pull? Pull fast - does it snap? Poke it - does it bounce?",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Store Properly",
+        "description": "[ML] Store in airtight container. Slime lasts 1-2 weeks with proper storage!",
+        "duration": "[ML] 2 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Wash hands after playing",
+      "[ML] Don't eat slime",
+      "[ML] Play on protected surface - slime can stain"
+    ],
+    "learningOutcomes": [
+      "[ML] Polymer chemistry",
+      "[ML] Non-Newtonian fluids",
+      "[ML] Following recipes",
+      "[ML] Sensory exploration"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] sciencelab-balloon-rocket",
+    "name": "[ML] Balloon Rocket",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 15 min",
+    "description": "[ML] Launch a balloon across the room on a string! Learn about thrust and Newton's third law.",
+    "image": "[ML] /images/volcano.webp",
+    "rating": 4.7,
+    "reviewCount": 187,
+    "materials": [
+      {
+        "name": "Balloon"
+      },
+      {
+        "name": "String",
+        "quantity": "[ML] 10-15 feet"
+      },
+      {
+        "name": "Straw"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[ML] Two chairs or posts"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Set Up Track",
+        "description": "[ML] Thread string through straw. Tie string between two chairs, keeping it taut and level.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Prepare Balloon",
+        "description": "[ML] Blow up balloon but don't tie it. Pinch the end to keep air in.",
+        "duration": "[ML] 2 min"
+      },
+      {
+        "title": "[ML] Attach to Straw",
+        "description": "[ML] While someone holds the balloon closed, tape it to the straw on the string.",
+        "duration": "[ML] 3 min"
+      },
+      {
+        "title": "Launch!",
+        "description": "[ML] Release the balloon and watch it zoom along the string!",
+        "duration": "[ML] 1 min"
+      },
+      {
+        "title": "Experiment",
+        "description": "[ML] Try different balloon sizes, angles, or adding weight. What changes the speed?",
+        "duration": "[ML] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Don't release balloons outdoors - harmful to wildlife",
+      "[ML] Supervise young children with balloons"
+    ],
+    "learningOutcomes": [
+      "[ML] Newton's third law",
+      "[ML] Thrust and propulsion",
+      "[ML] Variables in experiments",
+      "[ML] Cause and effect"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] sciencelab-invisible-ink",
+    "name": "[ML] Invisible Ink Messages",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 20 min",
+    "description": "[ML] Write secret messages that appear when heated! Perfect for spy games and learning about chemical changes.",
+    "image": "[ML] /images/crystal.webp",
+    "rating": 4.6,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "[ML] Lemon juice",
+        "quantity": "[ML] 2-3 tablespoons"
+      },
+      {
+        "name": "[ML] White paper"
+      },
+      {
+        "name": "[ML] Cotton swab or paintbrush"
+      },
+      {
+        "name": "[ML] Lamp or iron",
+        "quantity": "[ML] Heat source"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Prepare Ink",
+        "description": "[ML] Squeeze lemon juice into a small bowl. This is your invisible ink!",
+        "duration": "[ML] 3 min"
+      },
+      {
+        "title": "[ML] Write Message",
+        "description": "[ML] Dip cotton swab in lemon juice and write on white paper. Use enough juice to wet the paper.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Let Dry",
+        "description": "[ML] Allow paper to dry completely. The message becomes invisible!",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Reveal Message",
+        "description": "[ML] Hold paper near (not touching!) a light bulb or have adult use warm iron. Message appears brown!",
+        "duration": "[ML] 5 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[ML] Understand Why",
+        "description": "[ML] Heat oxidizes the lemon juice, turning it brown. The acid weakens paper where you wrote!",
+        "duration": "[ML] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Adult supervision required for heat source",
+      "[ML] Don't touch hot lamp or iron",
+      "[ML] Keep paper safe distance from heat"
+    ],
+    "learningOutcomes": [
+      "[ML] Oxidation reactions",
+      "[ML] Chemical changes",
+      "[ML] Heat effects",
+      "[ML] Secret communication history"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] sciencelab-magnetic-maze",
+    "name": "[ML] Magnetic Maze",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[ML] 45 min",
+    "description": "[ML] Build a maze and guide objects through using magnet power! Learn about magnetic forces.",
+    "image": "[ML] /images/crystal.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "[ML] Cardboard box lid or shallow box"
+      },
+      {
+        "name": "[ML] Strong magnets",
+        "quantity": "2"
+      },
+      {
+        "name": "[ML] Paper clips or small metal objects"
+      },
+      {
+        "name": "[ML] Straws or cardboard strips"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "Tape"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Design Maze",
+        "description": "[ML] Draw a maze path inside the box lid. Mark start and finish points.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Build Walls",
+        "description": "[ML] Cut straws or cardboard strips and tape along maze walls to create barriers.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Add Obstacles",
+        "description": "[ML] Include dead ends, tunnels, or challenges. Make it tricky but solvable!",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Test Magnetic Control",
+        "description": "[ML] Place paper clip in maze. Hold magnet under the box and move it. The clip follows!",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Play and Race",
+        "description": "[ML] Navigate through the maze using only the magnet. Time yourself or race friends!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Keep strong magnets away from electronics",
+      "[ML] Supervise small magnet use with young children"
+    ],
+    "learningOutcomes": [
+      "[ML] Magnetic fields",
+      "[ML] Forces at a distance",
+      "Problem-solving",
+      "[ML] Hand-eye coordination"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] sciencelab-solar-oven",
+    "name": "[ML] Solar Oven Roasted Papad",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[ML] 1 hour + cooking",
+    "description": "[ML] Harness the incredible power of the sun to build your own solar oven and perfectly roast crispy papads! Learn about solar thermal energy, reflection, and the greenhouse effect while making a tasty, traditional snack.",
+    "image": "[ML] /images/volcano.webp",
+    "rating": 4.8,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[ML] Pizza box"
+      },
+      {
+        "name": "[ML] Aluminum foil"
+      },
+      {
+        "name": "[ML] Plastic wrap"
+      },
+      {
+        "name": "[ML] Black paper"
+      },
+      {
+        "name": "[ML] Tape and scissors"
+      },
+      {
+        "name": "[ML] Graham crackers, chocolate, marshmallows"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Create Flap",
+        "description": "[ML] Cut three sides of a square in box lid, leaving one side as hinge. Fold flap up.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Line with Foil",
+        "description": "[ML] Cover the flap's inner surface with aluminum foil, shiny side out. Smooth flat.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Create Window",
+        "description": "[ML] Tape plastic wrap over the hole created by the flap. This traps heat inside.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Prepare Interior",
+        "description": "[ML] Line bottom of box with black paper (absorbs heat). Add more foil on inner sides.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Cook S'mores!",
+        "description": "[ML] Place s'more ingredients inside. Angle toward sun, prop flap to reflect light in. Wait 30-60 min!",
+        "duration": "[ML] 30-60 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Only use on sunny days",
+      "[ML] Contents get hot - use oven mitts",
+      "[ML] Adult supervision when opening"
+    ],
+    "learningOutcomes": [
+      "[ML] Solar energy",
+      "[ML] Heat absorption and reflection",
+      "[ML] Renewable energy concepts",
+      "[ML] Engineering design"
+    ],
+    "crossPillar": [
+      "[ML] outdoorquest-cloud-watching"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] sciencelab-dancing-raisins",
+    "name": "[ML] Dancing Raisins",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 10 min",
+    "description": "[ML] Watch raisins dance up and down in a glass! A simple experiment that demonstrates gas bubbles and density.",
+    "image": "[ML] /images/volcano.webp",
+    "rating": 4.4,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[ML] Clear soda (Sprite or club soda)",
+        "quantity": "[ML] 1 glass"
+      },
+      {
+        "name": "Raisins",
+        "quantity": "[ML] Small handful"
+      },
+      {
+        "name": "[ML] Clear glass or jar"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Pour Soda",
+        "description": "[ML] Fill a clear glass about 3/4 full with clear carbonated soda.",
+        "duration": "[ML] 1 min"
+      },
+      {
+        "title": "[ML] Drop Raisins",
+        "description": "[ML] Drop 5-8 raisins into the soda. They'll sink to the bottom at first.",
+        "duration": "[ML] 1 min"
+      },
+      {
+        "title": "[ML] Watch the Dance",
+        "description": "[ML] Wait a minute - raisins start to rise, then fall, then rise again!",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Understand Why",
+        "description": "[ML] CO2 bubbles stick to wrinkly raisins, making them float. At top, bubbles pop and raisins sink!",
+        "duration": "[ML] 3 min"
+      },
+      {
+        "title": "[ML] Try Variations",
+        "description": "[ML] Test other small objects - what else dances? Try different sodas.",
+        "duration": "[ML] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Don't drink the soda after experiment"
+    ],
+    "learningOutcomes": [
+      "[ML] Density and buoyancy",
+      "[ML] Carbon dioxide properties",
+      "[ML] Observation skills",
+      "[ML] Scientific prediction"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] sciencelab-static-butterfly",
+    "name": "[ML] Static Electricity Butterfly",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 20 min",
+    "description": "[ML] Make a butterfly's wings flutter using static electricity! No batteries needed - just science!",
+    "image": "[ML] /images/crystal.webp",
+    "rating": 4.5,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[ML] Tissue paper"
+      },
+      {
+        "name": "Cardstock"
+      },
+      {
+        "name": "Balloon"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "Markers"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Create Body",
+        "description": "[ML] Cut a butterfly body shape from cardstock. Make it sturdy - this is the base.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Cut Tissue Wings",
+        "description": "[ML] Cut delicate wing shapes from tissue paper. Make them light and thin.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Attach Wings",
+        "description": "[ML] Tape wings to body at center only. Wings should be free to move on edges.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Charge Balloon",
+        "description": "[ML] Blow up balloon and rub vigorously on your hair or wool sweater.",
+        "duration": "[ML] 2 min"
+      },
+      {
+        "title": "[ML] Make Wings Flutter",
+        "description": "[ML] Hold charged balloon near tissue wings - watch them rise toward it! Move balloon to make them flutter.",
+        "duration": "[ML] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Latex allergy caution with balloons"
+    ],
+    "learningOutcomes": [
+      "[ML] Static electricity",
+      "[ML] Electric charges",
+      "[ML] Attraction forces",
+      "[ML] Conductors vs insulators"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] sciencelab-water-cycle",
+    "name": "[ML] Water Cycle in a Bag",
+    "pillar": "sciencelab",
+    "category": "Biology",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 15 min + observation",
+    "description": "[ML] Create a mini water cycle in a plastic bag! Watch evaporation, condensation, and precipitation happen.",
+    "image": "[ML] /images/crystal.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[ML] Ziplock bag",
+        "quantity": "[ML] Quart size"
+      },
+      {
+        "name": "Water",
+        "quantity": "[ML] 1/4 cup"
+      },
+      {
+        "name": "[ML] Blue food coloring"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[ML] Sunny window"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Draw Scene",
+        "description": "[ML] Draw clouds at top of bag, sun, and waves at bottom using permanent marker.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Add Water",
+        "description": "[ML] Pour water into bag with blue food coloring. This is your ocean!",
+        "duration": "[ML] 2 min"
+      },
+      {
+        "title": "[ML] Seal and Mount",
+        "description": "[ML] Seal bag tightly. Tape to sunny window at eye level.",
+        "duration": "[ML] 3 min"
+      },
+      {
+        "title": "[ML] Observe Changes",
+        "description": "[ML] Check throughout the day. Water evaporates, condenses on bag, and \"rains\" down!",
+        "duration": "Ongoing"
+      },
+      {
+        "title": "[ML] Label the Cycle",
+        "description": "[ML] Add labels: evaporation (water rising), condensation (droplets forming), precipitation (drops falling).",
+        "duration": "[ML] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Ensure bag is sealed to prevent leaks"
+    ],
+    "learningOutcomes": [
+      "[ML] Water cycle stages",
+      "[ML] Evaporation and condensation",
+      "[ML] Solar energy effects",
+      "[ML] Earth science basics"
+    ],
+    "crossPillar": [
+      "[ML] outdoorquest-cloud-watching"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] sciencelab-egg-drop",
+    "name": "[ML] Egg Drop Challenge",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[ML] 1 hour",
+    "description": "[ML] Design a contraption to protect an egg from a high drop! Classic engineering challenge that teaches impact absorption.",
+    "image": "[ML] /images/volcano.webp",
+    "rating": 4.9,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[ML] Raw eggs",
+        "quantity": "[ML] 2-3 for testing"
+      },
+      {
+        "name": "Straws"
+      },
+      {
+        "name": "Balloons"
+      },
+      {
+        "name": "[ML] Cotton balls"
+      },
+      {
+        "name": "[ML] Bubble wrap"
+      },
+      {
+        "name": "[ML] Rubber bands"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[ML] Small box"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Study the Problem",
+        "description": "[ML] Understand forces: impact, gravity, momentum. What slows falls? What absorbs shock?",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Design Your Device",
+        "description": "[ML] Sketch ideas. Consider: padding, parachute, crumple zones, suspension systems.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Build Prototype",
+        "description": "[ML] Construct your egg protection device. Secure egg inside with cushioning materials.",
+        "duration": "[ML] 30 min"
+      },
+      {
+        "title": "[ML] Test Drop",
+        "description": "[ML] Start from low height. If successful, go higher! Document results.",
+        "duration": "[ML] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "Iterate",
+        "description": "[ML] If egg breaks, analyze why. Improve design and test again!",
+        "duration": "Ongoing"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Do drops outside - eggs are messy!",
+      "[ML] Adult supervision for high drops",
+      "[ML] Wash hands after handling raw eggs"
+    ],
+    "learningOutcomes": [
+      "[ML] Engineering design process",
+      "[ML] Force and impact",
+      "[ML] Iterative improvement",
+      "Problem-solving"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] artstudio-finger-paint",
+    "name": "[ML] Finger Paint Masterpiece",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-5",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 20 min",
+    "description": "[ML] Get messy with finger paints! Create colorful artwork while developing fine motor skills and sensory exploration.",
+    "image": "[ML] /images/finger-paint.webp",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 198,
+    "materials": [
+      {
+        "name": "[ML] Finger paints",
+        "quantity": "[ML] Various colors"
+      },
+      {
+        "name": "[ML] Large paper",
+        "quantity": "[ML] Several sheets"
+      },
+      {
+        "name": "[ML] Smock or old shirt"
+      },
+      {
+        "name": "[ML] Plastic tablecloth"
+      },
+      {
+        "name": "[ML] Water bowl and towels"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Set Up Space",
+        "description": "[ML] Cover table with plastic. Put on smock. Tape paper down so it doesn't move.",
+        "duration": "[ML] 5 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[ML] Explore Colors",
+        "description": "[ML] Start with one color. Dip fingers and make marks. Try dots, lines, swirls!",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Mix Colors",
+        "description": "[ML] Add another color. See what happens when they blend! Yellow + blue = ?",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Try Techniques",
+        "description": "[ML] Use whole hand, just fingertips, sides of hands. Make prints and patterns.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Clean Up",
+        "description": "[ML] Wash hands. Let painting dry flat. Display your masterpiece!",
+        "duration": "[ML] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Use non-toxic, washable paints",
+      "[ML] Supervise to prevent paint eating",
+      "[ML] Protect floor and furniture"
+    ],
+    "learningOutcomes": [
+      "[ML] Sensory exploration",
+      "[ML] Color mixing",
+      "[ML] Fine motor development",
+      "[ML] Creative expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] artstudio-nature-collage",
+    "name": "[ML] Nature Collage",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 30 min",
+    "description": "[ML] Collect treasures from nature and arrange them into beautiful artwork! Combines outdoor exploration with creativity.",
+    "image": "[ML] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[ML] Leaves, flowers, twigs"
+      },
+      {
+        "name": "[ML] Cardstock or cardboard",
+        "quantity": "[ML] For base"
+      },
+      {
+        "name": "[ML] White glue"
+      },
+      {
+        "name": "[ML] Optional: contact paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Nature Walk",
+        "description": "[ML] Go outside and collect natural items: leaves, petals, small twigs, seeds, grass.",
+        "tip": "[ML] Look for different colors, textures, and shapes!",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Sort Treasures",
+        "description": "[ML] Lay out your collection. Group by color, size, or type.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Plan Design",
+        "description": "[ML] Arrange items on your paper WITHOUT gluing. Try different layouts.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Glue in Place",
+        "description": "[ML] Once happy with design, glue items down one by one. Press gently.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Preserve (Optional)",
+        "description": "[ML] Cover with clear contact paper to preserve, or let dry and display!",
+        "duration": "[ML] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Don't pick protected plants",
+      "[ML] Wash hands after collecting",
+      "[ML] Check for insects before bringing items inside"
+    ],
+    "learningOutcomes": [
+      "[ML] Nature appreciation",
+      "[ML] Design and composition",
+      "[ML] Texture exploration",
+      "[ML] Environmental awareness"
+    ],
+    "crossPillar": [
+      "[ML] outdoorquest-nature-hunt"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] artstudio-tiedye",
+    "name": "[ML] Bandhani Tie-Dye Dupatta",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[ML] 1 hour + dry time",
+    "description": "[ML] Discover the ancient Indian art of Bandhani! Use rubber bands and vibrant natural dyes to create mesmerizing geometric patterns on a cotton dupatta or scarf.",
+    "image": "[ML] /images/tiedye.webp",
+    "rating": 4.9,
+    "reviewCount": 223,
+    "materials": [
+      {
+        "name": "[ML] White cotton t-shirt"
+      },
+      {
+        "name": "[ML] Fabric dye kit",
+        "quantity": "[ML] Multiple colors"
+      },
+      {
+        "name": "[ML] Rubber bands",
+        "quantity": "10-20"
+      },
+      {
+        "name": "[ML] Plastic bags"
+      },
+      {
+        "name": "Gloves"
+      },
+      {
+        "name": "[ML] Plastic tablecloth"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Wet the Shirt",
+        "description": "[ML] Soak shirt in water and wring out until damp. This helps dye spread evenly.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Create Pattern",
+        "description": "[ML] For spiral: pinch center and twist entire shirt. For stripes: fold accordion-style. Secure with rubber bands.",
+        "tip": "[ML] Tighter bands = sharper lines. More bands = more white space.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Mix Dyes",
+        "description": "[ML] Prepare dyes according to package. Wear gloves from this point on!",
+        "duration": "[ML] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[ML] Apply Color",
+        "description": "[ML] Squeeze dye onto shirt sections. Use different colors in different areas. Flip and do back too.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Wait and Rinse",
+        "description": "[ML] Bag the shirt and wait 6-24 hours. Rinse under cold water until water runs clear. Remove bands and wash.",
+        "duration": "[ML] 24 hours"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Wear gloves - dye stains!",
+      "[ML] Work outdoors or on protected surface",
+      "[ML] Wash separately first few times"
+    ],
+    "learningOutcomes": [
+      "[ML] Pattern creation",
+      "[ML] Color theory",
+      "[ML] Following multi-step processes",
+      "[ML] Patience and delayed gratification"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] artstudio-paper-plate-animals",
+    "name": "[ML] Paper Plate Animals",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 25 min",
+    "description": "[ML] Transform simple paper plates into adorable animals! Great for parties or imaginative play.",
+    "image": "[ML] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[ML] Paper plates",
+        "quantity": "[ML] 1-2 per animal"
+      },
+      {
+        "name": "[ML] Paint or markers"
+      },
+      {
+        "name": "[ML] Construction paper"
+      },
+      {
+        "name": "[ML] Googly eyes"
+      },
+      {
+        "name": "[ML] Glue and scissors"
+      },
+      {
+        "name": "[ML] Pipe cleaners",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Choose Animal",
+        "description": "[ML] Pick your favorite animal! Lion, pig, frog, cat, and owl are great starters.",
+        "duration": "[ML] 2 min"
+      },
+      {
+        "title": "[ML] Paint Base",
+        "description": "[ML] Paint the plate the main color of your animal. Let dry.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Cut Features",
+        "description": "[ML] Cut ears, noses, whiskers, beaks from construction paper.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Assemble Face",
+        "description": "[ML] Glue on googly eyes and paper features. Add details with markers.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Add Extras",
+        "description": "[ML] Attach popsicle stick for a mask, or hang as decoration!",
+        "duration": "[ML] 3 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Supervise scissor use",
+      "[ML] Use washable paints"
+    ],
+    "learningOutcomes": [
+      "[ML] Animal recognition",
+      "[ML] Following instructions",
+      "[ML] Fine motor skills",
+      "[ML] Creative expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] artstudio-rock-painting",
+    "name": "[ML] Rock Painting",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 30 min",
+    "description": "[ML] Turn ordinary rocks into colorful treasures! Paint animals, patterns, or inspirational words.",
+    "image": "[ML] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[ML] Smooth rocks",
+        "quantity": "3-5"
+      },
+      {
+        "name": "[ML] Acrylic paint",
+        "quantity": "[ML] Various colors"
+      },
+      {
+        "name": "Paintbrushes",
+        "quantity": "[ML] Various sizes"
+      },
+      {
+        "name": "[ML] Clear sealant",
+        "optional": true
+      },
+      {
+        "name": "[ML] Pencil for sketching"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Find Rocks",
+        "description": "[ML] Look for smooth, flat rocks. Wash and dry them completely.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Plan Design",
+        "description": "[ML] Lightly sketch your design with pencil. Animals, mandalas, and words work great!",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Paint Base",
+        "description": "[ML] Paint background color. Let dry completely before adding details.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Add Details",
+        "description": "[ML] Paint your design. Start with larger shapes, add small details last.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Seal and Share",
+        "description": "[ML] Optional: apply clear coat. Hide rocks for others to find or keep as decoration!",
+        "duration": "[ML] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Use acrylic paints - they're waterproof when dry",
+      "[ML] Seal if placing outdoors"
+    ],
+    "learningOutcomes": [
+      "[ML] Painting techniques",
+      "[ML] Working with 3D surfaces",
+      "[ML] Community kindness (rock hiding)",
+      "[ML] Nature appreciation"
+    ],
+    "crossPillar": [
+      "[ML] outdoorquest-nature-hunt"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] artstudio-origami-zoo",
+    "name": "[ML] Origami Zoo",
+    "pillar": "artstudio",
+    "category": "[ML] Paper Art",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[ML] 45 min",
+    "description": "[ML] Fold paper into amazing animals with the ancient art of origami! Create a whole zoo of creatures.",
+    "image": "[ML] /images/tiedye.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[ML] Origami paper",
+        "quantity": "[ML] Multiple colors"
+      },
+      {
+        "name": "Markers",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Start Simple",
+        "description": "[ML] Begin with an easy fold like a dog face or fish. Learn basic folds: valley, mountain, squash.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Practice Precision",
+        "description": "[ML] Fold carefully - crisp creases make better animals! Line up edges exactly.",
+        "tip": "[ML] Use fingernail to crease sharply.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Try Animals",
+        "description": "[ML] Make a frog that jumps! A bird that flaps! A crane for good luck!",
+        "duration": "[ML] 20 min"
+      },
+      {
+        "title": "[ML] Add Details",
+        "description": "[ML] Use markers to add eyes, spots, or patterns to your animals.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Create Display",
+        "description": "[ML] Arrange your zoo on a shelf or make a mobile to hang!",
+        "duration": "[ML] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Paper cuts possible - fold carefully"
+    ],
+    "learningOutcomes": [
+      "[ML] Following diagrams",
+      "[ML] Spatial reasoning",
+      "[ML] Patience and precision",
+      "[ML] Japanese cultural art"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] artstudio-salt-painting",
+    "name": "[ML] Salt Painting",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 30 min",
+    "description": "[ML] Create magical raised designs using glue and salt, then add color and watch it spread!",
+    "image": "[ML] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "Cardstock",
+        "quantity": "[ML] Dark colors work best"
+      },
+      {
+        "name": "[ML] White glue"
+      },
+      {
+        "name": "[ML] Table salt",
+        "quantity": "[ML] 1/2 cup"
+      },
+      {
+        "name": "[ML] Liquid watercolors or food coloring"
+      },
+      {
+        "name": "[ML] Dropper or paintbrush"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Draw with Glue",
+        "description": "[ML] Squeeze glue in lines to create a design - rainbow, name, shapes. Keep lines thick.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Add Salt",
+        "description": "[ML] While glue is wet, pour salt over entire design. Shake off excess.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Let Set",
+        "description": "[ML] Wait a few minutes for glue to start setting with salt stuck on.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Add Color",
+        "description": "[ML] Drop liquid color onto salt. Watch it spread along the lines like magic!",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Dry and Display",
+        "description": "[ML] Let dry completely (overnight is best). Handle gently - salt can fall off.",
+        "duration": "[ML] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Don't eat the salt after coloring",
+      "[ML] Work on protected surface"
+    ],
+    "learningOutcomes": [
+      "[ML] Absorption concepts",
+      "[ML] Color spreading",
+      "[ML] Fine motor control",
+      "[ML] Process art"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] artstudio-pasta-jewelry",
+    "name": "[ML] Terracotta Clay Jewelry",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 30 min",
+    "description": "[ML] Connect with ancient Harappan traditions by sculpting your own terracotta jewelry! Shape natural clay into beautiful beads, dry them in the sun, and paint them with traditional Indian motifs.",
+    "image": "[ML] /images/tiedye.webp",
+    "rating": 4.4,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[ML] Tubular pasta (penne, rigatoni)",
+        "quantity": "[ML] 30-40 pieces"
+      },
+      {
+        "name": "[ML] Acrylic paint or food coloring"
+      },
+      {
+        "name": "[ML] String or yarn",
+        "quantity": "[ML] 2 feet per piece"
+      },
+      {
+        "name": "[ML] Ziplock bags",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Color Pasta",
+        "description": "[ML] Paint pasta or shake in bags with food coloring and rubbing alcohol. Let dry completely.",
+        "duration": "[ML] 10 min + drying"
+      },
+      {
+        "title": "[ML] Plan Pattern",
+        "description": "[ML] Lay out pasta beads and plan your color pattern before stringing.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] String Beads",
+        "description": "[ML] Thread pasta onto string. Tie a bead at one end first to stop others falling off.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Create Closure",
+        "description": "[ML] Tie ends together for necklace, or add clasps for fancier finish.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Model and Gift",
+        "description": "[ML] Wear your creation proudly or make gifts for friends and family!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Pasta jewelry is not edible after painting",
+      "[ML] Handle gently - pasta can crack"
+    ],
+    "learningOutcomes": [
+      "[ML] Pattern creation",
+      "[ML] Fine motor skills (threading)",
+      "[ML] Color combinations",
+      "[ML] Gift-making mindset"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] artstudio-scratch-art",
+    "name": "[ML] Scratch Art Cards",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[ML] 45 min",
+    "description": "[ML] Create rainbow scratch art from scratch! Layer colors, cover with black, then scratch to reveal hidden rainbows.",
+    "image": "[ML] /images/tiedye.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "Cardstock"
+      },
+      {
+        "name": "Crayons",
+        "quantity": "[ML] Various colors"
+      },
+      {
+        "name": "[ML] Black acrylic paint or black crayon"
+      },
+      {
+        "name": "[ML] Dish soap",
+        "quantity": "[ML] A drop"
+      },
+      {
+        "name": "[ML] Toothpick or wooden stylus"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Color Base Layer",
+        "description": "[ML] Cover entire paper with heavy crayon in bright colors. Press hard! No white showing.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Add Black Layer",
+        "description": "[ML] Mix tiny bit of dish soap into black paint. Paint over all the crayon. Or use black crayon (harder work!).",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Let Dry",
+        "description": "[ML] If using paint, let dry completely before scratching.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Scratch Design",
+        "description": "[ML] Use toothpick to scratch away black, revealing rainbow colors beneath!",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Create Cards",
+        "description": "[ML] Make greeting cards, bookmarks, or framed art with your scratch designs!",
+        "duration": "[ML] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Toothpicks are pointy - use carefully",
+      "[ML] Work on protected surface"
+    ],
+    "learningOutcomes": [
+      "[ML] Layering technique",
+      "[ML] Subtractive art process",
+      "[ML] Planning and patience",
+      "[ML] Fine motor control"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] artstudio-suncatcher",
+    "name": "[ML] Tissue Paper Suncatcher",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[ML] 40 min",
+    "description": "[ML] Create stained glass-style art that catches sunlight! Beautiful colors glow when hung in a window.",
+    "image": "[ML] /images/tiedye.webp",
+    "rating": 4.6,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[ML] Clear contact paper",
+        "quantity": "[ML] 2 sheets"
+      },
+      {
+        "name": "[ML] Tissue paper",
+        "quantity": "[ML] Various colors"
+      },
+      {
+        "name": "[ML] Black cardstock",
+        "quantity": "[ML] For frame"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[ML] Hole punch and string"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Cut Frame",
+        "description": "[ML] Cut a frame shape from black cardstock - circle, heart, or rectangle with center removed.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Prepare Contact Paper",
+        "description": "[ML] Cut contact paper slightly larger than frame. Peel backing and lay sticky side up.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Add Tissue Paper",
+        "description": "[ML] Tear or cut tissue paper pieces. Press onto contact paper in colorful pattern.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Seal and Frame",
+        "description": "[ML] Place second contact paper on top, sticky side down. Press to seal. Trim to frame and attach frame.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Hang in Window",
+        "description": "[ML] Punch hole in top, add string, and hang where sunlight will shine through!",
+        "duration": "[ML] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Scissors supervision for younger kids",
+      "[ML] Contact paper is tricky - take your time"
+    ],
+    "learningOutcomes": [
+      "[ML] Light and color",
+      "[ML] Design composition",
+      "[ML] Following multi-step process",
+      "[ML] Decorative crafting"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] artstudio-clay-pots",
+    "name": "[ML] Clay Pinch Pots",
+    "pillar": "artstudio",
+    "category": "Sculpture",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[ML] 1 hour + dry time",
+    "description": "[ML] Shape air-dry clay into beautiful bowls and pots using the ancient pinch pot technique!",
+    "image": "[ML] /images/finger-paint.webp",
+    "rating": 4.7,
+    "reviewCount": 109,
+    "materials": [
+      {
+        "name": "[ML] Air-dry clay",
+        "quantity": "[ML] 1 lb"
+      },
+      {
+        "name": "[ML] Water bowl"
+      },
+      {
+        "name": "[ML] Acrylic paint"
+      },
+      {
+        "name": "Paintbrushes"
+      },
+      {
+        "name": "[ML] Rolling pin",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Prepare Clay",
+        "description": "[ML] Knead clay until soft and pliable. Roll into a ball about the size of your fist.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Create Opening",
+        "description": "[ML] Push thumb into center of ball. Slowly rotate and pinch walls between thumb (inside) and fingers (outside).",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Shape the Pot",
+        "description": "[ML] Keep pinching and rotating. Even thickness is key! Smooth cracks with wet finger.",
+        "tip": "[ML] Keep walls no thinner than 1/4 inch.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Add Details",
+        "description": "[ML] Create texture with tools. Add handles, feet, or decorative elements.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Dry and Paint",
+        "description": "[ML] Let dry completely (2-3 days). Paint with acrylics once fully dried.",
+        "duration": "[ML] 15 min + drying"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Air-dry clay is non-toxic",
+      "[ML] Handle dried pieces gently - they're fragile",
+      "[ML] Not food-safe unless using special glazes"
+    ],
+    "learningOutcomes": [
+      "[ML] Sculpting techniques",
+      "[ML] Hand strength and control",
+      "[ML] Historical pottery methods",
+      "[ML] 3D art creation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] artstudio-collaborative-mural",
+    "name": "[ML] Collaborative Mural",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 1 hour",
+    "description": "[ML] Create a large artwork together! Everyone contributes to one big painting.",
+    "image": "[ML] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 67,
+    "materials": [
+      {
+        "name": "[ML] Large paper roll or joined sheets",
+        "quantity": "[ML] 4-6 feet"
+      },
+      {
+        "name": "[ML] Paint, markers, crayons"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[ML] Smocks for everyone"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Set Up Canvas",
+        "description": "[ML] Roll out paper on floor or tape to wall. Make it BIG - this is a group project!",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Choose Theme",
+        "description": "[ML] Decide on a theme together: underwater, space, garden, cityscape, or abstract!",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Assign Sections",
+        "description": "[ML] Each person gets an area to work on. Plan how sections will connect.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Create Together",
+        "description": "[ML] Everyone works simultaneously! Add to each other's areas if invited.",
+        "duration": "[ML] 40 min"
+      },
+      {
+        "title": "[ML] Add Final Touches",
+        "description": "[ML] Step back, see what's missing. Add connecting elements together.",
+        "duration": "[ML] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Supervise shared materials",
+      "[ML] Respect everyone's work"
+    ],
+    "learningOutcomes": [
+      "[ML] Collaboration skills",
+      "[ML] Respecting others' work",
+      "[ML] Group planning",
+      "[ML] Large-scale art thinking"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] outdoorquest-nature-hunt",
+    "name": "[ML] Nature Scavenger Hunt",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 30 min",
+    "description": "[ML] Explore the outdoors with a checklist of natural treasures to find! Perfect for backyards, parks, or nature trails.",
+    "image": "[ML] /images/nature-hunt.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 234,
+    "materials": [
+      {
+        "name": "[ML] Scavenger hunt checklist",
+        "quantity": "[ML] Printable included!"
+      },
+      {
+        "name": "[ML] Bag or basket"
+      },
+      {
+        "name": "[ML] Magnifying glass",
+        "optional": true
+      },
+      {
+        "name": "[ML] Pencil or crayon"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Print Checklist",
+        "description": "[ML] Use our checklist or create your own: pinecone, feather, smooth rock, flower, etc.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Go Outside!",
+        "description": "[ML] Head to backyard, park, or nature trail. Bring your checklist and collection bag.",
+        "duration": "[ML] 2 min"
+      },
+      {
+        "title": "[ML] Start Hunting",
+        "description": "[ML] Check off items as you find them. Collect items you can take (no picking protected plants!).",
+        "tip": "[ML] Look up, down, and all around - treasures are everywhere!",
+        "duration": "[ML] 20 min"
+      },
+      {
+        "title": "[ML] Observe Closely",
+        "description": "[ML] Use magnifying glass to examine finds. What details do you notice?",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Share Discoveries",
+        "description": "[ML] Show what you found! Learn names of plants and animals you discovered.",
+        "duration": "[ML] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Stay on paths and in sight of adults",
+      "[ML] Don't touch unknown plants or animals",
+      "[ML] Watch for poison ivy/oak",
+      "[ML] Leave wildlife alone"
+    ],
+    "learningOutcomes": [
+      "[ML] Nature identification",
+      "[ML] Observation skills",
+      "[ML] Physical activity",
+      "[ML] Environmental appreciation"
+    ],
+    "crossPillar": [
+      "[ML] artstudio-nature-collage"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] outdoorquest-bug-hotel",
+    "name": "[ML] Bug Hotel",
+    "pillar": "outdoorquest",
+    "category": "Wildlife",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[ML] 45 min",
+    "description": "[ML] Build a cozy habitat for beneficial insects! Create shelter for ladybugs, bees, and other garden helpers.",
+    "image": "[ML] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "[ML] Wooden crate or tin can"
+      },
+      {
+        "name": "[ML] Sticks and twigs"
+      },
+      {
+        "name": "Pinecones"
+      },
+      {
+        "name": "[ML] Bamboo pieces or paper straws"
+      },
+      {
+        "name": "[ML] Dried leaves"
+      },
+      {
+        "name": "[ML] String or wire"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Find a Base",
+        "description": "[ML] Use a clean tin can, small wooden box, or bundle of sticks tied together.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Gather Materials",
+        "description": "[ML] Collect natural materials: hollow sticks, pinecones, bark, dried leaves, etc.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Fill the Hotel",
+        "description": "[ML] Pack materials tightly into your base. Different insects like different spaces!",
+        "tip": "[ML] Hollow tubes for solitary bees, pinecones for ladybugs.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Secure Contents",
+        "description": "[ML] Make sure everything is packed tight. Add wire or more sticks if needed.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Place in Garden",
+        "description": "[ML] Position in a sheltered spot facing south. Off the ground prevents flooding.",
+        "duration": "[ML] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Don't disturb guests once they move in",
+      "[ML] Place away from high-traffic areas",
+      "[ML] Check for existing insect nests before gathering materials"
+    ],
+    "learningOutcomes": [
+      "[ML] Insect ecology",
+      "[ML] Habitat creation",
+      "[ML] Beneficial insects",
+      "[ML] Environmental stewardship"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] outdoorquest-pressed-flowers",
+    "name": "[ML] Pressed Flower Art",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 30 min + drying",
+    "description": "[ML] Preserve beautiful flowers and leaves by pressing! Create bookmarks, cards, or framed art.",
+    "image": "[ML] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[ML] Fresh flowers and leaves"
+      },
+      {
+        "name": "[ML] Heavy books"
+      },
+      {
+        "name": "[ML] Parchment or newspaper"
+      },
+      {
+        "name": "[ML] Frame or cardstock",
+        "optional": true
+      },
+      {
+        "name": "[ML] Clear contact paper",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Collect Specimens",
+        "description": "[ML] Pick flowers and leaves on a dry day. Choose flat flowers or ones you can flatten.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Prepare for Pressing",
+        "description": "[ML] Place flowers between parchment paper. Arrange flat - don't overlap.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Press in Books",
+        "description": "[ML] Put paper with flowers inside heavy book. Stack more books on top.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Wait Patiently",
+        "description": "[ML] Leave for 1-2 weeks. Check occasionally. Change paper if damp.",
+        "duration": "[ML] 1-2 weeks"
+      },
+      {
+        "title": "[ML] Create Art",
+        "description": "[ML] Carefully remove pressed flowers. Arrange on cards, bookmarks, or frame!",
+        "duration": "[ML] 15 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Don't pick from protected areas",
+      "[ML] Pressed flowers are delicate",
+      "[ML] Some plants cause skin irritation"
+    ],
+    "learningOutcomes": [
+      "[ML] Botanical knowledge",
+      "[ML] Patience and delayed gratification",
+      "[ML] Preservation techniques",
+      "[ML] Nature appreciation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] outdoorquest-bird-feeder",
+    "name": "[ML] Coconut Shell Bird Feeder",
+    "pillar": "outdoorquest",
+    "category": "Wildlife",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 20 min",
+    "description": "[ML] Repurpose an empty coconut shell into a beautiful, hanging bird feeder! Fill it with local grains and watch the incredible variety of native birds flock to your garden.",
+    "image": "[ML] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 187,
+    "materials": [
+      {
+        "name": "[ML] Large pinecone"
+      },
+      {
+        "name": "[ML] Peanut butter",
+        "quantity": "[ML] 1/4 cup"
+      },
+      {
+        "name": "Birdseed",
+        "quantity": "[ML] 1 cup"
+      },
+      {
+        "name": "[ML] String or yarn",
+        "quantity": "[ML] 12 inches"
+      },
+      {
+        "name": "[ML] Plate for rolling"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Tie Hanger",
+        "description": "[ML] Tie string securely around top of pinecone for hanging.",
+        "duration": "[ML] 3 min"
+      },
+      {
+        "title": "[ML] Apply Peanut Butter",
+        "description": "[ML] Spread peanut butter all over pinecone, getting into the scales.",
+        "tip": "[ML] Use a butter knife or your hands (messy but fun!).",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Add Seeds",
+        "description": "[ML] Roll coated pinecone in birdseed, pressing seeds into peanut butter.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Hang Outside",
+        "description": "[ML] Hang from a tree branch where you can watch from a window.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Bird Watch",
+        "description": "[ML] Keep a journal of birds that visit! Learn their names and songs.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Check for nut allergies before using peanut butter",
+      "[ML] Alternative: use vegetable shortening",
+      "[ML] Place where squirrels can't easily reach"
+    ],
+    "learningOutcomes": [
+      "[ML] Bird identification",
+      "[ML] Wildlife care",
+      "[ML] Patience and observation",
+      "[ML] Ecosystem understanding"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] outdoorquest-mud-kitchen",
+    "name": "[ML] Mud Kitchen Play",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "Open-ended",
+    "description": "[ML] Set up an outdoor play kitchen for messy, imaginative mud cooking! A classic childhood experience.",
+    "image": "[ML] /images/nature-hunt.webp",
+    "rating": 4.5,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[ML] Old pots and pans"
+      },
+      {
+        "name": "[ML] Wooden spoons"
+      },
+      {
+        "name": "[ML] Measuring cups"
+      },
+      {
+        "name": "[ML] Water source"
+      },
+      {
+        "name": "[ML] Dirt area"
+      },
+      {
+        "name": "[ML] Natural additions",
+        "quantity": "[ML] Leaves, sticks, petals"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Set Up Kitchen",
+        "description": "[ML] Find a good spot near dirt and water. Arrange your tools. A small table helps!",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Prepare Ingredients",
+        "description": "[ML] Gather water, dirt, and natural add-ins like leaves, petals, seeds.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Create Recipes",
+        "description": "[ML] Make mud pies, dirt soup, nature stew! Mix, stir, pour, and create.",
+        "duration": "∞"
+      },
+      {
+        "title": "[ML] Serve and Play",
+        "description": "[ML] Set up a pretend restaurant. Serve your creations to stuffed animal guests!",
+        "duration": "∞"
+      },
+      {
+        "title": "[ML] Clean Up",
+        "description": "[ML] Hose off tools and hands. Some dirty play is good!",
+        "duration": "[ML] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Wash hands thoroughly after play",
+      "[ML] Don't actually eat mud creations!",
+      "[ML] Check area for broken glass or harmful items"
+    ],
+    "learningOutcomes": [
+      "[ML] Imaginative play",
+      "[ML] Sensory exploration",
+      "[ML] Scientific mixing",
+      "[ML] Outdoor comfort"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] outdoorquest-shadow-tracing",
+    "name": "[ML] Shadow Tracing Art",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 20 min",
+    "description": "[ML] Use the sun to create art! Trace shadows of objects, toys, or even friends for unique silhouette artwork.",
+    "image": "[ML] /images/nature-hunt.webp",
+    "rating": 4.4,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[ML] Sidewalk chalk"
+      },
+      {
+        "name": "[ML] Sunny day"
+      },
+      {
+        "name": "[ML] Objects to trace",
+        "quantity": "[ML] Toys, plants, etc."
+      },
+      {
+        "name": "[ML] Paper and pencil",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Find Shadows",
+        "description": "[ML] Go outside on a sunny day. Notice how everything has a shadow!",
+        "duration": "[ML] 3 min"
+      },
+      {
+        "title": "[ML] Position Objects",
+        "description": "[ML] Place toys, plants, or pose yourself to create interesting shadow shapes.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Trace Outlines",
+        "description": "[ML] Use chalk to trace around shadow edges on pavement.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Add Details",
+        "description": "[ML] Color in your traced shadows. Add features, patterns, or backgrounds.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Notice Changes",
+        "description": "[ML] Come back later - have shadows moved? Try tracing the same object at different times!",
+        "duration": "[ML] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Wear sunscreen on sunny days",
+      "[ML] Stay hydrated",
+      "[ML] Don't look directly at the sun"
+    ],
+    "learningOutcomes": [
+      "[ML] Sun and shadows",
+      "[ML] Time and Earth rotation",
+      "[ML] Art techniques",
+      "[ML] Scientific observation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[ML] outdoorquest-cloud-watching",
+    "name": "[ML] Cloud Watching Journal",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 30 min",
+    "description": "[ML] Lie back and watch the clouds! Learn cloud types, spot shapes, and create an imagination journal.",
+    "image": "[ML] /images/nature-hunt.webp",
+    "rating": 4.3,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "Blanket"
+      },
+      {
+        "name": "[ML] Journal or paper"
+      },
+      {
+        "name": "[ML] Crayons or colored pencils"
+      },
+      {
+        "name": "[ML] Cloud identification chart",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Find a Spot",
+        "description": "[ML] Lay blanket in open area with good sky view. Lie on your back.",
+        "duration": "[ML] 3 min"
+      },
+      {
+        "title": "[ML] Observe Clouds",
+        "description": "[ML] Watch the clouds move. What shapes do you see? Animals? Faces? Objects?",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Learn Cloud Types",
+        "description": "[ML] Identify clouds: fluffy cumulus, wispy cirrus, layered stratus. What's up there today?",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Draw and Write",
+        "description": "[ML] Sketch the shapes you see. Write stories about cloud characters.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Predict Weather",
+        "description": "[ML] Different clouds mean different weather. What do today's clouds tell us?",
+        "duration": "[ML] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Don't cloud watch during storms",
+      "[ML] Wear sunglasses on bright days",
+      "[ML] Apply sunscreen"
+    ],
+    "learningOutcomes": [
+      "[ML] Meteorology basics",
+      "[ML] Imagination and creativity",
+      "Relaxation",
+      "[ML] Weather prediction"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] outdoorquest-fairy-garden",
+    "name": "[ML] Fairy Garden",
+    "pillar": "outdoorquest",
+    "category": "Garden",
+    "ageRange": "3-12",
+    "difficulty": "Medium",
+    "timeToMake": "[ML] 1 hour",
+    "description": "[ML] Create a miniature magical garden for fairies! Use tiny plants, pebbles, and handmade accessories.",
+    "image": "[ML] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[ML] Container or garden corner"
+      },
+      {
+        "name": "[ML] Potting soil"
+      },
+      {
+        "name": "[ML] Small plants or moss"
+      },
+      {
+        "name": "[ML] Pebbles and small stones"
+      },
+      {
+        "name": "[ML] Tiny decorations",
+        "quantity": "[ML] Shells, acorns, small figurines"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Choose Location",
+        "description": "[ML] Pick a container (pot, wooden box) or a corner of the yard for your fairy garden.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Add Soil and Base",
+        "description": "[ML] Fill with potting soil. Add pebbles for a path. Create landscape with hills or flat areas.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Plant Greenery",
+        "description": "[ML] Add small plants, moss, or ground cover. Think about scale - everything should be tiny!",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Create Features",
+        "description": "[ML] Make tiny houses from sticks, furniture from acorn caps, fences from twigs.",
+        "duration": "[ML] 20 min"
+      },
+      {
+        "title": "[ML] Add Inhabitants",
+        "description": "[ML] Place fairy figurines, or leave empty for imagination! Add final decorative touches.",
+        "duration": "[ML] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Wash hands after handling soil",
+      "[ML] Small pieces can be choking hazards for young children"
+    ],
+    "learningOutcomes": [
+      "[ML] Gardening basics",
+      "[ML] Miniature design",
+      "[ML] Imaginative play",
+      "[ML] Caring for living things"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] outdoorquest-obstacle-course",
+    "name": "[ML] Backyard Obstacle Course",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 30 min setup",
+    "description": "[ML] Design and conquer your own obstacle course! Jump, crawl, balance, and race through challenges.",
+    "image": "[ML] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 178,
+    "materials": [
+      {
+        "name": "[ML] Hula hoops"
+      },
+      {
+        "name": "[ML] Pool noodles"
+      },
+      {
+        "name": "[ML] Cones or markers"
+      },
+      {
+        "name": "[ML] Rope or string"
+      },
+      {
+        "name": "Buckets"
+      },
+      {
+        "name": "Balls"
+      },
+      {
+        "name": "Timer",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Plan Your Course",
+        "description": "[ML] Decide on 5-8 obstacles. Include different movements: jumping, crawling, throwing, balancing.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Set Up Obstacles",
+        "description": "[ML] Examples: hoop jump, noodle limbo, cone weave, bucket ball toss, rope hop.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Create Start/Finish",
+        "description": "[ML] Mark clear start and finish lines. Number obstacles if doing them in order.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Test Run",
+        "description": "[ML] Run through once yourself. Is it challenging but doable? Adjust difficulty.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "Race!",
+        "description": "[ML] Time yourself, race friends, or try to beat your own record!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Check ground for hazards",
+      "[ML] Age-appropriate challenges",
+      "[ML] No obstacles near hard surfaces",
+      "[ML] Warm up before running"
+    ],
+    "learningOutcomes": [
+      "[ML] Physical fitness",
+      "[ML] Course design",
+      "Sportsmanship",
+      "Problem-solving"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] outdoorquest-leaf-rubbing",
+    "name": "[ML] Leaf Rubbing Art",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 20 min",
+    "description": "[ML] Create beautiful impressions of leaves using crayons! A simple nature art activity perfect for all ages.",
+    "image": "[ML] /images/nature-hunt.webp",
+    "rating": 4.5,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[ML] Fresh leaves",
+        "quantity": "[ML] Various shapes"
+      },
+      {
+        "name": "[ML] White paper"
+      },
+      {
+        "name": "Crayons",
+        "quantity": "Unwrapped"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Collect Leaves",
+        "description": "[ML] Gather leaves with interesting shapes and strong veins. Fresh leaves work best.",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Position Leaves",
+        "description": "[ML] Place leaves vein-side up under paper. Use tape to hold paper still.",
+        "duration": "[ML] 3 min"
+      },
+      {
+        "title": "[ML] Rub with Crayon",
+        "description": "[ML] Rub crayon side across paper over leaf. The leaf pattern appears!",
+        "tip": "[ML] Use side of unwrapped crayon for best results.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Create Composition",
+        "description": "[ML] Make multiple rubbings to create a forest, tree, or abstract design.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Identify Leaves",
+        "description": "[ML] Look up what trees your leaves came from. Label your artwork!",
+        "duration": "[ML] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Wash hands after handling leaves",
+      "[ML] Avoid poison ivy/oak"
+    ],
+    "learningOutcomes": [
+      "[ML] Plant identification",
+      "[ML] Art technique",
+      "[ML] Texture exploration",
+      "[ML] Nature appreciation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] outdoorquest-water-balloons",
+    "name": "[ML] Water Balloon Games",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 30 min play",
+    "description": "[ML] Cool off with exciting water balloon games! From toss to relay races, get ready to get wet!",
+    "image": "[ML] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 189,
+    "materials": [
+      {
+        "name": "[ML] Water balloons",
+        "quantity": "30-50"
+      },
+      {
+        "name": "[ML] Water source"
+      },
+      {
+        "name": "Buckets",
+        "quantity": "2-4"
+      },
+      {
+        "name": "[ML] Open outdoor space"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Fill Balloons",
+        "description": "[ML] Fill balloons at outdoor faucet. Don't overfill - they pop too easily!",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Balloon Toss",
+        "description": "[ML] Partners toss balloon back and forth, stepping back after each catch. Who lasts longest?",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Relay Race",
+        "description": "[ML] Carry balloon on spoon across yard without dropping. Teams compete!",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Target Practice",
+        "description": "[ML] Draw chalk targets. Throw balloons at targets for points!",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Clean Up",
+        "description": "[ML] IMPORTANT: Pick up all balloon pieces - they're harmful to wildlife!",
+        "duration": "[ML] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] ALWAYS clean up balloon pieces",
+      "[ML] Balloons are choking hazards",
+      "[ML] Don't throw at faces",
+      "[ML] Watch for slippery areas"
+    ],
+    "learningOutcomes": [
+      "Teamwork",
+      "[ML] Gross motor skills",
+      "Sportsmanship",
+      "[ML] Environmental responsibility (cleanup)"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[ML] outdoorquest-stargazing",
+    "name": "[ML] Stargazing Night",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[ML] 1 hour",
+    "description": "[ML] Explore the night sky! Learn constellations, spot planets, and maybe catch a shooting star.",
+    "image": "[ML] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "Blanket"
+      },
+      {
+        "name": "[ML] Star chart or app"
+      },
+      {
+        "name": "[ML] Red flashlight",
+        "optional": true
+      },
+      {
+        "name": "Binoculars",
+        "optional": true
+      },
+      {
+        "name": "[ML] Hot cocoa",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[ML] Choose Location",
+        "description": "[ML] Find dark spot away from lights. Backyard works if lights are off!",
+        "duration": "[ML] 5 min"
+      },
+      {
+        "title": "[ML] Let Eyes Adjust",
+        "description": "[ML] Wait 10-15 minutes for eyes to adapt to darkness. Avoid looking at bright lights.",
+        "duration": "[ML] 15 min"
+      },
+      {
+        "title": "[ML] Find North Star",
+        "description": "[ML] Locate Big Dipper, then follow pointer stars to Polaris, the North Star.",
+        "duration": "[ML] 10 min"
+      },
+      {
+        "title": "[ML] Hunt Constellations",
+        "description": "[ML] Use star chart to find Orion, Cassiopeia, and seasonal constellations.",
+        "duration": "[ML] 20 min"
+      },
+      {
+        "title": "[ML] Watch for Movement",
+        "description": "[ML] Satellites cross slowly. Shooting stars streak fast. Planets don't twinkle!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[ML] Stay in safe areas at night",
+      "[ML] Adult supervision required",
+      "[ML] Bring bug spray",
+      "[ML] Dress warmly"
+    ],
+    "learningOutcomes": [
+      "[ML] Astronomy basics",
+      "[ML] Navigation history",
+      "[ML] Patience and observation",
+      "[ML] Wonder and curiosity"
+    ],
+    "isPremium": true
+  }
+]

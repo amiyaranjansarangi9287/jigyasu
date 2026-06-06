@@ -170,7 +170,7 @@ export default function AcidBaseLabCanvas({ isPlaying }: CanvasProps) {
           
           {/* pH Scale */}
           <div className="relative w-full max-w-md">
-            <div className="flex h-16 rounded-xl overflow-hidden border-2 border-slate-600">
+            <div className="flex min-h-16 rounded-xl overflow-hidden border-2 border-slate-600">
               {Array.from({ length: 15 }, (_, i) => (
                 <div
                   key={i}
@@ -269,7 +269,7 @@ export default function AcidBaseLabCanvas({ isPlaying }: CanvasProps) {
             <button
               onClick={resetLab}
               className="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm text-slate-200 transition-colors flex items-center gap-2"
-            >
+             aria-label="Rotate ccw">
               <RotateCcw className="w-4 h-4" /> Reset
             </button>
           </div>
@@ -292,7 +292,7 @@ export default function AcidBaseLabCanvas({ isPlaying }: CanvasProps) {
             <>
               {/* Mystery Box */}
               <motion.div
-                className="w-32 h-32 bg-gradient-to-br from-amber-600 to-orange-700 rounded-2xl flex items-center justify-center text-6xl shadow-xl"
+                className="w-32 min-h-32 bg-gradient-to-br from-amber-600 to-orange-700 rounded-2xl flex items-center justify-center text-6xl shadow-xl"
                 animate={{ rotateY: mysteryGuess ? 180 : 0 }}
               >
                 {mysteryGuess ? actualMysterySubstance?.emoji : '❓'}
@@ -395,7 +395,7 @@ export default function AcidBaseLabCanvas({ isPlaying }: CanvasProps) {
           <div className="flex items-center gap-8">
             <div className="text-center">
               <p className="text-xs text-slate-500 mb-1">Target</p>
-              <div className={`w-16 h-16 rounded-xl ${getPHColor(targetPH)} flex items-center justify-center text-white font-bold text-2xl`}>
+              <div className={`w-16 min-h-16 rounded-xl ${getPHColor(targetPH)} flex items-center justify-center text-white font-bold text-2xl`}>
                 {targetPH}
               </div>
             </div>
@@ -403,7 +403,7 @@ export default function AcidBaseLabCanvas({ isPlaying }: CanvasProps) {
             <div className="text-center">
               <p className="text-xs text-slate-500 mb-1">Current</p>
               <motion.div 
-                className={`w-16 h-16 rounded-xl ${getPHColor(beakerPH)} flex items-center justify-center text-white font-bold text-2xl`}
+                className={`w-16 min-h-16 rounded-xl ${getPHColor(beakerPH)} flex items-center justify-center text-white font-bold text-2xl`}
                 animate={{ scale: [1, 1.1, 1] }}
                 transition={{ duration: 0.3 }}
                 key={beakerPH}
@@ -414,7 +414,7 @@ export default function AcidBaseLabCanvas({ isPlaying }: CanvasProps) {
           </div>
 
           {/* Beaker Visual */}
-          <div className="relative w-24 h-32 border-4 border-slate-500 border-t-0 rounded-b-xl overflow-hidden">
+          <div className="relative w-24 min-h-32 border-4 border-slate-500 border-t-0 rounded-b-xl overflow-hidden">
             <motion.div
               className={`absolute bottom-0 left-0 right-0 ${getPHColor(beakerPH)}`}
               animate={{ height: '70%' }}

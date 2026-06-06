@@ -1,9 +1,9 @@
 import { lazy, Suspense,  useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Trees } from 'lucide-react'
-const HabitatsCanvas = lazy(() => import('../../components/canvases/HabitatsCanvas'));
-const AudioNarration = lazy(() => import('../../components/AudioNarration'));
-const CanvasWithNarrator = lazy(() => import('../../components/CanvasWithNarrator'));
+import HabitatsCanvas from '../../components/canvases/HabitatsCanvas';
+import AudioNarration from '../../components/AudioNarration';
+import CanvasWithNarrator from '../../components/CanvasWithNarrator';
 import { getConceptById } from '../../data/concepts'
 
 export default function Habitats() {

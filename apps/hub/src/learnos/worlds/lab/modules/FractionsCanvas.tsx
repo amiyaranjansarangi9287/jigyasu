@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface FractionsCanvasProps {
   numerator: number;
@@ -6,6 +7,7 @@ interface FractionsCanvasProps {
 }
 
 export default function FractionsCanvas({ numerator, denominator }: FractionsCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const animationRef = useRef({ currentNumerator: 0, targetNumerator: numerator });

@@ -2,6 +2,7 @@
 // Arrange scrambled words into correct sentence order. Canvas animation on success.
 
 import { useRef, useEffect, useState, useCallback, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSettingsStore } from '@/store';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
@@ -12,6 +13,7 @@ import { useEarlySession } from '../hooks/useEarlySession';
 import { WORD_SENTENCES } from '../data/earlyContent';
 
 export default function WordScramble() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const soundEnabled = useSettingsStore((s) => s.soundEnabled);
@@ -133,8 +135,8 @@ export default function WordScramble() {
         {/* Pip instruction */}
         <div className="bg-white rounded-2xl p-4 shadow-sm border border-amber-200 mb-6">
           <div className="flex items-center gap-3">
-            <span className="text-3xl">🐤✏️</span>
-            <p className="text-lg font-bold text-gray-700">Put the words in the right order!</p>
+            <span className="text-3xl">{t('early.modules.WordScramble.spn_', '🐤✏️')}</span>
+            <p className="text-lg font-bold text-gray-700">{t('early.modules.WordScramble.txt_Puttheword', 'Put the words in the right order!')}</p>
           </div>
         </div>
 

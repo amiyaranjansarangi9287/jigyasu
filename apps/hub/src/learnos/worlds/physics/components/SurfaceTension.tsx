@@ -29,7 +29,7 @@ export default function SurfaceTension() {
   const [mode, setMode] = useState<'explore' | 'game'>('explore');
   const [targets, setTargets] = useState<Target[]>([]);
   const [droplets, setDroplets] = useState<Droplet[]>([]);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
   const [quizAnswer, setQuizAnswer] = useState<string | null>(null);
   const [quizCorrect, setQuizCorrect] = useState<boolean | null>(null);
   const [currentQuiz, setCurrentQuiz] = useState(0);
@@ -150,7 +150,7 @@ export default function SurfaceTension() {
       ctx.fillStyle = '#06b6d4';
       ctx.font = 'bold 12px sans-serif';
       ctx.textAlign = 'left';
-      ctx.fillText(`Score: ${score}/${targets.length}`, 20, 35);
+      ctx.fillText(`Mastery: ${mastery}/${targets.length}`, 20, 35);
 
       if (targets.every(t => t.hit)) {
         ctx.fillStyle = 'rgba(0,0,0,0.7)';
@@ -207,7 +207,7 @@ export default function SurfaceTension() {
                 const dist = Math.sqrt((nx - target.x) ** 2 + (ny - target.y) ** 2);
                 if (dist < target.radius + d.radius) {
                   hitTarget = true;
-                  setScore(s => s + 1);
+                  setMastery(m => m + 1);
                   return { ...target, hit: true };
                 }
                 return target;
@@ -290,8 +290,8 @@ export default function SurfaceTension() {
         </div>
 
         <div className="flex gap-2 mb-4">
-          <button onClick={() => { setMode('explore'); setTargets([]); setDroplets([]); setScore(0); }} className={`px-4 py-2 rounded-lg text-sm font-bold ${mode === 'explore' ? 'bg-cyan-600 text-white' : 'bg-gray-800 text-gray-400'}`}>🔬 Explore</button>
-          <button onClick={() => { setMode('game'); setTargets([]); setDroplets([]); setScore(0); }} className={`px-4 py-2 rounded-lg text-sm font-bold ${mode === 'game' ? 'bg-cyan-600 text-white' : 'bg-gray-800 text-gray-400'}`}>🎯 Droplet Game</button>
+          <button onClick={() => { setMode('explore'); setTargets([]); setDroplets([]); setMastery(0); }} className={`px-4 py-2 rounded-lg text-sm font-bold ${mode === 'explore' ? 'bg-cyan-600 text-white' : 'bg-gray-800 text-gray-400'}`}>🔬 Explore</button>
+          <button onClick={() => { setMode('game'); setTargets([]); setDroplets([]); setMastery(0); }} className={`px-4 py-2 rounded-lg text-sm font-bold ${mode === 'game' ? 'bg-cyan-600 text-white' : 'bg-gray-800 text-gray-400'}`}>🎯 Droplet Game</button>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
@@ -320,7 +320,7 @@ export default function SurfaceTension() {
               <>
                 <p className="text-sm text-gray-400">Click to launch droplets!</p>
                 <p className="text-sm text-gray-400">Higher tension = bigger droplets</p>
-                <button onClick={() => { setTargets([]); setDroplets([]); setScore(0); }} className="w-full py-2 rounded-lg bg-gray-700 text-white text-sm font-bold">🔄 Reset Game</button>
+                <button onClick={() => { setTargets([]); setDroplets([]); setMastery(0); }} className="w-full py-2 rounded-lg bg-gray-700 text-white text-sm font-bold">🔄 Reset Game</button>
               </>
             )}
             <button onClick={handleComplete} className="w-full py-2 rounded-lg bg-cyan-600/20 border border-cyan-500/30 text-cyan-400 font-bold text-sm hover:bg-cyan-600/30">✓ Mark Complete (+25 XP)</button>
@@ -336,7 +336,7 @@ export default function SurfaceTension() {
             ))}
           </div>
           {quizCorrect === true && <p className="mt-3 text-green-400 font-bold text-sm">✅ Correct! +10 bonus XP!</p>}
-          {quizCorrect === false && <p className="mt-3 text-red-400 font-bold text-sm">❌ Answer: {quizQuestions[currentQuiz].options[quizQuestions[currentQuiz].correct]}</p>}
+          {quizCorrect === false && <p className="mt-3 text-red-400 font-bold text-sm">🤔 Answer: {quizQuestions[currentQuiz].options[quizQuestions[currentQuiz].correct]}</p>}
           {quizCorrect === true && currentQuiz < quizQuestions.length - 1 && <button onClick={() => { setCurrentQuiz(prev => prev + 1); setQuizAnswer(null); setQuizCorrect(null); }} className="mt-3 py-2 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white font-bold text-sm">Next Question →</button>}
         </div>
       </div>

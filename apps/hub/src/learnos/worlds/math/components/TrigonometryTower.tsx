@@ -8,7 +8,7 @@ export default function TrigonometryTower() {
   const [challengeAngle, setChallengeAngle] = useState(30);
   const [answer, setAnswer] = useState('');
   const [feedback, setFeedback] = useState<string | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
 
   const rad = (angle * Math.PI) / 180;
   const sinVal = Math.sin(rad);
@@ -81,7 +81,7 @@ export default function TrigonometryTower() {
 
     if (isCorrect) {
       setFeedback('correct');
-      setScore(s => s + 10);
+      setMastery(m => m + 1);
       setTimeout(generateChallenge, 1500);
     } else {
       setFeedback(`Wrong! ${challengeFunc}(${challengeAngle}°) = ${correct}`);
@@ -106,7 +106,7 @@ export default function TrigonometryTower() {
       {mode === 'challenge' && (
         <motion.div className="max-w-md mx-auto bg-purple-500/10 rounded-2xl p-6 border border-purple-500/30 mb-6"
           initial={{ scale: 0.9 }} animate={{ scale: 1 }}>
-          <span className="bg-yellow-500/20 text-yellow-300 px-2 py-1 rounded text-sm font-bold">⭐ Score: {score}</span>
+          <span className="bg-yellow-500/20 text-yellow-300 px-2 py-1 rounded text-sm font-bold">⭐ Mastery: {mastery}</span>
           <p className="text-2xl font-bold text-white text-center mt-4">
             {challengeFunc}(<span className="text-purple-400">{challengeAngle}°</span>) = ?
           </p>

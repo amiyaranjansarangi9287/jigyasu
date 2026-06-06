@@ -364,7 +364,7 @@ export default function DNAVisualizer() {
                         <div className="text-gray-600">→</div>
                         <div className={`flex-1 px-3 py-1.5 rounded-lg text-sm font-medium ${
                           result?.amino === 'STOP'
-                            ? 'bg-red-500/10 text-red-400 border border-red-500/30'
+                            ? 'bg-red-500/10 text-orange-400 border border-red-500/30'
                             : result?.amino.includes('START')
                             ? 'bg-green-500/10 text-green-400 border border-green-500/30'
                             : 'bg-purple-500/10 text-purple-300 border border-purple-500/20'
@@ -383,7 +383,7 @@ export default function DNAVisualizer() {
                     <li>• They code for only <strong className="text-white">20 amino acids</strong> + STOP signals</li>
                     <li>• This means the code is <strong className="text-purple-400">degenerate</strong> — multiple codons can code for the same amino acid</li>
                     <li>• <strong className="text-green-400">AUG</strong> is the universal START codon (also codes for Methionine)</li>
-                    <li>• <strong className="text-red-400">UAA, UAG, UGA</strong> are the three STOP codons</li>
+                    <li>• <strong className="text-orange-400">UAA, UAG, UGA</strong> are the three STOP codons</li>
                   </ul>
                 </div>
               </div>

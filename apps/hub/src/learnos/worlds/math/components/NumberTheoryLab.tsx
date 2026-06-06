@@ -335,7 +335,7 @@ function PrimeChecker() {
       {/* Result card */}
       <motion.div
         key={num}
-        className={`rounded-2xl p-6 text-center border-2 ${prime ? 'bg-yellow-500/10 border-yellow-500/40' : 'bg-red-500/10 border-red-500/40'}`}
+        className={`rounded-2xl p-6 text-center border-2 ${prime ? 'bg-yellow-500/10 border-yellow-500/40' : 'bg-white/5 border-white/10'}`}
         initial={{ scale: 0.9 }}
         animate={{ scale: 1 }}
       >
@@ -345,7 +345,7 @@ function PrimeChecker() {
         >
           {prime ? '👑' : '🔨'}
         </motion.span>
-        <h3 className={`text-3xl font-bold ${prime ? 'text-yellow-400' : 'text-red-400'}`}>
+        <h3 className={`text-3xl font-bold ${prime ? 'text-yellow-400' : 'text-orange-400'}`}>
           {num} is {prime ? 'PRIME!' : 'NOT prime'}
         </h3>
         {!prime && (

@@ -152,7 +152,7 @@ export default function DopplerEffect() {
         </div>
 
         <div className="mt-8 p-6 rounded-2xl bg-gray-900 border border-red-500/20">
-          <h3 className="text-lg font-bold text-red-400 mb-3">🧠 Challenge: Test Your Knowledge</h3>
+          <h3 className="text-lg font-bold text-orange-400 mb-3">🧠 Challenge: Test Your Knowledge</h3>
           <p className="text-sm text-gray-300 mb-4">{quizQuestions[currentQuiz].q}</p>
           <div className="grid grid-cols-2 gap-3">
             {quizQuestions[currentQuiz].options.map((opt, idx) => (
@@ -160,7 +160,7 @@ export default function DopplerEffect() {
             ))}
           </div>
           {quizCorrect === true && <p className="mt-3 text-green-400 font-bold text-sm">✅ Correct! +10 bonus XP!</p>}
-          {quizCorrect === false && <p className="mt-3 text-red-400 font-bold text-sm">❌ Answer: {quizQuestions[currentQuiz].options[quizQuestions[currentQuiz].correct]}</p>}
+          {quizCorrect === false && <p className="mt-3 text-orange-400 font-bold text-sm">🤔 Answer: {quizQuestions[currentQuiz].options[quizQuestions[currentQuiz].correct]}</p>}
           {quizCorrect === true && currentQuiz < quizQuestions.length - 1 && <button onClick={() => { setCurrentQuiz(prev => prev + 1); setQuizAnswer(null); setQuizCorrect(null); }} className="mt-3 py-2 rounded-lg bg-red-600 hover:bg-red-500 text-white font-bold text-sm">Next Question →</button>}
         </div>
       </div>

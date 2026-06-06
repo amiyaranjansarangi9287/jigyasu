@@ -14,7 +14,7 @@ export function HeartBurst({ isFavorite, onToggle, className = "" }: { isFavorit
   };
 
   return (
-    <button onClick={handleClick} className={`relative flex items-center justify-center ${className}`}>
+    <button onClick={handleClick} className={`relative flex items-center justify-center ${className}`} aria-label="Animate presence">
       <AnimatePresence>
         {showBurst && [...Array(6)].map((_, i) => (
           <motion.div

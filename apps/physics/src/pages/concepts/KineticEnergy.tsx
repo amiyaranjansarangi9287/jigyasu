@@ -1,9 +1,9 @@
 import { lazy, Suspense,  useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Zap } from 'lucide-react'
-const KineticEnergyCanvas = lazy(() => import('../../components/canvases/KineticEnergyCanvas'));
-const AudioNarration = lazy(() => import('../../components/AudioNarration'));
-const CanvasWithNarrator = lazy(() => import('../../components/CanvasWithNarrator'));
+import KineticEnergyCanvas from '../../components/canvases/KineticEnergyCanvas';
+import AudioNarration from '../../components/AudioNarration';
+import CanvasWithNarrator from '../../components/CanvasWithNarrator';
 import { getConceptById } from '../../data/concepts'
 
 export default function KineticEnergy() {

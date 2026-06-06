@@ -59,7 +59,7 @@ export default function ToddlerZone({
               onClick={onExitToddlerZone}
               className="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 hover:bg-orange-200 dark:hover:bg-orange-800 transition-colors font-bold text-lg shadow-sm"
               style={{ minWidth: '140px', minHeight: '48px' }}
-            >
+             aria-label="Action button">
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
@@ -131,6 +131,7 @@ export default function ToddlerZone({
                 >
                   <div className="text-5xl mb-2">{pillar.icon}</div>
                   <div className={`font-bold text-lg ${selectedPillar === pillar.id ? 'text-white' : 'text-gray-900 dark:text-white'}`}>
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     {t(`pillar_${pillar.id}` as any, pillar.name || '')}
                   </div>
                   <div className={`text-sm ${selectedPillar === pillar.id ? 'text-white/80' : 'text-gray-500'}`}>
@@ -148,6 +149,7 @@ export default function ToddlerZone({
         <div className="max-w-5xl mx-auto">
           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
             {selectedPillar 
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
               ? `${pillars.find(p => p.id === selectedPillar)?.icon} ${t(`pillar_${selectedPillar}` as any, pillars.find(p => p.id === selectedPillar)?.name || '')} ${t('kidscamp.toddler.activities_suffix', 'Activities')}`
               : t('kidscamp.toddler.all_activities', '🎉 All Activities')}
             <span className="text-gray-400 font-normal ml-2">({filteredActivities.length})</span>
@@ -164,7 +166,7 @@ export default function ToddlerZone({
                   className="group bg-white dark:bg-gray-800 rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-pink-300 dark:hover:border-pink-600"
                 >
                   {/* Image */}
-                  <div className="relative h-40 overflow-hidden">
+                  <div className="relative min-h-40 overflow-hidden">
                     <img
                       src={activity.image}
                       alt={activity.name}
@@ -193,7 +195,7 @@ export default function ToddlerZone({
                         e.stopPropagation();
                         onToggleFavorite(activity.id);
                       }}
-                      className={`absolute top-3 right-3 w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all ${
+                      className={`absolute top-3 right-3 w-12 min-h-12 rounded-full flex items-center justify-center shadow-lg transition-all ${
                         isFavorite(activity.id)
                           ? 'bg-pink-500 text-white scale-110'
                           : 'bg-white/90 text-gray-400 hover:scale-110'
@@ -210,7 +212,7 @@ export default function ToddlerZone({
                     </button>
 
                     {/* Pillar Icon */}
-                    <div className="absolute bottom-3 left-3 w-12 h-12 rounded-2xl bg-white dark:bg-gray-900 flex items-center justify-center text-2xl shadow-lg">
+                    <div className="absolute bottom-3 left-3 w-12 min-h-12 rounded-2xl bg-white dark:bg-gray-900 flex items-center justify-center text-2xl shadow-lg">
                       {pillar?.icon}
                     </div>
                   </div>

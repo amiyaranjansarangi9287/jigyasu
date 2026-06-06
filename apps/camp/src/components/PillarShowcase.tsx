@@ -83,7 +83,7 @@ export default function PillarShowcase({ onSelectPillar, selectedAge }: PillarSh
                 }}
               >
                 {/* Image Header */}
-                <div className="relative h-40 overflow-hidden">
+                <div className="relative min-h-40 overflow-hidden">
                   <img
                     src={extras.image}
                     alt={pillar.name}
@@ -92,7 +92,7 @@ export default function PillarShowcase({ onSelectPillar, selectedAge }: PillarSh
                   <div className={`absolute inset-0 bg-gradient-to-t ${pillar.gradientFrom} ${pillar.gradientTo} opacity-60`} />
                   
                   {/* Icon */}
-                  <div className="absolute top-4 left-4 w-14 h-14 rounded-2xl bg-white/90 dark:bg-gray-900/90 flex items-center justify-center shadow-lg">
+                  <div className="absolute top-4 left-4 w-14 min-h-14 rounded-2xl bg-white/90 dark:bg-gray-900/90 flex items-center justify-center shadow-lg">
                     <span className="text-3xl">{pillar.icon}</span>
                   </div>
 

@@ -1,6 +1,7 @@
 // src/worlds/early/modules/StoryBuilder.tsx
 
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import EarlyShell from '../EarlyShell';
 import { usePip } from '../hooks/usePip';
@@ -12,6 +13,7 @@ import { STORY_CHARACTERS, STORY_PLACES, STORY_PROBLEMS, STORY_PANEL_TEMPLATES }
 type BuildStep = 'character' | 'place' | 'problem' | 'story' | 'quiz';
 
 export default function StoryBuilder() {
+  const { t } = useTranslation();
   const pip = usePip();
   const { recordStoryBuilt } = useEarlyProgress();
   const { trackCorrect, trackWrong } = useEarlySession();
@@ -56,7 +58,7 @@ export default function StoryBuilder() {
   const SelectionGrid = ({ items, onSelect, title }: { items: { id: string; name: string; emoji: string }[]; onSelect: (item: typeof items[0]) => void; title: string }) => (
     <div className="min-h-screen bg-gradient-to-b from-purple-50 to-indigo-50 flex flex-col p-6">
       <div className="bg-white rounded-2xl p-4 shadow-sm border border-purple-100 mb-6">
-        <div className="flex items-center gap-3"><span className="text-3xl">🐤</span><p className="text-lg font-bold text-gray-700">{title}</p></div>
+        <div className="flex items-center gap-3"><span className="text-3xl">{t('early.modules.StoryBuilder.spn_', '🐤')}</span><p className="text-lg font-bold text-gray-700">{title}</p></div>
       </div>
       <div className="grid grid-cols-2 gap-4 flex-1">
         {items.map((item) => (
@@ -99,7 +101,7 @@ export default function StoryBuilder() {
             className="min-h-screen bg-gradient-to-b from-purple-50 to-indigo-50 flex flex-col p-6 justify-center">
             <div className="bg-white rounded-3xl p-6 shadow-sm border border-purple-100 mb-6">
               <div className="text-4xl text-center mb-3">🐤</div>
-              <p className="text-xl font-bold text-gray-800 text-center">Who was the main character in the story?</p>
+              <p className="text-xl font-bold text-gray-800 text-center">{t('early.modules.StoryBuilder.txt_Whowasthem', 'Who was the main character in the story?')}</p>
             </div>
             <div className="space-y-3">
               {comprehensionOptions.map((opt, i) => {

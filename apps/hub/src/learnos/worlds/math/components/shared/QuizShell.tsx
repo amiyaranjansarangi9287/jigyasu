@@ -40,7 +40,7 @@ export default function QuizShell({ emoji, moduleId, generateQuestion }: QuizShe
   const [level, setLevel] = useState<DiffLevel>(stats.level);
   const [question, setQuestion] = useState<QuizQuestion>(() => generateQuestion(stats.level));
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
   const [streak, setStreak] = useState(0);
   const [total, setTotal] = useState(0);
   const [correct, setCorrect] = useState(0);
@@ -96,7 +96,7 @@ export default function QuizShell({ emoji, moduleId, generateQuestion }: QuizShe
     if (isCorrect) {
       setFeedback('correct');
       sfx.correct();
-      setScore(s => s + xpGained);
+      setMastery(m => m + 1);
       setStreak(s => s + 1);
       setCorrect(c => c + 1);
 
@@ -130,7 +130,7 @@ export default function QuizShell({ emoji, moduleId, generateQuestion }: QuizShe
       {/* Stats bar */}
       <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
         <div className="flex items-center gap-2 flex-wrap">
-          <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">⭐ {score}</span>
+          <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">⭐ {mastery}</span>
           <span className="bg-white/5 px-3 py-1.5 rounded-lg text-orange-400 font-bold text-sm">🔥 {streak}</span>
           {total > 0 && <span className="bg-white/5 px-3 py-1.5 rounded-lg text-green-400 font-bold text-sm">🎯 {accuracy}%</span>}
         </div>
@@ -172,7 +172,7 @@ export default function QuizShell({ emoji, moduleId, generateQuestion }: QuizShe
               feedback === 'correct'
                 ? 'bg-green-500/10 border-green-500/40'
                 : feedback === 'wrong'
-                ? 'bg-red-500/10 border-red-500/40'
+                ? 'bg-white/5 border-white/10'
                 : 'bg-white/5 border-white/10'
             }`}
           >
@@ -280,11 +280,11 @@ export default function QuizShell({ emoji, moduleId, generateQuestion }: QuizShe
           {feedback === 'wrong' && (
             <motion.div className="mt-4 text-center relative z-20">
               <motion.p
-                className="text-red-400 font-bold"
+                className="text-orange-400 font-bold"
                 initial={{ x: -10 }}
                 animate={{ x: [10, -10, 5, 0] }}
               >
-                ❌ Answer: {question.answer}
+                🤔 Answer: {question.answer}
               </motion.p>
               {question.explanation && (
                 <ExplanatoryFeedback explanation={question.explanation} />

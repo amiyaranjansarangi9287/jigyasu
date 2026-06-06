@@ -39,7 +39,7 @@ export default function VolumeExplorer3D() {
   const [mode, setMode] = useState<'explore' | 'challenge'>('explore');
   const [challenge, setChallenge] = useState(makeVolumeChallenge);
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
 
   const calc = useMemo(() => {
     switch (shape) {
@@ -55,7 +55,7 @@ export default function VolumeExplorer3D() {
     if (feedback) return;
     if (opt === challenge.answer) {
       setFeedback('correct');
-      setScore((s) => s + 10);
+      setMastery((s) => s + 10);
       setTimeout(() => { setChallenge(makeVolumeChallenge()); setFeedback(null); }, 1200);
     } else {
       setFeedback('wrong');
@@ -99,14 +99,14 @@ export default function VolumeExplorer3D() {
       <AnimatePresence mode="wait">
         {mode === 'challenge' ? (
           <motion.div key="challenge" className="max-w-lg mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-red-500/10 border-red-500/40' : 'bg-white/5 border-white/10'}`}>
-              <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {score}</span><span className="text-gray-400 text-sm">Round answers</span></div>
+            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
+              <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {mastery}</span><span className="text-gray-400 text-sm">Round answers</span></div>
               <p className="text-2xl font-bold text-white text-center mb-5">{challenge.question}</p>
               <div className="grid grid-cols-2 gap-3">
                 {challenge.options.map((option) => <motion.button key={option} className={`py-3 rounded-xl text-xl font-bold ${feedback === 'correct' && option === challenge.answer ? 'bg-green-500 text-white' : feedback ? 'bg-white/5 text-gray-500' : 'bg-white/10 text-white hover:bg-white/20 border border-white/20'}`} whileHover={!feedback ? { scale: 1.05 } : {}} whileTap={!feedback ? { scale: 0.95 } : {}} onClick={() => answerChallenge(option)} disabled={!!feedback}>{option}</motion.button>)}
               </div>
               {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✅ Correct!</p>}
-              {feedback === 'wrong' && <p className="text-red-400 font-bold text-center mt-4">Try again.</p>}
+              {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Try again.</p>}
             </div>
           </motion.div>
         ) : (

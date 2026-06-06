@@ -146,7 +146,7 @@ export default function AlgebraArena() {
   const [equation, setEquation] = useState<Equation | null>(null);
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
   const [showSteps, setShowSteps] = useState(false);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
   const [streak, setStreak] = useState(0);
   const [round, setRound] = useState(0);
 
@@ -164,7 +164,7 @@ export default function AlgebraArena() {
     if (option === equation.answer) {
       setFeedback('correct');
       math.correct('algebra', difficulty === 'advanced' ? 30 : difficulty === 'intermediate' ? 20 : 10);
-      setScore(s => s + (difficulty === 'advanced' ? 30 : difficulty === 'intermediate' ? 20 : 10));
+      setMastery(m => m + 1);
       setStreak(s => s + 1);
       setTimeout(nextEquation, 1500);
     } else {
@@ -255,7 +255,7 @@ export default function AlgebraArena() {
 
       {/* Stats */}
       <div className="flex justify-center gap-4 mb-4">
-        <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">⭐ {score}</span>
+        <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">⭐ {mastery}</span>
         <span className="bg-white/5 px-3 py-1.5 rounded-lg text-orange-400 font-bold text-sm">🔥 {streak}</span>
         <span className="bg-white/5 px-3 py-1.5 rounded-lg text-blue-400 font-bold text-sm">🔄 {round}</span>
       </div>
@@ -264,7 +264,7 @@ export default function AlgebraArena() {
       <motion.div
         key={round}
         className={`max-w-lg mx-auto rounded-3xl p-6 sm:p-8 border-2 transition-colors ${
-          feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-red-500/10 border-red-500/40' : 'bg-white/5 border-white/10'
+          feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'
         }`}
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
@@ -335,8 +335,8 @@ export default function AlgebraArena() {
           </motion.p>
         )}
         {feedback === 'wrong' && (
-          <motion.p className="mt-4 text-center text-red-400 font-bold" initial={{ x: -10 }} animate={{ x: [10, -10, 5, 0] }}>
-            {t('math_modules.AlgebraArena.wrong', '❌ Try again! Check the steps for a hint.')}
+          <motion.p className="mt-4 text-center text-orange-400 font-bold" initial={{ x: -10 }} animate={{ x: [10, -10, 5, 0] }}>
+            {t('math_modules.AlgebraArena.wrong', '🤔 Try again! Check the steps for a hint.')}
           </motion.p>
         )}
       </motion.div>

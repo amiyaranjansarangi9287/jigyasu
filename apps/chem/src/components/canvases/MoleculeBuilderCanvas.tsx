@@ -163,7 +163,7 @@ export default function MoleculeBuilderCanvas({ isPlaying }: CanvasProps) {
 
     return (
       <div 
-        className="relative w-64 h-64 mx-auto"
+        className="relative w-64 min-h-64 mx-auto"
         style={{ perspective: '500px' }}
         onMouseMove={(e) => {
           if (!autoRotate) {
@@ -291,7 +291,7 @@ export default function MoleculeBuilderCanvas({ isPlaying }: CanvasProps) {
           <div
             ref={canvasRef}
             onClick={handleCanvasClick}
-            className="relative w-full max-w-md h-64 bg-slate-800/50 rounded-2xl border-2 border-dashed border-slate-600 cursor-crosshair overflow-hidden"
+            className="relative w-full max-w-md min-h-64 bg-slate-800/50 rounded-2xl border-2 border-dashed border-slate-600 cursor-crosshair overflow-hidden"
           >
             {placedAtoms.length === 0 && (
               <div className="absolute inset-0 flex items-center justify-center text-slate-500 pointer-events-none">
@@ -384,7 +384,7 @@ export default function MoleculeBuilderCanvas({ isPlaying }: CanvasProps) {
             <button
               onClick={clearCanvas}
               className="flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm text-slate-200 transition-colors"
-            >
+             aria-label="Trash2">
               <Trash2 className="w-4 h-4" /> Clear
             </button>
             <button

@@ -61,7 +61,7 @@ export default function SearchOverlay({ isOpen, onClose }: { isOpen: boolean, on
                   }}
                   className={`flex items-center gap-4 p-4 rounded-2xl cursor-pointer transition-colors bg-gradient-to-r hover:${w.gradient} hover:text-white group border border-slate-100 hover:border-transparent`}
                 >
-                  <div className="text-4xl bg-white/20 rounded-xl w-14 h-14 flex items-center justify-center shadow-sm">
+                  <div className="text-4xl bg-white/20 rounded-xl w-14 min-h-14 flex items-center justify-center shadow-sm">
                     {w.emoji}
                   </div>
                   <div className="flex-1">

@@ -20,6 +20,7 @@ export function useConnectionOptimization(): ConnectionOptimization {
 
   useEffect(() => {
     // Detect connection type
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const connection = (navigator as any).connection;
     if (connection) {
       const effectiveType = connection.effectiveType;
@@ -40,6 +41,7 @@ export function useConnectionOptimization(): ConnectionOptimization {
 
     // Listen for connection changes
     const handleConnectionChange = () => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const conn = (navigator as any).connection;
       if (conn) {
         const effectiveType = conn.effectiveType;

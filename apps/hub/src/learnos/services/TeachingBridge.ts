@@ -66,8 +66,7 @@ export interface TeachingBridgeClientOptions {
   fetcher?: typeof fetch;
 }
 
-const DEFAULT_HINT =
-  'Try one small example from the lesson, then explain what changed in your own words.';
+const DEFAULT_HINT = 'core.pedagogy.hints.fallback';
 
 function bridgeEnabled(): boolean {
   return import.meta.env.VITE_TEACHING_BRIDGE_ENABLED === 'true';

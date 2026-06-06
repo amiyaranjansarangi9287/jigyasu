@@ -1,6 +1,7 @@
 // src/worlds/early/modules/WaterCycleJourney.tsx
 
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import EarlyShell from '../EarlyShell';
 import { usePip } from '../hooks/usePip';
@@ -15,6 +16,7 @@ const WATER_STAGES = [
 ];
 
 export default function WaterCycleJourney() {
+  const { t } = useTranslation();
   const pip = usePip();
   const { recordWaterCycle } = useEarlyProgress();
   const { trackCorrect, trackWrong } = useEarlySession();
@@ -66,7 +68,7 @@ export default function WaterCycleJourney() {
         </div>
 
         <div className="mx-5 bg-blue-50 rounded-2xl p-4 border border-blue-200 mb-4">
-          <div className="flex items-start gap-2"><span className="text-3xl flex-shrink-0">💧</span><p className="text-base text-blue-800 font-medium italic leading-relaxed">"{stage.droppyText}"</p></div>
+          <div className="flex items-start gap-2"><span className="text-3xl flex-shrink-0">{t('early.modules.WaterCycleJourney.spn_', '💧')}</span><p className="text-base text-blue-800 font-medium italic leading-relaxed">"{stage.droppyText}"</p></div>
         </div>
 
         {!showQuestion && !cycleComplete && (
@@ -76,7 +78,7 @@ export default function WaterCycleJourney() {
         <AnimatePresence>
           {showQuestion && !cycleComplete && (
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mx-5 bg-white rounded-3xl p-5 shadow-xl border border-blue-200">
-              <div className="flex items-center gap-2 mb-4"><span className="text-3xl">🐤</span><p className="font-bold text-gray-800">{stage.question}</p></div>
+              <div className="flex items-center gap-2 mb-4"><span className="text-3xl">{t('early.modules.WaterCycleJourney.spn_', '🐤')}</span><p className="font-bold text-gray-800">{stage.question}</p></div>
               <div className="space-y-2">{stage.options.map((opt, i) => {
                 const done = selectedAnswer !== null;
                 return (<button key={opt} onClick={() => handleAnswer(i)} className={`w-full py-3 px-4 rounded-xl text-left font-medium text-base min-h-[48px] transition-all ${!done ? 'bg-gray-50 border-2 border-gray-200' : i === stage.correct ? 'bg-green-100 border-2 border-green-400 text-green-700' : selectedAnswer === i ? 'bg-red-100 border-2 border-red-300 text-red-600' : 'bg-white border-2 border-gray-100 text-gray-500'}`}>{opt} {done && i === stage.correct && '✓'}</button>);
@@ -88,8 +90,8 @@ export default function WaterCycleJourney() {
             <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="mx-5 bg-gradient-to-br from-blue-500 to-sky-600 rounded-3xl p-6 text-white text-center">
               <div className="text-5xl mb-3">💧🌊☁️🌧️</div>
               <h3 className="text-2xl font-extrabold mb-2">Water Cycle Complete!</h3>
-              <p className="text-base text-blue-100 mb-4">Droppy thanks you!</p>
-              <button onClick={handleRestart} className="px-6 py-3 bg-white text-blue-600 font-bold rounded-2xl min-h-[48px]">Follow Droppy Again 💧</button>
+              <p className="text-base text-blue-100 mb-4">{t('early.modules.WaterCycleJourney.txt_Droppythan', 'Droppy thanks you!')}</p>
+              <button onClick={handleRestart} className="px-6 py-3 bg-white text-blue-600 font-bold rounded-2xl min-h-[48px]">{t('early.modules.WaterCycleJourney.btn_FollowDrop', 'Follow Droppy Again 💧')}</button>
             </motion.div>
           )}
         </AnimatePresence>

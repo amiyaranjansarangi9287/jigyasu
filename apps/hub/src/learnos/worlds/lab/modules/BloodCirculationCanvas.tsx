@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface BloodCirculationCanvasProps {
   heartRate: number;
@@ -6,6 +7,7 @@ interface BloodCirculationCanvasProps {
 }
 
 export default function BloodCirculationCanvas({ heartRate, isPlaying }: BloodCirculationCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const heartRateRef = useRef(heartRate);

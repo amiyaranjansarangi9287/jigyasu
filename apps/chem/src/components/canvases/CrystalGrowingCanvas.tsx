@@ -336,7 +336,7 @@ export default function CrystalGrowingCanvas({ isPlaying }: CanvasProps) {
 
           {/* Growth log */}
           {growthLog.length > 0 && (
-            <div className="bg-slate-800/50 rounded-xl p-4 max-w-sm w-full border border-slate-700 max-h-48 overflow-y-auto">
+            <div className="bg-slate-800/50 rounded-xl p-4 max-w-sm w-full border border-slate-700 max-min-h-48 overflow-y-auto">
               <h4 className="text-sm font-bold text-white mb-2">📊 Experiment Log:</h4>
               {growthLog.map((entry, i) => (
                 <p key={i} className="text-xs text-slate-400 mb-1 font-mono">{entry}</p>

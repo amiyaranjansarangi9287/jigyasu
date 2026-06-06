@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-30 backdrop-blur-md bg-cream/70 border-b border-orange-100">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
-        <a href="#" className="flex items-center gap-2.5" aria-label="Jigyasu home">
+        <a href="/" className="flex items-center gap-2.5" aria-label="Jigyasu home">
           <span className="text-3xl">🦚</span>
           <span className="font-display text-2xl font-bold text-brand">Jigyasu</span>
         </a>

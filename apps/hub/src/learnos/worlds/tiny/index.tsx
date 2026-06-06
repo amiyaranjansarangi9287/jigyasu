@@ -3,14 +3,24 @@
 
 import { Routes, Route } from 'react-router-dom';
 import TinyHome from './TinyHome';
-import TapWorld from './modules/TapWorld';
-import ColorMixer from './modules/ColorMixer';
-import ShapeSorter from './modules/ShapeSorter';
-import AnimalOrchestra from './modules/AnimalOrchestra';
-import BubbleWorld from './modules/BubbleWorld';
-import WeatherMaker from './modules/WeatherMaker';
-import FarmFriends from './modules/FarmFriends';
-import DayAndNight from './modules/DayAndNight';
+import TapWorldModule from './modules/TapWorld';
+import ColorMixerModule from './modules/ColorMixer';
+import ShapeSorterModule from './modules/ShapeSorter';
+import AnimalOrchestraModule from './modules/AnimalOrchestra';
+import BubbleWorldModule from './modules/BubbleWorld';
+import WeatherMakerModule from './modules/WeatherMaker';
+import FarmFriendsModule from './modules/FarmFriends';
+import DayAndNightModule from './modules/DayAndNight';
+import withWonderFirst from '../../core/modules/withWonderFirst';
+
+const TapWorld = withWonderFirst(TapWorldModule, 'tiny', 'tap-world');
+const ColorMixer = withWonderFirst(ColorMixerModule, 'tiny', 'color-mixer');
+const ShapeSorter = withWonderFirst(ShapeSorterModule, 'tiny', 'shape-sorter');
+const AnimalOrchestra = withWonderFirst(AnimalOrchestraModule, 'tiny', 'animal-orchestra');
+const BubbleWorld = withWonderFirst(BubbleWorldModule, 'tiny', 'bubble-world');
+const WeatherMaker = withWonderFirst(WeatherMakerModule, 'tiny', 'weather-maker');
+const FarmFriends = withWonderFirst(FarmFriendsModule, 'tiny', 'farm-friends');
+const DayAndNight = withWonderFirst(DayAndNightModule, 'tiny', 'day-and-night');
 
 export default function TinyWorld() {
   return (

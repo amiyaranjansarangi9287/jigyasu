@@ -1,6 +1,6 @@
 import React, { lazy, Suspense, useState, useMemo } from 'react'
 import { Search, Sparkles, BookOpen, Users } from 'lucide-react'
-const GradeSelector = lazy(() => import('../components/GradeSelector'));
+import GradeSelector from '../components/GradeSelector';
 import { trackEvent } from '@jigyasu/storage';
 import { ConceptCard } from '@jigyasu/ui';
 import { concepts, getStats, categories } from '../data/concepts'

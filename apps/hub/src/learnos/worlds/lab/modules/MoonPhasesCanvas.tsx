@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface MoonPhasesCanvasProps {
   phase: number; // 0-7 representing 8 phases
@@ -6,6 +7,7 @@ interface MoonPhasesCanvasProps {
 }
 
 export default function MoonPhasesCanvas({ phase, showOrbit }: MoonPhasesCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const phaseRef = useRef(phase);

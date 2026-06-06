@@ -134,7 +134,7 @@ export default function EnzymeLab() {
                   className={`flex-1 py-2.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2 ${isRunning ? 'bg-red-500 text-white' : 'bg-emerald-500 text-white'}`}>
                   {isRunning ? <><Pause className="w-4 h-4" /> Pause</> : <><Play className="w-4 h-4" /> Run</>}
                 </button>
-                <button onClick={reset} className="px-4 py-2.5 rounded-xl bg-gray-800 text-gray-300">
+                <button onClick={reset} className="px-4 py-2.5 rounded-xl bg-gray-800 text-gray-300" aria-label="Rotate ccw">
                   <RotateCcw className="w-4 h-4" />
                 </button>
               </div>
@@ -191,7 +191,7 @@ export default function EnzymeLab() {
               {history.length > 1 && (
                 <div>
                   <div className="text-xs text-gray-500 mb-2">Activity Over Time</div>
-                  <div className="flex items-end gap-0.5 h-20 bg-gray-800/30 rounded-lg p-2">
+                  <div className="flex items-end gap-0.5 min-h-20 bg-gray-800/30 rounded-lg p-2">
                     {history.map((h, i) => (
                       <div key={i} className="flex-1 rounded-t-sm transition-all"
                         style={{

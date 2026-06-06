@@ -9,7 +9,7 @@ interface ShapeInfo {
 }
 
 const shapes2D: ShapeInfo[] = [
-  { name: 'Triangle', emoji: '🔺', sides: 3, vertices: 3, angle: '60° (equilateral)', formula: 'A = ½bh', color: 'text-red-400', dim: '2D',
+  { name: 'Triangle', emoji: '🔺', sides: 3, vertices: 3, angle: '60° (equilateral)', formula: 'A = ½bh', color: 'text-orange-400', dim: '2D',
     draw: (cx, cy, r) => { const pts = [0, 1, 2].map(i => { const a = (i * 120 - 90) * Math.PI / 180; return `${cx + Math.cos(a) * r},${cy + Math.sin(a) * r}`; }); return `M ${pts.join(' L ')} Z`; } },
   { name: 'Square', emoji: '🟦', sides: 4, vertices: 4, angle: '90°', formula: 'A = s²', color: 'text-blue-400', dim: '2D',
     draw: (cx, cy, r) => { const pts = [0, 1, 2, 3].map(i => { const a = (i * 90 + 45) * Math.PI / 180; return `${cx + Math.cos(a) * r},${cy + Math.sin(a) * r}`; }); return `M ${pts.join(' L ')} Z`; } },
@@ -57,7 +57,7 @@ export default function ShapeSafari() {
   const [mode, setMode] = useState<'explore' | 'quiz'>('explore');
   const [quiz, setQuiz] = useState(makeQuiz);
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
 
   const list = dim === '2D' ? shapes2D : shapes3D;
   const selected = list[selectedIdx] || list[0];
@@ -65,7 +65,7 @@ export default function ShapeSafari() {
   const answerQuiz = (opt: string) => {
     if (feedback) return;
     if (opt === quiz.answer) {
-      setFeedback('correct'); setScore(s => s + 10);
+      setFeedback('correct'); setMastery(m => m + 1);
       setTimeout(() => { setQuiz(makeQuiz()); setFeedback(null); }, 1200);
     } else { setFeedback('wrong'); setTimeout(() => setFeedback(null), 900); }
   };
@@ -89,8 +89,8 @@ export default function ShapeSafari() {
       <AnimatePresence mode="wait">
         {mode === 'quiz' ? (
           <motion.div key="quiz" className="max-w-lg mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-red-500/10 border-red-500/40' : 'bg-white/5 border-white/10'}`}>
-              <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {score}</span></div>
+            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
+              <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {mastery}</span></div>
               <div className="flex justify-center mb-4">
                 <svg width="120" height="120" viewBox="0 0 120 120"><path d={quiz.shape.draw(60, 60, 40)} fill="rgba(168,85,247,0.2)" stroke="#a855f7" strokeWidth="2.5" /></svg>
               </div>
@@ -105,7 +105,7 @@ export default function ShapeSafari() {
                 ))}
               </div>
               {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✅ Correct!</p>}
-              {feedback === 'wrong' && <p className="text-red-400 font-bold text-center mt-4">Answer: {quiz.answer}</p>}
+              {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Answer: {quiz.answer}</p>}
             </div>
           </motion.div>
         ) : (

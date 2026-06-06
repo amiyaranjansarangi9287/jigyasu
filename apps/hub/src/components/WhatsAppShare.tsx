@@ -81,7 +81,7 @@ export default function WhatsAppShare({
           <button
             onClick={handleShare}
             className="flex-1 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-xl font-bold transition-colors flex items-center justify-center gap-2"
-          >
+           aria-label="Action button">
             <span className="text-xl">📱</span>
             {t('send_whatsapp', 'Send on WhatsApp')}
           </button>

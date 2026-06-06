@@ -61,7 +61,7 @@ export default function ImmuneDefense() {
   const [wave, setWave] = useState(1);
   const [health, setHealth] = useState(100);
   const [energy, setEnergy] = useState(100);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
   const [pathogens, setPathogens] = useState<Pathogen[]>([]);
   const [defenders, setDefenders] = useState<Defender[]>([]);
   const [projectiles, setProjectiles] = useState<Projectile[]>([]);
@@ -78,7 +78,7 @@ export default function ImmuneDefense() {
     setWave(1);
     setHealth(100);
     setEnergy(100);
-    setScore(0);
+    setMastery(0);
     setPathogens([]);
     setDefenders([]);
     setProjectiles([]);
@@ -199,7 +199,7 @@ export default function ImmuneDefense() {
             ).filter(p => {
               if (p.health <= 0 && p.id === proj.targetId) {
                 playCollect();
-                setScore(s => s + p.points);
+                setMastery(m => m + 1);
                 setEnergy(e => Math.min(200, e + 5));
                 return false;
               }
@@ -223,7 +223,7 @@ export default function ImmuneDefense() {
       if (health <= 0) {
         playGameOver();
         setGameState('lost');
-        setHighScore(h => Math.max(h, score));
+        setHighScore(h => Math.max(h, mastery));
       }
 
       gameLoopRef.current = requestAnimationFrame(loop);
@@ -231,7 +231,7 @@ export default function ImmuneDefense() {
 
     gameLoopRef.current = requestAnimationFrame(loop);
     return () => cancelAnimationFrame(gameLoopRef.current);
-  }, [gameState, pathogens, defenders, health, score, pathogensSpawned, wavePathogens, wave]);
+  }, [gameState, pathogens, defenders, health, mastery, pathogensSpawned, wavePathogens, wave]);
 
   // Wave completion check
   useEffect(() => {
@@ -240,7 +240,7 @@ export default function ImmuneDefense() {
       if (wave >= 10) {
         playVictory();
         setGameState('won');
-        setHighScore(h => Math.max(h, score));
+        setHighScore(h => Math.max(h, mastery));
       } else {
         setWave(w => w + 1);
         setWavePathogens(w => w + 3);
@@ -248,7 +248,7 @@ export default function ImmuneDefense() {
         setEnergy(e => Math.min(200, e + 50));
       }
     }
-  }, [pathogensSpawned, wavePathogens, pathogens.length, gameState, wave, score]);
+  }, [pathogensSpawned, wavePathogens, pathogens.length, gameState, wave, mastery]);
 
   if (gameState === 'menu') {
     return (
@@ -287,7 +287,7 @@ export default function ImmuneDefense() {
             </button>
 
             {highScore > 0 && (
-              <div className="mt-4 text-gray-500 text-sm">🏆 High Score: {highScore}</div>
+              <div className="mt-4 text-gray-500 text-sm">🏆 High Mastery: {highScore}</div>
             )}
           </motion.div>
         </div>
@@ -319,7 +319,7 @@ export default function ImmuneDefense() {
           </div>
           <div className="flex items-center gap-4">
             <div className="text-sm"><span className="text-gray-500">Wave:</span> <span className="text-white font-bold">{wave}/10</span></div>
-            <div className="text-sm"><span className="text-gray-500">Score:</span> <span className="text-emerald-400 font-bold">{score}</span></div>
+            <div className="text-sm"><span className="text-gray-500">Mastery:</span> <span className="text-emerald-400 font-bold">{mastery}</span></div>
             <button onClick={() => setGameState(gameState === 'paused' ? 'playing' : 'paused')}
               className="p-1.5 rounded-lg bg-gray-800 text-gray-400 hover:text-white">
               {gameState === 'paused' ? <Play className="w-4 h-4" /> : <Pause className="w-4 h-4" />}
@@ -434,8 +434,8 @@ export default function ImmuneDefense() {
                   {gameState === 'won' ? 'You defended against all 10 waves!' : `You made it to wave ${wave}`}
                 </p>
                 <div className="bg-gray-800 rounded-xl p-3 mb-5">
-                  <div className="text-gray-500 text-sm">Final Score</div>
-                  <div className="text-3xl font-black text-emerald-400">{score}</div>
+                  <div className="text-gray-500 text-sm">Final Mastery</div>
+                  <div className="text-3xl font-black text-emerald-400">{mastery}</div>
                 </div>
                 <div className="flex gap-2">
                   <button onClick={startGame} className="flex-1 py-2.5 rounded-xl bg-emerald-500 text-white font-bold flex items-center justify-center gap-1">

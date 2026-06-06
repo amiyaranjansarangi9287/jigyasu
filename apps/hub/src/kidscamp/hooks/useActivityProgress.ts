@@ -157,6 +157,7 @@ export function useActivityStatus() {
         if (data && data.progress) {
           const all = loadAllProgress();
           let changed = false;
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           data.progress.forEach((p: any) => {
             const existing = all[p.activity_id];
             if (!existing || existing.elapsedSeconds < p.duration_seconds || (!existing.completedAt && p.status === 'completed')) {

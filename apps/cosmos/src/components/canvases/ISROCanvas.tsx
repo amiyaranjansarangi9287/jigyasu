@@ -169,7 +169,7 @@ export function ISROCanvas(_props: CanvasProps) {
 
       {/* ISRO Logo */}
       <div className="absolute left-4 top-4 flex items-center gap-3">
-        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-orange-500/20 border-2 border-orange-500">
+        <div className="flex min-h-12 w-12 items-center justify-center rounded-full bg-orange-500/20 border-2 border-orange-500">
           <span className="text-2xl">🚀</span>
         </div>
         <div>
@@ -286,7 +286,7 @@ export function ISROCanvas(_props: CanvasProps) {
                   ? 'bg-orange-500 text-white hover:bg-orange-600'
                   : 'bg-slate-700 text-slate-500 cursor-not-allowed'
               }`}
-            >
+             aria-label="Play">
               <Play className="h-5 w-5" />
               {launchSequence ? 'Launching...' : 'Launch! 🚀'}
             </button>
@@ -317,7 +317,7 @@ export function ISROCanvas(_props: CanvasProps) {
                   <motion.div
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
-                    className="w-10 h-16 bg-gradient-to-b from-white to-slate-200 border-t border-slate-300"
+                    className="w-10 min-h-16 bg-gradient-to-b from-white to-slate-200 border-t border-slate-300"
                   />
                 )}
                 {/* Stage 2 */}
@@ -325,7 +325,7 @@ export function ISROCanvas(_props: CanvasProps) {
                   <motion.div
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
-                    className="w-12 h-20 bg-gradient-to-b from-orange-400 to-orange-600"
+                    className="w-12 min-h-20 bg-gradient-to-b from-orange-400 to-orange-600"
                   />
                 )}
                 {/* Stage 1 */}
@@ -333,7 +333,7 @@ export function ISROCanvas(_props: CanvasProps) {
                   <motion.div
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
-                    className="w-14 h-24 bg-gradient-to-b from-white to-slate-200 rounded-b-lg relative"
+                    className="w-14 min-h-24 bg-gradient-to-b from-white to-slate-200 rounded-b-lg relative"
                   >
                     {/* Fins */}
                     <div className="absolute -left-3 bottom-0 w-4 h-8 bg-orange-500 -skew-x-12" />
@@ -345,7 +345,7 @@ export function ISROCanvas(_props: CanvasProps) {
                         transition={{ duration: 0.1, repeat: Infinity }}
                         className="absolute left-1/2 -bottom-8 -translate-x-1/2"
                       >
-                        <div className="w-8 h-12 bg-gradient-to-b from-yellow-400 via-orange-500 to-red-600 rounded-b-full" />
+                        <div className="w-8 min-h-12 bg-gradient-to-b from-yellow-400 via-orange-500 to-red-600 rounded-b-full" />
                       </motion.div>
                     )}
                   </motion.div>
@@ -359,7 +359,7 @@ export function ISROCanvas(_props: CanvasProps) {
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: [0.5, 0.8, 0], scale: [1, 2, 3] }}
                 transition={{ duration: 2 }}
-                className="absolute bottom-0 w-40 h-40 rounded-full bg-gradient-radial from-white/50 to-transparent"
+                className="absolute bottom-0 w-40 min-h-40 rounded-full bg-gradient-radial from-white/50 to-transparent"
               />
             )}
           </div>

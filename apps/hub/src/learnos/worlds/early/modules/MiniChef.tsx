@@ -2,6 +2,7 @@
 // Select a recipe, add ingredients in order, celebrate the dish.
 
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSettingsStore } from '@/store';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
@@ -15,6 +16,7 @@ import type { Recipe } from '../types/early.types';
 type ChefStep = 'select' | 'cook' | 'complete';
 
 export default function MiniChef() {
+  const { t } = useTranslation();
   const soundEnabled = useSettingsStore((s) => s.soundEnabled);
   const pip = usePip();
   const { recordRecipeAttempt } = useEarlyProgress();
@@ -82,7 +84,7 @@ export default function MiniChef() {
           <motion.div key="select" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
             className="min-h-screen bg-gradient-to-b from-orange-50 to-amber-50 p-6">
             <div className="bg-white rounded-2xl p-4 shadow-sm border border-orange-200 mb-6">
-              <div className="flex items-center gap-3"><span className="text-3xl">🐤👨‍🍳</span><p className="text-lg font-bold text-gray-700">Choose a recipe to cook!</p></div>
+              <div className="flex items-center gap-3"><span className="text-3xl">{t('early.modules.MiniChef.spn_', '🐤👨‍🍳')}</span><p className="text-lg font-bold text-gray-700">{t('early.modules.MiniChef.txt_Choosearec', 'Choose a recipe to cook!')}</p></div>
             </div>
             <div className="space-y-4">
               {RECIPES.map(r => (
@@ -92,7 +94,7 @@ export default function MiniChef() {
                   <div>
                     <p className="font-bold text-gray-800 text-xl">{r.name}</p>
                     <p className="text-base text-gray-500">{r.ingredients.length} ingredients · {r.isIndian ? '🇮🇳' : '🌍'}</p>
-                    <div className="flex gap-1 mt-1">{Array.from({ length: r.difficulty }, (_, i) => <span key={i} className="text-sm">⭐</span>)}</div>
+                    <div className="flex gap-1 mt-1">{Array.from({ length: r.difficulty }, (_, i) => <span key={i} className="text-sm">{t('early.modules.MiniChef.spn_', '⭐')}</span>)}</div>
                   </div>
                 </motion.button>
               ))}
@@ -134,7 +136,7 @@ export default function MiniChef() {
             {/* Mixing animation */}
             {showMixing && (
               <motion.div animate={{ rotate: [0, 360] }} transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
-                className="text-center my-8"><span className="text-8xl">🥣</span></motion.div>
+                className="text-center my-8"><span className="text-8xl">{t('early.modules.MiniChef.spn_', '🥣')}</span></motion.div>
             )}
 
             {/* Ingredient shelf */}
@@ -152,7 +154,7 @@ export default function MiniChef() {
                     }`}>
                     <span className="text-4xl">{ing.emoji}</span>
                     <span className="text-sm font-bold text-gray-600">{ing.name}</span>
-                    {isAdded && <span className="text-green-500 text-base">✓</span>}
+                    {isAdded && <span className="text-green-500 text-base">{t('early.modules.MiniChef.spn_', '✓')}</span>}
                   </motion.button>
                 );
               })}
@@ -165,8 +167,8 @@ export default function MiniChef() {
             className="min-h-screen bg-gradient-to-b from-orange-50 to-amber-50 flex flex-col items-center justify-center p-8">
             <motion.div animate={{ scale: [1, 1.1, 1] }} transition={{ repeat: Infinity, duration: 2 }} className="text-[100px] mb-6">{recipe.emoji}</motion.div>
             <p className="text-3xl font-extrabold text-gray-800 mb-2">{recipe.name}</p>
-            <p className="text-xl text-orange-600 font-bold mb-8">is ready! Yum! 🎉</p>
-            <button onClick={handleNewRecipe} className="px-8 py-4 bg-orange-500 text-white font-bold text-xl rounded-2xl min-h-[56px]">Cook Something Else! 👨‍🍳</button>
+            <p className="text-xl text-orange-600 font-bold mb-8">{t('early.modules.MiniChef.txt_isreadyYum', 'is ready! Yum! 🎉')}</p>
+            <button onClick={handleNewRecipe} className="px-8 py-4 bg-orange-500 text-white font-bold text-xl rounded-2xl min-h-[56px]">{t('early.modules.MiniChef.btn_CookSometh', 'Cook Something Else! 👨‍🍳')}</button>
           </motion.div>
         )}
       </AnimatePresence>

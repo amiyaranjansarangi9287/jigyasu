@@ -2,18 +2,32 @@
 
 import { Routes, Route } from 'react-router-dom';
 import EarlyHome from './EarlyHome';
-import StoryBuilder from './modules/StoryBuilder';
-import NumberLineAdventures from './modules/NumberLineAdventures';
-import AlphabetForest from './modules/AlphabetForest';
-import MiniChef from './modules/MiniChef';
-import PatternPatrol from './modules/PatternPatrol';
-import WordScramble from './modules/WordScramble';
-import PlantGrowthExplorer from './modules/PlantGrowthExplorer';
-import WaterCycleJourney from './modules/WaterCycleJourney';
-import HabitatHeroes from './modules/HabitatHeroes';
-import ShadowDetective from './modules/ShadowDetective';
-import MagnetExplorer from './modules/MagnetExplorer';
-import CoinCounter from './modules/CoinCounter';
+import StoryBuilderModule from './modules/StoryBuilder';
+import NumberLineAdventuresModule from './modules/NumberLineAdventures';
+import AlphabetForestModule from './modules/AlphabetForest';
+import MiniChefModule from './modules/MiniChef';
+import PatternPatrolModule from './modules/PatternPatrol';
+import WordScrambleModule from './modules/WordScramble';
+import PlantGrowthExplorerModule from './modules/PlantGrowthExplorer';
+import WaterCycleJourneyModule from './modules/WaterCycleJourney';
+import HabitatHeroesModule from './modules/HabitatHeroes';
+import ShadowDetectiveModule from './modules/ShadowDetective';
+import MagnetExplorerModule from './modules/MagnetExplorer';
+import CoinCounterModule from './modules/CoinCounter';
+import withWonderFirst from '../../core/modules/withWonderFirst';
+
+const StoryBuilder = withWonderFirst(StoryBuilderModule, 'early', 'story-builder');
+const NumberLineAdventures = withWonderFirst(NumberLineAdventuresModule, 'early', 'number-line');
+const AlphabetForest = withWonderFirst(AlphabetForestModule, 'early', 'alphabet-forest');
+const MiniChef = withWonderFirst(MiniChefModule, 'early', 'mini-chef');
+const PatternPatrol = withWonderFirst(PatternPatrolModule, 'early', 'pattern-patrol');
+const WordScramble = withWonderFirst(WordScrambleModule, 'early', 'word-scramble');
+const PlantGrowthExplorer = withWonderFirst(PlantGrowthExplorerModule, 'early', 'plant-growth');
+const WaterCycleJourney = withWonderFirst(WaterCycleJourneyModule, 'early', 'water-cycle');
+const HabitatHeroes = withWonderFirst(HabitatHeroesModule, 'early', 'habitat-heroes');
+const ShadowDetective = withWonderFirst(ShadowDetectiveModule, 'early', 'shadow-detective');
+const MagnetExplorer = withWonderFirst(MagnetExplorerModule, 'early', 'magnet-explorer');
+const CoinCounter = withWonderFirst(CoinCounterModule, 'early', 'coin-counter');
 
 export default function EarlyWorld() {
   return (

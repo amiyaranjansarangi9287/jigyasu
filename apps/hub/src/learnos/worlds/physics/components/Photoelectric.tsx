@@ -75,7 +75,7 @@ export default function Photoelectric() {
       ctx.fillStyle = emits ? '#22c55e' : '#ef4444';
       ctx.font = 'bold 11px sans-serif';
       ctx.textAlign = 'left';
-      ctx.fillText(emits ? '✅ Electrons emitted!' : '❌ No emission (E < φ)', 20, 30);
+      ctx.fillText(emits ? '✅ Electrons emitted!' : '🤔 No emission (E < φ)', 20, 30);
       ctx.fillStyle = '#888';
       ctx.font = '10px sans-serif';
       ctx.fillText(`E_photon = ${photonEnergy.toFixed(2)} eV`, 20, 50);
@@ -238,7 +238,7 @@ export default function Photoelectric() {
             ))}
           </div>
           {quizCorrect === true && <p className="mt-3 text-green-400 font-bold text-sm">✅ Correct! +10 bonus XP!</p>}
-          {quizCorrect === false && <p className="mt-3 text-red-400 font-bold text-sm">❌ Answer: {quizQuestions[currentQuiz].options[quizQuestions[currentQuiz].correct]}</p>}
+          {quizCorrect === false && <p className="mt-3 text-red-400 font-bold text-sm">🤔 Answer: {quizQuestions[currentQuiz].options[quizQuestions[currentQuiz].correct]}</p>}
           {quizCorrect === true && currentQuiz < quizQuestions.length - 1 && <button onClick={() => { setCurrentQuiz(prev => prev + 1); setQuizAnswer(null); setQuizCorrect(null); }} className="mt-3 py-2 rounded-lg bg-yellow-600 hover:bg-yellow-500 text-white font-bold text-sm">Next Question →</button>}
         </div>
       </div>

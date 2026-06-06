@@ -3,6 +3,7 @@
 // Zero text. Elephant companion stomps happily on matches.
 
 import { useRef, useEffect, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useSettingsStore } from '@/store';
 import { ParticleEngine } from '@/shared/canvas/engines/ParticleEngine';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
@@ -67,6 +68,7 @@ function drawShapePath(
 }
 
 export default function ShapeSorter() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const shapesRef = useRef<DraggableShape[]>([]);

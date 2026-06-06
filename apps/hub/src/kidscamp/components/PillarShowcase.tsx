@@ -95,6 +95,7 @@ export default function PillarShowcase({ onSelectPillar, selectedAge }: PillarSh
                 <div className="absolute inset-0 w-full h-full">
                   <img
                     src={extras.image}
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     alt={t(`pillar_${pillar.id}` as any, pillar.name)}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     onError={(e) => {
@@ -109,7 +110,7 @@ export default function PillarShowcase({ onSelectPillar, selectedAge }: PillarSh
                 </div>
 
                 {/* Top Overlay: Icon & Count */}
-                <div className="absolute top-6 left-6 w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 shadow-lg">
+                <div className="absolute top-6 left-6 w-14 min-h-14 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 shadow-lg">
                   <span className="text-3xl">{pillar.icon}</span>
                 </div>
                 <div className="absolute top-6 right-6 px-4 py-2 rounded-full bg-white/20 backdrop-blur-md border border-white/30 shadow-lg">
@@ -118,6 +119,7 @@ export default function PillarShowcase({ onSelectPillar, selectedAge }: PillarSh
 
                 {/* Bottom Overlay: Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-8 transform transition-transform duration-500">
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   <h3 className="text-3xl font-bold text-white mb-2 group-hover:-translate-y-1 transition-transform duration-300">{t(`pillar_${pillar.id}` as any, pillar.name)}</h3>
                   <p className="text-white/80 text-base md:text-lg mb-6 group-hover:-translate-y-1 transition-transform duration-300 delay-75 max-w-md">
                     {extras.tagline}

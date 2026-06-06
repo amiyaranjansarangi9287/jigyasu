@@ -39,7 +39,7 @@ export class StatePersistence {
     };
 
     try {
-      // @ts-ignore - Dynamic table access
+      // @ts-expect-error - Dynamic table access
       await db[tableName].put(enhancedData);
       this.syncQueue.set(data.id, enhancedData);
       
@@ -58,7 +58,7 @@ export class StatePersistence {
    */
   async get<T>(tableName: string, id: string): Promise<T | undefined> {
     try {
-      // @ts-ignore - Dynamic table access
+      // @ts-expect-error - Dynamic table access
       return await db[tableName].get(id);
     } catch (error) {
       console.error('Failed to get data:', error);
@@ -71,7 +71,7 @@ export class StatePersistence {
    */
   async getAll<T>(tableName: string): Promise<T[]> {
     try {
-      // @ts-ignore - Dynamic table access
+      // @ts-expect-error - Dynamic table access
       return await db[tableName].toArray();
     } catch (error) {
       console.error('Failed to get all data:', error);
@@ -84,7 +84,7 @@ export class StatePersistence {
    */
   async delete(tableName: string, id: string): Promise<void> {
     try {
-      // @ts-ignore - Dynamic table access
+      // @ts-expect-error - Dynamic table access
       await db[tableName].delete(id);
       this.syncQueue.delete(id);
     } catch (error) {
@@ -98,7 +98,7 @@ export class StatePersistence {
    */
   async clearTable(tableName: string): Promise<void> {
     try {
-      // @ts-ignore - Dynamic table access
+      // @ts-expect-error - Dynamic table access
       await db[tableName].clear();
       this.syncQueue.clear();
     } catch (error) {
@@ -179,7 +179,7 @@ export class StatePersistence {
     const exportData: Record<string, any[]> = {};
 
     for (const table of tables) {
-      // @ts-ignore - Dynamic table access
+      // @ts-expect-error - Dynamic table access
       exportData[table] = await db[table].toArray();
     }
 
@@ -192,7 +192,7 @@ export class StatePersistence {
   async importData(data: Record<string, any[]>): Promise<void> {
     for (const [table, records] of Object.entries(data)) {
       try {
-        // @ts-ignore - Dynamic table access
+        // @ts-expect-error - Dynamic table access
         await db[table].bulkPut(records);
       } catch (error) {
         console.error(`Failed to import ${table}:`, error);
@@ -208,7 +208,7 @@ export class StatePersistence {
     
     for (const table of tables) {
       try {
-        // @ts-ignore - Dynamic table access
+        // @ts-expect-error - Dynamic table access
         await db[table].clear();
       } catch (error) {
         console.error(`Failed to clear ${table}:`, error);

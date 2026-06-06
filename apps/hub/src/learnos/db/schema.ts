@@ -69,7 +69,9 @@ export class LearnOSDatabase extends Dexie {
       // Migrate events to include moduleId index
       const events = await tx.table('events').toArray();
       for (const evt of events) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         if (!evt.moduleId && (evt as any).conceptId) {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           await tx.table('events').update(evt.id, { moduleId: (evt as any).conceptId });
         }
       }

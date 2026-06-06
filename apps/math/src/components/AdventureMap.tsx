@@ -240,7 +240,7 @@ export default function AdventureMap({ onComplete }: { onComplete: () => void })
             >
               <div className={`relative flex flex-col items-center`}>
                 <motion.div
-                  className={`w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center text-3xl sm:text-4xl border-4 ${
+                  className={`w-16 min-h-16 sm:w-20 sm:min-h-20 rounded-full flex items-center justify-center text-3xl sm:text-4xl border-4 ${
                     isSolved
                       ? 'border-yellow-400 bg-yellow-400/20 shadow-lg shadow-yellow-400/30'
                       : 'border-white/30 bg-white/10'

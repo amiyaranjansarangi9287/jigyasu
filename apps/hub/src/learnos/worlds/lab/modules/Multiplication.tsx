@@ -34,18 +34,18 @@ export default function Multiplication() {
         <div className="text-center mb-8">
           <div className="text-5xl mb-3">✖️</div>
           <h1 className="text-3xl font-extrabold text-slate-800">{t('lab.multiplication.title', { defaultValue: 'Multiplication Visualized' })}</h1>
-          <p className="text-sm text-slate-500 mt-2">See multiplication as arrays of objects!</p>
+          <p className="text-sm text-slate-500 mt-2">{t('lab.modules.Multiplication.txt_Seemultipl', 'See multiplication as arrays of objects!')}</p>
         </div>
         <div className="bg-white rounded-3xl shadow-sm border border-slate-100 p-4 mb-6">
           <MultiplicationCanvas rows={rows} cols={cols} />
         </div>
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 space-y-4">
           <div>
-            <div className="flex justify-between mb-2"><span className="text-sm text-slate-400">↕️ Rows</span><span className="text-sm font-bold text-emerald-600">{rows}</span></div>
+            <div className="flex justify-between mb-2"><span className="text-sm text-slate-400">{t('lab.modules.Multiplication.spn_Rows', '↕️ Rows')}</span><span className="text-sm font-bold text-emerald-600">{rows}</span></div>
             <input type="range" min="1" max="12" value={rows} onChange={handleRowsChange} className="w-full h-3 rounded-full appearance-none cursor-pointer" style={{ background: 'linear-gradient(to right, #10B981, #059669)' }} />
           </div>
           <div>
-            <div className="flex justify-between mb-2"><span className="text-sm text-slate-400">↔️ Columns</span><span className="text-sm font-bold text-teal-600">{cols}</span></div>
+            <div className="flex justify-between mb-2"><span className="text-sm text-slate-400">{t('lab.modules.Multiplication.spn_Columns', '↔️ Columns')}</span><span className="text-sm font-bold text-teal-600">{cols}</span></div>
             <input type="range" min="1" max="12" value={cols} onChange={handleColsChange} className="w-full h-3 rounded-full appearance-none cursor-pointer" style={{ background: 'linear-gradient(to right, #14B8A6, #0D9488)' }} />
           </div>
         </div>
@@ -54,7 +54,7 @@ export default function Multiplication() {
         </div>
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.Multiplication.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1">Indian Multiplication Magic</h3>
               <p className="text-gray-600 text-sm leading-relaxed">The <strong>Urdhva Tiryagbhyam</strong> method from Vedic mathematics multiplies any numbers vertically and crosswise — faster than traditional methods! Indian mathematicians also invented the multiplication table.</p>

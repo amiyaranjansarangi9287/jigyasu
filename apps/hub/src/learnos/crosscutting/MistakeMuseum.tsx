@@ -86,8 +86,12 @@ export default function MistakeMuseum() {
                       <div className="flex items-center gap-3">
                         <span className="text-3xl">{ex.emoji}</span>
                         <div className="flex-1">
-                          <p className="font-bold text-gray-800 text-sm">{ex.wrongBelief}</p>
-                          <p className="text-sm text-gray-400">{ex.period}</p>
+                          <p className="font-bold text-gray-800 text-sm">
+                            {t(`crosscutting.data.mistake_museum.${ex.id}.wrongBelief`, { defaultValue: ex.wrongBelief })}
+                          </p>
+                          <p className="text-sm text-gray-400">
+                            {t(`crosscutting.data.mistake_museum.${ex.id}.period`, { defaultValue: ex.period })}
+                          </p>
                         </div>
                         <span className="text-gray-300">→</span>
                       </div>
@@ -115,39 +119,49 @@ export default function MistakeMuseum() {
                 <h2 className="text-xl font-bold text-purple-700 mb-1">
                   {t('crosscutting.mistake_museum.wrong_belief')}
                 </h2>
-                <p className="text-lg text-gray-800 mb-4">{selectedExhibit.wrongBelief}</p>
+                <p className="text-lg text-gray-800 mb-4">
+                  {t(`crosscutting.data.mistake_museum.${selectedExhibit.id}.wrongBelief`, { defaultValue: selectedExhibit.wrongBelief })}
+                </p>
 
                 <div className="space-y-4">
                   <div>
                     <p className="text-sm font-semibold text-gray-500">
                       {t('crosscutting.mistake_museum.how_long')}
                     </p>
-                    <p className="text-gray-700">{selectedExhibit.period}</p>
+                    <p className="text-gray-700">
+                      {t(`crosscutting.data.mistake_museum.${selectedExhibit.id}.period`, { defaultValue: selectedExhibit.period })}
+                    </p>
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-gray-500">
                       {t('crosscutting.mistake_museum.why_sense')}
                     </p>
-                    <p className="text-gray-700">{selectedExhibit.whySense}</p>
+                    <p className="text-gray-700">
+                      {t(`crosscutting.data.mistake_museum.${selectedExhibit.id}.whySense`, { defaultValue: selectedExhibit.whySense })}
+                    </p>
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-gray-500">
                       {t('crosscutting.mistake_museum.overturned')}
                     </p>
-                    <p className="text-gray-700">{selectedExhibit.overturned}</p>
+                    <p className="text-gray-700">
+                      {t(`crosscutting.data.mistake_museum.${selectedExhibit.id}.overturned`, { defaultValue: selectedExhibit.overturned })}
+                    </p>
                   </div>
                   <div className="bg-amber-50 rounded-2xl p-4">
                     <p className="text-sm font-semibold text-amber-700">
                       {t('crosscutting.mistake_museum.indian_connection')}
                     </p>
-                    <p className="text-amber-800">{selectedExhibit.indianConnection}</p>
+                    <p className="text-amber-800">
+                      {t(`crosscutting.data.mistake_museum.${selectedExhibit.id}.indianConnection`, { defaultValue: selectedExhibit.indianConnection })}
+                    </p>
                   </div>
                 </div>
               </Card>
 
               <div className="text-center py-4">
                 <p className="text-lg italic text-purple-600 font-medium">
-                  "{selectedExhibit.quote}"
+                  "{t(`crosscutting.data.mistake_museum.${selectedExhibit.id}.quote`, { defaultValue: selectedExhibit.quote })}"
                 </p>
               </div>
 

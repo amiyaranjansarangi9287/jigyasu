@@ -1,4 +1,5 @@
 import { useRef, useEffect, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface Particle {
   x: number;
@@ -14,6 +15,7 @@ interface StatesOfMatterCanvasProps {
 }
 
 export default function StatesOfMatterCanvas({ temperature }: StatesOfMatterCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const particlesRef = useRef<Particle[]>([]);
   const frameRef = useRef<number>(0);

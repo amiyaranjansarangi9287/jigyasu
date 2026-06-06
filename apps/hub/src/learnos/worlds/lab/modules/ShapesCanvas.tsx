@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface ShapesCanvasProps {
   shape: 'triangle' | 'square' | 'pentagon' | 'hexagon' | 'circle';
@@ -6,6 +7,7 @@ interface ShapesCanvasProps {
 }
 
 export default function ShapesCanvas({ shape, showAngles }: ShapesCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const shapeRef = useRef(shape);

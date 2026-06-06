@@ -1,10 +1,12 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface SensesCanvasProps {
   sense: 'sight' | 'hearing' | 'smell' | 'taste' | 'touch';
 }
 
 export default function SensesCanvas({ sense }: SensesCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const senseRef = useRef(sense);

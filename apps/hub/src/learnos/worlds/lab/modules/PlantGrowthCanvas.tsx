@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface PlantGrowthCanvasProps {
   stage: number; // 0-5: seed, sprout, seedling, growing, flowering, fruit
@@ -7,6 +8,7 @@ interface PlantGrowthCanvasProps {
 }
 
 export default function PlantGrowthCanvas({ stage, waterLevel, sunLevel }: PlantGrowthCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const stageRef = useRef(stage);

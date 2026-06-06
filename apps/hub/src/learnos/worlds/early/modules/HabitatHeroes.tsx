@@ -1,6 +1,7 @@
 // src/worlds/early/modules/HabitatHeroes.tsx
 
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import EarlyShell from '../EarlyShell';
 import { usePip } from '../hooks/usePip';
@@ -29,6 +30,7 @@ const HABITATS: Record<Habitat, {
 };
 
 export default function HabitatHeroes() {
+  const { t } = useTranslation();
   const pip = usePip();
   const { recordHabitatExplored } = useEarlyProgress();
   const { trackCorrect, trackWrong } = useEarlySession();
@@ -62,7 +64,7 @@ export default function HabitatHeroes() {
     <EarlyShell module="habitat-heroes">
       <div className="min-h-screen bg-gradient-to-b from-teal-50 to-green-50 flex flex-col">
         <div className="px-5 pt-6 pb-3">
-          <div className="flex items-center gap-2 mb-3"><span className="text-3xl">🐤</span><p className="text-base font-bold text-gray-700">{habitat ? `Exploring the ${habitat.name}!` : 'Choose a habitat!'}</p></div>
+          <div className="flex items-center gap-2 mb-3"><span className="text-3xl">{t('early.modules.HabitatHeroes.spn_', '🐤')}</span><p className="text-base font-bold text-gray-700">{habitat ? `Exploring the ${habitat.name}!` : 'Choose a habitat!'}</p></div>
           <div className="grid grid-cols-2 gap-3">
             {(Object.keys(HABITATS) as Habitat[]).map(h => {
               const info = HABITATS[h];
@@ -110,7 +112,7 @@ export default function HabitatHeroes() {
           )}
         </AnimatePresence>
 
-        {explored.length === 4 && <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} className="mx-5 mb-6 bg-gradient-to-r from-teal-500 to-green-500 rounded-2xl p-4 text-white text-center"><div className="text-3xl mb-1">🌍🌊🏜️❄️</div><p className="font-bold">All Habitats Explored!</p></motion.div>}
+        {explored.length === 4 && <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} className="mx-5 mb-6 bg-gradient-to-r from-teal-500 to-green-500 rounded-2xl p-4 text-white text-center"><div className="text-3xl mb-1">🌍🌊🏜️❄️</div><p className="font-bold">{t('early.modules.HabitatHeroes.txt_AllHabitat', 'All Habitats Explored!')}</p></motion.div>}
       </div>
     </EarlyShell>
   );

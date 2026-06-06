@@ -73,7 +73,7 @@ export function VariableRewardOverlay({ chestUnlocked, bonusXP }: { chestUnlocke
               <h3 className="text-2xl font-black text-slate-800 mb-2 relative z-10">Mystery Chest!</h3>
               <p className="text-slate-600 mb-6 font-medium relative z-10">You unlocked a rare avatar for your profile.</p>
               <motion.div 
-                className="w-24 h-24 mx-auto bg-amber-50 rounded-full flex items-center justify-center text-5xl border-4 border-amber-200 relative z-10 shadow-inner"
+                className="w-24 min-h-24 mx-auto bg-amber-50 rounded-full flex items-center justify-center text-5xl border-4 border-amber-200 relative z-10 shadow-inner"
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 0.8, type: "spring", bounce: 0.6 }}

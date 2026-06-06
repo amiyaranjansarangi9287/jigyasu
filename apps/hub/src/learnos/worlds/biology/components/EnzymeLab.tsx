@@ -88,7 +88,7 @@ export default function EnzymeLab() {
               <div className="mb-5">
                 <div className="flex justify-between mb-1">
                   <span className="text-sm text-gray-400 flex items-center gap-1"><Thermometer className="w-3 h-3" /> Temperature</span>
-                  <span className={`text-sm font-mono font-bold ${temperature > 60 ? 'text-red-400' : temperature < 10 ? 'text-blue-400' : 'text-white'}`}>{temperature}°C</span>
+                  <span className={`text-sm font-mono font-bold ${temperature > 60 ? 'text-orange-400' : temperature < 10 ? 'text-blue-400' : 'text-white'}`}>{temperature}°C</span>
                 </div>
                 <input type="range" min="0" max="80" value={temperature} onChange={e => setTemperature(Number(e.target.value))}
                   className="w-full h-2 rounded-full appearance-none cursor-pointer"
@@ -171,10 +171,10 @@ export default function EnzymeLab() {
               <div className="grid grid-cols-3 gap-4 mb-5">
                 <div className="text-center">
                   <div className="text-sm text-gray-500 mb-1">Activity Rate</div>
-                  <div className={`text-3xl font-black ${activityRate > 0.7 ? 'text-emerald-400' : activityRate > 0.3 ? 'text-yellow-400' : 'text-red-400'}`}>
+                  <div className={`text-3xl font-black ${activityRate > 0.7 ? 'text-emerald-400' : activityRate > 0.3 ? 'text-yellow-400' : 'text-orange-400'}`}>
                     {isDenatured ? '☠️' : `${(activityRate * 100).toFixed(0)}%`}
                   </div>
-                  {isDenatured && <div className="text-sm text-red-400 font-bold">DENATURED!</div>}
+                  {isDenatured && <div className="text-sm text-orange-400 font-bold">DENATURED!</div>}
                 </div>
                 <div className="text-center">
                   <div className="text-sm text-gray-500 mb-1">Product Made</div>
@@ -207,7 +207,7 @@ export default function EnzymeLab() {
               {/* Warnings */}
               <div className="mt-4 space-y-1.5">
                 {isDenatured && (
-                  <div className="text-sm text-red-400 bg-red-500/10 rounded-lg px-3 py-2 border border-red-500/20">
+                  <div className="text-sm text-orange-400 bg-red-500/10 rounded-lg px-3 py-2 border border-red-500/20">
                     ⚠️ Enzyme is DENATURED! Its 3D shape is destroyed. {temperature > 60 ? 'Temperature too high!' : 'Extreme pH has broken hydrogen bonds.'}
                   </div>
                 )}

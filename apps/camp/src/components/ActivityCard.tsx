@@ -71,7 +71,7 @@ export default function ActivityCard({
         onClick={() => onSelect(activity)}
       >
         {/* Image */}
-        <div className="relative w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden">
+        <div className="relative w-24 min-h-24 flex-shrink-0 rounded-xl overflow-hidden">
           <img
             src={activity.image}
             alt={activity.name}
@@ -171,7 +171,7 @@ export default function ActivityCard({
       onClick={() => onSelect(activity)}
     >
       {/* Image */}
-      <div className="relative h-40 overflow-hidden">
+      <div className="relative min-h-40 overflow-hidden">
         <img
           src={activity.image}
           alt={activity.name}

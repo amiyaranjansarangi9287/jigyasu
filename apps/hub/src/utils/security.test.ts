@@ -59,8 +59,11 @@ describe('sanitizeHTML', () => {
   });
 
   it('should handle non-string input', () => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     expect(sanitizeHTML(null as any)).toBe('');
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     expect(sanitizeHTML(undefined as any)).toBe('');
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     expect(sanitizeHTML(123 as any)).toBe('');
   });
 
@@ -108,7 +111,9 @@ describe('escapeHTML', () => {
   });
 
   it('should handle non-string input', () => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     expect(escapeHTML(null as any)).toBe('');
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     expect(escapeHTML(undefined as any)).toBe('');
   });
 });
@@ -143,7 +148,9 @@ describe('sanitizeInput', () => {
   });
 
   it('should handle non-string input', () => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     expect(sanitizeInput(null as any)).toBe('');
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     expect(sanitizeInput(undefined as any)).toBe('');
   });
 

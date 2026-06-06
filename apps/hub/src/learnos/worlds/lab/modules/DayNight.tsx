@@ -30,7 +30,7 @@ export default function DayNight() {
         <div className="text-center mb-8">
           <div className="text-5xl mb-3">🌍</div>
           <h1 className="text-3xl font-extrabold text-white">{t('lab.daynight.title', { defaultValue: 'Day & Night' })}</h1>
-          <p className="text-sm text-slate-400 mt-2">Earth rotates to create day and night!</p>
+          <p className="text-sm text-slate-400 mt-2">{t('lab.modules.DayNight.txt_Earthrotat', 'Earth rotates to create day and night!')}</p>
         </div>
         <div className="flex justify-center gap-4 mb-6">
           <button onClick={toggleRotate} className={`px-5 py-2 rounded-xl text-sm font-medium transition ${autoRotate ? 'bg-indigo-600 text-white' : 'bg-slate-200 text-slate-600'}`}>
@@ -41,15 +41,15 @@ export default function DayNight() {
           <DayNightCanvas autoRotate={autoRotate} rotationSpeed={rotationSpeed} />
         </div>
         <div className="bg-slate-800/50 rounded-2xl p-6 shadow-sm border border-slate-700/50">
-          <div className="flex justify-between mb-2"><span className="text-sm text-slate-400">🔄 Speed</span><span className="text-sm font-medium text-indigo-400">{rotationSpeed.toFixed(1)}x</span></div>
+          <div className="flex justify-between mb-2"><span className="text-sm text-slate-400">{t('lab.modules.DayNight.spn_Speed', '🔄 Speed')}</span><span className="text-sm font-medium text-indigo-400">{rotationSpeed.toFixed(1)}x</span></div>
           <input type="range" min="0.1" max="5" step="0.1" value={rotationSpeed} onChange={handleSpeedChange} className="w-full h-3 rounded-full appearance-none cursor-pointer" style={{ background: 'linear-gradient(to right, #6366F1, #8B5CF6)' }} />
         </div>
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.DayNight.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-400 font-bold text-sm mb-1">Ancient Indian Astronomy</h3>
-              <p className="text-gray-300 text-sm leading-relaxed">Aryabhata (499 CE) correctly explained day/night as Earth's rotation — 1,000 years before Galileo! He calculated Earth's circumference at 24,835 miles (actual: 24,901).</p>
+              <p className="text-gray-300 text-sm leading-relaxed">{t('lab.modules.DayNight.txt_Aryabhata4', 'Aryabhata (499 CE) correctly explained day/night as Earth\'s rotation — 1,000 years before Galileo! He calculated Earth\'s circumference at 24,835 miles (actual: 24,901).')}</p>
             </div>
           </div>
         </div>

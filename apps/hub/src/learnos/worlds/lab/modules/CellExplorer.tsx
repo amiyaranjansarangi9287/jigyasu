@@ -53,9 +53,7 @@ export default function CellExplorer() {
           <h1 className="text-3xl font-extrabold text-slate-800">
             {t('lab.cell.title', { defaultValue: 'Cell Explorer' })}
           </h1>
-          <p className="text-sm text-slate-500 mt-2">
-            Explore the tiny world inside every living thing!
-          </p>
+          <p className="text-sm text-slate-500 mt-2">{t('lab.modules.CellExplorer.txt_Explorethe', 'Explore the tiny world inside every living thing!')}</p>
         </div>
 
         {/* Controls */}
@@ -107,19 +105,19 @@ export default function CellExplorer() {
           <div className="bg-teal-50 rounded-2xl p-4 text-center">
             <div className="text-2xl mb-1">🔢</div>
             <div className="font-bold text-teal-600 text-sm">37.2T</div>
-            <p className="text-sm text-teal-400 mt-1">Cells in your body</p>
+            <p className="text-sm text-teal-400 mt-1">{t('lab.modules.CellExplorer.txt_Cellsinyou', 'Cells in your body')}</p>
           </div>
           <div className="bg-blue-50 rounded-2xl p-4 text-center">
             <div className="text-2xl mb-1">📏</div>
             <div className="font-bold text-blue-600 text-sm">10-100μm</div>
-            <p className="text-sm text-blue-400 mt-1">Typical cell size</p>
+            <p className="text-sm text-blue-400 mt-1">{t('lab.modules.CellExplorer.txt_Typicalcel', 'Typical cell size')}</p>
           </div>
         </div>
 
         {/* Indian context */}
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.CellExplorer.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1">Ancient Indian Insight</h3>
               <p className="text-gray-600 text-sm leading-relaxed">

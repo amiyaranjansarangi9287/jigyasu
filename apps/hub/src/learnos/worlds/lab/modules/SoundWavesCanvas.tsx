@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface SoundWavesCanvasProps {
   frequency: number; // 0.5-3
@@ -7,6 +8,7 @@ interface SoundWavesCanvasProps {
 }
 
 export default function SoundWavesCanvas({ frequency, amplitude, isPlaying }: SoundWavesCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const freqRef = useRef(frequency);

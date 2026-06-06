@@ -1,6 +1,7 @@
 // src/worlds/early/modules/NumberLineAdventures.tsx
 
 import { useRef, useEffect, useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { useSettingsStore } from '@/store';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
@@ -12,6 +13,7 @@ import { NUMBER_LINE_PROBLEMS } from '../data/earlyContent';
 import { drawPip } from '../components/PipCanvas';
 
 export default function NumberLineAdventures() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const soundEnabled = useSettingsStore((s) => s.soundEnabled);
@@ -190,7 +192,7 @@ export default function NumberLineAdventures() {
         </div>
         <div className="px-2"><canvas ref={canvasRef} className="w-full rounded-2xl" style={{ height: '180px' }} /></div>
         <div className="px-5 pt-4 flex-1">
-          <p className="text-base font-bold text-gray-500 mb-3 text-center">Where do I land?</p>
+          <p className="text-base font-bold text-gray-500 mb-3 text-center">{t('early.modules.NumberLineAdventures.txt_WheredoIla', 'Where do I land?')}</p>
           <div className="grid grid-cols-2 gap-3">
             {options.map(opt => (
               <motion.button key={opt} whileTap={{ scale: 0.97 }} onClick={() => handleAnswer(opt)} disabled={showResult || isAnimating}
@@ -202,7 +204,7 @@ export default function NumberLineAdventures() {
         </div>
         {showResult && (
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.5 }} className="px-5 pb-24 pt-4">
-            <button onClick={handleNext} className="w-full py-4 bg-sky-600 text-white font-bold text-xl rounded-2xl min-h-[56px]">Next Problem →</button>
+            <button onClick={handleNext} className="w-full py-4 bg-sky-600 text-white font-bold text-xl rounded-2xl min-h-[56px]">{t('early.modules.NumberLineAdventures.btn_NextProble', 'Next Problem →')}</button>
           </motion.div>
         )}
       </div>

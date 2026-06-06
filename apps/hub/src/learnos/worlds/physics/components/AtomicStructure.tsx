@@ -143,7 +143,7 @@ export default function AtomicStructure() {
       ctx.fillText(`Need: p=${target.protons} e=${target.electrons}`, 20, 50);
       ctx.fillText(`You have: p=${userProtons} e=${userElectrons}`, 20, 65);
       ctx.fillStyle = isCorrect ? '#22c55e' : '#ef4444';
-      ctx.fillText(isCorrect ? '✅ Correct!' : '❌ Keep trying!', 20, 80);
+      ctx.fillText(isCorrect ? '✅ Correct!' : '🤔 Keep trying!', 20, 80);
     }
   };
 
@@ -243,7 +243,7 @@ export default function AtomicStructure() {
             ))}
           </div>
           {quizCorrect === true && <p className="mt-3 text-green-400 font-bold text-sm">✅ Correct! +10 bonus XP!</p>}
-          {quizCorrect === false && <p className="mt-3 text-red-400 font-bold text-sm">❌ Answer: {quizQuestions[currentQuiz].options[quizQuestions[currentQuiz].correct]}</p>}
+          {quizCorrect === false && <p className="mt-3 text-red-400 font-bold text-sm">🤔 Answer: {quizQuestions[currentQuiz].options[quizQuestions[currentQuiz].correct]}</p>}
           {quizCorrect === true && currentQuiz < quizQuestions.length - 1 && <button onClick={() => { setCurrentQuiz(prev => prev + 1); setQuizAnswer(null); setQuizCorrect(null); }} className="mt-3 py-2 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white font-bold text-sm">Next Question →</button>}
         </div>
       </div>

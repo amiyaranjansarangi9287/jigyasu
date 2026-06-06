@@ -1,5 +1,6 @@
 // src/worlds/lab/modules/FractionKitchen.tsx
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import LabShell from '../LabShell';
 import { useLumoOwl } from '../hooks/useLumoOwl';
 import { useLabProgress } from '../hooks/useLabProgress';
@@ -7,6 +8,7 @@ import { useLabSession } from '../hooks/useLabSession';
 import { SCALABLE_RECIPES } from '../data/labContent';
 
 export default function FractionKitchen() {
+  const { t } = useTranslation();
   const lumo = useLumoOwl('fraction-kitchen');
   const { recordRecipeSolved, updateCertification } = useLabProgress();
   const { trackEvent } = useLabSession();
@@ -38,7 +40,7 @@ export default function FractionKitchen() {
             </div>
           ))}
         </div>
-        {!win ? <button onClick={handleCheck} className="mt-8 bg-red-600 text-white p-4 rounded-2xl font-bold">Check Ingredients</button>
+        {!win ? <button onClick={handleCheck} className="mt-8 bg-red-600 text-white p-4 rounded-2xl font-bold">{t('lab.modules.FractionKitchen.btn_CheckIngre', 'Check Ingredients')}</button>
         : <button onClick={() => { setIdx(p => (p + 1) % SCALABLE_RECIPES.length); setAns({}); setChk(false); setWin(false); }} className="mt-8 bg-green-600 text-white p-4 rounded-2xl font-bold">Next Recipe</button>}
       </div>
     </LabShell>

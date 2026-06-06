@@ -9,7 +9,7 @@ export default function NavigationCards() {
     <div className="flex-1 flex flex-col md:flex-row w-full h-full relative">
       <button
         type="button"
-        className="flex-1 relative group cursor-pointer border-0 border-b md:border-b-0 md:border-r border-slate-200 overflow-hidden text-center"
+        className="card-wonder flex-1 relative group cursor-pointer border-0 border-b md:border-b-0 md:border-r border-slate-200 overflow-hidden text-center"
         onClick={() => navigate('/home')}
         aria-label="Open Learning Paths"
       >
@@ -18,7 +18,7 @@ export default function NavigationCards() {
 
         <span className="relative z-10 flex flex-col items-center justify-center h-full p-12 transform transition-transform duration-500 group-hover:-translate-y-4">
           <span
-            className="w-24 h-24 bg-sky-500 text-white rounded-3xl flex items-center justify-center text-5xl mb-6 shadow-xl shadow-sky-500/30 transform group-hover:scale-110 transition-transform duration-500"
+            className="w-24 min-h-24 bg-sky-500 text-white rounded-3xl flex items-center justify-center text-5xl mb-6 shadow-xl shadow-sky-500/30 transform group-hover:scale-110 transition-transform duration-500"
             aria-hidden="true"
           >
             {'\u{1F4DA}'}
@@ -73,16 +73,16 @@ export default function NavigationCards() {
 
       <button
         type="button"
-        className="flex-1 relative group cursor-pointer overflow-hidden border-0 text-center"
-        onClick={() => navigate('/execute')}
-        aria-label="Open Maker Space"
+        className="card-wonder flex-1 relative group cursor-pointer border-0 overflow-hidden text-center"
+        onClick={() => navigate('/camp')}
+        aria-label="Open Kids Camp"
       >
         <span className="absolute inset-0 bg-orange-50 transition-colors duration-500 group-hover:bg-orange-100 z-0" />
         <span className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20 z-0 mix-blend-overlay" />
 
         <span className="relative z-10 flex flex-col items-center justify-center h-full p-12 transform transition-transform duration-500 group-hover:-translate-y-4">
           <span
-            className="w-24 h-24 bg-orange-500 text-white rounded-3xl flex items-center justify-center text-5xl mb-6 shadow-xl shadow-orange-500/30 transform group-hover:scale-110 transition-transform duration-500"
+            className="w-24 min-h-24 bg-orange-500 text-white rounded-3xl flex items-center justify-center text-5xl mb-6 shadow-xl shadow-orange-500/30 transform group-hover:scale-110 transition-transform duration-500"
             aria-hidden="true"
           >
             {'\u{1F6E0}\uFE0F'}

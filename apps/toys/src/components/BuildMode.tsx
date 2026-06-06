@@ -130,7 +130,7 @@ export default function BuildMode({ toy, onClose }: BuildModeProps) {
           <button
             onClick={onClose}
             className="w-9 h-9 rounded-xl bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors flex-shrink-0"
-          >
+           aria-label="Action button">
             <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
@@ -208,7 +208,7 @@ export default function BuildMode({ toy, onClose }: BuildModeProps) {
         {phase === 'materials' && (
           <div className="max-w-2xl mx-auto px-4 sm:px-6 py-8">
             <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-violet-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">
+              <div className="w-16 min-h-16 bg-violet-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">
                 🛒
               </div>
               <h2 className="text-2xl font-extrabold text-gray-900 mb-2">Gather Your Materials</h2>
@@ -217,7 +217,7 @@ export default function BuildMode({ toy, onClose }: BuildModeProps) {
 
             {/* Toy image */}
             <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
-              <img src={toy.image} alt={toy.name} className="w-full h-48 sm:h-56 object-cover" />
+              <img src={toy.image} alt={toy.name} className="w-full min-h-48 sm:h-56 object-cover" />
             </div>
 
             {/* Materials checklist */}
@@ -569,7 +569,7 @@ export default function BuildMode({ toy, onClose }: BuildModeProps) {
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative bg-white rounded-2xl shadow-2xl p-6 max-w-sm w-full animate-modal-in" onClick={(e) => e.stopPropagation()}>
             <div className="text-center">
-              <div className="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+              <div className="w-14 min-h-14 bg-red-100 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
                 🔄
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Reset Progress?</h3>

@@ -1,5 +1,6 @@
 // src/worlds/lab/modules/EcosystemSandbox.tsx
 import { useRef, useEffect, useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import LabShell from '../LabShell';
 import { useLumoOwl } from '../hooks/useLumoOwl';
@@ -9,6 +10,7 @@ import { ECOSYSTEM_ORGANISMS } from '../data/labContent';
 import { drawLumoOwl } from '../components/LumoOwlCanvas';
 
 export default function EcosystemSandbox() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [pops, setPops] = useState<Record<string, number>>({ grass: 100, rabbit: 30, tiger: 5 });
   const [isRunning, setIsRunning] = useState(false);

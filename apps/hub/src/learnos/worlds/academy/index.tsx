@@ -3,19 +3,20 @@ import { Routes, Route } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import { LoadingScreen } from '@/shared/ui';
 import AcademyHome from './AcademyHome';
+import withWonderFirst from '../../core/modules/withWonderFirst';
 
-const TrigonometryCircle = lazy(() => import('./modules/TrigonometryCircle'));
-const ProjectileMotion = lazy(() => import('./modules/ProjectileMotion'));
-const WaveInterference = lazy(() => import('./modules/WaveInterference'));
-const DerivativesVisual = lazy(() => import('./modules/DerivativesVisual'));
-const RedoxReactions = lazy(() => import('./modules/RedoxReactions'));
-const DNASynthesis = lazy(() => import('./modules/DNASynthesis'));
-const Electrolysis = lazy(() => import('./modules/Electrolysis'));
-const NaturalSelection = lazy(() => import('./modules/NaturalSelection'));
-const EssayArchitect = lazy(() => import('./modules/EssayArchitect'));
-const EconomicIndicators = lazy(() => import('./modules/EconomicIndicators'));
-const TrigIdentities = lazy(() => import('./modules/TrigIdentities'));
-const ClimateSystems = lazy(() => import('./modules/ClimateSystems'));
+const TrigonometryCircle = lazy(async () => { const m = await import('./modules/TrigonometryCircle'); return { default: withWonderFirst(m.default, 'academy', 'trigonometry') }; });
+const ProjectileMotion = lazy(async () => { const m = await import('./modules/ProjectileMotion'); return { default: withWonderFirst(m.default, 'academy', 'projectile-motion') }; });
+const WaveInterference = lazy(async () => { const m = await import('./modules/WaveInterference'); return { default: withWonderFirst(m.default, 'academy', 'wave-interference') }; });
+const DerivativesVisual = lazy(async () => { const m = await import('./modules/DerivativesVisual'); return { default: withWonderFirst(m.default, 'academy', 'derivatives') }; });
+const RedoxReactions = lazy(async () => { const m = await import('./modules/RedoxReactions'); return { default: withWonderFirst(m.default, 'academy', 'redox-reactions') }; });
+const DNASynthesis = lazy(async () => { const m = await import('./modules/DNASynthesis'); return { default: withWonderFirst(m.default, 'academy', 'dna-synthesis') }; });
+const Electrolysis = lazy(async () => { const m = await import('./modules/Electrolysis'); return { default: withWonderFirst(m.default, 'academy', 'electrolysis') }; });
+const NaturalSelection = lazy(async () => { const m = await import('./modules/NaturalSelection'); return { default: withWonderFirst(m.default, 'academy', 'natural-selection') }; });
+const EssayArchitect = lazy(async () => { const m = await import('./modules/EssayArchitect'); return { default: withWonderFirst(m.default, 'academy', 'essay-architect') }; });
+const EconomicIndicators = lazy(async () => { const m = await import('./modules/EconomicIndicators'); return { default: withWonderFirst(m.default, 'academy', 'economic-indicators') }; });
+const TrigIdentities = lazy(async () => { const m = await import('./modules/TrigIdentities'); return { default: withWonderFirst(m.default, 'academy', 'trig-identities') }; });
+const ClimateSystems = lazy(async () => { const m = await import('./modules/ClimateSystems'); return { default: withWonderFirst(m.default, 'academy', 'climate-systems') }; });
 
 export default function AcademyWorld() {
   return (

@@ -233,13 +233,13 @@ export default function ClimateSimulator() {
               <div className="text-sm text-blue-400 font-bold mb-2">🌍 Paris Agreement Targets</div>
               <ul className="text-sm text-gray-300 space-y-1">
                 <li className="flex items-center gap-2">
-                  <span className={state.temperature < 1.5 ? 'text-green-400' : 'text-red-400'}>
+                  <span className={state.temperature < 1.5 ? 'text-green-400' : 'text-orange-400'}>
                     {state.temperature < 1.5 ? '✓' : '✗'}
                   </span>
                   Keep warming below 1.5°C
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className={state.temperature < 2 ? 'text-green-400' : 'text-red-400'}>
+                  <span className={state.temperature < 2 ? 'text-green-400' : 'text-orange-400'}>
                     {state.temperature < 2 ? '✓' : '✗'}
                   </span>
                   Keep warming below 2°C
@@ -266,7 +266,7 @@ export default function ClimateSimulator() {
                 <div className="flex items-center gap-2 text-sm text-gray-500 mb-1">
                   <Factory className="w-3 h-3" /> CO₂ Level
                 </div>
-                <div className={`text-2xl font-black ${state.co2 > 450 ? 'text-red-400' : state.co2 > 400 ? 'text-yellow-400' : 'text-green-400'}`}>
+                <div className={`text-2xl font-black ${state.co2 > 450 ? 'text-orange-400' : state.co2 > 400 ? 'text-yellow-400' : 'text-green-400'}`}>
                   {Math.round(state.co2)} ppm
                 </div>
                 <div className="text-sm text-gray-600">Pre-industrial: 280 ppm</div>
@@ -276,7 +276,7 @@ export default function ClimateSimulator() {
                 <div className="flex items-center gap-2 text-sm text-gray-500 mb-1">
                   <Waves className="w-3 h-3" /> Sea Level Rise
                 </div>
-                <div className={`text-2xl font-black ${state.seaLevel > 50 ? 'text-red-400' : state.seaLevel > 30 ? 'text-yellow-400' : 'text-blue-400'}`}>
+                <div className={`text-2xl font-black ${state.seaLevel > 50 ? 'text-orange-400' : state.seaLevel > 30 ? 'text-yellow-400' : 'text-blue-400'}`}>
                   +{state.seaLevel.toFixed(0)} cm
                 </div>
                 <div className="text-sm text-gray-600">vs 1900 baseline</div>
@@ -286,7 +286,7 @@ export default function ClimateSimulator() {
                 <div className="flex items-center gap-2 text-sm text-gray-500 mb-1">
                   <TreeDeciduous className="w-3 h-3" /> Forest Cover
                 </div>
-                <div className={`text-2xl font-black ${state.forestCover > 30 ? 'text-green-400' : state.forestCover > 20 ? 'text-yellow-400' : 'text-red-400'}`}>
+                <div className={`text-2xl font-black ${state.forestCover > 30 ? 'text-green-400' : state.forestCover > 20 ? 'text-yellow-400' : 'text-orange-400'}`}>
                   {state.forestCover.toFixed(0)}%
                 </div>
                 <div className="text-sm text-gray-600">of land surface</div>
@@ -294,7 +294,7 @@ export default function ClimateSimulator() {
 
               <div className="bg-gray-900 rounded-xl border border-gray-800 p-4">
                 <div className="text-sm text-gray-500 mb-1">🧊 Ice Sheets</div>
-                <div className={`text-2xl font-black ${state.iceSheets > 70 ? 'text-cyan-400' : state.iceSheets > 40 ? 'text-yellow-400' : 'text-red-400'}`}>
+                <div className={`text-2xl font-black ${state.iceSheets > 70 ? 'text-cyan-400' : state.iceSheets > 40 ? 'text-yellow-400' : 'text-orange-400'}`}>
                   {state.iceSheets.toFixed(0)}%
                 </div>
                 <div className="text-sm text-gray-600">remaining</div>
@@ -302,7 +302,7 @@ export default function ClimateSimulator() {
 
               <div className="bg-gray-900 rounded-xl border border-gray-800 p-4">
                 <div className="text-sm text-gray-500 mb-1">⛈️ Extreme Events</div>
-                <div className={`text-2xl font-black ${state.extremeEvents > 30 ? 'text-red-400' : state.extremeEvents > 20 ? 'text-orange-400' : 'text-yellow-400'}`}>
+                <div className={`text-2xl font-black ${state.extremeEvents > 30 ? 'text-orange-400' : state.extremeEvents > 20 ? 'text-orange-400' : 'text-yellow-400'}`}>
                   ~{state.extremeEvents}/decade
                 </div>
                 <div className="text-sm text-gray-600">floods, fires, storms</div>

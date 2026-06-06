@@ -60,9 +60,7 @@ export default function FloatSink() {
           <h1 className="text-3xl font-extrabold text-slate-800">
             {t('lab.floatsink.title', { defaultValue: 'Float or Sink?' })}
           </h1>
-          <p className="text-sm text-slate-500 mt-2">
-            Click objects to drop them in water — density decides!
-          </p>
+          <p className="text-sm text-slate-500 mt-2">{t('lab.modules.FloatSink.txt_Clickobjec', 'Click objects to drop them in water — density decides!')}</p>
         </div>
 
         {/* Score */}
@@ -76,9 +74,7 @@ export default function FloatSink() {
           <button
             onClick={handleReset}
             className="px-4 py-2 rounded-xl bg-slate-200 text-slate-600 font-bold text-sm hover:bg-slate-300 transition"
-          >
-            🔄 Reset
-          </button>
+          >{t('lab.modules.FloatSink.btn_Reset', '🔄 Reset')}</button>
         </div>
 
         {/* Canvas */}
@@ -121,7 +117,7 @@ export default function FloatSink() {
         {/* Indian context */}
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.FloatSink.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1">Ancient Indian Shipbuilding</h3>
               <p className="text-gray-600 text-sm leading-relaxed">

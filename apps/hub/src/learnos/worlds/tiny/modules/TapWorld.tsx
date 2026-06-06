@@ -3,6 +3,7 @@
 // Zero text. Pure sensory discovery.
 
 import { useRef, useEffect, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useSettingsStore } from '@/store';
 import { ParticleEngine } from '@/shared/canvas/engines/ParticleEngine';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
@@ -27,6 +28,7 @@ interface SpawnedAnimal {
 }
 
 export default function TapWorld() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const animalsRef = useRef<SpawnedAnimal[]>([]);

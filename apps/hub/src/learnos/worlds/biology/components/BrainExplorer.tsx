@@ -225,7 +225,7 @@ export default function BrainExplorer() {
                   </div>
 
                   <div className="bg-red-500/10 rounded-xl p-3 border border-red-500/20">
-                    <div className="text-sm text-red-400 font-bold mb-1">⚠️ If Damaged</div>
+                    <div className="text-sm text-orange-400 font-bold mb-1">⚠️ If Damaged</div>
                     <p className="text-sm text-gray-300">{selected.damage}</p>
                   </div>
                 </motion.div>

@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface WaterCycleCanvasProps {
   sunIntensity: number;
@@ -16,6 +17,7 @@ interface Droplet {
 }
 
 export default function WaterCycleCanvas({ sunIntensity, isPlaying }: WaterCycleCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const dropletsRef = useRef<Droplet[]>([]);

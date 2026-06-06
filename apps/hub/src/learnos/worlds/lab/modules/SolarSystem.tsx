@@ -40,9 +40,7 @@ export default function SolarSystem() {
           <h1 className="text-3xl font-extrabold text-white">
             {t('lab.solarsystem.title', { defaultValue: 'Solar System' })}
           </h1>
-          <p className="text-sm text-slate-400 mt-2">
-            Watch the planets orbit the Sun!
-          </p>
+          <p className="text-sm text-slate-400 mt-2">{t('lab.modules.SolarSystem.txt_Watchthepl', 'Watch the planets orbit the Sun!')}</p>
         </div>
 
         {/* Canvas */}
@@ -53,8 +51,8 @@ export default function SolarSystem() {
         {/* Speed slider */}
         <div className="bg-slate-800/50 rounded-2xl p-6 shadow-sm border border-slate-700/50">
           <div className="flex items-center justify-between mb-3">
-            <span className="text-sm text-slate-400">🐢 Slow</span>
-            <span className="text-sm text-slate-400">🚀 Fast</span>
+            <span className="text-sm text-slate-400">{t('lab.modules.SolarSystem.spn_Slow', '🐢 Slow')}</span>
+            <span className="text-sm text-slate-400">{t('lab.modules.SolarSystem.spn_Fast', '🚀 Fast')}</span>
           </div>
           <input
             type="range"
@@ -96,7 +94,7 @@ export default function SolarSystem() {
         {/* Indian context */}
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.SolarSystem.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-400 font-bold text-sm mb-1">Ancient Indian Astronomy</h3>
               <p className="text-gray-300 text-sm leading-relaxed">

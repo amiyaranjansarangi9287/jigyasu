@@ -256,7 +256,7 @@ export function WeatherStationCanvas({ isPlaying }: CanvasProps) {
       <button
         onClick={setMonsoonConditions}
         className="absolute right-4 top-4 flex items-center gap-2 rounded-xl bg-amber-500/20 border border-amber-500/30 px-4 py-2 text-amber-300 hover:bg-amber-500/30 transition-colors"
-      >
+       aria-label="Action button">
         <span>🇮🇳</span>
         <span className="text-sm">Monsoon Mode</span>
       </button>

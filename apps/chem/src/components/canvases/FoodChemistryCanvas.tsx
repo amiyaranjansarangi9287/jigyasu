@@ -104,7 +104,7 @@ export default function FoodChemistryCanvas({ isPlaying }: CanvasProps) {
           </div>
 
           {/* Cooking Visualization */}
-          <div className="relative w-64 h-48 bg-slate-800/50 rounded-2xl border border-slate-700 overflow-hidden">
+          <div className="relative w-64 min-h-48 bg-slate-800/50 rounded-2xl border border-slate-700 overflow-hidden">
             {/* Background heat */}
             <motion.div className={`absolute inset-0 bg-gradient-to-t ${selectedReaction.color}`}
               animate={{ opacity: isCooking ? [0.1, 0.3, 0.1] : isDone ? 0.3 : 0.05 }}
@@ -112,7 +112,7 @@ export default function FoodChemistryCanvas({ isPlaying }: CanvasProps) {
 
             {/* Cooking vessel */}
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
-              <div className="w-32 h-20 bg-slate-600 rounded-b-3xl border-t-4 border-slate-500 overflow-hidden relative">
+              <div className="w-32 min-h-20 bg-slate-600 rounded-b-3xl border-t-4 border-slate-500 overflow-hidden relative">
                 {/* Contents */}
                 <motion.div className={`absolute bottom-0 left-0 right-0 bg-gradient-to-t ${selectedReaction.color}`}
                   animate={{ height: isDone ? '90%' : `${30 + cookProgress * 60}%` }} />

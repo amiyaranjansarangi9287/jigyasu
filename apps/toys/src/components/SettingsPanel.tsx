@@ -31,7 +31,7 @@ export default function SettingsPanel({
           <button
             onClick={onClose}
             className="w-9 h-9 rounded-xl bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 flex items-center justify-center transition-colors"
-          >
+           aria-label="Action button">
             <svg className="w-5 h-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
@@ -78,7 +78,7 @@ export default function SettingsPanel({
               className={`w-14 h-8 rounded-full transition-colors relative ${
                 soundEnabled ? 'bg-violet-500' : 'bg-gray-300 dark:bg-gray-600'
               }`}
-            >
+             aria-label="Action button">
               <div
                 className={`absolute top-1 w-6 h-6 bg-white rounded-full shadow transition-transform ${
                   soundEnabled ? 'translate-x-7' : 'translate-x-1'

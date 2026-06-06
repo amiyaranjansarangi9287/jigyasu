@@ -19,7 +19,7 @@ interface CapsuleEntry {
   opened: boolean;
 }
 
-const CAPSULE_DURATIONS = [
+const CAPSULE_DURATIONS_DEFAULT = [
   { days: 7, label: '1 week' },
   { days: 30, label: '1 month' },
   { days: 90, label: '3 months' },
@@ -27,7 +27,7 @@ const CAPSULE_DURATIONS = [
   { days: 365, label: '1 year' },
 ];
 
-const CONCEPTS = [
+const CONCEPTS_DEFAULT = [
   'Gravity', 'Photosynthesis', 'Fractions', 'Magnetism', 'Water Cycle',
   'States of Matter', 'Electricity', 'Evolution', 'Probability', 'DNA',
 ];
@@ -71,6 +71,9 @@ export default function TimeCapsule() {
   const [openingCapsule, setOpeningCapsule] = useState<CapsuleEntry | null>(null);
   const [privacyWarning, setPrivacyWarning] = useState('');
   const [now, setNow] = useState(Date.now);
+
+  const CONCEPTS = t('crosscutting.data.time_capsule_data.concepts', { returnObjects: true, defaultValue: CONCEPTS_DEFAULT }) as string[];
+  const CAPSULE_DURATIONS = t('crosscutting.data.time_capsule_data.durations', { returnObjects: true, defaultValue: CAPSULE_DURATIONS_DEFAULT }) as {days: number, label: string}[];
 
   useEffect(() => {
     const timer = window.setInterval(() => setNow(Date.now()), 60000);

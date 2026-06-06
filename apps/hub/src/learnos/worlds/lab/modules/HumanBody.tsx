@@ -1,5 +1,6 @@
 // src/worlds/lab/modules/HumanBody.tsx
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import LabShell from '../LabShell';
 import { useLumoOwl } from '../hooks/useLumoOwl';
@@ -8,6 +9,7 @@ import { useLabSession } from '../hooks/useLabSession';
 import { BODY_SYSTEMS } from '../data/labContent';
 
 export default function HumanBody() {
+  const { t } = useTranslation();
   const lumo = useLumoOwl('human-body');
   const { recordBodySystem, updateCertification } = useLabProgress();
   const { trackEvent } = useLabSession();
@@ -32,7 +34,7 @@ export default function HumanBody() {
       <div className="min-h-screen bg-red-50 flex flex-col p-6 pb-24">
         <div className="bg-white rounded-3xl p-5 shadow-sm border border-red-100 mb-4">
           <h2 className="font-bold text-lg">🫀 Human Body Systems</h2>
-          <p className="text-sm text-slate-500">Explore how your body works!</p>
+          <p className="text-sm text-slate-500">{t('lab.modules.HumanBody.txt_Explorehow', 'Explore how your body works!')}</p>
         </div>
 
         {/* System selector */}
@@ -43,7 +45,7 @@ export default function HumanBody() {
               style={{ borderColor: selectedSystem === sys.id ? sys.color : '#E2E8F0', backgroundColor: selectedSystem === sys.id ? `${sys.color}15` : undefined }}>
               <span className="text-2xl">{sys.emoji}</span>
               <div className="text-left"><p className="font-bold text-sm text-slate-800">{sys.name}</p>
-                {explored.includes(sys.id) && <p className="text-sm text-green-500">✓ Explored</p>}
+                {explored.includes(sys.id) && <p className="text-sm text-green-500">{t('lab.modules.HumanBody.txt_Explored', '✓ Explored')}</p>}
               </div>
             </button>
           ))}
@@ -58,7 +60,7 @@ export default function HumanBody() {
                 <p className="text-sm text-amber-600 bg-amber-50 px-3 py-1 rounded-full inline-block">💡 {system.interestingFact}</p>
               </div>
 
-              <p className="text-sm text-slate-400 font-bold mb-2">ORGANS</p>
+              <p className="text-sm text-slate-400 font-bold mb-2">{t('lab.modules.HumanBody.txt_ORGANS', 'ORGANS')}</p>
               <div className="space-y-2">
                 {system.organs.map(organ => (
                   <button key={organ.id} onClick={() => setSelectedOrgan(selectedOrgan === organ.id ? null : organ.id)}
@@ -75,7 +77,7 @@ export default function HumanBody() {
 
         {explored.length >= BODY_SYSTEMS.length && (
           <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="mt-4 bg-gradient-to-r from-red-500 to-pink-500 rounded-2xl p-4 text-white text-center">
-            <div className="text-3xl mb-1">❤️🫁🦴🫃</div><p className="font-bold">All Systems Explored!</p>
+            <div className="text-3xl mb-1">❤️🫁🦴🫃</div><p className="font-bold">{t('lab.modules.HumanBody.txt_AllSystems', 'All Systems Explored!')}</p>
           </motion.div>
         )}
       </div>

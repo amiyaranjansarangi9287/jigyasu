@@ -17,7 +17,7 @@ export default function ComplexNumbers() {
   const [mode, setMode] = useState<'explore' | 'challenge'>('explore');
   const [challenge, setChallenge] = useState(makeChallenge);
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
 
   const results = useMemo(() => {
     const sumR = a1 + a2, sumI = b1 + b2;
@@ -36,7 +36,7 @@ export default function ComplexNumbers() {
 
   const answerChallenge = useCallback((opt: string) => {
     if (feedback) return;
-    if (opt === challenge.answer) { setFeedback('correct'); setScore(s => s + 15); setTimeout(() => { setChallenge(makeChallenge()); setFeedback(null); }, 1200); }
+    if (opt === challenge.answer) { setFeedback('correct'); setMastery(m => m + 1); setTimeout(() => { setChallenge(makeChallenge()); setFeedback(null); }, 1200); }
     else { setFeedback('wrong'); setTimeout(() => setFeedback(null), 900); }
   }, [feedback, challenge]);
 
@@ -53,12 +53,12 @@ export default function ComplexNumbers() {
       <AnimatePresence mode="wait">
         {mode === 'challenge' ? (
           <motion.div key="ch" className="max-w-lg mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-red-500/10 border-red-500/40' : 'bg-white/5 border-white/10'}`}>
-              <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {score}</span><span className="text-sm text-gray-400">{challenge.type}</span></div>
+            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
+              <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {mastery}</span><span className="text-sm text-gray-400">{challenge.type}</span></div>
               <p className="text-xl font-bold text-white text-center font-mono mb-5">{challenge.question}</p>
               <div className="grid grid-cols-2 gap-3">{challenge.options.map(opt => <motion.button key={opt} className={`py-3 rounded-xl text-lg font-bold font-mono ${feedback === 'correct' && opt === challenge.answer ? 'bg-green-500 text-white' : feedback ? 'bg-white/5 text-gray-500' : 'bg-white/10 text-white hover:bg-white/20 border border-white/20'}`} whileHover={!feedback ? { scale: 1.05 } : {}} whileTap={!feedback ? { scale: 0.95 } : {}} onClick={() => answerChallenge(opt)} disabled={!!feedback}>{opt}</motion.button>)}</div>
               {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✅ Correct!</p>}
-              {feedback === 'wrong' && <p className="text-red-400 font-bold text-center mt-4">Answer: {challenge.answer}</p>}
+              {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Answer: {challenge.answer}</p>}
             </div>
           </motion.div>
         ) : (

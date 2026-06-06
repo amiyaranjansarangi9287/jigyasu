@@ -3,6 +3,7 @@
 // Zero text in child UI. Visual-only weather buttons.
 
 import { useRef, useEffect, useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { useSettingsStore } from '@/store';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
@@ -16,6 +17,7 @@ interface Snowflake { x: number; y: number; r: number; speed: number; drift: num
 interface WindLine { x: number; y: number; len: number; speed: number; curve: number }
 
 export default function WeatherMaker() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const weatherRef = useRef<WeatherType>('sun');

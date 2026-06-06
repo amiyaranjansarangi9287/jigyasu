@@ -126,7 +126,7 @@ export function SimpleMachinesCanvas({ isPlaying }: CanvasProps) {
               animate={isPlaying ? { y: [0, 10, 0] } : {}}
               transition={{ duration: 2, repeat: Infinity }}
             >
-              <div className="w-16 h-16 rounded-xl bg-red-500 flex items-center justify-center text-white font-bold shadow-lg">
+              <div className="w-16 min-h-16 rounded-xl bg-red-500 flex items-center justify-center text-white font-bold shadow-lg">
                 {Math.round(effectiveLoad)}kg
               </div>
               <span className="text-xs text-slate-400 mt-1">Load</span>
@@ -139,7 +139,7 @@ export function SimpleMachinesCanvas({ isPlaying }: CanvasProps) {
               animate={isPlaying ? { y: [10, 0, 10] } : {}}
               transition={{ duration: 2, repeat: Infinity }}
             >
-              <div className="w-12 h-12 rounded-xl bg-emerald-500 flex items-center justify-center text-white font-bold shadow-lg">
+              <div className="w-12 min-h-12 rounded-xl bg-emerald-500 flex items-center justify-center text-white font-bold shadow-lg">
                 {leverEffort}kg
               </div>
               <span className="text-xs text-slate-400 mt-1">Effort</span>
@@ -198,7 +198,7 @@ export function SimpleMachinesCanvas({ isPlaying }: CanvasProps) {
                   animate={isPlaying ? { rotate: 360 } : {}}
                   transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
                 >
-                  <div className="w-12 h-12 rounded-full border-4 border-slate-400 bg-slate-700 flex items-center justify-center">
+                  <div className="w-12 min-h-12 rounded-full border-4 border-slate-400 bg-slate-700 flex items-center justify-center">
                     <div className="w-3 h-3 rounded-full bg-slate-500" />
                   </div>
                 </motion.div>
@@ -222,7 +222,7 @@ export function SimpleMachinesCanvas({ isPlaying }: CanvasProps) {
               animate={isPlaying ? { y: [0, -20, 0] } : {}}
               transition={{ duration: 3, repeat: Infinity }}
             >
-              <div className="w-20 h-20 rounded-xl bg-red-500 flex items-center justify-center text-white font-bold shadow-lg">
+              <div className="w-20 min-h-20 rounded-xl bg-red-500 flex items-center justify-center text-white font-bold shadow-lg">
                 {pulleyLoad}kg
               </div>
               <span className="text-xs text-slate-400 mt-1">Load</span>
@@ -305,7 +305,7 @@ export function SimpleMachinesCanvas({ isPlaying }: CanvasProps) {
 
               {/* Box on ramp */}
               <motion.div
-                className="absolute w-12 h-12 rounded-lg bg-red-500 flex items-center justify-center text-white font-bold"
+                className="absolute w-12 min-h-12 rounded-lg bg-red-500 flex items-center justify-center text-white font-bold"
                 style={{
                   bottom: '30%',
                   left: '20%',

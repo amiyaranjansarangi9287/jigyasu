@@ -3,6 +3,7 @@
 // Sky, stars, moon, house windows change. Firefly companion glows at night.
 
 import { useRef, useEffect, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useSettingsStore } from '@/store';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
 import TinyShell from '../TinyShell';
@@ -10,6 +11,7 @@ import { useCompanion } from '../hooks/useCompanion';
 import { useTinyProgress } from '../hooks/useTinyProgress';
 
 export default function DayAndNight() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const sunPosRef = useRef(0.25);

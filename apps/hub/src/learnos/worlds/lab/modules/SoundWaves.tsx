@@ -59,9 +59,7 @@ export default function SoundWaves() {
           <h1 className="text-3xl font-extrabold text-white">
             {t('lab.soundwaves.title', { defaultValue: 'Sound Waves' })}
           </h1>
-          <p className="text-sm text-slate-400 mt-2">
-            Change frequency and amplitude to see how sound travels!
-          </p>
+          <p className="text-sm text-slate-400 mt-2">{t('lab.modules.SoundWaves.txt_Changefreq', 'Change frequency and amplitude to see how sound travels!')}</p>
         </div>
 
         {/* Controls */}
@@ -87,7 +85,7 @@ export default function SoundWaves() {
         <div className="bg-slate-800/50 rounded-2xl p-6 shadow-sm border border-slate-700/50 space-y-4">
           <div>
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm text-slate-400">🎵 Frequency (Pitch)</span>
+              <span className="text-sm text-slate-400">{t('lab.modules.SoundWaves.spn_FrequencyP', '🎵 Frequency (Pitch)')}</span>
               <span className="text-sm font-medium text-blue-400">{frequency.toFixed(1)} Hz</span>
             </div>
             <input
@@ -103,7 +101,7 @@ export default function SoundWaves() {
           </div>
           <div>
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm text-slate-400">🔊 Amplitude (Volume)</span>
+              <span className="text-sm text-slate-400">{t('lab.modules.SoundWaves.spn_AmplitudeV', '🔊 Amplitude (Volume)')}</span>
               <span className="text-sm font-medium text-yellow-400">{Math.round(amplitude * 100)}%</span>
             </div>
             <input
@@ -122,7 +120,7 @@ export default function SoundWaves() {
         {/* Indian context */}
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.SoundWaves.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-400 font-bold text-sm mb-1">Indian Sound Science</h3>
               <p className="text-gray-300 text-sm leading-relaxed">

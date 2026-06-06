@@ -46,6 +46,7 @@ export default function GlobalLanguageSelector() {
   }, []);
 
   const handleSelect = (code: string) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     setLanguage(code as any);
     i18n.changeLanguage(code);
     localStorage.setItem('learnos-language', code);

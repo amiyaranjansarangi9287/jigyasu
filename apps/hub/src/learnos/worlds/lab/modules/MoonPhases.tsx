@@ -32,7 +32,7 @@ export default function MoonPhases() {
         <div className="text-center mb-8">
           <div className="text-5xl mb-3">{EMOJIS[phase]}</div>
           <h1 className="text-3xl font-extrabold text-white">{t('lab.moonphases.title', { defaultValue: 'Moon Phases' })}</h1>
-          <p className="text-sm text-slate-400 mt-2">Click each phase to see the Moon change!</p>
+          <p className="text-sm text-slate-400 mt-2">{t('lab.modules.MoonPhases.txt_Clickeachp', 'Click each phase to see the Moon change!')}</p>
         </div>
         <div className="flex justify-center gap-4 mb-6">
           <button onClick={toggleView} className="px-5 py-2 rounded-xl bg-indigo-600/30 text-indigo-200 text-sm font-medium hover:bg-indigo-600/50 transition">
@@ -54,7 +54,7 @@ export default function MoonPhases() {
         </div>
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.MoonPhases.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-400 font-bold text-sm mb-1">Indian Lunar Calendar</h3>
               <p className="text-gray-300 text-sm leading-relaxed">India's <strong>Panchang</strong> calendar tracks 30 lunar phases (Tithis). Festivals like Diwali (Amavasya) and Karwa Chauth (Purnima) are based on moon phases. Ancient Indians calculated the lunar month at 29.53 days — accurate to modern science!</p>

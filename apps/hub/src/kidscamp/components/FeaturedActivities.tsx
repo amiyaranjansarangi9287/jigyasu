@@ -79,7 +79,7 @@ export default function FeaturedActivities({
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
-              <div className="relative h-64 lg:h-full min-h-[300px] overflow-hidden">
+              <div className="relative min-h-64 lg:h-full min-h-[300px] overflow-hidden">
                 <img
                   src={featured[0].image}
                   alt={featured[0].name}

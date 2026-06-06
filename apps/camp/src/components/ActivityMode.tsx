@@ -494,7 +494,7 @@ export default function ActivityMode({
               <div className="max-w-2xl mx-auto">
                 {/* Step Header */}
                 <div className="flex items-start gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-orange-400 to-pink-500 flex items-center justify-center text-white font-bold text-xl flex-shrink-0">
+                  <div className="w-12 min-h-12 rounded-full bg-gradient-to-br from-orange-400 to-pink-500 flex items-center justify-center text-white font-bold text-xl flex-shrink-0">
                     {activeStep + 1}
                   </div>
                   <div>

@@ -50,7 +50,7 @@ export default function EcosystemGame() {
   const [ecosystem, setEcosystem] = useState<Organism[]>([]);
   const [turn, setTurn] = useState(0);
   const [messages, setMessages] = useState<string[]>(['🌍 Welcome! Start adding organisms to build your ecosystem.']);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
   const [showAdd, setShowAdd] = useState(false);
   const [currentWeather, setCurrentWeather] = useState<WeatherEvent>(weatherEvents[4]);
   const [weatherTurnsLeft, setWeatherTurnsLeft] = useState(0);
@@ -143,12 +143,12 @@ export default function EcosystemGame() {
     });
 
     const types = new Set(ecosystem.map(o => o.type));
-    setScore(s => s + types.size * 5 + ecosystem.length * 2);
+    setMastery(m => m + 1);
     setMessages(prev => [...newMessages, `🔄 Turn ${newTurn} complete`, ...prev.slice(0, 5)]);
   }, [ecosystem, turn, currentWeather, weatherTurnsLeft]);
 
   const reset = () => {
-    setEcosystem([]); setTurn(0); setScore(0); setPopHistory([]);
+    setEcosystem([]); setTurn(0); setMastery(0); setPopHistory([]);
     setMessages(['🌍 Ecosystem reset! Start fresh.']);
     setWeatherTurnsLeft(0);
   };
@@ -159,7 +159,7 @@ export default function EcosystemGame() {
     if (types.size >= 4 && ecosystem.length >= 8) return { label: 'Thriving! 🌟', color: 'text-emerald-400', pct: 100 };
     if (types.size >= 3 && ecosystem.length >= 5) return { label: 'Balanced', color: 'text-green-400', pct: 70 };
     if (types.size >= 2) return { label: 'Growing', color: 'text-yellow-400', pct: 40 };
-    return { label: 'Unstable', color: 'text-red-400', pct: 15 };
+    return { label: 'Unstable', color: 'text-orange-400', pct: 15 };
   })();
 
   // Mini population chart
@@ -178,7 +178,7 @@ export default function EcosystemGame() {
           {[
             { label: 'Turn', value: turn, color: 'text-white' },
             { label: 'Species', value: ecosystem.length, color: 'text-emerald-400' },
-            { label: 'Score', value: score, color: 'text-purple-400' },
+            { label: 'Mastery', value: mastery, color: 'text-purple-400' },
             { label: 'Weather', value: `${currentWeather.emoji} ${currentWeather.name}`, color: 'text-yellow-400', small: true },
             { label: 'Balance', value: balance.label, color: balance.color },
           ].map(s => (
@@ -214,7 +214,7 @@ export default function EcosystemGame() {
                           {orgs.map(org => (
                             <motion.div key={org.id} layout initial={{ scale: 0 }} animate={{ scale: 1 }}
                               className={`relative rounded-xl border p-3 ${typeColors[type]}`}>
-                              <button onClick={() => removeOrganism(org.id)} className="absolute top-1.5 right-1.5 text-gray-600 hover:text-red-400">
+                              <button onClick={() => removeOrganism(org.id)} className="absolute top-1.5 right-1.5 text-gray-600 hover:text-orange-400">
                                 <Trash2 className="w-3 h-3" />
                               </button>
                               <div className="text-2xl mb-1">{org.emoji}</div>
@@ -254,7 +254,7 @@ export default function EcosystemGame() {
                         </span>
                       ))}
                       {predator.eats.filter(prey => !ecosystem.some(e => e.name === prey)).length > 0 && (
-                        <span className="text-red-400/60 ml-1">(missing: {predator.eats.filter(p => !ecosystem.some(e => e.name === p)).join(', ')})</span>
+                        <span className="text-orange-400/60 ml-1">(missing: {predator.eats.filter(p => !ecosystem.some(e => e.name === p)).join(', ')})</span>
                       )}
                     </div>
                   ))}
@@ -338,7 +338,7 @@ export default function EcosystemGame() {
                 <li>• Decomposers stabilize the ecosystem</li>
                 <li>• Watch weather — droughts kill!</li>
                 <li>• Too many predators = prey extinction</li>
-                <li>• Diversity = higher score</li>
+                <li>• Diversity = higher mastery</li>
               </ul>
             </div>
           </div>

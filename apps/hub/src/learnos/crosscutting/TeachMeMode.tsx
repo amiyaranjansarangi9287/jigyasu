@@ -9,40 +9,7 @@ import { ROUTES } from '../constants/routes';
 import { ParentCorner } from '../shared/layout';
 import { Button } from '@jigyasu/ui';
 
-const MAX_CONCEPTS = ['gravity', 'photosynthesis', 'fractions', 'magnetism', 'water-cycle'];
-
-const MAX_QUESTIONS: Record<string, string[]> = {
-  gravity: [
-    'What is gravity?',
-    'Why do things fall down?',
-    'Does the Moon have gravity?',
-    'Why do astronauts float?',
-  ],
-  photosynthesis: [
-    'How do plants make food?',
-    'Do plants need sunlight?',
-    'What do plants breathe?',
-    'Where does the mass of a tree come from?',
-  ],
-  fractions: [
-    'What is a half?',
-    'Is 1/2 bigger than 1/3?',
-    'What is 1/2 + 1/4?',
-    'Can you show me with pizza?',
-  ],
-  magnetism: [
-    'What is a magnet?',
-    'Why do magnets stick to metal?',
-    'Do all metals stick to magnets?',
-    'Can magnets push things away?',
-  ],
-  'water-cycle': [
-    'Where does rain come from?',
-    'Why do clouds float?',
-    'What happens to puddles?',
-    'Is the water I drink the same as dinosaur water?',
-  ],
-};
+const MAX_CONCEPTS_DEFAULT = ['gravity', 'photosynthesis', 'fractions', 'magnetism', 'water-cycle'];
 
 type TeachState = 'select' | 'teaching' | 'question' | 'feedback' | 'complete';
 
@@ -58,7 +25,9 @@ export default function TeachMeMode() {
   const [questionsAnswered, setQuestionsAnswered] = useState(0);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-  const questions = selectedConcept ? MAX_QUESTIONS[selectedConcept] ?? [] : [];
+  const conceptsList = t('crosscutting.data.teach_me_data.concepts', { returnObjects: true, defaultValue: MAX_CONCEPTS_DEFAULT }) as string[];
+  const questionsObj = t(`crosscutting.data.teach_me_data.questions.${selectedConcept}`, { returnObjects: true }) as string[];
+  const questions = Array.isArray(questionsObj) ? questionsObj : [];
   const currentQuestion = questions[currentQuestionIndex] ?? '';
 
   const handleStartTeaching = (concept: string) => {
@@ -147,16 +116,16 @@ export default function TeachMeMode() {
               <p className="text-sm text-gray-400 mb-4">
                 {t('crosscutting.teach_me.teach_what')}
               </p>
-              <div className="space-y-3">
-                {MAX_CONCEPTS.map((concept) => (
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {conceptsList.map((c) => (
                   <button
-                    key={concept}
-                    onClick={() => handleStartTeaching(concept)}
-                    className="w-full p-4 bg-white rounded-2xl border-2 border-gray-200
-                               hover:border-emerald-300 hover:bg-emerald-50 transition-all
-                               text-left font-medium capitalize min-h-[56px]"
+                    key={c}
+                    onClick={() => handleStartTeaching(c)}
+                    className="p-4 bg-white rounded-2xl border-2 border-transparent hover:border-blue-200 
+                             shadow-sm hover:shadow text-left font-medium text-gray-700 capitalize
+                             transition-all hover:scale-[1.02]"
                   >
-                    {concept.replace('-', ' ')}
+                    {c.replace('-', ' ')}
                   </button>
                 ))}
               </div>

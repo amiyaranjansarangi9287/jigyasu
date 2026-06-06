@@ -100,10 +100,10 @@ function DerivativeExplorer() {
         </div>
         <div className="grid grid-cols-2 gap-3">
           <div className="bg-purple-500/10 rounded-xl p-4 border border-purple-500/20 text-center"><p className="text-gray-400 text-sm">f(x) = {fLabel}</p><motion.p key={yVal} className="text-purple-400 font-bold text-xl" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>{yVal.toFixed(3)}</motion.p></div>
-          <div className="bg-red-500/10 rounded-xl p-4 border border-red-500/20 text-center"><p className="text-gray-400 text-sm">f'(x) = {dfLabel}</p><motion.p key={slope} className="text-red-400 font-bold text-xl" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>{slope.toFixed(3)}</motion.p></div>
+          <div className="bg-red-500/10 rounded-xl p-4 border border-red-500/20 text-center"><p className="text-gray-400 text-sm">f'(x) = {dfLabel}</p><motion.p key={slope} className="text-orange-400 font-bold text-xl" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>{slope.toFixed(3)}</motion.p></div>
         </div>
         <div className="bg-white/5 rounded-xl p-3 border border-white/10 text-sm text-gray-300 space-y-1">
-          <p>📝 The <span className="text-red-400">derivative f'(x)</span> is the <strong>slope of the tangent line</strong> at x.</p>
+          <p>📝 The <span className="text-orange-400">derivative f'(x)</span> is the <strong>slope of the tangent line</strong> at x.</p>
           <p>📝 {slope > 0 ? '📈 Positive slope → function increasing' : slope < 0 ? '📉 Negative slope → function decreasing' : '➖ Zero slope → function flat (possible max/min)'}</p>
         </div>
       </div>

@@ -233,7 +233,7 @@ export default function MemoryMatch() {
                   Clear
                 </button>
               </div>
-              <div className="space-y-2 max-h-48 overflow-y-auto">
+              <div className="space-y-2 max-min-h-48 overflow-y-auto">
                 {history.map((round, i) => (
                   <div key={i} className="flex items-center justify-between bg-white/5 rounded-lg px-3 py-2 text-sm">
                     <span className="text-gray-400">{round.date}</span>

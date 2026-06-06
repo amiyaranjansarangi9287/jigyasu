@@ -5,6 +5,19 @@ import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  base: '/cosmos/',
+  
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'framer-motion': ['framer-motion'],
+          'lucide': ['lucide-react']
+        }
+      }
+    }
+  },
   plugins: [
     react(),
     tailwindcss(),
@@ -28,6 +41,7 @@ export default defineConfig({
           }
         ]
       }
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     }) as any
   ],
 })

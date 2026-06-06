@@ -119,7 +119,7 @@ export default function MixturesSolutionsCanvas({ isPlaying }: CanvasProps) {
       <div className="relative">
         <div
           ref={beakerRef}
-          className="relative w-48 h-64 border-4 border-slate-400 border-t-0 rounded-b-3xl bg-slate-900/30 overflow-hidden"
+          className="relative w-48 min-h-64 border-4 border-slate-400 border-t-0 rounded-b-3xl bg-slate-900/30 overflow-hidden"
         >
           {/* Water */}
           <motion.div

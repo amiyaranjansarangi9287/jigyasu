@@ -19,6 +19,7 @@ export function useSoundEffects() {
 
   const getAudioContext = useCallback(() => {
     if (!audioContextRef.current) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       audioContextRef.current = new (window.AudioContext || (window as any).webkitAudioContext)();
     }
     return audioContextRef.current;

@@ -88,7 +88,7 @@ function CellVisualization({ phaseIndex }: { phaseIndex: number }) {
         <div className="absolute inset-0 rounded-full border-2 border-blue-500/50 bg-blue-500/10" />
         <div className="absolute top-8 left-1/2 -translate-x-1/2 flex gap-0.5">
           <motion.div className="text-lg" animate={{ rotate: [0, 10, 0] }} transition={{ repeat: Infinity, duration: 1 }}>╋</motion.div>
-          <motion.div className="text-lg text-red-400" animate={{ rotate: [0, -10, 0] }} transition={{ repeat: Infinity, duration: 1 }}>╋</motion.div>
+          <motion.div className="text-lg text-orange-400" animate={{ rotate: [0, -10, 0] }} transition={{ repeat: Infinity, duration: 1 }}>╋</motion.div>
         </div>
         <div className="absolute top-16 left-10 flex gap-0.5">
           <div className="text-lg text-blue-400">╋</div>
@@ -102,7 +102,7 @@ function CellVisualization({ phaseIndex }: { phaseIndex: number }) {
         <div className="absolute inset-0 rounded-full border-2 border-blue-500/50 bg-blue-500/10" />
         <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-0.5 bg-gray-500/30" />
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-2">
-          <div className="flex justify-center gap-1"><span className="text-sm">╋╋</span><span className="text-sm text-red-400">╋╋</span></div>
+          <div className="flex justify-center gap-1"><span className="text-sm">╋╋</span><span className="text-sm text-orange-400">╋╋</span></div>
           <div className="flex justify-center gap-1"><span className="text-sm text-blue-400">╋╋</span><span className="text-sm text-green-400">╋╋</span></div>
         </div>
       </div>
@@ -115,7 +115,7 @@ function CellVisualization({ phaseIndex }: { phaseIndex: number }) {
           <div className="text-sm text-blue-400">╋╋</div>
         </motion.div>
         <motion.div className="absolute top-1/4 right-4" animate={{ x: [10, -10] }} transition={{ repeat: Infinity, duration: 1.5, repeatType: 'reverse' }}>
-          <div className="text-sm text-red-400">╋╋</div>
+          <div className="text-sm text-orange-400">╋╋</div>
           <div className="text-sm text-green-400">╋╋</div>
         </motion.div>
       </div>

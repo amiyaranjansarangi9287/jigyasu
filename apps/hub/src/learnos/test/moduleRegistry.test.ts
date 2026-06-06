@@ -23,7 +23,7 @@ describe('ModuleRegistry', () => {
 
     expect(biologyModules.length).toBe(26);
     expect(physicsModules.length).toBe(39);
-    expect(labModules.length).toBe(41);
+    expect(labModules.length).toBe(62);
     expect(mathModules.length).toBe(9);
   });
 
@@ -102,7 +102,7 @@ describe('ModuleRegistry', () => {
     const stats = getRegistryStats();
     expect(stats.byWorld.biology).toBe(26);
     expect(stats.byWorld.physics).toBe(39);
-    expect(stats.byWorld.lab).toBe(41);
+    expect(stats.byWorld.lab).toBe(62);
     expect(stats.byWorld.math).toBe(9);
   });
 

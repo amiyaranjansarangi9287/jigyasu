@@ -1,5 +1,6 @@
 // src/worlds/discovery/modules/NumberSystems.tsx
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import DiscoveryShell from '../DiscoveryShell';
 import { useLumoSage } from '../hooks/useLumoSage';
@@ -7,6 +8,7 @@ import { useDiscoveryProgress } from '../hooks/useDiscoveryProgress';
 import { useDiscoverySession } from '../hooks/useDiscoverySession';
 
 export default function NumberSystems() {
+  const { t } = useTranslation();
   const lumo = useLumoSage();
   const { recordNumberConversion } = useDiscoveryProgress();
   const { trackEvent } = useDiscoverySession();
@@ -31,13 +33,13 @@ export default function NumberSystems() {
     <DiscoveryShell module="number-systems">
       <div className="flex-1 flex flex-col p-5 bg-slate-900 pb-24">
         <div className="bg-slate-800 rounded-2xl p-4 border border-slate-700 mb-4">
-          <p className="text-white font-bold">💻 Number Systems</p>
-          <p className="text-slate-400 text-sm mt-1">Everything digital is made of 0s and 1s</p>
+          <p className="text-white font-bold">{t('discovery.modules.NumberSystems.txt_NumberSyst', '💻 Number Systems')}</p>
+          <p className="text-slate-400 text-sm mt-1">{t('discovery.modules.NumberSystems.txt_Everything', 'Everything digital is made of 0s and 1s')}</p>
         </div>
 
         {/* Binary light bulbs */}
         <div className="bg-slate-800 rounded-2xl p-4 border border-slate-700 mb-4">
-          <p className="text-slate-400 text-sm font-bold mb-3">TAP BULBS TO WRITE BINARY</p>
+          <p className="text-slate-400 text-sm font-bold mb-3">{t('discovery.modules.NumberSystems.txt_TAPBULBSTO', 'TAP BULBS TO WRITE BINARY')}</p>
           <div className="flex gap-1 justify-center mb-2">
             {[128, 64, 32, 16, 8, 4, 2, 1].map((val, i) => (
               <div key={i} className="text-center">
@@ -62,7 +64,7 @@ export default function NumberSystems() {
 
         {/* Hex colour explorer */}
         <div className="bg-slate-800 rounded-2xl p-4 border border-slate-700 mb-4">
-          <p className="text-slate-400 text-sm font-bold mb-3">🎨 HEX COLOURS</p>
+          <p className="text-slate-400 text-sm font-bold mb-3">{t('discovery.modules.NumberSystems.txt_HEXCOLOURS', '🎨 HEX COLOURS')}</p>
           <div className="w-full h-16 rounded-xl mb-3 border border-slate-600" style={{ backgroundColor: hexColor }} />
           <p className="text-center text-white font-mono font-bold text-lg mb-3">{hexColor}</p>
           <div className="space-y-2">
@@ -78,7 +80,7 @@ export default function NumberSystems() {
 
         {/* India connection */}
         <div className="bg-amber-950/30 rounded-2xl p-4 border border-amber-900/30">
-          <p className="text-amber-400 text-sm font-medium">🇮🇳 Zero was invented in India by Brahmagupta (628 AD). Without zero, binary is impossible. Without binary, no computer exists. India made the digital age possible.</p>
+          <p className="text-amber-400 text-sm font-medium">{t('discovery.modules.NumberSystems.txt_Zerowasinv', '🇮🇳 Zero was invented in India by Brahmagupta (628 AD). Without zero, binary is impossible. Without binary, no computer exists. India made the digital age possible.')}</p>
         </div>
       </div>
     </DiscoveryShell>

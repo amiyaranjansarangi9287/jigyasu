@@ -127,7 +127,7 @@ export default function MetalsReactivityCanvas({ isPlaying }: CanvasProps) {
                 setSelectedMetal(metal);
                 setShowResult(false);
               }}
-              className={`flex-shrink-0 w-12 h-16 rounded-xl flex flex-col items-center justify-center transition-all ${metal.color} ${
+              className={`flex-shrink-0 w-12 min-h-16 rounded-xl flex flex-col items-center justify-center transition-all ${metal.color} ${
                 selectedMetal.symbol === metal.symbol 
                   ? 'ring-2 ring-white shadow-lg' 
                   : 'opacity-70 hover:opacity-100'
@@ -171,7 +171,7 @@ export default function MetalsReactivityCanvas({ isPlaying }: CanvasProps) {
       </div>
 
       {/* Reaction Visualization */}
-      <div className="relative w-64 h-48 bg-slate-800/50 rounded-2xl border border-slate-700 overflow-hidden">
+      <div className="relative w-64 min-h-48 bg-slate-800/50 rounded-2xl border border-slate-700 overflow-hidden">
         {/* Container/Beaker */}
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-28 border-4 border-slate-500 border-t-0 rounded-b-2xl overflow-hidden">
           {/* Liquid */}
@@ -277,7 +277,7 @@ export default function MetalsReactivityCanvas({ isPlaying }: CanvasProps) {
       {/* Metal Info */}
       <div className="bg-slate-800/50 rounded-xl p-4 max-w-sm w-full">
         <div className="flex items-center gap-3 mb-3">
-          <div className={`w-12 h-12 rounded-xl ${selectedMetal.color} flex items-center justify-center font-bold text-xl shadow-lg`}
+          <div className={`w-12 min-h-12 rounded-xl ${selectedMetal.color} flex items-center justify-center font-bold text-xl shadow-lg`}
                style={{ color: ['Ag', 'Al', 'Ca', 'Mg'].includes(selectedMetal.symbol) ? '#1f2937' : 'white' }}>
             {selectedMetal.symbol}
           </div>

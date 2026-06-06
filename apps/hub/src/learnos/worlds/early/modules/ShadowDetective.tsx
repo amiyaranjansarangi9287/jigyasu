@@ -2,6 +2,7 @@
 // Drag a torch to change shadow direction/length. Solve challenges.
 
 import { useRef, useEffect, useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { useSettingsStore } from '@/store';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
@@ -12,6 +13,7 @@ import { useEarlySession } from '../hooks/useEarlySession';
 import { SHADOW_CHALLENGES } from '../data/earlyContent';
 
 export default function ShadowDetective() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const torchRef = useRef({ x: 0.7, y: 0.3 });
@@ -172,7 +174,7 @@ export default function ShadowDetective() {
       <div className="min-h-screen bg-indigo-950 flex flex-col">
         <div className="px-5 pt-6 pb-3">
           <div className="bg-indigo-900/50 rounded-2xl p-4 border border-indigo-700">
-            <div className="flex items-center gap-3"><span className="text-3xl">🐤🔦</span>
+            <div className="flex items-center gap-3"><span className="text-3xl">{t('early.modules.ShadowDetective.spn_', '🐤🔦')}</span>
               <div><p className="text-base font-bold text-indigo-200">{targetLabels[challenge.targetPosition]}</p>
                 <p className="text-sm text-indigo-400">Drag the torch! · {solvedCount}/{SHADOW_CHALLENGES.length} solved</p></div>
             </div>
@@ -183,7 +185,7 @@ export default function ShadowDetective() {
 
         {solved && (
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="px-5 pb-24 pt-4">
-            <button onClick={handleNext} className="w-full py-4 bg-indigo-600 text-white font-bold text-xl rounded-2xl min-h-[56px]">Next Challenge 🔦</button>
+            <button onClick={handleNext} className="w-full py-4 bg-indigo-600 text-white font-bold text-xl rounded-2xl min-h-[56px]">{t('early.modules.ShadowDetective.btn_NextChalle', 'Next Challenge 🔦')}</button>
           </motion.div>
         )}
       </div>

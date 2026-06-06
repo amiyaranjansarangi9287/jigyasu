@@ -38,7 +38,7 @@ function LandingPage() {
   const lastModule = getLastModule();
 
   return (
-    <div className={`min-h-[calc(100vh-72px)] bg-slate-50 flex flex-col ${fontClass} relative`}>
+    <div className={`min-h-[calc(100vh-72px)] bg-jigyasu-grid flex flex-col ${fontClass} relative`}>
       {!profile && (
         <OnboardingWizard
           onComplete={(name, avatar, lang, ageTier) => {

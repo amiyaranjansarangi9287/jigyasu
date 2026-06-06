@@ -33,6 +33,7 @@ export function initSentry() {
       ],
       
       // Filter errors and add user context
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       beforeSend(event: any, hint: any) {
         // Ignore errors from browser extensions
         if (event.exception?.values?.[0]?.stacktrace?.frames?.[0]?.filename?.includes('extension')) {
@@ -117,5 +118,6 @@ export function addBreadcrumb(category: string, message: string, data?: Record<s
  * Track performance transaction
  */
 export function startTransaction(name: string, op: string) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   return Sentry.startSpan({ name, op }, (span: any) => span);
 }

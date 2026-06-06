@@ -160,7 +160,7 @@ export default function LogicPuzzles() {
               const borderB = puzzleType === 'sudoku' && r === 1 ? 'border-b-2 border-b-white/40' : '';
 
               return (
-                <div key={idx} className={`w-14 h-14 sm:w-16 sm:h-16 border border-white/15 flex items-center justify-center relative ${isGiven ? 'bg-white/10' : 'bg-white/5'} ${conflict ? 'bg-red-500/20' : ''} ${borderR} ${borderB}`}>
+                <div key={idx} className={`w-14 min-h-14 sm:w-16 sm:min-h-16 border border-white/15 flex items-center justify-center relative ${isGiven ? 'bg-white/10' : 'bg-white/5'} ${conflict ? 'bg-red-500/20' : ''} ${borderR} ${borderB}`}>
                   {groupLabel && <span className="absolute top-0.5 left-1 text-[9px] text-yellow-400 font-bold">{groupLabel}</span>}
                   {isGiven ? (
                     <span className="text-white font-bold text-xl">{val}</span>

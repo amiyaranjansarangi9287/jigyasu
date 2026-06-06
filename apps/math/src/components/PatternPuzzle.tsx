@@ -631,7 +631,7 @@ function PatternVisual({ puzzle }: { puzzle: Puzzle }) {
               transition={{ delay: i * 0.2, type: 'spring' }}
             >
               <motion.div
-                className="w-14 h-14 rounded-full bg-gradient-to-br from-yellow-400 to-amber-600 flex items-center justify-center text-white font-bold shadow-lg"
+                className="w-14 min-h-14 rounded-full bg-gradient-to-br from-yellow-400 to-amber-600 flex items-center justify-center text-white font-bold shadow-lg"
                 animate={{ rotate: [0, 5, -5, 0], boxShadow: ['0 0 0 rgba(251, 191, 36, 0)', '0 0 20px rgba(251, 191, 36, 0.6)', '0 0 0 rgba(251, 191, 36, 0)'] }}
                 transition={{ duration: 2, repeat: Infinity, delay: i * 0.3 }}
               >
@@ -690,7 +690,7 @@ function PatternVisual({ puzzle }: { puzzle: Puzzle }) {
                 transition={{ delay: i * 0.15, type: 'spring' }}
               >
                 <motion.div
-                  className={`w-14 h-14 rounded-full flex items-center justify-center text-white font-bold border-2 ${
+                  className={`w-14 min-h-14 rounded-full flex items-center justify-center text-white font-bold border-2 ${
                     isEven
                       ? 'bg-pink-500/40 border-pink-400'
                       : 'bg-violet-500/40 border-violet-400'
@@ -887,7 +887,7 @@ export default function PatternPuzzle() {
                 className="flex flex-col items-center"
               >
                 <div
-                  className={`w-14 h-14 sm:w-16 sm:h-16 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold transition-all ${
+                  className={`w-14 min-h-14 sm:w-16 sm:min-h-16 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold transition-all ${
                     isQuestion
                       ? feedback === 'correct'
                         ? 'bg-green-500/40 border-2 border-green-400 text-green-400 animate-pulse-glow'

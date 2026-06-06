@@ -1,5 +1,6 @@
 // src/worlds/discovery/modules/PeriodicTableExplorer.tsx
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import DiscoveryShell from '../DiscoveryShell';
 import { useDiscoveryProgress } from '../hooks/useDiscoveryProgress';
@@ -15,6 +16,7 @@ const ELEMENTS = [
 ];
 
 export default function PeriodicTableExplorer() {
+  const { t } = useTranslation();
   const { recordElementExplored } = useDiscoveryProgress();
   const { trackEvent } = useDiscoverySession();
   const [selected, setSelected] = useState<string | null>(null);
@@ -31,7 +33,7 @@ export default function PeriodicTableExplorer() {
     <DiscoveryShell module="periodic-table">
       <div className="flex-1 flex flex-col p-5 bg-slate-900 pb-24">
         <div className="bg-slate-800 rounded-2xl p-4 border border-slate-700 mb-4">
-          <p className="text-white font-bold">🧪 Periodic Table Explorer</p>
+          <p className="text-white font-bold">{t('discovery.modules.PeriodicTableExplorer.txt_PeriodicTa', '🧪 Periodic Table Explorer')}</p>
           <p className="text-slate-400 text-sm mt-1">Tap elements to discover patterns ({explored.length}/{ELEMENTS.length})</p>
         </div>
         <div className="grid grid-cols-3 gap-3 mb-4">{ELEMENTS.map(e => (

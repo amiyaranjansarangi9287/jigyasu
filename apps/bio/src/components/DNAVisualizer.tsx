@@ -134,7 +134,7 @@ export default function DNAVisualizer() {
             {playing ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
             {playing ? 'Pause' : 'Play'}
           </button>
-          <button onClick={reset} className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800 text-gray-300 text-sm font-medium hover:bg-gray-700">
+          <button onClick={reset} className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800 text-gray-300 text-sm font-medium hover:bg-gray-700" aria-label="Rotate ccw">
             <RotateCcw className="w-4 h-4" /> Reset
           </button>
           {viewMode === 'helix' && (

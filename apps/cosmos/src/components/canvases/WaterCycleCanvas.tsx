@@ -149,9 +149,9 @@ export function WaterCycleCanvas({ isPlaying }: CanvasProps) {
         transition={{ duration: 10, repeat: Infinity }}
       >
         <div className="relative">
-          <div className="absolute h-12 w-20 rounded-full bg-white/90" />
+          <div className="absolute min-h-12 w-20 rounded-full bg-white/90" />
           <div className="absolute -left-4 top-4 h-10 w-16 rounded-full bg-white/80" />
-          <div className="absolute left-8 top-2 h-14 w-24 rounded-full bg-white/85" />
+          <div className="absolute left-8 top-2 min-h-14 w-24 rounded-full bg-white/85" />
           {sunIntensity > 60 && (
             <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 text-2xl">💧</div>
           )}
@@ -166,7 +166,7 @@ export function WaterCycleCanvas({ isPlaying }: CanvasProps) {
         <div className="relative">
           <div className="absolute h-10 w-16 rounded-full bg-white/80" />
           <div className="absolute -left-3 top-3 h-8 w-12 rounded-full bg-white/70" />
-          <div className="absolute left-6 top-1 h-12 w-20 rounded-full bg-white/75" />
+          <div className="absolute left-6 top-1 min-h-12 w-20 rounded-full bg-white/75" />
         </div>
       </motion.div>
 

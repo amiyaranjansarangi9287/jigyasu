@@ -239,7 +239,7 @@ export default function CombustionLabCanvas({ isPlaying }: CanvasProps) {
       </div>
 
       {/* Scene */}
-      <div className="relative w-72 h-64 bg-gradient-to-b from-slate-900 to-slate-800 rounded-2xl overflow-hidden border-2 border-slate-700">
+      <div className="relative w-72 min-h-64 bg-gradient-to-b from-slate-900 to-slate-800 rounded-2xl overflow-hidden border-2 border-slate-700">
         {/* Glow */}
         {isLit && (
           <div className="absolute inset-0" style={{
@@ -272,7 +272,7 @@ export default function CombustionLabCanvas({ isPlaying }: CanvasProps) {
           {fuelType === 'candle' && (
             <>
               <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-1 h-3 bg-gray-700" />
-              <div className="w-10 h-16 bg-gradient-to-b from-amber-100 to-amber-200 rounded-t-sm rounded-b-lg shadow-md" />
+              <div className="w-10 min-h-16 bg-gradient-to-b from-amber-100 to-amber-200 rounded-t-sm rounded-b-lg shadow-md" />
             </>
           )}
           {fuelType === 'wood' && (

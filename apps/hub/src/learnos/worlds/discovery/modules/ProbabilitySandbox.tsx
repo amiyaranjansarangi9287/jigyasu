@@ -1,5 +1,6 @@
 // src/worlds/discovery/modules/ProbabilitySandbox.tsx
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import DiscoveryShell from '../DiscoveryShell';
 import { useLumoSage } from '../hooks/useLumoSage';
@@ -14,6 +15,7 @@ const EXPERIMENTS = [
 ];
 
 export default function ProbabilitySandbox() {
+  const { t } = useTranslation();
   const lumo = useLumoSage();
   const { recordProbabilityExperiment } = useDiscoveryProgress();
   const { trackEvent } = useDiscoverySession();
@@ -52,7 +54,7 @@ export default function ProbabilitySandbox() {
 
         {/* Sample size */}
         <div className="bg-slate-800 rounded-xl p-3 border border-slate-700 mb-4">
-          <div className="flex justify-between text-sm mb-1"><span className="text-slate-400">Sample Size</span><span className="text-white font-bold">{sampleSize}</span></div>
+          <div className="flex justify-between text-sm mb-1"><span className="text-slate-400">{t('discovery.modules.ProbabilitySandbox.spn_SampleSize', 'Sample Size')}</span><span className="text-white font-bold">{sampleSize}</span></div>
           <div className="flex gap-2">{[10, 100, 1000].map(s => (
             <button key={s} onClick={() => { setSampleSize(s); setResults([]); setHasRun(false); }} className={`flex-1 py-2 rounded-lg text-sm font-bold min-h-[40px] ${sampleSize === s ? 'bg-red-600 text-white' : 'bg-slate-700 text-slate-400'}`}>{s}</button>
           ))}</div>
@@ -75,7 +77,7 @@ export default function ProbabilitySandbox() {
                 </div>
               );
             })}</div>
-            <p className="text-slate-500 text-sm mt-2 text-center">Yellow line = expected probability</p>
+            <p className="text-slate-500 text-sm mt-2 text-center">{t('discovery.modules.ProbabilitySandbox.txt_Yellowline', 'Yellow line = expected probability')}</p>
           </motion.div>
         )}
 

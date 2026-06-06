@@ -27,11 +27,11 @@ export function VideoPlayer({ url, title }: { url: string, title?: string }) {
   return (
     <div className="rounded-2xl overflow-hidden border-2 border-white/20 bg-black/50 relative group">
       {!isPlaying ? (
-        <div className="h-48 w-full flex items-center justify-center cursor-pointer" onClick={() => setIsPlaying(true)}>
+        <div className="min-h-48 w-full flex items-center justify-center cursor-pointer" onClick={() => setIsPlaying(true)}>
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4">
             <span className="text-white font-bold">{title || 'Video Explanation'}</span>
           </div>
-          <button className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:scale-110 transition-transform">
+          <button className="w-16 min-h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:scale-110 transition-transform" aria-label="Action button">
             <span className="text-3xl ml-1">▶️</span>
           </button>
         </div>
@@ -40,7 +40,7 @@ export function VideoPlayer({ url, title }: { url: string, title?: string }) {
           src={url} 
           controls 
           autoPlay 
-          className="w-full h-48 object-cover"
+          className="w-full min-h-48 object-cover"
         />
       )}
     </div>

@@ -66,7 +66,7 @@ export default function SpacedRepetition() {
                 className="flex-none snap-start group w-64 p-5 text-left flex flex-col gap-3 hover:border-sky-300"
               >
                 <div className="flex justify-between items-start">
-                  <div className="w-12 h-12 rounded-2xl bg-sky-100 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                  <div className="w-12 min-h-12 rounded-2xl bg-sky-100 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
                     {meta.emoji}
                   </div>
                   <div className="bg-orange-100 text-orange-600 text-sm font-bold px-2 py-1 rounded-lg">

@@ -137,7 +137,7 @@ export default function CorrosionCanvas({ isPlaying }: CanvasProps) {
           )}
 
           {/* Metal Sample Visualization */}
-          <div className="relative w-56 h-40 rounded-xl overflow-hidden border-2 border-slate-600 shadow-inner"
+          <div className="relative w-56 min-h-40 rounded-xl overflow-hidden border-2 border-slate-600 shadow-inner"
             style={{ backgroundColor: metalConfig.color }}>
             
             {/* Coating layer visual */}

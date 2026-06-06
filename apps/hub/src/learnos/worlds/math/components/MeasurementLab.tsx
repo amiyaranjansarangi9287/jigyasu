@@ -55,7 +55,7 @@ export default function MeasurementLab() {
   const [mode, setMode] = useState<'explore' | 'challenge'>('explore');
   const [challenge, setChallenge] = useState(() => makeChallenge('length'));
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
 
   const list = units[category];
   const fromUnit = list[fromIdx] || list[0];
@@ -78,7 +78,7 @@ export default function MeasurementLab() {
     if (feedback) return;
     if (opt === challenge.answer) {
       setFeedback('correct');
-      setScore(s => s + 10);
+      setMastery(m => m + 1);
       setTimeout(() => { setChallenge(makeChallenge(category)); setFeedback(null); }, 1200);
     } else {
       setFeedback('wrong');
@@ -107,8 +107,8 @@ export default function MeasurementLab() {
       <AnimatePresence mode="wait">
         {mode === 'challenge' ? (
           <motion.div key="ch" className="max-w-lg mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-red-500/10 border-red-500/40' : 'bg-white/5 border-white/10'}`}>
-              <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {score}</span></div>
+            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
+              <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {mastery}</span></div>
               <p className="text-2xl font-bold text-white text-center mb-5">
                 {challenge.value} {challenge.fromU.short} = ? {challenge.toU.short}
               </p>
@@ -120,7 +120,7 @@ export default function MeasurementLab() {
                 ))}
               </div>
               {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✅ Correct!</p>}
-              {feedback === 'wrong' && <p className="text-red-400 font-bold text-center mt-4">Answer: {challenge.answer} {challenge.toU.short}</p>}
+              {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Answer: {challenge.answer} {challenge.toU.short}</p>}
             </div>
           </motion.div>
         ) : (

@@ -40,7 +40,7 @@ export default function Testimonials() {
 
             <div className="relative">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-violet-100 to-indigo-100 flex items-center justify-center text-3xl">
+                <div className="w-14 min-h-14 rounded-full bg-gradient-to-br from-violet-100 to-indigo-100 flex items-center justify-center text-3xl">
                   {testimonials[active].avatar}
                 </div>
                 <div>
@@ -74,7 +74,7 @@ export default function Testimonials() {
                 onClick={() => setActive(idx)}
                 className={`transition-all duration-300 ${
                   idx === active
-                    ? 'w-12 h-12 rounded-full bg-gradient-to-br from-violet-100 to-indigo-100 ring-2 ring-violet-400 ring-offset-2 text-2xl scale-110'
+                    ? 'w-12 min-h-12 rounded-full bg-gradient-to-br from-violet-100 to-indigo-100 ring-2 ring-violet-400 ring-offset-2 text-2xl scale-110'
                     : 'w-10 h-10 rounded-full bg-gray-100 text-xl hover:bg-gray-200 opacity-60 hover:opacity-100'
                 } flex items-center justify-center`}
               >

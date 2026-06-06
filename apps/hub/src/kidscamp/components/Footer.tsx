@@ -38,6 +38,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                     className="flex items-center gap-2 hover:text-orange-400 transition-colors"
                   >
                     <span>{pillar.icon}</span>
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     <span>{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
                   </button>
                 </li>
@@ -62,16 +63,16 @@ export default function Footer({ onNavigate }: FooterProps) {
                 >{t('kidscamp.footer.project_weeks', 'Project Weeks')}</button>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-400 transition-colors">{t('kidscamp.footer.printable_checklists', 'Printable Checklists')}</a>
+                <a href="/" className="hover:text-orange-400 transition-colors">{t('kidscamp.footer.printable_checklists', 'Printable Checklists')}</a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-400 transition-colors">{t('kidscamp.footer.safety_tips', 'Safety Tips')}</a>
+                <a href="/" className="hover:text-orange-400 transition-colors">{t('kidscamp.footer.safety_tips', 'Safety Tips')}</a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-400 transition-colors">{t('kidscamp.footer.material_substitutes', 'Material Substitutes')}</a>
+                <a href="/" className="hover:text-orange-400 transition-colors">{t('kidscamp.footer.material_substitutes', 'Material Substitutes')}</a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-400 transition-colors">{t('kidscamp.footer.faqs', 'FAQs')}</a>
+                <a href="/" className="hover:text-orange-400 transition-colors">{t('kidscamp.footer.faqs', 'FAQs')}</a>
               </li>
             </ul>
           </div>

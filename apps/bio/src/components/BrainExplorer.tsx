@@ -178,7 +178,7 @@ export default function BrainExplorer() {
                   initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}
                   className="bg-gray-900 rounded-2xl border border-gray-800 p-5 sticky top-20">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl"
+                    <div className="w-12 min-h-12 rounded-xl flex items-center justify-center text-2xl"
                       style={{ backgroundColor: selected.color + '22', border: `2px solid ${selected.color}` }}>
                       {selected.emoji}
                     </div>

@@ -141,12 +141,12 @@ export default function CrisprEditor() {
               {/* Controls */}
               <div className="flex gap-2">
                 <button onClick={startEditing} disabled={isEditing}
-                  className={`flex-1 py-2.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2 ${isEditing ? 'bg-gray-700 text-gray-500 cursor-not-allowed' : editComplete ? 'bg-purple-500 text-white' : 'bg-emerald-500 text-white hover:bg-emerald-600'}`}>
+                  className={`flex-1 py-2.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2 ${isEditing ? 'bg-gray-700 text-gray-500 cursor-not-allowed' : editComplete ? 'bg-purple-500 text-white' : 'bg-emerald-500 text-white hover:bg-emerald-600'}`} aria-label="Rotate ccw">
                   {editComplete ? <><RotateCcw className="w-4 h-4" /> Edit Again</> :
                    isEditing ? <><Scissors className="w-4 h-4 animate-bounce" /> Editing...</> :
                    <><Scissors className="w-4 h-4" /> Start CRISPR Edit</>}
                 </button>
-                <button onClick={reset} className="px-4 py-2.5 rounded-xl bg-gray-800 text-gray-300">
+                <button onClick={reset} className="px-4 py-2.5 rounded-xl bg-gray-800 text-gray-300" aria-label="Rotate ccw">
                   <RotateCcw className="w-4 h-4" />
                 </button>
               </div>

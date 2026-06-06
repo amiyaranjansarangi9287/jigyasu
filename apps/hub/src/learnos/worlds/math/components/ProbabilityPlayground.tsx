@@ -376,7 +376,7 @@ function CardDraw() {
 function ProbabilityChallenge() {
   const [question, setQuestion] = useState<{ q: string; answer: string; options: string[]; explanation: string } | null>(null);
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
 
   const generateQuestion = useCallback(() => {
     const questions = [
@@ -398,7 +398,7 @@ function ProbabilityChallenge() {
     if (!question || feedback) return;
     if (opt === question.answer) {
       setFeedback('correct');
-      setScore(s => s + 10);
+      setMastery(m => m + 1);
       setTimeout(generateQuestion, 1500);
     } else {
       setFeedback('wrong');
@@ -411,12 +411,12 @@ function ProbabilityChallenge() {
   return (
     <div className="max-w-lg mx-auto">
       <div className="flex justify-center mb-4">
-        <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold">⭐ {score}</span>
+        <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold">⭐ {mastery}</span>
       </div>
 
       <motion.div
         key={question.q}
-        className={`rounded-2xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-red-500/10 border-red-500/40' : 'bg-white/5 border-white/10'}`}
+        className={`rounded-2xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}
         initial={{ scale: 0.9 }}
         animate={{ scale: 1 }}
       >
@@ -448,7 +448,7 @@ function ProbabilityChallenge() {
         )}
         {feedback === 'wrong' && (
           <div className="mt-4 text-center">
-            <p className="text-red-400 font-bold">❌ Answer: {question.answer}</p>
+            <p className="text-orange-400 font-bold">🤔 Answer: {question.answer}</p>
             <p className="text-gray-400 text-sm">{question.explanation}</p>
           </div>
         )}

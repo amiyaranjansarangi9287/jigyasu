@@ -35,18 +35,18 @@ export default function Fractions() {
         <div className="text-center mb-8">
           <div className="text-5xl mb-3">🍕</div>
           <h1 className="text-3xl font-extrabold text-slate-800">{t('lab.fractions.title', { defaultValue: 'Fractions' })}</h1>
-          <p className="text-sm text-slate-500 mt-2">See fractions visually — parts of a whole!</p>
+          <p className="text-sm text-slate-500 mt-2">{t('lab.modules.Fractions.txt_Seefractio', 'See fractions visually — parts of a whole!')}</p>
         </div>
         <div className="bg-white rounded-3xl shadow-sm border border-slate-100 p-4 mb-6">
           <FractionsCanvas numerator={numerator} denominator={denominator} />
         </div>
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 space-y-4">
           <div>
-            <div className="flex justify-between mb-2"><span className="text-sm text-slate-400">🔢 Numerator (parts taken)</span><span className="text-sm font-bold text-amber-600">{numerator}</span></div>
+            <div className="flex justify-between mb-2"><span className="text-sm text-slate-400">{t('lab.modules.Fractions.spn_Numeratorp', '🔢 Numerator (parts taken)')}</span><span className="text-sm font-bold text-amber-600">{numerator}</span></div>
             <input type="range" min="0" max={denominator} value={numerator} onChange={handleNumChange} className="w-full h-3 rounded-full appearance-none cursor-pointer" style={{ background: 'linear-gradient(to right, #F59E0B, #EF4444)' }} />
           </div>
           <div>
-            <div className="flex justify-between mb-2"><span className="text-sm text-slate-400">📊 Denominator (total parts)</span><span className="text-sm font-bold text-orange-600">{denominator}</span></div>
+            <div className="flex justify-between mb-2"><span className="text-sm text-slate-400">{t('lab.modules.Fractions.spn_Denominato', '📊 Denominator (total parts)')}</span><span className="text-sm font-bold text-orange-600">{denominator}</span></div>
             <input type="range" min="1" max="12" value={denominator} onChange={handleDenChange} className="w-full h-3 rounded-full appearance-none cursor-pointer" style={{ background: 'linear-gradient(to right, #3B82F6, #8B5CF6)' }} />
           </div>
         </div>
@@ -55,7 +55,7 @@ export default function Fractions() {
         </div>
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.Fractions.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1">Indian Fraction Heritage</h3>
               <p className="text-gray-600 text-sm leading-relaxed">Ancient Indians used fractions in the <strong>Sulba Sutras</strong> (800 BCE) for altar construction! Aryabhata worked with fractions of fractions — 1,500 years before European mathematicians formalized fraction arithmetic.</p>

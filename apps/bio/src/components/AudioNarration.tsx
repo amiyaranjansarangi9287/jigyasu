@@ -174,7 +174,7 @@ export default function AudioNarration({ steps, title, hasMusic = false, musicMo
                     : 'bg-slate-100 text-slate-400 hover:bg-slate-200'
                 }`}
                 title={musicOn ? 'Turn off music' : 'Turn on ambient music'}
-              >
+               aria-label="Music">
                 {musicOn ? <Music size={16} /> : <VolumeX size={16} />}
               </button>
             )}
@@ -184,7 +184,7 @@ export default function AudioNarration({ steps, title, hasMusic = false, musicMo
                 onClick={handlePlay}
                 disabled={!voiceReady}
                 className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-sky-500 to-indigo-500 text-white font-medium text-sm hover:from-sky-600 hover:to-indigo-600 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-sm"
-              >
+               aria-label="Play">
                 <Play size={14} fill="white" />
                 {isPaused ? 'Resume' : 'Play'}
               </button>
@@ -192,7 +192,7 @@ export default function AudioNarration({ steps, title, hasMusic = false, musicMo
               <button
                 onClick={handlePause}
                 className="flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500 text-white font-medium text-sm hover:bg-amber-600 transition-all shadow-sm"
-              >
+               aria-label="Pause">
                 <Pause size={14} fill="white" />
                 Pause
               </button>
@@ -203,7 +203,7 @@ export default function AudioNarration({ steps, title, hasMusic = false, musicMo
                 onClick={handleStop}
                 className="p-2 rounded-lg bg-slate-100 text-slate-500 hover:bg-slate-200 transition-colors"
                 title="Stop"
-              >
+               aria-label="Square">
                 <Square size={14} fill="currentColor" />
               </button>
             )}
@@ -248,7 +248,7 @@ export default function AudioNarration({ steps, title, hasMusic = false, musicMo
         </div>
       </div>
 
-      <div ref={containerRef} className="p-5 space-y-3 max-h-64 overflow-y-auto">
+      <div ref={containerRef} className="p-5 space-y-3 max-min-h-64 overflow-y-auto">
         {steps.map((step, i) => (
           <div
             key={i}

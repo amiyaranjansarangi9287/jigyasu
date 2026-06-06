@@ -42,18 +42,22 @@ export function useABTesting(config: ABTestConfig) {
     // Check target audience eligibility
     const userProfile = localStorage.getItem('jigyasu-profile');
     if (userProfile && config.targetAudience) {
-      const profile = JSON.parse(userProfile);
-      
-      if (config.targetAudience.ageGroups && 
-          !config.targetAudience.ageGroups.includes(profile.ageGroup)) {
-        setIsEligible(false);
-        return;
-      }
-      
-      if (config.targetAudience.languages && 
-          !config.targetAudience.languages.includes(profile.language)) {
-        setIsEligible(false);
-        return;
+      try {
+        const profile = JSON.parse(userProfile);
+        
+        if (config.targetAudience.ageGroups && 
+            !config.targetAudience.ageGroups.includes(profile.ageGroup)) {
+          setIsEligible(false);
+          return;
+        }
+        
+        if (config.targetAudience.languages && 
+            !config.targetAudience.languages.includes(profile.language)) {
+          setIsEligible(false);
+          return;
+        }
+      } catch (e) {
+        console.warn('Failed to parse user profile for A/B testing', e);
       }
     }
 
@@ -114,24 +118,32 @@ function hashString(str: string): number {
 
 function trackABTestAssignment(testId: string, variantId: string) {
   // Store assignment locally (privacy-first)
-  const assignments = JSON.parse(localStorage.getItem('ab_test_assignments') || '{}');
-  assignments[`${testId}_${variantId}`] = {
-    assignedAt: Date.now(),
-    variantId,
-  };
-  localStorage.setItem('ab_test_assignments', JSON.stringify(assignments));
+  try {
+    const assignments = JSON.parse(localStorage.getItem('ab_test_assignments') || '{}');
+    assignments[`${testId}_${variantId}`] = {
+      assignedAt: Date.now(),
+      variantId,
+    };
+    localStorage.setItem('ab_test_assignments', JSON.stringify(assignments));
+  } catch (e) {
+    console.warn('Failed to track AB test assignment', e);
+  }
 }
 
 function trackABTestConversion(testId: string, variantId: string, conversionType: string) {
   // Store conversion locally (privacy-first)
-  const conversions = JSON.parse(localStorage.getItem('ab_test_conversions') || '{}');
-  const key = `${testId}_${variantId}_${conversionType}`;
-  conversions[key] = {
-    convertedAt: Date.now(),
-    variantId,
-    conversionType,
-  };
-  localStorage.setItem('ab_test_conversions', JSON.stringify(conversions));
+  try {
+    const conversions = JSON.parse(localStorage.getItem('ab_test_conversions') || '{}');
+    const key = `${testId}_${variantId}_${conversionType}`;
+    conversions[key] = {
+      convertedAt: Date.now(),
+      variantId,
+      conversionType,
+    };
+    localStorage.setItem('ab_test_conversions', JSON.stringify(conversions));
+  } catch (e) {
+    console.warn('Failed to track AB test conversion', e);
+  }
 }
 
 // Pre-configured A/B tests for Wonder-First modules

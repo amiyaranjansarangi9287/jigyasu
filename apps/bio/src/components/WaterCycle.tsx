@@ -83,7 +83,7 @@ export default function WaterCycle() {
               <motion.div className="absolute top-4 right-8 z-10"
                 animate={{ scale: [1, 1.05, 1] }}
                 transition={{ repeat: Infinity, duration: 3 }}>
-                <div className="w-14 h-14 rounded-full bg-yellow-400"
+                <div className="w-14 min-h-14 rounded-full bg-yellow-400"
                   style={{ boxShadow: `0 0 ${sunIntensity / 2}px ${sunIntensity / 3}px rgba(250,204,21,${sunIntensity / 200})`, opacity: 0.3 + sunIntensity / 150 }} />
               </motion.div>
 
@@ -91,7 +91,7 @@ export default function WaterCycle() {
               <motion.div className="absolute top-[15%] left-[35%]"
                 animate={{ x: [-10, 10, -10] }}
                 transition={{ repeat: Infinity, duration: 8, ease: 'easeInOut' }}>
-                <Cloud className="w-20 h-12 text-gray-400/50" />
+                <Cloud className="w-20 min-h-12 text-gray-400/50" />
               </motion.div>
               <motion.div className="absolute top-[20%] left-[55%]"
                 animate={{ x: [10, -10, 10] }}

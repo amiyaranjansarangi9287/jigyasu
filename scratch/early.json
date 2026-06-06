@@ -1,0 +1,424 @@
+{
+  "modules": {},
+  "story": {
+    "characters": {
+      "rabbit": "Rabbit",
+      "elephant": "Elephant",
+      "monkey": "Monkey",
+      "fish": "Fish"
+    },
+    "places": {
+      "forest": "Forest",
+      "ocean": "Ocean",
+      "mountain": "Mountain",
+      "farm": "Farm"
+    },
+    "problems": {
+      "lost": "Got Lost",
+      "hungry": "Was Hungry",
+      "scared": "Was Scared",
+      "lonely": "Was Lonely"
+    }
+  },
+  "recipes": {
+    "banana-shake": {
+      "name": "Banana Shake",
+      "ingredients": {
+        "0": {
+          "name": "Bananas",
+          "unit": "pieces"
+        },
+        "1": {
+          "name": "Milk",
+          "unit": "cup"
+        },
+        "2": {
+          "name": "Sugar",
+          "unit": "spoon"
+        }
+      }
+    },
+    "dal-rice": {
+      "name": "Dal Rice",
+      "ingredients": {
+        "0": {
+          "name": "Dal",
+          "unit": "cup"
+        },
+        "1": {
+          "name": "Rice",
+          "unit": "cups"
+        },
+        "2": {
+          "name": "Turmeric",
+          "unit": "pinch"
+        },
+        "3": {
+          "name": "Salt",
+          "unit": "spoon"
+        }
+      }
+    },
+    "fruit-salad": {
+      "name": "Fruit Salad",
+      "ingredients": {
+        "0": {
+          "name": "Apple",
+          "unit": "piece"
+        },
+        "1": {
+          "name": "Banana",
+          "unit": "piece"
+        },
+        "2": {
+          "name": "Orange",
+          "unit": "piece"
+        },
+        "3": {
+          "name": "Honey",
+          "unit": "spoon"
+        }
+      }
+    },
+    "chai": {
+      "name": "Masala Chai",
+      "ingredients": {
+        "0": {
+          "name": "Water",
+          "unit": "cup"
+        },
+        "1": {
+          "name": "Milk",
+          "unit": "cup"
+        },
+        "2": {
+          "name": "Tea leaves",
+          "unit": "spoons"
+        },
+        "3": {
+          "name": "Sugar",
+          "unit": "spoons"
+        },
+        "4": {
+          "name": "Ginger",
+          "unit": "piece"
+        }
+      }
+    },
+    "roti-dough": {
+      "name": "Roti Dough",
+      "ingredients": {
+        "0": {
+          "name": "Wheat flour",
+          "unit": "cups"
+        },
+        "1": {
+          "name": "Water",
+          "unit": "cup"
+        },
+        "2": {
+          "name": "Salt",
+          "unit": "pinch"
+        },
+        "3": {
+          "name": "Oil",
+          "unit": "spoon"
+        }
+      }
+    }
+  },
+  "alphabet": {
+    "A": {
+      "phonemeSound": "Aaa",
+      "items": {
+        "0": "Apple",
+        "1": "Ant",
+        "2": "Arrow"
+      }
+    },
+    "B": {
+      "phonemeSound": "Buh",
+      "items": {
+        "0": "Ball",
+        "1": "Butterfly",
+        "2": "Bear"
+      }
+    },
+    "C": {
+      "phonemeSound": "Kuh",
+      "items": {
+        "0": "Cat",
+        "1": "Cake",
+        "2": "Cloud"
+      }
+    },
+    "D": {
+      "phonemeSound": "Duh",
+      "items": {
+        "0": "Dog",
+        "1": "Duck",
+        "2": "Diamond"
+      }
+    },
+    "E": {
+      "phonemeSound": "Eeh",
+      "items": {
+        "0": "Elephant",
+        "1": "Egg",
+        "2": "Earth"
+      }
+    },
+    "F": {
+      "phonemeSound": "Fuh",
+      "items": {
+        "0": "Fish",
+        "1": "Flower",
+        "2": "Frog"
+      }
+    },
+    "G": {
+      "phonemeSound": "Guh",
+      "items": {
+        "0": "Goat",
+        "1": "Grapes",
+        "2": "Guitar"
+      }
+    },
+    "H": {
+      "phonemeSound": "Huh",
+      "items": {
+        "0": "Horse",
+        "1": "Hat",
+        "2": "Honey"
+      }
+    },
+    "I": {
+      "phonemeSound": "Ih",
+      "items": {
+        "0": "Ice cream",
+        "1": "Island",
+        "2": "Igloo"
+      }
+    },
+    "J": {
+      "phonemeSound": "Juh",
+      "items": {
+        "0": "Jar",
+        "1": "Jellyfish",
+        "2": "Juice"
+      }
+    },
+    "K": {
+      "phonemeSound": "Kuh",
+      "items": {
+        "0": "Kite",
+        "1": "Koala",
+        "2": "Key"
+      }
+    },
+    "L": {
+      "phonemeSound": "Luh",
+      "items": {
+        "0": "Lion",
+        "1": "Lemon",
+        "2": "Ladybug"
+      }
+    },
+    "M": {
+      "phonemeSound": "Muh",
+      "items": {
+        "0": "Monkey",
+        "1": "Moon",
+        "2": "Mango"
+      }
+    },
+    "N": {
+      "phonemeSound": "Nuh",
+      "items": {
+        "0": "Nest",
+        "1": "Night",
+        "2": "Nose"
+      }
+    },
+    "O": {
+      "phonemeSound": "Oh",
+      "items": {
+        "0": "Owl",
+        "1": "Orange",
+        "2": "Ocean"
+      }
+    },
+    "P": {
+      "phonemeSound": "Puh",
+      "items": {
+        "0": "Parrot",
+        "1": "Pizza",
+        "2": "Penguin"
+      }
+    },
+    "Q": {
+      "phonemeSound": "Kwuh",
+      "items": {
+        "0": "Queen",
+        "1": "Quail",
+        "2": "Question"
+      }
+    },
+    "R": {
+      "phonemeSound": "Ruh",
+      "items": {
+        "0": "Rabbit",
+        "1": "Rainbow",
+        "2": "Rocket"
+      }
+    },
+    "S": {
+      "phonemeSound": "Sss",
+      "items": {
+        "0": "Sun",
+        "1": "Star",
+        "2": "Snake"
+      }
+    },
+    "T": {
+      "phonemeSound": "Tuh",
+      "items": {
+        "0": "Tiger",
+        "1": "Tree",
+        "2": "Turtle"
+      }
+    },
+    "U": {
+      "phonemeSound": "Uh",
+      "items": {
+        "0": "Umbrella",
+        "1": "Unicorn",
+        "2": "Up"
+      }
+    },
+    "V": {
+      "phonemeSound": "Vuh",
+      "items": {
+        "0": "Van",
+        "1": "Volcano",
+        "2": "Violin"
+      }
+    },
+    "W": {
+      "phonemeSound": "Wuh",
+      "items": {
+        "0": "Wolf",
+        "1": "Watermelon",
+        "2": "Wind"
+      }
+    },
+    "X": {
+      "phonemeSound": "Ex",
+      "items": {
+        "0": "X-ray",
+        "1": "Xylophone",
+        "2": "Fox"
+      }
+    },
+    "Y": {
+      "phonemeSound": "Yuh",
+      "items": {
+        "0": "Yak",
+        "1": "Yellow",
+        "2": "Yo-yo"
+      }
+    },
+    "Z": {
+      "phonemeSound": "Zzz",
+      "items": {
+        "0": "Zebra",
+        "1": "Zoom",
+        "2": "Zoo"
+      }
+    }
+  },
+  "sentences": {
+    "ws1": {
+      "words": {
+        "0": "The",
+        "1": "dog",
+        "2": "runs",
+        "3": "fast"
+      }
+    },
+    "ws2": {
+      "words": {
+        "0": "The",
+        "1": "bird",
+        "2": "flies",
+        "3": "high"
+      }
+    },
+    "ws3": {
+      "words": {
+        "0": "The",
+        "1": "fish",
+        "2": "swims",
+        "3": "deep"
+      }
+    },
+    "ws4": {
+      "words": {
+        "0": "A",
+        "1": "cat",
+        "2": "sits",
+        "3": "quietly"
+      }
+    },
+    "ws5": {
+      "words": {
+        "0": "The",
+        "1": "sun",
+        "2": "shines",
+        "3": "brightly"
+      }
+    },
+    "ws6": {
+      "words": {
+        "0": "Rain",
+        "1": "falls",
+        "2": "from",
+        "3": "clouds"
+      }
+    },
+    "ws7": {
+      "words": {
+        "0": "The",
+        "1": "frog",
+        "2": "jumps",
+        "3": "into",
+        "4": "water"
+      }
+    },
+    "ws8": {
+      "words": {
+        "0": "Stars",
+        "1": "shine",
+        "2": "at",
+        "3": "night"
+      }
+    },
+    "ws9": {
+      "words": {
+        "0": "The",
+        "1": "monkey",
+        "2": "climbs",
+        "3": "the",
+        "4": "tree"
+      }
+    },
+    "ws10": {
+      "words": {
+        "0": "Flowers",
+        "1": "grow",
+        "2": "in",
+        "3": "spring"
+      }
+    }
+  }
+}

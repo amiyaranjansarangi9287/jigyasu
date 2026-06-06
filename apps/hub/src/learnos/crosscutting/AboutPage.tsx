@@ -4,8 +4,9 @@
 
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
-const VALUES = [
+const VALUES_DEFAULT = [
   {
     title: 'Wonder',
     emoji: '✨',
@@ -38,7 +39,7 @@ const VALUES = [
   },
 ];
 
-const DIFFERENCE_POINTS = [
+const DIFFERENCE_POINTS_DEFAULT = [
   {
     emoji: '🌐',
     title: 'Free by Design',
@@ -98,6 +99,14 @@ const FADE_UP = {
 
 export default function AboutPage() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
+
+  const VALUES = t('crosscutting.about_page.values', { returnObjects: true, defaultValue: VALUES_DEFAULT }) as typeof VALUES_DEFAULT;
+  const DIFFERENCE_POINTS = t('crosscutting.about_page.difference_points', { returnObjects: true, defaultValue: DIFFERENCE_POINTS_DEFAULT }) as typeof DIFFERENCE_POINTS_DEFAULT;
+  const pageTitle = t('crosscutting.about_page.title', { defaultValue: 'About Jigyasu' });
+  const pageSubtitle = t('crosscutting.about_page.subtitle', { defaultValue: 'Built for India. Built for Wonder.' });
+  const valuesTitle = t('crosscutting.about_page.values_title', { defaultValue: 'Our Values' });
+  const diffTitle = t('crosscutting.about_page.difference_title', { defaultValue: 'How we are different' });
 
   return (
     <div className="min-h-screen bg-white text-slate-900">
@@ -138,13 +147,13 @@ export default function AboutPage() {
           {...FADE_UP}
           className="text-center pt-16 pb-14 space-y-5"
         >
-          <div className="text-7xl">�</div>
+          <div className="text-7xl">dY</div>
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight
                          text-indigo-900 leading-tight">
-            Jigyasu
+            {pageTitle}
           </h1>
           <p className="text-2xl font-bold text-indigo-500">
-            Install Wonder.
+            {pageSubtitle}
           </p>
           <p className="text-lg text-slate-500 italic max-w-xl mx-auto leading-relaxed">
             "Every child is born a scientist.
@@ -196,7 +205,7 @@ export default function AboutPage() {
                      border border-indigo-100 mb-16 space-y-4"
         >
           <h2 className="text-2xl font-bold text-indigo-900">
-            Our Mission
+            {valuesTitle}
           </h2>
           <p className="text-lg font-semibold text-indigo-800 leading-relaxed">
             Every child in India — and every adult who missed their chance —
@@ -275,8 +284,8 @@ export default function AboutPage() {
             VALUES
         ═══════════════════════════════════════════ */}
         <motion.section {...FADE_UP} className="mb-16 space-y-5">
-          <h2 className="text-2xl font-bold text-indigo-900">
-            What We Believe
+          <h2 className="text-2xl font-bold text-indigo-900 mb-8 text-center">
+            {diffTitle}
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {VALUES.map((v) => (

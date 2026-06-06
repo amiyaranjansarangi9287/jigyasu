@@ -3,6 +3,7 @@
 // Mission Alignment: Wonder Value - "We begin with questions, not answers"
 
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ErrorBoundary } from '@jigyasu/ui';
 import { useConnectionOptimization } from '../../../hooks/useConnectionOptimization';
@@ -38,6 +39,7 @@ interface WonderFirstTemplateProps {
 }
 
 export default function WonderFirstTemplate({ module, onComplete }: WonderFirstTemplateProps) {
+  const { t } = useTranslation();
   const [phase, setPhase] = useState<'mystery' | 'exploration' | 'insight' | 'application'>('mystery');
   const [explorationTime, setExplorationTime] = useState(0);
   const [hintsUsed, setHintsUsed] = useState(0);
@@ -46,10 +48,10 @@ export default function WonderFirstTemplate({ module, onComplete }: WonderFirstT
 
   useEffect(() => {
     const phaseAnnouncements = {
-      mystery: 'Mystery phase: Starting with a question',
-      exploration: 'Exploration phase: Time to investigate and discover',
-      insight: 'Insight phase: The moment of understanding',
-      application: 'Application phase: Connecting to real life',
+      mystery: t('core.wonder_template.announcements.mystery', 'Mystery phase: Starting with a question'),
+      exploration: t('core.wonder_template.announcements.exploration', 'Exploration phase: Time to investigate and discover'),
+      insight: t('core.wonder_template.announcements.insight', 'Insight phase: The moment of understanding'),
+      application: t('core.wonder_template.announcements.application', 'Application phase: Connecting to real life'),
     };
     setAnnouncement(phaseAnnouncements[phase]);
   }, [phase]);
@@ -124,8 +126,8 @@ export default function WonderFirstTemplate({ module, onComplete }: WonderFirstT
 
       {/* Keyboard shortcuts help */}
       <div className="fixed bottom-4 right-4 bg-slate-800 text-white px-3 py-2 rounded-lg text-xs font-bold z-50 opacity-70 hover:opacity-100 transition-opacity">
-        <span className="sr-only">Keyboard shortcuts:</span>
-        <span aria-hidden="true">N: Next | H: Hint | S: Skip | ESC: Exit</span>
+        <span className="sr-only">{t('core.wonder_template.shortcuts.label', 'Keyboard shortcuts:')}</span>
+        <span aria-hidden="true">{t('core.wonder_template.shortcuts.keys', 'N: Next | H: Hint | S: Skip | ESC: Exit')}</span>
       </div>
 
       {/* Phase 1: Mystery Hook */}
@@ -146,22 +148,21 @@ export default function WonderFirstTemplate({ module, onComplete }: WonderFirstT
             <div className="bg-indigo-50 rounded-2xl p-6 mb-8">
               <h3 className="font-bold text-indigo-900 mb-3 flex items-center gap-2">
                 <span className="text-2xl">🤔</span>
-                What do you think?
+                {t('core.wonder_template.mystery.what_do_you_think', 'What do you think?')}
               </h3>
               <p className="text-slate-700 leading-relaxed">
-                Take a moment to wonder. Don't worry about the right answer.
-                Just let your curiosity guide you.
+                {t('core.wonder_template.mystery.take_a_moment', "Take a moment to wonder. Don't worry about the right answer. Just let your curiosity guide you.")}
               </p>
             </div>
 
             <button
               onClick={handleStartExploration}
               className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 rounded-2xl text-lg shadow-lg shadow-indigo-500/30 transition-all transform hover:scale-105"
-              aria-label="Start exploring the mystery"
+              aria-label={t('core.wonder_template.mystery.btn_aria', 'Start exploring the mystery')}
             >
               <span className="flex items-center justify-center gap-2">
                 <span className="text-2xl" aria-hidden="true">🔍</span>
-                <span>Let's Explore Together</span>
+                <span>{t('core.wonder_template.mystery.btn_explore', "Let's Explore Together")}</span>
               </span>
             </button>
           </div>
@@ -178,10 +179,10 @@ export default function WonderFirstTemplate({ module, onComplete }: WonderFirstT
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center gap-3">
                 <span className="text-3xl">🔬</span>
-                <h2 className="text-2xl font-bold text-indigo-900">Exploration Time</h2>
+                <h2 className="text-2xl font-bold text-indigo-900">{t('core.wonder_template.exploration.title', 'Exploration Time')}</h2>
               </div>
               <div className="text-slate-500 text-sm">
-                Time exploring: {Math.floor(explorationTime / 60)}:{(explorationTime % 60).toString().padStart(2, '0')}
+                {t('core.wonder_template.exploration.time', 'Time exploring:')} {Math.floor(explorationTime / 60)}:{(explorationTime % 60).toString().padStart(2, '0')}
               </div>
             </div>
 
@@ -198,10 +199,10 @@ export default function WonderFirstTemplate({ module, onComplete }: WonderFirstT
             <div className="bg-amber-50 rounded-2xl p-4 mb-6 border border-amber-200">
               <h3 className="font-bold text-amber-900 mb-2 flex items-center gap-2">
                 <span className="text-xl">💡</span>
-                Need a hint?
+                {t('core.wonder_template.exploration.need_hint', 'Need a hint?')}
               </h3>
               <p className="text-amber-800 text-sm mb-3">
-                Hints are here to guide you, not judge you. Take your time.
+                {t('core.wonder_template.exploration.hints_guide', 'Hints are here to guide you, not judge you. Take your time.')}
               </p>
               {module.exploration.hints.map((hint, index) => (
                 <button
@@ -211,7 +212,7 @@ export default function WonderFirstTemplate({ module, onComplete }: WonderFirstT
                   aria-label={`Show hint ${index + 1}`}
                 >
                   <span className="text-amber-700 font-semibold">
-                    Hint {index + 1}:
+                    {t('core.wonder_template.exploration.hint_prefix', 'Hint')} {index + 1}:
                   </span>
                   <span className="text-slate-700 ml-2">{hint}</span>
                 </button>
@@ -221,11 +222,11 @@ export default function WonderFirstTemplate({ module, onComplete }: WonderFirstT
             <button
               onClick={handleShowInsight}
               className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-2xl text-lg shadow-lg shadow-green-500/30 transition-all transform hover:scale-105"
-              aria-label="Show insight and explanation"
+              aria-label={t('core.wonder_template.exploration.btn_aria', 'Show insight and explanation')}
             >
               <span className="flex items-center justify-center gap-2">
                 <span className="text-2xl" aria-hidden="true">💡</span>
-                <span>I Think I Understand</span>
+                <span>{t('core.wonder_template.exploration.btn_insight', 'I Think I Understand')}</span>
               </span>
             </button>
           </div>
@@ -241,14 +242,14 @@ export default function WonderFirstTemplate({ module, onComplete }: WonderFirstT
           <div className="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-3xl shadow-xl p-8 md:p-12 text-white">
             <div className="text-center mb-8">
               <div className="text-6xl mb-4">✨</div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">The Insight</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('core.wonder_template.insight.title', 'The Insight')}</h2>
               <p className="text-xl text-indigo-100 italic">{module.insight.ahaMoment}</p>
             </div>
 
             <div className="bg-white/10 backdrop-blur rounded-2xl p-6 mb-8">
               <h3 className="font-bold text-xl mb-3 flex items-center gap-2">
                 <span>🎯</span>
-                Here's what's happening:
+                {t('core.wonder_template.insight.happening', "Here's what's happening:")}
               </h3>
               <p className="text-lg leading-relaxed">{module.insight.revelation}</p>
             </div>
@@ -256,7 +257,7 @@ export default function WonderFirstTemplate({ module, onComplete }: WonderFirstT
             <div className="bg-white/10 backdrop-blur rounded-2xl p-6 mb-8">
               <h3 className="font-bold text-xl mb-3 flex items-center gap-2">
                 <span>🔗</span>
-                Connection to the mystery:
+                {t('core.wonder_template.insight.connection', 'Connection to the mystery:')}
               </h3>
               <p className="text-lg leading-relaxed">{module.insight.connection}</p>
             </div>
@@ -264,11 +265,11 @@ export default function WonderFirstTemplate({ module, onComplete }: WonderFirstT
             <button
               onClick={handleShowApplication}
               className="w-full bg-white hover:bg-indigo-50 text-indigo-700 font-bold py-4 px-8 rounded-2xl text-lg shadow-lg transition-all transform hover:scale-105"
-              aria-label="See how this concept applies in real life"
+              aria-label={t('core.wonder_template.insight.btn_aria', 'See how this concept applies in real life')}
             >
               <span className="flex items-center justify-center gap-2">
                 <span className="text-2xl" aria-hidden="true">🌍</span>
-                <span>See How This Applies</span>
+                <span>{t('core.wonder_template.insight.btn_apply', 'See How This Applies')}</span>
               </span>
             </button>
           </div>
@@ -284,14 +285,14 @@ export default function WonderFirstTemplate({ module, onComplete }: WonderFirstT
           <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 border-2 border-green-100">
             <div className="text-center mb-8">
               <div className="text-6xl mb-4">🌍</div>
-              <h2 className="text-3xl md:text-4xl font-bold text-green-900 mb-4">In Real Life</h2>
-              <p className="text-xl text-green-700">Understanding connects to the world around you</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-green-900 mb-4">{t('core.wonder_template.application.title', 'In Real Life')}</h2>
+              <p className="text-xl text-green-700">{t('core.wonder_template.application.subtitle', 'Understanding connects to the world around you')}</p>
             </div>
 
             <div className="bg-green-50 rounded-2xl p-6 mb-6 border border-green-200">
               <h3 className="font-bold text-green-900 mb-3 flex items-center gap-2">
                 <span className="text-xl">🏙️</span>
-                Real World:
+                {t('core.wonder_template.application.real_world', 'Real World:')}
               </h3>
               <p className="text-slate-700 text-lg leading-relaxed">{module.application.realWorld}</p>
             </div>
@@ -299,7 +300,7 @@ export default function WonderFirstTemplate({ module, onComplete }: WonderFirstT
             <div className="bg-orange-50 rounded-2xl p-6 mb-6 border border-orange-200">
               <h3 className="font-bold text-orange-900 mb-3 flex items-center gap-2">
                 <span className="text-xl">🇮🇳</span>
-                Indian Context:
+                {t('core.wonder_template.application.indian_context', 'Indian Context:')}
               </h3>
               <p className="text-slate-700 text-lg leading-relaxed">{module.application.indianContext}</p>
             </div>
@@ -307,7 +308,7 @@ export default function WonderFirstTemplate({ module, onComplete }: WonderFirstT
             <div className="bg-indigo-50 rounded-2xl p-6 mb-8 border border-indigo-200">
               <h3 className="font-bold text-indigo-900 mb-3 flex items-center gap-2">
                 <span className="text-xl">🎯</span>
-                Try It:
+                {t('core.wonder_template.application.try_it', 'Try It:')}
               </h3>
               <p className="text-slate-700 text-lg leading-relaxed">{module.application.tryIt}</p>
             </div>
@@ -316,11 +317,11 @@ export default function WonderFirstTemplate({ module, onComplete }: WonderFirstT
               <button
                 onClick={handleComplete}
                 className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-2xl text-lg shadow-lg shadow-green-500/30 transition-all transform hover:scale-105"
-                aria-label="Complete module and return to home"
+                aria-label={t('core.wonder_template.application.btn_aria', 'Complete module and return to home')}
               >
                 <span className="flex items-center justify-center gap-2">
                   <span className="text-2xl" aria-hidden="true">🎉</span>
-                  <span>I Understand!</span>
+                  <span>{t('core.wonder_template.application.btn_complete', 'I Understand!')}</span>
                 </span>
               </button>
               <WhatsAppShare 

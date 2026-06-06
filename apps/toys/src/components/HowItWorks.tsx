@@ -77,7 +77,7 @@ export default function HowItWorks() {
                 <div key={step.number} className="reveal relative">
                   {/* Center dot (desktop) */}
                   <div className="hidden lg:flex absolute left-1/2 top-8 -translate-x-1/2 z-10">
-                    <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${step.color} flex items-center justify-center text-white font-bold text-sm shadow-lg`}>
+                    <div className={`w-14 min-h-14 rounded-2xl bg-gradient-to-br ${step.color} flex items-center justify-center text-white font-bold text-sm shadow-lg`}>
                       {step.number}
                     </div>
                   </div>
@@ -86,11 +86,11 @@ export default function HowItWorks() {
                     {/* Content side */}
                     <div className={`${isEven ? 'lg:text-right lg:pr-16' : 'lg:order-2 lg:pl-16'}`}>
                       {/* Mobile number badge */}
-                      <div className={`lg:hidden w-12 h-12 rounded-2xl bg-gradient-to-br ${step.color} flex items-center justify-center text-white font-bold text-sm shadow-lg mb-4`}>
+                      <div className={`lg:hidden w-12 min-h-12 rounded-2xl bg-gradient-to-br ${step.color} flex items-center justify-center text-white font-bold text-sm shadow-lg mb-4`}>
                         {step.number}
                       </div>
 
-                      <div className={`${step.bgLight} w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-5 ${isEven ? 'lg:ml-auto' : ''}`}>
+                      <div className={`${step.bgLight} w-16 min-h-16 rounded-2xl flex items-center justify-center text-3xl mb-5 ${isEven ? 'lg:ml-auto' : ''}`}>
                         {step.icon}
                       </div>
                       <h3 className="text-2xl font-bold text-gray-900 mb-3">{step.title}</h3>

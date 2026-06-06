@@ -43,7 +43,7 @@ export default function PlaceValueExplorer() {
   const [mode, setMode] = useState<'explore' | 'challenge'>('explore');
   const [challenge, setChallenge] = useState(makeChallenge);
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
 
   const digits = useMemo(() => splitDigits(value), [value]);
   const expanded = useMemo(
@@ -63,7 +63,7 @@ export default function PlaceValueExplorer() {
     if (feedback) return;
     if (option === challenge.answer) {
       setFeedback('correct');
-      setScore((s) => s + 10);
+      setMastery((s) => s + 10);
       setTimeout(() => {
         setChallenge(makeChallenge());
         setFeedback(null);
@@ -89,9 +89,9 @@ export default function PlaceValueExplorer() {
       <AnimatePresence mode="wait">
         {mode === 'challenge' ? (
           <motion.div key="challenge" className="max-w-lg mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-red-500/10 border-red-500/40' : 'bg-white/5 border-white/10'}`}>
+            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
               <div className="flex justify-between items-center mb-5">
-                <span className="text-yellow-400 font-bold">⭐ {score}</span>
+                <span className="text-yellow-400 font-bold">⭐ {mastery}</span>
                 <span className="text-sm text-gray-400">Place value quiz</span>
               </div>
               <p className="text-center text-gray-400 text-sm">In the number</p>
@@ -107,7 +107,7 @@ export default function PlaceValueExplorer() {
                 ))}
               </div>
               {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✨ Correct! {challenge.answer.toLocaleString()}</p>}
-              {feedback === 'wrong' && <p className="text-red-400 font-bold text-center mt-4">Try again!</p>}
+              {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Try again!</p>}
             </div>
           </motion.div>
         ) : (

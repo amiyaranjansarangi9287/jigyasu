@@ -1,5 +1,6 @@
 // src/worlds/lab/modules/StatisticsPlayground.tsx
 import { useState, useCallback, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import LabShell from '../LabShell';
 import { useLumoOwl } from '../hooks/useLumoOwl';
 import { useLabProgress } from '../hooks/useLabProgress';
@@ -12,6 +13,7 @@ function calcMedian(d: number[]) { const s = [...d].sort((a, b) => a - b); const
 function calcMode(d: number[]) { const f: Record<number, number> = {}; d.forEach(v => f[v] = (f[v] || 0) + 1); const max = Math.max(...Object.values(f)); return Object.entries(f).filter(([, c]) => c === max).map(([v]) => Number(v)); }
 
 export default function StatisticsPlayground() {
+  const { t } = useTranslation();
   const lumo = useLumoOwl('statistics-playground');
   const { recordStatsDataset, updateCertification } = useLabProgress();
   const { trackEvent } = useLabSession();
@@ -43,7 +45,7 @@ export default function StatisticsPlayground() {
       <div className="min-h-screen bg-pink-50 flex flex-col p-6 pb-24">
         <div className="bg-white rounded-3xl p-5 shadow-sm border border-pink-100 mb-4">
           <h2 className="font-bold text-lg">📊 Statistics Playground</h2>
-          <p className="text-sm text-slate-500">Select a dataset and explore the numbers!</p>
+          <p className="text-sm text-slate-500">{t('lab.modules.StatisticsPlayground.txt_Selectadat', 'Select a dataset and explore the numbers!')}</p>
         </div>
 
         {/* Dataset selector */}
@@ -56,9 +58,9 @@ export default function StatisticsPlayground() {
 
         {/* Stats */}
         <div className="grid grid-cols-3 gap-3 mb-4">
-          <div className="bg-white rounded-2xl p-3 text-center border border-slate-100"><p className="text-sm text-slate-400 font-bold">Mean</p><p className="text-xl font-bold text-pink-600">{mean.toFixed(1)}</p></div>
-          <div className="bg-white rounded-2xl p-3 text-center border border-slate-100"><p className="text-sm text-slate-400 font-bold">Median</p><p className="text-xl font-bold text-purple-600">{median.toFixed(1)}</p></div>
-          <div className="bg-white rounded-2xl p-3 text-center border border-slate-100"><p className="text-sm text-slate-400 font-bold">Mode</p><p className="text-xl font-bold text-amber-600">{mode.join(', ')}</p></div>
+          <div className="bg-white rounded-2xl p-3 text-center border border-slate-100"><p className="text-sm text-slate-400 font-bold">{t('lab.modules.StatisticsPlayground.txt_Mean', 'Mean')}</p><p className="text-xl font-bold text-pink-600">{mean.toFixed(1)}</p></div>
+          <div className="bg-white rounded-2xl p-3 text-center border border-slate-100"><p className="text-sm text-slate-400 font-bold">{t('lab.modules.StatisticsPlayground.txt_Median', 'Median')}</p><p className="text-xl font-bold text-purple-600">{median.toFixed(1)}</p></div>
+          <div className="bg-white rounded-2xl p-3 text-center border border-slate-100"><p className="text-sm text-slate-400 font-bold">{t('lab.modules.StatisticsPlayground.txt_Mode', 'Mode')}</p><p className="text-xl font-bold text-amber-600">{mode.join(', ')}</p></div>
         </div>
 
         {/* Outlier experiment */}
@@ -66,7 +68,7 @@ export default function StatisticsPlayground() {
           {outlierAdded ? '🧹 Remove Outlier (999)' : '💥 Add Extreme Outlier (999)'}
         </button>
 
-        <div className="bg-amber-50 rounded-xl p-3 border border-amber-100"><p className="text-sm text-amber-700 font-medium">🏏 This is exactly what IPL cricket analysts do after every match!</p></div>
+        <div className="bg-amber-50 rounded-xl p-3 border border-amber-100"><p className="text-sm text-amber-700 font-medium">{t('lab.modules.StatisticsPlayground.txt_Thisisexac', '🏏 This is exactly what IPL cricket analysts do after every match!')}</p></div>
       </div>
     </LabShell>
   );

@@ -84,8 +84,8 @@ export default function CampWeeksPreview({ onSelectWeek, getWeekStatus }: CampWe
                 </div>
 
                 {/* Decorative circles */}
-                <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-white/10 -translate-y-1/2 translate-x-1/2" />
-                <div className="absolute bottom-0 left-0 w-20 h-20 rounded-full bg-white/10 translate-y-1/2 -translate-x-1/2" />
+                <div className="absolute top-0 right-0 w-32 min-h-32 rounded-full bg-white/10 -translate-y-1/2 translate-x-1/2" />
+                <div className="absolute bottom-0 left-0 w-20 min-h-20 rounded-full bg-white/10 translate-y-1/2 -translate-x-1/2" />
               </div>
 
               {/* Content */}

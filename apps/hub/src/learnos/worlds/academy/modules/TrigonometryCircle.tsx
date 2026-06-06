@@ -1,5 +1,6 @@
 // src/worlds/academy/modules/TrigonometryCircle.tsx
 import { useRef, useEffect, useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import AcademyShell from '../AcademyShell';
 import { useLumoAncient } from '../hooks/useLumoAncient';
 import { useAcademyProgress } from '../hooks/useAcademyProgress';
@@ -7,6 +8,7 @@ import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { calculateTrigPoint, SPECIAL_ANGLES, TRIG_MEMORY_AIDS } from '../data/academyContent';
 
 export default function TrigonometryCircle() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const lumo = useLumoAncient();
   const { recordTrigonometry } = useAcademyProgress();
@@ -80,9 +82,9 @@ export default function TrigonometryCircle() {
         <canvas ref={canvasRef} className="w-full block" style={{ height: '260px', touchAction: 'none', cursor: 'crosshair' }} />
         <div className="px-4 py-3">
           <div className="grid grid-cols-3 gap-2 mb-3">
-            <div className="bg-slate-900 rounded-xl p-3 text-center border border-slate-800"><p className="text-red-400 text-sm font-bold mb-1">sin θ</p><p className="text-white font-mono font-bold">{trigPoint.sinValue.toFixed(4)}</p></div>
-            <div className="bg-slate-900 rounded-xl p-3 text-center border border-slate-800"><p className="text-blue-400 text-sm font-bold mb-1">cos θ</p><p className="text-white font-mono font-bold">{trigPoint.cosValue.toFixed(4)}</p></div>
-            <div className="bg-slate-900 rounded-xl p-3 text-center border border-slate-800"><p className="text-yellow-400 text-sm font-bold mb-1">tan θ</p><p className="text-white font-mono font-bold">{trigPoint.tanValue !== null ? trigPoint.tanValue.toFixed(3) : 'undef'}</p></div>
+            <div className="bg-slate-900 rounded-xl p-3 text-center border border-slate-800"><p className="text-red-400 text-sm font-bold mb-1">{t('academy.modules.TrigonometryCircle.txt_sin', 'sin θ')}</p><p className="text-white font-mono font-bold">{trigPoint.sinValue.toFixed(4)}</p></div>
+            <div className="bg-slate-900 rounded-xl p-3 text-center border border-slate-800"><p className="text-blue-400 text-sm font-bold mb-1">{t('academy.modules.TrigonometryCircle.txt_cos', 'cos θ')}</p><p className="text-white font-mono font-bold">{trigPoint.cosValue.toFixed(4)}</p></div>
+            <div className="bg-slate-900 rounded-xl p-3 text-center border border-slate-800"><p className="text-yellow-400 text-sm font-bold mb-1">{t('academy.modules.TrigonometryCircle.txt_tan', 'tan θ')}</p><p className="text-white font-mono font-bold">{trigPoint.tanValue !== null ? trigPoint.tanValue.toFixed(3) : 'undef'}</p></div>
           </div>
           <div className="flex items-center gap-3 mb-3">
             <input type="range" min="0" max="360" value={angleDeg} onChange={e => setAngleDeg(Number(e.target.value))} className="flex-1 h-2 appearance-none rounded-full bg-slate-800 cursor-pointer" style={{ accentColor: '#818CF8' }} />
@@ -97,7 +99,7 @@ export default function TrigonometryCircle() {
             <table className="w-full text-sm text-center min-w-[280px]"><thead><tr><th className="text-slate-500 py-1 px-2">θ</th><th className="text-red-400 py-1 px-2">sin</th><th className="text-blue-400 py-1 px-2">cos</th><th className="text-yellow-400 py-1 px-2">tan</th></tr></thead>
               <tbody>{TRIG_MEMORY_AIDS.map(row => (<tr key={row.angle} className={`cursor-pointer ${angleDeg === row.angle ? 'bg-indigo-900/30' : ''}`} onClick={() => setAngleDeg(row.angle)}><td className="text-indigo-400 py-1.5 px-2 font-mono">{row.angle}°</td><td className="text-white py-1.5 px-2 font-mono">{row.sin}</td><td className="text-white py-1.5 px-2 font-mono">{row.cos}</td><td className="text-white py-1.5 px-2 font-mono">{row.tan}</td></tr>))}</tbody></table>
           </div>
-          <div className="bg-slate-900/50 rounded-xl p-3 border border-slate-800 text-center"><p className="text-slate-500 text-sm mb-1">sin²θ + cos²θ =</p><p className="text-white font-mono font-bold">{(trigPoint.sinValue ** 2 + trigPoint.cosValue ** 2).toFixed(4)}</p><p className="text-indigo-400 text-sm mt-1">Always 1</p></div>
+          <div className="bg-slate-900/50 rounded-xl p-3 border border-slate-800 text-center"><p className="text-slate-500 text-sm mb-1">{t('academy.modules.TrigonometryCircle.txt_sincos', 'sin²θ + cos²θ =')}</p><p className="text-white font-mono font-bold">{(trigPoint.sinValue ** 2 + trigPoint.cosValue ** 2).toFixed(4)}</p><p className="text-indigo-400 text-sm mt-1">{t('academy.modules.TrigonometryCircle.txt_Always1', 'Always 1')}</p></div>
         </div>
       </div>
     </AcademyShell>

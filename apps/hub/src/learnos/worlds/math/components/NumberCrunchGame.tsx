@@ -68,11 +68,10 @@ export default function NumberCrunchGame() {
   const { t } = useTranslation();
   const math = useMathFeedback();
   const formatNumber = useFormatNumber();
-  const [gameState, setGameState] = useState<'menu' | 'playing' | 'gameover'>('menu');
-  const [score, setScore] = useState(0);
+  const [gameState, setGameState] = useState<'menu' | 'playing'>('menu');
+  const [mastery, setMastery] = useState(0);
   const [streak, setStreak] = useState(0);
   const [bestStreak, setBestStreak] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(60);
   const [question, setQuestion] = useState<Question | null>(null);
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
   const [difficulty, setDifficulty] = useState(1);
@@ -83,31 +82,16 @@ export default function NumberCrunchGame() {
   const particleId = useRef(0);
 
   const nextQuestion = useCallback(() => {
-    const newDifficulty = Math.floor(score / 50) + 1;
+    const newDifficulty = Math.floor(mastery / 5) + 1;
     setDifficulty(newDifficulty);
     setQuestion(generateQuestion(newDifficulty, formatNumber));
     setFeedback(null);
-  }, [score, formatNumber]);
+  }, [mastery, formatNumber]);
 
   useEffect(() => {
     if (gameState === 'playing') {
       nextQuestion();
     }
-  }, [gameState]);
-
-  useEffect(() => {
-    if (gameState !== 'playing') return;
-    const timer = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev <= 1) {
-          clearInterval(timer);
-          setGameState('gameover');
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
-    return () => clearInterval(timer);
   }, [gameState]);
 
   const spawnParticles = (x: number, y: number) => {
@@ -130,8 +114,7 @@ export default function NumberCrunchGame() {
     if (option === question?.answer) {
       setFeedback('correct');
       math.correct('number-crunch', 10 * combo);
-      const points = 10 * combo;
-      setScore((prev) => prev + points);
+      setMastery((prev) => prev + 1);
       setStreak((prev) => {
         const newStreak = prev + 1;
         setBestStreak((best) => Math.max(best, newStreak));
@@ -146,33 +129,24 @@ export default function NumberCrunchGame() {
       math.wrong('number-crunch');
       setStreak(0);
       setCombo(1);
-      setTimeout(() => nextQuestion(), 800);
+      setTimeout(() => setFeedback(null), 1000);
     }
   };
 
   const startGame = () => {
-    setScore(0);
+    setMastery(0);
     setStreak(0);
     setBestStreak(0);
-    setTimeLeft(60);
     setDifficulty(1);
-    setTotalAnswered(0);
-    setTotalCorrect(0);
     setCombo(1);
     setGameState('playing');
-  };
-
-  const getTimerColor = () => {
-    if (timeLeft > 30) return 'text-green-400';
-    if (timeLeft > 10) return 'text-yellow-400';
-    return 'text-red-400';
   };
 
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">{t('math_modules.NumberCrunchGame.title', '🎮 Number Crunch Quest')}</h2>
-        <p className="text-purple-300 text-lg">{t('math_modules.NumberCrunchGame.subtitle', 'Race against time to solve math puzzles!')}</p>
+        <h2 className="text-3xl font-bold text-white mb-2">🧠 Number Exploration</h2>
+        <p className="text-purple-300 text-lg">Take your time and explore number patterns!</p>
       </div>
 
       {/* Floating Particles */}
@@ -208,18 +182,16 @@ export default function NumberCrunchGame() {
                 animate={{ rotate: [0, 10, -10, 0], scale: [1, 1.1, 1] }}
                 transition={{ duration: 2, repeat: Infinity }}
               >
-                🧙‍♂️
+                🧠
               </motion.div>
-              <h3 className="text-2xl font-bold text-white mb-2">{t('math_modules.NumberCrunchGame.ready', 'Ready, Math Wizard?')}</h3>
+              <h3 className="text-2xl font-bold text-white mb-2">Ready to explore?</h3>
               <p className="text-gray-400 mb-6">
-                {t('math_modules.NumberCrunchGame.readyDesc1', 'Answer as many math questions as you can in 60 seconds!')}
-                <br />{t('math_modules.NumberCrunchGame.readyDesc2', 'Build combos for bonus points! 🔥')}
+                Take your time to deeply understand numbers.<br />Build streaks to level up! 🌱
               </p>
               <div className="space-y-3 text-left text-sm text-gray-400 mb-6 bg-white/5 rounded-xl p-4">
-                <p dangerouslySetInnerHTML={{ __html: t('math_modules.NumberCrunchGame.speed', '⚡ <span className="text-white">Speed</span> — 60 seconds on the clock') }} />
-                <p dangerouslySetInnerHTML={{ __html: t('math_modules.NumberCrunchGame.combos', '🔥 <span className="text-white">Combos</span> — Streak multiplier up to 5x') }} />
-                <p dangerouslySetInnerHTML={{ __html: t('math_modules.NumberCrunchGame.adaptive', '📈 <span className="text-white">Adaptive</span> — Gets harder as you level up') }} />
-                <p dangerouslySetInnerHTML={{ __html: t('math_modules.NumberCrunchGame.highScore', '🏆 <span className="text-white">High Score</span> — Beat your best!') }} />
+                <p dangerouslySetInnerHTML={{ __html: '🌱 <span className="text-white">Patience</span> ➝ No timers. Think deeply.' }} />
+                <p dangerouslySetInnerHTML={{ __html: '✨ <span className="text-white">Streaks</span> ➝ Consistent understanding multiplier' }} />
+                <p dangerouslySetInnerHTML={{ __html: '📈 <span className="text-white">Adaptive</span> ➝ Gets harder as you master concepts' }} />
               </div>
               <motion.button
                 className="w-full py-4 rounded-2xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold text-xl shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-shadow"
@@ -227,7 +199,7 @@ export default function NumberCrunchGame() {
                 whileTap={{ scale: 0.97 }}
                 onClick={startGame}
               >
-                🚀 {t('math_modules.NumberCrunchGame.startBtn', 'Start Quest!')}
+                🚀 Begin Journey
               </motion.button>
             </div>
           </motion.div>
@@ -237,50 +209,28 @@ export default function NumberCrunchGame() {
         {gameState === 'playing' && question && (
           <motion.div
             key="playing"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            className="max-w-2xl mx-auto"
           >
-            {/* Stats Bar */}
-            <div className="flex flex-wrap items-center justify-between gap-2 mb-4 px-2">
+            {/* HUD */}
+            <div className="flex justify-between items-center mb-8 bg-white/5 rounded-2xl p-4 border border-white/10 backdrop-blur-sm">
               <div className="flex items-center gap-4">
-                <span className="text-yellow-400 font-bold text-lg">⭐ {formatNumber(score)}</span>
-                <span className="text-orange-400 font-bold">🔥 {formatNumber(streak)}</span>
-                {combo > 1 && (
-                  <motion.span
-                    className="text-pink-400 font-bold"
-                    key={combo}
-                    initial={{ scale: 2 }}
-                    animate={{ scale: 1 }}
-                  >
-                    ×{formatNumber(combo)}
-                  </motion.span>
-                )}
+                <div className="bg-purple-500/20 px-4 py-2 rounded-xl border border-purple-500/30">
+                  <span className="text-gray-400 text-sm uppercase font-bold tracking-wider block mb-1">Mastery</span>
+                  <div className="text-2xl font-bold text-white">
+                    🌟 {formatNumber(mastery)}
+                  </div>
+                </div>
+                <div className="bg-pink-500/20 px-4 py-2 rounded-xl border border-pink-500/30">
+                  <span className="text-gray-400 text-sm uppercase font-bold tracking-wider block mb-1">Streak</span>
+                  <div className="text-2xl font-bold text-white flex items-center gap-2">
+                    🔥 {formatNumber(streak)} 
+                    {combo > 1 && <span className="text-sm bg-pink-500 text-white px-2 py-0.5 rounded-lg">x{formatNumber(combo)}</span>}
+                  </div>
+                </div>
               </div>
-              <div className="flex items-center gap-2">
-                <motion.span
-                  className={`font-bold text-xl ${getTimerColor()}`}
-                  animate={timeLeft <= 10 ? { scale: [1, 1.2, 1] } : {}}
-                  transition={{ duration: 0.5, repeat: Infinity }}
-                >
-                  ⏱️ {formatNumber(timeLeft)}s
-                </motion.span>
-              </div>
-            </div>
-
-            {/* Timer Bar */}
-            <div className="h-2 w-full bg-gray-700 rounded-full mb-6 overflow-hidden">
-              <motion.div
-                className={`h-full rounded-full ${
-                  timeLeft > 30
-                    ? 'bg-gradient-to-r from-green-500 to-emerald-400'
-                    : timeLeft > 10
-                    ? 'bg-gradient-to-r from-yellow-500 to-amber-400'
-                    : 'bg-gradient-to-r from-red-500 to-rose-400'
-                }`}
-                animate={{ width: `${(timeLeft / 60) * 100}%` }}
-                transition={{ duration: 0.3 }}
-              />
             </div>
 
             {/* Difficulty Badge */}
@@ -297,7 +247,7 @@ export default function NumberCrunchGame() {
                 feedback === 'correct'
                   ? 'bg-green-500/10 border-green-500/50'
                   : feedback === 'wrong'
-                  ? 'bg-red-500/10 border-red-500/50'
+                  ? 'bg-white/5 border-white/10'
                   : 'bg-white/5 border-white/10'
               }`}
               initial={{ scale: 0.8, rotateY: 90 }}
@@ -340,91 +290,24 @@ export default function NumberCrunchGame() {
                   initial={{ scale: 0 }}
                   animate={{ scale: [0, 1.5, 1] }}
                 >
-                  ✨ {t('math_modules.NumberCrunchGame.pts', '+{{pts}} pts!', { pts: formatNumber(10 * combo) })}
+                  ✨ {t('math_modules.NumberCrunchGame.correct', 'Correct!')}
                 </motion.p>
               )}
               {feedback === 'wrong' && (
                 <motion.p
-                  className="mt-4 text-red-400 font-bold"
+                  className="mt-4 text-orange-400 font-bold"
                   initial={{ x: -10 }}
                   animate={{ x: [10, -10, 5, 0] }}
                 >
-                  ❌ {t('math_modules.NumberCrunchGame.answerIs', 'Answer: {{answer}}', { answer: formatNumber(question.answer) })}
+                  🤔 {t('math_modules.NumberCrunchGame.answerIs', 'Answer: {{answer}}', { answer: formatNumber(question.answer) })}
                 </motion.p>
               )}
             </motion.div>
           </motion.div>
         )}
 
-        {/* GAME OVER */}
-        {gameState === 'gameover' && (
-          <motion.div
-            key="gameover"
-            className="text-center"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <div className="bg-gradient-to-br from-purple-900/40 to-indigo-900/40 rounded-3xl border border-purple-500/30 p-8 max-w-md mx-auto">
-              <motion.div
-                className="text-7xl mb-4"
-                animate={{ rotate: [0, 360] }}
-                transition={{ duration: 2, repeat: 1 }}
-              >
-                🏆
-              </motion.div>
-              <h3 className="text-3xl font-bold text-white mb-4">{t('math_modules.NumberCrunchGame.questComplete', 'Quest Complete!')}</h3>
-
-              <div className="space-y-3 mb-6">
-                <div className="flex justify-between items-center bg-white/5 rounded-xl px-4 py-3">
-                  <span className="text-gray-400">{t('math_modules.NumberCrunchGame.finalScore', '⭐ Final Score')}</span>
-                  <span className="text-2xl font-bold text-yellow-400">{formatNumber(score)}</span>
-                </div>
-                <div className="flex justify-between items-center bg-white/5 rounded-xl px-4 py-3">
-                  <span className="text-gray-400">{t('math_modules.NumberCrunchGame.accuracy', '✅ Accuracy')}</span>
-                  <span className="text-lg font-bold text-green-400">
-                    {formatNumber(totalAnswered > 0 ? Math.round((totalCorrect / totalAnswered) * 100) : 0)}%
-                  </span>
-                </div>
-                <div className="flex justify-between items-center bg-white/5 rounded-xl px-4 py-3">
-                  <span className="text-gray-400">{t('math_modules.NumberCrunchGame.bestStreak', '🔥 Best Streak')}</span>
-                  <span className="text-lg font-bold text-orange-400">{formatNumber(bestStreak)}</span>
-                </div>
-                <div className="flex justify-between items-center bg-white/5 rounded-xl px-4 py-3">
-                  <span className="text-gray-400">{t('math_modules.NumberCrunchGame.questions', '📊 Questions')}</span>
-                  <span className="text-lg font-bold text-blue-400">{formatNumber(totalCorrect)}/{formatNumber(totalAnswered)}</span>
-                </div>
-                <div className="flex justify-between items-center bg-white/5 rounded-xl px-4 py-3">
-                  <span className="text-gray-400">{t('math_modules.NumberCrunchGame.maxLevel', '📈 Max Level')}</span>
-                  <span className="text-lg font-bold text-purple-400">{formatNumber(difficulty)}</span>
-                </div>
-              </div>
-
-              <div className="text-center mb-6">
-                {score >= 200 ? (
-                  <p className="text-yellow-400 font-bold">{t('math_modules.NumberCrunchGame.legendary', '🌟 Legendary Math Wizard! 🌟')}</p>
-                ) : score >= 100 ? (
-                  <p className="text-purple-400 font-bold">{t('math_modules.NumberCrunchGame.grand', '🧙 Grand Sorcerer of Numbers!')}</p>
-                ) : score >= 50 ? (
-                  <p className="text-blue-400 font-bold">{t('math_modules.NumberCrunchGame.apprentice', '📚 Apprentice Mathematician!')}</p>
-                ) : (
-                  <p className="text-green-400 font-bold">{t('math_modules.NumberCrunchGame.keepPracticing', '🌱 Keep practicing, young wizard!')}</p>
-                )}
-              </div>
-
-              <motion.button
-                className="w-full py-4 rounded-2xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold text-xl shadow-lg shadow-purple-500/30"
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                onClick={startGame}
-              >
-                🔄 {t('math_modules.NumberCrunchGame.playAgain', 'Play Again!')}
-              </motion.button>
-            </div>
-          </motion.div>
-        )}
       </AnimatePresence>
-      {gameState === 'gameover' && <WhatsNext moduleId="times-tables" />}
+      <WhatsNext moduleId="number-exploration" />
     </div>
   );
 }

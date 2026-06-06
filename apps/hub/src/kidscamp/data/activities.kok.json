@@ -1,0 +1,4506 @@
+[
+  {
+    "id": "[KOK] toybox-rainbow-blocks",
+    "name": "[KOK] Rainbow Stacking Blocks",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 1-2 hours",
+    "description": "[KOK] Create a beautiful set of rainbow-colored wooden blocks perfect for stacking, sorting, and creative play. These timeless toys spark imagination and help develop fine motor skills.",
+    "image": "[KOK] /images/blocks.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[KOK] Wooden blocks or lumber scraps",
+        "quantity": "[KOK] 12-20 pieces"
+      },
+      {
+        "name": "Sandpaper",
+        "quantity": "[KOK] Fine and medium grit"
+      },
+      {
+        "name": "[KOK] Non-toxic acrylic paint",
+        "quantity": "[KOK] Rainbow colors"
+      },
+      {
+        "name": "[KOK] Clear sealant",
+        "quantity": "[KOK] 1 can",
+        "optional": true
+      },
+      {
+        "name": "Paintbrushes",
+        "quantity": "3-4"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Prepare the Wood",
+        "description": "[KOK] Start by selecting your wooden pieces. If using lumber scraps, cut them into various shapes - rectangles, squares, triangles, and arches. Sand all surfaces smooth, starting with medium grit sandpaper and finishing with fine grit. Pay special attention to edges and corners to ensure they are rounded and safe for little hands.",
+        "tip": "[KOK] Pre-cut wooden blocks from craft stores work great and save time!",
+        "duration": "[KOK] 30 min"
+      },
+      {
+        "title": "[KOK] Plan Your Rainbow",
+        "description": "[KOK] Lay out your blocks and decide which colors will go on each piece. A classic rainbow progression (red, orange, yellow, green, blue, purple) works beautifully. Consider painting blocks of similar sizes in the same color for a cohesive set.",
+        "tip": "[KOK] Take a photo of your layout plan for reference while painting.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Apply Base Coats",
+        "description": "[KOK] Paint each block with its designated color. Apply thin, even coats and let dry completely between applications. Most blocks will need 2-3 coats for full coverage.",
+        "tip": "[KOK] Use a cardboard box to hold blocks upright while drying.",
+        "duration": "[KOK] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KOK] Add Details (Optional)",
+        "description": "[KOK] Once base coats are dry, add fun details like dots, stripes, or simple patterns. You can also leave them solid for a classic look.",
+        "duration": "[KOK] 20 min"
+      },
+      {
+        "title": "[KOK] Seal and Finish",
+        "description": "[KOK] Apply a clear, non-toxic sealant to protect the paint and make blocks more durable. Let dry completely (24 hours recommended) before play.",
+        "tip": "[KOK] Water-based polyurethane is safe once fully cured.",
+        "duration": "[KOK] 15 min",
+        "parentHelp": true
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Use only non-toxic, child-safe paints and sealants",
+      "[KOK] Ensure all edges are well-sanded and smooth",
+      "[KOK] Adult supervision required for cutting and sealing",
+      "[KOK] Allow full curing time before giving to children"
+    ],
+    "learningOutcomes": [
+      "[KOK] Fine motor skills",
+      "[KOK] Color recognition",
+      "[KOK] Spatial awareness",
+      "[KOK] Creative thinking"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] toybox-wooden-car",
+    "name": "[KOK] Wooden Auto-Rickshaw (Tuk-Tuk)",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KOK] 2-3 hours",
+    "description": "[KOK] Construct your very own wooden Auto-Rickshaw! Learn the physics of axles and wheels as you design and paint the iconic three-wheeled vehicle that navigates busy Indian streets.",
+    "image": "[KOK] /images/wooden-car.webp",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 124,
+    "materials": [
+      {
+        "name": "[KOK] Wood block",
+        "quantity": "[KOK] 6\" x 3\" x 2\""
+      },
+      {
+        "name": "[KOK] Wooden wheels",
+        "quantity": "[KOK] 4 pieces"
+      },
+      {
+        "name": "[KOK] Wooden dowels",
+        "quantity": "[KOK] 2 pieces, 4\" each"
+      },
+      {
+        "name": "Sandpaper",
+        "quantity": "[KOK] Various grits"
+      },
+      {
+        "name": "[KOK] Wood glue"
+      },
+      {
+        "name": "[KOK] Non-toxic paint",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Shape the Car Body",
+        "description": "[KOK] Draw the car profile on your wood block - a simple curved top works best. Using a saw or pre-cut the shape, then sand all surfaces smooth.",
+        "duration": "[KOK] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KOK] Drill Axle Holes",
+        "description": "[KOK] Mark where the axle holes will go on both sides of the car body. Drill straight through, ensuring holes align perfectly.",
+        "tip": "[KOK] Use a drill press for perfectly aligned holes.",
+        "duration": "[KOK] 15 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KOK] Prepare Wheels and Axles",
+        "description": "[KOK] Sand the wheels smooth. Cut dowels to length for axles, leaving room for wheels plus a small gap.",
+        "duration": "[KOK] 20 min"
+      },
+      {
+        "title": "[KOK] Assemble the Car",
+        "description": "[KOK] Insert axles through the car body. Attach wheels to each end with a dab of wood glue. Ensure wheels spin freely.",
+        "tip": "[KOK] Don't use too much glue - wheels need to spin!",
+        "duration": "[KOK] 20 min"
+      },
+      {
+        "title": "[KOK] Paint and Finish",
+        "description": "[KOK] Once glue is dry, paint your car in your favorite colors. Add details like windows, headlights, or racing stripes. Apply sealant and let cure.",
+        "duration": "[KOK] 40 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Adult supervision required for all cutting and drilling",
+      "[KOK] Wear safety glasses when using power tools",
+      "[KOK] Use non-toxic finishes only"
+    ],
+    "learningOutcomes": [
+      "[KOK] Basic woodworking",
+      "[KOK] Wheel and axle mechanics",
+      "[KOK] Planning and execution",
+      "[KOK] Fine motor skills"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] toybox-plush-bear",
+    "name": "[KOK] Cuddly Plush Bear",
+    "pillar": "toybox",
+    "category": "Plush",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KOK] 3-4 hours",
+    "description": "[KOK] Sew your own adorable teddy bear with soft fabric and button eyes. A perfect cuddly companion that makes a wonderful gift.",
+    "image": "[KOK] /images/plush-bear.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[KOK] Soft fabric (fleece or felt)",
+        "quantity": "[KOK] 1/2 yard"
+      },
+      {
+        "name": "Stuffing",
+        "quantity": "[KOK] 1 bag polyester filling"
+      },
+      {
+        "name": "Thread",
+        "quantity": "[KOK] Matching color"
+      },
+      {
+        "name": "Buttons",
+        "quantity": "[KOK] 2 for eyes"
+      },
+      {
+        "name": "[KOK] Embroidery thread",
+        "quantity": "[KOK] For nose and mouth"
+      },
+      {
+        "name": "[KOK] Needle and pins"
+      },
+      {
+        "name": "Scissors"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Cut Pattern Pieces",
+        "description": "[KOK] Print or draw a simple bear pattern. Cut out body (2), arms (4), legs (4), ears (4), and head pieces from your fabric.",
+        "duration": "[KOK] 30 min"
+      },
+      {
+        "title": "[KOK] Sew Body Parts",
+        "description": "[KOK] With right sides together, sew arm pairs, leg pairs, and ears. Leave openings for turning. Turn right side out.",
+        "duration": "[KOK] 45 min"
+      },
+      {
+        "title": "[KOK] Create the Face",
+        "description": "[KOK] Attach button eyes securely. Embroider a simple nose and smile using satin stitch.",
+        "tip": "[KOK] For younger children, embroider eyes instead of buttons for safety.",
+        "duration": "[KOK] 30 min"
+      },
+      {
+        "title": "[KOK] Assemble the Bear",
+        "description": "[KOK] Sew head pieces together, attaching ears. Join body pieces, inserting arms and legs as you go. Leave opening for stuffing.",
+        "duration": "[KOK] 45 min"
+      },
+      {
+        "title": "[KOK] Stuff and Close",
+        "description": "[KOK] Fill bear firmly with stuffing, shaping as you go. Hand-stitch the opening closed with a ladder stitch.",
+        "duration": "[KOK] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Secure button eyes very tightly or use embroidered eyes for young children",
+      "[KOK] Supervise needle use with younger sewers",
+      "[KOK] Check for loose threads or weak seams"
+    ],
+    "learningOutcomes": [
+      "[KOK] Sewing skills",
+      "[KOK] Pattern reading",
+      "[KOK] Patience and attention to detail",
+      "[KOK] Gift-giving mindset"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] toybox-recycled-robot",
+    "name": "[KOK] Recycled Robot",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 1-2 hours",
+    "description": "[KOK] Transform recyclable materials into an awesome robot friend! This eco-friendly project teaches creativity and environmental awareness.",
+    "image": "[KOK] /images/robot.webp",
+    "rating": 4.6,
+    "reviewCount": 142,
+    "materials": [
+      {
+        "name": "[KOK] Cardboard boxes",
+        "quantity": "[KOK] Various sizes"
+      },
+      {
+        "name": "[KOK] Bottle caps"
+      },
+      {
+        "name": "[KOK] Aluminum foil"
+      },
+      {
+        "name": "[KOK] Toilet paper rolls",
+        "quantity": "[KOK] 4 for limbs"
+      },
+      {
+        "name": "[KOK] Paint and markers"
+      },
+      {
+        "name": "[KOK] Glue gun",
+        "optional": true
+      },
+      {
+        "name": "[KOK] Craft glue"
+      },
+      {
+        "name": "[KOK] Pipe cleaners",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Gather Materials",
+        "description": "[KOK] Collect various recyclables - boxes, bottles, caps, tubes. Clean everything thoroughly. Lay out materials and envision your robot.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Build the Body",
+        "description": "[KOK] Select a medium box for the body and a smaller one for the head. Cover with aluminum foil or paint silver for a robotic look.",
+        "duration": "[KOK] 25 min"
+      },
+      {
+        "title": "[KOK] Add Limbs",
+        "description": "[KOK] Attach toilet paper rolls or paper towel tubes as arms and legs. Secure with glue and reinforce with tape if needed.",
+        "duration": "[KOK] 20 min"
+      },
+      {
+        "title": "[KOK] Create the Face",
+        "description": "[KOK] Use bottle caps for eyes, buttons for a nose, and draw or add a mouth. Get creative with antennae using pipe cleaners!",
+        "duration": "[KOK] 20 min"
+      },
+      {
+        "title": "[KOK] Add Details",
+        "description": "[KOK] Decorate with buttons, dials, screens drawn on paper, or any creative additions. Name your robot!",
+        "duration": "[KOK] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Adult supervision required for hot glue gun",
+      "[KOK] Wash all recyclables before use",
+      "[KOK] Check for sharp edges on cans or lids"
+    ],
+    "learningOutcomes": [
+      "[KOK] Environmental awareness",
+      "[KOK] Creative reuse",
+      "Problem-solving",
+      "[KOK] Imaginative play"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] toybox-balsa-airplane",
+    "name": "[KOK] Balsa Wood Airplane",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[KOK] 3-4 hours",
+    "description": "[KOK] Craft a beautiful balsa wood biplane that actually flies! Learn about aerodynamics while building this classic model.",
+    "image": "[KOK] /images/airplane.webp",
+    "rating": 4.8,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[KOK] Balsa wood sheets",
+        "quantity": "[KOK] 3 sheets, 1/8\" thick"
+      },
+      {
+        "name": "[KOK] Balsa wood sticks",
+        "quantity": "[KOK] Various sizes"
+      },
+      {
+        "name": "[KOK] Wood glue"
+      },
+      {
+        "name": "[KOK] Craft knife"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "Paint",
+        "optional": true
+      },
+      {
+        "name": "[KOK] Rubber bands"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Cut Wing Pieces",
+        "description": "[KOK] Trace wing templates onto balsa sheets. Carefully cut out upper and lower wings using a craft knife. Sand edges smooth.",
+        "duration": "[KOK] 40 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KOK] Build the Fuselage",
+        "description": "[KOK] Cut and assemble the body of the plane using balsa sticks. Create a frame that is sturdy but lightweight.",
+        "duration": "[KOK] 45 min"
+      },
+      {
+        "title": "[KOK] Attach Wings",
+        "description": "[KOK] Glue wings to fuselage at slight upward angles for better lift. Use struts between upper and lower wings.",
+        "tip": "[KOK] Let each glue joint dry before moving to the next.",
+        "duration": "[KOK] 30 min"
+      },
+      {
+        "title": "[KOK] Add Tail Assembly",
+        "description": "[KOK] Create and attach horizontal stabilizer and vertical tail fin. These are crucial for flight stability.",
+        "duration": "[KOK] 25 min"
+      },
+      {
+        "title": "[KOK] Finish and Test Fly",
+        "description": "[KOK] Sand entire plane smooth. Paint if desired. Add a propeller with rubber band power. Test fly and adjust as needed!",
+        "duration": "[KOK] 40 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Adult supervision required for craft knife use",
+      "[KOK] Balsa wood splinters easily - handle with care",
+      "[KOK] Fly in open areas away from people"
+    ],
+    "learningOutcomes": [
+      "[KOK] Aerodynamics basics",
+      "[KOK] Precision building",
+      "[KOK] Physics of flight",
+      "[KOK] Patience and persistence"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] toybox-dollhouse",
+    "name": "[KOK] Miniature Dollhouse",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[KOK] 4-6 hours",
+    "description": "[KOK] Construct a charming miniature dollhouse with multiple rooms. Add tiny furniture and decorations for endless imaginative play.",
+    "image": "[KOK] /images/dollhouse.webp",
+    "rating": 4.9,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[KOK] Cardboard or foam board",
+        "quantity": "[KOK] Large sheets"
+      },
+      {
+        "name": "[KOK] Craft knife"
+      },
+      {
+        "name": "Ruler"
+      },
+      {
+        "name": "Glue"
+      },
+      {
+        "name": "[KOK] Scrapbook paper",
+        "quantity": "[KOK] For wallpaper"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "[KOK] Small boxes",
+        "quantity": "[KOK] For furniture"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Design Floor Plan",
+        "description": "[KOK] Sketch your dollhouse design. Decide on number of rooms and floors. Calculate measurements for walls and floors.",
+        "duration": "[KOK] 20 min"
+      },
+      {
+        "title": "[KOK] Cut Structural Pieces",
+        "description": "[KOK] Cut out walls, floors, and roof pieces from cardboard or foam board. Include window and door openings.",
+        "duration": "[KOK] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KOK] Assemble Structure",
+        "description": "[KOK] Glue walls together, add floors to create stories. Install the roof. Reinforce corners with extra cardboard strips.",
+        "duration": "[KOK] 1 hour"
+      },
+      {
+        "title": "[KOK] Decorate Interior",
+        "description": "[KOK] Apply scrapbook paper as wallpaper. Paint trim and details. Add flooring paper or felt rugs.",
+        "duration": "[KOK] 1 hour"
+      },
+      {
+        "title": "[KOK] Create Furniture",
+        "description": "[KOK] Make tiny furniture from small boxes, spools, and scraps. Add beds, tables, chairs, and decorations.",
+        "duration": "[KOK] 1 hour"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Adult supervision for cutting",
+      "[KOK] Use sharp blades carefully with cutting mat",
+      "[KOK] Small pieces may be choking hazards for young children"
+    ],
+    "learningOutcomes": [
+      "[KOK] Architectural thinking",
+      "[KOK] Scale and proportion",
+      "[KOK] Interior design",
+      "[KOK] Long-term project planning"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] toybox-animal-puzzle",
+    "name": "[KOK] Wooden Animal Puzzle",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 1-2 hours",
+    "description": "[KOK] Create chunky wooden puzzles featuring adorable animals. Perfect for little hands learning shapes and problem-solving.",
+    "image": "[KOK] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 118,
+    "materials": [
+      {
+        "name": "Plywood",
+        "quantity": "[KOK] 1/2\" thick, 8\" x 10\""
+      },
+      {
+        "name": "[KOK] Scroll saw or jigsaw"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "[KOK] Non-toxic paint"
+      },
+      {
+        "name": "[KOK] Clear sealant"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Draw Design",
+        "description": "[KOK] Draw a simple animal shape on the plywood - elephant, cat, or dog work great. Keep shapes chunky with rounded edges.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Cut Outer Shape",
+        "description": "[KOK] Use a scroll saw to cut out the animal shape from the plywood. Sand all edges smooth.",
+        "duration": "[KOK] 20 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KOK] Create Puzzle Pieces",
+        "description": "[KOK] Draw puzzle piece divisions on the animal. Cut along these lines to create 4-8 interlocking pieces.",
+        "duration": "[KOK] 25 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KOK] Paint Pieces",
+        "description": "[KOK] Paint each puzzle piece in bright colors. You can paint both sides or just the top.",
+        "duration": "[KOK] 30 min"
+      },
+      {
+        "title": "[KOK] Seal and Assemble",
+        "description": "[KOK] Apply clear sealant to protect paint. Once dry, assemble your puzzle and test the fit!",
+        "duration": "[KOK] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Adult use only for power saws",
+      "[KOK] Sand thoroughly - no splinters",
+      "[KOK] Use child-safe paints and sealants"
+    ],
+    "learningOutcomes": [
+      "Problem-solving",
+      "[KOK] Shape recognition",
+      "[KOK] Hand-eye coordination",
+      "Patience"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] toybox-train-set",
+    "name": "[KOK] Classic Train Set",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[KOK] 4-5 hours",
+    "description": "[KOK] Build a complete wooden train set with engine, cars, and track pieces. A challenging project with rewarding results.",
+    "image": "[KOK] /images/train.webp",
+    "rating": 4.8,
+    "reviewCount": 64,
+    "materials": [
+      {
+        "name": "[KOK] Wood blocks",
+        "quantity": "[KOK] Various sizes"
+      },
+      {
+        "name": "[KOK] Wooden wheels",
+        "quantity": "20+"
+      },
+      {
+        "name": "Dowels",
+        "quantity": "[KOK] For axles and connectors"
+      },
+      {
+        "name": "[KOK] Wood glue"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "[KOK] Small hooks and eyes",
+        "quantity": "[KOK] For connecting cars"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Design Train Cars",
+        "description": "[KOK] Sketch designs for engine, coal car, cargo cars, and caboose. Plan wheel placement and connection points.",
+        "duration": "[KOK] 20 min"
+      },
+      {
+        "title": "[KOK] Cut and Shape",
+        "description": "[KOK] Cut wood blocks to size for each car. Shape the engine with a rounded front. Sand everything smooth.",
+        "duration": "[KOK] 1 hour",
+        "parentHelp": true
+      },
+      {
+        "title": "[KOK] Add Wheels",
+        "description": "[KOK] Drill holes for axles. Insert dowels and attach wheels. Ensure wheels spin freely.",
+        "duration": "[KOK] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KOK] Paint and Detail",
+        "description": "[KOK] Paint each car in classic train colors. Add windows, cargo details, and decorations.",
+        "duration": "[KOK] 1 hour"
+      },
+      {
+        "title": "[KOK] Connect Cars",
+        "description": "[KOK] Attach hooks to front and eyes to back of each car. Test connections. Create track pieces if desired.",
+        "duration": "[KOK] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Adult supervision for all cutting and drilling",
+      "[KOK] Check small parts are secure",
+      "[KOK] Test wheel attachment strength"
+    ],
+    "learningOutcomes": [
+      "[KOK] Complex project planning",
+      "[KOK] Mechanical connections",
+      "[KOK] Precision work",
+      "[KOK] Transportation history"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] toybox-marble-run",
+    "name": "[KOK] Marble Run Adventure",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KOK] 2-3 hours",
+    "description": "[KOK] Engineer an exciting marble run with twists, turns, and drops. Watch marbles race through your custom creation!",
+    "image": "[KOK] /images/marble-run.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 189,
+    "materials": [
+      {
+        "name": "[KOK] Cardboard tubes",
+        "quantity": "[KOK] 10-15 various sizes"
+      },
+      {
+        "name": "[KOK] Cardboard sheets"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "Marbles",
+        "quantity": "5-10"
+      },
+      {
+        "name": "[KOK] Base board"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Plan Your Run",
+        "description": "[KOK] Sketch the path marbles will take. Plan starting height, turns, tunnels, and landing. Remember: gravity is your friend!",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Create Track Pieces",
+        "description": "[KOK] Cut tubes in half lengthwise for open tracks. Cut various lengths. Create funnels and catch points.",
+        "duration": "[KOK] 30 min"
+      },
+      {
+        "title": "[KOK] Build Support Structure",
+        "description": "[KOK] Create cardboard supports to hold tracks at different heights. Build a sturdy base for everything.",
+        "duration": "[KOK] 30 min"
+      },
+      {
+        "title": "[KOK] Assemble the Run",
+        "description": "[KOK] Attach tracks to supports, ensuring smooth transitions. Test with marbles as you build. Adjust angles as needed.",
+        "duration": "[KOK] 45 min"
+      },
+      {
+        "title": "[KOK] Test and Improve",
+        "description": "[KOK] Run marbles through multiple times. Fix any stuck points. Add fun features like jumps or spinners!",
+        "duration": "[KOK] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Marbles are choking hazards - supervise young children",
+      "[KOK] Use scissors carefully",
+      "[KOK] Ensure structure is stable"
+    ],
+    "learningOutcomes": [
+      "[KOK] Physics and gravity",
+      "[KOK] Engineering design",
+      "Problem-solving",
+      "[KOK] Cause and effect"
+    ],
+    "crossPillar": [
+      "[KOK] sciencelab-balloon-rocket"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "toybox-tangram",
+    "name": "[KOK] Tangram Puzzle Set",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 1 hour",
+    "description": "[KOK] Create the ancient Chinese puzzle of seven shapes that form endless patterns. A timeless brain teaser!",
+    "image": "[KOK] /images/puzzle.webp",
+    "rating": 4.6,
+    "reviewCount": 92,
+    "materials": [
+      {
+        "name": "[KOK] Foam board or wood",
+        "quantity": "[KOK] 6\" x 6\" square"
+      },
+      {
+        "name": "Ruler"
+      },
+      {
+        "name": "Pencil"
+      },
+      {
+        "name": "[KOK] Craft knife or saw"
+      },
+      {
+        "name": "[KOK] Paint or markers",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Draw the Grid",
+        "description": "[KOK] Draw a 4x4 grid on your square. This helps position the seven tangram pieces correctly.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Mark Tangram Shapes",
+        "description": "[KOK] Following a tangram diagram, mark the seven shapes: 2 large triangles, 1 medium triangle, 2 small triangles, 1 square, 1 parallelogram.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Cut Pieces",
+        "description": "[KOK] Carefully cut along your marked lines to create the seven pieces. Sand or smooth edges.",
+        "duration": "[KOK] 20 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KOK] Color Pieces",
+        "description": "[KOK] Paint each piece a different color for visual appeal and easier identification.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Try Puzzles",
+        "description": "[KOK] Challenge yourself to make shapes - animals, people, objects. Look up tangram puzzles online for ideas!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Adult supervision for cutting",
+      "[KOK] Small pieces can be choking hazards"
+    ],
+    "learningOutcomes": [
+      "[KOK] Spatial reasoning",
+      "[KOK] Geometry basics",
+      "Problem-solving",
+      "[KOK] Pattern recognition"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] toybox-3d-puzzle",
+    "name": "[KOK] 3D Animal Puzzle",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KOK] 2 hours",
+    "description": "[KOK] Build a 3D puzzle that assembles into an animal sculpture. Pieces slot together without glue!",
+    "image": "[KOK] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 78,
+    "materials": [
+      {
+        "name": "[KOK] Cardboard or foam board",
+        "quantity": "[KOK] 2-3 sheets"
+      },
+      {
+        "name": "[KOK] Template printout"
+      },
+      {
+        "name": "[KOK] Craft knife"
+      },
+      {
+        "name": "[KOK] Cutting mat"
+      },
+      {
+        "name": "Paint",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Print Templates",
+        "description": "[KOK] Find or create 3D puzzle templates. Print at full size. Choose an animal like an elephant or dinosaur.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Transfer to Board",
+        "description": "[KOK] Trace or glue templates to your cardboard or foam board. Mark all slot positions clearly.",
+        "duration": "[KOK] 20 min"
+      },
+      {
+        "title": "[KOK] Cut Pieces",
+        "description": "[KOK] Carefully cut out each piece including the slots. Slots should be as wide as your material thickness.",
+        "duration": "[KOK] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KOK] Test Fit",
+        "description": "[KOK] Try assembling the puzzle. Adjust slots if pieces are too tight or loose.",
+        "duration": "[KOK] 20 min"
+      },
+      {
+        "title": "[KOK] Decorate and Finish",
+        "description": "[KOK] Disassemble, paint pieces, let dry, then reassemble your 3D sculpture!",
+        "duration": "[KOK] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Sharp blade use requires adult supervision",
+      "[KOK] Always cut on a cutting mat",
+      "[KOK] Cut away from your body"
+    ],
+    "learningOutcomes": [
+      "[KOK] 3D spatial thinking",
+      "[KOK] Assembly skills",
+      "[KOK] Following templates",
+      "[KOK] Fine motor control"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] toybox-chess-set",
+    "name": "[KOK] Wooden Chess Set",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[KOK] 6-8 hours",
+    "description": "[KOK] Carve and shape your own chess pieces, then build a board. A challenging project that creates a family heirloom!",
+    "image": "[KOK] /images/blocks.webp",
+    "rating": 4.9,
+    "reviewCount": 54,
+    "materials": [
+      {
+        "name": "[KOK] Wood blocks",
+        "quantity": "[KOK] Enough for 32 pieces"
+      },
+      {
+        "name": "[KOK] Plywood for board",
+        "quantity": "[KOK] 16\" x 16\""
+      },
+      {
+        "name": "[KOK] Carving tools"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "[KOK] Paint or wood stain"
+      },
+      {
+        "name": "[KOK] Clear finish"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Design Pieces",
+        "description": "[KOK] Sketch simplified designs for each piece type: King, Queen, Bishop, Knight, Rook, Pawn. Keep shapes recognizable but achievable.",
+        "duration": "[KOK] 30 min"
+      },
+      {
+        "title": "[KOK] Shape Pawns",
+        "description": "[KOK] Start with 16 pawns - the simplest pieces. Shape, sand smooth. Get consistent sizing.",
+        "duration": "[KOK] 1.5 hours",
+        "parentHelp": true
+      },
+      {
+        "title": "[KOK] Carve Major Pieces",
+        "description": "[KOK] Work on Kings, Queens, Bishops, Knights, and Rooks. Take your time on details.",
+        "duration": "[KOK] 3 hours",
+        "parentHelp": true
+      },
+      {
+        "title": "[KOK] Create Board",
+        "description": "[KOK] Mark 64 squares (8x8 grid) on plywood. Paint or stain alternating squares. Apply finish.",
+        "duration": "[KOK] 1.5 hours"
+      },
+      {
+        "title": "[KOK] Finish Pieces",
+        "description": "[KOK] Paint or stain pieces in two colors. Apply protective finish. Let cure completely.",
+        "duration": "[KOK] 1 hour"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Carving tools are very sharp - adult only or close supervision",
+      "[KOK] Carve away from body",
+      "[KOK] Use proper ventilation with stains and finishes"
+    ],
+    "learningOutcomes": [
+      "[KOK] Advanced woodworking",
+      "[KOK] Strategic game appreciation",
+      "[KOK] Patience and persistence",
+      "[KOK] Artistic expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] toybox-ring-toss",
+    "name": "[KOK] Ring Toss Game",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 1 hour",
+    "description": "[KOK] Build a classic ring toss game for indoor or outdoor fun. Perfect for parties and family game nights!",
+    "image": "[KOK] /images/blocks.webp",
+    "rating": 4.5,
+    "reviewCount": 108,
+    "materials": [
+      {
+        "name": "[KOK] Wooden base",
+        "quantity": "[KOK] 12\" x 12\""
+      },
+      {
+        "name": "[KOK] Wooden dowels",
+        "quantity": "[KOK] 5 pieces, 8\" tall"
+      },
+      {
+        "name": "[KOK] Rope or embroidery hoops",
+        "quantity": "[KOK] For rings"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "Drill"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Prepare Base",
+        "description": "[KOK] Sand wooden base smooth. Mark positions for 5 pegs - one center, four corners.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Install Pegs",
+        "description": "[KOK] Drill holes for dowels. Glue dowels into holes. Paint different point values on each peg.",
+        "duration": "[KOK] 25 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KOK] Create Rings",
+        "description": "[KOK] Make rings from rope (form circles and tape/glue ends) or use embroidery hoops. Make 5-6 rings.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[KOK] Paint the base and pegs in bright colors. Add numbers for scoring.",
+        "duration": "[KOK] 20 min"
+      },
+      {
+        "title": "Play!",
+        "description": "[KOK] Set up, stand back, and toss rings! Highest score wins. Adjust distance for difficulty.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Adult help needed for drilling",
+      "[KOK] Ensure pegs are secure before playing"
+    ],
+    "learningOutcomes": [
+      "[KOK] Hand-eye coordination",
+      "[KOK] Basic math (scoring)",
+      "Sportsmanship",
+      "[KOK] Motor skills"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] toybox-memory-game",
+    "name": "[KOK] Memory Matching Game",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 45 min",
+    "description": "[KOK] Create a personalized memory matching game with your own artwork. Great for brain training!",
+    "image": "[KOK] /images/blocks.webp",
+    "rating": 4.6,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "Cardstock",
+        "quantity": "[KOK] 24-32 squares"
+      },
+      {
+        "name": "[KOK] Markers or crayons"
+      },
+      {
+        "name": "Stickers",
+        "optional": true
+      },
+      {
+        "name": "[KOK] Clear contact paper",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Cut Cards",
+        "description": "[KOK] Cut cardstock into equal-sized squares (2\" x 2\" works well). Make an even number - 24 or 32 cards.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Create Pairs",
+        "description": "[KOK] Draw matching images on pairs of cards. Use shapes, animals, letters, or family photos!",
+        "duration": "[KOK] 25 min"
+      },
+      {
+        "title": "[KOK] Add Backs",
+        "description": "[KOK] Decorate all card backs identically so pairs can't be identified from behind.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Protect (Optional)",
+        "description": "[KOK] Cover cards with clear contact paper or laminate for durability.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "Play!",
+        "description": "[KOK] Shuffle and lay face down. Take turns flipping two cards. Match pairs to win!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Scissors supervision for young children"
+    ],
+    "learningOutcomes": [
+      "[KOK] Memory skills",
+      "Concentration",
+      "[KOK] Visual recognition",
+      "Turn-taking"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] toybox-kaleidoscope",
+    "name": "Kaleidoscope",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KOK] 1 hour",
+    "description": "[KOK] Build a working kaleidoscope with mirrors and colorful beads. See the world in beautiful patterns!",
+    "image": "[KOK] /images/blocks.webp",
+    "rating": 4.7,
+    "reviewCount": 96,
+    "materials": [
+      {
+        "name": "[KOK] Cardboard tube",
+        "quantity": "[KOK] 8-10\" long"
+      },
+      {
+        "name": "[KOK] Mirror sheets or reflective paper",
+        "quantity": "[KOK] 3 strips"
+      },
+      {
+        "name": "[KOK] Clear plastic discs",
+        "quantity": "2"
+      },
+      {
+        "name": "[KOK] Beads and sequins"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[KOK] Decorative paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Create Mirror Triangle",
+        "description": "[KOK] Cut three mirror strips that fit inside your tube. Tape them together to form a triangle, reflective sides facing in.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Prepare Tube",
+        "description": "[KOK] Cut a viewing hole in one end cap. The mirror triangle should fit snugly inside the tube.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Insert Mirrors",
+        "description": "[KOK] Carefully slide the mirror triangle into the tube. Secure in place.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Create Object Chamber",
+        "description": "[KOK] At the other end, sandwich beads and sequins between two clear plastic discs. Attach to tube end.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[KOK] Cover the outside with decorative paper. Add your name and designs!",
+        "duration": "[KOK] 15 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Handle mirrors carefully - edges can be sharp",
+      "[KOK] Don't look at bright lights through kaleidoscope"
+    ],
+    "learningOutcomes": [
+      "[KOK] Light and reflection",
+      "Symmetry",
+      "[KOK] Pattern recognition",
+      "[KOK] Optics basics"
+    ],
+    "crossPillar": [
+      "[KOK] sciencelab-invisible-ink"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "toybox-catapult",
+    "name": "[KOK] Wooden Catapult",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "9-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KOK] 1.5 hours",
+    "description": "[KOK] Build a working catapult that launches small objects. Learn about lever physics and stored energy!",
+    "image": "[KOK] /images/blocks.webp",
+    "rating": 4.8,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[KOK] Popsicle sticks",
+        "quantity": "15-20"
+      },
+      {
+        "name": "[KOK] Rubber bands",
+        "quantity": "5-6"
+      },
+      {
+        "name": "[KOK] Plastic spoon"
+      },
+      {
+        "name": "[KOK] Small pompoms or marshmallows",
+        "quantity": "[KOK] For launching"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Create the Base",
+        "description": "[KOK] Stack 5-7 popsicle sticks and rubber band both ends. This creates a sturdy base.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Build Launch Arm",
+        "description": "[KOK] Take 2 sticks and rubber band only ONE end. Open the other end like scissors.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Combine Base and Arm",
+        "description": "[KOK] Insert the base stack perpendicular into the launch arm opening. Secure with rubber bands.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Add Launching Cup",
+        "description": "[KOK] Attach plastic spoon to the end of the launch arm with rubber bands.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Test and Adjust",
+        "description": "[KOK] Load, aim, and launch! Adjust rubber band tension and fulcrum position for better distance.",
+        "duration": "[KOK] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Only launch soft objects like pompoms",
+      "[KOK] Never aim at people or animals",
+      "[KOK] Launch in clear areas"
+    ],
+    "learningOutcomes": [
+      "[KOK] Lever mechanics",
+      "[KOK] Potential and kinetic energy",
+      "[KOK] Engineering iteration",
+      "[KOK] Physics concepts"
+    ],
+    "crossPillar": [
+      "[KOK] sciencelab-egg-drop"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] toybox-balancing-eagle",
+    "name": "[KOK] Balancing Eagle",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 45 min",
+    "description": "[KOK] Create a bird that balances on its beak! Learn about center of gravity with this fun physics toy.",
+    "image": "[KOK] /images/airplane.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "[KOK] Cardstock or cardboard"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[KOK] Pennies or coins",
+        "quantity": "2"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[KOK] Markers for decoration"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Draw Eagle Shape",
+        "description": "[KOK] Draw a simple eagle with spread wings on cardstock. Wings should extend outward and slightly downward.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Cut Out Shape",
+        "description": "[KOK] Carefully cut out your eagle. Keep the beak pointed.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Add Weights",
+        "description": "[KOK] Tape a penny under each wing tip. These create the counterbalance.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Find Balance Point",
+        "description": "[KOK] Adjust coin position until the eagle balances on its beak when placed on your finger.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[KOK] Color your eagle with markers. Try balancing on different surfaces!",
+        "duration": "[KOK] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Scissors supervision for young children"
+    ],
+    "learningOutcomes": [
+      "[KOK] Center of gravity",
+      "[KOK] Balance and counterweight",
+      "[KOK] Physics experimentation",
+      "[KOK] Fine motor skills"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] toybox-paper-launcher",
+    "name": "[KOK] Paper Airplane Launcher",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KOK] 1 hour",
+    "description": "[KOK] Build a rubber band launcher that sends paper airplanes soaring! Combine engineering and flight.",
+    "image": "[KOK] /images/airplane.webp",
+    "rating": 4.6,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "Cardboard"
+      },
+      {
+        "name": "[KOK] Rubber bands",
+        "quantity": "[KOK] 3-5 strong ones"
+      },
+      {
+        "name": "[KOK] Popsicle sticks"
+      },
+      {
+        "name": "Paper",
+        "quantity": "[KOK] For airplanes"
+      },
+      {
+        "name": "[KOK] Tape and glue"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Build Launch Track",
+        "description": "[KOK] Create a cardboard track about 12\" long with raised edges to guide the airplane.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Create Tension System",
+        "description": "[KOK] Attach rubber bands to a crossbar at the back of the track. Create a pull-back mechanism.",
+        "duration": "[KOK] 20 min"
+      },
+      {
+        "title": "[KOK] Add Release Trigger",
+        "description": "[KOK] Design a simple trigger using popsicle sticks that holds and releases the rubber bands.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Make Paper Airplanes",
+        "description": "[KOK] Fold several paper airplanes. Test different designs to see which launches best.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Launch and Adjust",
+        "description": "[KOK] Load airplane, pull back, release! Adjust angle and tension for maximum distance.",
+        "duration": "[KOK] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Never aim at people",
+      "[KOK] Launch in open areas",
+      "[KOK] Be careful of snapping rubber bands"
+    ],
+    "learningOutcomes": [
+      "[KOK] Mechanical engineering",
+      "Aerodynamics",
+      "[KOK] Energy transfer",
+      "[KOK] Iterative design"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "toybox-kite",
+    "name": "[KOK] Diamond Kite",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KOK] 1.5 hours",
+    "description": "[KOK] Build a classic diamond kite that soars! Experience the joy of flight with this timeless project.",
+    "image": "[KOK] /images/airplane.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[KOK] Dowels or sticks",
+        "quantity": "[KOK] 2 pieces"
+      },
+      {
+        "name": "[KOK] Plastic bag or tissue paper"
+      },
+      {
+        "name": "String",
+        "quantity": "[KOK] Lots for flying!"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[KOK] Ribbon for tail"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Create Frame",
+        "description": "[KOK] Cross two sticks - vertical longer than horizontal. Tie firmly at intersection point.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Add Outline",
+        "description": "[KOK] Run string around the outside of the frame, creating the kite shape. Secure at each stick end.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Cover with Skin",
+        "description": "[KOK] Lay frame on plastic or paper. Cut with extra margin, fold over frame, and tape secure.",
+        "duration": "[KOK] 20 min"
+      },
+      {
+        "title": "[KOK] Attach Flying Line",
+        "description": "[KOK] Tie flying string to the intersection point. Create a bridle for better control if needed.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Add Tail and Fly",
+        "description": "[KOK] Attach a ribbon tail for stability. Find wind, run, and launch your kite!",
+        "duration": "[KOK] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Never fly near power lines",
+      "[KOK] Fly in open areas away from trees",
+      "[KOK] Don't fly in storms"
+    ],
+    "learningOutcomes": [
+      "Aerodynamics",
+      "[KOK] Wind and weather",
+      "[KOK] Patience and persistence",
+      "[KOK] Outdoor appreciation"
+    ],
+    "crossPillar": [
+      "[KOK] outdoorquest-nature-hunt"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] toybox-rainstick",
+    "name": "Rainstick",
+    "pillar": "toybox",
+    "category": "Musical",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 45 min",
+    "description": "[KOK] Create a musical instrument that sounds like falling rain. Perfect for relaxation and rhythm activities!",
+    "image": "[KOK] /images/blocks.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[KOK] Cardboard tube",
+        "quantity": "[KOK] Paper towel or wrapping paper roll"
+      },
+      {
+        "name": "[KOK] Rice or small beans",
+        "quantity": "[KOK] 1/4 cup"
+      },
+      {
+        "name": "[KOK] Aluminum foil"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[KOK] Decorative paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Seal One End",
+        "description": "[KOK] Cover one end of the tube tightly with paper and tape.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Create Internal Spiral",
+        "description": "[KOK] Crinkle aluminum foil into a long snake. Twist it into a spiral and insert into the tube.",
+        "tip": "[KOK] The foil creates the rain sound by slowing the rice.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Add Rice",
+        "description": "[KOK] Pour rice or beans into the tube. Experiment with amounts for different sounds.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Seal Other End",
+        "description": "[KOK] Close the open end securely with paper and tape. Shake to test - adjust if needed.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[KOK] Cover with decorative paper. Add designs inspired by rain, nature, or your own creativity!",
+        "duration": "[KOK] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Ensure ends are sealed tightly",
+      "[KOK] Small items inside can be choking hazards if opened"
+    ],
+    "learningOutcomes": [
+      "[KOK] Sound and acoustics",
+      "[KOK] Rhythm and music",
+      "[KOK] Cultural instruments",
+      "[KOK] Sensory exploration"
+    ],
+    "crossPillar": [
+      "[KOK] artstudio-nature-collage"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] toybox-sock-puppet",
+    "name": "[KOK] Sock Puppet",
+    "pillar": "toybox",
+    "category": "Puppets",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 30 min",
+    "description": "[KOK] Transform an old sock into a fun puppet character. Perfect for storytelling and imaginative play!",
+    "image": "[KOK] /images/plush-bear.webp",
+    "rating": 4.5,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[KOK] Clean sock"
+      },
+      {
+        "name": "[KOK] Googly eyes",
+        "quantity": "2"
+      },
+      {
+        "name": "[KOK] Felt scraps"
+      },
+      {
+        "name": "Yarn",
+        "quantity": "[KOK] For hair"
+      },
+      {
+        "name": "[KOK] Fabric glue"
+      },
+      {
+        "name": "Buttons",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Plan Your Character",
+        "description": "[KOK] Decide what character your puppet will be - person, animal, monster? Gather materials in matching colors.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Add Eyes",
+        "description": "[KOK] Glue googly eyes or felt circles onto the toe area of the sock.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Create Mouth",
+        "description": "[KOK] Cut an oval of felt and glue inside the sock to create a mouth. Add a felt tongue if desired!",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Add Features",
+        "description": "[KOK] Glue on yarn hair, felt ears, buttons, or other features to complete your character.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Put on a Show!",
+        "description": "[KOK] Once glue is dry, put your hand in and bring your puppet to life!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Use fabric glue rather than hot glue with young children",
+      "[KOK] Buttons can be choking hazards - consider felt alternatives for young kids"
+    ],
+    "learningOutcomes": [
+      "[KOK] Creative expression",
+      "Storytelling",
+      "[KOK] Character development",
+      "[KOK] Communication skills"
+    ],
+    "crossPillar": [
+      "[KOK] artstudio-paper-plate-animals"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] toybox-finger-puppets",
+    "name": "[KOK] Felt Finger Puppets",
+    "pillar": "toybox",
+    "category": "Puppets",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 1 hour",
+    "description": "[KOK] Create a set of adorable finger puppets from felt. Make a whole cast of characters for stories!",
+    "image": "[KOK] /images/plush-bear.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[KOK] Felt sheets",
+        "quantity": "[KOK] Various colors"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[KOK] Fabric glue or needle and thread"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "[KOK] Small embellishments",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Cut Base Shapes",
+        "description": "[KOK] Cut two finger-sized rectangles with rounded tops for each puppet. These form the body.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Glue or Sew Edges",
+        "description": "[KOK] Join the two pieces along sides and top, leaving bottom open for your finger.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Add Faces",
+        "description": "[KOK] Cut tiny felt pieces for eyes, noses, mouths. Glue in place. Use markers for details.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Create Characters",
+        "description": "[KOK] Add ears for animals, hair for people, wings for birds. Get creative!",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Perform Stories",
+        "description": "[KOK] Put puppets on all fingers and act out stories. Make a mini theater from a box!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Supervise scissors use",
+      "[KOK] Use child-safe glue"
+    ],
+    "learningOutcomes": [
+      "[KOK] Fine motor skills",
+      "Storytelling",
+      "[KOK] Character creation",
+      "Imagination"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] toybox-rubber-band-car",
+    "name": "[KOK] Rubber Band Car",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 45 min",
+    "description": "[KOK] Build a car powered by rubber band energy! Watch it zoom across the floor.",
+    "image": "[KOK] /images/wooden-car.webp",
+    "rating": 4.6,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[KOK] Water bottle or small box"
+      },
+      {
+        "name": "[KOK] Bottle caps",
+        "quantity": "[KOK] 4 for wheels"
+      },
+      {
+        "name": "[KOK] Wooden skewers",
+        "quantity": "[KOK] 2 for axles"
+      },
+      {
+        "name": "[KOK] Rubber bands",
+        "quantity": "2-3"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Prepare the Body",
+        "description": "[KOK] Clean your bottle or box. Poke holes on each side for axles to pass through.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Install Axles",
+        "description": "[KOK] Push skewers through the holes. They should spin freely.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Attach Wheels",
+        "description": "[KOK] Poke holes in bottle cap centers. Push onto skewer ends. Secure with tape or glue.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Add Rubber Band Power",
+        "description": "[KOK] Hook rubber band around rear axle. Attach other end to front of car body.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Wind and Race!",
+        "description": "[KOK] Roll car backward to wind rubber band. Release and watch it go! Race against friends.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Be careful with sharp skewer ends",
+      "[KOK] Don't aim at people when releasing"
+    ],
+    "learningOutcomes": [
+      "[KOK] Stored energy",
+      "[KOK] Simple machines",
+      "[KOK] Engineering design",
+      "[KOK] Cause and effect"
+    ],
+    "crossPillar": [
+      "[KOK] sciencelab-balloon-rocket"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] toybox-spinning-top",
+    "name": "[KOK] Wooden Spinning Top",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 30 min",
+    "description": "[KOK] Craft a classic spinning top that twirls for ages. Decorate with colorful patterns that blend when spinning!",
+    "image": "[KOK] /images/blocks.webp",
+    "rating": 4.4,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[KOK] Cardboard circles",
+        "quantity": "[KOK] 2-3 sizes"
+      },
+      {
+        "name": "[KOK] Wooden dowel or pencil"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "Glue"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Create Disc",
+        "description": "[KOK] Cut a circle from cardboard, about 3-4 inches diameter. Ensure it's perfectly round.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Add Spindle",
+        "description": "[KOK] Poke a hole in exact center. Insert dowel or sharpened pencil. Glue in place.",
+        "tip": "[KOK] Center placement is crucial for good spinning!",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Decorate Top",
+        "description": "[KOK] Draw colorful patterns - spirals, stripes, dots. Colors will blend when spinning!",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Balance and Adjust",
+        "description": "[KOK] Spin test your top. If wobbly, check center alignment. Trim edges if uneven.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Spin Competitions",
+        "description": "[KOK] Practice spinning technique. Challenge friends - longest spin wins!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Pencil points can be sharp"
+    ],
+    "learningOutcomes": [
+      "[KOK] Rotational physics",
+      "[KOK] Balance and symmetry",
+      "[KOK] Color blending",
+      "[KOK] Fine motor control"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] jigyasulab-physics",
+    "name": "[KOK] Physics Lab",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "9-12",
+    "difficulty": "Medium",
+    "timeToMake": "Interactive",
+    "description": "[KOK] Enter the Physics Lab and explore mechanics, optics, and energy interactively.",
+    "materials": [],
+    "image": "[KOK] /images/hero-camp.webp",
+    "rating": 5,
+    "reviewCount": 412,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "[KOK] Physics concepts",
+      "[KOK] Scientific thinking"
+    ],
+    "url": "/physics",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-chem",
+    "name": "[KOK] Chemistry Lab",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "Interactive",
+    "description": "[KOK] Mix elements and observe reactions in our safe, virtual Chemistry Lab.",
+    "materials": [],
+    "image": "[KOK] /images/slime.webp",
+    "rating": 4.9,
+    "reviewCount": 388,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "[KOK] Chemical reactions",
+      "[KOK] Molecular structures"
+    ],
+    "url": "/chem",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-bio",
+    "name": "[KOK] Biology Lab",
+    "pillar": "sciencelab",
+    "category": "Biology",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "Interactive",
+    "description": "[KOK] Explore the wonders of life, cells, and ecosystems in the Biology Lab.",
+    "materials": [],
+    "image": "[KOK] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 275,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Anatomy",
+      "Ecosystems"
+    ],
+    "url": "/bio",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-math",
+    "name": "[KOK] Math Lab",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "Interactive",
+    "description": "[KOK] Solve puzzles and visualize mathematical concepts in a fun, interactive way.",
+    "materials": [],
+    "image": "[KOK] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 156,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Geometry",
+      "[KOK] Problem solving"
+    ],
+    "url": "/math",
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] jigyasulab-cosmos",
+    "name": "[KOK] Cosmos Lab",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "Interactive",
+    "description": "[KOK] Travel through space, explore planets, and understand the universe.",
+    "materials": [],
+    "image": "[KOK] /images/hero-camp.webp",
+    "rating": 5,
+    "reviewCount": 501,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Astronomy",
+      "[KOK] Space exploration"
+    ],
+    "url": "/cosmos",
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] sciencelab-volcano",
+    "name": "[KOK] Erupting Volcano",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 30 min",
+    "description": "[KOK] Create an explosive volcanic eruption using kitchen chemistry! Watch the foamy lava flow and learn about chemical reactions.",
+    "image": "[KOK] /images/volcano.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 234,
+    "materials": [
+      {
+        "name": "[KOK] Baking soda",
+        "quantity": "[KOK] 3 tablespoons"
+      },
+      {
+        "name": "Vinegar",
+        "quantity": "[KOK] 1 cup"
+      },
+      {
+        "name": "[KOK] Dish soap",
+        "quantity": "[KOK] A few drops"
+      },
+      {
+        "name": "[KOK] Food coloring",
+        "quantity": "[KOK] Red and orange"
+      },
+      {
+        "name": "[KOK] Play-doh or clay",
+        "quantity": "[KOK] For volcano shape"
+      },
+      {
+        "name": "[KOK] Plastic bottle or container"
+      },
+      {
+        "name": "[KOK] Tray or pan",
+        "quantity": "[KOK] To catch overflow"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Build Your Volcano",
+        "description": "[KOK] Place plastic bottle on tray. Shape clay or play-doh around it to create a volcano mountain. Leave the bottle opening exposed at the top.",
+        "tip": "[KOK] Make it look realistic with ridges and a crater!",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Add the Lava Base",
+        "description": "[KOK] Pour baking soda into the bottle. Add a few drops of dish soap and red/orange food coloring.",
+        "duration": "[KOK] 3 min"
+      },
+      {
+        "title": "[KOK] Prepare for Eruption",
+        "description": "[KOK] Make sure everyone can see! Have your vinegar ready to pour.",
+        "duration": "[KOK] 2 min"
+      },
+      {
+        "title": "[KOK] Eruption Time!",
+        "description": "[KOK] Pour vinegar into the bottle and step back. Watch the foamy lava erupt!",
+        "duration": "[KOK] 1 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KOK] Understand the Science",
+        "description": "[KOK] The baking soda (base) reacts with vinegar (acid) to create carbon dioxide gas, which makes the bubbles and foam!",
+        "duration": "[KOK] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Do this experiment on a tray or outside - it gets messy!",
+      "[KOK] Vinegar can irritate eyes - don't get too close",
+      "[KOK] Adult supervision recommended"
+    ],
+    "learningOutcomes": [
+      "[KOK] Acid-base reactions",
+      "[KOK] Chemical reactions",
+      "[KOK] Carbon dioxide production",
+      "[KOK] Scientific observation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] sciencelab-density-tower",
+    "name": "[KOK] Rainbow Density Tower",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 30 min",
+    "description": "[KOK] Stack liquids in a rainbow! Learn about density as you create layers that magically don't mix.",
+    "image": "[KOK] /images/crystal.webp",
+    "rating": 4.8,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "Honey",
+        "quantity": "[KOK] 1/4 cup"
+      },
+      {
+        "name": "[KOK] Corn syrup",
+        "quantity": "[KOK] 1/4 cup"
+      },
+      {
+        "name": "[KOK] Dish soap",
+        "quantity": "[KOK] 1/4 cup"
+      },
+      {
+        "name": "Water",
+        "quantity": "[KOK] 1/4 cup"
+      },
+      {
+        "name": "[KOK] Vegetable oil",
+        "quantity": "[KOK] 1/4 cup"
+      },
+      {
+        "name": "[KOK] Rubbing alcohol",
+        "quantity": "[KOK] 1/4 cup"
+      },
+      {
+        "name": "[KOK] Food coloring"
+      },
+      {
+        "name": "[KOK] Tall clear glass or jar"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Color Your Liquids",
+        "description": "[KOK] Add different food coloring to water, corn syrup, and rubbing alcohol. Honey and oil have natural colors.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Pour the Heaviest First",
+        "description": "[KOK] Start with honey at the bottom of your glass. Pour slowly down the side.",
+        "tip": "[KOK] Patience is key - pour very slowly!",
+        "duration": "[KOK] 3 min"
+      },
+      {
+        "title": "[KOK] Add Middle Layers",
+        "description": "[KOK] Carefully add corn syrup, then dish soap, then water. Pour down the side of the glass.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Top With Light Liquids",
+        "description": "[KOK] Add vegetable oil, then carefully add rubbing alcohol on top.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "Experiment!",
+        "description": "[KOK] Try dropping small objects - where do they float? Predict based on density!",
+        "duration": "[KOK] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Don't drink any of these liquids!",
+      "[KOK] Rubbing alcohol requires adult handling",
+      "[KOK] Wash hands after experiment"
+    ],
+    "learningOutcomes": [
+      "[KOK] Density concepts",
+      "[KOK] Liquid properties",
+      "[KOK] Scientific layering",
+      "[KOK] Prediction and observation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] sciencelab-crystals",
+    "name": "[KOK] Crystal Growing",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KOK] 30 min + 3-5 days",
+    "description": "[KOK] Grow beautiful crystals from sugar, salt, or borax! Watch amazing structures form over several days.",
+    "image": "[KOK] /images/crystal.webp",
+    "rating": 4.8,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[KOK] Borax, salt, or sugar",
+        "quantity": "[KOK] 1 cup"
+      },
+      {
+        "name": "[KOK] Hot water",
+        "quantity": "[KOK] 2 cups"
+      },
+      {
+        "name": "[KOK] Glass jar"
+      },
+      {
+        "name": "String"
+      },
+      {
+        "name": "Pencil"
+      },
+      {
+        "name": "[KOK] Pipe cleaners",
+        "optional": true
+      },
+      {
+        "name": "[KOK] Food coloring",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Create Super-Saturated Solution",
+        "description": "[KOK] Have an adult pour hot water into jar. Add borax/salt/sugar slowly, stirring until no more dissolves.",
+        "duration": "[KOK] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KOK] Prepare Crystal Seed",
+        "description": "[KOK] Tie string to pencil. Shape pipe cleaner into a form (star, heart) and tie to string. Or just use string.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Add Color (Optional)",
+        "description": "[KOK] Add food coloring to solution for colored crystals.",
+        "duration": "[KOK] 2 min"
+      },
+      {
+        "title": "[KOK] Suspend and Wait",
+        "description": "[KOK] Lower string/pipe cleaner into solution. Rest pencil across jar top. Place somewhere still.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Watch and Wait",
+        "description": "[KOK] Check daily! Crystals form as water evaporates. Full growth takes 3-5 days.",
+        "duration": "[KOK] 3-5 days"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Adult handles hot water only",
+      "[KOK] Borax is not edible - wash hands",
+      "[KOK] Don't move or disturb jar during growth"
+    ],
+    "learningOutcomes": [
+      "[KOK] Crystallization process",
+      "[KOK] Saturation concepts",
+      "[KOK] Patience and observation",
+      "[KOK] Molecular structure"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] sciencelab-slime",
+    "name": "[KOK] Slime Factory",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 15 min",
+    "description": "[KOK] Mix up oozy, stretchy, satisfying slime! Experiment with colors, glitter, and different consistencies.",
+    "image": "[KOK] /images/slime.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 312,
+    "materials": [
+      {
+        "name": "[KOK] White school glue",
+        "quantity": "[KOK] 1/2 cup"
+      },
+      {
+        "name": "[KOK] Contact lens solution (with boric acid)",
+        "quantity": "[KOK] 1 tablespoon"
+      },
+      {
+        "name": "[KOK] Baking soda",
+        "quantity": "[KOK] 1/2 teaspoon"
+      },
+      {
+        "name": "[KOK] Food coloring"
+      },
+      {
+        "name": "Glitter",
+        "optional": true
+      },
+      {
+        "name": "[KOK] Bowl and spoon"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Mix Base",
+        "description": "[KOK] Pour glue into bowl. Add food coloring and glitter if desired. Stir well.",
+        "duration": "[KOK] 3 min"
+      },
+      {
+        "title": "[KOK] Add Activator",
+        "description": "[KOK] Sprinkle in baking soda and mix. Then add contact solution and stir rapidly.",
+        "duration": "[KOK] 3 min"
+      },
+      {
+        "title": "[KOK] Knead the Slime",
+        "description": "[KOK] Once slime forms, pick it up and knead with hands. It will become less sticky.",
+        "tip": "[KOK] If too sticky, add more contact solution. If too stiff, add more glue.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Test Properties",
+        "description": "[KOK] Stretch it slowly - does it pull? Pull fast - does it snap? Poke it - does it bounce?",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Store Properly",
+        "description": "[KOK] Store in airtight container. Slime lasts 1-2 weeks with proper storage!",
+        "duration": "[KOK] 2 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Wash hands after playing",
+      "[KOK] Don't eat slime",
+      "[KOK] Play on protected surface - slime can stain"
+    ],
+    "learningOutcomes": [
+      "[KOK] Polymer chemistry",
+      "[KOK] Non-Newtonian fluids",
+      "[KOK] Following recipes",
+      "[KOK] Sensory exploration"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] sciencelab-balloon-rocket",
+    "name": "[KOK] Balloon Rocket",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 15 min",
+    "description": "[KOK] Launch a balloon across the room on a string! Learn about thrust and Newton's third law.",
+    "image": "[KOK] /images/volcano.webp",
+    "rating": 4.7,
+    "reviewCount": 187,
+    "materials": [
+      {
+        "name": "Balloon"
+      },
+      {
+        "name": "String",
+        "quantity": "[KOK] 10-15 feet"
+      },
+      {
+        "name": "Straw"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[KOK] Two chairs or posts"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Set Up Track",
+        "description": "[KOK] Thread string through straw. Tie string between two chairs, keeping it taut and level.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Prepare Balloon",
+        "description": "[KOK] Blow up balloon but don't tie it. Pinch the end to keep air in.",
+        "duration": "[KOK] 2 min"
+      },
+      {
+        "title": "[KOK] Attach to Straw",
+        "description": "[KOK] While someone holds the balloon closed, tape it to the straw on the string.",
+        "duration": "[KOK] 3 min"
+      },
+      {
+        "title": "Launch!",
+        "description": "[KOK] Release the balloon and watch it zoom along the string!",
+        "duration": "[KOK] 1 min"
+      },
+      {
+        "title": "Experiment",
+        "description": "[KOK] Try different balloon sizes, angles, or adding weight. What changes the speed?",
+        "duration": "[KOK] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Don't release balloons outdoors - harmful to wildlife",
+      "[KOK] Supervise young children with balloons"
+    ],
+    "learningOutcomes": [
+      "[KOK] Newton's third law",
+      "[KOK] Thrust and propulsion",
+      "[KOK] Variables in experiments",
+      "[KOK] Cause and effect"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] sciencelab-invisible-ink",
+    "name": "[KOK] Invisible Ink Messages",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 20 min",
+    "description": "[KOK] Write secret messages that appear when heated! Perfect for spy games and learning about chemical changes.",
+    "image": "[KOK] /images/crystal.webp",
+    "rating": 4.6,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "[KOK] Lemon juice",
+        "quantity": "[KOK] 2-3 tablespoons"
+      },
+      {
+        "name": "[KOK] White paper"
+      },
+      {
+        "name": "[KOK] Cotton swab or paintbrush"
+      },
+      {
+        "name": "[KOK] Lamp or iron",
+        "quantity": "[KOK] Heat source"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Prepare Ink",
+        "description": "[KOK] Squeeze lemon juice into a small bowl. This is your invisible ink!",
+        "duration": "[KOK] 3 min"
+      },
+      {
+        "title": "[KOK] Write Message",
+        "description": "[KOK] Dip cotton swab in lemon juice and write on white paper. Use enough juice to wet the paper.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Let Dry",
+        "description": "[KOK] Allow paper to dry completely. The message becomes invisible!",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Reveal Message",
+        "description": "[KOK] Hold paper near (not touching!) a light bulb or have adult use warm iron. Message appears brown!",
+        "duration": "[KOK] 5 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KOK] Understand Why",
+        "description": "[KOK] Heat oxidizes the lemon juice, turning it brown. The acid weakens paper where you wrote!",
+        "duration": "[KOK] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Adult supervision required for heat source",
+      "[KOK] Don't touch hot lamp or iron",
+      "[KOK] Keep paper safe distance from heat"
+    ],
+    "learningOutcomes": [
+      "[KOK] Oxidation reactions",
+      "[KOK] Chemical changes",
+      "[KOK] Heat effects",
+      "[KOK] Secret communication history"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] sciencelab-magnetic-maze",
+    "name": "[KOK] Magnetic Maze",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KOK] 45 min",
+    "description": "[KOK] Build a maze and guide objects through using magnet power! Learn about magnetic forces.",
+    "image": "[KOK] /images/crystal.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "[KOK] Cardboard box lid or shallow box"
+      },
+      {
+        "name": "[KOK] Strong magnets",
+        "quantity": "2"
+      },
+      {
+        "name": "[KOK] Paper clips or small metal objects"
+      },
+      {
+        "name": "[KOK] Straws or cardboard strips"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "Tape"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Design Maze",
+        "description": "[KOK] Draw a maze path inside the box lid. Mark start and finish points.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Build Walls",
+        "description": "[KOK] Cut straws or cardboard strips and tape along maze walls to create barriers.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Add Obstacles",
+        "description": "[KOK] Include dead ends, tunnels, or challenges. Make it tricky but solvable!",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Test Magnetic Control",
+        "description": "[KOK] Place paper clip in maze. Hold magnet under the box and move it. The clip follows!",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Play and Race",
+        "description": "[KOK] Navigate through the maze using only the magnet. Time yourself or race friends!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Keep strong magnets away from electronics",
+      "[KOK] Supervise small magnet use with young children"
+    ],
+    "learningOutcomes": [
+      "[KOK] Magnetic fields",
+      "[KOK] Forces at a distance",
+      "Problem-solving",
+      "[KOK] Hand-eye coordination"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] sciencelab-solar-oven",
+    "name": "[KOK] Solar Oven Roasted Papad",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KOK] 1 hour + cooking",
+    "description": "[KOK] Harness the incredible power of the sun to build your own solar oven and perfectly roast crispy papads! Learn about solar thermal energy, reflection, and the greenhouse effect while making a tasty, traditional snack.",
+    "image": "[KOK] /images/volcano.webp",
+    "rating": 4.8,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[KOK] Pizza box"
+      },
+      {
+        "name": "[KOK] Aluminum foil"
+      },
+      {
+        "name": "[KOK] Plastic wrap"
+      },
+      {
+        "name": "[KOK] Black paper"
+      },
+      {
+        "name": "[KOK] Tape and scissors"
+      },
+      {
+        "name": "[KOK] Graham crackers, chocolate, marshmallows"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Create Flap",
+        "description": "[KOK] Cut three sides of a square in box lid, leaving one side as hinge. Fold flap up.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Line with Foil",
+        "description": "[KOK] Cover the flap's inner surface with aluminum foil, shiny side out. Smooth flat.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Create Window",
+        "description": "[KOK] Tape plastic wrap over the hole created by the flap. This traps heat inside.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Prepare Interior",
+        "description": "[KOK] Line bottom of box with black paper (absorbs heat). Add more foil on inner sides.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Cook S'mores!",
+        "description": "[KOK] Place s'more ingredients inside. Angle toward sun, prop flap to reflect light in. Wait 30-60 min!",
+        "duration": "[KOK] 30-60 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Only use on sunny days",
+      "[KOK] Contents get hot - use oven mitts",
+      "[KOK] Adult supervision when opening"
+    ],
+    "learningOutcomes": [
+      "[KOK] Solar energy",
+      "[KOK] Heat absorption and reflection",
+      "[KOK] Renewable energy concepts",
+      "[KOK] Engineering design"
+    ],
+    "crossPillar": [
+      "[KOK] outdoorquest-cloud-watching"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] sciencelab-dancing-raisins",
+    "name": "[KOK] Dancing Raisins",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 10 min",
+    "description": "[KOK] Watch raisins dance up and down in a glass! A simple experiment that demonstrates gas bubbles and density.",
+    "image": "[KOK] /images/volcano.webp",
+    "rating": 4.4,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[KOK] Clear soda (Sprite or club soda)",
+        "quantity": "[KOK] 1 glass"
+      },
+      {
+        "name": "Raisins",
+        "quantity": "[KOK] Small handful"
+      },
+      {
+        "name": "[KOK] Clear glass or jar"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Pour Soda",
+        "description": "[KOK] Fill a clear glass about 3/4 full with clear carbonated soda.",
+        "duration": "[KOK] 1 min"
+      },
+      {
+        "title": "[KOK] Drop Raisins",
+        "description": "[KOK] Drop 5-8 raisins into the soda. They'll sink to the bottom at first.",
+        "duration": "[KOK] 1 min"
+      },
+      {
+        "title": "[KOK] Watch the Dance",
+        "description": "[KOK] Wait a minute - raisins start to rise, then fall, then rise again!",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Understand Why",
+        "description": "[KOK] CO2 bubbles stick to wrinkly raisins, making them float. At top, bubbles pop and raisins sink!",
+        "duration": "[KOK] 3 min"
+      },
+      {
+        "title": "[KOK] Try Variations",
+        "description": "[KOK] Test other small objects - what else dances? Try different sodas.",
+        "duration": "[KOK] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Don't drink the soda after experiment"
+    ],
+    "learningOutcomes": [
+      "[KOK] Density and buoyancy",
+      "[KOK] Carbon dioxide properties",
+      "[KOK] Observation skills",
+      "[KOK] Scientific prediction"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] sciencelab-static-butterfly",
+    "name": "[KOK] Static Electricity Butterfly",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 20 min",
+    "description": "[KOK] Make a butterfly's wings flutter using static electricity! No batteries needed - just science!",
+    "image": "[KOK] /images/crystal.webp",
+    "rating": 4.5,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[KOK] Tissue paper"
+      },
+      {
+        "name": "Cardstock"
+      },
+      {
+        "name": "Balloon"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "Markers"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Create Body",
+        "description": "[KOK] Cut a butterfly body shape from cardstock. Make it sturdy - this is the base.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Cut Tissue Wings",
+        "description": "[KOK] Cut delicate wing shapes from tissue paper. Make them light and thin.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Attach Wings",
+        "description": "[KOK] Tape wings to body at center only. Wings should be free to move on edges.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Charge Balloon",
+        "description": "[KOK] Blow up balloon and rub vigorously on your hair or wool sweater.",
+        "duration": "[KOK] 2 min"
+      },
+      {
+        "title": "[KOK] Make Wings Flutter",
+        "description": "[KOK] Hold charged balloon near tissue wings - watch them rise toward it! Move balloon to make them flutter.",
+        "duration": "[KOK] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Latex allergy caution with balloons"
+    ],
+    "learningOutcomes": [
+      "[KOK] Static electricity",
+      "[KOK] Electric charges",
+      "[KOK] Attraction forces",
+      "[KOK] Conductors vs insulators"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] sciencelab-water-cycle",
+    "name": "[KOK] Water Cycle in a Bag",
+    "pillar": "sciencelab",
+    "category": "Biology",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 15 min + observation",
+    "description": "[KOK] Create a mini water cycle in a plastic bag! Watch evaporation, condensation, and precipitation happen.",
+    "image": "[KOK] /images/crystal.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[KOK] Ziplock bag",
+        "quantity": "[KOK] Quart size"
+      },
+      {
+        "name": "Water",
+        "quantity": "[KOK] 1/4 cup"
+      },
+      {
+        "name": "[KOK] Blue food coloring"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[KOK] Sunny window"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Draw Scene",
+        "description": "[KOK] Draw clouds at top of bag, sun, and waves at bottom using permanent marker.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Add Water",
+        "description": "[KOK] Pour water into bag with blue food coloring. This is your ocean!",
+        "duration": "[KOK] 2 min"
+      },
+      {
+        "title": "[KOK] Seal and Mount",
+        "description": "[KOK] Seal bag tightly. Tape to sunny window at eye level.",
+        "duration": "[KOK] 3 min"
+      },
+      {
+        "title": "[KOK] Observe Changes",
+        "description": "[KOK] Check throughout the day. Water evaporates, condenses on bag, and \"rains\" down!",
+        "duration": "Ongoing"
+      },
+      {
+        "title": "[KOK] Label the Cycle",
+        "description": "[KOK] Add labels: evaporation (water rising), condensation (droplets forming), precipitation (drops falling).",
+        "duration": "[KOK] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Ensure bag is sealed to prevent leaks"
+    ],
+    "learningOutcomes": [
+      "[KOK] Water cycle stages",
+      "[KOK] Evaporation and condensation",
+      "[KOK] Solar energy effects",
+      "[KOK] Earth science basics"
+    ],
+    "crossPillar": [
+      "[KOK] outdoorquest-cloud-watching"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] sciencelab-egg-drop",
+    "name": "[KOK] Egg Drop Challenge",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[KOK] 1 hour",
+    "description": "[KOK] Design a contraption to protect an egg from a high drop! Classic engineering challenge that teaches impact absorption.",
+    "image": "[KOK] /images/volcano.webp",
+    "rating": 4.9,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[KOK] Raw eggs",
+        "quantity": "[KOK] 2-3 for testing"
+      },
+      {
+        "name": "Straws"
+      },
+      {
+        "name": "Balloons"
+      },
+      {
+        "name": "[KOK] Cotton balls"
+      },
+      {
+        "name": "[KOK] Bubble wrap"
+      },
+      {
+        "name": "[KOK] Rubber bands"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[KOK] Small box"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Study the Problem",
+        "description": "[KOK] Understand forces: impact, gravity, momentum. What slows falls? What absorbs shock?",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Design Your Device",
+        "description": "[KOK] Sketch ideas. Consider: padding, parachute, crumple zones, suspension systems.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Build Prototype",
+        "description": "[KOK] Construct your egg protection device. Secure egg inside with cushioning materials.",
+        "duration": "[KOK] 30 min"
+      },
+      {
+        "title": "[KOK] Test Drop",
+        "description": "[KOK] Start from low height. If successful, go higher! Document results.",
+        "duration": "[KOK] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "Iterate",
+        "description": "[KOK] If egg breaks, analyze why. Improve design and test again!",
+        "duration": "Ongoing"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Do drops outside - eggs are messy!",
+      "[KOK] Adult supervision for high drops",
+      "[KOK] Wash hands after handling raw eggs"
+    ],
+    "learningOutcomes": [
+      "[KOK] Engineering design process",
+      "[KOK] Force and impact",
+      "[KOK] Iterative improvement",
+      "Problem-solving"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] artstudio-finger-paint",
+    "name": "[KOK] Finger Paint Masterpiece",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-5",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 20 min",
+    "description": "[KOK] Get messy with finger paints! Create colorful artwork while developing fine motor skills and sensory exploration.",
+    "image": "[KOK] /images/finger-paint.webp",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 198,
+    "materials": [
+      {
+        "name": "[KOK] Finger paints",
+        "quantity": "[KOK] Various colors"
+      },
+      {
+        "name": "[KOK] Large paper",
+        "quantity": "[KOK] Several sheets"
+      },
+      {
+        "name": "[KOK] Smock or old shirt"
+      },
+      {
+        "name": "[KOK] Plastic tablecloth"
+      },
+      {
+        "name": "[KOK] Water bowl and towels"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Set Up Space",
+        "description": "[KOK] Cover table with plastic. Put on smock. Tape paper down so it doesn't move.",
+        "duration": "[KOK] 5 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KOK] Explore Colors",
+        "description": "[KOK] Start with one color. Dip fingers and make marks. Try dots, lines, swirls!",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Mix Colors",
+        "description": "[KOK] Add another color. See what happens when they blend! Yellow + blue = ?",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Try Techniques",
+        "description": "[KOK] Use whole hand, just fingertips, sides of hands. Make prints and patterns.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Clean Up",
+        "description": "[KOK] Wash hands. Let painting dry flat. Display your masterpiece!",
+        "duration": "[KOK] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Use non-toxic, washable paints",
+      "[KOK] Supervise to prevent paint eating",
+      "[KOK] Protect floor and furniture"
+    ],
+    "learningOutcomes": [
+      "[KOK] Sensory exploration",
+      "[KOK] Color mixing",
+      "[KOK] Fine motor development",
+      "[KOK] Creative expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] artstudio-nature-collage",
+    "name": "[KOK] Nature Collage",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 30 min",
+    "description": "[KOK] Collect treasures from nature and arrange them into beautiful artwork! Combines outdoor exploration with creativity.",
+    "image": "[KOK] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[KOK] Leaves, flowers, twigs"
+      },
+      {
+        "name": "[KOK] Cardstock or cardboard",
+        "quantity": "[KOK] For base"
+      },
+      {
+        "name": "[KOK] White glue"
+      },
+      {
+        "name": "[KOK] Optional: contact paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Nature Walk",
+        "description": "[KOK] Go outside and collect natural items: leaves, petals, small twigs, seeds, grass.",
+        "tip": "[KOK] Look for different colors, textures, and shapes!",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Sort Treasures",
+        "description": "[KOK] Lay out your collection. Group by color, size, or type.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Plan Design",
+        "description": "[KOK] Arrange items on your paper WITHOUT gluing. Try different layouts.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Glue in Place",
+        "description": "[KOK] Once happy with design, glue items down one by one. Press gently.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Preserve (Optional)",
+        "description": "[KOK] Cover with clear contact paper to preserve, or let dry and display!",
+        "duration": "[KOK] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Don't pick protected plants",
+      "[KOK] Wash hands after collecting",
+      "[KOK] Check for insects before bringing items inside"
+    ],
+    "learningOutcomes": [
+      "[KOK] Nature appreciation",
+      "[KOK] Design and composition",
+      "[KOK] Texture exploration",
+      "[KOK] Environmental awareness"
+    ],
+    "crossPillar": [
+      "[KOK] outdoorquest-nature-hunt"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] artstudio-tiedye",
+    "name": "[KOK] Bandhani Tie-Dye Dupatta",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KOK] 1 hour + dry time",
+    "description": "[KOK] Discover the ancient Indian art of Bandhani! Use rubber bands and vibrant natural dyes to create mesmerizing geometric patterns on a cotton dupatta or scarf.",
+    "image": "[KOK] /images/tiedye.webp",
+    "rating": 4.9,
+    "reviewCount": 223,
+    "materials": [
+      {
+        "name": "[KOK] White cotton t-shirt"
+      },
+      {
+        "name": "[KOK] Fabric dye kit",
+        "quantity": "[KOK] Multiple colors"
+      },
+      {
+        "name": "[KOK] Rubber bands",
+        "quantity": "10-20"
+      },
+      {
+        "name": "[KOK] Plastic bags"
+      },
+      {
+        "name": "Gloves"
+      },
+      {
+        "name": "[KOK] Plastic tablecloth"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Wet the Shirt",
+        "description": "[KOK] Soak shirt in water and wring out until damp. This helps dye spread evenly.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Create Pattern",
+        "description": "[KOK] For spiral: pinch center and twist entire shirt. For stripes: fold accordion-style. Secure with rubber bands.",
+        "tip": "[KOK] Tighter bands = sharper lines. More bands = more white space.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Mix Dyes",
+        "description": "[KOK] Prepare dyes according to package. Wear gloves from this point on!",
+        "duration": "[KOK] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KOK] Apply Color",
+        "description": "[KOK] Squeeze dye onto shirt sections. Use different colors in different areas. Flip and do back too.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Wait and Rinse",
+        "description": "[KOK] Bag the shirt and wait 6-24 hours. Rinse under cold water until water runs clear. Remove bands and wash.",
+        "duration": "[KOK] 24 hours"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Wear gloves - dye stains!",
+      "[KOK] Work outdoors or on protected surface",
+      "[KOK] Wash separately first few times"
+    ],
+    "learningOutcomes": [
+      "[KOK] Pattern creation",
+      "[KOK] Color theory",
+      "[KOK] Following multi-step processes",
+      "[KOK] Patience and delayed gratification"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] artstudio-paper-plate-animals",
+    "name": "[KOK] Paper Plate Animals",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 25 min",
+    "description": "[KOK] Transform simple paper plates into adorable animals! Great for parties or imaginative play.",
+    "image": "[KOK] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[KOK] Paper plates",
+        "quantity": "[KOK] 1-2 per animal"
+      },
+      {
+        "name": "[KOK] Paint or markers"
+      },
+      {
+        "name": "[KOK] Construction paper"
+      },
+      {
+        "name": "[KOK] Googly eyes"
+      },
+      {
+        "name": "[KOK] Glue and scissors"
+      },
+      {
+        "name": "[KOK] Pipe cleaners",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Choose Animal",
+        "description": "[KOK] Pick your favorite animal! Lion, pig, frog, cat, and owl are great starters.",
+        "duration": "[KOK] 2 min"
+      },
+      {
+        "title": "[KOK] Paint Base",
+        "description": "[KOK] Paint the plate the main color of your animal. Let dry.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Cut Features",
+        "description": "[KOK] Cut ears, noses, whiskers, beaks from construction paper.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Assemble Face",
+        "description": "[KOK] Glue on googly eyes and paper features. Add details with markers.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Add Extras",
+        "description": "[KOK] Attach popsicle stick for a mask, or hang as decoration!",
+        "duration": "[KOK] 3 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Supervise scissor use",
+      "[KOK] Use washable paints"
+    ],
+    "learningOutcomes": [
+      "[KOK] Animal recognition",
+      "[KOK] Following instructions",
+      "[KOK] Fine motor skills",
+      "[KOK] Creative expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] artstudio-rock-painting",
+    "name": "[KOK] Rock Painting",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 30 min",
+    "description": "[KOK] Turn ordinary rocks into colorful treasures! Paint animals, patterns, or inspirational words.",
+    "image": "[KOK] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[KOK] Smooth rocks",
+        "quantity": "3-5"
+      },
+      {
+        "name": "[KOK] Acrylic paint",
+        "quantity": "[KOK] Various colors"
+      },
+      {
+        "name": "Paintbrushes",
+        "quantity": "[KOK] Various sizes"
+      },
+      {
+        "name": "[KOK] Clear sealant",
+        "optional": true
+      },
+      {
+        "name": "[KOK] Pencil for sketching"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Find Rocks",
+        "description": "[KOK] Look for smooth, flat rocks. Wash and dry them completely.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Plan Design",
+        "description": "[KOK] Lightly sketch your design with pencil. Animals, mandalas, and words work great!",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Paint Base",
+        "description": "[KOK] Paint background color. Let dry completely before adding details.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Add Details",
+        "description": "[KOK] Paint your design. Start with larger shapes, add small details last.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Seal and Share",
+        "description": "[KOK] Optional: apply clear coat. Hide rocks for others to find or keep as decoration!",
+        "duration": "[KOK] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Use acrylic paints - they're waterproof when dry",
+      "[KOK] Seal if placing outdoors"
+    ],
+    "learningOutcomes": [
+      "[KOK] Painting techniques",
+      "[KOK] Working with 3D surfaces",
+      "[KOK] Community kindness (rock hiding)",
+      "[KOK] Nature appreciation"
+    ],
+    "crossPillar": [
+      "[KOK] outdoorquest-nature-hunt"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] artstudio-origami-zoo",
+    "name": "[KOK] Origami Zoo",
+    "pillar": "artstudio",
+    "category": "[KOK] Paper Art",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KOK] 45 min",
+    "description": "[KOK] Fold paper into amazing animals with the ancient art of origami! Create a whole zoo of creatures.",
+    "image": "[KOK] /images/tiedye.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[KOK] Origami paper",
+        "quantity": "[KOK] Multiple colors"
+      },
+      {
+        "name": "Markers",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Start Simple",
+        "description": "[KOK] Begin with an easy fold like a dog face or fish. Learn basic folds: valley, mountain, squash.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Practice Precision",
+        "description": "[KOK] Fold carefully - crisp creases make better animals! Line up edges exactly.",
+        "tip": "[KOK] Use fingernail to crease sharply.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Try Animals",
+        "description": "[KOK] Make a frog that jumps! A bird that flaps! A crane for good luck!",
+        "duration": "[KOK] 20 min"
+      },
+      {
+        "title": "[KOK] Add Details",
+        "description": "[KOK] Use markers to add eyes, spots, or patterns to your animals.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Create Display",
+        "description": "[KOK] Arrange your zoo on a shelf or make a mobile to hang!",
+        "duration": "[KOK] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Paper cuts possible - fold carefully"
+    ],
+    "learningOutcomes": [
+      "[KOK] Following diagrams",
+      "[KOK] Spatial reasoning",
+      "[KOK] Patience and precision",
+      "[KOK] Japanese cultural art"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] artstudio-salt-painting",
+    "name": "[KOK] Salt Painting",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 30 min",
+    "description": "[KOK] Create magical raised designs using glue and salt, then add color and watch it spread!",
+    "image": "[KOK] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "Cardstock",
+        "quantity": "[KOK] Dark colors work best"
+      },
+      {
+        "name": "[KOK] White glue"
+      },
+      {
+        "name": "[KOK] Table salt",
+        "quantity": "[KOK] 1/2 cup"
+      },
+      {
+        "name": "[KOK] Liquid watercolors or food coloring"
+      },
+      {
+        "name": "[KOK] Dropper or paintbrush"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Draw with Glue",
+        "description": "[KOK] Squeeze glue in lines to create a design - rainbow, name, shapes. Keep lines thick.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Add Salt",
+        "description": "[KOK] While glue is wet, pour salt over entire design. Shake off excess.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Let Set",
+        "description": "[KOK] Wait a few minutes for glue to start setting with salt stuck on.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Add Color",
+        "description": "[KOK] Drop liquid color onto salt. Watch it spread along the lines like magic!",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Dry and Display",
+        "description": "[KOK] Let dry completely (overnight is best). Handle gently - salt can fall off.",
+        "duration": "[KOK] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Don't eat the salt after coloring",
+      "[KOK] Work on protected surface"
+    ],
+    "learningOutcomes": [
+      "[KOK] Absorption concepts",
+      "[KOK] Color spreading",
+      "[KOK] Fine motor control",
+      "[KOK] Process art"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] artstudio-pasta-jewelry",
+    "name": "[KOK] Terracotta Clay Jewelry",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 30 min",
+    "description": "[KOK] Connect with ancient Harappan traditions by sculpting your own terracotta jewelry! Shape natural clay into beautiful beads, dry them in the sun, and paint them with traditional Indian motifs.",
+    "image": "[KOK] /images/tiedye.webp",
+    "rating": 4.4,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[KOK] Tubular pasta (penne, rigatoni)",
+        "quantity": "[KOK] 30-40 pieces"
+      },
+      {
+        "name": "[KOK] Acrylic paint or food coloring"
+      },
+      {
+        "name": "[KOK] String or yarn",
+        "quantity": "[KOK] 2 feet per piece"
+      },
+      {
+        "name": "[KOK] Ziplock bags",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Color Pasta",
+        "description": "[KOK] Paint pasta or shake in bags with food coloring and rubbing alcohol. Let dry completely.",
+        "duration": "[KOK] 10 min + drying"
+      },
+      {
+        "title": "[KOK] Plan Pattern",
+        "description": "[KOK] Lay out pasta beads and plan your color pattern before stringing.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] String Beads",
+        "description": "[KOK] Thread pasta onto string. Tie a bead at one end first to stop others falling off.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Create Closure",
+        "description": "[KOK] Tie ends together for necklace, or add clasps for fancier finish.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Model and Gift",
+        "description": "[KOK] Wear your creation proudly or make gifts for friends and family!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Pasta jewelry is not edible after painting",
+      "[KOK] Handle gently - pasta can crack"
+    ],
+    "learningOutcomes": [
+      "[KOK] Pattern creation",
+      "[KOK] Fine motor skills (threading)",
+      "[KOK] Color combinations",
+      "[KOK] Gift-making mindset"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] artstudio-scratch-art",
+    "name": "[KOK] Scratch Art Cards",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KOK] 45 min",
+    "description": "[KOK] Create rainbow scratch art from scratch! Layer colors, cover with black, then scratch to reveal hidden rainbows.",
+    "image": "[KOK] /images/tiedye.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "Cardstock"
+      },
+      {
+        "name": "Crayons",
+        "quantity": "[KOK] Various colors"
+      },
+      {
+        "name": "[KOK] Black acrylic paint or black crayon"
+      },
+      {
+        "name": "[KOK] Dish soap",
+        "quantity": "[KOK] A drop"
+      },
+      {
+        "name": "[KOK] Toothpick or wooden stylus"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Color Base Layer",
+        "description": "[KOK] Cover entire paper with heavy crayon in bright colors. Press hard! No white showing.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Add Black Layer",
+        "description": "[KOK] Mix tiny bit of dish soap into black paint. Paint over all the crayon. Or use black crayon (harder work!).",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Let Dry",
+        "description": "[KOK] If using paint, let dry completely before scratching.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Scratch Design",
+        "description": "[KOK] Use toothpick to scratch away black, revealing rainbow colors beneath!",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Create Cards",
+        "description": "[KOK] Make greeting cards, bookmarks, or framed art with your scratch designs!",
+        "duration": "[KOK] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Toothpicks are pointy - use carefully",
+      "[KOK] Work on protected surface"
+    ],
+    "learningOutcomes": [
+      "[KOK] Layering technique",
+      "[KOK] Subtractive art process",
+      "[KOK] Planning and patience",
+      "[KOK] Fine motor control"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] artstudio-suncatcher",
+    "name": "[KOK] Tissue Paper Suncatcher",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KOK] 40 min",
+    "description": "[KOK] Create stained glass-style art that catches sunlight! Beautiful colors glow when hung in a window.",
+    "image": "[KOK] /images/tiedye.webp",
+    "rating": 4.6,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[KOK] Clear contact paper",
+        "quantity": "[KOK] 2 sheets"
+      },
+      {
+        "name": "[KOK] Tissue paper",
+        "quantity": "[KOK] Various colors"
+      },
+      {
+        "name": "[KOK] Black cardstock",
+        "quantity": "[KOK] For frame"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[KOK] Hole punch and string"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Cut Frame",
+        "description": "[KOK] Cut a frame shape from black cardstock - circle, heart, or rectangle with center removed.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Prepare Contact Paper",
+        "description": "[KOK] Cut contact paper slightly larger than frame. Peel backing and lay sticky side up.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Add Tissue Paper",
+        "description": "[KOK] Tear or cut tissue paper pieces. Press onto contact paper in colorful pattern.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Seal and Frame",
+        "description": "[KOK] Place second contact paper on top, sticky side down. Press to seal. Trim to frame and attach frame.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Hang in Window",
+        "description": "[KOK] Punch hole in top, add string, and hang where sunlight will shine through!",
+        "duration": "[KOK] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Scissors supervision for younger kids",
+      "[KOK] Contact paper is tricky - take your time"
+    ],
+    "learningOutcomes": [
+      "[KOK] Light and color",
+      "[KOK] Design composition",
+      "[KOK] Following multi-step process",
+      "[KOK] Decorative crafting"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] artstudio-clay-pots",
+    "name": "[KOK] Clay Pinch Pots",
+    "pillar": "artstudio",
+    "category": "Sculpture",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KOK] 1 hour + dry time",
+    "description": "[KOK] Shape air-dry clay into beautiful bowls and pots using the ancient pinch pot technique!",
+    "image": "[KOK] /images/finger-paint.webp",
+    "rating": 4.7,
+    "reviewCount": 109,
+    "materials": [
+      {
+        "name": "[KOK] Air-dry clay",
+        "quantity": "[KOK] 1 lb"
+      },
+      {
+        "name": "[KOK] Water bowl"
+      },
+      {
+        "name": "[KOK] Acrylic paint"
+      },
+      {
+        "name": "Paintbrushes"
+      },
+      {
+        "name": "[KOK] Rolling pin",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Prepare Clay",
+        "description": "[KOK] Knead clay until soft and pliable. Roll into a ball about the size of your fist.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Create Opening",
+        "description": "[KOK] Push thumb into center of ball. Slowly rotate and pinch walls between thumb (inside) and fingers (outside).",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Shape the Pot",
+        "description": "[KOK] Keep pinching and rotating. Even thickness is key! Smooth cracks with wet finger.",
+        "tip": "[KOK] Keep walls no thinner than 1/4 inch.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Add Details",
+        "description": "[KOK] Create texture with tools. Add handles, feet, or decorative elements.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Dry and Paint",
+        "description": "[KOK] Let dry completely (2-3 days). Paint with acrylics once fully dried.",
+        "duration": "[KOK] 15 min + drying"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Air-dry clay is non-toxic",
+      "[KOK] Handle dried pieces gently - they're fragile",
+      "[KOK] Not food-safe unless using special glazes"
+    ],
+    "learningOutcomes": [
+      "[KOK] Sculpting techniques",
+      "[KOK] Hand strength and control",
+      "[KOK] Historical pottery methods",
+      "[KOK] 3D art creation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] artstudio-collaborative-mural",
+    "name": "[KOK] Collaborative Mural",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 1 hour",
+    "description": "[KOK] Create a large artwork together! Everyone contributes to one big painting.",
+    "image": "[KOK] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 67,
+    "materials": [
+      {
+        "name": "[KOK] Large paper roll or joined sheets",
+        "quantity": "[KOK] 4-6 feet"
+      },
+      {
+        "name": "[KOK] Paint, markers, crayons"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[KOK] Smocks for everyone"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Set Up Canvas",
+        "description": "[KOK] Roll out paper on floor or tape to wall. Make it BIG - this is a group project!",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Choose Theme",
+        "description": "[KOK] Decide on a theme together: underwater, space, garden, cityscape, or abstract!",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Assign Sections",
+        "description": "[KOK] Each person gets an area to work on. Plan how sections will connect.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Create Together",
+        "description": "[KOK] Everyone works simultaneously! Add to each other's areas if invited.",
+        "duration": "[KOK] 40 min"
+      },
+      {
+        "title": "[KOK] Add Final Touches",
+        "description": "[KOK] Step back, see what's missing. Add connecting elements together.",
+        "duration": "[KOK] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Supervise shared materials",
+      "[KOK] Respect everyone's work"
+    ],
+    "learningOutcomes": [
+      "[KOK] Collaboration skills",
+      "[KOK] Respecting others' work",
+      "[KOK] Group planning",
+      "[KOK] Large-scale art thinking"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] outdoorquest-nature-hunt",
+    "name": "[KOK] Nature Scavenger Hunt",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 30 min",
+    "description": "[KOK] Explore the outdoors with a checklist of natural treasures to find! Perfect for backyards, parks, or nature trails.",
+    "image": "[KOK] /images/nature-hunt.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 234,
+    "materials": [
+      {
+        "name": "[KOK] Scavenger hunt checklist",
+        "quantity": "[KOK] Printable included!"
+      },
+      {
+        "name": "[KOK] Bag or basket"
+      },
+      {
+        "name": "[KOK] Magnifying glass",
+        "optional": true
+      },
+      {
+        "name": "[KOK] Pencil or crayon"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Print Checklist",
+        "description": "[KOK] Use our checklist or create your own: pinecone, feather, smooth rock, flower, etc.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Go Outside!",
+        "description": "[KOK] Head to backyard, park, or nature trail. Bring your checklist and collection bag.",
+        "duration": "[KOK] 2 min"
+      },
+      {
+        "title": "[KOK] Start Hunting",
+        "description": "[KOK] Check off items as you find them. Collect items you can take (no picking protected plants!).",
+        "tip": "[KOK] Look up, down, and all around - treasures are everywhere!",
+        "duration": "[KOK] 20 min"
+      },
+      {
+        "title": "[KOK] Observe Closely",
+        "description": "[KOK] Use magnifying glass to examine finds. What details do you notice?",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Share Discoveries",
+        "description": "[KOK] Show what you found! Learn names of plants and animals you discovered.",
+        "duration": "[KOK] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Stay on paths and in sight of adults",
+      "[KOK] Don't touch unknown plants or animals",
+      "[KOK] Watch for poison ivy/oak",
+      "[KOK] Leave wildlife alone"
+    ],
+    "learningOutcomes": [
+      "[KOK] Nature identification",
+      "[KOK] Observation skills",
+      "[KOK] Physical activity",
+      "[KOK] Environmental appreciation"
+    ],
+    "crossPillar": [
+      "[KOK] artstudio-nature-collage"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] outdoorquest-bug-hotel",
+    "name": "[KOK] Bug Hotel",
+    "pillar": "outdoorquest",
+    "category": "Wildlife",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KOK] 45 min",
+    "description": "[KOK] Build a cozy habitat for beneficial insects! Create shelter for ladybugs, bees, and other garden helpers.",
+    "image": "[KOK] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "[KOK] Wooden crate or tin can"
+      },
+      {
+        "name": "[KOK] Sticks and twigs"
+      },
+      {
+        "name": "Pinecones"
+      },
+      {
+        "name": "[KOK] Bamboo pieces or paper straws"
+      },
+      {
+        "name": "[KOK] Dried leaves"
+      },
+      {
+        "name": "[KOK] String or wire"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Find a Base",
+        "description": "[KOK] Use a clean tin can, small wooden box, or bundle of sticks tied together.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Gather Materials",
+        "description": "[KOK] Collect natural materials: hollow sticks, pinecones, bark, dried leaves, etc.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Fill the Hotel",
+        "description": "[KOK] Pack materials tightly into your base. Different insects like different spaces!",
+        "tip": "[KOK] Hollow tubes for solitary bees, pinecones for ladybugs.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Secure Contents",
+        "description": "[KOK] Make sure everything is packed tight. Add wire or more sticks if needed.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Place in Garden",
+        "description": "[KOK] Position in a sheltered spot facing south. Off the ground prevents flooding.",
+        "duration": "[KOK] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Don't disturb guests once they move in",
+      "[KOK] Place away from high-traffic areas",
+      "[KOK] Check for existing insect nests before gathering materials"
+    ],
+    "learningOutcomes": [
+      "[KOK] Insect ecology",
+      "[KOK] Habitat creation",
+      "[KOK] Beneficial insects",
+      "[KOK] Environmental stewardship"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] outdoorquest-pressed-flowers",
+    "name": "[KOK] Pressed Flower Art",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 30 min + drying",
+    "description": "[KOK] Preserve beautiful flowers and leaves by pressing! Create bookmarks, cards, or framed art.",
+    "image": "[KOK] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[KOK] Fresh flowers and leaves"
+      },
+      {
+        "name": "[KOK] Heavy books"
+      },
+      {
+        "name": "[KOK] Parchment or newspaper"
+      },
+      {
+        "name": "[KOK] Frame or cardstock",
+        "optional": true
+      },
+      {
+        "name": "[KOK] Clear contact paper",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Collect Specimens",
+        "description": "[KOK] Pick flowers and leaves on a dry day. Choose flat flowers or ones you can flatten.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Prepare for Pressing",
+        "description": "[KOK] Place flowers between parchment paper. Arrange flat - don't overlap.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Press in Books",
+        "description": "[KOK] Put paper with flowers inside heavy book. Stack more books on top.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Wait Patiently",
+        "description": "[KOK] Leave for 1-2 weeks. Check occasionally. Change paper if damp.",
+        "duration": "[KOK] 1-2 weeks"
+      },
+      {
+        "title": "[KOK] Create Art",
+        "description": "[KOK] Carefully remove pressed flowers. Arrange on cards, bookmarks, or frame!",
+        "duration": "[KOK] 15 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Don't pick from protected areas",
+      "[KOK] Pressed flowers are delicate",
+      "[KOK] Some plants cause skin irritation"
+    ],
+    "learningOutcomes": [
+      "[KOK] Botanical knowledge",
+      "[KOK] Patience and delayed gratification",
+      "[KOK] Preservation techniques",
+      "[KOK] Nature appreciation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] outdoorquest-bird-feeder",
+    "name": "[KOK] Coconut Shell Bird Feeder",
+    "pillar": "outdoorquest",
+    "category": "Wildlife",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 20 min",
+    "description": "[KOK] Repurpose an empty coconut shell into a beautiful, hanging bird feeder! Fill it with local grains and watch the incredible variety of native birds flock to your garden.",
+    "image": "[KOK] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 187,
+    "materials": [
+      {
+        "name": "[KOK] Large pinecone"
+      },
+      {
+        "name": "[KOK] Peanut butter",
+        "quantity": "[KOK] 1/4 cup"
+      },
+      {
+        "name": "Birdseed",
+        "quantity": "[KOK] 1 cup"
+      },
+      {
+        "name": "[KOK] String or yarn",
+        "quantity": "[KOK] 12 inches"
+      },
+      {
+        "name": "[KOK] Plate for rolling"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Tie Hanger",
+        "description": "[KOK] Tie string securely around top of pinecone for hanging.",
+        "duration": "[KOK] 3 min"
+      },
+      {
+        "title": "[KOK] Apply Peanut Butter",
+        "description": "[KOK] Spread peanut butter all over pinecone, getting into the scales.",
+        "tip": "[KOK] Use a butter knife or your hands (messy but fun!).",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Add Seeds",
+        "description": "[KOK] Roll coated pinecone in birdseed, pressing seeds into peanut butter.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Hang Outside",
+        "description": "[KOK] Hang from a tree branch where you can watch from a window.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Bird Watch",
+        "description": "[KOK] Keep a journal of birds that visit! Learn their names and songs.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Check for nut allergies before using peanut butter",
+      "[KOK] Alternative: use vegetable shortening",
+      "[KOK] Place where squirrels can't easily reach"
+    ],
+    "learningOutcomes": [
+      "[KOK] Bird identification",
+      "[KOK] Wildlife care",
+      "[KOK] Patience and observation",
+      "[KOK] Ecosystem understanding"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] outdoorquest-mud-kitchen",
+    "name": "[KOK] Mud Kitchen Play",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "Open-ended",
+    "description": "[KOK] Set up an outdoor play kitchen for messy, imaginative mud cooking! A classic childhood experience.",
+    "image": "[KOK] /images/nature-hunt.webp",
+    "rating": 4.5,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[KOK] Old pots and pans"
+      },
+      {
+        "name": "[KOK] Wooden spoons"
+      },
+      {
+        "name": "[KOK] Measuring cups"
+      },
+      {
+        "name": "[KOK] Water source"
+      },
+      {
+        "name": "[KOK] Dirt area"
+      },
+      {
+        "name": "[KOK] Natural additions",
+        "quantity": "[KOK] Leaves, sticks, petals"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Set Up Kitchen",
+        "description": "[KOK] Find a good spot near dirt and water. Arrange your tools. A small table helps!",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Prepare Ingredients",
+        "description": "[KOK] Gather water, dirt, and natural add-ins like leaves, petals, seeds.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Create Recipes",
+        "description": "[KOK] Make mud pies, dirt soup, nature stew! Mix, stir, pour, and create.",
+        "duration": "∞"
+      },
+      {
+        "title": "[KOK] Serve and Play",
+        "description": "[KOK] Set up a pretend restaurant. Serve your creations to stuffed animal guests!",
+        "duration": "∞"
+      },
+      {
+        "title": "[KOK] Clean Up",
+        "description": "[KOK] Hose off tools and hands. Some dirty play is good!",
+        "duration": "[KOK] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Wash hands thoroughly after play",
+      "[KOK] Don't actually eat mud creations!",
+      "[KOK] Check area for broken glass or harmful items"
+    ],
+    "learningOutcomes": [
+      "[KOK] Imaginative play",
+      "[KOK] Sensory exploration",
+      "[KOK] Scientific mixing",
+      "[KOK] Outdoor comfort"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] outdoorquest-shadow-tracing",
+    "name": "[KOK] Shadow Tracing Art",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 20 min",
+    "description": "[KOK] Use the sun to create art! Trace shadows of objects, toys, or even friends for unique silhouette artwork.",
+    "image": "[KOK] /images/nature-hunt.webp",
+    "rating": 4.4,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[KOK] Sidewalk chalk"
+      },
+      {
+        "name": "[KOK] Sunny day"
+      },
+      {
+        "name": "[KOK] Objects to trace",
+        "quantity": "[KOK] Toys, plants, etc."
+      },
+      {
+        "name": "[KOK] Paper and pencil",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Find Shadows",
+        "description": "[KOK] Go outside on a sunny day. Notice how everything has a shadow!",
+        "duration": "[KOK] 3 min"
+      },
+      {
+        "title": "[KOK] Position Objects",
+        "description": "[KOK] Place toys, plants, or pose yourself to create interesting shadow shapes.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Trace Outlines",
+        "description": "[KOK] Use chalk to trace around shadow edges on pavement.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Add Details",
+        "description": "[KOK] Color in your traced shadows. Add features, patterns, or backgrounds.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Notice Changes",
+        "description": "[KOK] Come back later - have shadows moved? Try tracing the same object at different times!",
+        "duration": "[KOK] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Wear sunscreen on sunny days",
+      "[KOK] Stay hydrated",
+      "[KOK] Don't look directly at the sun"
+    ],
+    "learningOutcomes": [
+      "[KOK] Sun and shadows",
+      "[KOK] Time and Earth rotation",
+      "[KOK] Art techniques",
+      "[KOK] Scientific observation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KOK] outdoorquest-cloud-watching",
+    "name": "[KOK] Cloud Watching Journal",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 30 min",
+    "description": "[KOK] Lie back and watch the clouds! Learn cloud types, spot shapes, and create an imagination journal.",
+    "image": "[KOK] /images/nature-hunt.webp",
+    "rating": 4.3,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "Blanket"
+      },
+      {
+        "name": "[KOK] Journal or paper"
+      },
+      {
+        "name": "[KOK] Crayons or colored pencils"
+      },
+      {
+        "name": "[KOK] Cloud identification chart",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Find a Spot",
+        "description": "[KOK] Lay blanket in open area with good sky view. Lie on your back.",
+        "duration": "[KOK] 3 min"
+      },
+      {
+        "title": "[KOK] Observe Clouds",
+        "description": "[KOK] Watch the clouds move. What shapes do you see? Animals? Faces? Objects?",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Learn Cloud Types",
+        "description": "[KOK] Identify clouds: fluffy cumulus, wispy cirrus, layered stratus. What's up there today?",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Draw and Write",
+        "description": "[KOK] Sketch the shapes you see. Write stories about cloud characters.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Predict Weather",
+        "description": "[KOK] Different clouds mean different weather. What do today's clouds tell us?",
+        "duration": "[KOK] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Don't cloud watch during storms",
+      "[KOK] Wear sunglasses on bright days",
+      "[KOK] Apply sunscreen"
+    ],
+    "learningOutcomes": [
+      "[KOK] Meteorology basics",
+      "[KOK] Imagination and creativity",
+      "Relaxation",
+      "[KOK] Weather prediction"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] outdoorquest-fairy-garden",
+    "name": "[KOK] Fairy Garden",
+    "pillar": "outdoorquest",
+    "category": "Garden",
+    "ageRange": "3-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KOK] 1 hour",
+    "description": "[KOK] Create a miniature magical garden for fairies! Use tiny plants, pebbles, and handmade accessories.",
+    "image": "[KOK] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[KOK] Container or garden corner"
+      },
+      {
+        "name": "[KOK] Potting soil"
+      },
+      {
+        "name": "[KOK] Small plants or moss"
+      },
+      {
+        "name": "[KOK] Pebbles and small stones"
+      },
+      {
+        "name": "[KOK] Tiny decorations",
+        "quantity": "[KOK] Shells, acorns, small figurines"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Choose Location",
+        "description": "[KOK] Pick a container (pot, wooden box) or a corner of the yard for your fairy garden.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Add Soil and Base",
+        "description": "[KOK] Fill with potting soil. Add pebbles for a path. Create landscape with hills or flat areas.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Plant Greenery",
+        "description": "[KOK] Add small plants, moss, or ground cover. Think about scale - everything should be tiny!",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Create Features",
+        "description": "[KOK] Make tiny houses from sticks, furniture from acorn caps, fences from twigs.",
+        "duration": "[KOK] 20 min"
+      },
+      {
+        "title": "[KOK] Add Inhabitants",
+        "description": "[KOK] Place fairy figurines, or leave empty for imagination! Add final decorative touches.",
+        "duration": "[KOK] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Wash hands after handling soil",
+      "[KOK] Small pieces can be choking hazards for young children"
+    ],
+    "learningOutcomes": [
+      "[KOK] Gardening basics",
+      "[KOK] Miniature design",
+      "[KOK] Imaginative play",
+      "[KOK] Caring for living things"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] outdoorquest-obstacle-course",
+    "name": "[KOK] Backyard Obstacle Course",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 30 min setup",
+    "description": "[KOK] Design and conquer your own obstacle course! Jump, crawl, balance, and race through challenges.",
+    "image": "[KOK] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 178,
+    "materials": [
+      {
+        "name": "[KOK] Hula hoops"
+      },
+      {
+        "name": "[KOK] Pool noodles"
+      },
+      {
+        "name": "[KOK] Cones or markers"
+      },
+      {
+        "name": "[KOK] Rope or string"
+      },
+      {
+        "name": "Buckets"
+      },
+      {
+        "name": "Balls"
+      },
+      {
+        "name": "Timer",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Plan Your Course",
+        "description": "[KOK] Decide on 5-8 obstacles. Include different movements: jumping, crawling, throwing, balancing.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Set Up Obstacles",
+        "description": "[KOK] Examples: hoop jump, noodle limbo, cone weave, bucket ball toss, rope hop.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Create Start/Finish",
+        "description": "[KOK] Mark clear start and finish lines. Number obstacles if doing them in order.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Test Run",
+        "description": "[KOK] Run through once yourself. Is it challenging but doable? Adjust difficulty.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "Race!",
+        "description": "[KOK] Time yourself, race friends, or try to beat your own record!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Check ground for hazards",
+      "[KOK] Age-appropriate challenges",
+      "[KOK] No obstacles near hard surfaces",
+      "[KOK] Warm up before running"
+    ],
+    "learningOutcomes": [
+      "[KOK] Physical fitness",
+      "[KOK] Course design",
+      "Sportsmanship",
+      "Problem-solving"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] outdoorquest-leaf-rubbing",
+    "name": "[KOK] Leaf Rubbing Art",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 20 min",
+    "description": "[KOK] Create beautiful impressions of leaves using crayons! A simple nature art activity perfect for all ages.",
+    "image": "[KOK] /images/nature-hunt.webp",
+    "rating": 4.5,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[KOK] Fresh leaves",
+        "quantity": "[KOK] Various shapes"
+      },
+      {
+        "name": "[KOK] White paper"
+      },
+      {
+        "name": "Crayons",
+        "quantity": "Unwrapped"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Collect Leaves",
+        "description": "[KOK] Gather leaves with interesting shapes and strong veins. Fresh leaves work best.",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Position Leaves",
+        "description": "[KOK] Place leaves vein-side up under paper. Use tape to hold paper still.",
+        "duration": "[KOK] 3 min"
+      },
+      {
+        "title": "[KOK] Rub with Crayon",
+        "description": "[KOK] Rub crayon side across paper over leaf. The leaf pattern appears!",
+        "tip": "[KOK] Use side of unwrapped crayon for best results.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Create Composition",
+        "description": "[KOK] Make multiple rubbings to create a forest, tree, or abstract design.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Identify Leaves",
+        "description": "[KOK] Look up what trees your leaves came from. Label your artwork!",
+        "duration": "[KOK] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Wash hands after handling leaves",
+      "[KOK] Avoid poison ivy/oak"
+    ],
+    "learningOutcomes": [
+      "[KOK] Plant identification",
+      "[KOK] Art technique",
+      "[KOK] Texture exploration",
+      "[KOK] Nature appreciation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] outdoorquest-water-balloons",
+    "name": "[KOK] Water Balloon Games",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 30 min play",
+    "description": "[KOK] Cool off with exciting water balloon games! From toss to relay races, get ready to get wet!",
+    "image": "[KOK] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 189,
+    "materials": [
+      {
+        "name": "[KOK] Water balloons",
+        "quantity": "30-50"
+      },
+      {
+        "name": "[KOK] Water source"
+      },
+      {
+        "name": "Buckets",
+        "quantity": "2-4"
+      },
+      {
+        "name": "[KOK] Open outdoor space"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Fill Balloons",
+        "description": "[KOK] Fill balloons at outdoor faucet. Don't overfill - they pop too easily!",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Balloon Toss",
+        "description": "[KOK] Partners toss balloon back and forth, stepping back after each catch. Who lasts longest?",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Relay Race",
+        "description": "[KOK] Carry balloon on spoon across yard without dropping. Teams compete!",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Target Practice",
+        "description": "[KOK] Draw chalk targets. Throw balloons at targets for points!",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Clean Up",
+        "description": "[KOK] IMPORTANT: Pick up all balloon pieces - they're harmful to wildlife!",
+        "duration": "[KOK] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] ALWAYS clean up balloon pieces",
+      "[KOK] Balloons are choking hazards",
+      "[KOK] Don't throw at faces",
+      "[KOK] Watch for slippery areas"
+    ],
+    "learningOutcomes": [
+      "Teamwork",
+      "[KOK] Gross motor skills",
+      "Sportsmanship",
+      "[KOK] Environmental responsibility (cleanup)"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KOK] outdoorquest-stargazing",
+    "name": "[KOK] Stargazing Night",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KOK] 1 hour",
+    "description": "[KOK] Explore the night sky! Learn constellations, spot planets, and maybe catch a shooting star.",
+    "image": "[KOK] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "Blanket"
+      },
+      {
+        "name": "[KOK] Star chart or app"
+      },
+      {
+        "name": "[KOK] Red flashlight",
+        "optional": true
+      },
+      {
+        "name": "Binoculars",
+        "optional": true
+      },
+      {
+        "name": "[KOK] Hot cocoa",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KOK] Choose Location",
+        "description": "[KOK] Find dark spot away from lights. Backyard works if lights are off!",
+        "duration": "[KOK] 5 min"
+      },
+      {
+        "title": "[KOK] Let Eyes Adjust",
+        "description": "[KOK] Wait 10-15 minutes for eyes to adapt to darkness. Avoid looking at bright lights.",
+        "duration": "[KOK] 15 min"
+      },
+      {
+        "title": "[KOK] Find North Star",
+        "description": "[KOK] Locate Big Dipper, then follow pointer stars to Polaris, the North Star.",
+        "duration": "[KOK] 10 min"
+      },
+      {
+        "title": "[KOK] Hunt Constellations",
+        "description": "[KOK] Use star chart to find Orion, Cassiopeia, and seasonal constellations.",
+        "duration": "[KOK] 20 min"
+      },
+      {
+        "title": "[KOK] Watch for Movement",
+        "description": "[KOK] Satellites cross slowly. Shooting stars streak fast. Planets don't twinkle!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KOK] Stay in safe areas at night",
+      "[KOK] Adult supervision required",
+      "[KOK] Bring bug spray",
+      "[KOK] Dress warmly"
+    ],
+    "learningOutcomes": [
+      "[KOK] Astronomy basics",
+      "[KOK] Navigation history",
+      "[KOK] Patience and observation",
+      "[KOK] Wonder and curiosity"
+    ],
+    "isPremium": true
+  }
+]

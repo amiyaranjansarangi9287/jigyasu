@@ -1,4 +1,5 @@
 import { useRef, useEffect, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface LightShadowsCanvasProps {
   lightX: number;
@@ -7,6 +8,7 @@ interface LightShadowsCanvasProps {
 }
 
 export default function LightShadowsCanvas({ lightX, lightY, onLightMove }: LightShadowsCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const lightPosRef = useRef({ x: lightX, y: lightY });

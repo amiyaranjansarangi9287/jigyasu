@@ -1,0 +1,308 @@
+{
+  "modules": {
+    "trigonometry-circle": {
+      "title": "Trigonometry Unit Circle",
+      "hook": "Drag a point on a circle — watch waves write themselves",
+      "beauty": "One rotating point generates all waves in nature",
+      "realFuture": "Sound engineers use this daily",
+      "examRelevance": "CBSE Class 11 Ch.3: Trigonometric Functions",
+      "examQuestions": [
+        {
+          "question": "Find sin(π/6) + cos(π/3)",
+          "options": [
+            "0",
+            "1",
+            "½",
+            "√3/2"
+          ],
+          "markscheme": "sin(π/6)=½, cos(π/3)=½. Sum=1.",
+          "topic": "Trig values"
+        }
+      ]
+    },
+    "projectile-motion": {
+      "title": "Projectile Motion Lab",
+      "hook": "Find the angle that maximises range",
+      "beauty": "Horizontal and vertical motion are independent",
+      "realFuture": "ISRO calculates every trajectory this way",
+      "examRelevance": "CBSE Class 11 Physics Ch.5",
+      "examQuestions": [
+        {
+          "question": "At what angle for maximum range?",
+          "options": [
+            "30°",
+            "45°",
+            "60°",
+            "90°"
+          ],
+          "markscheme": "R=u²sin(2θ)/g. Max when 2θ=90°, θ=45°",
+          "topic": "Maximum range"
+        }
+      ]
+    },
+    "wave-interference": {
+      "title": "Wave Interference",
+      "hook": "Place two sources — watch the pattern compute itself",
+      "beauty": "Waves can cancel yet both still exist",
+      "realFuture": "Noise-cancelling headphones use this",
+      "examRelevance": "CBSE Class 12 Physics Ch.10",
+      "examQuestions": [
+        {
+          "question": "Condition for constructive interference?",
+          "options": [
+            "nλ",
+            "(2n+1)λ/2",
+            "0",
+            "Equal amplitudes"
+          ],
+          "markscheme": "Path difference = nλ",
+          "topic": "Interference conditions"
+        }
+      ]
+    },
+    "derivatives-visual": {
+      "title": "Derivatives & Slope",
+      "hook": "Drag a point along any curve — watch slope become a function",
+      "beauty": "Derivative is the curve's instantaneous direction",
+      "realFuture": "ML optimisation uses derivatives billions of times/sec",
+      "examRelevance": "CBSE Class 12 Maths Ch.5",
+      "examQuestions": [
+        {
+          "question": "Find dy/dx if y = x³ + 3x² - 5x + 2",
+          "markscheme": "dy/dx = 3x² + 6x - 5",
+          "topic": "Power rule"
+        }
+      ]
+    },
+    "redox-reactions": {
+      "title": "Redox Reactions",
+      "hook": "Electrons travel from one atom to another — that is electricity",
+      "beauty": "Rust, fire, batteries are all the same process",
+      "realFuture": "EV battery engineers work with this daily",
+      "examRelevance": "CBSE Class 11 Chemistry Ch.8",
+      "examQuestions": [
+        {
+          "question": "Oxidising agent in: Zn + CuSO₄ → ZnSO₄ + Cu",
+          "options": [
+            "Zn",
+            "CuSO₄",
+            "ZnSO₄",
+            "Cu"
+          ],
+          "markscheme": "Cu²⁺ gains electrons = oxidising agent",
+          "topic": "Oxidising agents"
+        }
+      ]
+    },
+    "dna-synthesis": {
+      "title": "DNA and Protein Synthesis",
+      "hook": "One changed base pair can alter an entire protein",
+      "beauty": "The same 4-letter code wrote every living thing",
+      "realFuture": "CRISPR engineers edit genomes gene by gene",
+      "examRelevance": "CBSE Class 12 Biology Ch.6",
+      "examQuestions": [
+        {
+          "question": "Which enzyme unwinds the double helix?",
+          "options": [
+            "DNA Polymerase",
+            "Helicase",
+            "Ligase",
+            "Primase"
+          ],
+          "markscheme": "Helicase breaks hydrogen bonds",
+          "topic": "DNA replication"
+        }
+      ]
+    },
+    "electrolysis": {
+      "title": "Electrolysis",
+      "hook": "Energy forces reactions backwards",
+      "beauty": "Energy can reverse chemistry",
+      "realFuture": "Green hydrogen uses electrolysis",
+      "examRelevance": "CBSE Class 12 Chemistry Ch.3",
+      "examQuestions": []
+    },
+    "natural-selection": {
+      "title": "Natural Selection",
+      "hook": "Run 10 generations — watch population shift",
+      "beauty": "Complexity from the simplest rule",
+      "realFuture": "Antibiotic resistance is evolution in real time",
+      "examRelevance": "CBSE Class 12 Biology Ch.7",
+      "examQuestions": []
+    },
+    "essay-architect": {
+      "title": "Essay Architect",
+      "hook": "Structure your argument before you write",
+      "beauty": "A well-structured argument is elegant mathematics",
+      "realFuture": "Every professional communicates structured arguments",
+      "examRelevance": "CBSE Class 12 English Writing",
+      "examQuestions": []
+    },
+    "economic-indicators": {
+      "title": "Economic Indicators",
+      "hook": "Understand why the RBI raises interest rates",
+      "beauty": "An entire economy described by six numbers",
+      "realFuture": "Every business decision reads economic signals",
+      "examRelevance": "CBSE Class 12 Economics Ch.2",
+      "examQuestions": []
+    },
+    "trig-identities": {
+      "title": "Trigonometric Identities",
+      "hook": "Prove sin²θ + cos²θ = 1 using geometry",
+      "beauty": "Every identity is geometric truth as algebra",
+      "realFuture": "Signal processing uses trig identities constantly",
+      "examRelevance": "CBSE Class 11 Maths Ch.3",
+      "examQuestions": []
+    },
+    "climate-systems": {
+      "title": "Climate Systems",
+      "hook": "Adjust one parameter — watch feedback loops cascade",
+      "beauty": "Earth's climate is nonlinear — small changes cascade",
+      "realFuture": "Climate scientists build these models for global policy",
+      "examRelevance": "CBSE Class 11 Geography Ch.10",
+      "examQuestions": []
+    }
+  },
+  "beautyMoments": {
+    "trigonometry-circle": "One point moving in a circle generates every wave in nature.",
+    "projectile-motion": "Horizontal and vertical motion are completely independent.",
+    "wave-interference": "Two waves can cancel each other — yet both still exist.",
+    "derivatives-visual": "The derivative of position is velocity. Of velocity is acceleration. One operation, three concepts.",
+    "redox-reactions": "Rust, fire, and batteries are all the same reaction at different speeds.",
+    "dna-synthesis": "Four bases. Twenty amino acids. Every living thing runs on this code.",
+    "electrolysis": "With electricity, you can run chemistry backwards.",
+    "natural-selection": "No one planned anything. The environment kept what worked.",
+    "essay-architect": "A perfectly structured argument has the elegance of a mathematical proof.",
+    "economic-indicators": "Six numbers describe the health of 1.4 billion people.",
+    "trig-identities": "sin²θ + cos²θ = 1 is Pythagoras wearing trigonometry's clothes.",
+    "climate-systems": "The Earth is a system of systems. Small changes cascade."
+  },
+  "electrolysisSetups": {
+    "water": {
+      "name": "Water Electrolysis",
+      "electrolyte": "Dilute H₂SO₄",
+      "cathodeProduct": "H₂",
+      "anodeProduct": "O₂",
+      "industrialUse": "Green hydrogen fuel production",
+      "indianContext": "India targets 5 MT/year green hydrogen by 2030"
+    },
+    "copper": {
+      "name": "Copper Sulfate",
+      "electrolyte": "CuSO₄ solution",
+      "cathodeProduct": "Cu deposit",
+      "anodeProduct": "O₂",
+      "industrialUse": "Electroplating jewellery and machine parts",
+      "indianContext": "Indian jewellery industry uses electroplating extensively"
+    },
+    "brine": {
+      "name": "Brine",
+      "electrolyte": "NaCl solution",
+      "cathodeProduct": "H₂",
+      "anodeProduct": "Cl₂",
+      "industrialUse": "Chlorine for water treatment and PVC",
+      "indianContext": "India is a major chlorine producer for water treatment"
+    }
+  },
+  "environments": {
+    "arctic": {
+      "name": "Arctic Ice",
+      "indian": "Snow leopards in Himalayas have pale coats"
+    },
+    "forest": {
+      "name": "Dark Forest",
+      "indian": "Black leopard thrives in dense Indian forests"
+    },
+    "grassland": {
+      "name": "Indian Grassland",
+      "indian": "Tiger stripes match tall dry grass"
+    }
+  },
+  "essayPrompts": {
+    "tech": {
+      "title": "Technology: Boon or Bane?",
+      "prompt": "Is technology making human life better or worse overall?",
+      "examinerTip": "Explore both sides and build a real counter-argument."
+    },
+    "india": {
+      "title": "India: Developing or Emerged?",
+      "prompt": "Is India still developing, or has it emerged?",
+      "examinerTip": "Define developed before arguing."
+    },
+    "ai": {
+      "title": "AI in Examinations",
+      "prompt": "Should AI tools be allowed in school examinations?",
+      "examinerTip": "Your rebuttal must be specific."
+    }
+  },
+  "indicators": {
+    "gdp": {
+      "name": "GDP Growth"
+    },
+    "inflation": {
+      "name": "Inflation"
+    },
+    "unemployment": {
+      "name": "Unemployment"
+    },
+    "repo": {
+      "name": "RBI Repo Rate"
+    }
+  },
+  "policyDecisions": {
+    "rate-hike": {
+      "name": "RBI Rate Hike",
+      "note": "Controls inflation but slows growth."
+    },
+    "infra": {
+      "name": "Infrastructure Boost",
+      "note": "Creates jobs but raises spending."
+    },
+    "tax-cut": {
+      "name": "Corporate Tax Cut",
+      "note": "Encourages investment but reduces revenue."
+    }
+  },
+  "trigIdentities": {
+    "pythagorean": {
+      "name": "Pythagorean Identity",
+      "statement": "sin²θ + cos²θ = 1",
+      "proof": [
+        "On unit circle: sin θ = y, cos θ = x",
+        "x² + y² = 1",
+        "Therefore sin²θ + cos²θ = 1"
+      ]
+    },
+    "tangent": {
+      "name": "Tangent Identity",
+      "statement": "tan θ = sin θ / cos θ",
+      "proof": [
+        "tan θ = opposite / adjacent",
+        "opposite = sin θ",
+        "adjacent = cos θ"
+      ]
+    },
+    "double-sin": {
+      "name": "Double Angle",
+      "statement": "sin(2θ) = 2sinθcosθ",
+      "proof": [
+        "sin(A+B)=sinAcosB+cosAsinB",
+        "Set A=B=θ",
+        "sin(2θ)=2sinθcosθ"
+      ]
+    }
+  },
+  "feedbackLoops": {
+    "ice": {
+      "name": "Ice-Albedo Feedback",
+      "india": "Himalayan glacier melt threatens water supply"
+    },
+    "vapour": {
+      "name": "Water Vapour Feedback",
+      "india": "More extreme Indian monsoons"
+    },
+    "cloud": {
+      "name": "Cloud Feedback",
+      "india": "Cloud uncertainty complicates India projections"
+    }
+  }
+}

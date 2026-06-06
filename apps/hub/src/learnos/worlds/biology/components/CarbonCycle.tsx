@@ -210,7 +210,7 @@ export default function CarbonCycle() {
                   <p className="text-sm text-gray-300">{selectedFlow.description}</p>
                   {selectedFlow.process.includes('Combustion') && (
                     <div className="mt-3 bg-red-500/10 rounded-lg p-3 border border-red-500/20">
-                      <div className="text-sm text-red-400 font-bold">⚠️ Human Impact</div>
+                      <div className="text-sm text-orange-400 font-bold">⚠️ Human Impact</div>
                       <p className="text-sm text-gray-300 mt-1">This is the primary driver of climate change. We burn fossil fuels at ~9.5 Gt carbon/year, far exceeding natural carbon cycling.</p>
                     </div>
                   )}

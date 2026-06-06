@@ -7,16 +7,17 @@ import SoundToggle from './shared/SoundToggle';
 import { MathProvider, useMathFeedback } from '../lib/MathContext';
 import Breadcrumbs from '../../../../components/Breadcrumbs';
 import LoadingCharacter from '../../../../components/LoadingCharacter';
+import withWonderFirst from '../../../core/modules/withWonderFirst';
 
-// Lazy-load heavy components for code-splitting
+// Lazy-load heavy components for code-splitting and wrap with Wonder-First pedagogy
 const AdventureMap = lazy(() => import('./AdventureMap'));
-const Visualizer3D = lazy(() => import('./Visualizer3D'));
-const NumberCrunchGame = lazy(() => import('./NumberCrunchGame'));
-const PatternHub = lazy(() => import('./PatternHub'));
-const SkillsAcademy = lazy(() => import('./SkillsAcademy'));
-const AdvancedHub = lazy(() => import('./AdvancedHub'));
-const DailyChallenge = lazy(() => import('./DailyChallenge'));
-const ExplorersHub = lazy(() => import('./ExplorersHub'));
+const Visualizer3D = lazy(async () => { const m = await import('./Visualizer3D'); return { default: withWonderFirst(m.default, 'math', 'math-visualizer') }; });
+const NumberCrunchGame = lazy(async () => { const m = await import('./NumberCrunchGame'); return { default: withWonderFirst(m.default, 'math', 'number-crunch') }; });
+const PatternHub = lazy(async () => { const m = await import('./PatternHub'); return { default: withWonderFirst(m.default, 'math', 'pattern-hub') }; });
+const SkillsAcademy = lazy(async () => { const m = await import('./SkillsAcademy'); return { default: withWonderFirst(m.default, 'math', 'skills-academy') }; });
+const AdvancedHub = lazy(async () => { const m = await import('./AdvancedHub'); return { default: withWonderFirst(m.default, 'math', 'advanced-hub') }; });
+const DailyChallenge = lazy(async () => { const m = await import('./DailyChallenge'); return { default: withWonderFirst(m.default, 'math', 'math-daily') }; });
+const ExplorersHub = lazy(async () => { const m = await import('./ExplorersHub'); return { default: withWonderFirst(m.default, 'math', 'explorers-hub') }; });
 const WorksheetGenerator = lazy(() => import('./shared/WorksheetGenerator'));
 
 type Tab = 'home' | 'map' | 'visualizer' | 'game' | 'pattern' | 'skills' | 'advanced' | 'daily' | 'explorers' | 'worksheet';

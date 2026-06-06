@@ -158,7 +158,7 @@ export default function StatisticsLab() {
           {/* Bar chart */}
           <div className="bg-white/5 rounded-xl p-4 border border-white/10">
             <h4 className="text-white font-bold mb-3">📊 Bar Chart</h4>
-            <div className="flex items-end gap-1 h-40 px-2">
+            <div className="flex items-end gap-1 min-h-40 px-2">
               {data.map((n, i) => (
                 <motion.div key={i} className="flex-1 flex flex-col items-center"
                   initial={{ height: 0 }} animate={{ height: 'auto' }}>
@@ -181,7 +181,7 @@ export default function StatisticsLab() {
           {/* Dot plot */}
           <div className="bg-white/5 rounded-xl p-4 border border-white/10">
             <h4 className="text-white font-bold mb-3">🔵 Dot Plot</h4>
-            <div className="relative h-20">
+            <div className="relative min-h-20">
               {/* Number line */}
               <div className="absolute bottom-4 left-0 right-0 h-px bg-gray-600" />
               {/* Dots */}

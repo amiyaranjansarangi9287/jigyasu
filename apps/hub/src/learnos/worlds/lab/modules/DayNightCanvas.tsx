@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface DayNightCanvasProps {
   autoRotate: boolean;
@@ -6,6 +7,7 @@ interface DayNightCanvasProps {
 }
 
 export default function DayNightCanvas({ autoRotate, rotationSpeed }: DayNightCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const rotationRef = useRef(0);

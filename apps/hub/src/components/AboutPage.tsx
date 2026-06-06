@@ -6,90 +6,6 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
-const VALUES_DATA = [
-  {
-    title: 'Wonder',
-    emoji: '✨',
-    desc: 'We begin with questions, not answers. Every concept starts with a mystery, not a definition. We protect the natural curiosity every child is born with.',
-  },
-  {
-    title: 'Equity',
-    emoji: '⚖️',
-    desc: 'One platform. For everyone. The child in a village in Odisha and the child in an apartment in Bengaluru should see the same beautiful concept, the same simulation, the same joy.',
-  },
-  {
-    title: 'Respect',
-    emoji: '🤝',
-    desc: 'No grades, no judgment, no shame. Every learner is equal. The 6-year-old discovering colours. The 40-year-old who always wanted to understand gravity. Both are welcome here.',
-  },
-  {
-    title: 'Patience',
-    emoji: '🌱',
-    desc: 'Learning takes the time it takes. No countdown timers on understanding. No pressure to move faster. The concept waits. Always.',
-  },
-  {
-    title: 'Joy',
-    emoji: '🎉',
-    desc: 'If learning is not joyful, something is wrong with the design — not with the learner. Science is joyful. Mathematics is joyful. Discovery is joyful.',
-  },
-  {
-    title: 'Identity',
-    emoji: '🇮🇳',
-    desc: 'Indian scientists, Indian examples, Indian languages, Indian realities. This is not a global platform translated for India. It is built for India, from India.',
-  },
-];
-
-const DIFFERENCE_POINTS_DATA = [
-  {
-    emoji: '🌐',
-    title: 'Free by Design',
-    desc: 'There is no "poor version" and "rich version" of learning on Jigyasu. Everything is free. Forever. For everyone. This is not a feature. It is a principle.',
-  },
-  {
-    emoji: '📱',
-    title: 'Website First',
-    desc: 'A link shared through WhatsApp can reach a child in a village. No installation, no storage pressure, no app store barrier. Just open and learn.',
-  },
-  {
-    emoji: '🗣️',
-    title: '22 Indian Languages',
-    desc: 'Assamese, Bengali, Bodo, Dogri, Gujarati, Hindi, Kannada, Kashmiri, Konkani, Maithili, Malayalam, Manipuri, Marathi, Nepali, Odia, Punjabi, Sanskrit, Santali, Sindhi, Tamil, Telugu, and Urdu from day one. Understanding begins in the language closest to the learner.',
-  },
-  {
-    emoji: '📴',
-    title: 'Offline First',
-    desc: 'Designed to work on 2G connections and after the internet goes away. Because in rural India, learning cannot wait for reliable internet.',
-  },
-  {
-    emoji: '👨‍👩‍👧',
-    title: 'For Every Age',
-    desc: 'Ages 2 to 80+. Children, parents, grandparents, adults who left school early but never stopped wondering. There is no age limit on understanding.',
-  },
-  {
-    emoji: '🫀',
-    title: 'Visual and Interactive',
-    desc: 'You do not just watch. You wonder, test, discover, and explain. Every concept moves, responds, and connects to real life.',
-  },
-];
-
-const SUPPORT_QUESTIONS_DATA = [
-  {
-    label: 'The Who',
-    emoji: '👤',
-    desc: 'A brief introduction — individual, organisation, educator, or philanthropist.',
-  },
-  {
-    label: 'The Why',
-    emoji: '💡',
-    desc: 'Why Jigyasu? Why does equitable education in India matter to you personally?',
-  },
-  {
-    label: 'The How',
-    emoji: '🛤️',
-    desc: 'How do you envision contributing? Individual support, CSR partnership, language translation sponsorship, device access for schools, or something else entirely?',
-  },
-];
-
 const FADE_UP = {
   initial: { opacity: 0, y: 24 },
   whileInView: { opacity: 1, y: 0 },
@@ -352,7 +268,7 @@ export default function AboutPage() {
         ═══════════════════════════════════════════ */}
         <motion.section {...FADE_UP} className="mb-16 space-y-5">
           <h2 className="text-2xl font-bold text-indigo-900">
-            What We Believe
+            {t('about.headings.what_we_believe', 'What We Believe')}
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {VALUES.map((v) => (
@@ -382,7 +298,7 @@ export default function AboutPage() {
           className="mb-16 space-y-5"
         >
           <h2 className="text-2xl font-bold text-indigo-900">
-            What We Built — and Why
+            {t('about.headings.what_we_built', 'What We Built — and Why')}
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4">
             {DIFFERENCE_POINTS.map((point) => (
@@ -416,7 +332,7 @@ export default function AboutPage() {
           <div className="flex items-center gap-3">
             <span className="text-3xl">🇮🇳</span>
             <h2 className="text-2xl font-bold text-orange-900">
-              Built for India
+              {t('about.headings.built_for_india', 'Built for India')}
             </h2>
           </div>
           <p className="text-orange-800 text-base leading-relaxed">
@@ -425,13 +341,13 @@ export default function AboutPage() {
           </p>
           <div className="grid sm:grid-cols-2 gap-3 pt-1">
             {[
-              'Rupees, not dollars',
-              'Rotis and chai, not only pizzas',
-              'Monsoons, ISRO, cricket, Indian markets',
-              'Aryabhata, Ramanujan, C.V. Raman, J.C. Bose',
-              'APJ Abdul Kalam, Sushruta, Brahmagupta',
-              '22 Indian languages from day one',
-              'Designed for 2G and shared phones',
+              t('about.indian_context.0', 'Rupees, not dollars'),
+              t('about.indian_context.1', 'Rotis and chai, not only pizzas'),
+              t('about.indian_context.2', 'Monsoons, ISRO, cricket, Indian markets'),
+              t('about.indian_context.3', 'Aryabhata, Ramanujan, C.V. Raman, J.C. Bose'),
+              t('about.indian_context.4', 'APJ Abdul Kalam, Sushruta, Brahmagupta'),
+              t('about.indian_context.5', '22 Indian languages from day one'),
+              t('about.indian_context.6', 'Designed for 2G and shared phones'),
               'Offline-first for rural learners',
             ].map((item) => (
               <div
@@ -532,7 +448,7 @@ export default function AboutPage() {
           {/* What to include */}
           <div className="space-y-3">
             <p className="text-slate-400 text-sm font-bold uppercase tracking-wider">
-              When you write to us, we would love to know:
+              {t('about.text.contact_desc', 'When you write to us, we would love to know:')}
             </p>
             <div className="space-y-3">
               {SUPPORT_QUESTIONS.map((q) => (
@@ -615,7 +531,7 @@ export default function AboutPage() {
               onClick={() => navigate('/contact')}
               className="hover:text-indigo-500 transition-colors"
             >
-              {t('footer.contact', 'Contact Us')}
+              <span>{t('about.contact_form', 'Contact Us via Form')}</span>
             </button>
           </p>
         </motion.section>

@@ -83,7 +83,7 @@ export default function WordProblemStories() {
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
   const [showHint, setShowHint] = useState(false);
   const [showSolution, setShowSolution] = useState(false);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
   const [solved, setSolved] = useState(0);
 
   const next = useCallback(() => {
@@ -98,7 +98,7 @@ export default function WordProblemStories() {
     if (opt === problem.answer) {
       setFeedback('correct');
       sfx.correct();
-      setScore(s => s + (showHint ? 5 : 10));
+      setMastery(m => m + 1);
       setSolved(s => s + 1);
       setTimeout(next, 1800);
     } else {
@@ -116,13 +116,13 @@ export default function WordProblemStories() {
       </div>
 
       <div className="flex justify-center gap-4 mb-6">
-        <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">⭐ {score}</span>
+        <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">⭐ {mastery}</span>
         <span className="bg-white/5 px-3 py-1.5 rounded-lg text-green-400 font-bold text-sm">✅ {solved}</span>
       </div>
 
       <motion.div
         key={problem.story}
-        className={`max-w-xl mx-auto rounded-3xl p-6 sm:p-8 border-2 transition-colors ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-red-500/10 border-red-500/40' : 'bg-white/5 border-white/10'}`}
+        className={`max-w-xl mx-auto rounded-3xl p-6 sm:p-8 border-2 transition-colors ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}
         initial={{ scale: 0.92, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
       >
@@ -165,7 +165,7 @@ export default function WordProblemStories() {
         </AnimatePresence>
 
         {feedback === 'correct' && <motion.p className="mt-4 text-center text-green-400 font-bold text-lg" initial={{ scale: 0 }} animate={{ scale: [0, 1.3, 1] }}>✨ Great reading & solving!</motion.p>}
-        {feedback === 'wrong' && <motion.p className="mt-4 text-center text-red-400 font-bold" initial={{ x: -10 }} animate={{ x: [10, -10, 5, 0] }}>🤔 Re-read the story carefully!</motion.p>}
+        {feedback === 'wrong' && <motion.p className="mt-4 text-center text-orange-400 font-bold" initial={{ x: -10 }} animate={{ x: [10, -10, 5, 0] }}>🤔 Re-read the story carefully!</motion.p>}
       </motion.div>
       <WhatsNext moduleId="word-problems" />
     </div>

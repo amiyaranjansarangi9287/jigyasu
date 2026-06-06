@@ -224,7 +224,7 @@ export default function PhysicsDailyChallenge() {
           {selected !== null && (
             <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="bg-gray-800/50 rounded-2xl p-5">
               <p className={`font-bold mb-2 ${isCorrect ? 'text-green-400' : 'text-red-400'}`}>
-                {isCorrect ? '✅ Correct!' : '❌ Not quite!'}
+                {isCorrect ? '✅ Correct!' : '🤔 Not quite!'}
               </p>
               <p className="text-gray-300 text-sm">{challenge.explanation}</p>
             </motion.div>

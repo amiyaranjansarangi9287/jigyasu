@@ -1,5 +1,6 @@
 // src/worlds/lab/modules/CircuitBuilder.tsx
 import { useRef, useEffect, useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
 import LabShell from '../LabShell';
@@ -15,6 +16,7 @@ const LIB = [
 ];
 
 export default function CircuitBuilder() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [comps, setComps] = useState<{ type: string; x: number; y: number; id: string }[]>([]);
   const [wires, setWires] = useState<{ f: string; t: string }[]>([]);

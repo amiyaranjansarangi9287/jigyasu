@@ -1,11 +1,13 @@
 // src/worlds/academy/modules/Electrolysis.tsx
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import AcademyShell from '../AcademyShell';
 import { useLumoAncient } from '../hooks/useLumoAncient';
 import { useAcademyProgress } from '../hooks/useAcademyProgress';
 import { ELECTROLYSIS_SETUPS } from '../data/academyContent';
 
 export default function Electrolysis() {
+  const { t } = useTranslation();
   const lumo = useLumoAncient();
   const { recordElectrolysis } = useAcademyProgress();
   const [setupIdx, setSetupIdx] = useState(0);
@@ -35,7 +37,7 @@ export default function Electrolysis() {
             <div className="absolute top-4 text-slate-500 text-sm font-mono">{setup.electrolyte}</div>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-3 mb-4"><div className="bg-slate-900 p-3 rounded-xl border border-blue-900/40"><p className="text-blue-400 text-sm font-bold">Cathode</p><p className="text-white text-sm mt-1">{setup.cathodeProduct}</p></div><div className="bg-slate-900 p-3 rounded-xl border border-red-900/40"><p className="text-red-400 text-sm font-bold">Anode</p><p className="text-white text-sm mt-1">{setup.anodeProduct}</p></div></div>
+        <div className="grid grid-cols-2 gap-3 mb-4"><div className="bg-slate-900 p-3 rounded-xl border border-blue-900/40"><p className="text-blue-400 text-sm font-bold">{t('academy.modules.Electrolysis.txt_Cathode', 'Cathode')}</p><p className="text-white text-sm mt-1">{setup.cathodeProduct}</p></div><div className="bg-slate-900 p-3 rounded-xl border border-red-900/40"><p className="text-red-400 text-sm font-bold">{t('academy.modules.Electrolysis.txt_Anode', 'Anode')}</p><p className="text-white text-sm mt-1">{setup.anodeProduct}</p></div></div>
         <div className="space-y-3 mb-4"><label className="block text-slate-400 text-sm">Current: {current}A<input type="range" min="1" max="10" value={current} onChange={(e) => setCurrent(Number(e.target.value))} className="w-full" /></label><label className="block text-slate-400 text-sm">Time: {minutes} min<input type="range" min="5" max="120" step="5" value={minutes} onChange={(e) => setMinutes(Number(e.target.value))} className="w-full" /></label></div>
         <button onClick={run} disabled={running} className="w-full py-4 bg-indigo-700 text-white rounded-2xl font-bold min-h-[52px]">{running ? 'Running...' : 'Run Electrolysis'}</button>
         <div className="mt-4 bg-slate-900 p-4 rounded-xl border border-slate-800 text-sm text-slate-400"><p>Charge Q = I × t = {charge} C</p><p className="text-amber-400 mt-2">🇮🇳 {setup.indianContext}</p></div>

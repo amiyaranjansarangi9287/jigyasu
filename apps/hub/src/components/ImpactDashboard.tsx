@@ -37,6 +37,7 @@ export default function ImpactDashboard() {
         
         const langs: Record<string, number> = {};
         const ages: Record<string, number> = {};
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         sessions.forEach((session: any) => {
           if (session.language) {
             langs[session.language] = (langs[session.language] || 0) + 1;

@@ -1,10 +1,12 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface HabitatsCanvasProps {
   habitat: 'forest' | 'ocean' | 'desert' | 'arctic';
 }
 
 export default function HabitatsCanvas({ habitat }: HabitatsCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const habitatRef = useRef(habitat);

@@ -32,7 +32,7 @@ describe('TeachingBridge', () => {
 
     expect(hint.status).toBe('disabled');
     expect(hint.fallback).toBe(true);
-    expect(hint.prompt).toContain('Try one small example');
+    expect(hint.prompt).toContain('core.pedagogy.hints.fallback');
     expect(fetcher).not.toHaveBeenCalled();
   });
 

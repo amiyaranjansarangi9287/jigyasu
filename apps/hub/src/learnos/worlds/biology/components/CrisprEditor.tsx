@@ -95,7 +95,7 @@ export default function CrisprEditor() {
                       <motion.span key={i}
                         className={`px-2 py-1 rounded ${
                           isEdited ? 'bg-emerald-500/30 text-emerald-400 border border-emerald-500/50' :
-                          isCutSite ? 'bg-red-500/30 text-red-400 border border-red-500/50' :
+                          isCutSite ? 'bg-red-500/30 text-orange-400 border border-red-500/50' :
                           codon === '___' ? 'bg-gray-800 text-gray-600 border border-gray-700' :
                           'bg-gray-800 text-gray-300 border border-gray-700'
                         }`}
@@ -185,7 +185,7 @@ export default function CrisprEditor() {
                     <div className="text-sm text-gray-500">The GPS — guides Cas9 to the right spot</div>
                   </div>
                   <div className="bg-gray-800/50 rounded-lg p-2">
-                    <div className="font-bold text-red-400 text-sm">Cas9</div>
+                    <div className="font-bold text-orange-400 text-sm">Cas9</div>
                     <div className="text-sm text-gray-500">The scissors — cuts DNA at target</div>
                   </div>
                 </div>

@@ -61,9 +61,7 @@ export default function Electricity() {
           <h1 className="text-3xl font-extrabold text-white">
             {t('lab.electricity.title', { defaultValue: 'Electric Circuits' })}
           </h1>
-          <p className="text-sm text-slate-400 mt-2">
-            Build a circuit and see Ohm's Law in action!
-          </p>
+          <p className="text-sm text-slate-400 mt-2">{t('lab.modules.Electricity.txt_Buildacirc', 'Build a circuit and see Ohm\'s Law in action!')}</p>
         </div>
 
         {/* Switch toggle */}
@@ -89,7 +87,7 @@ export default function Electricity() {
         <div className="bg-slate-800/50 rounded-2xl p-6 shadow-sm border border-slate-700/50 space-y-4">
           <div>
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm text-slate-400">🔋 Voltage</span>
+              <span className="text-sm text-slate-400">{t('lab.modules.Electricity.spn_Voltage', '🔋 Voltage')}</span>
               <span className="text-sm font-medium text-yellow-400">{voltage}V</span>
             </div>
             <input
@@ -104,7 +102,7 @@ export default function Electricity() {
           </div>
           <div>
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm text-slate-400">🔧 Resistance</span>
+              <span className="text-sm text-slate-400">{t('lab.modules.Electricity.spn_Resistance', '🔧 Resistance')}</span>
               <span className="text-sm font-medium text-orange-400">{resistance}Ω</span>
             </div>
             <input
@@ -132,7 +130,7 @@ export default function Electricity() {
         {/* Indian context */}
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.Electricity.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-400 font-bold text-sm mb-1">India's Electrical Legacy</h3>
               <p className="text-gray-300 text-sm leading-relaxed">

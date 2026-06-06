@@ -78,7 +78,7 @@ export default function CodingLogic() {
               <div className="flex justify-center gap-1 mb-4">
                 {binary.split('').map((bit, i) => (
                   <motion.button key={i}
-                    className={`w-10 h-12 rounded-lg font-bold text-xl flex items-center justify-center ${bit === '1' ? 'bg-cyan-500 text-white' : 'bg-white/10 text-gray-500'}`}
+                    className={`w-10 min-h-12 rounded-lg font-bold text-xl flex items-center justify-center ${bit === '1' ? 'bg-cyan-500 text-white' : 'bg-white/10 text-gray-500'}`}
                     whileTap={{ scale: 0.9 }}
                     onClick={() => {
                       const bits = binary.split('');
@@ -129,7 +129,7 @@ export default function CodingLogic() {
                   <div key={input.label} className="text-center">
                     <p className={`text-${input.color}-400 font-bold mb-2`}>{input.label}</p>
                     <motion.button
-                      className={`w-20 h-12 rounded-xl font-bold text-lg ${input.value ? 'bg-green-500 text-white' : 'bg-red-500/50 text-red-200'}`}
+                      className={`w-20 min-h-12 rounded-xl font-bold text-lg ${input.value ? 'bg-green-500 text-white' : 'bg-red-500/50 text-red-200'}`}
                       whileTap={{ scale: 0.9 }}
                       onClick={() => input.set(!input.value)}
                     >{input.value ? 'TRUE' : 'FALSE'}</motion.button>

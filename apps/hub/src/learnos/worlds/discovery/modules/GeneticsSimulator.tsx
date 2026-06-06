@@ -1,11 +1,13 @@
 // src/worlds/discovery/modules/GeneticsSimulator.tsx
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import DiscoveryShell from '../DiscoveryShell';
 import { useLumoSage } from '../hooks/useLumoSage';
 import { useDiscoveryProgress } from '../hooks/useDiscoveryProgress';
 import { GENETIC_TRAITS } from '../data/discoveryContent';
 
 export default function GeneticsSimulator() {
+  const { t } = useTranslation();
   const lumo = useLumoSage();
   const { recordGeneticsCross, updateMastery } = useDiscoveryProgress();
   const [idx] = useState(0);
@@ -26,7 +28,7 @@ export default function GeneticsSimulator() {
           <p className="text-sm text-slate-400 italic">"{trait.exampleContext}"</p>
         </div>
         <div className="bg-slate-800 rounded-2xl p-4 border border-slate-700 mb-6 flex-1 flex flex-col items-center justify-center">
-          <p className="text-sm text-slate-500 font-bold uppercase mb-4 tracking-widest">Inheritance Table</p>
+          <p className="text-sm text-slate-500 font-bold uppercase mb-4 tracking-widest">{t('discovery.modules.GeneticsSimulator.txt_Inheritanc', 'Inheritance Table')}</p>
           <div className="grid grid-cols-2 gap-4">
              <div className="w-20 h-20 bg-slate-700 rounded-xl flex items-center justify-center text-white font-bold text-2xl">{trait.dominantAllele}{trait.dominantAllele}</div>
              <div className="w-20 h-20 bg-slate-700 rounded-xl flex items-center justify-center text-white font-bold text-2xl">{trait.dominantAllele}{trait.recessiveAllele}</div>
@@ -34,7 +36,7 @@ export default function GeneticsSimulator() {
              <div className="w-20 h-20 bg-slate-700 rounded-xl flex items-center justify-center text-white font-bold text-2xl">{trait.recessiveAllele}{trait.recessiveAllele}</div>
           </div>
         </div>
-        <button onClick={handleSimulate} className="w-full py-4 bg-indigo-600 text-white font-bold rounded-2xl">Run Genetic Cross</button>
+        <button onClick={handleSimulate} className="w-full py-4 bg-indigo-600 text-white font-bold rounded-2xl">{t('discovery.modules.GeneticsSimulator.btn_RunGenetic', 'Run Genetic Cross')}</button>
       </div>
     </DiscoveryShell>
   );

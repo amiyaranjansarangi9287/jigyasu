@@ -45,9 +45,7 @@ export default function Gravity() {
           <h1 className="text-3xl font-extrabold text-white">
             {t('lab.gravity.title', { defaultValue: 'Gravity & Spacetime' })}
           </h1>
-          <p className="text-sm text-slate-400 mt-2">
-            Drag the star to see how mass bends space!
-          </p>
+          <p className="text-sm text-slate-400 mt-2">{t('lab.modules.Gravity.txt_Dragthesta', 'Drag the star to see how mass bends space!')}</p>
         </div>
 
         {/* View toggle */}
@@ -68,8 +66,8 @@ export default function Gravity() {
         {/* Mass slider */}
         <div className="bg-slate-800/50 rounded-2xl p-6 shadow-sm border border-slate-700/50">
           <div className="flex items-center justify-between mb-3">
-            <span className="text-sm text-slate-400">🌑 Small mass</span>
-            <span className="text-sm text-slate-400">☀️ Large mass</span>
+            <span className="text-sm text-slate-400">{t('lab.modules.Gravity.spn_Smallmass', '🌑 Small mass')}</span>
+            <span className="text-sm text-slate-400">{t('lab.modules.Gravity.spn_Largemass', '☀️ Large mass')}</span>
           </div>
           <input
             type="range"
@@ -92,19 +90,19 @@ export default function Gravity() {
           <div className="bg-amber-900/20 rounded-2xl p-4 text-center border border-amber-700/30">
             <div className="text-3xl mb-2">🍎</div>
             <div className="font-bold text-amber-300 text-sm">Newton's View</div>
-            <p className="text-sm text-amber-400/70 mt-1">Gravity is a force pulling objects together</p>
+            <p className="text-sm text-amber-400/70 mt-1">{t('lab.modules.Gravity.txt_Gravityisa', 'Gravity is a force pulling objects together')}</p>
           </div>
           <div className="bg-indigo-900/20 rounded-2xl p-4 text-center border border-indigo-700/30">
             <div className="text-3xl mb-2">🌊</div>
             <div className="font-bold text-indigo-300 text-sm">Einstein's View</div>
-            <p className="text-sm text-indigo-400/70 mt-1">Mass curves spacetime, objects follow the curve</p>
+            <p className="text-sm text-indigo-400/70 mt-1">{t('lab.modules.Gravity.txt_Masscurves', 'Mass curves spacetime, objects follow the curve')}</p>
           </div>
         </div>
 
         {/* Indian context */}
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.Gravity.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-400 font-bold text-sm mb-1">Ancient Indian Insight</h3>
               <p className="text-gray-300 text-sm leading-relaxed">

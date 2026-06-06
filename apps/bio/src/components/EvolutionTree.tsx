@@ -159,7 +159,7 @@ export default function EvolutionTree() {
                   className="bg-gray-900 rounded-2xl border border-gray-800 p-6 sticky top-24"
                 >
                   <div className="flex items-center gap-4 mb-5">
-                    <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-4xl" style={{ backgroundColor: selected.color + '22', border: `2px solid ${selected.color}` }}>
+                    <div className="w-16 min-h-16 rounded-2xl flex items-center justify-center text-4xl" style={{ backgroundColor: selected.color + '22', border: `2px solid ${selected.color}` }}>
                       {selected.emoji}
                     </div>
                     <div>

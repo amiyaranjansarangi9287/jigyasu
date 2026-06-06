@@ -38,7 +38,7 @@ export default function AvatarStore() {
 
   return (
     <div className="bg-white rounded-3xl shadow-sm border border-slate-200 p-8 mt-8 relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-64 h-64 bg-sky-50 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+      <div className="absolute top-0 right-0 w-64 min-h-64 bg-sky-50 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2 pointer-events-none" />
       
       <div className="flex items-center justify-between mb-6 relative z-10">
         <div>

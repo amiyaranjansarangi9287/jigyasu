@@ -150,12 +150,17 @@ export function getTodayWarmup(): WarmUpChallenge {
 export function getStreak(): number {
   const stored = localStorage.getItem(WARMUP_STREAK_KEY);
   if (!stored) return 0;
-  const { count, lastDate } = JSON.parse(stored);
-  const today = new Date().toDateString();
-  const yesterday = new Date(Date.now() - 86400000).toDateString();
-  if (lastDate === today) return count;
-  if (lastDate === yesterday) return count;
-  return 0;
+  try {
+    const { count, lastDate } = JSON.parse(stored);
+    const today = new Date().toDateString();
+    const yesterday = new Date(Date.now() - 86400000).toDateString();
+    if (lastDate === today) return count;
+    if (lastDate === yesterday) return count;
+    return 0;
+  } catch (e) {
+    console.warn('Failed to parse warmup streak', e);
+    return 0;
+  }
 }
 
 export function incrementStreak(): number {

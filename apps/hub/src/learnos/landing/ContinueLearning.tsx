@@ -57,7 +57,7 @@ export default function ContinueLearning() {
         aria-label={`${t('landing.continue.resume')} ${meta.title}`}
         className="group w-full flex items-center gap-5 rounded-3xl bg-gradient-to-r from-brand to-orange-500 p-5 text-white shadow-lg shadow-orange-300/40 transition hover:shadow-xl hover:shadow-orange-400/50 active:scale-[0.99]"
       >
-        <div className="flex h-16 w-16 flex-none items-center justify-center rounded-2xl bg-white/20 text-4xl backdrop-blur transition group-hover:scale-110">
+        <div className="flex min-h-16 w-16 flex-none items-center justify-center rounded-2xl bg-white/20 text-4xl backdrop-blur transition group-hover:scale-110">
           {meta.emoji}
         </div>
         <div className="flex-1 text-left">

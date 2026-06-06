@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface FloatSinkCanvasProps {
   objects: { id: string; name: string; emoji: string; density: number; dropped: boolean }[];
@@ -19,6 +20,7 @@ interface FallingObject {
 }
 
 export default function FloatSinkCanvas({ objects }: FloatSinkCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const fallingObjectsRef = useRef<FallingObject[]>([]);

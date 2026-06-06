@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   getTeachingBridgeStatus,
   requestConceptMap,
@@ -29,6 +30,7 @@ function statusLabel(status: TeachingBridgeFeatureStatus): string {
 }
 
 export default function GravityTeachingBridge() {
+  const { t } = useTranslation();
   const bridgeStatus = getTeachingBridgeStatus();
   const [hint, setHint] = useState<TeachingBridgeHint | null>(null);
   const [conceptMap, setConceptMap] = useState<TeachingBridgeConceptMap | null>(null);
@@ -83,7 +85,9 @@ export default function GravityTeachingBridge() {
       {hint && (
         <div className="mt-4 rounded-xl bg-gray-950/70 p-3">
           <p className="text-xs font-bold uppercase text-gray-500">Hint</p>
-          <p className="mt-1 text-sm text-gray-200">{hint.prompt}</p>
+          <p className="mt-1 text-sm text-gray-200">
+            {hint.fallback ? t(hint.prompt, hint.prompt) : hint.prompt}
+          </p>
           {hint.traceId && <p className="mt-2 text-xs text-gray-500">Trace: {hint.traceId}</p>}
           {hint.fallback && <p className="mt-2 text-xs text-amber-300">{hint.reason}</p>}
         </div>

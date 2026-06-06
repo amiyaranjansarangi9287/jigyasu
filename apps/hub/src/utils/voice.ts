@@ -27,6 +27,7 @@ export interface TTSOptions {
  * Voice Search Manager
  */
 export class VoiceSearch {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private recognition: any = null;
   private isListening: boolean = false;
   private options: VoiceSearchOptions;
@@ -39,6 +40,7 @@ export class VoiceSearch {
     };
 
     if (this.isSupported()) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       this.recognition = new (window as any).webkitSpeechRecognition();
       this.setupRecognition();
     }
@@ -64,6 +66,7 @@ export class VoiceSearch {
       this.options.onStart?.();
     };
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     this.recognition.onresult = (event: any) => {
       const transcript = event.results[0][0].transcript;
       
@@ -74,6 +77,7 @@ export class VoiceSearch {
       }
     };
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     this.recognition.onerror = (event: any) => {
       console.error('Voice recognition error:', event.error);
       this.options.onError?.(event.error);
@@ -202,6 +206,7 @@ export class TextToSpeech {
       options.onEnd?.();
     };
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     this.utterance.onerror = (event: any) => {
       console.error('TTS error:', event);
       this.isSpeaking = false;

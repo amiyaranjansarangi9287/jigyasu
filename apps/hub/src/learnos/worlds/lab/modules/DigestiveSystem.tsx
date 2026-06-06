@@ -52,9 +52,7 @@ export default function DigestiveSystem() {
           <h1 className="text-3xl font-extrabold text-slate-800">
             {t('lab.digestive.title', { defaultValue: 'Digestive System' })}
           </h1>
-          <p className="text-sm text-slate-500 mt-2">
-            Follow food's journey through your body!
-          </p>
+          <p className="text-sm text-slate-500 mt-2">{t('lab.modules.DigestiveSystem.txt_Followfood', 'Follow food\'s journey through your body!')}</p>
         </div>
 
         {/* Controls */}
@@ -104,19 +102,19 @@ export default function DigestiveSystem() {
           <div className="bg-rose-50 rounded-2xl p-4 text-center">
             <div className="text-2xl mb-1">📏</div>
             <div className="font-bold text-rose-600 text-sm">6m Long</div>
-            <p className="text-sm text-rose-400 mt-1">Small intestine length</p>
+            <p className="text-sm text-rose-400 mt-1">{t('lab.modules.DigestiveSystem.txt_Smallintes', 'Small intestine length')}</p>
           </div>
           <div className="bg-orange-50 rounded-2xl p-4 text-center">
             <div className="text-2xl mb-1">⏱️</div>
             <div className="font-bold text-orange-600 text-sm">24-72 hrs</div>
-            <p className="text-sm text-orange-400 mt-1">Total digestion time</p>
+            <p className="text-sm text-orange-400 mt-1">{t('lab.modules.DigestiveSystem.txt_Totaldiges', 'Total digestion time')}</p>
           </div>
         </div>
 
         {/* Indian context */}
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.DigestiveSystem.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1">Ayurvedic Connection</h3>
               <p className="text-gray-600 text-sm leading-relaxed">

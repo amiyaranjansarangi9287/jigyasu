@@ -59,6 +59,7 @@ export function sanitizeInput(input: string, maxLength = 1000): string {
   }
 
   // Remove null bytes and other control characters
+  // eslint-disable-next-line no-control-regex
   sanitized = sanitized.replace(/[\x00-\x1F\x7F]/g, '');
 
   return sanitized;

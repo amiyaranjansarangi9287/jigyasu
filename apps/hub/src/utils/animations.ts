@@ -3,7 +3,7 @@
  * Enhanced Framer Motion animations for page transitions and micro-interactions
  */
 
-import { motion, AnimatePresence, Variants } from 'framer-motion';
+import { Variants } from 'framer-motion';
 
 /**
  * Page transition variants

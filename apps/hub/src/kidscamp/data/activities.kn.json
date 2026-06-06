@@ -1,0 +1,4506 @@
+[
+  {
+    "id": "[KN] toybox-rainbow-blocks",
+    "name": "[KN] Rainbow Stacking Blocks",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 1-2 hours",
+    "description": "[KN] Create a beautiful set of rainbow-colored wooden blocks perfect for stacking, sorting, and creative play. These timeless toys spark imagination and help develop fine motor skills.",
+    "image": "[KN] /images/blocks.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[KN] Wooden blocks or lumber scraps",
+        "quantity": "[KN] 12-20 pieces"
+      },
+      {
+        "name": "Sandpaper",
+        "quantity": "[KN] Fine and medium grit"
+      },
+      {
+        "name": "[KN] Non-toxic acrylic paint",
+        "quantity": "[KN] Rainbow colors"
+      },
+      {
+        "name": "[KN] Clear sealant",
+        "quantity": "[KN] 1 can",
+        "optional": true
+      },
+      {
+        "name": "Paintbrushes",
+        "quantity": "3-4"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Prepare the Wood",
+        "description": "[KN] Start by selecting your wooden pieces. If using lumber scraps, cut them into various shapes - rectangles, squares, triangles, and arches. Sand all surfaces smooth, starting with medium grit sandpaper and finishing with fine grit. Pay special attention to edges and corners to ensure they are rounded and safe for little hands.",
+        "tip": "[KN] Pre-cut wooden blocks from craft stores work great and save time!",
+        "duration": "[KN] 30 min"
+      },
+      {
+        "title": "[KN] Plan Your Rainbow",
+        "description": "[KN] Lay out your blocks and decide which colors will go on each piece. A classic rainbow progression (red, orange, yellow, green, blue, purple) works beautifully. Consider painting blocks of similar sizes in the same color for a cohesive set.",
+        "tip": "[KN] Take a photo of your layout plan for reference while painting.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Apply Base Coats",
+        "description": "[KN] Paint each block with its designated color. Apply thin, even coats and let dry completely between applications. Most blocks will need 2-3 coats for full coverage.",
+        "tip": "[KN] Use a cardboard box to hold blocks upright while drying.",
+        "duration": "[KN] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KN] Add Details (Optional)",
+        "description": "[KN] Once base coats are dry, add fun details like dots, stripes, or simple patterns. You can also leave them solid for a classic look.",
+        "duration": "[KN] 20 min"
+      },
+      {
+        "title": "[KN] Seal and Finish",
+        "description": "[KN] Apply a clear, non-toxic sealant to protect the paint and make blocks more durable. Let dry completely (24 hours recommended) before play.",
+        "tip": "[KN] Water-based polyurethane is safe once fully cured.",
+        "duration": "[KN] 15 min",
+        "parentHelp": true
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Use only non-toxic, child-safe paints and sealants",
+      "[KN] Ensure all edges are well-sanded and smooth",
+      "[KN] Adult supervision required for cutting and sealing",
+      "[KN] Allow full curing time before giving to children"
+    ],
+    "learningOutcomes": [
+      "[KN] Fine motor skills",
+      "[KN] Color recognition",
+      "[KN] Spatial awareness",
+      "[KN] Creative thinking"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] toybox-wooden-car",
+    "name": "[KN] Wooden Auto-Rickshaw (Tuk-Tuk)",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KN] 2-3 hours",
+    "description": "[KN] Construct your very own wooden Auto-Rickshaw! Learn the physics of axles and wheels as you design and paint the iconic three-wheeled vehicle that navigates busy Indian streets.",
+    "image": "[KN] /images/wooden-car.webp",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 124,
+    "materials": [
+      {
+        "name": "[KN] Wood block",
+        "quantity": "[KN] 6\" x 3\" x 2\""
+      },
+      {
+        "name": "[KN] Wooden wheels",
+        "quantity": "[KN] 4 pieces"
+      },
+      {
+        "name": "[KN] Wooden dowels",
+        "quantity": "[KN] 2 pieces, 4\" each"
+      },
+      {
+        "name": "Sandpaper",
+        "quantity": "[KN] Various grits"
+      },
+      {
+        "name": "[KN] Wood glue"
+      },
+      {
+        "name": "[KN] Non-toxic paint",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Shape the Car Body",
+        "description": "[KN] Draw the car profile on your wood block - a simple curved top works best. Using a saw or pre-cut the shape, then sand all surfaces smooth.",
+        "duration": "[KN] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KN] Drill Axle Holes",
+        "description": "[KN] Mark where the axle holes will go on both sides of the car body. Drill straight through, ensuring holes align perfectly.",
+        "tip": "[KN] Use a drill press for perfectly aligned holes.",
+        "duration": "[KN] 15 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KN] Prepare Wheels and Axles",
+        "description": "[KN] Sand the wheels smooth. Cut dowels to length for axles, leaving room for wheels plus a small gap.",
+        "duration": "[KN] 20 min"
+      },
+      {
+        "title": "[KN] Assemble the Car",
+        "description": "[KN] Insert axles through the car body. Attach wheels to each end with a dab of wood glue. Ensure wheels spin freely.",
+        "tip": "[KN] Don't use too much glue - wheels need to spin!",
+        "duration": "[KN] 20 min"
+      },
+      {
+        "title": "[KN] Paint and Finish",
+        "description": "[KN] Once glue is dry, paint your car in your favorite colors. Add details like windows, headlights, or racing stripes. Apply sealant and let cure.",
+        "duration": "[KN] 40 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Adult supervision required for all cutting and drilling",
+      "[KN] Wear safety glasses when using power tools",
+      "[KN] Use non-toxic finishes only"
+    ],
+    "learningOutcomes": [
+      "[KN] Basic woodworking",
+      "[KN] Wheel and axle mechanics",
+      "[KN] Planning and execution",
+      "[KN] Fine motor skills"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] toybox-plush-bear",
+    "name": "[KN] Cuddly Plush Bear",
+    "pillar": "toybox",
+    "category": "Plush",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KN] 3-4 hours",
+    "description": "[KN] Sew your own adorable teddy bear with soft fabric and button eyes. A perfect cuddly companion that makes a wonderful gift.",
+    "image": "[KN] /images/plush-bear.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[KN] Soft fabric (fleece or felt)",
+        "quantity": "[KN] 1/2 yard"
+      },
+      {
+        "name": "Stuffing",
+        "quantity": "[KN] 1 bag polyester filling"
+      },
+      {
+        "name": "Thread",
+        "quantity": "[KN] Matching color"
+      },
+      {
+        "name": "Buttons",
+        "quantity": "[KN] 2 for eyes"
+      },
+      {
+        "name": "[KN] Embroidery thread",
+        "quantity": "[KN] For nose and mouth"
+      },
+      {
+        "name": "[KN] Needle and pins"
+      },
+      {
+        "name": "Scissors"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Cut Pattern Pieces",
+        "description": "[KN] Print or draw a simple bear pattern. Cut out body (2), arms (4), legs (4), ears (4), and head pieces from your fabric.",
+        "duration": "[KN] 30 min"
+      },
+      {
+        "title": "[KN] Sew Body Parts",
+        "description": "[KN] With right sides together, sew arm pairs, leg pairs, and ears. Leave openings for turning. Turn right side out.",
+        "duration": "[KN] 45 min"
+      },
+      {
+        "title": "[KN] Create the Face",
+        "description": "[KN] Attach button eyes securely. Embroider a simple nose and smile using satin stitch.",
+        "tip": "[KN] For younger children, embroider eyes instead of buttons for safety.",
+        "duration": "[KN] 30 min"
+      },
+      {
+        "title": "[KN] Assemble the Bear",
+        "description": "[KN] Sew head pieces together, attaching ears. Join body pieces, inserting arms and legs as you go. Leave opening for stuffing.",
+        "duration": "[KN] 45 min"
+      },
+      {
+        "title": "[KN] Stuff and Close",
+        "description": "[KN] Fill bear firmly with stuffing, shaping as you go. Hand-stitch the opening closed with a ladder stitch.",
+        "duration": "[KN] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Secure button eyes very tightly or use embroidered eyes for young children",
+      "[KN] Supervise needle use with younger sewers",
+      "[KN] Check for loose threads or weak seams"
+    ],
+    "learningOutcomes": [
+      "[KN] Sewing skills",
+      "[KN] Pattern reading",
+      "[KN] Patience and attention to detail",
+      "[KN] Gift-giving mindset"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] toybox-recycled-robot",
+    "name": "[KN] Recycled Robot",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 1-2 hours",
+    "description": "[KN] Transform recyclable materials into an awesome robot friend! This eco-friendly project teaches creativity and environmental awareness.",
+    "image": "[KN] /images/robot.webp",
+    "rating": 4.6,
+    "reviewCount": 142,
+    "materials": [
+      {
+        "name": "[KN] Cardboard boxes",
+        "quantity": "[KN] Various sizes"
+      },
+      {
+        "name": "[KN] Bottle caps"
+      },
+      {
+        "name": "[KN] Aluminum foil"
+      },
+      {
+        "name": "[KN] Toilet paper rolls",
+        "quantity": "[KN] 4 for limbs"
+      },
+      {
+        "name": "[KN] Paint and markers"
+      },
+      {
+        "name": "[KN] Glue gun",
+        "optional": true
+      },
+      {
+        "name": "[KN] Craft glue"
+      },
+      {
+        "name": "[KN] Pipe cleaners",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Gather Materials",
+        "description": "[KN] Collect various recyclables - boxes, bottles, caps, tubes. Clean everything thoroughly. Lay out materials and envision your robot.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Build the Body",
+        "description": "[KN] Select a medium box for the body and a smaller one for the head. Cover with aluminum foil or paint silver for a robotic look.",
+        "duration": "[KN] 25 min"
+      },
+      {
+        "title": "[KN] Add Limbs",
+        "description": "[KN] Attach toilet paper rolls or paper towel tubes as arms and legs. Secure with glue and reinforce with tape if needed.",
+        "duration": "[KN] 20 min"
+      },
+      {
+        "title": "[KN] Create the Face",
+        "description": "[KN] Use bottle caps for eyes, buttons for a nose, and draw or add a mouth. Get creative with antennae using pipe cleaners!",
+        "duration": "[KN] 20 min"
+      },
+      {
+        "title": "[KN] Add Details",
+        "description": "[KN] Decorate with buttons, dials, screens drawn on paper, or any creative additions. Name your robot!",
+        "duration": "[KN] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Adult supervision required for hot glue gun",
+      "[KN] Wash all recyclables before use",
+      "[KN] Check for sharp edges on cans or lids"
+    ],
+    "learningOutcomes": [
+      "[KN] Environmental awareness",
+      "[KN] Creative reuse",
+      "Problem-solving",
+      "[KN] Imaginative play"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] toybox-balsa-airplane",
+    "name": "[KN] Balsa Wood Airplane",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[KN] 3-4 hours",
+    "description": "[KN] Craft a beautiful balsa wood biplane that actually flies! Learn about aerodynamics while building this classic model.",
+    "image": "[KN] /images/airplane.webp",
+    "rating": 4.8,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[KN] Balsa wood sheets",
+        "quantity": "[KN] 3 sheets, 1/8\" thick"
+      },
+      {
+        "name": "[KN] Balsa wood sticks",
+        "quantity": "[KN] Various sizes"
+      },
+      {
+        "name": "[KN] Wood glue"
+      },
+      {
+        "name": "[KN] Craft knife"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "Paint",
+        "optional": true
+      },
+      {
+        "name": "[KN] Rubber bands"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Cut Wing Pieces",
+        "description": "[KN] Trace wing templates onto balsa sheets. Carefully cut out upper and lower wings using a craft knife. Sand edges smooth.",
+        "duration": "[KN] 40 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KN] Build the Fuselage",
+        "description": "[KN] Cut and assemble the body of the plane using balsa sticks. Create a frame that is sturdy but lightweight.",
+        "duration": "[KN] 45 min"
+      },
+      {
+        "title": "[KN] Attach Wings",
+        "description": "[KN] Glue wings to fuselage at slight upward angles for better lift. Use struts between upper and lower wings.",
+        "tip": "[KN] Let each glue joint dry before moving to the next.",
+        "duration": "[KN] 30 min"
+      },
+      {
+        "title": "[KN] Add Tail Assembly",
+        "description": "[KN] Create and attach horizontal stabilizer and vertical tail fin. These are crucial for flight stability.",
+        "duration": "[KN] 25 min"
+      },
+      {
+        "title": "[KN] Finish and Test Fly",
+        "description": "[KN] Sand entire plane smooth. Paint if desired. Add a propeller with rubber band power. Test fly and adjust as needed!",
+        "duration": "[KN] 40 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Adult supervision required for craft knife use",
+      "[KN] Balsa wood splinters easily - handle with care",
+      "[KN] Fly in open areas away from people"
+    ],
+    "learningOutcomes": [
+      "[KN] Aerodynamics basics",
+      "[KN] Precision building",
+      "[KN] Physics of flight",
+      "[KN] Patience and persistence"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] toybox-dollhouse",
+    "name": "[KN] Miniature Dollhouse",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[KN] 4-6 hours",
+    "description": "[KN] Construct a charming miniature dollhouse with multiple rooms. Add tiny furniture and decorations for endless imaginative play.",
+    "image": "[KN] /images/dollhouse.webp",
+    "rating": 4.9,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[KN] Cardboard or foam board",
+        "quantity": "[KN] Large sheets"
+      },
+      {
+        "name": "[KN] Craft knife"
+      },
+      {
+        "name": "Ruler"
+      },
+      {
+        "name": "Glue"
+      },
+      {
+        "name": "[KN] Scrapbook paper",
+        "quantity": "[KN] For wallpaper"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "[KN] Small boxes",
+        "quantity": "[KN] For furniture"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Design Floor Plan",
+        "description": "[KN] Sketch your dollhouse design. Decide on number of rooms and floors. Calculate measurements for walls and floors.",
+        "duration": "[KN] 20 min"
+      },
+      {
+        "title": "[KN] Cut Structural Pieces",
+        "description": "[KN] Cut out walls, floors, and roof pieces from cardboard or foam board. Include window and door openings.",
+        "duration": "[KN] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KN] Assemble Structure",
+        "description": "[KN] Glue walls together, add floors to create stories. Install the roof. Reinforce corners with extra cardboard strips.",
+        "duration": "[KN] 1 hour"
+      },
+      {
+        "title": "[KN] Decorate Interior",
+        "description": "[KN] Apply scrapbook paper as wallpaper. Paint trim and details. Add flooring paper or felt rugs.",
+        "duration": "[KN] 1 hour"
+      },
+      {
+        "title": "[KN] Create Furniture",
+        "description": "[KN] Make tiny furniture from small boxes, spools, and scraps. Add beds, tables, chairs, and decorations.",
+        "duration": "[KN] 1 hour"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Adult supervision for cutting",
+      "[KN] Use sharp blades carefully with cutting mat",
+      "[KN] Small pieces may be choking hazards for young children"
+    ],
+    "learningOutcomes": [
+      "[KN] Architectural thinking",
+      "[KN] Scale and proportion",
+      "[KN] Interior design",
+      "[KN] Long-term project planning"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] toybox-animal-puzzle",
+    "name": "[KN] Wooden Animal Puzzle",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 1-2 hours",
+    "description": "[KN] Create chunky wooden puzzles featuring adorable animals. Perfect for little hands learning shapes and problem-solving.",
+    "image": "[KN] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 118,
+    "materials": [
+      {
+        "name": "Plywood",
+        "quantity": "[KN] 1/2\" thick, 8\" x 10\""
+      },
+      {
+        "name": "[KN] Scroll saw or jigsaw"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "[KN] Non-toxic paint"
+      },
+      {
+        "name": "[KN] Clear sealant"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Draw Design",
+        "description": "[KN] Draw a simple animal shape on the plywood - elephant, cat, or dog work great. Keep shapes chunky with rounded edges.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Cut Outer Shape",
+        "description": "[KN] Use a scroll saw to cut out the animal shape from the plywood. Sand all edges smooth.",
+        "duration": "[KN] 20 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KN] Create Puzzle Pieces",
+        "description": "[KN] Draw puzzle piece divisions on the animal. Cut along these lines to create 4-8 interlocking pieces.",
+        "duration": "[KN] 25 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KN] Paint Pieces",
+        "description": "[KN] Paint each puzzle piece in bright colors. You can paint both sides or just the top.",
+        "duration": "[KN] 30 min"
+      },
+      {
+        "title": "[KN] Seal and Assemble",
+        "description": "[KN] Apply clear sealant to protect paint. Once dry, assemble your puzzle and test the fit!",
+        "duration": "[KN] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Adult use only for power saws",
+      "[KN] Sand thoroughly - no splinters",
+      "[KN] Use child-safe paints and sealants"
+    ],
+    "learningOutcomes": [
+      "Problem-solving",
+      "[KN] Shape recognition",
+      "[KN] Hand-eye coordination",
+      "Patience"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] toybox-train-set",
+    "name": "[KN] Classic Train Set",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[KN] 4-5 hours",
+    "description": "[KN] Build a complete wooden train set with engine, cars, and track pieces. A challenging project with rewarding results.",
+    "image": "[KN] /images/train.webp",
+    "rating": 4.8,
+    "reviewCount": 64,
+    "materials": [
+      {
+        "name": "[KN] Wood blocks",
+        "quantity": "[KN] Various sizes"
+      },
+      {
+        "name": "[KN] Wooden wheels",
+        "quantity": "20+"
+      },
+      {
+        "name": "Dowels",
+        "quantity": "[KN] For axles and connectors"
+      },
+      {
+        "name": "[KN] Wood glue"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "[KN] Small hooks and eyes",
+        "quantity": "[KN] For connecting cars"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Design Train Cars",
+        "description": "[KN] Sketch designs for engine, coal car, cargo cars, and caboose. Plan wheel placement and connection points.",
+        "duration": "[KN] 20 min"
+      },
+      {
+        "title": "[KN] Cut and Shape",
+        "description": "[KN] Cut wood blocks to size for each car. Shape the engine with a rounded front. Sand everything smooth.",
+        "duration": "[KN] 1 hour",
+        "parentHelp": true
+      },
+      {
+        "title": "[KN] Add Wheels",
+        "description": "[KN] Drill holes for axles. Insert dowels and attach wheels. Ensure wheels spin freely.",
+        "duration": "[KN] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KN] Paint and Detail",
+        "description": "[KN] Paint each car in classic train colors. Add windows, cargo details, and decorations.",
+        "duration": "[KN] 1 hour"
+      },
+      {
+        "title": "[KN] Connect Cars",
+        "description": "[KN] Attach hooks to front and eyes to back of each car. Test connections. Create track pieces if desired.",
+        "duration": "[KN] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Adult supervision for all cutting and drilling",
+      "[KN] Check small parts are secure",
+      "[KN] Test wheel attachment strength"
+    ],
+    "learningOutcomes": [
+      "[KN] Complex project planning",
+      "[KN] Mechanical connections",
+      "[KN] Precision work",
+      "[KN] Transportation history"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] toybox-marble-run",
+    "name": "[KN] Marble Run Adventure",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KN] 2-3 hours",
+    "description": "[KN] Engineer an exciting marble run with twists, turns, and drops. Watch marbles race through your custom creation!",
+    "image": "[KN] /images/marble-run.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 189,
+    "materials": [
+      {
+        "name": "[KN] Cardboard tubes",
+        "quantity": "[KN] 10-15 various sizes"
+      },
+      {
+        "name": "[KN] Cardboard sheets"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "Marbles",
+        "quantity": "5-10"
+      },
+      {
+        "name": "[KN] Base board"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Plan Your Run",
+        "description": "[KN] Sketch the path marbles will take. Plan starting height, turns, tunnels, and landing. Remember: gravity is your friend!",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Create Track Pieces",
+        "description": "[KN] Cut tubes in half lengthwise for open tracks. Cut various lengths. Create funnels and catch points.",
+        "duration": "[KN] 30 min"
+      },
+      {
+        "title": "[KN] Build Support Structure",
+        "description": "[KN] Create cardboard supports to hold tracks at different heights. Build a sturdy base for everything.",
+        "duration": "[KN] 30 min"
+      },
+      {
+        "title": "[KN] Assemble the Run",
+        "description": "[KN] Attach tracks to supports, ensuring smooth transitions. Test with marbles as you build. Adjust angles as needed.",
+        "duration": "[KN] 45 min"
+      },
+      {
+        "title": "[KN] Test and Improve",
+        "description": "[KN] Run marbles through multiple times. Fix any stuck points. Add fun features like jumps or spinners!",
+        "duration": "[KN] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Marbles are choking hazards - supervise young children",
+      "[KN] Use scissors carefully",
+      "[KN] Ensure structure is stable"
+    ],
+    "learningOutcomes": [
+      "[KN] Physics and gravity",
+      "[KN] Engineering design",
+      "Problem-solving",
+      "[KN] Cause and effect"
+    ],
+    "crossPillar": [
+      "[KN] sciencelab-balloon-rocket"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "toybox-tangram",
+    "name": "[KN] Tangram Puzzle Set",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 1 hour",
+    "description": "[KN] Create the ancient Chinese puzzle of seven shapes that form endless patterns. A timeless brain teaser!",
+    "image": "[KN] /images/puzzle.webp",
+    "rating": 4.6,
+    "reviewCount": 92,
+    "materials": [
+      {
+        "name": "[KN] Foam board or wood",
+        "quantity": "[KN] 6\" x 6\" square"
+      },
+      {
+        "name": "Ruler"
+      },
+      {
+        "name": "Pencil"
+      },
+      {
+        "name": "[KN] Craft knife or saw"
+      },
+      {
+        "name": "[KN] Paint or markers",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Draw the Grid",
+        "description": "[KN] Draw a 4x4 grid on your square. This helps position the seven tangram pieces correctly.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Mark Tangram Shapes",
+        "description": "[KN] Following a tangram diagram, mark the seven shapes: 2 large triangles, 1 medium triangle, 2 small triangles, 1 square, 1 parallelogram.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Cut Pieces",
+        "description": "[KN] Carefully cut along your marked lines to create the seven pieces. Sand or smooth edges.",
+        "duration": "[KN] 20 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KN] Color Pieces",
+        "description": "[KN] Paint each piece a different color for visual appeal and easier identification.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Try Puzzles",
+        "description": "[KN] Challenge yourself to make shapes - animals, people, objects. Look up tangram puzzles online for ideas!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Adult supervision for cutting",
+      "[KN] Small pieces can be choking hazards"
+    ],
+    "learningOutcomes": [
+      "[KN] Spatial reasoning",
+      "[KN] Geometry basics",
+      "Problem-solving",
+      "[KN] Pattern recognition"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] toybox-3d-puzzle",
+    "name": "[KN] 3D Animal Puzzle",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KN] 2 hours",
+    "description": "[KN] Build a 3D puzzle that assembles into an animal sculpture. Pieces slot together without glue!",
+    "image": "[KN] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 78,
+    "materials": [
+      {
+        "name": "[KN] Cardboard or foam board",
+        "quantity": "[KN] 2-3 sheets"
+      },
+      {
+        "name": "[KN] Template printout"
+      },
+      {
+        "name": "[KN] Craft knife"
+      },
+      {
+        "name": "[KN] Cutting mat"
+      },
+      {
+        "name": "Paint",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Print Templates",
+        "description": "[KN] Find or create 3D puzzle templates. Print at full size. Choose an animal like an elephant or dinosaur.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Transfer to Board",
+        "description": "[KN] Trace or glue templates to your cardboard or foam board. Mark all slot positions clearly.",
+        "duration": "[KN] 20 min"
+      },
+      {
+        "title": "[KN] Cut Pieces",
+        "description": "[KN] Carefully cut out each piece including the slots. Slots should be as wide as your material thickness.",
+        "duration": "[KN] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KN] Test Fit",
+        "description": "[KN] Try assembling the puzzle. Adjust slots if pieces are too tight or loose.",
+        "duration": "[KN] 20 min"
+      },
+      {
+        "title": "[KN] Decorate and Finish",
+        "description": "[KN] Disassemble, paint pieces, let dry, then reassemble your 3D sculpture!",
+        "duration": "[KN] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Sharp blade use requires adult supervision",
+      "[KN] Always cut on a cutting mat",
+      "[KN] Cut away from your body"
+    ],
+    "learningOutcomes": [
+      "[KN] 3D spatial thinking",
+      "[KN] Assembly skills",
+      "[KN] Following templates",
+      "[KN] Fine motor control"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] toybox-chess-set",
+    "name": "[KN] Wooden Chess Set",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[KN] 6-8 hours",
+    "description": "[KN] Carve and shape your own chess pieces, then build a board. A challenging project that creates a family heirloom!",
+    "image": "[KN] /images/blocks.webp",
+    "rating": 4.9,
+    "reviewCount": 54,
+    "materials": [
+      {
+        "name": "[KN] Wood blocks",
+        "quantity": "[KN] Enough for 32 pieces"
+      },
+      {
+        "name": "[KN] Plywood for board",
+        "quantity": "[KN] 16\" x 16\""
+      },
+      {
+        "name": "[KN] Carving tools"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "[KN] Paint or wood stain"
+      },
+      {
+        "name": "[KN] Clear finish"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Design Pieces",
+        "description": "[KN] Sketch simplified designs for each piece type: King, Queen, Bishop, Knight, Rook, Pawn. Keep shapes recognizable but achievable.",
+        "duration": "[KN] 30 min"
+      },
+      {
+        "title": "[KN] Shape Pawns",
+        "description": "[KN] Start with 16 pawns - the simplest pieces. Shape, sand smooth. Get consistent sizing.",
+        "duration": "[KN] 1.5 hours",
+        "parentHelp": true
+      },
+      {
+        "title": "[KN] Carve Major Pieces",
+        "description": "[KN] Work on Kings, Queens, Bishops, Knights, and Rooks. Take your time on details.",
+        "duration": "[KN] 3 hours",
+        "parentHelp": true
+      },
+      {
+        "title": "[KN] Create Board",
+        "description": "[KN] Mark 64 squares (8x8 grid) on plywood. Paint or stain alternating squares. Apply finish.",
+        "duration": "[KN] 1.5 hours"
+      },
+      {
+        "title": "[KN] Finish Pieces",
+        "description": "[KN] Paint or stain pieces in two colors. Apply protective finish. Let cure completely.",
+        "duration": "[KN] 1 hour"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Carving tools are very sharp - adult only or close supervision",
+      "[KN] Carve away from body",
+      "[KN] Use proper ventilation with stains and finishes"
+    ],
+    "learningOutcomes": [
+      "[KN] Advanced woodworking",
+      "[KN] Strategic game appreciation",
+      "[KN] Patience and persistence",
+      "[KN] Artistic expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] toybox-ring-toss",
+    "name": "[KN] Ring Toss Game",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 1 hour",
+    "description": "[KN] Build a classic ring toss game for indoor or outdoor fun. Perfect for parties and family game nights!",
+    "image": "[KN] /images/blocks.webp",
+    "rating": 4.5,
+    "reviewCount": 108,
+    "materials": [
+      {
+        "name": "[KN] Wooden base",
+        "quantity": "[KN] 12\" x 12\""
+      },
+      {
+        "name": "[KN] Wooden dowels",
+        "quantity": "[KN] 5 pieces, 8\" tall"
+      },
+      {
+        "name": "[KN] Rope or embroidery hoops",
+        "quantity": "[KN] For rings"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "Drill"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Prepare Base",
+        "description": "[KN] Sand wooden base smooth. Mark positions for 5 pegs - one center, four corners.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Install Pegs",
+        "description": "[KN] Drill holes for dowels. Glue dowels into holes. Paint different point values on each peg.",
+        "duration": "[KN] 25 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KN] Create Rings",
+        "description": "[KN] Make rings from rope (form circles and tape/glue ends) or use embroidery hoops. Make 5-6 rings.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[KN] Paint the base and pegs in bright colors. Add numbers for scoring.",
+        "duration": "[KN] 20 min"
+      },
+      {
+        "title": "Play!",
+        "description": "[KN] Set up, stand back, and toss rings! Highest score wins. Adjust distance for difficulty.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Adult help needed for drilling",
+      "[KN] Ensure pegs are secure before playing"
+    ],
+    "learningOutcomes": [
+      "[KN] Hand-eye coordination",
+      "[KN] Basic math (scoring)",
+      "Sportsmanship",
+      "[KN] Motor skills"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] toybox-memory-game",
+    "name": "[KN] Memory Matching Game",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 45 min",
+    "description": "[KN] Create a personalized memory matching game with your own artwork. Great for brain training!",
+    "image": "[KN] /images/blocks.webp",
+    "rating": 4.6,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "Cardstock",
+        "quantity": "[KN] 24-32 squares"
+      },
+      {
+        "name": "[KN] Markers or crayons"
+      },
+      {
+        "name": "Stickers",
+        "optional": true
+      },
+      {
+        "name": "[KN] Clear contact paper",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Cut Cards",
+        "description": "[KN] Cut cardstock into equal-sized squares (2\" x 2\" works well). Make an even number - 24 or 32 cards.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Create Pairs",
+        "description": "[KN] Draw matching images on pairs of cards. Use shapes, animals, letters, or family photos!",
+        "duration": "[KN] 25 min"
+      },
+      {
+        "title": "[KN] Add Backs",
+        "description": "[KN] Decorate all card backs identically so pairs can't be identified from behind.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Protect (Optional)",
+        "description": "[KN] Cover cards with clear contact paper or laminate for durability.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "Play!",
+        "description": "[KN] Shuffle and lay face down. Take turns flipping two cards. Match pairs to win!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Scissors supervision for young children"
+    ],
+    "learningOutcomes": [
+      "[KN] Memory skills",
+      "Concentration",
+      "[KN] Visual recognition",
+      "Turn-taking"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] toybox-kaleidoscope",
+    "name": "Kaleidoscope",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KN] 1 hour",
+    "description": "[KN] Build a working kaleidoscope with mirrors and colorful beads. See the world in beautiful patterns!",
+    "image": "[KN] /images/blocks.webp",
+    "rating": 4.7,
+    "reviewCount": 96,
+    "materials": [
+      {
+        "name": "[KN] Cardboard tube",
+        "quantity": "[KN] 8-10\" long"
+      },
+      {
+        "name": "[KN] Mirror sheets or reflective paper",
+        "quantity": "[KN] 3 strips"
+      },
+      {
+        "name": "[KN] Clear plastic discs",
+        "quantity": "2"
+      },
+      {
+        "name": "[KN] Beads and sequins"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[KN] Decorative paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Create Mirror Triangle",
+        "description": "[KN] Cut three mirror strips that fit inside your tube. Tape them together to form a triangle, reflective sides facing in.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Prepare Tube",
+        "description": "[KN] Cut a viewing hole in one end cap. The mirror triangle should fit snugly inside the tube.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Insert Mirrors",
+        "description": "[KN] Carefully slide the mirror triangle into the tube. Secure in place.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Create Object Chamber",
+        "description": "[KN] At the other end, sandwich beads and sequins between two clear plastic discs. Attach to tube end.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[KN] Cover the outside with decorative paper. Add your name and designs!",
+        "duration": "[KN] 15 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Handle mirrors carefully - edges can be sharp",
+      "[KN] Don't look at bright lights through kaleidoscope"
+    ],
+    "learningOutcomes": [
+      "[KN] Light and reflection",
+      "Symmetry",
+      "[KN] Pattern recognition",
+      "[KN] Optics basics"
+    ],
+    "crossPillar": [
+      "[KN] sciencelab-invisible-ink"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "toybox-catapult",
+    "name": "[KN] Wooden Catapult",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "9-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KN] 1.5 hours",
+    "description": "[KN] Build a working catapult that launches small objects. Learn about lever physics and stored energy!",
+    "image": "[KN] /images/blocks.webp",
+    "rating": 4.8,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[KN] Popsicle sticks",
+        "quantity": "15-20"
+      },
+      {
+        "name": "[KN] Rubber bands",
+        "quantity": "5-6"
+      },
+      {
+        "name": "[KN] Plastic spoon"
+      },
+      {
+        "name": "[KN] Small pompoms or marshmallows",
+        "quantity": "[KN] For launching"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Create the Base",
+        "description": "[KN] Stack 5-7 popsicle sticks and rubber band both ends. This creates a sturdy base.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Build Launch Arm",
+        "description": "[KN] Take 2 sticks and rubber band only ONE end. Open the other end like scissors.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Combine Base and Arm",
+        "description": "[KN] Insert the base stack perpendicular into the launch arm opening. Secure with rubber bands.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Add Launching Cup",
+        "description": "[KN] Attach plastic spoon to the end of the launch arm with rubber bands.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Test and Adjust",
+        "description": "[KN] Load, aim, and launch! Adjust rubber band tension and fulcrum position for better distance.",
+        "duration": "[KN] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Only launch soft objects like pompoms",
+      "[KN] Never aim at people or animals",
+      "[KN] Launch in clear areas"
+    ],
+    "learningOutcomes": [
+      "[KN] Lever mechanics",
+      "[KN] Potential and kinetic energy",
+      "[KN] Engineering iteration",
+      "[KN] Physics concepts"
+    ],
+    "crossPillar": [
+      "[KN] sciencelab-egg-drop"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] toybox-balancing-eagle",
+    "name": "[KN] Balancing Eagle",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 45 min",
+    "description": "[KN] Create a bird that balances on its beak! Learn about center of gravity with this fun physics toy.",
+    "image": "[KN] /images/airplane.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "[KN] Cardstock or cardboard"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[KN] Pennies or coins",
+        "quantity": "2"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[KN] Markers for decoration"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Draw Eagle Shape",
+        "description": "[KN] Draw a simple eagle with spread wings on cardstock. Wings should extend outward and slightly downward.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Cut Out Shape",
+        "description": "[KN] Carefully cut out your eagle. Keep the beak pointed.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Add Weights",
+        "description": "[KN] Tape a penny under each wing tip. These create the counterbalance.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Find Balance Point",
+        "description": "[KN] Adjust coin position until the eagle balances on its beak when placed on your finger.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[KN] Color your eagle with markers. Try balancing on different surfaces!",
+        "duration": "[KN] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Scissors supervision for young children"
+    ],
+    "learningOutcomes": [
+      "[KN] Center of gravity",
+      "[KN] Balance and counterweight",
+      "[KN] Physics experimentation",
+      "[KN] Fine motor skills"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] toybox-paper-launcher",
+    "name": "[KN] Paper Airplane Launcher",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KN] 1 hour",
+    "description": "[KN] Build a rubber band launcher that sends paper airplanes soaring! Combine engineering and flight.",
+    "image": "[KN] /images/airplane.webp",
+    "rating": 4.6,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "Cardboard"
+      },
+      {
+        "name": "[KN] Rubber bands",
+        "quantity": "[KN] 3-5 strong ones"
+      },
+      {
+        "name": "[KN] Popsicle sticks"
+      },
+      {
+        "name": "Paper",
+        "quantity": "[KN] For airplanes"
+      },
+      {
+        "name": "[KN] Tape and glue"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Build Launch Track",
+        "description": "[KN] Create a cardboard track about 12\" long with raised edges to guide the airplane.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Create Tension System",
+        "description": "[KN] Attach rubber bands to a crossbar at the back of the track. Create a pull-back mechanism.",
+        "duration": "[KN] 20 min"
+      },
+      {
+        "title": "[KN] Add Release Trigger",
+        "description": "[KN] Design a simple trigger using popsicle sticks that holds and releases the rubber bands.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Make Paper Airplanes",
+        "description": "[KN] Fold several paper airplanes. Test different designs to see which launches best.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Launch and Adjust",
+        "description": "[KN] Load airplane, pull back, release! Adjust angle and tension for maximum distance.",
+        "duration": "[KN] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Never aim at people",
+      "[KN] Launch in open areas",
+      "[KN] Be careful of snapping rubber bands"
+    ],
+    "learningOutcomes": [
+      "[KN] Mechanical engineering",
+      "Aerodynamics",
+      "[KN] Energy transfer",
+      "[KN] Iterative design"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "toybox-kite",
+    "name": "[KN] Diamond Kite",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KN] 1.5 hours",
+    "description": "[KN] Build a classic diamond kite that soars! Experience the joy of flight with this timeless project.",
+    "image": "[KN] /images/airplane.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[KN] Dowels or sticks",
+        "quantity": "[KN] 2 pieces"
+      },
+      {
+        "name": "[KN] Plastic bag or tissue paper"
+      },
+      {
+        "name": "String",
+        "quantity": "[KN] Lots for flying!"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[KN] Ribbon for tail"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Create Frame",
+        "description": "[KN] Cross two sticks - vertical longer than horizontal. Tie firmly at intersection point.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Add Outline",
+        "description": "[KN] Run string around the outside of the frame, creating the kite shape. Secure at each stick end.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Cover with Skin",
+        "description": "[KN] Lay frame on plastic or paper. Cut with extra margin, fold over frame, and tape secure.",
+        "duration": "[KN] 20 min"
+      },
+      {
+        "title": "[KN] Attach Flying Line",
+        "description": "[KN] Tie flying string to the intersection point. Create a bridle for better control if needed.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Add Tail and Fly",
+        "description": "[KN] Attach a ribbon tail for stability. Find wind, run, and launch your kite!",
+        "duration": "[KN] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Never fly near power lines",
+      "[KN] Fly in open areas away from trees",
+      "[KN] Don't fly in storms"
+    ],
+    "learningOutcomes": [
+      "Aerodynamics",
+      "[KN] Wind and weather",
+      "[KN] Patience and persistence",
+      "[KN] Outdoor appreciation"
+    ],
+    "crossPillar": [
+      "[KN] outdoorquest-nature-hunt"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] toybox-rainstick",
+    "name": "Rainstick",
+    "pillar": "toybox",
+    "category": "Musical",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 45 min",
+    "description": "[KN] Create a musical instrument that sounds like falling rain. Perfect for relaxation and rhythm activities!",
+    "image": "[KN] /images/blocks.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[KN] Cardboard tube",
+        "quantity": "[KN] Paper towel or wrapping paper roll"
+      },
+      {
+        "name": "[KN] Rice or small beans",
+        "quantity": "[KN] 1/4 cup"
+      },
+      {
+        "name": "[KN] Aluminum foil"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[KN] Decorative paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Seal One End",
+        "description": "[KN] Cover one end of the tube tightly with paper and tape.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Create Internal Spiral",
+        "description": "[KN] Crinkle aluminum foil into a long snake. Twist it into a spiral and insert into the tube.",
+        "tip": "[KN] The foil creates the rain sound by slowing the rice.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Add Rice",
+        "description": "[KN] Pour rice or beans into the tube. Experiment with amounts for different sounds.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Seal Other End",
+        "description": "[KN] Close the open end securely with paper and tape. Shake to test - adjust if needed.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[KN] Cover with decorative paper. Add designs inspired by rain, nature, or your own creativity!",
+        "duration": "[KN] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Ensure ends are sealed tightly",
+      "[KN] Small items inside can be choking hazards if opened"
+    ],
+    "learningOutcomes": [
+      "[KN] Sound and acoustics",
+      "[KN] Rhythm and music",
+      "[KN] Cultural instruments",
+      "[KN] Sensory exploration"
+    ],
+    "crossPillar": [
+      "[KN] artstudio-nature-collage"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] toybox-sock-puppet",
+    "name": "[KN] Sock Puppet",
+    "pillar": "toybox",
+    "category": "Puppets",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 30 min",
+    "description": "[KN] Transform an old sock into a fun puppet character. Perfect for storytelling and imaginative play!",
+    "image": "[KN] /images/plush-bear.webp",
+    "rating": 4.5,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[KN] Clean sock"
+      },
+      {
+        "name": "[KN] Googly eyes",
+        "quantity": "2"
+      },
+      {
+        "name": "[KN] Felt scraps"
+      },
+      {
+        "name": "Yarn",
+        "quantity": "[KN] For hair"
+      },
+      {
+        "name": "[KN] Fabric glue"
+      },
+      {
+        "name": "Buttons",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Plan Your Character",
+        "description": "[KN] Decide what character your puppet will be - person, animal, monster? Gather materials in matching colors.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Add Eyes",
+        "description": "[KN] Glue googly eyes or felt circles onto the toe area of the sock.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Create Mouth",
+        "description": "[KN] Cut an oval of felt and glue inside the sock to create a mouth. Add a felt tongue if desired!",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Add Features",
+        "description": "[KN] Glue on yarn hair, felt ears, buttons, or other features to complete your character.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Put on a Show!",
+        "description": "[KN] Once glue is dry, put your hand in and bring your puppet to life!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Use fabric glue rather than hot glue with young children",
+      "[KN] Buttons can be choking hazards - consider felt alternatives for young kids"
+    ],
+    "learningOutcomes": [
+      "[KN] Creative expression",
+      "Storytelling",
+      "[KN] Character development",
+      "[KN] Communication skills"
+    ],
+    "crossPillar": [
+      "[KN] artstudio-paper-plate-animals"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] toybox-finger-puppets",
+    "name": "[KN] Felt Finger Puppets",
+    "pillar": "toybox",
+    "category": "Puppets",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 1 hour",
+    "description": "[KN] Create a set of adorable finger puppets from felt. Make a whole cast of characters for stories!",
+    "image": "[KN] /images/plush-bear.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[KN] Felt sheets",
+        "quantity": "[KN] Various colors"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[KN] Fabric glue or needle and thread"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "[KN] Small embellishments",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Cut Base Shapes",
+        "description": "[KN] Cut two finger-sized rectangles with rounded tops for each puppet. These form the body.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Glue or Sew Edges",
+        "description": "[KN] Join the two pieces along sides and top, leaving bottom open for your finger.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Add Faces",
+        "description": "[KN] Cut tiny felt pieces for eyes, noses, mouths. Glue in place. Use markers for details.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Create Characters",
+        "description": "[KN] Add ears for animals, hair for people, wings for birds. Get creative!",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Perform Stories",
+        "description": "[KN] Put puppets on all fingers and act out stories. Make a mini theater from a box!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Supervise scissors use",
+      "[KN] Use child-safe glue"
+    ],
+    "learningOutcomes": [
+      "[KN] Fine motor skills",
+      "Storytelling",
+      "[KN] Character creation",
+      "Imagination"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] toybox-rubber-band-car",
+    "name": "[KN] Rubber Band Car",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 45 min",
+    "description": "[KN] Build a car powered by rubber band energy! Watch it zoom across the floor.",
+    "image": "[KN] /images/wooden-car.webp",
+    "rating": 4.6,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[KN] Water bottle or small box"
+      },
+      {
+        "name": "[KN] Bottle caps",
+        "quantity": "[KN] 4 for wheels"
+      },
+      {
+        "name": "[KN] Wooden skewers",
+        "quantity": "[KN] 2 for axles"
+      },
+      {
+        "name": "[KN] Rubber bands",
+        "quantity": "2-3"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Prepare the Body",
+        "description": "[KN] Clean your bottle or box. Poke holes on each side for axles to pass through.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Install Axles",
+        "description": "[KN] Push skewers through the holes. They should spin freely.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Attach Wheels",
+        "description": "[KN] Poke holes in bottle cap centers. Push onto skewer ends. Secure with tape or glue.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Add Rubber Band Power",
+        "description": "[KN] Hook rubber band around rear axle. Attach other end to front of car body.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Wind and Race!",
+        "description": "[KN] Roll car backward to wind rubber band. Release and watch it go! Race against friends.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Be careful with sharp skewer ends",
+      "[KN] Don't aim at people when releasing"
+    ],
+    "learningOutcomes": [
+      "[KN] Stored energy",
+      "[KN] Simple machines",
+      "[KN] Engineering design",
+      "[KN] Cause and effect"
+    ],
+    "crossPillar": [
+      "[KN] sciencelab-balloon-rocket"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] toybox-spinning-top",
+    "name": "[KN] Wooden Spinning Top",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 30 min",
+    "description": "[KN] Craft a classic spinning top that twirls for ages. Decorate with colorful patterns that blend when spinning!",
+    "image": "[KN] /images/blocks.webp",
+    "rating": 4.4,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[KN] Cardboard circles",
+        "quantity": "[KN] 2-3 sizes"
+      },
+      {
+        "name": "[KN] Wooden dowel or pencil"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "Glue"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Create Disc",
+        "description": "[KN] Cut a circle from cardboard, about 3-4 inches diameter. Ensure it's perfectly round.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Add Spindle",
+        "description": "[KN] Poke a hole in exact center. Insert dowel or sharpened pencil. Glue in place.",
+        "tip": "[KN] Center placement is crucial for good spinning!",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Decorate Top",
+        "description": "[KN] Draw colorful patterns - spirals, stripes, dots. Colors will blend when spinning!",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Balance and Adjust",
+        "description": "[KN] Spin test your top. If wobbly, check center alignment. Trim edges if uneven.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Spin Competitions",
+        "description": "[KN] Practice spinning technique. Challenge friends - longest spin wins!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Pencil points can be sharp"
+    ],
+    "learningOutcomes": [
+      "[KN] Rotational physics",
+      "[KN] Balance and symmetry",
+      "[KN] Color blending",
+      "[KN] Fine motor control"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] jigyasulab-physics",
+    "name": "[KN] Physics Lab",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "9-12",
+    "difficulty": "Medium",
+    "timeToMake": "Interactive",
+    "description": "[KN] Enter the Physics Lab and explore mechanics, optics, and energy interactively.",
+    "materials": [],
+    "image": "[KN] /images/hero-camp.webp",
+    "rating": 5,
+    "reviewCount": 412,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "[KN] Physics concepts",
+      "[KN] Scientific thinking"
+    ],
+    "url": "/physics",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-chem",
+    "name": "[KN] Chemistry Lab",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "Interactive",
+    "description": "[KN] Mix elements and observe reactions in our safe, virtual Chemistry Lab.",
+    "materials": [],
+    "image": "[KN] /images/slime.webp",
+    "rating": 4.9,
+    "reviewCount": 388,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "[KN] Chemical reactions",
+      "[KN] Molecular structures"
+    ],
+    "url": "/chem",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-bio",
+    "name": "[KN] Biology Lab",
+    "pillar": "sciencelab",
+    "category": "Biology",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "Interactive",
+    "description": "[KN] Explore the wonders of life, cells, and ecosystems in the Biology Lab.",
+    "materials": [],
+    "image": "[KN] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 275,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Anatomy",
+      "Ecosystems"
+    ],
+    "url": "/bio",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-math",
+    "name": "[KN] Math Lab",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "Interactive",
+    "description": "[KN] Solve puzzles and visualize mathematical concepts in a fun, interactive way.",
+    "materials": [],
+    "image": "[KN] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 156,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Geometry",
+      "[KN] Problem solving"
+    ],
+    "url": "/math",
+    "isPremium": false
+  },
+  {
+    "id": "[KN] jigyasulab-cosmos",
+    "name": "[KN] Cosmos Lab",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "Interactive",
+    "description": "[KN] Travel through space, explore planets, and understand the universe.",
+    "materials": [],
+    "image": "[KN] /images/hero-camp.webp",
+    "rating": 5,
+    "reviewCount": 501,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Astronomy",
+      "[KN] Space exploration"
+    ],
+    "url": "/cosmos",
+    "isPremium": false
+  },
+  {
+    "id": "[KN] sciencelab-volcano",
+    "name": "[KN] Erupting Volcano",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 30 min",
+    "description": "[KN] Create an explosive volcanic eruption using kitchen chemistry! Watch the foamy lava flow and learn about chemical reactions.",
+    "image": "[KN] /images/volcano.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 234,
+    "materials": [
+      {
+        "name": "[KN] Baking soda",
+        "quantity": "[KN] 3 tablespoons"
+      },
+      {
+        "name": "Vinegar",
+        "quantity": "[KN] 1 cup"
+      },
+      {
+        "name": "[KN] Dish soap",
+        "quantity": "[KN] A few drops"
+      },
+      {
+        "name": "[KN] Food coloring",
+        "quantity": "[KN] Red and orange"
+      },
+      {
+        "name": "[KN] Play-doh or clay",
+        "quantity": "[KN] For volcano shape"
+      },
+      {
+        "name": "[KN] Plastic bottle or container"
+      },
+      {
+        "name": "[KN] Tray or pan",
+        "quantity": "[KN] To catch overflow"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Build Your Volcano",
+        "description": "[KN] Place plastic bottle on tray. Shape clay or play-doh around it to create a volcano mountain. Leave the bottle opening exposed at the top.",
+        "tip": "[KN] Make it look realistic with ridges and a crater!",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Add the Lava Base",
+        "description": "[KN] Pour baking soda into the bottle. Add a few drops of dish soap and red/orange food coloring.",
+        "duration": "[KN] 3 min"
+      },
+      {
+        "title": "[KN] Prepare for Eruption",
+        "description": "[KN] Make sure everyone can see! Have your vinegar ready to pour.",
+        "duration": "[KN] 2 min"
+      },
+      {
+        "title": "[KN] Eruption Time!",
+        "description": "[KN] Pour vinegar into the bottle and step back. Watch the foamy lava erupt!",
+        "duration": "[KN] 1 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KN] Understand the Science",
+        "description": "[KN] The baking soda (base) reacts with vinegar (acid) to create carbon dioxide gas, which makes the bubbles and foam!",
+        "duration": "[KN] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Do this experiment on a tray or outside - it gets messy!",
+      "[KN] Vinegar can irritate eyes - don't get too close",
+      "[KN] Adult supervision recommended"
+    ],
+    "learningOutcomes": [
+      "[KN] Acid-base reactions",
+      "[KN] Chemical reactions",
+      "[KN] Carbon dioxide production",
+      "[KN] Scientific observation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] sciencelab-density-tower",
+    "name": "[KN] Rainbow Density Tower",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 30 min",
+    "description": "[KN] Stack liquids in a rainbow! Learn about density as you create layers that magically don't mix.",
+    "image": "[KN] /images/crystal.webp",
+    "rating": 4.8,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "Honey",
+        "quantity": "[KN] 1/4 cup"
+      },
+      {
+        "name": "[KN] Corn syrup",
+        "quantity": "[KN] 1/4 cup"
+      },
+      {
+        "name": "[KN] Dish soap",
+        "quantity": "[KN] 1/4 cup"
+      },
+      {
+        "name": "Water",
+        "quantity": "[KN] 1/4 cup"
+      },
+      {
+        "name": "[KN] Vegetable oil",
+        "quantity": "[KN] 1/4 cup"
+      },
+      {
+        "name": "[KN] Rubbing alcohol",
+        "quantity": "[KN] 1/4 cup"
+      },
+      {
+        "name": "[KN] Food coloring"
+      },
+      {
+        "name": "[KN] Tall clear glass or jar"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Color Your Liquids",
+        "description": "[KN] Add different food coloring to water, corn syrup, and rubbing alcohol. Honey and oil have natural colors.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Pour the Heaviest First",
+        "description": "[KN] Start with honey at the bottom of your glass. Pour slowly down the side.",
+        "tip": "[KN] Patience is key - pour very slowly!",
+        "duration": "[KN] 3 min"
+      },
+      {
+        "title": "[KN] Add Middle Layers",
+        "description": "[KN] Carefully add corn syrup, then dish soap, then water. Pour down the side of the glass.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Top With Light Liquids",
+        "description": "[KN] Add vegetable oil, then carefully add rubbing alcohol on top.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "Experiment!",
+        "description": "[KN] Try dropping small objects - where do they float? Predict based on density!",
+        "duration": "[KN] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Don't drink any of these liquids!",
+      "[KN] Rubbing alcohol requires adult handling",
+      "[KN] Wash hands after experiment"
+    ],
+    "learningOutcomes": [
+      "[KN] Density concepts",
+      "[KN] Liquid properties",
+      "[KN] Scientific layering",
+      "[KN] Prediction and observation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] sciencelab-crystals",
+    "name": "[KN] Crystal Growing",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KN] 30 min + 3-5 days",
+    "description": "[KN] Grow beautiful crystals from sugar, salt, or borax! Watch amazing structures form over several days.",
+    "image": "[KN] /images/crystal.webp",
+    "rating": 4.8,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[KN] Borax, salt, or sugar",
+        "quantity": "[KN] 1 cup"
+      },
+      {
+        "name": "[KN] Hot water",
+        "quantity": "[KN] 2 cups"
+      },
+      {
+        "name": "[KN] Glass jar"
+      },
+      {
+        "name": "String"
+      },
+      {
+        "name": "Pencil"
+      },
+      {
+        "name": "[KN] Pipe cleaners",
+        "optional": true
+      },
+      {
+        "name": "[KN] Food coloring",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Create Super-Saturated Solution",
+        "description": "[KN] Have an adult pour hot water into jar. Add borax/salt/sugar slowly, stirring until no more dissolves.",
+        "duration": "[KN] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KN] Prepare Crystal Seed",
+        "description": "[KN] Tie string to pencil. Shape pipe cleaner into a form (star, heart) and tie to string. Or just use string.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Add Color (Optional)",
+        "description": "[KN] Add food coloring to solution for colored crystals.",
+        "duration": "[KN] 2 min"
+      },
+      {
+        "title": "[KN] Suspend and Wait",
+        "description": "[KN] Lower string/pipe cleaner into solution. Rest pencil across jar top. Place somewhere still.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Watch and Wait",
+        "description": "[KN] Check daily! Crystals form as water evaporates. Full growth takes 3-5 days.",
+        "duration": "[KN] 3-5 days"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Adult handles hot water only",
+      "[KN] Borax is not edible - wash hands",
+      "[KN] Don't move or disturb jar during growth"
+    ],
+    "learningOutcomes": [
+      "[KN] Crystallization process",
+      "[KN] Saturation concepts",
+      "[KN] Patience and observation",
+      "[KN] Molecular structure"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] sciencelab-slime",
+    "name": "[KN] Slime Factory",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 15 min",
+    "description": "[KN] Mix up oozy, stretchy, satisfying slime! Experiment with colors, glitter, and different consistencies.",
+    "image": "[KN] /images/slime.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 312,
+    "materials": [
+      {
+        "name": "[KN] White school glue",
+        "quantity": "[KN] 1/2 cup"
+      },
+      {
+        "name": "[KN] Contact lens solution (with boric acid)",
+        "quantity": "[KN] 1 tablespoon"
+      },
+      {
+        "name": "[KN] Baking soda",
+        "quantity": "[KN] 1/2 teaspoon"
+      },
+      {
+        "name": "[KN] Food coloring"
+      },
+      {
+        "name": "Glitter",
+        "optional": true
+      },
+      {
+        "name": "[KN] Bowl and spoon"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Mix Base",
+        "description": "[KN] Pour glue into bowl. Add food coloring and glitter if desired. Stir well.",
+        "duration": "[KN] 3 min"
+      },
+      {
+        "title": "[KN] Add Activator",
+        "description": "[KN] Sprinkle in baking soda and mix. Then add contact solution and stir rapidly.",
+        "duration": "[KN] 3 min"
+      },
+      {
+        "title": "[KN] Knead the Slime",
+        "description": "[KN] Once slime forms, pick it up and knead with hands. It will become less sticky.",
+        "tip": "[KN] If too sticky, add more contact solution. If too stiff, add more glue.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Test Properties",
+        "description": "[KN] Stretch it slowly - does it pull? Pull fast - does it snap? Poke it - does it bounce?",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Store Properly",
+        "description": "[KN] Store in airtight container. Slime lasts 1-2 weeks with proper storage!",
+        "duration": "[KN] 2 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Wash hands after playing",
+      "[KN] Don't eat slime",
+      "[KN] Play on protected surface - slime can stain"
+    ],
+    "learningOutcomes": [
+      "[KN] Polymer chemistry",
+      "[KN] Non-Newtonian fluids",
+      "[KN] Following recipes",
+      "[KN] Sensory exploration"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] sciencelab-balloon-rocket",
+    "name": "[KN] Balloon Rocket",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 15 min",
+    "description": "[KN] Launch a balloon across the room on a string! Learn about thrust and Newton's third law.",
+    "image": "[KN] /images/volcano.webp",
+    "rating": 4.7,
+    "reviewCount": 187,
+    "materials": [
+      {
+        "name": "Balloon"
+      },
+      {
+        "name": "String",
+        "quantity": "[KN] 10-15 feet"
+      },
+      {
+        "name": "Straw"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[KN] Two chairs or posts"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Set Up Track",
+        "description": "[KN] Thread string through straw. Tie string between two chairs, keeping it taut and level.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Prepare Balloon",
+        "description": "[KN] Blow up balloon but don't tie it. Pinch the end to keep air in.",
+        "duration": "[KN] 2 min"
+      },
+      {
+        "title": "[KN] Attach to Straw",
+        "description": "[KN] While someone holds the balloon closed, tape it to the straw on the string.",
+        "duration": "[KN] 3 min"
+      },
+      {
+        "title": "Launch!",
+        "description": "[KN] Release the balloon and watch it zoom along the string!",
+        "duration": "[KN] 1 min"
+      },
+      {
+        "title": "Experiment",
+        "description": "[KN] Try different balloon sizes, angles, or adding weight. What changes the speed?",
+        "duration": "[KN] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Don't release balloons outdoors - harmful to wildlife",
+      "[KN] Supervise young children with balloons"
+    ],
+    "learningOutcomes": [
+      "[KN] Newton's third law",
+      "[KN] Thrust and propulsion",
+      "[KN] Variables in experiments",
+      "[KN] Cause and effect"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] sciencelab-invisible-ink",
+    "name": "[KN] Invisible Ink Messages",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 20 min",
+    "description": "[KN] Write secret messages that appear when heated! Perfect for spy games and learning about chemical changes.",
+    "image": "[KN] /images/crystal.webp",
+    "rating": 4.6,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "[KN] Lemon juice",
+        "quantity": "[KN] 2-3 tablespoons"
+      },
+      {
+        "name": "[KN] White paper"
+      },
+      {
+        "name": "[KN] Cotton swab or paintbrush"
+      },
+      {
+        "name": "[KN] Lamp or iron",
+        "quantity": "[KN] Heat source"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Prepare Ink",
+        "description": "[KN] Squeeze lemon juice into a small bowl. This is your invisible ink!",
+        "duration": "[KN] 3 min"
+      },
+      {
+        "title": "[KN] Write Message",
+        "description": "[KN] Dip cotton swab in lemon juice and write on white paper. Use enough juice to wet the paper.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Let Dry",
+        "description": "[KN] Allow paper to dry completely. The message becomes invisible!",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Reveal Message",
+        "description": "[KN] Hold paper near (not touching!) a light bulb or have adult use warm iron. Message appears brown!",
+        "duration": "[KN] 5 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KN] Understand Why",
+        "description": "[KN] Heat oxidizes the lemon juice, turning it brown. The acid weakens paper where you wrote!",
+        "duration": "[KN] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Adult supervision required for heat source",
+      "[KN] Don't touch hot lamp or iron",
+      "[KN] Keep paper safe distance from heat"
+    ],
+    "learningOutcomes": [
+      "[KN] Oxidation reactions",
+      "[KN] Chemical changes",
+      "[KN] Heat effects",
+      "[KN] Secret communication history"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] sciencelab-magnetic-maze",
+    "name": "[KN] Magnetic Maze",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KN] 45 min",
+    "description": "[KN] Build a maze and guide objects through using magnet power! Learn about magnetic forces.",
+    "image": "[KN] /images/crystal.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "[KN] Cardboard box lid or shallow box"
+      },
+      {
+        "name": "[KN] Strong magnets",
+        "quantity": "2"
+      },
+      {
+        "name": "[KN] Paper clips or small metal objects"
+      },
+      {
+        "name": "[KN] Straws or cardboard strips"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "Tape"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Design Maze",
+        "description": "[KN] Draw a maze path inside the box lid. Mark start and finish points.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Build Walls",
+        "description": "[KN] Cut straws or cardboard strips and tape along maze walls to create barriers.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Add Obstacles",
+        "description": "[KN] Include dead ends, tunnels, or challenges. Make it tricky but solvable!",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Test Magnetic Control",
+        "description": "[KN] Place paper clip in maze. Hold magnet under the box and move it. The clip follows!",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Play and Race",
+        "description": "[KN] Navigate through the maze using only the magnet. Time yourself or race friends!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Keep strong magnets away from electronics",
+      "[KN] Supervise small magnet use with young children"
+    ],
+    "learningOutcomes": [
+      "[KN] Magnetic fields",
+      "[KN] Forces at a distance",
+      "Problem-solving",
+      "[KN] Hand-eye coordination"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] sciencelab-solar-oven",
+    "name": "[KN] Solar Oven Roasted Papad",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KN] 1 hour + cooking",
+    "description": "[KN] Harness the incredible power of the sun to build your own solar oven and perfectly roast crispy papads! Learn about solar thermal energy, reflection, and the greenhouse effect while making a tasty, traditional snack.",
+    "image": "[KN] /images/volcano.webp",
+    "rating": 4.8,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[KN] Pizza box"
+      },
+      {
+        "name": "[KN] Aluminum foil"
+      },
+      {
+        "name": "[KN] Plastic wrap"
+      },
+      {
+        "name": "[KN] Black paper"
+      },
+      {
+        "name": "[KN] Tape and scissors"
+      },
+      {
+        "name": "[KN] Graham crackers, chocolate, marshmallows"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Create Flap",
+        "description": "[KN] Cut three sides of a square in box lid, leaving one side as hinge. Fold flap up.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Line with Foil",
+        "description": "[KN] Cover the flap's inner surface with aluminum foil, shiny side out. Smooth flat.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Create Window",
+        "description": "[KN] Tape plastic wrap over the hole created by the flap. This traps heat inside.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Prepare Interior",
+        "description": "[KN] Line bottom of box with black paper (absorbs heat). Add more foil on inner sides.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Cook S'mores!",
+        "description": "[KN] Place s'more ingredients inside. Angle toward sun, prop flap to reflect light in. Wait 30-60 min!",
+        "duration": "[KN] 30-60 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Only use on sunny days",
+      "[KN] Contents get hot - use oven mitts",
+      "[KN] Adult supervision when opening"
+    ],
+    "learningOutcomes": [
+      "[KN] Solar energy",
+      "[KN] Heat absorption and reflection",
+      "[KN] Renewable energy concepts",
+      "[KN] Engineering design"
+    ],
+    "crossPillar": [
+      "[KN] outdoorquest-cloud-watching"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] sciencelab-dancing-raisins",
+    "name": "[KN] Dancing Raisins",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 10 min",
+    "description": "[KN] Watch raisins dance up and down in a glass! A simple experiment that demonstrates gas bubbles and density.",
+    "image": "[KN] /images/volcano.webp",
+    "rating": 4.4,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[KN] Clear soda (Sprite or club soda)",
+        "quantity": "[KN] 1 glass"
+      },
+      {
+        "name": "Raisins",
+        "quantity": "[KN] Small handful"
+      },
+      {
+        "name": "[KN] Clear glass or jar"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Pour Soda",
+        "description": "[KN] Fill a clear glass about 3/4 full with clear carbonated soda.",
+        "duration": "[KN] 1 min"
+      },
+      {
+        "title": "[KN] Drop Raisins",
+        "description": "[KN] Drop 5-8 raisins into the soda. They'll sink to the bottom at first.",
+        "duration": "[KN] 1 min"
+      },
+      {
+        "title": "[KN] Watch the Dance",
+        "description": "[KN] Wait a minute - raisins start to rise, then fall, then rise again!",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Understand Why",
+        "description": "[KN] CO2 bubbles stick to wrinkly raisins, making them float. At top, bubbles pop and raisins sink!",
+        "duration": "[KN] 3 min"
+      },
+      {
+        "title": "[KN] Try Variations",
+        "description": "[KN] Test other small objects - what else dances? Try different sodas.",
+        "duration": "[KN] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Don't drink the soda after experiment"
+    ],
+    "learningOutcomes": [
+      "[KN] Density and buoyancy",
+      "[KN] Carbon dioxide properties",
+      "[KN] Observation skills",
+      "[KN] Scientific prediction"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] sciencelab-static-butterfly",
+    "name": "[KN] Static Electricity Butterfly",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 20 min",
+    "description": "[KN] Make a butterfly's wings flutter using static electricity! No batteries needed - just science!",
+    "image": "[KN] /images/crystal.webp",
+    "rating": 4.5,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[KN] Tissue paper"
+      },
+      {
+        "name": "Cardstock"
+      },
+      {
+        "name": "Balloon"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "Markers"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Create Body",
+        "description": "[KN] Cut a butterfly body shape from cardstock. Make it sturdy - this is the base.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Cut Tissue Wings",
+        "description": "[KN] Cut delicate wing shapes from tissue paper. Make them light and thin.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Attach Wings",
+        "description": "[KN] Tape wings to body at center only. Wings should be free to move on edges.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Charge Balloon",
+        "description": "[KN] Blow up balloon and rub vigorously on your hair or wool sweater.",
+        "duration": "[KN] 2 min"
+      },
+      {
+        "title": "[KN] Make Wings Flutter",
+        "description": "[KN] Hold charged balloon near tissue wings - watch them rise toward it! Move balloon to make them flutter.",
+        "duration": "[KN] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Latex allergy caution with balloons"
+    ],
+    "learningOutcomes": [
+      "[KN] Static electricity",
+      "[KN] Electric charges",
+      "[KN] Attraction forces",
+      "[KN] Conductors vs insulators"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] sciencelab-water-cycle",
+    "name": "[KN] Water Cycle in a Bag",
+    "pillar": "sciencelab",
+    "category": "Biology",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 15 min + observation",
+    "description": "[KN] Create a mini water cycle in a plastic bag! Watch evaporation, condensation, and precipitation happen.",
+    "image": "[KN] /images/crystal.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[KN] Ziplock bag",
+        "quantity": "[KN] Quart size"
+      },
+      {
+        "name": "Water",
+        "quantity": "[KN] 1/4 cup"
+      },
+      {
+        "name": "[KN] Blue food coloring"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[KN] Sunny window"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Draw Scene",
+        "description": "[KN] Draw clouds at top of bag, sun, and waves at bottom using permanent marker.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Add Water",
+        "description": "[KN] Pour water into bag with blue food coloring. This is your ocean!",
+        "duration": "[KN] 2 min"
+      },
+      {
+        "title": "[KN] Seal and Mount",
+        "description": "[KN] Seal bag tightly. Tape to sunny window at eye level.",
+        "duration": "[KN] 3 min"
+      },
+      {
+        "title": "[KN] Observe Changes",
+        "description": "[KN] Check throughout the day. Water evaporates, condenses on bag, and \"rains\" down!",
+        "duration": "Ongoing"
+      },
+      {
+        "title": "[KN] Label the Cycle",
+        "description": "[KN] Add labels: evaporation (water rising), condensation (droplets forming), precipitation (drops falling).",
+        "duration": "[KN] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Ensure bag is sealed to prevent leaks"
+    ],
+    "learningOutcomes": [
+      "[KN] Water cycle stages",
+      "[KN] Evaporation and condensation",
+      "[KN] Solar energy effects",
+      "[KN] Earth science basics"
+    ],
+    "crossPillar": [
+      "[KN] outdoorquest-cloud-watching"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] sciencelab-egg-drop",
+    "name": "[KN] Egg Drop Challenge",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[KN] 1 hour",
+    "description": "[KN] Design a contraption to protect an egg from a high drop! Classic engineering challenge that teaches impact absorption.",
+    "image": "[KN] /images/volcano.webp",
+    "rating": 4.9,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[KN] Raw eggs",
+        "quantity": "[KN] 2-3 for testing"
+      },
+      {
+        "name": "Straws"
+      },
+      {
+        "name": "Balloons"
+      },
+      {
+        "name": "[KN] Cotton balls"
+      },
+      {
+        "name": "[KN] Bubble wrap"
+      },
+      {
+        "name": "[KN] Rubber bands"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[KN] Small box"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Study the Problem",
+        "description": "[KN] Understand forces: impact, gravity, momentum. What slows falls? What absorbs shock?",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Design Your Device",
+        "description": "[KN] Sketch ideas. Consider: padding, parachute, crumple zones, suspension systems.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Build Prototype",
+        "description": "[KN] Construct your egg protection device. Secure egg inside with cushioning materials.",
+        "duration": "[KN] 30 min"
+      },
+      {
+        "title": "[KN] Test Drop",
+        "description": "[KN] Start from low height. If successful, go higher! Document results.",
+        "duration": "[KN] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "Iterate",
+        "description": "[KN] If egg breaks, analyze why. Improve design and test again!",
+        "duration": "Ongoing"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Do drops outside - eggs are messy!",
+      "[KN] Adult supervision for high drops",
+      "[KN] Wash hands after handling raw eggs"
+    ],
+    "learningOutcomes": [
+      "[KN] Engineering design process",
+      "[KN] Force and impact",
+      "[KN] Iterative improvement",
+      "Problem-solving"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] artstudio-finger-paint",
+    "name": "[KN] Finger Paint Masterpiece",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-5",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 20 min",
+    "description": "[KN] Get messy with finger paints! Create colorful artwork while developing fine motor skills and sensory exploration.",
+    "image": "[KN] /images/finger-paint.webp",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 198,
+    "materials": [
+      {
+        "name": "[KN] Finger paints",
+        "quantity": "[KN] Various colors"
+      },
+      {
+        "name": "[KN] Large paper",
+        "quantity": "[KN] Several sheets"
+      },
+      {
+        "name": "[KN] Smock or old shirt"
+      },
+      {
+        "name": "[KN] Plastic tablecloth"
+      },
+      {
+        "name": "[KN] Water bowl and towels"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Set Up Space",
+        "description": "[KN] Cover table with plastic. Put on smock. Tape paper down so it doesn't move.",
+        "duration": "[KN] 5 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KN] Explore Colors",
+        "description": "[KN] Start with one color. Dip fingers and make marks. Try dots, lines, swirls!",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Mix Colors",
+        "description": "[KN] Add another color. See what happens when they blend! Yellow + blue = ?",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Try Techniques",
+        "description": "[KN] Use whole hand, just fingertips, sides of hands. Make prints and patterns.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Clean Up",
+        "description": "[KN] Wash hands. Let painting dry flat. Display your masterpiece!",
+        "duration": "[KN] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Use non-toxic, washable paints",
+      "[KN] Supervise to prevent paint eating",
+      "[KN] Protect floor and furniture"
+    ],
+    "learningOutcomes": [
+      "[KN] Sensory exploration",
+      "[KN] Color mixing",
+      "[KN] Fine motor development",
+      "[KN] Creative expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] artstudio-nature-collage",
+    "name": "[KN] Nature Collage",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 30 min",
+    "description": "[KN] Collect treasures from nature and arrange them into beautiful artwork! Combines outdoor exploration with creativity.",
+    "image": "[KN] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[KN] Leaves, flowers, twigs"
+      },
+      {
+        "name": "[KN] Cardstock or cardboard",
+        "quantity": "[KN] For base"
+      },
+      {
+        "name": "[KN] White glue"
+      },
+      {
+        "name": "[KN] Optional: contact paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Nature Walk",
+        "description": "[KN] Go outside and collect natural items: leaves, petals, small twigs, seeds, grass.",
+        "tip": "[KN] Look for different colors, textures, and shapes!",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Sort Treasures",
+        "description": "[KN] Lay out your collection. Group by color, size, or type.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Plan Design",
+        "description": "[KN] Arrange items on your paper WITHOUT gluing. Try different layouts.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Glue in Place",
+        "description": "[KN] Once happy with design, glue items down one by one. Press gently.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Preserve (Optional)",
+        "description": "[KN] Cover with clear contact paper to preserve, or let dry and display!",
+        "duration": "[KN] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Don't pick protected plants",
+      "[KN] Wash hands after collecting",
+      "[KN] Check for insects before bringing items inside"
+    ],
+    "learningOutcomes": [
+      "[KN] Nature appreciation",
+      "[KN] Design and composition",
+      "[KN] Texture exploration",
+      "[KN] Environmental awareness"
+    ],
+    "crossPillar": [
+      "[KN] outdoorquest-nature-hunt"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] artstudio-tiedye",
+    "name": "[KN] Bandhani Tie-Dye Dupatta",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KN] 1 hour + dry time",
+    "description": "[KN] Discover the ancient Indian art of Bandhani! Use rubber bands and vibrant natural dyes to create mesmerizing geometric patterns on a cotton dupatta or scarf.",
+    "image": "[KN] /images/tiedye.webp",
+    "rating": 4.9,
+    "reviewCount": 223,
+    "materials": [
+      {
+        "name": "[KN] White cotton t-shirt"
+      },
+      {
+        "name": "[KN] Fabric dye kit",
+        "quantity": "[KN] Multiple colors"
+      },
+      {
+        "name": "[KN] Rubber bands",
+        "quantity": "10-20"
+      },
+      {
+        "name": "[KN] Plastic bags"
+      },
+      {
+        "name": "Gloves"
+      },
+      {
+        "name": "[KN] Plastic tablecloth"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Wet the Shirt",
+        "description": "[KN] Soak shirt in water and wring out until damp. This helps dye spread evenly.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Create Pattern",
+        "description": "[KN] For spiral: pinch center and twist entire shirt. For stripes: fold accordion-style. Secure with rubber bands.",
+        "tip": "[KN] Tighter bands = sharper lines. More bands = more white space.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Mix Dyes",
+        "description": "[KN] Prepare dyes according to package. Wear gloves from this point on!",
+        "duration": "[KN] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[KN] Apply Color",
+        "description": "[KN] Squeeze dye onto shirt sections. Use different colors in different areas. Flip and do back too.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Wait and Rinse",
+        "description": "[KN] Bag the shirt and wait 6-24 hours. Rinse under cold water until water runs clear. Remove bands and wash.",
+        "duration": "[KN] 24 hours"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Wear gloves - dye stains!",
+      "[KN] Work outdoors or on protected surface",
+      "[KN] Wash separately first few times"
+    ],
+    "learningOutcomes": [
+      "[KN] Pattern creation",
+      "[KN] Color theory",
+      "[KN] Following multi-step processes",
+      "[KN] Patience and delayed gratification"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] artstudio-paper-plate-animals",
+    "name": "[KN] Paper Plate Animals",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 25 min",
+    "description": "[KN] Transform simple paper plates into adorable animals! Great for parties or imaginative play.",
+    "image": "[KN] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[KN] Paper plates",
+        "quantity": "[KN] 1-2 per animal"
+      },
+      {
+        "name": "[KN] Paint or markers"
+      },
+      {
+        "name": "[KN] Construction paper"
+      },
+      {
+        "name": "[KN] Googly eyes"
+      },
+      {
+        "name": "[KN] Glue and scissors"
+      },
+      {
+        "name": "[KN] Pipe cleaners",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Choose Animal",
+        "description": "[KN] Pick your favorite animal! Lion, pig, frog, cat, and owl are great starters.",
+        "duration": "[KN] 2 min"
+      },
+      {
+        "title": "[KN] Paint Base",
+        "description": "[KN] Paint the plate the main color of your animal. Let dry.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Cut Features",
+        "description": "[KN] Cut ears, noses, whiskers, beaks from construction paper.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Assemble Face",
+        "description": "[KN] Glue on googly eyes and paper features. Add details with markers.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Add Extras",
+        "description": "[KN] Attach popsicle stick for a mask, or hang as decoration!",
+        "duration": "[KN] 3 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Supervise scissor use",
+      "[KN] Use washable paints"
+    ],
+    "learningOutcomes": [
+      "[KN] Animal recognition",
+      "[KN] Following instructions",
+      "[KN] Fine motor skills",
+      "[KN] Creative expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] artstudio-rock-painting",
+    "name": "[KN] Rock Painting",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 30 min",
+    "description": "[KN] Turn ordinary rocks into colorful treasures! Paint animals, patterns, or inspirational words.",
+    "image": "[KN] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[KN] Smooth rocks",
+        "quantity": "3-5"
+      },
+      {
+        "name": "[KN] Acrylic paint",
+        "quantity": "[KN] Various colors"
+      },
+      {
+        "name": "Paintbrushes",
+        "quantity": "[KN] Various sizes"
+      },
+      {
+        "name": "[KN] Clear sealant",
+        "optional": true
+      },
+      {
+        "name": "[KN] Pencil for sketching"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Find Rocks",
+        "description": "[KN] Look for smooth, flat rocks. Wash and dry them completely.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Plan Design",
+        "description": "[KN] Lightly sketch your design with pencil. Animals, mandalas, and words work great!",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Paint Base",
+        "description": "[KN] Paint background color. Let dry completely before adding details.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Add Details",
+        "description": "[KN] Paint your design. Start with larger shapes, add small details last.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Seal and Share",
+        "description": "[KN] Optional: apply clear coat. Hide rocks for others to find or keep as decoration!",
+        "duration": "[KN] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Use acrylic paints - they're waterproof when dry",
+      "[KN] Seal if placing outdoors"
+    ],
+    "learningOutcomes": [
+      "[KN] Painting techniques",
+      "[KN] Working with 3D surfaces",
+      "[KN] Community kindness (rock hiding)",
+      "[KN] Nature appreciation"
+    ],
+    "crossPillar": [
+      "[KN] outdoorquest-nature-hunt"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] artstudio-origami-zoo",
+    "name": "[KN] Origami Zoo",
+    "pillar": "artstudio",
+    "category": "[KN] Paper Art",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KN] 45 min",
+    "description": "[KN] Fold paper into amazing animals with the ancient art of origami! Create a whole zoo of creatures.",
+    "image": "[KN] /images/tiedye.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[KN] Origami paper",
+        "quantity": "[KN] Multiple colors"
+      },
+      {
+        "name": "Markers",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Start Simple",
+        "description": "[KN] Begin with an easy fold like a dog face or fish. Learn basic folds: valley, mountain, squash.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Practice Precision",
+        "description": "[KN] Fold carefully - crisp creases make better animals! Line up edges exactly.",
+        "tip": "[KN] Use fingernail to crease sharply.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Try Animals",
+        "description": "[KN] Make a frog that jumps! A bird that flaps! A crane for good luck!",
+        "duration": "[KN] 20 min"
+      },
+      {
+        "title": "[KN] Add Details",
+        "description": "[KN] Use markers to add eyes, spots, or patterns to your animals.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Create Display",
+        "description": "[KN] Arrange your zoo on a shelf or make a mobile to hang!",
+        "duration": "[KN] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Paper cuts possible - fold carefully"
+    ],
+    "learningOutcomes": [
+      "[KN] Following diagrams",
+      "[KN] Spatial reasoning",
+      "[KN] Patience and precision",
+      "[KN] Japanese cultural art"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] artstudio-salt-painting",
+    "name": "[KN] Salt Painting",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 30 min",
+    "description": "[KN] Create magical raised designs using glue and salt, then add color and watch it spread!",
+    "image": "[KN] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "Cardstock",
+        "quantity": "[KN] Dark colors work best"
+      },
+      {
+        "name": "[KN] White glue"
+      },
+      {
+        "name": "[KN] Table salt",
+        "quantity": "[KN] 1/2 cup"
+      },
+      {
+        "name": "[KN] Liquid watercolors or food coloring"
+      },
+      {
+        "name": "[KN] Dropper or paintbrush"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Draw with Glue",
+        "description": "[KN] Squeeze glue in lines to create a design - rainbow, name, shapes. Keep lines thick.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Add Salt",
+        "description": "[KN] While glue is wet, pour salt over entire design. Shake off excess.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Let Set",
+        "description": "[KN] Wait a few minutes for glue to start setting with salt stuck on.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Add Color",
+        "description": "[KN] Drop liquid color onto salt. Watch it spread along the lines like magic!",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Dry and Display",
+        "description": "[KN] Let dry completely (overnight is best). Handle gently - salt can fall off.",
+        "duration": "[KN] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Don't eat the salt after coloring",
+      "[KN] Work on protected surface"
+    ],
+    "learningOutcomes": [
+      "[KN] Absorption concepts",
+      "[KN] Color spreading",
+      "[KN] Fine motor control",
+      "[KN] Process art"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] artstudio-pasta-jewelry",
+    "name": "[KN] Terracotta Clay Jewelry",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 30 min",
+    "description": "[KN] Connect with ancient Harappan traditions by sculpting your own terracotta jewelry! Shape natural clay into beautiful beads, dry them in the sun, and paint them with traditional Indian motifs.",
+    "image": "[KN] /images/tiedye.webp",
+    "rating": 4.4,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[KN] Tubular pasta (penne, rigatoni)",
+        "quantity": "[KN] 30-40 pieces"
+      },
+      {
+        "name": "[KN] Acrylic paint or food coloring"
+      },
+      {
+        "name": "[KN] String or yarn",
+        "quantity": "[KN] 2 feet per piece"
+      },
+      {
+        "name": "[KN] Ziplock bags",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Color Pasta",
+        "description": "[KN] Paint pasta or shake in bags with food coloring and rubbing alcohol. Let dry completely.",
+        "duration": "[KN] 10 min + drying"
+      },
+      {
+        "title": "[KN] Plan Pattern",
+        "description": "[KN] Lay out pasta beads and plan your color pattern before stringing.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] String Beads",
+        "description": "[KN] Thread pasta onto string. Tie a bead at one end first to stop others falling off.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Create Closure",
+        "description": "[KN] Tie ends together for necklace, or add clasps for fancier finish.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Model and Gift",
+        "description": "[KN] Wear your creation proudly or make gifts for friends and family!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Pasta jewelry is not edible after painting",
+      "[KN] Handle gently - pasta can crack"
+    ],
+    "learningOutcomes": [
+      "[KN] Pattern creation",
+      "[KN] Fine motor skills (threading)",
+      "[KN] Color combinations",
+      "[KN] Gift-making mindset"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] artstudio-scratch-art",
+    "name": "[KN] Scratch Art Cards",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KN] 45 min",
+    "description": "[KN] Create rainbow scratch art from scratch! Layer colors, cover with black, then scratch to reveal hidden rainbows.",
+    "image": "[KN] /images/tiedye.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "Cardstock"
+      },
+      {
+        "name": "Crayons",
+        "quantity": "[KN] Various colors"
+      },
+      {
+        "name": "[KN] Black acrylic paint or black crayon"
+      },
+      {
+        "name": "[KN] Dish soap",
+        "quantity": "[KN] A drop"
+      },
+      {
+        "name": "[KN] Toothpick or wooden stylus"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Color Base Layer",
+        "description": "[KN] Cover entire paper with heavy crayon in bright colors. Press hard! No white showing.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Add Black Layer",
+        "description": "[KN] Mix tiny bit of dish soap into black paint. Paint over all the crayon. Or use black crayon (harder work!).",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Let Dry",
+        "description": "[KN] If using paint, let dry completely before scratching.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Scratch Design",
+        "description": "[KN] Use toothpick to scratch away black, revealing rainbow colors beneath!",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Create Cards",
+        "description": "[KN] Make greeting cards, bookmarks, or framed art with your scratch designs!",
+        "duration": "[KN] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Toothpicks are pointy - use carefully",
+      "[KN] Work on protected surface"
+    ],
+    "learningOutcomes": [
+      "[KN] Layering technique",
+      "[KN] Subtractive art process",
+      "[KN] Planning and patience",
+      "[KN] Fine motor control"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] artstudio-suncatcher",
+    "name": "[KN] Tissue Paper Suncatcher",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KN] 40 min",
+    "description": "[KN] Create stained glass-style art that catches sunlight! Beautiful colors glow when hung in a window.",
+    "image": "[KN] /images/tiedye.webp",
+    "rating": 4.6,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[KN] Clear contact paper",
+        "quantity": "[KN] 2 sheets"
+      },
+      {
+        "name": "[KN] Tissue paper",
+        "quantity": "[KN] Various colors"
+      },
+      {
+        "name": "[KN] Black cardstock",
+        "quantity": "[KN] For frame"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[KN] Hole punch and string"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Cut Frame",
+        "description": "[KN] Cut a frame shape from black cardstock - circle, heart, or rectangle with center removed.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Prepare Contact Paper",
+        "description": "[KN] Cut contact paper slightly larger than frame. Peel backing and lay sticky side up.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Add Tissue Paper",
+        "description": "[KN] Tear or cut tissue paper pieces. Press onto contact paper in colorful pattern.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Seal and Frame",
+        "description": "[KN] Place second contact paper on top, sticky side down. Press to seal. Trim to frame and attach frame.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Hang in Window",
+        "description": "[KN] Punch hole in top, add string, and hang where sunlight will shine through!",
+        "duration": "[KN] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Scissors supervision for younger kids",
+      "[KN] Contact paper is tricky - take your time"
+    ],
+    "learningOutcomes": [
+      "[KN] Light and color",
+      "[KN] Design composition",
+      "[KN] Following multi-step process",
+      "[KN] Decorative crafting"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] artstudio-clay-pots",
+    "name": "[KN] Clay Pinch Pots",
+    "pillar": "artstudio",
+    "category": "Sculpture",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KN] 1 hour + dry time",
+    "description": "[KN] Shape air-dry clay into beautiful bowls and pots using the ancient pinch pot technique!",
+    "image": "[KN] /images/finger-paint.webp",
+    "rating": 4.7,
+    "reviewCount": 109,
+    "materials": [
+      {
+        "name": "[KN] Air-dry clay",
+        "quantity": "[KN] 1 lb"
+      },
+      {
+        "name": "[KN] Water bowl"
+      },
+      {
+        "name": "[KN] Acrylic paint"
+      },
+      {
+        "name": "Paintbrushes"
+      },
+      {
+        "name": "[KN] Rolling pin",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Prepare Clay",
+        "description": "[KN] Knead clay until soft and pliable. Roll into a ball about the size of your fist.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Create Opening",
+        "description": "[KN] Push thumb into center of ball. Slowly rotate and pinch walls between thumb (inside) and fingers (outside).",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Shape the Pot",
+        "description": "[KN] Keep pinching and rotating. Even thickness is key! Smooth cracks with wet finger.",
+        "tip": "[KN] Keep walls no thinner than 1/4 inch.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Add Details",
+        "description": "[KN] Create texture with tools. Add handles, feet, or decorative elements.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Dry and Paint",
+        "description": "[KN] Let dry completely (2-3 days). Paint with acrylics once fully dried.",
+        "duration": "[KN] 15 min + drying"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Air-dry clay is non-toxic",
+      "[KN] Handle dried pieces gently - they're fragile",
+      "[KN] Not food-safe unless using special glazes"
+    ],
+    "learningOutcomes": [
+      "[KN] Sculpting techniques",
+      "[KN] Hand strength and control",
+      "[KN] Historical pottery methods",
+      "[KN] 3D art creation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] artstudio-collaborative-mural",
+    "name": "[KN] Collaborative Mural",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 1 hour",
+    "description": "[KN] Create a large artwork together! Everyone contributes to one big painting.",
+    "image": "[KN] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 67,
+    "materials": [
+      {
+        "name": "[KN] Large paper roll or joined sheets",
+        "quantity": "[KN] 4-6 feet"
+      },
+      {
+        "name": "[KN] Paint, markers, crayons"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[KN] Smocks for everyone"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Set Up Canvas",
+        "description": "[KN] Roll out paper on floor or tape to wall. Make it BIG - this is a group project!",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Choose Theme",
+        "description": "[KN] Decide on a theme together: underwater, space, garden, cityscape, or abstract!",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Assign Sections",
+        "description": "[KN] Each person gets an area to work on. Plan how sections will connect.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Create Together",
+        "description": "[KN] Everyone works simultaneously! Add to each other's areas if invited.",
+        "duration": "[KN] 40 min"
+      },
+      {
+        "title": "[KN] Add Final Touches",
+        "description": "[KN] Step back, see what's missing. Add connecting elements together.",
+        "duration": "[KN] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Supervise shared materials",
+      "[KN] Respect everyone's work"
+    ],
+    "learningOutcomes": [
+      "[KN] Collaboration skills",
+      "[KN] Respecting others' work",
+      "[KN] Group planning",
+      "[KN] Large-scale art thinking"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] outdoorquest-nature-hunt",
+    "name": "[KN] Nature Scavenger Hunt",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 30 min",
+    "description": "[KN] Explore the outdoors with a checklist of natural treasures to find! Perfect for backyards, parks, or nature trails.",
+    "image": "[KN] /images/nature-hunt.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 234,
+    "materials": [
+      {
+        "name": "[KN] Scavenger hunt checklist",
+        "quantity": "[KN] Printable included!"
+      },
+      {
+        "name": "[KN] Bag or basket"
+      },
+      {
+        "name": "[KN] Magnifying glass",
+        "optional": true
+      },
+      {
+        "name": "[KN] Pencil or crayon"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Print Checklist",
+        "description": "[KN] Use our checklist or create your own: pinecone, feather, smooth rock, flower, etc.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Go Outside!",
+        "description": "[KN] Head to backyard, park, or nature trail. Bring your checklist and collection bag.",
+        "duration": "[KN] 2 min"
+      },
+      {
+        "title": "[KN] Start Hunting",
+        "description": "[KN] Check off items as you find them. Collect items you can take (no picking protected plants!).",
+        "tip": "[KN] Look up, down, and all around - treasures are everywhere!",
+        "duration": "[KN] 20 min"
+      },
+      {
+        "title": "[KN] Observe Closely",
+        "description": "[KN] Use magnifying glass to examine finds. What details do you notice?",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Share Discoveries",
+        "description": "[KN] Show what you found! Learn names of plants and animals you discovered.",
+        "duration": "[KN] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Stay on paths and in sight of adults",
+      "[KN] Don't touch unknown plants or animals",
+      "[KN] Watch for poison ivy/oak",
+      "[KN] Leave wildlife alone"
+    ],
+    "learningOutcomes": [
+      "[KN] Nature identification",
+      "[KN] Observation skills",
+      "[KN] Physical activity",
+      "[KN] Environmental appreciation"
+    ],
+    "crossPillar": [
+      "[KN] artstudio-nature-collage"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] outdoorquest-bug-hotel",
+    "name": "[KN] Bug Hotel",
+    "pillar": "outdoorquest",
+    "category": "Wildlife",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KN] 45 min",
+    "description": "[KN] Build a cozy habitat for beneficial insects! Create shelter for ladybugs, bees, and other garden helpers.",
+    "image": "[KN] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "[KN] Wooden crate or tin can"
+      },
+      {
+        "name": "[KN] Sticks and twigs"
+      },
+      {
+        "name": "Pinecones"
+      },
+      {
+        "name": "[KN] Bamboo pieces or paper straws"
+      },
+      {
+        "name": "[KN] Dried leaves"
+      },
+      {
+        "name": "[KN] String or wire"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Find a Base",
+        "description": "[KN] Use a clean tin can, small wooden box, or bundle of sticks tied together.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Gather Materials",
+        "description": "[KN] Collect natural materials: hollow sticks, pinecones, bark, dried leaves, etc.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Fill the Hotel",
+        "description": "[KN] Pack materials tightly into your base. Different insects like different spaces!",
+        "tip": "[KN] Hollow tubes for solitary bees, pinecones for ladybugs.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Secure Contents",
+        "description": "[KN] Make sure everything is packed tight. Add wire or more sticks if needed.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Place in Garden",
+        "description": "[KN] Position in a sheltered spot facing south. Off the ground prevents flooding.",
+        "duration": "[KN] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Don't disturb guests once they move in",
+      "[KN] Place away from high-traffic areas",
+      "[KN] Check for existing insect nests before gathering materials"
+    ],
+    "learningOutcomes": [
+      "[KN] Insect ecology",
+      "[KN] Habitat creation",
+      "[KN] Beneficial insects",
+      "[KN] Environmental stewardship"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] outdoorquest-pressed-flowers",
+    "name": "[KN] Pressed Flower Art",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 30 min + drying",
+    "description": "[KN] Preserve beautiful flowers and leaves by pressing! Create bookmarks, cards, or framed art.",
+    "image": "[KN] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[KN] Fresh flowers and leaves"
+      },
+      {
+        "name": "[KN] Heavy books"
+      },
+      {
+        "name": "[KN] Parchment or newspaper"
+      },
+      {
+        "name": "[KN] Frame or cardstock",
+        "optional": true
+      },
+      {
+        "name": "[KN] Clear contact paper",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Collect Specimens",
+        "description": "[KN] Pick flowers and leaves on a dry day. Choose flat flowers or ones you can flatten.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Prepare for Pressing",
+        "description": "[KN] Place flowers between parchment paper. Arrange flat - don't overlap.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Press in Books",
+        "description": "[KN] Put paper with flowers inside heavy book. Stack more books on top.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Wait Patiently",
+        "description": "[KN] Leave for 1-2 weeks. Check occasionally. Change paper if damp.",
+        "duration": "[KN] 1-2 weeks"
+      },
+      {
+        "title": "[KN] Create Art",
+        "description": "[KN] Carefully remove pressed flowers. Arrange on cards, bookmarks, or frame!",
+        "duration": "[KN] 15 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Don't pick from protected areas",
+      "[KN] Pressed flowers are delicate",
+      "[KN] Some plants cause skin irritation"
+    ],
+    "learningOutcomes": [
+      "[KN] Botanical knowledge",
+      "[KN] Patience and delayed gratification",
+      "[KN] Preservation techniques",
+      "[KN] Nature appreciation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] outdoorquest-bird-feeder",
+    "name": "[KN] Coconut Shell Bird Feeder",
+    "pillar": "outdoorquest",
+    "category": "Wildlife",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 20 min",
+    "description": "[KN] Repurpose an empty coconut shell into a beautiful, hanging bird feeder! Fill it with local grains and watch the incredible variety of native birds flock to your garden.",
+    "image": "[KN] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 187,
+    "materials": [
+      {
+        "name": "[KN] Large pinecone"
+      },
+      {
+        "name": "[KN] Peanut butter",
+        "quantity": "[KN] 1/4 cup"
+      },
+      {
+        "name": "Birdseed",
+        "quantity": "[KN] 1 cup"
+      },
+      {
+        "name": "[KN] String or yarn",
+        "quantity": "[KN] 12 inches"
+      },
+      {
+        "name": "[KN] Plate for rolling"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Tie Hanger",
+        "description": "[KN] Tie string securely around top of pinecone for hanging.",
+        "duration": "[KN] 3 min"
+      },
+      {
+        "title": "[KN] Apply Peanut Butter",
+        "description": "[KN] Spread peanut butter all over pinecone, getting into the scales.",
+        "tip": "[KN] Use a butter knife or your hands (messy but fun!).",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Add Seeds",
+        "description": "[KN] Roll coated pinecone in birdseed, pressing seeds into peanut butter.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Hang Outside",
+        "description": "[KN] Hang from a tree branch where you can watch from a window.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Bird Watch",
+        "description": "[KN] Keep a journal of birds that visit! Learn their names and songs.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Check for nut allergies before using peanut butter",
+      "[KN] Alternative: use vegetable shortening",
+      "[KN] Place where squirrels can't easily reach"
+    ],
+    "learningOutcomes": [
+      "[KN] Bird identification",
+      "[KN] Wildlife care",
+      "[KN] Patience and observation",
+      "[KN] Ecosystem understanding"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] outdoorquest-mud-kitchen",
+    "name": "[KN] Mud Kitchen Play",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "Open-ended",
+    "description": "[KN] Set up an outdoor play kitchen for messy, imaginative mud cooking! A classic childhood experience.",
+    "image": "[KN] /images/nature-hunt.webp",
+    "rating": 4.5,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[KN] Old pots and pans"
+      },
+      {
+        "name": "[KN] Wooden spoons"
+      },
+      {
+        "name": "[KN] Measuring cups"
+      },
+      {
+        "name": "[KN] Water source"
+      },
+      {
+        "name": "[KN] Dirt area"
+      },
+      {
+        "name": "[KN] Natural additions",
+        "quantity": "[KN] Leaves, sticks, petals"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Set Up Kitchen",
+        "description": "[KN] Find a good spot near dirt and water. Arrange your tools. A small table helps!",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Prepare Ingredients",
+        "description": "[KN] Gather water, dirt, and natural add-ins like leaves, petals, seeds.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Create Recipes",
+        "description": "[KN] Make mud pies, dirt soup, nature stew! Mix, stir, pour, and create.",
+        "duration": "∞"
+      },
+      {
+        "title": "[KN] Serve and Play",
+        "description": "[KN] Set up a pretend restaurant. Serve your creations to stuffed animal guests!",
+        "duration": "∞"
+      },
+      {
+        "title": "[KN] Clean Up",
+        "description": "[KN] Hose off tools and hands. Some dirty play is good!",
+        "duration": "[KN] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Wash hands thoroughly after play",
+      "[KN] Don't actually eat mud creations!",
+      "[KN] Check area for broken glass or harmful items"
+    ],
+    "learningOutcomes": [
+      "[KN] Imaginative play",
+      "[KN] Sensory exploration",
+      "[KN] Scientific mixing",
+      "[KN] Outdoor comfort"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] outdoorquest-shadow-tracing",
+    "name": "[KN] Shadow Tracing Art",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 20 min",
+    "description": "[KN] Use the sun to create art! Trace shadows of objects, toys, or even friends for unique silhouette artwork.",
+    "image": "[KN] /images/nature-hunt.webp",
+    "rating": 4.4,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[KN] Sidewalk chalk"
+      },
+      {
+        "name": "[KN] Sunny day"
+      },
+      {
+        "name": "[KN] Objects to trace",
+        "quantity": "[KN] Toys, plants, etc."
+      },
+      {
+        "name": "[KN] Paper and pencil",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Find Shadows",
+        "description": "[KN] Go outside on a sunny day. Notice how everything has a shadow!",
+        "duration": "[KN] 3 min"
+      },
+      {
+        "title": "[KN] Position Objects",
+        "description": "[KN] Place toys, plants, or pose yourself to create interesting shadow shapes.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Trace Outlines",
+        "description": "[KN] Use chalk to trace around shadow edges on pavement.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Add Details",
+        "description": "[KN] Color in your traced shadows. Add features, patterns, or backgrounds.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Notice Changes",
+        "description": "[KN] Come back later - have shadows moved? Try tracing the same object at different times!",
+        "duration": "[KN] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Wear sunscreen on sunny days",
+      "[KN] Stay hydrated",
+      "[KN] Don't look directly at the sun"
+    ],
+    "learningOutcomes": [
+      "[KN] Sun and shadows",
+      "[KN] Time and Earth rotation",
+      "[KN] Art techniques",
+      "[KN] Scientific observation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[KN] outdoorquest-cloud-watching",
+    "name": "[KN] Cloud Watching Journal",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 30 min",
+    "description": "[KN] Lie back and watch the clouds! Learn cloud types, spot shapes, and create an imagination journal.",
+    "image": "[KN] /images/nature-hunt.webp",
+    "rating": 4.3,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "Blanket"
+      },
+      {
+        "name": "[KN] Journal or paper"
+      },
+      {
+        "name": "[KN] Crayons or colored pencils"
+      },
+      {
+        "name": "[KN] Cloud identification chart",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Find a Spot",
+        "description": "[KN] Lay blanket in open area with good sky view. Lie on your back.",
+        "duration": "[KN] 3 min"
+      },
+      {
+        "title": "[KN] Observe Clouds",
+        "description": "[KN] Watch the clouds move. What shapes do you see? Animals? Faces? Objects?",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Learn Cloud Types",
+        "description": "[KN] Identify clouds: fluffy cumulus, wispy cirrus, layered stratus. What's up there today?",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Draw and Write",
+        "description": "[KN] Sketch the shapes you see. Write stories about cloud characters.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Predict Weather",
+        "description": "[KN] Different clouds mean different weather. What do today's clouds tell us?",
+        "duration": "[KN] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Don't cloud watch during storms",
+      "[KN] Wear sunglasses on bright days",
+      "[KN] Apply sunscreen"
+    ],
+    "learningOutcomes": [
+      "[KN] Meteorology basics",
+      "[KN] Imagination and creativity",
+      "Relaxation",
+      "[KN] Weather prediction"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] outdoorquest-fairy-garden",
+    "name": "[KN] Fairy Garden",
+    "pillar": "outdoorquest",
+    "category": "Garden",
+    "ageRange": "3-12",
+    "difficulty": "Medium",
+    "timeToMake": "[KN] 1 hour",
+    "description": "[KN] Create a miniature magical garden for fairies! Use tiny plants, pebbles, and handmade accessories.",
+    "image": "[KN] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[KN] Container or garden corner"
+      },
+      {
+        "name": "[KN] Potting soil"
+      },
+      {
+        "name": "[KN] Small plants or moss"
+      },
+      {
+        "name": "[KN] Pebbles and small stones"
+      },
+      {
+        "name": "[KN] Tiny decorations",
+        "quantity": "[KN] Shells, acorns, small figurines"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Choose Location",
+        "description": "[KN] Pick a container (pot, wooden box) or a corner of the yard for your fairy garden.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Add Soil and Base",
+        "description": "[KN] Fill with potting soil. Add pebbles for a path. Create landscape with hills or flat areas.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Plant Greenery",
+        "description": "[KN] Add small plants, moss, or ground cover. Think about scale - everything should be tiny!",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Create Features",
+        "description": "[KN] Make tiny houses from sticks, furniture from acorn caps, fences from twigs.",
+        "duration": "[KN] 20 min"
+      },
+      {
+        "title": "[KN] Add Inhabitants",
+        "description": "[KN] Place fairy figurines, or leave empty for imagination! Add final decorative touches.",
+        "duration": "[KN] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Wash hands after handling soil",
+      "[KN] Small pieces can be choking hazards for young children"
+    ],
+    "learningOutcomes": [
+      "[KN] Gardening basics",
+      "[KN] Miniature design",
+      "[KN] Imaginative play",
+      "[KN] Caring for living things"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] outdoorquest-obstacle-course",
+    "name": "[KN] Backyard Obstacle Course",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 30 min setup",
+    "description": "[KN] Design and conquer your own obstacle course! Jump, crawl, balance, and race through challenges.",
+    "image": "[KN] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 178,
+    "materials": [
+      {
+        "name": "[KN] Hula hoops"
+      },
+      {
+        "name": "[KN] Pool noodles"
+      },
+      {
+        "name": "[KN] Cones or markers"
+      },
+      {
+        "name": "[KN] Rope or string"
+      },
+      {
+        "name": "Buckets"
+      },
+      {
+        "name": "Balls"
+      },
+      {
+        "name": "Timer",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Plan Your Course",
+        "description": "[KN] Decide on 5-8 obstacles. Include different movements: jumping, crawling, throwing, balancing.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Set Up Obstacles",
+        "description": "[KN] Examples: hoop jump, noodle limbo, cone weave, bucket ball toss, rope hop.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Create Start/Finish",
+        "description": "[KN] Mark clear start and finish lines. Number obstacles if doing them in order.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Test Run",
+        "description": "[KN] Run through once yourself. Is it challenging but doable? Adjust difficulty.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "Race!",
+        "description": "[KN] Time yourself, race friends, or try to beat your own record!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Check ground for hazards",
+      "[KN] Age-appropriate challenges",
+      "[KN] No obstacles near hard surfaces",
+      "[KN] Warm up before running"
+    ],
+    "learningOutcomes": [
+      "[KN] Physical fitness",
+      "[KN] Course design",
+      "Sportsmanship",
+      "Problem-solving"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] outdoorquest-leaf-rubbing",
+    "name": "[KN] Leaf Rubbing Art",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 20 min",
+    "description": "[KN] Create beautiful impressions of leaves using crayons! A simple nature art activity perfect for all ages.",
+    "image": "[KN] /images/nature-hunt.webp",
+    "rating": 4.5,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[KN] Fresh leaves",
+        "quantity": "[KN] Various shapes"
+      },
+      {
+        "name": "[KN] White paper"
+      },
+      {
+        "name": "Crayons",
+        "quantity": "Unwrapped"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Collect Leaves",
+        "description": "[KN] Gather leaves with interesting shapes and strong veins. Fresh leaves work best.",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Position Leaves",
+        "description": "[KN] Place leaves vein-side up under paper. Use tape to hold paper still.",
+        "duration": "[KN] 3 min"
+      },
+      {
+        "title": "[KN] Rub with Crayon",
+        "description": "[KN] Rub crayon side across paper over leaf. The leaf pattern appears!",
+        "tip": "[KN] Use side of unwrapped crayon for best results.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Create Composition",
+        "description": "[KN] Make multiple rubbings to create a forest, tree, or abstract design.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Identify Leaves",
+        "description": "[KN] Look up what trees your leaves came from. Label your artwork!",
+        "duration": "[KN] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Wash hands after handling leaves",
+      "[KN] Avoid poison ivy/oak"
+    ],
+    "learningOutcomes": [
+      "[KN] Plant identification",
+      "[KN] Art technique",
+      "[KN] Texture exploration",
+      "[KN] Nature appreciation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] outdoorquest-water-balloons",
+    "name": "[KN] Water Balloon Games",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 30 min play",
+    "description": "[KN] Cool off with exciting water balloon games! From toss to relay races, get ready to get wet!",
+    "image": "[KN] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 189,
+    "materials": [
+      {
+        "name": "[KN] Water balloons",
+        "quantity": "30-50"
+      },
+      {
+        "name": "[KN] Water source"
+      },
+      {
+        "name": "Buckets",
+        "quantity": "2-4"
+      },
+      {
+        "name": "[KN] Open outdoor space"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Fill Balloons",
+        "description": "[KN] Fill balloons at outdoor faucet. Don't overfill - they pop too easily!",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Balloon Toss",
+        "description": "[KN] Partners toss balloon back and forth, stepping back after each catch. Who lasts longest?",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Relay Race",
+        "description": "[KN] Carry balloon on spoon across yard without dropping. Teams compete!",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Target Practice",
+        "description": "[KN] Draw chalk targets. Throw balloons at targets for points!",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Clean Up",
+        "description": "[KN] IMPORTANT: Pick up all balloon pieces - they're harmful to wildlife!",
+        "duration": "[KN] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] ALWAYS clean up balloon pieces",
+      "[KN] Balloons are choking hazards",
+      "[KN] Don't throw at faces",
+      "[KN] Watch for slippery areas"
+    ],
+    "learningOutcomes": [
+      "Teamwork",
+      "[KN] Gross motor skills",
+      "Sportsmanship",
+      "[KN] Environmental responsibility (cleanup)"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[KN] outdoorquest-stargazing",
+    "name": "[KN] Stargazing Night",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[KN] 1 hour",
+    "description": "[KN] Explore the night sky! Learn constellations, spot planets, and maybe catch a shooting star.",
+    "image": "[KN] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "Blanket"
+      },
+      {
+        "name": "[KN] Star chart or app"
+      },
+      {
+        "name": "[KN] Red flashlight",
+        "optional": true
+      },
+      {
+        "name": "Binoculars",
+        "optional": true
+      },
+      {
+        "name": "[KN] Hot cocoa",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[KN] Choose Location",
+        "description": "[KN] Find dark spot away from lights. Backyard works if lights are off!",
+        "duration": "[KN] 5 min"
+      },
+      {
+        "title": "[KN] Let Eyes Adjust",
+        "description": "[KN] Wait 10-15 minutes for eyes to adapt to darkness. Avoid looking at bright lights.",
+        "duration": "[KN] 15 min"
+      },
+      {
+        "title": "[KN] Find North Star",
+        "description": "[KN] Locate Big Dipper, then follow pointer stars to Polaris, the North Star.",
+        "duration": "[KN] 10 min"
+      },
+      {
+        "title": "[KN] Hunt Constellations",
+        "description": "[KN] Use star chart to find Orion, Cassiopeia, and seasonal constellations.",
+        "duration": "[KN] 20 min"
+      },
+      {
+        "title": "[KN] Watch for Movement",
+        "description": "[KN] Satellites cross slowly. Shooting stars streak fast. Planets don't twinkle!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[KN] Stay in safe areas at night",
+      "[KN] Adult supervision required",
+      "[KN] Bring bug spray",
+      "[KN] Dress warmly"
+    ],
+    "learningOutcomes": [
+      "[KN] Astronomy basics",
+      "[KN] Navigation history",
+      "[KN] Patience and observation",
+      "[KN] Wonder and curiosity"
+    ],
+    "isPremium": true
+  }
+]

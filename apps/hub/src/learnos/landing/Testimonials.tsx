@@ -24,7 +24,7 @@ export default function Testimonials() {
           <a href="#worlds" className="rounded-full bg-white px-6 py-3 text-base font-bold text-brand shadow-lg hover:bg-orange-50 transition active:scale-95">
             {t('testimonials.pick_world', 'Pick your world →')}
           </a>
-          <a href="#" className="rounded-full bg-white/15 px-6 py-3 text-base font-bold text-white backdrop-blur hover:bg-white/25 transition">
+          <a href="/" className="rounded-full bg-white/15 px-6 py-3 text-base font-bold text-white backdrop-blur hover:bg-white/25 transition">
             {t('testimonials.get_app', 'Get the app')}
           </a>
         </div>

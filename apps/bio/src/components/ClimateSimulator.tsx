@@ -206,7 +206,7 @@ export default function ClimateSimulator() {
                   {isRunning ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
                   {isRunning ? 'Pause' : 'Simulate'}
                 </button>
-                <button onClick={reset} className="px-4 py-2.5 rounded-xl bg-gray-800 text-gray-300">
+                <button onClick={reset} className="px-4 py-2.5 rounded-xl bg-gray-800 text-gray-300" aria-label="Rotate ccw">
                   <RotateCcw className="w-4 h-4" />
                 </button>
               </div>
@@ -308,7 +308,7 @@ export default function ClimateSimulator() {
               <motion.div className="absolute top-4 right-8"
                 animate={{ scale: [1, 1.1, 1], opacity: [0.8, 1, 0.8] }}
                 transition={{ repeat: Infinity, duration: 3 }}>
-                <div className="w-16 h-16 rounded-full bg-yellow-400"
+                <div className="w-16 min-h-16 rounded-full bg-yellow-400"
                   style={{ boxShadow: `0 0 ${20 + state.temperature * 10}px #facc15` }} />
               </motion.div>
 

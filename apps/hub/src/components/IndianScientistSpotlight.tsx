@@ -51,7 +51,7 @@ export default function IndianScientistSpotlight({ concept, scientistId, languag
       <div className="flex items-start gap-4">
         {/* Scientist Avatar/Icon */}
         <div className="flex-shrink-0">
-          <div className="w-16 h-16 rounded-full bg-orange-200 flex items-center justify-center text-3xl">
+          <div className="w-16 min-h-16 rounded-full bg-orange-200 flex items-center justify-center text-3xl">
             {scientist.gender === 'female' ? '👩‍🔬' : '👨‍🔬'}
           </div>
         </div>

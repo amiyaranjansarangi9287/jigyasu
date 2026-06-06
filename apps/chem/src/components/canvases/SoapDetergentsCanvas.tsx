@@ -68,7 +68,7 @@ export default function SoapDetergentsCanvas({ isPlaying }: CanvasProps) {
             {/* Micelle */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               {/* Oil droplet in center */}
-              <motion.div className="w-12 h-12 bg-yellow-500/60 rounded-full flex items-center justify-center z-10 relative"
+              <motion.div className="w-12 min-h-12 bg-yellow-500/60 rounded-full flex items-center justify-center z-10 relative"
                 animate={{ scale: showCleaning && cleaningStep >= 3 ? [1, 0.8, 0] : 1 }}>
                 <span className="text-xs font-bold text-yellow-900">Oil</span>
               </motion.div>

@@ -16,6 +16,41 @@ const API_BASE = import.meta.env.VITE_API_BASE_URL ?? '/api';
 const USE_STUBS = import.meta.env.DEV && !import.meta.env.VITE_API_BASE_URL;
 
 /**
+ * Enhanced fetch with exponential backoff for network resilience.
+ * Crucial for low-end devices and spotty internet connections.
+ */
+async function fetchWithRetry(url: string, options: RequestInit = {}, maxRetries = 3): Promise<Response> {
+  let attempt = 0;
+  let lastError: Error | null = null;
+
+  while (attempt < maxRetries) {
+    try {
+      const response = await fetch(url, options);
+      
+      // If we get a 5xx error, we should retry. Otherwise, return the response.
+      if (response.status >= 500 && response.status < 600) {
+        throw new Error(`Server error: ${response.status}`);
+      }
+      
+      return response;
+    } catch (error) {
+      lastError = error instanceof Error ? error : new Error(String(error));
+      attempt++;
+      
+      if (attempt >= maxRetries) {
+        break;
+      }
+      
+      // Exponential backoff: 1s, 2s, 4s...
+      const delay = Math.min(1000 * Math.pow(2, attempt - 1), 10000);
+      await new Promise(resolve => setTimeout(resolve, delay));
+    }
+  }
+
+  throw lastError || new Error('Network request failed after multiple retries');
+}
+
+/**
  * POST /api/analytics/batch
  * Send batch of telemetry events to the server.
  */
@@ -26,14 +61,14 @@ export async function sendAnalyticsBatch(
     return stubAnalyticsBatch({ events });
   }
 
-  const response = await fetch(`${API_BASE}/analytics/batch`, {
+  const response = await fetchWithRetry(`${API_BASE}/analytics/batch`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ events }),
   });
 
   if (!response.ok) {
-    throw new Error(`Oops! We couldn't save your progress right now 🙈 (${response.status})`);
+    throw new Error(`Oops! We couldn't save your progress right now dYT^ (${response.status})`);
   }
 
   return response.json();
@@ -48,10 +83,10 @@ export async function getAnalyticsSummary(): Promise<AnalyticsSummaryResponse> {
     return stubAnalyticsSummary();
   }
 
-  const response = await fetch(`${API_BASE}/analytics/summary`);
+  const response = await fetchWithRetry(`${API_BASE}/analytics/summary`);
 
   if (!response.ok) {
-    throw new Error(`Oops! We couldn't fetch your progress 🙈 (${response.status})`);
+    throw new Error(`Oops! We couldn't fetch your progress dYT^ (${response.status})`);
   }
 
   return response.json();
@@ -68,14 +103,14 @@ export async function syncProgress(
     return stubSyncProgress({ progress });
   }
 
-  const response = await fetch(`${API_BASE}/sync/progress`, {
+  const response = await fetchWithRetry(`${API_BASE}/sync/progress`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ progress }),
   });
 
   if (!response.ok) {
-    throw new Error(`Oops! We couldn't sync your magic progress 🙈 (${response.status})`);
+    throw new Error(`Oops! We couldn't sync your magic progress dYT^ (${response.status})`);
   }
 
   return response.json();
@@ -90,6 +125,7 @@ export async function checkApiHealth(): Promise<boolean> {
   }
 
   try {
+    // We don't retry health checks to fail fast.
     const response = await fetch(`${API_BASE}/health`);
     return response.ok;
   } catch {

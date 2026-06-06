@@ -36,18 +36,18 @@ export default function Pythagorean() {
         <div className="text-center mb-8">
           <div className="text-5xl mb-3">📐</div>
           <h1 className="text-3xl font-extrabold text-slate-800">{t('lab.pythagorean.title', { defaultValue: 'Pythagorean Theorem' })}</h1>
-          <p className="text-sm text-slate-500 mt-2">a² + b² = c² — see it visually!</p>
+          <p className="text-sm text-slate-500 mt-2">{t('lab.modules.Pythagorean.txt_abcseeitvi', 'a² + b² = c² — see it visually!')}</p>
         </div>
         <div className="bg-white rounded-3xl shadow-sm border border-slate-100 p-4 mb-6">
           <PythagoreanCanvas sideA={sideA} sideB={sideB} />
         </div>
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 space-y-4">
           <div>
-            <div className="flex justify-between mb-2"><span className="text-sm text-slate-400">📏 Side A</span><span className="text-sm font-bold text-indigo-600">{sideA}</span></div>
+            <div className="flex justify-between mb-2"><span className="text-sm text-slate-400">{t('lab.modules.Pythagorean.spn_SideA', '📏 Side A')}</span><span className="text-sm font-bold text-indigo-600">{sideA}</span></div>
             <input type="range" min="1" max="10" value={sideA} onChange={handleAChange} className="w-full h-3 rounded-full appearance-none cursor-pointer" style={{ background: 'linear-gradient(to right, #6366F1, #8B5CF6)' }} />
           </div>
           <div>
-            <div className="flex justify-between mb-2"><span className="text-sm text-slate-400">📏 Side B</span><span className="text-sm font-bold text-purple-600">{sideB}</span></div>
+            <div className="flex justify-between mb-2"><span className="text-sm text-slate-400">{t('lab.modules.Pythagorean.spn_SideB', '📏 Side B')}</span><span className="text-sm font-bold text-purple-600">{sideB}</span></div>
             <input type="range" min="1" max="10" value={sideB} onChange={handleBChange} className="w-full h-3 rounded-full appearance-none cursor-pointer" style={{ background: 'linear-gradient(to right, #A855F7, #EC4899)' }} />
           </div>
         </div>
@@ -57,7 +57,7 @@ export default function Pythagorean() {
         </div>
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.Pythagorean.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1">Baudhayana's Theorem</h3>
               <p className="text-gray-600 text-sm leading-relaxed">The <strong>Baudhayana Sulba Sutra</strong> (800 BCE) states the Pythagorean theorem 1,000 years before Pythagoras! "The diagonal of a rectangle produces both areas that its sides produce separately." Indians used this for altar construction.</p>

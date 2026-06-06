@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface DigestiveCanvasProps {
   currentStage: number;
@@ -6,6 +7,7 @@ interface DigestiveCanvasProps {
 }
 
 export default function DigestiveCanvas({ currentStage, isPlaying }: DigestiveCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const foodPosRef = useRef({ x: 0, y: 0 });

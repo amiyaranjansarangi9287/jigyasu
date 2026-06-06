@@ -81,15 +81,15 @@ export default function CampWeekModal({
           <button
             onClick={onClose}
             className="absolute top-4 right-4 p-2 rounded-full bg-white/20 hover:bg-white/30 transition-colors z-10"
-          >
+           aria-label="Action button">
             <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
 
           {/* Decorative circles */}
-          <div className="absolute top-0 right-0 w-40 h-40 rounded-full bg-white/10 -translate-y-1/2 translate-x-1/2" />
-          <div className="absolute bottom-0 left-0 w-24 h-24 rounded-full bg-white/10 translate-y-1/2 -translate-x-1/2" />
+          <div className="absolute top-0 right-0 w-40 min-h-40 rounded-full bg-white/10 -translate-y-1/2 translate-x-1/2" />
+          <div className="absolute bottom-0 left-0 w-24 min-h-24 rounded-full bg-white/10 translate-y-1/2 -translate-x-1/2" />
 
           <div className="relative flex items-start gap-4">
             <div className="text-6xl">{week.icon}</div>
@@ -153,7 +153,7 @@ export default function CampWeekModal({
                   <div className="flex items-start gap-4">
                     {/* Day Number */}
                     <div
-                      className={`w-14 h-14 rounded-xl flex flex-col items-center justify-center flex-shrink-0 ${
+                      className={`w-14 min-h-14 rounded-xl flex flex-col items-center justify-center flex-shrink-0 ${
                         status === 'completed'
                           ? 'bg-green-500 text-white'
                           : isNext

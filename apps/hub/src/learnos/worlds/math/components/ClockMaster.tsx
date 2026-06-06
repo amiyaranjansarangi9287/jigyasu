@@ -59,7 +59,7 @@ export default function ClockMaster() {
   const [mode, setMode] = useState<'explore' | 'challenge'>('explore');
   const [challenge, setChallenge] = useState(makeClockChallenge);
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
 
   const hour = Math.floor(minutes / 60) % 12 || 12;
   const min = minutes % 60;
@@ -79,7 +79,7 @@ export default function ClockMaster() {
     if (feedback) return;
     if (option === challenge.answer) {
       setFeedback('correct');
-      setScore((s) => s + 10);
+      setMastery((s) => s + 10);
       setTimeout(() => {
         setChallenge(makeClockChallenge());
         setFeedback(null);
@@ -105,9 +105,9 @@ export default function ClockMaster() {
       <AnimatePresence mode="wait">
         {mode === 'challenge' ? (
           <motion.div key="challenge" className="max-w-xl mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-red-500/10 border-red-500/40' : 'bg-white/5 border-white/10'}`}>
+            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
               <div className="flex justify-between mb-4">
-                <span className="text-yellow-400 font-bold">⭐ {score}</span>
+                <span className="text-yellow-400 font-bold">⭐ {mastery}</span>
                 <span className="text-gray-400 text-sm">Elapsed time</span>
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-5">
@@ -125,7 +125,7 @@ export default function ClockMaster() {
                 ))}
               </div>
               {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✅ Correct! {challenge.answer}</p>}
-              {feedback === 'wrong' && <p className="text-red-400 font-bold text-center mt-4">Try again.</p>}
+              {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Try again.</p>}
             </div>
           </motion.div>
         ) : (

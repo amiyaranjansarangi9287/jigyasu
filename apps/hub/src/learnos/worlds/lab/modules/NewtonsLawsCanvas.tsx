@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface NewtonsLawsCanvasProps {
   force: number;
@@ -7,6 +8,7 @@ interface NewtonsLawsCanvasProps {
 }
 
 export default function NewtonsLawsCanvas({ force, mass, isPlaying }: NewtonsLawsCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const forceRef = useRef(force);

@@ -264,7 +264,7 @@ export function RockCycleCanvas(_props: CanvasProps) {
           <button
             onClick={resetCycle}
             className="text-slate-400 hover:text-white transition-colors"
-          >
+           aria-label="Rotate ccw">
             <RotateCcw className="h-4 w-4" />
           </button>
         </div>

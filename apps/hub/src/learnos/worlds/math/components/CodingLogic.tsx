@@ -21,7 +21,7 @@ export default function CodingLogic() {
   const [boolB, setBoolB] = useState(false);
   const [challenge, setChallenge] = useState(makeChallenge);
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
 
   const binary = useMemo(() => toBin(decimal).padStart(8, '0'), [decimal]);
   const hex = useMemo(() => decimal.toString(16).toUpperCase(), [decimal]);
@@ -40,7 +40,7 @@ export default function CodingLogic() {
   const answerChallenge = useCallback((opt: string) => {
     if (feedback) return;
     if (opt === challenge.answer) {
-      setFeedback('correct'); setScore(s => s + 10);
+      setFeedback('correct'); setMastery(m => m + 1);
       setTimeout(() => { setChallenge(makeChallenge()); setFeedback(null); }, 1200);
     } else { setFeedback('wrong'); setTimeout(() => setFeedback(null), 900); }
   }, [feedback, challenge]);
@@ -149,10 +149,10 @@ export default function CodingLogic() {
                 ].map(gate => (
                   <motion.div
                     key={`${gate.name}-${gate.result}`}
-                    className={`rounded-xl p-3 text-center border ${gate.result ? 'bg-green-500/20 border-green-500/40' : 'bg-red-500/10 border-red-500/30'}`}
+                    className={`rounded-xl p-3 text-center border ${gate.result ? 'bg-green-500/20 border-green-500/40' : 'bg-white/5 border-white/10'}`}
                     initial={{ scale: 0.8 }} animate={{ scale: 1 }}>
                     <p className="text-gray-400 text-sm">{gate.name} ({gate.symbol})</p>
-                    <p className={`font-bold text-lg ${gate.result ? 'text-green-400' : 'text-red-400'}`}>{gate.result ? 'TRUE' : 'FALSE'}</p>
+                    <p className={`font-bold text-lg ${gate.result ? 'text-green-400' : 'text-orange-400'}`}>{gate.result ? 'TRUE' : 'FALSE'}</p>
                   </motion.div>
                 ))}
               </div>
@@ -168,7 +168,7 @@ export default function CodingLogic() {
                     <tr key={`${a}-${b}`} className={`border-b border-white/5 ${a === boolA && b === boolB ? 'bg-purple-500/20' : ''}`}>
                       <td className="py-1 text-blue-300">{a ? 'T' : 'F'}</td>
                       <td className="text-orange-300">{b ? 'T' : 'F'}</td>
-                      <td className={a && b ? 'text-green-400 font-bold' : 'text-red-400'}>{a && b ? 'T' : 'F'}</td>
+                      <td className={a && b ? 'text-green-400 font-bold' : 'text-orange-400'}>{a && b ? 'T' : 'F'}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -179,8 +179,8 @@ export default function CodingLogic() {
 
         {mode === 'challenge' && (
           <motion.div key="ch" className="max-w-lg mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-red-500/10 border-red-500/40' : 'bg-white/5 border-white/10'}`}>
-              <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {score}</span><span className="text-sm text-gray-400">{challenge.type}</span></div>
+            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
+              <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {mastery}</span><span className="text-sm text-gray-400">{challenge.type}</span></div>
               <p className="text-2xl font-bold text-white text-center font-mono mb-5">{challenge.question}</p>
               <div className={`grid ${challenge.options.length <= 2 ? 'grid-cols-2' : 'grid-cols-2'} gap-3`}>
                 {challenge.options.map(opt => (
@@ -190,7 +190,7 @@ export default function CodingLogic() {
                 ))}
               </div>
               {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✅ Correct!</p>}
-              {feedback === 'wrong' && <p className="text-red-400 font-bold text-center mt-4">Answer: {challenge.answer}</p>}
+              {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Answer: {challenge.answer}</p>}
             </div>
           </motion.div>
         )}

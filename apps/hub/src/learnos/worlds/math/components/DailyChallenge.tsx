@@ -203,7 +203,7 @@ export default function DailyChallenge() {
   const difficultyColor = {
     'Easy': 'text-green-400',
     'Medium': 'text-yellow-400',
-    'Hard': 'text-red-400',
+    'Hard': 'text-orange-400',
   };
 
   return (
@@ -233,7 +233,7 @@ export default function DailyChallenge() {
       <motion.div
         className={`rounded-3xl p-6 border-2 transition-colors ${
           feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' :
-          feedback === 'wrong' ? 'bg-red-500/10 border-red-500/40' :
+          feedback === 'wrong' ? 'bg-white/5 border-white/10' :
           'bg-gradient-to-br from-purple-900/40 to-indigo-900/40 border-purple-500/30'
         }`}
         initial={{ scale: 0.9 }}

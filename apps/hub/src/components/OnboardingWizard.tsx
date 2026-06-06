@@ -70,7 +70,7 @@ export default function OnboardingWizard({ onComplete }: OnboardingWizardProps) 
         </div>
 
         <div className="flex justify-center mb-6">
-          <div className={`w-24 h-24 rounded-full flex items-center justify-center text-5xl shadow-inner ${isChild ? 'bg-sky-100' : 'bg-slate-100'}`} aria-hidden="true">
+          <div className={`w-24 min-h-24 rounded-full flex items-center justify-center text-5xl shadow-inner ${isChild ? 'bg-sky-100' : 'bg-slate-100'}`} aria-hidden="true">
             {isChild ? '\u{1F99A}' : '\u{1F393}'}
           </div>
         </div>
@@ -90,6 +90,7 @@ export default function OnboardingWizard({ onComplete }: OnboardingWizardProps) 
                   const newLang = e.target.value;
                   
                   setLang(newLang);
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   setLearnerStoreLanguage(newLang as any);
                   i18nHook.changeLanguage(newLang).then(() => {
                   }).catch(e => {
@@ -155,7 +156,7 @@ export default function OnboardingWizard({ onComplete }: OnboardingWizardProps) 
                       aria-checked={avatar === avatarKey}
                       name="avatar-selection"
                       onClick={() => setAvatar(avatarKey)}
-                      className={`w-14 h-14 text-3xl rounded-full flex items-center justify-center transition-all ${
+                      className={`w-14 min-h-14 text-3xl rounded-full flex items-center justify-center transition-all ${
                         avatar === avatarKey ? 'bg-sky-100 ring-4 ring-sky-400 scale-110' : 'bg-slate-50 hover:bg-slate-100'
                       }`}
                     >

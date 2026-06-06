@@ -165,7 +165,7 @@ export default function ChemicalBondingCanvas({ isPlaying }: CanvasProps) {
           </div>
 
           {/* Bond Visualization */}
-          <div className="relative w-80 h-48 bg-slate-800/50 rounded-2xl border border-slate-700 flex items-center justify-center overflow-hidden">
+          <div className="relative w-80 min-h-48 bg-slate-800/50 rounded-2xl border border-slate-700 flex items-center justify-center overflow-hidden">
             <AnimatePresence mode="wait">
               <motion.div
                 key={selectedBond.id}
@@ -178,7 +178,7 @@ export default function ChemicalBondingCanvas({ isPlaying }: CanvasProps) {
                   // Ionic bond visualization
                   <>
                     <motion.div
-                      className={`w-16 h-16 rounded-full ${selectedBond.atoms[0].color} flex items-center justify-center text-white font-bold text-xl shadow-lg`}
+                      className={`w-16 min-h-16 rounded-full ${selectedBond.atoms[0].color} flex items-center justify-center text-white font-bold text-xl shadow-lg`}
                       animate={showTransfer ? { x: 20 } : { x: 0 }}
                     >
                       {selectedBond.atoms[0].symbol}
@@ -205,7 +205,7 @@ export default function ChemicalBondingCanvas({ isPlaying }: CanvasProps) {
                     </div>
 
                     <motion.div
-                      className={`w-16 h-16 rounded-full ${selectedBond.atoms[1].color} flex items-center justify-center text-white font-bold text-xl shadow-lg`}
+                      className={`w-16 min-h-16 rounded-full ${selectedBond.atoms[1].color} flex items-center justify-center text-white font-bold text-xl shadow-lg`}
                       animate={showTransfer ? { x: -20 } : { x: 0 }}
                     >
                       {selectedBond.atoms[1].symbol}
@@ -217,7 +217,7 @@ export default function ChemicalBondingCanvas({ isPlaying }: CanvasProps) {
                     {selectedBond.atoms.map((atom, i) => (
                       <motion.div key={i} className="flex items-center">
                         <motion.div
-                          className={`w-14 h-14 rounded-full ${atom.color} flex items-center justify-center font-bold text-lg shadow-lg ${
+                          className={`w-14 min-h-14 rounded-full ${atom.color} flex items-center justify-center font-bold text-lg shadow-lg ${
                             atom.symbol === 'H' ? 'text-black' : 'text-white'
                           }`}
                           animate={showTransfer ? { scale: [1, 1.1, 1] } : {}}
@@ -364,7 +364,7 @@ export default function ChemicalBondingCanvas({ isPlaying }: CanvasProps) {
                   <button
                     key={atom.symbol}
                     onClick={() => setBuildAtom1(atom.symbol)}
-                    className={`w-12 h-12 rounded-full ${atom.color} font-bold transition-all ${
+                    className={`w-12 min-h-12 rounded-full ${atom.color} font-bold transition-all ${
                       buildAtom1 === atom.symbol ? 'ring-2 ring-emerald-400 scale-110' : ''
                     }`}
                   >
@@ -397,7 +397,7 @@ export default function ChemicalBondingCanvas({ isPlaying }: CanvasProps) {
                   <button
                     key={atom.symbol}
                     onClick={() => setBuildAtom2(atom.symbol)}
-                    className={`w-12 h-12 rounded-full ${atom.color} font-bold transition-all ${
+                    className={`w-12 min-h-12 rounded-full ${atom.color} font-bold transition-all ${
                       buildAtom2 === atom.symbol ? 'ring-2 ring-emerald-400 scale-110' : ''
                     }`}
                   >

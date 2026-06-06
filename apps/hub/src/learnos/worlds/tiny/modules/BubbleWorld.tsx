@@ -3,6 +3,7 @@
 // Zero text in child UI. Otter companion.
 
 import { useRef, useEffect, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useSettingsStore } from '@/store';
 import { ParticleEngine } from '@/shared/canvas/engines/ParticleEngine';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
@@ -36,6 +37,7 @@ interface PopReveal {
 }
 
 export default function BubbleWorld() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const bubblesRef = useRef<Bubble[]>([]);

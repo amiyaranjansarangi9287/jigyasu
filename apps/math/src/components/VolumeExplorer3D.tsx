@@ -76,12 +76,12 @@ export default function VolumeExplorer3D() {
       );
     }
     if (shape === 'cylinder') {
-      return <motion.div className="relative w-40 h-48" animate={{ y: [0, -6, 0] }} transition={{ duration: 3, repeat: Infinity }}><div className="absolute top-4 left-6 w-28 h-10 rounded-full bg-green-400/70 border-2 border-green-200" /><div className="absolute top-9 left-6 w-28 h-28 bg-gradient-to-b from-green-400/70 to-emerald-700/70 border-x-2 border-green-200" /><div className="absolute bottom-6 left-6 w-28 h-10 rounded-full bg-emerald-500/70 border-2 border-green-200" /><span className="absolute inset-0 flex items-center justify-center text-5xl">🥫</span></motion.div>;
+      return <motion.div className="relative w-40 min-h-48" animate={{ y: [0, -6, 0] }} transition={{ duration: 3, repeat: Infinity }}><div className="absolute top-4 left-6 w-28 h-10 rounded-full bg-green-400/70 border-2 border-green-200" /><div className="absolute top-9 left-6 w-28 h-28 bg-gradient-to-b from-green-400/70 to-emerald-700/70 border-x-2 border-green-200" /><div className="absolute bottom-6 left-6 w-28 h-10 rounded-full bg-emerald-500/70 border-2 border-green-200" /><span className="absolute inset-0 flex items-center justify-center text-5xl">🥫</span></motion.div>;
     }
     if (shape === 'cone') {
-      return <motion.div className="relative w-44 h-48" animate={{ rotate: [-2, 2, -2] }} transition={{ duration: 4, repeat: Infinity }}><div className="absolute left-8 top-6 w-0 h-0 border-l-[56px] border-r-[56px] border-b-[130px] border-l-transparent border-r-transparent border-b-orange-400/70" /><div className="absolute bottom-4 left-8 w-28 h-10 rounded-full bg-amber-500/70 border-2 border-amber-200" /><span className="absolute inset-0 flex items-center justify-center text-5xl">🍦</span></motion.div>;
+      return <motion.div className="relative w-44 min-h-48" animate={{ rotate: [-2, 2, -2] }} transition={{ duration: 4, repeat: Infinity }}><div className="absolute left-8 top-6 w-0 h-0 border-l-[56px] border-r-[56px] border-b-[130px] border-l-transparent border-r-transparent border-b-orange-400/70" /><div className="absolute bottom-4 left-8 w-28 h-10 rounded-full bg-amber-500/70 border-2 border-amber-200" /><span className="absolute inset-0 flex items-center justify-center text-5xl">🍦</span></motion.div>;
     }
-    return <motion.div className="w-40 h-40 rounded-full bg-gradient-to-br from-white/50 via-pink-400/70 to-rose-800/80 shadow-2xl shadow-pink-500/30 flex items-center justify-center text-5xl" animate={{ rotate: [0, 360], y: [0, -8, 0] }} transition={{ rotate: { duration: 10, repeat: Infinity, ease: 'linear' }, y: { duration: 3, repeat: Infinity } }}>🌐</motion.div>;
+    return <motion.div className="w-40 min-h-40 rounded-full bg-gradient-to-br from-white/50 via-pink-400/70 to-rose-800/80 shadow-2xl shadow-pink-500/30 flex items-center justify-center text-5xl" animate={{ rotate: [0, 360], y: [0, -8, 0] }} transition={{ rotate: { duration: 10, repeat: Infinity, ease: 'linear' }, y: { duration: 3, repeat: Infinity } }}>🌐</motion.div>;
   };
 
   return (

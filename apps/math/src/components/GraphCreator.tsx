@@ -170,7 +170,7 @@ export default function GraphCreator() {
         <div className="space-y-4">
           <div className="bg-white/5 rounded-2xl p-4 border border-white/10">
             <h4 className="text-white font-bold mb-3">📝 Data</h4>
-            <div className="space-y-2 max-h-48 overflow-y-auto pr-1">
+            <div className="space-y-2 max-min-h-48 overflow-y-auto pr-1">
               {data.map((d, i) => (
                 <div key={i} className="flex items-center gap-2 bg-white/5 rounded-lg px-3 py-1.5">
                   <div className="w-3 h-3 rounded-full" style={{ background: d.color }} />

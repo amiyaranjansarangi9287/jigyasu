@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface SolarSystemCanvasProps {
   highlightPlanet: number; // -1 for none, 0-7 for planets
@@ -6,6 +7,7 @@ interface SolarSystemCanvasProps {
 }
 
 export default function SolarSystemCanvas({ highlightPlanet, speed }: SolarSystemCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const highlightRef = useRef(highlightPlanet);

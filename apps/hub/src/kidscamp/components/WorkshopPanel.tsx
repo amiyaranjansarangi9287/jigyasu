@@ -76,6 +76,7 @@ export default function WorkshopPanel({
                     <span className="text-2xl">{pillar.icon}</span>
                     <div className="flex-1">
                       <div className="flex justify-between text-sm mb-1">
+                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
                         <span className="font-medium text-gray-900 dark:text-white">{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
                         <span className="text-gray-500">{completed}/{pillar.total}</span>
                       </div>

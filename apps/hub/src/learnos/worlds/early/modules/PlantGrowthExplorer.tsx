@@ -1,6 +1,7 @@
 // src/worlds/early/modules/PlantGrowthExplorer.tsx
 
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import EarlyShell from '../EarlyShell';
 import { usePip } from '../hooks/usePip';
@@ -17,6 +18,7 @@ const PLANT_STAGES = [
 ];
 
 export default function PlantGrowthExplorer() {
+  const { t } = useTranslation();
   const pip = usePip();
   const { recordPlantStage } = useEarlyProgress();
   const { trackCorrect, trackWrong } = useEarlySession();
@@ -69,11 +71,11 @@ export default function PlantGrowthExplorer() {
 
         <div className="px-5 space-y-4 mb-4">
           <div>
-            <div className="flex items-center justify-between mb-1"><span className="text-base font-bold text-blue-600">💧 Water</span><span className="text-sm text-gray-500">{Math.round(waterLevel * 100)}%</span></div>
+            <div className="flex items-center justify-between mb-1"><span className="text-base font-bold text-blue-600">{t('early.modules.PlantGrowthExplorer.spn_Water', '💧 Water')}</span><span className="text-sm text-gray-500">{Math.round(waterLevel * 100)}%</span></div>
             <input type="range" min="0" max="100" value={Math.round(waterLevel * 100)} onChange={e => setWaterLevel(Number(e.target.value) / 100)} className="w-full h-3 rounded-full appearance-none bg-blue-100 cursor-pointer" style={{ accentColor: '#3B82F6' }} />
           </div>
           <div>
-            <div className="flex items-center justify-between mb-1"><span className="text-base font-bold text-yellow-600">☀️ Sunlight</span><span className="text-sm text-gray-500">{Math.round(sunLevel * 100)}%</span></div>
+            <div className="flex items-center justify-between mb-1"><span className="text-base font-bold text-yellow-600">{t('early.modules.PlantGrowthExplorer.spn_Sunlight', '☀️ Sunlight')}</span><span className="text-sm text-gray-500">{Math.round(sunLevel * 100)}%</span></div>
             <input type="range" min="0" max="100" value={Math.round(sunLevel * 100)} onChange={e => setSunLevel(Number(e.target.value) / 100)} className="w-full h-3 rounded-full appearance-none bg-yellow-100 cursor-pointer" style={{ accentColor: '#F59E0B' }} />
           </div>
         </div>
@@ -82,7 +84,7 @@ export default function PlantGrowthExplorer() {
 
         <AnimatePresence>{showQuestion && (
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="mx-5 bg-white rounded-3xl p-5 shadow-xl border border-green-200">
-            <div className="flex items-center gap-2 mb-4"><span className="text-3xl">🐤</span><p className="font-bold text-gray-800">{stage.question}</p></div>
+            <div className="flex items-center gap-2 mb-4"><span className="text-3xl">{t('early.modules.PlantGrowthExplorer.spn_', '🐤')}</span><p className="font-bold text-gray-800">{stage.question}</p></div>
             <div className="space-y-3">{stage.options.map((opt, i) => {
               const done = selectedAnswer !== null;
               return (<motion.button key={opt} whileTap={{ scale: 0.98 }} onClick={() => handleAnswer(i)}

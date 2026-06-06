@@ -123,7 +123,7 @@ export default function PhotosynthesisLab() {
               <motion.div className="absolute top-4 right-6"
                 animate={{ scale: [1, 1.1, 1], opacity: lab.lightIntensity / 100 }}
                 transition={{ repeat: Infinity, duration: 2 }}>
-                <Sun className="w-14 h-14 text-yellow-400" style={{ filter: `drop-shadow(0 0 ${lab.lightIntensity / 5}px #facc15)` }} />
+                <Sun className="w-14 min-h-14 text-yellow-400" style={{ filter: `drop-shadow(0 0 ${lab.lightIntensity / 5}px #facc15)` }} />
               </motion.div>
 
               {/* Light rays */}
@@ -245,7 +245,7 @@ export default function PhotosynthesisLab() {
                 className={`flex-1 py-2.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2 ${isRunning ? 'bg-red-500 text-white' : 'bg-emerald-500 text-white'}`}>
                 {isRunning ? '⏸ Pause Experiment' : '▶️ Run Experiment'}
               </button>
-              <button onClick={reset} className="px-5 py-2.5 rounded-xl bg-gray-800 text-gray-300 text-sm font-bold hover:bg-gray-700">
+              <button onClick={reset} className="px-5 py-2.5 rounded-xl bg-gray-800 text-gray-300 text-sm font-bold hover:bg-gray-700" aria-label="Rotate ccw">
                 <RotateCcw className="w-4 h-4" />
               </button>
             </div>
@@ -279,10 +279,12 @@ export default function PhotosynthesisLab() {
                 <div className="text-2xl mb-2">{stageInfo[activeStage].emoji}</div>
                 <h3 className="text-lg font-bold text-white mb-1">{stageInfo[activeStage].title}</h3>
                 {'location' in stageInfo[activeStage] && (
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   <div className="text-[10px] text-emerald-400 font-medium mb-2">📍 {(stageInfo[activeStage] as any).location}</div>
                 )}
                 {'equation' in stageInfo[activeStage] && (
                   <div className="bg-emerald-500/10 border border-emerald-500/20 rounded-lg px-3 py-2 mb-3 text-center">
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     <div className="text-xs text-emerald-400 font-mono font-bold">{(stageInfo[activeStage] as any).equation}</div>
                   </div>
                 )}
@@ -292,6 +294,7 @@ export default function PhotosynthesisLab() {
                   <>
                     <h4 className="text-xs font-bold text-white mb-2">Steps:</h4>
                     <ol className="space-y-1.5">
+                      // eslint-disable-next-line @typescript-eslint/no-explicit-any
                       {((stageInfo[activeStage] as any).steps as string[]).map((step: string, i: number) => (
                         <motion.li key={i} initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }}
                           transition={{ delay: i * 0.05 }}
@@ -305,12 +308,14 @@ export default function PhotosynthesisLab() {
                     <div className="grid grid-cols-2 gap-2 mt-3">
                       <div className="bg-blue-500/10 rounded-lg p-2 border border-blue-500/20">
                         <div className="text-[10px] text-blue-400 font-bold mb-1">Inputs →</div>
+                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
                         {((stageInfo[activeStage] as any).inputs as string[]).map((inp: string) => (
                           <div key={inp} className="text-[10px] text-gray-300">• {inp}</div>
                         ))}
                       </div>
                       <div className="bg-green-500/10 rounded-lg p-2 border border-green-500/20">
                         <div className="text-[10px] text-green-400 font-bold mb-1">→ Outputs</div>
+                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
                         {((stageInfo[activeStage] as any).outputs as string[]).map((out: string) => (
                           <div key={out} className="text-[10px] text-gray-300">• {out}</div>
                         ))}

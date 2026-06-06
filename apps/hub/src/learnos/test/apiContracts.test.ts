@@ -223,6 +223,7 @@ describe('API Contracts', () => {
     });
 
     it('should handle null progress', async () => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const response = await stubSyncProgress({ progress: null as any });
 
       expect(response.success).toBe(true);

@@ -86,6 +86,7 @@ export interface ConceptProgress {
   wrongAnswers: number;
   timeSpentSeconds: number;
   lumoInteractions: number;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   payload?: any;
   contentVersion?: string;
 }

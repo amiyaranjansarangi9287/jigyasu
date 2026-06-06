@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Suspense, lazy, ComponentType } from 'react';
 import { LoadingScreen } from '@/shared/ui';
 import { moduleRegistry } from '../ModuleRegistry';
+import withWonderFirst from './withWonderFirst';
 
 // Module loader map: uses composite key `${worldId}:${moduleId}` to avoid conflicts
 const moduleLoaders: Record<string, () => Promise<{ default: ComponentType }>> = {
@@ -154,7 +155,22 @@ const moduleLoaders: Record<string, () => Promise<{ default: ComponentType }>> =
 
 // Hoist lazy modules to prevent remounting on every render
 const lazyModules: Record<string, React.LazyExoticComponent<ComponentType<any>>> = Object.fromEntries(
-  Object.entries(moduleLoaders).map(([key, loader]) => [key, lazy(loader)])
+  Object.entries(moduleLoaders).map(([key, loader]) => [
+    key, 
+    lazy(async () => {
+      const mod = await loader();
+      const isWonderFirst = key.endsWith('-wonder');
+      const isMath = key.startsWith('math:');
+      
+      if (isWonderFirst || isMath) {
+        return mod;
+      }
+      
+      const [worldId, moduleId] = key.split(':');
+      const WrappedComponent = withWonderFirst(mod.default, worldId, moduleId);
+      return { default: WrappedComponent };
+    })
+  ])
 );
 
 /**
@@ -162,6 +178,7 @@ const lazyModules: Record<string, React.LazyExoticComponent<ComponentType<any>>>
  */
 export function WorldRoutes({ worldId }: { worldId: string }) {
   // Use visible modules (exclude hidden ones)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const modules = moduleRegistry.getVisibleByWorld(worldId as any);
 
   return (

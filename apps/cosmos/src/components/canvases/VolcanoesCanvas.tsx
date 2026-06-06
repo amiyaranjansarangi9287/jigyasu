@@ -219,7 +219,7 @@ export function VolcanoesCanvas({ isPlaying }: CanvasProps) {
 
       {/* Cross Section View */}
       {showCrossSection && (
-        <div className="absolute bottom-0 left-4 w-48 h-32 rounded-t-xl overflow-hidden border border-slate-600 bg-slate-900/80">
+        <div className="absolute bottom-0 left-4 w-48 min-h-32 rounded-t-xl overflow-hidden border border-slate-600 bg-slate-900/80">
           <div className="absolute inset-0">
             {/* Magma Chamber */}
             <motion.div
@@ -278,7 +278,7 @@ export function VolcanoesCanvas({ isPlaying }: CanvasProps) {
       {/* Volcano Selector */}
       <div className="absolute top-4 right-4 rounded-xl bg-slate-800/80 p-3 backdrop-blur max-w-xs">
         <h3 className="text-sm font-medium text-white mb-2">🌋 Select Volcano</h3>
-        <div className="space-y-1 max-h-40 overflow-y-auto">
+        <div className="space-y-1 max-min-h-40 overflow-y-auto">
           {volcanoes.map((volcano) => (
             <button
               key={volcano.id}
@@ -327,7 +327,7 @@ export function VolcanoesCanvas({ isPlaying }: CanvasProps) {
               ? 'bg-red-500/50 text-white cursor-not-allowed'
               : 'bg-gradient-to-r from-red-500 to-orange-500 text-white hover:from-red-600 hover:to-orange-600'
           }`}
-        >
+         aria-label="Flame">
           <Flame className="h-5 w-5" />
           {volcanoState === 'erupting' ? 'Erupting!' : 'Trigger Eruption'}
         </button>

@@ -75,7 +75,7 @@ function CellVisualization({ phaseIndex }: { phaseIndex: number }) {
   // Visual representation
   const getVisual = () => {
     if (phaseIndex === 0) return ( // Interphase
-      <div className="relative w-48 h-48 mx-auto">
+      <div className="relative w-48 min-h-48 mx-auto">
         <div className="absolute inset-0 rounded-full border-2 border-blue-500/50 bg-blue-500/10" />
         <div className="absolute inset-12 rounded-full border-2 border-purple-500 bg-purple-500/20 flex items-center justify-center">
           <span className="text-2xl">🧬</span>
@@ -84,7 +84,7 @@ function CellVisualization({ phaseIndex }: { phaseIndex: number }) {
       </div>
     );
     if (phaseIndex === 1) return ( // Prophase I
-      <div className="relative w-48 h-48 mx-auto">
+      <div className="relative w-48 min-h-48 mx-auto">
         <div className="absolute inset-0 rounded-full border-2 border-blue-500/50 bg-blue-500/10" />
         <div className="absolute top-8 left-1/2 -translate-x-1/2 flex gap-0.5">
           <motion.div className="text-lg" animate={{ rotate: [0, 10, 0] }} transition={{ repeat: Infinity, duration: 1 }}>╋</motion.div>
@@ -98,7 +98,7 @@ function CellVisualization({ phaseIndex }: { phaseIndex: number }) {
       </div>
     );
     if (phaseIndex === 2) return ( // Metaphase I
-      <div className="relative w-48 h-48 mx-auto">
+      <div className="relative w-48 min-h-48 mx-auto">
         <div className="absolute inset-0 rounded-full border-2 border-blue-500/50 bg-blue-500/10" />
         <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-0.5 bg-gray-500/30" />
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-2">
@@ -108,7 +108,7 @@ function CellVisualization({ phaseIndex }: { phaseIndex: number }) {
       </div>
     );
     if (phaseIndex === 3) return ( // Anaphase I
-      <div className="relative w-48 h-48 mx-auto">
+      <div className="relative w-48 min-h-48 mx-auto">
         <div className="absolute inset-0 rounded-[40%] border-2 border-blue-500/50 bg-blue-500/10" style={{ transform: 'scaleX(1.3)' }} />
         <motion.div className="absolute top-1/4 left-4" animate={{ x: [-10, 10] }} transition={{ repeat: Infinity, duration: 1.5, repeatType: 'reverse' }}>
           <div className="text-sm">╋╋</div>
@@ -121,17 +121,17 @@ function CellVisualization({ phaseIndex }: { phaseIndex: number }) {
       </div>
     );
     if (phaseIndex === 4) return ( // Telophase I
-      <div className="relative w-48 h-32 mx-auto flex justify-center gap-4">
-        <div className="w-20 h-20 rounded-full border-2 border-blue-500/50 bg-blue-500/10 flex items-center justify-center text-xs">n=23</div>
-        <div className="w-20 h-20 rounded-full border-2 border-pink-500/50 bg-pink-500/10 flex items-center justify-center text-xs">n=23</div>
+      <div className="relative w-48 min-h-32 mx-auto flex justify-center gap-4">
+        <div className="w-20 min-h-20 rounded-full border-2 border-blue-500/50 bg-blue-500/10 flex items-center justify-center text-xs">n=23</div>
+        <div className="w-20 min-h-20 rounded-full border-2 border-pink-500/50 bg-pink-500/10 flex items-center justify-center text-xs">n=23</div>
       </div>
     );
     if (phaseIndex >= 5 && phaseIndex <= 7) return ( // Meiosis II phases
-      <div className="relative w-48 h-32 mx-auto flex justify-center gap-4">
-        <div className="w-20 h-20 rounded-full border-2 border-blue-500/50 bg-blue-500/10 flex items-center justify-center">
+      <div className="relative w-48 min-h-32 mx-auto flex justify-center gap-4">
+        <div className="w-20 min-h-20 rounded-full border-2 border-blue-500/50 bg-blue-500/10 flex items-center justify-center">
           <span className="text-lg">{phaseIndex === 7 ? '↔️' : '╋'}</span>
         </div>
-        <div className="w-20 h-20 rounded-full border-2 border-pink-500/50 bg-pink-500/10 flex items-center justify-center">
+        <div className="w-20 min-h-20 rounded-full border-2 border-pink-500/50 bg-pink-500/10 flex items-center justify-center">
           <span className="text-lg">{phaseIndex === 7 ? '↔️' : '╋'}</span>
         </div>
       </div>
@@ -144,7 +144,7 @@ function CellVisualization({ phaseIndex }: { phaseIndex: number }) {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: i * 0.1 }}
-            className="w-16 h-16 rounded-full border-2 border-gray-600 bg-gray-800/50 flex items-center justify-center text-2xl">
+            className="w-16 min-h-16 rounded-full border-2 border-gray-600 bg-gray-800/50 flex items-center justify-center text-2xl">
             {c}
           </motion.div>
         ))}

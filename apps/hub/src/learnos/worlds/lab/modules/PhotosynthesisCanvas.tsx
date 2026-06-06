@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface PhotosynthesisCanvasProps {
   sunIntensity: number;
@@ -17,6 +18,7 @@ interface Particle {
 }
 
 export default function PhotosynthesisCanvas({ sunIntensity, isPlaying }: PhotosynthesisCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const particlesRef = useRef<Particle[]>([]);

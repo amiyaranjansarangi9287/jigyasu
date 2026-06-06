@@ -197,7 +197,7 @@ export default function WaterPurificationCanvas({ isPlaying }: CanvasProps) {
                 animate={{ rotate: 360 }}
                 transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
               >
-                <Sparkles className="w-12 h-12 text-cyan-400" />
+                <Sparkles className="w-12 min-h-12 text-cyan-400" />
               </motion.div>
             </motion.div>
           )}
@@ -237,7 +237,7 @@ export default function WaterPurificationCanvas({ isPlaying }: CanvasProps) {
       <div className="flex gap-3">
         <button
           onClick={processStep}
-          disabled={isProcessing || currentStep >= PURIFICATION_STEPS.length - 1 && particles.length === 0}
+          disabled={isProcessing || currentStep  aria-label="Filter">= PURIFICATION_STEPS.length - 1 && particles.length === 0}
           className="px-6 py-3 bg-cyan-600 hover:bg-cyan-500 disabled:bg-slate-600 rounded-xl text-white font-bold flex items-center gap-2"
         >
           {isProcessing ? (

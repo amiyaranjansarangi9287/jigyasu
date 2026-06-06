@@ -266,7 +266,7 @@ export default function EcosystemGame() {
             {popHistory.length > 1 && (
               <div className="mt-4 bg-gray-900 rounded-2xl border border-gray-800 p-5">
                 <h3 className="text-sm font-bold text-white mb-3">📈 Population Trends</h3>
-                <div className="flex items-end gap-0.5 h-24">
+                <div className="flex items-end gap-0.5 min-h-24">
                   {popHistory.map((h, i) => (
                     <div key={i} className="flex-1 flex flex-col justify-end gap-px" title={`Turn ${h.turn}`}>
                       <div className="rounded-t-sm bg-green-500/70" style={{ height: `${(h.producers / maxHistVal) * 100}%` }} />
@@ -288,10 +288,10 @@ export default function EcosystemGame() {
               <button onClick={() => setShowAdd(true)} className="flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500 text-white text-sm font-medium hover:bg-emerald-600">
                 <Plus className="w-4 h-4" /> Add Organism
               </button>
-              <button onClick={simulateTurn} disabled={ecosystem.length === 0} className="flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-medium hover:bg-blue-600 disabled:opacity-40">
+              <button onClick={simulateTurn} disabled={ecosystem.length === 0} className="flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-medium hover:bg-blue-600 disabled:opacity-40" aria-label="Trending up">
                 <TrendingUp className="w-4 h-4" /> Simulate Turn
               </button>
-              <button onClick={reset} className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800 text-gray-300 text-sm font-medium hover:bg-gray-700">
+              <button onClick={reset} className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800 text-gray-300 text-sm font-medium hover:bg-gray-700" aria-label="Rotate ccw">
                 <RotateCcw className="w-4 h-4" /> Reset
               </button>
             </div>

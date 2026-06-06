@@ -3,21 +3,22 @@ import { Routes, Route } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import { LoadingScreen } from '@/shared/ui';
 import DiscoveryHome from './DiscoveryHome';
+import withWonderFirst from '../../core/modules/withWonderFirst';
 
-const AlgebraScales = lazy(() => import('./modules/AlgebraScales'));
-const CellCity = lazy(() => import('./modules/CellCity'));
-const ChemicalBalancer = lazy(() => import('./modules/ChemicalBalancer'));
-const GeometryProofBuilder = lazy(() => import('./modules/GeometryProofBuilder'));
-const SpeedDistanceTime = lazy(() => import('./modules/SpeedDistanceTime'));
-const GeneticsSimulator = lazy(() => import('./modules/GeneticsSimulator'));
-const PlateTectonics = lazy(() => import('./modules/PlateTectonics'));
-const LiteraryAnalysis = lazy(() => import('./modules/LiteraryAnalysis'));
-const EconomicSimulation = lazy(() => import('./modules/EconomicSimulation'));
-const PeriodicTableExplorer = lazy(() => import('./modules/PeriodicTableExplorer'));
-const ProbabilitySandbox = lazy(() => import('./modules/ProbabilitySandbox'));
-const CarbonCycle = lazy(() => import('./modules/CarbonCycle'));
-const NumberSystems = lazy(() => import('./modules/NumberSystems'));
-const FermiEstimation = lazy(() => import('./modules/FermiEstimation'));
+const AlgebraScales = lazy(async () => { const m = await import('./modules/AlgebraScales'); return { default: withWonderFirst(m.default, 'discovery', 'algebra-scales') }; });
+const CellCity = lazy(async () => { const m = await import('./modules/CellCity'); return { default: withWonderFirst(m.default, 'discovery', 'cell-city') }; });
+const ChemicalBalancer = lazy(async () => { const m = await import('./modules/ChemicalBalancer'); return { default: withWonderFirst(m.default, 'discovery', 'chemical-balancer') }; });
+const GeometryProofBuilder = lazy(async () => { const m = await import('./modules/GeometryProofBuilder'); return { default: withWonderFirst(m.default, 'discovery', 'geometry-proof') }; });
+const SpeedDistanceTime = lazy(async () => { const m = await import('./modules/SpeedDistanceTime'); return { default: withWonderFirst(m.default, 'discovery', 'speed-distance') }; });
+const GeneticsSimulator = lazy(async () => { const m = await import('./modules/GeneticsSimulator'); return { default: withWonderFirst(m.default, 'discovery', 'genetics-simulator') }; });
+const PlateTectonics = lazy(async () => { const m = await import('./modules/PlateTectonics'); return { default: withWonderFirst(m.default, 'discovery', 'plate-tectonics') }; });
+const LiteraryAnalysis = lazy(async () => { const m = await import('./modules/LiteraryAnalysis'); return { default: withWonderFirst(m.default, 'discovery', 'literary-analysis') }; });
+const EconomicSimulation = lazy(async () => { const m = await import('./modules/EconomicSimulation'); return { default: withWonderFirst(m.default, 'discovery', 'economic-simulation') }; });
+const PeriodicTableExplorer = lazy(async () => { const m = await import('./modules/PeriodicTableExplorer'); return { default: withWonderFirst(m.default, 'discovery', 'periodic-table') }; });
+const ProbabilitySandbox = lazy(async () => { const m = await import('./modules/ProbabilitySandbox'); return { default: withWonderFirst(m.default, 'discovery', 'probability') }; });
+const CarbonCycle = lazy(async () => { const m = await import('./modules/CarbonCycle'); return { default: withWonderFirst(m.default, 'discovery', 'carbon-cycle') }; });
+const NumberSystems = lazy(async () => { const m = await import('./modules/NumberSystems'); return { default: withWonderFirst(m.default, 'discovery', 'number-systems') }; });
+const FermiEstimation = lazy(async () => { const m = await import('./modules/FermiEstimation'); return { default: withWonderFirst(m.default, 'discovery', 'fermi-estimation') }; });
 
 export default function DiscoveryWorld() {
   return (

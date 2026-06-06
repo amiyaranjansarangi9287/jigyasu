@@ -116,7 +116,7 @@ export default function CarbonCompoundsCanvas(_props: CanvasProps) {
           {/* Boiling point trend chart */}
           <div className="bg-slate-800/50 rounded-xl p-3 max-w-sm w-full border border-slate-700">
             <p className="text-xs text-slate-400 mb-2 text-center">Boiling Point Trend (more C → higher BP)</p>
-            <div className="flex items-end gap-1 h-20">
+            <div className="flex items-end gap-1 min-h-20">
               {HYDROCARBONS.map(hc => (
                 <motion.div key={hc.name} className="flex-1 flex flex-col items-center"
                   initial={{ height: 0 }} animate={{ height: 'auto' }}>
@@ -150,12 +150,12 @@ export default function CarbonCompoundsCanvas(_props: CanvasProps) {
           </div>
 
           <div className="flex items-center gap-6">
-            <button onClick={() => setBuildCarbons(Math.max(1, buildCarbons - 1))} className="w-12 h-12 bg-slate-700 hover:bg-slate-600 rounded-full text-white text-2xl font-bold">−</button>
+            <button onClick={() => setBuildCarbons(Math.max(1, buildCarbons - 1))} className="w-12 min-h-12 bg-slate-700 hover:bg-slate-600 rounded-full text-white text-2xl font-bold">−</button>
             <div className="text-center">
               <p className="text-3xl font-bold text-emerald-400">{buildCarbons}</p>
               <p className="text-xs text-slate-400">Carbons</p>
             </div>
-            <button onClick={() => setBuildCarbons(Math.min(10, buildCarbons + 1))} className="w-12 h-12 bg-slate-700 hover:bg-slate-600 rounded-full text-white text-2xl font-bold">+</button>
+            <button onClick={() => setBuildCarbons(Math.min(10, buildCarbons + 1))} className="w-12 min-h-12 bg-slate-700 hover:bg-slate-600 rounded-full text-white text-2xl font-bold">+</button>
           </div>
 
           <motion.div key={buildCarbons} initial={{ scale: 0.9 }} animate={{ scale: 1 }}

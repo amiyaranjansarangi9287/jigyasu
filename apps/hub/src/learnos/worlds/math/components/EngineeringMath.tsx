@@ -62,7 +62,7 @@ function BridgeLoad() {
         </div>
         <div className="grid grid-cols-2 gap-3">
           <div className="bg-orange-500/10 rounded-xl p-3 border border-orange-500/20 text-center"><p className="text-gray-400 text-sm">Max Bending</p><motion.p key={maxBending} className="text-orange-400 font-bold text-lg" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>{maxBending.toFixed(0)} Nm</motion.p></div>
-          <div className={`rounded-xl p-3 border text-center ${stress > 100000 ? 'bg-red-500/20 border-red-500/30' : 'bg-green-500/10 border-green-500/20'}`}><p className="text-gray-400 text-sm">Stress</p><motion.p key={stress} className={`font-bold text-lg ${stress > 100000 ? 'text-red-400' : 'text-green-400'}`} initial={{ scale: 0.5 }} animate={{ scale: 1 }}>{(stress / 1000).toFixed(1)} kPa</motion.p></div>
+          <div className={`rounded-xl p-3 border text-center ${stress > 100000 ? 'bg-red-500/20 border-red-500/30' : 'bg-green-500/10 border-green-500/20'}`}><p className="text-gray-400 text-sm">Stress</p><motion.p key={stress} className={`font-bold text-lg ${stress > 100000 ? 'text-orange-400' : 'text-green-400'}`} initial={{ scale: 0.5 }} animate={{ scale: 1 }}>{(stress / 1000).toFixed(1)} kPa</motion.p></div>
         </div>
         <div className="bg-white/5 rounded-xl p-3 border border-white/10 text-sm text-gray-300">
           <p>📝 Bending moment M = FL/4 for center-loaded simply-supported beam.</p>

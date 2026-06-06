@@ -37,7 +37,7 @@ export default function Shapes() {
         <div className="text-center mb-8">
           <div className="text-5xl mb-3">{SHAPES.find(s => s.id === shape)?.emoji}</div>
           <h1 className="text-3xl font-extrabold text-slate-800">{t('lab.shapes.title', { defaultValue: 'Geometry Shapes' })}</h1>
-          <p className="text-sm text-slate-500 mt-2">Explore sides, angles, and properties!</p>
+          <p className="text-sm text-slate-500 mt-2">{t('lab.modules.Shapes.txt_Exploresid', 'Explore sides, angles, and properties!')}</p>
         </div>
         <div className="flex justify-center gap-3 mb-6">
           {SHAPES.map(s => (
@@ -55,7 +55,7 @@ export default function Shapes() {
         </div>
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.Shapes.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1">Indian Geometry Heritage</h3>
               <p className="text-gray-600 text-sm leading-relaxed">The <strong>Sulba Sutras</strong> (800-500 BCE) contain geometry rules for building fire altars — including the Pythagorean theorem 1,000 years before Pythagoras! Baudhayana described constructing squares, circles, and triangles with precision.</p>

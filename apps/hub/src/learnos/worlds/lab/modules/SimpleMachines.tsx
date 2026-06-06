@@ -40,7 +40,7 @@ export default function SimpleMachines() {
         <div className="text-center mb-8">
           <div className="text-5xl mb-3">⚙️</div>
           <h1 className="text-3xl font-extrabold text-slate-800">{t('lab.simplemachines.title', { defaultValue: 'Simple Machines' })}</h1>
-          <p className="text-sm text-slate-500 mt-2">See how machines make work easier!</p>
+          <p className="text-sm text-slate-500 mt-2">{t('lab.modules.SimpleMachines.txt_Seehowmach', 'See how machines make work easier!')}</p>
         </div>
         <div className="flex justify-center gap-3 mb-6">
           {MACHINES.map(m => (
@@ -54,15 +54,15 @@ export default function SimpleMachines() {
           <SimpleMachinesCanvas machine={machine} effortLevel={effortLevel} />
         </div>
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
-          <div className="flex justify-between mb-2"><span className="text-sm text-slate-400">💪 Effort</span><span className="text-sm font-medium text-blue-600">{effortLevel}%</span></div>
+          <div className="flex justify-between mb-2"><span className="text-sm text-slate-400">{t('lab.modules.SimpleMachines.spn_Effort', '💪 Effort')}</span><span className="text-sm font-medium text-blue-600">{effortLevel}%</span></div>
           <input type="range" min="0" max="100" value={effortLevel} onChange={handleEffortChange} className="w-full h-3 rounded-full appearance-none cursor-pointer" style={{ background: 'linear-gradient(to right, #3B82F6, #1D4ED8)' }} />
         </div>
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.SimpleMachines.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1">Ancient Indian Engineering</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">Indians used levers, ramps, and pulleys to build temples 4,000 years ago! The Brihadeeswarar Temple (1010 CE) has a 80-ton capstone lifted using ramps and levers — an engineering marvel still studied today.</p>
+              <p className="text-gray-600 text-sm leading-relaxed">{t('lab.modules.SimpleMachines.txt_Indiansuse', 'Indians used levers, ramps, and pulleys to build temples 4,000 years ago! The Brihadeeswarar Temple (1010 CE) has a 80-ton capstone lifted using ramps and levers — an engineering marvel still studied today.')}</p>
             </div>
           </div>
         </div>

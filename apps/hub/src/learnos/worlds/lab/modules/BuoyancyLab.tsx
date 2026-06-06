@@ -1,5 +1,6 @@
 // src/worlds/lab/modules/BuoyancyLab.tsx
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import LabShell from '../LabShell';
 import { useLumoOwl } from '../hooks/useLumoOwl';
@@ -8,6 +9,7 @@ import { useLabSession } from '../hooks/useLabSession';
 import { BUOYANCY_OBJECTS } from '../data/labContent';
 
 export default function BuoyancyLab() {
+  const { t } = useTranslation();
   const lumo = useLumoOwl('buoyancy-lab');
   const { recordBuoyancyTest, updateCertification } = useLabProgress();
   const { trackEvent } = useLabSession();
@@ -32,7 +34,7 @@ export default function BuoyancyLab() {
       <div className="min-h-screen bg-cyan-50 flex flex-col p-6 pb-24">
         <div className="bg-white rounded-3xl p-5 shadow-sm border border-cyan-100 mb-4">
           <h2 className="font-bold text-lg">Buoyancy Lab</h2>
-          <p className="text-sm text-slate-500">Drop objects into the water. Which float?</p>
+          <p className="text-sm text-slate-500">{t('lab.modules.BuoyancyLab.txt_Dropobject', 'Drop objects into the water. Which float?')}</p>
           <div className="mt-2 text-sm text-cyan-600 bg-cyan-100 px-3 py-1 rounded-full inline-block">Water density = 1.0 g/cm³</div>
         </div>
 
@@ -42,7 +44,7 @@ export default function BuoyancyLab() {
           <AnimatePresence>{activeObj && activeObjData && (
             <motion.div initial={{ y: -60 }} animate={{ y: activeObjData.floats ? -20 : 60 }} transition={{ type: 'spring', damping: 8 }} className="text-5xl absolute">{activeObjData.emoji}</motion.div>
           )}</AnimatePresence>
-          {!activeObj && <p className="text-white/60 text-sm pb-4">Drop an object here</p>}
+          {!activeObj && <p className="text-white/60 text-sm pb-4">{t('lab.modules.BuoyancyLab.txt_Dropanobje', 'Drop an object here')}</p>}
         </div>
 
         {/* Result */}

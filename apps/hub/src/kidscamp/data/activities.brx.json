@@ -1,0 +1,4506 @@
+[
+  {
+    "id": "[BRX] toybox-rainbow-blocks",
+    "name": "[BRX] Rainbow Stacking Blocks",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 1-2 hours",
+    "description": "[BRX] Create a beautiful set of rainbow-colored wooden blocks perfect for stacking, sorting, and creative play. These timeless toys spark imagination and help develop fine motor skills.",
+    "image": "[BRX] /images/blocks.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[BRX] Wooden blocks or lumber scraps",
+        "quantity": "[BRX] 12-20 pieces"
+      },
+      {
+        "name": "Sandpaper",
+        "quantity": "[BRX] Fine and medium grit"
+      },
+      {
+        "name": "[BRX] Non-toxic acrylic paint",
+        "quantity": "[BRX] Rainbow colors"
+      },
+      {
+        "name": "[BRX] Clear sealant",
+        "quantity": "[BRX] 1 can",
+        "optional": true
+      },
+      {
+        "name": "Paintbrushes",
+        "quantity": "3-4"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Prepare the Wood",
+        "description": "[BRX] Start by selecting your wooden pieces. If using lumber scraps, cut them into various shapes - rectangles, squares, triangles, and arches. Sand all surfaces smooth, starting with medium grit sandpaper and finishing with fine grit. Pay special attention to edges and corners to ensure they are rounded and safe for little hands.",
+        "tip": "[BRX] Pre-cut wooden blocks from craft stores work great and save time!",
+        "duration": "[BRX] 30 min"
+      },
+      {
+        "title": "[BRX] Plan Your Rainbow",
+        "description": "[BRX] Lay out your blocks and decide which colors will go on each piece. A classic rainbow progression (red, orange, yellow, green, blue, purple) works beautifully. Consider painting blocks of similar sizes in the same color for a cohesive set.",
+        "tip": "[BRX] Take a photo of your layout plan for reference while painting.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Apply Base Coats",
+        "description": "[BRX] Paint each block with its designated color. Apply thin, even coats and let dry completely between applications. Most blocks will need 2-3 coats for full coverage.",
+        "tip": "[BRX] Use a cardboard box to hold blocks upright while drying.",
+        "duration": "[BRX] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[BRX] Add Details (Optional)",
+        "description": "[BRX] Once base coats are dry, add fun details like dots, stripes, or simple patterns. You can also leave them solid for a classic look.",
+        "duration": "[BRX] 20 min"
+      },
+      {
+        "title": "[BRX] Seal and Finish",
+        "description": "[BRX] Apply a clear, non-toxic sealant to protect the paint and make blocks more durable. Let dry completely (24 hours recommended) before play.",
+        "tip": "[BRX] Water-based polyurethane is safe once fully cured.",
+        "duration": "[BRX] 15 min",
+        "parentHelp": true
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Use only non-toxic, child-safe paints and sealants",
+      "[BRX] Ensure all edges are well-sanded and smooth",
+      "[BRX] Adult supervision required for cutting and sealing",
+      "[BRX] Allow full curing time before giving to children"
+    ],
+    "learningOutcomes": [
+      "[BRX] Fine motor skills",
+      "[BRX] Color recognition",
+      "[BRX] Spatial awareness",
+      "[BRX] Creative thinking"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] toybox-wooden-car",
+    "name": "[BRX] Wooden Auto-Rickshaw (Tuk-Tuk)",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[BRX] 2-3 hours",
+    "description": "[BRX] Construct your very own wooden Auto-Rickshaw! Learn the physics of axles and wheels as you design and paint the iconic three-wheeled vehicle that navigates busy Indian streets.",
+    "image": "[BRX] /images/wooden-car.webp",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 124,
+    "materials": [
+      {
+        "name": "[BRX] Wood block",
+        "quantity": "[BRX] 6\" x 3\" x 2\""
+      },
+      {
+        "name": "[BRX] Wooden wheels",
+        "quantity": "[BRX] 4 pieces"
+      },
+      {
+        "name": "[BRX] Wooden dowels",
+        "quantity": "[BRX] 2 pieces, 4\" each"
+      },
+      {
+        "name": "Sandpaper",
+        "quantity": "[BRX] Various grits"
+      },
+      {
+        "name": "[BRX] Wood glue"
+      },
+      {
+        "name": "[BRX] Non-toxic paint",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Shape the Car Body",
+        "description": "[BRX] Draw the car profile on your wood block - a simple curved top works best. Using a saw or pre-cut the shape, then sand all surfaces smooth.",
+        "duration": "[BRX] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[BRX] Drill Axle Holes",
+        "description": "[BRX] Mark where the axle holes will go on both sides of the car body. Drill straight through, ensuring holes align perfectly.",
+        "tip": "[BRX] Use a drill press for perfectly aligned holes.",
+        "duration": "[BRX] 15 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[BRX] Prepare Wheels and Axles",
+        "description": "[BRX] Sand the wheels smooth. Cut dowels to length for axles, leaving room for wheels plus a small gap.",
+        "duration": "[BRX] 20 min"
+      },
+      {
+        "title": "[BRX] Assemble the Car",
+        "description": "[BRX] Insert axles through the car body. Attach wheels to each end with a dab of wood glue. Ensure wheels spin freely.",
+        "tip": "[BRX] Don't use too much glue - wheels need to spin!",
+        "duration": "[BRX] 20 min"
+      },
+      {
+        "title": "[BRX] Paint and Finish",
+        "description": "[BRX] Once glue is dry, paint your car in your favorite colors. Add details like windows, headlights, or racing stripes. Apply sealant and let cure.",
+        "duration": "[BRX] 40 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Adult supervision required for all cutting and drilling",
+      "[BRX] Wear safety glasses when using power tools",
+      "[BRX] Use non-toxic finishes only"
+    ],
+    "learningOutcomes": [
+      "[BRX] Basic woodworking",
+      "[BRX] Wheel and axle mechanics",
+      "[BRX] Planning and execution",
+      "[BRX] Fine motor skills"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] toybox-plush-bear",
+    "name": "[BRX] Cuddly Plush Bear",
+    "pillar": "toybox",
+    "category": "Plush",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[BRX] 3-4 hours",
+    "description": "[BRX] Sew your own adorable teddy bear with soft fabric and button eyes. A perfect cuddly companion that makes a wonderful gift.",
+    "image": "[BRX] /images/plush-bear.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[BRX] Soft fabric (fleece or felt)",
+        "quantity": "[BRX] 1/2 yard"
+      },
+      {
+        "name": "Stuffing",
+        "quantity": "[BRX] 1 bag polyester filling"
+      },
+      {
+        "name": "Thread",
+        "quantity": "[BRX] Matching color"
+      },
+      {
+        "name": "Buttons",
+        "quantity": "[BRX] 2 for eyes"
+      },
+      {
+        "name": "[BRX] Embroidery thread",
+        "quantity": "[BRX] For nose and mouth"
+      },
+      {
+        "name": "[BRX] Needle and pins"
+      },
+      {
+        "name": "Scissors"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Cut Pattern Pieces",
+        "description": "[BRX] Print or draw a simple bear pattern. Cut out body (2), arms (4), legs (4), ears (4), and head pieces from your fabric.",
+        "duration": "[BRX] 30 min"
+      },
+      {
+        "title": "[BRX] Sew Body Parts",
+        "description": "[BRX] With right sides together, sew arm pairs, leg pairs, and ears. Leave openings for turning. Turn right side out.",
+        "duration": "[BRX] 45 min"
+      },
+      {
+        "title": "[BRX] Create the Face",
+        "description": "[BRX] Attach button eyes securely. Embroider a simple nose and smile using satin stitch.",
+        "tip": "[BRX] For younger children, embroider eyes instead of buttons for safety.",
+        "duration": "[BRX] 30 min"
+      },
+      {
+        "title": "[BRX] Assemble the Bear",
+        "description": "[BRX] Sew head pieces together, attaching ears. Join body pieces, inserting arms and legs as you go. Leave opening for stuffing.",
+        "duration": "[BRX] 45 min"
+      },
+      {
+        "title": "[BRX] Stuff and Close",
+        "description": "[BRX] Fill bear firmly with stuffing, shaping as you go. Hand-stitch the opening closed with a ladder stitch.",
+        "duration": "[BRX] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Secure button eyes very tightly or use embroidered eyes for young children",
+      "[BRX] Supervise needle use with younger sewers",
+      "[BRX] Check for loose threads or weak seams"
+    ],
+    "learningOutcomes": [
+      "[BRX] Sewing skills",
+      "[BRX] Pattern reading",
+      "[BRX] Patience and attention to detail",
+      "[BRX] Gift-giving mindset"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] toybox-recycled-robot",
+    "name": "[BRX] Recycled Robot",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 1-2 hours",
+    "description": "[BRX] Transform recyclable materials into an awesome robot friend! This eco-friendly project teaches creativity and environmental awareness.",
+    "image": "[BRX] /images/robot.webp",
+    "rating": 4.6,
+    "reviewCount": 142,
+    "materials": [
+      {
+        "name": "[BRX] Cardboard boxes",
+        "quantity": "[BRX] Various sizes"
+      },
+      {
+        "name": "[BRX] Bottle caps"
+      },
+      {
+        "name": "[BRX] Aluminum foil"
+      },
+      {
+        "name": "[BRX] Toilet paper rolls",
+        "quantity": "[BRX] 4 for limbs"
+      },
+      {
+        "name": "[BRX] Paint and markers"
+      },
+      {
+        "name": "[BRX] Glue gun",
+        "optional": true
+      },
+      {
+        "name": "[BRX] Craft glue"
+      },
+      {
+        "name": "[BRX] Pipe cleaners",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Gather Materials",
+        "description": "[BRX] Collect various recyclables - boxes, bottles, caps, tubes. Clean everything thoroughly. Lay out materials and envision your robot.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Build the Body",
+        "description": "[BRX] Select a medium box for the body and a smaller one for the head. Cover with aluminum foil or paint silver for a robotic look.",
+        "duration": "[BRX] 25 min"
+      },
+      {
+        "title": "[BRX] Add Limbs",
+        "description": "[BRX] Attach toilet paper rolls or paper towel tubes as arms and legs. Secure with glue and reinforce with tape if needed.",
+        "duration": "[BRX] 20 min"
+      },
+      {
+        "title": "[BRX] Create the Face",
+        "description": "[BRX] Use bottle caps for eyes, buttons for a nose, and draw or add a mouth. Get creative with antennae using pipe cleaners!",
+        "duration": "[BRX] 20 min"
+      },
+      {
+        "title": "[BRX] Add Details",
+        "description": "[BRX] Decorate with buttons, dials, screens drawn on paper, or any creative additions. Name your robot!",
+        "duration": "[BRX] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Adult supervision required for hot glue gun",
+      "[BRX] Wash all recyclables before use",
+      "[BRX] Check for sharp edges on cans or lids"
+    ],
+    "learningOutcomes": [
+      "[BRX] Environmental awareness",
+      "[BRX] Creative reuse",
+      "Problem-solving",
+      "[BRX] Imaginative play"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] toybox-balsa-airplane",
+    "name": "[BRX] Balsa Wood Airplane",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[BRX] 3-4 hours",
+    "description": "[BRX] Craft a beautiful balsa wood biplane that actually flies! Learn about aerodynamics while building this classic model.",
+    "image": "[BRX] /images/airplane.webp",
+    "rating": 4.8,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[BRX] Balsa wood sheets",
+        "quantity": "[BRX] 3 sheets, 1/8\" thick"
+      },
+      {
+        "name": "[BRX] Balsa wood sticks",
+        "quantity": "[BRX] Various sizes"
+      },
+      {
+        "name": "[BRX] Wood glue"
+      },
+      {
+        "name": "[BRX] Craft knife"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "Paint",
+        "optional": true
+      },
+      {
+        "name": "[BRX] Rubber bands"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Cut Wing Pieces",
+        "description": "[BRX] Trace wing templates onto balsa sheets. Carefully cut out upper and lower wings using a craft knife. Sand edges smooth.",
+        "duration": "[BRX] 40 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[BRX] Build the Fuselage",
+        "description": "[BRX] Cut and assemble the body of the plane using balsa sticks. Create a frame that is sturdy but lightweight.",
+        "duration": "[BRX] 45 min"
+      },
+      {
+        "title": "[BRX] Attach Wings",
+        "description": "[BRX] Glue wings to fuselage at slight upward angles for better lift. Use struts between upper and lower wings.",
+        "tip": "[BRX] Let each glue joint dry before moving to the next.",
+        "duration": "[BRX] 30 min"
+      },
+      {
+        "title": "[BRX] Add Tail Assembly",
+        "description": "[BRX] Create and attach horizontal stabilizer and vertical tail fin. These are crucial for flight stability.",
+        "duration": "[BRX] 25 min"
+      },
+      {
+        "title": "[BRX] Finish and Test Fly",
+        "description": "[BRX] Sand entire plane smooth. Paint if desired. Add a propeller with rubber band power. Test fly and adjust as needed!",
+        "duration": "[BRX] 40 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Adult supervision required for craft knife use",
+      "[BRX] Balsa wood splinters easily - handle with care",
+      "[BRX] Fly in open areas away from people"
+    ],
+    "learningOutcomes": [
+      "[BRX] Aerodynamics basics",
+      "[BRX] Precision building",
+      "[BRX] Physics of flight",
+      "[BRX] Patience and persistence"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] toybox-dollhouse",
+    "name": "[BRX] Miniature Dollhouse",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[BRX] 4-6 hours",
+    "description": "[BRX] Construct a charming miniature dollhouse with multiple rooms. Add tiny furniture and decorations for endless imaginative play.",
+    "image": "[BRX] /images/dollhouse.webp",
+    "rating": 4.9,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[BRX] Cardboard or foam board",
+        "quantity": "[BRX] Large sheets"
+      },
+      {
+        "name": "[BRX] Craft knife"
+      },
+      {
+        "name": "Ruler"
+      },
+      {
+        "name": "Glue"
+      },
+      {
+        "name": "[BRX] Scrapbook paper",
+        "quantity": "[BRX] For wallpaper"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "[BRX] Small boxes",
+        "quantity": "[BRX] For furniture"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Design Floor Plan",
+        "description": "[BRX] Sketch your dollhouse design. Decide on number of rooms and floors. Calculate measurements for walls and floors.",
+        "duration": "[BRX] 20 min"
+      },
+      {
+        "title": "[BRX] Cut Structural Pieces",
+        "description": "[BRX] Cut out walls, floors, and roof pieces from cardboard or foam board. Include window and door openings.",
+        "duration": "[BRX] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[BRX] Assemble Structure",
+        "description": "[BRX] Glue walls together, add floors to create stories. Install the roof. Reinforce corners with extra cardboard strips.",
+        "duration": "[BRX] 1 hour"
+      },
+      {
+        "title": "[BRX] Decorate Interior",
+        "description": "[BRX] Apply scrapbook paper as wallpaper. Paint trim and details. Add flooring paper or felt rugs.",
+        "duration": "[BRX] 1 hour"
+      },
+      {
+        "title": "[BRX] Create Furniture",
+        "description": "[BRX] Make tiny furniture from small boxes, spools, and scraps. Add beds, tables, chairs, and decorations.",
+        "duration": "[BRX] 1 hour"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Adult supervision for cutting",
+      "[BRX] Use sharp blades carefully with cutting mat",
+      "[BRX] Small pieces may be choking hazards for young children"
+    ],
+    "learningOutcomes": [
+      "[BRX] Architectural thinking",
+      "[BRX] Scale and proportion",
+      "[BRX] Interior design",
+      "[BRX] Long-term project planning"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] toybox-animal-puzzle",
+    "name": "[BRX] Wooden Animal Puzzle",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 1-2 hours",
+    "description": "[BRX] Create chunky wooden puzzles featuring adorable animals. Perfect for little hands learning shapes and problem-solving.",
+    "image": "[BRX] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 118,
+    "materials": [
+      {
+        "name": "Plywood",
+        "quantity": "[BRX] 1/2\" thick, 8\" x 10\""
+      },
+      {
+        "name": "[BRX] Scroll saw or jigsaw"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "[BRX] Non-toxic paint"
+      },
+      {
+        "name": "[BRX] Clear sealant"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Draw Design",
+        "description": "[BRX] Draw a simple animal shape on the plywood - elephant, cat, or dog work great. Keep shapes chunky with rounded edges.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Cut Outer Shape",
+        "description": "[BRX] Use a scroll saw to cut out the animal shape from the plywood. Sand all edges smooth.",
+        "duration": "[BRX] 20 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[BRX] Create Puzzle Pieces",
+        "description": "[BRX] Draw puzzle piece divisions on the animal. Cut along these lines to create 4-8 interlocking pieces.",
+        "duration": "[BRX] 25 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[BRX] Paint Pieces",
+        "description": "[BRX] Paint each puzzle piece in bright colors. You can paint both sides or just the top.",
+        "duration": "[BRX] 30 min"
+      },
+      {
+        "title": "[BRX] Seal and Assemble",
+        "description": "[BRX] Apply clear sealant to protect paint. Once dry, assemble your puzzle and test the fit!",
+        "duration": "[BRX] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Adult use only for power saws",
+      "[BRX] Sand thoroughly - no splinters",
+      "[BRX] Use child-safe paints and sealants"
+    ],
+    "learningOutcomes": [
+      "Problem-solving",
+      "[BRX] Shape recognition",
+      "[BRX] Hand-eye coordination",
+      "Patience"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] toybox-train-set",
+    "name": "[BRX] Classic Train Set",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[BRX] 4-5 hours",
+    "description": "[BRX] Build a complete wooden train set with engine, cars, and track pieces. A challenging project with rewarding results.",
+    "image": "[BRX] /images/train.webp",
+    "rating": 4.8,
+    "reviewCount": 64,
+    "materials": [
+      {
+        "name": "[BRX] Wood blocks",
+        "quantity": "[BRX] Various sizes"
+      },
+      {
+        "name": "[BRX] Wooden wheels",
+        "quantity": "20+"
+      },
+      {
+        "name": "Dowels",
+        "quantity": "[BRX] For axles and connectors"
+      },
+      {
+        "name": "[BRX] Wood glue"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "[BRX] Small hooks and eyes",
+        "quantity": "[BRX] For connecting cars"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Design Train Cars",
+        "description": "[BRX] Sketch designs for engine, coal car, cargo cars, and caboose. Plan wheel placement and connection points.",
+        "duration": "[BRX] 20 min"
+      },
+      {
+        "title": "[BRX] Cut and Shape",
+        "description": "[BRX] Cut wood blocks to size for each car. Shape the engine with a rounded front. Sand everything smooth.",
+        "duration": "[BRX] 1 hour",
+        "parentHelp": true
+      },
+      {
+        "title": "[BRX] Add Wheels",
+        "description": "[BRX] Drill holes for axles. Insert dowels and attach wheels. Ensure wheels spin freely.",
+        "duration": "[BRX] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[BRX] Paint and Detail",
+        "description": "[BRX] Paint each car in classic train colors. Add windows, cargo details, and decorations.",
+        "duration": "[BRX] 1 hour"
+      },
+      {
+        "title": "[BRX] Connect Cars",
+        "description": "[BRX] Attach hooks to front and eyes to back of each car. Test connections. Create track pieces if desired.",
+        "duration": "[BRX] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Adult supervision for all cutting and drilling",
+      "[BRX] Check small parts are secure",
+      "[BRX] Test wheel attachment strength"
+    ],
+    "learningOutcomes": [
+      "[BRX] Complex project planning",
+      "[BRX] Mechanical connections",
+      "[BRX] Precision work",
+      "[BRX] Transportation history"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] toybox-marble-run",
+    "name": "[BRX] Marble Run Adventure",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[BRX] 2-3 hours",
+    "description": "[BRX] Engineer an exciting marble run with twists, turns, and drops. Watch marbles race through your custom creation!",
+    "image": "[BRX] /images/marble-run.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 189,
+    "materials": [
+      {
+        "name": "[BRX] Cardboard tubes",
+        "quantity": "[BRX] 10-15 various sizes"
+      },
+      {
+        "name": "[BRX] Cardboard sheets"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "Marbles",
+        "quantity": "5-10"
+      },
+      {
+        "name": "[BRX] Base board"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Plan Your Run",
+        "description": "[BRX] Sketch the path marbles will take. Plan starting height, turns, tunnels, and landing. Remember: gravity is your friend!",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Create Track Pieces",
+        "description": "[BRX] Cut tubes in half lengthwise for open tracks. Cut various lengths. Create funnels and catch points.",
+        "duration": "[BRX] 30 min"
+      },
+      {
+        "title": "[BRX] Build Support Structure",
+        "description": "[BRX] Create cardboard supports to hold tracks at different heights. Build a sturdy base for everything.",
+        "duration": "[BRX] 30 min"
+      },
+      {
+        "title": "[BRX] Assemble the Run",
+        "description": "[BRX] Attach tracks to supports, ensuring smooth transitions. Test with marbles as you build. Adjust angles as needed.",
+        "duration": "[BRX] 45 min"
+      },
+      {
+        "title": "[BRX] Test and Improve",
+        "description": "[BRX] Run marbles through multiple times. Fix any stuck points. Add fun features like jumps or spinners!",
+        "duration": "[BRX] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Marbles are choking hazards - supervise young children",
+      "[BRX] Use scissors carefully",
+      "[BRX] Ensure structure is stable"
+    ],
+    "learningOutcomes": [
+      "[BRX] Physics and gravity",
+      "[BRX] Engineering design",
+      "Problem-solving",
+      "[BRX] Cause and effect"
+    ],
+    "crossPillar": [
+      "[BRX] sciencelab-balloon-rocket"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "toybox-tangram",
+    "name": "[BRX] Tangram Puzzle Set",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 1 hour",
+    "description": "[BRX] Create the ancient Chinese puzzle of seven shapes that form endless patterns. A timeless brain teaser!",
+    "image": "[BRX] /images/puzzle.webp",
+    "rating": 4.6,
+    "reviewCount": 92,
+    "materials": [
+      {
+        "name": "[BRX] Foam board or wood",
+        "quantity": "[BRX] 6\" x 6\" square"
+      },
+      {
+        "name": "Ruler"
+      },
+      {
+        "name": "Pencil"
+      },
+      {
+        "name": "[BRX] Craft knife or saw"
+      },
+      {
+        "name": "[BRX] Paint or markers",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Draw the Grid",
+        "description": "[BRX] Draw a 4x4 grid on your square. This helps position the seven tangram pieces correctly.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Mark Tangram Shapes",
+        "description": "[BRX] Following a tangram diagram, mark the seven shapes: 2 large triangles, 1 medium triangle, 2 small triangles, 1 square, 1 parallelogram.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Cut Pieces",
+        "description": "[BRX] Carefully cut along your marked lines to create the seven pieces. Sand or smooth edges.",
+        "duration": "[BRX] 20 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[BRX] Color Pieces",
+        "description": "[BRX] Paint each piece a different color for visual appeal and easier identification.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Try Puzzles",
+        "description": "[BRX] Challenge yourself to make shapes - animals, people, objects. Look up tangram puzzles online for ideas!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Adult supervision for cutting",
+      "[BRX] Small pieces can be choking hazards"
+    ],
+    "learningOutcomes": [
+      "[BRX] Spatial reasoning",
+      "[BRX] Geometry basics",
+      "Problem-solving",
+      "[BRX] Pattern recognition"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] toybox-3d-puzzle",
+    "name": "[BRX] 3D Animal Puzzle",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[BRX] 2 hours",
+    "description": "[BRX] Build a 3D puzzle that assembles into an animal sculpture. Pieces slot together without glue!",
+    "image": "[BRX] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 78,
+    "materials": [
+      {
+        "name": "[BRX] Cardboard or foam board",
+        "quantity": "[BRX] 2-3 sheets"
+      },
+      {
+        "name": "[BRX] Template printout"
+      },
+      {
+        "name": "[BRX] Craft knife"
+      },
+      {
+        "name": "[BRX] Cutting mat"
+      },
+      {
+        "name": "Paint",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Print Templates",
+        "description": "[BRX] Find or create 3D puzzle templates. Print at full size. Choose an animal like an elephant or dinosaur.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Transfer to Board",
+        "description": "[BRX] Trace or glue templates to your cardboard or foam board. Mark all slot positions clearly.",
+        "duration": "[BRX] 20 min"
+      },
+      {
+        "title": "[BRX] Cut Pieces",
+        "description": "[BRX] Carefully cut out each piece including the slots. Slots should be as wide as your material thickness.",
+        "duration": "[BRX] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[BRX] Test Fit",
+        "description": "[BRX] Try assembling the puzzle. Adjust slots if pieces are too tight or loose.",
+        "duration": "[BRX] 20 min"
+      },
+      {
+        "title": "[BRX] Decorate and Finish",
+        "description": "[BRX] Disassemble, paint pieces, let dry, then reassemble your 3D sculpture!",
+        "duration": "[BRX] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Sharp blade use requires adult supervision",
+      "[BRX] Always cut on a cutting mat",
+      "[BRX] Cut away from your body"
+    ],
+    "learningOutcomes": [
+      "[BRX] 3D spatial thinking",
+      "[BRX] Assembly skills",
+      "[BRX] Following templates",
+      "[BRX] Fine motor control"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] toybox-chess-set",
+    "name": "[BRX] Wooden Chess Set",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[BRX] 6-8 hours",
+    "description": "[BRX] Carve and shape your own chess pieces, then build a board. A challenging project that creates a family heirloom!",
+    "image": "[BRX] /images/blocks.webp",
+    "rating": 4.9,
+    "reviewCount": 54,
+    "materials": [
+      {
+        "name": "[BRX] Wood blocks",
+        "quantity": "[BRX] Enough for 32 pieces"
+      },
+      {
+        "name": "[BRX] Plywood for board",
+        "quantity": "[BRX] 16\" x 16\""
+      },
+      {
+        "name": "[BRX] Carving tools"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "[BRX] Paint or wood stain"
+      },
+      {
+        "name": "[BRX] Clear finish"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Design Pieces",
+        "description": "[BRX] Sketch simplified designs for each piece type: King, Queen, Bishop, Knight, Rook, Pawn. Keep shapes recognizable but achievable.",
+        "duration": "[BRX] 30 min"
+      },
+      {
+        "title": "[BRX] Shape Pawns",
+        "description": "[BRX] Start with 16 pawns - the simplest pieces. Shape, sand smooth. Get consistent sizing.",
+        "duration": "[BRX] 1.5 hours",
+        "parentHelp": true
+      },
+      {
+        "title": "[BRX] Carve Major Pieces",
+        "description": "[BRX] Work on Kings, Queens, Bishops, Knights, and Rooks. Take your time on details.",
+        "duration": "[BRX] 3 hours",
+        "parentHelp": true
+      },
+      {
+        "title": "[BRX] Create Board",
+        "description": "[BRX] Mark 64 squares (8x8 grid) on plywood. Paint or stain alternating squares. Apply finish.",
+        "duration": "[BRX] 1.5 hours"
+      },
+      {
+        "title": "[BRX] Finish Pieces",
+        "description": "[BRX] Paint or stain pieces in two colors. Apply protective finish. Let cure completely.",
+        "duration": "[BRX] 1 hour"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Carving tools are very sharp - adult only or close supervision",
+      "[BRX] Carve away from body",
+      "[BRX] Use proper ventilation with stains and finishes"
+    ],
+    "learningOutcomes": [
+      "[BRX] Advanced woodworking",
+      "[BRX] Strategic game appreciation",
+      "[BRX] Patience and persistence",
+      "[BRX] Artistic expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] toybox-ring-toss",
+    "name": "[BRX] Ring Toss Game",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 1 hour",
+    "description": "[BRX] Build a classic ring toss game for indoor or outdoor fun. Perfect for parties and family game nights!",
+    "image": "[BRX] /images/blocks.webp",
+    "rating": 4.5,
+    "reviewCount": 108,
+    "materials": [
+      {
+        "name": "[BRX] Wooden base",
+        "quantity": "[BRX] 12\" x 12\""
+      },
+      {
+        "name": "[BRX] Wooden dowels",
+        "quantity": "[BRX] 5 pieces, 8\" tall"
+      },
+      {
+        "name": "[BRX] Rope or embroidery hoops",
+        "quantity": "[BRX] For rings"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "Drill"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Prepare Base",
+        "description": "[BRX] Sand wooden base smooth. Mark positions for 5 pegs - one center, four corners.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Install Pegs",
+        "description": "[BRX] Drill holes for dowels. Glue dowels into holes. Paint different point values on each peg.",
+        "duration": "[BRX] 25 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[BRX] Create Rings",
+        "description": "[BRX] Make rings from rope (form circles and tape/glue ends) or use embroidery hoops. Make 5-6 rings.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[BRX] Paint the base and pegs in bright colors. Add numbers for scoring.",
+        "duration": "[BRX] 20 min"
+      },
+      {
+        "title": "Play!",
+        "description": "[BRX] Set up, stand back, and toss rings! Highest score wins. Adjust distance for difficulty.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Adult help needed for drilling",
+      "[BRX] Ensure pegs are secure before playing"
+    ],
+    "learningOutcomes": [
+      "[BRX] Hand-eye coordination",
+      "[BRX] Basic math (scoring)",
+      "Sportsmanship",
+      "[BRX] Motor skills"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] toybox-memory-game",
+    "name": "[BRX] Memory Matching Game",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 45 min",
+    "description": "[BRX] Create a personalized memory matching game with your own artwork. Great for brain training!",
+    "image": "[BRX] /images/blocks.webp",
+    "rating": 4.6,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "Cardstock",
+        "quantity": "[BRX] 24-32 squares"
+      },
+      {
+        "name": "[BRX] Markers or crayons"
+      },
+      {
+        "name": "Stickers",
+        "optional": true
+      },
+      {
+        "name": "[BRX] Clear contact paper",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Cut Cards",
+        "description": "[BRX] Cut cardstock into equal-sized squares (2\" x 2\" works well). Make an even number - 24 or 32 cards.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Create Pairs",
+        "description": "[BRX] Draw matching images on pairs of cards. Use shapes, animals, letters, or family photos!",
+        "duration": "[BRX] 25 min"
+      },
+      {
+        "title": "[BRX] Add Backs",
+        "description": "[BRX] Decorate all card backs identically so pairs can't be identified from behind.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Protect (Optional)",
+        "description": "[BRX] Cover cards with clear contact paper or laminate for durability.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "Play!",
+        "description": "[BRX] Shuffle and lay face down. Take turns flipping two cards. Match pairs to win!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Scissors supervision for young children"
+    ],
+    "learningOutcomes": [
+      "[BRX] Memory skills",
+      "Concentration",
+      "[BRX] Visual recognition",
+      "Turn-taking"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] toybox-kaleidoscope",
+    "name": "Kaleidoscope",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[BRX] 1 hour",
+    "description": "[BRX] Build a working kaleidoscope with mirrors and colorful beads. See the world in beautiful patterns!",
+    "image": "[BRX] /images/blocks.webp",
+    "rating": 4.7,
+    "reviewCount": 96,
+    "materials": [
+      {
+        "name": "[BRX] Cardboard tube",
+        "quantity": "[BRX] 8-10\" long"
+      },
+      {
+        "name": "[BRX] Mirror sheets or reflective paper",
+        "quantity": "[BRX] 3 strips"
+      },
+      {
+        "name": "[BRX] Clear plastic discs",
+        "quantity": "2"
+      },
+      {
+        "name": "[BRX] Beads and sequins"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[BRX] Decorative paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Create Mirror Triangle",
+        "description": "[BRX] Cut three mirror strips that fit inside your tube. Tape them together to form a triangle, reflective sides facing in.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Prepare Tube",
+        "description": "[BRX] Cut a viewing hole in one end cap. The mirror triangle should fit snugly inside the tube.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Insert Mirrors",
+        "description": "[BRX] Carefully slide the mirror triangle into the tube. Secure in place.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Create Object Chamber",
+        "description": "[BRX] At the other end, sandwich beads and sequins between two clear plastic discs. Attach to tube end.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[BRX] Cover the outside with decorative paper. Add your name and designs!",
+        "duration": "[BRX] 15 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Handle mirrors carefully - edges can be sharp",
+      "[BRX] Don't look at bright lights through kaleidoscope"
+    ],
+    "learningOutcomes": [
+      "[BRX] Light and reflection",
+      "Symmetry",
+      "[BRX] Pattern recognition",
+      "[BRX] Optics basics"
+    ],
+    "crossPillar": [
+      "[BRX] sciencelab-invisible-ink"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "toybox-catapult",
+    "name": "[BRX] Wooden Catapult",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "9-12",
+    "difficulty": "Medium",
+    "timeToMake": "[BRX] 1.5 hours",
+    "description": "[BRX] Build a working catapult that launches small objects. Learn about lever physics and stored energy!",
+    "image": "[BRX] /images/blocks.webp",
+    "rating": 4.8,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[BRX] Popsicle sticks",
+        "quantity": "15-20"
+      },
+      {
+        "name": "[BRX] Rubber bands",
+        "quantity": "5-6"
+      },
+      {
+        "name": "[BRX] Plastic spoon"
+      },
+      {
+        "name": "[BRX] Small pompoms or marshmallows",
+        "quantity": "[BRX] For launching"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Create the Base",
+        "description": "[BRX] Stack 5-7 popsicle sticks and rubber band both ends. This creates a sturdy base.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Build Launch Arm",
+        "description": "[BRX] Take 2 sticks and rubber band only ONE end. Open the other end like scissors.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Combine Base and Arm",
+        "description": "[BRX] Insert the base stack perpendicular into the launch arm opening. Secure with rubber bands.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Add Launching Cup",
+        "description": "[BRX] Attach plastic spoon to the end of the launch arm with rubber bands.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Test and Adjust",
+        "description": "[BRX] Load, aim, and launch! Adjust rubber band tension and fulcrum position for better distance.",
+        "duration": "[BRX] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Only launch soft objects like pompoms",
+      "[BRX] Never aim at people or animals",
+      "[BRX] Launch in clear areas"
+    ],
+    "learningOutcomes": [
+      "[BRX] Lever mechanics",
+      "[BRX] Potential and kinetic energy",
+      "[BRX] Engineering iteration",
+      "[BRX] Physics concepts"
+    ],
+    "crossPillar": [
+      "[BRX] sciencelab-egg-drop"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] toybox-balancing-eagle",
+    "name": "[BRX] Balancing Eagle",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 45 min",
+    "description": "[BRX] Create a bird that balances on its beak! Learn about center of gravity with this fun physics toy.",
+    "image": "[BRX] /images/airplane.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "[BRX] Cardstock or cardboard"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[BRX] Pennies or coins",
+        "quantity": "2"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[BRX] Markers for decoration"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Draw Eagle Shape",
+        "description": "[BRX] Draw a simple eagle with spread wings on cardstock. Wings should extend outward and slightly downward.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Cut Out Shape",
+        "description": "[BRX] Carefully cut out your eagle. Keep the beak pointed.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Add Weights",
+        "description": "[BRX] Tape a penny under each wing tip. These create the counterbalance.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Find Balance Point",
+        "description": "[BRX] Adjust coin position until the eagle balances on its beak when placed on your finger.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[BRX] Color your eagle with markers. Try balancing on different surfaces!",
+        "duration": "[BRX] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Scissors supervision for young children"
+    ],
+    "learningOutcomes": [
+      "[BRX] Center of gravity",
+      "[BRX] Balance and counterweight",
+      "[BRX] Physics experimentation",
+      "[BRX] Fine motor skills"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] toybox-paper-launcher",
+    "name": "[BRX] Paper Airplane Launcher",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[BRX] 1 hour",
+    "description": "[BRX] Build a rubber band launcher that sends paper airplanes soaring! Combine engineering and flight.",
+    "image": "[BRX] /images/airplane.webp",
+    "rating": 4.6,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "Cardboard"
+      },
+      {
+        "name": "[BRX] Rubber bands",
+        "quantity": "[BRX] 3-5 strong ones"
+      },
+      {
+        "name": "[BRX] Popsicle sticks"
+      },
+      {
+        "name": "Paper",
+        "quantity": "[BRX] For airplanes"
+      },
+      {
+        "name": "[BRX] Tape and glue"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Build Launch Track",
+        "description": "[BRX] Create a cardboard track about 12\" long with raised edges to guide the airplane.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Create Tension System",
+        "description": "[BRX] Attach rubber bands to a crossbar at the back of the track. Create a pull-back mechanism.",
+        "duration": "[BRX] 20 min"
+      },
+      {
+        "title": "[BRX] Add Release Trigger",
+        "description": "[BRX] Design a simple trigger using popsicle sticks that holds and releases the rubber bands.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Make Paper Airplanes",
+        "description": "[BRX] Fold several paper airplanes. Test different designs to see which launches best.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Launch and Adjust",
+        "description": "[BRX] Load airplane, pull back, release! Adjust angle and tension for maximum distance.",
+        "duration": "[BRX] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Never aim at people",
+      "[BRX] Launch in open areas",
+      "[BRX] Be careful of snapping rubber bands"
+    ],
+    "learningOutcomes": [
+      "[BRX] Mechanical engineering",
+      "Aerodynamics",
+      "[BRX] Energy transfer",
+      "[BRX] Iterative design"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "toybox-kite",
+    "name": "[BRX] Diamond Kite",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[BRX] 1.5 hours",
+    "description": "[BRX] Build a classic diamond kite that soars! Experience the joy of flight with this timeless project.",
+    "image": "[BRX] /images/airplane.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[BRX] Dowels or sticks",
+        "quantity": "[BRX] 2 pieces"
+      },
+      {
+        "name": "[BRX] Plastic bag or tissue paper"
+      },
+      {
+        "name": "String",
+        "quantity": "[BRX] Lots for flying!"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[BRX] Ribbon for tail"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Create Frame",
+        "description": "[BRX] Cross two sticks - vertical longer than horizontal. Tie firmly at intersection point.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Add Outline",
+        "description": "[BRX] Run string around the outside of the frame, creating the kite shape. Secure at each stick end.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Cover with Skin",
+        "description": "[BRX] Lay frame on plastic or paper. Cut with extra margin, fold over frame, and tape secure.",
+        "duration": "[BRX] 20 min"
+      },
+      {
+        "title": "[BRX] Attach Flying Line",
+        "description": "[BRX] Tie flying string to the intersection point. Create a bridle for better control if needed.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Add Tail and Fly",
+        "description": "[BRX] Attach a ribbon tail for stability. Find wind, run, and launch your kite!",
+        "duration": "[BRX] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Never fly near power lines",
+      "[BRX] Fly in open areas away from trees",
+      "[BRX] Don't fly in storms"
+    ],
+    "learningOutcomes": [
+      "Aerodynamics",
+      "[BRX] Wind and weather",
+      "[BRX] Patience and persistence",
+      "[BRX] Outdoor appreciation"
+    ],
+    "crossPillar": [
+      "[BRX] outdoorquest-nature-hunt"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] toybox-rainstick",
+    "name": "Rainstick",
+    "pillar": "toybox",
+    "category": "Musical",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 45 min",
+    "description": "[BRX] Create a musical instrument that sounds like falling rain. Perfect for relaxation and rhythm activities!",
+    "image": "[BRX] /images/blocks.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[BRX] Cardboard tube",
+        "quantity": "[BRX] Paper towel or wrapping paper roll"
+      },
+      {
+        "name": "[BRX] Rice or small beans",
+        "quantity": "[BRX] 1/4 cup"
+      },
+      {
+        "name": "[BRX] Aluminum foil"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[BRX] Decorative paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Seal One End",
+        "description": "[BRX] Cover one end of the tube tightly with paper and tape.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Create Internal Spiral",
+        "description": "[BRX] Crinkle aluminum foil into a long snake. Twist it into a spiral and insert into the tube.",
+        "tip": "[BRX] The foil creates the rain sound by slowing the rice.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Add Rice",
+        "description": "[BRX] Pour rice or beans into the tube. Experiment with amounts for different sounds.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Seal Other End",
+        "description": "[BRX] Close the open end securely with paper and tape. Shake to test - adjust if needed.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[BRX] Cover with decorative paper. Add designs inspired by rain, nature, or your own creativity!",
+        "duration": "[BRX] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Ensure ends are sealed tightly",
+      "[BRX] Small items inside can be choking hazards if opened"
+    ],
+    "learningOutcomes": [
+      "[BRX] Sound and acoustics",
+      "[BRX] Rhythm and music",
+      "[BRX] Cultural instruments",
+      "[BRX] Sensory exploration"
+    ],
+    "crossPillar": [
+      "[BRX] artstudio-nature-collage"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] toybox-sock-puppet",
+    "name": "[BRX] Sock Puppet",
+    "pillar": "toybox",
+    "category": "Puppets",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 30 min",
+    "description": "[BRX] Transform an old sock into a fun puppet character. Perfect for storytelling and imaginative play!",
+    "image": "[BRX] /images/plush-bear.webp",
+    "rating": 4.5,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[BRX] Clean sock"
+      },
+      {
+        "name": "[BRX] Googly eyes",
+        "quantity": "2"
+      },
+      {
+        "name": "[BRX] Felt scraps"
+      },
+      {
+        "name": "Yarn",
+        "quantity": "[BRX] For hair"
+      },
+      {
+        "name": "[BRX] Fabric glue"
+      },
+      {
+        "name": "Buttons",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Plan Your Character",
+        "description": "[BRX] Decide what character your puppet will be - person, animal, monster? Gather materials in matching colors.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Add Eyes",
+        "description": "[BRX] Glue googly eyes or felt circles onto the toe area of the sock.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Create Mouth",
+        "description": "[BRX] Cut an oval of felt and glue inside the sock to create a mouth. Add a felt tongue if desired!",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Add Features",
+        "description": "[BRX] Glue on yarn hair, felt ears, buttons, or other features to complete your character.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Put on a Show!",
+        "description": "[BRX] Once glue is dry, put your hand in and bring your puppet to life!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Use fabric glue rather than hot glue with young children",
+      "[BRX] Buttons can be choking hazards - consider felt alternatives for young kids"
+    ],
+    "learningOutcomes": [
+      "[BRX] Creative expression",
+      "Storytelling",
+      "[BRX] Character development",
+      "[BRX] Communication skills"
+    ],
+    "crossPillar": [
+      "[BRX] artstudio-paper-plate-animals"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] toybox-finger-puppets",
+    "name": "[BRX] Felt Finger Puppets",
+    "pillar": "toybox",
+    "category": "Puppets",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 1 hour",
+    "description": "[BRX] Create a set of adorable finger puppets from felt. Make a whole cast of characters for stories!",
+    "image": "[BRX] /images/plush-bear.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[BRX] Felt sheets",
+        "quantity": "[BRX] Various colors"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[BRX] Fabric glue or needle and thread"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "[BRX] Small embellishments",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Cut Base Shapes",
+        "description": "[BRX] Cut two finger-sized rectangles with rounded tops for each puppet. These form the body.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Glue or Sew Edges",
+        "description": "[BRX] Join the two pieces along sides and top, leaving bottom open for your finger.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Add Faces",
+        "description": "[BRX] Cut tiny felt pieces for eyes, noses, mouths. Glue in place. Use markers for details.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Create Characters",
+        "description": "[BRX] Add ears for animals, hair for people, wings for birds. Get creative!",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Perform Stories",
+        "description": "[BRX] Put puppets on all fingers and act out stories. Make a mini theater from a box!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Supervise scissors use",
+      "[BRX] Use child-safe glue"
+    ],
+    "learningOutcomes": [
+      "[BRX] Fine motor skills",
+      "Storytelling",
+      "[BRX] Character creation",
+      "Imagination"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] toybox-rubber-band-car",
+    "name": "[BRX] Rubber Band Car",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 45 min",
+    "description": "[BRX] Build a car powered by rubber band energy! Watch it zoom across the floor.",
+    "image": "[BRX] /images/wooden-car.webp",
+    "rating": 4.6,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[BRX] Water bottle or small box"
+      },
+      {
+        "name": "[BRX] Bottle caps",
+        "quantity": "[BRX] 4 for wheels"
+      },
+      {
+        "name": "[BRX] Wooden skewers",
+        "quantity": "[BRX] 2 for axles"
+      },
+      {
+        "name": "[BRX] Rubber bands",
+        "quantity": "2-3"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Prepare the Body",
+        "description": "[BRX] Clean your bottle or box. Poke holes on each side for axles to pass through.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Install Axles",
+        "description": "[BRX] Push skewers through the holes. They should spin freely.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Attach Wheels",
+        "description": "[BRX] Poke holes in bottle cap centers. Push onto skewer ends. Secure with tape or glue.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Add Rubber Band Power",
+        "description": "[BRX] Hook rubber band around rear axle. Attach other end to front of car body.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Wind and Race!",
+        "description": "[BRX] Roll car backward to wind rubber band. Release and watch it go! Race against friends.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Be careful with sharp skewer ends",
+      "[BRX] Don't aim at people when releasing"
+    ],
+    "learningOutcomes": [
+      "[BRX] Stored energy",
+      "[BRX] Simple machines",
+      "[BRX] Engineering design",
+      "[BRX] Cause and effect"
+    ],
+    "crossPillar": [
+      "[BRX] sciencelab-balloon-rocket"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] toybox-spinning-top",
+    "name": "[BRX] Wooden Spinning Top",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 30 min",
+    "description": "[BRX] Craft a classic spinning top that twirls for ages. Decorate with colorful patterns that blend when spinning!",
+    "image": "[BRX] /images/blocks.webp",
+    "rating": 4.4,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[BRX] Cardboard circles",
+        "quantity": "[BRX] 2-3 sizes"
+      },
+      {
+        "name": "[BRX] Wooden dowel or pencil"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "Glue"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Create Disc",
+        "description": "[BRX] Cut a circle from cardboard, about 3-4 inches diameter. Ensure it's perfectly round.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Add Spindle",
+        "description": "[BRX] Poke a hole in exact center. Insert dowel or sharpened pencil. Glue in place.",
+        "tip": "[BRX] Center placement is crucial for good spinning!",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Decorate Top",
+        "description": "[BRX] Draw colorful patterns - spirals, stripes, dots. Colors will blend when spinning!",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Balance and Adjust",
+        "description": "[BRX] Spin test your top. If wobbly, check center alignment. Trim edges if uneven.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Spin Competitions",
+        "description": "[BRX] Practice spinning technique. Challenge friends - longest spin wins!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Pencil points can be sharp"
+    ],
+    "learningOutcomes": [
+      "[BRX] Rotational physics",
+      "[BRX] Balance and symmetry",
+      "[BRX] Color blending",
+      "[BRX] Fine motor control"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] jigyasulab-physics",
+    "name": "[BRX] Physics Lab",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "9-12",
+    "difficulty": "Medium",
+    "timeToMake": "Interactive",
+    "description": "[BRX] Enter the Physics Lab and explore mechanics, optics, and energy interactively.",
+    "materials": [],
+    "image": "[BRX] /images/hero-camp.webp",
+    "rating": 5,
+    "reviewCount": 412,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "[BRX] Physics concepts",
+      "[BRX] Scientific thinking"
+    ],
+    "url": "/physics",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-chem",
+    "name": "[BRX] Chemistry Lab",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "Interactive",
+    "description": "[BRX] Mix elements and observe reactions in our safe, virtual Chemistry Lab.",
+    "materials": [],
+    "image": "[BRX] /images/slime.webp",
+    "rating": 4.9,
+    "reviewCount": 388,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "[BRX] Chemical reactions",
+      "[BRX] Molecular structures"
+    ],
+    "url": "/chem",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-bio",
+    "name": "[BRX] Biology Lab",
+    "pillar": "sciencelab",
+    "category": "Biology",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "Interactive",
+    "description": "[BRX] Explore the wonders of life, cells, and ecosystems in the Biology Lab.",
+    "materials": [],
+    "image": "[BRX] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 275,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Anatomy",
+      "Ecosystems"
+    ],
+    "url": "/bio",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-math",
+    "name": "[BRX] Math Lab",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "Interactive",
+    "description": "[BRX] Solve puzzles and visualize mathematical concepts in a fun, interactive way.",
+    "materials": [],
+    "image": "[BRX] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 156,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Geometry",
+      "[BRX] Problem solving"
+    ],
+    "url": "/math",
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] jigyasulab-cosmos",
+    "name": "[BRX] Cosmos Lab",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "Interactive",
+    "description": "[BRX] Travel through space, explore planets, and understand the universe.",
+    "materials": [],
+    "image": "[BRX] /images/hero-camp.webp",
+    "rating": 5,
+    "reviewCount": 501,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Astronomy",
+      "[BRX] Space exploration"
+    ],
+    "url": "/cosmos",
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] sciencelab-volcano",
+    "name": "[BRX] Erupting Volcano",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 30 min",
+    "description": "[BRX] Create an explosive volcanic eruption using kitchen chemistry! Watch the foamy lava flow and learn about chemical reactions.",
+    "image": "[BRX] /images/volcano.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 234,
+    "materials": [
+      {
+        "name": "[BRX] Baking soda",
+        "quantity": "[BRX] 3 tablespoons"
+      },
+      {
+        "name": "Vinegar",
+        "quantity": "[BRX] 1 cup"
+      },
+      {
+        "name": "[BRX] Dish soap",
+        "quantity": "[BRX] A few drops"
+      },
+      {
+        "name": "[BRX] Food coloring",
+        "quantity": "[BRX] Red and orange"
+      },
+      {
+        "name": "[BRX] Play-doh or clay",
+        "quantity": "[BRX] For volcano shape"
+      },
+      {
+        "name": "[BRX] Plastic bottle or container"
+      },
+      {
+        "name": "[BRX] Tray or pan",
+        "quantity": "[BRX] To catch overflow"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Build Your Volcano",
+        "description": "[BRX] Place plastic bottle on tray. Shape clay or play-doh around it to create a volcano mountain. Leave the bottle opening exposed at the top.",
+        "tip": "[BRX] Make it look realistic with ridges and a crater!",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Add the Lava Base",
+        "description": "[BRX] Pour baking soda into the bottle. Add a few drops of dish soap and red/orange food coloring.",
+        "duration": "[BRX] 3 min"
+      },
+      {
+        "title": "[BRX] Prepare for Eruption",
+        "description": "[BRX] Make sure everyone can see! Have your vinegar ready to pour.",
+        "duration": "[BRX] 2 min"
+      },
+      {
+        "title": "[BRX] Eruption Time!",
+        "description": "[BRX] Pour vinegar into the bottle and step back. Watch the foamy lava erupt!",
+        "duration": "[BRX] 1 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[BRX] Understand the Science",
+        "description": "[BRX] The baking soda (base) reacts with vinegar (acid) to create carbon dioxide gas, which makes the bubbles and foam!",
+        "duration": "[BRX] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Do this experiment on a tray or outside - it gets messy!",
+      "[BRX] Vinegar can irritate eyes - don't get too close",
+      "[BRX] Adult supervision recommended"
+    ],
+    "learningOutcomes": [
+      "[BRX] Acid-base reactions",
+      "[BRX] Chemical reactions",
+      "[BRX] Carbon dioxide production",
+      "[BRX] Scientific observation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] sciencelab-density-tower",
+    "name": "[BRX] Rainbow Density Tower",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 30 min",
+    "description": "[BRX] Stack liquids in a rainbow! Learn about density as you create layers that magically don't mix.",
+    "image": "[BRX] /images/crystal.webp",
+    "rating": 4.8,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "Honey",
+        "quantity": "[BRX] 1/4 cup"
+      },
+      {
+        "name": "[BRX] Corn syrup",
+        "quantity": "[BRX] 1/4 cup"
+      },
+      {
+        "name": "[BRX] Dish soap",
+        "quantity": "[BRX] 1/4 cup"
+      },
+      {
+        "name": "Water",
+        "quantity": "[BRX] 1/4 cup"
+      },
+      {
+        "name": "[BRX] Vegetable oil",
+        "quantity": "[BRX] 1/4 cup"
+      },
+      {
+        "name": "[BRX] Rubbing alcohol",
+        "quantity": "[BRX] 1/4 cup"
+      },
+      {
+        "name": "[BRX] Food coloring"
+      },
+      {
+        "name": "[BRX] Tall clear glass or jar"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Color Your Liquids",
+        "description": "[BRX] Add different food coloring to water, corn syrup, and rubbing alcohol. Honey and oil have natural colors.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Pour the Heaviest First",
+        "description": "[BRX] Start with honey at the bottom of your glass. Pour slowly down the side.",
+        "tip": "[BRX] Patience is key - pour very slowly!",
+        "duration": "[BRX] 3 min"
+      },
+      {
+        "title": "[BRX] Add Middle Layers",
+        "description": "[BRX] Carefully add corn syrup, then dish soap, then water. Pour down the side of the glass.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Top With Light Liquids",
+        "description": "[BRX] Add vegetable oil, then carefully add rubbing alcohol on top.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "Experiment!",
+        "description": "[BRX] Try dropping small objects - where do they float? Predict based on density!",
+        "duration": "[BRX] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Don't drink any of these liquids!",
+      "[BRX] Rubbing alcohol requires adult handling",
+      "[BRX] Wash hands after experiment"
+    ],
+    "learningOutcomes": [
+      "[BRX] Density concepts",
+      "[BRX] Liquid properties",
+      "[BRX] Scientific layering",
+      "[BRX] Prediction and observation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] sciencelab-crystals",
+    "name": "[BRX] Crystal Growing",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[BRX] 30 min + 3-5 days",
+    "description": "[BRX] Grow beautiful crystals from sugar, salt, or borax! Watch amazing structures form over several days.",
+    "image": "[BRX] /images/crystal.webp",
+    "rating": 4.8,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[BRX] Borax, salt, or sugar",
+        "quantity": "[BRX] 1 cup"
+      },
+      {
+        "name": "[BRX] Hot water",
+        "quantity": "[BRX] 2 cups"
+      },
+      {
+        "name": "[BRX] Glass jar"
+      },
+      {
+        "name": "String"
+      },
+      {
+        "name": "Pencil"
+      },
+      {
+        "name": "[BRX] Pipe cleaners",
+        "optional": true
+      },
+      {
+        "name": "[BRX] Food coloring",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Create Super-Saturated Solution",
+        "description": "[BRX] Have an adult pour hot water into jar. Add borax/salt/sugar slowly, stirring until no more dissolves.",
+        "duration": "[BRX] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[BRX] Prepare Crystal Seed",
+        "description": "[BRX] Tie string to pencil. Shape pipe cleaner into a form (star, heart) and tie to string. Or just use string.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Add Color (Optional)",
+        "description": "[BRX] Add food coloring to solution for colored crystals.",
+        "duration": "[BRX] 2 min"
+      },
+      {
+        "title": "[BRX] Suspend and Wait",
+        "description": "[BRX] Lower string/pipe cleaner into solution. Rest pencil across jar top. Place somewhere still.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Watch and Wait",
+        "description": "[BRX] Check daily! Crystals form as water evaporates. Full growth takes 3-5 days.",
+        "duration": "[BRX] 3-5 days"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Adult handles hot water only",
+      "[BRX] Borax is not edible - wash hands",
+      "[BRX] Don't move or disturb jar during growth"
+    ],
+    "learningOutcomes": [
+      "[BRX] Crystallization process",
+      "[BRX] Saturation concepts",
+      "[BRX] Patience and observation",
+      "[BRX] Molecular structure"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] sciencelab-slime",
+    "name": "[BRX] Slime Factory",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 15 min",
+    "description": "[BRX] Mix up oozy, stretchy, satisfying slime! Experiment with colors, glitter, and different consistencies.",
+    "image": "[BRX] /images/slime.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 312,
+    "materials": [
+      {
+        "name": "[BRX] White school glue",
+        "quantity": "[BRX] 1/2 cup"
+      },
+      {
+        "name": "[BRX] Contact lens solution (with boric acid)",
+        "quantity": "[BRX] 1 tablespoon"
+      },
+      {
+        "name": "[BRX] Baking soda",
+        "quantity": "[BRX] 1/2 teaspoon"
+      },
+      {
+        "name": "[BRX] Food coloring"
+      },
+      {
+        "name": "Glitter",
+        "optional": true
+      },
+      {
+        "name": "[BRX] Bowl and spoon"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Mix Base",
+        "description": "[BRX] Pour glue into bowl. Add food coloring and glitter if desired. Stir well.",
+        "duration": "[BRX] 3 min"
+      },
+      {
+        "title": "[BRX] Add Activator",
+        "description": "[BRX] Sprinkle in baking soda and mix. Then add contact solution and stir rapidly.",
+        "duration": "[BRX] 3 min"
+      },
+      {
+        "title": "[BRX] Knead the Slime",
+        "description": "[BRX] Once slime forms, pick it up and knead with hands. It will become less sticky.",
+        "tip": "[BRX] If too sticky, add more contact solution. If too stiff, add more glue.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Test Properties",
+        "description": "[BRX] Stretch it slowly - does it pull? Pull fast - does it snap? Poke it - does it bounce?",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Store Properly",
+        "description": "[BRX] Store in airtight container. Slime lasts 1-2 weeks with proper storage!",
+        "duration": "[BRX] 2 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Wash hands after playing",
+      "[BRX] Don't eat slime",
+      "[BRX] Play on protected surface - slime can stain"
+    ],
+    "learningOutcomes": [
+      "[BRX] Polymer chemistry",
+      "[BRX] Non-Newtonian fluids",
+      "[BRX] Following recipes",
+      "[BRX] Sensory exploration"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] sciencelab-balloon-rocket",
+    "name": "[BRX] Balloon Rocket",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 15 min",
+    "description": "[BRX] Launch a balloon across the room on a string! Learn about thrust and Newton's third law.",
+    "image": "[BRX] /images/volcano.webp",
+    "rating": 4.7,
+    "reviewCount": 187,
+    "materials": [
+      {
+        "name": "Balloon"
+      },
+      {
+        "name": "String",
+        "quantity": "[BRX] 10-15 feet"
+      },
+      {
+        "name": "Straw"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[BRX] Two chairs or posts"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Set Up Track",
+        "description": "[BRX] Thread string through straw. Tie string between two chairs, keeping it taut and level.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Prepare Balloon",
+        "description": "[BRX] Blow up balloon but don't tie it. Pinch the end to keep air in.",
+        "duration": "[BRX] 2 min"
+      },
+      {
+        "title": "[BRX] Attach to Straw",
+        "description": "[BRX] While someone holds the balloon closed, tape it to the straw on the string.",
+        "duration": "[BRX] 3 min"
+      },
+      {
+        "title": "Launch!",
+        "description": "[BRX] Release the balloon and watch it zoom along the string!",
+        "duration": "[BRX] 1 min"
+      },
+      {
+        "title": "Experiment",
+        "description": "[BRX] Try different balloon sizes, angles, or adding weight. What changes the speed?",
+        "duration": "[BRX] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Don't release balloons outdoors - harmful to wildlife",
+      "[BRX] Supervise young children with balloons"
+    ],
+    "learningOutcomes": [
+      "[BRX] Newton's third law",
+      "[BRX] Thrust and propulsion",
+      "[BRX] Variables in experiments",
+      "[BRX] Cause and effect"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] sciencelab-invisible-ink",
+    "name": "[BRX] Invisible Ink Messages",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 20 min",
+    "description": "[BRX] Write secret messages that appear when heated! Perfect for spy games and learning about chemical changes.",
+    "image": "[BRX] /images/crystal.webp",
+    "rating": 4.6,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "[BRX] Lemon juice",
+        "quantity": "[BRX] 2-3 tablespoons"
+      },
+      {
+        "name": "[BRX] White paper"
+      },
+      {
+        "name": "[BRX] Cotton swab or paintbrush"
+      },
+      {
+        "name": "[BRX] Lamp or iron",
+        "quantity": "[BRX] Heat source"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Prepare Ink",
+        "description": "[BRX] Squeeze lemon juice into a small bowl. This is your invisible ink!",
+        "duration": "[BRX] 3 min"
+      },
+      {
+        "title": "[BRX] Write Message",
+        "description": "[BRX] Dip cotton swab in lemon juice and write on white paper. Use enough juice to wet the paper.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Let Dry",
+        "description": "[BRX] Allow paper to dry completely. The message becomes invisible!",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Reveal Message",
+        "description": "[BRX] Hold paper near (not touching!) a light bulb or have adult use warm iron. Message appears brown!",
+        "duration": "[BRX] 5 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[BRX] Understand Why",
+        "description": "[BRX] Heat oxidizes the lemon juice, turning it brown. The acid weakens paper where you wrote!",
+        "duration": "[BRX] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Adult supervision required for heat source",
+      "[BRX] Don't touch hot lamp or iron",
+      "[BRX] Keep paper safe distance from heat"
+    ],
+    "learningOutcomes": [
+      "[BRX] Oxidation reactions",
+      "[BRX] Chemical changes",
+      "[BRX] Heat effects",
+      "[BRX] Secret communication history"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] sciencelab-magnetic-maze",
+    "name": "[BRX] Magnetic Maze",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[BRX] 45 min",
+    "description": "[BRX] Build a maze and guide objects through using magnet power! Learn about magnetic forces.",
+    "image": "[BRX] /images/crystal.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "[BRX] Cardboard box lid or shallow box"
+      },
+      {
+        "name": "[BRX] Strong magnets",
+        "quantity": "2"
+      },
+      {
+        "name": "[BRX] Paper clips or small metal objects"
+      },
+      {
+        "name": "[BRX] Straws or cardboard strips"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "Tape"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Design Maze",
+        "description": "[BRX] Draw a maze path inside the box lid. Mark start and finish points.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Build Walls",
+        "description": "[BRX] Cut straws or cardboard strips and tape along maze walls to create barriers.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Add Obstacles",
+        "description": "[BRX] Include dead ends, tunnels, or challenges. Make it tricky but solvable!",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Test Magnetic Control",
+        "description": "[BRX] Place paper clip in maze. Hold magnet under the box and move it. The clip follows!",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Play and Race",
+        "description": "[BRX] Navigate through the maze using only the magnet. Time yourself or race friends!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Keep strong magnets away from electronics",
+      "[BRX] Supervise small magnet use with young children"
+    ],
+    "learningOutcomes": [
+      "[BRX] Magnetic fields",
+      "[BRX] Forces at a distance",
+      "Problem-solving",
+      "[BRX] Hand-eye coordination"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] sciencelab-solar-oven",
+    "name": "[BRX] Solar Oven Roasted Papad",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[BRX] 1 hour + cooking",
+    "description": "[BRX] Harness the incredible power of the sun to build your own solar oven and perfectly roast crispy papads! Learn about solar thermal energy, reflection, and the greenhouse effect while making a tasty, traditional snack.",
+    "image": "[BRX] /images/volcano.webp",
+    "rating": 4.8,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[BRX] Pizza box"
+      },
+      {
+        "name": "[BRX] Aluminum foil"
+      },
+      {
+        "name": "[BRX] Plastic wrap"
+      },
+      {
+        "name": "[BRX] Black paper"
+      },
+      {
+        "name": "[BRX] Tape and scissors"
+      },
+      {
+        "name": "[BRX] Graham crackers, chocolate, marshmallows"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Create Flap",
+        "description": "[BRX] Cut three sides of a square in box lid, leaving one side as hinge. Fold flap up.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Line with Foil",
+        "description": "[BRX] Cover the flap's inner surface with aluminum foil, shiny side out. Smooth flat.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Create Window",
+        "description": "[BRX] Tape plastic wrap over the hole created by the flap. This traps heat inside.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Prepare Interior",
+        "description": "[BRX] Line bottom of box with black paper (absorbs heat). Add more foil on inner sides.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Cook S'mores!",
+        "description": "[BRX] Place s'more ingredients inside. Angle toward sun, prop flap to reflect light in. Wait 30-60 min!",
+        "duration": "[BRX] 30-60 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Only use on sunny days",
+      "[BRX] Contents get hot - use oven mitts",
+      "[BRX] Adult supervision when opening"
+    ],
+    "learningOutcomes": [
+      "[BRX] Solar energy",
+      "[BRX] Heat absorption and reflection",
+      "[BRX] Renewable energy concepts",
+      "[BRX] Engineering design"
+    ],
+    "crossPillar": [
+      "[BRX] outdoorquest-cloud-watching"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] sciencelab-dancing-raisins",
+    "name": "[BRX] Dancing Raisins",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 10 min",
+    "description": "[BRX] Watch raisins dance up and down in a glass! A simple experiment that demonstrates gas bubbles and density.",
+    "image": "[BRX] /images/volcano.webp",
+    "rating": 4.4,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[BRX] Clear soda (Sprite or club soda)",
+        "quantity": "[BRX] 1 glass"
+      },
+      {
+        "name": "Raisins",
+        "quantity": "[BRX] Small handful"
+      },
+      {
+        "name": "[BRX] Clear glass or jar"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Pour Soda",
+        "description": "[BRX] Fill a clear glass about 3/4 full with clear carbonated soda.",
+        "duration": "[BRX] 1 min"
+      },
+      {
+        "title": "[BRX] Drop Raisins",
+        "description": "[BRX] Drop 5-8 raisins into the soda. They'll sink to the bottom at first.",
+        "duration": "[BRX] 1 min"
+      },
+      {
+        "title": "[BRX] Watch the Dance",
+        "description": "[BRX] Wait a minute - raisins start to rise, then fall, then rise again!",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Understand Why",
+        "description": "[BRX] CO2 bubbles stick to wrinkly raisins, making them float. At top, bubbles pop and raisins sink!",
+        "duration": "[BRX] 3 min"
+      },
+      {
+        "title": "[BRX] Try Variations",
+        "description": "[BRX] Test other small objects - what else dances? Try different sodas.",
+        "duration": "[BRX] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Don't drink the soda after experiment"
+    ],
+    "learningOutcomes": [
+      "[BRX] Density and buoyancy",
+      "[BRX] Carbon dioxide properties",
+      "[BRX] Observation skills",
+      "[BRX] Scientific prediction"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] sciencelab-static-butterfly",
+    "name": "[BRX] Static Electricity Butterfly",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 20 min",
+    "description": "[BRX] Make a butterfly's wings flutter using static electricity! No batteries needed - just science!",
+    "image": "[BRX] /images/crystal.webp",
+    "rating": 4.5,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[BRX] Tissue paper"
+      },
+      {
+        "name": "Cardstock"
+      },
+      {
+        "name": "Balloon"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "Markers"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Create Body",
+        "description": "[BRX] Cut a butterfly body shape from cardstock. Make it sturdy - this is the base.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Cut Tissue Wings",
+        "description": "[BRX] Cut delicate wing shapes from tissue paper. Make them light and thin.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Attach Wings",
+        "description": "[BRX] Tape wings to body at center only. Wings should be free to move on edges.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Charge Balloon",
+        "description": "[BRX] Blow up balloon and rub vigorously on your hair or wool sweater.",
+        "duration": "[BRX] 2 min"
+      },
+      {
+        "title": "[BRX] Make Wings Flutter",
+        "description": "[BRX] Hold charged balloon near tissue wings - watch them rise toward it! Move balloon to make them flutter.",
+        "duration": "[BRX] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Latex allergy caution with balloons"
+    ],
+    "learningOutcomes": [
+      "[BRX] Static electricity",
+      "[BRX] Electric charges",
+      "[BRX] Attraction forces",
+      "[BRX] Conductors vs insulators"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] sciencelab-water-cycle",
+    "name": "[BRX] Water Cycle in a Bag",
+    "pillar": "sciencelab",
+    "category": "Biology",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 15 min + observation",
+    "description": "[BRX] Create a mini water cycle in a plastic bag! Watch evaporation, condensation, and precipitation happen.",
+    "image": "[BRX] /images/crystal.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[BRX] Ziplock bag",
+        "quantity": "[BRX] Quart size"
+      },
+      {
+        "name": "Water",
+        "quantity": "[BRX] 1/4 cup"
+      },
+      {
+        "name": "[BRX] Blue food coloring"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[BRX] Sunny window"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Draw Scene",
+        "description": "[BRX] Draw clouds at top of bag, sun, and waves at bottom using permanent marker.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Add Water",
+        "description": "[BRX] Pour water into bag with blue food coloring. This is your ocean!",
+        "duration": "[BRX] 2 min"
+      },
+      {
+        "title": "[BRX] Seal and Mount",
+        "description": "[BRX] Seal bag tightly. Tape to sunny window at eye level.",
+        "duration": "[BRX] 3 min"
+      },
+      {
+        "title": "[BRX] Observe Changes",
+        "description": "[BRX] Check throughout the day. Water evaporates, condenses on bag, and \"rains\" down!",
+        "duration": "Ongoing"
+      },
+      {
+        "title": "[BRX] Label the Cycle",
+        "description": "[BRX] Add labels: evaporation (water rising), condensation (droplets forming), precipitation (drops falling).",
+        "duration": "[BRX] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Ensure bag is sealed to prevent leaks"
+    ],
+    "learningOutcomes": [
+      "[BRX] Water cycle stages",
+      "[BRX] Evaporation and condensation",
+      "[BRX] Solar energy effects",
+      "[BRX] Earth science basics"
+    ],
+    "crossPillar": [
+      "[BRX] outdoorquest-cloud-watching"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] sciencelab-egg-drop",
+    "name": "[BRX] Egg Drop Challenge",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[BRX] 1 hour",
+    "description": "[BRX] Design a contraption to protect an egg from a high drop! Classic engineering challenge that teaches impact absorption.",
+    "image": "[BRX] /images/volcano.webp",
+    "rating": 4.9,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[BRX] Raw eggs",
+        "quantity": "[BRX] 2-3 for testing"
+      },
+      {
+        "name": "Straws"
+      },
+      {
+        "name": "Balloons"
+      },
+      {
+        "name": "[BRX] Cotton balls"
+      },
+      {
+        "name": "[BRX] Bubble wrap"
+      },
+      {
+        "name": "[BRX] Rubber bands"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[BRX] Small box"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Study the Problem",
+        "description": "[BRX] Understand forces: impact, gravity, momentum. What slows falls? What absorbs shock?",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Design Your Device",
+        "description": "[BRX] Sketch ideas. Consider: padding, parachute, crumple zones, suspension systems.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Build Prototype",
+        "description": "[BRX] Construct your egg protection device. Secure egg inside with cushioning materials.",
+        "duration": "[BRX] 30 min"
+      },
+      {
+        "title": "[BRX] Test Drop",
+        "description": "[BRX] Start from low height. If successful, go higher! Document results.",
+        "duration": "[BRX] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "Iterate",
+        "description": "[BRX] If egg breaks, analyze why. Improve design and test again!",
+        "duration": "Ongoing"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Do drops outside - eggs are messy!",
+      "[BRX] Adult supervision for high drops",
+      "[BRX] Wash hands after handling raw eggs"
+    ],
+    "learningOutcomes": [
+      "[BRX] Engineering design process",
+      "[BRX] Force and impact",
+      "[BRX] Iterative improvement",
+      "Problem-solving"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] artstudio-finger-paint",
+    "name": "[BRX] Finger Paint Masterpiece",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-5",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 20 min",
+    "description": "[BRX] Get messy with finger paints! Create colorful artwork while developing fine motor skills and sensory exploration.",
+    "image": "[BRX] /images/finger-paint.webp",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 198,
+    "materials": [
+      {
+        "name": "[BRX] Finger paints",
+        "quantity": "[BRX] Various colors"
+      },
+      {
+        "name": "[BRX] Large paper",
+        "quantity": "[BRX] Several sheets"
+      },
+      {
+        "name": "[BRX] Smock or old shirt"
+      },
+      {
+        "name": "[BRX] Plastic tablecloth"
+      },
+      {
+        "name": "[BRX] Water bowl and towels"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Set Up Space",
+        "description": "[BRX] Cover table with plastic. Put on smock. Tape paper down so it doesn't move.",
+        "duration": "[BRX] 5 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[BRX] Explore Colors",
+        "description": "[BRX] Start with one color. Dip fingers and make marks. Try dots, lines, swirls!",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Mix Colors",
+        "description": "[BRX] Add another color. See what happens when they blend! Yellow + blue = ?",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Try Techniques",
+        "description": "[BRX] Use whole hand, just fingertips, sides of hands. Make prints and patterns.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Clean Up",
+        "description": "[BRX] Wash hands. Let painting dry flat. Display your masterpiece!",
+        "duration": "[BRX] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Use non-toxic, washable paints",
+      "[BRX] Supervise to prevent paint eating",
+      "[BRX] Protect floor and furniture"
+    ],
+    "learningOutcomes": [
+      "[BRX] Sensory exploration",
+      "[BRX] Color mixing",
+      "[BRX] Fine motor development",
+      "[BRX] Creative expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] artstudio-nature-collage",
+    "name": "[BRX] Nature Collage",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 30 min",
+    "description": "[BRX] Collect treasures from nature and arrange them into beautiful artwork! Combines outdoor exploration with creativity.",
+    "image": "[BRX] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[BRX] Leaves, flowers, twigs"
+      },
+      {
+        "name": "[BRX] Cardstock or cardboard",
+        "quantity": "[BRX] For base"
+      },
+      {
+        "name": "[BRX] White glue"
+      },
+      {
+        "name": "[BRX] Optional: contact paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Nature Walk",
+        "description": "[BRX] Go outside and collect natural items: leaves, petals, small twigs, seeds, grass.",
+        "tip": "[BRX] Look for different colors, textures, and shapes!",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Sort Treasures",
+        "description": "[BRX] Lay out your collection. Group by color, size, or type.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Plan Design",
+        "description": "[BRX] Arrange items on your paper WITHOUT gluing. Try different layouts.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Glue in Place",
+        "description": "[BRX] Once happy with design, glue items down one by one. Press gently.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Preserve (Optional)",
+        "description": "[BRX] Cover with clear contact paper to preserve, or let dry and display!",
+        "duration": "[BRX] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Don't pick protected plants",
+      "[BRX] Wash hands after collecting",
+      "[BRX] Check for insects before bringing items inside"
+    ],
+    "learningOutcomes": [
+      "[BRX] Nature appreciation",
+      "[BRX] Design and composition",
+      "[BRX] Texture exploration",
+      "[BRX] Environmental awareness"
+    ],
+    "crossPillar": [
+      "[BRX] outdoorquest-nature-hunt"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] artstudio-tiedye",
+    "name": "[BRX] Bandhani Tie-Dye Dupatta",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[BRX] 1 hour + dry time",
+    "description": "[BRX] Discover the ancient Indian art of Bandhani! Use rubber bands and vibrant natural dyes to create mesmerizing geometric patterns on a cotton dupatta or scarf.",
+    "image": "[BRX] /images/tiedye.webp",
+    "rating": 4.9,
+    "reviewCount": 223,
+    "materials": [
+      {
+        "name": "[BRX] White cotton t-shirt"
+      },
+      {
+        "name": "[BRX] Fabric dye kit",
+        "quantity": "[BRX] Multiple colors"
+      },
+      {
+        "name": "[BRX] Rubber bands",
+        "quantity": "10-20"
+      },
+      {
+        "name": "[BRX] Plastic bags"
+      },
+      {
+        "name": "Gloves"
+      },
+      {
+        "name": "[BRX] Plastic tablecloth"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Wet the Shirt",
+        "description": "[BRX] Soak shirt in water and wring out until damp. This helps dye spread evenly.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Create Pattern",
+        "description": "[BRX] For spiral: pinch center and twist entire shirt. For stripes: fold accordion-style. Secure with rubber bands.",
+        "tip": "[BRX] Tighter bands = sharper lines. More bands = more white space.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Mix Dyes",
+        "description": "[BRX] Prepare dyes according to package. Wear gloves from this point on!",
+        "duration": "[BRX] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[BRX] Apply Color",
+        "description": "[BRX] Squeeze dye onto shirt sections. Use different colors in different areas. Flip and do back too.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Wait and Rinse",
+        "description": "[BRX] Bag the shirt and wait 6-24 hours. Rinse under cold water until water runs clear. Remove bands and wash.",
+        "duration": "[BRX] 24 hours"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Wear gloves - dye stains!",
+      "[BRX] Work outdoors or on protected surface",
+      "[BRX] Wash separately first few times"
+    ],
+    "learningOutcomes": [
+      "[BRX] Pattern creation",
+      "[BRX] Color theory",
+      "[BRX] Following multi-step processes",
+      "[BRX] Patience and delayed gratification"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] artstudio-paper-plate-animals",
+    "name": "[BRX] Paper Plate Animals",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 25 min",
+    "description": "[BRX] Transform simple paper plates into adorable animals! Great for parties or imaginative play.",
+    "image": "[BRX] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[BRX] Paper plates",
+        "quantity": "[BRX] 1-2 per animal"
+      },
+      {
+        "name": "[BRX] Paint or markers"
+      },
+      {
+        "name": "[BRX] Construction paper"
+      },
+      {
+        "name": "[BRX] Googly eyes"
+      },
+      {
+        "name": "[BRX] Glue and scissors"
+      },
+      {
+        "name": "[BRX] Pipe cleaners",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Choose Animal",
+        "description": "[BRX] Pick your favorite animal! Lion, pig, frog, cat, and owl are great starters.",
+        "duration": "[BRX] 2 min"
+      },
+      {
+        "title": "[BRX] Paint Base",
+        "description": "[BRX] Paint the plate the main color of your animal. Let dry.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Cut Features",
+        "description": "[BRX] Cut ears, noses, whiskers, beaks from construction paper.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Assemble Face",
+        "description": "[BRX] Glue on googly eyes and paper features. Add details with markers.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Add Extras",
+        "description": "[BRX] Attach popsicle stick for a mask, or hang as decoration!",
+        "duration": "[BRX] 3 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Supervise scissor use",
+      "[BRX] Use washable paints"
+    ],
+    "learningOutcomes": [
+      "[BRX] Animal recognition",
+      "[BRX] Following instructions",
+      "[BRX] Fine motor skills",
+      "[BRX] Creative expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] artstudio-rock-painting",
+    "name": "[BRX] Rock Painting",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 30 min",
+    "description": "[BRX] Turn ordinary rocks into colorful treasures! Paint animals, patterns, or inspirational words.",
+    "image": "[BRX] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[BRX] Smooth rocks",
+        "quantity": "3-5"
+      },
+      {
+        "name": "[BRX] Acrylic paint",
+        "quantity": "[BRX] Various colors"
+      },
+      {
+        "name": "Paintbrushes",
+        "quantity": "[BRX] Various sizes"
+      },
+      {
+        "name": "[BRX] Clear sealant",
+        "optional": true
+      },
+      {
+        "name": "[BRX] Pencil for sketching"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Find Rocks",
+        "description": "[BRX] Look for smooth, flat rocks. Wash and dry them completely.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Plan Design",
+        "description": "[BRX] Lightly sketch your design with pencil. Animals, mandalas, and words work great!",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Paint Base",
+        "description": "[BRX] Paint background color. Let dry completely before adding details.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Add Details",
+        "description": "[BRX] Paint your design. Start with larger shapes, add small details last.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Seal and Share",
+        "description": "[BRX] Optional: apply clear coat. Hide rocks for others to find or keep as decoration!",
+        "duration": "[BRX] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Use acrylic paints - they're waterproof when dry",
+      "[BRX] Seal if placing outdoors"
+    ],
+    "learningOutcomes": [
+      "[BRX] Painting techniques",
+      "[BRX] Working with 3D surfaces",
+      "[BRX] Community kindness (rock hiding)",
+      "[BRX] Nature appreciation"
+    ],
+    "crossPillar": [
+      "[BRX] outdoorquest-nature-hunt"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] artstudio-origami-zoo",
+    "name": "[BRX] Origami Zoo",
+    "pillar": "artstudio",
+    "category": "[BRX] Paper Art",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[BRX] 45 min",
+    "description": "[BRX] Fold paper into amazing animals with the ancient art of origami! Create a whole zoo of creatures.",
+    "image": "[BRX] /images/tiedye.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[BRX] Origami paper",
+        "quantity": "[BRX] Multiple colors"
+      },
+      {
+        "name": "Markers",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Start Simple",
+        "description": "[BRX] Begin with an easy fold like a dog face or fish. Learn basic folds: valley, mountain, squash.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Practice Precision",
+        "description": "[BRX] Fold carefully - crisp creases make better animals! Line up edges exactly.",
+        "tip": "[BRX] Use fingernail to crease sharply.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Try Animals",
+        "description": "[BRX] Make a frog that jumps! A bird that flaps! A crane for good luck!",
+        "duration": "[BRX] 20 min"
+      },
+      {
+        "title": "[BRX] Add Details",
+        "description": "[BRX] Use markers to add eyes, spots, or patterns to your animals.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Create Display",
+        "description": "[BRX] Arrange your zoo on a shelf or make a mobile to hang!",
+        "duration": "[BRX] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Paper cuts possible - fold carefully"
+    ],
+    "learningOutcomes": [
+      "[BRX] Following diagrams",
+      "[BRX] Spatial reasoning",
+      "[BRX] Patience and precision",
+      "[BRX] Japanese cultural art"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] artstudio-salt-painting",
+    "name": "[BRX] Salt Painting",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 30 min",
+    "description": "[BRX] Create magical raised designs using glue and salt, then add color and watch it spread!",
+    "image": "[BRX] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "Cardstock",
+        "quantity": "[BRX] Dark colors work best"
+      },
+      {
+        "name": "[BRX] White glue"
+      },
+      {
+        "name": "[BRX] Table salt",
+        "quantity": "[BRX] 1/2 cup"
+      },
+      {
+        "name": "[BRX] Liquid watercolors or food coloring"
+      },
+      {
+        "name": "[BRX] Dropper or paintbrush"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Draw with Glue",
+        "description": "[BRX] Squeeze glue in lines to create a design - rainbow, name, shapes. Keep lines thick.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Add Salt",
+        "description": "[BRX] While glue is wet, pour salt over entire design. Shake off excess.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Let Set",
+        "description": "[BRX] Wait a few minutes for glue to start setting with salt stuck on.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Add Color",
+        "description": "[BRX] Drop liquid color onto salt. Watch it spread along the lines like magic!",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Dry and Display",
+        "description": "[BRX] Let dry completely (overnight is best). Handle gently - salt can fall off.",
+        "duration": "[BRX] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Don't eat the salt after coloring",
+      "[BRX] Work on protected surface"
+    ],
+    "learningOutcomes": [
+      "[BRX] Absorption concepts",
+      "[BRX] Color spreading",
+      "[BRX] Fine motor control",
+      "[BRX] Process art"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] artstudio-pasta-jewelry",
+    "name": "[BRX] Terracotta Clay Jewelry",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 30 min",
+    "description": "[BRX] Connect with ancient Harappan traditions by sculpting your own terracotta jewelry! Shape natural clay into beautiful beads, dry them in the sun, and paint them with traditional Indian motifs.",
+    "image": "[BRX] /images/tiedye.webp",
+    "rating": 4.4,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[BRX] Tubular pasta (penne, rigatoni)",
+        "quantity": "[BRX] 30-40 pieces"
+      },
+      {
+        "name": "[BRX] Acrylic paint or food coloring"
+      },
+      {
+        "name": "[BRX] String or yarn",
+        "quantity": "[BRX] 2 feet per piece"
+      },
+      {
+        "name": "[BRX] Ziplock bags",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Color Pasta",
+        "description": "[BRX] Paint pasta or shake in bags with food coloring and rubbing alcohol. Let dry completely.",
+        "duration": "[BRX] 10 min + drying"
+      },
+      {
+        "title": "[BRX] Plan Pattern",
+        "description": "[BRX] Lay out pasta beads and plan your color pattern before stringing.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] String Beads",
+        "description": "[BRX] Thread pasta onto string. Tie a bead at one end first to stop others falling off.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Create Closure",
+        "description": "[BRX] Tie ends together for necklace, or add clasps for fancier finish.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Model and Gift",
+        "description": "[BRX] Wear your creation proudly or make gifts for friends and family!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Pasta jewelry is not edible after painting",
+      "[BRX] Handle gently - pasta can crack"
+    ],
+    "learningOutcomes": [
+      "[BRX] Pattern creation",
+      "[BRX] Fine motor skills (threading)",
+      "[BRX] Color combinations",
+      "[BRX] Gift-making mindset"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] artstudio-scratch-art",
+    "name": "[BRX] Scratch Art Cards",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[BRX] 45 min",
+    "description": "[BRX] Create rainbow scratch art from scratch! Layer colors, cover with black, then scratch to reveal hidden rainbows.",
+    "image": "[BRX] /images/tiedye.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "Cardstock"
+      },
+      {
+        "name": "Crayons",
+        "quantity": "[BRX] Various colors"
+      },
+      {
+        "name": "[BRX] Black acrylic paint or black crayon"
+      },
+      {
+        "name": "[BRX] Dish soap",
+        "quantity": "[BRX] A drop"
+      },
+      {
+        "name": "[BRX] Toothpick or wooden stylus"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Color Base Layer",
+        "description": "[BRX] Cover entire paper with heavy crayon in bright colors. Press hard! No white showing.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Add Black Layer",
+        "description": "[BRX] Mix tiny bit of dish soap into black paint. Paint over all the crayon. Or use black crayon (harder work!).",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Let Dry",
+        "description": "[BRX] If using paint, let dry completely before scratching.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Scratch Design",
+        "description": "[BRX] Use toothpick to scratch away black, revealing rainbow colors beneath!",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Create Cards",
+        "description": "[BRX] Make greeting cards, bookmarks, or framed art with your scratch designs!",
+        "duration": "[BRX] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Toothpicks are pointy - use carefully",
+      "[BRX] Work on protected surface"
+    ],
+    "learningOutcomes": [
+      "[BRX] Layering technique",
+      "[BRX] Subtractive art process",
+      "[BRX] Planning and patience",
+      "[BRX] Fine motor control"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] artstudio-suncatcher",
+    "name": "[BRX] Tissue Paper Suncatcher",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[BRX] 40 min",
+    "description": "[BRX] Create stained glass-style art that catches sunlight! Beautiful colors glow when hung in a window.",
+    "image": "[BRX] /images/tiedye.webp",
+    "rating": 4.6,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[BRX] Clear contact paper",
+        "quantity": "[BRX] 2 sheets"
+      },
+      {
+        "name": "[BRX] Tissue paper",
+        "quantity": "[BRX] Various colors"
+      },
+      {
+        "name": "[BRX] Black cardstock",
+        "quantity": "[BRX] For frame"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[BRX] Hole punch and string"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Cut Frame",
+        "description": "[BRX] Cut a frame shape from black cardstock - circle, heart, or rectangle with center removed.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Prepare Contact Paper",
+        "description": "[BRX] Cut contact paper slightly larger than frame. Peel backing and lay sticky side up.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Add Tissue Paper",
+        "description": "[BRX] Tear or cut tissue paper pieces. Press onto contact paper in colorful pattern.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Seal and Frame",
+        "description": "[BRX] Place second contact paper on top, sticky side down. Press to seal. Trim to frame and attach frame.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Hang in Window",
+        "description": "[BRX] Punch hole in top, add string, and hang where sunlight will shine through!",
+        "duration": "[BRX] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Scissors supervision for younger kids",
+      "[BRX] Contact paper is tricky - take your time"
+    ],
+    "learningOutcomes": [
+      "[BRX] Light and color",
+      "[BRX] Design composition",
+      "[BRX] Following multi-step process",
+      "[BRX] Decorative crafting"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] artstudio-clay-pots",
+    "name": "[BRX] Clay Pinch Pots",
+    "pillar": "artstudio",
+    "category": "Sculpture",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[BRX] 1 hour + dry time",
+    "description": "[BRX] Shape air-dry clay into beautiful bowls and pots using the ancient pinch pot technique!",
+    "image": "[BRX] /images/finger-paint.webp",
+    "rating": 4.7,
+    "reviewCount": 109,
+    "materials": [
+      {
+        "name": "[BRX] Air-dry clay",
+        "quantity": "[BRX] 1 lb"
+      },
+      {
+        "name": "[BRX] Water bowl"
+      },
+      {
+        "name": "[BRX] Acrylic paint"
+      },
+      {
+        "name": "Paintbrushes"
+      },
+      {
+        "name": "[BRX] Rolling pin",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Prepare Clay",
+        "description": "[BRX] Knead clay until soft and pliable. Roll into a ball about the size of your fist.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Create Opening",
+        "description": "[BRX] Push thumb into center of ball. Slowly rotate and pinch walls between thumb (inside) and fingers (outside).",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Shape the Pot",
+        "description": "[BRX] Keep pinching and rotating. Even thickness is key! Smooth cracks with wet finger.",
+        "tip": "[BRX] Keep walls no thinner than 1/4 inch.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Add Details",
+        "description": "[BRX] Create texture with tools. Add handles, feet, or decorative elements.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Dry and Paint",
+        "description": "[BRX] Let dry completely (2-3 days). Paint with acrylics once fully dried.",
+        "duration": "[BRX] 15 min + drying"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Air-dry clay is non-toxic",
+      "[BRX] Handle dried pieces gently - they're fragile",
+      "[BRX] Not food-safe unless using special glazes"
+    ],
+    "learningOutcomes": [
+      "[BRX] Sculpting techniques",
+      "[BRX] Hand strength and control",
+      "[BRX] Historical pottery methods",
+      "[BRX] 3D art creation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] artstudio-collaborative-mural",
+    "name": "[BRX] Collaborative Mural",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 1 hour",
+    "description": "[BRX] Create a large artwork together! Everyone contributes to one big painting.",
+    "image": "[BRX] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 67,
+    "materials": [
+      {
+        "name": "[BRX] Large paper roll or joined sheets",
+        "quantity": "[BRX] 4-6 feet"
+      },
+      {
+        "name": "[BRX] Paint, markers, crayons"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[BRX] Smocks for everyone"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Set Up Canvas",
+        "description": "[BRX] Roll out paper on floor or tape to wall. Make it BIG - this is a group project!",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Choose Theme",
+        "description": "[BRX] Decide on a theme together: underwater, space, garden, cityscape, or abstract!",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Assign Sections",
+        "description": "[BRX] Each person gets an area to work on. Plan how sections will connect.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Create Together",
+        "description": "[BRX] Everyone works simultaneously! Add to each other's areas if invited.",
+        "duration": "[BRX] 40 min"
+      },
+      {
+        "title": "[BRX] Add Final Touches",
+        "description": "[BRX] Step back, see what's missing. Add connecting elements together.",
+        "duration": "[BRX] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Supervise shared materials",
+      "[BRX] Respect everyone's work"
+    ],
+    "learningOutcomes": [
+      "[BRX] Collaboration skills",
+      "[BRX] Respecting others' work",
+      "[BRX] Group planning",
+      "[BRX] Large-scale art thinking"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] outdoorquest-nature-hunt",
+    "name": "[BRX] Nature Scavenger Hunt",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 30 min",
+    "description": "[BRX] Explore the outdoors with a checklist of natural treasures to find! Perfect for backyards, parks, or nature trails.",
+    "image": "[BRX] /images/nature-hunt.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 234,
+    "materials": [
+      {
+        "name": "[BRX] Scavenger hunt checklist",
+        "quantity": "[BRX] Printable included!"
+      },
+      {
+        "name": "[BRX] Bag or basket"
+      },
+      {
+        "name": "[BRX] Magnifying glass",
+        "optional": true
+      },
+      {
+        "name": "[BRX] Pencil or crayon"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Print Checklist",
+        "description": "[BRX] Use our checklist or create your own: pinecone, feather, smooth rock, flower, etc.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Go Outside!",
+        "description": "[BRX] Head to backyard, park, or nature trail. Bring your checklist and collection bag.",
+        "duration": "[BRX] 2 min"
+      },
+      {
+        "title": "[BRX] Start Hunting",
+        "description": "[BRX] Check off items as you find them. Collect items you can take (no picking protected plants!).",
+        "tip": "[BRX] Look up, down, and all around - treasures are everywhere!",
+        "duration": "[BRX] 20 min"
+      },
+      {
+        "title": "[BRX] Observe Closely",
+        "description": "[BRX] Use magnifying glass to examine finds. What details do you notice?",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Share Discoveries",
+        "description": "[BRX] Show what you found! Learn names of plants and animals you discovered.",
+        "duration": "[BRX] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Stay on paths and in sight of adults",
+      "[BRX] Don't touch unknown plants or animals",
+      "[BRX] Watch for poison ivy/oak",
+      "[BRX] Leave wildlife alone"
+    ],
+    "learningOutcomes": [
+      "[BRX] Nature identification",
+      "[BRX] Observation skills",
+      "[BRX] Physical activity",
+      "[BRX] Environmental appreciation"
+    ],
+    "crossPillar": [
+      "[BRX] artstudio-nature-collage"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] outdoorquest-bug-hotel",
+    "name": "[BRX] Bug Hotel",
+    "pillar": "outdoorquest",
+    "category": "Wildlife",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[BRX] 45 min",
+    "description": "[BRX] Build a cozy habitat for beneficial insects! Create shelter for ladybugs, bees, and other garden helpers.",
+    "image": "[BRX] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "[BRX] Wooden crate or tin can"
+      },
+      {
+        "name": "[BRX] Sticks and twigs"
+      },
+      {
+        "name": "Pinecones"
+      },
+      {
+        "name": "[BRX] Bamboo pieces or paper straws"
+      },
+      {
+        "name": "[BRX] Dried leaves"
+      },
+      {
+        "name": "[BRX] String or wire"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Find a Base",
+        "description": "[BRX] Use a clean tin can, small wooden box, or bundle of sticks tied together.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Gather Materials",
+        "description": "[BRX] Collect natural materials: hollow sticks, pinecones, bark, dried leaves, etc.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Fill the Hotel",
+        "description": "[BRX] Pack materials tightly into your base. Different insects like different spaces!",
+        "tip": "[BRX] Hollow tubes for solitary bees, pinecones for ladybugs.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Secure Contents",
+        "description": "[BRX] Make sure everything is packed tight. Add wire or more sticks if needed.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Place in Garden",
+        "description": "[BRX] Position in a sheltered spot facing south. Off the ground prevents flooding.",
+        "duration": "[BRX] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Don't disturb guests once they move in",
+      "[BRX] Place away from high-traffic areas",
+      "[BRX] Check for existing insect nests before gathering materials"
+    ],
+    "learningOutcomes": [
+      "[BRX] Insect ecology",
+      "[BRX] Habitat creation",
+      "[BRX] Beneficial insects",
+      "[BRX] Environmental stewardship"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] outdoorquest-pressed-flowers",
+    "name": "[BRX] Pressed Flower Art",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 30 min + drying",
+    "description": "[BRX] Preserve beautiful flowers and leaves by pressing! Create bookmarks, cards, or framed art.",
+    "image": "[BRX] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[BRX] Fresh flowers and leaves"
+      },
+      {
+        "name": "[BRX] Heavy books"
+      },
+      {
+        "name": "[BRX] Parchment or newspaper"
+      },
+      {
+        "name": "[BRX] Frame or cardstock",
+        "optional": true
+      },
+      {
+        "name": "[BRX] Clear contact paper",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Collect Specimens",
+        "description": "[BRX] Pick flowers and leaves on a dry day. Choose flat flowers or ones you can flatten.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Prepare for Pressing",
+        "description": "[BRX] Place flowers between parchment paper. Arrange flat - don't overlap.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Press in Books",
+        "description": "[BRX] Put paper with flowers inside heavy book. Stack more books on top.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Wait Patiently",
+        "description": "[BRX] Leave for 1-2 weeks. Check occasionally. Change paper if damp.",
+        "duration": "[BRX] 1-2 weeks"
+      },
+      {
+        "title": "[BRX] Create Art",
+        "description": "[BRX] Carefully remove pressed flowers. Arrange on cards, bookmarks, or frame!",
+        "duration": "[BRX] 15 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Don't pick from protected areas",
+      "[BRX] Pressed flowers are delicate",
+      "[BRX] Some plants cause skin irritation"
+    ],
+    "learningOutcomes": [
+      "[BRX] Botanical knowledge",
+      "[BRX] Patience and delayed gratification",
+      "[BRX] Preservation techniques",
+      "[BRX] Nature appreciation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] outdoorquest-bird-feeder",
+    "name": "[BRX] Coconut Shell Bird Feeder",
+    "pillar": "outdoorquest",
+    "category": "Wildlife",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 20 min",
+    "description": "[BRX] Repurpose an empty coconut shell into a beautiful, hanging bird feeder! Fill it with local grains and watch the incredible variety of native birds flock to your garden.",
+    "image": "[BRX] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 187,
+    "materials": [
+      {
+        "name": "[BRX] Large pinecone"
+      },
+      {
+        "name": "[BRX] Peanut butter",
+        "quantity": "[BRX] 1/4 cup"
+      },
+      {
+        "name": "Birdseed",
+        "quantity": "[BRX] 1 cup"
+      },
+      {
+        "name": "[BRX] String or yarn",
+        "quantity": "[BRX] 12 inches"
+      },
+      {
+        "name": "[BRX] Plate for rolling"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Tie Hanger",
+        "description": "[BRX] Tie string securely around top of pinecone for hanging.",
+        "duration": "[BRX] 3 min"
+      },
+      {
+        "title": "[BRX] Apply Peanut Butter",
+        "description": "[BRX] Spread peanut butter all over pinecone, getting into the scales.",
+        "tip": "[BRX] Use a butter knife or your hands (messy but fun!).",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Add Seeds",
+        "description": "[BRX] Roll coated pinecone in birdseed, pressing seeds into peanut butter.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Hang Outside",
+        "description": "[BRX] Hang from a tree branch where you can watch from a window.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Bird Watch",
+        "description": "[BRX] Keep a journal of birds that visit! Learn their names and songs.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Check for nut allergies before using peanut butter",
+      "[BRX] Alternative: use vegetable shortening",
+      "[BRX] Place where squirrels can't easily reach"
+    ],
+    "learningOutcomes": [
+      "[BRX] Bird identification",
+      "[BRX] Wildlife care",
+      "[BRX] Patience and observation",
+      "[BRX] Ecosystem understanding"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] outdoorquest-mud-kitchen",
+    "name": "[BRX] Mud Kitchen Play",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "Open-ended",
+    "description": "[BRX] Set up an outdoor play kitchen for messy, imaginative mud cooking! A classic childhood experience.",
+    "image": "[BRX] /images/nature-hunt.webp",
+    "rating": 4.5,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[BRX] Old pots and pans"
+      },
+      {
+        "name": "[BRX] Wooden spoons"
+      },
+      {
+        "name": "[BRX] Measuring cups"
+      },
+      {
+        "name": "[BRX] Water source"
+      },
+      {
+        "name": "[BRX] Dirt area"
+      },
+      {
+        "name": "[BRX] Natural additions",
+        "quantity": "[BRX] Leaves, sticks, petals"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Set Up Kitchen",
+        "description": "[BRX] Find a good spot near dirt and water. Arrange your tools. A small table helps!",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Prepare Ingredients",
+        "description": "[BRX] Gather water, dirt, and natural add-ins like leaves, petals, seeds.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Create Recipes",
+        "description": "[BRX] Make mud pies, dirt soup, nature stew! Mix, stir, pour, and create.",
+        "duration": "∞"
+      },
+      {
+        "title": "[BRX] Serve and Play",
+        "description": "[BRX] Set up a pretend restaurant. Serve your creations to stuffed animal guests!",
+        "duration": "∞"
+      },
+      {
+        "title": "[BRX] Clean Up",
+        "description": "[BRX] Hose off tools and hands. Some dirty play is good!",
+        "duration": "[BRX] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Wash hands thoroughly after play",
+      "[BRX] Don't actually eat mud creations!",
+      "[BRX] Check area for broken glass or harmful items"
+    ],
+    "learningOutcomes": [
+      "[BRX] Imaginative play",
+      "[BRX] Sensory exploration",
+      "[BRX] Scientific mixing",
+      "[BRX] Outdoor comfort"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] outdoorquest-shadow-tracing",
+    "name": "[BRX] Shadow Tracing Art",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 20 min",
+    "description": "[BRX] Use the sun to create art! Trace shadows of objects, toys, or even friends for unique silhouette artwork.",
+    "image": "[BRX] /images/nature-hunt.webp",
+    "rating": 4.4,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[BRX] Sidewalk chalk"
+      },
+      {
+        "name": "[BRX] Sunny day"
+      },
+      {
+        "name": "[BRX] Objects to trace",
+        "quantity": "[BRX] Toys, plants, etc."
+      },
+      {
+        "name": "[BRX] Paper and pencil",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Find Shadows",
+        "description": "[BRX] Go outside on a sunny day. Notice how everything has a shadow!",
+        "duration": "[BRX] 3 min"
+      },
+      {
+        "title": "[BRX] Position Objects",
+        "description": "[BRX] Place toys, plants, or pose yourself to create interesting shadow shapes.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Trace Outlines",
+        "description": "[BRX] Use chalk to trace around shadow edges on pavement.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Add Details",
+        "description": "[BRX] Color in your traced shadows. Add features, patterns, or backgrounds.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Notice Changes",
+        "description": "[BRX] Come back later - have shadows moved? Try tracing the same object at different times!",
+        "duration": "[BRX] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Wear sunscreen on sunny days",
+      "[BRX] Stay hydrated",
+      "[BRX] Don't look directly at the sun"
+    ],
+    "learningOutcomes": [
+      "[BRX] Sun and shadows",
+      "[BRX] Time and Earth rotation",
+      "[BRX] Art techniques",
+      "[BRX] Scientific observation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[BRX] outdoorquest-cloud-watching",
+    "name": "[BRX] Cloud Watching Journal",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 30 min",
+    "description": "[BRX] Lie back and watch the clouds! Learn cloud types, spot shapes, and create an imagination journal.",
+    "image": "[BRX] /images/nature-hunt.webp",
+    "rating": 4.3,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "Blanket"
+      },
+      {
+        "name": "[BRX] Journal or paper"
+      },
+      {
+        "name": "[BRX] Crayons or colored pencils"
+      },
+      {
+        "name": "[BRX] Cloud identification chart",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Find a Spot",
+        "description": "[BRX] Lay blanket in open area with good sky view. Lie on your back.",
+        "duration": "[BRX] 3 min"
+      },
+      {
+        "title": "[BRX] Observe Clouds",
+        "description": "[BRX] Watch the clouds move. What shapes do you see? Animals? Faces? Objects?",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Learn Cloud Types",
+        "description": "[BRX] Identify clouds: fluffy cumulus, wispy cirrus, layered stratus. What's up there today?",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Draw and Write",
+        "description": "[BRX] Sketch the shapes you see. Write stories about cloud characters.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Predict Weather",
+        "description": "[BRX] Different clouds mean different weather. What do today's clouds tell us?",
+        "duration": "[BRX] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Don't cloud watch during storms",
+      "[BRX] Wear sunglasses on bright days",
+      "[BRX] Apply sunscreen"
+    ],
+    "learningOutcomes": [
+      "[BRX] Meteorology basics",
+      "[BRX] Imagination and creativity",
+      "Relaxation",
+      "[BRX] Weather prediction"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] outdoorquest-fairy-garden",
+    "name": "[BRX] Fairy Garden",
+    "pillar": "outdoorquest",
+    "category": "Garden",
+    "ageRange": "3-12",
+    "difficulty": "Medium",
+    "timeToMake": "[BRX] 1 hour",
+    "description": "[BRX] Create a miniature magical garden for fairies! Use tiny plants, pebbles, and handmade accessories.",
+    "image": "[BRX] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[BRX] Container or garden corner"
+      },
+      {
+        "name": "[BRX] Potting soil"
+      },
+      {
+        "name": "[BRX] Small plants or moss"
+      },
+      {
+        "name": "[BRX] Pebbles and small stones"
+      },
+      {
+        "name": "[BRX] Tiny decorations",
+        "quantity": "[BRX] Shells, acorns, small figurines"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Choose Location",
+        "description": "[BRX] Pick a container (pot, wooden box) or a corner of the yard for your fairy garden.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Add Soil and Base",
+        "description": "[BRX] Fill with potting soil. Add pebbles for a path. Create landscape with hills or flat areas.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Plant Greenery",
+        "description": "[BRX] Add small plants, moss, or ground cover. Think about scale - everything should be tiny!",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Create Features",
+        "description": "[BRX] Make tiny houses from sticks, furniture from acorn caps, fences from twigs.",
+        "duration": "[BRX] 20 min"
+      },
+      {
+        "title": "[BRX] Add Inhabitants",
+        "description": "[BRX] Place fairy figurines, or leave empty for imagination! Add final decorative touches.",
+        "duration": "[BRX] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Wash hands after handling soil",
+      "[BRX] Small pieces can be choking hazards for young children"
+    ],
+    "learningOutcomes": [
+      "[BRX] Gardening basics",
+      "[BRX] Miniature design",
+      "[BRX] Imaginative play",
+      "[BRX] Caring for living things"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] outdoorquest-obstacle-course",
+    "name": "[BRX] Backyard Obstacle Course",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 30 min setup",
+    "description": "[BRX] Design and conquer your own obstacle course! Jump, crawl, balance, and race through challenges.",
+    "image": "[BRX] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 178,
+    "materials": [
+      {
+        "name": "[BRX] Hula hoops"
+      },
+      {
+        "name": "[BRX] Pool noodles"
+      },
+      {
+        "name": "[BRX] Cones or markers"
+      },
+      {
+        "name": "[BRX] Rope or string"
+      },
+      {
+        "name": "Buckets"
+      },
+      {
+        "name": "Balls"
+      },
+      {
+        "name": "Timer",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Plan Your Course",
+        "description": "[BRX] Decide on 5-8 obstacles. Include different movements: jumping, crawling, throwing, balancing.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Set Up Obstacles",
+        "description": "[BRX] Examples: hoop jump, noodle limbo, cone weave, bucket ball toss, rope hop.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Create Start/Finish",
+        "description": "[BRX] Mark clear start and finish lines. Number obstacles if doing them in order.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Test Run",
+        "description": "[BRX] Run through once yourself. Is it challenging but doable? Adjust difficulty.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "Race!",
+        "description": "[BRX] Time yourself, race friends, or try to beat your own record!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Check ground for hazards",
+      "[BRX] Age-appropriate challenges",
+      "[BRX] No obstacles near hard surfaces",
+      "[BRX] Warm up before running"
+    ],
+    "learningOutcomes": [
+      "[BRX] Physical fitness",
+      "[BRX] Course design",
+      "Sportsmanship",
+      "Problem-solving"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] outdoorquest-leaf-rubbing",
+    "name": "[BRX] Leaf Rubbing Art",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 20 min",
+    "description": "[BRX] Create beautiful impressions of leaves using crayons! A simple nature art activity perfect for all ages.",
+    "image": "[BRX] /images/nature-hunt.webp",
+    "rating": 4.5,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[BRX] Fresh leaves",
+        "quantity": "[BRX] Various shapes"
+      },
+      {
+        "name": "[BRX] White paper"
+      },
+      {
+        "name": "Crayons",
+        "quantity": "Unwrapped"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Collect Leaves",
+        "description": "[BRX] Gather leaves with interesting shapes and strong veins. Fresh leaves work best.",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Position Leaves",
+        "description": "[BRX] Place leaves vein-side up under paper. Use tape to hold paper still.",
+        "duration": "[BRX] 3 min"
+      },
+      {
+        "title": "[BRX] Rub with Crayon",
+        "description": "[BRX] Rub crayon side across paper over leaf. The leaf pattern appears!",
+        "tip": "[BRX] Use side of unwrapped crayon for best results.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Create Composition",
+        "description": "[BRX] Make multiple rubbings to create a forest, tree, or abstract design.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Identify Leaves",
+        "description": "[BRX] Look up what trees your leaves came from. Label your artwork!",
+        "duration": "[BRX] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Wash hands after handling leaves",
+      "[BRX] Avoid poison ivy/oak"
+    ],
+    "learningOutcomes": [
+      "[BRX] Plant identification",
+      "[BRX] Art technique",
+      "[BRX] Texture exploration",
+      "[BRX] Nature appreciation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] outdoorquest-water-balloons",
+    "name": "[BRX] Water Balloon Games",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 30 min play",
+    "description": "[BRX] Cool off with exciting water balloon games! From toss to relay races, get ready to get wet!",
+    "image": "[BRX] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 189,
+    "materials": [
+      {
+        "name": "[BRX] Water balloons",
+        "quantity": "30-50"
+      },
+      {
+        "name": "[BRX] Water source"
+      },
+      {
+        "name": "Buckets",
+        "quantity": "2-4"
+      },
+      {
+        "name": "[BRX] Open outdoor space"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Fill Balloons",
+        "description": "[BRX] Fill balloons at outdoor faucet. Don't overfill - they pop too easily!",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Balloon Toss",
+        "description": "[BRX] Partners toss balloon back and forth, stepping back after each catch. Who lasts longest?",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Relay Race",
+        "description": "[BRX] Carry balloon on spoon across yard without dropping. Teams compete!",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Target Practice",
+        "description": "[BRX] Draw chalk targets. Throw balloons at targets for points!",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Clean Up",
+        "description": "[BRX] IMPORTANT: Pick up all balloon pieces - they're harmful to wildlife!",
+        "duration": "[BRX] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] ALWAYS clean up balloon pieces",
+      "[BRX] Balloons are choking hazards",
+      "[BRX] Don't throw at faces",
+      "[BRX] Watch for slippery areas"
+    ],
+    "learningOutcomes": [
+      "Teamwork",
+      "[BRX] Gross motor skills",
+      "Sportsmanship",
+      "[BRX] Environmental responsibility (cleanup)"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[BRX] outdoorquest-stargazing",
+    "name": "[BRX] Stargazing Night",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[BRX] 1 hour",
+    "description": "[BRX] Explore the night sky! Learn constellations, spot planets, and maybe catch a shooting star.",
+    "image": "[BRX] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "Blanket"
+      },
+      {
+        "name": "[BRX] Star chart or app"
+      },
+      {
+        "name": "[BRX] Red flashlight",
+        "optional": true
+      },
+      {
+        "name": "Binoculars",
+        "optional": true
+      },
+      {
+        "name": "[BRX] Hot cocoa",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[BRX] Choose Location",
+        "description": "[BRX] Find dark spot away from lights. Backyard works if lights are off!",
+        "duration": "[BRX] 5 min"
+      },
+      {
+        "title": "[BRX] Let Eyes Adjust",
+        "description": "[BRX] Wait 10-15 minutes for eyes to adapt to darkness. Avoid looking at bright lights.",
+        "duration": "[BRX] 15 min"
+      },
+      {
+        "title": "[BRX] Find North Star",
+        "description": "[BRX] Locate Big Dipper, then follow pointer stars to Polaris, the North Star.",
+        "duration": "[BRX] 10 min"
+      },
+      {
+        "title": "[BRX] Hunt Constellations",
+        "description": "[BRX] Use star chart to find Orion, Cassiopeia, and seasonal constellations.",
+        "duration": "[BRX] 20 min"
+      },
+      {
+        "title": "[BRX] Watch for Movement",
+        "description": "[BRX] Satellites cross slowly. Shooting stars streak fast. Planets don't twinkle!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[BRX] Stay in safe areas at night",
+      "[BRX] Adult supervision required",
+      "[BRX] Bring bug spray",
+      "[BRX] Dress warmly"
+    ],
+    "learningOutcomes": [
+      "[BRX] Astronomy basics",
+      "[BRX] Navigation history",
+      "[BRX] Patience and observation",
+      "[BRX] Wonder and curiosity"
+    ],
+    "isPremium": true
+  }
+]

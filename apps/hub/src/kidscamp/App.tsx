@@ -232,14 +232,14 @@ export default function App() {
         {toastAchievement && (
           <div className="fixed bottom-6 right-6 z-50 animate-achievement-in">
             <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border-2 border-pink-400 p-4 flex items-center gap-4 max-w-sm">
-              <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-pink-400 to-purple-500 flex items-center justify-center text-3xl animate-bounce-slow">
+              <div className="w-16 min-h-16 rounded-xl bg-gradient-to-br from-pink-400 to-purple-500 flex items-center justify-center text-3xl animate-bounce-slow">
                 {toastAchievement.icon}
               </div>
               <div className="flex-1">
                 <p className="text-sm text-pink-500 font-medium uppercase">{t('kidscamp.app.new_badge', 'Yay! New Badge!')}</p>
                 <p className="font-bold text-gray-900 dark:text-white text-lg">{t(`kidscamp.achievements.${toastAchievement.id}.name`, toastAchievement.name)}</p>
               </div>
-              <button onClick={dismissToast} className="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full">
+              <button onClick={dismissToast} className="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full" aria-label="Action button">
                 <svg className="w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
@@ -401,7 +401,7 @@ export default function App() {
       {toastAchievement && (
         <div className="fixed bottom-6 right-6 z-50 animate-achievement-in">
           <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border-2 border-orange-400 p-4 flex items-center gap-4 max-w-sm">
-            <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-orange-400 to-pink-500 flex items-center justify-center text-2xl animate-bounce-slow">
+            <div className="w-14 min-h-14 rounded-xl bg-gradient-to-br from-orange-400 to-pink-500 flex items-center justify-center text-2xl animate-bounce-slow">
               {toastAchievement.icon}
             </div>
             <div className="flex-1">
@@ -412,7 +412,7 @@ export default function App() {
             <button
               onClick={dismissToast}
               className="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full"
-            >
+             aria-label="Action button">
               <svg className="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>

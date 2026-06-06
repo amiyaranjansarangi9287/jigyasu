@@ -3,6 +3,7 @@
 // Progress dots at top, parade when complete. Chick companion.
 
 import { useRef, useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSettingsStore } from '@/store';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
@@ -18,6 +19,7 @@ interface FoundAnimal {
 }
 
 export default function FarmFriends() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const foundRef = useRef<FoundAnimal[]>([]);

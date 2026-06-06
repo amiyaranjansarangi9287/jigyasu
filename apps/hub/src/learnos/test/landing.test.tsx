@@ -2,7 +2,7 @@ import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { I18nextProvider } from 'react-i18next';
-import i18n from '../i18n';
+import i18n from '../../i18n';
 import OwlLogo from '../landing/OwlLogo';
 import Header from '../landing/Header';
 import FeatureStrip from '../landing/FeatureStrip';
@@ -19,15 +19,14 @@ vi.mock('../store', () => ({
 describe('OwlLogo', () => {
   it('renders SVG with correct viewBox', () => {
     render(<OwlLogo size={40} />);
-    const svg = document.querySelector('svg');
-    expect(svg).toHaveAttribute('viewBox', '0 0 64 64');
+    const span = screen.getByText('🦚');
+    expect(span).toBeInTheDocument();
   });
 
   it('respects size prop', () => {
     const { container } = render(<OwlLogo size={50} />);
-    const span = container.firstChild as HTMLElement;
-    expect(span.style.width).toBe('50px');
-    expect(span.style.height).toBe('50px');
+    const span = screen.getByText('🦚');
+    expect(span.style.fontSize).toBe('50px');
   });
 });
 
@@ -40,7 +39,7 @@ describe('Header', () => {
         </I18nextProvider>
       </MemoryRouter>
     );
-    expect(screen.getByText('LearnOS')).toBeInTheDocument();
+    expect(screen.getByText('Jigyasu')).toBeInTheDocument();
   });
 
   it('renders navigation links', () => {
@@ -77,14 +76,14 @@ describe('FeatureStrip', () => {
     expect(screen.getByText('Zero friction')).toBeInTheDocument();
     expect(screen.getByText('Works offline')).toBeInTheDocument();
     expect(screen.getByText('Privacy first')).toBeInTheDocument();
-    expect(screen.getByText('6 languages')).toBeInTheDocument();
+    expect(screen.getByText('22 languages')).toBeInTheDocument();
   });
 });
 
 describe('Footer', () => {
   it('renders LearnOS brand', () => {
     render(<Footer />);
-    expect(screen.getByText('LearnOS')).toBeInTheDocument();
+    expect(screen.getByText('Jigyasu')).toBeInTheDocument();
   });
 
   it('renders copyright with current year', () => {

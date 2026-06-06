@@ -2,10 +2,17 @@ import React, { useState } from 'react';
 
 interface ButWhyProps {
   title?: string;
+  badge?: string;
+  ariaLabel?: string;
   children: React.ReactNode;
 }
 
-export function ButWhy({ title = "But WHY does this happen?", children }: ButWhyProps) {
+export function ButWhy({ 
+  title = "But WHY does this happen?", 
+  badge = "But WHY?",
+  ariaLabel = "But Why?",
+  children 
+}: ButWhyProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -14,11 +21,11 @@ export function ButWhy({ title = "But WHY does this happen?", children }: ButWhy
       <button
         onClick={() => setIsOpen(true)}
         className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 bg-white rounded-full shadow-2xl hover:scale-110 hover:shadow-pink-500/50 transition-all duration-300 ring-4 ring-pink-400 group"
-        aria-label="But Why?"
+        aria-label={ariaLabel}
       >
         <span className="text-3xl transform group-hover:rotate-12 transition-transform duration-300">🦉</span>
         <div className="absolute -top-10 right-0 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap shadow-lg">
-          But WHY?
+          {badge}
         </div>
       </button>
 

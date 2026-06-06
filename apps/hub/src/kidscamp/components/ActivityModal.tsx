@@ -89,12 +89,14 @@ export default function ActivityModal({
               {selectedActivity.pillar === 'toybox' ? '🧸' :
                selectedActivity.pillar === 'sciencelab' ? '🔬' :
                selectedActivity.pillar === 'artstudio' ? '🎨' : '🌿'}
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
               {' '}{t(`pillar_${selectedActivity.pillar}` as any, selectedActivity.pillar)}
             </span>
             <span className={`badge ${
               selectedActivity.difficulty === 'Easy' ? 'badge-easy' :
               selectedActivity.difficulty === 'Medium' ? 'badge-medium' : 'badge-hard'
             }`}>
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
               {t(`difficulty_${selectedActivity.difficulty.toLowerCase()}` as any, selectedActivity.difficulty)}
             </span>
             <span className="badge bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-200">

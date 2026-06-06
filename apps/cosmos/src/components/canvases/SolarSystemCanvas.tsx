@@ -1,245 +1,151 @@
-import { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { X, Gauge } from 'lucide-react';
-import { CanvasProps } from '../../types';
+import { useRef, useEffect } from 'react'
 
-interface Planet {
-  name: string;
-  indianName: string;
-  color: string;
-  size: number;
-  orbitRadius: number;
-  orbitPeriod: number;
-  moons: number;
-  distanceFromSun: string;
-  description: string;
+interface SolarSystemCanvasProps {
+  speed: number
+  isPlaying: boolean
 }
 
-const planets: Planet[] = [
-  { name: 'Mercury', indianName: 'Budh (बुध)', color: '#A0522D', size: 8, orbitRadius: 50, orbitPeriod: 88, moons: 0, distanceFromSun: '58 million km', description: 'The smallest planet and closest to the Sun. A year here is just 88 Earth days!' },
-  { name: 'Venus', indianName: 'Shukra (शुक्र)', color: '#DEB887', size: 12, orbitRadius: 75, orbitPeriod: 225, moons: 0, distanceFromSun: '108 million km', description: 'The hottest planet with thick clouds. It spins backwards compared to other planets!' },
-  { name: 'Earth', indianName: 'Prithvi (पृथ्वी)', color: '#4169E1', size: 12, orbitRadius: 100, orbitPeriod: 365, moons: 1, distanceFromSun: '150 million km', description: 'Our home! The only planet known to have life and liquid water on its surface.' },
-  { name: 'Mars', indianName: 'Mangal (मंगल)', color: '#CD5C5C', size: 10, orbitRadius: 130, orbitPeriod: 687, moons: 2, distanceFromSun: '228 million km', description: 'The Red Planet! India\'s Mangalyaan orbited Mars in 2014 on its first attempt!' },
-  { name: 'Jupiter', indianName: 'Brihaspati (बृहस्पति)', color: '#DAA520', size: 28, orbitRadius: 175, orbitPeriod: 4333, moons: 95, distanceFromSun: '778 million km', description: 'The largest planet! Its Great Red Spot is a storm bigger than Earth!' },
-  { name: 'Saturn', indianName: 'Shani (शनि)', color: '#F4A460', size: 24, orbitRadius: 215, orbitPeriod: 10759, moons: 146, distanceFromSun: '1.4 billion km', description: 'Famous for its beautiful rings made of ice and rock particles!' },
-  { name: 'Uranus', indianName: 'Arun (अरुण)', color: '#87CEEB', size: 18, orbitRadius: 250, orbitPeriod: 30687, moons: 28, distanceFromSun: '2.9 billion km', description: 'An ice giant that rotates on its side - it rolls around the Sun like a ball!' },
-  { name: 'Neptune', indianName: 'Varun (वरुण)', color: '#4682B4', size: 18, orbitRadius: 280, orbitPeriod: 60190, moons: 16, distanceFromSun: '4.5 billion km', description: 'The windiest planet with storms faster than the speed of sound!' },
-];
+interface Planet {
+  name: string
+  distance: number
+  size: number
+  speed: number
+  color: string
+  ring?: boolean
+  angle: number
+}
 
-export function SolarSystemCanvas({ isPlaying }: CanvasProps) {
-  const [selectedPlanet, setSelectedPlanet] = useState<Planet | null>(null);
-  const [speed, setSpeed] = useState(1);
-  const [angles, setAngles] = useState<number[]>(planets.map(() => Math.random() * 360));
-  const animationRef = useRef<number | null>(null);
-  const lastTimeRef = useRef<number>(0);
+export default function SolarSystemCanvas({ speed, isPlaying }: SolarSystemCanvasProps) {
+  const canvasRef = useRef<HTMLCanvasElement>(null)
+  const planetsRef = useRef<Planet[]>([
+    { name: 'Mercury', distance: 45, size: 3, speed: 4.1, color: '#94a3b8', angle: 0 },
+    { name: 'Venus', distance: 65, size: 5, speed: 1.6, color: '#f59e0b', angle: Math.PI * 0.5 },
+    { name: 'Earth', distance: 90, size: 6, speed: 1, color: '#3b82f6', angle: Math.PI },
+    { name: 'Mars', distance: 115, size: 4, speed: 0.53, color: '#ef4444', angle: Math.PI * 1.5 },
+    { name: 'Jupiter', distance: 155, size: 14, speed: 0.084, color: '#f97316', angle: Math.PI * 0.3 },
+    { name: 'Saturn', distance: 195, size: 12, speed: 0.034, color: '#eab308', angle: Math.PI * 0.8, ring: true },
+    { name: 'Uranus', distance: 230, size: 8, speed: 0.012, color: '#06b6d4', angle: Math.PI * 1.2 },
+    { name: 'Neptune', distance: 260, size: 7, speed: 0.006, color: '#6366f1', angle: Math.PI * 1.7 },
+  ])
+  const frameRef = useRef<number>(0)
 
   useEffect(() => {
-    if (!isPlaying) {
-      if (animationRef.current) {
-        cancelAnimationFrame(animationRef.current);
+    const canvas = canvasRef.current
+    if (!canvas) return
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return
+
+    const dpr = window.devicePixelRatio || 1
+    const rect = canvas.getBoundingClientRect()
+    canvas.width = rect.width * dpr
+    canvas.height = rect.height * dpr
+    ctx.scale(dpr, dpr)
+
+    const w = rect.width
+    const h = rect.height
+    const cx = w / 2
+    const cy = h / 2
+
+    const animate = () => {
+      ctx.clearRect(0, 0, w, h)
+
+      // Space background
+      const bg = ctx.createRadialGradient(cx, cy, 0, cx, cy, Math.max(w, h) * 0.6)
+      bg.addColorStop(0, '#0f172a')
+      bg.addColorStop(1, '#020617')
+      ctx.fillStyle = bg
+      ctx.fillRect(0, 0, w, h)
+
+      // Stars
+      for (let i = 0; i < 80; i++) {
+        const sx = (i * 137.508) % w
+        const sy = (i * 97.31) % h
+        const twinkle = 0.3 + 0.7 * Math.abs(Math.sin((isPlaying ? Date.now() * 0.001 : 0) + i))
+        ctx.beginPath()
+        ctx.arc(sx, sy, 0.5 + (i % 3) * 0.3, 0, Math.PI * 2)
+        ctx.fillStyle = `rgba(255, 255, 255, ${twinkle})`
+        ctx.fill()
       }
-      return;
+
+      // Orbit paths
+      planetsRef.current.forEach(planet => {
+        ctx.beginPath()
+        ctx.arc(cx, cy, planet.distance, 0, Math.PI * 2)
+        ctx.strokeStyle = 'rgba(148, 163, 184, 0.1)'
+        ctx.lineWidth = 1
+        ctx.stroke()
+      })
+
+      // Sun glow
+      const sunGlow = ctx.createRadialGradient(cx, cy, 5, cx, cy, 50)
+      sunGlow.addColorStop(0, 'rgba(251, 191, 36, 0.6)')
+      sunGlow.addColorStop(0.5, 'rgba(245, 158, 11, 0.1)')
+      sunGlow.addColorStop(1, 'rgba(245, 158, 11, 0)')
+      ctx.fillStyle = sunGlow
+      ctx.fillRect(cx - 50, cy - 50, 100, 100)
+
+      // Sun
+      ctx.beginPath()
+      ctx.arc(cx, cy, 18, 0, Math.PI * 2)
+      const sunGrad = ctx.createRadialGradient(cx, cy, 0, cx, cy, 18)
+      sunGrad.addColorStop(0, '#fef08a')
+      sunGrad.addColorStop(0.7, '#f59e0b')
+      sunGrad.addColorStop(1, '#d97706')
+      ctx.fillStyle = sunGrad
+      ctx.fill()
+
+      // Planets
+      planetsRef.current.forEach(planet => {
+        if (isPlaying) {
+          planet.angle += planet.speed * speed * 0.005
+        }
+
+        const px = cx + Math.cos(planet.angle) * planet.distance
+        const py = cy + Math.sin(planet.angle) * planet.distance
+
+        // Planet shadow
+        ctx.beginPath()
+        ctx.arc(px + 2, py + 2, planet.size, 0, Math.PI * 2)
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.3)'
+        ctx.fill()
+
+        // Planet body
+        ctx.beginPath()
+        ctx.arc(px, py, planet.size, 0, Math.PI * 2)
+        const planetGrad = ctx.createRadialGradient(px - planet.size * 0.3, py - planet.size * 0.3, 0, px, py, planet.size)
+        planetGrad.addColorStop(0, planet.color)
+        planetGrad.addColorStop(1, `${planet.color}80`)
+        ctx.fillStyle = planetGrad
+        ctx.fill()
+
+        // Saturn ring
+        if (planet.ring) {
+          ctx.beginPath()
+          ctx.ellipse(px, py, planet.size * 2, planet.size * 0.5, 0.3, 0, Math.PI * 2)
+          ctx.strokeStyle = `${planet.color}60`
+          ctx.lineWidth = 2
+          ctx.stroke()
+        }
+
+        // Label
+        ctx.font = '9px Inter, sans-serif'
+        ctx.textAlign = 'center'
+        ctx.fillStyle = 'rgba(148, 163, 184, 0.7)'
+        ctx.fillText(planet.name, px, py + planet.size + 12)
+      })
+
+      // Title
+      ctx.font = 'bold 12px Inter, sans-serif'
+      ctx.textAlign = 'left'
+      ctx.fillStyle = '#94a3b8'
+      ctx.fillText('🪐 Solar System', 15, 25)
+
+      frameRef.current = requestAnimationFrame(animate)
     }
 
-    const animate = (time: number) => {
-      if (lastTimeRef.current === 0) lastTimeRef.current = time;
-      const delta = (time - lastTimeRef.current) / 1000;
-      lastTimeRef.current = time;
+    animate()
+    return () => cancelAnimationFrame(frameRef.current)
+  }, [speed, isPlaying])
 
-      setAngles((prev) =>
-        prev.map((angle, idx) => {
-          const planet = planets[idx];
-          const angularSpeed = (360 / planet.orbitPeriod) * speed * 50;
-          return (angle + angularSpeed * delta) % 360;
-        })
-      );
-
-      animationRef.current = requestAnimationFrame(animate);
-    };
-
-    animationRef.current = requestAnimationFrame(animate);
-
-    return () => {
-      if (animationRef.current) {
-        cancelAnimationFrame(animationRef.current);
-      }
-      lastTimeRef.current = 0;
-    };
-  }, [isPlaying, speed]);
-
-  return (
-    <div className="relative h-full w-full overflow-hidden rounded-2xl bg-gradient-to-b from-slate-900 via-slate-950 to-black">
-      {/* Stars Background */}
-      <div className="absolute inset-0">
-        {Array.from({ length: 100 }).map((_, i) => (
-          <div
-            key={i}
-            className="absolute rounded-full bg-white"
-            style={{
-              width: Math.random() * 2 + 1,
-              height: Math.random() * 2 + 1,
-              top: `${Math.random() * 100}%`,
-              left: `${Math.random() * 100}%`,
-              opacity: Math.random() * 0.7 + 0.3,
-            }}
-          />
-        ))}
-      </div>
-
-      {/* Solar System */}
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-        {/* Sun */}
-        <motion.div
-          animate={{ scale: [1, 1.05, 1] }}
-          transition={{ duration: 2, repeat: Infinity }}
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer"
-          onClick={() => setSelectedPlanet({
-            name: 'Sun',
-            indianName: 'Surya (सूर्य)',
-            color: '#FFD700',
-            size: 40,
-            orbitRadius: 0,
-            orbitPeriod: 0,
-            moons: 0,
-            distanceFromSun: '0 km',
-            description: 'The heart of our solar system! A giant ball of hot gas that gives us light and warmth. In Indian tradition, Surya is the chief of the Navagraha.'
-          })}
-        >
-          <div
-            className="rounded-full"
-            style={{
-              width: 40,
-              height: 40,
-              background: 'radial-gradient(circle, #FFF700 0%, #FFD700 50%, #FF8C00 100%)',
-              boxShadow: '0 0 60px 20px rgba(255, 200, 0, 0.4), 0 0 100px 40px rgba(255, 150, 0, 0.2)',
-            }}
-          />
-        </motion.div>
-
-        {/* Orbits and Planets */}
-        {planets.map((planet, idx) => (
-          <div key={planet.name}>
-            {/* Orbit Path */}
-            <div
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border border-slate-700/30"
-              style={{
-                width: planet.orbitRadius * 2,
-                height: planet.orbitRadius * 2,
-              }}
-            />
-
-            {/* Planet */}
-            <motion.div
-              className="absolute left-1/2 top-1/2 cursor-pointer"
-              style={{
-                transform: `rotate(${angles[idx]}deg) translateX(${planet.orbitRadius}px) rotate(-${angles[idx]}deg) translate(-50%, -50%)`,
-              }}
-              whileHover={{ scale: 1.3 }}
-              onClick={() => setSelectedPlanet(planet)}
-            >
-              <div
-                className="rounded-full shadow-lg"
-                style={{
-                  width: planet.size,
-                  height: planet.size,
-                  backgroundColor: planet.color,
-                  boxShadow: `0 0 ${planet.size / 2}px ${planet.color}50`,
-                }}
-              />
-              {/* Saturn's Ring */}
-              {planet.name === 'Saturn' && (
-                <div
-                  className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-amber-300/50"
-                  style={{
-                    width: planet.size * 1.8,
-                    height: planet.size * 0.5,
-                    transform: 'translate(-50%, -50%) rotateX(70deg)',
-                  }}
-                />
-              )}
-            </motion.div>
-          </div>
-        ))}
-      </div>
-
-      {/* Speed Control */}
-      <div className="absolute bottom-4 left-4 rounded-xl bg-slate-800/80 p-3 backdrop-blur">
-        <div className="flex items-center gap-3">
-          <Gauge className="h-4 w-4 text-sky-400" />
-          <span className="text-xs text-slate-400">Speed</span>
-          <input
-            type="range"
-            min="0.1"
-            max="5"
-            step="0.1"
-            value={speed}
-            onChange={(e) => setSpeed(parseFloat(e.target.value))}
-            className="w-24 accent-sky-500"
-          />
-          <span className="text-xs text-white">{speed.toFixed(1)}x</span>
-        </div>
-      </div>
-
-      {/* Navagraha Info */}
-      <div className="absolute bottom-4 right-4 rounded-xl bg-amber-500/10 border border-amber-500/20 px-3 py-2">
-        <p className="text-xs text-amber-300">🇮🇳 Click planets to see Navagraha names</p>
-      </div>
-
-      {/* Planet Info Panel */}
-      <AnimatePresence>
-        {selectedPlanet && (
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 20 }}
-            className="absolute right-4 top-4 w-72 rounded-2xl bg-slate-800/95 p-4 backdrop-blur shadow-xl border border-slate-700"
-          >
-            <button
-              onClick={() => setSelectedPlanet(null)}
-              className="absolute right-3 top-3 rounded-lg p-1 text-slate-400 hover:bg-slate-700 hover:text-white"
-            >
-              <X className="h-4 w-4" />
-            </button>
-
-            <div className="flex items-center gap-3">
-              <div
-                className="rounded-full"
-                style={{
-                  width: 40,
-                  height: 40,
-                  backgroundColor: selectedPlanet.color,
-                  boxShadow: `0 0 20px ${selectedPlanet.color}50`,
-                }}
-              />
-              <div>
-                <h3 className="text-lg font-bold text-white">{selectedPlanet.name}</h3>
-                <p className="text-sm text-amber-400">{selectedPlanet.indianName}</p>
-              </div>
-            </div>
-
-            <p className="mt-3 text-sm text-slate-300 leading-relaxed">
-              {selectedPlanet.description}
-            </p>
-
-            <div className="mt-4 grid grid-cols-2 gap-2">
-              <div className="rounded-lg bg-slate-700/50 p-2">
-                <p className="text-xs text-slate-400">Distance from Sun</p>
-                <p className="text-sm font-medium text-white">{selectedPlanet.distanceFromSun}</p>
-              </div>
-              <div className="rounded-lg bg-slate-700/50 p-2">
-                <p className="text-xs text-slate-400">Moons</p>
-                <p className="text-sm font-medium text-white">{selectedPlanet.moons}</p>
-              </div>
-              {selectedPlanet.orbitPeriod > 0 && (
-                <div className="col-span-2 rounded-lg bg-slate-700/50 p-2">
-                  <p className="text-xs text-slate-400">Year Length</p>
-                  <p className="text-sm font-medium text-white">{selectedPlanet.orbitPeriod} Earth days</p>
-                </div>
-              )}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
-  );
+  return <canvas ref={canvasRef} className="w-full h-full" style={{ display: 'block' }} />
 }

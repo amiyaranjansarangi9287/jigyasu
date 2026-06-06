@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface SimpleMachinesCanvasProps {
   machine: 'lever' | 'wheel' | 'ramp' | 'pulley';
@@ -6,6 +7,7 @@ interface SimpleMachinesCanvasProps {
 }
 
 export default function SimpleMachinesCanvas({ machine, effortLevel }: SimpleMachinesCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const machineRef = useRef(machine);
@@ -217,7 +219,7 @@ export default function SimpleMachinesCanvas({ machine, effortLevel }: SimpleMac
 
         ctx.fillStyle = '#ef4444';
         ctx.font = 'bold 12px sans-serif';
-        ctx.fillText('❌ Hard! Lots of friction', dragX, dragY - 40);
+        ctx.fillText('🤔 Hard! Lots of friction', dragX, dragY - 40);
 
         // With wheels - rolling
         const wheelX = w * 0.7;

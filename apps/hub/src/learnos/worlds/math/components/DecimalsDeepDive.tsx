@@ -19,7 +19,7 @@ export default function DecimalsDeepDive() {
   const [value, setValue] = useState(3.14);
   const [challenge, setChallenge] = useState(makeChallenge);
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
 
   const parts = useMemo(() => {
     const str = value.toFixed(4);
@@ -48,7 +48,7 @@ export default function DecimalsDeepDive() {
   const answerChallenge = useCallback((opt: number) => {
     if (feedback) return;
     if (opt === challenge.answer) {
-      setFeedback('correct'); setScore(s => s + 10);
+      setFeedback('correct'); setMastery(m => m + 1);
       setTimeout(() => { setChallenge(makeChallenge()); setFeedback(null); }, 1200);
     } else { setFeedback('wrong'); setTimeout(() => setFeedback(null), 900); }
   }, [feedback, challenge]);
@@ -141,8 +141,8 @@ export default function DecimalsDeepDive() {
 
         {mode === 'challenge' && (
           <motion.div key="ch" className="max-w-lg mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-red-500/10 border-red-500/40' : 'bg-white/5 border-white/10'}`}>
-              <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {score}</span></div>
+            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
+              <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {mastery}</span></div>
               <p className="text-3xl font-bold text-white text-center font-mono mb-5">{challenge.question} = ?</p>
               <div className="grid grid-cols-2 gap-3">
                 {challenge.options.map(opt => (
@@ -152,7 +152,7 @@ export default function DecimalsDeepDive() {
                 ))}
               </div>
               {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✅ Correct!</p>}
-              {feedback === 'wrong' && <p className="text-red-400 font-bold text-center mt-4">Answer: {challenge.answer}</p>}
+              {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Answer: {challenge.answer}</p>}
             </div>
           </motion.div>
         )}

@@ -1,6 +1,7 @@
 // src/worlds/early/modules/AlphabetForest.tsx
 
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSettingsStore } from '@/store';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
@@ -11,6 +12,7 @@ import { useEarlySession } from '../hooks/useEarlySession';
 import { ALPHABET_CONTENT } from '../data/earlyContent';
 
 export default function AlphabetForest() {
+  const { t } = useTranslation();
   const soundEnabled = useSettingsStore((s) => s.soundEnabled);
   const pip = usePip();
   const { recordLetterExplored, progress } = useEarlyProgress();
@@ -51,7 +53,7 @@ export default function AlphabetForest() {
         <div className="px-5 pt-6 pb-3">
           <div className="bg-white rounded-2xl p-4 shadow-sm border border-green-200">
             <div className="flex items-center gap-3">
-              <span className="text-3xl">🐤</span>
+              <span className="text-3xl">{t('early.modules.AlphabetForest.spn_', '🐤')}</span>
               <p className="text-lg font-bold text-gray-700">
                 {selectedIdx !== null ? `Find: ${ALPHABET_CONTENT[selectedIdx].items[targetItemIdx].word}!` : 'Tap a letter to explore!'}
               </p>
@@ -76,7 +78,7 @@ export default function AlphabetForest() {
           <div className="flex-1 flex items-center justify-center px-6">
             <div className="text-center">
               <div className="flex justify-center gap-4 text-6xl mb-4">🌲🌳🌲</div>
-              <p className="text-gray-500 text-base font-medium">Tap a letter above to explore!</p>
+              <p className="text-gray-500 text-base font-medium">{t('early.modules.AlphabetForest.txt_Tapaletter', 'Tap a letter above to explore!')}</p>
             </div>
           </div>
         )}

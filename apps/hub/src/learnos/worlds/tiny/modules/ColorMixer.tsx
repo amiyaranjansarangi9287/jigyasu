@@ -3,6 +3,7 @@
 // Zero text. Chameleon companion changes color with mixes.
 
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useSettingsStore } from '@/store';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
 import TinyShell from '../TinyShell';
@@ -32,6 +33,7 @@ interface MixResult {
 }
 
 export default function ColorMixer() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const circlesRef = useRef<ColorCircle[]>([]);

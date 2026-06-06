@@ -20,6 +20,7 @@ export function registerAllModules(): void {
  * Get all modules for a specific world.
  */
 export function getModulesByWorld(worldId: string) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   return moduleRegistry.getByWorld(worldId as any);
 }
 

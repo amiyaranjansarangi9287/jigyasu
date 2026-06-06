@@ -1,0 +1,4506 @@
+[
+  {
+    "id": "[TA] toybox-rainbow-blocks",
+    "name": "[TA] Rainbow Stacking Blocks",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 1-2 hours",
+    "description": "[TA] Create a beautiful set of rainbow-colored wooden blocks perfect for stacking, sorting, and creative play. These timeless toys spark imagination and help develop fine motor skills.",
+    "image": "[TA] /images/blocks.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[TA] Wooden blocks or lumber scraps",
+        "quantity": "[TA] 12-20 pieces"
+      },
+      {
+        "name": "Sandpaper",
+        "quantity": "[TA] Fine and medium grit"
+      },
+      {
+        "name": "[TA] Non-toxic acrylic paint",
+        "quantity": "[TA] Rainbow colors"
+      },
+      {
+        "name": "[TA] Clear sealant",
+        "quantity": "[TA] 1 can",
+        "optional": true
+      },
+      {
+        "name": "Paintbrushes",
+        "quantity": "3-4"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Prepare the Wood",
+        "description": "[TA] Start by selecting your wooden pieces. If using lumber scraps, cut them into various shapes - rectangles, squares, triangles, and arches. Sand all surfaces smooth, starting with medium grit sandpaper and finishing with fine grit. Pay special attention to edges and corners to ensure they are rounded and safe for little hands.",
+        "tip": "[TA] Pre-cut wooden blocks from craft stores work great and save time!",
+        "duration": "[TA] 30 min"
+      },
+      {
+        "title": "[TA] Plan Your Rainbow",
+        "description": "[TA] Lay out your blocks and decide which colors will go on each piece. A classic rainbow progression (red, orange, yellow, green, blue, purple) works beautifully. Consider painting blocks of similar sizes in the same color for a cohesive set.",
+        "tip": "[TA] Take a photo of your layout plan for reference while painting.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Apply Base Coats",
+        "description": "[TA] Paint each block with its designated color. Apply thin, even coats and let dry completely between applications. Most blocks will need 2-3 coats for full coverage.",
+        "tip": "[TA] Use a cardboard box to hold blocks upright while drying.",
+        "duration": "[TA] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[TA] Add Details (Optional)",
+        "description": "[TA] Once base coats are dry, add fun details like dots, stripes, or simple patterns. You can also leave them solid for a classic look.",
+        "duration": "[TA] 20 min"
+      },
+      {
+        "title": "[TA] Seal and Finish",
+        "description": "[TA] Apply a clear, non-toxic sealant to protect the paint and make blocks more durable. Let dry completely (24 hours recommended) before play.",
+        "tip": "[TA] Water-based polyurethane is safe once fully cured.",
+        "duration": "[TA] 15 min",
+        "parentHelp": true
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Use only non-toxic, child-safe paints and sealants",
+      "[TA] Ensure all edges are well-sanded and smooth",
+      "[TA] Adult supervision required for cutting and sealing",
+      "[TA] Allow full curing time before giving to children"
+    ],
+    "learningOutcomes": [
+      "[TA] Fine motor skills",
+      "[TA] Color recognition",
+      "[TA] Spatial awareness",
+      "[TA] Creative thinking"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] toybox-wooden-car",
+    "name": "[TA] Wooden Auto-Rickshaw (Tuk-Tuk)",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[TA] 2-3 hours",
+    "description": "[TA] Construct your very own wooden Auto-Rickshaw! Learn the physics of axles and wheels as you design and paint the iconic three-wheeled vehicle that navigates busy Indian streets.",
+    "image": "[TA] /images/wooden-car.webp",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 124,
+    "materials": [
+      {
+        "name": "[TA] Wood block",
+        "quantity": "[TA] 6\" x 3\" x 2\""
+      },
+      {
+        "name": "[TA] Wooden wheels",
+        "quantity": "[TA] 4 pieces"
+      },
+      {
+        "name": "[TA] Wooden dowels",
+        "quantity": "[TA] 2 pieces, 4\" each"
+      },
+      {
+        "name": "Sandpaper",
+        "quantity": "[TA] Various grits"
+      },
+      {
+        "name": "[TA] Wood glue"
+      },
+      {
+        "name": "[TA] Non-toxic paint",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Shape the Car Body",
+        "description": "[TA] Draw the car profile on your wood block - a simple curved top works best. Using a saw or pre-cut the shape, then sand all surfaces smooth.",
+        "duration": "[TA] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[TA] Drill Axle Holes",
+        "description": "[TA] Mark where the axle holes will go on both sides of the car body. Drill straight through, ensuring holes align perfectly.",
+        "tip": "[TA] Use a drill press for perfectly aligned holes.",
+        "duration": "[TA] 15 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[TA] Prepare Wheels and Axles",
+        "description": "[TA] Sand the wheels smooth. Cut dowels to length for axles, leaving room for wheels plus a small gap.",
+        "duration": "[TA] 20 min"
+      },
+      {
+        "title": "[TA] Assemble the Car",
+        "description": "[TA] Insert axles through the car body. Attach wheels to each end with a dab of wood glue. Ensure wheels spin freely.",
+        "tip": "[TA] Don't use too much glue - wheels need to spin!",
+        "duration": "[TA] 20 min"
+      },
+      {
+        "title": "[TA] Paint and Finish",
+        "description": "[TA] Once glue is dry, paint your car in your favorite colors. Add details like windows, headlights, or racing stripes. Apply sealant and let cure.",
+        "duration": "[TA] 40 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Adult supervision required for all cutting and drilling",
+      "[TA] Wear safety glasses when using power tools",
+      "[TA] Use non-toxic finishes only"
+    ],
+    "learningOutcomes": [
+      "[TA] Basic woodworking",
+      "[TA] Wheel and axle mechanics",
+      "[TA] Planning and execution",
+      "[TA] Fine motor skills"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] toybox-plush-bear",
+    "name": "[TA] Cuddly Plush Bear",
+    "pillar": "toybox",
+    "category": "Plush",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[TA] 3-4 hours",
+    "description": "[TA] Sew your own adorable teddy bear with soft fabric and button eyes. A perfect cuddly companion that makes a wonderful gift.",
+    "image": "[TA] /images/plush-bear.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[TA] Soft fabric (fleece or felt)",
+        "quantity": "[TA] 1/2 yard"
+      },
+      {
+        "name": "Stuffing",
+        "quantity": "[TA] 1 bag polyester filling"
+      },
+      {
+        "name": "Thread",
+        "quantity": "[TA] Matching color"
+      },
+      {
+        "name": "Buttons",
+        "quantity": "[TA] 2 for eyes"
+      },
+      {
+        "name": "[TA] Embroidery thread",
+        "quantity": "[TA] For nose and mouth"
+      },
+      {
+        "name": "[TA] Needle and pins"
+      },
+      {
+        "name": "Scissors"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Cut Pattern Pieces",
+        "description": "[TA] Print or draw a simple bear pattern. Cut out body (2), arms (4), legs (4), ears (4), and head pieces from your fabric.",
+        "duration": "[TA] 30 min"
+      },
+      {
+        "title": "[TA] Sew Body Parts",
+        "description": "[TA] With right sides together, sew arm pairs, leg pairs, and ears. Leave openings for turning. Turn right side out.",
+        "duration": "[TA] 45 min"
+      },
+      {
+        "title": "[TA] Create the Face",
+        "description": "[TA] Attach button eyes securely. Embroider a simple nose and smile using satin stitch.",
+        "tip": "[TA] For younger children, embroider eyes instead of buttons for safety.",
+        "duration": "[TA] 30 min"
+      },
+      {
+        "title": "[TA] Assemble the Bear",
+        "description": "[TA] Sew head pieces together, attaching ears. Join body pieces, inserting arms and legs as you go. Leave opening for stuffing.",
+        "duration": "[TA] 45 min"
+      },
+      {
+        "title": "[TA] Stuff and Close",
+        "description": "[TA] Fill bear firmly with stuffing, shaping as you go. Hand-stitch the opening closed with a ladder stitch.",
+        "duration": "[TA] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Secure button eyes very tightly or use embroidered eyes for young children",
+      "[TA] Supervise needle use with younger sewers",
+      "[TA] Check for loose threads or weak seams"
+    ],
+    "learningOutcomes": [
+      "[TA] Sewing skills",
+      "[TA] Pattern reading",
+      "[TA] Patience and attention to detail",
+      "[TA] Gift-giving mindset"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] toybox-recycled-robot",
+    "name": "[TA] Recycled Robot",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 1-2 hours",
+    "description": "[TA] Transform recyclable materials into an awesome robot friend! This eco-friendly project teaches creativity and environmental awareness.",
+    "image": "[TA] /images/robot.webp",
+    "rating": 4.6,
+    "reviewCount": 142,
+    "materials": [
+      {
+        "name": "[TA] Cardboard boxes",
+        "quantity": "[TA] Various sizes"
+      },
+      {
+        "name": "[TA] Bottle caps"
+      },
+      {
+        "name": "[TA] Aluminum foil"
+      },
+      {
+        "name": "[TA] Toilet paper rolls",
+        "quantity": "[TA] 4 for limbs"
+      },
+      {
+        "name": "[TA] Paint and markers"
+      },
+      {
+        "name": "[TA] Glue gun",
+        "optional": true
+      },
+      {
+        "name": "[TA] Craft glue"
+      },
+      {
+        "name": "[TA] Pipe cleaners",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Gather Materials",
+        "description": "[TA] Collect various recyclables - boxes, bottles, caps, tubes. Clean everything thoroughly. Lay out materials and envision your robot.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Build the Body",
+        "description": "[TA] Select a medium box for the body and a smaller one for the head. Cover with aluminum foil or paint silver for a robotic look.",
+        "duration": "[TA] 25 min"
+      },
+      {
+        "title": "[TA] Add Limbs",
+        "description": "[TA] Attach toilet paper rolls or paper towel tubes as arms and legs. Secure with glue and reinforce with tape if needed.",
+        "duration": "[TA] 20 min"
+      },
+      {
+        "title": "[TA] Create the Face",
+        "description": "[TA] Use bottle caps for eyes, buttons for a nose, and draw or add a mouth. Get creative with antennae using pipe cleaners!",
+        "duration": "[TA] 20 min"
+      },
+      {
+        "title": "[TA] Add Details",
+        "description": "[TA] Decorate with buttons, dials, screens drawn on paper, or any creative additions. Name your robot!",
+        "duration": "[TA] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Adult supervision required for hot glue gun",
+      "[TA] Wash all recyclables before use",
+      "[TA] Check for sharp edges on cans or lids"
+    ],
+    "learningOutcomes": [
+      "[TA] Environmental awareness",
+      "[TA] Creative reuse",
+      "Problem-solving",
+      "[TA] Imaginative play"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] toybox-balsa-airplane",
+    "name": "[TA] Balsa Wood Airplane",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[TA] 3-4 hours",
+    "description": "[TA] Craft a beautiful balsa wood biplane that actually flies! Learn about aerodynamics while building this classic model.",
+    "image": "[TA] /images/airplane.webp",
+    "rating": 4.8,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[TA] Balsa wood sheets",
+        "quantity": "[TA] 3 sheets, 1/8\" thick"
+      },
+      {
+        "name": "[TA] Balsa wood sticks",
+        "quantity": "[TA] Various sizes"
+      },
+      {
+        "name": "[TA] Wood glue"
+      },
+      {
+        "name": "[TA] Craft knife"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "Paint",
+        "optional": true
+      },
+      {
+        "name": "[TA] Rubber bands"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Cut Wing Pieces",
+        "description": "[TA] Trace wing templates onto balsa sheets. Carefully cut out upper and lower wings using a craft knife. Sand edges smooth.",
+        "duration": "[TA] 40 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[TA] Build the Fuselage",
+        "description": "[TA] Cut and assemble the body of the plane using balsa sticks. Create a frame that is sturdy but lightweight.",
+        "duration": "[TA] 45 min"
+      },
+      {
+        "title": "[TA] Attach Wings",
+        "description": "[TA] Glue wings to fuselage at slight upward angles for better lift. Use struts between upper and lower wings.",
+        "tip": "[TA] Let each glue joint dry before moving to the next.",
+        "duration": "[TA] 30 min"
+      },
+      {
+        "title": "[TA] Add Tail Assembly",
+        "description": "[TA] Create and attach horizontal stabilizer and vertical tail fin. These are crucial for flight stability.",
+        "duration": "[TA] 25 min"
+      },
+      {
+        "title": "[TA] Finish and Test Fly",
+        "description": "[TA] Sand entire plane smooth. Paint if desired. Add a propeller with rubber band power. Test fly and adjust as needed!",
+        "duration": "[TA] 40 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Adult supervision required for craft knife use",
+      "[TA] Balsa wood splinters easily - handle with care",
+      "[TA] Fly in open areas away from people"
+    ],
+    "learningOutcomes": [
+      "[TA] Aerodynamics basics",
+      "[TA] Precision building",
+      "[TA] Physics of flight",
+      "[TA] Patience and persistence"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] toybox-dollhouse",
+    "name": "[TA] Miniature Dollhouse",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[TA] 4-6 hours",
+    "description": "[TA] Construct a charming miniature dollhouse with multiple rooms. Add tiny furniture and decorations for endless imaginative play.",
+    "image": "[TA] /images/dollhouse.webp",
+    "rating": 4.9,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[TA] Cardboard or foam board",
+        "quantity": "[TA] Large sheets"
+      },
+      {
+        "name": "[TA] Craft knife"
+      },
+      {
+        "name": "Ruler"
+      },
+      {
+        "name": "Glue"
+      },
+      {
+        "name": "[TA] Scrapbook paper",
+        "quantity": "[TA] For wallpaper"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "[TA] Small boxes",
+        "quantity": "[TA] For furniture"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Design Floor Plan",
+        "description": "[TA] Sketch your dollhouse design. Decide on number of rooms and floors. Calculate measurements for walls and floors.",
+        "duration": "[TA] 20 min"
+      },
+      {
+        "title": "[TA] Cut Structural Pieces",
+        "description": "[TA] Cut out walls, floors, and roof pieces from cardboard or foam board. Include window and door openings.",
+        "duration": "[TA] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[TA] Assemble Structure",
+        "description": "[TA] Glue walls together, add floors to create stories. Install the roof. Reinforce corners with extra cardboard strips.",
+        "duration": "[TA] 1 hour"
+      },
+      {
+        "title": "[TA] Decorate Interior",
+        "description": "[TA] Apply scrapbook paper as wallpaper. Paint trim and details. Add flooring paper or felt rugs.",
+        "duration": "[TA] 1 hour"
+      },
+      {
+        "title": "[TA] Create Furniture",
+        "description": "[TA] Make tiny furniture from small boxes, spools, and scraps. Add beds, tables, chairs, and decorations.",
+        "duration": "[TA] 1 hour"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Adult supervision for cutting",
+      "[TA] Use sharp blades carefully with cutting mat",
+      "[TA] Small pieces may be choking hazards for young children"
+    ],
+    "learningOutcomes": [
+      "[TA] Architectural thinking",
+      "[TA] Scale and proportion",
+      "[TA] Interior design",
+      "[TA] Long-term project planning"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] toybox-animal-puzzle",
+    "name": "[TA] Wooden Animal Puzzle",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 1-2 hours",
+    "description": "[TA] Create chunky wooden puzzles featuring adorable animals. Perfect for little hands learning shapes and problem-solving.",
+    "image": "[TA] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 118,
+    "materials": [
+      {
+        "name": "Plywood",
+        "quantity": "[TA] 1/2\" thick, 8\" x 10\""
+      },
+      {
+        "name": "[TA] Scroll saw or jigsaw"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "[TA] Non-toxic paint"
+      },
+      {
+        "name": "[TA] Clear sealant"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Draw Design",
+        "description": "[TA] Draw a simple animal shape on the plywood - elephant, cat, or dog work great. Keep shapes chunky with rounded edges.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Cut Outer Shape",
+        "description": "[TA] Use a scroll saw to cut out the animal shape from the plywood. Sand all edges smooth.",
+        "duration": "[TA] 20 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[TA] Create Puzzle Pieces",
+        "description": "[TA] Draw puzzle piece divisions on the animal. Cut along these lines to create 4-8 interlocking pieces.",
+        "duration": "[TA] 25 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[TA] Paint Pieces",
+        "description": "[TA] Paint each puzzle piece in bright colors. You can paint both sides or just the top.",
+        "duration": "[TA] 30 min"
+      },
+      {
+        "title": "[TA] Seal and Assemble",
+        "description": "[TA] Apply clear sealant to protect paint. Once dry, assemble your puzzle and test the fit!",
+        "duration": "[TA] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Adult use only for power saws",
+      "[TA] Sand thoroughly - no splinters",
+      "[TA] Use child-safe paints and sealants"
+    ],
+    "learningOutcomes": [
+      "Problem-solving",
+      "[TA] Shape recognition",
+      "[TA] Hand-eye coordination",
+      "Patience"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] toybox-train-set",
+    "name": "[TA] Classic Train Set",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[TA] 4-5 hours",
+    "description": "[TA] Build a complete wooden train set with engine, cars, and track pieces. A challenging project with rewarding results.",
+    "image": "[TA] /images/train.webp",
+    "rating": 4.8,
+    "reviewCount": 64,
+    "materials": [
+      {
+        "name": "[TA] Wood blocks",
+        "quantity": "[TA] Various sizes"
+      },
+      {
+        "name": "[TA] Wooden wheels",
+        "quantity": "20+"
+      },
+      {
+        "name": "Dowels",
+        "quantity": "[TA] For axles and connectors"
+      },
+      {
+        "name": "[TA] Wood glue"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "[TA] Small hooks and eyes",
+        "quantity": "[TA] For connecting cars"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Design Train Cars",
+        "description": "[TA] Sketch designs for engine, coal car, cargo cars, and caboose. Plan wheel placement and connection points.",
+        "duration": "[TA] 20 min"
+      },
+      {
+        "title": "[TA] Cut and Shape",
+        "description": "[TA] Cut wood blocks to size for each car. Shape the engine with a rounded front. Sand everything smooth.",
+        "duration": "[TA] 1 hour",
+        "parentHelp": true
+      },
+      {
+        "title": "[TA] Add Wheels",
+        "description": "[TA] Drill holes for axles. Insert dowels and attach wheels. Ensure wheels spin freely.",
+        "duration": "[TA] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[TA] Paint and Detail",
+        "description": "[TA] Paint each car in classic train colors. Add windows, cargo details, and decorations.",
+        "duration": "[TA] 1 hour"
+      },
+      {
+        "title": "[TA] Connect Cars",
+        "description": "[TA] Attach hooks to front and eyes to back of each car. Test connections. Create track pieces if desired.",
+        "duration": "[TA] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Adult supervision for all cutting and drilling",
+      "[TA] Check small parts are secure",
+      "[TA] Test wheel attachment strength"
+    ],
+    "learningOutcomes": [
+      "[TA] Complex project planning",
+      "[TA] Mechanical connections",
+      "[TA] Precision work",
+      "[TA] Transportation history"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] toybox-marble-run",
+    "name": "[TA] Marble Run Adventure",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[TA] 2-3 hours",
+    "description": "[TA] Engineer an exciting marble run with twists, turns, and drops. Watch marbles race through your custom creation!",
+    "image": "[TA] /images/marble-run.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 189,
+    "materials": [
+      {
+        "name": "[TA] Cardboard tubes",
+        "quantity": "[TA] 10-15 various sizes"
+      },
+      {
+        "name": "[TA] Cardboard sheets"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "Marbles",
+        "quantity": "5-10"
+      },
+      {
+        "name": "[TA] Base board"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Plan Your Run",
+        "description": "[TA] Sketch the path marbles will take. Plan starting height, turns, tunnels, and landing. Remember: gravity is your friend!",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Create Track Pieces",
+        "description": "[TA] Cut tubes in half lengthwise for open tracks. Cut various lengths. Create funnels and catch points.",
+        "duration": "[TA] 30 min"
+      },
+      {
+        "title": "[TA] Build Support Structure",
+        "description": "[TA] Create cardboard supports to hold tracks at different heights. Build a sturdy base for everything.",
+        "duration": "[TA] 30 min"
+      },
+      {
+        "title": "[TA] Assemble the Run",
+        "description": "[TA] Attach tracks to supports, ensuring smooth transitions. Test with marbles as you build. Adjust angles as needed.",
+        "duration": "[TA] 45 min"
+      },
+      {
+        "title": "[TA] Test and Improve",
+        "description": "[TA] Run marbles through multiple times. Fix any stuck points. Add fun features like jumps or spinners!",
+        "duration": "[TA] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Marbles are choking hazards - supervise young children",
+      "[TA] Use scissors carefully",
+      "[TA] Ensure structure is stable"
+    ],
+    "learningOutcomes": [
+      "[TA] Physics and gravity",
+      "[TA] Engineering design",
+      "Problem-solving",
+      "[TA] Cause and effect"
+    ],
+    "crossPillar": [
+      "[TA] sciencelab-balloon-rocket"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "toybox-tangram",
+    "name": "[TA] Tangram Puzzle Set",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 1 hour",
+    "description": "[TA] Create the ancient Chinese puzzle of seven shapes that form endless patterns. A timeless brain teaser!",
+    "image": "[TA] /images/puzzle.webp",
+    "rating": 4.6,
+    "reviewCount": 92,
+    "materials": [
+      {
+        "name": "[TA] Foam board or wood",
+        "quantity": "[TA] 6\" x 6\" square"
+      },
+      {
+        "name": "Ruler"
+      },
+      {
+        "name": "Pencil"
+      },
+      {
+        "name": "[TA] Craft knife or saw"
+      },
+      {
+        "name": "[TA] Paint or markers",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Draw the Grid",
+        "description": "[TA] Draw a 4x4 grid on your square. This helps position the seven tangram pieces correctly.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Mark Tangram Shapes",
+        "description": "[TA] Following a tangram diagram, mark the seven shapes: 2 large triangles, 1 medium triangle, 2 small triangles, 1 square, 1 parallelogram.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Cut Pieces",
+        "description": "[TA] Carefully cut along your marked lines to create the seven pieces. Sand or smooth edges.",
+        "duration": "[TA] 20 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[TA] Color Pieces",
+        "description": "[TA] Paint each piece a different color for visual appeal and easier identification.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Try Puzzles",
+        "description": "[TA] Challenge yourself to make shapes - animals, people, objects. Look up tangram puzzles online for ideas!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Adult supervision for cutting",
+      "[TA] Small pieces can be choking hazards"
+    ],
+    "learningOutcomes": [
+      "[TA] Spatial reasoning",
+      "[TA] Geometry basics",
+      "Problem-solving",
+      "[TA] Pattern recognition"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] toybox-3d-puzzle",
+    "name": "[TA] 3D Animal Puzzle",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[TA] 2 hours",
+    "description": "[TA] Build a 3D puzzle that assembles into an animal sculpture. Pieces slot together without glue!",
+    "image": "[TA] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 78,
+    "materials": [
+      {
+        "name": "[TA] Cardboard or foam board",
+        "quantity": "[TA] 2-3 sheets"
+      },
+      {
+        "name": "[TA] Template printout"
+      },
+      {
+        "name": "[TA] Craft knife"
+      },
+      {
+        "name": "[TA] Cutting mat"
+      },
+      {
+        "name": "Paint",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Print Templates",
+        "description": "[TA] Find or create 3D puzzle templates. Print at full size. Choose an animal like an elephant or dinosaur.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Transfer to Board",
+        "description": "[TA] Trace or glue templates to your cardboard or foam board. Mark all slot positions clearly.",
+        "duration": "[TA] 20 min"
+      },
+      {
+        "title": "[TA] Cut Pieces",
+        "description": "[TA] Carefully cut out each piece including the slots. Slots should be as wide as your material thickness.",
+        "duration": "[TA] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[TA] Test Fit",
+        "description": "[TA] Try assembling the puzzle. Adjust slots if pieces are too tight or loose.",
+        "duration": "[TA] 20 min"
+      },
+      {
+        "title": "[TA] Decorate and Finish",
+        "description": "[TA] Disassemble, paint pieces, let dry, then reassemble your 3D sculpture!",
+        "duration": "[TA] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Sharp blade use requires adult supervision",
+      "[TA] Always cut on a cutting mat",
+      "[TA] Cut away from your body"
+    ],
+    "learningOutcomes": [
+      "[TA] 3D spatial thinking",
+      "[TA] Assembly skills",
+      "[TA] Following templates",
+      "[TA] Fine motor control"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] toybox-chess-set",
+    "name": "[TA] Wooden Chess Set",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[TA] 6-8 hours",
+    "description": "[TA] Carve and shape your own chess pieces, then build a board. A challenging project that creates a family heirloom!",
+    "image": "[TA] /images/blocks.webp",
+    "rating": 4.9,
+    "reviewCount": 54,
+    "materials": [
+      {
+        "name": "[TA] Wood blocks",
+        "quantity": "[TA] Enough for 32 pieces"
+      },
+      {
+        "name": "[TA] Plywood for board",
+        "quantity": "[TA] 16\" x 16\""
+      },
+      {
+        "name": "[TA] Carving tools"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "[TA] Paint or wood stain"
+      },
+      {
+        "name": "[TA] Clear finish"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Design Pieces",
+        "description": "[TA] Sketch simplified designs for each piece type: King, Queen, Bishop, Knight, Rook, Pawn. Keep shapes recognizable but achievable.",
+        "duration": "[TA] 30 min"
+      },
+      {
+        "title": "[TA] Shape Pawns",
+        "description": "[TA] Start with 16 pawns - the simplest pieces. Shape, sand smooth. Get consistent sizing.",
+        "duration": "[TA] 1.5 hours",
+        "parentHelp": true
+      },
+      {
+        "title": "[TA] Carve Major Pieces",
+        "description": "[TA] Work on Kings, Queens, Bishops, Knights, and Rooks. Take your time on details.",
+        "duration": "[TA] 3 hours",
+        "parentHelp": true
+      },
+      {
+        "title": "[TA] Create Board",
+        "description": "[TA] Mark 64 squares (8x8 grid) on plywood. Paint or stain alternating squares. Apply finish.",
+        "duration": "[TA] 1.5 hours"
+      },
+      {
+        "title": "[TA] Finish Pieces",
+        "description": "[TA] Paint or stain pieces in two colors. Apply protective finish. Let cure completely.",
+        "duration": "[TA] 1 hour"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Carving tools are very sharp - adult only or close supervision",
+      "[TA] Carve away from body",
+      "[TA] Use proper ventilation with stains and finishes"
+    ],
+    "learningOutcomes": [
+      "[TA] Advanced woodworking",
+      "[TA] Strategic game appreciation",
+      "[TA] Patience and persistence",
+      "[TA] Artistic expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] toybox-ring-toss",
+    "name": "[TA] Ring Toss Game",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 1 hour",
+    "description": "[TA] Build a classic ring toss game for indoor or outdoor fun. Perfect for parties and family game nights!",
+    "image": "[TA] /images/blocks.webp",
+    "rating": 4.5,
+    "reviewCount": 108,
+    "materials": [
+      {
+        "name": "[TA] Wooden base",
+        "quantity": "[TA] 12\" x 12\""
+      },
+      {
+        "name": "[TA] Wooden dowels",
+        "quantity": "[TA] 5 pieces, 8\" tall"
+      },
+      {
+        "name": "[TA] Rope or embroidery hoops",
+        "quantity": "[TA] For rings"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "Drill"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Prepare Base",
+        "description": "[TA] Sand wooden base smooth. Mark positions for 5 pegs - one center, four corners.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Install Pegs",
+        "description": "[TA] Drill holes for dowels. Glue dowels into holes. Paint different point values on each peg.",
+        "duration": "[TA] 25 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[TA] Create Rings",
+        "description": "[TA] Make rings from rope (form circles and tape/glue ends) or use embroidery hoops. Make 5-6 rings.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[TA] Paint the base and pegs in bright colors. Add numbers for scoring.",
+        "duration": "[TA] 20 min"
+      },
+      {
+        "title": "Play!",
+        "description": "[TA] Set up, stand back, and toss rings! Highest score wins. Adjust distance for difficulty.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Adult help needed for drilling",
+      "[TA] Ensure pegs are secure before playing"
+    ],
+    "learningOutcomes": [
+      "[TA] Hand-eye coordination",
+      "[TA] Basic math (scoring)",
+      "Sportsmanship",
+      "[TA] Motor skills"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] toybox-memory-game",
+    "name": "[TA] Memory Matching Game",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 45 min",
+    "description": "[TA] Create a personalized memory matching game with your own artwork. Great for brain training!",
+    "image": "[TA] /images/blocks.webp",
+    "rating": 4.6,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "Cardstock",
+        "quantity": "[TA] 24-32 squares"
+      },
+      {
+        "name": "[TA] Markers or crayons"
+      },
+      {
+        "name": "Stickers",
+        "optional": true
+      },
+      {
+        "name": "[TA] Clear contact paper",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Cut Cards",
+        "description": "[TA] Cut cardstock into equal-sized squares (2\" x 2\" works well). Make an even number - 24 or 32 cards.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Create Pairs",
+        "description": "[TA] Draw matching images on pairs of cards. Use shapes, animals, letters, or family photos!",
+        "duration": "[TA] 25 min"
+      },
+      {
+        "title": "[TA] Add Backs",
+        "description": "[TA] Decorate all card backs identically so pairs can't be identified from behind.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Protect (Optional)",
+        "description": "[TA] Cover cards with clear contact paper or laminate for durability.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "Play!",
+        "description": "[TA] Shuffle and lay face down. Take turns flipping two cards. Match pairs to win!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Scissors supervision for young children"
+    ],
+    "learningOutcomes": [
+      "[TA] Memory skills",
+      "Concentration",
+      "[TA] Visual recognition",
+      "Turn-taking"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] toybox-kaleidoscope",
+    "name": "Kaleidoscope",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[TA] 1 hour",
+    "description": "[TA] Build a working kaleidoscope with mirrors and colorful beads. See the world in beautiful patterns!",
+    "image": "[TA] /images/blocks.webp",
+    "rating": 4.7,
+    "reviewCount": 96,
+    "materials": [
+      {
+        "name": "[TA] Cardboard tube",
+        "quantity": "[TA] 8-10\" long"
+      },
+      {
+        "name": "[TA] Mirror sheets or reflective paper",
+        "quantity": "[TA] 3 strips"
+      },
+      {
+        "name": "[TA] Clear plastic discs",
+        "quantity": "2"
+      },
+      {
+        "name": "[TA] Beads and sequins"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[TA] Decorative paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Create Mirror Triangle",
+        "description": "[TA] Cut three mirror strips that fit inside your tube. Tape them together to form a triangle, reflective sides facing in.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Prepare Tube",
+        "description": "[TA] Cut a viewing hole in one end cap. The mirror triangle should fit snugly inside the tube.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Insert Mirrors",
+        "description": "[TA] Carefully slide the mirror triangle into the tube. Secure in place.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Create Object Chamber",
+        "description": "[TA] At the other end, sandwich beads and sequins between two clear plastic discs. Attach to tube end.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[TA] Cover the outside with decorative paper. Add your name and designs!",
+        "duration": "[TA] 15 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Handle mirrors carefully - edges can be sharp",
+      "[TA] Don't look at bright lights through kaleidoscope"
+    ],
+    "learningOutcomes": [
+      "[TA] Light and reflection",
+      "Symmetry",
+      "[TA] Pattern recognition",
+      "[TA] Optics basics"
+    ],
+    "crossPillar": [
+      "[TA] sciencelab-invisible-ink"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "toybox-catapult",
+    "name": "[TA] Wooden Catapult",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "9-12",
+    "difficulty": "Medium",
+    "timeToMake": "[TA] 1.5 hours",
+    "description": "[TA] Build a working catapult that launches small objects. Learn about lever physics and stored energy!",
+    "image": "[TA] /images/blocks.webp",
+    "rating": 4.8,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[TA] Popsicle sticks",
+        "quantity": "15-20"
+      },
+      {
+        "name": "[TA] Rubber bands",
+        "quantity": "5-6"
+      },
+      {
+        "name": "[TA] Plastic spoon"
+      },
+      {
+        "name": "[TA] Small pompoms or marshmallows",
+        "quantity": "[TA] For launching"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Create the Base",
+        "description": "[TA] Stack 5-7 popsicle sticks and rubber band both ends. This creates a sturdy base.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Build Launch Arm",
+        "description": "[TA] Take 2 sticks and rubber band only ONE end. Open the other end like scissors.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Combine Base and Arm",
+        "description": "[TA] Insert the base stack perpendicular into the launch arm opening. Secure with rubber bands.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Add Launching Cup",
+        "description": "[TA] Attach plastic spoon to the end of the launch arm with rubber bands.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Test and Adjust",
+        "description": "[TA] Load, aim, and launch! Adjust rubber band tension and fulcrum position for better distance.",
+        "duration": "[TA] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Only launch soft objects like pompoms",
+      "[TA] Never aim at people or animals",
+      "[TA] Launch in clear areas"
+    ],
+    "learningOutcomes": [
+      "[TA] Lever mechanics",
+      "[TA] Potential and kinetic energy",
+      "[TA] Engineering iteration",
+      "[TA] Physics concepts"
+    ],
+    "crossPillar": [
+      "[TA] sciencelab-egg-drop"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] toybox-balancing-eagle",
+    "name": "[TA] Balancing Eagle",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 45 min",
+    "description": "[TA] Create a bird that balances on its beak! Learn about center of gravity with this fun physics toy.",
+    "image": "[TA] /images/airplane.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "[TA] Cardstock or cardboard"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[TA] Pennies or coins",
+        "quantity": "2"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[TA] Markers for decoration"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Draw Eagle Shape",
+        "description": "[TA] Draw a simple eagle with spread wings on cardstock. Wings should extend outward and slightly downward.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Cut Out Shape",
+        "description": "[TA] Carefully cut out your eagle. Keep the beak pointed.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Add Weights",
+        "description": "[TA] Tape a penny under each wing tip. These create the counterbalance.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Find Balance Point",
+        "description": "[TA] Adjust coin position until the eagle balances on its beak when placed on your finger.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[TA] Color your eagle with markers. Try balancing on different surfaces!",
+        "duration": "[TA] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Scissors supervision for young children"
+    ],
+    "learningOutcomes": [
+      "[TA] Center of gravity",
+      "[TA] Balance and counterweight",
+      "[TA] Physics experimentation",
+      "[TA] Fine motor skills"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] toybox-paper-launcher",
+    "name": "[TA] Paper Airplane Launcher",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[TA] 1 hour",
+    "description": "[TA] Build a rubber band launcher that sends paper airplanes soaring! Combine engineering and flight.",
+    "image": "[TA] /images/airplane.webp",
+    "rating": 4.6,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "Cardboard"
+      },
+      {
+        "name": "[TA] Rubber bands",
+        "quantity": "[TA] 3-5 strong ones"
+      },
+      {
+        "name": "[TA] Popsicle sticks"
+      },
+      {
+        "name": "Paper",
+        "quantity": "[TA] For airplanes"
+      },
+      {
+        "name": "[TA] Tape and glue"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Build Launch Track",
+        "description": "[TA] Create a cardboard track about 12\" long with raised edges to guide the airplane.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Create Tension System",
+        "description": "[TA] Attach rubber bands to a crossbar at the back of the track. Create a pull-back mechanism.",
+        "duration": "[TA] 20 min"
+      },
+      {
+        "title": "[TA] Add Release Trigger",
+        "description": "[TA] Design a simple trigger using popsicle sticks that holds and releases the rubber bands.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Make Paper Airplanes",
+        "description": "[TA] Fold several paper airplanes. Test different designs to see which launches best.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Launch and Adjust",
+        "description": "[TA] Load airplane, pull back, release! Adjust angle and tension for maximum distance.",
+        "duration": "[TA] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Never aim at people",
+      "[TA] Launch in open areas",
+      "[TA] Be careful of snapping rubber bands"
+    ],
+    "learningOutcomes": [
+      "[TA] Mechanical engineering",
+      "Aerodynamics",
+      "[TA] Energy transfer",
+      "[TA] Iterative design"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "toybox-kite",
+    "name": "[TA] Diamond Kite",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[TA] 1.5 hours",
+    "description": "[TA] Build a classic diamond kite that soars! Experience the joy of flight with this timeless project.",
+    "image": "[TA] /images/airplane.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[TA] Dowels or sticks",
+        "quantity": "[TA] 2 pieces"
+      },
+      {
+        "name": "[TA] Plastic bag or tissue paper"
+      },
+      {
+        "name": "String",
+        "quantity": "[TA] Lots for flying!"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[TA] Ribbon for tail"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Create Frame",
+        "description": "[TA] Cross two sticks - vertical longer than horizontal. Tie firmly at intersection point.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Add Outline",
+        "description": "[TA] Run string around the outside of the frame, creating the kite shape. Secure at each stick end.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Cover with Skin",
+        "description": "[TA] Lay frame on plastic or paper. Cut with extra margin, fold over frame, and tape secure.",
+        "duration": "[TA] 20 min"
+      },
+      {
+        "title": "[TA] Attach Flying Line",
+        "description": "[TA] Tie flying string to the intersection point. Create a bridle for better control if needed.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Add Tail and Fly",
+        "description": "[TA] Attach a ribbon tail for stability. Find wind, run, and launch your kite!",
+        "duration": "[TA] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Never fly near power lines",
+      "[TA] Fly in open areas away from trees",
+      "[TA] Don't fly in storms"
+    ],
+    "learningOutcomes": [
+      "Aerodynamics",
+      "[TA] Wind and weather",
+      "[TA] Patience and persistence",
+      "[TA] Outdoor appreciation"
+    ],
+    "crossPillar": [
+      "[TA] outdoorquest-nature-hunt"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] toybox-rainstick",
+    "name": "Rainstick",
+    "pillar": "toybox",
+    "category": "Musical",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 45 min",
+    "description": "[TA] Create a musical instrument that sounds like falling rain. Perfect for relaxation and rhythm activities!",
+    "image": "[TA] /images/blocks.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[TA] Cardboard tube",
+        "quantity": "[TA] Paper towel or wrapping paper roll"
+      },
+      {
+        "name": "[TA] Rice or small beans",
+        "quantity": "[TA] 1/4 cup"
+      },
+      {
+        "name": "[TA] Aluminum foil"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[TA] Decorative paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Seal One End",
+        "description": "[TA] Cover one end of the tube tightly with paper and tape.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Create Internal Spiral",
+        "description": "[TA] Crinkle aluminum foil into a long snake. Twist it into a spiral and insert into the tube.",
+        "tip": "[TA] The foil creates the rain sound by slowing the rice.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Add Rice",
+        "description": "[TA] Pour rice or beans into the tube. Experiment with amounts for different sounds.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Seal Other End",
+        "description": "[TA] Close the open end securely with paper and tape. Shake to test - adjust if needed.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[TA] Cover with decorative paper. Add designs inspired by rain, nature, or your own creativity!",
+        "duration": "[TA] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Ensure ends are sealed tightly",
+      "[TA] Small items inside can be choking hazards if opened"
+    ],
+    "learningOutcomes": [
+      "[TA] Sound and acoustics",
+      "[TA] Rhythm and music",
+      "[TA] Cultural instruments",
+      "[TA] Sensory exploration"
+    ],
+    "crossPillar": [
+      "[TA] artstudio-nature-collage"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] toybox-sock-puppet",
+    "name": "[TA] Sock Puppet",
+    "pillar": "toybox",
+    "category": "Puppets",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 30 min",
+    "description": "[TA] Transform an old sock into a fun puppet character. Perfect for storytelling and imaginative play!",
+    "image": "[TA] /images/plush-bear.webp",
+    "rating": 4.5,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[TA] Clean sock"
+      },
+      {
+        "name": "[TA] Googly eyes",
+        "quantity": "2"
+      },
+      {
+        "name": "[TA] Felt scraps"
+      },
+      {
+        "name": "Yarn",
+        "quantity": "[TA] For hair"
+      },
+      {
+        "name": "[TA] Fabric glue"
+      },
+      {
+        "name": "Buttons",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Plan Your Character",
+        "description": "[TA] Decide what character your puppet will be - person, animal, monster? Gather materials in matching colors.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Add Eyes",
+        "description": "[TA] Glue googly eyes or felt circles onto the toe area of the sock.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Create Mouth",
+        "description": "[TA] Cut an oval of felt and glue inside the sock to create a mouth. Add a felt tongue if desired!",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Add Features",
+        "description": "[TA] Glue on yarn hair, felt ears, buttons, or other features to complete your character.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Put on a Show!",
+        "description": "[TA] Once glue is dry, put your hand in and bring your puppet to life!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Use fabric glue rather than hot glue with young children",
+      "[TA] Buttons can be choking hazards - consider felt alternatives for young kids"
+    ],
+    "learningOutcomes": [
+      "[TA] Creative expression",
+      "Storytelling",
+      "[TA] Character development",
+      "[TA] Communication skills"
+    ],
+    "crossPillar": [
+      "[TA] artstudio-paper-plate-animals"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] toybox-finger-puppets",
+    "name": "[TA] Felt Finger Puppets",
+    "pillar": "toybox",
+    "category": "Puppets",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 1 hour",
+    "description": "[TA] Create a set of adorable finger puppets from felt. Make a whole cast of characters for stories!",
+    "image": "[TA] /images/plush-bear.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[TA] Felt sheets",
+        "quantity": "[TA] Various colors"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[TA] Fabric glue or needle and thread"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "[TA] Small embellishments",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Cut Base Shapes",
+        "description": "[TA] Cut two finger-sized rectangles with rounded tops for each puppet. These form the body.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Glue or Sew Edges",
+        "description": "[TA] Join the two pieces along sides and top, leaving bottom open for your finger.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Add Faces",
+        "description": "[TA] Cut tiny felt pieces for eyes, noses, mouths. Glue in place. Use markers for details.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Create Characters",
+        "description": "[TA] Add ears for animals, hair for people, wings for birds. Get creative!",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Perform Stories",
+        "description": "[TA] Put puppets on all fingers and act out stories. Make a mini theater from a box!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Supervise scissors use",
+      "[TA] Use child-safe glue"
+    ],
+    "learningOutcomes": [
+      "[TA] Fine motor skills",
+      "Storytelling",
+      "[TA] Character creation",
+      "Imagination"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] toybox-rubber-band-car",
+    "name": "[TA] Rubber Band Car",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 45 min",
+    "description": "[TA] Build a car powered by rubber band energy! Watch it zoom across the floor.",
+    "image": "[TA] /images/wooden-car.webp",
+    "rating": 4.6,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[TA] Water bottle or small box"
+      },
+      {
+        "name": "[TA] Bottle caps",
+        "quantity": "[TA] 4 for wheels"
+      },
+      {
+        "name": "[TA] Wooden skewers",
+        "quantity": "[TA] 2 for axles"
+      },
+      {
+        "name": "[TA] Rubber bands",
+        "quantity": "2-3"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Prepare the Body",
+        "description": "[TA] Clean your bottle or box. Poke holes on each side for axles to pass through.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Install Axles",
+        "description": "[TA] Push skewers through the holes. They should spin freely.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Attach Wheels",
+        "description": "[TA] Poke holes in bottle cap centers. Push onto skewer ends. Secure with tape or glue.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Add Rubber Band Power",
+        "description": "[TA] Hook rubber band around rear axle. Attach other end to front of car body.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Wind and Race!",
+        "description": "[TA] Roll car backward to wind rubber band. Release and watch it go! Race against friends.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Be careful with sharp skewer ends",
+      "[TA] Don't aim at people when releasing"
+    ],
+    "learningOutcomes": [
+      "[TA] Stored energy",
+      "[TA] Simple machines",
+      "[TA] Engineering design",
+      "[TA] Cause and effect"
+    ],
+    "crossPillar": [
+      "[TA] sciencelab-balloon-rocket"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] toybox-spinning-top",
+    "name": "[TA] Wooden Spinning Top",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 30 min",
+    "description": "[TA] Craft a classic spinning top that twirls for ages. Decorate with colorful patterns that blend when spinning!",
+    "image": "[TA] /images/blocks.webp",
+    "rating": 4.4,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[TA] Cardboard circles",
+        "quantity": "[TA] 2-3 sizes"
+      },
+      {
+        "name": "[TA] Wooden dowel or pencil"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "Glue"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Create Disc",
+        "description": "[TA] Cut a circle from cardboard, about 3-4 inches diameter. Ensure it's perfectly round.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Add Spindle",
+        "description": "[TA] Poke a hole in exact center. Insert dowel or sharpened pencil. Glue in place.",
+        "tip": "[TA] Center placement is crucial for good spinning!",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Decorate Top",
+        "description": "[TA] Draw colorful patterns - spirals, stripes, dots. Colors will blend when spinning!",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Balance and Adjust",
+        "description": "[TA] Spin test your top. If wobbly, check center alignment. Trim edges if uneven.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Spin Competitions",
+        "description": "[TA] Practice spinning technique. Challenge friends - longest spin wins!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Pencil points can be sharp"
+    ],
+    "learningOutcomes": [
+      "[TA] Rotational physics",
+      "[TA] Balance and symmetry",
+      "[TA] Color blending",
+      "[TA] Fine motor control"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] jigyasulab-physics",
+    "name": "[TA] Physics Lab",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "9-12",
+    "difficulty": "Medium",
+    "timeToMake": "Interactive",
+    "description": "[TA] Enter the Physics Lab and explore mechanics, optics, and energy interactively.",
+    "materials": [],
+    "image": "[TA] /images/hero-camp.webp",
+    "rating": 5,
+    "reviewCount": 412,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "[TA] Physics concepts",
+      "[TA] Scientific thinking"
+    ],
+    "url": "/physics",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-chem",
+    "name": "[TA] Chemistry Lab",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "Interactive",
+    "description": "[TA] Mix elements and observe reactions in our safe, virtual Chemistry Lab.",
+    "materials": [],
+    "image": "[TA] /images/slime.webp",
+    "rating": 4.9,
+    "reviewCount": 388,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "[TA] Chemical reactions",
+      "[TA] Molecular structures"
+    ],
+    "url": "/chem",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-bio",
+    "name": "[TA] Biology Lab",
+    "pillar": "sciencelab",
+    "category": "Biology",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "Interactive",
+    "description": "[TA] Explore the wonders of life, cells, and ecosystems in the Biology Lab.",
+    "materials": [],
+    "image": "[TA] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 275,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Anatomy",
+      "Ecosystems"
+    ],
+    "url": "/bio",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-math",
+    "name": "[TA] Math Lab",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "Interactive",
+    "description": "[TA] Solve puzzles and visualize mathematical concepts in a fun, interactive way.",
+    "materials": [],
+    "image": "[TA] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 156,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Geometry",
+      "[TA] Problem solving"
+    ],
+    "url": "/math",
+    "isPremium": false
+  },
+  {
+    "id": "[TA] jigyasulab-cosmos",
+    "name": "[TA] Cosmos Lab",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "Interactive",
+    "description": "[TA] Travel through space, explore planets, and understand the universe.",
+    "materials": [],
+    "image": "[TA] /images/hero-camp.webp",
+    "rating": 5,
+    "reviewCount": 501,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Astronomy",
+      "[TA] Space exploration"
+    ],
+    "url": "/cosmos",
+    "isPremium": false
+  },
+  {
+    "id": "[TA] sciencelab-volcano",
+    "name": "[TA] Erupting Volcano",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 30 min",
+    "description": "[TA] Create an explosive volcanic eruption using kitchen chemistry! Watch the foamy lava flow and learn about chemical reactions.",
+    "image": "[TA] /images/volcano.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 234,
+    "materials": [
+      {
+        "name": "[TA] Baking soda",
+        "quantity": "[TA] 3 tablespoons"
+      },
+      {
+        "name": "Vinegar",
+        "quantity": "[TA] 1 cup"
+      },
+      {
+        "name": "[TA] Dish soap",
+        "quantity": "[TA] A few drops"
+      },
+      {
+        "name": "[TA] Food coloring",
+        "quantity": "[TA] Red and orange"
+      },
+      {
+        "name": "[TA] Play-doh or clay",
+        "quantity": "[TA] For volcano shape"
+      },
+      {
+        "name": "[TA] Plastic bottle or container"
+      },
+      {
+        "name": "[TA] Tray or pan",
+        "quantity": "[TA] To catch overflow"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Build Your Volcano",
+        "description": "[TA] Place plastic bottle on tray. Shape clay or play-doh around it to create a volcano mountain. Leave the bottle opening exposed at the top.",
+        "tip": "[TA] Make it look realistic with ridges and a crater!",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Add the Lava Base",
+        "description": "[TA] Pour baking soda into the bottle. Add a few drops of dish soap and red/orange food coloring.",
+        "duration": "[TA] 3 min"
+      },
+      {
+        "title": "[TA] Prepare for Eruption",
+        "description": "[TA] Make sure everyone can see! Have your vinegar ready to pour.",
+        "duration": "[TA] 2 min"
+      },
+      {
+        "title": "[TA] Eruption Time!",
+        "description": "[TA] Pour vinegar into the bottle and step back. Watch the foamy lava erupt!",
+        "duration": "[TA] 1 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[TA] Understand the Science",
+        "description": "[TA] The baking soda (base) reacts with vinegar (acid) to create carbon dioxide gas, which makes the bubbles and foam!",
+        "duration": "[TA] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Do this experiment on a tray or outside - it gets messy!",
+      "[TA] Vinegar can irritate eyes - don't get too close",
+      "[TA] Adult supervision recommended"
+    ],
+    "learningOutcomes": [
+      "[TA] Acid-base reactions",
+      "[TA] Chemical reactions",
+      "[TA] Carbon dioxide production",
+      "[TA] Scientific observation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] sciencelab-density-tower",
+    "name": "[TA] Rainbow Density Tower",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 30 min",
+    "description": "[TA] Stack liquids in a rainbow! Learn about density as you create layers that magically don't mix.",
+    "image": "[TA] /images/crystal.webp",
+    "rating": 4.8,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "Honey",
+        "quantity": "[TA] 1/4 cup"
+      },
+      {
+        "name": "[TA] Corn syrup",
+        "quantity": "[TA] 1/4 cup"
+      },
+      {
+        "name": "[TA] Dish soap",
+        "quantity": "[TA] 1/4 cup"
+      },
+      {
+        "name": "Water",
+        "quantity": "[TA] 1/4 cup"
+      },
+      {
+        "name": "[TA] Vegetable oil",
+        "quantity": "[TA] 1/4 cup"
+      },
+      {
+        "name": "[TA] Rubbing alcohol",
+        "quantity": "[TA] 1/4 cup"
+      },
+      {
+        "name": "[TA] Food coloring"
+      },
+      {
+        "name": "[TA] Tall clear glass or jar"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Color Your Liquids",
+        "description": "[TA] Add different food coloring to water, corn syrup, and rubbing alcohol. Honey and oil have natural colors.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Pour the Heaviest First",
+        "description": "[TA] Start with honey at the bottom of your glass. Pour slowly down the side.",
+        "tip": "[TA] Patience is key - pour very slowly!",
+        "duration": "[TA] 3 min"
+      },
+      {
+        "title": "[TA] Add Middle Layers",
+        "description": "[TA] Carefully add corn syrup, then dish soap, then water. Pour down the side of the glass.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Top With Light Liquids",
+        "description": "[TA] Add vegetable oil, then carefully add rubbing alcohol on top.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "Experiment!",
+        "description": "[TA] Try dropping small objects - where do they float? Predict based on density!",
+        "duration": "[TA] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Don't drink any of these liquids!",
+      "[TA] Rubbing alcohol requires adult handling",
+      "[TA] Wash hands after experiment"
+    ],
+    "learningOutcomes": [
+      "[TA] Density concepts",
+      "[TA] Liquid properties",
+      "[TA] Scientific layering",
+      "[TA] Prediction and observation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] sciencelab-crystals",
+    "name": "[TA] Crystal Growing",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[TA] 30 min + 3-5 days",
+    "description": "[TA] Grow beautiful crystals from sugar, salt, or borax! Watch amazing structures form over several days.",
+    "image": "[TA] /images/crystal.webp",
+    "rating": 4.8,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[TA] Borax, salt, or sugar",
+        "quantity": "[TA] 1 cup"
+      },
+      {
+        "name": "[TA] Hot water",
+        "quantity": "[TA] 2 cups"
+      },
+      {
+        "name": "[TA] Glass jar"
+      },
+      {
+        "name": "String"
+      },
+      {
+        "name": "Pencil"
+      },
+      {
+        "name": "[TA] Pipe cleaners",
+        "optional": true
+      },
+      {
+        "name": "[TA] Food coloring",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Create Super-Saturated Solution",
+        "description": "[TA] Have an adult pour hot water into jar. Add borax/salt/sugar slowly, stirring until no more dissolves.",
+        "duration": "[TA] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[TA] Prepare Crystal Seed",
+        "description": "[TA] Tie string to pencil. Shape pipe cleaner into a form (star, heart) and tie to string. Or just use string.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Add Color (Optional)",
+        "description": "[TA] Add food coloring to solution for colored crystals.",
+        "duration": "[TA] 2 min"
+      },
+      {
+        "title": "[TA] Suspend and Wait",
+        "description": "[TA] Lower string/pipe cleaner into solution. Rest pencil across jar top. Place somewhere still.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Watch and Wait",
+        "description": "[TA] Check daily! Crystals form as water evaporates. Full growth takes 3-5 days.",
+        "duration": "[TA] 3-5 days"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Adult handles hot water only",
+      "[TA] Borax is not edible - wash hands",
+      "[TA] Don't move or disturb jar during growth"
+    ],
+    "learningOutcomes": [
+      "[TA] Crystallization process",
+      "[TA] Saturation concepts",
+      "[TA] Patience and observation",
+      "[TA] Molecular structure"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] sciencelab-slime",
+    "name": "[TA] Slime Factory",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 15 min",
+    "description": "[TA] Mix up oozy, stretchy, satisfying slime! Experiment with colors, glitter, and different consistencies.",
+    "image": "[TA] /images/slime.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 312,
+    "materials": [
+      {
+        "name": "[TA] White school glue",
+        "quantity": "[TA] 1/2 cup"
+      },
+      {
+        "name": "[TA] Contact lens solution (with boric acid)",
+        "quantity": "[TA] 1 tablespoon"
+      },
+      {
+        "name": "[TA] Baking soda",
+        "quantity": "[TA] 1/2 teaspoon"
+      },
+      {
+        "name": "[TA] Food coloring"
+      },
+      {
+        "name": "Glitter",
+        "optional": true
+      },
+      {
+        "name": "[TA] Bowl and spoon"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Mix Base",
+        "description": "[TA] Pour glue into bowl. Add food coloring and glitter if desired. Stir well.",
+        "duration": "[TA] 3 min"
+      },
+      {
+        "title": "[TA] Add Activator",
+        "description": "[TA] Sprinkle in baking soda and mix. Then add contact solution and stir rapidly.",
+        "duration": "[TA] 3 min"
+      },
+      {
+        "title": "[TA] Knead the Slime",
+        "description": "[TA] Once slime forms, pick it up and knead with hands. It will become less sticky.",
+        "tip": "[TA] If too sticky, add more contact solution. If too stiff, add more glue.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Test Properties",
+        "description": "[TA] Stretch it slowly - does it pull? Pull fast - does it snap? Poke it - does it bounce?",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Store Properly",
+        "description": "[TA] Store in airtight container. Slime lasts 1-2 weeks with proper storage!",
+        "duration": "[TA] 2 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Wash hands after playing",
+      "[TA] Don't eat slime",
+      "[TA] Play on protected surface - slime can stain"
+    ],
+    "learningOutcomes": [
+      "[TA] Polymer chemistry",
+      "[TA] Non-Newtonian fluids",
+      "[TA] Following recipes",
+      "[TA] Sensory exploration"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] sciencelab-balloon-rocket",
+    "name": "[TA] Balloon Rocket",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 15 min",
+    "description": "[TA] Launch a balloon across the room on a string! Learn about thrust and Newton's third law.",
+    "image": "[TA] /images/volcano.webp",
+    "rating": 4.7,
+    "reviewCount": 187,
+    "materials": [
+      {
+        "name": "Balloon"
+      },
+      {
+        "name": "String",
+        "quantity": "[TA] 10-15 feet"
+      },
+      {
+        "name": "Straw"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[TA] Two chairs or posts"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Set Up Track",
+        "description": "[TA] Thread string through straw. Tie string between two chairs, keeping it taut and level.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Prepare Balloon",
+        "description": "[TA] Blow up balloon but don't tie it. Pinch the end to keep air in.",
+        "duration": "[TA] 2 min"
+      },
+      {
+        "title": "[TA] Attach to Straw",
+        "description": "[TA] While someone holds the balloon closed, tape it to the straw on the string.",
+        "duration": "[TA] 3 min"
+      },
+      {
+        "title": "Launch!",
+        "description": "[TA] Release the balloon and watch it zoom along the string!",
+        "duration": "[TA] 1 min"
+      },
+      {
+        "title": "Experiment",
+        "description": "[TA] Try different balloon sizes, angles, or adding weight. What changes the speed?",
+        "duration": "[TA] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Don't release balloons outdoors - harmful to wildlife",
+      "[TA] Supervise young children with balloons"
+    ],
+    "learningOutcomes": [
+      "[TA] Newton's third law",
+      "[TA] Thrust and propulsion",
+      "[TA] Variables in experiments",
+      "[TA] Cause and effect"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] sciencelab-invisible-ink",
+    "name": "[TA] Invisible Ink Messages",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 20 min",
+    "description": "[TA] Write secret messages that appear when heated! Perfect for spy games and learning about chemical changes.",
+    "image": "[TA] /images/crystal.webp",
+    "rating": 4.6,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "[TA] Lemon juice",
+        "quantity": "[TA] 2-3 tablespoons"
+      },
+      {
+        "name": "[TA] White paper"
+      },
+      {
+        "name": "[TA] Cotton swab or paintbrush"
+      },
+      {
+        "name": "[TA] Lamp or iron",
+        "quantity": "[TA] Heat source"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Prepare Ink",
+        "description": "[TA] Squeeze lemon juice into a small bowl. This is your invisible ink!",
+        "duration": "[TA] 3 min"
+      },
+      {
+        "title": "[TA] Write Message",
+        "description": "[TA] Dip cotton swab in lemon juice and write on white paper. Use enough juice to wet the paper.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Let Dry",
+        "description": "[TA] Allow paper to dry completely. The message becomes invisible!",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Reveal Message",
+        "description": "[TA] Hold paper near (not touching!) a light bulb or have adult use warm iron. Message appears brown!",
+        "duration": "[TA] 5 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[TA] Understand Why",
+        "description": "[TA] Heat oxidizes the lemon juice, turning it brown. The acid weakens paper where you wrote!",
+        "duration": "[TA] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Adult supervision required for heat source",
+      "[TA] Don't touch hot lamp or iron",
+      "[TA] Keep paper safe distance from heat"
+    ],
+    "learningOutcomes": [
+      "[TA] Oxidation reactions",
+      "[TA] Chemical changes",
+      "[TA] Heat effects",
+      "[TA] Secret communication history"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] sciencelab-magnetic-maze",
+    "name": "[TA] Magnetic Maze",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[TA] 45 min",
+    "description": "[TA] Build a maze and guide objects through using magnet power! Learn about magnetic forces.",
+    "image": "[TA] /images/crystal.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "[TA] Cardboard box lid or shallow box"
+      },
+      {
+        "name": "[TA] Strong magnets",
+        "quantity": "2"
+      },
+      {
+        "name": "[TA] Paper clips or small metal objects"
+      },
+      {
+        "name": "[TA] Straws or cardboard strips"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "Tape"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Design Maze",
+        "description": "[TA] Draw a maze path inside the box lid. Mark start and finish points.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Build Walls",
+        "description": "[TA] Cut straws or cardboard strips and tape along maze walls to create barriers.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Add Obstacles",
+        "description": "[TA] Include dead ends, tunnels, or challenges. Make it tricky but solvable!",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Test Magnetic Control",
+        "description": "[TA] Place paper clip in maze. Hold magnet under the box and move it. The clip follows!",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Play and Race",
+        "description": "[TA] Navigate through the maze using only the magnet. Time yourself or race friends!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Keep strong magnets away from electronics",
+      "[TA] Supervise small magnet use with young children"
+    ],
+    "learningOutcomes": [
+      "[TA] Magnetic fields",
+      "[TA] Forces at a distance",
+      "Problem-solving",
+      "[TA] Hand-eye coordination"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] sciencelab-solar-oven",
+    "name": "[TA] Solar Oven Roasted Papad",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[TA] 1 hour + cooking",
+    "description": "[TA] Harness the incredible power of the sun to build your own solar oven and perfectly roast crispy papads! Learn about solar thermal energy, reflection, and the greenhouse effect while making a tasty, traditional snack.",
+    "image": "[TA] /images/volcano.webp",
+    "rating": 4.8,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[TA] Pizza box"
+      },
+      {
+        "name": "[TA] Aluminum foil"
+      },
+      {
+        "name": "[TA] Plastic wrap"
+      },
+      {
+        "name": "[TA] Black paper"
+      },
+      {
+        "name": "[TA] Tape and scissors"
+      },
+      {
+        "name": "[TA] Graham crackers, chocolate, marshmallows"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Create Flap",
+        "description": "[TA] Cut three sides of a square in box lid, leaving one side as hinge. Fold flap up.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Line with Foil",
+        "description": "[TA] Cover the flap's inner surface with aluminum foil, shiny side out. Smooth flat.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Create Window",
+        "description": "[TA] Tape plastic wrap over the hole created by the flap. This traps heat inside.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Prepare Interior",
+        "description": "[TA] Line bottom of box with black paper (absorbs heat). Add more foil on inner sides.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Cook S'mores!",
+        "description": "[TA] Place s'more ingredients inside. Angle toward sun, prop flap to reflect light in. Wait 30-60 min!",
+        "duration": "[TA] 30-60 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Only use on sunny days",
+      "[TA] Contents get hot - use oven mitts",
+      "[TA] Adult supervision when opening"
+    ],
+    "learningOutcomes": [
+      "[TA] Solar energy",
+      "[TA] Heat absorption and reflection",
+      "[TA] Renewable energy concepts",
+      "[TA] Engineering design"
+    ],
+    "crossPillar": [
+      "[TA] outdoorquest-cloud-watching"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] sciencelab-dancing-raisins",
+    "name": "[TA] Dancing Raisins",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 10 min",
+    "description": "[TA] Watch raisins dance up and down in a glass! A simple experiment that demonstrates gas bubbles and density.",
+    "image": "[TA] /images/volcano.webp",
+    "rating": 4.4,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[TA] Clear soda (Sprite or club soda)",
+        "quantity": "[TA] 1 glass"
+      },
+      {
+        "name": "Raisins",
+        "quantity": "[TA] Small handful"
+      },
+      {
+        "name": "[TA] Clear glass or jar"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Pour Soda",
+        "description": "[TA] Fill a clear glass about 3/4 full with clear carbonated soda.",
+        "duration": "[TA] 1 min"
+      },
+      {
+        "title": "[TA] Drop Raisins",
+        "description": "[TA] Drop 5-8 raisins into the soda. They'll sink to the bottom at first.",
+        "duration": "[TA] 1 min"
+      },
+      {
+        "title": "[TA] Watch the Dance",
+        "description": "[TA] Wait a minute - raisins start to rise, then fall, then rise again!",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Understand Why",
+        "description": "[TA] CO2 bubbles stick to wrinkly raisins, making them float. At top, bubbles pop and raisins sink!",
+        "duration": "[TA] 3 min"
+      },
+      {
+        "title": "[TA] Try Variations",
+        "description": "[TA] Test other small objects - what else dances? Try different sodas.",
+        "duration": "[TA] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Don't drink the soda after experiment"
+    ],
+    "learningOutcomes": [
+      "[TA] Density and buoyancy",
+      "[TA] Carbon dioxide properties",
+      "[TA] Observation skills",
+      "[TA] Scientific prediction"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] sciencelab-static-butterfly",
+    "name": "[TA] Static Electricity Butterfly",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 20 min",
+    "description": "[TA] Make a butterfly's wings flutter using static electricity! No batteries needed - just science!",
+    "image": "[TA] /images/crystal.webp",
+    "rating": 4.5,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[TA] Tissue paper"
+      },
+      {
+        "name": "Cardstock"
+      },
+      {
+        "name": "Balloon"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "Markers"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Create Body",
+        "description": "[TA] Cut a butterfly body shape from cardstock. Make it sturdy - this is the base.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Cut Tissue Wings",
+        "description": "[TA] Cut delicate wing shapes from tissue paper. Make them light and thin.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Attach Wings",
+        "description": "[TA] Tape wings to body at center only. Wings should be free to move on edges.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Charge Balloon",
+        "description": "[TA] Blow up balloon and rub vigorously on your hair or wool sweater.",
+        "duration": "[TA] 2 min"
+      },
+      {
+        "title": "[TA] Make Wings Flutter",
+        "description": "[TA] Hold charged balloon near tissue wings - watch them rise toward it! Move balloon to make them flutter.",
+        "duration": "[TA] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Latex allergy caution with balloons"
+    ],
+    "learningOutcomes": [
+      "[TA] Static electricity",
+      "[TA] Electric charges",
+      "[TA] Attraction forces",
+      "[TA] Conductors vs insulators"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] sciencelab-water-cycle",
+    "name": "[TA] Water Cycle in a Bag",
+    "pillar": "sciencelab",
+    "category": "Biology",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 15 min + observation",
+    "description": "[TA] Create a mini water cycle in a plastic bag! Watch evaporation, condensation, and precipitation happen.",
+    "image": "[TA] /images/crystal.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[TA] Ziplock bag",
+        "quantity": "[TA] Quart size"
+      },
+      {
+        "name": "Water",
+        "quantity": "[TA] 1/4 cup"
+      },
+      {
+        "name": "[TA] Blue food coloring"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[TA] Sunny window"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Draw Scene",
+        "description": "[TA] Draw clouds at top of bag, sun, and waves at bottom using permanent marker.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Add Water",
+        "description": "[TA] Pour water into bag with blue food coloring. This is your ocean!",
+        "duration": "[TA] 2 min"
+      },
+      {
+        "title": "[TA] Seal and Mount",
+        "description": "[TA] Seal bag tightly. Tape to sunny window at eye level.",
+        "duration": "[TA] 3 min"
+      },
+      {
+        "title": "[TA] Observe Changes",
+        "description": "[TA] Check throughout the day. Water evaporates, condenses on bag, and \"rains\" down!",
+        "duration": "Ongoing"
+      },
+      {
+        "title": "[TA] Label the Cycle",
+        "description": "[TA] Add labels: evaporation (water rising), condensation (droplets forming), precipitation (drops falling).",
+        "duration": "[TA] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Ensure bag is sealed to prevent leaks"
+    ],
+    "learningOutcomes": [
+      "[TA] Water cycle stages",
+      "[TA] Evaporation and condensation",
+      "[TA] Solar energy effects",
+      "[TA] Earth science basics"
+    ],
+    "crossPillar": [
+      "[TA] outdoorquest-cloud-watching"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] sciencelab-egg-drop",
+    "name": "[TA] Egg Drop Challenge",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[TA] 1 hour",
+    "description": "[TA] Design a contraption to protect an egg from a high drop! Classic engineering challenge that teaches impact absorption.",
+    "image": "[TA] /images/volcano.webp",
+    "rating": 4.9,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[TA] Raw eggs",
+        "quantity": "[TA] 2-3 for testing"
+      },
+      {
+        "name": "Straws"
+      },
+      {
+        "name": "Balloons"
+      },
+      {
+        "name": "[TA] Cotton balls"
+      },
+      {
+        "name": "[TA] Bubble wrap"
+      },
+      {
+        "name": "[TA] Rubber bands"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[TA] Small box"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Study the Problem",
+        "description": "[TA] Understand forces: impact, gravity, momentum. What slows falls? What absorbs shock?",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Design Your Device",
+        "description": "[TA] Sketch ideas. Consider: padding, parachute, crumple zones, suspension systems.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Build Prototype",
+        "description": "[TA] Construct your egg protection device. Secure egg inside with cushioning materials.",
+        "duration": "[TA] 30 min"
+      },
+      {
+        "title": "[TA] Test Drop",
+        "description": "[TA] Start from low height. If successful, go higher! Document results.",
+        "duration": "[TA] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "Iterate",
+        "description": "[TA] If egg breaks, analyze why. Improve design and test again!",
+        "duration": "Ongoing"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Do drops outside - eggs are messy!",
+      "[TA] Adult supervision for high drops",
+      "[TA] Wash hands after handling raw eggs"
+    ],
+    "learningOutcomes": [
+      "[TA] Engineering design process",
+      "[TA] Force and impact",
+      "[TA] Iterative improvement",
+      "Problem-solving"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] artstudio-finger-paint",
+    "name": "[TA] Finger Paint Masterpiece",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-5",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 20 min",
+    "description": "[TA] Get messy with finger paints! Create colorful artwork while developing fine motor skills and sensory exploration.",
+    "image": "[TA] /images/finger-paint.webp",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 198,
+    "materials": [
+      {
+        "name": "[TA] Finger paints",
+        "quantity": "[TA] Various colors"
+      },
+      {
+        "name": "[TA] Large paper",
+        "quantity": "[TA] Several sheets"
+      },
+      {
+        "name": "[TA] Smock or old shirt"
+      },
+      {
+        "name": "[TA] Plastic tablecloth"
+      },
+      {
+        "name": "[TA] Water bowl and towels"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Set Up Space",
+        "description": "[TA] Cover table with plastic. Put on smock. Tape paper down so it doesn't move.",
+        "duration": "[TA] 5 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[TA] Explore Colors",
+        "description": "[TA] Start with one color. Dip fingers and make marks. Try dots, lines, swirls!",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Mix Colors",
+        "description": "[TA] Add another color. See what happens when they blend! Yellow + blue = ?",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Try Techniques",
+        "description": "[TA] Use whole hand, just fingertips, sides of hands. Make prints and patterns.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Clean Up",
+        "description": "[TA] Wash hands. Let painting dry flat. Display your masterpiece!",
+        "duration": "[TA] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Use non-toxic, washable paints",
+      "[TA] Supervise to prevent paint eating",
+      "[TA] Protect floor and furniture"
+    ],
+    "learningOutcomes": [
+      "[TA] Sensory exploration",
+      "[TA] Color mixing",
+      "[TA] Fine motor development",
+      "[TA] Creative expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] artstudio-nature-collage",
+    "name": "[TA] Nature Collage",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 30 min",
+    "description": "[TA] Collect treasures from nature and arrange them into beautiful artwork! Combines outdoor exploration with creativity.",
+    "image": "[TA] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[TA] Leaves, flowers, twigs"
+      },
+      {
+        "name": "[TA] Cardstock or cardboard",
+        "quantity": "[TA] For base"
+      },
+      {
+        "name": "[TA] White glue"
+      },
+      {
+        "name": "[TA] Optional: contact paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Nature Walk",
+        "description": "[TA] Go outside and collect natural items: leaves, petals, small twigs, seeds, grass.",
+        "tip": "[TA] Look for different colors, textures, and shapes!",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Sort Treasures",
+        "description": "[TA] Lay out your collection. Group by color, size, or type.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Plan Design",
+        "description": "[TA] Arrange items on your paper WITHOUT gluing. Try different layouts.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Glue in Place",
+        "description": "[TA] Once happy with design, glue items down one by one. Press gently.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Preserve (Optional)",
+        "description": "[TA] Cover with clear contact paper to preserve, or let dry and display!",
+        "duration": "[TA] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Don't pick protected plants",
+      "[TA] Wash hands after collecting",
+      "[TA] Check for insects before bringing items inside"
+    ],
+    "learningOutcomes": [
+      "[TA] Nature appreciation",
+      "[TA] Design and composition",
+      "[TA] Texture exploration",
+      "[TA] Environmental awareness"
+    ],
+    "crossPillar": [
+      "[TA] outdoorquest-nature-hunt"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] artstudio-tiedye",
+    "name": "[TA] Bandhani Tie-Dye Dupatta",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[TA] 1 hour + dry time",
+    "description": "[TA] Discover the ancient Indian art of Bandhani! Use rubber bands and vibrant natural dyes to create mesmerizing geometric patterns on a cotton dupatta or scarf.",
+    "image": "[TA] /images/tiedye.webp",
+    "rating": 4.9,
+    "reviewCount": 223,
+    "materials": [
+      {
+        "name": "[TA] White cotton t-shirt"
+      },
+      {
+        "name": "[TA] Fabric dye kit",
+        "quantity": "[TA] Multiple colors"
+      },
+      {
+        "name": "[TA] Rubber bands",
+        "quantity": "10-20"
+      },
+      {
+        "name": "[TA] Plastic bags"
+      },
+      {
+        "name": "Gloves"
+      },
+      {
+        "name": "[TA] Plastic tablecloth"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Wet the Shirt",
+        "description": "[TA] Soak shirt in water and wring out until damp. This helps dye spread evenly.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Create Pattern",
+        "description": "[TA] For spiral: pinch center and twist entire shirt. For stripes: fold accordion-style. Secure with rubber bands.",
+        "tip": "[TA] Tighter bands = sharper lines. More bands = more white space.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Mix Dyes",
+        "description": "[TA] Prepare dyes according to package. Wear gloves from this point on!",
+        "duration": "[TA] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[TA] Apply Color",
+        "description": "[TA] Squeeze dye onto shirt sections. Use different colors in different areas. Flip and do back too.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Wait and Rinse",
+        "description": "[TA] Bag the shirt and wait 6-24 hours. Rinse under cold water until water runs clear. Remove bands and wash.",
+        "duration": "[TA] 24 hours"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Wear gloves - dye stains!",
+      "[TA] Work outdoors or on protected surface",
+      "[TA] Wash separately first few times"
+    ],
+    "learningOutcomes": [
+      "[TA] Pattern creation",
+      "[TA] Color theory",
+      "[TA] Following multi-step processes",
+      "[TA] Patience and delayed gratification"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] artstudio-paper-plate-animals",
+    "name": "[TA] Paper Plate Animals",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 25 min",
+    "description": "[TA] Transform simple paper plates into adorable animals! Great for parties or imaginative play.",
+    "image": "[TA] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[TA] Paper plates",
+        "quantity": "[TA] 1-2 per animal"
+      },
+      {
+        "name": "[TA] Paint or markers"
+      },
+      {
+        "name": "[TA] Construction paper"
+      },
+      {
+        "name": "[TA] Googly eyes"
+      },
+      {
+        "name": "[TA] Glue and scissors"
+      },
+      {
+        "name": "[TA] Pipe cleaners",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Choose Animal",
+        "description": "[TA] Pick your favorite animal! Lion, pig, frog, cat, and owl are great starters.",
+        "duration": "[TA] 2 min"
+      },
+      {
+        "title": "[TA] Paint Base",
+        "description": "[TA] Paint the plate the main color of your animal. Let dry.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Cut Features",
+        "description": "[TA] Cut ears, noses, whiskers, beaks from construction paper.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Assemble Face",
+        "description": "[TA] Glue on googly eyes and paper features. Add details with markers.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Add Extras",
+        "description": "[TA] Attach popsicle stick for a mask, or hang as decoration!",
+        "duration": "[TA] 3 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Supervise scissor use",
+      "[TA] Use washable paints"
+    ],
+    "learningOutcomes": [
+      "[TA] Animal recognition",
+      "[TA] Following instructions",
+      "[TA] Fine motor skills",
+      "[TA] Creative expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] artstudio-rock-painting",
+    "name": "[TA] Rock Painting",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 30 min",
+    "description": "[TA] Turn ordinary rocks into colorful treasures! Paint animals, patterns, or inspirational words.",
+    "image": "[TA] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[TA] Smooth rocks",
+        "quantity": "3-5"
+      },
+      {
+        "name": "[TA] Acrylic paint",
+        "quantity": "[TA] Various colors"
+      },
+      {
+        "name": "Paintbrushes",
+        "quantity": "[TA] Various sizes"
+      },
+      {
+        "name": "[TA] Clear sealant",
+        "optional": true
+      },
+      {
+        "name": "[TA] Pencil for sketching"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Find Rocks",
+        "description": "[TA] Look for smooth, flat rocks. Wash and dry them completely.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Plan Design",
+        "description": "[TA] Lightly sketch your design with pencil. Animals, mandalas, and words work great!",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Paint Base",
+        "description": "[TA] Paint background color. Let dry completely before adding details.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Add Details",
+        "description": "[TA] Paint your design. Start with larger shapes, add small details last.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Seal and Share",
+        "description": "[TA] Optional: apply clear coat. Hide rocks for others to find or keep as decoration!",
+        "duration": "[TA] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Use acrylic paints - they're waterproof when dry",
+      "[TA] Seal if placing outdoors"
+    ],
+    "learningOutcomes": [
+      "[TA] Painting techniques",
+      "[TA] Working with 3D surfaces",
+      "[TA] Community kindness (rock hiding)",
+      "[TA] Nature appreciation"
+    ],
+    "crossPillar": [
+      "[TA] outdoorquest-nature-hunt"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] artstudio-origami-zoo",
+    "name": "[TA] Origami Zoo",
+    "pillar": "artstudio",
+    "category": "[TA] Paper Art",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[TA] 45 min",
+    "description": "[TA] Fold paper into amazing animals with the ancient art of origami! Create a whole zoo of creatures.",
+    "image": "[TA] /images/tiedye.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[TA] Origami paper",
+        "quantity": "[TA] Multiple colors"
+      },
+      {
+        "name": "Markers",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Start Simple",
+        "description": "[TA] Begin with an easy fold like a dog face or fish. Learn basic folds: valley, mountain, squash.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Practice Precision",
+        "description": "[TA] Fold carefully - crisp creases make better animals! Line up edges exactly.",
+        "tip": "[TA] Use fingernail to crease sharply.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Try Animals",
+        "description": "[TA] Make a frog that jumps! A bird that flaps! A crane for good luck!",
+        "duration": "[TA] 20 min"
+      },
+      {
+        "title": "[TA] Add Details",
+        "description": "[TA] Use markers to add eyes, spots, or patterns to your animals.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Create Display",
+        "description": "[TA] Arrange your zoo on a shelf or make a mobile to hang!",
+        "duration": "[TA] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Paper cuts possible - fold carefully"
+    ],
+    "learningOutcomes": [
+      "[TA] Following diagrams",
+      "[TA] Spatial reasoning",
+      "[TA] Patience and precision",
+      "[TA] Japanese cultural art"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] artstudio-salt-painting",
+    "name": "[TA] Salt Painting",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 30 min",
+    "description": "[TA] Create magical raised designs using glue and salt, then add color and watch it spread!",
+    "image": "[TA] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "Cardstock",
+        "quantity": "[TA] Dark colors work best"
+      },
+      {
+        "name": "[TA] White glue"
+      },
+      {
+        "name": "[TA] Table salt",
+        "quantity": "[TA] 1/2 cup"
+      },
+      {
+        "name": "[TA] Liquid watercolors or food coloring"
+      },
+      {
+        "name": "[TA] Dropper or paintbrush"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Draw with Glue",
+        "description": "[TA] Squeeze glue in lines to create a design - rainbow, name, shapes. Keep lines thick.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Add Salt",
+        "description": "[TA] While glue is wet, pour salt over entire design. Shake off excess.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Let Set",
+        "description": "[TA] Wait a few minutes for glue to start setting with salt stuck on.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Add Color",
+        "description": "[TA] Drop liquid color onto salt. Watch it spread along the lines like magic!",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Dry and Display",
+        "description": "[TA] Let dry completely (overnight is best). Handle gently - salt can fall off.",
+        "duration": "[TA] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Don't eat the salt after coloring",
+      "[TA] Work on protected surface"
+    ],
+    "learningOutcomes": [
+      "[TA] Absorption concepts",
+      "[TA] Color spreading",
+      "[TA] Fine motor control",
+      "[TA] Process art"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] artstudio-pasta-jewelry",
+    "name": "[TA] Terracotta Clay Jewelry",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 30 min",
+    "description": "[TA] Connect with ancient Harappan traditions by sculpting your own terracotta jewelry! Shape natural clay into beautiful beads, dry them in the sun, and paint them with traditional Indian motifs.",
+    "image": "[TA] /images/tiedye.webp",
+    "rating": 4.4,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[TA] Tubular pasta (penne, rigatoni)",
+        "quantity": "[TA] 30-40 pieces"
+      },
+      {
+        "name": "[TA] Acrylic paint or food coloring"
+      },
+      {
+        "name": "[TA] String or yarn",
+        "quantity": "[TA] 2 feet per piece"
+      },
+      {
+        "name": "[TA] Ziplock bags",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Color Pasta",
+        "description": "[TA] Paint pasta or shake in bags with food coloring and rubbing alcohol. Let dry completely.",
+        "duration": "[TA] 10 min + drying"
+      },
+      {
+        "title": "[TA] Plan Pattern",
+        "description": "[TA] Lay out pasta beads and plan your color pattern before stringing.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] String Beads",
+        "description": "[TA] Thread pasta onto string. Tie a bead at one end first to stop others falling off.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Create Closure",
+        "description": "[TA] Tie ends together for necklace, or add clasps for fancier finish.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Model and Gift",
+        "description": "[TA] Wear your creation proudly or make gifts for friends and family!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Pasta jewelry is not edible after painting",
+      "[TA] Handle gently - pasta can crack"
+    ],
+    "learningOutcomes": [
+      "[TA] Pattern creation",
+      "[TA] Fine motor skills (threading)",
+      "[TA] Color combinations",
+      "[TA] Gift-making mindset"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] artstudio-scratch-art",
+    "name": "[TA] Scratch Art Cards",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[TA] 45 min",
+    "description": "[TA] Create rainbow scratch art from scratch! Layer colors, cover with black, then scratch to reveal hidden rainbows.",
+    "image": "[TA] /images/tiedye.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "Cardstock"
+      },
+      {
+        "name": "Crayons",
+        "quantity": "[TA] Various colors"
+      },
+      {
+        "name": "[TA] Black acrylic paint or black crayon"
+      },
+      {
+        "name": "[TA] Dish soap",
+        "quantity": "[TA] A drop"
+      },
+      {
+        "name": "[TA] Toothpick or wooden stylus"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Color Base Layer",
+        "description": "[TA] Cover entire paper with heavy crayon in bright colors. Press hard! No white showing.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Add Black Layer",
+        "description": "[TA] Mix tiny bit of dish soap into black paint. Paint over all the crayon. Or use black crayon (harder work!).",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Let Dry",
+        "description": "[TA] If using paint, let dry completely before scratching.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Scratch Design",
+        "description": "[TA] Use toothpick to scratch away black, revealing rainbow colors beneath!",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Create Cards",
+        "description": "[TA] Make greeting cards, bookmarks, or framed art with your scratch designs!",
+        "duration": "[TA] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Toothpicks are pointy - use carefully",
+      "[TA] Work on protected surface"
+    ],
+    "learningOutcomes": [
+      "[TA] Layering technique",
+      "[TA] Subtractive art process",
+      "[TA] Planning and patience",
+      "[TA] Fine motor control"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] artstudio-suncatcher",
+    "name": "[TA] Tissue Paper Suncatcher",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[TA] 40 min",
+    "description": "[TA] Create stained glass-style art that catches sunlight! Beautiful colors glow when hung in a window.",
+    "image": "[TA] /images/tiedye.webp",
+    "rating": 4.6,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[TA] Clear contact paper",
+        "quantity": "[TA] 2 sheets"
+      },
+      {
+        "name": "[TA] Tissue paper",
+        "quantity": "[TA] Various colors"
+      },
+      {
+        "name": "[TA] Black cardstock",
+        "quantity": "[TA] For frame"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[TA] Hole punch and string"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Cut Frame",
+        "description": "[TA] Cut a frame shape from black cardstock - circle, heart, or rectangle with center removed.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Prepare Contact Paper",
+        "description": "[TA] Cut contact paper slightly larger than frame. Peel backing and lay sticky side up.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Add Tissue Paper",
+        "description": "[TA] Tear or cut tissue paper pieces. Press onto contact paper in colorful pattern.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Seal and Frame",
+        "description": "[TA] Place second contact paper on top, sticky side down. Press to seal. Trim to frame and attach frame.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Hang in Window",
+        "description": "[TA] Punch hole in top, add string, and hang where sunlight will shine through!",
+        "duration": "[TA] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Scissors supervision for younger kids",
+      "[TA] Contact paper is tricky - take your time"
+    ],
+    "learningOutcomes": [
+      "[TA] Light and color",
+      "[TA] Design composition",
+      "[TA] Following multi-step process",
+      "[TA] Decorative crafting"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] artstudio-clay-pots",
+    "name": "[TA] Clay Pinch Pots",
+    "pillar": "artstudio",
+    "category": "Sculpture",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[TA] 1 hour + dry time",
+    "description": "[TA] Shape air-dry clay into beautiful bowls and pots using the ancient pinch pot technique!",
+    "image": "[TA] /images/finger-paint.webp",
+    "rating": 4.7,
+    "reviewCount": 109,
+    "materials": [
+      {
+        "name": "[TA] Air-dry clay",
+        "quantity": "[TA] 1 lb"
+      },
+      {
+        "name": "[TA] Water bowl"
+      },
+      {
+        "name": "[TA] Acrylic paint"
+      },
+      {
+        "name": "Paintbrushes"
+      },
+      {
+        "name": "[TA] Rolling pin",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Prepare Clay",
+        "description": "[TA] Knead clay until soft and pliable. Roll into a ball about the size of your fist.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Create Opening",
+        "description": "[TA] Push thumb into center of ball. Slowly rotate and pinch walls between thumb (inside) and fingers (outside).",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Shape the Pot",
+        "description": "[TA] Keep pinching and rotating. Even thickness is key! Smooth cracks with wet finger.",
+        "tip": "[TA] Keep walls no thinner than 1/4 inch.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Add Details",
+        "description": "[TA] Create texture with tools. Add handles, feet, or decorative elements.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Dry and Paint",
+        "description": "[TA] Let dry completely (2-3 days). Paint with acrylics once fully dried.",
+        "duration": "[TA] 15 min + drying"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Air-dry clay is non-toxic",
+      "[TA] Handle dried pieces gently - they're fragile",
+      "[TA] Not food-safe unless using special glazes"
+    ],
+    "learningOutcomes": [
+      "[TA] Sculpting techniques",
+      "[TA] Hand strength and control",
+      "[TA] Historical pottery methods",
+      "[TA] 3D art creation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] artstudio-collaborative-mural",
+    "name": "[TA] Collaborative Mural",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 1 hour",
+    "description": "[TA] Create a large artwork together! Everyone contributes to one big painting.",
+    "image": "[TA] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 67,
+    "materials": [
+      {
+        "name": "[TA] Large paper roll or joined sheets",
+        "quantity": "[TA] 4-6 feet"
+      },
+      {
+        "name": "[TA] Paint, markers, crayons"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[TA] Smocks for everyone"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Set Up Canvas",
+        "description": "[TA] Roll out paper on floor or tape to wall. Make it BIG - this is a group project!",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Choose Theme",
+        "description": "[TA] Decide on a theme together: underwater, space, garden, cityscape, or abstract!",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Assign Sections",
+        "description": "[TA] Each person gets an area to work on. Plan how sections will connect.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Create Together",
+        "description": "[TA] Everyone works simultaneously! Add to each other's areas if invited.",
+        "duration": "[TA] 40 min"
+      },
+      {
+        "title": "[TA] Add Final Touches",
+        "description": "[TA] Step back, see what's missing. Add connecting elements together.",
+        "duration": "[TA] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Supervise shared materials",
+      "[TA] Respect everyone's work"
+    ],
+    "learningOutcomes": [
+      "[TA] Collaboration skills",
+      "[TA] Respecting others' work",
+      "[TA] Group planning",
+      "[TA] Large-scale art thinking"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] outdoorquest-nature-hunt",
+    "name": "[TA] Nature Scavenger Hunt",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 30 min",
+    "description": "[TA] Explore the outdoors with a checklist of natural treasures to find! Perfect for backyards, parks, or nature trails.",
+    "image": "[TA] /images/nature-hunt.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 234,
+    "materials": [
+      {
+        "name": "[TA] Scavenger hunt checklist",
+        "quantity": "[TA] Printable included!"
+      },
+      {
+        "name": "[TA] Bag or basket"
+      },
+      {
+        "name": "[TA] Magnifying glass",
+        "optional": true
+      },
+      {
+        "name": "[TA] Pencil or crayon"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Print Checklist",
+        "description": "[TA] Use our checklist or create your own: pinecone, feather, smooth rock, flower, etc.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Go Outside!",
+        "description": "[TA] Head to backyard, park, or nature trail. Bring your checklist and collection bag.",
+        "duration": "[TA] 2 min"
+      },
+      {
+        "title": "[TA] Start Hunting",
+        "description": "[TA] Check off items as you find them. Collect items you can take (no picking protected plants!).",
+        "tip": "[TA] Look up, down, and all around - treasures are everywhere!",
+        "duration": "[TA] 20 min"
+      },
+      {
+        "title": "[TA] Observe Closely",
+        "description": "[TA] Use magnifying glass to examine finds. What details do you notice?",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Share Discoveries",
+        "description": "[TA] Show what you found! Learn names of plants and animals you discovered.",
+        "duration": "[TA] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Stay on paths and in sight of adults",
+      "[TA] Don't touch unknown plants or animals",
+      "[TA] Watch for poison ivy/oak",
+      "[TA] Leave wildlife alone"
+    ],
+    "learningOutcomes": [
+      "[TA] Nature identification",
+      "[TA] Observation skills",
+      "[TA] Physical activity",
+      "[TA] Environmental appreciation"
+    ],
+    "crossPillar": [
+      "[TA] artstudio-nature-collage"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] outdoorquest-bug-hotel",
+    "name": "[TA] Bug Hotel",
+    "pillar": "outdoorquest",
+    "category": "Wildlife",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[TA] 45 min",
+    "description": "[TA] Build a cozy habitat for beneficial insects! Create shelter for ladybugs, bees, and other garden helpers.",
+    "image": "[TA] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "[TA] Wooden crate or tin can"
+      },
+      {
+        "name": "[TA] Sticks and twigs"
+      },
+      {
+        "name": "Pinecones"
+      },
+      {
+        "name": "[TA] Bamboo pieces or paper straws"
+      },
+      {
+        "name": "[TA] Dried leaves"
+      },
+      {
+        "name": "[TA] String or wire"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Find a Base",
+        "description": "[TA] Use a clean tin can, small wooden box, or bundle of sticks tied together.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Gather Materials",
+        "description": "[TA] Collect natural materials: hollow sticks, pinecones, bark, dried leaves, etc.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Fill the Hotel",
+        "description": "[TA] Pack materials tightly into your base. Different insects like different spaces!",
+        "tip": "[TA] Hollow tubes for solitary bees, pinecones for ladybugs.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Secure Contents",
+        "description": "[TA] Make sure everything is packed tight. Add wire or more sticks if needed.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Place in Garden",
+        "description": "[TA] Position in a sheltered spot facing south. Off the ground prevents flooding.",
+        "duration": "[TA] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Don't disturb guests once they move in",
+      "[TA] Place away from high-traffic areas",
+      "[TA] Check for existing insect nests before gathering materials"
+    ],
+    "learningOutcomes": [
+      "[TA] Insect ecology",
+      "[TA] Habitat creation",
+      "[TA] Beneficial insects",
+      "[TA] Environmental stewardship"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] outdoorquest-pressed-flowers",
+    "name": "[TA] Pressed Flower Art",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 30 min + drying",
+    "description": "[TA] Preserve beautiful flowers and leaves by pressing! Create bookmarks, cards, or framed art.",
+    "image": "[TA] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[TA] Fresh flowers and leaves"
+      },
+      {
+        "name": "[TA] Heavy books"
+      },
+      {
+        "name": "[TA] Parchment or newspaper"
+      },
+      {
+        "name": "[TA] Frame or cardstock",
+        "optional": true
+      },
+      {
+        "name": "[TA] Clear contact paper",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Collect Specimens",
+        "description": "[TA] Pick flowers and leaves on a dry day. Choose flat flowers or ones you can flatten.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Prepare for Pressing",
+        "description": "[TA] Place flowers between parchment paper. Arrange flat - don't overlap.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Press in Books",
+        "description": "[TA] Put paper with flowers inside heavy book. Stack more books on top.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Wait Patiently",
+        "description": "[TA] Leave for 1-2 weeks. Check occasionally. Change paper if damp.",
+        "duration": "[TA] 1-2 weeks"
+      },
+      {
+        "title": "[TA] Create Art",
+        "description": "[TA] Carefully remove pressed flowers. Arrange on cards, bookmarks, or frame!",
+        "duration": "[TA] 15 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Don't pick from protected areas",
+      "[TA] Pressed flowers are delicate",
+      "[TA] Some plants cause skin irritation"
+    ],
+    "learningOutcomes": [
+      "[TA] Botanical knowledge",
+      "[TA] Patience and delayed gratification",
+      "[TA] Preservation techniques",
+      "[TA] Nature appreciation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] outdoorquest-bird-feeder",
+    "name": "[TA] Coconut Shell Bird Feeder",
+    "pillar": "outdoorquest",
+    "category": "Wildlife",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 20 min",
+    "description": "[TA] Repurpose an empty coconut shell into a beautiful, hanging bird feeder! Fill it with local grains and watch the incredible variety of native birds flock to your garden.",
+    "image": "[TA] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 187,
+    "materials": [
+      {
+        "name": "[TA] Large pinecone"
+      },
+      {
+        "name": "[TA] Peanut butter",
+        "quantity": "[TA] 1/4 cup"
+      },
+      {
+        "name": "Birdseed",
+        "quantity": "[TA] 1 cup"
+      },
+      {
+        "name": "[TA] String or yarn",
+        "quantity": "[TA] 12 inches"
+      },
+      {
+        "name": "[TA] Plate for rolling"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Tie Hanger",
+        "description": "[TA] Tie string securely around top of pinecone for hanging.",
+        "duration": "[TA] 3 min"
+      },
+      {
+        "title": "[TA] Apply Peanut Butter",
+        "description": "[TA] Spread peanut butter all over pinecone, getting into the scales.",
+        "tip": "[TA] Use a butter knife or your hands (messy but fun!).",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Add Seeds",
+        "description": "[TA] Roll coated pinecone in birdseed, pressing seeds into peanut butter.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Hang Outside",
+        "description": "[TA] Hang from a tree branch where you can watch from a window.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Bird Watch",
+        "description": "[TA] Keep a journal of birds that visit! Learn their names and songs.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Check for nut allergies before using peanut butter",
+      "[TA] Alternative: use vegetable shortening",
+      "[TA] Place where squirrels can't easily reach"
+    ],
+    "learningOutcomes": [
+      "[TA] Bird identification",
+      "[TA] Wildlife care",
+      "[TA] Patience and observation",
+      "[TA] Ecosystem understanding"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] outdoorquest-mud-kitchen",
+    "name": "[TA] Mud Kitchen Play",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "Open-ended",
+    "description": "[TA] Set up an outdoor play kitchen for messy, imaginative mud cooking! A classic childhood experience.",
+    "image": "[TA] /images/nature-hunt.webp",
+    "rating": 4.5,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[TA] Old pots and pans"
+      },
+      {
+        "name": "[TA] Wooden spoons"
+      },
+      {
+        "name": "[TA] Measuring cups"
+      },
+      {
+        "name": "[TA] Water source"
+      },
+      {
+        "name": "[TA] Dirt area"
+      },
+      {
+        "name": "[TA] Natural additions",
+        "quantity": "[TA] Leaves, sticks, petals"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Set Up Kitchen",
+        "description": "[TA] Find a good spot near dirt and water. Arrange your tools. A small table helps!",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Prepare Ingredients",
+        "description": "[TA] Gather water, dirt, and natural add-ins like leaves, petals, seeds.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Create Recipes",
+        "description": "[TA] Make mud pies, dirt soup, nature stew! Mix, stir, pour, and create.",
+        "duration": "∞"
+      },
+      {
+        "title": "[TA] Serve and Play",
+        "description": "[TA] Set up a pretend restaurant. Serve your creations to stuffed animal guests!",
+        "duration": "∞"
+      },
+      {
+        "title": "[TA] Clean Up",
+        "description": "[TA] Hose off tools and hands. Some dirty play is good!",
+        "duration": "[TA] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Wash hands thoroughly after play",
+      "[TA] Don't actually eat mud creations!",
+      "[TA] Check area for broken glass or harmful items"
+    ],
+    "learningOutcomes": [
+      "[TA] Imaginative play",
+      "[TA] Sensory exploration",
+      "[TA] Scientific mixing",
+      "[TA] Outdoor comfort"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] outdoorquest-shadow-tracing",
+    "name": "[TA] Shadow Tracing Art",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 20 min",
+    "description": "[TA] Use the sun to create art! Trace shadows of objects, toys, or even friends for unique silhouette artwork.",
+    "image": "[TA] /images/nature-hunt.webp",
+    "rating": 4.4,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[TA] Sidewalk chalk"
+      },
+      {
+        "name": "[TA] Sunny day"
+      },
+      {
+        "name": "[TA] Objects to trace",
+        "quantity": "[TA] Toys, plants, etc."
+      },
+      {
+        "name": "[TA] Paper and pencil",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Find Shadows",
+        "description": "[TA] Go outside on a sunny day. Notice how everything has a shadow!",
+        "duration": "[TA] 3 min"
+      },
+      {
+        "title": "[TA] Position Objects",
+        "description": "[TA] Place toys, plants, or pose yourself to create interesting shadow shapes.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Trace Outlines",
+        "description": "[TA] Use chalk to trace around shadow edges on pavement.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Add Details",
+        "description": "[TA] Color in your traced shadows. Add features, patterns, or backgrounds.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Notice Changes",
+        "description": "[TA] Come back later - have shadows moved? Try tracing the same object at different times!",
+        "duration": "[TA] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Wear sunscreen on sunny days",
+      "[TA] Stay hydrated",
+      "[TA] Don't look directly at the sun"
+    ],
+    "learningOutcomes": [
+      "[TA] Sun and shadows",
+      "[TA] Time and Earth rotation",
+      "[TA] Art techniques",
+      "[TA] Scientific observation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[TA] outdoorquest-cloud-watching",
+    "name": "[TA] Cloud Watching Journal",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 30 min",
+    "description": "[TA] Lie back and watch the clouds! Learn cloud types, spot shapes, and create an imagination journal.",
+    "image": "[TA] /images/nature-hunt.webp",
+    "rating": 4.3,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "Blanket"
+      },
+      {
+        "name": "[TA] Journal or paper"
+      },
+      {
+        "name": "[TA] Crayons or colored pencils"
+      },
+      {
+        "name": "[TA] Cloud identification chart",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Find a Spot",
+        "description": "[TA] Lay blanket in open area with good sky view. Lie on your back.",
+        "duration": "[TA] 3 min"
+      },
+      {
+        "title": "[TA] Observe Clouds",
+        "description": "[TA] Watch the clouds move. What shapes do you see? Animals? Faces? Objects?",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Learn Cloud Types",
+        "description": "[TA] Identify clouds: fluffy cumulus, wispy cirrus, layered stratus. What's up there today?",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Draw and Write",
+        "description": "[TA] Sketch the shapes you see. Write stories about cloud characters.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Predict Weather",
+        "description": "[TA] Different clouds mean different weather. What do today's clouds tell us?",
+        "duration": "[TA] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Don't cloud watch during storms",
+      "[TA] Wear sunglasses on bright days",
+      "[TA] Apply sunscreen"
+    ],
+    "learningOutcomes": [
+      "[TA] Meteorology basics",
+      "[TA] Imagination and creativity",
+      "Relaxation",
+      "[TA] Weather prediction"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] outdoorquest-fairy-garden",
+    "name": "[TA] Fairy Garden",
+    "pillar": "outdoorquest",
+    "category": "Garden",
+    "ageRange": "3-12",
+    "difficulty": "Medium",
+    "timeToMake": "[TA] 1 hour",
+    "description": "[TA] Create a miniature magical garden for fairies! Use tiny plants, pebbles, and handmade accessories.",
+    "image": "[TA] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[TA] Container or garden corner"
+      },
+      {
+        "name": "[TA] Potting soil"
+      },
+      {
+        "name": "[TA] Small plants or moss"
+      },
+      {
+        "name": "[TA] Pebbles and small stones"
+      },
+      {
+        "name": "[TA] Tiny decorations",
+        "quantity": "[TA] Shells, acorns, small figurines"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Choose Location",
+        "description": "[TA] Pick a container (pot, wooden box) or a corner of the yard for your fairy garden.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Add Soil and Base",
+        "description": "[TA] Fill with potting soil. Add pebbles for a path. Create landscape with hills or flat areas.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Plant Greenery",
+        "description": "[TA] Add small plants, moss, or ground cover. Think about scale - everything should be tiny!",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Create Features",
+        "description": "[TA] Make tiny houses from sticks, furniture from acorn caps, fences from twigs.",
+        "duration": "[TA] 20 min"
+      },
+      {
+        "title": "[TA] Add Inhabitants",
+        "description": "[TA] Place fairy figurines, or leave empty for imagination! Add final decorative touches.",
+        "duration": "[TA] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Wash hands after handling soil",
+      "[TA] Small pieces can be choking hazards for young children"
+    ],
+    "learningOutcomes": [
+      "[TA] Gardening basics",
+      "[TA] Miniature design",
+      "[TA] Imaginative play",
+      "[TA] Caring for living things"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] outdoorquest-obstacle-course",
+    "name": "[TA] Backyard Obstacle Course",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 30 min setup",
+    "description": "[TA] Design and conquer your own obstacle course! Jump, crawl, balance, and race through challenges.",
+    "image": "[TA] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 178,
+    "materials": [
+      {
+        "name": "[TA] Hula hoops"
+      },
+      {
+        "name": "[TA] Pool noodles"
+      },
+      {
+        "name": "[TA] Cones or markers"
+      },
+      {
+        "name": "[TA] Rope or string"
+      },
+      {
+        "name": "Buckets"
+      },
+      {
+        "name": "Balls"
+      },
+      {
+        "name": "Timer",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Plan Your Course",
+        "description": "[TA] Decide on 5-8 obstacles. Include different movements: jumping, crawling, throwing, balancing.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Set Up Obstacles",
+        "description": "[TA] Examples: hoop jump, noodle limbo, cone weave, bucket ball toss, rope hop.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Create Start/Finish",
+        "description": "[TA] Mark clear start and finish lines. Number obstacles if doing them in order.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Test Run",
+        "description": "[TA] Run through once yourself. Is it challenging but doable? Adjust difficulty.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "Race!",
+        "description": "[TA] Time yourself, race friends, or try to beat your own record!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Check ground for hazards",
+      "[TA] Age-appropriate challenges",
+      "[TA] No obstacles near hard surfaces",
+      "[TA] Warm up before running"
+    ],
+    "learningOutcomes": [
+      "[TA] Physical fitness",
+      "[TA] Course design",
+      "Sportsmanship",
+      "Problem-solving"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] outdoorquest-leaf-rubbing",
+    "name": "[TA] Leaf Rubbing Art",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 20 min",
+    "description": "[TA] Create beautiful impressions of leaves using crayons! A simple nature art activity perfect for all ages.",
+    "image": "[TA] /images/nature-hunt.webp",
+    "rating": 4.5,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[TA] Fresh leaves",
+        "quantity": "[TA] Various shapes"
+      },
+      {
+        "name": "[TA] White paper"
+      },
+      {
+        "name": "Crayons",
+        "quantity": "Unwrapped"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Collect Leaves",
+        "description": "[TA] Gather leaves with interesting shapes and strong veins. Fresh leaves work best.",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Position Leaves",
+        "description": "[TA] Place leaves vein-side up under paper. Use tape to hold paper still.",
+        "duration": "[TA] 3 min"
+      },
+      {
+        "title": "[TA] Rub with Crayon",
+        "description": "[TA] Rub crayon side across paper over leaf. The leaf pattern appears!",
+        "tip": "[TA] Use side of unwrapped crayon for best results.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Create Composition",
+        "description": "[TA] Make multiple rubbings to create a forest, tree, or abstract design.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Identify Leaves",
+        "description": "[TA] Look up what trees your leaves came from. Label your artwork!",
+        "duration": "[TA] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Wash hands after handling leaves",
+      "[TA] Avoid poison ivy/oak"
+    ],
+    "learningOutcomes": [
+      "[TA] Plant identification",
+      "[TA] Art technique",
+      "[TA] Texture exploration",
+      "[TA] Nature appreciation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] outdoorquest-water-balloons",
+    "name": "[TA] Water Balloon Games",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 30 min play",
+    "description": "[TA] Cool off with exciting water balloon games! From toss to relay races, get ready to get wet!",
+    "image": "[TA] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 189,
+    "materials": [
+      {
+        "name": "[TA] Water balloons",
+        "quantity": "30-50"
+      },
+      {
+        "name": "[TA] Water source"
+      },
+      {
+        "name": "Buckets",
+        "quantity": "2-4"
+      },
+      {
+        "name": "[TA] Open outdoor space"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Fill Balloons",
+        "description": "[TA] Fill balloons at outdoor faucet. Don't overfill - they pop too easily!",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Balloon Toss",
+        "description": "[TA] Partners toss balloon back and forth, stepping back after each catch. Who lasts longest?",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Relay Race",
+        "description": "[TA] Carry balloon on spoon across yard without dropping. Teams compete!",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Target Practice",
+        "description": "[TA] Draw chalk targets. Throw balloons at targets for points!",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Clean Up",
+        "description": "[TA] IMPORTANT: Pick up all balloon pieces - they're harmful to wildlife!",
+        "duration": "[TA] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] ALWAYS clean up balloon pieces",
+      "[TA] Balloons are choking hazards",
+      "[TA] Don't throw at faces",
+      "[TA] Watch for slippery areas"
+    ],
+    "learningOutcomes": [
+      "Teamwork",
+      "[TA] Gross motor skills",
+      "Sportsmanship",
+      "[TA] Environmental responsibility (cleanup)"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[TA] outdoorquest-stargazing",
+    "name": "[TA] Stargazing Night",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[TA] 1 hour",
+    "description": "[TA] Explore the night sky! Learn constellations, spot planets, and maybe catch a shooting star.",
+    "image": "[TA] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "Blanket"
+      },
+      {
+        "name": "[TA] Star chart or app"
+      },
+      {
+        "name": "[TA] Red flashlight",
+        "optional": true
+      },
+      {
+        "name": "Binoculars",
+        "optional": true
+      },
+      {
+        "name": "[TA] Hot cocoa",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[TA] Choose Location",
+        "description": "[TA] Find dark spot away from lights. Backyard works if lights are off!",
+        "duration": "[TA] 5 min"
+      },
+      {
+        "title": "[TA] Let Eyes Adjust",
+        "description": "[TA] Wait 10-15 minutes for eyes to adapt to darkness. Avoid looking at bright lights.",
+        "duration": "[TA] 15 min"
+      },
+      {
+        "title": "[TA] Find North Star",
+        "description": "[TA] Locate Big Dipper, then follow pointer stars to Polaris, the North Star.",
+        "duration": "[TA] 10 min"
+      },
+      {
+        "title": "[TA] Hunt Constellations",
+        "description": "[TA] Use star chart to find Orion, Cassiopeia, and seasonal constellations.",
+        "duration": "[TA] 20 min"
+      },
+      {
+        "title": "[TA] Watch for Movement",
+        "description": "[TA] Satellites cross slowly. Shooting stars streak fast. Planets don't twinkle!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[TA] Stay in safe areas at night",
+      "[TA] Adult supervision required",
+      "[TA] Bring bug spray",
+      "[TA] Dress warmly"
+    ],
+    "learningOutcomes": [
+      "[TA] Astronomy basics",
+      "[TA] Navigation history",
+      "[TA] Patience and observation",
+      "[TA] Wonder and curiosity"
+    ],
+    "isPremium": true
+  }
+]

@@ -8,7 +8,7 @@ export default function StatisticsLab() {
   const [challengeType, setChallengeType] = useState<'mean' | 'median' | 'mode' | 'range'>('mean');
   const [answer, setAnswer] = useState('');
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
 
   const stats = useMemo(() => {
     if (data.length === 0) return { mean: 0, median: 0, mode: [], range: 0, min: 0, max: 0, sum: 0 };
@@ -72,7 +72,7 @@ export default function StatisticsLab() {
     }
     if (correct) {
       setFeedback('correct');
-      setScore(s => s + 10);
+      setMastery(m => m + 1);
       setTimeout(() => generateChallenge(), 1500);
     } else {
       setFeedback('wrong');
@@ -99,7 +99,7 @@ export default function StatisticsLab() {
 
       {mode === 'challenge' && (
         <div className="bg-purple-500/10 rounded-xl p-4 border border-purple-500/30 mb-4 text-center">
-          <span className="bg-yellow-500/20 text-yellow-300 px-2 py-1 rounded text-sm font-bold">⭐ Score: {score}</span>
+          <span className="bg-yellow-500/20 text-yellow-300 px-2 py-1 rounded text-sm font-bold">⭐ Mastery: {mastery}</span>
           <p className="text-white font-bold text-xl mt-2">
             Find the <span className="text-purple-400 uppercase">{challengeType}</span> of this data set:
           </p>
@@ -115,7 +115,7 @@ export default function StatisticsLab() {
             <button onClick={checkAnswer} className="px-4 py-2 rounded-lg bg-purple-600 text-white font-bold">Check</button>
           </div>
           {feedback === 'correct' && <p className="text-green-400 font-bold mt-2">✅ Correct!</p>}
-          {feedback === 'wrong' && <p className="text-red-400 font-bold mt-2">❌ Try again! (Answer: {
+          {feedback === 'wrong' && <p className="text-orange-400 font-bold mt-2">🤔 Try again! (Answer: {
             challengeType === 'mean' ? stats.mean :
             challengeType === 'median' ? stats.median :
             challengeType === 'mode' ? (stats.mode.length > 0 ? stats.mode.join(', ') : 'No mode') :
@@ -150,7 +150,7 @@ export default function StatisticsLab() {
               <div className="flex gap-2 mt-3">
                 <button onClick={() => setData([4, 7, 2, 9, 5, 7, 3, 8, 7, 6])} className="text-sm text-gray-400 hover:text-white">Reset</button>
                 <button onClick={() => setData(Array.from({ length: 10 }, () => Math.floor(Math.random() * 20) + 1))} className="text-sm text-gray-400 hover:text-white">Random</button>
-                <button onClick={() => setData([])} className="text-sm text-gray-400 hover:text-red-400">Clear</button>
+                <button onClick={() => setData([])} className="text-sm text-gray-400 hover:text-orange-400">Clear</button>
               </div>
             </div>
           )}

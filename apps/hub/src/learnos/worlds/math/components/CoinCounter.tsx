@@ -32,7 +32,7 @@ export default function CoinCounter() {
   const [counts, setCounts] = useState<Record<number, number>>({});
   const [target, setTarget] = useState(() => makeChallenge());
   const [feedback, setFeedback] = useState<string | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
 
   const total = useMemo(() =>
     COINS.reduce((sum, c) => sum + (counts[c.value] || 0) * c.value, 0),
@@ -51,7 +51,7 @@ export default function CoinCounter() {
   const checkChange = useCallback(() => {
     if (total === target) {
       setFeedback('correct');
-      setScore(s => s + 10);
+      setMastery(m => m + 1);
       setTimeout(() => { setTarget(makeChallenge()); clear(); setFeedback(null); }, 1500);
     } else if (total > target) {
       setFeedback('too-much');
@@ -111,7 +111,7 @@ export default function CoinCounter() {
                   title={`Remove ${c.name}`}>{c.emoji}</motion.button>
               )))}
             </div>
-            <button className="text-sm text-red-400 hover:text-red-300 ml-4" onClick={clear}>Clear</button>
+            <button className="text-sm text-orange-400 hover:text-red-300 ml-4" onClick={clear}>Clear</button>
           </div>
         )}
       </div>
@@ -153,20 +153,20 @@ export default function CoinCounter() {
 
         {mode === 'challenge' && (
           <motion.div key="ch" className="max-w-lg mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-2xl p-5 border-2 text-center ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback ? 'bg-red-500/10 border-red-500/40' : 'bg-purple-500/10 border-purple-500/30'}`}>
+            <div className={`rounded-2xl p-5 border-2 text-center ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback ? 'bg-white/5 border-white/10' : 'bg-purple-500/10 border-purple-500/30'}`}>
               <div className="flex justify-between mb-3">
-                <span className="text-yellow-400 font-bold">⭐ {score}</span>
+                <span className="text-yellow-400 font-bold">⭐ {mastery}</span>
                 <span className="text-gray-400 text-sm">Make exact change</span>
               </div>
               <p className="text-gray-400">Use coins above to make exactly</p>
               <p className="text-4xl font-bold text-purple-300 my-2">{formatMoney(target)}</p>
-              <p className="text-gray-500 text-sm mb-4">Your total so far: <span className={`font-bold ${total === target ? 'text-green-400' : total > target ? 'text-red-400' : 'text-yellow-400'}`}>{formatMoney(total)}</span></p>
+              <p className="text-gray-500 text-sm mb-4">Your total so far: <span className={`font-bold ${total === target ? 'text-green-400' : total > target ? 'text-orange-400' : 'text-yellow-400'}`}>{formatMoney(total)}</span></p>
               <motion.button className="px-8 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold"
                 whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={checkChange}>
                 ✓ Check
               </motion.button>
               {feedback === 'correct' && <p className="text-green-400 font-bold mt-4">✅ Perfect change!</p>}
-              {feedback === 'too-much' && <p className="text-red-400 font-bold mt-4">Too much! Remove some coins.</p>}
+              {feedback === 'too-much' && <p className="text-orange-400 font-bold mt-4">Too much! Remove some coins.</p>}
               {feedback === 'not-enough' && <p className="text-yellow-400 font-bold mt-4">Not enough yet — keep adding coins.</p>}
             </div>
           </motion.div>

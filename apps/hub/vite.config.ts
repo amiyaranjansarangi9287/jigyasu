@@ -5,6 +5,17 @@ import { VitePWA } from 'vite-plugin-pwa'
 import path from 'path'
 
 export default defineConfig({
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'framer-motion': ['framer-motion'],
+          'lucide': ['lucide-react']
+        }
+      }
+    }
+  },
   plugins: [
     react(),
     tailwindcss(),
@@ -13,7 +24,7 @@ export default defineConfig({
       workbox: {
         // Cache all static assets including audio files
         globPatterns: ['**/*.{js,css,html,ico,png,svg,mp3,woff2,webp}'],
-        maximumFileSizeToCacheInBytes: 5_000_000,
+        maximumFileSizeToCacheInBytes: 50_000_000,
         // All navigation requests fall back to index.html for client-side routing,
         // EXCEPT api calls — those must reach the network.
         navigateFallback: '/index.html',
@@ -146,15 +157,6 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src/learnos'),
-    },
-  },
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom', 'framer-motion'],
-        },
-      },
     },
   },
   server: {

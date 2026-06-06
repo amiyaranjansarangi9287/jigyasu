@@ -110,7 +110,7 @@ export default function ConceptGossip() {
                         <span className="text-3xl">{gossip.emojiB}</span>
                         <div className="flex-1 ml-2">
                           <p className="font-bold text-gray-800 text-sm">
-                            {gossip.conceptA} & {gossip.conceptB}
+                            {t(`crosscutting.data.concept_gossip.${gossip.id}.concept1`, { defaultValue: gossip.conceptA })} & {t(`crosscutting.data.concept_gossip.${gossip.id}.concept2`, { defaultValue: gossip.conceptB })}
                           </p>
                           <p className="text-sm text-gray-400">{gossip.unlocksWhen}</p>
                         </div>
@@ -151,6 +151,9 @@ export default function ConceptGossip() {
                     const speaker = line.split(':')[0];
                     const isA = speaker === selectedGossip.conceptA;
                     const visible = i <= currentLine;
+                    const defaultText = line.includes(':') ? line.split(':')[1].trim() : line;
+                    const messageObj = t(`crosscutting.data.concept_gossip.${selectedGossip.id}.messages.${i}`, { returnObjects: true }) as any;
+                    const messageText = messageObj?.text || defaultText;
 
                     return (
                       <motion.div
@@ -166,7 +169,7 @@ export default function ConceptGossip() {
                               : 'bg-blue-100 text-blue-800 rounded-br-md'
                           } ${!visible ? 'invisible' : ''}`}
                         >
-                          {line}
+                          {messageText}
                         </div>
                       </motion.div>
                     );

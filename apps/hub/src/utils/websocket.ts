@@ -5,6 +5,7 @@
 
 export interface WebSocketMessage {
   type: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   payload?: any;
   timestamp: number;
   userId?: string;
@@ -47,7 +48,6 @@ export class RealtimeWebSocket {
       this.ws = new WebSocket(this.config.url);
 
       this.ws.onopen = () => {
-        console.log('WebSocket connected');
         this.reconnectAttempts = 0;
         this.config.onConnect?.();
       };
@@ -62,7 +62,6 @@ export class RealtimeWebSocket {
       };
 
       this.ws.onclose = () => {
-        console.log('WebSocket disconnected');
         this.config.onDisconnect?.();
         
         // Attempt reconnection if not manual disconnect
@@ -91,7 +90,6 @@ export class RealtimeWebSocket {
 
     this.reconnectTimer = setTimeout(() => {
       this.reconnectAttempts++;
-      console.log(`Reconnection attempt ${this.reconnectAttempts}`);
       this.connect();
     }, this.config.reconnectInterval);
   }
@@ -211,19 +209,14 @@ export class CollaborationManager {
   private handleMessage(message: WebSocketMessage): void {
     switch (message.type) {
       case 'user_joined':
-        console.log('User joined:', message.payload);
         break;
       case 'user_left':
-        console.log('User left:', message.payload);
         break;
       case 'progress_update':
-        console.log('Progress update:', message.payload);
         break;
       case 'wonder_moment':
-        console.log('Wonder moment:', message.payload);
         break;
       default:
-        console.log('Unknown message type:', message.type);
     }
   }
 }
@@ -271,7 +264,6 @@ export class LiveProgressTracker {
    */
   private handleMessage(message: WebSocketMessage): void {
     if (message.type === 'family_progress') {
-      console.log('Family progress:', message.payload);
       // Update UI with family progress
     }
   }

@@ -8,7 +8,7 @@ export default function NumberBondsGarden() {
   const [selectedNum, setSelectedNum] = useState<number | null>(null);
   const [matchedPairs, setMatchedPairs] = useState<Set<string>>(new Set());
   const [wrongPair, setWrongPair] = useState<string | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
   const [mode, setMode] = useState<'match' | 'explore'>('explore');
 
   const pairs = useMemo(() => {
@@ -33,7 +33,7 @@ export default function NumberBondsGarden() {
     const pairKey = `${selectedNum}-${num}`;
     if (selectedNum + num === target) {
       setMatchedPairs((prev) => new Set([...prev, pairKey, `${num}-${selectedNum}`]));
-      setScore((s) => s + 1);
+      setMastery((s) => s + 1);
       setSelectedNum(null);
     } else {
       setWrongPair(pairKey);
@@ -175,7 +175,7 @@ export default function NumberBondsGarden() {
         <div>
           <div className="flex items-center justify-between mb-4">
             <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">
-              {t('math_modules.NumberBondsGarden.matchedScore', '🌸 Matched: {{score}}', { score })}
+              {t('math_modules.NumberBondsGarden.matchedScore', '🌸 Matched: {{mastery}}', { mastery })}
             </span>
             <span className="text-gray-400 text-sm" dangerouslySetInnerHTML={{ __html: t('math_modules.NumberBondsGarden.pickInstruction', 'Pick one from each side that adds up to <span className="text-green-400 font-bold">{{target}}</span>', { target }) }}>
             </span>

@@ -74,7 +74,7 @@ function DiscountCalculator() {
               <label className="text-gray-400 text-sm">Discount (%)</label>
               <div className="flex items-center gap-3 mt-1">
                 <input type="range" min="5" max="90" step="5" value={discount} onChange={e => setDiscount(Number(e.target.value))} className="flex-1 accent-red-500" />
-                <span className="text-red-400 font-bold text-xl w-16">{discount}%</span>
+                <span className="text-orange-400 font-bold text-xl w-16">{discount}%</span>
               </div>
             </div>
           </div>
@@ -103,7 +103,7 @@ function DiscountCalculator() {
           </div>
           <div className="flex justify-between text-sm mt-2">
             <span className="text-green-400">You pay</span>
-            <span className="text-red-400">You save</span>
+            <span className="text-orange-400">You save</span>
           </div>
         </div>
       </div>
@@ -117,7 +117,7 @@ function DiscountCalculator() {
         </div>
         <div className="bg-gradient-to-br from-red-500/10 to-rose-500/10 rounded-2xl p-6 border border-red-500/30 text-center">
           <p className="text-gray-400 text-sm">You Save</p>
-          <motion.p key={savings} className="text-4xl font-bold text-red-400" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>
+          <motion.p key={savings} className="text-4xl font-bold text-orange-400" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>
             ${savings.toFixed(2)}
           </motion.p>
         </div>
@@ -126,7 +126,7 @@ function DiscountCalculator() {
           <p className="text-gray-300 text-sm font-mono">
             Savings = Price × (Discount% ÷ 100)<br />
             = ${originalPrice} × ({discount}% ÷ 100)<br />
-            = ${originalPrice} × {(discount / 100).toFixed(2)} = <span className="text-red-400">${savings.toFixed(2)}</span>
+            = ${originalPrice} × {(discount / 100).toFixed(2)} = <span className="text-orange-400">${savings.toFixed(2)}</span>
           </p>
           <p className="text-gray-300 text-sm font-mono mt-2">
             Final = ${originalPrice} - ${savings.toFixed(2)} = <span className="text-green-400">${finalPrice.toFixed(2)}</span>
@@ -172,13 +172,13 @@ function ProfitLossCalculator() {
 
       <div className="space-y-4">
         <motion.div
-          className={`rounded-2xl p-6 border-2 text-center ${isProfit ? 'bg-green-500/10 border-green-500/40' : 'bg-red-500/10 border-red-500/40'}`}
+          className={`rounded-2xl p-6 border-2 text-center ${isProfit ? 'bg-green-500/10 border-green-500/40' : 'bg-white/5 border-white/10'}`}
           key={profitLoss}
           initial={{ scale: 0.9 }}
           animate={{ scale: 1 }}
         >
           <span className="text-5xl">{isProfit ? '📈' : '📉'}</span>
-          <p className={`text-3xl font-bold mt-2 ${isProfit ? 'text-green-400' : 'text-red-400'}`}>
+          <p className={`text-3xl font-bold mt-2 ${isProfit ? 'text-green-400' : 'text-orange-400'}`}>
             {isProfit ? 'PROFIT' : 'LOSS'}: ${Math.abs(profitLoss).toFixed(2)}
           </p>
           <p className={`text-xl font-bold ${isProfit ? 'text-green-300' : 'text-red-300'}`}>
@@ -189,9 +189,9 @@ function ProfitLossCalculator() {
         <div className="bg-white/5 rounded-xl p-4 border border-white/10">
           <h4 className="text-white font-bold mb-2">📝 Formulas</h4>
           <div className="text-sm font-mono space-y-1">
-            <p className="text-gray-300">Profit/Loss = SP - CP = ${sellingPrice} - ${costPrice} = <span className={isProfit ? 'text-green-400' : 'text-red-400'}>${profitLoss}</span></p>
+            <p className="text-gray-300">Profit/Loss = SP - CP = ${sellingPrice} - ${costPrice} = <span className={isProfit ? 'text-green-400' : 'text-orange-400'}>${profitLoss}</span></p>
             <p className="text-gray-300">Percentage = (P/L ÷ CP) × 100</p>
-            <p className="text-gray-300">= ({Math.abs(profitLoss)} ÷ {costPrice}) × 100 = <span className={isProfit ? 'text-green-400' : 'text-red-400'}>{percentage.toFixed(1)}%</span></p>
+            <p className="text-gray-300">= ({Math.abs(profitLoss)} ÷ {costPrice}) × 100 = <span className={isProfit ? 'text-green-400' : 'text-orange-400'}>{percentage.toFixed(1)}%</span></p>
           </div>
         </div>
       </div>
@@ -318,7 +318,7 @@ function InterestCalculator() {
 function MoneyChallenge() {
   const [question, setQuestion] = useState<ChallengeQ | null>(null);
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
   const [streak, setStreak] = useState(0);
 
   const generateQuestion = useCallback((): ChallengeQ => {
@@ -381,7 +381,7 @@ function MoneyChallenge() {
     if (!question || feedback) return;
     if (opt === question.answer) {
       setFeedback('correct');
-      setScore(s => s + 10);
+      setMastery(m => m + 1);
       setStreak(s => s + 1);
       setTimeout(() => { setQuestion(generateQuestion()); setFeedback(null); }, 1000);
     } else {
@@ -399,13 +399,13 @@ function MoneyChallenge() {
   return (
     <div className="max-w-lg mx-auto">
       <div className="flex justify-center gap-4 mb-4">
-        <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">⭐ {score}</span>
+        <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">⭐ {mastery}</span>
         <span className="bg-white/5 px-3 py-1.5 rounded-lg text-orange-400 font-bold text-sm">🔥 {streak}</span>
       </div>
 
       <motion.div
         key={question.question}
-        className={`rounded-2xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-red-500/10 border-red-500/40' : 'bg-white/5 border-white/10'}`}
+        className={`rounded-2xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}
         initial={{ scale: 0.9 }}
         animate={{ scale: 1 }}
       >
@@ -432,7 +432,7 @@ function MoneyChallenge() {
         </div>
 
         {feedback === 'correct' && <p className="text-green-400 font-bold mt-4 text-center">✅ Correct! 💰</p>}
-        {feedback === 'wrong' && <p className="text-red-400 font-bold mt-4 text-center">❌ Answer: ${question.answer}</p>}
+        {feedback === 'wrong' && <p className="text-orange-400 font-bold mt-4 text-center">🤔 Answer: ${question.answer}</p>}
       </motion.div>
 
       <button className="w-full mt-4 text-gray-500 hover:text-gray-400 text-sm" onClick={() => setQuestion(generateQuestion())}>

@@ -1,10 +1,12 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface FoodChainCanvasProps {
   chain: 'pond' | 'forest' | 'ocean' | 'grassland';
 }
 
 export default function FoodChainCanvas({ chain }: FoodChainCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const chainRef = useRef(chain);

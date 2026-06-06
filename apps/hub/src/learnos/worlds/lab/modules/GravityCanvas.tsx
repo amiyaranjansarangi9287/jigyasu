@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface GravityCanvasProps {
   mass: number;
@@ -6,6 +7,7 @@ interface GravityCanvasProps {
 }
 
 export default function GravityCanvas({ mass, showNewton }: GravityCanvasProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const draggingRef = useRef(false);

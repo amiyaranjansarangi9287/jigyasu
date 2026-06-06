@@ -1,313 +1,169 @@
-import { useEffect, useRef, useState, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Sparkles } from 'lucide-react';
-import type { CanvasProps } from '../../types';
+import { useRef, useEffect } from 'react'
 
-interface Particle {
-  id: number;
-  x: number;
-  y: number;
-  vx: number;
-  vy: number;
+interface StatesOfMatterCanvasProps {
+  temperature: number // 0-100
+  isPlaying: boolean
 }
 
-type MatterState = 'solid' | 'liquid' | 'gas';
+interface Particle {
+  x: number
+  y: number
+  vx: number
+  vy: number
+  radius: number
+}
 
-const STATE_CONFIG = {
-  solid: { temp: 20, speed: 0.3, spacing: 40, label: 'Solid (Ice)', emoji: '🧊' },
-  liquid: { temp: 60, speed: 2, spacing: 30, label: 'Liquid (Water)', emoji: '💧' },
-  gas: { temp: 100, speed: 5, spacing: 20, label: 'Gas (Steam)', emoji: '♨️' },
-};
+export default function StatesOfMatterCanvas({ temperature, isPlaying }: StatesOfMatterCanvasProps) {
+  const canvasRef = useRef<HTMLCanvasElement>(null)
+  const particlesRef = useRef<Particle[]>([])
+  const frameRef = useRef<number>(0)
 
-const PARTICLE_COUNT = 36;
-
-export default function StatesOfMatterCanvas({ isPlaying }: CanvasProps) {
-  const [temperature, setTemperature] = useState(20);
-  const [particles, setParticles] = useState<Particle[]>([]);
-  const [visitedStates, setVisitedStates] = useState<Set<MatterState>>(new Set(['solid']));
-  const [showCelebration, setShowCelebration] = useState(false);
-  const [challengeMode, setChallengeMode] = useState(false);
-  const [targetState, setTargetState] = useState<MatterState | null>(null);
-  const [challengeScore, setChallengeScore] = useState(0);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const animationRef = useRef<number | null>(null);
-
-  const getMatterState = (temp: number): MatterState => {
-    if (temp < 40) return 'solid';
-    if (temp < 80) return 'liquid';
-    return 'gas';
-  };
-
-  const currentState = getMatterState(temperature);
-  const config = STATE_CONFIG[currentState];
-
-  // Track visited states
   useEffect(() => {
-    setVisitedStates(prev => {
-      const newSet = new Set(prev);
-      newSet.add(currentState);
-      
-      // Check if all states visited
-      if (newSet.size === 3 && !showCelebration && prev.size < 3) {
-        setShowCelebration(true);
-        setTimeout(() => setShowCelebration(false), 3000);
+    const canvas = canvasRef.current
+    if (!canvas) return
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return
+
+    const dpr = window.devicePixelRatio || 1
+    const rect = canvas.getBoundingClientRect()
+    canvas.width = rect.width * dpr
+    canvas.height = rect.height * dpr
+    ctx.scale(dpr, dpr)
+
+    const w = rect.width
+    const h = rect.height
+
+    // Initialize particles
+    if (particlesRef.current.length === 0) {
+      for (let i = 0; i < 80; i++) {
+        particlesRef.current.push({
+          x: Math.random() * w,
+          y: Math.random() * h,
+          vx: (Math.random() - 0.5) * 2,
+          vy: (Math.random() - 0.5) * 2,
+          radius: 4 + Math.random() * 2,
+        })
       }
-      
-      return newSet;
-    });
-  }, [currentState, showCelebration]);
-
-  // Challenge mode - match the target state
-  useEffect(() => {
-    if (challengeMode && targetState && currentState === targetState) {
-      setChallengeScore(prev => prev + 1);
-      // New target
-      const states: MatterState[] = ['solid', 'liquid', 'gas'];
-      const remaining = states.filter(s => s !== currentState);
-      setTargetState(remaining[Math.floor(Math.random() * remaining.length)]);
     }
-  }, [challengeMode, currentState, targetState]);
 
-  const startChallenge = () => {
-    setChallengeMode(true);
-    setChallengeScore(0);
-    const states: MatterState[] = ['solid', 'liquid', 'gas'];
-    const remaining = states.filter(s => s !== currentState);
-    setTargetState(remaining[Math.floor(Math.random() * remaining.length)]);
-  };
-
-  // Initialize particles
-  useEffect(() => {
-    const initParticles: Particle[] = [];
-    const cols = 6;
-    
-    for (let i = 0; i < PARTICLE_COUNT; i++) {
-      const col = i % cols;
-      const row = Math.floor(i / cols);
-      initParticles.push({
-        id: i,
-        x: 100 + col * 40,
-        y: 80 + row * 40,
-        vx: (Math.random() - 0.5) * 2,
-        vy: (Math.random() - 0.5) * 2,
-      });
+    const getState = (temp: number): 'solid' | 'liquid' | 'gas' => {
+      if (temp < 33) return 'solid'
+      if (temp < 66) return 'liquid'
+      return 'gas'
     }
-    setParticles(initParticles);
-  }, []);
 
-  // Animation loop
-  const animate = useCallback(() => {
-    if (!isPlaying) return;
+    const animate = () => {
+      ctx.clearRect(0, 0, w, h)
+      const state = getState(temperature)
+      const speed = 0.5 + (temperature / 100) * 4
+      const jitter = state === 'solid' ? 0.5 : state === 'liquid' ? 2 : 4
 
-    const state = getMatterState(temperature);
-    const speed = STATE_CONFIG[state].speed;
-    const containerWidth = 340;
-    const containerHeight = 300;
-
-    setParticles(prev => prev.map(p => {
-      let newX = p.x + p.vx * speed;
-      let newY = p.y + p.vy * speed;
-      let newVx = p.vx;
-      let newVy = p.vy;
-
-      // Boundary collision
-      if (newX < 20 || newX > containerWidth - 20) {
-        newVx = -newVx;
-        newX = Math.max(20, Math.min(containerWidth - 20, newX));
+      // Background based on state
+      const bgColors = {
+        solid: ['#e0f2fe', '#bae6fd'],
+        liquid: ['#dbeafe', '#bfdbfe'],
+        gas: ['#fef3c7', '#fde68a'],
       }
-      if (newY < 20 || newY > containerHeight - 20) {
-        newVy = -newVy;
-        newY = Math.max(20, Math.min(containerHeight - 20, newY));
-      }
+      const bg = ctx.createLinearGradient(0, 0, 0, h)
+      bg.addColorStop(0, bgColors[state][0])
+      bg.addColorStop(1, bgColors[state][1])
+      ctx.fillStyle = bg
+      ctx.fillRect(0, 0, w, h)
 
-      // For solid state, particles vibrate around fixed positions
+      // Container
       if (state === 'solid') {
-        const col = p.id % 6;
-        const row = Math.floor(p.id / 6);
-        const homeX = 80 + col * 40;
-        const homeY = 60 + row * 40;
-        newX = homeX + (Math.random() - 0.5) * 6;
-        newY = homeY + (Math.random() - 0.5) * 6;
+        // Grid pattern for solid
+        ctx.strokeStyle = 'rgba(14, 165, 233, 0.15)'
+        ctx.lineWidth = 1
+        const gridSize = 30
+        for (let x = 0; x < w; x += gridSize) {
+          ctx.beginPath()
+          ctx.moveTo(x, 0)
+          ctx.lineTo(x, h)
+          ctx.stroke()
+        }
+        for (let y = 0; y < h; y += gridSize) {
+          ctx.beginPath()
+          ctx.moveTo(0, y)
+          ctx.lineTo(w, y)
+          ctx.stroke()
+        }
       }
 
-      // Random direction changes for gas
-      if (state === 'gas' && Math.random() < 0.02) {
-        newVx = (Math.random() - 0.5) * 4;
-        newVy = (Math.random() - 0.5) * 4;
-      }
+      // Update and draw particles
+      const particles = particlesRef.current
+      particles.forEach((p, i) => {
+        if (isPlaying) {
+          if (state === 'solid') {
+            // Vibrate in place
+            p.x += (Math.random() - 0.5) * jitter * 0.3
+            p.y += (Math.random() - 0.5) * jitter * 0.3
+            // Return to grid position
+            const gridX = ((i % 10) + 0.5) * (w / 10)
+            const gridY = (Math.floor(i / 10) + 0.5) * (h / 8)
+            p.x += (gridX - p.x) * 0.1
+            p.y += (gridY - p.y) * 0.1
+          } else if (state === 'liquid') {
+            p.x += p.vx * speed * 0.5 + (Math.random() - 0.5) * jitter
+            p.y += p.vy * speed * 0.5 + (Math.random() - 0.5) * jitter
+            // Keep in bottom half
+            if (p.y < h * 0.3) p.vy += 0.2
+            if (p.y > h - 10) p.vy = -Math.abs(p.vy)
+          } else {
+            p.x += p.vx * speed + (Math.random() - 0.5) * jitter
+            p.y += p.vy * speed + (Math.random() - 0.5) * jitter
+          }
 
-      return { ...p, x: newX, y: newY, vx: newVx, vy: newVy };
-    }));
+          // Wrap around
+          if (p.x < -10) p.x = w + 10
+          if (p.x > w + 10) p.x = -10
+          if (state !== 'solid') {
+            if (p.y < -10) p.y = h + 10
+            if (p.y > h + 10) p.y = -10
+          }
+        }
 
-    animationRef.current = requestAnimationFrame(animate);
-  }, [isPlaying, temperature]);
+        // Draw particle
+        ctx.beginPath()
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2)
 
-  useEffect(() => {
-    if (isPlaying) {
-      animationRef.current = requestAnimationFrame(animate);
+        const colors = {
+          solid: { fill: '#0284c7', stroke: '#0369a1' },
+          liquid: { fill: '#3b82f6', stroke: '#2563eb' },
+          gas: { fill: '#f59e0b', stroke: '#d97706' },
+        }
+        ctx.fillStyle = colors[state].fill
+        ctx.fill()
+        ctx.strokeStyle = colors[state].stroke
+        ctx.lineWidth = 1
+        ctx.stroke()
+
+        // Glow
+        ctx.beginPath()
+        ctx.arc(p.x, p.y, p.radius + 3, 0, Math.PI * 2)
+        ctx.fillStyle = `${colors[state].fill}20`
+        ctx.fill()
+      })
+
+      // State label
+      ctx.font = 'bold 16px Inter, sans-serif'
+      ctx.textAlign = 'center'
+      ctx.fillStyle = state === 'solid' ? '#0369a1' : state === 'liquid' ? '#1d4ed8' : '#b45309'
+      const labels = { solid: '🧊 SOLID', liquid: '💧 LIQUID', gas: '💨 GAS' }
+      ctx.fillText(labels[state], w / 2, 30)
+
+      // Temperature display
+      ctx.font = '12px Inter, sans-serif'
+      ctx.fillStyle = '#64748b'
+      ctx.fillText(`${Math.round(temperature)}°C`, w / 2, 50)
+
+      frameRef.current = requestAnimationFrame(animate)
     }
-    return () => {
-      if (animationRef.current) {
-        cancelAnimationFrame(animationRef.current);
-      }
-    };
-  }, [isPlaying, animate]);
 
-  const getParticleColor = () => {
-    if (temperature < 40) return 'bg-blue-400';
-    if (temperature < 80) return 'bg-cyan-400';
-    return 'bg-orange-400';
-  };
+    animate()
 
-  return (
-    <div className="flex flex-col items-center gap-6 p-4">
-      {/* State Progress */}
-      <div className="flex gap-2">
-        {(['solid', 'liquid', 'gas'] as MatterState[]).map(state => (
-          <div
-            key={state}
-            className={`px-3 py-1 rounded-full text-xs font-semibold transition-all ${
-              visitedStates.has(state)
-                ? 'bg-emerald-600 text-white'
-                : 'bg-slate-700 text-slate-400'
-            } ${currentState === state ? 'ring-2 ring-emerald-400 ring-offset-2 ring-offset-slate-900' : ''}`}
-          >
-            {STATE_CONFIG[state].emoji} {state}
-          </div>
-        ))}
-      </div>
+    return () => cancelAnimationFrame(frameRef.current)
+  }, [temperature, isPlaying])
 
-      {/* Challenge Mode Banner */}
-      <AnimatePresence>
-        {challengeMode && targetState && (
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0 }}
-            className="bg-amber-600/20 border border-amber-500/30 px-4 py-2 rounded-xl flex items-center gap-3"
-          >
-            <Sparkles className="w-5 h-5 text-amber-400" />
-            <span className="text-amber-200">
-              Change to <strong>{targetState}</strong>! Score: {challengeScore}
-            </span>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      {/* Celebration */}
-      <AnimatePresence>
-        {showCelebration && (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.8 }}
-            className="bg-gradient-to-r from-emerald-600 to-teal-600 px-6 py-3 rounded-2xl text-white font-bold"
-          >
-            🎉 Amazing! You explored all three states!
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      {/* Temperature Display */}
-      <div className="text-center">
-        <div className="text-5xl mb-2">{config.emoji}</div>
-        <h3 className="text-xl font-bold text-emerald-400">{config.label}</h3>
-        <p className="text-slate-400 text-sm">Temperature: {temperature}°C</p>
-      </div>
-
-      {/* Particle Container */}
-      <div
-        ref={containerRef}
-        className="relative w-[340px] h-[300px] rounded-2xl border-2 border-slate-600 bg-slate-800/50 overflow-hidden"
-      >
-        {/* Background gradient based on state */}
-        <div
-          className={`absolute inset-0 transition-all duration-500 ${
-            currentState === 'solid'
-              ? 'bg-gradient-to-b from-blue-900/30 to-blue-800/30'
-              : currentState === 'liquid'
-              ? 'bg-gradient-to-b from-cyan-900/30 to-cyan-800/30'
-              : 'bg-gradient-to-b from-orange-900/30 to-red-900/30'
-          }`}
-        />
-
-        {/* Particles */}
-        {particles.map(p => (
-          <motion.div
-            key={p.id}
-            className={`absolute w-4 h-4 rounded-full ${getParticleColor()} shadow-lg`}
-            style={{
-              left: p.x,
-              top: p.y,
-              transform: 'translate(-50%, -50%)',
-            }}
-            animate={{
-              scale: currentState === 'gas' ? [1, 1.2, 1] : 1,
-            }}
-            transition={{
-              duration: 0.3,
-              repeat: currentState === 'gas' ? Infinity : 0,
-            }}
-          />
-        ))}
-      </div>
-
-      {/* Temperature Slider */}
-      <div className="w-full max-w-xs">
-        <label className="block text-sm text-slate-300 mb-2 text-center">
-          🌡️ Adjust Temperature
-        </label>
-        <input
-          type="range"
-          min="0"
-          max="120"
-          value={temperature}
-          onChange={(e) => setTemperature(Number(e.target.value))}
-          className="w-full h-3 bg-gradient-to-r from-blue-500 via-cyan-500 to-orange-500 rounded-lg appearance-none cursor-pointer"
-          style={{
-            WebkitAppearance: 'none',
-          }}
-        />
-        <div className="flex justify-between text-xs text-slate-500 mt-1">
-          <span>0°C</span>
-          <span>60°C</span>
-          <span>120°C</span>
-        </div>
-      </div>
-
-      {/* Challenge Mode Button */}
-      {!challengeMode ? (
-        <button
-          onClick={startChallenge}
-          className="px-4 py-2 bg-amber-600 hover:bg-amber-500 rounded-xl text-white font-semibold flex items-center gap-2"
-        >
-          <Sparkles className="w-4 h-4" />
-          Start Speed Challenge
-        </button>
-      ) : (
-        <button
-          onClick={() => setChallengeMode(false)}
-          className="px-4 py-2 bg-slate-600 hover:bg-slate-500 rounded-xl text-white"
-        >
-          End Challenge (Score: {challengeScore})
-        </button>
-      )}
-
-      {/* Indian Context Card */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="bg-emerald-900/30 border border-emerald-500/30 rounded-xl p-4 max-w-sm"
-      >
-        <p className="text-sm text-emerald-200">
-          <span className="font-bold">🇮🇳 Indian Connection:</span>{' '}
-          {currentState === 'solid'
-            ? 'Think of frozen kulfi straight from the matka!'
-            : currentState === 'liquid'
-            ? 'Like ghee melting on a hot paratha!'
-            : 'Just like steam rising from your chai!'}
-        </p>
-      </motion.div>
-    </div>
-  );
+  return <canvas ref={canvasRef} className="w-full h-full" style={{ display: 'block' }} />
 }

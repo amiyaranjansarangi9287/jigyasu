@@ -307,7 +307,7 @@ export default function MicroscopeSimulator() {
                 <button onClick={() => setZoom(z => Math.min(4, z + 0.5))} className="p-2 rounded-full bg-gray-800 text-gray-300 hover:bg-gray-700">
                   <ZoomIn className="w-5 h-5" />
                 </button>
-                <button onClick={resetView} className="p-2 rounded-full bg-gray-800 text-gray-300 hover:bg-gray-700">
+                <button onClick={resetView} className="p-2 rounded-full bg-gray-800 text-gray-300 hover:bg-gray-700" aria-label="Rotate ccw">
                   <RotateCcw className="w-5 h-5" />
                 </button>
                 <button onClick={() => setLightsOn(!lightsOn)}

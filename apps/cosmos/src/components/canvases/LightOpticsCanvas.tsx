@@ -190,7 +190,7 @@ export function LightOpticsCanvas({ isPlaying }: CanvasProps) {
               transition={{ duration: 2, repeat: Infinity }}
             >
               <div
-                className="h-16 w-16 rounded-full"
+                className="min-h-16 w-16 rounded-full"
                 style={{
                   background: 'radial-gradient(circle, #FFF700 0%, #FFD700 50%, #FF8C00 100%)',
                   boxShadow: '0 0 60px 20px rgba(255, 200, 0, 0.4)',
@@ -262,7 +262,7 @@ export function LightOpticsCanvas({ isPlaying }: CanvasProps) {
             {/* Lens */}
             <div className="relative">
               <div
-                className={`w-4 h-32 rounded-full border-2 border-sky-400/50 ${
+                className={`w-4 min-h-32 rounded-full border-2 border-sky-400/50 ${
                   lensType === 'convex'
                     ? 'bg-sky-400/20'
                     : 'bg-transparent'

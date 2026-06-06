@@ -4,6 +4,7 @@
 // Zero text. Peacock companion fans tail during performance.
 
 import { useRef, useEffect, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useSettingsStore } from '@/store';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
 import TinyShell from '../TinyShell';
@@ -32,6 +33,7 @@ interface NoteTrail {
 }
 
 export default function AnimalOrchestra() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const animalsRef = useRef<OrchestraAnimal[]>([]);

@@ -275,8 +275,8 @@ export default function PhotosynthesisLab() {
             {/* Warnings */}
             {isRunning && (
               <div className="mt-3 space-y-1">
-                {lab.waterLevel < 10 && <div className="text-sm text-red-400 bg-red-500/10 rounded-lg px-3 py-1.5 border border-red-500/20">⚠️ Water level critically low! Photosynthesis slowing down.</div>}
-                {lab.co2Level < 10 && <div className="text-sm text-red-400 bg-red-500/10 rounded-lg px-3 py-1.5 border border-red-500/20">⚠️ CO₂ depleted! Calvin cycle cannot fix carbon.</div>}
+                {lab.waterLevel < 10 && <div className="text-sm text-orange-400 bg-red-500/10 rounded-lg px-3 py-1.5 border border-red-500/20">⚠️ Water level critically low! Photosynthesis slowing down.</div>}
+                {lab.co2Level < 10 && <div className="text-sm text-orange-400 bg-red-500/10 rounded-lg px-3 py-1.5 border border-red-500/20">⚠️ CO₂ depleted! Calvin cycle cannot fix carbon.</div>}
                 {!tempOk && <div className="text-sm text-orange-400 bg-orange-500/10 rounded-lg px-3 py-1.5 border border-orange-500/20">⚠️ Temperature outside optimal range (15-35°C). Enzymes less efficient.</div>}
               </div>
             )}

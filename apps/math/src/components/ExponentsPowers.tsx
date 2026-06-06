@@ -103,7 +103,7 @@ export default function ExponentsPowers() {
             {/* Visual */}
             <div className="bg-white/5 rounded-2xl p-4 border border-white/10">
               <h4 className="text-white font-bold mb-2">🟦 Visual: {base}{toSup(exp)} = {result} blocks</h4>
-              <div className="flex flex-wrap gap-0.5 max-h-32 overflow-y-auto">
+              <div className="flex flex-wrap gap-0.5 max-min-h-32 overflow-y-auto">
                 {Array.from({ length: Math.min(result, 200) }).map((_, i) => (
                   <motion.div key={i} className="w-3 h-3 rounded-sm bg-blue-500" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: i * 0.005 }} />
                 ))}

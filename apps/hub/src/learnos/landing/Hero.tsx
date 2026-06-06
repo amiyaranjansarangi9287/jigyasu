@@ -83,7 +83,7 @@ export default function Hero() {
                     </div>
                     <div className="mt-4 flex-1 rounded-2xl bg-gradient-to-br from-amber-100 to-orange-100 p-5">
                       <p className="text-sm font-semibold text-slate-500">{t('landing.hero.question_prompt')}</p>
-                      <div className="mt-3 flex h-32 items-center justify-center text-7xl animate-wiggle">
+                      <div className="mt-3 flex min-h-32 items-center justify-center text-7xl animate-wiggle">
                         🐘
                       </div>
                       <div className="mt-3 grid grid-cols-3 gap-2">

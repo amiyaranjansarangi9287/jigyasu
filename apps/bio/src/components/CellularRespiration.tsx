@@ -180,7 +180,7 @@ export default function CellularRespiration() {
                 <motion.div key={stage.id} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                   {/* Stage header */}
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl"
+                    <div className="w-12 min-h-12 rounded-xl flex items-center justify-center text-2xl"
                       style={{ backgroundColor: stage.color + '22', border: `2px solid ${stage.color}` }}>
                       {stage.emoji}
                     </div>
@@ -203,7 +203,7 @@ export default function CellularRespiration() {
                       {stage.inputs.map(i => <div key={i} className="text-xs text-gray-300 mb-1">• {i}</div>)}
                     </div>
                     <div className="flex items-center justify-center">
-                      <div className="w-12 h-12 rounded-full flex items-center justify-center text-2xl"
+                      <div className="w-12 min-h-12 rounded-full flex items-center justify-center text-2xl"
                         style={{ backgroundColor: stage.color + '22', border: `2px solid ${stage.color}` }}>
                         <ArrowRight className="w-6 h-6" style={{ color: stage.color }} />
                       </div>

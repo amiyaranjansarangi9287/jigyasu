@@ -2,6 +2,7 @@
 // Detective-themed pattern completion. Difficulty escalates.
 
 import { useState, useCallback, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { useSettingsStore } from '@/store';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
@@ -12,6 +13,7 @@ import { useEarlySession } from '../hooks/useEarlySession';
 import { PATTERNS } from '../data/earlyContent';
 
 export default function PatternPatrol() {
+  const { t } = useTranslation();
   const soundEnabled = useSettingsStore((s) => s.soundEnabled);
   const pip = usePip();
   const { recordPatternCompleted } = useEarlyProgress();
@@ -93,9 +95,9 @@ export default function PatternPatrol() {
         {/* Detective header */}
         <div className="bg-white rounded-2xl p-4 shadow-sm border border-pink-200 mb-6">
           <div className="flex items-center gap-3">
-            <span className="text-3xl">🐤🔍</span>
+            <span className="text-3xl">{t('early.modules.PatternPatrol.spn_', '🐤🔍')}</span>
             <div>
-              <p className="text-lg font-bold text-gray-700">What comes next?</p>
+              <p className="text-lg font-bold text-gray-700">{t('early.modules.PatternPatrol.txt_Whatcomesn', 'What comes next?')}</p>
               <p className="text-sm text-gray-500">Level {difficulty} · {consecutiveCorrect}/3 to level up</p>
             </div>
           </div>
@@ -118,7 +120,7 @@ export default function PatternPatrol() {
               className={`w-16 h-16 rounded-2xl border-2 flex items-center justify-center shadow-sm ${
                 showResult ? 'bg-green-100 border-green-400' : 'bg-pink-50 border-dashed border-pink-400'
               }`}>
-              {showResult ? <span className="text-4xl">{getCorrectAnswer()}</span> : <span className="text-3xl text-pink-400">❓</span>}
+              {showResult ? <span className="text-4xl">{getCorrectAnswer()}</span> : <span className="text-3xl text-pink-400">{t('early.modules.PatternPatrol.spn_', '❓')}</span>}
             </motion.div>
           </div>
 

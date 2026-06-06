@@ -372,7 +372,7 @@ export default function AdventureMap({ onComplete }: { onComplete: () => void })
               )}
               {feedback === 'wrong' && (
                 <motion.p
-                  className="text-center mt-4 text-red-400 font-bold text-lg"
+                  className="text-center mt-4 text-orange-400 font-bold text-lg"
                   initial={{ x: -10 }}
                   animate={{ x: [10, -10, 10, 0] }}
                   transition={{ duration: 0.4 }}

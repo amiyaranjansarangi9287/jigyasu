@@ -1,0 +1,4506 @@
+[
+  {
+    "id": "[MNI] toybox-rainbow-blocks",
+    "name": "[MNI] Rainbow Stacking Blocks",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 1-2 hours",
+    "description": "[MNI] Create a beautiful set of rainbow-colored wooden blocks perfect for stacking, sorting, and creative play. These timeless toys spark imagination and help develop fine motor skills.",
+    "image": "[MNI] /images/blocks.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[MNI] Wooden blocks or lumber scraps",
+        "quantity": "[MNI] 12-20 pieces"
+      },
+      {
+        "name": "Sandpaper",
+        "quantity": "[MNI] Fine and medium grit"
+      },
+      {
+        "name": "[MNI] Non-toxic acrylic paint",
+        "quantity": "[MNI] Rainbow colors"
+      },
+      {
+        "name": "[MNI] Clear sealant",
+        "quantity": "[MNI] 1 can",
+        "optional": true
+      },
+      {
+        "name": "Paintbrushes",
+        "quantity": "3-4"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Prepare the Wood",
+        "description": "[MNI] Start by selecting your wooden pieces. If using lumber scraps, cut them into various shapes - rectangles, squares, triangles, and arches. Sand all surfaces smooth, starting with medium grit sandpaper and finishing with fine grit. Pay special attention to edges and corners to ensure they are rounded and safe for little hands.",
+        "tip": "[MNI] Pre-cut wooden blocks from craft stores work great and save time!",
+        "duration": "[MNI] 30 min"
+      },
+      {
+        "title": "[MNI] Plan Your Rainbow",
+        "description": "[MNI] Lay out your blocks and decide which colors will go on each piece. A classic rainbow progression (red, orange, yellow, green, blue, purple) works beautifully. Consider painting blocks of similar sizes in the same color for a cohesive set.",
+        "tip": "[MNI] Take a photo of your layout plan for reference while painting.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Apply Base Coats",
+        "description": "[MNI] Paint each block with its designated color. Apply thin, even coats and let dry completely between applications. Most blocks will need 2-3 coats for full coverage.",
+        "tip": "[MNI] Use a cardboard box to hold blocks upright while drying.",
+        "duration": "[MNI] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MNI] Add Details (Optional)",
+        "description": "[MNI] Once base coats are dry, add fun details like dots, stripes, or simple patterns. You can also leave them solid for a classic look.",
+        "duration": "[MNI] 20 min"
+      },
+      {
+        "title": "[MNI] Seal and Finish",
+        "description": "[MNI] Apply a clear, non-toxic sealant to protect the paint and make blocks more durable. Let dry completely (24 hours recommended) before play.",
+        "tip": "[MNI] Water-based polyurethane is safe once fully cured.",
+        "duration": "[MNI] 15 min",
+        "parentHelp": true
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Use only non-toxic, child-safe paints and sealants",
+      "[MNI] Ensure all edges are well-sanded and smooth",
+      "[MNI] Adult supervision required for cutting and sealing",
+      "[MNI] Allow full curing time before giving to children"
+    ],
+    "learningOutcomes": [
+      "[MNI] Fine motor skills",
+      "[MNI] Color recognition",
+      "[MNI] Spatial awareness",
+      "[MNI] Creative thinking"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] toybox-wooden-car",
+    "name": "[MNI] Wooden Auto-Rickshaw (Tuk-Tuk)",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MNI] 2-3 hours",
+    "description": "[MNI] Construct your very own wooden Auto-Rickshaw! Learn the physics of axles and wheels as you design and paint the iconic three-wheeled vehicle that navigates busy Indian streets.",
+    "image": "[MNI] /images/wooden-car.webp",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 124,
+    "materials": [
+      {
+        "name": "[MNI] Wood block",
+        "quantity": "[MNI] 6\" x 3\" x 2\""
+      },
+      {
+        "name": "[MNI] Wooden wheels",
+        "quantity": "[MNI] 4 pieces"
+      },
+      {
+        "name": "[MNI] Wooden dowels",
+        "quantity": "[MNI] 2 pieces, 4\" each"
+      },
+      {
+        "name": "Sandpaper",
+        "quantity": "[MNI] Various grits"
+      },
+      {
+        "name": "[MNI] Wood glue"
+      },
+      {
+        "name": "[MNI] Non-toxic paint",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Shape the Car Body",
+        "description": "[MNI] Draw the car profile on your wood block - a simple curved top works best. Using a saw or pre-cut the shape, then sand all surfaces smooth.",
+        "duration": "[MNI] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MNI] Drill Axle Holes",
+        "description": "[MNI] Mark where the axle holes will go on both sides of the car body. Drill straight through, ensuring holes align perfectly.",
+        "tip": "[MNI] Use a drill press for perfectly aligned holes.",
+        "duration": "[MNI] 15 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MNI] Prepare Wheels and Axles",
+        "description": "[MNI] Sand the wheels smooth. Cut dowels to length for axles, leaving room for wheels plus a small gap.",
+        "duration": "[MNI] 20 min"
+      },
+      {
+        "title": "[MNI] Assemble the Car",
+        "description": "[MNI] Insert axles through the car body. Attach wheels to each end with a dab of wood glue. Ensure wheels spin freely.",
+        "tip": "[MNI] Don't use too much glue - wheels need to spin!",
+        "duration": "[MNI] 20 min"
+      },
+      {
+        "title": "[MNI] Paint and Finish",
+        "description": "[MNI] Once glue is dry, paint your car in your favorite colors. Add details like windows, headlights, or racing stripes. Apply sealant and let cure.",
+        "duration": "[MNI] 40 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Adult supervision required for all cutting and drilling",
+      "[MNI] Wear safety glasses when using power tools",
+      "[MNI] Use non-toxic finishes only"
+    ],
+    "learningOutcomes": [
+      "[MNI] Basic woodworking",
+      "[MNI] Wheel and axle mechanics",
+      "[MNI] Planning and execution",
+      "[MNI] Fine motor skills"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] toybox-plush-bear",
+    "name": "[MNI] Cuddly Plush Bear",
+    "pillar": "toybox",
+    "category": "Plush",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MNI] 3-4 hours",
+    "description": "[MNI] Sew your own adorable teddy bear with soft fabric and button eyes. A perfect cuddly companion that makes a wonderful gift.",
+    "image": "[MNI] /images/plush-bear.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[MNI] Soft fabric (fleece or felt)",
+        "quantity": "[MNI] 1/2 yard"
+      },
+      {
+        "name": "Stuffing",
+        "quantity": "[MNI] 1 bag polyester filling"
+      },
+      {
+        "name": "Thread",
+        "quantity": "[MNI] Matching color"
+      },
+      {
+        "name": "Buttons",
+        "quantity": "[MNI] 2 for eyes"
+      },
+      {
+        "name": "[MNI] Embroidery thread",
+        "quantity": "[MNI] For nose and mouth"
+      },
+      {
+        "name": "[MNI] Needle and pins"
+      },
+      {
+        "name": "Scissors"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Cut Pattern Pieces",
+        "description": "[MNI] Print or draw a simple bear pattern. Cut out body (2), arms (4), legs (4), ears (4), and head pieces from your fabric.",
+        "duration": "[MNI] 30 min"
+      },
+      {
+        "title": "[MNI] Sew Body Parts",
+        "description": "[MNI] With right sides together, sew arm pairs, leg pairs, and ears. Leave openings for turning. Turn right side out.",
+        "duration": "[MNI] 45 min"
+      },
+      {
+        "title": "[MNI] Create the Face",
+        "description": "[MNI] Attach button eyes securely. Embroider a simple nose and smile using satin stitch.",
+        "tip": "[MNI] For younger children, embroider eyes instead of buttons for safety.",
+        "duration": "[MNI] 30 min"
+      },
+      {
+        "title": "[MNI] Assemble the Bear",
+        "description": "[MNI] Sew head pieces together, attaching ears. Join body pieces, inserting arms and legs as you go. Leave opening for stuffing.",
+        "duration": "[MNI] 45 min"
+      },
+      {
+        "title": "[MNI] Stuff and Close",
+        "description": "[MNI] Fill bear firmly with stuffing, shaping as you go. Hand-stitch the opening closed with a ladder stitch.",
+        "duration": "[MNI] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Secure button eyes very tightly or use embroidered eyes for young children",
+      "[MNI] Supervise needle use with younger sewers",
+      "[MNI] Check for loose threads or weak seams"
+    ],
+    "learningOutcomes": [
+      "[MNI] Sewing skills",
+      "[MNI] Pattern reading",
+      "[MNI] Patience and attention to detail",
+      "[MNI] Gift-giving mindset"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] toybox-recycled-robot",
+    "name": "[MNI] Recycled Robot",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 1-2 hours",
+    "description": "[MNI] Transform recyclable materials into an awesome robot friend! This eco-friendly project teaches creativity and environmental awareness.",
+    "image": "[MNI] /images/robot.webp",
+    "rating": 4.6,
+    "reviewCount": 142,
+    "materials": [
+      {
+        "name": "[MNI] Cardboard boxes",
+        "quantity": "[MNI] Various sizes"
+      },
+      {
+        "name": "[MNI] Bottle caps"
+      },
+      {
+        "name": "[MNI] Aluminum foil"
+      },
+      {
+        "name": "[MNI] Toilet paper rolls",
+        "quantity": "[MNI] 4 for limbs"
+      },
+      {
+        "name": "[MNI] Paint and markers"
+      },
+      {
+        "name": "[MNI] Glue gun",
+        "optional": true
+      },
+      {
+        "name": "[MNI] Craft glue"
+      },
+      {
+        "name": "[MNI] Pipe cleaners",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Gather Materials",
+        "description": "[MNI] Collect various recyclables - boxes, bottles, caps, tubes. Clean everything thoroughly. Lay out materials and envision your robot.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Build the Body",
+        "description": "[MNI] Select a medium box for the body and a smaller one for the head. Cover with aluminum foil or paint silver for a robotic look.",
+        "duration": "[MNI] 25 min"
+      },
+      {
+        "title": "[MNI] Add Limbs",
+        "description": "[MNI] Attach toilet paper rolls or paper towel tubes as arms and legs. Secure with glue and reinforce with tape if needed.",
+        "duration": "[MNI] 20 min"
+      },
+      {
+        "title": "[MNI] Create the Face",
+        "description": "[MNI] Use bottle caps for eyes, buttons for a nose, and draw or add a mouth. Get creative with antennae using pipe cleaners!",
+        "duration": "[MNI] 20 min"
+      },
+      {
+        "title": "[MNI] Add Details",
+        "description": "[MNI] Decorate with buttons, dials, screens drawn on paper, or any creative additions. Name your robot!",
+        "duration": "[MNI] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Adult supervision required for hot glue gun",
+      "[MNI] Wash all recyclables before use",
+      "[MNI] Check for sharp edges on cans or lids"
+    ],
+    "learningOutcomes": [
+      "[MNI] Environmental awareness",
+      "[MNI] Creative reuse",
+      "Problem-solving",
+      "[MNI] Imaginative play"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] toybox-balsa-airplane",
+    "name": "[MNI] Balsa Wood Airplane",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[MNI] 3-4 hours",
+    "description": "[MNI] Craft a beautiful balsa wood biplane that actually flies! Learn about aerodynamics while building this classic model.",
+    "image": "[MNI] /images/airplane.webp",
+    "rating": 4.8,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[MNI] Balsa wood sheets",
+        "quantity": "[MNI] 3 sheets, 1/8\" thick"
+      },
+      {
+        "name": "[MNI] Balsa wood sticks",
+        "quantity": "[MNI] Various sizes"
+      },
+      {
+        "name": "[MNI] Wood glue"
+      },
+      {
+        "name": "[MNI] Craft knife"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "Paint",
+        "optional": true
+      },
+      {
+        "name": "[MNI] Rubber bands"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Cut Wing Pieces",
+        "description": "[MNI] Trace wing templates onto balsa sheets. Carefully cut out upper and lower wings using a craft knife. Sand edges smooth.",
+        "duration": "[MNI] 40 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MNI] Build the Fuselage",
+        "description": "[MNI] Cut and assemble the body of the plane using balsa sticks. Create a frame that is sturdy but lightweight.",
+        "duration": "[MNI] 45 min"
+      },
+      {
+        "title": "[MNI] Attach Wings",
+        "description": "[MNI] Glue wings to fuselage at slight upward angles for better lift. Use struts between upper and lower wings.",
+        "tip": "[MNI] Let each glue joint dry before moving to the next.",
+        "duration": "[MNI] 30 min"
+      },
+      {
+        "title": "[MNI] Add Tail Assembly",
+        "description": "[MNI] Create and attach horizontal stabilizer and vertical tail fin. These are crucial for flight stability.",
+        "duration": "[MNI] 25 min"
+      },
+      {
+        "title": "[MNI] Finish and Test Fly",
+        "description": "[MNI] Sand entire plane smooth. Paint if desired. Add a propeller with rubber band power. Test fly and adjust as needed!",
+        "duration": "[MNI] 40 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Adult supervision required for craft knife use",
+      "[MNI] Balsa wood splinters easily - handle with care",
+      "[MNI] Fly in open areas away from people"
+    ],
+    "learningOutcomes": [
+      "[MNI] Aerodynamics basics",
+      "[MNI] Precision building",
+      "[MNI] Physics of flight",
+      "[MNI] Patience and persistence"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] toybox-dollhouse",
+    "name": "[MNI] Miniature Dollhouse",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[MNI] 4-6 hours",
+    "description": "[MNI] Construct a charming miniature dollhouse with multiple rooms. Add tiny furniture and decorations for endless imaginative play.",
+    "image": "[MNI] /images/dollhouse.webp",
+    "rating": 4.9,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[MNI] Cardboard or foam board",
+        "quantity": "[MNI] Large sheets"
+      },
+      {
+        "name": "[MNI] Craft knife"
+      },
+      {
+        "name": "Ruler"
+      },
+      {
+        "name": "Glue"
+      },
+      {
+        "name": "[MNI] Scrapbook paper",
+        "quantity": "[MNI] For wallpaper"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "[MNI] Small boxes",
+        "quantity": "[MNI] For furniture"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Design Floor Plan",
+        "description": "[MNI] Sketch your dollhouse design. Decide on number of rooms and floors. Calculate measurements for walls and floors.",
+        "duration": "[MNI] 20 min"
+      },
+      {
+        "title": "[MNI] Cut Structural Pieces",
+        "description": "[MNI] Cut out walls, floors, and roof pieces from cardboard or foam board. Include window and door openings.",
+        "duration": "[MNI] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MNI] Assemble Structure",
+        "description": "[MNI] Glue walls together, add floors to create stories. Install the roof. Reinforce corners with extra cardboard strips.",
+        "duration": "[MNI] 1 hour"
+      },
+      {
+        "title": "[MNI] Decorate Interior",
+        "description": "[MNI] Apply scrapbook paper as wallpaper. Paint trim and details. Add flooring paper or felt rugs.",
+        "duration": "[MNI] 1 hour"
+      },
+      {
+        "title": "[MNI] Create Furniture",
+        "description": "[MNI] Make tiny furniture from small boxes, spools, and scraps. Add beds, tables, chairs, and decorations.",
+        "duration": "[MNI] 1 hour"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Adult supervision for cutting",
+      "[MNI] Use sharp blades carefully with cutting mat",
+      "[MNI] Small pieces may be choking hazards for young children"
+    ],
+    "learningOutcomes": [
+      "[MNI] Architectural thinking",
+      "[MNI] Scale and proportion",
+      "[MNI] Interior design",
+      "[MNI] Long-term project planning"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] toybox-animal-puzzle",
+    "name": "[MNI] Wooden Animal Puzzle",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 1-2 hours",
+    "description": "[MNI] Create chunky wooden puzzles featuring adorable animals. Perfect for little hands learning shapes and problem-solving.",
+    "image": "[MNI] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 118,
+    "materials": [
+      {
+        "name": "Plywood",
+        "quantity": "[MNI] 1/2\" thick, 8\" x 10\""
+      },
+      {
+        "name": "[MNI] Scroll saw or jigsaw"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "[MNI] Non-toxic paint"
+      },
+      {
+        "name": "[MNI] Clear sealant"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Draw Design",
+        "description": "[MNI] Draw a simple animal shape on the plywood - elephant, cat, or dog work great. Keep shapes chunky with rounded edges.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Cut Outer Shape",
+        "description": "[MNI] Use a scroll saw to cut out the animal shape from the plywood. Sand all edges smooth.",
+        "duration": "[MNI] 20 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MNI] Create Puzzle Pieces",
+        "description": "[MNI] Draw puzzle piece divisions on the animal. Cut along these lines to create 4-8 interlocking pieces.",
+        "duration": "[MNI] 25 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MNI] Paint Pieces",
+        "description": "[MNI] Paint each puzzle piece in bright colors. You can paint both sides or just the top.",
+        "duration": "[MNI] 30 min"
+      },
+      {
+        "title": "[MNI] Seal and Assemble",
+        "description": "[MNI] Apply clear sealant to protect paint. Once dry, assemble your puzzle and test the fit!",
+        "duration": "[MNI] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Adult use only for power saws",
+      "[MNI] Sand thoroughly - no splinters",
+      "[MNI] Use child-safe paints and sealants"
+    ],
+    "learningOutcomes": [
+      "Problem-solving",
+      "[MNI] Shape recognition",
+      "[MNI] Hand-eye coordination",
+      "Patience"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] toybox-train-set",
+    "name": "[MNI] Classic Train Set",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[MNI] 4-5 hours",
+    "description": "[MNI] Build a complete wooden train set with engine, cars, and track pieces. A challenging project with rewarding results.",
+    "image": "[MNI] /images/train.webp",
+    "rating": 4.8,
+    "reviewCount": 64,
+    "materials": [
+      {
+        "name": "[MNI] Wood blocks",
+        "quantity": "[MNI] Various sizes"
+      },
+      {
+        "name": "[MNI] Wooden wheels",
+        "quantity": "20+"
+      },
+      {
+        "name": "Dowels",
+        "quantity": "[MNI] For axles and connectors"
+      },
+      {
+        "name": "[MNI] Wood glue"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "[MNI] Small hooks and eyes",
+        "quantity": "[MNI] For connecting cars"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Design Train Cars",
+        "description": "[MNI] Sketch designs for engine, coal car, cargo cars, and caboose. Plan wheel placement and connection points.",
+        "duration": "[MNI] 20 min"
+      },
+      {
+        "title": "[MNI] Cut and Shape",
+        "description": "[MNI] Cut wood blocks to size for each car. Shape the engine with a rounded front. Sand everything smooth.",
+        "duration": "[MNI] 1 hour",
+        "parentHelp": true
+      },
+      {
+        "title": "[MNI] Add Wheels",
+        "description": "[MNI] Drill holes for axles. Insert dowels and attach wheels. Ensure wheels spin freely.",
+        "duration": "[MNI] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MNI] Paint and Detail",
+        "description": "[MNI] Paint each car in classic train colors. Add windows, cargo details, and decorations.",
+        "duration": "[MNI] 1 hour"
+      },
+      {
+        "title": "[MNI] Connect Cars",
+        "description": "[MNI] Attach hooks to front and eyes to back of each car. Test connections. Create track pieces if desired.",
+        "duration": "[MNI] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Adult supervision for all cutting and drilling",
+      "[MNI] Check small parts are secure",
+      "[MNI] Test wheel attachment strength"
+    ],
+    "learningOutcomes": [
+      "[MNI] Complex project planning",
+      "[MNI] Mechanical connections",
+      "[MNI] Precision work",
+      "[MNI] Transportation history"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] toybox-marble-run",
+    "name": "[MNI] Marble Run Adventure",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MNI] 2-3 hours",
+    "description": "[MNI] Engineer an exciting marble run with twists, turns, and drops. Watch marbles race through your custom creation!",
+    "image": "[MNI] /images/marble-run.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 189,
+    "materials": [
+      {
+        "name": "[MNI] Cardboard tubes",
+        "quantity": "[MNI] 10-15 various sizes"
+      },
+      {
+        "name": "[MNI] Cardboard sheets"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "Marbles",
+        "quantity": "5-10"
+      },
+      {
+        "name": "[MNI] Base board"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Plan Your Run",
+        "description": "[MNI] Sketch the path marbles will take. Plan starting height, turns, tunnels, and landing. Remember: gravity is your friend!",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Create Track Pieces",
+        "description": "[MNI] Cut tubes in half lengthwise for open tracks. Cut various lengths. Create funnels and catch points.",
+        "duration": "[MNI] 30 min"
+      },
+      {
+        "title": "[MNI] Build Support Structure",
+        "description": "[MNI] Create cardboard supports to hold tracks at different heights. Build a sturdy base for everything.",
+        "duration": "[MNI] 30 min"
+      },
+      {
+        "title": "[MNI] Assemble the Run",
+        "description": "[MNI] Attach tracks to supports, ensuring smooth transitions. Test with marbles as you build. Adjust angles as needed.",
+        "duration": "[MNI] 45 min"
+      },
+      {
+        "title": "[MNI] Test and Improve",
+        "description": "[MNI] Run marbles through multiple times. Fix any stuck points. Add fun features like jumps or spinners!",
+        "duration": "[MNI] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Marbles are choking hazards - supervise young children",
+      "[MNI] Use scissors carefully",
+      "[MNI] Ensure structure is stable"
+    ],
+    "learningOutcomes": [
+      "[MNI] Physics and gravity",
+      "[MNI] Engineering design",
+      "Problem-solving",
+      "[MNI] Cause and effect"
+    ],
+    "crossPillar": [
+      "[MNI] sciencelab-balloon-rocket"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "toybox-tangram",
+    "name": "[MNI] Tangram Puzzle Set",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 1 hour",
+    "description": "[MNI] Create the ancient Chinese puzzle of seven shapes that form endless patterns. A timeless brain teaser!",
+    "image": "[MNI] /images/puzzle.webp",
+    "rating": 4.6,
+    "reviewCount": 92,
+    "materials": [
+      {
+        "name": "[MNI] Foam board or wood",
+        "quantity": "[MNI] 6\" x 6\" square"
+      },
+      {
+        "name": "Ruler"
+      },
+      {
+        "name": "Pencil"
+      },
+      {
+        "name": "[MNI] Craft knife or saw"
+      },
+      {
+        "name": "[MNI] Paint or markers",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Draw the Grid",
+        "description": "[MNI] Draw a 4x4 grid on your square. This helps position the seven tangram pieces correctly.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Mark Tangram Shapes",
+        "description": "[MNI] Following a tangram diagram, mark the seven shapes: 2 large triangles, 1 medium triangle, 2 small triangles, 1 square, 1 parallelogram.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Cut Pieces",
+        "description": "[MNI] Carefully cut along your marked lines to create the seven pieces. Sand or smooth edges.",
+        "duration": "[MNI] 20 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MNI] Color Pieces",
+        "description": "[MNI] Paint each piece a different color for visual appeal and easier identification.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Try Puzzles",
+        "description": "[MNI] Challenge yourself to make shapes - animals, people, objects. Look up tangram puzzles online for ideas!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Adult supervision for cutting",
+      "[MNI] Small pieces can be choking hazards"
+    ],
+    "learningOutcomes": [
+      "[MNI] Spatial reasoning",
+      "[MNI] Geometry basics",
+      "Problem-solving",
+      "[MNI] Pattern recognition"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] toybox-3d-puzzle",
+    "name": "[MNI] 3D Animal Puzzle",
+    "pillar": "toybox",
+    "category": "Puzzles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MNI] 2 hours",
+    "description": "[MNI] Build a 3D puzzle that assembles into an animal sculpture. Pieces slot together without glue!",
+    "image": "[MNI] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 78,
+    "materials": [
+      {
+        "name": "[MNI] Cardboard or foam board",
+        "quantity": "[MNI] 2-3 sheets"
+      },
+      {
+        "name": "[MNI] Template printout"
+      },
+      {
+        "name": "[MNI] Craft knife"
+      },
+      {
+        "name": "[MNI] Cutting mat"
+      },
+      {
+        "name": "Paint",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Print Templates",
+        "description": "[MNI] Find or create 3D puzzle templates. Print at full size. Choose an animal like an elephant or dinosaur.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Transfer to Board",
+        "description": "[MNI] Trace or glue templates to your cardboard or foam board. Mark all slot positions clearly.",
+        "duration": "[MNI] 20 min"
+      },
+      {
+        "title": "[MNI] Cut Pieces",
+        "description": "[MNI] Carefully cut out each piece including the slots. Slots should be as wide as your material thickness.",
+        "duration": "[MNI] 45 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MNI] Test Fit",
+        "description": "[MNI] Try assembling the puzzle. Adjust slots if pieces are too tight or loose.",
+        "duration": "[MNI] 20 min"
+      },
+      {
+        "title": "[MNI] Decorate and Finish",
+        "description": "[MNI] Disassemble, paint pieces, let dry, then reassemble your 3D sculpture!",
+        "duration": "[MNI] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Sharp blade use requires adult supervision",
+      "[MNI] Always cut on a cutting mat",
+      "[MNI] Cut away from your body"
+    ],
+    "learningOutcomes": [
+      "[MNI] 3D spatial thinking",
+      "[MNI] Assembly skills",
+      "[MNI] Following templates",
+      "[MNI] Fine motor control"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] toybox-chess-set",
+    "name": "[MNI] Wooden Chess Set",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[MNI] 6-8 hours",
+    "description": "[MNI] Carve and shape your own chess pieces, then build a board. A challenging project that creates a family heirloom!",
+    "image": "[MNI] /images/blocks.webp",
+    "rating": 4.9,
+    "reviewCount": 54,
+    "materials": [
+      {
+        "name": "[MNI] Wood blocks",
+        "quantity": "[MNI] Enough for 32 pieces"
+      },
+      {
+        "name": "[MNI] Plywood for board",
+        "quantity": "[MNI] 16\" x 16\""
+      },
+      {
+        "name": "[MNI] Carving tools"
+      },
+      {
+        "name": "Sandpaper"
+      },
+      {
+        "name": "[MNI] Paint or wood stain"
+      },
+      {
+        "name": "[MNI] Clear finish"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Design Pieces",
+        "description": "[MNI] Sketch simplified designs for each piece type: King, Queen, Bishop, Knight, Rook, Pawn. Keep shapes recognizable but achievable.",
+        "duration": "[MNI] 30 min"
+      },
+      {
+        "title": "[MNI] Shape Pawns",
+        "description": "[MNI] Start with 16 pawns - the simplest pieces. Shape, sand smooth. Get consistent sizing.",
+        "duration": "[MNI] 1.5 hours",
+        "parentHelp": true
+      },
+      {
+        "title": "[MNI] Carve Major Pieces",
+        "description": "[MNI] Work on Kings, Queens, Bishops, Knights, and Rooks. Take your time on details.",
+        "duration": "[MNI] 3 hours",
+        "parentHelp": true
+      },
+      {
+        "title": "[MNI] Create Board",
+        "description": "[MNI] Mark 64 squares (8x8 grid) on plywood. Paint or stain alternating squares. Apply finish.",
+        "duration": "[MNI] 1.5 hours"
+      },
+      {
+        "title": "[MNI] Finish Pieces",
+        "description": "[MNI] Paint or stain pieces in two colors. Apply protective finish. Let cure completely.",
+        "duration": "[MNI] 1 hour"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Carving tools are very sharp - adult only or close supervision",
+      "[MNI] Carve away from body",
+      "[MNI] Use proper ventilation with stains and finishes"
+    ],
+    "learningOutcomes": [
+      "[MNI] Advanced woodworking",
+      "[MNI] Strategic game appreciation",
+      "[MNI] Patience and persistence",
+      "[MNI] Artistic expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] toybox-ring-toss",
+    "name": "[MNI] Ring Toss Game",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 1 hour",
+    "description": "[MNI] Build a classic ring toss game for indoor or outdoor fun. Perfect for parties and family game nights!",
+    "image": "[MNI] /images/blocks.webp",
+    "rating": 4.5,
+    "reviewCount": 108,
+    "materials": [
+      {
+        "name": "[MNI] Wooden base",
+        "quantity": "[MNI] 12\" x 12\""
+      },
+      {
+        "name": "[MNI] Wooden dowels",
+        "quantity": "[MNI] 5 pieces, 8\" tall"
+      },
+      {
+        "name": "[MNI] Rope or embroidery hoops",
+        "quantity": "[MNI] For rings"
+      },
+      {
+        "name": "Paint"
+      },
+      {
+        "name": "Drill"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Prepare Base",
+        "description": "[MNI] Sand wooden base smooth. Mark positions for 5 pegs - one center, four corners.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Install Pegs",
+        "description": "[MNI] Drill holes for dowels. Glue dowels into holes. Paint different point values on each peg.",
+        "duration": "[MNI] 25 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MNI] Create Rings",
+        "description": "[MNI] Make rings from rope (form circles and tape/glue ends) or use embroidery hoops. Make 5-6 rings.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[MNI] Paint the base and pegs in bright colors. Add numbers for scoring.",
+        "duration": "[MNI] 20 min"
+      },
+      {
+        "title": "Play!",
+        "description": "[MNI] Set up, stand back, and toss rings! Highest score wins. Adjust distance for difficulty.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Adult help needed for drilling",
+      "[MNI] Ensure pegs are secure before playing"
+    ],
+    "learningOutcomes": [
+      "[MNI] Hand-eye coordination",
+      "[MNI] Basic math (scoring)",
+      "Sportsmanship",
+      "[MNI] Motor skills"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] toybox-memory-game",
+    "name": "[MNI] Memory Matching Game",
+    "pillar": "toybox",
+    "category": "Games",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 45 min",
+    "description": "[MNI] Create a personalized memory matching game with your own artwork. Great for brain training!",
+    "image": "[MNI] /images/blocks.webp",
+    "rating": 4.6,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "Cardstock",
+        "quantity": "[MNI] 24-32 squares"
+      },
+      {
+        "name": "[MNI] Markers or crayons"
+      },
+      {
+        "name": "Stickers",
+        "optional": true
+      },
+      {
+        "name": "[MNI] Clear contact paper",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Cut Cards",
+        "description": "[MNI] Cut cardstock into equal-sized squares (2\" x 2\" works well). Make an even number - 24 or 32 cards.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Create Pairs",
+        "description": "[MNI] Draw matching images on pairs of cards. Use shapes, animals, letters, or family photos!",
+        "duration": "[MNI] 25 min"
+      },
+      {
+        "title": "[MNI] Add Backs",
+        "description": "[MNI] Decorate all card backs identically so pairs can't be identified from behind.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Protect (Optional)",
+        "description": "[MNI] Cover cards with clear contact paper or laminate for durability.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "Play!",
+        "description": "[MNI] Shuffle and lay face down. Take turns flipping two cards. Match pairs to win!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Scissors supervision for young children"
+    ],
+    "learningOutcomes": [
+      "[MNI] Memory skills",
+      "Concentration",
+      "[MNI] Visual recognition",
+      "Turn-taking"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] toybox-kaleidoscope",
+    "name": "Kaleidoscope",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MNI] 1 hour",
+    "description": "[MNI] Build a working kaleidoscope with mirrors and colorful beads. See the world in beautiful patterns!",
+    "image": "[MNI] /images/blocks.webp",
+    "rating": 4.7,
+    "reviewCount": 96,
+    "materials": [
+      {
+        "name": "[MNI] Cardboard tube",
+        "quantity": "[MNI] 8-10\" long"
+      },
+      {
+        "name": "[MNI] Mirror sheets or reflective paper",
+        "quantity": "[MNI] 3 strips"
+      },
+      {
+        "name": "[MNI] Clear plastic discs",
+        "quantity": "2"
+      },
+      {
+        "name": "[MNI] Beads and sequins"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[MNI] Decorative paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Create Mirror Triangle",
+        "description": "[MNI] Cut three mirror strips that fit inside your tube. Tape them together to form a triangle, reflective sides facing in.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Prepare Tube",
+        "description": "[MNI] Cut a viewing hole in one end cap. The mirror triangle should fit snugly inside the tube.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Insert Mirrors",
+        "description": "[MNI] Carefully slide the mirror triangle into the tube. Secure in place.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Create Object Chamber",
+        "description": "[MNI] At the other end, sandwich beads and sequins between two clear plastic discs. Attach to tube end.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[MNI] Cover the outside with decorative paper. Add your name and designs!",
+        "duration": "[MNI] 15 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Handle mirrors carefully - edges can be sharp",
+      "[MNI] Don't look at bright lights through kaleidoscope"
+    ],
+    "learningOutcomes": [
+      "[MNI] Light and reflection",
+      "Symmetry",
+      "[MNI] Pattern recognition",
+      "[MNI] Optics basics"
+    ],
+    "crossPillar": [
+      "[MNI] sciencelab-invisible-ink"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "toybox-catapult",
+    "name": "[MNI] Wooden Catapult",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "9-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MNI] 1.5 hours",
+    "description": "[MNI] Build a working catapult that launches small objects. Learn about lever physics and stored energy!",
+    "image": "[MNI] /images/blocks.webp",
+    "rating": 4.8,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[MNI] Popsicle sticks",
+        "quantity": "15-20"
+      },
+      {
+        "name": "[MNI] Rubber bands",
+        "quantity": "5-6"
+      },
+      {
+        "name": "[MNI] Plastic spoon"
+      },
+      {
+        "name": "[MNI] Small pompoms or marshmallows",
+        "quantity": "[MNI] For launching"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Create the Base",
+        "description": "[MNI] Stack 5-7 popsicle sticks and rubber band both ends. This creates a sturdy base.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Build Launch Arm",
+        "description": "[MNI] Take 2 sticks and rubber band only ONE end. Open the other end like scissors.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Combine Base and Arm",
+        "description": "[MNI] Insert the base stack perpendicular into the launch arm opening. Secure with rubber bands.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Add Launching Cup",
+        "description": "[MNI] Attach plastic spoon to the end of the launch arm with rubber bands.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Test and Adjust",
+        "description": "[MNI] Load, aim, and launch! Adjust rubber band tension and fulcrum position for better distance.",
+        "duration": "[MNI] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Only launch soft objects like pompoms",
+      "[MNI] Never aim at people or animals",
+      "[MNI] Launch in clear areas"
+    ],
+    "learningOutcomes": [
+      "[MNI] Lever mechanics",
+      "[MNI] Potential and kinetic energy",
+      "[MNI] Engineering iteration",
+      "[MNI] Physics concepts"
+    ],
+    "crossPillar": [
+      "[MNI] sciencelab-egg-drop"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] toybox-balancing-eagle",
+    "name": "[MNI] Balancing Eagle",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 45 min",
+    "description": "[MNI] Create a bird that balances on its beak! Learn about center of gravity with this fun physics toy.",
+    "image": "[MNI] /images/airplane.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "[MNI] Cardstock or cardboard"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[MNI] Pennies or coins",
+        "quantity": "2"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[MNI] Markers for decoration"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Draw Eagle Shape",
+        "description": "[MNI] Draw a simple eagle with spread wings on cardstock. Wings should extend outward and slightly downward.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Cut Out Shape",
+        "description": "[MNI] Carefully cut out your eagle. Keep the beak pointed.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Add Weights",
+        "description": "[MNI] Tape a penny under each wing tip. These create the counterbalance.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Find Balance Point",
+        "description": "[MNI] Adjust coin position until the eagle balances on its beak when placed on your finger.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[MNI] Color your eagle with markers. Try balancing on different surfaces!",
+        "duration": "[MNI] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Scissors supervision for young children"
+    ],
+    "learningOutcomes": [
+      "[MNI] Center of gravity",
+      "[MNI] Balance and counterweight",
+      "[MNI] Physics experimentation",
+      "[MNI] Fine motor skills"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] toybox-paper-launcher",
+    "name": "[MNI] Paper Airplane Launcher",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MNI] 1 hour",
+    "description": "[MNI] Build a rubber band launcher that sends paper airplanes soaring! Combine engineering and flight.",
+    "image": "[MNI] /images/airplane.webp",
+    "rating": 4.6,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "Cardboard"
+      },
+      {
+        "name": "[MNI] Rubber bands",
+        "quantity": "[MNI] 3-5 strong ones"
+      },
+      {
+        "name": "[MNI] Popsicle sticks"
+      },
+      {
+        "name": "Paper",
+        "quantity": "[MNI] For airplanes"
+      },
+      {
+        "name": "[MNI] Tape and glue"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Build Launch Track",
+        "description": "[MNI] Create a cardboard track about 12\" long with raised edges to guide the airplane.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Create Tension System",
+        "description": "[MNI] Attach rubber bands to a crossbar at the back of the track. Create a pull-back mechanism.",
+        "duration": "[MNI] 20 min"
+      },
+      {
+        "title": "[MNI] Add Release Trigger",
+        "description": "[MNI] Design a simple trigger using popsicle sticks that holds and releases the rubber bands.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Make Paper Airplanes",
+        "description": "[MNI] Fold several paper airplanes. Test different designs to see which launches best.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Launch and Adjust",
+        "description": "[MNI] Load airplane, pull back, release! Adjust angle and tension for maximum distance.",
+        "duration": "[MNI] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Never aim at people",
+      "[MNI] Launch in open areas",
+      "[MNI] Be careful of snapping rubber bands"
+    ],
+    "learningOutcomes": [
+      "[MNI] Mechanical engineering",
+      "Aerodynamics",
+      "[MNI] Energy transfer",
+      "[MNI] Iterative design"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "toybox-kite",
+    "name": "[MNI] Diamond Kite",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MNI] 1.5 hours",
+    "description": "[MNI] Build a classic diamond kite that soars! Experience the joy of flight with this timeless project.",
+    "image": "[MNI] /images/airplane.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[MNI] Dowels or sticks",
+        "quantity": "[MNI] 2 pieces"
+      },
+      {
+        "name": "[MNI] Plastic bag or tissue paper"
+      },
+      {
+        "name": "String",
+        "quantity": "[MNI] Lots for flying!"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[MNI] Ribbon for tail"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Create Frame",
+        "description": "[MNI] Cross two sticks - vertical longer than horizontal. Tie firmly at intersection point.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Add Outline",
+        "description": "[MNI] Run string around the outside of the frame, creating the kite shape. Secure at each stick end.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Cover with Skin",
+        "description": "[MNI] Lay frame on plastic or paper. Cut with extra margin, fold over frame, and tape secure.",
+        "duration": "[MNI] 20 min"
+      },
+      {
+        "title": "[MNI] Attach Flying Line",
+        "description": "[MNI] Tie flying string to the intersection point. Create a bridle for better control if needed.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Add Tail and Fly",
+        "description": "[MNI] Attach a ribbon tail for stability. Find wind, run, and launch your kite!",
+        "duration": "[MNI] 30 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Never fly near power lines",
+      "[MNI] Fly in open areas away from trees",
+      "[MNI] Don't fly in storms"
+    ],
+    "learningOutcomes": [
+      "Aerodynamics",
+      "[MNI] Wind and weather",
+      "[MNI] Patience and persistence",
+      "[MNI] Outdoor appreciation"
+    ],
+    "crossPillar": [
+      "[MNI] outdoorquest-nature-hunt"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] toybox-rainstick",
+    "name": "Rainstick",
+    "pillar": "toybox",
+    "category": "Musical",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 45 min",
+    "description": "[MNI] Create a musical instrument that sounds like falling rain. Perfect for relaxation and rhythm activities!",
+    "image": "[MNI] /images/blocks.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[MNI] Cardboard tube",
+        "quantity": "[MNI] Paper towel or wrapping paper roll"
+      },
+      {
+        "name": "[MNI] Rice or small beans",
+        "quantity": "[MNI] 1/4 cup"
+      },
+      {
+        "name": "[MNI] Aluminum foil"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[MNI] Decorative paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Seal One End",
+        "description": "[MNI] Cover one end of the tube tightly with paper and tape.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Create Internal Spiral",
+        "description": "[MNI] Crinkle aluminum foil into a long snake. Twist it into a spiral and insert into the tube.",
+        "tip": "[MNI] The foil creates the rain sound by slowing the rice.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Add Rice",
+        "description": "[MNI] Pour rice or beans into the tube. Experiment with amounts for different sounds.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Seal Other End",
+        "description": "[MNI] Close the open end securely with paper and tape. Shake to test - adjust if needed.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "Decorate",
+        "description": "[MNI] Cover with decorative paper. Add designs inspired by rain, nature, or your own creativity!",
+        "duration": "[MNI] 20 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Ensure ends are sealed tightly",
+      "[MNI] Small items inside can be choking hazards if opened"
+    ],
+    "learningOutcomes": [
+      "[MNI] Sound and acoustics",
+      "[MNI] Rhythm and music",
+      "[MNI] Cultural instruments",
+      "[MNI] Sensory exploration"
+    ],
+    "crossPillar": [
+      "[MNI] artstudio-nature-collage"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] toybox-sock-puppet",
+    "name": "[MNI] Sock Puppet",
+    "pillar": "toybox",
+    "category": "Puppets",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 30 min",
+    "description": "[MNI] Transform an old sock into a fun puppet character. Perfect for storytelling and imaginative play!",
+    "image": "[MNI] /images/plush-bear.webp",
+    "rating": 4.5,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[MNI] Clean sock"
+      },
+      {
+        "name": "[MNI] Googly eyes",
+        "quantity": "2"
+      },
+      {
+        "name": "[MNI] Felt scraps"
+      },
+      {
+        "name": "Yarn",
+        "quantity": "[MNI] For hair"
+      },
+      {
+        "name": "[MNI] Fabric glue"
+      },
+      {
+        "name": "Buttons",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Plan Your Character",
+        "description": "[MNI] Decide what character your puppet will be - person, animal, monster? Gather materials in matching colors.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Add Eyes",
+        "description": "[MNI] Glue googly eyes or felt circles onto the toe area of the sock.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Create Mouth",
+        "description": "[MNI] Cut an oval of felt and glue inside the sock to create a mouth. Add a felt tongue if desired!",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Add Features",
+        "description": "[MNI] Glue on yarn hair, felt ears, buttons, or other features to complete your character.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Put on a Show!",
+        "description": "[MNI] Once glue is dry, put your hand in and bring your puppet to life!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Use fabric glue rather than hot glue with young children",
+      "[MNI] Buttons can be choking hazards - consider felt alternatives for young kids"
+    ],
+    "learningOutcomes": [
+      "[MNI] Creative expression",
+      "Storytelling",
+      "[MNI] Character development",
+      "[MNI] Communication skills"
+    ],
+    "crossPillar": [
+      "[MNI] artstudio-paper-plate-animals"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] toybox-finger-puppets",
+    "name": "[MNI] Felt Finger Puppets",
+    "pillar": "toybox",
+    "category": "Puppets",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 1 hour",
+    "description": "[MNI] Create a set of adorable finger puppets from felt. Make a whole cast of characters for stories!",
+    "image": "[MNI] /images/plush-bear.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[MNI] Felt sheets",
+        "quantity": "[MNI] Various colors"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[MNI] Fabric glue or needle and thread"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "[MNI] Small embellishments",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Cut Base Shapes",
+        "description": "[MNI] Cut two finger-sized rectangles with rounded tops for each puppet. These form the body.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Glue or Sew Edges",
+        "description": "[MNI] Join the two pieces along sides and top, leaving bottom open for your finger.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Add Faces",
+        "description": "[MNI] Cut tiny felt pieces for eyes, noses, mouths. Glue in place. Use markers for details.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Create Characters",
+        "description": "[MNI] Add ears for animals, hair for people, wings for birds. Get creative!",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Perform Stories",
+        "description": "[MNI] Put puppets on all fingers and act out stories. Make a mini theater from a box!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Supervise scissors use",
+      "[MNI] Use child-safe glue"
+    ],
+    "learningOutcomes": [
+      "[MNI] Fine motor skills",
+      "Storytelling",
+      "[MNI] Character creation",
+      "Imagination"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] toybox-rubber-band-car",
+    "name": "[MNI] Rubber Band Car",
+    "pillar": "toybox",
+    "category": "Vehicles",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 45 min",
+    "description": "[MNI] Build a car powered by rubber band energy! Watch it zoom across the floor.",
+    "image": "[MNI] /images/wooden-car.webp",
+    "rating": 4.6,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[MNI] Water bottle or small box"
+      },
+      {
+        "name": "[MNI] Bottle caps",
+        "quantity": "[MNI] 4 for wheels"
+      },
+      {
+        "name": "[MNI] Wooden skewers",
+        "quantity": "[MNI] 2 for axles"
+      },
+      {
+        "name": "[MNI] Rubber bands",
+        "quantity": "2-3"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "Scissors"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Prepare the Body",
+        "description": "[MNI] Clean your bottle or box. Poke holes on each side for axles to pass through.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Install Axles",
+        "description": "[MNI] Push skewers through the holes. They should spin freely.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Attach Wheels",
+        "description": "[MNI] Poke holes in bottle cap centers. Push onto skewer ends. Secure with tape or glue.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Add Rubber Band Power",
+        "description": "[MNI] Hook rubber band around rear axle. Attach other end to front of car body.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Wind and Race!",
+        "description": "[MNI] Roll car backward to wind rubber band. Release and watch it go! Race against friends.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Be careful with sharp skewer ends",
+      "[MNI] Don't aim at people when releasing"
+    ],
+    "learningOutcomes": [
+      "[MNI] Stored energy",
+      "[MNI] Simple machines",
+      "[MNI] Engineering design",
+      "[MNI] Cause and effect"
+    ],
+    "crossPillar": [
+      "[MNI] sciencelab-balloon-rocket"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] toybox-spinning-top",
+    "name": "[MNI] Wooden Spinning Top",
+    "pillar": "toybox",
+    "category": "Building",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 30 min",
+    "description": "[MNI] Craft a classic spinning top that twirls for ages. Decorate with colorful patterns that blend when spinning!",
+    "image": "[MNI] /images/blocks.webp",
+    "rating": 4.4,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[MNI] Cardboard circles",
+        "quantity": "[MNI] 2-3 sizes"
+      },
+      {
+        "name": "[MNI] Wooden dowel or pencil"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "Glue"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Create Disc",
+        "description": "[MNI] Cut a circle from cardboard, about 3-4 inches diameter. Ensure it's perfectly round.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Add Spindle",
+        "description": "[MNI] Poke a hole in exact center. Insert dowel or sharpened pencil. Glue in place.",
+        "tip": "[MNI] Center placement is crucial for good spinning!",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Decorate Top",
+        "description": "[MNI] Draw colorful patterns - spirals, stripes, dots. Colors will blend when spinning!",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Balance and Adjust",
+        "description": "[MNI] Spin test your top. If wobbly, check center alignment. Trim edges if uneven.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Spin Competitions",
+        "description": "[MNI] Practice spinning technique. Challenge friends - longest spin wins!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Pencil points can be sharp"
+    ],
+    "learningOutcomes": [
+      "[MNI] Rotational physics",
+      "[MNI] Balance and symmetry",
+      "[MNI] Color blending",
+      "[MNI] Fine motor control"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] jigyasulab-physics",
+    "name": "[MNI] Physics Lab",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "9-12",
+    "difficulty": "Medium",
+    "timeToMake": "Interactive",
+    "description": "[MNI] Enter the Physics Lab and explore mechanics, optics, and energy interactively.",
+    "materials": [],
+    "image": "[MNI] /images/hero-camp.webp",
+    "rating": 5,
+    "reviewCount": 412,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "[MNI] Physics concepts",
+      "[MNI] Scientific thinking"
+    ],
+    "url": "/physics",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-chem",
+    "name": "[MNI] Chemistry Lab",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "Interactive",
+    "description": "[MNI] Mix elements and observe reactions in our safe, virtual Chemistry Lab.",
+    "materials": [],
+    "image": "[MNI] /images/slime.webp",
+    "rating": 4.9,
+    "reviewCount": 388,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "[MNI] Chemical reactions",
+      "[MNI] Molecular structures"
+    ],
+    "url": "/chem",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-bio",
+    "name": "[MNI] Biology Lab",
+    "pillar": "sciencelab",
+    "category": "Biology",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "Interactive",
+    "description": "[MNI] Explore the wonders of life, cells, and ecosystems in the Biology Lab.",
+    "materials": [],
+    "image": "[MNI] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 275,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Anatomy",
+      "Ecosystems"
+    ],
+    "url": "/bio",
+    "isPremium": false
+  },
+  {
+    "id": "jigyasulab-math",
+    "name": "[MNI] Math Lab",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "Interactive",
+    "description": "[MNI] Solve puzzles and visualize mathematical concepts in a fun, interactive way.",
+    "materials": [],
+    "image": "[MNI] /images/puzzle.webp",
+    "rating": 4.7,
+    "reviewCount": 156,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Geometry",
+      "[MNI] Problem solving"
+    ],
+    "url": "/math",
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] jigyasulab-cosmos",
+    "name": "[MNI] Cosmos Lab",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "Interactive",
+    "description": "[MNI] Travel through space, explore planets, and understand the universe.",
+    "materials": [],
+    "image": "[MNI] /images/hero-camp.webp",
+    "rating": 5,
+    "reviewCount": 501,
+    "steps": [],
+    "safetyNotes": [],
+    "learningOutcomes": [
+      "Astronomy",
+      "[MNI] Space exploration"
+    ],
+    "url": "/cosmos",
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] sciencelab-volcano",
+    "name": "[MNI] Erupting Volcano",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 30 min",
+    "description": "[MNI] Create an explosive volcanic eruption using kitchen chemistry! Watch the foamy lava flow and learn about chemical reactions.",
+    "image": "[MNI] /images/volcano.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 234,
+    "materials": [
+      {
+        "name": "[MNI] Baking soda",
+        "quantity": "[MNI] 3 tablespoons"
+      },
+      {
+        "name": "Vinegar",
+        "quantity": "[MNI] 1 cup"
+      },
+      {
+        "name": "[MNI] Dish soap",
+        "quantity": "[MNI] A few drops"
+      },
+      {
+        "name": "[MNI] Food coloring",
+        "quantity": "[MNI] Red and orange"
+      },
+      {
+        "name": "[MNI] Play-doh or clay",
+        "quantity": "[MNI] For volcano shape"
+      },
+      {
+        "name": "[MNI] Plastic bottle or container"
+      },
+      {
+        "name": "[MNI] Tray or pan",
+        "quantity": "[MNI] To catch overflow"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Build Your Volcano",
+        "description": "[MNI] Place plastic bottle on tray. Shape clay or play-doh around it to create a volcano mountain. Leave the bottle opening exposed at the top.",
+        "tip": "[MNI] Make it look realistic with ridges and a crater!",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Add the Lava Base",
+        "description": "[MNI] Pour baking soda into the bottle. Add a few drops of dish soap and red/orange food coloring.",
+        "duration": "[MNI] 3 min"
+      },
+      {
+        "title": "[MNI] Prepare for Eruption",
+        "description": "[MNI] Make sure everyone can see! Have your vinegar ready to pour.",
+        "duration": "[MNI] 2 min"
+      },
+      {
+        "title": "[MNI] Eruption Time!",
+        "description": "[MNI] Pour vinegar into the bottle and step back. Watch the foamy lava erupt!",
+        "duration": "[MNI] 1 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MNI] Understand the Science",
+        "description": "[MNI] The baking soda (base) reacts with vinegar (acid) to create carbon dioxide gas, which makes the bubbles and foam!",
+        "duration": "[MNI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Do this experiment on a tray or outside - it gets messy!",
+      "[MNI] Vinegar can irritate eyes - don't get too close",
+      "[MNI] Adult supervision recommended"
+    ],
+    "learningOutcomes": [
+      "[MNI] Acid-base reactions",
+      "[MNI] Chemical reactions",
+      "[MNI] Carbon dioxide production",
+      "[MNI] Scientific observation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] sciencelab-density-tower",
+    "name": "[MNI] Rainbow Density Tower",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 30 min",
+    "description": "[MNI] Stack liquids in a rainbow! Learn about density as you create layers that magically don't mix.",
+    "image": "[MNI] /images/crystal.webp",
+    "rating": 4.8,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "Honey",
+        "quantity": "[MNI] 1/4 cup"
+      },
+      {
+        "name": "[MNI] Corn syrup",
+        "quantity": "[MNI] 1/4 cup"
+      },
+      {
+        "name": "[MNI] Dish soap",
+        "quantity": "[MNI] 1/4 cup"
+      },
+      {
+        "name": "Water",
+        "quantity": "[MNI] 1/4 cup"
+      },
+      {
+        "name": "[MNI] Vegetable oil",
+        "quantity": "[MNI] 1/4 cup"
+      },
+      {
+        "name": "[MNI] Rubbing alcohol",
+        "quantity": "[MNI] 1/4 cup"
+      },
+      {
+        "name": "[MNI] Food coloring"
+      },
+      {
+        "name": "[MNI] Tall clear glass or jar"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Color Your Liquids",
+        "description": "[MNI] Add different food coloring to water, corn syrup, and rubbing alcohol. Honey and oil have natural colors.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Pour the Heaviest First",
+        "description": "[MNI] Start with honey at the bottom of your glass. Pour slowly down the side.",
+        "tip": "[MNI] Patience is key - pour very slowly!",
+        "duration": "[MNI] 3 min"
+      },
+      {
+        "title": "[MNI] Add Middle Layers",
+        "description": "[MNI] Carefully add corn syrup, then dish soap, then water. Pour down the side of the glass.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Top With Light Liquids",
+        "description": "[MNI] Add vegetable oil, then carefully add rubbing alcohol on top.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "Experiment!",
+        "description": "[MNI] Try dropping small objects - where do they float? Predict based on density!",
+        "duration": "[MNI] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Don't drink any of these liquids!",
+      "[MNI] Rubbing alcohol requires adult handling",
+      "[MNI] Wash hands after experiment"
+    ],
+    "learningOutcomes": [
+      "[MNI] Density concepts",
+      "[MNI] Liquid properties",
+      "[MNI] Scientific layering",
+      "[MNI] Prediction and observation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] sciencelab-crystals",
+    "name": "[MNI] Crystal Growing",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MNI] 30 min + 3-5 days",
+    "description": "[MNI] Grow beautiful crystals from sugar, salt, or borax! Watch amazing structures form over several days.",
+    "image": "[MNI] /images/crystal.webp",
+    "rating": 4.8,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[MNI] Borax, salt, or sugar",
+        "quantity": "[MNI] 1 cup"
+      },
+      {
+        "name": "[MNI] Hot water",
+        "quantity": "[MNI] 2 cups"
+      },
+      {
+        "name": "[MNI] Glass jar"
+      },
+      {
+        "name": "String"
+      },
+      {
+        "name": "Pencil"
+      },
+      {
+        "name": "[MNI] Pipe cleaners",
+        "optional": true
+      },
+      {
+        "name": "[MNI] Food coloring",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Create Super-Saturated Solution",
+        "description": "[MNI] Have an adult pour hot water into jar. Add borax/salt/sugar slowly, stirring until no more dissolves.",
+        "duration": "[MNI] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MNI] Prepare Crystal Seed",
+        "description": "[MNI] Tie string to pencil. Shape pipe cleaner into a form (star, heart) and tie to string. Or just use string.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Add Color (Optional)",
+        "description": "[MNI] Add food coloring to solution for colored crystals.",
+        "duration": "[MNI] 2 min"
+      },
+      {
+        "title": "[MNI] Suspend and Wait",
+        "description": "[MNI] Lower string/pipe cleaner into solution. Rest pencil across jar top. Place somewhere still.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Watch and Wait",
+        "description": "[MNI] Check daily! Crystals form as water evaporates. Full growth takes 3-5 days.",
+        "duration": "[MNI] 3-5 days"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Adult handles hot water only",
+      "[MNI] Borax is not edible - wash hands",
+      "[MNI] Don't move or disturb jar during growth"
+    ],
+    "learningOutcomes": [
+      "[MNI] Crystallization process",
+      "[MNI] Saturation concepts",
+      "[MNI] Patience and observation",
+      "[MNI] Molecular structure"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] sciencelab-slime",
+    "name": "[MNI] Slime Factory",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 15 min",
+    "description": "[MNI] Mix up oozy, stretchy, satisfying slime! Experiment with colors, glitter, and different consistencies.",
+    "image": "[MNI] /images/slime.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 312,
+    "materials": [
+      {
+        "name": "[MNI] White school glue",
+        "quantity": "[MNI] 1/2 cup"
+      },
+      {
+        "name": "[MNI] Contact lens solution (with boric acid)",
+        "quantity": "[MNI] 1 tablespoon"
+      },
+      {
+        "name": "[MNI] Baking soda",
+        "quantity": "[MNI] 1/2 teaspoon"
+      },
+      {
+        "name": "[MNI] Food coloring"
+      },
+      {
+        "name": "Glitter",
+        "optional": true
+      },
+      {
+        "name": "[MNI] Bowl and spoon"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Mix Base",
+        "description": "[MNI] Pour glue into bowl. Add food coloring and glitter if desired. Stir well.",
+        "duration": "[MNI] 3 min"
+      },
+      {
+        "title": "[MNI] Add Activator",
+        "description": "[MNI] Sprinkle in baking soda and mix. Then add contact solution and stir rapidly.",
+        "duration": "[MNI] 3 min"
+      },
+      {
+        "title": "[MNI] Knead the Slime",
+        "description": "[MNI] Once slime forms, pick it up and knead with hands. It will become less sticky.",
+        "tip": "[MNI] If too sticky, add more contact solution. If too stiff, add more glue.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Test Properties",
+        "description": "[MNI] Stretch it slowly - does it pull? Pull fast - does it snap? Poke it - does it bounce?",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Store Properly",
+        "description": "[MNI] Store in airtight container. Slime lasts 1-2 weeks with proper storage!",
+        "duration": "[MNI] 2 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Wash hands after playing",
+      "[MNI] Don't eat slime",
+      "[MNI] Play on protected surface - slime can stain"
+    ],
+    "learningOutcomes": [
+      "[MNI] Polymer chemistry",
+      "[MNI] Non-Newtonian fluids",
+      "[MNI] Following recipes",
+      "[MNI] Sensory exploration"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] sciencelab-balloon-rocket",
+    "name": "[MNI] Balloon Rocket",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 15 min",
+    "description": "[MNI] Launch a balloon across the room on a string! Learn about thrust and Newton's third law.",
+    "image": "[MNI] /images/volcano.webp",
+    "rating": 4.7,
+    "reviewCount": 187,
+    "materials": [
+      {
+        "name": "Balloon"
+      },
+      {
+        "name": "String",
+        "quantity": "[MNI] 10-15 feet"
+      },
+      {
+        "name": "Straw"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[MNI] Two chairs or posts"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Set Up Track",
+        "description": "[MNI] Thread string through straw. Tie string between two chairs, keeping it taut and level.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Prepare Balloon",
+        "description": "[MNI] Blow up balloon but don't tie it. Pinch the end to keep air in.",
+        "duration": "[MNI] 2 min"
+      },
+      {
+        "title": "[MNI] Attach to Straw",
+        "description": "[MNI] While someone holds the balloon closed, tape it to the straw on the string.",
+        "duration": "[MNI] 3 min"
+      },
+      {
+        "title": "Launch!",
+        "description": "[MNI] Release the balloon and watch it zoom along the string!",
+        "duration": "[MNI] 1 min"
+      },
+      {
+        "title": "Experiment",
+        "description": "[MNI] Try different balloon sizes, angles, or adding weight. What changes the speed?",
+        "duration": "[MNI] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Don't release balloons outdoors - harmful to wildlife",
+      "[MNI] Supervise young children with balloons"
+    ],
+    "learningOutcomes": [
+      "[MNI] Newton's third law",
+      "[MNI] Thrust and propulsion",
+      "[MNI] Variables in experiments",
+      "[MNI] Cause and effect"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] sciencelab-invisible-ink",
+    "name": "[MNI] Invisible Ink Messages",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 20 min",
+    "description": "[MNI] Write secret messages that appear when heated! Perfect for spy games and learning about chemical changes.",
+    "image": "[MNI] /images/crystal.webp",
+    "rating": 4.6,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "[MNI] Lemon juice",
+        "quantity": "[MNI] 2-3 tablespoons"
+      },
+      {
+        "name": "[MNI] White paper"
+      },
+      {
+        "name": "[MNI] Cotton swab or paintbrush"
+      },
+      {
+        "name": "[MNI] Lamp or iron",
+        "quantity": "[MNI] Heat source"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Prepare Ink",
+        "description": "[MNI] Squeeze lemon juice into a small bowl. This is your invisible ink!",
+        "duration": "[MNI] 3 min"
+      },
+      {
+        "title": "[MNI] Write Message",
+        "description": "[MNI] Dip cotton swab in lemon juice and write on white paper. Use enough juice to wet the paper.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Let Dry",
+        "description": "[MNI] Allow paper to dry completely. The message becomes invisible!",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Reveal Message",
+        "description": "[MNI] Hold paper near (not touching!) a light bulb or have adult use warm iron. Message appears brown!",
+        "duration": "[MNI] 5 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MNI] Understand Why",
+        "description": "[MNI] Heat oxidizes the lemon juice, turning it brown. The acid weakens paper where you wrote!",
+        "duration": "[MNI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Adult supervision required for heat source",
+      "[MNI] Don't touch hot lamp or iron",
+      "[MNI] Keep paper safe distance from heat"
+    ],
+    "learningOutcomes": [
+      "[MNI] Oxidation reactions",
+      "[MNI] Chemical changes",
+      "[MNI] Heat effects",
+      "[MNI] Secret communication history"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] sciencelab-magnetic-maze",
+    "name": "[MNI] Magnetic Maze",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MNI] 45 min",
+    "description": "[MNI] Build a maze and guide objects through using magnet power! Learn about magnetic forces.",
+    "image": "[MNI] /images/crystal.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "[MNI] Cardboard box lid or shallow box"
+      },
+      {
+        "name": "[MNI] Strong magnets",
+        "quantity": "2"
+      },
+      {
+        "name": "[MNI] Paper clips or small metal objects"
+      },
+      {
+        "name": "[MNI] Straws or cardboard strips"
+      },
+      {
+        "name": "Markers"
+      },
+      {
+        "name": "Tape"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Design Maze",
+        "description": "[MNI] Draw a maze path inside the box lid. Mark start and finish points.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Build Walls",
+        "description": "[MNI] Cut straws or cardboard strips and tape along maze walls to create barriers.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Add Obstacles",
+        "description": "[MNI] Include dead ends, tunnels, or challenges. Make it tricky but solvable!",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Test Magnetic Control",
+        "description": "[MNI] Place paper clip in maze. Hold magnet under the box and move it. The clip follows!",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Play and Race",
+        "description": "[MNI] Navigate through the maze using only the magnet. Time yourself or race friends!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Keep strong magnets away from electronics",
+      "[MNI] Supervise small magnet use with young children"
+    ],
+    "learningOutcomes": [
+      "[MNI] Magnetic fields",
+      "[MNI] Forces at a distance",
+      "Problem-solving",
+      "[MNI] Hand-eye coordination"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] sciencelab-solar-oven",
+    "name": "[MNI] Solar Oven Roasted Papad",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MNI] 1 hour + cooking",
+    "description": "[MNI] Harness the incredible power of the sun to build your own solar oven and perfectly roast crispy papads! Learn about solar thermal energy, reflection, and the greenhouse effect while making a tasty, traditional snack.",
+    "image": "[MNI] /images/volcano.webp",
+    "rating": 4.8,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[MNI] Pizza box"
+      },
+      {
+        "name": "[MNI] Aluminum foil"
+      },
+      {
+        "name": "[MNI] Plastic wrap"
+      },
+      {
+        "name": "[MNI] Black paper"
+      },
+      {
+        "name": "[MNI] Tape and scissors"
+      },
+      {
+        "name": "[MNI] Graham crackers, chocolate, marshmallows"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Create Flap",
+        "description": "[MNI] Cut three sides of a square in box lid, leaving one side as hinge. Fold flap up.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Line with Foil",
+        "description": "[MNI] Cover the flap's inner surface with aluminum foil, shiny side out. Smooth flat.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Create Window",
+        "description": "[MNI] Tape plastic wrap over the hole created by the flap. This traps heat inside.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Prepare Interior",
+        "description": "[MNI] Line bottom of box with black paper (absorbs heat). Add more foil on inner sides.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Cook S'mores!",
+        "description": "[MNI] Place s'more ingredients inside. Angle toward sun, prop flap to reflect light in. Wait 30-60 min!",
+        "duration": "[MNI] 30-60 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Only use on sunny days",
+      "[MNI] Contents get hot - use oven mitts",
+      "[MNI] Adult supervision when opening"
+    ],
+    "learningOutcomes": [
+      "[MNI] Solar energy",
+      "[MNI] Heat absorption and reflection",
+      "[MNI] Renewable energy concepts",
+      "[MNI] Engineering design"
+    ],
+    "crossPillar": [
+      "[MNI] outdoorquest-cloud-watching"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] sciencelab-dancing-raisins",
+    "name": "[MNI] Dancing Raisins",
+    "pillar": "sciencelab",
+    "category": "Chemistry",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 10 min",
+    "description": "[MNI] Watch raisins dance up and down in a glass! A simple experiment that demonstrates gas bubbles and density.",
+    "image": "[MNI] /images/volcano.webp",
+    "rating": 4.4,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[MNI] Clear soda (Sprite or club soda)",
+        "quantity": "[MNI] 1 glass"
+      },
+      {
+        "name": "Raisins",
+        "quantity": "[MNI] Small handful"
+      },
+      {
+        "name": "[MNI] Clear glass or jar"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Pour Soda",
+        "description": "[MNI] Fill a clear glass about 3/4 full with clear carbonated soda.",
+        "duration": "[MNI] 1 min"
+      },
+      {
+        "title": "[MNI] Drop Raisins",
+        "description": "[MNI] Drop 5-8 raisins into the soda. They'll sink to the bottom at first.",
+        "duration": "[MNI] 1 min"
+      },
+      {
+        "title": "[MNI] Watch the Dance",
+        "description": "[MNI] Wait a minute - raisins start to rise, then fall, then rise again!",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Understand Why",
+        "description": "[MNI] CO2 bubbles stick to wrinkly raisins, making them float. At top, bubbles pop and raisins sink!",
+        "duration": "[MNI] 3 min"
+      },
+      {
+        "title": "[MNI] Try Variations",
+        "description": "[MNI] Test other small objects - what else dances? Try different sodas.",
+        "duration": "[MNI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Don't drink the soda after experiment"
+    ],
+    "learningOutcomes": [
+      "[MNI] Density and buoyancy",
+      "[MNI] Carbon dioxide properties",
+      "[MNI] Observation skills",
+      "[MNI] Scientific prediction"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] sciencelab-static-butterfly",
+    "name": "[MNI] Static Electricity Butterfly",
+    "pillar": "sciencelab",
+    "category": "Physics",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 20 min",
+    "description": "[MNI] Make a butterfly's wings flutter using static electricity! No batteries needed - just science!",
+    "image": "[MNI] /images/crystal.webp",
+    "rating": 4.5,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[MNI] Tissue paper"
+      },
+      {
+        "name": "Cardstock"
+      },
+      {
+        "name": "Balloon"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "Markers"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Create Body",
+        "description": "[MNI] Cut a butterfly body shape from cardstock. Make it sturdy - this is the base.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Cut Tissue Wings",
+        "description": "[MNI] Cut delicate wing shapes from tissue paper. Make them light and thin.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Attach Wings",
+        "description": "[MNI] Tape wings to body at center only. Wings should be free to move on edges.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Charge Balloon",
+        "description": "[MNI] Blow up balloon and rub vigorously on your hair or wool sweater.",
+        "duration": "[MNI] 2 min"
+      },
+      {
+        "title": "[MNI] Make Wings Flutter",
+        "description": "[MNI] Hold charged balloon near tissue wings - watch them rise toward it! Move balloon to make them flutter.",
+        "duration": "[MNI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Latex allergy caution with balloons"
+    ],
+    "learningOutcomes": [
+      "[MNI] Static electricity",
+      "[MNI] Electric charges",
+      "[MNI] Attraction forces",
+      "[MNI] Conductors vs insulators"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] sciencelab-water-cycle",
+    "name": "[MNI] Water Cycle in a Bag",
+    "pillar": "sciencelab",
+    "category": "Biology",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 15 min + observation",
+    "description": "[MNI] Create a mini water cycle in a plastic bag! Watch evaporation, condensation, and precipitation happen.",
+    "image": "[MNI] /images/crystal.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[MNI] Ziplock bag",
+        "quantity": "[MNI] Quart size"
+      },
+      {
+        "name": "Water",
+        "quantity": "[MNI] 1/4 cup"
+      },
+      {
+        "name": "[MNI] Blue food coloring"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[MNI] Sunny window"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Draw Scene",
+        "description": "[MNI] Draw clouds at top of bag, sun, and waves at bottom using permanent marker.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Add Water",
+        "description": "[MNI] Pour water into bag with blue food coloring. This is your ocean!",
+        "duration": "[MNI] 2 min"
+      },
+      {
+        "title": "[MNI] Seal and Mount",
+        "description": "[MNI] Seal bag tightly. Tape to sunny window at eye level.",
+        "duration": "[MNI] 3 min"
+      },
+      {
+        "title": "[MNI] Observe Changes",
+        "description": "[MNI] Check throughout the day. Water evaporates, condenses on bag, and \"rains\" down!",
+        "duration": "Ongoing"
+      },
+      {
+        "title": "[MNI] Label the Cycle",
+        "description": "[MNI] Add labels: evaporation (water rising), condensation (droplets forming), precipitation (drops falling).",
+        "duration": "[MNI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Ensure bag is sealed to prevent leaks"
+    ],
+    "learningOutcomes": [
+      "[MNI] Water cycle stages",
+      "[MNI] Evaporation and condensation",
+      "[MNI] Solar energy effects",
+      "[MNI] Earth science basics"
+    ],
+    "crossPillar": [
+      "[MNI] outdoorquest-cloud-watching"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] sciencelab-egg-drop",
+    "name": "[MNI] Egg Drop Challenge",
+    "pillar": "sciencelab",
+    "category": "Engineering",
+    "ageRange": "9-12",
+    "difficulty": "Hard",
+    "timeToMake": "[MNI] 1 hour",
+    "description": "[MNI] Design a contraption to protect an egg from a high drop! Classic engineering challenge that teaches impact absorption.",
+    "image": "[MNI] /images/volcano.webp",
+    "rating": 4.9,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[MNI] Raw eggs",
+        "quantity": "[MNI] 2-3 for testing"
+      },
+      {
+        "name": "Straws"
+      },
+      {
+        "name": "Balloons"
+      },
+      {
+        "name": "[MNI] Cotton balls"
+      },
+      {
+        "name": "[MNI] Bubble wrap"
+      },
+      {
+        "name": "[MNI] Rubber bands"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[MNI] Small box"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Study the Problem",
+        "description": "[MNI] Understand forces: impact, gravity, momentum. What slows falls? What absorbs shock?",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Design Your Device",
+        "description": "[MNI] Sketch ideas. Consider: padding, parachute, crumple zones, suspension systems.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Build Prototype",
+        "description": "[MNI] Construct your egg protection device. Secure egg inside with cushioning materials.",
+        "duration": "[MNI] 30 min"
+      },
+      {
+        "title": "[MNI] Test Drop",
+        "description": "[MNI] Start from low height. If successful, go higher! Document results.",
+        "duration": "[MNI] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "Iterate",
+        "description": "[MNI] If egg breaks, analyze why. Improve design and test again!",
+        "duration": "Ongoing"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Do drops outside - eggs are messy!",
+      "[MNI] Adult supervision for high drops",
+      "[MNI] Wash hands after handling raw eggs"
+    ],
+    "learningOutcomes": [
+      "[MNI] Engineering design process",
+      "[MNI] Force and impact",
+      "[MNI] Iterative improvement",
+      "Problem-solving"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] artstudio-finger-paint",
+    "name": "[MNI] Finger Paint Masterpiece",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-5",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 20 min",
+    "description": "[MNI] Get messy with finger paints! Create colorful artwork while developing fine motor skills and sensory exploration.",
+    "image": "[MNI] /images/finger-paint.webp",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 198,
+    "materials": [
+      {
+        "name": "[MNI] Finger paints",
+        "quantity": "[MNI] Various colors"
+      },
+      {
+        "name": "[MNI] Large paper",
+        "quantity": "[MNI] Several sheets"
+      },
+      {
+        "name": "[MNI] Smock or old shirt"
+      },
+      {
+        "name": "[MNI] Plastic tablecloth"
+      },
+      {
+        "name": "[MNI] Water bowl and towels"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Set Up Space",
+        "description": "[MNI] Cover table with plastic. Put on smock. Tape paper down so it doesn't move.",
+        "duration": "[MNI] 5 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MNI] Explore Colors",
+        "description": "[MNI] Start with one color. Dip fingers and make marks. Try dots, lines, swirls!",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Mix Colors",
+        "description": "[MNI] Add another color. See what happens when they blend! Yellow + blue = ?",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Try Techniques",
+        "description": "[MNI] Use whole hand, just fingertips, sides of hands. Make prints and patterns.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Clean Up",
+        "description": "[MNI] Wash hands. Let painting dry flat. Display your masterpiece!",
+        "duration": "[MNI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Use non-toxic, washable paints",
+      "[MNI] Supervise to prevent paint eating",
+      "[MNI] Protect floor and furniture"
+    ],
+    "learningOutcomes": [
+      "[MNI] Sensory exploration",
+      "[MNI] Color mixing",
+      "[MNI] Fine motor development",
+      "[MNI] Creative expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] artstudio-nature-collage",
+    "name": "[MNI] Nature Collage",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 30 min",
+    "description": "[MNI] Collect treasures from nature and arrange them into beautiful artwork! Combines outdoor exploration with creativity.",
+    "image": "[MNI] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[MNI] Leaves, flowers, twigs"
+      },
+      {
+        "name": "[MNI] Cardstock or cardboard",
+        "quantity": "[MNI] For base"
+      },
+      {
+        "name": "[MNI] White glue"
+      },
+      {
+        "name": "[MNI] Optional: contact paper"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Nature Walk",
+        "description": "[MNI] Go outside and collect natural items: leaves, petals, small twigs, seeds, grass.",
+        "tip": "[MNI] Look for different colors, textures, and shapes!",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Sort Treasures",
+        "description": "[MNI] Lay out your collection. Group by color, size, or type.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Plan Design",
+        "description": "[MNI] Arrange items on your paper WITHOUT gluing. Try different layouts.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Glue in Place",
+        "description": "[MNI] Once happy with design, glue items down one by one. Press gently.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Preserve (Optional)",
+        "description": "[MNI] Cover with clear contact paper to preserve, or let dry and display!",
+        "duration": "[MNI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Don't pick protected plants",
+      "[MNI] Wash hands after collecting",
+      "[MNI] Check for insects before bringing items inside"
+    ],
+    "learningOutcomes": [
+      "[MNI] Nature appreciation",
+      "[MNI] Design and composition",
+      "[MNI] Texture exploration",
+      "[MNI] Environmental awareness"
+    ],
+    "crossPillar": [
+      "[MNI] outdoorquest-nature-hunt"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] artstudio-tiedye",
+    "name": "[MNI] Bandhani Tie-Dye Dupatta",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MNI] 1 hour + dry time",
+    "description": "[MNI] Discover the ancient Indian art of Bandhani! Use rubber bands and vibrant natural dyes to create mesmerizing geometric patterns on a cotton dupatta or scarf.",
+    "image": "[MNI] /images/tiedye.webp",
+    "rating": 4.9,
+    "reviewCount": 223,
+    "materials": [
+      {
+        "name": "[MNI] White cotton t-shirt"
+      },
+      {
+        "name": "[MNI] Fabric dye kit",
+        "quantity": "[MNI] Multiple colors"
+      },
+      {
+        "name": "[MNI] Rubber bands",
+        "quantity": "10-20"
+      },
+      {
+        "name": "[MNI] Plastic bags"
+      },
+      {
+        "name": "Gloves"
+      },
+      {
+        "name": "[MNI] Plastic tablecloth"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Wet the Shirt",
+        "description": "[MNI] Soak shirt in water and wring out until damp. This helps dye spread evenly.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Create Pattern",
+        "description": "[MNI] For spiral: pinch center and twist entire shirt. For stripes: fold accordion-style. Secure with rubber bands.",
+        "tip": "[MNI] Tighter bands = sharper lines. More bands = more white space.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Mix Dyes",
+        "description": "[MNI] Prepare dyes according to package. Wear gloves from this point on!",
+        "duration": "[MNI] 10 min",
+        "parentHelp": true
+      },
+      {
+        "title": "[MNI] Apply Color",
+        "description": "[MNI] Squeeze dye onto shirt sections. Use different colors in different areas. Flip and do back too.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Wait and Rinse",
+        "description": "[MNI] Bag the shirt and wait 6-24 hours. Rinse under cold water until water runs clear. Remove bands and wash.",
+        "duration": "[MNI] 24 hours"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Wear gloves - dye stains!",
+      "[MNI] Work outdoors or on protected surface",
+      "[MNI] Wash separately first few times"
+    ],
+    "learningOutcomes": [
+      "[MNI] Pattern creation",
+      "[MNI] Color theory",
+      "[MNI] Following multi-step processes",
+      "[MNI] Patience and delayed gratification"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] artstudio-paper-plate-animals",
+    "name": "[MNI] Paper Plate Animals",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 25 min",
+    "description": "[MNI] Transform simple paper plates into adorable animals! Great for parties or imaginative play.",
+    "image": "[MNI] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 167,
+    "materials": [
+      {
+        "name": "[MNI] Paper plates",
+        "quantity": "[MNI] 1-2 per animal"
+      },
+      {
+        "name": "[MNI] Paint or markers"
+      },
+      {
+        "name": "[MNI] Construction paper"
+      },
+      {
+        "name": "[MNI] Googly eyes"
+      },
+      {
+        "name": "[MNI] Glue and scissors"
+      },
+      {
+        "name": "[MNI] Pipe cleaners",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Choose Animal",
+        "description": "[MNI] Pick your favorite animal! Lion, pig, frog, cat, and owl are great starters.",
+        "duration": "[MNI] 2 min"
+      },
+      {
+        "title": "[MNI] Paint Base",
+        "description": "[MNI] Paint the plate the main color of your animal. Let dry.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Cut Features",
+        "description": "[MNI] Cut ears, noses, whiskers, beaks from construction paper.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Assemble Face",
+        "description": "[MNI] Glue on googly eyes and paper features. Add details with markers.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Add Extras",
+        "description": "[MNI] Attach popsicle stick for a mask, or hang as decoration!",
+        "duration": "[MNI] 3 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Supervise scissor use",
+      "[MNI] Use washable paints"
+    ],
+    "learningOutcomes": [
+      "[MNI] Animal recognition",
+      "[MNI] Following instructions",
+      "[MNI] Fine motor skills",
+      "[MNI] Creative expression"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] artstudio-rock-painting",
+    "name": "[MNI] Rock Painting",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 30 min",
+    "description": "[MNI] Turn ordinary rocks into colorful treasures! Paint animals, patterns, or inspirational words.",
+    "image": "[MNI] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[MNI] Smooth rocks",
+        "quantity": "3-5"
+      },
+      {
+        "name": "[MNI] Acrylic paint",
+        "quantity": "[MNI] Various colors"
+      },
+      {
+        "name": "Paintbrushes",
+        "quantity": "[MNI] Various sizes"
+      },
+      {
+        "name": "[MNI] Clear sealant",
+        "optional": true
+      },
+      {
+        "name": "[MNI] Pencil for sketching"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Find Rocks",
+        "description": "[MNI] Look for smooth, flat rocks. Wash and dry them completely.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Plan Design",
+        "description": "[MNI] Lightly sketch your design with pencil. Animals, mandalas, and words work great!",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Paint Base",
+        "description": "[MNI] Paint background color. Let dry completely before adding details.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Add Details",
+        "description": "[MNI] Paint your design. Start with larger shapes, add small details last.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Seal and Share",
+        "description": "[MNI] Optional: apply clear coat. Hide rocks for others to find or keep as decoration!",
+        "duration": "[MNI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Use acrylic paints - they're waterproof when dry",
+      "[MNI] Seal if placing outdoors"
+    ],
+    "learningOutcomes": [
+      "[MNI] Painting techniques",
+      "[MNI] Working with 3D surfaces",
+      "[MNI] Community kindness (rock hiding)",
+      "[MNI] Nature appreciation"
+    ],
+    "crossPillar": [
+      "[MNI] outdoorquest-nature-hunt"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] artstudio-origami-zoo",
+    "name": "[MNI] Origami Zoo",
+    "pillar": "artstudio",
+    "category": "[MNI] Paper Art",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MNI] 45 min",
+    "description": "[MNI] Fold paper into amazing animals with the ancient art of origami! Create a whole zoo of creatures.",
+    "image": "[MNI] /images/tiedye.webp",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "materials": [
+      {
+        "name": "[MNI] Origami paper",
+        "quantity": "[MNI] Multiple colors"
+      },
+      {
+        "name": "Markers",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Start Simple",
+        "description": "[MNI] Begin with an easy fold like a dog face or fish. Learn basic folds: valley, mountain, squash.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Practice Precision",
+        "description": "[MNI] Fold carefully - crisp creases make better animals! Line up edges exactly.",
+        "tip": "[MNI] Use fingernail to crease sharply.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Try Animals",
+        "description": "[MNI] Make a frog that jumps! A bird that flaps! A crane for good luck!",
+        "duration": "[MNI] 20 min"
+      },
+      {
+        "title": "[MNI] Add Details",
+        "description": "[MNI] Use markers to add eyes, spots, or patterns to your animals.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Create Display",
+        "description": "[MNI] Arrange your zoo on a shelf or make a mobile to hang!",
+        "duration": "[MNI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Paper cuts possible - fold carefully"
+    ],
+    "learningOutcomes": [
+      "[MNI] Following diagrams",
+      "[MNI] Spatial reasoning",
+      "[MNI] Patience and precision",
+      "[MNI] Japanese cultural art"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] artstudio-salt-painting",
+    "name": "[MNI] Salt Painting",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 30 min",
+    "description": "[MNI] Create magical raised designs using glue and salt, then add color and watch it spread!",
+    "image": "[MNI] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "Cardstock",
+        "quantity": "[MNI] Dark colors work best"
+      },
+      {
+        "name": "[MNI] White glue"
+      },
+      {
+        "name": "[MNI] Table salt",
+        "quantity": "[MNI] 1/2 cup"
+      },
+      {
+        "name": "[MNI] Liquid watercolors or food coloring"
+      },
+      {
+        "name": "[MNI] Dropper or paintbrush"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Draw with Glue",
+        "description": "[MNI] Squeeze glue in lines to create a design - rainbow, name, shapes. Keep lines thick.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Add Salt",
+        "description": "[MNI] While glue is wet, pour salt over entire design. Shake off excess.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Let Set",
+        "description": "[MNI] Wait a few minutes for glue to start setting with salt stuck on.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Add Color",
+        "description": "[MNI] Drop liquid color onto salt. Watch it spread along the lines like magic!",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Dry and Display",
+        "description": "[MNI] Let dry completely (overnight is best). Handle gently - salt can fall off.",
+        "duration": "[MNI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Don't eat the salt after coloring",
+      "[MNI] Work on protected surface"
+    ],
+    "learningOutcomes": [
+      "[MNI] Absorption concepts",
+      "[MNI] Color spreading",
+      "[MNI] Fine motor control",
+      "[MNI] Process art"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] artstudio-pasta-jewelry",
+    "name": "[MNI] Terracotta Clay Jewelry",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 30 min",
+    "description": "[MNI] Connect with ancient Harappan traditions by sculpting your own terracotta jewelry! Shape natural clay into beautiful beads, dry them in the sun, and paint them with traditional Indian motifs.",
+    "image": "[MNI] /images/tiedye.webp",
+    "rating": 4.4,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[MNI] Tubular pasta (penne, rigatoni)",
+        "quantity": "[MNI] 30-40 pieces"
+      },
+      {
+        "name": "[MNI] Acrylic paint or food coloring"
+      },
+      {
+        "name": "[MNI] String or yarn",
+        "quantity": "[MNI] 2 feet per piece"
+      },
+      {
+        "name": "[MNI] Ziplock bags",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Color Pasta",
+        "description": "[MNI] Paint pasta or shake in bags with food coloring and rubbing alcohol. Let dry completely.",
+        "duration": "[MNI] 10 min + drying"
+      },
+      {
+        "title": "[MNI] Plan Pattern",
+        "description": "[MNI] Lay out pasta beads and plan your color pattern before stringing.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] String Beads",
+        "description": "[MNI] Thread pasta onto string. Tie a bead at one end first to stop others falling off.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Create Closure",
+        "description": "[MNI] Tie ends together for necklace, or add clasps for fancier finish.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Model and Gift",
+        "description": "[MNI] Wear your creation proudly or make gifts for friends and family!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Pasta jewelry is not edible after painting",
+      "[MNI] Handle gently - pasta can crack"
+    ],
+    "learningOutcomes": [
+      "[MNI] Pattern creation",
+      "[MNI] Fine motor skills (threading)",
+      "[MNI] Color combinations",
+      "[MNI] Gift-making mindset"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] artstudio-scratch-art",
+    "name": "[MNI] Scratch Art Cards",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MNI] 45 min",
+    "description": "[MNI] Create rainbow scratch art from scratch! Layer colors, cover with black, then scratch to reveal hidden rainbows.",
+    "image": "[MNI] /images/tiedye.webp",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "Cardstock"
+      },
+      {
+        "name": "Crayons",
+        "quantity": "[MNI] Various colors"
+      },
+      {
+        "name": "[MNI] Black acrylic paint or black crayon"
+      },
+      {
+        "name": "[MNI] Dish soap",
+        "quantity": "[MNI] A drop"
+      },
+      {
+        "name": "[MNI] Toothpick or wooden stylus"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Color Base Layer",
+        "description": "[MNI] Cover entire paper with heavy crayon in bright colors. Press hard! No white showing.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Add Black Layer",
+        "description": "[MNI] Mix tiny bit of dish soap into black paint. Paint over all the crayon. Or use black crayon (harder work!).",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Let Dry",
+        "description": "[MNI] If using paint, let dry completely before scratching.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Scratch Design",
+        "description": "[MNI] Use toothpick to scratch away black, revealing rainbow colors beneath!",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Create Cards",
+        "description": "[MNI] Make greeting cards, bookmarks, or framed art with your scratch designs!",
+        "duration": "[MNI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Toothpicks are pointy - use carefully",
+      "[MNI] Work on protected surface"
+    ],
+    "learningOutcomes": [
+      "[MNI] Layering technique",
+      "[MNI] Subtractive art process",
+      "[MNI] Planning and patience",
+      "[MNI] Fine motor control"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] artstudio-suncatcher",
+    "name": "[MNI] Tissue Paper Suncatcher",
+    "pillar": "artstudio",
+    "category": "Crafts",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MNI] 40 min",
+    "description": "[MNI] Create stained glass-style art that catches sunlight! Beautiful colors glow when hung in a window.",
+    "image": "[MNI] /images/tiedye.webp",
+    "rating": 4.6,
+    "reviewCount": 87,
+    "materials": [
+      {
+        "name": "[MNI] Clear contact paper",
+        "quantity": "[MNI] 2 sheets"
+      },
+      {
+        "name": "[MNI] Tissue paper",
+        "quantity": "[MNI] Various colors"
+      },
+      {
+        "name": "[MNI] Black cardstock",
+        "quantity": "[MNI] For frame"
+      },
+      {
+        "name": "Scissors"
+      },
+      {
+        "name": "[MNI] Hole punch and string"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Cut Frame",
+        "description": "[MNI] Cut a frame shape from black cardstock - circle, heart, or rectangle with center removed.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Prepare Contact Paper",
+        "description": "[MNI] Cut contact paper slightly larger than frame. Peel backing and lay sticky side up.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Add Tissue Paper",
+        "description": "[MNI] Tear or cut tissue paper pieces. Press onto contact paper in colorful pattern.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Seal and Frame",
+        "description": "[MNI] Place second contact paper on top, sticky side down. Press to seal. Trim to frame and attach frame.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Hang in Window",
+        "description": "[MNI] Punch hole in top, add string, and hang where sunlight will shine through!",
+        "duration": "[MNI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Scissors supervision for younger kids",
+      "[MNI] Contact paper is tricky - take your time"
+    ],
+    "learningOutcomes": [
+      "[MNI] Light and color",
+      "[MNI] Design composition",
+      "[MNI] Following multi-step process",
+      "[MNI] Decorative crafting"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] artstudio-clay-pots",
+    "name": "[MNI] Clay Pinch Pots",
+    "pillar": "artstudio",
+    "category": "Sculpture",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MNI] 1 hour + dry time",
+    "description": "[MNI] Shape air-dry clay into beautiful bowls and pots using the ancient pinch pot technique!",
+    "image": "[MNI] /images/finger-paint.webp",
+    "rating": 4.7,
+    "reviewCount": 109,
+    "materials": [
+      {
+        "name": "[MNI] Air-dry clay",
+        "quantity": "[MNI] 1 lb"
+      },
+      {
+        "name": "[MNI] Water bowl"
+      },
+      {
+        "name": "[MNI] Acrylic paint"
+      },
+      {
+        "name": "Paintbrushes"
+      },
+      {
+        "name": "[MNI] Rolling pin",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Prepare Clay",
+        "description": "[MNI] Knead clay until soft and pliable. Roll into a ball about the size of your fist.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Create Opening",
+        "description": "[MNI] Push thumb into center of ball. Slowly rotate and pinch walls between thumb (inside) and fingers (outside).",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Shape the Pot",
+        "description": "[MNI] Keep pinching and rotating. Even thickness is key! Smooth cracks with wet finger.",
+        "tip": "[MNI] Keep walls no thinner than 1/4 inch.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Add Details",
+        "description": "[MNI] Create texture with tools. Add handles, feet, or decorative elements.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Dry and Paint",
+        "description": "[MNI] Let dry completely (2-3 days). Paint with acrylics once fully dried.",
+        "duration": "[MNI] 15 min + drying"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Air-dry clay is non-toxic",
+      "[MNI] Handle dried pieces gently - they're fragile",
+      "[MNI] Not food-safe unless using special glazes"
+    ],
+    "learningOutcomes": [
+      "[MNI] Sculpting techniques",
+      "[MNI] Hand strength and control",
+      "[MNI] Historical pottery methods",
+      "[MNI] 3D art creation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] artstudio-collaborative-mural",
+    "name": "[MNI] Collaborative Mural",
+    "pillar": "artstudio",
+    "category": "Painting",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 1 hour",
+    "description": "[MNI] Create a large artwork together! Everyone contributes to one big painting.",
+    "image": "[MNI] /images/finger-paint.webp",
+    "rating": 4.5,
+    "reviewCount": 67,
+    "materials": [
+      {
+        "name": "[MNI] Large paper roll or joined sheets",
+        "quantity": "[MNI] 4-6 feet"
+      },
+      {
+        "name": "[MNI] Paint, markers, crayons"
+      },
+      {
+        "name": "Tape"
+      },
+      {
+        "name": "[MNI] Smocks for everyone"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Set Up Canvas",
+        "description": "[MNI] Roll out paper on floor or tape to wall. Make it BIG - this is a group project!",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Choose Theme",
+        "description": "[MNI] Decide on a theme together: underwater, space, garden, cityscape, or abstract!",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Assign Sections",
+        "description": "[MNI] Each person gets an area to work on. Plan how sections will connect.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Create Together",
+        "description": "[MNI] Everyone works simultaneously! Add to each other's areas if invited.",
+        "duration": "[MNI] 40 min"
+      },
+      {
+        "title": "[MNI] Add Final Touches",
+        "description": "[MNI] Step back, see what's missing. Add connecting elements together.",
+        "duration": "[MNI] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Supervise shared materials",
+      "[MNI] Respect everyone's work"
+    ],
+    "learningOutcomes": [
+      "[MNI] Collaboration skills",
+      "[MNI] Respecting others' work",
+      "[MNI] Group planning",
+      "[MNI] Large-scale art thinking"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] outdoorquest-nature-hunt",
+    "name": "[MNI] Nature Scavenger Hunt",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 30 min",
+    "description": "[MNI] Explore the outdoors with a checklist of natural treasures to find! Perfect for backyards, parks, or nature trails.",
+    "image": "[MNI] /images/nature-hunt.webp",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 234,
+    "materials": [
+      {
+        "name": "[MNI] Scavenger hunt checklist",
+        "quantity": "[MNI] Printable included!"
+      },
+      {
+        "name": "[MNI] Bag or basket"
+      },
+      {
+        "name": "[MNI] Magnifying glass",
+        "optional": true
+      },
+      {
+        "name": "[MNI] Pencil or crayon"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Print Checklist",
+        "description": "[MNI] Use our checklist or create your own: pinecone, feather, smooth rock, flower, etc.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Go Outside!",
+        "description": "[MNI] Head to backyard, park, or nature trail. Bring your checklist and collection bag.",
+        "duration": "[MNI] 2 min"
+      },
+      {
+        "title": "[MNI] Start Hunting",
+        "description": "[MNI] Check off items as you find them. Collect items you can take (no picking protected plants!).",
+        "tip": "[MNI] Look up, down, and all around - treasures are everywhere!",
+        "duration": "[MNI] 20 min"
+      },
+      {
+        "title": "[MNI] Observe Closely",
+        "description": "[MNI] Use magnifying glass to examine finds. What details do you notice?",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Share Discoveries",
+        "description": "[MNI] Show what you found! Learn names of plants and animals you discovered.",
+        "duration": "[MNI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Stay on paths and in sight of adults",
+      "[MNI] Don't touch unknown plants or animals",
+      "[MNI] Watch for poison ivy/oak",
+      "[MNI] Leave wildlife alone"
+    ],
+    "learningOutcomes": [
+      "[MNI] Nature identification",
+      "[MNI] Observation skills",
+      "[MNI] Physical activity",
+      "[MNI] Environmental appreciation"
+    ],
+    "crossPillar": [
+      "[MNI] artstudio-nature-collage"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] outdoorquest-bug-hotel",
+    "name": "[MNI] Bug Hotel",
+    "pillar": "outdoorquest",
+    "category": "Wildlife",
+    "ageRange": "6-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MNI] 45 min",
+    "description": "[MNI] Build a cozy habitat for beneficial insects! Create shelter for ladybugs, bees, and other garden helpers.",
+    "image": "[MNI] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 123,
+    "materials": [
+      {
+        "name": "[MNI] Wooden crate or tin can"
+      },
+      {
+        "name": "[MNI] Sticks and twigs"
+      },
+      {
+        "name": "Pinecones"
+      },
+      {
+        "name": "[MNI] Bamboo pieces or paper straws"
+      },
+      {
+        "name": "[MNI] Dried leaves"
+      },
+      {
+        "name": "[MNI] String or wire"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Find a Base",
+        "description": "[MNI] Use a clean tin can, small wooden box, or bundle of sticks tied together.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Gather Materials",
+        "description": "[MNI] Collect natural materials: hollow sticks, pinecones, bark, dried leaves, etc.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Fill the Hotel",
+        "description": "[MNI] Pack materials tightly into your base. Different insects like different spaces!",
+        "tip": "[MNI] Hollow tubes for solitary bees, pinecones for ladybugs.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Secure Contents",
+        "description": "[MNI] Make sure everything is packed tight. Add wire or more sticks if needed.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Place in Garden",
+        "description": "[MNI] Position in a sheltered spot facing south. Off the ground prevents flooding.",
+        "duration": "[MNI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Don't disturb guests once they move in",
+      "[MNI] Place away from high-traffic areas",
+      "[MNI] Check for existing insect nests before gathering materials"
+    ],
+    "learningOutcomes": [
+      "[MNI] Insect ecology",
+      "[MNI] Habitat creation",
+      "[MNI] Beneficial insects",
+      "[MNI] Environmental stewardship"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] outdoorquest-pressed-flowers",
+    "name": "[MNI] Pressed Flower Art",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 30 min + drying",
+    "description": "[MNI] Preserve beautiful flowers and leaves by pressing! Create bookmarks, cards, or framed art.",
+    "image": "[MNI] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 98,
+    "materials": [
+      {
+        "name": "[MNI] Fresh flowers and leaves"
+      },
+      {
+        "name": "[MNI] Heavy books"
+      },
+      {
+        "name": "[MNI] Parchment or newspaper"
+      },
+      {
+        "name": "[MNI] Frame or cardstock",
+        "optional": true
+      },
+      {
+        "name": "[MNI] Clear contact paper",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Collect Specimens",
+        "description": "[MNI] Pick flowers and leaves on a dry day. Choose flat flowers or ones you can flatten.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Prepare for Pressing",
+        "description": "[MNI] Place flowers between parchment paper. Arrange flat - don't overlap.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Press in Books",
+        "description": "[MNI] Put paper with flowers inside heavy book. Stack more books on top.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Wait Patiently",
+        "description": "[MNI] Leave for 1-2 weeks. Check occasionally. Change paper if damp.",
+        "duration": "[MNI] 1-2 weeks"
+      },
+      {
+        "title": "[MNI] Create Art",
+        "description": "[MNI] Carefully remove pressed flowers. Arrange on cards, bookmarks, or frame!",
+        "duration": "[MNI] 15 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Don't pick from protected areas",
+      "[MNI] Pressed flowers are delicate",
+      "[MNI] Some plants cause skin irritation"
+    ],
+    "learningOutcomes": [
+      "[MNI] Botanical knowledge",
+      "[MNI] Patience and delayed gratification",
+      "[MNI] Preservation techniques",
+      "[MNI] Nature appreciation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] outdoorquest-bird-feeder",
+    "name": "[MNI] Coconut Shell Bird Feeder",
+    "pillar": "outdoorquest",
+    "category": "Wildlife",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 20 min",
+    "description": "[MNI] Repurpose an empty coconut shell into a beautiful, hanging bird feeder! Fill it with local grains and watch the incredible variety of native birds flock to your garden.",
+    "image": "[MNI] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 187,
+    "materials": [
+      {
+        "name": "[MNI] Large pinecone"
+      },
+      {
+        "name": "[MNI] Peanut butter",
+        "quantity": "[MNI] 1/4 cup"
+      },
+      {
+        "name": "Birdseed",
+        "quantity": "[MNI] 1 cup"
+      },
+      {
+        "name": "[MNI] String or yarn",
+        "quantity": "[MNI] 12 inches"
+      },
+      {
+        "name": "[MNI] Plate for rolling"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Tie Hanger",
+        "description": "[MNI] Tie string securely around top of pinecone for hanging.",
+        "duration": "[MNI] 3 min"
+      },
+      {
+        "title": "[MNI] Apply Peanut Butter",
+        "description": "[MNI] Spread peanut butter all over pinecone, getting into the scales.",
+        "tip": "[MNI] Use a butter knife or your hands (messy but fun!).",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Add Seeds",
+        "description": "[MNI] Roll coated pinecone in birdseed, pressing seeds into peanut butter.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Hang Outside",
+        "description": "[MNI] Hang from a tree branch where you can watch from a window.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Bird Watch",
+        "description": "[MNI] Keep a journal of birds that visit! Learn their names and songs.",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Check for nut allergies before using peanut butter",
+      "[MNI] Alternative: use vegetable shortening",
+      "[MNI] Place where squirrels can't easily reach"
+    ],
+    "learningOutcomes": [
+      "[MNI] Bird identification",
+      "[MNI] Wildlife care",
+      "[MNI] Patience and observation",
+      "[MNI] Ecosystem understanding"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] outdoorquest-mud-kitchen",
+    "name": "[MNI] Mud Kitchen Play",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-8",
+    "difficulty": "Easy",
+    "timeToMake": "Open-ended",
+    "description": "[MNI] Set up an outdoor play kitchen for messy, imaginative mud cooking! A classic childhood experience.",
+    "image": "[MNI] /images/nature-hunt.webp",
+    "rating": 4.5,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "[MNI] Old pots and pans"
+      },
+      {
+        "name": "[MNI] Wooden spoons"
+      },
+      {
+        "name": "[MNI] Measuring cups"
+      },
+      {
+        "name": "[MNI] Water source"
+      },
+      {
+        "name": "[MNI] Dirt area"
+      },
+      {
+        "name": "[MNI] Natural additions",
+        "quantity": "[MNI] Leaves, sticks, petals"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Set Up Kitchen",
+        "description": "[MNI] Find a good spot near dirt and water. Arrange your tools. A small table helps!",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Prepare Ingredients",
+        "description": "[MNI] Gather water, dirt, and natural add-ins like leaves, petals, seeds.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Create Recipes",
+        "description": "[MNI] Make mud pies, dirt soup, nature stew! Mix, stir, pour, and create.",
+        "duration": "∞"
+      },
+      {
+        "title": "[MNI] Serve and Play",
+        "description": "[MNI] Set up a pretend restaurant. Serve your creations to stuffed animal guests!",
+        "duration": "∞"
+      },
+      {
+        "title": "[MNI] Clean Up",
+        "description": "[MNI] Hose off tools and hands. Some dirty play is good!",
+        "duration": "[MNI] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Wash hands thoroughly after play",
+      "[MNI] Don't actually eat mud creations!",
+      "[MNI] Check area for broken glass or harmful items"
+    ],
+    "learningOutcomes": [
+      "[MNI] Imaginative play",
+      "[MNI] Sensory exploration",
+      "[MNI] Scientific mixing",
+      "[MNI] Outdoor comfort"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] outdoorquest-shadow-tracing",
+    "name": "[MNI] Shadow Tracing Art",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 20 min",
+    "description": "[MNI] Use the sun to create art! Trace shadows of objects, toys, or even friends for unique silhouette artwork.",
+    "image": "[MNI] /images/nature-hunt.webp",
+    "rating": 4.4,
+    "reviewCount": 76,
+    "materials": [
+      {
+        "name": "[MNI] Sidewalk chalk"
+      },
+      {
+        "name": "[MNI] Sunny day"
+      },
+      {
+        "name": "[MNI] Objects to trace",
+        "quantity": "[MNI] Toys, plants, etc."
+      },
+      {
+        "name": "[MNI] Paper and pencil",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Find Shadows",
+        "description": "[MNI] Go outside on a sunny day. Notice how everything has a shadow!",
+        "duration": "[MNI] 3 min"
+      },
+      {
+        "title": "[MNI] Position Objects",
+        "description": "[MNI] Place toys, plants, or pose yourself to create interesting shadow shapes.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Trace Outlines",
+        "description": "[MNI] Use chalk to trace around shadow edges on pavement.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Add Details",
+        "description": "[MNI] Color in your traced shadows. Add features, patterns, or backgrounds.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Notice Changes",
+        "description": "[MNI] Come back later - have shadows moved? Try tracing the same object at different times!",
+        "duration": "[MNI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Wear sunscreen on sunny days",
+      "[MNI] Stay hydrated",
+      "[MNI] Don't look directly at the sun"
+    ],
+    "learningOutcomes": [
+      "[MNI] Sun and shadows",
+      "[MNI] Time and Earth rotation",
+      "[MNI] Art techniques",
+      "[MNI] Scientific observation"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "[MNI] outdoorquest-cloud-watching",
+    "name": "[MNI] Cloud Watching Journal",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 30 min",
+    "description": "[MNI] Lie back and watch the clouds! Learn cloud types, spot shapes, and create an imagination journal.",
+    "image": "[MNI] /images/nature-hunt.webp",
+    "rating": 4.3,
+    "reviewCount": 89,
+    "materials": [
+      {
+        "name": "Blanket"
+      },
+      {
+        "name": "[MNI] Journal or paper"
+      },
+      {
+        "name": "[MNI] Crayons or colored pencils"
+      },
+      {
+        "name": "[MNI] Cloud identification chart",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Find a Spot",
+        "description": "[MNI] Lay blanket in open area with good sky view. Lie on your back.",
+        "duration": "[MNI] 3 min"
+      },
+      {
+        "title": "[MNI] Observe Clouds",
+        "description": "[MNI] Watch the clouds move. What shapes do you see? Animals? Faces? Objects?",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Learn Cloud Types",
+        "description": "[MNI] Identify clouds: fluffy cumulus, wispy cirrus, layered stratus. What's up there today?",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Draw and Write",
+        "description": "[MNI] Sketch the shapes you see. Write stories about cloud characters.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Predict Weather",
+        "description": "[MNI] Different clouds mean different weather. What do today's clouds tell us?",
+        "duration": "[MNI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Don't cloud watch during storms",
+      "[MNI] Wear sunglasses on bright days",
+      "[MNI] Apply sunscreen"
+    ],
+    "learningOutcomes": [
+      "[MNI] Meteorology basics",
+      "[MNI] Imagination and creativity",
+      "Relaxation",
+      "[MNI] Weather prediction"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] outdoorquest-fairy-garden",
+    "name": "[MNI] Fairy Garden",
+    "pillar": "outdoorquest",
+    "category": "Garden",
+    "ageRange": "3-12",
+    "difficulty": "Medium",
+    "timeToMake": "[MNI] 1 hour",
+    "description": "[MNI] Create a miniature magical garden for fairies! Use tiny plants, pebbles, and handmade accessories.",
+    "image": "[MNI] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 156,
+    "materials": [
+      {
+        "name": "[MNI] Container or garden corner"
+      },
+      {
+        "name": "[MNI] Potting soil"
+      },
+      {
+        "name": "[MNI] Small plants or moss"
+      },
+      {
+        "name": "[MNI] Pebbles and small stones"
+      },
+      {
+        "name": "[MNI] Tiny decorations",
+        "quantity": "[MNI] Shells, acorns, small figurines"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Choose Location",
+        "description": "[MNI] Pick a container (pot, wooden box) or a corner of the yard for your fairy garden.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Add Soil and Base",
+        "description": "[MNI] Fill with potting soil. Add pebbles for a path. Create landscape with hills or flat areas.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Plant Greenery",
+        "description": "[MNI] Add small plants, moss, or ground cover. Think about scale - everything should be tiny!",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Create Features",
+        "description": "[MNI] Make tiny houses from sticks, furniture from acorn caps, fences from twigs.",
+        "duration": "[MNI] 20 min"
+      },
+      {
+        "title": "[MNI] Add Inhabitants",
+        "description": "[MNI] Place fairy figurines, or leave empty for imagination! Add final decorative touches.",
+        "duration": "[MNI] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Wash hands after handling soil",
+      "[MNI] Small pieces can be choking hazards for young children"
+    ],
+    "learningOutcomes": [
+      "[MNI] Gardening basics",
+      "[MNI] Miniature design",
+      "[MNI] Imaginative play",
+      "[MNI] Caring for living things"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] outdoorquest-obstacle-course",
+    "name": "[MNI] Backyard Obstacle Course",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 30 min setup",
+    "description": "[MNI] Design and conquer your own obstacle course! Jump, crawl, balance, and race through challenges.",
+    "image": "[MNI] /images/nature-hunt.webp",
+    "rating": 4.6,
+    "reviewCount": 178,
+    "materials": [
+      {
+        "name": "[MNI] Hula hoops"
+      },
+      {
+        "name": "[MNI] Pool noodles"
+      },
+      {
+        "name": "[MNI] Cones or markers"
+      },
+      {
+        "name": "[MNI] Rope or string"
+      },
+      {
+        "name": "Buckets"
+      },
+      {
+        "name": "Balls"
+      },
+      {
+        "name": "Timer",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Plan Your Course",
+        "description": "[MNI] Decide on 5-8 obstacles. Include different movements: jumping, crawling, throwing, balancing.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Set Up Obstacles",
+        "description": "[MNI] Examples: hoop jump, noodle limbo, cone weave, bucket ball toss, rope hop.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Create Start/Finish",
+        "description": "[MNI] Mark clear start and finish lines. Number obstacles if doing them in order.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Test Run",
+        "description": "[MNI] Run through once yourself. Is it challenging but doable? Adjust difficulty.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "Race!",
+        "description": "[MNI] Time yourself, race friends, or try to beat your own record!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Check ground for hazards",
+      "[MNI] Age-appropriate challenges",
+      "[MNI] No obstacles near hard surfaces",
+      "[MNI] Warm up before running"
+    ],
+    "learningOutcomes": [
+      "[MNI] Physical fitness",
+      "[MNI] Course design",
+      "Sportsmanship",
+      "Problem-solving"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] outdoorquest-leaf-rubbing",
+    "name": "[MNI] Leaf Rubbing Art",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "3-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 20 min",
+    "description": "[MNI] Create beautiful impressions of leaves using crayons! A simple nature art activity perfect for all ages.",
+    "image": "[MNI] /images/nature-hunt.webp",
+    "rating": 4.5,
+    "reviewCount": 134,
+    "materials": [
+      {
+        "name": "[MNI] Fresh leaves",
+        "quantity": "[MNI] Various shapes"
+      },
+      {
+        "name": "[MNI] White paper"
+      },
+      {
+        "name": "Crayons",
+        "quantity": "Unwrapped"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Collect Leaves",
+        "description": "[MNI] Gather leaves with interesting shapes and strong veins. Fresh leaves work best.",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Position Leaves",
+        "description": "[MNI] Place leaves vein-side up under paper. Use tape to hold paper still.",
+        "duration": "[MNI] 3 min"
+      },
+      {
+        "title": "[MNI] Rub with Crayon",
+        "description": "[MNI] Rub crayon side across paper over leaf. The leaf pattern appears!",
+        "tip": "[MNI] Use side of unwrapped crayon for best results.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Create Composition",
+        "description": "[MNI] Make multiple rubbings to create a forest, tree, or abstract design.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Identify Leaves",
+        "description": "[MNI] Look up what trees your leaves came from. Label your artwork!",
+        "duration": "[MNI] 5 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Wash hands after handling leaves",
+      "[MNI] Avoid poison ivy/oak"
+    ],
+    "learningOutcomes": [
+      "[MNI] Plant identification",
+      "[MNI] Art technique",
+      "[MNI] Texture exploration",
+      "[MNI] Nature appreciation"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] outdoorquest-water-balloons",
+    "name": "[MNI] Water Balloon Games",
+    "pillar": "outdoorquest",
+    "category": "Adventure",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 30 min play",
+    "description": "[MNI] Cool off with exciting water balloon games! From toss to relay races, get ready to get wet!",
+    "image": "[MNI] /images/nature-hunt.webp",
+    "rating": 4.7,
+    "reviewCount": 189,
+    "materials": [
+      {
+        "name": "[MNI] Water balloons",
+        "quantity": "30-50"
+      },
+      {
+        "name": "[MNI] Water source"
+      },
+      {
+        "name": "Buckets",
+        "quantity": "2-4"
+      },
+      {
+        "name": "[MNI] Open outdoor space"
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Fill Balloons",
+        "description": "[MNI] Fill balloons at outdoor faucet. Don't overfill - they pop too easily!",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Balloon Toss",
+        "description": "[MNI] Partners toss balloon back and forth, stepping back after each catch. Who lasts longest?",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Relay Race",
+        "description": "[MNI] Carry balloon on spoon across yard without dropping. Teams compete!",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Target Practice",
+        "description": "[MNI] Draw chalk targets. Throw balloons at targets for points!",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Clean Up",
+        "description": "[MNI] IMPORTANT: Pick up all balloon pieces - they're harmful to wildlife!",
+        "duration": "[MNI] 10 min"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] ALWAYS clean up balloon pieces",
+      "[MNI] Balloons are choking hazards",
+      "[MNI] Don't throw at faces",
+      "[MNI] Watch for slippery areas"
+    ],
+    "learningOutcomes": [
+      "Teamwork",
+      "[MNI] Gross motor skills",
+      "Sportsmanship",
+      "[MNI] Environmental responsibility (cleanup)"
+    ],
+    "isPremium": true
+  },
+  {
+    "id": "[MNI] outdoorquest-stargazing",
+    "name": "[MNI] Stargazing Night",
+    "pillar": "outdoorquest",
+    "category": "Nature",
+    "ageRange": "6-12",
+    "difficulty": "Easy",
+    "timeToMake": "[MNI] 1 hour",
+    "description": "[MNI] Explore the night sky! Learn constellations, spot planets, and maybe catch a shooting star.",
+    "image": "[MNI] /images/nature-hunt.webp",
+    "rating": 4.8,
+    "reviewCount": 145,
+    "materials": [
+      {
+        "name": "Blanket"
+      },
+      {
+        "name": "[MNI] Star chart or app"
+      },
+      {
+        "name": "[MNI] Red flashlight",
+        "optional": true
+      },
+      {
+        "name": "Binoculars",
+        "optional": true
+      },
+      {
+        "name": "[MNI] Hot cocoa",
+        "optional": true
+      }
+    ],
+    "steps": [
+      {
+        "title": "[MNI] Choose Location",
+        "description": "[MNI] Find dark spot away from lights. Backyard works if lights are off!",
+        "duration": "[MNI] 5 min"
+      },
+      {
+        "title": "[MNI] Let Eyes Adjust",
+        "description": "[MNI] Wait 10-15 minutes for eyes to adapt to darkness. Avoid looking at bright lights.",
+        "duration": "[MNI] 15 min"
+      },
+      {
+        "title": "[MNI] Find North Star",
+        "description": "[MNI] Locate Big Dipper, then follow pointer stars to Polaris, the North Star.",
+        "duration": "[MNI] 10 min"
+      },
+      {
+        "title": "[MNI] Hunt Constellations",
+        "description": "[MNI] Use star chart to find Orion, Cassiopeia, and seasonal constellations.",
+        "duration": "[MNI] 20 min"
+      },
+      {
+        "title": "[MNI] Watch for Movement",
+        "description": "[MNI] Satellites cross slowly. Shooting stars streak fast. Planets don't twinkle!",
+        "duration": "∞"
+      }
+    ],
+    "safetyNotes": [
+      "[MNI] Stay in safe areas at night",
+      "[MNI] Adult supervision required",
+      "[MNI] Bring bug spray",
+      "[MNI] Dress warmly"
+    ],
+    "learningOutcomes": [
+      "[MNI] Astronomy basics",
+      "[MNI] Navigation history",
+      "[MNI] Patience and observation",
+      "[MNI] Wonder and curiosity"
+    ],
+    "isPremium": true
+  }
+]

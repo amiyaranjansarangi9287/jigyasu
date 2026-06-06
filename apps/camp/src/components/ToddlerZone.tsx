@@ -54,7 +54,7 @@ export default function ToddlerZone({
             <button
               onClick={onExitToddlerZone}
               className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors text-lg"
-            >
+             aria-label="Action button">
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
@@ -159,7 +159,7 @@ export default function ToddlerZone({
                   className="group bg-white dark:bg-gray-800 rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-pink-300 dark:hover:border-pink-600"
                 >
                   {/* Image */}
-                  <div className="relative h-40 overflow-hidden">
+                  <div className="relative min-h-40 overflow-hidden">
                     <img
                       src={activity.image}
                       alt={activity.name}
@@ -185,7 +185,7 @@ export default function ToddlerZone({
                         e.stopPropagation();
                         onToggleFavorite(activity.id);
                       }}
-                      className={`absolute top-3 right-3 w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all ${
+                      className={`absolute top-3 right-3 w-12 min-h-12 rounded-full flex items-center justify-center shadow-lg transition-all ${
                         isFavorite(activity.id)
                           ? 'bg-pink-500 text-white scale-110'
                           : 'bg-white/90 text-gray-400 hover:scale-110'
@@ -202,7 +202,7 @@ export default function ToddlerZone({
                     </button>
 
                     {/* Pillar Icon */}
-                    <div className="absolute bottom-3 left-3 w-12 h-12 rounded-2xl bg-white dark:bg-gray-900 flex items-center justify-center text-2xl shadow-lg">
+                    <div className="absolute bottom-3 left-3 w-12 min-h-12 rounded-2xl bg-white dark:bg-gray-900 flex items-center justify-center text-2xl shadow-lg">
                       {pillar?.icon}
                     </div>
                   </div>

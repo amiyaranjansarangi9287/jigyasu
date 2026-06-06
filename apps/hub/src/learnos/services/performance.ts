@@ -15,7 +15,6 @@ function sendToAnalytics(metric: Metric) {
   };
 
   if (import.meta.env.DEV) {
-    console.log(`[Perf] ${metric.name}: ${metric.value.toFixed(2)} (${metric.rating})`);
   }
 
   const consent = localStorage.getItem('learnos-consent');

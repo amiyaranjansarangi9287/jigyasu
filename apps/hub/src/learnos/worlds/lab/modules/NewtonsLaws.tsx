@@ -61,9 +61,7 @@ export default function NewtonsLaws() {
           <h1 className="text-3xl font-extrabold text-slate-800">
             {t('lab.newtonslaws.title', { defaultValue: "Newton's Laws of Motion" })}
           </h1>
-          <p className="text-sm text-slate-500 mt-2">
-            F = ma — Push objects and see how they move!
-          </p>
+          <p className="text-sm text-slate-500 mt-2">{t('lab.modules.NewtonsLaws.txt_FmaPushobj', 'F = ma — Push objects and see how they move!')}</p>
         </div>
 
         {/* Controls */}
@@ -89,7 +87,7 @@ export default function NewtonsLaws() {
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 space-y-4">
           <div>
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm text-slate-400">💪 Force</span>
+              <span className="text-sm text-slate-400">{t('lab.modules.NewtonsLaws.spn_Force', '💪 Force')}</span>
               <span className="text-sm font-medium text-purple-600">{force} N</span>
             </div>
             <input
@@ -104,7 +102,7 @@ export default function NewtonsLaws() {
           </div>
           <div>
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm text-slate-400">📦 Mass</span>
+              <span className="text-sm text-slate-400">{t('lab.modules.NewtonsLaws.spn_Mass', '📦 Mass')}</span>
               <span className="text-sm font-medium text-indigo-600">{mass} kg</span>
             </div>
             <input
@@ -131,24 +129,24 @@ export default function NewtonsLaws() {
           <div className="bg-indigo-50 rounded-2xl p-4 text-center">
             <div className="text-2xl mb-1">🛑</div>
             <div className="font-bold text-indigo-600 text-sm">1st Law</div>
-            <p className="text-sm text-indigo-400 mt-1">Inertia: Objects keep doing what they're doing</p>
+            <p className="text-sm text-indigo-400 mt-1">{t('lab.modules.NewtonsLaws.txt_InertiaObj', 'Inertia: Objects keep doing what they\'re doing')}</p>
           </div>
           <div className="bg-purple-50 rounded-2xl p-4 text-center">
             <div className="text-2xl mb-1">💥</div>
             <div className="font-bold text-purple-600 text-sm">2nd Law</div>
-            <p className="text-sm text-purple-400 mt-1">F=ma: Force = mass × acceleration</p>
+            <p className="text-sm text-purple-400 mt-1">{t('lab.modules.NewtonsLaws.txt_FmaForcema', 'F=ma: Force = mass × acceleration')}</p>
           </div>
           <div className="bg-blue-50 rounded-2xl p-4 text-center">
             <div className="text-2xl mb-1">🔄</div>
             <div className="font-bold text-blue-600 text-sm">3rd Law</div>
-            <p className="text-sm text-blue-400 mt-1">Action-Reaction: Every force has an equal opposite</p>
+            <p className="text-sm text-blue-400 mt-1">{t('lab.modules.NewtonsLaws.txt_ActionReac', 'Action-Reaction: Every force has an equal opposite')}</p>
           </div>
         </div>
 
         {/* Indian context */}
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.NewtonsLaws.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1">Ancient Indian Physics</h3>
               <p className="text-gray-600 text-sm leading-relaxed">

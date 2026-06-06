@@ -1,5 +1,6 @@
 // src/worlds/discovery/modules/FermiEstimation.tsx
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import DiscoveryShell from '../DiscoveryShell';
 import { useLumoSage } from '../hooks/useLumoSage';
@@ -13,6 +14,7 @@ const PROBLEMS = [
 ];
 
 export default function FermiEstimation() {
+  const { t } = useTranslation();
   const lumo = useLumoSage();
   const { recordFermiAttempt } = useDiscoveryProgress();
   const { trackEvent } = useDiscoverySession();
@@ -62,7 +64,7 @@ export default function FermiEstimation() {
         <div className="bg-slate-800 rounded-2xl p-5 border border-slate-700 mb-4 text-center">
           <div className="text-5xl mb-3">{prob.emoji}</div>
           <p className="text-white font-bold text-lg">{prob.question}</p>
-          {prob.indian && <p className="text-amber-400 text-sm mt-2">🇮🇳 Indian estimation</p>}
+          {prob.indian && <p className="text-amber-400 text-sm mt-2">{t('discovery.modules.FermiEstimation.txt_Indianesti', '🇮🇳 Indian estimation')}</p>}
         </div>
 
         {/* Step builder */}
@@ -71,7 +73,7 @@ export default function FermiEstimation() {
             <div key={i} className={`bg-slate-800 rounded-xl p-3 border transition-all ${i < estimates.length ? 'border-green-700/50' : i === stepIdx ? 'border-indigo-500' : 'border-slate-700 opacity-40'}`}>
               <div className="flex items-center justify-between mb-1">
                 <span className="text-slate-400 text-sm font-bold">Step {i + 1}: {step.label}</span>
-                {i < estimates.length && <span className="text-green-400 text-sm">✓</span>}
+                {i < estimates.length && <span className="text-green-400 text-sm">{t('discovery.modules.FermiEstimation.spn_', '✓')}</span>}
               </div>
               {i === stepIdx && !revealed && i >= estimates.length && (
                 <StepInput onSubmit={handleStepSubmit} hint={step.hint} />
@@ -92,29 +94,23 @@ export default function FermiEstimation() {
             <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="bg-indigo-900/30 border border-indigo-700/50 rounded-2xl p-4 mb-4">
               <div className="grid grid-cols-2 gap-4 mb-3">
                 <div className="text-center">
-                  <p className="text-indigo-400 text-sm font-bold">Your Estimate</p>
+                  <p className="text-indigo-400 text-sm font-bold">{t('discovery.modules.FermiEstimation.txt_YourEstima', 'Your Estimate')}</p>
                   <p className="text-white font-bold text-lg">{prob.answer}</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-amber-400 text-sm font-bold">Real Answer</p>
+                  <p className="text-amber-400 text-sm font-bold">{t('discovery.modules.FermiEstimation.txt_RealAnswer', 'Real Answer')}</p>
                   <p className="text-white font-bold text-lg">{prob.real}</p>
                 </div>
               </div>
-              <p className="text-indigo-300 text-sm text-center italic">
-                "The reasoning matters more than the answer."
-              </p>
+              <p className="text-indigo-300 text-sm text-center italic">{t('discovery.modules.FermiEstimation.txt_Thereasoni', '"The reasoning matters more than the answer."')}</p>
             </motion.div>
           )}
         </AnimatePresence>
 
         {!revealed && estimates.length >= prob.steps.length ? (
-          <button onClick={handleReveal} className="w-full py-4 bg-orange-600 text-white font-bold rounded-2xl min-h-[52px]">
-            Reveal Answer! 🔍
-          </button>
+          <button onClick={handleReveal} className="w-full py-4 bg-orange-600 text-white font-bold rounded-2xl min-h-[52px]">{t('discovery.modules.FermiEstimation.btn_RevealAnsw', 'Reveal Answer! 🔍')}</button>
         ) : revealed ? (
-          <button onClick={handleNext} className="w-full py-4 bg-indigo-600 text-white font-bold rounded-2xl min-h-[52px]">
-            Next Problem →
-          </button>
+          <button onClick={handleNext} className="w-full py-4 bg-indigo-600 text-white font-bold rounded-2xl min-h-[52px]">{t('discovery.modules.FermiEstimation.btn_NextProble', 'Next Problem →')}</button>
         ) : null}
       </div>
     </DiscoveryShell>

@@ -83,7 +83,7 @@ function CoinFlip() {
           <div className="flex justify-center gap-2 mb-4">
             {Array.from({ length: numCoins }).map((_, i) => (
               <motion.div key={i}
-                className="w-16 h-16 rounded-full bg-gradient-to-br from-yellow-400 to-amber-600 flex items-center justify-center text-2xl font-bold shadow-lg"
+                className="w-16 min-h-16 rounded-full bg-gradient-to-br from-yellow-400 to-amber-600 flex items-center justify-center text-2xl font-bold shadow-lg"
                 animate={flipping ? { rotateY: [0, 360, 720], scale: [1, 1.2, 1] } : {}}
                 transition={{ duration: 0.5 }}
               >
@@ -130,7 +130,7 @@ function CoinFlip() {
 
         <div className="bg-white/5 rounded-xl p-4 border border-white/10">
           <h4 className="text-white font-bold mb-2">📜 History ({stats.total} flips)</h4>
-          <div className="flex flex-wrap gap-1 max-h-32 overflow-y-auto">
+          <div className="flex flex-wrap gap-1 max-min-h-32 overflow-y-auto">
             {flips.slice(-50).map((f, i) => (
               <motion.span key={i}
                 className={`w-6 h-6 rounded-full text-xs flex items-center justify-center font-bold ${f === 'H' ? 'bg-yellow-500/30 text-yellow-300' : 'bg-gray-500/30 text-gray-300'}`}
@@ -201,7 +201,7 @@ function DiceRoll() {
           <div className="flex justify-center gap-2 mb-4 flex-wrap">
             {Array.from({ length: numDice }).map((_, i) => (
               <motion.div key={i}
-                className="w-16 h-16 rounded-xl bg-white text-4xl flex items-center justify-center shadow-lg"
+                className="w-16 min-h-16 rounded-xl bg-white text-4xl flex items-center justify-center shadow-lg"
                 animate={rolling ? { rotate: [0, 360], scale: [1, 1.2, 1] } : {}}
                 transition={{ duration: 0.5 }}
               >
@@ -355,10 +355,10 @@ function CardDraw() {
 
       <div className="bg-white/5 rounded-xl p-4 border border-white/10">
         <h4 className="text-white font-bold mb-3">📜 Drawn Cards ({drawn.length})</h4>
-        <div className="flex flex-wrap gap-1 max-h-64 overflow-y-auto">
+        <div className="flex flex-wrap gap-1 max-min-h-64 overflow-y-auto">
           {drawn.map((card, i) => (
             <motion.div key={i}
-              className={`w-10 h-14 rounded bg-white flex flex-col items-center justify-center text-xs font-bold ${isRed(card.suit) ? 'text-red-600' : 'text-gray-900'}`}
+              className={`w-10 min-h-14 rounded bg-white flex flex-col items-center justify-center text-xs font-bold ${isRed(card.suit) ? 'text-red-600' : 'text-gray-900'}`}
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: i * 0.02 }}

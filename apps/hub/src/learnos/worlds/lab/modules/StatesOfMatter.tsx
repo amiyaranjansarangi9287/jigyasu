@@ -48,9 +48,7 @@ export default function StatesOfMatter() {
           <h1 className="text-3xl font-extrabold text-slate-800">
             {t('lab.states.title', { defaultValue: 'States of Matter' })}
           </h1>
-          <p className="text-sm text-slate-500 mt-2">
-            Drag the slider to heat or cool the particles!
-          </p>
+          <p className="text-sm text-slate-500 mt-2">{t('lab.modules.StatesOfMatter.txt_Dragthesli', 'Drag the slider to heat or cool the particles!')}</p>
         </div>
 
         {/* State indicator */}
@@ -71,8 +69,8 @@ export default function StatesOfMatter() {
         {/* Temperature slider */}
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
           <div className="flex items-center justify-between mb-3">
-            <span className="text-sm text-slate-400">🧊 Cold</span>
-            <span className="text-sm text-slate-400">Hot 🔥</span>
+            <span className="text-sm text-slate-400">{t('lab.modules.StatesOfMatter.spn_Cold', '🧊 Cold')}</span>
+            <span className="text-sm text-slate-400">{t('lab.modules.StatesOfMatter.spn_Hot', 'Hot 🔥')}</span>
           </div>
           <input
             type="range"
@@ -86,10 +84,10 @@ export default function StatesOfMatter() {
             }}
           />
           <div className="flex justify-between mt-2 text-sm text-slate-400">
-            <span>0°C</span>
-            <span>33°C</span>
-            <span>66°C</span>
-            <span>100°C</span>
+            <span>{t('lab.modules.StatesOfMatter.spn_0C', '0°C')}</span>
+            <span>{t('lab.modules.StatesOfMatter.spn_33C', '33°C')}</span>
+            <span>{t('lab.modules.StatesOfMatter.spn_66C', '66°C')}</span>
+            <span>{t('lab.modules.StatesOfMatter.spn_100C', '100°C')}</span>
           </div>
         </div>
 
@@ -98,24 +96,24 @@ export default function StatesOfMatter() {
           <div className="bg-blue-50 rounded-2xl p-4 text-center">
             <div className="text-3xl mb-2">🧊</div>
             <div className="font-bold text-blue-600 text-sm">Solid</div>
-            <p className="text-sm text-blue-400 mt-1">Particles vibrate in place</p>
+            <p className="text-sm text-blue-400 mt-1">{t('lab.modules.StatesOfMatter.txt_Particlesv', 'Particles vibrate in place')}</p>
           </div>
           <div className="bg-cyan-50 rounded-2xl p-4 text-center">
             <div className="text-3xl mb-2">💧</div>
             <div className="font-bold text-cyan-600 text-sm">Liquid</div>
-            <p className="text-sm text-cyan-400 mt-1">Particles slide past each other</p>
+            <p className="text-sm text-cyan-400 mt-1">{t('lab.modules.StatesOfMatter.txt_Particless', 'Particles slide past each other')}</p>
           </div>
           <div className="bg-orange-50 rounded-2xl p-4 text-center">
             <div className="text-3xl mb-2">💨</div>
             <div className="font-bold text-orange-600 text-sm">Gas</div>
-            <p className="text-sm text-orange-400 mt-1">Particles fly freely</p>
+            <p className="text-sm text-orange-400 mt-1">{t('lab.modules.StatesOfMatter.txt_Particlesf', 'Particles fly freely')}</p>
           </div>
         </div>
 
         {/* Indian context */}
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.StatesOfMatter.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1">Ancient Indian Connection</h3>
               <p className="text-gray-600 text-sm leading-relaxed">

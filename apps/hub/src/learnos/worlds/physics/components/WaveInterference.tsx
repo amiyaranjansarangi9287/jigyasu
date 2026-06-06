@@ -69,7 +69,7 @@ export default function WaveInterference() {
     ctx.fillRect(w - 180, 10, 170, 30);
     ctx.fillStyle = isConstructive ? '#22c55e' : isDestructive ? '#ef4444' : '#f59e0b';
     ctx.font = 'bold 11px sans-serif';
-    ctx.fillText(isConstructive ? '✅ Constructive' : isDestructive ? '❌ Destructive' : '🌊 Mixed', w - 170, 30);
+    ctx.fillText(isConstructive ? '✅ Constructive' : isDestructive ? '🤔 Destructive' : '🌊 Mixed', w - 170, 30);
   }, [freq1, freq2, amp1, amp2, phase, time]);
 
   useEffect(() => {

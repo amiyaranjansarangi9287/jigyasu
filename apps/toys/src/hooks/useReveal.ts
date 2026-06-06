@@ -49,6 +49,7 @@ export function useCountUp(target: number, duration = 2000, startOnVisible = tru
       if (hasAnimated.current) return;
       hasAnimated.current = true;
 
+      let frameId: number;
       const start = 0;
       const startTime = performance.now();
 
@@ -59,15 +60,19 @@ export function useCountUp(target: number, duration = 2000, startOnVisible = tru
         const eased = 1 - Math.pow(1 - progress, 3);
         const current = Math.round(start + (target - start) * eased);
         if (el) el.textContent = String(current);
-        if (progress < 1) requestAnimationFrame(step);
+        if (progress < 1) {
+          frameId = requestAnimationFrame(step);
+        }
       };
 
-      requestAnimationFrame(step);
+      frameId = requestAnimationFrame(step);
     };
 
     if (!startOnVisible) {
       animate();
-      return;
+      return () => {
+        if (frameId) cancelAnimationFrame(frameId);
+      };
     }
 
     const observer = new IntersectionObserver(
@@ -80,7 +85,10 @@ export function useCountUp(target: number, duration = 2000, startOnVisible = tru
     );
 
     observer.observe(el);
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      if (frameId) cancelAnimationFrame(frameId);
+    };
   }, [target, duration, startOnVisible]);
 
   return ref;

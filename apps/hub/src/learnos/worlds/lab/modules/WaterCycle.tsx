@@ -45,9 +45,7 @@ export default function WaterCycle() {
           <h1 className="text-3xl font-extrabold text-slate-800">
             {t('lab.watercycle.title', { defaultValue: 'The Water Cycle' })}
           </h1>
-          <p className="text-sm text-slate-500 mt-2">
-            Control the sun and watch water evaporate, condense, and rain!
-          </p>
+          <p className="text-sm text-slate-500 mt-2">{t('lab.modules.WaterCycle.txt_Controlthe', 'Control the sun and watch water evaporate, condense, and rain!')}</p>
         </div>
 
         {/* Controls */}
@@ -72,8 +70,8 @@ export default function WaterCycle() {
         {/* Sun intensity slider */}
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
           <div className="flex items-center justify-between mb-3">
-            <span className="text-sm text-slate-400">🌥️ Low sun</span>
-            <span className="text-sm text-slate-400">☀️ Intense sun</span>
+            <span className="text-sm text-slate-400">{t('lab.modules.WaterCycle.spn_Lowsun', '🌥️ Low sun')}</span>
+            <span className="text-sm text-slate-400">{t('lab.modules.WaterCycle.spn_Intensesun', '☀️ Intense sun')}</span>
           </div>
           <input
             type="range"
@@ -115,7 +113,7 @@ export default function WaterCycle() {
         {/* Indian context */}
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🕉️</span>
+            <span className="text-2xl">{t('lab.modules.WaterCycle.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1">Indian Monsoon Connection</h3>
               <p className="text-gray-600 text-sm leading-relaxed">

@@ -37,7 +37,7 @@ export default function QuadraticSolver() {
   const [mode, setMode] = useState<'explore' | 'challenge'>('explore');
   const [challenge, setChallenge] = useState(makeQuadraticChallenge);
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [score, setScore] = useState(0);
+  const [mastery, setMastery] = useState(0);
 
   const calc = useMemo(() => {
     const d = b * b - 4 * a * c;
@@ -52,7 +52,7 @@ export default function QuadraticSolver() {
     if (feedback) return;
     if (option === challenge.roots) {
       setFeedback('correct');
-      setScore((s) => s + 15);
+      setMastery((s) => s + 15);
       setTimeout(() => { setChallenge(makeQuadraticChallenge()); setFeedback(null); }, 1200);
     } else {
       setFeedback('wrong');
@@ -91,14 +91,14 @@ export default function QuadraticSolver() {
       <AnimatePresence mode="wait">
         {mode === 'challenge' ? (
           <motion.div key="challenge" className="max-w-lg mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-red-500/10 border-red-500/40' : 'bg-white/5 border-white/10'}`}>
-              <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {score}</span><span className="text-gray-400 text-sm">Find both roots</span></div>
+            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
+              <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {mastery}</span><span className="text-gray-400 text-sm">Find both roots</span></div>
               <p className="text-center text-3xl font-bold text-white font-mono mb-5">{fmtEquation(challenge.a, challenge.b, challenge.c)}</p>
               <div className="grid grid-cols-2 gap-3">
                 {challenge.options.map((opt) => <motion.button key={opt} className={`py-3 rounded-xl text-lg font-bold ${feedback === 'correct' && opt === challenge.roots ? 'bg-green-500 text-white' : feedback ? 'bg-white/5 text-gray-500' : 'bg-white/10 text-white hover:bg-white/20 border border-white/20'}`} whileHover={!feedback ? { scale: 1.05 } : {}} whileTap={!feedback ? { scale: 0.95 } : {}} onClick={() => answerChallenge(opt)} disabled={!!feedback}>x = {opt}</motion.button>)}
               </div>
               {feedback === 'correct' && <p className="text-green-400 text-center font-bold mt-4">✅ Correct roots!</p>}
-              {feedback === 'wrong' && <p className="text-red-400 text-center font-bold mt-4">Try factoring or the formula.</p>}
+              {feedback === 'wrong' && <p className="text-orange-400 text-center font-bold mt-4">Try factoring or the formula.</p>}
             </div>
           </motion.div>
         ) : (

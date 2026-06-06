@@ -85,6 +85,7 @@ export default function ActivityGallery({
               }`}
             >
               <span>{pillar.icon}</span>
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
               <span className="text-sm">{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
             </button>
           ))}

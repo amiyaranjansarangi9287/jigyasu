@@ -223,7 +223,7 @@ export default function HeartCirculation() {
                 ].map((item, i) => (
                   <span key={i} className={`px-1.5 py-0.5 rounded ${
                     item.color === 'blue' ? 'bg-blue-500/20 text-blue-400' :
-                    item.color === 'red' ? 'bg-red-500/20 text-red-400' :
+                    item.color === 'red' ? 'bg-red-500/20 text-orange-400' :
                     item.color === 'pink' ? 'bg-pink-500/20 text-pink-400 font-bold' :
                     'text-gray-600'
                   }`}>{item.text}</span>
@@ -264,12 +264,12 @@ export default function HeartCirculation() {
             <div className="bg-gray-900 rounded-2xl border border-gray-800 p-5">
               <h4 className="text-sm font-bold text-white mb-3">❤️ Heart Facts</h4>
               <ul className="text-sm text-gray-300 space-y-2">
-                <li className="flex gap-2"><span className="text-red-400">•</span> Beats ~100,000 times per day</li>
-                <li className="flex gap-2"><span className="text-red-400">•</span> Pumps ~2,000 gallons of blood daily</li>
-                <li className="flex gap-2"><span className="text-red-400">•</span> About the size of your fist</li>
-                <li className="flex gap-2"><span className="text-red-400">•</span> Creates enough pressure to squirt blood 30 feet</li>
-                <li className="flex gap-2"><span className="text-red-400">•</span> Has its own electrical system (SA & AV nodes)</li>
-                <li className="flex gap-2"><span className="text-red-400">•</span> Blood completes full circuit in ~60 seconds</li>
+                <li className="flex gap-2"><span className="text-orange-400">•</span> Beats ~100,000 times per day</li>
+                <li className="flex gap-2"><span className="text-orange-400">•</span> Pumps ~2,000 gallons of blood daily</li>
+                <li className="flex gap-2"><span className="text-orange-400">•</span> About the size of your fist</li>
+                <li className="flex gap-2"><span className="text-orange-400">•</span> Creates enough pressure to squirt blood 30 feet</li>
+                <li className="flex gap-2"><span className="text-orange-400">•</span> Has its own electrical system (SA & AV nodes)</li>
+                <li className="flex gap-2"><span className="text-orange-400">•</span> Blood completes full circuit in ~60 seconds</li>
               </ul>
             </div>
 
