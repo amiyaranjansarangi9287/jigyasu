@@ -1,7 +1,7 @@
 {
   "buildCommand": "pnpm build",
-  "outputDirectory": "apps/hub/dist",
-  "framework": null,
+  "outputDirectory": "dist",
+  "framework": "vite",
   "installCommand": "pnpm install --force",
   "headers": [
     {
