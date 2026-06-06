@@ -16,16 +16,12 @@ const AVATAR_EMOJI: Record<(typeof AVATARS)[number], string> = {
   fox: '\u{1F98A}',
 };
 
-const LANGUAGES = [
-  { code: 'en', label: 'English' },
-  { code: 'hi', label: 'Hindi' },
-  { code: 'kn', label: 'Kannada' },
-  { code: 'te', label: 'Telugu' },
-  { code: 'ta', label: 'Tamil' },
-  { code: 'od', label: 'Odia' },
-  { code: 'es', label: 'Spanish' },
-  { code: 'fr', label: 'French' },
-];
+import { LANGUAGES as APP_LANGUAGES } from '../learnos/constants/languages';
+
+const LANGUAGES = Object.values(APP_LANGUAGES).map(lang => ({
+  code: lang.code,
+  label: lang.nativeName === 'English' ? 'English' : `${lang.nativeName} (${lang.code.toUpperCase()})`
+}));
 
 interface OnboardingWizardProps {
   onComplete: (name: string, avatar: string, lang: string, ageTier: string) => void;
