@@ -162,7 +162,60 @@
       "shadow": "Shadow Play",
       "magnet": "Sticky Magnets",
       "shop": "The Market Shop",
-      "adventure_map": "The Big Map"
+      "adventure_map": "The Big Map",
+      "AlphabetForest": {
+        "spn_": "🐤",
+        "txt_Tapaletter": "Tap a letter above to explore!"
+      },
+      "HabitatHeroes": {
+        "spn_": "🐤",
+        "txt_AllHabitat": "All Habitats Explored!"
+      },
+      "MagnetExplorer": {
+        "spn_": "🐤🧲",
+        "txt_Isitmagnet": "Is it magnetic?",
+        "txt_Magnetic": "Magnetic",
+        "txt_NotMagneti": "Not Magnetic",
+        "txt_Tapanobjec": "Tap an object, then tap a bin",
+        "txt_MagnetScie": "Magnet Scientist!",
+        "btn_SortAgain": "Sort Again! 🧲"
+      },
+      "MiniChef": {
+        "spn_": "🐤👨‍🍳",
+        "txt_Choosearec": "Choose a recipe to cook!",
+        "txt_isreadyYum": "is ready! Yum! 🎉",
+        "btn_CookSometh": "Cook Something Else! 👨‍🍳"
+      },
+      "NumberLineAdventures": {
+        "txt_WheredoIla": "Where do I land?",
+        "btn_NextProble": "Next Problem →"
+      },
+      "PatternPatrol": {
+        "spn_": "🐤🔍",
+        "txt_Whatcomesn": "What comes next?"
+      },
+      "PlantGrowthExplorer": {
+        "spn_Water": "💧 Water",
+        "spn_Sunlight": "☀️ Sunlight",
+        "spn_": "🐤"
+      },
+      "ShadowDetective": {
+        "spn_": "🐤🔦",
+        "btn_NextChalle": "Next Challenge 🔦"
+      },
+      "StoryBuilder": {
+        "spn_": "🐤",
+        "txt_Whowasthem": "Who was the main character in the story?"
+      },
+      "WaterCycleJourney": {
+        "spn_": "💧",
+        "txt_Droppythan": "Droppy thanks you!",
+        "btn_FollowDrop": "Follow Droppy Again 💧"
+      },
+      "WordScramble": {
+        "spn_": "🐤✏️",
+        "txt_Puttheword": "Put the words in the right order!"
+      }
     },
     "pip": {
       "greeting": "Ooh! What shall we discover today?"
@@ -280,6 +333,219 @@
       "concept-bridge": {
         "title": "The Bridge Builder",
         "realWorldConnection": "How math and physics hold up the Howrah Bridge."
+      },
+      "Atoms": {
+        "txt_Explorethe": "Explore the building blocks of matter!",
+        "spn_": "🕉️"
+      },
+      "BloodCirculation": {
+        "txt_Watchblood": "Watch blood flow through your heart and body!",
+        "spn_Resting60": "😴 Resting (60)",
+        "spn_Exercise18": "🏃 Exercise (180)",
+        "txt_Beatsperda": "Beats per day",
+        "txt_Bloodvolum": "Blood volume",
+        "txt_Vesselscir": "Vessels circle Earth",
+        "spn_": "🕉️"
+      },
+      "BuoyancyLab": {
+        "txt_Dropobject": "Drop objects into the water. Which float?",
+        "txt_Dropanobje": "Drop an object here"
+      },
+      "CellExplorer": {
+        "txt_Explorethe": "Explore the tiny world inside every living thing!",
+        "txt_Cellsinyou": "Cells in your body",
+        "txt_Typicalcel": "Typical cell size",
+        "spn_": "🕉️"
+      },
+      "DayNight": {
+        "txt_Earthrotat": "Earth rotates to create day and night!",
+        "spn_Speed": "🔄 Speed",
+        "spn_": "🕉️",
+        "txt_Aryabhata4": "Aryabhata (499 CE) correctly explained day/night as Earth\\"
+      },
+      "DigestiveSystem": {
+        "txt_Followfood": "Follow food\\",
+        "txt_Smallintes": "Small intestine length",
+        "txt_Totaldiges": "Total digestion time",
+        "spn_": "🕉️"
+      },
+      "Electricity": {
+        "txt_Buildacirc": "Build a circuit and see Ohm\\",
+        "spn_Voltage": "🔋 Voltage",
+        "spn_Resistance": "🔧 Resistance",
+        "spn_": "🕉️"
+      },
+      "FloatSink": {
+        "txt_Clickobjec": "Click objects to drop them in water — density decides!",
+        "btn_Reset": "🔄 Reset",
+        "spn_": "🕉️"
+      },
+      "FoodChain": {
+        "txt_Seewhoeats": "See who eats whom in nature!",
+        "spn_": "🕉️"
+      },
+      "FractionKitchen": {
+        "btn_CheckIngre": "Check Ingredients"
+      },
+      "Fractions": {
+        "txt_Seefractio": "See fractions visually — parts of a whole!",
+        "spn_Numeratorp": "🔢 Numerator (parts taken)",
+        "spn_Denominato": "📊 Denominator (total parts)",
+        "spn_": "🕉️"
+      },
+      "Gravity": {
+        "txt_Dragthesta": "Drag the star to see how mass bends space!",
+        "spn_Smallmass": "🌑 Small mass",
+        "spn_Largemass": "☀️ Large mass",
+        "txt_Gravityisa": "Gravity is a force pulling objects together",
+        "txt_Masscurves": "Mass curves spacetime, objects follow the curve",
+        "spn_": "🕉️"
+      },
+      "Habitats": {
+        "txt_Explorewhe": "Explore where different animals live!",
+        "spn_": "🕉️"
+      },
+      "HumanBody": {
+        "txt_Explorehow": "Explore how your body works!",
+        "txt_Explored": "✓ Explored",
+        "txt_ORGANS": "ORGANS",
+        "txt_AllSystems": "All Systems Explored!"
+      },
+      "LeverExplorer": {
+        "txt_Movetheful": "Move the fulcrum to balance the lever!",
+        "spn_": "🏋️",
+        "txt_Balanced": "⚖️ Balanced!",
+        "txt_Lefttorque": "Left torque = Right torque",
+        "btn_CheckBalan": "Check Balance ⚖️"
+      },
+      "LightShadows": {
+        "txt_Dragthesun": "Drag the sun to see how shadows change!",
+        "txt_Lighttrave": "Light travels in straight lines",
+        "txt_Opaqueobje": "Opaque objects block light",
+        "txt_Darkareabe": "Dark area behind the object",
+        "spn_": "🕉️"
+      },
+      "Magnets": {
+        "txt_Flippolesa": "Flip poles and adjust distance to see attraction vs repulsion!",
+        "spn_Close": "📏 Close",
+        "spn_Far": "Far 📏",
+        "spn_": "🕉️"
+      },
+      "MoonPhases": {
+        "txt_Clickeachp": "Click each phase to see the Moon change!",
+        "spn_": "🕉️"
+      },
+      "Multiplication": {
+        "txt_Seemultipl": "See multiplication as arrays of objects!",
+        "spn_Rows": "↕️ Rows",
+        "spn_Columns": "↔️ Columns",
+        "spn_": "🕉️"
+      },
+      "MultiplicationLab": {
+        "btn_Check": "Check"
+      },
+      "NewtonsLaws": {
+        "txt_FmaPushobj": "F = ma — Push objects and see how they move!",
+        "spn_Force": "💪 Force",
+        "spn_Mass": "📦 Mass",
+        "txt_InertiaObj": "Inertia: Objects keep doing what they\\",
+        "txt_FmaForcema": "F=ma: Force = mass × acceleration",
+        "txt_ActionReac": "Action-Reaction: Every force has an equal opposite",
+        "spn_": "🕉️"
+      },
+      "NumberLine": {
+        "txt_Watchthech": "Watch the character jump to any number!",
+        "spn_": "🕉️"
+      },
+      "Panchabhutas": {
+        "txt_TheFiveGre": "पञ्चभूत — The Five Great Elements"
+      },
+      "Photosynthesis": {
+        "txt_Watchhowpl": "Watch how plants turn sunlight into food!",
+        "spn_Lowlight": "🌥️ Low light",
+        "spn_Brightsun": "☀️ Bright sun",
+        "spn_": "🌾"
+      },
+      "Pi": {
+        "txt_Seehowconn": "See how π connects circumference to diameter!",
+        "spn_Decimalpla": "🔢 Decimal places",
+        "spn_": "🕉️",
+        "txt_Aryabhata4": "Aryabhata (499 CE) calculated π ≈ 3.1416 — accurate to 4 decimal places! His method: "
+      },
+      "PlantGrowth": {
+        "txt_Watchaseed": "Watch a seed grow into a fruit-bearing plant!",
+        "spn_Water": "💧 Water",
+        "spn_Sunlight": "☀️ Sunlight",
+        "spn_": "🕉️"
+      },
+      "Pythagorean": {
+        "txt_abcseeitvi": "a² + b² = c² — see it visually!",
+        "spn_SideA": "📏 Side A",
+        "spn_SideB": "📏 Side B",
+        "spn_": "🕉️"
+      },
+      "Senses": {
+        "txt_Explorehow": "Explore how your body perceives the world!",
+        "spn_": "🕉️"
+      },
+      "Shapes": {
+        "txt_Exploresid": "Explore sides, angles, and properties!",
+        "spn_": "🕉️"
+      },
+      "SimpleMachines": {
+        "txt_Seehowmach": "See how machines make work easier!",
+        "spn_Effort": "💪 Effort",
+        "spn_": "🕉️",
+        "txt_Indiansuse": "Indians used levers, ramps, and pulleys to build temples 4,000 years ago! The Brihadeeswarar Temple (1010 CE) has a 80-ton capstone lifted using ramps and levers — an engineering marvel still studied today."
+      },
+      "SolarSystem": {
+        "txt_Watchthepl": "Watch the planets orbit the Sun!",
+        "spn_Slow": "🐢 Slow",
+        "spn_Fast": "🚀 Fast",
+        "spn_": "🕉️"
+      },
+      "SoundWaves": {
+        "txt_Changefreq": "Change frequency and amplitude to see how sound travels!",
+        "spn_FrequencyP": "🎵 Frequency (Pitch)",
+        "spn_AmplitudeV": "🔊 Amplitude (Volume)",
+        "spn_": "🕉️"
+      },
+      "StatesOfMatter": {
+        "txt_Dragthesli": "Drag the slider to heat or cool the particles!",
+        "spn_Cold": "🧊 Cold",
+        "spn_Hot": "Hot 🔥",
+        "spn_0C": "0°C",
+        "spn_33C": "33°C",
+        "spn_66C": "66°C",
+        "spn_100C": "100°C",
+        "txt_Particlesv": "Particles vibrate in place",
+        "txt_Particless": "Particles slide past each other",
+        "txt_Particlesf": "Particles fly freely",
+        "spn_": "🕉️"
+      },
+      "StatisticsPlayground": {
+        "txt_Selectadat": "Select a dataset and explore the numbers!",
+        "txt_Mean": "Mean",
+        "txt_Median": "Median",
+        "txt_Mode": "Mode",
+        "txt_Thisisexac": "🏏 This is exactly what IPL cricket analysts do after every match!"
+      },
+      "TimelineExplorer": {
+        "txt_Discoverwh": "Discover when major scientific breakthroughs happened."
+      },
+      "WaterCycle": {
+        "txt_Controlthe": "Control the sun and watch water evaporate, condense, and rain!",
+        "spn_Lowsun": "🌥️ Low sun",
+        "spn_Intensesun": "☀️ Intense sun",
+        "spn_": "🕉️"
+      },
+      "WeatherStation": {
+        "spn_": "🌤️",
+        "txt_Temp": "Temp",
+        "txt_Humidity": "Humidity",
+        "txt_Pressure": "Pressure",
+        "txt_Wind": "Wind",
+        "txt_Explanatio": "Explanation:"
       }
     },
     "lumo": {
@@ -424,6 +690,63 @@
         "hook": "The carbon atom in your fingernail might have once been inside a T-Rex. How?",
         "realWorldConnection": "The smoke from a brick kiln in Punjab becomes the tree in Kerala.",
         "unsolvedQuestion": "How much carbon can the Earth's oceans swallow before they change completely?"
+      },
+      "AlgebraScales": {
+        "txt_Equation": "Equation",
+        "spn_x": "x =",
+        "btn_Check": "Check"
+      },
+      "CarbonCycle": {
+        "txt_CarbonCycl": "🌿 Carbon Cycle",
+        "txt_CARBONFLOW": "CARBON FLOWS",
+        "spn_": "✓",
+        "spn_FossilFuel": "🏭 Fossil Fuel Burning Rate",
+        "spn_CO": "CO₂"
+      },
+      "EconomicSimulation": {
+        "txt_EconomicDa": "📈 Economic Dashboard",
+        "txt_Adjustpoli": "Adjust policies and apply events",
+        "txt_GDPGrowth": "GDP Growth",
+        "txt_Inflation": "Inflation",
+        "spn_InterestRa": "🏦 Interest Rate",
+        "spn_TaxRate": "💰 Tax Rate",
+        "txt_APPLYEVENT": "APPLY EVENT"
+      },
+      "FermiEstimation": {
+        "txt_Indianesti": "🇮🇳 Indian estimation",
+        "spn_": "✓",
+        "txt_YourEstima": "Your Estimate",
+        "txt_RealAnswer": "Real Answer",
+        "btn_RevealAnsw": "Reveal Answer! 🔍",
+        "btn_NextProble": "Next Problem →"
+      },
+      "GeneticsSimulator": {
+        "txt_Inheritanc": "Inheritance Table",
+        "btn_RunGenetic": "Run Genetic Cross"
+      },
+      "LiteraryAnalysis": {
+        "txt_TAGLITERAR": "TAG LITERARY DEVICES",
+        "spn_": "✓"
+      },
+      "NumberSystems": {
+        "txt_NumberSyst": "💻 Number Systems",
+        "txt_Everything": "Everything digital is made of 0s and 1s",
+        "txt_TAPBULBSTO": "TAP BULBS TO WRITE BINARY",
+        "txt_HEXCOLOURS": "🎨 HEX COLOURS",
+        "txt_Zerowasinv": "🇮🇳 Zero was invented in India by Brahmagupta (628 AD). Without zero, binary is impossible. Without binary, no computer exists. India made the digital age possible."
+      },
+      "PeriodicTableExplorer": {
+        "txt_PeriodicTa": "🧪 Periodic Table Explorer"
+      },
+      "PlateTectonics": {
+        "txt_MovingCont": "🌍 Moving Continents"
+      },
+      "ProbabilitySandbox": {
+        "spn_SampleSize": "Sample Size",
+        "txt_Yellowline": "Yellow line = expected probability"
+      },
+      "SpeedDistanceTime": {
+        "btn_ConfirmSpe": "Confirm Speed Discovery"
       }
     },
     "algebraChallenges": {
@@ -524,6 +847,56 @@
         "title": "Calculus",
         "hook": "The mathematics of change.",
         "examRelevance": "Functions, Limits, Derivatives"
+      },
+      "ClimateSystems": {
+        "txt_ClimateSys": "🌡️ Climate Systems",
+        "txt_Smallchang": "Small changes cascade through feedback loops.",
+        "txt_CO": "CO₂",
+        "txt_Warming": "Warming",
+        "spn_COLevel": "CO₂ Level",
+        "txt_Feedbacklo": "Feedback loops"
+      },
+      "EconomicIndicators": {
+        "txt_Policydeci": "Policy decisions"
+      },
+      "Electrolysis": {
+        "txt_Cathode": "Cathode",
+        "txt_Anode": "Anode"
+      },
+      "EssayArchitect": {
+        "spn_FlowScore": "Flow Score",
+        "btn_SaveStruct": "Save Structure"
+      },
+      "ProjectileMotion": {
+        "spn_LaunchAngl": "Launch Angle",
+        "spn_InitialSpe": "Initial Speed",
+        "txt_Range": "Range",
+        "txt_MaxHeight": "Max Height",
+        "txt_Time": "Time",
+        "btn_Fire": "🚀 Fire!",
+        "txt_45MaximumR": "🎯 45° = Maximum Range!",
+        "txt_Rusin2gMax": "R = u²sin(2θ)/g. Max when sin(2θ) = 1, θ = 45°"
+      },
+      "RedoxReactions": {
+        "txt_Anode": "Anode (−)",
+        "txt_Oxidation": "Oxidation",
+        "txt_e": "e⁻ →",
+        "txt_Cathode": "Cathode (+)",
+        "txt_Reduction": "Reduction",
+        "txt_Loseselect": "Loses electrons",
+        "txt_Gainselect": "Gains electrons"
+      },
+      "TrigIdentities": {
+        "txt_Identity": "Identity",
+        "txt_Proofsteps": "Proof steps",
+        "btn_VerifyIden": "Verify Identity"
+      },
+      "TrigonometryCircle": {
+        "txt_sin": "sin θ",
+        "txt_cos": "cos θ",
+        "txt_tan": "tan θ",
+        "txt_sincos": "sin²θ + cos²θ =",
+        "txt_Always1": "Always 1"
       }
     },
     "beautyMoments": {
@@ -1280,7 +1653,9 @@
         "mechanics": "Mechanics",
         "waves": "Waves",
         "quantum": "Quantum"
-      }
+      },
+      "step": "Step 2",
+      "show_all": "Explore All Worlds \\u2193"
     },
     "features": {
       "title": "Built different",
@@ -1346,6 +1721,17 @@
       "quote3": "Picked up Tamil at 42. Lessons are short enough to do over my morning chai. Highly recommend.",
       "name3": "Ravi S.",
       "role3": "Lifelong learner"
+    },
+    "principles": {
+      "title": "Core Design Principles"
+    },
+    "review": {
+      "title": "Time to Review!",
+      "empty_title": "You",
+      "empty_desc": "No activities need your review right now. Keep exploring new worlds to build your knowledge!",
+      "due": "Due Now",
+      "mastered": "Mastered",
+      "familiar": "Familiar"
     }
   },
   "biology": {
@@ -1880,7 +2266,8 @@
       "save_exit": "Save & Exit?",
       "save_exit_desc": "Your progress is automatically saved! You can continue this activity anytime from where you left off.",
       "keep_building": "Keep Building",
-      "save_exit_btn": "Save & Exit"
+      "save_exit_btn": "Save & Exit",
+      "materials_used": "Materials"
     },
     "ages": {
       "title1": "Little Explorers",
@@ -1989,7 +2376,11 @@
       "show_all": "Show All Activities",
       "keep_creative": "Keep being creative!",
       "made_with": "Made with ❤️ for little makers",
-      "activities_suffix": "Activities"
+      "activities_suffix": "Activities",
+      "done_badge": "Done!",
+      "started_badge": "Started!",
+      "play_again": "Play Again",
+      "play_now": "Play Now!"
     },
     "workshop": {
       "title": "My Progress",
@@ -2148,7 +2539,8 @@
           "description": "Showcase all your inventions! Create a new robot or contraption that combines what you've learned."
         }
       }
-    }
+    },
+    "maker_space": "Maker Space"
   },
   "completed": "Completed",
   "in_progress": "In Progress",
@@ -2201,7 +2593,8 @@
     "information": "Information",
     "privacy": "Privacy",
     "about": "About Us",
-    "made_with": "Made with ❤️ for India."
+    "made_with": "Made with ❤️ for India.",
+    "contact": "Contact Us"
   },
   "maker_space": {
     "badge": "Kids Camp at Home",
@@ -2212,7 +2605,9 @@
     "activities": "Activities",
     "creative_pillars": "Creative Pillars",
     "screen_free": "Screen-Free Fun",
-    "scroll_explore": "Scroll to explore"
+    "scroll_explore": "Scroll to explore",
+    "learning_realms": "Learning Realms",
+    "ad_free": "Ad-Free Fun"
   },
   "activities": "Activities",
   "project_weeks": "Project Weeks",
@@ -2595,7 +2990,9 @@
         "indian_context": "Indian Context:",
         "try_it": "Try It:",
         "btn_complete": "I Understand!",
-        "btn_aria": "Complete module and return to home"
+        "btn_aria": "Complete module and return to home",
+        "btn_maker_aria": "Build this in Maker Space",
+        "btn_maker": "Build it in Maker Space!"
       }
     },
     "modules": {
@@ -5968,6 +6365,425 @@
     },
     "worksheetgenerator": {
       "nbsp_nbsp": ": _________________ &nbsp;&nbsp;"
+    }
+  },
+  "about": {
+    "values": {
+      "0": {
+        "title": "Wonder",
+        "desc": "We begin with questions..."
+      },
+      "1": {
+        "title": "Equity",
+        "desc": "One platform..."
+      },
+      "2": {
+        "title": "Respect",
+        "desc": "No grades..."
+      },
+      "3": {
+        "title": "Patience",
+        "desc": "Learning takes time..."
+      },
+      "4": {
+        "title": "Joy",
+        "desc": "If learning is not joyful..."
+      },
+      "5": {
+        "title": "Identity",
+        "desc": "Indian scientists..."
+      }
+    },
+    "differences": {
+      "0": {
+        "title": "Free by Design",
+        "desc": "There is no poor version..."
+      },
+      "1": {
+        "title": "Website First",
+        "desc": "A link shared..."
+      },
+      "2": {
+        "title": "22 Indian Languages",
+        "desc": "Assamese, Bengali, Bodo, Dogri, Gujarati, Hindi, Kannada, Kashmiri, Maithili, Malayalam, Manipuri, Marathi, Nepali, Odia, Punjabi, Sanskrit, Santali, Sindhi, Tamil, Telugu, and Urdu from day one. Understanding begins in the language closest to the learner."
+      },
+      "3": {
+        "title": "Offline First",
+        "desc": "Designed to work on 2G..."
+      },
+      "4": {
+        "title": "For Every Age",
+        "desc": "Ages 2 to 80+..."
+      },
+      "5": {
+        "title": "Visual and Interactive",
+        "desc": "You do not just watch..."
+      }
+    },
+    "support_labels": {
+      "who": "The Who",
+      "who_desc": "A brief intro...",
+      "why": "The Why",
+      "why_desc": "Why Jigyasu?",
+      "how": "The How",
+      "how_desc": "How do you envision..."
+    },
+    "mission": "Mission",
+    "what_we_built": "What We Built",
+    "support": "Support",
+    "tagline": "Install Wonder.",
+    "why_we_build": "Why We Are Building This",
+    "headings": {
+      "what_we_believe": "What We Believe",
+      "what_we_built": "What We Built — and Why",
+      "built_for_india": "Built for India"
+    },
+    "indian_context": {
+      "0": "Rupees, not dollars",
+      "1": "Rotis and chai, not only pizzas",
+      "2": "Monsoons, ISRO, cricket, Indian markets",
+      "3": "Aryabhata, Ramanujan, C.V. Raman, J.C. Bose",
+      "4": "APJ Abdul Kalam, Sushruta, Brahmagupta",
+      "5": "22 Indian languages from day one",
+      "6": "Designed for 2G and shared phones",
+      "7": "Offline-first for rural learners"
+    },
+    "join_mission": "Join the Mission",
+    "relationships": "We believe in relationships before transactions.",
+    "contact_form": "Contact Us via Form",
+    "email_us": "Email Us Directly",
+    "text": {
+      "contact_desc": "When you write to us, we would love to know:"
+    },
+    "ways_to_support": "Ways you can support us:",
+    "support_ways": {
+      "0": "💰 Individual monthly contribution",
+      "1": "🏢 Corporate CSR partnership",
+      "2": "🗣️ Funding a language translation",
+      "3": "📱 Sponsoring offline device access",
+      "4": "🏫 School or NGO partnership",
+      "5": "🌐 Infrastructure sponsorship",
+      "6": "🎓 Content or curriculum review",
+      "7": "📢 Spreading the word"
+    }
+  },
+  "floating_buttons": {
+    "analytics": "Analytics",
+    "impact": "Impact"
+  },
+  "clear_instructions_step": "Select ",
+  "offline_mode": "Offline Mode - Keep exploring!",
+  "reset_to_default": "Reset to Default",
+  "privacy_right_delete": "Request deletion of their child\\",
+  "no_results_found": "No results found for ",
+  "terms_content_text": "All content provided on Jigyasu is for educational purposes. We strive to ensure accuracy, but we do not warrant that any content is entirely error-free. The content is provided ",
+  "learn_explore": "Learn & Explore",
+  "explore": "Explore",
+  "warmup-session": "crosscutting",
+  "teach-session": "crosscutting",
+  "time-capsule-session": "crosscutting",
+  "testimonials": {
+    "coming_soon": "Coming Soon",
+    "share_exp": "Share Your Experience",
+    "building_with_love": "We\\",
+    "ready": "Ready to learn something today?",
+    "no_signup": "No sign-up. No download required. Open the app and start in your language in under 10 seconds.",
+    "pick_world": "Pick your world →",
+    "get_app": "Get the app"
+  },
+  "learnos": {
+    "challenge": {
+      "try_again": "Try again! Think about the physics!",
+      "success": "Great job! You figured it out!",
+      "continue": "Continue Lab",
+      "submit": "Submit",
+      "explore": "Let"
+    },
+    "biology": {
+      "biome_wonder": "A Curious Question...",
+      "biome_prompt": "From icy tundras to lush rainforests, Earth is home to diverse habitats. Let",
+      "body_quiz_wonder": "A Curious Question...",
+      "body_quiz_prompt": "How well do you know the vessel you live in? Let",
+      "brain_wonder": "A Curious Question...",
+      "brain_prompt": "Your brain is a supercomputer that runs on electricity and chemicals! Let",
+      "carbon_wonder": "A Curious Question...",
+      "carbon_prompt": "Carbon is everywhere—in the air, in plants, and in you! How does it cycle through our world? Let",
+      "cell_wonder": "A Curious Question...",
+      "cell_prompt": "Your body is made of trillions of tiny living factories called cells! Let\\",
+      "respiration_wonder": "A Curious Question...",
+      "respiration_prompt": "How does your body get the energy to run, jump, and think? It turns the food you eat into a molecule called ATP, the fuel of life! Let\\",
+      "climate_wonder": "A Curious Question...",
+      "climate_prompt": "How does carbon dioxide act like a blanket for the Earth? Let",
+      "crispr_wonder": "A Curious Question...",
+      "crispr_prompt": "What if we could rewrite the code of life to cure diseases, just like fixing a typo in a book? Welcome to CRISPR! Ready to edit some DNA?",
+      "digestion_wonder": "A Curious Question...",
+      "digestion_prompt": "Where does your sandwich go after you swallow? Follow the epic journey of food through the digestive tract!",
+      "dna_wonder": "A Curious Question...",
+      "dna_prompt": "Inside every cell in your body is a tiny instruction manual that makes you YOU! How does it work? Let\\",
+      "ecosystem_wonder": "A Curious Question...",
+      "ecosystem_prompt": "Can you balance an entire ecosystem? Too many predators, and the prey disappears. Let",
+      "enzyme_wonder": "A Curious Question...",
+      "enzyme_prompt": "How does your body digest food so quickly without burning up? Biological machines called enzymes! Let\\",
+      "evolution_wonder": "A Curious Question...",
+      "evolution_prompt": "We share DNA with bananas and dinosaurs! How did life branch out into so many forms? Let",
+      "food_chain_wonder": "A Curious Question...",
+      "food_chain_prompt": "Who eats whom? Energy flows from the sun to plants, to animals, and back to the earth. Let",
+      "heart_wonder": "A Curious Question...",
+      "heart_prompt": "Your heart beats 100,000 times a day, pumping a river of life throughout your body. Let",
+      "immune_wonder": "A Curious Question...",
+      "immune_prompt": "Your body is a fortress! When invaders attack, an army of tiny cells fights them off. Let",
+      "meiosis_wonder": "A Curious Question...",
+      "meiosis_prompt": "Why are you unique from your siblings? Meiosis mixes up genes to create infinite variety. Let",
+      "metamorphosis_wonder": "A Curious Question...",
+      "metamorphosis_prompt": "How does a crawling caterpillar transform into a flying butterfly? It",
+      "microbe_wonder": "A Curious Question...",
+      "microbe_prompt": "Invisible creatures are everywhere! Some make you sick, but some make your yogurt. Can you match the microbes?",
+      "microscope_wonder": "A Curious Question...",
+      "microscope_prompt": "What does a butterfly wing look like up close? Let",
+      "mitosis_wonder": "A Curious Question...",
+      "mitosis_prompt": "How do you grow from a single cell into trillions? Cells divide perfectly to build you. Let",
+      "molecule_wonder": "A Curious Question...",
+      "molecule_prompt": "Everything around us is made of tiny building blocks called molecules. Let",
+      "photosynthesis_wonder": "A Curious Question...",
+      "photosynthesis_prompt": "Plants make their own food out of thin air and sunlight! Sounds like magic, right? Let\\",
+      "plant_anatomy_wonder": "A Curious Question...",
+      "plant_anatomy_prompt": "Plants don",
+      "punnett_wonder": "A Curious Question...",
+      "punnett_prompt": "Why do some kids have blue eyes when both parents have brown? Traits follow rules of probability! Let",
+      "water_wonder": "A Curious Question...",
+      "water_prompt": "The water you drink today might have been a cloud yesterday or snow a thousand years ago. Let"
+    }
+  },
+  "cookie_consent": {
+    "title": "LearnOS respects your privacy.",
+    "desc1": "We store your progress locally on this device only.",
+    "desc2": "No personal data is collected or sent to any server.",
+    "desc3": "Anonymous usage stats (views, time spent) help us improve the app.",
+    "accept": "Got it!",
+    "decline": "No stats"
+  },
+  "session-1": "lab",
+  "s1": "lab",
+  "economic-simulation": "canvas_interaction",
+  "fermi-estimation": "correct_answer",
+  "plate-tectonics": "correct_answer",
+  "probability-sandbox": "correct_answer",
+  "atoms-session": "lab",
+  "blood-circulation-session": "lab",
+  "cell-session": "lab",
+  "day-night-session": "lab",
+  "day-night-wonder-session": "lab",
+  "digestive-session": "lab",
+  "digestive-wonder-session": "lab",
+  "electricity-session": "lab",
+  "electricity-wonder-session": "lab",
+  "float-sink-session": "lab",
+  "float-sink-wonder-session": "lab",
+  "food-chain-session": "lab",
+  "food-chain-wonder-session": "lab",
+  "fractions-session": "lab",
+  "fractions-wonder-session": "lab",
+  "gravity-session": "lab",
+  "gravity-wonder-session": "lab",
+  "habitats-session": "lab",
+  "habitats-wonder-session": "lab",
+  "light-shadows-session": "lab",
+  "light-shadows-wonder-session": "lab",
+  "magnets-session": "lab",
+  "magnets-wonder-session": "lab",
+  "moon-phases-session": "lab",
+  "moon-phases-wonder-session": "lab",
+  "multiplication-session": "lab",
+  "multiplication-wonder-session": "lab",
+  "newtons-laws-session": "lab",
+  "number-line-session": "lab",
+  "number-line-wonder-session": "lab",
+  "panchabhutas-session": "lab",
+  "photosynthesis-session": "lab",
+  "photosynthesis-wonder-session": "lab",
+  "pi-session": "lab",
+  "plant-growth-session": "lab",
+  "plant-growth-wonder-session": "lab",
+  "pythagorean-session": "lab",
+  "senses-session": "lab",
+  "senses-wonder-session": "lab",
+  "shapes-session": "lab",
+  "shapes-wonder-session": "lab",
+  "simple-machines-session": "lab",
+  "simple-machines-wonder-session": "lab",
+  "solar-system-session": "lab",
+  "solar-system-wonder-session": "lab",
+  "sound-waves-session": "lab",
+  "states-of-matter-session": "lab",
+  "states-of-matter-wonder-session": "lab",
+  "water-cycle-session": "lab",
+  "water-cycle-wonder-session": "lab",
+  "math_modules": {
+    "AdventureMap": {
+      "title": "🗺️ Math Kingdom Adventure Map",
+      "subtitle": "Click on a zone to solve its challenge!",
+      "conquered": "Already Conquered!",
+      "answer": "Answer: {{answer}}",
+      "correct": "✨ Brilliant! You\\",
+      "wrong": "🤔 Let us explore, brave explorer!"
+    },
+    "AlgebraArena": {
+      "balance": "⚖️ Both sides must be equal",
+      "diffBasic": "Basic",
+      "diffBasicDesc": "1-step: 3x=12",
+      "diffInter": "Intermediate",
+      "diffInterDesc": "2-step: 2x+3=11",
+      "diffAdv": "Advanced",
+      "diffAdvDesc": "Multi-step, x², powers",
+      "title": "🧮 Algebra Arena",
+      "subtitle": "Solve for x — balance the equation!",
+      "findX": "Find <span className=",
+      "hideSteps": "🙈 Hide steps",
+      "showSteps": "📝 Show solution steps",
+      "correct": "✨ x = {{ans}} is correct! ✨",
+      "wrong": "🤔 Let us explore! Check the steps for a hint.",
+      "skip": "Skip →"
+    },
+    "DailyChallenge": {
+      "title": "🎯 Daily Challenge",
+      "subtitle": "A new challenge every day!",
+      "day": "Day",
+      "streak": "Streak",
+      "resetsIn": "Resets in",
+      "needHint": "💡 Need a hint?",
+      "complete": "Daily Challenge Complete!",
+      "streakDays": "🔥 {{streak}} day streak!",
+      "comeBack": "Come back tomorrow for a new challenge! ⏰"
+    },
+    "ExplorersHub": {
+      "title": "🧭 Explorers Guild",
+      "subtitle": "20 visual adventures — foundations through applied math."
+    },
+    "FractionPizza": {
+      "title": "🍕 Fraction Pizza Party",
+      "subtitle": "Learn fractions by eating pizza slices!",
+      "explore": "Explore",
+      "challenge": "Challenge",
+      "numSlices": "Number of slices",
+      "challengeLabel": "Challenge:",
+      "correct": "Correct!",
+      "tooMany": "🤔 Too many!",
+      "breakdown": "📊 Fraction Breakdown",
+      "eaten": "Eaten:",
+      "remaining": "Remaining:",
+      "percentage": "Percentage:",
+      "decimal": "Decimal:",
+      "equivFractions": "🔄 Equivalent Fractions",
+      "funFact": "💡 <strong>Fun fact:</strong>",
+      "factStart": "Click slices to eat them!",
+      "factWhole": "You ate the whole pizza! 🎉",
+      "factUnit": "One slice is called a ",
+      "factHalf": "You ate exactly half!",
+      "factDefault": "Fractions show parts of a whole",
+      "eatSlices": "Eat"
+    },
+    "NumberBondsGarden": {
+      "title": "🌻 Number Bonds Garden",
+      "subtitle": "Grow flowers by pairing numbers that add up to the target!",
+      "targetSum": "Target Sum",
+      "exploreMode": "🔍 Explore",
+      "matchMode": "🎮 Match",
+      "reset": "🔄 Reset",
+      "allBonds": "🌱 All bonds that make {{target}}",
+      "visualDots": "📊 Visual: Making {{target}} with dots",
+      "matchedScore": "🌸 Matched: {{mastery}}",
+      "pickInstruction": "Pick one from each side that adds up to <span className=",
+      "pickNumber": "🔵 Pick a number",
+      "matchIt": "🟠 Match it",
+      "gardenComplete": "Garden Complete!",
+      "grewAll": "You grew all the flowers!"
+    },
+    "NumberCrunchGame": {
+      "level": "Level {{level}}",
+      "correct": "Correct!",
+      "answerIs": "Answer: {{answer}}"
+    },
+    "PatternHub": {
+      "patterns": "Pattern Puzzles",
+      "patternsShort": "Patterns",
+      "memory": "Memory Match",
+      "memoryShort": "Memory"
+    },
+    "SkillsAcademy": {
+      "times": "Times Tables",
+      "timesDesc": "Master multiplication",
+      "bonds": "Number Bonds",
+      "bondsDesc": "Addition pairs",
+      "fractions": "Fractions",
+      "fractionsDesc": "Pizza fractions",
+      "title": "🎓 Skills Academy",
+      "subtitle": "Build your math foundations step by step!"
+    },
+    "TimesTableTrainer": {
+      "title": "Times Table Master",
+      "subtitle": "Master multiplication one table at a time!",
+      "practice": "Practice",
+      "zenMode": "Zen Mode",
+      "chooseTable": "Choose your table:",
+      "hide": "Hide",
+      "show": "Show",
+      "fullTable": "full table",
+      "correct": "Correct!",
+      "wrong": "It",
+      "hideHint": "Hide hint",
+      "peekHint": "💡 Peek at answer",
+      "answerIs": "Answer: {{answer}}",
+      "tableHeading": "The {{table}}× Table",
+      "redMistakes": "🔴 Blue = pathways to explore further",
+      "zenModeTitle": "Zen Mode",
+      "quizDesc1": "Answer as many multiplication questions as you want, pressure-free!",
+      "quizDesc2": "All tables mixed together!",
+      "startBtn": "Start!"
+    },
+    "Visualizer3D": {
+      "showing": "(showing {{display}} of {{count}})",
+      "add": "Add",
+      "sub": "Sub",
+      "mul": "Mul",
+      "div": "Div",
+      "title": "📊 3D Math Visualizer",
+      "subtitle": "See math come alive in 3D!",
+      "numberA": "Number A",
+      "operation": "Operation",
+      "numberB": "Number B",
+      "blocks": "Blocks",
+      "bars3d": "3D Bars",
+      "spheres": "Spheres",
+      "factAdd": "💡 Adding {{numA}} and {{numB}} is like combining {{numA}} apples 🍎 with {{numB}} oranges 🍊 = {{result}} fruits!",
+      "factSub": "💡 If you had {{numA}} cookies 🍪 and ate {{numB}}, you\\",
+      "factMul": "💡 {{numA}} × {{numB}} means {{numA}} groups of {{numB}} — that\\",
+      "factDiv": "💡 Sharing {{numA}} pizzas 🍕 among {{numB}} friends = {{result}} each!"
+    },
+    "WorksheetGenerator": {
+      "topics": {
+        "addition": "Addition",
+        "subtraction": "Subtraction",
+        "multiplication": "Multiplication",
+        "division": "Division",
+        "mixed": "Mixed",
+        "fractions": "Fractions",
+        "algebra": "Algebra",
+        "exponents": "Exponents"
+      },
+      "title": "📝 Worksheet Generator",
+      "subtitle": "Generate printable practice sheets for any topic!",
+      "chooseTopic": "Choose Topic",
+      "numProblems": "Number of problems",
+      "maxNum": "Max number",
+      "generate": "📄 Generate Worksheet",
+      "print": "🖨️ Print",
+      "hideAnswers": "🙈 Hide",
+      "showAnswers": "👁️ Answers",
+      "worksheetTitle": "📝 Math Worksheet — {{topic}}",
+      "name": "Name",
+      "date": "Date",
+      "score": "Score",
+      "generatedBy": "Generated by Whimsical Math Kingdom 🧙‍♂️"
     }
   }
 }

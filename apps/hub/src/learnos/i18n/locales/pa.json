@@ -162,7 +162,60 @@
       "shadow": "ਸ਼ੈਡੋ ਪਲੇ",
       "magnet": "ਸਟਿੱਕੀ ਚੁੰਬਕ",
       "shop": "ਮਾਰਕੀਟ ਦੀ ਦੁਕਾਨ",
-      "adventure_map": "ਵੱਡਾ ਨਕਸ਼ਾ"
+      "adventure_map": "ਵੱਡਾ ਨਕਸ਼ਾ",
+      "AlphabetForest": {
+        "spn_": "🐤",
+        "txt_Tapaletter": "ਪੜਚੋਲ ਕਰਨ ਲਈ ਉੱਪਰ ਦਿੱਤੇ ਇੱਕ ਪੱਤਰ 'ਤੇ ਟੈਪ ਕਰੋ!"
+      },
+      "HabitatHeroes": {
+        "spn_": "🐤",
+        "txt_AllHabitat": "ਸਾਰੇ ਨਿਵਾਸ ਸਥਾਨਾਂ ਦੀ ਖੋਜ ਕੀਤੀ ਗਈ!"
+      },
+      "MagnetExplorer": {
+        "spn_": "🐤🧲",
+        "txt_Isitmagnet": "ਕੀ ਇਹ ਚੁੰਬਕੀ ਹੈ?",
+        "txt_Magnetic": "ਚੁੰਬਕੀ",
+        "txt_NotMagneti": "ਚੁੰਬਕੀ ਨਹੀਂ",
+        "txt_Tapanobjec": "ਕਿਸੇ ਵਸਤੂ 'ਤੇ ਟੈਪ ਕਰੋ, ਫਿਰ ਇੱਕ ਬਿਨ 'ਤੇ ਟੈਪ ਕਰੋ",
+        "txt_MagnetScie": "ਚੁੰਬਕ ਵਿਗਿਆਨੀ!",
+        "btn_SortAgain": "ਦੁਬਾਰਾ ਕ੍ਰਮਬੱਧ ਕਰੋ! 🧲"
+      },
+      "MiniChef": {
+        "spn_": "🐤👨‍🍳",
+        "txt_Choosearec": "ਪਕਾਉਣ ਲਈ ਇੱਕ ਵਿਅੰਜਨ ਚੁਣੋ!",
+        "txt_isreadyYum": "ਤਿਆਰ ਹੈ! ਯਮ! 🎉",
+        "btn_CookSometh": "ਕੁਝ ਹੋਰ ਪਕਾਓ! 👨‍🍳"
+      },
+      "NumberLineAdventures": {
+        "txt_WheredoIla": "ਮੈਂ ਕਿੱਥੇ ਉਤਰਾਂ?",
+        "btn_NextProble": "ਅਗਲੀ ਸਮੱਸਿਆ →"
+      },
+      "PatternPatrol": {
+        "spn_": "🐤🔍",
+        "txt_Whatcomesn": "ਅੱਗੇ ਕੀ ਆਉਂਦਾ ਹੈ?"
+      },
+      "PlantGrowthExplorer": {
+        "spn_Water": "💧 ਪਾਣੀ",
+        "spn_Sunlight": "☀️ ਸੂਰਜ ਦੀ ਰੌਸ਼ਨੀ",
+        "spn_": "🐤"
+      },
+      "ShadowDetective": {
+        "spn_": "🐤🔦",
+        "btn_NextChalle": "ਅਗਲੀ ਚੁਣੌਤੀ 🔦"
+      },
+      "StoryBuilder": {
+        "spn_": "🐤",
+        "txt_Whowasthem": "ਕਹਾਣੀ ਦਾ ਮੁੱਖ ਪਾਤਰ ਕੌਣ ਸੀ?"
+      },
+      "WaterCycleJourney": {
+        "spn_": "💧",
+        "txt_Droppythan": "ਡਰਾਪੀ ਤੁਹਾਡਾ ਧੰਨਵਾਦ!",
+        "btn_FollowDrop": "ਡਰੌਪੀ ਨੂੰ ਦੁਬਾਰਾ 💧 ਫੋਲੋ ਕਰੋ"
+      },
+      "WordScramble": {
+        "spn_": "🐤✏️",
+        "txt_Puttheword": "ਸ਼ਬਦਾਂ ਨੂੰ ਸਹੀ ਕ੍ਰਮ ਵਿੱਚ ਪਾਓ!"
+      }
     },
     "pip": {
       "greeting": "ਓਹ! ਅੱਜ ਅਸੀਂ ਕੀ ਖੋਜਾਂਗੇ?"
@@ -280,6 +333,219 @@
       "concept-bridge": {
         "title": "ਬ੍ਰਿਜ ਬਿਲਡਰ",
         "realWorldConnection": "ਗਣਿਤ ਅਤੇ ਭੌਤਿਕ ਵਿਗਿਆਨ ਕਿਵੇਂ ਹਾਵਡ਼ਾ ਪੁਲ ਨੂੰ ਕਾਇਮ ਰੱਖਦੇ ਹਨ।"
+      },
+      "Atoms": {
+        "txt_Explorethe": "ਮਾਮਲੇ ਦੇ ਬਿਲਡਿੰਗ ਬਲਾਕਾਂ ਦੀ ਪੜਚੋਲ ਕਰੋ!",
+        "spn_": "🕉️"
+      },
+      "BloodCirculation": {
+        "txt_Watchblood": "ਆਪਣੇ ਦਿਲ ਅਤੇ ਸਰੀਰ ਵਿੱਚ ਖੂਨ ਦੇ ਵਹਾਅ ਨੂੰ ਦੇਖੋ!",
+        "spn_Resting60": "😴 ਆਰਾਮ ਕਰਨਾ (60)",
+        "spn_Exercise18": "🏃 ਕਸਰਤ (180)",
+        "txt_Beatsperda": "ਪ੍ਰਤੀ ਦਿਨ ਬੀਟਸ",
+        "txt_Bloodvolum": "ਖੂਨ ਦੀ ਮਾਤਰਾ",
+        "txt_Vesselscir": "ਜਹਾਜ਼ ਧਰਤੀ ਦਾ ਚੱਕਰ ਲਗਾਉਂਦੇ ਹਨ",
+        "spn_": "🕉️"
+      },
+      "BuoyancyLab": {
+        "txt_Dropobject": "ਵਸਤੂਆਂ ਨੂੰ ਪਾਣੀ ਵਿੱਚ ਸੁੱਟੋ. ਕਿਹੜਾ ਫਲੋਟ?",
+        "txt_Dropanobje": "ਇੱਥੇ ਇੱਕ ਵਸਤੂ ਸੁੱਟੋ"
+      },
+      "CellExplorer": {
+        "txt_Explorethe": "ਹਰ ਜੀਵਤ ਚੀਜ਼ ਦੇ ਅੰਦਰ ਛੋਟੇ ਸੰਸਾਰ ਦੀ ਪੜਚੋਲ ਕਰੋ!",
+        "txt_Cellsinyou": "ਤੁਹਾਡੇ ਸਰੀਰ ਵਿੱਚ ਸੈੱਲ",
+        "txt_Typicalcel": "ਆਮ ਸੈੱਲ ਦਾ ਆਕਾਰ",
+        "spn_": "🕉️"
+      },
+      "DayNight": {
+        "txt_Earthrotat": "ਦਿਨ ਅਤੇ ਰਾਤ ਬਣਾਉਣ ਲਈ ਧਰਤੀ ਘੁੰਮਦੀ ਹੈ!",
+        "spn_Speed": "🔄 ਗਤੀ",
+        "spn_": "🕉️",
+        "txt_Aryabhata4": "ਆਰੀਆਭੱਟ (499 ਈਸਵੀ) ਨੇ ਦਿਨ/ਰਾਤ ਨੂੰ ਧਰਤੀ ਦੇ ਤੌਰ 'ਤੇ ਸਹੀ ਤਰ੍ਹਾਂ ਸਮਝਾਇਆ।"
+      },
+      "DigestiveSystem": {
+        "txt_Followfood": "ਭੋਜਨ ਦੀ ਪਾਲਣਾ ਕਰੋ",
+        "txt_Smallintes": "ਛੋਟੀ ਆਂਦਰ ਦੀ ਲੰਬਾਈ",
+        "txt_Totaldiges": "ਕੁੱਲ ਪਾਚਨ ਸਮਾਂ",
+        "spn_": "🕉️"
+      },
+      "Electricity": {
+        "txt_Buildacirc": "ਇੱਕ ਸਰਕਟ ਬਣਾਓ ਅਤੇ Ohm ਦੇਖੋ",
+        "spn_Voltage": "🔋 ਵੋਲਟੇਜ",
+        "spn_Resistance": "🔧 ਵਿਰੋਧ",
+        "spn_": "🕉️"
+      },
+      "FloatSink": {
+        "txt_Clickobjec": "ਵਸਤੂਆਂ ਨੂੰ ਪਾਣੀ ਵਿੱਚ ਸੁੱਟਣ ਲਈ ਕਲਿੱਕ ਕਰੋ - ਘਣਤਾ ਫੈਸਲਾ ਕਰਦੀ ਹੈ!",
+        "btn_Reset": "🔄 ਰੀਸੈਟ ਕਰੋ",
+        "spn_": "🕉️"
+      },
+      "FoodChain": {
+        "txt_Seewhoeats": "ਦੇਖੋ ਕੁਦਰਤ ਵਿੱਚ ਕੌਣ ਕਿਸ ਨੂੰ ਖਾਂਦਾ ਹੈ!",
+        "spn_": "🕉️"
+      },
+      "FractionKitchen": {
+        "btn_CheckIngre": "ਸਮੱਗਰੀ ਦੀ ਜਾਂਚ ਕਰੋ"
+      },
+      "Fractions": {
+        "txt_Seefractio": "ਅੰਸ਼ਾਂ ਨੂੰ ਦ੍ਰਿਸ਼ਟੀਗਤ ਤੌਰ 'ਤੇ ਦੇਖੋ — ਪੂਰੇ ਦੇ ਹਿੱਸੇ!",
+        "spn_Numeratorp": "🔢 ਅੰਕ (ਭਾਗ ਲਏ ਗਏ)",
+        "spn_Denominato": "📊 ਵਿਭਾਜਕ (ਕੁੱਲ ਭਾਗ)",
+        "spn_": "🕉️"
+      },
+      "Gravity": {
+        "txt_Dragthesta": "ਇਹ ਦੇਖਣ ਲਈ ਤਾਰੇ ਨੂੰ ਖਿੱਚੋ ਕਿ ਪੁੰਜ ਸਪੇਸ ਨੂੰ ਕਿਵੇਂ ਮੋੜਦਾ ਹੈ!",
+        "spn_Smallmass": "🌑 ਛੋਟਾ ਪੁੰਜ",
+        "spn_Largemass": "☀️ ਵੱਡਾ ਪੁੰਜ",
+        "txt_Gravityisa": "ਗਰੈਵਿਟੀ ਵਸਤੂਆਂ ਨੂੰ ਇਕੱਠੇ ਖਿੱਚਣ ਵਾਲੀ ਸ਼ਕਤੀ ਹੈ",
+        "txt_Masscurves": "ਪੁੰਜ ਵਕਰ ਸਪੇਸਟਾਈਮ, ਵਸਤੂਆਂ ਵਕਰ ਦੀ ਪਾਲਣਾ ਕਰਦੀਆਂ ਹਨ",
+        "spn_": "🕉️"
+      },
+      "Habitats": {
+        "txt_Explorewhe": "ਖੋਜ ਕਰੋ ਕਿ ਵੱਖ-ਵੱਖ ਜਾਨਵਰ ਕਿੱਥੇ ਰਹਿੰਦੇ ਹਨ!",
+        "spn_": "🕉️"
+      },
+      "HumanBody": {
+        "txt_Explorehow": "ਪੜਚੋਲ ਕਰੋ ਕਿ ਤੁਹਾਡਾ ਸਰੀਰ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ!",
+        "txt_Explored": "✓ ਖੋਜ ਕੀਤੀ",
+        "txt_ORGANS": "ਅੰਗ",
+        "txt_AllSystems": "ਸਾਰੇ ਸਿਸਟਮਾਂ ਦੀ ਖੋਜ ਕੀਤੀ ਗਈ!"
+      },
+      "LeverExplorer": {
+        "txt_Movetheful": "ਲੀਵਰ ਨੂੰ ਸੰਤੁਲਿਤ ਕਰਨ ਲਈ ਫੁਲਕ੍ਰਮ ਨੂੰ ਹਿਲਾਓ!",
+        "spn_": "🏋️",
+        "txt_Balanced": "⚖️ ਸੰਤੁਲਿਤ!",
+        "txt_Lefttorque": "ਖੱਬਾ ਟਾਰਕ = ਸੱਜਾ ਟਾਰਕ",
+        "btn_CheckBalan": "ਬਕਾਇਆ ਚੈੱਕ ਕਰੋ ⚖️"
+      },
+      "LightShadows": {
+        "txt_Dragthesun": "ਇਹ ਦੇਖਣ ਲਈ ਸੂਰਜ ਨੂੰ ਖਿੱਚੋ ਕਿ ਪਰਛਾਵੇਂ ਕਿਵੇਂ ਬਦਲਦੇ ਹਨ!",
+        "txt_Lighttrave": "ਰੌਸ਼ਨੀ ਸਿੱਧੀਆਂ ਰੇਖਾਵਾਂ ਵਿੱਚ ਯਾਤਰਾ ਕਰਦੀ ਹੈ",
+        "txt_Opaqueobje": "ਧੁੰਦਲਾ ਵਸਤੂਆਂ ਰੋਸ਼ਨੀ ਨੂੰ ਰੋਕਦੀਆਂ ਹਨ",
+        "txt_Darkareabe": "ਵਸਤੂ ਦੇ ਪਿੱਛੇ ਹਨੇਰਾ ਖੇਤਰ",
+        "spn_": "🕉️"
+      },
+      "Magnets": {
+        "txt_Flippolesa": "ਖੰਭਿਆਂ ਨੂੰ ਫਲਿਪ ਕਰੋ ਅਤੇ ਖਿੱਚ ਬਨਾਮ ਪ੍ਰਤੀਕ੍ਰਿਆ ਦੇਖਣ ਲਈ ਦੂਰੀ ਨੂੰ ਅਨੁਕੂਲ ਕਰੋ!",
+        "spn_Close": "📏 ਬੰਦ ਕਰੋ",
+        "spn_Far": "ਦੂਰ 📏",
+        "spn_": "🕉️"
+      },
+      "MoonPhases": {
+        "txt_Clickeachp": "ਚੰਦਰਮਾ ਦੀ ਤਬਦੀਲੀ ਨੂੰ ਦੇਖਣ ਲਈ ਹਰੇਕ ਪੜਾਅ 'ਤੇ ਕਲਿੱਕ ਕਰੋ!",
+        "spn_": "🕉️"
+      },
+      "Multiplication": {
+        "txt_Seemultipl": "ਗੁਣਾ ਨੂੰ ਵਸਤੂਆਂ ਦੇ ਐਰੇ ਵਜੋਂ ਦੇਖੋ!",
+        "spn_Rows": "↕️ ਕਤਾਰਾਂ",
+        "spn_Columns": "↔️ ਕਾਲਮ",
+        "spn_": "🕉️"
+      },
+      "MultiplicationLab": {
+        "btn_Check": "ਚੈੱਕ ਕਰੋ"
+      },
+      "NewtonsLaws": {
+        "txt_FmaPushobj": "F = ma — ਵਸਤੂਆਂ ਨੂੰ ਧੱਕੋ ਅਤੇ ਦੇਖੋ ਕਿ ਉਹ ਕਿਵੇਂ ਚਲਦੇ ਹਨ!",
+        "spn_Force": "💪 ਫੋਰਸ",
+        "spn_Mass": "📦 ਪੁੰਜ",
+        "txt_InertiaObj": "ਜੜਤਾ: ਵਸਤੂਆਂ ਉਹੀ ਕਰਦੀਆਂ ਰਹਿੰਦੀਆਂ ਹਨ ਜੋ ਉਹ \\",
+        "txt_FmaForcema": "F=ma: ਫੋਰਸ = ਪੁੰਜ × ਪ੍ਰਵੇਗ",
+        "txt_ActionReac": "ਐਕਸ਼ਨ-ਪ੍ਰਤੀਕਿਰਿਆ: ਹਰ ਤਾਕਤ ਦਾ ਬਰਾਬਰ ਵਿਰੋਧੀ ਹੁੰਦਾ ਹੈ",
+        "spn_": "🕉️"
+      },
+      "NumberLine": {
+        "txt_Watchthech": "ਅੱਖਰ ਕਿਸੇ ਵੀ ਨੰਬਰ 'ਤੇ ਛਾਲ ਵੇਖੋ!",
+        "spn_": "🕉️"
+      },
+      "Panchabhutas": {
+        "txt_TheFiveGre": "पञ्चभूत - ਪੰਜ ਮਹਾਨ ਤੱਤ"
+      },
+      "Photosynthesis": {
+        "txt_Watchhowpl": "ਦੇਖੋ ਕਿਵੇਂ ਪੌਦੇ ਸੂਰਜ ਦੀ ਰੌਸ਼ਨੀ ਨੂੰ ਭੋਜਨ ਵਿੱਚ ਬਦਲਦੇ ਹਨ!",
+        "spn_Lowlight": "🌥️ ਘੱਟ ਰੋਸ਼ਨੀ",
+        "spn_Brightsun": "☀️ ਚਮਕਦਾਰ ਸੂਰਜ",
+        "spn_": "🌾"
+      },
+      "Pi": {
+        "txt_Seehowconn": "ਦੇਖੋ ਕਿ ਕਿਵੇਂ π ਘੇਰੇ ਨੂੰ ਵਿਆਸ ਨਾਲ ਜੋੜਦਾ ਹੈ!",
+        "spn_Decimalpla": "🔢 ਦਸ਼ਮਲਵ ਸਥਾਨ",
+        "spn_": "🕉️",
+        "txt_Aryabhata4": "ਆਰੀਆਭੱਟ (499 CE) ਨੇ π ≈ 3.1416 ਦੀ ਗਣਨਾ ਕੀਤੀ — 4 ਦਸ਼ਮਲਵ ਸਥਾਨਾਂ ਲਈ ਸਹੀ! ਉਸਦਾ ਤਰੀਕਾ:"
+      },
+      "PlantGrowth": {
+        "txt_Watchaseed": "ਇੱਕ ਬੀਜ ਨੂੰ ਫਲ ਦੇਣ ਵਾਲੇ ਪੌਦੇ ਵਿੱਚ ਉੱਗਦੇ ਦੇਖੋ!",
+        "spn_Water": "💧 ਪਾਣੀ",
+        "spn_Sunlight": "☀️ ਸੂਰਜ ਦੀ ਰੌਸ਼ਨੀ",
+        "spn_": "🕉️"
+      },
+      "Pythagorean": {
+        "txt_abcseeitvi": "a² + b² = c² — ਇਸ ਨੂੰ ਦ੍ਰਿਸ਼ਟੀ ਨਾਲ ਦੇਖੋ!",
+        "spn_SideA": "📏 ਸਾਈਡ ਏ",
+        "spn_SideB": "📏 ਸਾਈਡ ਬੀ",
+        "spn_": "🕉️"
+      },
+      "Senses": {
+        "txt_Explorehow": "ਖੋਜ ਕਰੋ ਕਿ ਤੁਹਾਡਾ ਸਰੀਰ ਸੰਸਾਰ ਨੂੰ ਕਿਵੇਂ ਸਮਝਦਾ ਹੈ!",
+        "spn_": "🕉️"
+      },
+      "Shapes": {
+        "txt_Exploresid": "ਪਾਸਿਆਂ, ਕੋਣਾਂ ਅਤੇ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਦੀ ਪੜਚੋਲ ਕਰੋ!",
+        "spn_": "🕉️"
+      },
+      "SimpleMachines": {
+        "txt_Seehowmach": "ਦੇਖੋ ਕਿ ਮਸ਼ੀਨਾਂ ਕੰਮ ਨੂੰ ਆਸਾਨ ਕਿਵੇਂ ਬਣਾਉਂਦੀਆਂ ਹਨ!",
+        "spn_Effort": "💪 ਜਤਨ",
+        "spn_": "🕉️",
+        "txt_Indiansuse": "ਭਾਰਤੀਆਂ ਨੇ 4,000 ਸਾਲ ਪਹਿਲਾਂ ਮੰਦਰਾਂ ਨੂੰ ਬਣਾਉਣ ਲਈ ਲੀਵਰ, ਰੈਂਪ ਅਤੇ ਪੁਲੀ ਦੀ ਵਰਤੋਂ ਕੀਤੀ ਸੀ! ਬ੍ਰਿਹਦੇਸ਼ਵਰ ਮੰਦਿਰ (1010 CE) ਵਿੱਚ ਰੈਂਪ ਅਤੇ ਲੀਵਰਾਂ ਦੀ ਵਰਤੋਂ ਨਾਲ 80 ਟਨ ਦਾ ਕੈਪਸਟੋਨ ਹੈ - ਇੱਕ ਇੰਜਨੀਅਰਿੰਗ ਚਮਤਕਾਰ ਜੋ ਅੱਜ ਵੀ ਅਧਿਐਨ ਕੀਤਾ ਗਿਆ ਹੈ।"
+      },
+      "SolarSystem": {
+        "txt_Watchthepl": "ਸੂਰਜ ਦੇ ਚੱਕਰ ਵਿੱਚ ਗ੍ਰਹਿਆਂ ਨੂੰ ਦੇਖੋ!",
+        "spn_Slow": "🐢 ਹੌਲੀ",
+        "spn_Fast": "🚀 ਤੇਜ਼",
+        "spn_": "🕉️"
+      },
+      "SoundWaves": {
+        "txt_Changefreq": "ਇਹ ਦੇਖਣ ਲਈ ਬਾਰੰਬਾਰਤਾ ਅਤੇ ਐਪਲੀਟਿਊਡ ਬਦਲੋ ਕਿ ਆਵਾਜ਼ ਕਿਵੇਂ ਯਾਤਰਾ ਕਰਦੀ ਹੈ!",
+        "spn_FrequencyP": "🎵 ਬਾਰੰਬਾਰਤਾ (ਪਿਚ)",
+        "spn_AmplitudeV": "🔊 ਐਪਲੀਟਿਊਡ (ਆਵਾਜ਼)",
+        "spn_": "🕉️"
+      },
+      "StatesOfMatter": {
+        "txt_Dragthesli": "ਕਣਾਂ ਨੂੰ ਗਰਮ ਕਰਨ ਜਾਂ ਠੰਢਾ ਕਰਨ ਲਈ ਸਲਾਈਡਰ ਨੂੰ ਖਿੱਚੋ!",
+        "spn_Cold": "🧊 ਠੰਡਾ",
+        "spn_Hot": "ਗਰਮ 🔥",
+        "spn_0C": "0°C",
+        "spn_33C": "33°C",
+        "spn_66C": "66°C",
+        "spn_100C": "100°C",
+        "txt_Particlesv": "ਕਣ ਥਾਂ-ਥਾਂ ਥਿੜਕਦੇ ਹਨ",
+        "txt_Particless": "ਕਣ ਇੱਕ ਦੂਜੇ ਤੋਂ ਅੱਗੇ ਲੰਘਦੇ ਹਨ",
+        "txt_Particlesf": "ਕਣ ਖੁੱਲ੍ਹ ਕੇ ਉੱਡਦੇ ਹਨ",
+        "spn_": "🕉️"
+      },
+      "StatisticsPlayground": {
+        "txt_Selectadat": "ਇੱਕ ਡੇਟਾਸੈਟ ਚੁਣੋ ਅਤੇ ਨੰਬਰਾਂ ਦੀ ਪੜਚੋਲ ਕਰੋ!",
+        "txt_Mean": "ਮਤਲਬ",
+        "txt_Median": "ਮੱਧਮਾਨ",
+        "txt_Mode": "ਮੋਡ",
+        "txt_Thisisexac": "🏏 IPL ਕ੍ਰਿਕਟ ਵਿਸ਼ਲੇਸ਼ਕ ਹਰ ਮੈਚ ਤੋਂ ਬਾਅਦ ਇਹੀ ਕਰਦੇ ਹਨ!"
+      },
+      "TimelineExplorer": {
+        "txt_Discoverwh": "ਖੋਜੋ ਜਦੋਂ ਵੱਡੀਆਂ ਵਿਗਿਆਨਕ ਸਫਲਤਾਵਾਂ ਹੋਈਆਂ।"
+      },
+      "WaterCycle": {
+        "txt_Controlthe": "ਸੂਰਜ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰੋ ਅਤੇ ਪਾਣੀ ਨੂੰ ਵਾਸ਼ਪੀਕਰਨ, ਸੰਘਣਾ ਅਤੇ ਬਾਰਿਸ਼ ਨੂੰ ਦੇਖੋ!",
+        "spn_Lowsun": "🌥️ ਘੱਟ ਸੂਰਜ",
+        "spn_Intensesun": "☀️ ਤੇਜ਼ ਸੂਰਜ",
+        "spn_": "🕉️"
+      },
+      "WeatherStation": {
+        "spn_": "🌤️",
+        "txt_Temp": "ਟੈਂਪ",
+        "txt_Humidity": "ਨਮੀ",
+        "txt_Pressure": "ਦਬਾਅ",
+        "txt_Wind": "ਹਵਾ",
+        "txt_Explanatio": "ਵਿਆਖਿਆ:"
       }
     },
     "lumo": {
@@ -444,6 +710,63 @@
       "ai": {
         "title": "ਏ.ਆਈ",
         "hook": "ਮਸ਼ੀਨਾਂ ਜੋ ਸਿੱਖਦੀਆਂ ਹਨ।"
+      },
+      "AlgebraScales": {
+        "txt_Equation": "ਸਮੀਕਰਨ",
+        "spn_x": "x =",
+        "btn_Check": "ਚੈੱਕ ਕਰੋ"
+      },
+      "CarbonCycle": {
+        "txt_CarbonCycl": "🌿 ਕਾਰਬਨ ਚੱਕਰ",
+        "txt_CARBONFLOW": "ਕਾਰਬਨ ਫਲੋਅ",
+        "spn_": "✓",
+        "spn_FossilFuel": "🏭 ਫਾਸਿਲ ਫਿਊਲ ਬਰਨਿੰਗ ਰੇਟ",
+        "spn_CO": "CO₂"
+      },
+      "EconomicSimulation": {
+        "txt_EconomicDa": "📈 ਆਰਥਿਕ ਡੈਸ਼ਬੋਰਡ",
+        "txt_Adjustpoli": "ਨੀਤੀਆਂ ਨੂੰ ਵਿਵਸਥਿਤ ਕਰੋ ਅਤੇ ਇਵੈਂਟਾਂ ਨੂੰ ਲਾਗੂ ਕਰੋ",
+        "txt_GDPGrowth": "ਜੀਡੀਪੀ ਵਾਧਾ",
+        "txt_Inflation": "ਮਹਿੰਗਾਈ",
+        "spn_InterestRa": "🏦 ਵਿਆਜ ਦਰ",
+        "spn_TaxRate": "💰 ਟੈਕਸ ਦਰ",
+        "txt_APPLYEVENT": "ਇਵੈਂਟ ਲਾਗੂ ਕਰੋ"
+      },
+      "FermiEstimation": {
+        "txt_Indianesti": "🇮🇳 ਭਾਰਤੀ ਅਨੁਮਾਨ",
+        "spn_": "✓",
+        "txt_YourEstima": "ਤੁਹਾਡਾ ਅੰਦਾਜ਼ਾ",
+        "txt_RealAnswer": "ਅਸਲੀ ਜਵਾਬ",
+        "btn_RevealAnsw": "ਜਵਾਬ ਜ਼ਾਹਰ ਕਰੋ! 🔍",
+        "btn_NextProble": "ਅਗਲੀ ਸਮੱਸਿਆ →"
+      },
+      "GeneticsSimulator": {
+        "txt_Inheritanc": "ਵਿਰਾਸਤੀ ਸਾਰਣੀ",
+        "btn_RunGenetic": "ਜੈਨੇਟਿਕ ਕਰਾਸ ਚਲਾਓ"
+      },
+      "LiteraryAnalysis": {
+        "txt_TAGLITERAR": "ਸਾਹਿਤਕ ਡਿਵਾਈਸਾਂ ਨੂੰ ਟੈਗ ਕਰੋ",
+        "spn_": "✓"
+      },
+      "NumberSystems": {
+        "txt_NumberSyst": "💻 ਨੰਬਰ ਸਿਸਟਮ",
+        "txt_Everything": "ਹਰ ਚੀਜ਼ ਡਿਜੀਟਲ 0 ਅਤੇ 1s ਤੋਂ ਬਣੀ ਹੈ",
+        "txt_TAPBULBSTO": "ਬਾਈਨਰੀ ਲਿਖਣ ਲਈ ਬਲਬਾਂ 'ਤੇ ਟੈਪ ਕਰੋ",
+        "txt_HEXCOLOURS": "🎨 ਹੈਕਸ ਰੰਗ",
+        "txt_Zerowasinv": "🇮🇳 ਜ਼ੀਰੋ ਦੀ ਖੋਜ ਭਾਰਤ ਵਿੱਚ ਬ੍ਰਹਮਗੁਪਤ (628 ਈ.) ਦੁਆਰਾ ਕੀਤੀ ਗਈ ਸੀ। ਜ਼ੀਰੋ ਤੋਂ ਬਿਨਾਂ, ਬਾਇਨਰੀ ਅਸੰਭਵ ਹੈ। ਬਾਈਨਰੀ ਤੋਂ ਬਿਨਾਂ, ਕੋਈ ਕੰਪਿਊਟਰ ਮੌਜੂਦ ਨਹੀਂ ਹੈ। ਭਾਰਤ ਨੇ ਡਿਜੀਟਲ ਯੁੱਗ ਨੂੰ ਸੰਭਵ ਬਣਾਇਆ ਹੈ।"
+      },
+      "PeriodicTableExplorer": {
+        "txt_PeriodicTa": "🧪 ਪੀਰੀਅਡਿਕ ਟੇਬਲ ਐਕਸਪਲੋਰਰ"
+      },
+      "PlateTectonics": {
+        "txt_MovingCont": "🌍 ਚਲਦੇ ਮਹਾਂਦੀਪ"
+      },
+      "ProbabilitySandbox": {
+        "spn_SampleSize": "ਨਮੂਨਾ ਆਕਾਰ",
+        "txt_Yellowline": "ਪੀਲੀ ਲਾਈਨ = ਉਮੀਦ ਕੀਤੀ ਸੰਭਾਵਨਾ"
+      },
+      "SpeedDistanceTime": {
+        "btn_ConfirmSpe": "ਸਪੀਡ ਖੋਜ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ"
       }
     },
     "algebraChallenges": {
@@ -544,6 +867,56 @@
         "title": "ਕੈਲਕੂਲਸ",
         "hook": "ਤਬਦੀਲੀ ਦਾ ਗਣਿਤ.",
         "examRelevance": "ਫੰਕਸ਼ਨ, ਸੀਮਾਵਾਂ, ਡੈਰੀਵੇਟਿਵਜ਼"
+      },
+      "ClimateSystems": {
+        "txt_ClimateSys": "🌡️ ਜਲਵਾਯੂ ਪ੍ਰਣਾਲੀਆਂ",
+        "txt_Smallchang": "ਫੀਡਬੈਕ ਲੂਪਸ ਰਾਹੀਂ ਛੋਟੇ ਬਦਲਾਅ ਕੈਸਕੇਡ ਕਰਦੇ ਹਨ।",
+        "txt_CO": "CO₂",
+        "txt_Warming": "ਗਰਮ ਕਰਨਾ",
+        "spn_COLevel": "CO₂ ਪੱਧਰ",
+        "txt_Feedbacklo": "ਫੀਡਬੈਕ ਲੂਪਸ"
+      },
+      "EconomicIndicators": {
+        "txt_Policydeci": "ਨੀਤੀਗਤ ਫੈਸਲੇ"
+      },
+      "Electrolysis": {
+        "txt_Cathode": "ਕੈਥੋਡ",
+        "txt_Anode": "ਐਨੋਡ"
+      },
+      "EssayArchitect": {
+        "spn_FlowScore": "ਫਲੋ ਸਕੋਰ",
+        "btn_SaveStruct": "ਢਾਂਚਾ ਸੰਭਾਲੋ"
+      },
+      "ProjectileMotion": {
+        "spn_LaunchAngl": "ਕੋਣ ਲਾਂਚ ਕਰੋ",
+        "spn_InitialSpe": "ਸ਼ੁਰੂਆਤੀ ਗਤੀ",
+        "txt_Range": "ਰੇਂਜ",
+        "txt_MaxHeight": "ਅਧਿਕਤਮ ਉਚਾਈ",
+        "txt_Time": "ਸਮਾਂ",
+        "btn_Fire": "🚀 ਅੱਗ!",
+        "txt_45MaximumR": "🎯 45° = ਅਧਿਕਤਮ ਰੇਂਜ!",
+        "txt_Rusin2gMax": "R = u²sin(2θ)/g. ਅਧਿਕਤਮ ਜਦੋਂ sin(2θ) = 1, θ = 45°"
+      },
+      "RedoxReactions": {
+        "txt_Anode": "ਐਨੋਡ (-)",
+        "txt_Oxidation": "ਆਕਸੀਕਰਨ",
+        "txt_e": "e⁻ →",
+        "txt_Cathode": "ਕੈਥੋਡ (+)",
+        "txt_Reduction": "ਕਟੌਤੀ",
+        "txt_Loseselect": "ਇਲੈਕਟ੍ਰੋਨ ਗੁਆ ​​ਦਿੰਦਾ ਹੈ",
+        "txt_Gainselect": "ਇਲੈਕਟ੍ਰੋਨ ਹਾਸਲ ਕਰਦਾ ਹੈ"
+      },
+      "TrigIdentities": {
+        "txt_Identity": "ਪਛਾਣ",
+        "txt_Proofsteps": "ਸਬੂਤ ਕਦਮ",
+        "btn_VerifyIden": "ਪਛਾਣ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ"
+      },
+      "TrigonometryCircle": {
+        "txt_sin": "ਪਾਪ θ",
+        "txt_cos": "cos θ",
+        "txt_tan": "tan θ",
+        "txt_sincos": "sin²θ + cos²θ =",
+        "txt_Always1": "ਹਮੇਸ਼ਾ 1"
       }
     },
     "beautyMoments": {
@@ -1300,7 +1673,9 @@
         "mechanics": "ਮਕੈਨਿਕਸ",
         "waves": "ਲਹਿਰਾਂ",
         "quantum": "ਕੁਆਂਟਮ"
-      }
+      },
+      "step": "ਕਦਮ 2",
+      "show_all": "ਸਾਰੇ ਸੰਸਾਰ ਦੀ ਪੜਚੋਲ ਕਰੋ \\u2193"
     },
     "features": {
       "title": "ਵੱਖਰਾ ਬਣਾਇਆ",
@@ -1366,6 +1741,17 @@
       "quote3": "42 'ਤੇ ਤਮਿਲ ਨੂੰ ਚੁੱਕਿਆ। ਮੇਰੀ ਸਵੇਰ ਦੀ ਚਾਹ 'ਤੇ ਕਰਨ ਲਈ ਪਾਠ ਬਹੁਤ ਘੱਟ ਹਨ। ਜ਼ੋਰਦਾਰ ਸਿਫਾਰਸ਼ ਕਰੋ.",
       "name3": "ਰਵੀ ਐਸ.",
       "role3": "ਜੀਵਨ ਭਰ ਸਿੱਖਣ ਵਾਲਾ"
+    },
+    "principles": {
+      "title": "ਕੋਰ ਡਿਜ਼ਾਈਨ ਸਿਧਾਂਤ"
+    },
+    "review": {
+      "title": "ਸਮੀਖਿਆ ਕਰਨ ਦਾ ਸਮਾਂ!",
+      "empty_title": "ਤੁਹਾਨੂੰ",
+      "empty_desc": "ਇਸ ਸਮੇਂ ਕਿਸੇ ਵੀ ਗਤੀਵਿਧੀਆਂ ਨੂੰ ਤੁਹਾਡੀ ਸਮੀਖਿਆ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ। ਆਪਣੇ ਗਿਆਨ ਨੂੰ ਬਣਾਉਣ ਲਈ ਨਵੇਂ ਸੰਸਾਰਾਂ ਦੀ ਪੜਚੋਲ ਕਰਦੇ ਰਹੋ!",
+      "due": "ਹੁਣ ਬਕਾਇਆ",
+      "mastered": "ਮੁਹਾਰਤ ਹਾਸਲ ਕੀਤੀ",
+      "familiar": "ਜਾਣੂ"
     }
   },
   "biology": {
@@ -1900,7 +2286,8 @@
       "save_exit": "ਕੀ ਰੱਖਿਅਤ ਕਰਕੇ ਬਾਹਰ ਨਿਕਲਣਾ ਹੈ?",
       "save_exit_desc": "ਤੁਹਾਡੀ ਤਰੱਕੀ ਆਪਣੇ ਆਪ ਸੁਰੱਖਿਅਤ ਹੋ ਜਾਂਦੀ ਹੈ! ਤੁਸੀਂ ਇਸ ਗਤੀਵਿਧੀ ਨੂੰ ਕਿਸੇ ਵੀ ਸਮੇਂ ਜਾਰੀ ਰੱਖ ਸਕਦੇ ਹੋ ਜਿੱਥੋਂ ਤੁਸੀਂ ਛੱਡਿਆ ਸੀ।",
       "keep_building": "ਬਿਲਡਿੰਗ ਜਾਰੀ ਰੱਖੋ",
-      "save_exit_btn": "ਸੁਰੱਖਿਅਤ ਕਰੋ ਅਤੇ ਬਾਹਰ ਨਿਕਲੋ"
+      "save_exit_btn": "ਸੁਰੱਖਿਅਤ ਕਰੋ ਅਤੇ ਬਾਹਰ ਨਿਕਲੋ",
+      "materials_used": "ਸਮੱਗਰੀ"
     },
     "ages": {
       "title1": "ਛੋਟੇ ਖੋਜੀ",
@@ -2009,7 +2396,11 @@
       "show_all": "ਸਾਰੀਆਂ ਗਤੀਵਿਧੀਆਂ ਦਿਖਾਓ",
       "keep_creative": "ਰਚਨਾਤਮਕ ਬਣਦੇ ਰਹੋ!",
       "made_with": "ਛੋਟੇ ਨਿਰਮਾਤਾਵਾਂ ਲਈ ❤️ ਨਾਲ ਬਣਾਇਆ ਗਿਆ",
-      "activities_suffix": "ਗਤੀਵਿਧੀਆਂ"
+      "activities_suffix": "ਗਤੀਵਿਧੀਆਂ",
+      "done_badge": "ਹੋ ਗਿਆ!",
+      "started_badge": "ਸ਼ੁਰੂ ਕੀਤਾ!",
+      "play_again": "ਦੁਬਾਰਾ ਖੇਡੋ",
+      "play_now": "ਹੁਣੇ ਚਲਾਓ!"
     },
     "workshop": {
       "title": "ਮੇਰੀ ਤਰੱਕੀ",
@@ -2168,7 +2559,8 @@
           "description": "ਆਪਣੀਆਂ ਸਾਰੀਆਂ ਕਾਢਾਂ ਦਾ ਪ੍ਰਦਰਸ਼ਨ ਕਰੋ! ਇੱਕ ਨਵਾਂ ਰੋਬੋਟ ਜਾਂ ਕੰਟਰੈਪਸ਼ਨ ਬਣਾਓ ਜੋ ਤੁਹਾਡੇ ਦੁਆਰਾ ਸਿੱਖੀਆਂ ਗਈਆਂ ਚੀਜ਼ਾਂ ਨੂੰ ਜੋੜਦਾ ਹੈ।"
         }
       }
-    }
+    },
+    "maker_space": "ਮੇਕਰ ਸਪੇਸ"
   },
   "completed": "ਪੂਰਾ ਹੋਇਆ",
   "in_progress": "ਤਰੱਕੀ ਹੋ ਰਹੀ ਹੈ",
@@ -2221,7 +2613,8 @@
     "information": "ਜਾਣਕਾਰੀ",
     "privacy": "ਗੋਪਨੀਯਤਾ",
     "about": "ਸਾਡੇ ਬਾਰੇ",
-    "made_with": "ਭਾਰਤ ਲਈ ❤️ ਨਾਲ ਬਣਾਇਆ ਗਿਆ।"
+    "made_with": "ਭਾਰਤ ਲਈ ❤️ ਨਾਲ ਬਣਾਇਆ ਗਿਆ।",
+    "contact": "ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ"
   },
   "maker_space": {
     "badge": "ਘਰ ਵਿੱਚ ਬੱਚਿਆਂ ਦਾ ਕੈਂਪ",
@@ -2232,7 +2625,9 @@
     "activities": "ਗਤੀਵਿਧੀਆਂ",
     "creative_pillars": "ਰਚਨਾਤਮਕ ਥੰਮ੍ਹ",
     "screen_free": "ਸਕ੍ਰੀਨ-ਮੁਕਤ ਮਜ਼ੇਦਾਰ",
-    "scroll_explore": "ਪੜਚੋਲ ਕਰਨ ਲਈ ਸਕ੍ਰੋਲ ਕਰੋ"
+    "scroll_explore": "ਪੜਚੋਲ ਕਰਨ ਲਈ ਸਕ੍ਰੋਲ ਕਰੋ",
+    "learning_realms": "ਸਿੱਖਣ ਦੇ ਖੇਤਰ",
+    "ad_free": "ਵਿਗਿਆਪਨ-ਮੁਕਤ ਮਜ਼ੇਦਾਰ"
   },
   "activities": "ਗਤੀਵਿਧੀਆਂ",
   "project_weeks": "ਪ੍ਰੋਜੈਕਟ ਹਫ਼ਤੇ",
@@ -2615,7 +3010,9 @@
         "indian_context": "ਭਾਰਤੀ ਪ੍ਰਸੰਗਃ",
         "try_it": "ਇਸ ਨੂੰ ਅਜ਼ਮਾਓਃ",
         "btn_complete": "ਮੈਂ ਸਮਝ ਗਿਆ!",
-        "btn_aria": "ਮੋਡੀਊਲ ਨੂੰ ਪੂਰਾ ਕਰੋ ਅਤੇ ਘਰ ਵਾਪਸ ਜਾਓ"
+        "btn_aria": "ਮੋਡੀਊਲ ਨੂੰ ਪੂਰਾ ਕਰੋ ਅਤੇ ਘਰ ਵਾਪਸ ਜਾਓ",
+        "btn_maker_aria": "ਇਸਨੂੰ ਮੇਕਰ ਸਪੇਸ ਵਿੱਚ ਬਣਾਓ",
+        "btn_maker": "ਇਸਨੂੰ ਮੇਕਰ ਸਪੇਸ ਵਿੱਚ ਬਣਾਓ!"
       }
     },
     "modules": {
@@ -2918,7 +3315,7 @@
       "refresh_page": "ਸਫ਼ੇ ਨੂੰ ਤਾਜ਼ਾ ਕਰੋ"
     },
     "avatarstore": {
-      "xp": "XP"
+      "xp": "ਐਕਸਪੀ"
     },
     "certificategenerator": {
       "jigyasu": "ਜਿਗਯਾਸੁ",
@@ -3022,7 +3419,7 @@
       "later": "ਬਾਅਦ ਵਿੱਚ"
     },
     "rewardceremony": {
-      "xp": "XP",
+      "xp": "ਐਕਸਪੀ",
       "continue_adventure": "ਸਾਹਸ ਜਾਰੀ ਰੱਖੋ"
     },
     "safetyreportbutton": {
@@ -3057,7 +3454,7 @@
     "topnav": {
       "jigyasu": "ਜਿਗਯਾਸੁ",
       "v1_0_0": "v1.0.0",
-      "xp": "XP"
+      "xp": "ਐਕਸਪੀ"
     },
     "variablerewards": {
       "mystery_chest": "ਰਹੱਸਮਈ ਛਾਤੀ!",
@@ -3106,7 +3503,7 @@
       "bioverse": "ਬਾਇਓਵਰਸ",
       "lv": "ਐੱਲ. ਵੀ.",
       "physicsverse": "ਭੌਤਿਕ ਵਿਗਿਆਨ ਸੰਸਕਰਣ",
-      "xp": "XP",
+      "xp": "ਐਕਸਪੀ",
       "home": "ਘਰ-ਘਰ"
     },
     "pillarshowcase": {
@@ -3451,7 +3848,7 @@
       "select_an_organelle": "ਇੱਕ ਆਰਗੇਨੈੱਲ ਚੁਣੋ",
       "click_on_any_part_of_the_cell_": "ਇਸ ਦੀ ਬਣਤਰ ਅਤੇ ਕਾਰਜ ਬਾਰੇ ਜਾਣਨ ਲਈ ਸੈੱਲ ਨਕਸ਼ੇ ਦੇ ਕਿਸੇ ਵੀ ਹਿੱਸੇ ਜਾਂ ਹੇਠਾਂ ਦਿੱਤੇ ਲੇਬਲ ਉੱਤੇ ਕਲਿੱਕ ਕਰੋ।",
       "did_you_know": "ਕੀ ਤੁਸੀਂ ਜਾਣਦੇ ਹੋ?",
-      "37_2t": "37.2T",
+      "37_2t": "37.2ਟੀ",
       "10_100_m": "10-100 μm",
       "ancient_indian_insight": "ਪ੍ਰਾਚੀਨ ਭਾਰਤੀ ਅੰਤਰਦ੍ਰਿਸ਼ਟੀ",
       "maharishi_kanad_600_bce_propos": "ਮਹਾਰਿਸ਼ੀ ਕਨਾਡ (~ 600 ਈ. ਪੂ.) ਪ੍ਰਸਤਾਵਿਤ",
@@ -5163,7 +5560,7 @@
       "try_again": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ!"
     },
     "moneymathmarket": {
-      "1": "× (1 +",
+      "1": "× (1+",
       "100": "/ 100) ^",
       "money_math_market": "ਮਨੀ ਮੈਥ ਮਾਰਕੀਟ",
       "master_real_world_money_calcul": "ਅਸਲ-ਸੰਸਾਰ ਦੇ ਪੈਸੇ ਦੀ ਗਣਨਾ ਵਿੱਚ ਮੁਹਾਰਤ ਹਾਸਲ ਕਰੋ!",
@@ -5527,9 +5924,9 @@
       "correct": "ਸਹੀ!",
       "try_again": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
       "volume_formula": "ਵਾਲੀਅਮ ਫਾਰਮੂਲਾ",
-      "v": "V =",
+      "v": "ਵਿ =",
       "surface_area_formula": "ਸਤਹ ਖੇਤਰ ਫਾਰਮੂਲਾ",
-      "sa": "SA =",
+      "sa": "ਸਾ =",
       "volume_measures_how_much_space": "ਵਾਲੀਅਮ ਮਾਪਦਾ ਹੈ ਕਿ ਅੰਦਰ ਕਿੰਨੀ ਜਗ੍ਹਾ ਹੈ। ਸਤਹ ਖੇਤਰ ਕੁੱਲ ਬਾਹਰੀ ਚਮਡ਼ੀ ਨੂੰ ਮਾਪਦਾ ਹੈ।"
     },
     "wordproblemstories": {
@@ -5988,6 +6385,425 @@
     },
     "worksheetgenerator": {
       "nbsp_nbsp": ": _ _ _ _ _ _ _ _ _ _ _ _ _ _ & nbsp; & nbsp;"
+    }
+  },
+  "about": {
+    "values": {
+      "0": {
+        "title": "ਹੈਰਾਨੀ",
+        "desc": "ਅਸੀਂ ਸਵਾਲਾਂ ਨਾਲ ਸ਼ੁਰੂ ਕਰਦੇ ਹਾਂ..."
+      },
+      "1": {
+        "title": "ਇਕੁਇਟੀ",
+        "desc": "ਇੱਕ ਪਲੇਟਫਾਰਮ..."
+      },
+      "2": {
+        "title": "ਆਦਰ",
+        "desc": "ਕੋਈ ਗ੍ਰੇਡ ਨਹੀਂ..."
+      },
+      "3": {
+        "title": "ਧੀਰਜ",
+        "desc": "ਸਿੱਖਣ ਵਿੱਚ ਸਮਾਂ ਲੱਗਦਾ ਹੈ..."
+      },
+      "4": {
+        "title": "ਖੁਸ਼ੀ",
+        "desc": "ਜੇ ਸਿੱਖਣਾ ਅਨੰਦਦਾਇਕ ਨਹੀਂ ਹੈ ..."
+      },
+      "5": {
+        "title": "ਪਛਾਣ",
+        "desc": "ਭਾਰਤੀ ਵਿਗਿਆਨੀਆਂ ਨੇ..."
+      }
+    },
+    "differences": {
+      "0": {
+        "title": "ਡਿਜ਼ਾਈਨ ਦੁਆਰਾ ਮੁਫ਼ਤ",
+        "desc": "ਕੋਈ ਮਾੜਾ ਸੰਸਕਰਣ ਨਹੀਂ ਹੈ ..."
+      },
+      "1": {
+        "title": "ਵੈੱਬਸਾਈਟ ਪਹਿਲਾਂ",
+        "desc": "ਇੱਕ ਲਿੰਕ ਸਾਂਝਾ ਕੀਤਾ ਗਿਆ..."
+      },
+      "2": {
+        "title": "22 ਭਾਰਤੀ ਭਾਸ਼ਾਵਾਂ",
+        "desc": "ਪਹਿਲੇ ਦਿਨ ਤੋਂ ਅਸਾਮੀ, ਬੰਗਾਲੀ, ਬੋਡੋ, ਡੋਗਰੀ, ਗੁਜਰਾਤੀ, ਹਿੰਦੀ, ਕੰਨੜ, ਕਸ਼ਮੀਰੀ, ਮੈਥਿਲੀ, ਮਲਿਆਲਮ, ਮਨੀਪੁਰੀ, ਮਰਾਠੀ, ਨੇਪਾਲੀ, ਉੜੀਆ, ਪੰਜਾਬੀ, ਸੰਸਕ੍ਰਿਤ, ਸੰਤਾਲੀ, ਸਿੰਧੀ, ਤਾਮਿਲ, ਤੇਲਗੂ ਅਤੇ ਉਰਦੂ। ਸਿਖਿਆਰਥੀ ਦੇ ਸਭ ਤੋਂ ਨੇੜੇ ਦੀ ਭਾਸ਼ਾ ਵਿੱਚ ਸਮਝ ਸ਼ੁਰੂ ਹੁੰਦੀ ਹੈ।"
+      },
+      "3": {
+        "title": "ਔਫਲਾਈਨ ਪਹਿਲਾਂ",
+        "desc": "2G 'ਤੇ ਕੰਮ ਕਰਨ ਲਈ ਤਿਆਰ ਕੀਤਾ ਗਿਆ..."
+      },
+      "4": {
+        "title": "ਹਰ ਉਮਰ ਲਈ",
+        "desc": "2 ਤੋਂ 80+ ਦੀ ਉਮਰ..."
+      },
+      "5": {
+        "title": "ਵਿਜ਼ੂਅਲ ਅਤੇ ਇੰਟਰਐਕਟਿਵ",
+        "desc": "ਤੁਸੀਂ ਸਿਰਫ਼ ਦੇਖਦੇ ਹੀ ਨਹੀਂ..."
+      }
+    },
+    "support_labels": {
+      "who": "The WHO",
+      "who_desc": "ਇੱਕ ਸੰਖੇਪ ਜਾਣ-ਪਛਾਣ...",
+      "why": "ਕਿਉਂ",
+      "why_desc": "ਜਿਗਿਆਸੁ ਕਿਉਂ?",
+      "how": "ਕਿਵੇਂ",
+      "how_desc": "ਤੁਸੀਂ ਕਿਵੇਂ ਕਲਪਨਾ ਕਰਦੇ ਹੋ ..."
+    },
+    "mission": "ਮਿਸ਼ਨ",
+    "what_we_built": "ਅਸੀਂ ਕੀ ਬਣਾਇਆ ਹੈ",
+    "support": "ਸਪੋਰਟ",
+    "tagline": "Wonder ਇੰਸਟਾਲ ਕਰੋ।",
+    "why_we_build": "ਅਸੀਂ ਇਸਨੂੰ ਕਿਉਂ ਬਣਾ ਰਹੇ ਹਾਂ",
+    "headings": {
+      "what_we_believe": "ਅਸੀਂ ਕੀ ਮੰਨਦੇ ਹਾਂ",
+      "what_we_built": "ਅਸੀਂ ਕੀ ਬਣਾਇਆ - ਅਤੇ ਕਿਉਂ",
+      "built_for_india": "ਭਾਰਤ ਲਈ ਬਣਾਇਆ ਗਿਆ"
+    },
+    "indian_context": {
+      "0": "ਰੁਪਏ, ਡਾਲਰ ਨਹੀਂ",
+      "1": "ਰੋਟੀਆਂ ਅਤੇ ਚਾਈ, ਸਿਰਫ ਪੀਜ਼ਾ ਹੀ ਨਹੀਂ",
+      "2": "ਮਾਨਸੂਨ, ਇਸਰੋ, ਕ੍ਰਿਕਟ, ਭਾਰਤੀ ਬਾਜ਼ਾਰ",
+      "3": "ਆਰੀਆਭੱਟ, ਰਾਮਾਨੁਜਨ, ਸੀ.ਵੀ. ਰਮਨ, ਜੇ.ਸੀ. ਬੋਸ",
+      "4": "ਏਪੀਜੇ ਅਬਦੁਲ ਕਲਾਮ, ਸੁਸ਼ਰੁਤ, ਬ੍ਰਹਮਗੁਪਤਾ",
+      "5": "ਪਹਿਲੇ ਦਿਨ ਤੋਂ 22 ਭਾਰਤੀ ਭਾਸ਼ਾਵਾਂ",
+      "6": "2G ਅਤੇ ਸ਼ੇਅਰਡ ਫ਼ੋਨਾਂ ਲਈ ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੈ",
+      "7": "ਔਫਲਾਈਨ-ਪਹਿਲਾਂ ਪੇਂਡੂ ਸਿਖਿਆਰਥੀਆਂ ਲਈ"
+    },
+    "join_mission": "ਮਿਸ਼ਨ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ",
+    "relationships": "ਅਸੀਂ ਲੈਣ-ਦੇਣ ਤੋਂ ਪਹਿਲਾਂ ਰਿਸ਼ਤਿਆਂ ਵਿੱਚ ਵਿਸ਼ਵਾਸ ਰੱਖਦੇ ਹਾਂ।",
+    "contact_form": "ਫਾਰਮ ਰਾਹੀਂ ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ",
+    "email_us": "ਸਾਨੂੰ ਸਿੱਧਾ ਈਮੇਲ ਕਰੋ",
+    "text": {
+      "contact_desc": "ਜਦੋਂ ਤੁਸੀਂ ਸਾਨੂੰ ਲਿਖਦੇ ਹੋ, ਤਾਂ ਅਸੀਂ ਇਹ ਜਾਣਨਾ ਪਸੰਦ ਕਰਾਂਗੇ:"
+    },
+    "ways_to_support": "ਜਿਸ ਤਰੀਕੇ ਨਾਲ ਤੁਸੀਂ ਸਾਡਾ ਸਮਰਥਨ ਕਰ ਸਕਦੇ ਹੋ:",
+    "support_ways": {
+      "0": "💰 ਵਿਅਕਤੀਗਤ ਮਹੀਨਾਵਾਰ ਯੋਗਦਾਨ",
+      "1": "🏢 ਕਾਰਪੋਰੇਟ CSR ਭਾਈਵਾਲੀ",
+      "2": "🗣️ ਭਾਸ਼ਾ ਅਨੁਵਾਦ ਲਈ ਫੰਡਿੰਗ",
+      "3": "📱 ਔਫਲਾਈਨ ਡਿਵਾਈਸ ਪਹੁੰਚ ਨੂੰ ਸਪਾਂਸਰ ਕਰਨਾ",
+      "4": "🏫 ਸਕੂਲ ਜਾਂ NGO ਭਾਈਵਾਲੀ",
+      "5": "🌐 ਬੁਨਿਆਦੀ ਢਾਂਚਾ ਸਪਾਂਸਰਸ਼ਿਪ",
+      "6": "🎓 ਸਮੱਗਰੀ ਜਾਂ ਪਾਠਕ੍ਰਮ ਸਮੀਖਿਆ",
+      "7": "📢 ਸ਼ਬਦ ਨੂੰ ਫੈਲਾਉਣਾ"
+    }
+  },
+  "floating_buttons": {
+    "analytics": "ਵਿਸ਼ਲੇਸ਼ਣ",
+    "impact": "ਪ੍ਰਭਾਵ"
+  },
+  "clear_instructions_step": "ਚੁਣੋ",
+  "offline_mode": "ਔਫਲਾਈਨ ਮੋਡ - ਪੜਚੋਲ ਕਰਦੇ ਰਹੋ!",
+  "reset_to_default": "ਡਿਫੌਲਟ 'ਤੇ ਰੀਸੈਟ ਕਰੋ",
+  "privacy_right_delete": "ਆਪਣੇ ਬੱਚੇ ਨੂੰ ਮਿਟਾਉਣ ਦੀ ਬੇਨਤੀ ਕਰੋ\\",
+  "no_results_found": "ਲਈ ਕੋਈ ਨਤੀਜੇ ਨਹੀਂ ਮਿਲੇ",
+  "terms_content_text": "ਜਿਗਿਆਸੂ 'ਤੇ ਪ੍ਰਦਾਨ ਕੀਤੀ ਸਾਰੀ ਸਮੱਗਰੀ ਵਿਦਿਅਕ ਉਦੇਸ਼ਾਂ ਲਈ ਹੈ। ਅਸੀਂ ਸ਼ੁੱਧਤਾ ਨੂੰ ਯਕੀਨੀ ਬਣਾਉਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦੇ ਹਾਂ, ਪਰ ਅਸੀਂ ਇਸ ਗੱਲ ਦੀ ਗਰੰਟੀ ਨਹੀਂ ਦਿੰਦੇ ਹਾਂ ਕਿ ਕੋਈ ਵੀ ਸਮੱਗਰੀ ਪੂਰੀ ਤਰ੍ਹਾਂ ਗਲਤੀ-ਮੁਕਤ ਹੈ। ਸਮੱਗਰੀ ਪ੍ਰਦਾਨ ਕੀਤੀ ਗਈ ਹੈ",
+  "learn_explore": "ਸਿੱਖੋ ਅਤੇ ਪੜਚੋਲ ਕਰੋ",
+  "explore": "ਪੜਚੋਲ ਕਰੋ",
+  "warmup-session": "ਕਰਾਸਕਟਿੰਗ",
+  "teach-session": "ਕਰਾਸਕਟਿੰਗ",
+  "time-capsule-session": "ਕਰਾਸਕਟਿੰਗ",
+  "testimonials": {
+    "coming_soon": "ਆਨ ਵਾਲੀ",
+    "share_exp": "ਆਪਣਾ ਅਨੁਭਵ ਸਾਂਝਾ ਕਰੋ",
+    "building_with_love": "ਅਸੀਂ\\",
+    "ready": "ਅੱਜ ਕੁਝ ਸਿੱਖਣ ਲਈ ਤਿਆਰ ਹੋ?",
+    "no_signup": "ਕੋਈ ਸਾਈਨ-ਅੱਪ ਨਹੀਂ। ਕੋਈ ਡਾਊਨਲੋਡ ਲੋੜੀਂਦਾ ਨਹੀਂ ਹੈ। ਐਪ ਖੋਲ੍ਹੋ ਅਤੇ 10 ਸਕਿੰਟਾਂ ਤੋਂ ਘੱਟ ਸਮੇਂ ਵਿੱਚ ਆਪਣੀ ਭਾਸ਼ਾ ਵਿੱਚ ਸ਼ੁਰੂ ਕਰੋ।",
+    "pick_world": "ਆਪਣੀ ਦੁਨੀਆ ਨੂੰ ਚੁਣੋ →",
+    "get_app": "ਐਪ ਪ੍ਰਾਪਤ ਕਰੋ"
+  },
+  "learnos": {
+    "challenge": {
+      "try_again": "ਫਿਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ! ਭੌਤਿਕ ਵਿਗਿਆਨ ਬਾਰੇ ਸੋਚੋ!",
+      "success": "ਬਹੁਤ ਵਧੀਆ ਕੰਮ! ਤੁਸੀਂ ਇਹ ਸਮਝ ਲਿਆ ਹੈ!",
+      "continue": "ਲੈਬ ਜਾਰੀ ਰੱਖੋ",
+      "submit": "ਜਮ੍ਹਾਂ ਕਰੋ",
+      "explore": "ਚਲੋ"
+    },
+    "biology": {
+      "biome_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "biome_prompt": "ਬਰਫੀਲੇ ਟੁੰਡਰਾ ਤੋਂ ਲੈ ਕੇ ਹਰੇ ਭਰੇ ਮੀਂਹ ਦੇ ਜੰਗਲਾਂ ਤੱਕ, ਧਰਤੀ ਵਿਭਿੰਨ ਨਿਵਾਸਾਂ ਦਾ ਘਰ ਹੈ। ਚਲੋ",
+      "body_quiz_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "body_quiz_prompt": "ਤੁਸੀਂ ਉਸ ਭਾਂਡੇ ਨੂੰ ਕਿੰਨੀ ਚੰਗੀ ਤਰ੍ਹਾਂ ਜਾਣਦੇ ਹੋ ਜਿਸ ਵਿੱਚ ਤੁਸੀਂ ਰਹਿੰਦੇ ਹੋ? ਚਲੋ",
+      "brain_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "brain_prompt": "ਤੁਹਾਡਾ ਦਿਮਾਗ ਇੱਕ ਸੁਪਰ ਕੰਪਿਊਟਰ ਹੈ ਜੋ ਬਿਜਲੀ ਅਤੇ ਰਸਾਇਣਾਂ 'ਤੇ ਚੱਲਦਾ ਹੈ! ਚਲੋ",
+      "carbon_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "carbon_prompt": "ਕਾਰਬਨ ਹਰ ਜਗ੍ਹਾ ਹੈ - ਹਵਾ ਵਿੱਚ, ਪੌਦਿਆਂ ਵਿੱਚ, ਅਤੇ ਤੁਹਾਡੇ ਵਿੱਚ! ਇਹ ਸਾਡੇ ਸੰਸਾਰ ਵਿੱਚ ਕਿਵੇਂ ਚੱਕਰ ਲਗਾਉਂਦਾ ਹੈ? ਚਲੋ",
+      "cell_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "cell_prompt": "ਤੁਹਾਡਾ ਸਰੀਰ ਖਰਬਾਂ ਛੋਟੀਆਂ ਜੀਵਿਤ ਫੈਕਟਰੀਆਂ ਤੋਂ ਬਣਿਆ ਹੈ ਜਿਸ ਨੂੰ ਸੈੱਲ ਕਹਿੰਦੇ ਹਨ! ਚਲੋ\\",
+      "respiration_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "respiration_prompt": "ਤੁਹਾਡੇ ਸਰੀਰ ਨੂੰ ਦੌੜਨ, ਛਾਲ ਮਾਰਨ ਅਤੇ ਸੋਚਣ ਲਈ ਊਰਜਾ ਕਿਵੇਂ ਮਿਲਦੀ ਹੈ? ਇਹ ਤੁਹਾਡੇ ਦੁਆਰਾ ਖਾਣ ਵਾਲੇ ਭੋਜਨ ਨੂੰ ATP ਨਾਮਕ ਅਣੂ ਵਿੱਚ ਬਦਲ ਦਿੰਦਾ ਹੈ, ਜੀਵਨ ਦਾ ਬਾਲਣ! ਚਲੋ\\",
+      "climate_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "climate_prompt": "ਕਾਰਬਨ ਡਾਈਆਕਸਾਈਡ ਧਰਤੀ ਲਈ ਕੰਬਲ ਦੀ ਤਰ੍ਹਾਂ ਕਿਵੇਂ ਕੰਮ ਕਰਦੀ ਹੈ? ਚਲੋ",
+      "crispr_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "crispr_prompt": "ਕੀ ਜੇ ਅਸੀਂ ਬੀਮਾਰੀਆਂ ਨੂੰ ਠੀਕ ਕਰਨ ਲਈ ਜੀਵਨ ਦੇ ਕੋਡ ਨੂੰ ਦੁਬਾਰਾ ਲਿਖ ਸਕਦੇ ਹਾਂ, ਜਿਵੇਂ ਕਿ ਕਿਸੇ ਕਿਤਾਬ ਵਿਚ ਟਾਈਪੋ ਨੂੰ ਠੀਕ ਕਰਨਾ? ਜੀ ਆਇਆਂ ਨੂੰ CRISPR ਜੀ! ਕੁਝ ਡੀਐਨਏ ਨੂੰ ਸੰਪਾਦਿਤ ਕਰਨ ਲਈ ਤਿਆਰ ਹੋ?",
+      "digestion_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "digestion_prompt": "ਨਿਗਲਣ ਤੋਂ ਬਾਅਦ ਤੁਹਾਡਾ ਸੈਂਡਵਿਚ ਕਿੱਥੇ ਜਾਂਦਾ ਹੈ? ਪਾਚਨ ਟ੍ਰੈਕਟ ਦੁਆਰਾ ਭੋਜਨ ਦੀ ਮਹਾਂਕਾਵਿ ਯਾਤਰਾ ਦੀ ਪਾਲਣਾ ਕਰੋ!",
+      "dna_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "dna_prompt": "ਤੁਹਾਡੇ ਸਰੀਰ ਦੇ ਹਰ ਸੈੱਲ ਦੇ ਅੰਦਰ ਇੱਕ ਛੋਟਾ ਜਿਹਾ ਨਿਰਦੇਸ਼ ਮੈਨੂਅਲ ਹੈ ਜੋ ਤੁਹਾਨੂੰ ਬਣਾਉਂਦਾ ਹੈ! ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ? ਚਲੋ\\",
+      "ecosystem_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "ecosystem_prompt": "ਕੀ ਤੁਸੀਂ ਇੱਕ ਪੂਰੇ ਈਕੋਸਿਸਟਮ ਨੂੰ ਸੰਤੁਲਿਤ ਕਰ ਸਕਦੇ ਹੋ? ਬਹੁਤ ਸਾਰੇ ਸ਼ਿਕਾਰੀ, ਅਤੇ ਸ਼ਿਕਾਰ ਅਲੋਪ ਹੋ ਜਾਂਦਾ ਹੈ। ਚਲੋ",
+      "enzyme_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "enzyme_prompt": "ਤੁਹਾਡਾ ਸਰੀਰ ਭੋਜਨ ਨੂੰ ਜਲਣ ਤੋਂ ਬਿਨਾਂ ਇੰਨੀ ਜਲਦੀ ਕਿਵੇਂ ਹਜ਼ਮ ਕਰਦਾ ਹੈ? ਜੈਵਿਕ ਮਸ਼ੀਨਾਂ ਨੂੰ ਐਂਜ਼ਾਈਮ ਕਹਿੰਦੇ ਹਨ! ਚਲੋ\\",
+      "evolution_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "evolution_prompt": "ਅਸੀਂ ਕੇਲੇ ਅਤੇ ਡਾਇਨੋਸੌਰਸ ਨਾਲ ਡੀਐਨਏ ਸਾਂਝਾ ਕਰਦੇ ਹਾਂ! ਜ਼ਿੰਦਗੀ ਇੰਨੇ ਸਾਰੇ ਰੂਪਾਂ ਵਿਚ ਕਿਵੇਂ ਫੈਲ ਗਈ? ਚਲੋ",
+      "food_chain_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "food_chain_prompt": "ਕੌਣ ਕਿਸ ਨੂੰ ਖਾਂਦਾ ਹੈ? ਊਰਜਾ ਸੂਰਜ ਤੋਂ ਪੌਦਿਆਂ, ਜਾਨਵਰਾਂ ਅਤੇ ਵਾਪਸ ਧਰਤੀ ਵੱਲ ਵਹਿੰਦੀ ਹੈ। ਚਲੋ",
+      "heart_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "heart_prompt": "ਤੁਹਾਡਾ ਦਿਲ ਦਿਨ ਵਿੱਚ 100,000 ਵਾਰ ਧੜਕਦਾ ਹੈ, ਤੁਹਾਡੇ ਪੂਰੇ ਸਰੀਰ ਵਿੱਚ ਜੀਵਨ ਦੀ ਇੱਕ ਨਦੀ ਨੂੰ ਪੰਪ ਕਰਦਾ ਹੈ। ਚਲੋ",
+      "immune_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "immune_prompt": "ਤੁਹਾਡਾ ਸਰੀਰ ਇੱਕ ਕਿਲਾ ਹੈ! ਜਦੋਂ ਹਮਲਾਵਰ ਹਮਲਾ ਕਰਦੇ ਹਨ, ਤਾਂ ਛੋਟੇ ਸੈੱਲਾਂ ਦੀ ਫੌਜ ਉਨ੍ਹਾਂ ਨਾਲ ਲੜਦੀ ਹੈ। ਚਲੋ",
+      "meiosis_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "meiosis_prompt": "ਤੁਸੀਂ ਆਪਣੇ ਭੈਣਾਂ-ਭਰਾਵਾਂ ਤੋਂ ਵਿਲੱਖਣ ਕਿਉਂ ਹੋ? ਮੀਓਸਿਸ ਅਨੰਤ ਕਿਸਮਾਂ ਬਣਾਉਣ ਲਈ ਜੀਨਾਂ ਨੂੰ ਮਿਲਾਉਂਦਾ ਹੈ। ਚਲੋ",
+      "metamorphosis_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "metamorphosis_prompt": "ਇੱਕ ਰੇਂਗਦਾ ਕੈਟਰਪਿਲਰ ਇੱਕ ਉੱਡਦੀ ਤਿਤਲੀ ਵਿੱਚ ਕਿਵੇਂ ਬਦਲਦਾ ਹੈ? ਇਹ",
+      "microbe_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "microbe_prompt": "ਅਦਿੱਖ ਜੀਵ ਹਰ ਜਗ੍ਹਾ ਹਨ! ਕੁਝ ਤੁਹਾਨੂੰ ਬਿਮਾਰ ਕਰਦੇ ਹਨ, ਪਰ ਕੁਝ ਤੁਹਾਡਾ ਦਹੀਂ ਬਣਾਉਂਦੇ ਹਨ। ਕੀ ਤੁਸੀਂ ਰੋਗਾਣੂਆਂ ਨਾਲ ਮੇਲ ਕਰ ਸਕਦੇ ਹੋ?",
+      "microscope_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "microscope_prompt": "ਤਿਤਲੀ ਦਾ ਖੰਭ ਨੇੜੇ ਤੋਂ ਕਿਹੋ ਜਿਹਾ ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ? ਚਲੋ",
+      "mitosis_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "mitosis_prompt": "ਤੁਸੀਂ ਇੱਕ ਸੈੱਲ ਤੋਂ ਖਰਬਾਂ ਵਿੱਚ ਕਿਵੇਂ ਵਧਦੇ ਹੋ? ਸੈੱਲ ਤੁਹਾਨੂੰ ਬਣਾਉਣ ਲਈ ਪੂਰੀ ਤਰ੍ਹਾਂ ਵੰਡਦੇ ਹਨ। ਚਲੋ",
+      "molecule_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "molecule_prompt": "ਸਾਡੇ ਆਲੇ ਦੁਆਲੇ ਦੀ ਹਰ ਚੀਜ਼ ਛੋਟੇ ਬਿਲਡਿੰਗ ਬਲਾਕਾਂ ਤੋਂ ਬਣੀ ਹੈ ਜਿਸਨੂੰ ਅਣੂ ਕਹਿੰਦੇ ਹਨ। ਚਲੋ",
+      "photosynthesis_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "photosynthesis_prompt": "ਪੌਦੇ ਪਤਲੀ ਹਵਾ ਅਤੇ ਧੁੱਪ ਤੋਂ ਆਪਣਾ ਭੋਜਨ ਬਣਾਉਂਦੇ ਹਨ! ਜਾਦੂ ਵਰਗਾ ਆਵਾਜ਼, ਠੀਕ? ਚਲੋ\\",
+      "plant_anatomy_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "plant_anatomy_prompt": "ਪੌਦੇ ਡੌਨ",
+      "punnett_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "punnett_prompt": "ਕੁਝ ਬੱਚਿਆਂ ਦੀਆਂ ਅੱਖਾਂ ਨੀਲੀਆਂ ਕਿਉਂ ਹੁੰਦੀਆਂ ਹਨ ਜਦੋਂ ਮਾਤਾ-ਪਿਤਾ ਦੋਵਾਂ ਦੀਆਂ ਭੂਰੀਆਂ ਹੁੰਦੀਆਂ ਹਨ? ਗੁਣ ਸੰਭਾਵਨਾ ਦੇ ਨਿਯਮਾਂ ਦੀ ਪਾਲਣਾ ਕਰਦੇ ਹਨ! ਚਲੋ",
+      "water_wonder": "ਇੱਕ ਉਤਸੁਕ ਸਵਾਲ...",
+      "water_prompt": "ਜੋ ਪਾਣੀ ਤੁਸੀਂ ਅੱਜ ਪੀਂਦੇ ਹੋ ਉਹ ਕੱਲ੍ਹ ਬੱਦਲ ਜਾਂ ਹਜ਼ਾਰ ਸਾਲ ਪਹਿਲਾਂ ਬਰਫ਼ ਸੀ। ਚਲੋ"
+    }
+  },
+  "cookie_consent": {
+    "title": "LearnOS ਤੁਹਾਡੀ ਗੋਪਨੀਯਤਾ ਦਾ ਆਦਰ ਕਰਦਾ ਹੈ।",
+    "desc1": "ਅਸੀਂ ਤੁਹਾਡੀ ਪ੍ਰਗਤੀ ਨੂੰ ਸਥਾਨਕ ਤੌਰ 'ਤੇ ਸਿਰਫ਼ ਇਸ ਡਿਵਾਈਸ 'ਤੇ ਸਟੋਰ ਕਰਦੇ ਹਾਂ।",
+    "desc2": "ਕੋਈ ਨਿੱਜੀ ਡੇਟਾ ਇਕੱਠਾ ਨਹੀਂ ਕੀਤਾ ਜਾਂਦਾ ਜਾਂ ਕਿਸੇ ਸਰਵਰ ਨੂੰ ਭੇਜਿਆ ਜਾਂਦਾ ਹੈ।",
+    "desc3": "ਅਗਿਆਤ ਵਰਤੋਂ ਦੇ ਅੰਕੜੇ (ਵਿਯੂਜ਼, ਸਮਾਂ ਬਿਤਾਇਆ) ਐਪ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਵਿੱਚ ਸਾਡੀ ਮਦਦ ਕਰਦੇ ਹਨ।",
+    "accept": "ਮਿਲ ਗਿਆ!",
+    "decline": "ਕੋਈ ਅੰਕੜੇ ਨਹੀਂ"
+  },
+  "session-1": "ਲੈਬ",
+  "s1": "ਲੈਬ",
+  "economic-simulation": "ਕੈਨਵਸ_ਇੰਟਰੈਕਸ਼ਨ",
+  "fermi-estimation": "ਸਹੀ_ਜਵਾਬ",
+  "plate-tectonics": "ਸਹੀ_ਜਵਾਬ",
+  "probability-sandbox": "ਸਹੀ_ਜਵਾਬ",
+  "atoms-session": "ਲੈਬ",
+  "blood-circulation-session": "ਲੈਬ",
+  "cell-session": "ਲੈਬ",
+  "day-night-session": "ਲੈਬ",
+  "day-night-wonder-session": "ਲੈਬ",
+  "digestive-session": "ਲੈਬ",
+  "digestive-wonder-session": "ਲੈਬ",
+  "electricity-session": "ਲੈਬ",
+  "electricity-wonder-session": "ਲੈਬ",
+  "float-sink-session": "ਲੈਬ",
+  "float-sink-wonder-session": "ਲੈਬ",
+  "food-chain-session": "ਲੈਬ",
+  "food-chain-wonder-session": "ਲੈਬ",
+  "fractions-session": "ਲੈਬ",
+  "fractions-wonder-session": "ਲੈਬ",
+  "gravity-session": "ਲੈਬ",
+  "gravity-wonder-session": "ਲੈਬ",
+  "habitats-session": "ਲੈਬ",
+  "habitats-wonder-session": "ਲੈਬ",
+  "light-shadows-session": "ਲੈਬ",
+  "light-shadows-wonder-session": "ਲੈਬ",
+  "magnets-session": "ਲੈਬ",
+  "magnets-wonder-session": "ਲੈਬ",
+  "moon-phases-session": "ਲੈਬ",
+  "moon-phases-wonder-session": "ਲੈਬ",
+  "multiplication-session": "ਲੈਬ",
+  "multiplication-wonder-session": "ਲੈਬ",
+  "newtons-laws-session": "ਲੈਬ",
+  "number-line-session": "ਲੈਬ",
+  "number-line-wonder-session": "ਲੈਬ",
+  "panchabhutas-session": "ਲੈਬ",
+  "photosynthesis-session": "ਲੈਬ",
+  "photosynthesis-wonder-session": "ਲੈਬ",
+  "pi-session": "ਲੈਬ",
+  "plant-growth-session": "ਲੈਬ",
+  "plant-growth-wonder-session": "ਲੈਬ",
+  "pythagorean-session": "ਲੈਬ",
+  "senses-session": "ਲੈਬ",
+  "senses-wonder-session": "ਲੈਬ",
+  "shapes-session": "ਲੈਬ",
+  "shapes-wonder-session": "ਲੈਬ",
+  "simple-machines-session": "ਲੈਬ",
+  "simple-machines-wonder-session": "ਲੈਬ",
+  "solar-system-session": "ਲੈਬ",
+  "solar-system-wonder-session": "ਲੈਬ",
+  "sound-waves-session": "ਲੈਬ",
+  "states-of-matter-session": "ਲੈਬ",
+  "states-of-matter-wonder-session": "ਲੈਬ",
+  "water-cycle-session": "ਲੈਬ",
+  "water-cycle-wonder-session": "ਲੈਬ",
+  "math_modules": {
+    "AdventureMap": {
+      "title": "🗺️ ਮੈਥ ਕਿੰਗਡਮ ਐਡਵੈਂਚਰ ਮੈਪ",
+      "subtitle": "ਇਸ ਦੀ ਚੁਣੌਤੀ ਨੂੰ ਹੱਲ ਕਰਨ ਲਈ ਇੱਕ ਜ਼ੋਨ 'ਤੇ ਕਲਿੱਕ ਕਰੋ!",
+      "conquered": "ਪਹਿਲਾਂ ਹੀ ਜਿੱਤਿਆ!",
+      "answer": "ਉੱਤਰ: {{answer}}",
+      "correct": "✨ ਸ਼ਾਨਦਾਰ! ਤੁਸੀਂ\\",
+      "wrong": "🤔 ਆਓ ਖੋਜ ਕਰੀਏ, ਬਹਾਦਰ ਖੋਜੀ!"
+    },
+    "AlgebraArena": {
+      "balance": "⚖️ ਦੋਵੇਂ ਪਾਸੇ ਬਰਾਬਰ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ",
+      "diffBasic": "ਮੂਲ",
+      "diffBasicDesc": "1-ਕਦਮ: 3x=12",
+      "diffInter": "ਵਿਚਕਾਰਲਾ",
+      "diffInterDesc": "2-ਕਦਮ: 2x+3=11",
+      "diffAdv": "ਉੱਨਤ",
+      "diffAdvDesc": "ਬਹੁ-ਕਦਮ, x², ਸ਼ਕਤੀਆਂ",
+      "title": "🧮 ਅਲਜਬਰਾ ਅਖਾੜਾ",
+      "subtitle": "x ਲਈ ਹੱਲ ਕਰੋ - ਸਮੀਕਰਨ ਨੂੰ ਸੰਤੁਲਿਤ ਕਰੋ!",
+      "findX": "<span className= ਲੱਭੋ",
+      "hideSteps": "🙈 ਕਦਮ ਓਹਲੇ ਕਰੋ",
+      "showSteps": "📝 ਹੱਲ ਦੇ ਕਦਮ ਦਿਖਾਓ",
+      "correct": "✨ x = {{ans}} ਸਹੀ ਹੈ! ✨",
+      "wrong": "🤔 ਆਓ ਖੋਜ ਕਰੀਏ! ਇੱਕ ਸੰਕੇਤ ਲਈ ਕਦਮਾਂ ਦੀ ਜਾਂਚ ਕਰੋ।",
+      "skip": "ਛੱਡੋ →"
+    },
+    "DailyChallenge": {
+      "title": "🎯 ਰੋਜ਼ਾਨਾ ਚੁਣੌਤੀ",
+      "subtitle": "ਹਰ ਰੋਜ਼ ਇੱਕ ਨਵੀਂ ਚੁਣੌਤੀ!",
+      "day": "ਦਿਨ",
+      "streak": "ਸਟ੍ਰੀਕ",
+      "resetsIn": "ਵਿੱਚ ਰੀਸੈੱਟ ਕਰਦਾ ਹੈ",
+      "needHint": "💡 ਇੱਕ ਸੰਕੇਤ ਦੀ ਲੋੜ ਹੈ?",
+      "complete": "ਰੋਜ਼ਾਨਾ ਚੁਣੌਤੀ ਪੂਰੀ!",
+      "streakDays": "🔥 {{streak}} ਦਿਨ ਦੀ ਲੜੀ!",
+      "comeBack": "ਨਵੀਂ ਚੁਣੌਤੀ ਲਈ ਕੱਲ੍ਹ ਵਾਪਸ ਆਓ! ⏰"
+    },
+    "ExplorersHub": {
+      "title": "🧭 ਐਕਸਪਲੋਰਰ ਗਿਲਡ",
+      "subtitle": "20 ਵਿਜ਼ੂਅਲ ਸਾਹਸ — ਲਾਗੂ ਕੀਤੇ ਗਣਿਤ ਦੁਆਰਾ ਬੁਨਿਆਦ।"
+    },
+    "FractionPizza": {
+      "title": "🍕 ਫਰੈਕਸ਼ਨ ਪੀਜ਼ਾ ਪਾਰਟੀ",
+      "subtitle": "ਪੀਜ਼ਾ ਦੇ ਟੁਕੜੇ ਖਾ ਕੇ ਫਰੈਕਸ਼ਨ ਸਿੱਖੋ!",
+      "explore": "ਪੜਚੋਲ ਕਰੋ",
+      "challenge": "ਚੁਣੌਤੀ",
+      "numSlices": "ਟੁਕੜਿਆਂ ਦੀ ਸੰਖਿਆ",
+      "challengeLabel": "ਚੁਣੌਤੀ:",
+      "correct": "ਸਹੀ!",
+      "tooMany": "🤔 ਬਹੁਤ ਸਾਰੇ!",
+      "breakdown": "📊 ਫਰੈਕਸ਼ਨ ਬ੍ਰੇਕਡਾਊਨ",
+      "eaten": "ਖਾਧਾ:",
+      "remaining": "ਬਾਕੀ:",
+      "percentage": "ਪ੍ਰਤੀਸ਼ਤ:",
+      "decimal": "ਦਸ਼ਮਲਵ:",
+      "equivFractions": "🔄 ਬਰਾਬਰ ਦੇ ਭਿੰਨਾਂ",
+      "funFact": "💡 <strong>ਮਜ਼ੇਦਾਰ ਤੱਥ:</strong>",
+      "factStart": "ਉਹਨਾਂ ਨੂੰ ਖਾਣ ਲਈ ਟੁਕੜਿਆਂ 'ਤੇ ਕਲਿੱਕ ਕਰੋ!",
+      "factWhole": "ਤੁਸੀਂ ਸਾਰਾ ਪੀਜ਼ਾ ਖਾ ਲਿਆ! 🎉",
+      "factUnit": "ਇੱਕ ਟੁਕੜੇ ਨੂੰ ਏ ਕਿਹਾ ਜਾਂਦਾ ਹੈ",
+      "factHalf": "ਤੁਸੀਂ ਬਿਲਕੁਲ ਅੱਧਾ ਖਾ ਲਿਆ!",
+      "factDefault": "ਅੰਸ਼ ਇੱਕ ਪੂਰੇ ਦੇ ਹਿੱਸੇ ਦਿਖਾਉਂਦੇ ਹਨ",
+      "eatSlices": "ਖਾਓ"
+    },
+    "NumberBondsGarden": {
+      "title": "🌻 ਨੰਬਰ ਬਾਂਡ ਗਾਰਡਨ",
+      "subtitle": "ਟੀਚੇ ਨੂੰ ਜੋੜਨ ਵਾਲੇ ਸੰਖਿਆਵਾਂ ਨੂੰ ਜੋੜ ਕੇ ਫੁੱਲ ਉਗਾਓ!",
+      "targetSum": "ਟੀਚਾ ਜੋੜ",
+      "exploreMode": "🔍 ਪੜਚੋਲ ਕਰੋ",
+      "matchMode": "🎮 ਮੈਚ",
+      "reset": "🔄 ਰੀਸੈਟ ਕਰੋ",
+      "allBonds": "🌱 ਸਾਰੇ ਬੰਧਨ ਜੋ {{target}} ਬਣਾਉਂਦੇ ਹਨ",
+      "visualDots": "📊 ਵਿਜ਼ੂਅਲ: ਬਿੰਦੀਆਂ ਨਾਲ {{target}} ਬਣਾਉਣਾ",
+      "matchedScore": "🌸 ਮੇਲ ਖਾਂਦਾ: {{ਮਾਸਟਰੀ}}",
+      "pickInstruction": "ਹਰੇਕ ਪਾਸੇ ਤੋਂ ਇੱਕ ਚੁਣੋ ਜੋ <span className= ਤੱਕ ਜੋੜਦਾ ਹੈ",
+      "pickNumber": "🔵 ਇੱਕ ਨੰਬਰ ਚੁਣੋ",
+      "matchIt": "🟠 ਇਸਦਾ ਮੇਲ ਕਰੋ",
+      "gardenComplete": "ਗਾਰਡਨ ਪੂਰਾ!",
+      "grewAll": "ਤੁਸੀਂ ਸਾਰੇ ਫੁੱਲ ਉਗਾਏ!"
+    },
+    "NumberCrunchGame": {
+      "level": "ਪੱਧਰ {{level}}",
+      "correct": "ਸਹੀ!",
+      "answerIs": "ਉੱਤਰ: {{answer}}"
+    },
+    "PatternHub": {
+      "patterns": "ਪੈਟਰਨ ਪਹੇਲੀਆਂ",
+      "patternsShort": "ਪੈਟਰਨ",
+      "memory": "ਮੈਮੋਰੀ ਮੈਚ",
+      "memoryShort": "ਮੈਮੋਰੀ"
+    },
+    "SkillsAcademy": {
+      "times": "ਟਾਈਮਜ਼ ਟੇਬਲ",
+      "timesDesc": "ਮਾਸਟਰ ਗੁਣਾ",
+      "bonds": "ਨੰਬਰ ਬਾਂਡ",
+      "bondsDesc": "ਜੋੜ ਜੋੜੇ",
+      "fractions": "ਅੰਸ਼",
+      "fractionsDesc": "ਪੀਜ਼ਾ ਫਰੈਕਸ਼ਨ",
+      "title": "🎓 ਹੁਨਰ ਅਕੈਡਮੀ",
+      "subtitle": "ਕਦਮ-ਦਰ-ਕਦਮ ਆਪਣੀ ਗਣਿਤ ਦੀ ਬੁਨਿਆਦ ਬਣਾਓ!"
+    },
+    "TimesTableTrainer": {
+      "title": "ਟਾਈਮਜ਼ ਟੇਬਲ ਮਾਸਟਰ",
+      "subtitle": "ਇੱਕ ਸਮੇਂ ਵਿੱਚ ਇੱਕ ਸਾਰਣੀ ਵਿੱਚ ਗੁਣਾ ਕਰੋ!",
+      "practice": "ਅਭਿਆਸ",
+      "zenMode": "ਜ਼ੈਨ ਮੋਡ",
+      "chooseTable": "ਆਪਣੀ ਸਾਰਣੀ ਚੁਣੋ:",
+      "hide": "ਓਹਲੇ",
+      "show": "ਦਿਖਾਓ",
+      "fullTable": "ਪੂਰੀ ਸਾਰਣੀ",
+      "correct": "ਸਹੀ!",
+      "wrong": "ਇਹ",
+      "hideHint": "ਇਸ਼ਾਰਾ ਲੁਕਾਓ",
+      "peekHint": "💡 ਜਵਾਬ 'ਤੇ ਝਾਤ ਮਾਰੋ",
+      "answerIs": "ਉੱਤਰ: {{answer}}",
+      "tableHeading": "{{ਟੇਬਲ}}× ਸਾਰਣੀ",
+      "redMistakes": "🔴 ਨੀਲਾ = ਹੋਰ ਪੜਚੋਲ ਕਰਨ ਲਈ ਰਸਤੇ",
+      "zenModeTitle": "ਜ਼ੈਨ ਮੋਡ",
+      "quizDesc1": "ਜਿੰਨੇ ਵੀ ਗੁਣਾ ਸਵਾਲਾਂ ਦੇ ਜਵਾਬ ਤੁਸੀਂ ਚਾਹੁੰਦੇ ਹੋ, ਦਬਾਅ-ਮੁਕਤ!",
+      "quizDesc2": "ਸਾਰੇ ਟੇਬਲ ਇਕੱਠੇ ਮਿਲਾਏ ਗਏ!",
+      "startBtn": "ਸ਼ੁਰੂ ਕਰੋ!"
+    },
+    "Visualizer3D": {
+      "showing": "({{count}} ਵਿੱਚੋਂ {{display}} ਦਿਖਾ ਰਿਹਾ ਹੈ)",
+      "add": "ਸ਼ਾਮਲ ਕਰੋ",
+      "sub": "ਉਪ",
+      "mul": "ਮੁਲ",
+      "div": "ਡਿਵੀ",
+      "title": "📊 3D ਮੈਥ ਵਿਜ਼ੂਅਲਾਈਜ਼ਰ",
+      "subtitle": "ਗਣਿਤ ਨੂੰ 3D ਵਿੱਚ ਜ਼ਿੰਦਾ ਦੇਖੋ!",
+      "numberA": "ਨੰਬਰ ਏ",
+      "operation": "ਓਪਰੇਸ਼ਨ",
+      "numberB": "ਨੰਬਰ ਬੀ",
+      "blocks": "ਬਲਾਕ",
+      "bars3d": "3D ਬਾਰ",
+      "spheres": "ਗੋਲੇ",
+      "factAdd": "💡 {{numA}} ਅਤੇ {{numB}} ਨੂੰ ਜੋੜਨਾ {{numA}} ਸੇਬ 🍎 ਨੂੰ {{numB}} ਸੰਤਰੇ ਨਾਲ ਜੋੜਨ ਵਾਂਗ ਹੈ 🍊 = {{ਨਤੀਜਾ}} ਫਲ!",
+      "factSub": "💡 ਜੇਕਰ ਤੁਹਾਡੇ ਕੋਲ {{numA}} ਕੁਕੀਜ਼ ਸਨ 🍪 ਅਤੇ ਤੁਸੀਂ {{numB}} ਖਾਧੀ, ਤਾਂ ਤੁਸੀਂ\\",
+      "factMul": "💡 {{numA}} × {{numB}} ਦਾ ਮਤਲਬ {{numA}} {{numB}} ਦੇ ਸਮੂਹ — ਉਹ\\",
+      "factDiv": "💡 ਸ਼ੇਅਰਿੰਗ {{numA}} ਪੀਜ਼ਾ 🍕 ਆਪਸ ਵਿੱਚ {{numB}} ਦੋਸਤਾਂ = {{ਨਤੀਜਾ}} ਹਰੇਕ!"
+    },
+    "WorksheetGenerator": {
+      "topics": {
+        "addition": "ਜੋੜ",
+        "subtraction": "ਘਟਾਓ",
+        "multiplication": "ਗੁਣਾ",
+        "division": "ਵੰਡ",
+        "mixed": "ਮਿਸ਼ਰਤ",
+        "fractions": "ਅੰਸ਼",
+        "algebra": "ਅਲਜਬਰਾ",
+        "exponents": "ਘਾਤਕ"
+      },
+      "title": "📝 ਵਰਕਸ਼ੀਟ ਜਨਰੇਟਰ",
+      "subtitle": "ਕਿਸੇ ਵੀ ਵਿਸ਼ੇ ਲਈ ਛਪਣਯੋਗ ਅਭਿਆਸ ਸ਼ੀਟਾਂ ਤਿਆਰ ਕਰੋ!",
+      "chooseTopic": "ਵਿਸ਼ਾ ਚੁਣੋ",
+      "numProblems": "ਸਮੱਸਿਆਵਾਂ ਦੀ ਗਿਣਤੀ",
+      "maxNum": "ਅਧਿਕਤਮ ਸੰਖਿਆ",
+      "generate": "📄 ਵਰਕਸ਼ੀਟ ਤਿਆਰ ਕਰੋ",
+      "print": "🖨️ ਪ੍ਰਿੰਟ",
+      "hideAnswers": "🙈 ਓਹਲੇ",
+      "showAnswers": "👁️ ਜਵਾਬ",
+      "worksheetTitle": "📝 ਗਣਿਤ ਵਰਕਸ਼ੀਟ — {{ਵਿਸ਼ਾ}}",
+      "name": "ਨਾਮ",
+      "date": "ਮਿਤੀ",
+      "score": "ਸਕੋਰ",
+      "generatedBy": "ਵਿਮਸੀਕਲ ਮੈਥ ਕਿੰਗਡਮ 🧙‍♂️ ਦੁਆਰਾ ਤਿਆਰ ਕੀਤਾ ਗਿਆ"
     }
   }
 }

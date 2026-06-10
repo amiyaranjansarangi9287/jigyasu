@@ -433,16 +433,29 @@ export default function AboutPage() {
             <p className="text-slate-200 text-base font-semibold">
               <Trans i18nKey="auto.aboutpage.reach_out_to_us_at">Reach out to us at:</Trans>
                                       </p>
-            <button
-              onClick={() => navigate('/contact')}
-              className="inline-flex items-center gap-2 bg-indigo-600
-                         hover:bg-indigo-500 transition-colors text-white
-                         font-bold px-6 py-4 rounded-2xl text-base
-                         min-h-[56px]"
-            >
-              <span>📝</span>
-              <span>{t('about.contact_form', 'Contact Us via Form')}</span>
-            </button>
+            <div className="flex flex-col sm:flex-row gap-3 w-full max-w-lg">
+              <button
+                onClick={() => navigate('/contact')}
+                className="flex-1 inline-flex items-center justify-center gap-2 bg-indigo-600
+                           hover:bg-indigo-500 transition-colors text-white
+                           font-bold px-6 py-4 rounded-2xl text-base
+                           min-h-[56px]"
+              >
+                <span>📝</span>
+                <span>{t('about.contact_form', 'Contact Us via Form')}</span>
+              </button>
+              
+              <a
+                href="mailto:contact@jigyasu.app"
+                className="flex-1 inline-flex items-center justify-center gap-2 bg-slate-700
+                           hover:bg-slate-600 transition-colors text-white
+                           font-bold px-6 py-4 rounded-2xl text-base
+                           min-h-[56px]"
+              >
+                <span>✉️</span>
+                <span>{t('about.email_us', 'Email Us Directly')}</span>
+              </a>
+            </div>
           </div>
 
           {/* What to include */}
