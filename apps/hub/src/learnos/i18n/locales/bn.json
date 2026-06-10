@@ -4446,7 +4446,8 @@
     "screen_free": "স্ক্রীন-মুক্ত মজা",
     "scroll_explore": "অন্বেষণ করতে স্ক্রোল করুন",
     "learning_realms": "শিক্ষার রাজ্য",
-    "ad_free": "বিজ্ঞাপন-মুক্ত মজা"
+    "ad_free": "বিজ্ঞাপন-মুক্ত মজা",
+    "description": "{{ক্রিয়াকলাপকাউন্ট}} + ইন্টারেক্টিভ বিল্ড এবং ভিজ্যুয়াল ল্যাবের মাধ্যমে বিজ্ঞান এবং বিস্ময়ের অভিজ্ঞতা নিন। 7 থেকে 110 + বছর বয়সের জন্য উপযুক্ত।"
   },
   "activities": "কার্যক্রম",
   "project_weeks": "প্রকল্প সপ্তাহ",
@@ -5279,16 +5280,11 @@
       "mystery_chest": "রহস্যময় বুক!",
       "you_unlocked_a_rare_avatar_for": "আপনি আপনার প্রোফাইলের জন্য একটি বিরল অবতার আনলক করেছেন।"
     },
-    "activitycard": {
-      "eslint_disable_next_line_types": "//এসলিন্ট-ডিসেবল-নেক্সট-লাইন @typescript-এসলিন্ট/নো-এক্সপ্লিসিট-এনি"
-    },
+    "activitycard": {},
     "activitygallery": {
-      "eslint_disable_next_line_types": "//এসলিন্ট-ডিসেবল-নেক্সট-লাইন @typescript-এসলিন্ট/নো-এক্সপ্লিসিট-এনি",
       "pillar": "স্তম্ভ।"
     },
-    "activitymodal": {
-      "eslint_disable_next_line_types": "//এসলিন্ট-ডিসেবল-নেক্সট-লাইন @typescript-এসলিন্ট/নো-এক্সপ্লিসিট-এনি"
-    },
+    "activitymodal": {},
     "activitymode": {
       "of": "এর মধ্যে",
       "skip_for_now": "এখনকার জন্য এড়িয়ে চলুন",
@@ -5302,7 +5298,6 @@
     },
     "footer": {
       "jigyasu": "জিগ্যাসু।",
-      "eslint_disable_next_line_types": "//এসলিন্ট-ডিসেবল-নেক্সট-লাইন @typescript-এসলিন্ট/নো-এক্সপ্লিসিট-এনি",
       "developed_by": "দ্বারা বিকশিত",
       "annapurna_agentic_solutions": "অন্নপূর্ণা এজেণ্টিক সলিউশনস"
     },
@@ -5314,7 +5309,6 @@
       "5_day": "5 দিন"
     },
     "navbar": {
-      "eslint_disable_next_line_types": "//এসলিন্ট-ডিসেবল-নেক্সট-লাইন @typescript-এসলিন্ট/নো-এক্সপ্লিসিট-এনি",
       "menu": "মেনু",
       "activities": "কার্যক্রম",
       "project_weeks": "প্রকল্প সপ্তাহ",
@@ -5325,14 +5319,11 @@
       "xp": "এক্সপি",
       "home": "Home"
     },
-    "pillarshowcase": {
-      "eslint_disable_next_line_types": "//এসলিন্ট-ডিসেবল-নেক্সট-লাইন @typescript-এসলিন্ট/নো-এক্সপ্লিসিট-এনি"
-    },
+    "pillarshowcase": {},
     "settingsmodal": {
       "campcraft_v1_0": "ক্যাম্পক্রাফট v1.0"
     },
     "toddlerzone": {
-      "eslint_disable_next_line_types": "//এসলিন্ট-ডিসেবল-নেক্সট-লাইন @typescript-এসলিন্ট/নো-এক্সপ্লিসিট-এনি",
       "easy": "সহজ।",
       "with_a_grown_up": "একজন প্রাপ্তবয়স্কের সাথে",
       "no_activities_found_for_this_c": "এই বিভাগের জন্য কোনও ক্রিয়াকলাপ পাওয়া যায়নি!",
@@ -5340,9 +5331,7 @@
       "keep_being_creative": "সৃজনশীল হতে থাকুন!",
       "made_with_for_little_makers": "ছোট নির্মাতাদের জন্য Â দিয়ে তৈরি"
     },
-    "workshoppanel": {
-      "eslint_disable_next_line_types": "//এসলিন্ট-ডিসেবল-নেক্সট-লাইন @typescript-এসলিন্ট/নো-এক্সপ্লিসিট-এনি"
-    },
+    "workshoppanel": {},
     "conceptgossip": {
       "conversations": "কথোপকথন"
     },

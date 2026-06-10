@@ -38,7 +38,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                     className="flex items-center gap-2 hover:text-orange-400 transition-colors"
                   >
                     <span>{pillar.icon}</span>
-                    <Trans i18nKey="auto.footer.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
+                    {/* // eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                                               <span>{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
                   </button>
                 </li>

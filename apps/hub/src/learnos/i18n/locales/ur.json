@@ -3460,16 +3460,11 @@
       "mystery_chest": "پراسرار سینے!",
       "you_unlocked_a_rare_avatar_for": "آپ نے اپنے پروفائل کے لیے ایک نایاب اوتار کھول دیا۔"
     },
-    "activitycard": {
-      "eslint_disable_next_line_types": "//ایسلنٹ-ڈس ایبل-نیکسٹ لائن @typescript-ایسلنٹ/کوئی واضح نہیں-کوئی"
-    },
+    "activitycard": {},
     "activitygallery": {
-      "eslint_disable_next_line_types": "//ایسلنٹ-ڈس ایبل-نیکسٹ لائن @typescript-ایسلنٹ/کوئی واضح نہیں-کوئی",
       "pillar": "ستون"
     },
-    "activitymodal": {
-      "eslint_disable_next_line_types": "//ایسلنٹ-ڈس ایبل-نیکسٹ لائن @typescript-ایسلنٹ/کوئی واضح نہیں-کوئی"
-    },
+    "activitymodal": {},
     "activitymode": {
       "of": "کی طرف سے",
       "skip_for_now": "ابھی کے لیے چھوڑ دیں",
@@ -3483,7 +3478,6 @@
     },
     "footer": {
       "jigyasu": "جگیاسو۔",
-      "eslint_disable_next_line_types": "//ایسلنٹ-ڈس ایبل-نیکسٹ لائن @typescript-ایسلنٹ/کوئی واضح نہیں-کوئی",
       "developed_by": "کے ذریعے تیار کیا گیا",
       "annapurna_agentic_solutions": "اناپورنا ایجنٹ حل"
     },
@@ -3495,7 +3489,6 @@
       "5_day": "5 دن"
     },
     "navbar": {
-      "eslint_disable_next_line_types": "//ایسلنٹ-ڈس ایبل-نیکسٹ لائن @typescript-ایسلنٹ/کوئی واضح نہیں-کوئی",
       "menu": "مینو",
       "activities": "سرگرمیاں",
       "project_weeks": "پروجیکٹ کے ہفتے",
@@ -3506,14 +3499,11 @@
       "xp": "ایکس پی",
       "home": "Home"
     },
-    "pillarshowcase": {
-      "eslint_disable_next_line_types": "//ایسلنٹ-ڈس ایبل-نیکسٹ لائن @typescript-ایسلنٹ/کوئی واضح نہیں-کوئی"
-    },
+    "pillarshowcase": {},
     "settingsmodal": {
       "campcraft_v1_0": "کیمپ کرافٹ v1. 0"
     },
     "toddlerzone": {
-      "eslint_disable_next_line_types": "//ایسلنٹ-ڈس ایبل-نیکسٹ لائن @typescript-ایسلنٹ/کوئی واضح نہیں-کوئی",
       "easy": "آسان ہے۔",
       "with_a_grown_up": "ایک بالغ کے ساتھ",
       "no_activities_found_for_this_c": "اس زمرے کے لیے کوئی سرگرمی نہیں ملی!",
@@ -3521,9 +3511,7 @@
       "keep_being_creative": "تخلیقی ہوتے رہیں!",
       "made_with_for_little_makers": "چھوٹے بنانے والوں کے لیے Â کے ساتھ بنایا گیا"
     },
-    "workshoppanel": {
-      "eslint_disable_next_line_types": "//ایسلنٹ-ڈس ایبل-نیکسٹ لائن @typescript-ایسلنٹ/کوئی واضح نہیں-کوئی"
-    },
+    "workshoppanel": {},
     "conceptgossip": {
       "conversations": "گفتگو"
     },

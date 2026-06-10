@@ -3471,16 +3471,11 @@
       "mystery_chest": "மர்மமான நெஞ்சு!",
       "you_unlocked_a_rare_avatar_for": "உங்கள் சுயவிவரத்திற்கு ஒரு அரிய அவதாரத்தைத் திறந்துள்ளீர்கள்."
     },
-    "activitycard": {
-      "eslint_disable_next_line_types": "//எஸ்லின்ட்-டிஸபிள்-நெக்ஸ்ட்-லைன் @typescript-எஸ்லின்ட்/இல்லை-வெளிப்படையானது-எதுவுமில்லை"
-    },
+    "activitycard": {},
     "activitygallery": {
-      "eslint_disable_next_line_types": "//எஸ்லின்ட்-டிஸபிள்-நெக்ஸ்ட்-லைன் @typescript-எஸ்லின்ட்/இல்லை-வெளிப்படையானது-எதுவுமில்லை",
       "pillar": "தூண்."
     },
-    "activitymodal": {
-      "eslint_disable_next_line_types": "//எஸ்லின்ட்-டிஸபிள்-நெக்ஸ்ட்-லைன் @typescript-எஸ்லின்ட்/இல்லை-வெளிப்படையானது-எதுவுமில்லை"
-    },
+    "activitymodal": {},
     "activitymode": {
       "of": "என்பதிலிருந்து",
       "skip_for_now": "இப்போதைக்கு விலகுங்கள்",
@@ -3494,7 +3489,6 @@
     },
     "footer": {
       "jigyasu": "ஜிக்யாசூ.",
-      "eslint_disable_next_line_types": "//எஸ்லின்ட்-டிஸபிள்-நெக்ஸ்ட்-லைன் @typescript-எஸ்லின்ட்/இல்லை-வெளிப்படையானது-எதுவுமில்லை",
       "developed_by": "மூலம் உருவாக்கப்பட்டது",
       "annapurna_agentic_solutions": "அன்னபூர்ணா ஏஜென்டிக் சொல்யூஷன்ஸ்"
     },
@@ -3506,7 +3500,6 @@
       "5_day": "5 நாட்கள்"
     },
     "navbar": {
-      "eslint_disable_next_line_types": "//எஸ்லின்ட்-டிஸபிள்-நெக்ஸ்ட்-லைன் @typescript-எஸ்லின்ட்/இல்லை-வெளிப்படையானது-எதுவுமில்லை",
       "menu": "மெனு",
       "activities": "செயல்பாடுகள்",
       "project_weeks": "திட்ட வாரங்கள்",
@@ -3517,14 +3510,11 @@
       "xp": "எக்ஸ்பி",
       "home": "Home"
     },
-    "pillarshowcase": {
-      "eslint_disable_next_line_types": "//எஸ்லின்ட்-டிஸபிள்-நெக்ஸ்ட்-லைன் @typescript-எஸ்லின்ட்/இல்லை-வெளிப்படையானது-எதுவுமில்லை"
-    },
+    "pillarshowcase": {},
     "settingsmodal": {
       "campcraft_v1_0": "கேம்ப்கிராஃப்ட் v1.0"
     },
     "toddlerzone": {
-      "eslint_disable_next_line_types": "//எஸ்லின்ட்-டிஸபிள்-நெக்ஸ்ட்-லைன் @typescript-எஸ்லின்ட்/இல்லை-வெளிப்படையானது-எதுவுமில்லை",
       "easy": "சுலபம்.",
       "with_a_grown_up": "ஒரு பெரியவருடன்",
       "no_activities_found_for_this_c": "இந்த வகைக்கு எந்த செயல்பாடுகளும் காணப்படவில்லை!",
@@ -3532,9 +3522,7 @@
       "keep_being_creative": "ஆக்கப்பூர்வமாக இருங்கள்!",
       "made_with_for_little_makers": "சிறிய தயாரிப்பாளர்களுக்காக Â உடன் தயாரிக்கப்பட்டது"
     },
-    "workshoppanel": {
-      "eslint_disable_next_line_types": "//எஸ்லின்ட்-டிஸபிள்-நெக்ஸ்ட்-லைன் @typescript-எஸ்லின்ட்/இல்லை-வெளிப்படையானது-எதுவுமில்லை"
-    },
+    "workshoppanel": {},
     "conceptgossip": {
       "conversations": "உரையாடல்கள்"
     },

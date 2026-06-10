@@ -107,7 +107,7 @@ export default React.memo(function ActivityCard({
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">{pillar?.icon}</span>
             <span className={`px-2 py-0.5 rounded-full text-sm font-medium ${difficultyColors[activity.difficulty]}`}>
-              <Trans i18nKey="auto.activitycard.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
+              {/* // eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                                           {t(`difficulty_${activity.difficulty.toLowerCase()}` as any, activity.difficulty)}
             </span>
           </div>
@@ -159,7 +159,7 @@ export default React.memo(function ActivityCard({
             <p className="font-medium text-gray-900 dark:text-white truncate group-hover:text-orange-500 transition-colors text-balance">
               {activity.name}
             </p>
-            <Trans i18nKey="auto.activitycard.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
+            {/* // eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                                     <p className="text-sm text-gray-500">{t(`difficulty_${activity.difficulty.toLowerCase()}` as any, activity.difficulty)}</p>
           </div>
           {status === 'completed' && (
@@ -219,7 +219,7 @@ export default React.memo(function ActivityCard({
         {/* Pillar Badge */}
         <div className="absolute bottom-3 left-3 z-10">
           <span className={`px-2.5 py-1 rounded-full text-sm font-medium flex items-center gap-1 ${pillar?.badgeClass || 'bg-gray-100 text-gray-700'}`}>
-            <Trans i18nKey="auto.activitycard.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
+            {/* // eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                                       {pillar?.icon} {t(`pillar_${activity.pillar}` as any, pillar?.name || '')}
           </span>
         </div>
@@ -229,7 +229,7 @@ export default React.memo(function ActivityCard({
       <div className="p-4">
         <div className="flex items-center gap-2 mb-2">
           <span className={`px-2 py-0.5 rounded-full text-sm font-medium ${difficultyColors[activity.difficulty]}`}>
-            <Trans i18nKey="auto.activitycard.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
+            {/* // eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                                       {t(`difficulty_${activity.difficulty.toLowerCase()}` as any, activity.difficulty)}
           </span>
           <span className="text-sm text-gray-500 dark:text-gray-400">

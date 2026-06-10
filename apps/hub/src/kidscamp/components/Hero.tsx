@@ -124,14 +124,13 @@ export default function Hero({
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button
               onClick={onGetStarted}
-              variant="primary"
               size="lg"
-              className="px-8 group btn-wonder"
+              className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white border-0 shadow-lg hover:shadow-orange-500/25 px-8 btn-wonder h-auto py-3"
             >
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 whitespace-normal break-words text-left">
                 <span>{t('maker_space.get_started', 'Get Started')}</span>
                 <svg
-                  className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                  className="w-5 h-5 group-hover:translate-x-1 transition-transform shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -144,10 +143,10 @@ export default function Hero({
               onClick={onExploreCampWeeks}
               variant="glass"
               size="lg"
-              className="px-8 btn-wonder"
+              className="px-8 btn-wonder h-auto py-3"
             >
-              <div className="flex items-center gap-2">
-                <span>📅</span>
+              <div className="flex items-center gap-2 whitespace-normal break-words text-left">
+                <span className="shrink-0">📅</span>
                 <span>{t('maker_space.explore_weeks', 'Explore Project Weeks')}</span>
               </div>
             </Button>

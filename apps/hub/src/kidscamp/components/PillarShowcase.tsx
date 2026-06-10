@@ -89,8 +89,8 @@ export default function PillarShowcase({ onSelectPillar, selectedAge }: PillarSh
                 <div className="absolute top-6 left-6 w-14 min-h-14 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 shadow-lg">
                   <span className="text-3xl">{pillar.icon}</span>
                 </div>
-                <div className="absolute top-6 right-6 px-4 py-2 rounded-full bg-white/20 backdrop-blur-md border border-white/30 shadow-lg">
-                  <span className="text-sm font-bold text-white tracking-wide">{count} {t('pillar_showcase.labs', 'Labs')}</span>
+                <div className="absolute top-6 right-6 px-4 py-2 rounded-full bg-white/20 backdrop-blur-md border border-white/30 shadow-lg whitespace-nowrap">
+                  <span className="text-sm font-bold text-white tracking-wide break-words">{count} {t('pillar_showcase.labs', 'Labs')}</span>
                 </div>
 
                 {/* Bottom Overlay: Content */}
@@ -105,12 +105,12 @@ export default function PillarShowcase({ onSelectPillar, selectedAge }: PillarSh
                     {preview.map((item, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-sm font-medium text-white/90"
+                        className="whitespace-nowrap px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-sm font-medium text-white/90"
                       >
                         {item}
                       </span>
                     ))}
-                    <div className="ml-auto flex items-center text-sm font-bold text-white bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/30 group-hover:bg-white group-hover:text-slate-900 transition-colors">
+                    <div className="mt-2 md:mt-0 ml-auto flex items-center shrink-0 min-w-fit whitespace-nowrap text-sm font-bold text-white bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/30 group-hover:bg-white group-hover:text-slate-900 transition-colors">
                       {t('pillar_showcase.enter_lab', 'Enter Lab')}
                       <svg
                         className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"

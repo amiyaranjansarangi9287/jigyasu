@@ -131,7 +131,7 @@ export default function ToddlerZone({
                 >
                   <div className="text-5xl mb-2">{pillar.icon}</div>
                   <div className={`font-bold text-lg ${selectedPillar === pillar.id ? 'text-white' : 'text-gray-900 dark:text-white'}`}>
-                    <Trans i18nKey="auto.toddlerzone.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
+                    {/* // eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                                               {t(`pillar_${pillar.id}` as any, pillar.name || '')}
                   </div>
                   <div className={`text-sm ${selectedPillar === pillar.id ? 'text-white/80' : 'text-gray-500'}`}>

@@ -78,14 +78,14 @@ export default function ActivityGallery({
             <button
               key={pillar.id}
               onClick={() => setSelectedPillar(selectedPillar === pillar.id ? 'all' : pillar.id as PillarId)}
-              className={`flex-shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-full font-medium transition-all ${
+              className={`whitespace-nowrap flex-shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-full font-medium transition-all ${
                 selectedPillar === pillar.id
                   ? `bg-gradient-to-r ${pillar.gradientFrom} ${pillar.gradientTo} text-white shadow-md`
                   : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:border-gray-300'
               }`}
             >
               <span>{pillar.icon}</span>
-              <Trans i18nKey="auto.activitygallery.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
+              {/* // eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                                 <span className="text-sm">{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
             </button>
           ))}

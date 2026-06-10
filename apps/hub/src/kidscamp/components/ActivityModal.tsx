@@ -109,14 +109,14 @@ export default function ActivityModal({
           <div className="flex flex-wrap items-center gap-2 mb-4">
             <span className={`badge ${pillar?.badgeClass || 'bg-gray-100 text-gray-700'}`}>
               {pillar?.icon || '✨'}
-              <Trans i18nKey="auto.activitymodal.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
+              {/* // eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                                         {' '}{t(`pillar_${selectedActivity.pillar}` as any, selectedActivity.pillar)}
             </span>
             <span className={`badge ${
               selectedActivity.difficulty === 'Easy' ? 'badge-easy' :
               selectedActivity.difficulty === 'Medium' ? 'badge-medium' : 'badge-hard'
             }`}>
-              <Trans i18nKey="auto.activitymodal.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
+              {/* // eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                                         {t(`difficulty_${selectedActivity.difficulty.toLowerCase()}` as any, selectedActivity.difficulty)}
             </span>
             <span className="badge bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-200">

@@ -32,11 +32,19 @@ export function getTextDirection(lang: string): 'ltr' | 'rtl' {
  */
 export function updateFormatters(locale: string) {
   try {
-    // Map locale to include native numbering systems if needed
-    let numberLocale = locale;
-    if (locale === 'od') numberLocale = 'or-IN-u-nu-orya';
-    if (locale === 'hi') numberLocale = 'hi-IN-u-nu-deva';
+    const numberingSystems: Record<string, string> = {
+      hi: 'deva', mr: 'deva', bn: 'beng', gu: 'gujr', ml: 'mlym',
+      pa: 'guru', as: 'beng', ur: 'arabext', sa: 'deva', sat: 'olck',
+      ne: 'deva', brx: 'deva', doi: 'deva', ks: 'arabext', mai: 'deva',
+      sd: 'arabext', mni: 'mtei', or: 'orya', od: 'orya', kn: 'knda',
+      ta: 'tamldec', te: 'telu',
+    };
+    let baseLang = locale.split('-')[0];
+    if (baseLang === 'od') baseLang = 'or';
     
+    const nu = numberingSystems[baseLang];
+    const numberLocale = nu ? `${baseLang}-IN-u-nu-${nu}` : locale;
+
     formatters.number = new Intl.NumberFormat(numberLocale);
     formatters.currency = new Intl.NumberFormat(numberLocale, { 
       style: 'currency', 

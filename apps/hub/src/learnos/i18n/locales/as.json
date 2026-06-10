@@ -4446,7 +4446,8 @@
     "screen_free": "স্ক্ৰীণ-ফ্ৰী মজা",
     "scroll_explore": "অন্বেষণ কৰিবলৈ স্ক্ৰল কৰক",
     "learning_realms": "শিক্ষণ ক্ষেত্ৰসমূহ",
-    "ad_free": "বিজ্ঞাপনমুক্ত মজা"
+    "ad_free": "বিজ্ঞাপনমুক্ত মজা",
+    "description": "বিজ্ঞানৰ অভিজ্ঞতা লাভ কৰক আৰু + ইন্টাৰেক্টিভ বিল্ড আৰু ভিজুৱেল লেবৰেটৰীৰ জৰিয়তে আচৰিত কৰক। 7ৰ পৰা 110 বছৰ বয়সৰ বাবে উপযুক্ত।"
   },
   "activities": "কাৰ্যকলাপ",
   "project_weeks": "প্ৰকল্প সপ্তাহ",
@@ -5279,16 +5280,11 @@
       "mystery_chest": "ৰহস্যময় বুকু!",
       "you_unlocked_a_rare_avatar_for": "আপুনি আপোনাৰ প্ৰফাইলৰ বাবে এটা বিৰল অৱতাৰ মুকলি কৰিছে।"
     },
-    "activitycard": {
-      "eslint_disable_next_line_types": "//এসলিণ্ট-ডিজেবল-নেক্সট-লাইন @typescript-এসলিণ্ট/নো-এক্সপ্লিসিট-এনি"
-    },
+    "activitycard": {},
     "activitygallery": {
-      "eslint_disable_next_line_types": "//এসলিণ্ট-ডিজেবল-নেক্সট-লাইন @typescript-এসলিণ্ট/নো-এক্সপ্লিসিট-এনি",
       "pillar": "স্তম্ভ।"
     },
-    "activitymodal": {
-      "eslint_disable_next_line_types": "//এসলিণ্ট-ডিজেবল-নেক্সট-লাইন @typescript-এসলিণ্ট/নো-এক্সপ্লিসিট-এনি"
-    },
+    "activitymodal": {},
     "activitymode": {
       "of": "ইয়াৰ পৰা",
       "skip_for_now": "বৰ্তমানৰ বাবে বাদ দিয়ক",
@@ -5302,7 +5298,6 @@
     },
     "footer": {
       "jigyasu": "জিগ্যাসু।",
-      "eslint_disable_next_line_types": "//এসলিণ্ট-ডিজেবল-নেক্সট-লাইন @typescript-এসলিণ্ট/নো-এক্সপ্লিসিট-এনি",
       "developed_by": "ইয়াৰ দ্বাৰা বিকশিত",
       "annapurna_agentic_solutions": "অন্নপূৰ্ণা এজেণ্টিক সলিউচনছ"
     },
@@ -5314,7 +5309,6 @@
       "5_day": "5 দিনৰ"
     },
     "navbar": {
-      "eslint_disable_next_line_types": "//এসলিণ্ট-ডিজেবল-নেক্সট-লাইন @typescript-এসলিণ্ট/নো-এক্সপ্লিসিট-এনি",
       "menu": "মেনু",
       "activities": "কাৰ্য্যকলাপসমূহ",
       "project_weeks": "প্ৰকল্প সপ্তাহসমূহ",
@@ -5325,14 +5319,11 @@
       "xp": "এক্স. পি.",
       "home": "Home"
     },
-    "pillarshowcase": {
-      "eslint_disable_next_line_types": "//এসলিণ্ট-ডিজেবল-নেক্সট-লাইন @typescript-এসলিণ্ট/নো-এক্সপ্লিসিট-এনি"
-    },
+    "pillarshowcase": {},
     "settingsmodal": {
       "campcraft_v1_0": "কেম্পক্ৰাফ্ট v1.0"
     },
     "toddlerzone": {
-      "eslint_disable_next_line_types": "//এসলিণ্ট-ডিজেবল-নেক্সট-লাইন @typescript-এসলিণ্ট/নো-এক্সপ্লিসিট-এনি",
       "easy": "সহজ-সৰল।",
       "with_a_grown_up": "ডাঙৰ হোৱাৰ লগে লগে",
       "no_activities_found_for_this_c": "এই শ্ৰেণীৰ বাবে কোনো কাৰ্য্যকলাপ পোৱা নগল!",
@@ -5340,9 +5331,7 @@
       "keep_being_creative": "সৃষ্টিশীল হৈ থাকক!",
       "made_with_for_little_makers": "সৰু নিৰ্মাতাসকলৰ বাবে প্ৰস্তুত কৰা হৈছে"
     },
-    "workshoppanel": {
-      "eslint_disable_next_line_types": "//এসলিণ্ট-ডিজেবল-নেক্সট-লাইন @typescript-এসলিণ্ট/নো-এক্সপ্লিসিট-এনি"
-    },
+    "workshoppanel": {},
     "conceptgossip": {
       "conversations": "কথোপকথন"
     },
