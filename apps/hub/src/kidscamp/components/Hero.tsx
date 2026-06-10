@@ -153,24 +153,24 @@ export default function Hero({
             </Button>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-8 md:gap-16">
-            <div className="text-center">
+          <div className="flex flex-wrap justify-center gap-8 md:gap-16 mt-8">
+            <div className="text-center min-w-[120px] break-words">
               <div className="text-4xl md:text-5xl font-bold text-white mb-1">
                 {formatNumber(activitiesCount)}+
               </div>
-              <div className="text-white/70 text-sm">{t('maker_space.activities', 'Activities')}</div>
+              <div className="text-white/70 text-sm break-words">{t('maker_space.activities', 'Activities')}</div>
             </div>
-            <div className="text-center">
+            <div className="text-center min-w-[120px] break-words">
               <div className="text-4xl md:text-5xl font-bold text-white mb-1">
                 {formatNumber(pillarsCount)}
               </div>
-              <div className="text-white/70 text-sm">{t('maker_space.learning_realms', 'Learning Realms')}</div>
+              <div className="text-white/70 text-sm break-words">{t('maker_space.learning_realms', 'Learning Realms')}</div>
             </div>
-            <div className="text-center">
+            <div className="text-center min-w-[120px] break-words">
               <div className="text-4xl md:text-5xl font-bold text-white mb-1">
                 <Trans i18nKey="auto.hero.100">100%</Trans>
-                                            </div>
-              <div className="text-white/70 text-sm">{t('maker_space.ad_free', 'Ad-Free Fun')}</div>
+              </div>
+              <div className="text-white/70 text-sm break-words">{t('maker_space.ad_free', 'Ad-Free Fun')}</div>
             </div>
           </div>
         </div>

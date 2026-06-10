@@ -39,10 +39,13 @@ export function useFormatNumber() {
       };
 
       const lang = i18n.language || 'en';
-      const baseLang = lang.split('-')[0];
+      let baseLang = lang.split('-')[0];
+      if (baseLang === 'od') {
+        baseLang = 'or'; // Map to standard ISO code for Intl.NumberFormat
+      }
       const nu = numberingSystems[baseLang];
       
-      const locale = nu ? `${lang}-u-nu-${nu}` : lang;
+      const locale = nu ? `${baseLang}-IN-u-nu-${nu}` : lang;
 
       // Create a formatter for the current language with native script if available
       const formatter = new Intl.NumberFormat(locale);

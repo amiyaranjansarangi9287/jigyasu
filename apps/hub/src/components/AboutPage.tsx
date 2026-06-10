@@ -197,14 +197,14 @@ export default function AboutPage() {
                                 </p>
           <div className="pt-2 space-y-3 text-indigo-700 text-base">
             {[
-              'Not just reading about gravity — seeing it bend space.',
-              'Not just memorizing photosynthesis — watching sunlight become food.',
-              'Not just solving fractions — feeling them as fair sharing.',
-              'Not just studying science — experiencing wonder.',
-            ].map((line) => (
-              <div key={line} className="flex items-start gap-2">
+              t('about.mission_bullets.0', 'Not just reading about gravity — seeing it bend space.'),
+              t('about.mission_bullets.1', 'Not just memorizing photosynthesis — watching sunlight become food.'),
+              t('about.mission_bullets.2', 'Not just solving fractions — feeling them as fair sharing.'),
+              t('about.mission_bullets.3', 'Not just studying science — experiencing wonder.'),
+            ].map((line, index) => (
+              <div key={index} className="flex items-start gap-2 break-words">
                 <span className="mt-1 flex-shrink-0">→</span>
-                <p>{line}</p>
+                <p className="flex-1 min-w-0">{line}</p>
               </div>
             ))}
           </div>
@@ -224,37 +224,37 @@ export default function AboutPage() {
             {[
               {
                 emoji: '👧',
-                heading: 'The child who cannot afford tuition',
-                body: 'A 9-year-old in a government school in Bihar or Odisha. One shared Android phone. No coaching. Jigyasu gives them a patient, visual teacher available 24 hours a day. Free. In their language.',
+                heading: t('about.audience.0.heading', 'The child who cannot afford tuition'),
+                body: t('about.audience.0.body', 'A 9-year-old in a government school in Bihar or Odisha. One shared Android phone. No coaching. Jigyasu gives them a patient, visual teacher available 24 hours a day. Free. In their language.'),
               },
               {
                 emoji: '👨',
-                heading: 'The curious adult who missed their chance',
-                body: 'A 38-year-old who always wanted to understand why the sky is blue. No age labels. No exam pressure. No shame. Just a beautiful explanation of something they always wondered about.',
+                heading: t('about.audience.1.heading', 'The curious adult who missed their chance'),
+                body: t('about.audience.1.body', 'A 38-year-old who always wanted to understand why the sky is blue. No age labels. No exam pressure. No shame. Just a beautiful explanation of something they always wondered about.'),
               },
               {
                 emoji: '👩',
-                heading: 'The parent learning alongside their child',
-                body: 'A mother in Hyderabad, Class 8 educated. Her daughter is in Class 6. She learns the same concept in Telugu, at her pace. Now they can discuss photosynthesis at dinner.',
+                heading: t('about.audience.2.heading', 'The parent learning alongside their child'),
+                body: t('about.audience.2.body', 'A mother in Hyderabad, Class 8 educated. Her daughter is in Class 6. She learns the same concept in Telugu, at her pace. Now they can discuss photosynthesis at dinner.'),
               },
               {
                 emoji: '👦',
-                heading: 'The first-generation learner',
-                body: 'A 16-year-old in a village in Rajasthan. First in the family to reach Class 10. No coaching institute. Jigyasu works offline. Downloaded at the school computer. Studied at home.',
+                heading: t('about.audience.3.heading', 'The first-generation learner'),
+                body: t('about.audience.3.body', 'A 16-year-old in a village in Rajasthan. First in the family to reach Class 10. No coaching institute. Jigyasu works offline. Downloaded at the school computer. Studied at home.'),
               },
               {
                 emoji: '👴',
-                heading: 'The grandparent who wants to connect',
-                body: 'Learning the same concept as their grandchild. Sending them an encouraging message through the app. Building a bond through shared discovery.',
+                heading: t('about.audience.4.heading', 'The grandparent who wants to connect'),
+                body: t('about.audience.4.body', 'Learning the same concept as their grandchild. Sending them an encouraging message through the app. Building a bond through shared discovery.'),
               },
-            ].map((item) => (
+            ].map((item, index) => (
               <div
-                key={item.heading}
+                key={index}
                 className="flex items-start gap-4 bg-slate-50 rounded-2xl p-5
-                           border border-slate-100"
+                           border border-slate-100 break-words overflow-hidden"
               >
                 <span className="text-4xl flex-shrink-0">{item.emoji}</span>
-                <div>
+                <div className="flex-1 min-w-0">
                   <p className="font-bold text-slate-800 mb-1">{item.heading}</p>
                   <p className="text-slate-600 text-sm leading-relaxed">{item.body}</p>
                 </div>
@@ -275,10 +275,10 @@ export default function AboutPage() {
               <div
                 key={v.title}
                 className="bg-white rounded-2xl p-5 border border-slate-200
-                           shadow-sm"
+                           shadow-sm break-words overflow-hidden"
               >
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-2xl">{v.emoji}</span>
+                  <span className="text-2xl flex-shrink-0">{v.emoji}</span>
                   <h3 className="font-bold text-indigo-900 text-base">
                     {v.title}
                   </h3>
@@ -305,12 +305,12 @@ export default function AboutPage() {
               <div
                 key={point.title}
                 className="flex items-start gap-4 p-5 rounded-2xl
-                           bg-slate-50 border border-slate-100"
+                           bg-slate-50 border border-slate-100 break-words overflow-hidden"
               >
                 <span className="text-3xl flex-shrink-0 mt-0.5">
                   {point.emoji}
                 </span>
-                <div>
+                <div className="flex-1 min-w-0">
                   <p className="font-bold text-slate-800 mb-1">{point.title}</p>
                   <p className="text-slate-600 text-sm leading-relaxed">
                     {point.desc}
@@ -349,13 +349,13 @@ export default function AboutPage() {
               t('about.indian_context.5', '22 Indian languages from day one'),
               t('about.indian_context.6', 'Designed for 2G and shared phones'),
               t('about.indian_context.7', 'Offline-first for rural learners'),
-            ].map((item) => (
+            ].map((item, index) => (
               <div
-                key={item}
-                className="flex items-center gap-2 text-sm text-orange-700"
+                key={index}
+                className="flex items-start gap-2 text-sm text-orange-700 break-words"
               >
-                <span className="text-orange-400">✓</span>
-                {item}
+                <span className="text-orange-400 mt-0.5 flex-shrink-0">✓</span>
+                <span className="flex-1 min-w-0">{item}</span>
               </div>
             ))}
           </div>
@@ -499,13 +499,13 @@ export default function AboutPage() {
                 t('about.support_ways.5', '🌐 Infrastructure sponsorship'),
                 t('about.support_ways.6', '🎓 Content or curriculum review'),
                 t('about.support_ways.7', '📢 Spreading the word'),
-              ].map((item) => (
+              ].map((item, index) => (
                 <div
-                  key={item}
+                  key={index}
                   className="bg-slate-800 rounded-xl px-3 py-2
-                             border border-slate-700"
+                             border border-slate-700 flex items-start gap-2 break-words"
                 >
-                  {item}
+                  <span className="flex-1 min-w-0">{item}</span>
                 </div>
               ))}
             </div>

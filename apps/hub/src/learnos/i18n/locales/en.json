@@ -6465,6 +6465,34 @@
       "5": "🌐 Infrastructure sponsorship",
       "6": "🎓 Content or curriculum review",
       "7": "📢 Spreading the word"
+    },
+    "mission_bullets": {
+      "0": "Not just reading about gravity — seeing it bend space.",
+      "1": "Not just memorizing photosynthesis — watching sunlight become food.",
+      "2": "Not just solving fractions — feeling them as fair sharing.",
+      "3": "Not just studying science — experiencing wonder."
+    },
+    "audience": {
+      "0": {
+        "heading": "The child who cannot afford tuition",
+        "body": "A 9-year-old in a government school in Bihar or Odisha. One shared Android phone. No coaching. Jigyasu gives them a patient, visual teacher available 24 hours a day. Free. In their language."
+      },
+      "1": {
+        "heading": "The curious adult who missed their chance",
+        "body": "A 38-year-old who always wanted to understand why the sky is blue. No age labels. No exam pressure. No shame. Just a beautiful explanation of something they always wondered about."
+      },
+      "2": {
+        "heading": "The parent learning alongside their child",
+        "body": "A mother in Hyderabad, Class 8 educated. Her daughter is in Class 6. She learns the same concept in Telugu, at her pace. Now they can discuss photosynthesis at dinner."
+      },
+      "3": {
+        "heading": "The first-generation learner",
+        "body": "A 16-year-old in a village in Rajasthan. First in the family to reach Class 10. No coaching institute. Jigyasu works offline. Downloaded at the school computer. Studied at home."
+      },
+      "4": {
+        "heading": "The grandparent who wants to connect",
+        "body": "Learning the same concept as their grandchild. Sending them an encouraging message through the app. Building a bond through shared discovery."
+      }
     }
   },
   "floating_buttons": {

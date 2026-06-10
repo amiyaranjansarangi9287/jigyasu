@@ -95,9 +95,8 @@ export default function PillarShowcase({ onSelectPillar, selectedAge }: PillarSh
 
                 {/* Bottom Overlay: Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-8 transform transition-transform duration-500">
-                  <Trans i18nKey="auto.pillarshowcase.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
-                                          <h3 className="text-3xl font-bold text-white mb-2 group-hover:-translate-y-1 transition-transform duration-300">{t(`pillar_${pillar.id}` as any, pillar.name)}</h3>
-                  <p className="text-white/80 text-base md:text-lg mb-6 group-hover:-translate-y-1 transition-transform duration-300 delay-75 max-w-md">
+                  <h3 className="text-3xl font-bold text-white mb-2 group-hover:-translate-y-1 transition-transform duration-300 break-words">{t(`pillar_${pillar.id}` as any, pillar.name)}</h3>
+                  <p className="text-white/80 text-base md:text-lg mb-6 group-hover:-translate-y-1 transition-transform duration-300 delay-75 max-w-md break-words">
                     {tagline}
                   </p>
 

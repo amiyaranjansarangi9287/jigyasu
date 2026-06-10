@@ -28,24 +28,24 @@ export default function ContactPage() {
           animate={{ opacity: 1, y: 0 }}
           className="flex flex-col items-center"
         >
-          <div className="w-full max-w-lg bg-white rounded-3xl shadow-sm border border-slate-200 p-10 text-center space-y-6">
-            <h2 className="text-2xl font-bold text-slate-800"><Trans i18nKey="auto.contactpage.we_d_love_to_hear_from_you">We'd love to hear from you</Trans></h2>
-            <p className="text-slate-600">
+          <div className="w-full max-w-lg bg-white dark:bg-slate-900 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-800 p-10 text-center space-y-6">
+            <h2 className="text-2xl font-bold text-slate-800 dark:text-white"><Trans i18nKey="auto.contactpage.we_d_love_to_hear_from_you">We'd love to hear from you</Trans></h2>
+            <p className="text-slate-600 dark:text-slate-300">
               <Trans i18nKey="auto.contactpage.have_questions_feedback_or_wan">Have questions, feedback, or want to support Jigyasu? Please fill out our contact form and we'll get back to you as soon as possible.</Trans>
-                                      </p>
+            </p>
             <div className="pt-4 flex flex-col gap-4">
               <a 
                 href="https://forms.zohopublic.in/arsjobs2019gm1/form/JigyasuFeedbackSupport/formperma/WLidd2lYcJF7F35E8PvPQVfaBL8OMgCC9yMcSokcQCc" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 transition-colors text-white font-bold px-8 py-4 rounded-2xl text-lg w-full"
+                className="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 transition-colors text-white dark:text-white font-bold px-8 py-4 rounded-2xl text-lg w-full"
               >
                 <FileText className="w-5 h-5" />
                 <span><Trans i18nKey="auto.contactpage.open_contact_form">Open Contact Form</Trans></span>
               </a>
               <a 
                 href="mailto:contact@jigyasu.app" 
-                className="inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 transition-colors text-slate-700 font-bold px-8 py-4 rounded-2xl text-lg w-full"
+                className="inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 transition-colors text-slate-700 dark:text-slate-100 font-bold px-8 py-4 rounded-2xl text-lg w-full"
               >
                 <Mail className="w-5 h-5" />
                 <span><Trans i18nKey="auto.contactpage.email_us_directly">Email Us Directly</Trans></span>
