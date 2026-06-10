@@ -2,6 +2,7 @@ import { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { sfx } from '../lib/soundEngine';
 import WhatsNext from './shared/WhatsNext';
+import { Trans } from "react-i18next";
 
 interface Problem {
   story: string;
@@ -80,7 +81,7 @@ function opts(answer: number): number[] {
 
 export default function WordProblemStories() {
   const [problem, setProblem] = useState<Problem>(() => templates[0]());
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [showHint, setShowHint] = useState(false);
   const [showSolution, setShowSolution] = useState(false);
   const [mastery, setMastery] = useState(0);
@@ -102,7 +103,7 @@ export default function WordProblemStories() {
       setSolved(s => s + 1);
       setTimeout(next, 1800);
     } else {
-      setFeedback('wrong');
+      setFeedback('hint');
       sfx.wrong();
       setTimeout(() => setFeedback(null), 1000);
     }
@@ -111,8 +112,8 @@ export default function WordProblemStories() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">📖 Word Problem Stories</h2>
-        <p className="text-purple-300 text-lg">Read the story, find the math, solve the problem!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.wordproblemstories.word_problem_stories">📖 Word Problem Stories</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.wordproblemstories.read_the_story_find_the_math_s">Read the story, find the math, solve the problem!</Trans></p>
       </div>
 
       <div className="flex justify-center gap-4 mb-6">
@@ -122,7 +123,7 @@ export default function WordProblemStories() {
 
       <motion.div
         key={problem.story}
-        className={`max-w-xl mx-auto rounded-3xl p-6 sm:p-8 border-2 transition-colors ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}
+        className={`max-w-xl mx-auto rounded-3xl p-6 sm:p-8 border-2 transition-colors ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'hint' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}
         initial={{ scale: 0.92, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
       >
@@ -143,7 +144,7 @@ export default function WordProblemStories() {
         <div className="grid grid-cols-2 gap-3">
           {problem.options.map((opt) => (
             <motion.button key={opt}
-              className={`py-3 rounded-xl text-xl font-bold ${feedback === 'correct' && opt === problem.answer ? 'bg-green-500 text-white ring-4 ring-green-400/50' : feedback === 'wrong' ? 'bg-white/5 text-gray-500' : 'bg-white/10 text-white hover:bg-white/20 border border-white/20 hover:border-white/40'}`}
+              className={`py-3 rounded-xl text-xl font-bold ${feedback === 'correct' && opt === problem.answer ? 'bg-green-500 text-white ring-4 ring-green-400/50' : feedback === 'hint' ? 'bg-white/5 text-gray-500' : 'bg-white/10 text-white hover:bg-white/20 border border-white/20 hover:border-white/40'}`}
               whileHover={!feedback ? { scale: 1.05 } : {}}
               whileTap={!feedback ? { scale: 0.95 } : {}}
               onClick={() => handleAnswer(opt)}
@@ -154,9 +155,9 @@ export default function WordProblemStories() {
 
         {/* Hint & Solution */}
         <div className="mt-4 flex justify-center gap-4">
-          {!showHint && !feedback && <button className="text-sm text-purple-400 hover:text-purple-300 underline decoration-dashed" onClick={() => setShowHint(true)}>💡 Hint</button>}
-          {(feedback === 'correct' || showSolution) && <button className="text-sm text-blue-400 hover:text-blue-300 underline decoration-dashed" onClick={() => setShowSolution(true)}>📝 Solution</button>}
-          <button className="text-sm text-gray-500 hover:text-gray-400" onClick={next}>Skip →</button>
+          {!showHint && !feedback && <button className="text-sm text-purple-400 hover:text-purple-300 underline decoration-dashed" onClick={() => setShowHint(true)}><Trans i18nKey="auto.wordproblemstories.hint">💡 Hint</Trans></button>}
+          {(feedback === 'correct' || showSolution) && <button className="text-sm text-blue-400 hover:text-blue-300 underline decoration-dashed" onClick={() => setShowSolution(true)}><Trans i18nKey="auto.wordproblemstories.solution">📝 Solution</Trans></button>}
+          <button className="text-sm text-gray-500 hover:text-gray-400" onClick={next}><Trans i18nKey="auto.wordproblemstories.skip">Skip →</Trans></button>
         </div>
 
         <AnimatePresence>
@@ -164,8 +165,8 @@ export default function WordProblemStories() {
           {showSolution && <motion.p className="mt-3 text-center text-blue-300 bg-blue-500/10 rounded-lg px-3 py-2 text-sm font-mono" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>📝 {problem.solution}</motion.p>}
         </AnimatePresence>
 
-        {feedback === 'correct' && <motion.p className="mt-4 text-center text-green-400 font-bold text-lg" initial={{ scale: 0 }} animate={{ scale: [0, 1.3, 1] }}>✨ Great reading & solving!</motion.p>}
-        {feedback === 'wrong' && <motion.p className="mt-4 text-center text-orange-400 font-bold" initial={{ x: -10 }} animate={{ x: [10, -10, 5, 0] }}>🤔 Re-read the story carefully!</motion.p>}
+        {feedback === 'correct' && <motion.p className="mt-4 text-center text-green-400 font-bold text-lg" initial={{ scale: 0 }} animate={{ scale: [0, 1.3, 1] }}><Trans i18nKey="auto.wordproblemstories.great_reading_solving">✨ Great reading & solving!</Trans></motion.p>}
+        {feedback === 'hint' && <motion.p className="mt-4 text-center text-sky-400 font-bold" initial={{ x: -10 }} animate={{ x: [10, -10, 5, 0] }}><Trans i18nKey="auto.wordproblemstories.re_read_the_story_carefully">🤔 Re-read the story carefully!</Trans></motion.p>}
       </motion.div>
       <WhatsNext moduleId="word-problems" />
     </div>

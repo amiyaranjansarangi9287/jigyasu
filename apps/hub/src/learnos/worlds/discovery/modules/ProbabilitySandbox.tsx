@@ -1,6 +1,6 @@
 // src/worlds/discovery/modules/ProbabilitySandbox.tsx
 import { useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion } from 'framer-motion';
 import DiscoveryShell from '../DiscoveryShell';
 import { useLumoSage } from '../hooks/useLumoSage';
@@ -63,7 +63,7 @@ export default function ProbabilitySandbox() {
         {/* Results */}
         {hasRun && results.length > 0 && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-slate-800 rounded-2xl p-4 border border-slate-700 mb-4">
-            <p className="text-slate-400 text-sm font-bold mb-3">RESULTS ({sampleSize} trials)</p>
+            <p className="text-slate-400 text-sm font-bold mb-3"><Trans i18nKey="auto.probabilitysandbox.results">RESULTS (</Trans>{sampleSize} <Trans i18nKey="auto.probabilitysandbox.trials">trials)</Trans></p>
             <div className="space-y-2">{exp.outcomes.map((o, i) => {
               const pct = sampleSize > 0 ? (results[i] / sampleSize) * 100 : 0;
               const expected = exp.probs[i] * 100;
@@ -81,7 +81,7 @@ export default function ProbabilitySandbox() {
           </motion.div>
         )}
 
-        <button onClick={runExperiment} className="w-full py-4 bg-red-600 text-white font-bold text-base rounded-2xl min-h-[52px]">🎲 Run {sampleSize} Trials!</button>
+        <button onClick={runExperiment} className="w-full py-4 bg-red-600 text-white font-bold text-base rounded-2xl min-h-[52px]"><Trans i18nKey="auto.probabilitysandbox.run">🎲 Run</Trans> {sampleSize} <Trans i18nKey="auto.probabilitysandbox.trials">Trials!</Trans></button>
       </div>
     </DiscoveryShell>
   );

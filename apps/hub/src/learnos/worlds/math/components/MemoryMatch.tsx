@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { sfx } from '../lib/soundEngine';
+import { Trans } from "react-i18next";
 
 interface Card {
   id: number;
@@ -191,10 +192,10 @@ export default function MemoryMatch() {
           >
             🃏
           </motion.div>
-          <h3 className="text-2xl font-bold text-white mb-2">Memory Match Magic</h3>
+          <h3 className="text-2xl font-bold text-white mb-2"><Trans i18nKey="auto.memorymatch.memory_match_magic">Memory Match Magic</Trans></h3>
           <p className="text-gray-400 mb-6">
-            Match equations with their answers! Flip two cards at a time to find the pairs.
-          </p>
+            <Trans i18nKey="auto.memorymatch.match_equations_with_their_ans">Match equations with their answers! Flip two cards at a time to find the pairs.</Trans>
+                                </p>
 
           <div className="space-y-3">
             {(['easy', 'medium', 'hard'] as const).map((d) => {
@@ -212,8 +213,8 @@ export default function MemoryMatch() {
                   onClick={() => startGame(d)}
                 >
                   <span className="text-2xl mr-2">{config.emoji}</span>
-                  {config.label} — {config.pairs} pairs
-                </motion.button>
+                  {config.label} — {config.pairs} <Trans i18nKey="auto.memorymatch.pairs">pairs</Trans>
+                                      </motion.button>
               );
             })}
           </div>
@@ -222,24 +223,24 @@ export default function MemoryMatch() {
           {history.length > 0 && (
             <div className="mt-6 bg-white/5 rounded-2xl border border-white/10 p-4">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="text-white font-bold">📖 Recent Games</h4>
+                <h4 className="text-white font-bold"><Trans i18nKey="auto.memorymatch.recent_games">📖 Recent Games</Trans></h4>
                 <button
-                  className="text-sm text-gray-500 hover:text-red-400"
+                  className="text-sm text-gray-500 hover:text-sky-400"
                   onClick={() => {
                     setHistory([]);
                     try { localStorage.removeItem('mathkingdom_match_history'); } catch {}
                   }}
                 >
-                  Clear
-                </button>
+                  <Trans i18nKey="auto.memorymatch.clear">Clear</Trans>
+                                                  </button>
               </div>
               <div className="space-y-2 max-h-48 overflow-y-auto">
                 {history.map((round, i) => (
                   <div key={i} className="flex items-center justify-between bg-white/5 rounded-lg px-3 py-2 text-sm">
                     <span className="text-gray-400">{round.date}</span>
                     <span className="text-white">
-                      🎯 {round.moves} moves · ⏱️ {round.timeSeconds}s
-                    </span>
+                      🎯 {round.moves} <Trans i18nKey="auto.memorymatch.moves">moves · ⏱️</Trans> {round.timeSeconds}<Trans i18nKey="auto.memorymatch.s">s</Trans>
+                                                </span>
                   </div>
                 ))}
               </div>
@@ -258,18 +259,18 @@ export default function MemoryMatch() {
               whileTap={{ scale: 0.95 }}
               onClick={() => setGameStarted(false)}
             >
-              ← Menu
-            </motion.button>
+              <Trans i18nKey="auto.memorymatch.menu">← Menu</Trans>
+                                      </motion.button>
             <div className="flex items-center gap-3 flex-wrap">
               <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">
-                🎯 {moves} moves
-              </span>
+                🎯 {moves} <Trans i18nKey="auto.memorymatch.moves">moves</Trans>
+                                            </span>
               <span className="bg-white/5 px-3 py-1.5 rounded-lg text-green-400 font-bold text-sm">
                 ✨ {matches}/{totalPairs}
               </span>
               <span className="bg-white/5 px-3 py-1.5 rounded-lg text-blue-400 font-bold text-sm">
-                ⏱️ {timeSeconds}s
-              </span>
+                ⏱️ {timeSeconds}<Trans i18nKey="auto.memorymatch.s">s</Trans>
+                                            </span>
             </div>
           </div>
 
@@ -378,16 +379,16 @@ export default function MemoryMatch() {
                   >
                     🏆
                   </motion.div>
-                  <h3 className="text-3xl font-bold text-yellow-400 mb-2">Victory!</h3>
-                  <p className="text-gray-300 mb-6">You matched all the pairs!</p>
+                  <h3 className="text-3xl font-bold text-yellow-400 mb-2"><Trans i18nKey="auto.memorymatch.victory">Victory!</Trans></h3>
+                  <p className="text-gray-300 mb-6"><Trans i18nKey="auto.memorymatch.you_matched_all_the_pairs">You matched all the pairs!</Trans></p>
                   <div className="grid grid-cols-2 gap-3 mb-6">
                     <div className="bg-white/10 rounded-xl p-3">
-                      <p className="text-gray-400 text-sm">Moves</p>
+                      <p className="text-gray-400 text-sm"><Trans i18nKey="auto.memorymatch.moves">Moves</Trans></p>
                       <p className="text-2xl font-bold text-white">{moves}</p>
                     </div>
                     <div className="bg-white/10 rounded-xl p-3">
-                      <p className="text-gray-400 text-sm">Time</p>
-                      <p className="text-2xl font-bold text-white">{timeSeconds}s</p>
+                      <p className="text-gray-400 text-sm"><Trans i18nKey="auto.memorymatch.time">Time</Trans></p>
+                      <p className="text-2xl font-bold text-white">{timeSeconds}<Trans i18nKey="auto.memorymatch.s">s</Trans></p>
                     </div>
                   </div>
                   <div className="flex gap-3">
@@ -397,16 +398,16 @@ export default function MemoryMatch() {
                       whileTap={{ scale: 0.97 }}
                       onClick={() => startGame(difficulty)}
                     >
-                      🔄 Play Again
-                    </motion.button>
+                      <Trans i18nKey="auto.memorymatch.play_again">🔄 Play Again</Trans>
+                                                              </motion.button>
                     <motion.button
                       className="flex-1 py-3 rounded-xl bg-white/10 text-white font-bold"
                       whileHover={{ scale: 1.03 }}
                       whileTap={{ scale: 0.97 }}
                       onClick={() => setGameStarted(false)}
                     >
-                      🏠 Menu
-                    </motion.button>
+                      <Trans i18nKey="auto.memorymatch.menu">🏠 Menu</Trans>
+                                                              </motion.button>
                   </div>
                 </motion.div>
               </motion.div>

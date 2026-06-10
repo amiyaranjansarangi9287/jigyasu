@@ -2,7 +2,7 @@
 import { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '../store';
 import { LearningService } from '../services';
 import { ROUTES } from '../constants/routes';
@@ -85,8 +85,8 @@ export default function TeachMeMode() {
           </button>
           {state !== 'select' && (
             <span className="text-sm text-gray-400">
-              Max is listening 👂
-            </span>
+              <Trans i18nKey="auto.teachmemode.max_is_listening">Max is listening 👂</Trans>
+                                      </span>
           )}
         </div>
 
@@ -160,7 +160,7 @@ export default function TeachMeMode() {
                 ref={textareaRef}
                 value={explanation}
                 onChange={(e) => setExplanation(e.target.value)}
-                placeholder="Write your explanation here..."
+                placeholder={t('auto.attr.teachmemode.write_your_explanation_here')}
                 className="w-full p-4 bg-white rounded-2xl border-2 border-gray-200
                            focus:border-emerald-400 focus:outline-none min-h-[120px]
                            text-gray-800 resize-none mb-4"
@@ -227,8 +227,8 @@ export default function TeachMeMode() {
                 {t('crosscutting.teach_me.teaching_test')}
               </h2>
               <p className="text-gray-500 mb-4">
-                You answered {questionsAnswered} of Max's questions!
-              </p>
+                <Trans i18nKey="auto.teachmemode.you_answered">You answered</Trans> {questionsAnswered} <Trans i18nKey="auto.teachmemode.of_max_s_questions">of Max's questions!</Trans>
+                                            </p>
               <Button onClick={() => navigate(ROUTES.FAMILY_HOME)} size="lg" fullWidth>
                 {t('common.back')}
               </Button>

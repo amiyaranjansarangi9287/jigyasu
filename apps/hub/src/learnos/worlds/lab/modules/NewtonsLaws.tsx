@@ -3,7 +3,7 @@
 
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -88,7 +88,7 @@ export default function NewtonsLaws() {
           <div>
             <div className="flex items-center justify-between mb-2">
               <span className="text-sm text-slate-400">{t('lab.modules.NewtonsLaws.spn_Force', '💪 Force')}</span>
-              <span className="text-sm font-medium text-purple-600">{force} N</span>
+              <span className="text-sm font-medium text-purple-600">{force} <Trans i18nKey="auto.newtonslaws.n">N</Trans></span>
             </div>
             <input
               type="range"
@@ -103,7 +103,7 @@ export default function NewtonsLaws() {
           <div>
             <div className="flex items-center justify-between mb-2">
               <span className="text-sm text-slate-400">{t('lab.modules.NewtonsLaws.spn_Mass', '📦 Mass')}</span>
-              <span className="text-sm font-medium text-indigo-600">{mass} kg</span>
+              <span className="text-sm font-medium text-indigo-600">{mass} <Trans i18nKey="auto.newtonslaws.kg">kg</Trans></span>
             </div>
             <input
               type="range"
@@ -120,25 +120,25 @@ export default function NewtonsLaws() {
         {/* Formula display */}
         <div className="mt-6 bg-purple-50 rounded-2xl p-5 text-center">
           <div className="text-sm text-purple-600 font-mono font-bold">
-            F = ma → a = F/m = {force}/{mass} = {acceleration} m/s²
-          </div>
+            <Trans i18nKey="auto.newtonslaws.f_ma_a_f_m">F = ma → a = F/m =</Trans> {force}/{mass} = {acceleration} <Trans i18nKey="auto.newtonslaws.m_s">m/s²</Trans>
+                                </div>
         </div>
 
         {/* 3 Laws */}
         <div className="mt-6 grid grid-cols-3 gap-4">
           <div className="bg-indigo-50 rounded-2xl p-4 text-center">
             <div className="text-2xl mb-1">🛑</div>
-            <div className="font-bold text-indigo-600 text-sm">1st Law</div>
+            <div className="font-bold text-indigo-600 text-sm"><Trans i18nKey="auto.newtonslaws.1st_law">1st Law</Trans></div>
             <p className="text-sm text-indigo-400 mt-1">{t('lab.modules.NewtonsLaws.txt_InertiaObj', 'Inertia: Objects keep doing what they\'re doing')}</p>
           </div>
           <div className="bg-purple-50 rounded-2xl p-4 text-center">
             <div className="text-2xl mb-1">💥</div>
-            <div className="font-bold text-purple-600 text-sm">2nd Law</div>
+            <div className="font-bold text-purple-600 text-sm"><Trans i18nKey="auto.newtonslaws.2nd_law">2nd Law</Trans></div>
             <p className="text-sm text-purple-400 mt-1">{t('lab.modules.NewtonsLaws.txt_FmaForcema', 'F=ma: Force = mass × acceleration')}</p>
           </div>
           <div className="bg-blue-50 rounded-2xl p-4 text-center">
             <div className="text-2xl mb-1">🔄</div>
-            <div className="font-bold text-blue-600 text-sm">3rd Law</div>
+            <div className="font-bold text-blue-600 text-sm"><Trans i18nKey="auto.newtonslaws.3rd_law">3rd Law</Trans></div>
             <p className="text-sm text-blue-400 mt-1">{t('lab.modules.NewtonsLaws.txt_ActionReac', 'Action-Reaction: Every force has an equal opposite')}</p>
           </div>
         </div>
@@ -148,13 +148,13 @@ export default function NewtonsLaws() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.NewtonsLaws.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-600 font-bold text-sm mb-1">Ancient Indian Physics</h3>
+              <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.newtonslaws.ancient_indian_physics">Ancient Indian Physics</Trans></h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Kanada (~600 BCE) described motion laws in Vaisheshika sutras — 2,000 years before
-                Newton! He classified motion into 5 types and described how force causes change in
-                motion. The concept of <strong>Vega</strong> (velocity) and <strong>Prayatna</strong>
-                (effort/force) matches Newton's framework.
-              </p>
+                <Trans i18nKey="auto.newtonslaws.kanada_600_bce_described_motio">Kanada (~600 BCE) described motion laws in Vaisheshika sutras — 2,000 years before
+                                              Newton! He classified motion into 5 types and described how force causes change in
+                                              motion. The concept of</Trans> <strong><Trans i18nKey="auto.newtonslaws.vega">Vega</Trans></strong> <Trans i18nKey="auto.newtonslaws.velocity_and">(velocity) and</Trans> <strong><Trans i18nKey="auto.newtonslaws.prayatna">Prayatna</Trans></strong>
+                <Trans i18nKey="auto.newtonslaws.effort_force_matches_newton_s_">(effort/force) matches Newton's framework.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

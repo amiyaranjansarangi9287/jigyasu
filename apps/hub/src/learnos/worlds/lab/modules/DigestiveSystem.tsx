@@ -3,7 +3,7 @@
 
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -101,12 +101,12 @@ export default function DigestiveSystem() {
         <div className="mt-6 grid grid-cols-2 gap-4">
           <div className="bg-rose-50 rounded-2xl p-4 text-center">
             <div className="text-2xl mb-1">📏</div>
-            <div className="font-bold text-rose-600 text-sm">6m Long</div>
+            <div className="font-bold text-rose-600 text-sm"><Trans i18nKey="auto.digestivesystem.6m_long">6m Long</Trans></div>
             <p className="text-sm text-rose-400 mt-1">{t('lab.modules.DigestiveSystem.txt_Smallintes', 'Small intestine length')}</p>
           </div>
           <div className="bg-orange-50 rounded-2xl p-4 text-center">
             <div className="text-2xl mb-1">⏱️</div>
-            <div className="font-bold text-orange-600 text-sm">24-72 hrs</div>
+            <div className="font-bold text-orange-600 text-sm"><Trans i18nKey="auto.digestivesystem.24_72_hrs">24-72 hrs</Trans></div>
             <p className="text-sm text-orange-400 mt-1">{t('lab.modules.DigestiveSystem.txt_Totaldiges', 'Total digestion time')}</p>
           </div>
         </div>
@@ -116,13 +116,13 @@ export default function DigestiveSystem() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.DigestiveSystem.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-600 font-bold text-sm mb-1">Ayurvedic Connection</h3>
+              <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.digestivesystem.ayurvedic_connection">Ayurvedic Connection</Trans></h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Ayurveda described <strong>Agni</strong> (digestive fire) 5,000 years ago! The concept
-                of <strong>Jatharagni</strong> — the stomach's digestive power — matches modern
-                understanding of stomach acid (HCl) and enzymes. Spices like turmeric and ginger
-                were known to boost digestion long before science proved it.
-              </p>
+                <Trans i18nKey="auto.digestivesystem.ayurveda_described">Ayurveda described</Trans> <strong><Trans i18nKey="auto.digestivesystem.agni">Agni</Trans></strong> <Trans i18nKey="auto.digestivesystem.digestive_fire_5_000_years_ago">(digestive fire) 5,000 years ago! The concept
+                                              of</Trans> <strong><Trans i18nKey="auto.digestivesystem.jatharagni">Jatharagni</Trans></strong> <Trans i18nKey="auto.digestivesystem.the_stomach_s_digestive_power_">— the stomach's digestive power — matches modern
+                                              understanding of stomach acid (HCl) and enzymes. Spices like turmeric and ginger
+                                              were known to boost digestion long before science proved it.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

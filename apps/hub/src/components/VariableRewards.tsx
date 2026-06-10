@@ -2,6 +2,7 @@ import React, { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useUserProfile } from '@jigyasu/storage';
 import { sfx } from '../learnos/worlds/math/lib/soundEngine';
+import { Trans } from "react-i18next";
 
 export function useVariableRewards() {
   const { profile, unlockAvatar, saveProfile } = useUserProfile();
@@ -70,8 +71,8 @@ export function VariableRewardOverlay({ chestUnlocked, bonusXP }: { chestUnlocke
               >
                 🎁
               </motion.div>
-              <h3 className="text-2xl font-black text-slate-800 mb-2 relative z-10">Mystery Chest!</h3>
-              <p className="text-slate-600 mb-6 font-medium relative z-10">You unlocked a rare avatar for your profile.</p>
+              <h3 className="text-2xl font-black text-slate-800 mb-2 relative z-10"><Trans i18nKey="auto.variablerewards.mystery_chest">Mystery Chest!</Trans></h3>
+              <p className="text-slate-600 mb-6 font-medium relative z-10"><Trans i18nKey="auto.variablerewards.you_unlocked_a_rare_avatar_for">You unlocked a rare avatar for your profile.</Trans></p>
               <motion.div 
                 className="w-24 min-h-24 mx-auto bg-amber-50 rounded-full flex items-center justify-center text-5xl border-4 border-amber-200 relative z-10 shadow-inner"
                 initial={{ scale: 0 }}

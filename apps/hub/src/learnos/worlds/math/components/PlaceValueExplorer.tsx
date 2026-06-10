@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Trans } from "react-i18next";
 
 type Place = 'thousands' | 'hundreds' | 'tens' | 'ones';
 
@@ -42,7 +43,7 @@ export default function PlaceValueExplorer() {
   const [value, setValue] = useState(3427);
   const [mode, setMode] = useState<'explore' | 'challenge'>('explore');
   const [challenge, setChallenge] = useState(makeChallenge);
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [mastery, setMastery] = useState(0);
 
   const digits = useMemo(() => splitDigits(value), [value]);
@@ -69,7 +70,7 @@ export default function PlaceValueExplorer() {
         setFeedback(null);
       }, 1200);
     } else {
-      setFeedback('wrong');
+      setFeedback('hint');
       setTimeout(() => setFeedback(null), 900);
     }
   };
@@ -77,28 +78,28 @@ export default function PlaceValueExplorer() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🧱 Place Value Explorer</h2>
-        <p className="text-purple-300 text-lg">Build numbers from thousands, hundreds, tens, and ones.</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.placevalueexplorer.place_value_explorer">🧱 Place Value Explorer</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.placevalueexplorer.build_numbers_from_thousands_h">Build numbers from thousands, hundreds, tens, and ones.</Trans></p>
       </div>
 
       <div className="flex justify-center gap-2 mb-6">
-        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'explore' ? 'bg-blue-500/30 text-blue-300 border border-blue-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => setMode('explore')}>🔍 Explore</button>
-        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'challenge' ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => { setMode('challenge'); setChallenge(makeChallenge()); }}>🎯 Challenge</button>
+        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'explore' ? 'bg-blue-500/30 text-blue-300 border border-blue-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => setMode('explore')}><Trans i18nKey="auto.placevalueexplorer.explore">🔍 Explore</Trans></button>
+        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'challenge' ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => { setMode('challenge'); setChallenge(makeChallenge()); }}><Trans i18nKey="auto.placevalueexplorer.challenge">🎯 Challenge</Trans></button>
       </div>
 
       <AnimatePresence mode="wait">
         {mode === 'challenge' ? (
           <motion.div key="challenge" className="max-w-lg mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
+            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'hint' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
               <div className="flex justify-between items-center mb-5">
                 <span className="text-yellow-400 font-bold">⭐ {mastery}</span>
-                <span className="text-sm text-gray-400">Place value quiz</span>
+                <span className="text-sm text-gray-400"><Trans i18nKey="auto.placevalueexplorer.place_value_quiz">Place value quiz</Trans></span>
               </div>
-              <p className="text-center text-gray-400 text-sm">In the number</p>
+              <p className="text-center text-gray-400 text-sm"><Trans i18nKey="auto.placevalueexplorer.in_the_number">In the number</Trans></p>
               <p className="text-center text-5xl font-bold text-white font-mono my-2">{challenge.value}</p>
               <p className="text-center text-xl font-bold text-white mb-5">
-                What is the value of the <span className={challenge.place.color}>{challenge.place.label}</span> digit?
-              </p>
+                <Trans i18nKey="auto.placevalueexplorer.what_is_the_value_of_the">What is the value of the</Trans> <span className={challenge.place.color}>{challenge.place.label}</span> <Trans i18nKey="auto.placevalueexplorer.digit">digit?</Trans>
+                                            </p>
               <div className="grid grid-cols-2 gap-3">
                 {challenge.options.map((option) => (
                   <motion.button key={option} className={`py-3 rounded-xl text-xl font-bold ${feedback === 'correct' && option === challenge.answer ? 'bg-green-500 text-white' : feedback ? 'bg-white/5 text-gray-500' : 'bg-white/10 text-white hover:bg-white/20 border border-white/20'}`} whileHover={!feedback ? { scale: 1.05 } : {}} whileTap={!feedback ? { scale: 0.95 } : {}} onClick={() => answerChallenge(option)} disabled={!!feedback}>
@@ -106,8 +107,8 @@ export default function PlaceValueExplorer() {
                   </motion.button>
                 ))}
               </div>
-              {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✨ Correct! {challenge.answer.toLocaleString()}</p>}
-              {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Try again!</p>}
+              {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4"><Trans i18nKey="auto.placevalueexplorer.correct">✨ Correct!</Trans> {challenge.answer.toLocaleString()}</p>}
+              {feedback === 'hint' && <p className="text-sky-400 font-bold text-center mt-4"><Trans i18nKey="auto.placevalueexplorer.try_again">Let us explore!</Trans></p>}
             </div>
           </motion.div>
         ) : (
@@ -115,7 +116,7 @@ export default function PlaceValueExplorer() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               <div className="space-y-4">
                 <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
-                  <label className="text-gray-400 text-sm">Number</label>
+                  <label className="text-gray-400 text-sm"><Trans i18nKey="auto.placevalueexplorer.number">Number</Trans></label>
                   <div className="flex items-center gap-3 mt-2">
                     <input type="range" min="0" max="9999" value={value} onChange={(e) => setValue(Number(e.target.value))} className="flex-1 accent-purple-500" />
                     <input type="number" min="0" max="9999" value={value} onChange={(e) => setValue(Math.max(0, Math.min(9999, Number(e.target.value) || 0)))} className="w-24 bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white font-bold text-center" />
@@ -137,18 +138,18 @@ export default function PlaceValueExplorer() {
                 </div>
 
                 <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-2xl p-5 border border-purple-500/20">
-                  <p className="text-gray-400 text-sm mb-1">Expanded form</p>
+                  <p className="text-gray-400 text-sm mb-1"><Trans i18nKey="auto.placevalueexplorer.expanded_form">Expanded form</Trans></p>
                   <p className="text-2xl font-bold text-white font-mono">
                     {expanded.length ? expanded.map((p) => p.amount.toLocaleString()).join(' + ') : '0'} = <span className="text-purple-300">{value.toLocaleString()}</span>
                   </p>
                   <p className="text-gray-500 text-sm mt-2">
-                    Word form: {value.toLocaleString()} has {digits.thousands} thousands, {digits.hundreds} hundreds, {digits.tens} tens, and {digits.ones} ones.
-                  </p>
+                    <Trans i18nKey="auto.placevalueexplorer.word_form">Word form:</Trans> {value.toLocaleString()} <Trans i18nKey="auto.placevalueexplorer.has">has</Trans> {digits.thousands} <Trans i18nKey="auto.placevalueexplorer.thousands">thousands,</Trans> {digits.hundreds} <Trans i18nKey="auto.placevalueexplorer.hundreds">hundreds,</Trans> {digits.tens} <Trans i18nKey="auto.placevalueexplorer.tens_and">tens, and</Trans> {digits.ones} <Trans i18nKey="auto.placevalueexplorer.ones">ones.</Trans>
+                                                            </p>
                 </div>
               </div>
 
               <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
-                <h4 className="text-white font-bold mb-4">🧱 Base-10 Blocks</h4>
+                <h4 className="text-white font-bold mb-4"><Trans i18nKey="auto.placevalueexplorer.base_10_blocks">🧱 Base-10 Blocks</Trans></h4>
                 <div className="space-y-4">
                   {placeMeta.map((p) => (
                     <div key={p.key}>

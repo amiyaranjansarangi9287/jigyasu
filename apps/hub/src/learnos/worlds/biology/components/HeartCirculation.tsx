@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Play, Pause, Info, Heart } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface HeartPart {
   id: string;
@@ -24,6 +28,22 @@ const heartParts: HeartPart[] = [
 
 
 export default function HeartCirculation() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.heart_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.heart_prompt', "Your heart beats 100,000 times a day, pumping a river of life throughout your body. Let's explore the pump!"),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'heart-circulation', 60);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   const [isPlaying, setIsPlaying] = useState(true);
   const [selectedPart, setSelectedPart] = useState<HeartPart | null>(null);
   const [showOxygenated, setShowOxygenated] = useState(true);
@@ -42,8 +62,8 @@ export default function HeartCirculation() {
     <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-2">🫀 Heart & Circulation</h2>
-          <p className="text-gray-400 text-lg">Explore how blood flows through the heart and body!</p>
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-2"><Trans i18nKey="auto.heartcirculation.heart_circulation">🫀 Heart & Circulation</Trans></h2>
+          <p className="text-gray-400 text-lg"><Trans i18nKey="auto.heartcirculation.explore_how_blood_flows_throug">Explore how blood flows through the heart and body!</Trans></p>
         </motion.div>
 
         {/* Controls */}
@@ -55,12 +75,12 @@ export default function HeartCirculation() {
           </button>
           <button onClick={() => setShowOxygenated(!showOxygenated)}
             className={`flex items-center gap-2 px-4 py-2 rounded-full font-medium text-sm ${showOxygenated ? 'bg-red-500 text-white' : 'bg-gray-800 text-gray-400'}`}>
-            🔴 Oxygenated
-          </button>
+            <Trans i18nKey="auto.heartcirculation.oxygenated">🔴 Oxygenated</Trans>
+                                </button>
           <button onClick={() => setShowDeoxygenated(!showDeoxygenated)}
             className={`flex items-center gap-2 px-4 py-2 rounded-full font-medium text-sm ${showDeoxygenated ? 'bg-blue-500 text-white' : 'bg-gray-800 text-gray-400'}`}>
-            🔵 Deoxygenated
-          </button>
+            <Trans i18nKey="auto.heartcirculation.deoxygenated">🔵 Deoxygenated</Trans>
+                                </button>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-6">
@@ -71,8 +91,8 @@ export default function HeartCirculation() {
                 {/* Lungs (background) */}
                 <ellipse cx="120" cy="180" rx="70" ry="100" fill="#ec489920" stroke="#ec4899" strokeWidth="1" opacity="0.3" />
                 <ellipse cx="380" cy="180" rx="70" ry="100" fill="#ec489920" stroke="#ec4899" strokeWidth="1" opacity="0.3" />
-                <text x="120" y="180" textAnchor="middle" fontSize="10" fill="#ec4899" opacity="0.5">Right Lung</text>
-                <text x="380" y="180" textAnchor="middle" fontSize="10" fill="#ec4899" opacity="0.5">Left Lung</text>
+                <text x="120" y="180" textAnchor="middle" fontSize="10" fill="#ec4899" opacity="0.5"><Trans i18nKey="auto.heartcirculation.right_lung">Right Lung</Trans></text>
+                <text x="380" y="180" textAnchor="middle" fontSize="10" fill="#ec4899" opacity="0.5"><Trans i18nKey="auto.heartcirculation.left_lung">Left Lung</Trans></text>
 
                 {/* Vena Cava */}
                 <path d="M250,380 L250,320" stroke="#3b82f6" strokeWidth="16" fill="none" strokeLinecap="round"
@@ -100,28 +120,28 @@ export default function HeartCirculation() {
                   fill="#3b82f622" stroke="#3b82f6" strokeWidth="2"
                   className="cursor-pointer hover:brightness-125"
                   onClick={() => setSelectedPart(heartParts.find(p => p.id === 'ra')!)} />
-                <text x="230" y="200" textAnchor="middle" fontSize="8" fill="#60a5fa">RA</text>
+                <text x="230" y="200" textAnchor="middle" fontSize="8" fill="#60a5fa"><Trans i18nKey="auto.heartcirculation.ra">RA</Trans></text>
 
                 {/* Right Ventricle */}
                 <path d="M220,245 L200,320 Q200,340 230,340 L260,340 Q260,320 260,280 L240,245 Z"
                   fill="#60a5fa22" stroke="#60a5fa" strokeWidth="2"
                   className="cursor-pointer hover:brightness-125"
                   onClick={() => setSelectedPart(heartParts.find(p => p.id === 'rv')!)} />
-                <text x="230" y="300" textAnchor="middle" fontSize="8" fill="#93c5fd">RV</text>
+                <text x="230" y="300" textAnchor="middle" fontSize="8" fill="#93c5fd"><Trans i18nKey="auto.heartcirculation.rv">RV</Trans></text>
 
                 {/* Left Atrium */}
                 <path d="M260,160 L260,220 Q260,240 280,240 L280,200 Q280,160 260,160"
                   fill="#dc262622" stroke="#dc2626" strokeWidth="2"
                   className="cursor-pointer hover:brightness-125"
                   onClick={() => setSelectedPart(heartParts.find(p => p.id === 'la')!)} />
-                <text x="270" y="200" textAnchor="middle" fontSize="8" fill="#f87171">LA</text>
+                <text x="270" y="200" textAnchor="middle" fontSize="8" fill="#f87171"><Trans i18nKey="auto.heartcirculation.la">LA</Trans></text>
 
                 {/* Left Ventricle */}
                 <path d="M265,245 L260,320 Q260,350 280,350 L300,350 Q320,350 320,320 L300,245 Z"
                   fill="#ef444422" stroke="#ef4444" strokeWidth="3"
                   className="cursor-pointer hover:brightness-125"
                   onClick={() => setSelectedPart(heartParts.find(p => p.id === 'lv')!)} />
-                <text x="285" y="300" textAnchor="middle" fontSize="8" fill="#fca5a5">LV</text>
+                <text x="285" y="300" textAnchor="middle" fontSize="8" fill="#fca5a5"><Trans i18nKey="auto.heartcirculation.lv">LV</Trans></text>
 
                 {/* Septum */}
                 <line x1="250" y1="160" x2="250" y2="340" stroke="#9ca3af" strokeWidth="3" strokeDasharray="4" />
@@ -175,28 +195,28 @@ export default function HeartCirculation() {
                 )}
 
                 {/* Labels */}
-                <text x="250" y="395" textAnchor="middle" fontSize="9" fill="#60a5fa">↑ From Body</text>
-                <text x="395" y="400" textAnchor="start" fontSize="9" fill="#ef4444">To Body ↓</text>
-                <text x="120" y="130" textAnchor="middle" fontSize="9" fill="#60a5fa">To Lungs →</text>
-                <text x="120" y="250" textAnchor="middle" fontSize="9" fill="#ef4444">← From Lungs</text>
+                <text x="250" y="395" textAnchor="middle" fontSize="9" fill="#60a5fa"><Trans i18nKey="auto.heartcirculation.from_body">↑ From Body</Trans></text>
+                <text x="395" y="400" textAnchor="start" fontSize="9" fill="#ef4444"><Trans i18nKey="auto.heartcirculation.to_body">To Body ↓</Trans></text>
+                <text x="120" y="130" textAnchor="middle" fontSize="9" fill="#60a5fa"><Trans i18nKey="auto.heartcirculation.to_lungs">To Lungs →</Trans></text>
+                <text x="120" y="250" textAnchor="middle" fontSize="9" fill="#ef4444"><Trans i18nKey="auto.heartcirculation.from_lungs">← From Lungs</Trans></text>
               </svg>
 
               {/* Legend */}
               <div className="flex justify-center gap-4 mt-4">
                 <div className="flex items-center gap-2 text-sm">
                   <div className="w-3 h-3 rounded-full bg-red-500" />
-                  <span className="text-gray-400">Oxygenated (O₂ rich)</span>
+                  <span className="text-gray-400"><Trans i18nKey="auto.heartcirculation.oxygenated_o_rich">Oxygenated (O₂ rich)</Trans></span>
                 </div>
                 <div className="flex items-center gap-2 text-sm">
                   <div className="w-3 h-3 rounded-full bg-blue-500" />
-                  <span className="text-gray-400">Deoxygenated (CO₂ rich)</span>
+                  <span className="text-gray-400"><Trans i18nKey="auto.heartcirculation.deoxygenated_co_rich">Deoxygenated (CO₂ rich)</Trans></span>
                 </div>
               </div>
             </div>
 
             {/* Flow diagram */}
             <div className="mt-4 bg-gray-900 rounded-xl border border-gray-800 p-4">
-              <h4 className="text-sm font-bold text-white mb-3">🔄 Blood Flow Path</h4>
+              <h4 className="text-sm font-bold text-white mb-3"><Trans i18nKey="auto.heartcirculation.blood_flow_path">🔄 Blood Flow Path</Trans></h4>
               <div className="flex flex-wrap items-center justify-center gap-2 text-sm">
                 {[
                   { text: 'Body', color: 'blue' },
@@ -247,35 +267,35 @@ export default function HeartCirculation() {
                 <p className="text-sm text-gray-300 leading-relaxed mb-4">{selectedPart.description}</p>
                 <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-3">
                   <div className="text-sm text-blue-400 font-bold mb-1 flex items-center gap-1">
-                    <Info className="w-3 h-3" /> Fun Fact
-                  </div>
+                    <Info className="w-3 h-3" /> <Trans i18nKey="auto.heartcirculation.fun_fact">Fun Fact</Trans>
+                                                        </div>
                   <p className="text-sm text-gray-300">{selectedPart.funFact}</p>
                 </div>
               </motion.div>
             ) : (
               <div className="bg-gray-900 rounded-2xl border border-gray-800 p-5 text-center">
                 <div className="text-4xl mb-3">👆</div>
-                <h3 className="text-lg font-bold text-white mb-2">Click a Part</h3>
-                <p className="text-sm text-gray-400">Click on any chamber, vessel, or valve to learn more about it.</p>
+                <h3 className="text-lg font-bold text-white mb-2"><Trans i18nKey="auto.heartcirculation.click_a_part">Click a Part</Trans></h3>
+                <p className="text-sm text-gray-400"><Trans i18nKey="auto.heartcirculation.click_on_any_chamber_vessel_or">Click on any chamber, vessel, or valve to learn more about it.</Trans></p>
               </div>
             )}
 
             {/* Quick Facts */}
             <div className="bg-gray-900 rounded-2xl border border-gray-800 p-5">
-              <h4 className="text-sm font-bold text-white mb-3">❤️ Heart Facts</h4>
+              <h4 className="text-sm font-bold text-white mb-3"><Trans i18nKey="auto.heartcirculation.heart_facts">❤️ Heart Facts</Trans></h4>
               <ul className="text-sm text-gray-300 space-y-2">
-                <li className="flex gap-2"><span className="text-orange-400">•</span> Beats ~100,000 times per day</li>
-                <li className="flex gap-2"><span className="text-orange-400">•</span> Pumps ~2,000 gallons of blood daily</li>
-                <li className="flex gap-2"><span className="text-orange-400">•</span> About the size of your fist</li>
-                <li className="flex gap-2"><span className="text-orange-400">•</span> Creates enough pressure to squirt blood 30 feet</li>
-                <li className="flex gap-2"><span className="text-orange-400">•</span> Has its own electrical system (SA & AV nodes)</li>
-                <li className="flex gap-2"><span className="text-orange-400">•</span> Blood completes full circuit in ~60 seconds</li>
+                <li className="flex gap-2"><span className="text-orange-400">•</span> <Trans i18nKey="auto.heartcirculation.beats_100_000_times_per_day">Beats ~100,000 times per day</Trans></li>
+                <li className="flex gap-2"><span className="text-orange-400">•</span> <Trans i18nKey="auto.heartcirculation.pumps_2_000_gallons_of_blood_d">Pumps ~2,000 gallons of blood daily</Trans></li>
+                <li className="flex gap-2"><span className="text-orange-400">•</span> <Trans i18nKey="auto.heartcirculation.about_the_size_of_your_fist">About the size of your fist</Trans></li>
+                <li className="flex gap-2"><span className="text-orange-400">•</span> <Trans i18nKey="auto.heartcirculation.creates_enough_pressure_to_squ">Creates enough pressure to squirt blood 30 feet</Trans></li>
+                <li className="flex gap-2"><span className="text-orange-400">•</span> <Trans i18nKey="auto.heartcirculation.has_its_own_electrical_system_">Has its own electrical system (SA & AV nodes)</Trans></li>
+                <li className="flex gap-2"><span className="text-orange-400">•</span> <Trans i18nKey="auto.heartcirculation.blood_completes_full_circuit_i">Blood completes full circuit in ~60 seconds</Trans></li>
               </ul>
             </div>
 
             {/* Parts list */}
             <div className="bg-gray-900 rounded-2xl border border-gray-800 p-4">
-              <h4 className="text-sm font-bold text-white mb-2">🔍 Click to Explore</h4>
+              <h4 className="text-sm font-bold text-white mb-2"><Trans i18nKey="auto.heartcirculation.click_to_explore">🔍 Click to Explore</Trans></h4>
               <div className="grid grid-cols-2 gap-1.5">
                 {heartParts.map(p => (
                   <button key={p.id} onClick={() => setSelectedPart(p)}

@@ -30,19 +30,11 @@ export default function HumanEye() {
   const [visionDefect, setVisionDefect] = useState<'normal' | 'myopia' | 'hyperopia'>('normal');
   const [time, setTime] = useState(0);
   const [currentLine, setCurrentLine] = useState(0);
-  const [visionScore, setVisionScore] = useState(0);
+  const [visionMatches, setVisionScore] = useState(0);
   const [colorTestIdx, setColorTestIdx] = useState(0);
   const [colorAnswer, setColorAnswer] = useState('');
-  const [_colorScore, setColorScore] = useState(0);
-  const [quizAnswer, setQuizAnswer] = useState<string | null>(null);
-  const [quizCorrect, setQuizCorrect] = useState<boolean | null>(null);
-  const [currentQuiz, setCurrentQuiz] = useState(0);
+  const [_colorMatches, setColorScore] = useState(0);
 
-  const quizQuestions = [
-    { q: 'Myopia means you can see:', options: ['Far clearly', 'Near clearly', 'Nothing', 'Only colors'], correct: 1 },
-    { q: 'The retina contains:', options: ['Bones', 'Rods and cones', 'Muscles', 'Blood only'], correct: 1 },
-    { q: 'Cataract affects the:', options: ['Cornea', 'Lens', 'Retina', 'Optic nerve'], correct: 1 },
-  ];
 
   const draw = useCallback(() => {
     const canvas = canvasRef.current;
@@ -157,7 +149,7 @@ export default function HumanEye() {
       ctx.textAlign = 'left';
       ctx.fillText(`Line: ${currentLine + 1}/${SNELLEN_LINES.length}`, 60, h - 20);
       ctx.fillText(`Acuity: ${SNELLEN_LINES[currentLine]?.acuity || '??'}`, 200, h - 20);
-      ctx.fillText(`Score: ${visionScore}`, 380, h - 20);
+      ctx.fillText(`Matches: ${visionMatches}`, 380, h - 20);
     } else if (mode === 'color-test') {
       // Ishihara-style color blindness test
       const test = COLOR_BLINDNESS_TESTS[colorTestIdx];
@@ -194,7 +186,7 @@ export default function HumanEye() {
       ctx.fillText(`Test ${colorTestIdx + 1}/${COLOR_BLINDNESS_TESTS.length}`, cx2, 30);
       ctx.fillText('What number do you see?', cx2, canvasH - 30);
     }
-  }, [focus, pupilSize, visionDefect, time, mode, currentLine, visionScore, colorTestIdx, colorAnswer]);
+  }, [focus, pupilSize, visionDefect, time, mode, currentLine, visionMatches, colorTestIdx, colorAnswer]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -250,15 +242,6 @@ export default function HumanEye() {
     }
   };
 
-  const handleQuiz = (idx: number) => {
-    setQuizAnswer(idx.toString());
-    setQuizCorrect(idx === quizQuestions[currentQuiz].correct);
-    if (idx === quizQuestions[currentQuiz].correct) {
-      const updated = completeModule(progress, 'human-eye', 95);
-      setProgress(updated);
-      saveProgress(updated);
-    }
-  };
 
   const handleComplete = () => {
     const updated = completeModule(progress, 'human-eye', 80);
@@ -304,7 +287,7 @@ export default function HumanEye() {
                   <button onClick={() => handleVisionRead(true)} className="flex-1 py-2 rounded-lg bg-green-600 text-white text-sm font-bold">✅ Yes</button>
                   <button onClick={() => handleVisionRead(false)} className="flex-1 py-2 rounded-lg bg-red-600 text-white text-sm font-bold">🤔 No</button>
                 </div>
-                <button onClick={() => { setCurrentLine(0); setVisionScore(0); }} className="w-full py-2 rounded-lg bg-gray-700 text-white text-sm font-bold">🔄 Reset Test</button>
+                <button onClick={() => { setCurrentLine(0); setVisionScore(0); }} className="w-full py-2 rounded-lg bg-gray-700 text-white text-sm font-bold">🔄 Reset View</button>
               </>
             )}
             {mode === 'color-test' && (
@@ -322,18 +305,6 @@ export default function HumanEye() {
           </div>
         </div>
 
-        <div className="mt-8 p-6 rounded-2xl bg-gray-900 border border-blue-500/20">
-          <h3 className="text-lg font-bold text-blue-400 mb-3">🧠 Challenge: Test Your Knowledge</h3>
-          <p className="text-sm text-gray-300 mb-4">{quizQuestions[currentQuiz].q}</p>
-          <div className="grid grid-cols-2 gap-3">
-            {quizQuestions[currentQuiz].options.map((opt, idx) => (
-              <button key={idx} onClick={() => handleQuiz(idx)} disabled={quizCorrect === true} className={`py-3 rounded-xl text-sm font-bold transition-all ${quizAnswer === idx.toString() ? quizCorrect ? 'bg-green-600 text-white' : 'bg-red-600 text-white' : 'bg-gray-800 text-gray-300 hover:bg-gray-700'} disabled:opacity-50`}>{opt}</button>
-            ))}
-          </div>
-          {quizCorrect === true && <p className="mt-3 text-green-400 font-bold text-sm">✅ Correct! +10 bonus XP!</p>}
-          {quizCorrect === false && <p className="mt-3 text-red-400 font-bold text-sm">🤔 Answer: {quizQuestions[currentQuiz].options[quizQuestions[currentQuiz].correct]}</p>}
-          {quizCorrect === true && currentQuiz < quizQuestions.length - 1 && <button onClick={() => { setCurrentQuiz(prev => prev + 1); setQuizAnswer(null); setQuizCorrect(null); }} className="mt-3 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm">Next Question →</button>}
-        </div>
       </div>
     </ModuleWrapper>
   );

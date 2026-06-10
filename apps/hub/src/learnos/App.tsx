@@ -10,6 +10,8 @@ import SafetyReportButton from '../components/SafetyReportButton';
 import { ROUTES } from './constants/routes';
 import { registerAllModules } from './core/modules/registerAllModules';
 import { moduleRegistry } from './core/ModuleRegistry';
+import { Trans } from "react-i18next";
+
 // Note: i18n is imported in main.tsx before App renders
 
 registerAllModules();
@@ -46,17 +48,17 @@ function WorldRecovery({ worldName }: { worldName: string }) {
       <section className="max-w-md">
         <div className="text-6xl mb-4">🌟</div>
         <h1 className="text-2xl font-black text-slate-900 mb-2">
-          Oops! {worldName} took a little nap.
-        </h1>
+          <Trans i18nKey="auto.app.oops">Oops!</Trans> {worldName} <Trans i18nKey="auto.app.took_a_little_nap">took a little nap.</Trans>
+                          </h1>
         <p className="text-slate-600 mb-6">
-          No worries — your progress is safe. Try going back home and coming back!
-        </p>
+          <Trans i18nKey="auto.app.no_worries_your_progress_is_sa">No worries — your progress is safe. Try going back home and coming back!</Trans>
+                          </p>
         <a
           href="/"
           className="inline-block bg-orange-400 text-white font-bold px-6 py-3 rounded-2xl hover:bg-orange-500 transition-colors"
         >
-          🏠 Go Home
-        </a>
+          <Trans i18nKey="auto.app.go_home">🏠 Go Home</Trans>
+                          </a>
       </section>
     </main>
   );

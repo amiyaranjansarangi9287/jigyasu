@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Play, Pause, RotateCcw } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface Phase {
   id: string;
@@ -9,7 +13,6 @@ interface Phase {
   description: string;
   details: string[];
   color: string;
-  quiz?: { q: string; options: string[]; answer: number };
 }
 
 const phases: Phase[] = [
@@ -18,21 +21,18 @@ const phases: Phase[] = [
     description: 'The cell grows and DNA replicates in preparation for division. This is the longest phase of the cell cycle (~90%).',
     details: ['Cell grows to full size (G1 phase)', 'DNA is replicated — each chromosome duplicated (S phase)', 'Cell prepares proteins for division (G2 phase)', 'Chromosomes are loose chromatin (not visible)', 'Centrosomes duplicate'],
     color: '#22c55e',
-    quiz: { q: 'What happens to DNA during S phase?', options: ['It condenses', 'It replicates', 'It breaks down'], answer: 1 },
   },
   {
     id: 'prophase', name: 'Prophase', emoji: '🔵',
     description: 'Chromosomes condense and become visible. The nuclear envelope begins to break down and spindle fibers form from centrioles.',
     details: ['Chromatin condenses into visible chromosomes', 'Each chromosome = 2 sister chromatids joined at centromere', 'Centrosomes move to opposite poles', 'Spindle fibers (microtubules) begin to form', 'Nuclear envelope starts breaking down', 'Nucleolus disappears'],
     color: '#3b82f6',
-    quiz: { q: 'What are sister chromatids joined by?', options: ['Spindle fiber', 'Centromere', 'Nuclear envelope'], answer: 1 },
   },
   {
     id: 'metaphase', name: 'Metaphase', emoji: '🟡',
     description: 'Chromosomes align perfectly along the cell\'s equator (metaphase plate). Spindle fibers attach to centromeres from both poles.',
     details: ['Chromosomes align at the metaphase plate (equator)', 'Spindle fibers attach to centromeres via kinetochores', 'Each chromatid connected to opposite pole', 'Checkpoint: ensures all chromosomes properly attached', 'This ensures equal distribution of DNA'],
     color: '#eab308',
-    quiz: { q: 'Where do chromosomes line up?', options: ['At the poles', 'At the metaphase plate', 'In the nucleus'], answer: 1 },
   },
   {
     id: 'anaphase', name: 'Anaphase', emoji: '🟠',
@@ -51,7 +51,6 @@ const phases: Phase[] = [
     description: 'The cytoplasm divides, creating two genetically identical daughter cells! In animal cells, a cleavage furrow pinches the cell in two.',
     details: ['Cleavage furrow deepens (contractile ring of actin)', 'Cytoplasm, organelles divided roughly equally', 'Cell membrane pinches inward', 'Two identical daughter cells produced!', 'Each cell has full set of 46 chromosomes', 'Cells enter G1 of new cell cycle'],
     color: '#a855f7',
-    quiz: { q: 'How many cells result from mitosis?', options: ['1', '2 identical cells', '4 unique cells'], answer: 1 },
   },
 ];
 
@@ -267,6 +266,22 @@ function CellSVG({ phaseIndex }: { phaseIndex: number }) {
 }
 
 export default function MitosisSimulator() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.mitosis_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.mitosis_prompt', "How do you grow from a single cell into trillions? Cells divide perfectly to build you. Let's watch the process in action!"),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'mitosis-simulator', 60);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   const [currentPhase, setCurrentPhase] = useState(0);
   const [autoPlay, setAutoPlay] = useState(false);
   const [quizAnswer, setQuizAnswer] = useState<number | null>(null);
@@ -387,46 +402,10 @@ export default function MitosisSimulator() {
                 </motion.div>
               )}
             </div>
-
-            {/* Mini quiz */}
-            {phase.quiz && (
-              <div className="bg-gray-900 rounded-2xl border border-gray-800 p-4 sm:p-5">
-                <button onClick={() => setShowQuiz(!showQuiz)}
-                  className="w-full text-left text-sm sm:text-sm font-bold text-yellow-400 flex items-center gap-2">
-                  🧩 Quick Check {showQuiz ? '▼' : '▶'}
-                </button>
-                <AnimatePresence>
-                  {showQuiz && (
-                    <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }}
-                      className="overflow-hidden">
-                      <p className="text-sm sm:text-sm text-gray-300 mt-2 mb-2">{phase.quiz.q}</p>
-                      <div className="space-y-1.5">
-                        {phase.quiz.options.map((opt, i) => (
-                          <button key={i} onClick={() => setQuizAnswer(i)}
-                            className={`w-full text-left px-3 py-2 rounded-lg text-sm sm:text-sm transition-all ${
-                              quizAnswer === null ? 'bg-gray-800 text-gray-300 hover:bg-gray-700 active:scale-[0.98]' :
-                              i === phase.quiz!.answer ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' :
-                              quizAnswer === i ? 'bg-red-500/20 text-orange-400 border border-red-500/30' :
-                              'bg-gray-800/50 text-gray-600'
-                            }`}
-                            disabled={quizAnswer !== null}>
-                            {opt}
-                          </button>
-                        ))}
-                      </div>
-                      {quizAnswer !== null && (
-                        <div className={`mt-2 text-sm sm:text-sm font-bold ${quizAnswer === phase.quiz.answer ? 'text-emerald-400' : 'text-orange-400'}`}>
-                          {quizAnswer === phase.quiz.answer ? '✅ Correct!' : `🤔 The answer is: ${phase.quiz.options[phase.quiz.answer]}`}
-                        </div>
-                      )}
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-            )}
           </motion.div>
         </div>
       </div>
     </div>
   );
 }
+

@@ -46,8 +46,8 @@ export default function ForceLab() {
       <div className="flex flex-col h-screen bg-slate-50 overflow-auto pb-24 p-6">
         <canvas ref={canvasRef} className="w-full rounded-2xl border bg-white mb-6" style={{ height: '200px' }} />
         <div className="grid gap-4 mb-6">
-          <ScientificSlider label="Push Force" emoji="💪" value={f} min={0} max={100} unit="N" onChange={v => { setF(v); recordForceExperiment(false, false); updateCertification('force-lab', 'explorer'); trackEvent('force-lab', 'canvas_interaction'); }} />
-          <ScientificSlider label="Box Mass" emoji="⚖️" value={m} min={1} max={20} unit="kg" onChange={setM} />
+          <ScientificSlider label={t('auto.attr.forcelab.push_force')} emoji="💪" value={f} min={0} max={100} unit="N" onChange={v => { setF(v); recordForceExperiment(false, false); updateCertification('force-lab', 'explorer'); trackEvent('force-lab', 'canvas_interaction'); }} />
+          <ScientificSlider label={t('auto.attr.forcelab.box_mass')} emoji="⚖️" value={m} min={1} max={20} unit="kg" onChange={setM} />
         </div>
         <div className="flex gap-2 overflow-x-auto pb-2">
           {FORCE_SCENARIOS.map((s, i) => (

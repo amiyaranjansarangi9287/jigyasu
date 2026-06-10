@@ -4,7 +4,7 @@ export interface CampDay {
   day: number;
   title: string;
   activityId: string;
-  pillar: 'toybox' | 'sciencelab' | 'artstudio' | 'outdoorquest';
+  pillar: 'toybox' | 'sciencelab';
   description: string;
 }
 
@@ -33,10 +33,10 @@ export const campWeeks: CampWeek[] = [
     days: [
       {
         day: 1,
-        title: 'Paper Plate Fish',
-        activityId: 'artstudio-paper-plate-animals',
-        pillar: 'artstudio',
-        description: 'Start your ocean adventure by creating colorful tropical fish from paper plates!'
+        title: 'Recycled Ocean Bot',
+        activityId: 'toybox-recycled-robot',
+        pillar: 'toybox',
+        description: 'Start your ocean adventure by creating an ocean explorer bot from recycled materials!'
       },
       {
         day: 2,
@@ -54,10 +54,10 @@ export const campWeeks: CampWeek[] = [
       },
       {
         day: 4,
-        title: 'Beach Treasure Hunt',
-        activityId: 'outdoorquest-nature-hunt',
-        pillar: 'outdoorquest',
-        description: 'Go on a beach-themed scavenger hunt! Find shells, smooth rocks, and ocean treasures.'
+        title: 'Ocean Animal Puzzle',
+        activityId: 'toybox-animal-puzzle',
+        pillar: 'toybox',
+        description: 'Create chunky wooden puzzles featuring adorable ocean animals.'
       },
       {
         day: 5,
@@ -105,17 +105,17 @@ export const campWeeks: CampWeek[] = [
       },
       {
         day: 3,
-        title: 'Galaxy Painting',
-        activityId: 'artstudio-salt-painting',
-        pillar: 'artstudio',
-        description: 'Create stunning galaxy art with salt painting technique! Make stars sparkle and nebulas swirl.'
+        title: 'Space Egg Drop',
+        activityId: 'sciencelab-egg-drop',
+        pillar: 'sciencelab',
+        description: 'Design a landing capsule to protect an egg from a high drop just like a spacecraft re-entry!'
       },
       {
         day: 4,
-        title: 'Stargazing Night',
-        activityId: 'outdoorquest-stargazing',
-        pillar: 'outdoorquest',
-        description: 'Explore the real night sky! Find constellations and learn about distant stars and planets.'
+        title: 'Asteroid Marble Run',
+        activityId: 'toybox-marble-run',
+        pillar: 'toybox',
+        description: 'Engineer an exciting asteroid run with twists and turns through space!'
       },
       {
         day: 5,
@@ -151,10 +151,10 @@ export const campWeeks: CampWeek[] = [
     days: [
       {
         day: 1,
-        title: 'Bug Hotel Construction',
-        activityId: 'outdoorquest-bug-hotel',
-        pillar: 'outdoorquest',
-        description: 'Build a cozy home for beneficial insects! Learn about the bugs that help our gardens.'
+        title: 'Wooden Animal Safari',
+        activityId: 'toybox-animal-puzzle',
+        pillar: 'toybox',
+        description: 'Create chunky wooden puzzles featuring adorable safari animals.'
       },
       {
         day: 2,
@@ -165,17 +165,17 @@ export const campWeeks: CampWeek[] = [
       },
       {
         day: 3,
-        title: 'Animal Masks',
-        activityId: 'artstudio-paper-plate-animals',
-        pillar: 'artstudio',
-        description: 'Create masks of your favorite safari animals! Transform into lions, elephants, or butterflies.'
+        title: 'Safari Lodge Build',
+        activityId: 'toybox-dollhouse',
+        pillar: 'toybox',
+        description: 'Construct a charming miniature safari lodge for imaginative play.'
       },
       {
         day: 4,
-        title: 'Nature Scavenger Hunt',
-        activityId: 'outdoorquest-nature-hunt',
-        pillar: 'outdoorquest',
-        description: 'Explore your backyard safari! Find insects, plants, and animal tracks.'
+        title: 'Safari Plane Craft',
+        activityId: 'toybox-balsa-airplane',
+        pillar: 'toybox',
+        description: 'Craft a balsa wood safari patrol plane that actually flies!'
       },
       {
         day: 5,

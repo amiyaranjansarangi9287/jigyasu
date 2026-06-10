@@ -2,7 +2,7 @@
 // Arrange scrambled words into correct sentence order. Canvas animation on success.
 
 import { useRef, useEffect, useState, useCallback, useMemo } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSettingsStore } from '@/store';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
@@ -191,8 +191,8 @@ export default function WordScramble() {
           <motion.button initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.5 }}
             onClick={handleNext}
             className="w-full py-4 bg-amber-500 text-white font-bold text-xl rounded-2xl min-h-[56px]">
-            Next Sentence ✏️
-          </motion.button>
+            <Trans i18nKey="auto.wordscramble.next_sentence">Next Sentence ✏️</Trans>
+                                </motion.button>
         )}
       </div>
     </EarlyShell>

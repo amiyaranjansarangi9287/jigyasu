@@ -4,7 +4,7 @@
 
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout';
@@ -46,7 +46,7 @@ export default function FractionsWonderFirst() {
       <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 space-y-4">
         <div>
           <div className="flex justify-between mb-2">
-            <span className="text-sm text-slate-400">🔢 Parts taken (numerator)</span>
+            <span className="text-sm text-slate-400"><Trans i18nKey="auto.fractionswonderfirst.parts_taken_numerator">🔢 Parts taken (numerator)</Trans></span>
             <span className="text-sm font-bold text-amber-600">{numerator}</span>
           </div>
           <input
@@ -61,7 +61,7 @@ export default function FractionsWonderFirst() {
         </div>
         <div>
           <div className="flex justify-between mb-2">
-            <span className="text-sm text-slate-400">📊 Total parts (denominator)</span>
+            <span className="text-sm text-slate-400"><Trans i18nKey="auto.fractionswonderfirst.total_parts_denominator">📊 Total parts (denominator)</Trans></span>
             <span className="text-sm font-bold text-orange-600">{denominator}</span>
           </div>
           <input
@@ -87,13 +87,13 @@ export default function FractionsWonderFirst() {
       <div className="bg-amber-50 rounded-2xl p-4 border border-amber-200">
         <h3 className="font-bold text-amber-900 mb-2 flex items-center gap-2">
           <span className="text-xl">👀</span>
-          What do you notice?
-        </h3>
+          <Trans i18nKey="auto.fractionswonderfirst.what_do_you_notice">What do you notice?</Trans>
+                          </h3>
         <ul className="text-slate-700 text-sm space-y-2">
-          <li>• What happens when you increase the denominator but keep the numerator the same?</li>
-          <li>• What happens when you increase the numerator to match the denominator?</li>
-          <li>• How does the visual representation change with different fractions?</li>
-          <li>• What does 1/2 look like compared to 1/4 or 1/8?</li>
+          <li><Trans i18nKey="auto.fractionswonderfirst.what_happens_when_you_increase">• What happens when you increase the denominator but keep the numerator the same?</Trans></li>
+          <li><Trans i18nKey="auto.fractionswonderfirst.what_happens_when_you_increase">• What happens when you increase the numerator to match the denominator?</Trans></li>
+          <li><Trans i18nKey="auto.fractionswonderfirst.how_does_the_visual_representa">• How does the visual representation change with different fractions?</Trans></li>
+          <li><Trans i18nKey="auto.fractionswonderfirst.what_does_1_2_look_like_compar">• What does 1/2 look like compared to 1/4 or 1/8?</Trans></li>
         </ul>
       </div>
     </div>

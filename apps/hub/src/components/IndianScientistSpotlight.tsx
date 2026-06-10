@@ -5,6 +5,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { INDIAN_SCIENTISTS, getScientistsByConcept, IndianScientist } from '../data/IndianScientists';
+import { Trans } from "react-i18next";
 
 interface IndianScientistSpotlightProps {
   concept?: string;
@@ -83,7 +84,7 @@ export default function IndianScientistSpotlight({ concept, scientistId, languag
               animate={{ opacity: 1, height: 'auto' }}
               className="bg-white rounded-xl p-4 border border-orange-200 mb-3"
             >
-              <h4 className="font-bold text-orange-900 mb-2">Their Story</h4>
+              <h4 className="font-bold text-orange-900 mb-2"><Trans i18nKey="auto.indianscientistspotlight.their_story">Their Story</Trans></h4>
               <p className="text-sm text-slate-700 leading-relaxed">
                 {scientist.story}
               </p>

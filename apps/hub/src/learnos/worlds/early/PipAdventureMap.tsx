@@ -4,6 +4,7 @@ import { useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAdventureMap, EARLY_ACHIEVEMENTS } from './hooks/useAdventureMap';
 import { useEarlyProgress } from './hooks/useEarlyProgress';
+import { Trans } from "react-i18next";
 
 interface PipAdventureMapProps {
   visible: boolean;
@@ -90,7 +91,7 @@ export default function PipAdventureMap({ visible, onClose }: PipAdventureMapPro
           <div className="absolute inset-0 bg-black/40" />
           <div className="relative bg-white rounded-3xl overflow-hidden w-full max-w-sm shadow-2xl" onClick={e => e.stopPropagation()}>
             <div className="bg-amber-500 px-4 py-3 flex items-center justify-between">
-              <div className="flex items-center gap-2"><span className="text-2xl">🗺️</span><span className="font-extrabold text-white text-base">Pip's Adventure Map</span></div>
+              <div className="flex items-center gap-2"><span className="text-2xl">🗺️</span><span className="font-extrabold text-white text-base"><Trans i18nKey="auto.pipadventuremap.pip_s_adventure_map">Pip's Adventure Map</Trans></span></div>
               <div className="bg-white/20 px-3 py-1 rounded-full"><span className="text-white text-sm font-bold">{getUnlockedCount()}/{getTotalCount()} ⭐</span></div>
             </div>
             <canvas ref={canvasRef} className="w-full" style={{ height: '300px' }} />

@@ -7,6 +7,7 @@ import { EverydayConnection } from '../components/EverydayConnection';
 import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
+import { Trans } from "react-i18next";
 
 export default function MagnetsAdult() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -177,27 +178,27 @@ export default function MagnetsAdult() {
           <div className="space-y-3">
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-slate-300 text-sm leading-relaxed mb-2">
-                Maxwell unified electricity and magnetism in 1865. Moving
-                charges create magnetic fields. Changing magnetic fields
-                create electric fields. They're the same fundamental force.
-              </p>
+                <Trans i18nKey="auto.magnetsadult.maxwell_unified_electricity_an">Maxwell unified electricity and magnetism in 1865. Moving
+                                              charges create magnetic fields. Changing magnetic fields
+                                              create electric fields. They're the same fundamental force.</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Your phone charger uses induction — a changing magnetic field
-                creates an electric current. Every motor, generator, and
-                transformer relies on this principle.
-              </p>
+                <Trans i18nKey="auto.magnetsadult.your_phone_charger_uses_induct">Your phone charger uses induction — a changing magnetic field
+                                              creates an electric current. Every motor, generator, and
+                                              transformer relies on this principle.</Trans>
+                                            </p>
             </div>
 
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-violet-400 text-sm font-bold uppercase tracking-wider mb-2">
-                History of the idea
-              </p>
+                <Trans i18nKey="auto.magnetsadult.history_of_the_idea">History of the idea</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Faraday discovered electromagnetic induction in 1831 with
-                almost no formal education. His intuitive drawings of "field
-                lines" were considered unscientific — until Maxwell proved
-                them mathematically correct.
-              </p>
+                <Trans i18nKey="auto.magnetsadult.faraday_discovered_electromagn">Faraday discovered electromagnetic induction in 1831 with
+                                              almost no formal education. His intuitive drawings of "field
+                                              lines" were considered unscientific — until Maxwell proved
+                                              them mathematically correct.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 type ReportType = 'inappropriate' | 'bug' | 'safety' | 'other';
 
@@ -59,10 +59,10 @@ export default function SafetyReportButton() {
       <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
         <div className="bg-white rounded-3xl max-w-md w-full p-8 text-center" role="alert" aria-live="polite">
           <span className="text-6xl block mb-4" aria-hidden="true">✅</span>
-          <h2 className="text-2xl font-bold text-slate-900 mb-2">Thank You!</h2>
+          <h2 className="text-2xl font-bold text-slate-900 mb-2"><Trans i18nKey="auto.safetyreportbutton.thank_you">Thank You!</Trans></h2>
           <p className="text-slate-600">
-            Your report has been submitted. We will review it and take appropriate action.
-          </p>
+            <Trans i18nKey="auto.safetyreportbutton.your_report_has_been_submitted">Your report has been submitted. We will review it and take appropriate action.</Trans>
+                              </p>
         </div>
       </div>
     );
@@ -74,8 +74,8 @@ export default function SafetyReportButton() {
         <div className="p-6">
           <div className="flex items-center justify-between mb-6">
             <h2 id="report-title" className="text-2xl font-bold text-slate-900">
-              📢 Report a Concern
-            </h2>
+              <Trans i18nKey="auto.safetyreportbutton.report_a_concern">📢 Report a Concern</Trans>
+                                      </h2>
             <button
               onClick={() => setIsOpen(false)}
               className="text-slate-400 hover:text-slate-600 text-2xl font-bold"
@@ -89,8 +89,8 @@ export default function SafetyReportButton() {
           <div className="space-y-6">
             <div>
               <label className="block text-sm font-bold text-slate-700 mb-3">
-                What type of concern?
-              </label>
+                <Trans i18nKey="auto.safetyreportbutton.what_type_of_concern">What type of concern?</Trans>
+                                            </label>
               <div className="grid grid-cols-2 gap-3">
                 {REPORT_TYPES.map(type => (
                   <button
@@ -114,26 +114,26 @@ export default function SafetyReportButton() {
             {selectedType && (
               <div>
                 <label htmlFor="report-description" className="block text-sm font-bold text-slate-700 mb-2">
-                  Please describe the issue
-                </label>
+                  <Trans i18nKey="auto.safetyreportbutton.please_describe_the_issue">Please describe the issue</Trans>
+                                                  </label>
                 <textarea
                   id="report-description"
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
-                  placeholder="Tell us more about what happened..."
+                  placeholder={t('auto.attr.safetyreportbutton.tell_us_more_about_what_happen')}
                   className="w-full px-4 py-3 border border-slate-300 rounded-xl min-h-[120px] resize-none"
                   aria-describedby="report-desc-hint"
                 />
                 <p id="report-desc-hint" className="text-xs text-slate-500 mt-1">
-                  Your report will be reviewed by our team. You can remain anonymous.
-                </p>
+                  <Trans i18nKey="auto.safetyreportbutton.your_report_will_be_reviewed_b">Your report will be reviewed by our team. You can remain anonymous.</Trans>
+                                                  </p>
               </div>
             )}
 
             <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
               <p className="text-sm text-blue-800">
-                <strong>For emergencies:</strong> If you or someone else is in immediate danger, please call emergency services at 112 or use the "Get Help" button for crisis resources.
-              </p>
+                <strong><Trans i18nKey="auto.safetyreportbutton.for_emergencies">For emergencies:</Trans></strong> <Trans i18nKey="auto.safetyreportbutton.if_you_or_someone_else_is_in_i">If you or someone else is in immediate danger, please call emergency services at 112 or use the "Get Help" button for crisis resources.</Trans>
+                                            </p>
             </div>
 
             <div className="flex gap-3">
@@ -143,8 +143,8 @@ export default function SafetyReportButton() {
                 aria-label="Cancel report"
                 role="button"
               >
-                Cancel
-              </button>
+                <Trans i18nKey="auto.safetyreportbutton.cancel">Cancel</Trans>
+                                            </button>
               <button
                 onClick={handleSubmit}
                 disabled={!selectedType || !description.trim() || isSubmitting}

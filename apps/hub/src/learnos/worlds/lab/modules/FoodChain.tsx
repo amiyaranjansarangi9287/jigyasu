@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/FoodChain.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -47,15 +47,15 @@ export default function FoodChain() {
           <FoodChainCanvas chain={chain} />
         </div>
         <div className="mt-6 bg-green-50 rounded-2xl p-5 text-center">
-          <div className="text-sm text-green-600 font-bold">Sun → Producer → Consumer → Decomposer</div>
-          <div className="text-sm text-green-400 mt-2">Energy flows from the sun through every living thing!</div>
+          <div className="text-sm text-green-600 font-bold"><Trans i18nKey="auto.foodchain.sun_producer_consumer_decompos">Sun → Producer → Consumer → Decomposer</Trans></div>
+          <div className="text-sm text-green-400 mt-2"><Trans i18nKey="auto.foodchain.energy_flows_from_the_sun_thro">Energy flows from the sun through every living thing!</Trans></div>
         </div>
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.FoodChain.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-600 font-bold text-sm mb-1">Indian Ecological Wisdom</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">The <strong>Bishnoi community</strong> (1485 CE) in Rajasthan sacrificed 363 lives to protect trees — inspiring the Chipko movement. Ancient Indian texts describe <strong>Ahimsa</strong> (non-violence) and interconnectedness of all life — core ecological principles.</p>
+              <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.foodchain.indian_ecological_wisdom">Indian Ecological Wisdom</Trans></h3>
+              <p className="text-gray-600 text-sm leading-relaxed"><Trans i18nKey="auto.foodchain.the">The</Trans> <strong><Trans i18nKey="auto.foodchain.bishnoi_community">Bishnoi community</Trans></strong> <Trans i18nKey="auto.foodchain.1485_ce_in_rajasthan_sacrifice">(1485 CE) in Rajasthan sacrificed 363 lives to protect trees — inspiring the Chipko movement. Ancient Indian texts describe</Trans> <strong><Trans i18nKey="auto.foodchain.ahimsa">Ahimsa</Trans></strong> <Trans i18nKey="auto.foodchain.non_violence_and_interconnecte">(non-violence) and interconnectedness of all life — core ecological principles.</Trans></p>
             </div>
           </div>
         </div>

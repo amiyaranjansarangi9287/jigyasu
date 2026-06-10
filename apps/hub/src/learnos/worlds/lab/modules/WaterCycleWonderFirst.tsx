@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/WaterCycleWonderFirst.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout';
@@ -28,8 +28,8 @@ function ExplorationComponent() {
       {/* Sun intensity control */}
       <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
         <div className="flex items-center justify-between mb-3">
-          <span className="text-sm text-slate-400">🌥️ Low sun</span>
-          <span className="text-sm text-slate-400">☀️ Intense sun</span>
+          <span className="text-sm text-slate-400"><Trans i18nKey="auto.watercyclewonderfirst.low_sun">🌥️ Low sun</Trans></span>
+          <span className="text-sm text-slate-400"><Trans i18nKey="auto.watercyclewonderfirst.intense_sun">☀️ Intense sun</Trans></span>
         </div>
         <input
           type="range"
@@ -44,7 +44,7 @@ function ExplorationComponent() {
           }}
         />
         <div className="text-center mt-2 text-sm text-slate-400">
-          Sun intensity: {Math.round(sunIntensity * 100)}%
+          <Trans i18nKey="auto.watercyclewonderfirst.sun_intensity">Sun intensity:</Trans> {Math.round(sunIntensity * 100)}%
         </div>
       </div>
 
@@ -64,23 +64,23 @@ function ExplorationComponent() {
       <div className="grid grid-cols-2 gap-3">
         <div className="bg-amber-50 rounded-2xl p-4 text-center">
           <div className="text-3xl mb-2">☀️</div>
-          <div className="font-bold text-amber-600 text-sm">Evaporation</div>
-          <div className="text-xs text-slate-500 mt-1">Water turns to vapor</div>
+          <div className="font-bold text-amber-600 text-sm"><Trans i18nKey="auto.watercyclewonderfirst.evaporation">Evaporation</Trans></div>
+          <div className="text-xs text-slate-500 mt-1"><Trans i18nKey="auto.watercyclewonderfirst.water_turns_to_vapor">Water turns to vapor</Trans></div>
         </div>
         <div className="bg-slate-50 rounded-2xl p-4 text-center">
           <div className="text-3xl mb-2">☁️</div>
-          <div className="font-bold text-slate-600 text-sm">Condensation</div>
-          <div className="text-xs text-slate-500 mt-1">Vapor turns to clouds</div>
+          <div className="font-bold text-slate-600 text-sm"><Trans i18nKey="auto.watercyclewonderfirst.condensation">Condensation</Trans></div>
+          <div className="text-xs text-slate-500 mt-1"><Trans i18nKey="auto.watercyclewonderfirst.vapor_turns_to_clouds">Vapor turns to clouds</Trans></div>
         </div>
         <div className="bg-blue-50 rounded-2xl p-4 text-center">
           <div className="text-3xl mb-2">🌧️</div>
-          <div className="font-bold text-blue-600 text-sm">Precipitation</div>
-          <div className="text-xs text-slate-500 mt-1">Clouds release rain</div>
+          <div className="font-bold text-blue-600 text-sm"><Trans i18nKey="auto.watercyclewonderfirst.precipitation">Precipitation</Trans></div>
+          <div className="text-xs text-slate-500 mt-1"><Trans i18nKey="auto.watercyclewonderfirst.clouds_release_rain">Clouds release rain</Trans></div>
         </div>
         <div className="bg-green-50 rounded-2xl p-4 text-center">
           <div className="text-3xl mb-2">🌊</div>
-          <div className="font-bold text-green-600 text-sm">Collection</div>
-          <div className="text-xs text-slate-500 mt-1">Water gathers again</div>
+          <div className="font-bold text-green-600 text-sm"><Trans i18nKey="auto.watercyclewonderfirst.collection">Collection</Trans></div>
+          <div className="text-xs text-slate-500 mt-1"><Trans i18nKey="auto.watercyclewonderfirst.water_gathers_again">Water gathers again</Trans></div>
         </div>
       </div>
 
@@ -88,13 +88,13 @@ function ExplorationComponent() {
       <div className="bg-blue-50 rounded-2xl p-4 border border-blue-200">
         <h3 className="font-bold text-blue-900 mb-2 flex items-center gap-2">
           <span className="text-xl">👀</span>
-          What do you notice?
-        </h3>
+          <Trans i18nKey="auto.watercyclewonderfirst.what_do_you_notice">What do you notice?</Trans>
+                          </h3>
         <ul className="text-slate-700 text-sm space-y-2">
-          <li>• What happens when you increase the sun intensity?</li>
-          <li>• How does the water move through the cycle?</li>
-          <li>• Does the same water keep cycling forever?</li>
-          <li>• What would happen if the sun stopped shining?</li>
+          <li><Trans i18nKey="auto.watercyclewonderfirst.what_happens_when_you_increase">• What happens when you increase the sun intensity?</Trans></li>
+          <li><Trans i18nKey="auto.watercyclewonderfirst.how_does_the_water_move_throug">• How does the water move through the cycle?</Trans></li>
+          <li><Trans i18nKey="auto.watercyclewonderfirst.does_the_same_water_keep_cycli">• Does the same water keep cycling forever?</Trans></li>
+          <li><Trans i18nKey="auto.watercyclewonderfirst.what_would_happen_if_the_sun_s">• What would happen if the sun stopped shining?</Trans></li>
         </ul>
       </div>
     </div>

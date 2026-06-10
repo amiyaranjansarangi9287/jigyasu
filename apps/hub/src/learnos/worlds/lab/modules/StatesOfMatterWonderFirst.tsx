@@ -4,7 +4,7 @@
 
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout';
@@ -50,8 +50,8 @@ export default function StatesOfMatterWonderFirst() {
           className="px-6 py-3 rounded-2xl font-bold text-lg text-white"
           style={{ backgroundColor: state.color }}
         >
-          {state.label} — {temperature}°C
-        </div>
+          {state.label} — {temperature}<Trans i18nKey="auto.statesofmatterwonderfirst.c">°C</Trans>
+                          </div>
       </div>
 
       {/* Canvas */}
@@ -62,8 +62,8 @@ export default function StatesOfMatterWonderFirst() {
       {/* Temperature slider */}
       <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
         <div className="flex items-center justify-between mb-3">
-          <span className="text-sm text-slate-400">🧊 Cold</span>
-          <span className="text-sm text-slate-400">Hot 🔥</span>
+          <span className="text-sm text-slate-400"><Trans i18nKey="auto.statesofmatterwonderfirst.cold">🧊 Cold</Trans></span>
+          <span className="text-sm text-slate-400"><Trans i18nKey="auto.statesofmatterwonderfirst.hot">Hot 🔥</Trans></span>
         </div>
         <input
           type="range"
@@ -77,10 +77,10 @@ export default function StatesOfMatterWonderFirst() {
           }}
         />
         <div className="flex justify-between mt-2 text-sm text-slate-400">
-          <span>0°C</span>
-          <span>33°C</span>
-          <span>66°C</span>
-          <span>100°C</span>
+          <span><Trans i18nKey="auto.statesofmatterwonderfirst.0_c">0°C</Trans></span>
+          <span><Trans i18nKey="auto.statesofmatterwonderfirst.33_c">33°C</Trans></span>
+          <span><Trans i18nKey="auto.statesofmatterwonderfirst.66_c">66°C</Trans></span>
+          <span><Trans i18nKey="auto.statesofmatterwonderfirst.100_c">100°C</Trans></span>
         </div>
       </div>
 
@@ -88,18 +88,18 @@ export default function StatesOfMatterWonderFirst() {
       <div className="grid grid-cols-3 gap-4">
         <div className="bg-blue-50 rounded-2xl p-4 text-center">
           <div className="text-3xl mb-2">🧊</div>
-          <div className="font-bold text-blue-600 text-sm">Solid</div>
-          <p className="text-sm text-blue-400 mt-1">Particles vibrate in place</p>
+          <div className="font-bold text-blue-600 text-sm"><Trans i18nKey="auto.statesofmatterwonderfirst.solid">Solid</Trans></div>
+          <p className="text-sm text-blue-400 mt-1"><Trans i18nKey="auto.statesofmatterwonderfirst.particles_vibrate_in_place">Particles vibrate in place</Trans></p>
         </div>
         <div className="bg-cyan-50 rounded-2xl p-4 text-center">
           <div className="text-3xl mb-2">💧</div>
-          <div className="font-bold text-cyan-600 text-sm">Liquid</div>
-          <p className="text-sm text-cyan-400 mt-1">Particles slide past each other</p>
+          <div className="font-bold text-cyan-600 text-sm"><Trans i18nKey="auto.statesofmatterwonderfirst.liquid">Liquid</Trans></div>
+          <p className="text-sm text-cyan-400 mt-1"><Trans i18nKey="auto.statesofmatterwonderfirst.particles_slide_past_each_othe">Particles slide past each other</Trans></p>
         </div>
         <div className="bg-orange-50 rounded-2xl p-4 text-center">
           <div className="text-3xl mb-2">💨</div>
-          <div className="font-bold text-orange-600 text-sm">Gas</div>
-          <p className="text-sm text-orange-400 mt-1">Particles fly freely</p>
+          <div className="font-bold text-orange-600 text-sm"><Trans i18nKey="auto.statesofmatterwonderfirst.gas">Gas</Trans></div>
+          <p className="text-sm text-orange-400 mt-1"><Trans i18nKey="auto.statesofmatterwonderfirst.particles_fly_freely">Particles fly freely</Trans></p>
         </div>
       </div>
 
@@ -107,13 +107,13 @@ export default function StatesOfMatterWonderFirst() {
       <div className="bg-blue-50 rounded-2xl p-4 border border-blue-200">
         <h3 className="font-bold text-blue-900 mb-2 flex items-center gap-2">
           <span className="text-xl">👀</span>
-          What do you notice?
-        </h3>
+          <Trans i18nKey="auto.statesofmatterwonderfirst.what_do_you_notice">What do you notice?</Trans>
+                          </h3>
         <ul className="text-slate-700 text-sm space-y-2">
-          <li>• What happens to the particles when you cool them down?</li>
-          <li>• What happens when you heat them up?</li>
-          <li>• At what temperature does ice become water?</li>
-          <li>• At what temperature does water become steam?</li>
+          <li><Trans i18nKey="auto.statesofmatterwonderfirst.what_happens_to_the_particles_">• What happens to the particles when you cool them down?</Trans></li>
+          <li><Trans i18nKey="auto.statesofmatterwonderfirst.what_happens_when_you_heat_the">• What happens when you heat them up?</Trans></li>
+          <li><Trans i18nKey="auto.statesofmatterwonderfirst.at_what_temperature_does_ice_b">• At what temperature does ice become water?</Trans></li>
+          <li><Trans i18nKey="auto.statesofmatterwonderfirst.at_what_temperature_does_water">• At what temperature does water become steam?</Trans></li>
         </ul>
       </div>
     </div>

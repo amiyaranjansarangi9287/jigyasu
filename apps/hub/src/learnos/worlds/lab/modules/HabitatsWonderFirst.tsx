@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/HabitatsWonderFirst.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout';
@@ -50,7 +50,7 @@ function ExplorationComponent() {
           <div className="text-8xl mb-4">{currentHabitat?.emoji}</div>
           <div className="text-2xl font-bold text-slate-800 mb-2">{currentHabitat?.name}</div>
           <div className="text-sm text-slate-500 mb-2">{currentHabitat?.description}</div>
-          <div className="text-xs text-green-600 font-medium">Climate: {currentHabitat?.climate}</div>
+          <div className="text-xs text-green-600 font-medium"><Trans i18nKey="auto.habitatswonderfirst.climate">Climate:</Trans> {currentHabitat?.climate}</div>
         </div>
       </div>
 
@@ -69,13 +69,13 @@ function ExplorationComponent() {
       <div className="bg-blue-50 rounded-2xl p-4 border border-blue-200">
         <h3 className="font-bold text-blue-900 mb-2 flex items-center gap-2">
           <span className="text-xl">👀</span>
-          What do you notice?
-        </h3>
+          <Trans i18nKey="auto.habitatswonderfirst.what_do_you_notice">What do you notice?</Trans>
+                          </h3>
         <ul className="text-slate-700 text-sm space-y-2">
-          <li>• How do animals adapt to different habitats?</li>
-          <li>• What makes each habitat unique?</li>
-          <li>• Why can't all animals live in all habitats?</li>
-          <li>• How do habitats change with seasons?</li>
+          <li><Trans i18nKey="auto.habitatswonderfirst.how_do_animals_adapt_to_differ">• How do animals adapt to different habitats?</Trans></li>
+          <li><Trans i18nKey="auto.habitatswonderfirst.what_makes_each_habitat_unique">• What makes each habitat unique?</Trans></li>
+          <li><Trans i18nKey="auto.habitatswonderfirst.why_can_t_all_animals_live_in_">• Why can't all animals live in all habitats?</Trans></li>
+          <li><Trans i18nKey="auto.habitatswonderfirst.how_do_habitats_change_with_se">• How do habitats change with seasons?</Trans></li>
         </ul>
       </div>
     </div>

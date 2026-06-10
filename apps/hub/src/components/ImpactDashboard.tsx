@@ -5,10 +5,12 @@
 import { useState, useEffect } from 'react';
 import { db } from '../learnos/db';
 import type { ConceptProgress } from '../learnos/types/shared';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
+import { useFormatNumber } from '../hooks/useFormatNumber';
 
 export default function ImpactDashboard() {
   const { t } = useTranslation();
+  const formatNumber = useFormatNumber();
   const [totalLearners, setTotalLearners] = useState(0);
   const [modulesCompleted, setModulesCompleted] = useState(0);
   const [totalTimeSpent, setTotalTimeSpent] = useState(0);
@@ -83,47 +85,47 @@ export default function ImpactDashboard() {
     <div className="fixed inset-0 bg-green-900/95 z-[100] p-6 overflow-auto">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-between mb-6">
-          <h1 className="text-3xl font-bold text-white">Impact Dashboard</h1>
+          <h1 className="text-3xl font-bold text-white"><Trans i18nKey="auto.impactdashboard.impact_dashboard">Impact Dashboard</Trans></h1>
           <button
             onClick={() => setIsVisible(false)}
             className="bg-green-700 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-bold transition-colors"
             aria-label="Close dashboard"
           >
-            ✕ Close
-          </button>
+            <Trans i18nKey="auto.impactdashboard.close">✕ Close</Trans>
+                                </button>
         </div>
 
         {/* Key Metrics */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
           <div className="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/20">
-            <h3 className="text-green-200 text-sm font-bold mb-2">Total Learners</h3>
-            <p className="text-4xl font-bold text-white">{totalLearners}</p>
-            <p className="text-green-300 text-xs mt-1">Unique sessions</p>
+            <h3 className="text-green-200 text-sm font-bold mb-2"><Trans i18nKey="auto.impactdashboard.total_learners">Total Learners</Trans></h3>
+            <p className="text-4xl font-bold text-white">{formatNumber(totalLearners)}</p>
+            <p className="text-green-300 text-xs mt-1"><Trans i18nKey="auto.impactdashboard.unique_sessions">Unique sessions</Trans></p>
           </div>
           <div className="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/20">
-            <h3 className="text-green-200 text-sm font-bold mb-2">Modules Completed</h3>
-            <p className="text-4xl font-bold text-white">{modulesCompleted}</p>
-            <p className="text-green-300 text-xs mt-1">Successfully finished</p>
+            <h3 className="text-green-200 text-sm font-bold mb-2"><Trans i18nKey="auto.impactdashboard.modules_completed">Modules Completed</Trans></h3>
+            <p className="text-4xl font-bold text-white">{formatNumber(modulesCompleted)}</p>
+            <p className="text-green-300 text-xs mt-1"><Trans i18nKey="auto.impactdashboard.successfully_finished">Successfully finished</Trans></p>
           </div>
           <div className="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/20">
-            <h3 className="text-green-200 text-sm font-bold mb-2">Total Learning Time</h3>
+            <h3 className="text-green-200 text-sm font-bold mb-2"><Trans i18nKey="auto.impactdashboard.total_learning_time">Total Learning Time</Trans></h3>
             <p className="text-4xl font-bold text-white">{formatTime(totalTimeSpent)}</p>
-            <p className="text-green-300 text-xs mt-1">Time invested</p>
+            <p className="text-green-300 text-xs mt-1"><Trans i18nKey="auto.impactdashboard.time_invested">Time invested</Trans></p>
           </div>
           <div className="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/20">
-            <h3 className="text-green-200 text-sm font-bold mb-2">Languages Used</h3>
-            <p className="text-4xl font-bold text-white">{Object.keys(languagesUsed).length}</p>
-            <p className="text-green-300 text-xs mt-1">Supported languages</p>
+            <h3 className="text-green-200 text-sm font-bold mb-2"><Trans i18nKey="auto.impactdashboard.languages_used">Languages Used</Trans></h3>
+            <p className="text-4xl font-bold text-white">{formatNumber(Object.keys(languagesUsed).length)}</p>
+            <p className="text-green-300 text-xs mt-1"><Trans i18nKey="auto.impactdashboard.supported_languages">Supported languages</Trans></p>
           </div>
         </div>
 
         {/* Language Distribution */}
         <div className="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/20 mb-6">
-          <h2 className="text-xl font-bold text-white mb-4">Language Distribution</h2>
+          <h2 className="text-xl font-bold text-white mb-4"><Trans i18nKey="auto.impactdashboard.language_distribution">Language Distribution</Trans></h2>
           <div className="grid grid-cols-2 md:grid-cols-6 gap-3">
             {Object.entries(languagesUsed).map(([lang, count]) => (
               <div key={lang} className="bg-white/10 rounded-lg p-3 text-center">
-                <p className="text-2xl font-bold text-white">{count}</p>
+                <p className="text-2xl font-bold text-white">{formatNumber(count)}</p>
                 <p className="text-green-200 text-xs font-bold uppercase">{lang}</p>
               </div>
             ))}
@@ -132,11 +134,11 @@ export default function ImpactDashboard() {
 
         {/* Age Group Distribution */}
         <div className="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/20 mb-6">
-          <h2 className="text-xl font-bold text-white mb-4">Age Group Distribution</h2>
+          <h2 className="text-xl font-bold text-white mb-4"><Trans i18nKey="auto.impactdashboard.age_group_distribution">Age Group Distribution</Trans></h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {Object.entries(ageGroups).map(([age, count]) => (
               <div key={age} className="bg-white/10 rounded-lg p-3 text-center">
-                <p className="text-2xl font-bold text-white">{count}</p>
+                <p className="text-2xl font-bold text-white">{formatNumber(count)}</p>
                 <p className="text-green-200 text-xs font-bold uppercase">{age}</p>
               </div>
             ))}
@@ -145,31 +147,31 @@ export default function ImpactDashboard() {
 
         {/* Mission Alignment */}
         <div className="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/20">
-          <h2 className="text-xl font-bold text-white mb-4">Mission Alignment</h2>
+          <h2 className="text-xl font-bold text-white mb-4"><Trans i18nKey="auto.impactdashboard.mission_alignment">Mission Alignment</Trans></h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-white/5 rounded-lg p-4">
-              <h3 className="text-green-200 font-bold mb-2">Equity Value</h3>
+              <h3 className="text-green-200 font-bold mb-2"><Trans i18nKey="auto.impactdashboard.equity_value">Equity Value</Trans></h3>
               <p className="text-white text-sm">
-                Serving learners across {Object.keys(languagesUsed).length} languages and {Object.keys(ageGroups).length} age groups
-              </p>
+                <Trans i18nKey="auto.impactdashboard.serving_learners_across">Serving learners across</Trans> {formatNumber(Object.keys(languagesUsed).length)} <Trans i18nKey="auto.impactdashboard.languages_and">languages and</Trans> {formatNumber(Object.keys(ageGroups).length)} <Trans i18nKey="auto.impactdashboard.age_groups">age groups</Trans>
+                                            </p>
             </div>
             <div className="bg-white/5 rounded-lg p-4">
-              <h3 className="text-green-200 font-bold mb-2">Wonder Value</h3>
+              <h3 className="text-green-200 font-bold mb-2"><Trans i18nKey="auto.impactdashboard.wonder_value">Wonder Value</Trans></h3>
               <p className="text-white text-sm">
-                {modulesCompleted} modules completed through curiosity-driven learning
-              </p>
+                {formatNumber(modulesCompleted)} <Trans i18nKey="auto.impactdashboard.modules_completed_through_curi">modules completed through curiosity-driven learning</Trans>
+                                            </p>
             </div>
             <div className="bg-white/5 rounded-lg p-4">
-              <h3 className="text-green-200 font-bold mb-2">Patience Value</h3>
+              <h3 className="text-green-200 font-bold mb-2"><Trans i18nKey="auto.impactdashboard.patience_value">Patience Value</Trans></h3>
               <p className="text-white text-sm">
-                {formatTime(totalTimeSpent)} of patient, self-paced learning
-              </p>
+                {formatTime(totalTimeSpent)} <Trans i18nKey="auto.impactdashboard.of_patient_self_paced_learning">of patient, self-paced learning</Trans>
+                                            </p>
             </div>
             <div className="bg-white/5 rounded-lg p-4">
-              <h3 className="text-green-200 font-bold mb-2">Identity Value</h3>
+              <h3 className="text-green-200 font-bold mb-2"><Trans i18nKey="auto.impactdashboard.identity_value">Identity Value</Trans></h3>
               <p className="text-white text-sm">
-                Indian-first platform serving Indian learners
-              </p>
+                <Trans i18nKey="auto.impactdashboard.indian_first_platform_serving_">Indian-first platform serving Indian learners</Trans>
+                                            </p>
             </div>
           </div>
         </div>
@@ -179,8 +181,8 @@ export default function ImpactDashboard() {
             onClick={() => setIsVisible(false)}
             className="bg-green-700 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-bold transition-colors"
           >
-            Close Dashboard
-          </button>
+            <Trans i18nKey="auto.impactdashboard.close_dashboard">Close Dashboard</Trans>
+                                </button>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { sfx } from '../lib/soundEngine';
+import { Trans, useTranslation } from "react-i18next";
 
 interface Problem { question: string; answer: number; hint: string; solution: string; difficulty: 1 | 2 | 3 | 4 | 5; category: string; }
 
@@ -20,9 +21,10 @@ const PROBLEMS: (() => Problem)[] = [
 ];
 
 export default function MathOlympiad() {
+    const { t } = useTranslation();
   const [problem, setProblem] = useState<Problem>(() => PROBLEMS[0]());
   const [userAnswer, setUserAnswer] = useState('');
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [showHint, setShowHint] = useState(false);
   const [showSolution, setShowSolution] = useState(false);
   const [mastery, setMastery] = useState(0);
@@ -47,7 +49,7 @@ export default function MathOlympiad() {
       setMastery(m => m + 1);
       setSolved(s => s + 1);
     } else {
-      setFeedback('wrong');
+      setFeedback('hint');
       sfx.wrong();
     }
   };
@@ -57,8 +59,8 @@ export default function MathOlympiad() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🏆 Math Olympiad</h2>
-        <p className="text-purple-300 text-lg">AMC/MATHCOUNTS-style challenge problems!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.matholympiad.math_olympiad">🏆 Math Olympiad</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.matholympiad.amc_mathcounts_style_challenge">AMC/MATHCOUNTS-style challenge problems!</Trans></p>
       </div>
 
       <div className="flex justify-center gap-4 mb-6">
@@ -68,7 +70,7 @@ export default function MathOlympiad() {
 
       <motion.div
         key={problem.question}
-        className={`max-w-xl mx-auto rounded-3xl p-6 sm:p-8 border-2 transition-colors ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-gradient-to-br from-yellow-900/20 to-amber-900/20 border-yellow-500/30'}`}
+        className={`max-w-xl mx-auto rounded-3xl p-6 sm:p-8 border-2 transition-colors ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'hint' ? 'bg-white/5 border-white/10' : 'bg-gradient-to-br from-yellow-900/20 to-amber-900/20 border-yellow-500/30'}`}
         initial={{ scale: 0.92, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
       >
@@ -86,7 +88,7 @@ export default function MathOlympiad() {
           <div className="flex gap-2 mb-4">
             <input type="number" value={userAnswer} onChange={e => setUserAnswer(e.target.value)}
               className="flex-1 bg-white/10 border-2 border-white/20 rounded-xl px-4 py-3 text-white text-xl font-bold text-center focus:outline-none focus:border-yellow-400"
-              placeholder="Your answer"
+              placeholder={t('auto.attr.matholympiad.your_answer')}
               onKeyDown={e => e.key === 'Enter' && checkAnswer()} />
             <motion.button className="px-6 rounded-xl bg-gradient-to-r from-yellow-600 to-amber-600 text-white font-bold text-lg"
               whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={checkAnswer}>✓</motion.button>
@@ -94,9 +96,9 @@ export default function MathOlympiad() {
         )}
 
         <div className="flex justify-center gap-4">
-          {!showHint && !feedback && <button className="text-sm text-amber-400 hover:text-amber-300 underline decoration-dashed" onClick={() => setShowHint(true)}>💡 Hint</button>}
-          {feedback && <button className="text-sm text-blue-400 hover:text-blue-300 underline decoration-dashed" onClick={() => setShowSolution(true)}>📝 Solution</button>}
-          {feedback && <button className="text-sm text-purple-400 hover:text-purple-300 underline decoration-dashed" onClick={next}>Next Problem →</button>}
+          {!showHint && !feedback && <button className="text-sm text-amber-400 hover:text-amber-300 underline decoration-dashed" onClick={() => setShowHint(true)}><Trans i18nKey="auto.matholympiad.hint">💡 Hint</Trans></button>}
+          {feedback && <button className="text-sm text-blue-400 hover:text-blue-300 underline decoration-dashed" onClick={() => setShowSolution(true)}><Trans i18nKey="auto.matholympiad.solution">📝 Solution</Trans></button>}
+          {feedback && <button className="text-sm text-purple-400 hover:text-purple-300 underline decoration-dashed" onClick={next}><Trans i18nKey="auto.matholympiad.next_problem">Next Problem →</Trans></button>}
         </div>
 
         <AnimatePresence>
@@ -104,8 +106,8 @@ export default function MathOlympiad() {
           {showSolution && <motion.p className="mt-3 text-center text-blue-300 bg-blue-500/10 rounded-lg px-3 py-2 text-sm font-mono" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>📝 {problem.solution}</motion.p>}
         </AnimatePresence>
 
-        {feedback === 'correct' && <motion.p className="mt-4 text-center text-green-400 font-bold text-lg" initial={{ scale: 0 }} animate={{ scale: [0, 1.3, 1] }}>🏆 Brilliant! +{problem.difficulty * 5} points</motion.p>}
-        {feedback === 'wrong' && <motion.p className="mt-4 text-center text-orange-400 font-bold" initial={{ x: -10 }} animate={{ x: [10, -10, 5, 0] }}>🤔 Answer: {problem.answer}. Check the solution!</motion.p>}
+        {feedback === 'correct' && <motion.p className="mt-4 text-center text-green-400 font-bold text-lg" initial={{ scale: 0 }} animate={{ scale: [0, 1.3, 1] }}><Trans i18nKey="auto.matholympiad.brilliant">🏆 Brilliant! +</Trans>{problem.difficulty * 5} <Trans i18nKey="auto.matholympiad.points">points</Trans></motion.p>}
+        {feedback === 'hint' && <motion.p className="mt-4 text-center text-sky-400 font-bold" initial={{ x: -10 }} animate={{ x: [10, -10, 5, 0] }}><Trans i18nKey="auto.matholympiad.answer">🤔 Answer:</Trans> {problem.answer}<Trans i18nKey="auto.matholympiad.check_the_solution">. Check the solution!</Trans></motion.p>}
       </motion.div>
     </div>
   );

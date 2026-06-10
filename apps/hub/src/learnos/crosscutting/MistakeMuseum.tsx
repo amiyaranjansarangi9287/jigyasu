@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { ROUTES } from '../constants/routes';
 import { ParentCorner } from '../shared/layout';
 import { Button, Card } from '@jigyasu/ui';
@@ -111,8 +111,8 @@ export default function MistakeMuseum() {
                 onClick={() => setSelectedExhibit(null)}
                 className="text-gray-400 hover:text-gray-600 mb-4"
               >
-                ← Back to exhibits
-              </button>
+                <Trans i18nKey="auto.mistakemuseum.back_to_exhibits">← Back to exhibits</Trans>
+                                                </button>
 
               <Card className="p-6 mb-4 border-purple-100/50">
                 <div className="text-5xl mb-4">{selectedExhibit.emoji}</div>
@@ -172,15 +172,15 @@ export default function MistakeMuseum() {
                   disabled={currentIndex === 0}
                   className="flex-1"
                 >
-                  ← Previous
-                </Button>
+                  <Trans i18nKey="auto.mistakemuseum.previous">← Previous</Trans>
+                                                      </Button>
                 <Button
                   onClick={handleNext}
                   disabled={currentIndex === MISTAKE_EXHIBITS.length - 1}
                   className="flex-1"
                 >
-                  Next →
-                </Button>
+                  <Trans i18nKey="auto.mistakemuseum.next">Next →</Trans>
+                                                      </Button>
               </div>
             </motion.div>
           )}

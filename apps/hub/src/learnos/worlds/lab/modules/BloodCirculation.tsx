@@ -3,7 +3,7 @@
 
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -85,25 +85,25 @@ export default function BloodCirculation() {
             }}
           />
           <div className="text-center mt-2 text-sm text-slate-400">
-            Heart rate: {heartRate} BPM
-          </div>
+            <Trans i18nKey="auto.bloodcirculation.heart_rate">Heart rate:</Trans> {heartRate} <Trans i18nKey="auto.bloodcirculation.bpm">BPM</Trans>
+                                </div>
         </div>
 
         {/* Circulation facts */}
         <div className="mt-6 grid grid-cols-3 gap-4">
           <div className="bg-red-50 rounded-2xl p-4 text-center">
             <div className="text-3xl mb-1">🫀</div>
-            <div className="font-bold text-red-600 text-sm">100K</div>
+            <div className="font-bold text-red-600 text-sm"><Trans i18nKey="auto.bloodcirculation.100k">100K</Trans></div>
             <p className="text-sm text-red-400 mt-1">{t('lab.modules.BloodCirculation.txt_Beatsperda', 'Beats per day')}</p>
           </div>
           <div className="bg-blue-50 rounded-2xl p-4 text-center">
             <div className="text-3xl mb-1">🩸</div>
-            <div className="font-bold text-blue-600 text-sm">5L</div>
+            <div className="font-bold text-blue-600 text-sm"><Trans i18nKey="auto.bloodcirculation.5l">5L</Trans></div>
             <p className="text-sm text-blue-400 mt-1">{t('lab.modules.BloodCirculation.txt_Bloodvolum', 'Blood volume')}</p>
           </div>
           <div className="bg-purple-50 rounded-2xl p-4 text-center">
             <div className="text-3xl mb-1">🌍</div>
-            <div className="font-bold text-purple-600 text-sm">2.5x</div>
+            <div className="font-bold text-purple-600 text-sm"><Trans i18nKey="auto.bloodcirculation.2_5x">2.5x</Trans></div>
             <p className="text-sm text-purple-400 mt-1">{t('lab.modules.BloodCirculation.txt_Vesselscir', 'Vessels circle Earth')}</p>
           </div>
         </div>
@@ -113,12 +113,12 @@ export default function BloodCirculation() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.BloodCirculation.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-600 font-bold text-sm mb-1">Ayurvedic Connection</h3>
+              <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.bloodcirculation.ayurvedic_connection">Ayurvedic Connection</Trans></h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Sushruta (600 BCE) described blood circulation 1,500 years before William Harvey!
-                His <strong>Sushruta Samhita</strong> detailed 360 bones, blood vessels (<strong>Sira</strong>),
-                and surgical techniques that are still studied today. He's called the "Father of Surgery."
-              </p>
+                <Trans i18nKey="auto.bloodcirculation.sushruta_600_bce_described_blo">Sushruta (600 BCE) described blood circulation 1,500 years before William Harvey!
+                                              His</Trans> <strong><Trans i18nKey="auto.bloodcirculation.sushruta_samhita">Sushruta Samhita</Trans></strong> <Trans i18nKey="auto.bloodcirculation.detailed_360_bones_blood_vesse">detailed 360 bones, blood vessels (</Trans><strong><Trans i18nKey="auto.bloodcirculation.sira">Sira</Trans></strong><Trans i18nKey="auto.bloodcirculation.and_surgical_techniques_that_a">),
+                                              and surgical techniques that are still studied today. He's called the "Father of Surgery."</Trans>
+                                            </p>
             </div>
           </div>
         </div>

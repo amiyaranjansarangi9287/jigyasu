@@ -1,6 +1,6 @@
 // src/worlds/discovery/DiscoveryHome.tsx
 import { useRef, useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ParentCorner } from '@/shared/layout';
@@ -49,7 +49,7 @@ export default function DiscoveryHome() {
     <div className="min-h-screen bg-slate-900 flex flex-col">
       <div className="px-5 pt-6 pb-3 flex justify-between items-center text-white">
         <div><h1 className="text-xl font-extrabold">{t('discovery.title', 'Discovery Engine')}</h1></div>
-        <div className="bg-slate-800 px-3 py-1.5 rounded-full text-indigo-400 text-sm font-bold">{Object.values(progress?.mastery || {}).filter(Boolean).length} / 14</div>
+        <div className="bg-slate-800 px-3 py-1.5 rounded-full text-indigo-400 text-sm font-bold">{Object.values(progress?.mastery || {}).filter(Boolean).length} <Trans i18nKey="auto.discoveryhome.14">/ 14</Trans></div>
       </div>
       <div className="flex-1 relative">
         <canvas ref={canvasRef} className="w-full h-full block" />

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Trans } from "react-i18next";
 
 export interface FlashcardProps {
   question: string;
@@ -40,8 +41,8 @@ export default function Flashcard({ question, answer, onGrade, emoji = '🧠' }:
           </div>
           <h3 className="text-2xl font-black text-slate-800 leading-tight">{question}</h3>
           <p className="mt-8 text-sm font-bold text-sky-500 bg-sky-50 px-4 py-2 rounded-full uppercase tracking-widest animate-pulse">
-            Tap to reveal
-          </p>
+            <Trans i18nKey="auto.flashcard.tap_to_reveal">Tap to reveal</Trans>
+                                </p>
         </div>
 
         {/* Back */}
@@ -50,8 +51,8 @@ export default function Flashcard({ question, answer, onGrade, emoji = '🧠' }:
           style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
         >
           <div className="text-sm font-bold text-sky-200 uppercase tracking-widest mb-4">
-            Answer
-          </div>
+            <Trans i18nKey="auto.flashcard.answer">Answer</Trans>
+                                </div>
           <p className="text-2xl font-black mb-8 leading-tight">{answer}</p>
           
           <AnimatePresence>
@@ -67,20 +68,20 @@ export default function Flashcard({ question, answer, onGrade, emoji = '🧠' }:
                   onClick={() => handleGrade('again')}
                   className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-1 rounded-xl text-sm transition-all active:scale-95 shadow-lg"
                 >
-                  Again
-                </button>
+                  <Trans i18nKey="auto.flashcard.again">Again</Trans>
+                                                  </button>
                 <button
                   onClick={() => handleGrade('hard')}
                   className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-1 rounded-xl text-sm transition-all active:scale-95 shadow-lg"
                 >
-                  Hard
-                </button>
+                  <Trans i18nKey="auto.flashcard.hard">Hard</Trans>
+                                                  </button>
                 <button
                   onClick={() => handleGrade('easy')}
                   className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-1 rounded-xl text-sm transition-all active:scale-95 shadow-lg"
                 >
-                  Easy
-                </button>
+                  <Trans i18nKey="auto.flashcard.easy">Easy</Trans>
+                                                  </button>
               </motion.div>
             )}
           </AnimatePresence>

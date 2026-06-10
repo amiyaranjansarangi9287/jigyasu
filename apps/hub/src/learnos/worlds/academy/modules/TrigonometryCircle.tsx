@@ -1,6 +1,6 @@
 // src/worlds/academy/modules/TrigonometryCircle.tsx
 import { useRef, useEffect, useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import AcademyShell from '../AcademyShell';
 import { useLumoAncient } from '../hooks/useLumoAncient';
 import { useAcademyProgress } from '../hooks/useAcademyProgress';
@@ -96,7 +96,7 @@ export default function TrigonometryCircle() {
             ))}
           </div>
           <div className="bg-slate-900 rounded-2xl p-3 border border-slate-800 mb-4 overflow-x-auto">
-            <table className="w-full text-sm text-center min-w-[280px]"><thead><tr><th className="text-slate-500 py-1 px-2">θ</th><th className="text-red-400 py-1 px-2">sin</th><th className="text-blue-400 py-1 px-2">cos</th><th className="text-yellow-400 py-1 px-2">tan</th></tr></thead>
+            <table className="w-full text-sm text-center min-w-[280px]"><thead><tr><th className="text-slate-500 py-1 px-2">θ</th><th className="text-red-400 py-1 px-2"><Trans i18nKey="auto.trigonometrycircle.sin">sin</Trans></th><th className="text-blue-400 py-1 px-2"><Trans i18nKey="auto.trigonometrycircle.cos">cos</Trans></th><th className="text-yellow-400 py-1 px-2"><Trans i18nKey="auto.trigonometrycircle.tan">tan</Trans></th></tr></thead>
               <tbody>{TRIG_MEMORY_AIDS.map(row => (<tr key={row.angle} className={`cursor-pointer ${angleDeg === row.angle ? 'bg-indigo-900/30' : ''}`} onClick={() => setAngleDeg(row.angle)}><td className="text-indigo-400 py-1.5 px-2 font-mono">{row.angle}°</td><td className="text-white py-1.5 px-2 font-mono">{row.sin}</td><td className="text-white py-1.5 px-2 font-mono">{row.cos}</td><td className="text-white py-1.5 px-2 font-mono">{row.tan}</td></tr>))}</tbody></table>
           </div>
           <div className="bg-slate-900/50 rounded-xl p-3 border border-slate-800 text-center"><p className="text-slate-500 text-sm mb-1">{t('academy.modules.TrigonometryCircle.txt_sincos', 'sin²θ + cos²θ =')}</p><p className="text-white font-mono font-bold">{(trigPoint.sinValue ** 2 + trigPoint.cosValue ** 2).toFixed(4)}</p><p className="text-indigo-400 text-sm mt-1">{t('academy.modules.TrigonometryCircle.txt_Always1', 'Always 1')}</p></div>

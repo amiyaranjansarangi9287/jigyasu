@@ -1,7 +1,7 @@
 // src/worlds/early/modules/PlantGrowthExplorer.tsx
 
 import { useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import EarlyShell from '../EarlyShell';
 import { usePip } from '../hooks/usePip';
@@ -58,7 +58,7 @@ export default function PlantGrowthExplorer() {
           <div className="flex items-center gap-2 mb-3">
             {PLANT_STAGES.map((_, i) => (<div key={i} className={`flex-1 h-2 rounded-full transition-all duration-500 ${i < currentStage ? 'bg-green-500' : i === currentStage ? 'bg-green-300' : 'bg-gray-200'}`} />))}
           </div>
-          <div className="flex items-center gap-2"><span className="text-3xl">{stage.emoji}</span><span className="font-bold text-green-800">{stage.name}</span><span className="text-base text-gray-500">Stage {currentStage + 1}/{PLANT_STAGES.length}</span></div>
+          <div className="flex items-center gap-2"><span className="text-3xl">{stage.emoji}</span><span className="font-bold text-green-800">{stage.name}</span><span className="text-base text-gray-500"><Trans i18nKey="auto.plantgrowthexplorer.stage">Stage</Trans> {currentStage + 1}/{PLANT_STAGES.length}</span></div>
         </div>
 
         <div className="mx-5 bg-white rounded-3xl overflow-hidden border border-green-100 shadow-sm mb-4" style={{ height: '180px' }}>

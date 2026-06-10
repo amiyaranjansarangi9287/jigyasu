@@ -5,6 +5,7 @@ import { useLumoAncient } from '../hooks/useLumoAncient';
 import { useAcademyProgress } from '../hooks/useAcademyProgress';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { CURVES } from '../data/academyContent';
+import { Trans } from "react-i18next";
 
 export default function DerivativesVisual() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -81,11 +82,11 @@ export default function DerivativesVisual() {
           ))}</div>
           <div className="bg-slate-900 rounded-xl p-3 border border-slate-800 mb-3">
             <p className="text-pink-400 text-sm font-bold mb-1">{curve.expression}</p>
-            <div className="flex items-center gap-3"><span className="text-slate-400 text-sm">x =</span><input type="range" min={curve.domain[0] * 100} max={curve.domain[1] * 100} value={xPos * 100} onChange={e => setXPos(Number(e.target.value) / 100)} className="flex-1 h-2 rounded-full appearance-none cursor-pointer" style={{ accentColor: '#EC4899' }} /><span className="text-white font-mono text-sm font-bold min-w-[40px] text-right">{xPos.toFixed(2)}</span></div>
+            <div className="flex items-center gap-3"><span className="text-slate-400 text-sm"><Trans i18nKey="auto.derivativesvisual.x">x =</Trans></span><input type="range" min={curve.domain[0] * 100} max={curve.domain[1] * 100} value={xPos * 100} onChange={e => setXPos(Number(e.target.value) / 100)} className="flex-1 h-2 rounded-full appearance-none cursor-pointer" style={{ accentColor: '#EC4899' }} /><span className="text-white font-mono text-sm font-bold min-w-[40px] text-right">{xPos.toFixed(2)}</span></div>
           </div>
           <div className="grid grid-cols-2 gap-2 mb-3">
-            <div className="bg-slate-900 rounded-xl p-3 text-center border border-slate-800"><p className="text-pink-400 text-sm font-bold">f(x)</p><p className="text-white font-mono font-bold">{curve.fn(xPos).toFixed(3)}</p></div>
-            <div className="bg-slate-900 rounded-xl p-3 text-center border border-slate-800"><p className="text-blue-400 text-sm font-bold">f'(x) = slope</p><p className="text-white font-mono font-bold">{slope.toFixed(3)}</p></div>
+            <div className="bg-slate-900 rounded-xl p-3 text-center border border-slate-800"><p className="text-pink-400 text-sm font-bold"><Trans i18nKey="auto.derivativesvisual.f_x">f(x)</Trans></p><p className="text-white font-mono font-bold">{curve.fn(xPos).toFixed(3)}</p></div>
+            <div className="bg-slate-900 rounded-xl p-3 text-center border border-slate-800"><p className="text-blue-400 text-sm font-bold"><Trans i18nKey="auto.derivativesvisual.f_x_slope">f'(x) = slope</Trans></p><p className="text-white font-mono font-bold">{slope.toFixed(3)}</p></div>
           </div>
           <button onClick={handleDerivToggle} className={`w-full py-3 rounded-xl text-sm font-bold min-h-[44px] transition-all ${showDeriv ? 'bg-blue-700 text-white' : 'bg-slate-800 text-slate-400'}`}>{showDeriv ? '📉 Hide Derivative Curve' : '📉 Show Derivative Curve'}</button>
         </div>

@@ -30,15 +30,7 @@ export default function GasLaws() {
   const [_cookerTime, setCookerTime] = useState(0);
   const [lidClosed, setLidClosed] = useState(false);
   const [time, setTime] = useState(0);
-  const [quizAnswer, setQuizAnswer] = useState<string | null>(null);
-  const [quizCorrect, setQuizCorrect] = useState<boolean | null>(null);
-  const [currentQuiz, setCurrentQuiz] = useState(0);
 
-  const quizQuestions = [
-    { q: 'Boyle\'s Law states P ∝ 1/V at constant:', options: ['Temperature', 'Mass', 'Volume', 'Pressure'], correct: 0 },
-    { q: 'Pressure cookers cook faster because:', options: ['Higher pressure → higher boiling point', 'Less water needed', 'More salt', 'Metal conducts better'], correct: 0 },
-    { q: 'At 2 atm pressure, water boils at approximately:', options: ['100°C', '120°C', '150°C', '80°C'], correct: 1 },
-  ];
 
   const draw = () => {
     const canvas = canvasRef.current;
@@ -208,15 +200,6 @@ export default function GasLaws() {
     return () => clearInterval(interval);
   }, [mode, lidClosed, temperature, pressure]);
 
-  const handleQuiz = (idx: number) => {
-    setQuizAnswer(idx.toString());
-    setQuizCorrect(idx === quizQuestions[currentQuiz].correct);
-    if (idx === quizQuestions[currentQuiz].correct) {
-      const updated = completeModule(progress, 'gas-laws', 95);
-      setProgress(updated);
-      saveProgress(updated);
-    }
-  };
 
   const handleComplete = () => {
     const updated = completeModule(progress, 'gas-laws', 80);
@@ -257,18 +240,6 @@ export default function GasLaws() {
           </div>
         </div>
 
-        <div className="mt-8 p-6 rounded-2xl bg-gray-900 border border-blue-500/20">
-          <h3 className="text-lg font-bold text-blue-400 mb-3">🧠 Challenge: Test Your Knowledge</h3>
-          <p className="text-sm text-gray-300 mb-4">{quizQuestions[currentQuiz].q}</p>
-          <div className="grid grid-cols-2 gap-3">
-            {quizQuestions[currentQuiz].options.map((opt, idx) => (
-              <button key={idx} onClick={() => handleQuiz(idx)} disabled={quizCorrect === true} className={`py-3 rounded-xl text-sm font-bold transition-all ${quizAnswer === idx.toString() ? quizCorrect ? 'bg-green-600 text-white' : 'bg-red-600 text-white' : 'bg-gray-800 text-gray-300 hover:bg-gray-700'} disabled:opacity-50`}>{opt}</button>
-            ))}
-          </div>
-          {quizCorrect === true && <p className="mt-3 text-green-400 font-bold text-sm">✅ Correct! +10 bonus XP!</p>}
-          {quizCorrect === false && <p className="mt-3 text-red-400 font-bold text-sm">🤔 Answer: {quizQuestions[currentQuiz].options[quizQuestions[currentQuiz].correct]}</p>}
-          {quizCorrect === true && currentQuiz < quizQuestions.length - 1 && <button onClick={() => { setCurrentQuiz(prev => prev + 1); setQuizAnswer(null); setQuizCorrect(null); }} className="mt-3 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm">Next Question →</button>}
-        </div>
       </div>
     </ModuleWrapper>
   );

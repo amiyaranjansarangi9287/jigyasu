@@ -1,6 +1,10 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Info, Layers, Sparkles } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
 
 interface Organelle {
   id: string;
@@ -284,10 +288,15 @@ const cytoplasmParticles = Array.from({ length: 40 }, (_, i) => ({
 }));
 
 export default function CellExplorer() {
+  const { t } = useTranslation();
   const [selected, setSelected] = useState<Organelle | null>(null);
   const [hovered, setHovered] = useState<string | null>(null);
   const [cellType, setCellType] = useState<'animal' | 'plant'>('animal');
   const [discoveredCount, setDiscoveredCount] = useState<Set<string>>(new Set());
+  
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
 
   const handleSelect = (org: Organelle) => {
     setSelected(org);
@@ -325,12 +334,39 @@ export default function CellExplorer() {
 
   const totalOrganelles = organelles.length;
 
+  const handleSpeak = (text: string) => {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      window.speechSynthesis.speak(utterance);
+    }
+  };
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.cell_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.cell_prompt', 'Your body is made of trillions of tiny living factories called cells! Let\'s dive inside and find out how they work. What are they hiding?'),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'cell-explorer', 50);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
+    <ModuleWrapper moduleId="cell-explorer" progress={progress} setProgress={setProgress} onNavigate={() => {}}>
+      {showChallenge && (
+        <ChallengeOverlay 
+          challenge={activeChallenge} 
+          onClose={() => setShowChallenge(false)} 
+        />
+      )}
+      <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-2">🗺️ Interactive Cell Explorer</h2>
-          <p className="text-gray-400 text-lg">Navigate inside a living cell — click organelles to discover their secrets!</p>
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-2"><Trans i18nKey="auto.cellexplorer.interactive_cell_explorer">🗺️ Interactive Cell Explorer</Trans></h2>
+          <p className="text-gray-400 text-lg"><Trans i18nKey="auto.cellexplorer.navigate_inside_a_living_cell_">Navigate inside a living cell — click organelles to discover their secrets!</Trans></p>
         </motion.div>
 
         {/* Toggle + Progress */}
@@ -338,20 +374,21 @@ export default function CellExplorer() {
           <div className="flex bg-gray-800 rounded-full p-1">
             <button onClick={() => { setCellType('animal'); setSelected(null); }}
               className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${cellType === 'animal' ? 'bg-emerald-500 text-white shadow-lg' : 'text-gray-400 hover:text-white'}`}>
-              🐾 Animal Cell
-            </button>
+              <Trans i18nKey="auto.cellexplorer.animal_cell">🐾 Animal Cell</Trans>
+                                      </button>
             <button onClick={() => { setCellType('plant'); setSelected(null); }}
               className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${cellType === 'plant' ? 'bg-green-500 text-white shadow-lg' : 'text-gray-400 hover:text-white'}`}>
-              🌱 Plant Cell
-            </button>
+              <Trans i18nKey="auto.cellexplorer.plant_cell">🌱 Plant Cell</Trans>
+                                      </button>
           </div>
           <div className="flex items-center gap-2 bg-gray-800/50 rounded-full px-4 py-2">
             <Sparkles className="w-4 h-4 text-yellow-400" />
-            <span className="text-sm text-gray-300">Discovered: <strong className="text-yellow-400">{discoveredCount.size}</strong>/{totalOrganelles}</span>
+            <span className="text-sm text-gray-300"><Trans i18nKey="auto.cellexplorer.discovered">Discovered:</Trans> <strong className="text-yellow-400">{discoveredCount.size}</strong>/{totalOrganelles}</span>
             <div className="w-20 h-2 bg-gray-700 rounded-full overflow-hidden">
               <div className="h-full bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full transition-all" style={{ width: `${(discoveredCount.size / totalOrganelles) * 100}%` }} />
             </div>
           </div>
+
         </div>
 
         <div className="grid lg:grid-cols-5 gap-6">
@@ -383,7 +420,7 @@ export default function CellExplorer() {
                     className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-gray-900/95 backdrop-blur px-4 py-2 rounded-xl border border-emerald-500/30 z-20 pointer-events-none">
                     <div className="flex items-center gap-2 text-sm text-white">
                       <Layers className="w-4 h-4 text-emerald-400" />
-                      Click to explore <strong>{organelles.find(o => o.id === hovered)?.name}</strong>
+                      <Trans i18nKey="auto.cellexplorer.click_to_explore">Click to explore</Trans> <strong>{organelles.find(o => o.id === hovered)?.name}</strong>
                     </div>
                   </motion.div>
                 )}
@@ -413,7 +450,7 @@ export default function CellExplorer() {
                   </button>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="text-4xl">{selected.emoji}</div>
-                    <div>
+                    <div className="flex-1">
                       <h3 className="text-2xl font-bold text-white">{selected.name}</h3>
                       <div className="flex gap-2 mt-1">
                         {selected.cellTypes.map(t => (
@@ -423,6 +460,13 @@ export default function CellExplorer() {
                         ))}
                       </div>
                     </div>
+                    <button 
+                      onClick={() => handleSpeak(`${selected.name}. ${selected.description} Fun fact: ${selected.funFact}`)}
+                      className="p-3 rounded-full bg-emerald-900/30 hover:bg-emerald-800/50 text-emerald-400 transition-colors ml-auto"
+                      aria-label="Read Aloud"
+                    >
+                      🔊
+                    </button>
                   </div>
                   <div className="w-16 h-1 rounded-full mb-4" style={{ backgroundColor: selected.color }} />
                   <p className="text-gray-300 text-sm mb-4 leading-relaxed">{selected.description}</p>
@@ -430,23 +474,23 @@ export default function CellExplorer() {
                   {/* Stats */}
                   <div className="grid grid-cols-2 gap-2 mb-4">
                     <div className="bg-gray-800/50 rounded-lg p-2.5">
-                      <div className="text-sm text-gray-500 uppercase font-bold">Size</div>
+                      <div className="text-sm text-gray-500 uppercase font-bold"><Trans i18nKey="auto.cellexplorer.size">Size</Trans></div>
                       <div className="text-sm text-white font-medium">{selected.size}</div>
                     </div>
                     <div className="bg-gray-800/50 rounded-lg p-2.5">
-                      <div className="text-sm text-gray-500 uppercase font-bold">Discovered</div>
+                      <div className="text-sm text-gray-500 uppercase font-bold"><Trans i18nKey="auto.cellexplorer.discovered">Discovered</Trans></div>
                       <div className="text-sm text-white font-medium">{selected.discovered}</div>
                     </div>
                   </div>
 
                   <div className="bg-gradient-to-br from-emerald-900/20 to-cyan-900/20 rounded-xl p-4 mb-4 border border-emerald-500/20">
                     <div className="flex items-center gap-2 text-emerald-400 font-semibold text-sm mb-1.5">
-                      <Info className="w-4 h-4" /> Fun Fact
-                    </div>
+                      <Info className="w-4 h-4" /> <Trans i18nKey="auto.cellexplorer.fun_fact">Fun Fact</Trans>
+                                                              </div>
                     <p className="text-gray-300 text-sm italic leading-relaxed">{selected.funFact}</p>
                   </div>
 
-                  <h4 className="text-sm font-bold text-white mb-2 uppercase tracking-wider">Key Functions</h4>
+                  <h4 className="text-sm font-bold text-white mb-2 uppercase tracking-wider"><Trans i18nKey="auto.cellexplorer.key_functions">Key Functions</Trans></h4>
                   <ul className="space-y-1.5">
                     {selected.functions.map((f, i) => (
                       <motion.li key={i} initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }}
@@ -462,10 +506,10 @@ export default function CellExplorer() {
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
                   className="bg-gray-900 rounded-2xl border border-gray-800 p-6 text-center sticky top-24">
                   <div className="text-6xl mb-4">🔬</div>
-                  <h3 className="text-xl font-bold text-white mb-2">Select an Organelle</h3>
-                  <p className="text-gray-400 text-sm mb-4">Click on any part of the cell map or the labels below to learn about its structure and function.</p>
+                  <h3 className="text-xl font-bold text-white mb-2"><Trans i18nKey="auto.cellexplorer.select_an_organelle">Select an Organelle</Trans></h3>
+                  <p className="text-gray-400 text-sm mb-4"><Trans i18nKey="auto.cellexplorer.click_on_any_part_of_the_cell_">Click on any part of the cell map or the labels below to learn about its structure and function.</Trans></p>
                   <div className="text-left bg-gray-800/30 rounded-xl p-4">
-                    <h4 className="text-sm font-bold text-gray-400 uppercase mb-2">💡 Did You Know?</h4>
+                    <h4 className="text-sm font-bold text-gray-400 uppercase mb-2"><Trans i18nKey="auto.cellexplorer.did_you_know">💡 Did You Know?</Trans></h4>
                     <p className="text-sm text-gray-400 leading-relaxed">
                       {cellType === 'animal'
                         ? 'Animal cells lack a cell wall, chloroplasts, and large central vacuole. They have centrioles which most plant cells don\'t!'
@@ -479,5 +523,6 @@ export default function CellExplorer() {
         </div>
       </div>
     </div>
+    </ModuleWrapper>
   );
 }

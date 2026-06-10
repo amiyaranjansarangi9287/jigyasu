@@ -1,6 +1,6 @@
 // src/worlds/discovery/modules/FermiEstimation.tsx
 import { useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import DiscoveryShell from '../DiscoveryShell';
 import { useLumoSage } from '../hooks/useLumoSage';
@@ -72,7 +72,7 @@ export default function FermiEstimation() {
           {prob.steps.map((step, i) => (
             <div key={i} className={`bg-slate-800 rounded-xl p-3 border transition-all ${i < estimates.length ? 'border-green-700/50' : i === stepIdx ? 'border-indigo-500' : 'border-slate-700 opacity-40'}`}>
               <div className="flex items-center justify-between mb-1">
-                <span className="text-slate-400 text-sm font-bold">Step {i + 1}: {step.label}</span>
+                <span className="text-slate-400 text-sm font-bold"><Trans i18nKey="auto.fermiestimation.step">Step</Trans> {i + 1}: {step.label}</span>
                 {i < estimates.length && <span className="text-green-400 text-sm">{t('discovery.modules.FermiEstimation.spn_', '✓')}</span>}
               </div>
               {i === stepIdx && !revealed && i >= estimates.length && (
@@ -80,8 +80,8 @@ export default function FermiEstimation() {
               )}
               {i < estimates.length && (
                 <div className="flex justify-between text-sm mt-1">
-                  <span className="text-white font-bold">Your estimate: {estimates[i]}</span>
-                  <span className="text-slate-500">Hint: {step.hint}</span>
+                  <span className="text-white font-bold"><Trans i18nKey="auto.fermiestimation.your_estimate">Your estimate:</Trans> {estimates[i]}</span>
+                  <span className="text-slate-500"><Trans i18nKey="auto.fermiestimation.hint">Hint:</Trans> {step.hint}</span>
                 </div>
               )}
             </div>

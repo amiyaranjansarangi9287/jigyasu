@@ -4,7 +4,7 @@
 
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout';
@@ -42,7 +42,7 @@ export default function LightShadowsWonderFirst() {
       {/* Time indicator */}
       <div className="flex justify-center">
         <div className="px-6 py-3 rounded-2xl font-bold text-lg bg-amber-100 text-amber-700">
-          {timeOfDay} — Sun at {Math.round(lightX)}%, {Math.round(lightY)}%
+          {timeOfDay} <Trans i18nKey="auto.lightshadowswonderfirst.sun_at">— Sun at</Trans> {Math.round(lightX)}%, {Math.round(lightY)}%
         </div>
       </div>
 
@@ -55,18 +55,18 @@ export default function LightShadowsWonderFirst() {
       <div className="grid grid-cols-3 gap-4">
         <div className="bg-yellow-50 rounded-2xl p-4 text-center">
           <div className="text-2xl mb-1">☀️</div>
-          <div className="font-bold text-yellow-600 text-sm">Light Source</div>
-          <p className="text-sm text-yellow-400 mt-1">Light travels in straight lines</p>
+          <div className="font-bold text-yellow-600 text-sm"><Trans i18nKey="auto.lightshadowswonderfirst.light_source">Light Source</Trans></div>
+          <p className="text-sm text-yellow-400 mt-1"><Trans i18nKey="auto.lightshadowswonderfirst.light_travels_in_straight_line">Light travels in straight lines</Trans></p>
         </div>
         <div className="bg-slate-50 rounded-2xl p-4 text-center">
           <div className="text-2xl mb-1">🌳</div>
-          <div className="font-bold text-slate-600 text-sm">Object Blocks</div>
-          <p className="text-sm text-slate-400 mt-1">Opaque objects block light</p>
+          <div className="font-bold text-slate-600 text-sm"><Trans i18nKey="auto.lightshadowswonderfirst.object_blocks">Object Blocks</Trans></div>
+          <p className="text-sm text-slate-400 mt-1"><Trans i18nKey="auto.lightshadowswonderfirst.opaque_objects_block_light">Opaque objects block light</Trans></p>
         </div>
         <div className="bg-gray-100 rounded-2xl p-4 text-center">
           <div className="text-2xl mb-1">🌑</div>
-          <div className="font-bold text-gray-600 text-sm">Shadow Forms</div>
-          <p className="text-sm text-gray-400 mt-1">Dark area behind the object</p>
+          <div className="font-bold text-gray-600 text-sm"><Trans i18nKey="auto.lightshadowswonderfirst.shadow_forms">Shadow Forms</Trans></div>
+          <p className="text-sm text-gray-400 mt-1"><Trans i18nKey="auto.lightshadowswonderfirst.dark_area_behind_the_object">Dark area behind the object</Trans></p>
         </div>
       </div>
 
@@ -74,13 +74,13 @@ export default function LightShadowsWonderFirst() {
       <div className="bg-amber-50 rounded-2xl p-4 border border-amber-200">
         <h3 className="font-bold text-amber-900 mb-2 flex items-center gap-2">
           <span className="text-xl">👀</span>
-          What do you notice?
-        </h3>
+          <Trans i18nKey="auto.lightshadowswonderfirst.what_do_you_notice">What do you notice?</Trans>
+                          </h3>
         <ul className="text-slate-700 text-sm space-y-2">
-          <li>• What happens to the shadow when you move the sun higher?</li>
-          <li>• What happens when you move the sun lower (closer to sunset)?</li>
-          <li>• Which direction does the shadow point relative to the sun?</li>
-          <li>• Why are shadows longer at sunset than at noon?</li>
+          <li><Trans i18nKey="auto.lightshadowswonderfirst.what_happens_to_the_shadow_whe">• What happens to the shadow when you move the sun higher?</Trans></li>
+          <li><Trans i18nKey="auto.lightshadowswonderfirst.what_happens_when_you_move_the">• What happens when you move the sun lower (closer to sunset)?</Trans></li>
+          <li><Trans i18nKey="auto.lightshadowswonderfirst.which_direction_does_the_shado">• Which direction does the shadow point relative to the sun?</Trans></li>
+          <li><Trans i18nKey="auto.lightshadowswonderfirst.why_are_shadows_longer_at_suns">• Why are shadows longer at sunset than at noon?</Trans></li>
         </ul>
       </div>
     </div>

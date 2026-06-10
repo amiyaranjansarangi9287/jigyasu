@@ -1,5 +1,6 @@
 import { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Trans } from "react-i18next";
 
 type LogicMode = 'binary' | 'boolean' | 'challenge';
 
@@ -20,7 +21,7 @@ export default function CodingLogic() {
   const [boolA, setBoolA] = useState(true);
   const [boolB, setBoolB] = useState(false);
   const [challenge, setChallenge] = useState(makeChallenge);
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [mastery, setMastery] = useState(0);
 
   const binary = useMemo(() => toBin(decimal).padStart(8, '0'), [decimal]);
@@ -42,14 +43,14 @@ export default function CodingLogic() {
     if (opt === challenge.answer) {
       setFeedback('correct'); setMastery(m => m + 1);
       setTimeout(() => { setChallenge(makeChallenge()); setFeedback(null); }, 1200);
-    } else { setFeedback('wrong'); setTimeout(() => setFeedback(null), 900); }
+    } else { setFeedback('hint'); setTimeout(() => setFeedback(null), 900); }
   }, [feedback, challenge]);
 
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">💻 Coding & Logic</h2>
-        <p className="text-purple-300 text-lg">Binary numbers, Boolean logic, and computational thinking!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.codinglogic.coding_logic">💻 Coding & Logic</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.codinglogic.binary_numbers_boolean_logic_a">Binary numbers, Boolean logic, and computational thinking!</Trans></p>
       </div>
 
       <div className="flex justify-center gap-2 mb-6">
@@ -67,7 +68,7 @@ export default function CodingLogic() {
         {mode === 'binary' && (
           <motion.div key="bin" className="max-w-2xl mx-auto space-y-4" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
             <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
-              <h4 className="text-white font-bold mb-3">Decimal ↔ Binary Converter</h4>
+              <h4 className="text-white font-bold mb-3"><Trans i18nKey="auto.codinglogic.decimal_binary_converter">Decimal ↔ Binary Converter</Trans></h4>
               <div className="flex items-center gap-4 mb-4">
                 <input type="range" min="0" max="255" value={decimal} onChange={e => setDecimal(Number(e.target.value))} className="flex-1 accent-cyan-500" />
                 <input type="number" value={decimal} min={0} max={255} onChange={e => setDecimal(Math.max(0, Math.min(255, Number(e.target.value) || 0)))}
@@ -101,7 +102,7 @@ export default function CodingLogic() {
                   { label: 'Decimal', value: String(decimal), color: 'text-white' },
                   { label: 'Binary', value: binary, color: 'text-cyan-400' },
                   { label: 'Hexadecimal', value: `0x${hex}`, color: 'text-purple-400' },
-                  { label: 'Octal', value: `0o${octal}`, color: 'text-orange-400' },
+                  { label: 'Octal', value: `0o${octal}`, color: 'text-sky-400' },
                 ].map(c => (
                   <div key={c.label} className="bg-white/5 rounded-xl p-3 text-center border border-white/10">
                     <p className="text-gray-400 text-sm">{c.label}</p>
@@ -112,7 +113,7 @@ export default function CodingLogic() {
             </div>
 
             <div className="bg-cyan-500/10 rounded-xl p-4 border border-cyan-500/20 text-sm">
-              <p className="text-cyan-300">💡 Each bit position represents a power of 2. Click the bits above to toggle them on/off and watch the decimal change!</p>
+              <p className="text-cyan-300"><Trans i18nKey="auto.codinglogic.each_bit_position_represents_a">💡 Each bit position represents a power of 2. Click the bits above to toggle them on/off and watch the decimal change!</Trans></p>
             </div>
           </motion.div>
         )}
@@ -120,7 +121,7 @@ export default function CodingLogic() {
         {mode === 'boolean' && (
           <motion.div key="bool" className="max-w-lg mx-auto space-y-4" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
             <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
-              <h4 className="text-white font-bold mb-4">Boolean Logic Gates</h4>
+              <h4 className="text-white font-bold mb-4"><Trans i18nKey="auto.codinglogic.boolean_logic_gates">Boolean Logic Gates</Trans></h4>
               <div className="flex justify-center gap-6 mb-6">
                 {[
                   { label: 'A', value: boolA, set: setBoolA, color: 'blue' },
@@ -152,7 +153,7 @@ export default function CodingLogic() {
                     className={`rounded-xl p-3 text-center border ${gate.result ? 'bg-green-500/20 border-green-500/40' : 'bg-white/5 border-white/10'}`}
                     initial={{ scale: 0.8 }} animate={{ scale: 1 }}>
                     <p className="text-gray-400 text-sm">{gate.name} ({gate.symbol})</p>
-                    <p className={`font-bold text-lg ${gate.result ? 'text-green-400' : 'text-orange-400'}`}>{gate.result ? 'TRUE' : 'FALSE'}</p>
+                    <p className={`font-bold text-lg ${gate.result ? 'text-green-400' : 'text-sky-400'}`}>{gate.result ? 'TRUE' : 'FALSE'}</p>
                   </motion.div>
                 ))}
               </div>
@@ -160,15 +161,15 @@ export default function CodingLogic() {
 
             {/* Truth table */}
             <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-              <h4 className="text-white font-bold mb-2 text-sm">AND Truth Table</h4>
+              <h4 className="text-white font-bold mb-2 text-sm"><Trans i18nKey="auto.codinglogic.and_truth_table">AND Truth Table</Trans></h4>
               <table className="w-full text-sm text-center">
-                <thead><tr className="text-gray-400 border-b border-white/10"><th className="py-1">A</th><th>B</th><th>A AND B</th></tr></thead>
+                <thead><tr className="text-gray-400 border-b border-white/10"><th className="py-1"><Trans i18nKey="auto.codinglogic.a">A</Trans></th><th><Trans i18nKey="auto.codinglogic.b">B</Trans></th><th><Trans i18nKey="auto.codinglogic.a_and_b">A AND B</Trans></th></tr></thead>
                 <tbody>
                   {[[false, false], [false, true], [true, false], [true, true]].map(([a, b]) => (
                     <tr key={`${a}-${b}`} className={`border-b border-white/5 ${a === boolA && b === boolB ? 'bg-purple-500/20' : ''}`}>
                       <td className="py-1 text-blue-300">{a ? 'T' : 'F'}</td>
                       <td className="text-orange-300">{b ? 'T' : 'F'}</td>
-                      <td className={a && b ? 'text-green-400 font-bold' : 'text-orange-400'}>{a && b ? 'T' : 'F'}</td>
+                      <td className={a && b ? 'text-green-400 font-bold' : 'text-sky-400'}>{a && b ? 'T' : 'F'}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -179,7 +180,7 @@ export default function CodingLogic() {
 
         {mode === 'challenge' && (
           <motion.div key="ch" className="max-w-lg mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
+            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'hint' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
               <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {mastery}</span><span className="text-sm text-gray-400">{challenge.type}</span></div>
               <p className="text-2xl font-bold text-white text-center font-mono mb-5">{challenge.question}</p>
               <div className={`grid ${challenge.options.length <= 2 ? 'grid-cols-2' : 'grid-cols-2'} gap-3`}>
@@ -189,8 +190,8 @@ export default function CodingLogic() {
                     onClick={() => answerChallenge(opt)} disabled={!!feedback}>{opt}</motion.button>
                 ))}
               </div>
-              {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✅ Correct!</p>}
-              {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Answer: {challenge.answer}</p>}
+              {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4"><Trans i18nKey="auto.codinglogic.correct">✅ Correct!</Trans></p>}
+              {feedback === 'hint' && <p className="text-sky-400 font-bold text-center mt-4"><Trans i18nKey="auto.codinglogic.answer">Answer:</Trans> {challenge.answer}</p>}
             </div>
           </motion.div>
         )}

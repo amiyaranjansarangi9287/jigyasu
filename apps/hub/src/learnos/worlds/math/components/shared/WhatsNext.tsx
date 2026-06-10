@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { getLinksFor } from '../../lib/crossLinks';
+import { Trans } from "react-i18next";
 
 export default function WhatsNext({ moduleId }: { moduleId: string }) {
   const links = getLinksFor(moduleId);
@@ -13,8 +14,8 @@ export default function WhatsNext({ moduleId }: { moduleId: string }) {
       transition={{ delay: 0.5 }}
     >
       <h4 className="text-white font-bold mb-3 flex items-center gap-2">
-        <span className="text-lg">🔗</span> What's Next?
-      </h4>
+        <span className="text-lg">🔗</span> <Trans i18nKey="auto.whatsnext.what_s_next">What's Next?</Trans>
+                    </h4>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {links.map((link) => (
           <motion.div

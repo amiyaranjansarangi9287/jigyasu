@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/Multiplication.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -56,8 +56,8 @@ export default function Multiplication() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.Multiplication.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-600 font-bold text-sm mb-1">Indian Multiplication Magic</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">The <strong>Urdhva Tiryagbhyam</strong> method from Vedic mathematics multiplies any numbers vertically and crosswise — faster than traditional methods! Indian mathematicians also invented the multiplication table.</p>
+              <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.multiplication.indian_multiplication_magic">Indian Multiplication Magic</Trans></h3>
+              <p className="text-gray-600 text-sm leading-relaxed"><Trans i18nKey="auto.multiplication.the">The</Trans> <strong><Trans i18nKey="auto.multiplication.urdhva_tiryagbhyam">Urdhva Tiryagbhyam</Trans></strong> <Trans i18nKey="auto.multiplication.method_from_vedic_mathematics_">method from Vedic mathematics multiplies any numbers vertically and crosswise — faster than traditional methods! Indian mathematicians also invented the multiplication table.</Trans></p>
             </div>
           </div>
         </div>

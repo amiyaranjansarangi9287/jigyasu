@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/SimpleMachines.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -61,7 +61,7 @@ export default function SimpleMachines() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.SimpleMachines.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-600 font-bold text-sm mb-1">Ancient Indian Engineering</h3>
+              <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.simplemachines.ancient_indian_engineering">Ancient Indian Engineering</Trans></h3>
               <p className="text-gray-600 text-sm leading-relaxed">{t('lab.modules.SimpleMachines.txt_Indiansuse', 'Indians used levers, ramps, and pulleys to build temples 4,000 years ago! The Brihadeeswarar Temple (1010 CE) has a 80-ton capstone lifted using ramps and levers — an engineering marvel still studied today.')}</p>
             </div>
           </div>

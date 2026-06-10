@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/MultiplicationWonderFirst.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout';
@@ -46,7 +46,7 @@ function ExplorationComponent() {
       <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 space-y-4">
         <div>
           <div className="flex justify-between mb-2">
-            <span className="text-sm text-slate-400">↕️ Rows</span>
+            <span className="text-sm text-slate-400"><Trans i18nKey="auto.multiplicationwonderfirst.rows">↕️ Rows</Trans></span>
             <span className="text-sm font-bold text-emerald-600">{rows}</span>
           </div>
           <input 
@@ -61,7 +61,7 @@ function ExplorationComponent() {
         </div>
         <div>
           <div className="flex justify-between mb-2">
-            <span className="text-sm text-slate-400">↔️ Columns</span>
+            <span className="text-sm text-slate-400"><Trans i18nKey="auto.multiplicationwonderfirst.columns">↔️ Columns</Trans></span>
             <span className="text-sm font-bold text-teal-600">{cols}</span>
           </div>
           <input 
@@ -85,13 +85,13 @@ function ExplorationComponent() {
       <div className="bg-blue-50 rounded-2xl p-4 border border-blue-200">
         <h3 className="font-bold text-blue-900 mb-2 flex items-center gap-2">
           <span className="text-xl">👀</span>
-          What do you notice?
-        </h3>
+          <Trans i18nKey="auto.multiplicationwonderfirst.what_do_you_notice">What do you notice?</Trans>
+                          </h3>
         <ul className="text-slate-700 text-sm space-y-2">
-          <li>• What happens when you increase the rows?</li>
-          <li>• What happens when you increase the columns?</li>
-          <li>• Can you predict the total before counting?</li>
-          <li>• What pattern do you see in the numbers?</li>
+          <li><Trans i18nKey="auto.multiplicationwonderfirst.what_happens_when_you_increase">• What happens when you increase the rows?</Trans></li>
+          <li><Trans i18nKey="auto.multiplicationwonderfirst.what_happens_when_you_increase">• What happens when you increase the columns?</Trans></li>
+          <li><Trans i18nKey="auto.multiplicationwonderfirst.can_you_predict_the_total_befo">• Can you predict the total before counting?</Trans></li>
+          <li><Trans i18nKey="auto.multiplicationwonderfirst.what_pattern_do_you_see_in_the">• What pattern do you see in the numbers?</Trans></li>
         </ul>
       </div>
     </div>

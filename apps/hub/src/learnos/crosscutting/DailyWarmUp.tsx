@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '../store';
 import { LearningService } from '../services';
 import { ROUTES } from '../constants/routes';
@@ -82,7 +82,7 @@ export default function DailyWarmUp() {
           </button>
           <div className="flex items-center gap-2">
             <span className="text-2xl">🔥</span>
-            <span className="font-bold text-orange-600">{currentStreak} day streak</span>
+            <span className="font-bold text-orange-600">{currentStreak} <Trans i18nKey="auto.dailywarmup.day_streak">day streak</Trans></span>
           </div>
         </div>
 
@@ -206,7 +206,7 @@ export default function DailyWarmUp() {
               </p>
               <div className="bg-white rounded-3xl p-6 mb-6 shadow-sm">
                 <p className="text-4xl font-bold text-orange-600">{currentStreak}</p>
-                <p className="text-sm text-gray-400">day streak</p>
+                <p className="text-sm text-gray-400"><Trans i18nKey="auto.dailywarmup.day_streak">day streak</Trans></p>
               </div>
               <Button onClick={() => navigate(ROUTES.FAMILY_HOME)} size="lg" fullWidth>
                 {t('common.back')}

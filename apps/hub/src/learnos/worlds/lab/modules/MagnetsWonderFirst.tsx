@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/MagnetsWonderFirst.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout';
@@ -39,7 +39,7 @@ function ExplorationComponent() {
               : 'bg-blue-600 text-white hover:bg-blue-700'
           }`}
         >
-          Magnet 1: {magnet1Pole}
+          <Trans i18nKey="auto.magnetswonderfirst.magnet_1">Magnet 1:</Trans> {magnet1Pole}
         </button>
         <button
           onClick={togglePole2}
@@ -49,15 +49,15 @@ function ExplorationComponent() {
               : 'bg-blue-600 text-white hover:bg-blue-700'
           }`}
         >
-          Magnet 2: {magnet2Pole}
+          <Trans i18nKey="auto.magnetswonderfirst.magnet_2">Magnet 2:</Trans> {magnet2Pole}
         </button>
       </div>
 
       {/* Distance slider */}
       <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
         <div className="flex items-center justify-between mb-3">
-          <span className="text-sm text-slate-400">📏 Close</span>
-          <span className="text-sm text-slate-400">Far 📏</span>
+          <span className="text-sm text-slate-400"><Trans i18nKey="auto.magnetswonderfirst.close">📏 Close</Trans></span>
+          <span className="text-sm text-slate-400"><Trans i18nKey="auto.magnetswonderfirst.far">Far 📏</Trans></span>
         </div>
         <input
           type="range"
@@ -71,8 +71,8 @@ function ExplorationComponent() {
           }}
         />
         <div className="text-center mt-2 text-sm text-slate-400">
-          Distance: {distance}px
-        </div>
+          <Trans i18nKey="auto.magnetswonderfirst.distance">Distance:</Trans> {distance}<Trans i18nKey="auto.magnetswonderfirst.px">px</Trans>
+                          </div>
       </div>
 
       {/* Result indicator */}
@@ -108,13 +108,13 @@ function ExplorationComponent() {
       <div className="bg-blue-50 rounded-2xl p-4 border border-blue-200">
         <h3 className="font-bold text-blue-900 mb-2 flex items-center gap-2">
           <span className="text-xl">👀</span>
-          What do you notice?
-        </h3>
+          <Trans i18nKey="auto.magnetswonderfirst.what_do_you_notice">What do you notice?</Trans>
+                          </h3>
         <ul className="text-slate-700 text-sm space-y-2">
-          <li>• What happens when opposite poles face each other?</li>
-          <li>• What happens when same poles face each other?</li>
-          <li>• How does distance affect the magnetic force?</li>
-          <li>• Why do magnets have two poles?</li>
+          <li><Trans i18nKey="auto.magnetswonderfirst.what_happens_when_opposite_pol">• What happens when opposite poles face each other?</Trans></li>
+          <li><Trans i18nKey="auto.magnetswonderfirst.what_happens_when_same_poles_f">• What happens when same poles face each other?</Trans></li>
+          <li><Trans i18nKey="auto.magnetswonderfirst.how_does_distance_affect_the_m">• How does distance affect the magnetic force?</Trans></li>
+          <li><Trans i18nKey="auto.magnetswonderfirst.why_do_magnets_have_two_poles">• Why do magnets have two poles?</Trans></li>
         </ul>
       </div>
     </div>

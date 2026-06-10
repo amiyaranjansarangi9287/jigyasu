@@ -3,7 +3,7 @@
 
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -88,7 +88,7 @@ export default function Electricity() {
           <div>
             <div className="flex items-center justify-between mb-2">
               <span className="text-sm text-slate-400">{t('lab.modules.Electricity.spn_Voltage', '🔋 Voltage')}</span>
-              <span className="text-sm font-medium text-yellow-400">{voltage}V</span>
+              <span className="text-sm font-medium text-yellow-400">{voltage}<Trans i18nKey="auto.electricity.v">V</Trans></span>
             </div>
             <input
               type="range"
@@ -120,11 +120,11 @@ export default function Electricity() {
         {/* Ohm's Law display */}
         <div className="mt-6 bg-slate-800/50 rounded-2xl p-5 text-center border border-slate-700/50">
           <div className="text-sm text-yellow-400 font-mono font-bold">
-            I = V/R = {voltage}/{resistance} = {current.toFixed(2)}A
-          </div>
+            <Trans i18nKey="auto.electricity.i_v_r">I = V/R =</Trans> {voltage}/{resistance} = {current.toFixed(2)}<Trans i18nKey="auto.electricity.a">A</Trans>
+                                </div>
           <div className="text-sm text-slate-400 mt-2">
-            More voltage = more current • More resistance = less current
-          </div>
+            <Trans i18nKey="auto.electricity.more_voltage_more_current_more">More voltage = more current • More resistance = less current</Trans>
+                                </div>
         </div>
 
         {/* Indian context */}
@@ -132,12 +132,12 @@ export default function Electricity() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.Electricity.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-400 font-bold text-sm mb-1">India's Electrical Legacy</h3>
+              <h3 className="text-orange-400 font-bold text-sm mb-1"><Trans i18nKey="auto.electricity.india_s_electrical_legacy">India's Electrical Legacy</Trans></h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                India was one of the first countries to adopt electricity on a massive scale.
-                <strong> Jagadish Chandra Bose</strong> (1895) pioneered radio waves before Marconi!
-                Today, India's power grid is the world's largest synchronized grid, serving 1.4 billion people.
-              </p>
+                <Trans i18nKey="auto.electricity.india_was_one_of_the_first_cou">India was one of the first countries to adopt electricity on a massive scale.</Trans>
+                                              <strong> <Trans i18nKey="auto.electricity.jagadish_chandra_bose">Jagadish Chandra Bose</Trans></strong> <Trans i18nKey="auto.electricity.1895_pioneered_radio_waves_bef">(1895) pioneered radio waves before Marconi!
+                                              Today, India's power grid is the world's largest synchronized grid, serving 1.4 billion people.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

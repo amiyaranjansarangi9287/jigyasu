@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight, Clock, Info } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface Stage {
   id: string;
@@ -143,6 +147,22 @@ const lifeCycles: LifeCycle[] = [
 ];
 
 export default function Metamorphosis() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.metamorphosis_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.metamorphosis_prompt', "How does a crawling caterpillar transform into a flying butterfly? It's one of nature's greatest magic tricks. Let's observe!"),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'metamorphosis', 60);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   const [selectedCycle, setSelectedCycle] = useState(lifeCycles[0]);
   const [selectedStage, setSelectedStage] = useState(0);
 
@@ -152,8 +172,8 @@ export default function Metamorphosis() {
     <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-2">🦋 Metamorphosis</h2>
-          <p className="text-gray-400 text-lg">Watch organisms transform through their life cycles!</p>
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-2"><Trans i18nKey="auto.metamorphosis.metamorphosis">🦋 Metamorphosis</Trans></h2>
+          <p className="text-gray-400 text-lg"><Trans i18nKey="auto.metamorphosis.watch_organisms_transform_thro">Watch organisms transform through their life cycles!</Trans></p>
         </motion.div>
 
         {/* Organism selector */}
@@ -175,14 +195,14 @@ export default function Metamorphosis() {
               <div className="flex flex-wrap items-center gap-4 mb-4">
                 <div className="text-5xl">{selectedCycle.emoji}</div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white">{selectedCycle.name} Life Cycle</h3>
+                  <h3 className="text-2xl font-bold text-white">{selectedCycle.name} <Trans i18nKey="auto.metamorphosis.life_cycle">Life Cycle</Trans></h3>
                   <div className="flex gap-2 mt-1">
                     <span className={`px-2 py-0.5 rounded-full text-sm font-bold uppercase ${selectedCycle.type === 'complete' ? 'bg-purple-500/30 text-purple-300' : 'bg-cyan-500/30 text-cyan-300'}`}>
-                      {selectedCycle.type} Metamorphosis
-                    </span>
+                      {selectedCycle.type} <Trans i18nKey="auto.metamorphosis.metamorphosis">Metamorphosis</Trans>
+                                                              </span>
                     <span className="px-2 py-0.5 rounded-full text-sm font-bold uppercase bg-gray-500/30 text-gray-300">
-                      {selectedCycle.stages.length} Stages
-                    </span>
+                      {selectedCycle.stages.length} <Trans i18nKey="auto.metamorphosis.stages">Stages</Trans>
+                                                              </span>
                   </div>
                 </div>
               </div>
@@ -223,7 +243,7 @@ export default function Metamorphosis() {
                 <h4 className="text-2xl font-bold text-white mb-2">{stage.name}</h4>
                 <div className="flex items-center gap-2 text-sm text-gray-400">
                   <Clock className="w-4 h-4" />
-                  <span>Duration: {stage.duration}</span>
+                  <span><Trans i18nKey="auto.metamorphosis.duration">Duration:</Trans> {stage.duration}</span>
                 </div>
               </div>
 
@@ -233,7 +253,7 @@ export default function Metamorphosis() {
                 <h4 className="text-lg font-bold text-white mb-3">{stage.name}</h4>
                 <p className="text-gray-300 text-sm leading-relaxed mb-4">{stage.description}</p>
 
-                <h5 className="text-sm font-bold text-white mb-2 uppercase tracking-wider">Key Events</h5>
+                <h5 className="text-sm font-bold text-white mb-2 uppercase tracking-wider"><Trans i18nKey="auto.metamorphosis.key_events">Key Events</Trans></h5>
                 <ul className="space-y-2 mb-4">
                   {stage.keyEvents.map((event, i) => (
                     <motion.li key={i}
@@ -251,14 +271,14 @@ export default function Metamorphosis() {
                 <div className="flex gap-2">
                   <button onClick={() => setSelectedStage(s => Math.max(0, s - 1))} disabled={selectedStage === 0}
                     className="flex-1 py-2 rounded-lg bg-gray-800 text-gray-400 text-sm font-medium disabled:opacity-30">
-                    ← Previous
-                  </button>
+                    <Trans i18nKey="auto.metamorphosis.previous">← Previous</Trans>
+                                                        </button>
                   <button onClick={() => setSelectedStage(s => Math.min(selectedCycle.stages.length - 1, s + 1))}
                     disabled={selectedStage === selectedCycle.stages.length - 1}
                     className="flex-1 py-2 rounded-lg text-white text-sm font-medium disabled:opacity-30"
                     style={{ backgroundColor: selectedCycle.color }}>
-                    Next →
-                  </button>
+                    <Trans i18nKey="auto.metamorphosis.next">Next →</Trans>
+                                                        </button>
                 </div>
               </motion.div>
             </div>
@@ -266,8 +286,8 @@ export default function Metamorphosis() {
             {/* Fun facts */}
             <div className="mt-6 bg-gradient-to-r from-purple-900/30 to-pink-900/30 rounded-xl border border-purple-500/20 p-5">
               <h4 className="text-sm font-bold text-white mb-3 flex items-center gap-2">
-                <Info className="w-4 h-4 text-purple-400" /> Amazing Facts about {selectedCycle.name} Metamorphosis
-              </h4>
+                <Info className="w-4 h-4 text-purple-400" /> <Trans i18nKey="auto.metamorphosis.amazing_facts_about">Amazing Facts about</Trans> {selectedCycle.name} <Trans i18nKey="auto.metamorphosis.metamorphosis">Metamorphosis</Trans>
+                                            </h4>
               <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-3">
                 {selectedCycle.funFacts.map((fact, i) => (
                   <motion.div key={i}

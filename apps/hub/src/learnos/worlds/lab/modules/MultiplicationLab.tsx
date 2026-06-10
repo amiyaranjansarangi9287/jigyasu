@@ -1,6 +1,6 @@
 // src/worlds/lab/modules/MultiplicationLab.tsx
 import { useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion } from 'framer-motion';
 import LabShell from '../LabShell';
 import { useLumoOwl } from '../hooks/useLumoOwl';
@@ -40,8 +40,8 @@ export default function MultiplicationLab() {
       <div className="min-h-screen bg-orange-50 flex flex-col p-6 pb-24">
         <div className="bg-white rounded-3xl p-5 shadow-sm border border-orange-100 mb-6">
           <h2 className="font-bold text-lg mb-1">{a.context}</h2>
-          <p className="text-sm text-slate-500">{r} rows × {c} columns = ?</p>
-          <button onClick={() => { setFlipped(!flipped); setChecked(false); setAnswer(''); }} className="mt-2 text-sm text-orange-600 font-bold">🔄 Flip array (commutative)</button>
+          <p className="text-sm text-slate-500">{r} <Trans i18nKey="auto.multiplicationlab.rows">rows ×</Trans> {c} <Trans i18nKey="auto.multiplicationlab.columns">columns = ?</Trans></p>
+          <button onClick={() => { setFlipped(!flipped); setChecked(false); setAnswer(''); }} className="mt-2 text-sm text-orange-600 font-bold"><Trans i18nKey="auto.multiplicationlab.flip_array_commutative">🔄 Flip array (commutative)</Trans></button>
         </div>
 
         {/* Visual array */}
@@ -55,12 +55,12 @@ export default function MultiplicationLab() {
 
         <div className="bg-white rounded-2xl p-4 border border-slate-100 shadow-sm mb-6">
           <p className="text-center text-2xl font-extrabold text-slate-800 mb-3">{r} × {c} = <input type="number" value={answer} onChange={e => { setAnswer(e.target.value); setChecked(false); }} className={`w-20 text-center border-b-2 font-extrabold text-2xl focus:outline-none ${checked ? (parseInt(answer) === correct ? 'border-green-500 text-green-600' : 'border-red-500 text-red-600') : 'border-blue-400'}`} /></p>
-          {checked && parseInt(answer) === correct && <p className="text-center text-green-600 font-bold">✓ Correct! {r} × {c} = {correct}</p>}
-          {checked && parseInt(answer) !== correct && <p className="text-center text-red-500 font-bold">Try again! Count the {a.emoji}s</p>}
+          {checked && parseInt(answer) === correct && <p className="text-center text-green-600 font-bold"><Trans i18nKey="auto.multiplicationlab.correct">✓ Correct!</Trans> {r} × {c} = {correct}</p>}
+          {checked && parseInt(answer) !== correct && <p className="text-center text-red-500 font-bold"><Trans i18nKey="auto.multiplicationlab.try_again_count_the">Try again! Count the</Trans> {a.emoji}<Trans i18nKey="auto.multiplicationlab.s">s</Trans></p>}
         </div>
 
         {!checked ? <button onClick={handleCheck} disabled={!answer} className={`w-full py-4 rounded-2xl font-bold text-lg min-h-[56px] ${answer ? 'bg-orange-600 text-white' : 'bg-gray-200 text-gray-500'}`}>{t('lab.modules.MultiplicationLab.btn_Check', 'Check')}</button>
-        : checked && parseInt(answer) === correct && <button onClick={() => { setIdx(p => (p + 1) % ARRAYS.length); setAnswer(''); setChecked(false); setFlipped(false); }} className="w-full py-4 bg-orange-600 text-white font-bold text-lg rounded-2xl min-h-[56px]">Next →</button>}
+        : checked && parseInt(answer) === correct && <button onClick={() => { setIdx(p => (p + 1) % ARRAYS.length); setAnswer(''); setChecked(false); setFlipped(false); }} className="w-full py-4 bg-orange-600 text-white font-bold text-lg rounded-2xl min-h-[56px]"><Trans i18nKey="auto.multiplicationlab.next">Next →</Trans></button>}
       </div>
     </LabShell>
   );

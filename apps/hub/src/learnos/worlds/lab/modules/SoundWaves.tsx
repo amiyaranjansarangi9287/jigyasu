@@ -3,7 +3,7 @@
 
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -86,7 +86,7 @@ export default function SoundWaves() {
           <div>
             <div className="flex items-center justify-between mb-2">
               <span className="text-sm text-slate-400">{t('lab.modules.SoundWaves.spn_FrequencyP', '🎵 Frequency (Pitch)')}</span>
-              <span className="text-sm font-medium text-blue-400">{frequency.toFixed(1)} Hz</span>
+              <span className="text-sm font-medium text-blue-400">{frequency.toFixed(1)} <Trans i18nKey="auto.soundwaves.hz">Hz</Trans></span>
             </div>
             <input
               type="range"
@@ -122,13 +122,13 @@ export default function SoundWaves() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.SoundWaves.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-400 font-bold text-sm mb-1">Indian Sound Science</h3>
+              <h3 className="text-orange-400 font-bold text-sm mb-1"><Trans i18nKey="auto.soundwaves.indian_sound_science">Indian Sound Science</Trans></h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Ancient Indians classified sound into <strong>Nāda Brahma</strong> (Sound is God)!
-                The concept of <strong>Śabda</strong> (sound) as a form of energy dates back to
-                the Upanishads (800 BCE). Indian musicians understood harmonics and resonance
-                centuries before Western science formalized it.
-              </p>
+                <Trans i18nKey="auto.soundwaves.ancient_indians_classified_sou">Ancient Indians classified sound into</Trans> <strong><Trans i18nKey="auto.soundwaves.n_da_brahma">Nāda Brahma</Trans></strong> <Trans i18nKey="auto.soundwaves.sound_is_god_the_concept_of">(Sound is God)!
+                                              The concept of</Trans> <strong><Trans i18nKey="auto.soundwaves.abda">Śabda</Trans></strong> <Trans i18nKey="auto.soundwaves.sound_as_a_form_of_energy_date">(sound) as a form of energy dates back to
+                                              the Upanishads (800 BCE). Indian musicians understood harmonics and resonance
+                                              centuries before Western science formalized it.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

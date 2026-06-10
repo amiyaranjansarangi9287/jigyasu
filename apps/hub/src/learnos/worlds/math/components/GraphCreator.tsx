@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
+import { Trans, useTranslation } from "react-i18next";
 
 type ChartType = 'bar' | 'line' | 'pie';
 
@@ -26,6 +27,7 @@ const presets: { name: string; data: DataPoint[] }[] = [
 ];
 
 export default function GraphCreator() {
+    const { t } = useTranslation();
   const [data, setData] = useState<DataPoint[]>(presets[0].data);
   const [chartType, setChartType] = useState<ChartType>('bar');
   const [newLabel, setNewLabel] = useState('');
@@ -66,8 +68,8 @@ export default function GraphCreator() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">📊 Graph Creator</h2>
-        <p className="text-purple-300 text-lg">Build bar, line, and pie charts from your own data!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.graphcreator.graph_creator">📊 Graph Creator</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.graphcreator.build_bar_line_and_pie_charts_">Build bar, line, and pie charts from your own data!</Trans></p>
       </div>
 
       {/* Chart type selector */}
@@ -97,6 +99,7 @@ export default function GraphCreator() {
               <line x1="40" y1={svgH - 30} x2={svgW} y2={svgH - 30} stroke="rgba(255,255,255,0.2)" />
               <line x1="40" y1="10" x2="40" y2={svgH - 30} stroke="rgba(255,255,255,0.2)" />
               {data.map((d, i) => {
+                  const { t } = useTranslation();
                 const barW = Math.max(10, (svgW - 60) / data.length - 8);
                 const barH = (d.value / maxVal) * (svgH - 50);
                 const x = 50 + i * ((svgW - 60) / data.length);
@@ -127,6 +130,7 @@ export default function GraphCreator() {
                 />
               )}
               {data.map((d, i) => {
+                  const { t } = useTranslation();
                 const x = 50 + i * ((svgW - 70) / Math.max(data.length - 1, 1));
                 const y = svgH - 30 - (d.value / maxVal) * (svgH - 50);
                 return (
@@ -142,6 +146,7 @@ export default function GraphCreator() {
           {chartType === 'pie' && (
             <svg width="260" height="260" viewBox="-130 -130 260 260">
               {pieArcs.map((arc, i) => {
+                  const { t } = useTranslation();
                 const r = 100;
                 const startRad = (arc.startAngle - 90) * Math.PI / 180;
                 const endRad = (arc.startAngle + arc.angle - 90) * Math.PI / 180;
@@ -169,7 +174,7 @@ export default function GraphCreator() {
         {/* Data editor */}
         <div className="space-y-4">
           <div className="bg-white/5 rounded-2xl p-4 border border-white/10">
-            <h4 className="text-white font-bold mb-3">📝 Data</h4>
+            <h4 className="text-white font-bold mb-3"><Trans i18nKey="auto.graphcreator.data">📝 Data</Trans></h4>
             <div className="space-y-2 max-h-48 overflow-y-auto pr-1">
               {data.map((d, i) => (
                 <div key={i} className="flex items-center gap-2 bg-white/5 rounded-lg px-3 py-1.5">
@@ -177,14 +182,14 @@ export default function GraphCreator() {
                   <span className="text-white text-sm flex-1">{d.label}</span>
                   <input type="number" value={d.value} onChange={e => updateValue(i, Number(e.target.value))}
                     className="w-16 bg-white/10 border border-white/20 rounded px-2 py-1 text-white text-sm text-center" />
-                  <button className="text-red-400 hover:text-red-300 text-sm" onClick={() => removePoint(i)}>✕</button>
+                  <button className="text-sky-400 hover:text-red-300 text-sm" onClick={() => removePoint(i)}>✕</button>
                 </div>
               ))}
             </div>
             <div className="flex gap-2 mt-3">
-              <input value={newLabel} onChange={e => setNewLabel(e.target.value)} placeholder="Label"
+              <input value={newLabel} onChange={e => setNewLabel(e.target.value)} placeholder={t('auto.attr.graphcreator.label')}
                 className="flex-1 bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white text-sm" />
-              <input value={newValue} onChange={e => setNewValue(e.target.value)} placeholder="Value" type="number"
+              <input value={newValue} onChange={e => setNewValue(e.target.value)} placeholder={t('auto.attr.graphcreator.value')} type="number"
                 className="w-20 bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white text-sm text-center"
                 onKeyDown={e => e.key === 'Enter' && addPoint()} />
               <button className="px-4 py-2 rounded-lg bg-purple-600 text-white font-bold text-sm" onClick={addPoint}>+</button>
@@ -193,18 +198,18 @@ export default function GraphCreator() {
 
           {/* Stats */}
           <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-2xl p-4 border border-blue-500/20">
-            <h4 className="text-white font-bold mb-2">📈 Statistics</h4>
+            <h4 className="text-white font-bold mb-2"><Trans i18nKey="auto.graphcreator.statistics">📈 Statistics</Trans></h4>
             <div className="grid grid-cols-2 gap-2 text-sm">
-              <div className="bg-white/5 rounded-lg p-2 text-center"><p className="text-gray-400 text-sm">Total</p><p className="text-white font-bold">{total}</p></div>
-              <div className="bg-white/5 rounded-lg p-2 text-center"><p className="text-gray-400 text-sm">Mean</p><p className="text-white font-bold">{mean.toFixed(1)}</p></div>
-              <div className="bg-white/5 rounded-lg p-2 text-center"><p className="text-gray-400 text-sm">Max</p><p className="text-white font-bold">{maxVal}</p></div>
-              <div className="bg-white/5 rounded-lg p-2 text-center"><p className="text-gray-400 text-sm">Items</p><p className="text-white font-bold">{data.length}</p></div>
+              <div className="bg-white/5 rounded-lg p-2 text-center"><p className="text-gray-400 text-sm"><Trans i18nKey="auto.graphcreator.total">Total</Trans></p><p className="text-white font-bold">{total}</p></div>
+              <div className="bg-white/5 rounded-lg p-2 text-center"><p className="text-gray-400 text-sm"><Trans i18nKey="auto.graphcreator.mean">Mean</Trans></p><p className="text-white font-bold">{mean.toFixed(1)}</p></div>
+              <div className="bg-white/5 rounded-lg p-2 text-center"><p className="text-gray-400 text-sm"><Trans i18nKey="auto.graphcreator.max">Max</Trans></p><p className="text-white font-bold">{maxVal}</p></div>
+              <div className="bg-white/5 rounded-lg p-2 text-center"><p className="text-gray-400 text-sm"><Trans i18nKey="auto.graphcreator.items">Items</Trans></p><p className="text-white font-bold">{data.length}</p></div>
             </div>
           </div>
 
           {chartType === 'pie' && (
             <div className="bg-white/5 rounded-xl p-3 border border-white/10">
-              <h4 className="text-white font-bold text-sm mb-2">🥧 Legend</h4>
+              <h4 className="text-white font-bold text-sm mb-2"><Trans i18nKey="auto.graphcreator.legend">🥧 Legend</Trans></h4>
               <div className="space-y-1">
                 {data.map((d, i) => (
                   <div key={i} className="flex items-center gap-2 text-sm">

@@ -2,6 +2,10 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Heart, Zap, RotateCcw, Play, Pause } from 'lucide-react';
 import { playPlace, playCollect, playHit, playGameOver, playVictory } from '../lib/sounds';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface Pathogen {
   id: number;
@@ -57,6 +61,22 @@ const GAME_H = 400;
 const CELL_CORE_X = 550;
 
 export default function ImmuneDefense() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.immune_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.immune_prompt', "Your body is a fortress! When invaders attack, an army of tiny cells fights them off. Let's deploy your immune system."),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'immune-defense', 60);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   const [gameState, setGameState] = useState<'menu' | 'playing' | 'paused' | 'won' | 'lost'>('menu');
   const [wave, setWave] = useState(1);
   const [health, setHealth] = useState(100);
@@ -256,26 +276,26 @@ export default function ImmuneDefense() {
         <div className="max-w-2xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <div className="text-6xl mb-4">🛡️</div>
-            <h2 className="text-3xl md:text-4xl font-black text-white mb-3">Immune System Battle</h2>
-            <p className="text-gray-400 mb-6">Defend your cell against invading pathogens!</p>
+            <h2 className="text-3xl md:text-4xl font-black text-white mb-3"><Trans i18nKey="auto.immunedefense.immune_system_battle">Immune System Battle</Trans></h2>
+            <p className="text-gray-400 mb-6"><Trans i18nKey="auto.immunedefense.defend_your_cell_against_invad">Defend your cell against invading pathogens!</Trans></p>
 
             <div className="bg-gray-900 rounded-2xl border border-gray-800 p-6 mb-6 text-left">
-              <h3 className="text-lg font-bold text-white mb-3">🎮 How to Play</h3>
+              <h3 className="text-lg font-bold text-white mb-3"><Trans i18nKey="auto.immunedefense.how_to_play">🎮 How to Play</Trans></h3>
               <ul className="text-sm text-gray-300 space-y-2">
-                <li>• <strong className="text-emerald-400">Select</strong> a defender from the bottom panel</li>
-                <li>• <strong className="text-emerald-400">Click</strong> on the battlefield to place it</li>
-                <li>• Defenders automatically attack nearby pathogens</li>
-                <li>• Don't let pathogens reach your cell (right side)!</li>
-                <li>• Survive 10 waves to win</li>
+                <li>• <strong className="text-emerald-400"><Trans i18nKey="auto.immunedefense.select">Select</Trans></strong> <Trans i18nKey="auto.immunedefense.a_defender_from_the_bottom_pan">a defender from the bottom panel</Trans></li>
+                <li>• <strong className="text-emerald-400"><Trans i18nKey="auto.immunedefense.click">Click</Trans></strong> <Trans i18nKey="auto.immunedefense.on_the_battlefield_to_place_it">on the battlefield to place it</Trans></li>
+                <li><Trans i18nKey="auto.immunedefense.defenders_automatically_attack">• Defenders automatically attack nearby pathogens</Trans></li>
+                <li><Trans i18nKey="auto.immunedefense.don_t_let_pathogens_reach_your">• Don't let pathogens reach your cell (right side)!</Trans></li>
+                <li><Trans i18nKey="auto.immunedefense.survive_10_waves_to_win">• Survive 10 waves to win</Trans></li>
               </ul>
 
-              <h4 className="text-sm font-bold text-white mt-4 mb-2">⚪ Your Immune Cells</h4>
+              <h4 className="text-sm font-bold text-white mt-4 mb-2"><Trans i18nKey="auto.immunedefense.your_immune_cells">⚪ Your Immune Cells</Trans></h4>
               <div className="grid grid-cols-2 gap-2">
                 {defenderTypes.map(d => (
                   <div key={d.type} className="bg-gray-800/50 rounded-lg p-2 text-sm">
                     <span className="text-lg mr-2">{d.emoji}</span>
                     <strong className="text-white">{d.name}</strong>
-                    <div className="text-gray-500 mt-1">DMG: {d.damage} | Range: {d.range} | Cost: {d.cost}⚡</div>
+                    <div className="text-gray-500 mt-1"><Trans i18nKey="auto.immunedefense.dmg">DMG:</Trans> {d.damage} <Trans i18nKey="auto.immunedefense.range">| Range:</Trans> {d.range} <Trans i18nKey="auto.immunedefense.cost">| Cost:</Trans> {d.cost}⚡</div>
                   </div>
                 ))}
               </div>
@@ -283,11 +303,11 @@ export default function ImmuneDefense() {
 
             <button onClick={startGame}
               className="px-8 py-3 rounded-xl bg-emerald-500 text-white font-bold text-lg hover:bg-emerald-600 transition-colors">
-              <Play className="w-5 h-5 inline mr-2" /> Start Defense
-            </button>
+              <Play className="w-5 h-5 inline mr-2" /> <Trans i18nKey="auto.immunedefense.start_defense">Start Defense</Trans>
+                                    </button>
 
             {highScore > 0 && (
-              <div className="mt-4 text-gray-500 text-sm">🏆 High Mastery: {highScore}</div>
+              <div className="mt-4 text-gray-500 text-sm"><Trans i18nKey="auto.immunedefense.high_mastery">🏆 High Mastery:</Trans> {highScore}</div>
             )}
           </motion.div>
         </div>
@@ -299,7 +319,7 @@ export default function ImmuneDefense() {
     <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
       <div className="max-w-4xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-3">
-          <h2 className="text-2xl font-black text-white">🛡️ Immune System Battle</h2>
+          <h2 className="text-2xl font-black text-white"><Trans i18nKey="auto.immunedefense.immune_system_battle">🛡️ Immune System Battle</Trans></h2>
         </motion.div>
 
         {/* HUD */}
@@ -318,8 +338,8 @@ export default function ImmuneDefense() {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <div className="text-sm"><span className="text-gray-500">Wave:</span> <span className="text-white font-bold">{wave}/10</span></div>
-            <div className="text-sm"><span className="text-gray-500">Mastery:</span> <span className="text-emerald-400 font-bold">{mastery}</span></div>
+            <div className="text-sm"><span className="text-gray-500"><Trans i18nKey="auto.immunedefense.wave">Wave:</Trans></span> <span className="text-white font-bold">{wave}<Trans i18nKey="auto.immunedefense.10">/10</Trans></span></div>
+            <div className="text-sm"><span className="text-gray-500"><Trans i18nKey="auto.immunedefense.mastery">Mastery:</Trans></span> <span className="text-emerald-400 font-bold">{mastery}</span></div>
             <button onClick={() => setGameState(gameState === 'paused' ? 'playing' : 'paused')}
               className="p-1.5 rounded-lg bg-gray-800 text-gray-400 hover:text-white">
               {gameState === 'paused' ? <Play className="w-4 h-4" /> : <Pause className="w-4 h-4" />}
@@ -382,14 +402,14 @@ export default function ImmuneDefense() {
           {/* Placement preview */}
           {selectedDefender && (
             <div className="absolute inset-0 bg-emerald-500/5 flex items-center justify-center pointer-events-none">
-              <div className="text-gray-400 text-sm">Click to place {selectedDefender.emoji} {selectedDefender.name}</div>
+              <div className="text-gray-400 text-sm"><Trans i18nKey="auto.immunedefense.click_to_place">Click to place</Trans> {selectedDefender.emoji} {selectedDefender.name}</div>
             </div>
           )}
 
           {/* Paused overlay */}
           {gameState === 'paused' && (
             <div className="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center">
-              <div className="text-white text-2xl font-bold">PAUSED</div>
+              <div className="text-white text-2xl font-bold"><Trans i18nKey="auto.immunedefense.paused">PAUSED</Trans></div>
             </div>
           )}
         </div>
@@ -412,7 +432,7 @@ export default function ImmuneDefense() {
                 <span className="text-xl">{d.emoji}</span>
                 <div className="text-left">
                   <div className="text-sm font-bold text-white">{d.name}</div>
-                  <div className="text-sm text-gray-500">{d.cost}⚡ | DMG:{d.damage}</div>
+                  <div className="text-sm text-gray-500">{d.cost}<Trans i18nKey="auto.immunedefense.dmg">⚡ | DMG:</Trans>{d.damage}</div>
                 </div>
               </button>
             );
@@ -434,16 +454,16 @@ export default function ImmuneDefense() {
                   {gameState === 'won' ? 'You defended against all 10 waves!' : `You made it to wave ${wave}`}
                 </p>
                 <div className="bg-gray-800 rounded-xl p-3 mb-5">
-                  <div className="text-gray-500 text-sm">Final Mastery</div>
+                  <div className="text-gray-500 text-sm"><Trans i18nKey="auto.immunedefense.final_mastery">Final Mastery</Trans></div>
                   <div className="text-3xl font-black text-emerald-400">{mastery}</div>
                 </div>
                 <div className="flex gap-2">
                   <button onClick={startGame} className="flex-1 py-2.5 rounded-xl bg-emerald-500 text-white font-bold flex items-center justify-center gap-1">
-                    <RotateCcw className="w-4 h-4" /> Play Again
-                  </button>
+                    <RotateCcw className="w-4 h-4" /> <Trans i18nKey="auto.immunedefense.play_again">Play Again</Trans>
+                                                        </button>
                   <button onClick={() => setGameState('menu')} className="flex-1 py-2.5 rounded-xl bg-gray-800 text-gray-300 font-bold">
-                    Menu
-                  </button>
+                    <Trans i18nKey="auto.immunedefense.menu">Menu</Trans>
+                                                        </button>
                 </div>
               </motion.div>
             </motion.div>

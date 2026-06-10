@@ -5,7 +5,7 @@ import DailyGoalRing from './DailyGoalRing';
 import SearchOverlay from './SearchOverlay';
 import GlobalLanguageSelector from './GlobalLanguageSelector';
 import OfflineIndicator from './OfflineIndicator';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 export default function TopNav() {
   const navigate = useNavigate();
@@ -48,8 +48,8 @@ export default function TopNav() {
         onClick={() => navigate('/')}
       >
         <span className="text-3xl group-hover:scale-110 transition-transform">🌟</span>
-        <h1 className={`text-2xl font-extrabold tracking-tight transition-colors ${isTransparentWithWhiteText ? 'text-white drop-shadow-md group-hover:text-sky-300' : 'text-slate-800 group-hover:text-sky-500'}`}>Jigyasu</h1>
-        <span className={`text-sm font-bold self-end mb-1 ml-1 hidden sm:block ${isTransparentWithWhiteText ? 'text-white/80' : 'text-slate-400'}`}>v1.0.0</span>
+        <h1 className={`text-2xl font-extrabold tracking-tight transition-colors ${isTransparentWithWhiteText ? 'text-white drop-shadow-md group-hover:text-sky-300' : 'text-slate-800 group-hover:text-sky-500'}`}><Trans i18nKey="auto.topnav.jigyasu">Jigyasu</Trans></h1>
+        <span className={`text-sm font-bold self-end mb-1 ml-1 hidden sm:block ${isTransparentWithWhiteText ? 'text-white/80' : 'text-slate-400'}`}><Trans i18nKey="auto.topnav.v1_0_0">v1.0.0</Trans></span>
         {location.pathname !== '/' && (
           <span className={`ml-2 px-3 py-1 rounded-full text-sm font-bold hidden sm:block transition-colors ${
             isTransparentWithWhiteText 
@@ -76,7 +76,7 @@ export default function TopNav() {
             <div className="w-px h-4 bg-slate-300"></div>
             <div className="flex items-center gap-1.5" title={`${t('daily_goal', 'Daily Goal')}: ${profile.dailyXP || 0} / ${profile.dailyGoalXP || 50} XP`}>
               <DailyGoalRing currentXP={profile.dailyXP || 0} goalXP={profile.dailyGoalXP || 50} size={24} />
-              <span>{xp} XP</span>
+              <span>{xp} <Trans i18nKey="auto.topnav.xp">XP</Trans></span>
             </div>
           </div>
         )}

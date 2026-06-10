@@ -1,7 +1,7 @@
 // CampCraft - Footer
 
 import { pillars } from '../data/categories';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 interface FooterProps {
   onNavigate: (section: string) => void;
@@ -20,7 +20,7 @@ export default function Footer({ onNavigate }: FooterProps) {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <span className="text-3xl">�</span>
-              <span className="text-2xl font-bold text-white">Jigyasu</span>
+              <span className="text-2xl font-bold text-white"><Trans i18nKey="auto.footer.jigyasu">Jigyasu</Trans></span>
             </div>
             <p className="text-gray-400 text-sm mb-6">
               {t('footer.desc', 'Free visual STEM learning for every child in India. Works offline. 6 Indian languages.')}
@@ -38,8 +38,8 @@ export default function Footer({ onNavigate }: FooterProps) {
                     className="flex items-center gap-2 hover:text-orange-400 transition-colors"
                   >
                     <span>{pillar.icon}</span>
-                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                    <span>{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
+                    <Trans i18nKey="auto.footer.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
+                                              <span>{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
                   </button>
                 </li>
               ))}
@@ -100,9 +100,9 @@ export default function Footer({ onNavigate }: FooterProps) {
         <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex flex-col gap-1 items-center sm:items-start text-sm">
             <p className="text-gray-500">
-              © {currentYear} Jigyasu. {t('footer.made_with', 'Made with ❤️ for India.')}
+              © {currentYear} <Trans i18nKey="auto.footer.jigyasu">Jigyasu.</Trans> {t('footer.made_with', 'Made with ❤️ for India.')}
             </p>
-            <p className="text-xs text-gray-600">Developed by <span className="font-semibold text-gray-400">Annapurna Agentic Solutions</span></p>
+            <p className="text-xs text-gray-600"><Trans i18nKey="auto.footer.developed_by">Developed by</Trans> <span className="font-semibold text-gray-400"><Trans i18nKey="auto.footer.annapurna_agentic_solutions">Annapurna Agentic Solutions</Trans></span></p>
           </div>
         </div>
       </div>

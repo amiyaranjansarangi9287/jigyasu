@@ -5,8 +5,10 @@
 
 import { useDarkMode } from '../hooks/useDarkMode';
 import { motion } from 'framer-motion';
+import { useTranslation } from "react-i18next";
 
 export function DarkModeToggle() {
+    const { t } = useTranslation();
   const { theme, isDark, setTheme, toggleDarkMode } = useDarkMode();
 
   return (
@@ -19,7 +21,7 @@ export function DarkModeToggle() {
             : 'hover:bg-slate-200 dark:hover:bg-slate-700'
         }`}
         aria-label="Light mode"
-        title="Light mode"
+        title={t('auto.attr.darkmodetoggle.light_mode')}
       >
         <span className="text-lg">☀️</span>
       </button>
@@ -32,7 +34,7 @@ export function DarkModeToggle() {
             : 'hover:bg-slate-200 dark:hover:bg-slate-700'
         }`}
         aria-label="System theme"
-        title="System theme"
+        title={t('auto.attr.darkmodetoggle.system_theme')}
       >
         <span className="text-lg">💻</span>
       </button>
@@ -45,7 +47,7 @@ export function DarkModeToggle() {
             : 'hover:bg-slate-200 dark:hover:bg-slate-700'
         }`}
         aria-label="Dark mode"
-        title="Dark mode"
+        title={t('auto.attr.darkmodetoggle.dark_mode')}
       >
         <span className="text-lg">🌙</span>
       </button>

@@ -4,7 +4,7 @@
 // Mission Alignment: Joy Value - Celebrate learning achievements
 
 import { useState, useRef } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 interface CertificateProps {
   learnerName: string;
@@ -60,34 +60,34 @@ export default function CertificateGenerator({
           {/* Certificate Header */}
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">🦚</div>
-            <h1 className="text-4xl font-bold text-indigo-900 mb-2">Jigyasu</h1>
-            <p className="text-lg text-slate-600 italic">Install Wonder</p>
+            <h1 className="text-4xl font-bold text-indigo-900 mb-2"><Trans i18nKey="auto.certificategenerator.jigyasu">Jigyasu</Trans></h1>
+            <p className="text-lg text-slate-600 italic"><Trans i18nKey="auto.certificategenerator.install_wonder">Install Wonder</Trans></p>
           </div>
 
           {/* Certificate Title */}
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-indigo-800 mb-4">
-              Certificate of Completion
-            </h2>
+              <Trans i18nKey="auto.certificategenerator.certificate_of_completion">Certificate of Completion</Trans>
+                                      </h2>
             <div className="w-32 h-1 bg-indigo-600 mx-auto"></div>
           </div>
 
           {/* Certificate Content */}
           <div className="text-center mb-12">
             <p className="text-xl text-slate-700 mb-6">
-              This is to certify that
-            </p>
+              <Trans i18nKey="auto.certificategenerator.this_is_to_certify_that">This is to certify that</Trans>
+                                      </p>
             <h3 className="text-4xl font-bold text-indigo-900 mb-6">
               {learnerName}
             </h3>
             <p className="text-xl text-slate-700 mb-6">
-              has successfully completed the module
-            </p>
+              <Trans i18nKey="auto.certificategenerator.has_successfully_completed_the">has successfully completed the module</Trans>
+                                      </p>
             <h4 className="text-3xl font-bold text-green-700 mb-6">
               {moduleName}
             </h4>
             <p className="text-lg text-slate-600">
-              on {formatDate(completionDate)}
+              <Trans i18nKey="auto.certificategenerator.on">on</Trans> {formatDate(completionDate)}
             </p>
           </div>
 
@@ -95,15 +95,15 @@ export default function CertificateGenerator({
           <div className="flex justify-between items-end mt-16 px-12">
             <div className="text-center">
               <div className="w-32 h-1 border-b-2 border-slate-400 mb-2"></div>
-              <p className="text-sm text-slate-600">Jigyasu Team</p>
+              <p className="text-sm text-slate-600"><Trans i18nKey="auto.certificategenerator.jigyasu_team">Jigyasu Team</Trans></p>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-2">🎉</div>
-              <p className="text-sm text-slate-600">Achievement Unlocked</p>
+              <p className="text-sm text-slate-600"><Trans i18nKey="auto.certificategenerator.achievement_unlocked">Achievement Unlocked</Trans></p>
             </div>
             <div className="text-center">
               <div className="w-32 h-1 border-b-2 border-slate-400 mb-2"></div>
-              <p className="text-sm text-slate-600">Date</p>
+              <p className="text-sm text-slate-600"><Trans i18nKey="auto.certificategenerator.date">Date</Trans></p>
             </div>
           </div>
 

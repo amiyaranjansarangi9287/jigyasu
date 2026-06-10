@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/FoodChainWonderFirst.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout';
@@ -55,8 +55,8 @@ function ExplorationComponent() {
 
       {/* Energy flow diagram */}
       <div className="bg-green-50 rounded-2xl p-5 text-center">
-        <div className="text-sm text-green-600 font-bold">Sun → Producer → Consumer → Decomposer</div>
-        <div className="text-sm text-green-400 mt-2">Energy flows from the sun through every living thing!</div>
+        <div className="text-sm text-green-600 font-bold"><Trans i18nKey="auto.foodchainwonderfirst.sun_producer_consumer_decompos">Sun → Producer → Consumer → Decomposer</Trans></div>
+        <div className="text-sm text-green-400 mt-2"><Trans i18nKey="auto.foodchainwonderfirst.energy_flows_from_the_sun_thro">Energy flows from the sun through every living thing!</Trans></div>
       </div>
 
       {/* Four chains grid */}
@@ -73,13 +73,13 @@ function ExplorationComponent() {
       <div className="bg-blue-50 rounded-2xl p-4 border border-blue-200">
         <h3 className="font-bold text-blue-900 mb-2 flex items-center gap-2">
           <span className="text-xl">👀</span>
-          What do you notice?
-        </h3>
+          <Trans i18nKey="auto.foodchainwonderfirst.what_do_you_notice">What do you notice?</Trans>
+                          </h3>
         <ul className="text-slate-700 text-sm space-y-2">
-          <li>• Where does the energy in the food chain come from?</li>
-          <li>• What happens if one link in the chain disappears?</li>
-          <li>• Why are there fewer predators than prey?</li>
-          <li>• How do decomposers complete the cycle?</li>
+          <li><Trans i18nKey="auto.foodchainwonderfirst.where_does_the_energy_in_the_f">• Where does the energy in the food chain come from?</Trans></li>
+          <li><Trans i18nKey="auto.foodchainwonderfirst.what_happens_if_one_link_in_th">• What happens if one link in the chain disappears?</Trans></li>
+          <li><Trans i18nKey="auto.foodchainwonderfirst.why_are_there_fewer_predators_">• Why are there fewer predators than prey?</Trans></li>
+          <li><Trans i18nKey="auto.foodchainwonderfirst.how_do_decomposers_complete_th">• How do decomposers complete the cycle?</Trans></li>
         </ul>
       </div>
     </div>

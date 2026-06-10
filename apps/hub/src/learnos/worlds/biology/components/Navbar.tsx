@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Microscope, Volume2, VolumeX } from 'lucide-react';
 import { getMuted, setMuted } from '../lib/sounds';
+import { Trans } from "react-i18next";
 
 const modules = [
   { id: 'home', label: 'Home', emoji: '🏠' },
@@ -48,10 +49,10 @@ export default function Navbar({ currentModule, onNavigate, progress }: NavbarPr
       <div className="max-w-[1600px] mx-auto px-3 flex items-center justify-between h-12">
         <button onClick={() => onNavigate('home')} className="flex items-center gap-1.5 text-emerald-400 font-bold text-sm shrink-0 min-h-[44px] px-2 rounded-lg">
           <Microscope className="w-4 h-4" />
-          <span className="hidden sm:inline">BioVerse</span>
+          <span className="hidden sm:inline"><Trans i18nKey="auto.navbar.bioverse">BioVerse</Trans></span>
           {progress && (
             <span className="hidden sm:flex items-center gap-1 ml-1 px-2 py-0.5 rounded-full bg-yellow-500/15 text-yellow-400 text-sm font-bold">
-              ⭐ Lv.{progress.level}
+              <Trans i18nKey="auto.navbar.lv">⭐ Lv.</Trans>{progress.level}
             </span>
           )}
         </button>

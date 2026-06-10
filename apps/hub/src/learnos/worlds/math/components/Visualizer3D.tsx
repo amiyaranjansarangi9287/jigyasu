@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import GestureWrapper from '../../../../components/GestureWrapper';
 
 type Operation = '+' | '-' | '×' | '÷';
@@ -228,7 +228,7 @@ export default function Visualizer3D() {
             <div className="flex items-center gap-2">
               <motion.button
                 whileTap={{ scale: 0.9 }}
-                className="w-8 h-8 rounded-full bg-orange-500/30 text-orange-400 font-bold text-lg flex items-center justify-center hover:bg-orange-500/50"
+                className="w-8 h-8 rounded-full bg-orange-500/30 text-sky-400 font-bold text-lg flex items-center justify-center hover:bg-orange-500/50"
                 onClick={() => setNumB(Math.max(operation === '÷' ? 1 : 0, numB - 1))}
               >−</motion.button>
               <input
@@ -239,7 +239,7 @@ export default function Visualizer3D() {
               />
               <motion.button
                 whileTap={{ scale: 0.9 }}
-                className="w-8 h-8 rounded-full bg-orange-500/30 text-orange-400 font-bold text-lg flex items-center justify-center hover:bg-orange-500/50"
+                className="w-8 h-8 rounded-full bg-orange-500/30 text-sky-400 font-bold text-lg flex items-center justify-center hover:bg-orange-500/50"
                 onClick={() => setNumB(Math.min(99, numB + 1))}
               >+</motion.button>
             </div>
@@ -256,7 +256,7 @@ export default function Visualizer3D() {
           <span className="text-3xl sm:text-4xl font-bold">
             <span className="text-blue-400">{numA}</span>
             <span className="text-purple-400 mx-2">{operation}</span>
-            <span className="text-orange-400">{numB}</span>
+            <span className="text-sky-400">{numB}</span>
             <span className="text-gray-400 mx-2">=</span>
             <motion.span
               className="text-green-400"
@@ -306,7 +306,7 @@ export default function Visualizer3D() {
         >
         <div className="absolute top-4 right-4 flex gap-2 z-10">
           <button className="w-8 h-8 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 active:scale-95" onClick={() => setZoom(z => Math.max(0.5, z - 0.2))}>-</button>
-          <button className="w-8 h-8 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 active:scale-95" onClick={() => setZoom(1)}>R</button>
+          <button className="w-8 h-8 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 active:scale-95" onClick={() => setZoom(1)}><Trans i18nKey="auto.visualizer3d.r">R</Trans></button>
           <button className="w-8 h-8 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 active:scale-95" onClick={() => setZoom(z => Math.min(3, z + 0.2))}>+</button>
         </div>
         <AnimatePresence mode="wait">

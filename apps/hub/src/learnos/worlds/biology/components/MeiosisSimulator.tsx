@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Play, Pause, GitCompare } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface Phase {
   id: string;
@@ -170,6 +174,22 @@ function CellVisualization({ phaseIndex }: { phaseIndex: number }) {
 }
 
 export default function MeiosisSimulator() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.meiosis_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.meiosis_prompt', "Why are you unique from your siblings? Meiosis mixes up genes to create infinite variety. Let's simulate the shuffle!"),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'meiosis-simulator', 60);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   const [currentPhase, setCurrentPhase] = useState(0);
   const [autoPlay, setAutoPlay] = useState(false);
   const [showComparison, setShowComparison] = useState(false);
@@ -311,3 +331,4 @@ export default function MeiosisSimulator() {
     </div>
   );
 }
+

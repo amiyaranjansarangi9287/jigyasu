@@ -2,7 +2,7 @@
 // Drag a torch to change shadow direction/length. Solve challenges.
 
 import { useRef, useEffect, useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { useSettingsStore } from '@/store';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
@@ -176,7 +176,7 @@ export default function ShadowDetective() {
           <div className="bg-indigo-900/50 rounded-2xl p-4 border border-indigo-700">
             <div className="flex items-center gap-3"><span className="text-3xl">{t('early.modules.ShadowDetective.spn_', '🐤🔦')}</span>
               <div><p className="text-base font-bold text-indigo-200">{targetLabels[challenge.targetPosition]}</p>
-                <p className="text-sm text-indigo-400">Drag the torch! · {solvedCount}/{SHADOW_CHALLENGES.length} solved</p></div>
+                <p className="text-sm text-indigo-400"><Trans i18nKey="auto.shadowdetective.drag_the_torch">Drag the torch! ·</Trans> {solvedCount}/{SHADOW_CHALLENGES.length} <Trans i18nKey="auto.shadowdetective.solved">solved</Trans></p></div>
             </div>
           </div>
         </div>

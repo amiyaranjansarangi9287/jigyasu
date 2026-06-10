@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Info } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface PlantPart {
   id: string;
@@ -86,6 +90,22 @@ const rootHairs = Array.from({ length: 12 }, (_, i) => {
 });
 
 export default function PlantAnatomy() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.plant_anatomy_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.plant_anatomy_prompt', "Plants don't have hearts or lungs, so how do they drink water and breathe? Let's dissect a plant and see inside!"),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'plant-anatomy', 60);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   const [selectedSection, setSelectedSection] = useState('flower');
   const [highlightedStructure, setHighlightedStructure] = useState<number | null>(null);
 
@@ -95,8 +115,8 @@ export default function PlantAnatomy() {
     <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-2">🌻 Plant Anatomy</h2>
-          <p className="text-gray-400 text-lg">Explore the structures of flowers, leaves, stems, and roots!</p>
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-2"><Trans i18nKey="auto.plantanatomy.plant_anatomy">🌻 Plant Anatomy</Trans></h2>
+          <p className="text-gray-400 text-lg"><Trans i18nKey="auto.plantanatomy.explore_the_structures_of_flow">Explore the structures of flowers, leaves, stems, and roots!</Trans></p>
         </motion.div>
 
         {/* Section selector */}
@@ -153,22 +173,22 @@ export default function PlantAnatomy() {
                     <g>
                       {/* Leaf cross section layers */}
                       <rect x="40" y="80" width="320" height="15" rx="3" fill="#22c55e55" stroke="#22c55e" strokeWidth="1.5" className="cursor-pointer" onClick={() => setHighlightedStructure(0)} opacity={highlightedStructure === 0 ? 1 : 0.6} />
-                      <text x="200" y="75" textAnchor="middle" fontSize="10" fill="#9ca3af">Cuticle</text>
+                      <text x="200" y="75" textAnchor="middle" fontSize="10" fill="#9ca3af"><Trans i18nKey="auto.plantanatomy.cuticle">Cuticle</Trans></text>
                       <rect x="40" y="100" width="320" height="20" rx="2" fill="#22c55e33" stroke="#22c55e88" strokeWidth="1" className="cursor-pointer" onClick={() => setHighlightedStructure(1)} opacity={highlightedStructure === 1 ? 1 : 0.6} />
-                      <text x="370" y="115" fontSize="9" fill="#9ca3af">Epidermis</text>
+                      <text x="370" y="115" fontSize="9" fill="#9ca3af"><Trans i18nKey="auto.plantanatomy.epidermis">Epidermis</Trans></text>
                       {/* Palisade */}
                       {Array.from({ length: 14 }).map((_, i) => (
                         <rect key={`pal-${i}`} x={50 + i * 23} y="125" width="14" height="70" rx="4" fill="#15803d55" stroke="#15803d88" strokeWidth="1"
                           className="cursor-pointer" onClick={() => setHighlightedStructure(2)} opacity={highlightedStructure === 2 ? 0.9 : 0.5} />
                       ))}
-                      <text x="370" y="160" fontSize="9" fill="#9ca3af">Palisade</text>
+                      <text x="370" y="160" fontSize="9" fill="#9ca3af"><Trans i18nKey="auto.plantanatomy.palisade">Palisade</Trans></text>
                       {/* Spongy */}
                       {Array.from({ length: 18 }).map((_, i) => (
                         <ellipse key={`sp-${i}`} cx={55 + (i % 7) * 48} cy={215 + Math.floor(i / 7) * 25 + (i % 3) * 8} rx={12 + (i % 3) * 4} ry={8 + (i % 2) * 4}
                           fill="#86efac33" stroke="#86efac55" strokeWidth="0.8"
                           className="cursor-pointer" onClick={() => setHighlightedStructure(3)} opacity={highlightedStructure === 3 ? 0.9 : 0.5} />
                       ))}
-                      <text x="370" y="230" fontSize="9" fill="#9ca3af">Spongy</text>
+                      <text x="370" y="230" fontSize="9" fill="#9ca3af"><Trans i18nKey="auto.plantanatomy.spongy">Spongy</Trans></text>
                       {/* Vascular bundle */}
                       <rect x="180" y="140" width="40" height="80" rx="5" fill="#dc262622" stroke="#dc2626" strokeWidth="1.5"
                         className="cursor-pointer" onClick={() => setHighlightedStructure(5)} opacity={highlightedStructure === 5 ? 1 : 0.6} />
@@ -181,15 +201,15 @@ export default function PlantAnatomy() {
                           <ellipse cx={sx} cy="290" rx="8" ry="4" fill="none" stroke="#0ea5e9" strokeWidth="1.5" opacity={highlightedStructure === 4 ? 1 : 0.5} />
                         </g>
                       ))}
-                      <text x="200" y="310" textAnchor="middle" fontSize="9" fill="#0ea5e9">Stomata</text>
+                      <text x="200" y="310" textAnchor="middle" fontSize="9" fill="#0ea5e9"><Trans i18nKey="auto.plantanatomy.stomata">Stomata</Trans></text>
                     </g>
                   )}
                   {selectedSection === 'stem' && (
                     <g>
                       <circle cx="200" cy="200" r="150" fill="#22c55e11" stroke="#22c55e" strokeWidth="2" className="cursor-pointer" onClick={() => setHighlightedStructure(0)} opacity={highlightedStructure === 0 ? 1 : 0.5} />
-                      <text x="200" y="55" textAnchor="middle" fontSize="10" fill="#9ca3af">Epidermis</text>
+                      <text x="200" y="55" textAnchor="middle" fontSize="10" fill="#9ca3af"><Trans i18nKey="auto.plantanatomy.epidermis">Epidermis</Trans></text>
                       <circle cx="200" cy="200" r="120" fill="#86efac11" stroke="#86efac55" strokeWidth="1" className="cursor-pointer" onClick={() => setHighlightedStructure(4)} opacity={highlightedStructure === 4 ? 1 : 0.4} />
-                      <text x="330" y="200" fontSize="9" fill="#9ca3af">Cortex</text>
+                      <text x="330" y="200" fontSize="9" fill="#9ca3af"><Trans i18nKey="auto.plantanatomy.cortex">Cortex</Trans></text>
                       {/* Vascular bundles */}
                       {[0, 60, 120, 180, 240, 300].map(angle => {
                         const r = 80;
@@ -205,7 +225,7 @@ export default function PlantAnatomy() {
                         );
                       })}
                       <circle cx="200" cy="200" r="30" fill="#f5f5f511" stroke="#a3a3a333" strokeWidth="1" className="cursor-pointer" onClick={() => setHighlightedStructure(5)} />
-                      <text x="200" y="205" textAnchor="middle" fontSize="9" fill="#9ca3af">Pith</text>
+                      <text x="200" y="205" textAnchor="middle" fontSize="9" fill="#9ca3af"><Trans i18nKey="auto.plantanatomy.pith">Pith</Trans></text>
                     </g>
                   )}
                   {selectedSection === 'root' && (
@@ -219,11 +239,11 @@ export default function PlantAnatomy() {
                             className="cursor-pointer" onClick={() => setHighlightedStructure(1)} />
                         );
                       })}
-                      <text x="310" y="180" fontSize="9" fill="#9ca3af">Root Hairs</text>
+                      <text x="310" y="180" fontSize="9" fill="#9ca3af"><Trans i18nKey="auto.plantanatomy.root_hairs">Root Hairs</Trans></text>
                       {/* Root cap */}
                       <ellipse cx="200" cy="345" rx="28" ry="15" fill="#92400e44" stroke="#92400e" strokeWidth="1.5"
                         className="cursor-pointer" onClick={() => setHighlightedStructure(0)} opacity={highlightedStructure === 0 ? 0.9 : 0.4} />
-                      <text x="200" y="375" textAnchor="middle" fontSize="9" fill="#9ca3af">Root Cap</text>
+                      <text x="200" y="375" textAnchor="middle" fontSize="9" fill="#9ca3af"><Trans i18nKey="auto.plantanatomy.root_cap">Root Cap</Trans></text>
                       {/* Vascular core */}
                       <rect x="192" y="60" width="16" height="260" rx="5" fill="#3b82f622" stroke="#3b82f6" strokeWidth="1"
                         className="cursor-pointer" onClick={() => setHighlightedStructure(5)} opacity={highlightedStructure === 5 ? 0.8 : 0.3} />
@@ -239,12 +259,12 @@ export default function PlantAnatomy() {
                     <div className="text-4xl">{part.emoji}</div>
                     <div>
                       <h3 className="text-xl font-bold text-white">{part.name}</h3>
-                      <div className="text-sm text-gray-500">Click structures in the diagram to highlight</div>
+                      <div className="text-sm text-gray-500"><Trans i18nKey="auto.plantanatomy.click_structures_in_the_diagra">Click structures in the diagram to highlight</Trans></div>
                     </div>
                   </div>
                   <p className="text-sm text-gray-300 leading-relaxed mb-4">{part.description}</p>
 
-                  <h4 className="text-sm font-bold text-white mb-2 uppercase tracking-wider">Internal Structures</h4>
+                  <h4 className="text-sm font-bold text-white mb-2 uppercase tracking-wider"><Trans i18nKey="auto.plantanatomy.internal_structures">Internal Structures</Trans></h4>
                   <div className="space-y-2">
                     {part.structures.map((s, i) => (
                       <motion.button key={i}
@@ -261,8 +281,8 @@ export default function PlantAnatomy() {
 
                 <div className="bg-gradient-to-br from-green-900/20 to-emerald-900/20 rounded-xl p-4 border border-green-500/20">
                   <div className="flex items-center gap-1.5 text-green-400 font-bold text-sm mb-1">
-                    <Info className="w-3 h-3" /> Fun Fact
-                  </div>
+                    <Info className="w-3 h-3" /> <Trans i18nKey="auto.plantanatomy.fun_fact">Fun Fact</Trans>
+                                                        </div>
                   <p className="text-sm text-gray-300 italic">{part.funFact}</p>
                 </div>
               </div>

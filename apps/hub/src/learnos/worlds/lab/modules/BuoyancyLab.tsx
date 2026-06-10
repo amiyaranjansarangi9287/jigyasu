@@ -1,6 +1,6 @@
 // src/worlds/lab/modules/BuoyancyLab.tsx
 import { useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import LabShell from '../LabShell';
 import { useLumoOwl } from '../hooks/useLumoOwl';
@@ -33,9 +33,9 @@ export default function BuoyancyLab() {
     <LabShell module="buoyancy-lab" subject="physics">
       <div className="min-h-screen bg-cyan-50 flex flex-col p-6 pb-24">
         <div className="bg-white rounded-3xl p-5 shadow-sm border border-cyan-100 mb-4">
-          <h2 className="font-bold text-lg">Buoyancy Lab</h2>
+          <h2 className="font-bold text-lg"><Trans i18nKey="auto.buoyancylab.buoyancy_lab">Buoyancy Lab</Trans></h2>
           <p className="text-sm text-slate-500">{t('lab.modules.BuoyancyLab.txt_Dropobject', 'Drop objects into the water. Which float?')}</p>
-          <div className="mt-2 text-sm text-cyan-600 bg-cyan-100 px-3 py-1 rounded-full inline-block">Water density = 1.0 g/cm³</div>
+          <div className="mt-2 text-sm text-cyan-600 bg-cyan-100 px-3 py-1 rounded-full inline-block"><Trans i18nKey="auto.buoyancylab.water_density_1_0_g_cm">Water density = 1.0 g/cm³</Trans></div>
         </div>
 
         {/* Water tank */}
@@ -51,12 +51,12 @@ export default function BuoyancyLab() {
         {showResult && activeObjData && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={`rounded-2xl p-4 mb-4 text-center ${activeObjData.floats ? 'bg-green-100 border border-green-300' : 'bg-red-100 border border-red-300'}`}>
             <p className="font-bold text-lg">{activeObjData.emoji} {activeObjData.floats ? 'Floats!' : 'Sinks'}</p>
-            <p className="text-sm text-slate-600">Density: {activeObjData.density} — {activeObjData.density < 1 ? 'lighter' : 'heavier'} than water</p>
+            <p className="text-sm text-slate-600"><Trans i18nKey="auto.buoyancylab.density">Density:</Trans> {activeObjData.density} — {activeObjData.density < 1 ? 'lighter' : 'heavier'} <Trans i18nKey="auto.buoyancylab.than_water">than water</Trans></p>
           </motion.div>
         )}
 
         {/* Objects shelf */}
-        <p className="text-sm text-slate-400 font-bold mb-2">TAP TO TEST ({tested.length}/{BUOYANCY_OBJECTS.length})</p>
+        <p className="text-sm text-slate-400 font-bold mb-2"><Trans i18nKey="auto.buoyancylab.tap_to_test">TAP TO TEST (</Trans>{tested.length}/{BUOYANCY_OBJECTS.length})</p>
         <div className="grid grid-cols-3 gap-3">
           {BUOYANCY_OBJECTS.map(obj => (
             <button key={obj.id} onClick={() => handleDrop(obj.id)} className={`bg-white rounded-2xl p-3 border-2 flex flex-col items-center gap-1 min-h-[80px] transition-all ${tested.includes(obj.id) ? 'border-blue-300 opacity-60' : 'border-slate-200'}`}>

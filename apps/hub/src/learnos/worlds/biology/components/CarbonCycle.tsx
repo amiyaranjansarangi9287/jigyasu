@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Info } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface CycleNode {
   id: string;
@@ -69,6 +73,22 @@ const co2Particles = Array.from({ length: 8 }, (_, i) => ({
 }));
 
 export default function CarbonCycle() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.carbon_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.carbon_prompt', "Carbon is everywhere—in the air, in plants, and in you! How does it cycle through our world? Let's trace its path."),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'carbon-cycle', 60);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   const [selectedNode, setSelectedNode] = useState<CycleNode | null>(null);
   const [selectedFlow, setSelectedFlow] = useState<CycleFlow | null>(null);
   const [hovered, setHovered] = useState<string | null>(null);
@@ -77,8 +97,8 @@ export default function CarbonCycle() {
     <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-2">♻️ Carbon Cycle</h2>
-          <p className="text-gray-400 text-lg">How carbon moves through atmosphere, land, ocean, and life</p>
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-2"><Trans i18nKey="auto.carboncycle.carbon_cycle">♻️ Carbon Cycle</Trans></h2>
+          <p className="text-gray-400 text-lg"><Trans i18nKey="auto.carboncycle.how_carbon_moves_through_atmos">How carbon moves through atmosphere, land, ocean, and life</Trans></p>
         </motion.div>
 
         <div className="grid lg:grid-cols-5 gap-6">
@@ -147,14 +167,14 @@ export default function CarbonCycle() {
                   style={{ left: particle.left, top: particle.top }}
                   animate={{ y: [-5, 5, -5], x: [-3, 3, -3], opacity: [0.15, 0.35, 0.15] }}
                   transition={{ repeat: Infinity, duration: particle.duration, delay: particle.delay }}>
-                  CO₂
-                </motion.div>
+                  <Trans i18nKey="auto.carboncycle.co">CO₂</Trans>
+                                      </motion.div>
               ))}
             </div>
 
             {/* Flow list */}
             <div className="mt-4 bg-gray-900 rounded-xl border border-gray-800 p-4 max-h-[220px] overflow-y-auto">
-              <h4 className="text-sm font-bold text-white mb-2">🔄 Carbon Flows (click to learn)</h4>
+              <h4 className="text-sm font-bold text-white mb-2"><Trans i18nKey="auto.carboncycle.carbon_flows_click_to_learn">🔄 Carbon Flows (click to learn)</Trans></h4>
               <div className="grid grid-cols-2 gap-1.5">
                 {flows.map((f, i) => {
                   const isHuman = f.process.includes('Combustion');
@@ -210,8 +230,8 @@ export default function CarbonCycle() {
                   <p className="text-sm text-gray-300">{selectedFlow.description}</p>
                   {selectedFlow.process.includes('Combustion') && (
                     <div className="mt-3 bg-red-500/10 rounded-lg p-3 border border-red-500/20">
-                      <div className="text-sm text-orange-400 font-bold">⚠️ Human Impact</div>
-                      <p className="text-sm text-gray-300 mt-1">This is the primary driver of climate change. We burn fossil fuels at ~9.5 Gt carbon/year, far exceeding natural carbon cycling.</p>
+                      <div className="text-sm text-orange-400 font-bold"><Trans i18nKey="auto.carboncycle.human_impact">⚠️ Human Impact</Trans></div>
+                      <p className="text-sm text-gray-300 mt-1"><Trans i18nKey="auto.carboncycle.this_is_the_primary_driver_of_">This is the primary driver of climate change. We burn fossil fuels at ~9.5 Gt carbon/year, far exceeding natural carbon cycling.</Trans></p>
                     </div>
                   )}
                 </motion.div>
@@ -219,8 +239,8 @@ export default function CarbonCycle() {
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
                   className="bg-gray-900 rounded-2xl border border-gray-800 p-5 text-center">
                   <div className="text-5xl mb-3">♻️</div>
-                  <h3 className="text-lg font-bold text-white mb-2">Explore the Cycle</h3>
-                  <p className="text-sm text-gray-400">Click on any reservoir (node) or flow arrow to learn how carbon moves through the Earth system.</p>
+                  <h3 className="text-lg font-bold text-white mb-2"><Trans i18nKey="auto.carboncycle.explore_the_cycle">Explore the Cycle</Trans></h3>
+                  <p className="text-sm text-gray-400"><Trans i18nKey="auto.carboncycle.click_on_any_reservoir_node_or">Click on any reservoir (node) or flow arrow to learn how carbon moves through the Earth system.</Trans></p>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -228,8 +248,8 @@ export default function CarbonCycle() {
             {/* Key numbers */}
             <div className="bg-gray-900 rounded-2xl border border-gray-800 p-5">
               <h4 className="text-sm font-bold text-white mb-3 flex items-center gap-2">
-                <Info className="w-4 h-4 text-blue-400" /> Carbon Budget
-              </h4>
+                <Info className="w-4 h-4 text-blue-400" /> <Trans i18nKey="auto.carboncycle.carbon_budget">Carbon Budget</Trans>
+                                            </h4>
               <div className="space-y-2 text-sm">
                 {[
                   { label: 'Atmosphere', value: '870 Gt', color: '#60a5fa' },

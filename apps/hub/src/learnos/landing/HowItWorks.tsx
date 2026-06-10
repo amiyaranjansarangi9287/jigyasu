@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 const STEPS = [
   { n: 1, titleKey: "landing.how_it_works.step1_title", descKey: "landing.how_it_works.step1_desc", emoji: "🗺️", color: "bg-rose-100 text-rose-700" },
@@ -28,7 +28,7 @@ export default function HowItWorks() {
               <div className={`mx-auto -mt-12 flex min-h-16 w-16 items-center justify-center rounded-2xl ${s.color} text-3xl shadow-md ring-4 ring-cream`}>
                 {s.emoji}
               </div>
-              <p className="mt-3 text-sm font-bold uppercase tracking-wider text-brand">Step {s.n}</p>
+              <p className="mt-3 text-sm font-bold uppercase tracking-wider text-brand"><Trans i18nKey="auto.howitworks.step">Step</Trans> {s.n}</p>
               <h3 className="mt-1 font-display text-lg font-bold text-slate-900">{t(s.titleKey)}</h3>
               <p className="mt-1.5 text-sm text-slate-600">{t(s.descKey)}</p>
             </div>

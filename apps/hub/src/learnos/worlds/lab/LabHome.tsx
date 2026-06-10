@@ -1,6 +1,6 @@
 // src/worlds/lab/LabHome.tsx
 import { useState, useMemo } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ParentCorner } from '@/shared/layout';
@@ -202,8 +202,8 @@ export default function LabHome() {
           {filtered.length === 0 && (
             <div className="col-span-full text-center py-16">
               <div className="text-4xl mb-3">🔍</div>
-              <p className="text-slate-500 font-medium">No experiments found</p>
-              <p className="text-sm text-slate-400 mt-1">Try a different search or filter</p>
+              <p className="text-slate-500 font-medium"><Trans i18nKey="auto.labhome.no_experiments_found">No experiments found</Trans></p>
+              <p className="text-sm text-slate-400 mt-1"><Trans i18nKey="auto.labhome.try_a_different_search_or_filt">Try a different search or filter</Trans></p>
             </div>
           )}
         </div>
@@ -214,7 +214,7 @@ export default function LabHome() {
             <div key={phaseIdx} className="mb-8">
               <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r ${phase.color} text-white font-bold text-sm mb-4`}>
                 {phase.name}
-                <span className="text-sm opacity-80">({phase.end - phase.start} modules)</span>
+                <span className="text-sm opacity-80">({phase.end - phase.start} <Trans i18nKey="auto.labhome.modules">modules)</Trans></span>
               </div>
               <div className="space-y-2">
                 {pathModules.slice(phase.start, phase.end).map((m, i) => {
@@ -260,7 +260,7 @@ export default function LabHome() {
             </div>
           ))}
           <div className="text-center py-8">
-            <p className="text-sm text-slate-400">💡 This is a suggested order — feel free to explore freely!</p>
+            <p className="text-sm text-slate-400"><Trans i18nKey="auto.labhome.this_is_a_suggested_order_feel">💡 This is a suggested order — feel free to explore freely!</Trans></p>
           </div>
         </div>
       )}

@@ -2,7 +2,7 @@
 // Sort objects into magnetic/not-magnetic bins. Pip explains materials.
 
 import { useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSettingsStore } from '@/store';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
@@ -74,7 +74,7 @@ export default function MagnetExplorer() {
           <div className="bg-white rounded-2xl p-4 shadow-sm border border-rose-200">
             <div className="flex items-center gap-3"><span className="text-3xl">{t('early.modules.MagnetExplorer.spn_', '🐤🧲')}</span>
               <div><p className="text-lg font-bold text-gray-700">{t('early.modules.MagnetExplorer.txt_Isitmagnet', 'Is it magnetic?')}</p>
-                <p className="text-sm text-gray-500">{unsorted.length} objects left to sort</p></div>
+                <p className="text-sm text-gray-500">{unsorted.length} <Trans i18nKey="auto.magnetexplorer.objects_left_to_sort">objects left to sort</Trans></p></div>
             </div>
           </div>
         </div>

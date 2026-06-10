@@ -3,7 +3,7 @@
 
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -65,7 +65,7 @@ export default function Magnets() {
                 : 'bg-blue-600 text-white hover:bg-blue-700'
             }`}
           >
-            Magnet 1: {magnet1Pole}
+            <Trans i18nKey="auto.magnets.magnet_1">Magnet 1:</Trans> {magnet1Pole}
           </button>
           <button
             onClick={togglePole2}
@@ -75,7 +75,7 @@ export default function Magnets() {
                 : 'bg-blue-600 text-white hover:bg-blue-700'
             }`}
           >
-            Magnet 2: {magnet2Pole}
+            <Trans i18nKey="auto.magnets.magnet_2">Magnet 2:</Trans> {magnet2Pole}
           </button>
         </div>
 
@@ -102,8 +102,8 @@ export default function Magnets() {
             }}
           />
           <div className="text-center mt-2 text-sm text-slate-400">
-            Distance: {distance}px
-          </div>
+            <Trans i18nKey="auto.magnets.distance">Distance:</Trans> {distance}<Trans i18nKey="auto.magnets.px">px</Trans>
+                                </div>
         </div>
 
         {/* Result indicator */}
@@ -127,13 +127,13 @@ export default function Magnets() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.Magnets.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-400 font-bold text-sm mb-1">Ancient Indian Discovery</h3>
+              <h3 className="text-orange-400 font-bold text-sm mb-1"><Trans i18nKey="auto.magnets.ancient_indian_discovery">Ancient Indian Discovery</Trans></h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Indians discovered magnetism ~600 BCE! The word "magnet" may come from
-                <strong> Magnesia</strong>, but Indian sailors used <strong>Ayaskanta</strong>
-                (iron-lover) lodestones for navigation. Sushruta used magnets in surgery to
-                remove iron arrows from wounds.
-              </p>
+                <Trans i18nKey="auto.magnets.indians_discovered_magnetism_6">Indians discovered magnetism ~600 BCE! The word "magnet" may come from</Trans>
+                                              <strong> <Trans i18nKey="auto.magnets.magnesia">Magnesia</Trans></strong><Trans i18nKey="auto.magnets.but_indian_sailors_used">, but Indian sailors used</Trans> <strong><Trans i18nKey="auto.magnets.ayaskanta">Ayaskanta</Trans></strong>
+                <Trans i18nKey="auto.magnets.iron_lover_lodestones_for_navi">(iron-lover) lodestones for navigation. Sushruta used magnets in surgery to
+                                              remove iron arrows from wounds.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

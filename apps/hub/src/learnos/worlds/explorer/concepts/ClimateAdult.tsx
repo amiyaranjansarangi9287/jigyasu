@@ -7,6 +7,7 @@ import { EverydayConnection } from '../components/EverydayConnection';
 import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
+import { Trans } from "react-i18next";
 
 export default function ClimateAdult() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -157,8 +158,8 @@ export default function ClimateAdult() {
         <div className="px-5 py-4">
           <div className="mb-4">
             <div className="flex justify-between mb-1">
-              <span className="text-slate-500 text-sm">CO₂ concentration</span>
-              <span className="text-slate-400 text-sm font-mono">{co2Level} ppm</span>
+              <span className="text-slate-500 text-sm"><Trans i18nKey="auto.climateadult.co_concentration">CO₂ concentration</Trans></span>
+              <span className="text-slate-400 text-sm font-mono">{co2Level} <Trans i18nKey="auto.climateadult.ppm">ppm</Trans></span>
             </div>
             <input
               type="range" min="280" max="800" value={co2Level}
@@ -171,28 +172,28 @@ export default function ClimateAdult() {
           <div className="space-y-3">
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-slate-300 text-sm leading-relaxed mb-2">
-                CO₂ molecules trap infrared radiation that would otherwise
-                escape to space. More CO₂ means more trapped heat. This is
-                physics, not politics — Svante Arrhenius calculated this
-                in 1896.
-              </p>
+                <Trans i18nKey="auto.climateadult.co_molecules_trap_infrared_rad">CO₂ molecules trap infrared radiation that would otherwise
+                                              escape to space. More CO₂ means more trapped heat. This is
+                                              physics, not politics — Svante Arrhenius calculated this
+                                              in 1896.</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                The carbon you exhale becomes part of a plant within days.
-                But the carbon from burning fossil fuels adds NEW carbon
-                that was locked underground for millions of years.
-              </p>
+                <Trans i18nKey="auto.climateadult.the_carbon_you_exhale_becomes_">The carbon you exhale becomes part of a plant within days.
+                                              But the carbon from burning fossil fuels adds NEW carbon
+                                              that was locked underground for millions of years.</Trans>
+                                            </p>
             </div>
 
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-violet-400 text-sm font-bold uppercase tracking-wider mb-2">
-                History of the idea
-              </p>
+                <Trans i18nKey="auto.climateadult.history_of_the_idea">History of the idea</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                John Tyndall discovered the greenhouse effect in 1859.
-                Arrhenius linked it to fossil fuels in 1896. Charles
-                Keeling began measuring CO₂ in 1958 — the "Keeling Curve"
-                has risen uninterrupted ever since.
-              </p>
+                <Trans i18nKey="auto.climateadult.john_tyndall_discovered_the_gr">John Tyndall discovered the greenhouse effect in 1859.
+                                              Arrhenius linked it to fossil fuels in 1896. Charles
+                                              Keeling began measuring CO₂ in 1958 — the "Keeling Curve"
+                                              has risen uninterrupted ever since.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

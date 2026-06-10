@@ -5,10 +5,12 @@
 import { useState, useEffect } from 'react';
 import { db } from '../learnos/db';
 import type { LearningEvent } from '../learnos/types/events';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
+import { useFormatNumber } from '../hooks/useFormatNumber';
 
 export default function AnalyticsDashboard() {
   const { t } = useTranslation();
+  const formatNumber = useFormatNumber();
   const [events, setEvents] = useState<LearningEvent[]>([]);
   const [eventCounts, setEventCounts] = useState<Record<string, number>>({});
   const [sessionCount, setSessionCount] = useState(0);
@@ -59,48 +61,48 @@ export default function AnalyticsDashboard() {
     <div className="fixed inset-0 bg-slate-900/95 z-[100] p-6 overflow-auto">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-between mb-6">
-          <h1 className="text-3xl font-bold text-white">Analytics Validation Dashboard</h1>
+          <h1 className="text-3xl font-bold text-white"><Trans i18nKey="auto.analyticsdashboard.analytics_validation_dashboard">Analytics Validation Dashboard</Trans></h1>
           <button
             onClick={() => setIsVisible(false)}
             className="bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 rounded-lg font-bold transition-colors"
             aria-label="Close dashboard"
           >
-            ✕ Close
-          </button>
+            <Trans i18nKey="auto.analyticsdashboard.close">✕ Close</Trans>
+                                </button>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           <div className="bg-slate-800 rounded-xl p-4 border border-slate-700">
-            <h3 className="text-slate-400 text-sm font-bold mb-2">Total Events</h3>
-            <p className="text-4xl font-bold text-white">{events.length}</p>
+            <h3 className="text-slate-400 text-sm font-bold mb-2"><Trans i18nKey="auto.analyticsdashboard.total_events">Total Events</Trans></h3>
+            <p className="text-4xl font-bold text-white">{formatNumber(events.length)}</p>
           </div>
           <div className="bg-slate-800 rounded-xl p-4 border border-slate-700">
-            <h3 className="text-slate-400 text-sm font-bold mb-2">Active Sessions</h3>
-            <p className="text-4xl font-bold text-white">{sessionCount}</p>
+            <h3 className="text-slate-400 text-sm font-bold mb-2"><Trans i18nKey="auto.analyticsdashboard.active_sessions">Active Sessions</Trans></h3>
+            <p className="text-4xl font-bold text-white">{formatNumber(sessionCount)}</p>
           </div>
           <div className="bg-slate-800 rounded-xl p-4 border border-slate-700">
-            <h3 className="text-slate-400 text-sm font-bold mb-2">Event Types</h3>
-            <p className="text-4xl font-bold text-white">{Object.keys(eventCounts).length}</p>
+            <h3 className="text-slate-400 text-sm font-bold mb-2"><Trans i18nKey="auto.analyticsdashboard.event_types">Event Types</Trans></h3>
+            <p className="text-4xl font-bold text-white">{formatNumber(Object.keys(eventCounts).length)}</p>
           </div>
         </div>
 
         <div className="bg-slate-800 rounded-xl p-4 border border-slate-700 mb-6">
-          <h2 className="text-xl font-bold text-white mb-4">Event Counts by Type</h2>
+          <h2 className="text-xl font-bold text-white mb-4"><Trans i18nKey="auto.analyticsdashboard.event_counts_by_type">Event Counts by Type</Trans></h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {Object.entries(eventCounts).map(([type, count]) => (
               <div key={type} className="bg-slate-700 rounded-lg p-3">
                 <p className="text-slate-400 text-xs font-bold mb-1">{type}</p>
-                <p className="text-2xl font-bold text-white">{count}</p>
+                <p className="text-2xl font-bold text-white">{formatNumber(count)}</p>
               </div>
             ))}
           </div>
         </div>
 
         <div className="bg-slate-800 rounded-xl p-4 border border-slate-700">
-          <h2 className="text-xl font-bold text-white mb-4">Recent Events (Last 50)</h2>
+          <h2 className="text-xl font-bold text-white mb-4"><Trans i18nKey="auto.analyticsdashboard.recent_events_last_50">Recent Events (Last 50)</Trans></h2>
           <div className="space-y-2 max-h-[400px] overflow-auto">
             {events.length === 0 ? (
-              <p className="text-slate-400">No events recorded yet</p>
+              <p className="text-slate-400"><Trans i18nKey="auto.analyticsdashboard.no_events_recorded_yet">No events recorded yet</Trans></p>
             ) : (
               events.slice().reverse().map((event) => (
                 <div key={event.id} className="bg-slate-700 rounded-lg p-3 text-sm">
@@ -112,21 +114,21 @@ export default function AnalyticsDashboard() {
                   </div>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-xs text-slate-300">
                     <div>
-                      <span className="text-slate-500">Module:</span> {event.moduleId}
+                      <span className="text-slate-500"><Trans i18nKey="auto.analyticsdashboard.module">Module:</Trans></span> {event.moduleId}
                     </div>
                     <div>
-                      <span className="text-slate-500">Language:</span> {event.language}
+                      <span className="text-slate-500"><Trans i18nKey="auto.analyticsdashboard.language">Language:</Trans></span> {event.language}
                     </div>
                     <div>
-                      <span className="text-slate-500">Device:</span> {event.deviceType}
+                      <span className="text-slate-500"><Trans i18nKey="auto.analyticsdashboard.device">Device:</Trans></span> {event.deviceType}
                     </div>
                     <div>
-                      <span className="text-slate-500">Connection:</span> {event.connectionType}
+                      <span className="text-slate-500"><Trans i18nKey="auto.analyticsdashboard.connection">Connection:</Trans></span> {event.connectionType}
                     </div>
                   </div>
                   {Object.keys(event.payload).length > 0 && (
                     <div className="mt-2 pt-2 border-t border-slate-600">
-                      <span className="text-slate-500 text-xs">Payload:</span>
+                      <span className="text-slate-500 text-xs"><Trans i18nKey="auto.analyticsdashboard.payload">Payload:</Trans></span>
                       <pre className="text-xs text-slate-300 mt-1 overflow-auto">
                         {JSON.stringify(event.payload, null, 2)}
                       </pre>
@@ -149,14 +151,14 @@ export default function AnalyticsDashboard() {
             }}
             className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-bold transition-colors"
           >
-            Clear All Data
-          </button>
+            <Trans i18nKey="auto.analyticsdashboard.clear_all_data">Clear All Data</Trans>
+                                </button>
           <button
             onClick={() => window.location.reload()}
             className="bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 rounded-lg font-bold transition-colors"
           >
-            Refresh Page
-          </button>
+            <Trans i18nKey="auto.analyticsdashboard.refresh_page">Refresh Page</Trans>
+                                </button>
         </div>
       </div>
     </div>

@@ -3,6 +3,7 @@
 // Mission Alignment: Respect Value - "No grades, no judgment, no shame"
 
 import React, { useMemo } from 'react';
+import { Trans } from "react-i18next";
 
 export interface MasteryIndicatorProps {
   mastered: number;
@@ -66,13 +67,13 @@ export default function MasteryIndicator({ mastered, total, showDetails = false 
         <div className="flex-1">
           <div className="font-bold text-slate-800">{masteryConfig.message}</div>
           <div className="text-sm text-slate-600">
-            {mastered} of {total} concepts discovered
-          </div>
+            {mastered} <Trans i18nKey="auto.masteryindicator.of">of</Trans> {total} <Trans i18nKey="auto.masteryindicator.concepts_discovered">concepts discovered</Trans>
+                                </div>
         </div>
         {showDetails && (
           <div className="text-right">
             <div className="text-2xl font-bold text-slate-800">{percentage}%</div>
-            <div className="text-xs text-slate-500">explored</div>
+            <div className="text-xs text-slate-500"><Trans i18nKey="auto.masteryindicator.explored">explored</Trans></div>
           </div>
         )}
       </div>
@@ -107,7 +108,7 @@ export function GardenProgress({ mastered, total }: { mastered: number; total: n
 
   return (
     <div className="bg-amber-50 rounded-2xl p-4 border border-amber-200">
-      <div className="text-sm font-bold text-amber-900 mb-3">Your Knowledge Garden</div>
+      <div className="text-sm font-bold text-amber-900 mb-3"><Trans i18nKey="auto.masteryindicator.your_knowledge_garden">Your Knowledge Garden</Trans></div>
       <div className="flex gap-2 justify-center text-3xl">
         {plants.map((plant, index) => (
           <div key={index} className="transform transition-all hover:scale-110">
@@ -116,8 +117,8 @@ export function GardenProgress({ mastered, total }: { mastered: number; total: n
         ))}
       </div>
       <div className="text-center text-sm text-amber-700 mt-2">
-        {mastered} of {total} concepts planted
-      </div>
+        {mastered} <Trans i18nKey="auto.masteryindicator.of">of</Trans> {total} <Trans i18nKey="auto.masteryindicator.concepts_planted">concepts planted</Trans>
+                    </div>
     </div>
   );
 }
@@ -133,7 +134,7 @@ export function ConstellationProgress({ mastered, total }: { mastered: number; t
 
   return (
     <div className="bg-indigo-900 rounded-2xl p-4 border border-indigo-700">
-      <div className="text-sm font-bold text-indigo-200 mb-3">Your Knowledge Constellation</div>
+      <div className="text-sm font-bold text-indigo-200 mb-3"><Trans i18nKey="auto.masteryindicator.your_knowledge_constellation">Your Knowledge Constellation</Trans></div>
       <div className="flex gap-2 justify-center text-2xl">
         {stars.map((_, index) => (
           <div key={index} className="animate-pulse">
@@ -147,8 +148,8 @@ export function ConstellationProgress({ mastered, total }: { mastered: number; t
         ))}
       </div>
       <div className="text-center text-sm text-indigo-300 mt-2">
-        {mastered} of {total} stars discovered
-      </div>
+        {mastered} <Trans i18nKey="auto.masteryindicator.of">of</Trans> {total} <Trans i18nKey="auto.masteryindicator.stars_discovered">stars discovered</Trans>
+                    </div>
     </div>
   );
 }
@@ -164,7 +165,7 @@ export function JourneyMapProgress({ mastered, total }: { mastered: number; tota
 
   return (
     <div className="bg-slate-100 rounded-2xl p-4 border border-slate-300">
-      <div className="text-sm font-bold text-slate-800 mb-3">Your Learning Journey</div>
+      <div className="text-sm font-bold text-slate-800 mb-3"><Trans i18nKey="auto.masteryindicator.your_learning_journey">Your Learning Journey</Trans></div>
       <div className="flex items-center justify-between">
         {milestones.map((_, index) => (
           <React.Fragment key={index}>
@@ -178,8 +179,8 @@ export function JourneyMapProgress({ mastered, total }: { mastered: number; tota
         ))}
       </div>
       <div className="text-center text-sm text-slate-600 mt-3">
-        {mastered} of {total} milestones reached
-      </div>
+        {mastered} <Trans i18nKey="auto.masteryindicator.of">of</Trans> {total} <Trans i18nKey="auto.masteryindicator.milestones_reached">milestones reached</Trans>
+                    </div>
     </div>
   );
 }
@@ -224,8 +225,8 @@ export function ShameFreeFeedback({
     <div className="bg-purple-50 rounded-2xl p-4 border border-purple-200">
       <div className="text-sm font-bold text-purple-900 mb-2 flex items-center gap-2">
         <span className="text-xl">💜</span>
-        Your Learning Style
-      </div>
+        <Trans i18nKey="auto.masteryindicator.your_learning_style">Your Learning Style</Trans>
+                    </div>
       <ul className="text-sm text-purple-800 space-y-1">
         {feedback.map((message, index) => (
           <li key={index} className="flex items-start gap-2">

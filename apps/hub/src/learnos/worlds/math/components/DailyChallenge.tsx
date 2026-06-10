@@ -147,7 +147,7 @@ export default function DailyChallenge() {
   const math = useMathFeedback();
   const [completed, setCompleted] = useState(false);
   const [selected, setSelected] = useState<number | null>(null);
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [showHint, setShowHint] = useState(false);
   const [streak, setStreak] = useState(0);
 
@@ -183,7 +183,7 @@ export default function DailyChallenge() {
         localStorage.setItem('mathkingdom_daily', JSON.stringify({ day, completed: true, streak: newStreak }));
       } catch {}
     } else {
-      setFeedback('wrong');
+      setFeedback('hint');
       math.wrong('daily-challenge');
       setTimeout(() => { setFeedback(null); setSelected(null); }, 1000);
     }
@@ -203,7 +203,7 @@ export default function DailyChallenge() {
   const difficultyColor = {
     'Easy': 'text-green-400',
     'Medium': 'text-yellow-400',
-    'Hard': 'text-orange-400',
+    'Hard': 'text-sky-400',
   };
 
   return (
@@ -221,7 +221,7 @@ export default function DailyChallenge() {
         </div>
         <div className="bg-orange-500/10 rounded-xl px-4 py-2 border border-orange-500/20 text-center">
           <p className="text-gray-400 text-sm">{t('math_modules.DailyChallenge.streak', 'Streak')}</p>
-          <p className="text-orange-400 font-bold">🔥 {streak}</p>
+          <p className="text-sky-400 font-bold">🔥 {streak}</p>
         </div>
         <div className="bg-white/5 rounded-xl px-4 py-2 border border-white/10 text-center">
           <p className="text-gray-400 text-sm">{t('math_modules.DailyChallenge.resetsIn', 'Resets in')}</p>
@@ -233,7 +233,7 @@ export default function DailyChallenge() {
       <motion.div
         className={`rounded-3xl p-6 border-2 transition-colors ${
           feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' :
-          feedback === 'wrong' ? 'bg-white/5 border-white/10' :
+          feedback === 'hint' ? 'bg-white/5 border-white/10' :
           'bg-gradient-to-br from-purple-900/40 to-indigo-900/40 border-purple-500/30'
         }`}
         initial={{ scale: 0.9 }}
@@ -252,7 +252,7 @@ export default function DailyChallenge() {
               key={i}
               className={`py-4 rounded-xl text-xl font-bold transition-all ${
                 feedback === 'correct' && opt === challenge.answer ? 'bg-green-500 text-white ring-4 ring-green-400/50' :
-                feedback === 'wrong' && selected === opt ? 'bg-red-500 text-white' :
+                feedback === 'hint' && selected === opt ? 'bg-red-500 text-white' :
                 completed ? 'bg-white/5 text-gray-500' :
                 'bg-white/10 text-white hover:bg-white/20 border border-white/20'
               }`}
@@ -288,7 +288,7 @@ export default function DailyChallenge() {
               <span className="text-5xl">🏆</span>
               <p className="text-green-400 font-bold text-xl mt-2">{t('math_modules.DailyChallenge.complete', 'Daily Challenge Complete!')}</p>
               <p className="text-gray-400 text-sm mt-1">{challenge.explanation}</p>
-              <p className="text-orange-400 font-bold mt-2">{t('math_modules.DailyChallenge.streakDays', '🔥 {{streak}} day streak!', { streak })}</p>
+              <p className="text-sky-400 font-bold mt-2">{t('math_modules.DailyChallenge.streakDays', '🔥 {{streak}} day streak!', { streak })}</p>
             </motion.div>
           )}
         </AnimatePresence>

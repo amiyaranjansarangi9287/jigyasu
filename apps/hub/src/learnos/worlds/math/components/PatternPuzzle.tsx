@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useMathFeedback } from '../lib/MathContext';
+import { Trans } from "react-i18next";
 
 interface Puzzle {
   sequence: (number | string)[];
@@ -717,7 +718,7 @@ function PatternVisual({ puzzle }: { puzzle: Puzzle }) {
 export default function PatternPuzzle() {
   const math = useMathFeedback();
   const [puzzle, setPuzzle] = useState<Puzzle | null>(null);
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [mastery, setMastery] = useState(0);
   const [round, setRound] = useState(0);
   const [showHint, setShowHint] = useState(false);
@@ -777,7 +778,7 @@ export default function PatternPuzzle() {
       saveSnapshot(puzzle);
       setTimeout(() => newPuzzle(), 1500);
     } else {
-      setFeedback('wrong');
+      setFeedback('hint');
       math.wrong('patterns');
       setTimeout(() => setFeedback(null), 800);
     }
@@ -788,22 +789,22 @@ export default function PatternPuzzle() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🧩 Pattern Puzzle Quest</h2>
-        <p className="text-purple-300 text-lg">Find the missing number in each magical sequence!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.patternpuzzle.pattern_puzzle_quest">🧩 Pattern Puzzle Quest</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.patternpuzzle.find_the_missing_number_in_eac">Find the missing number in each magical sequence!</Trans></p>
       </div>
 
       {/* Stats + Snapshot toggle */}
       <div className="flex justify-center gap-3 sm:gap-6 mb-6 flex-wrap">
         <div className="bg-white/5 rounded-xl px-4 py-2 border border-white/10">
-          <span className="text-gray-400 text-sm">Score</span>
+          <span className="text-gray-400 text-sm"><Trans i18nKey="auto.patternpuzzle.score">Discoveries</Trans></span>
           <p className="text-yellow-400 font-bold text-xl">⭐ {mastery}</p>
         </div>
         <div className="bg-white/5 rounded-xl px-4 py-2 border border-white/10">
-          <span className="text-gray-400 text-sm">Solved</span>
+          <span className="text-gray-400 text-sm"><Trans i18nKey="auto.patternpuzzle.solved">Solved</Trans></span>
           <p className="text-green-400 font-bold text-xl">✅ {solved}</p>
         </div>
         <div className="bg-white/5 rounded-xl px-4 py-2 border border-white/10">
-          <span className="text-gray-400 text-sm">Round</span>
+          <span className="text-gray-400 text-sm"><Trans i18nKey="auto.patternpuzzle.round">Round</Trans></span>
           <p className="text-blue-400 font-bold text-xl">🔄 {round}</p>
         </div>
         <motion.button
@@ -812,7 +813,7 @@ export default function PatternPuzzle() {
           whileTap={{ scale: 0.95 }}
           onClick={() => setShowSnapshots(true)}
         >
-          <span className="text-gray-400 text-sm block">Memory Book</span>
+          <span className="text-gray-400 text-sm block"><Trans i18nKey="auto.patternpuzzle.memory_book">Memory Book</Trans></span>
           <p className="text-purple-300 font-bold text-xl">📖 {snapshots.length}</p>
           {snapshots.length > 0 && (
             <motion.span
@@ -871,7 +872,7 @@ export default function PatternPuzzle() {
         {/* Visual representation */}
         <div className="mb-6 p-4 rounded-2xl bg-black/20 border border-white/10 min-h-[100px] flex items-center justify-center relative">
           <PatternVisual puzzle={puzzle} />
-          <span className="absolute top-2 left-3 text-sm text-gray-500">🎨 Visual</span>
+          <span className="absolute top-2 left-3 text-sm text-gray-500"><Trans i18nKey="auto.patternpuzzle.visual">🎨 Visual</Trans></span>
         </div>
 
         {/* Sequence Display */}
@@ -918,8 +919,8 @@ export default function PatternPuzzle() {
               whileHover={{ scale: 1.05 }}
               onClick={() => setShowHint(true)}
             >
-              💡 Need a hint? (-5 pts)
-            </motion.button>
+              <Trans i18nKey="auto.patternpuzzle.need_a_hint_5_pts">💡 Need a hint? (-5 pts)</Trans>
+                                      </motion.button>
           ) : (
             <motion.p
               className="text-sm text-amber-300 bg-amber-500/10 rounded-lg px-3 py-2 inline-block"
@@ -939,7 +940,7 @@ export default function PatternPuzzle() {
               className={`py-3 px-4 rounded-xl text-xl font-bold transition-all ${
                 feedback === 'correct' && option === puzzle.answer
                   ? 'bg-green-500 text-white ring-4 ring-green-400/50'
-                  : feedback === 'wrong'
+                  : feedback === 'hint'
                   ? 'bg-white/5 text-gray-500'
                   : 'bg-white/10 text-white hover:bg-white/20 border border-white/20 hover:border-white/40'
               }`}
@@ -966,19 +967,19 @@ export default function PatternPuzzle() {
               exit={{ scale: 0 }}
             >
               <p className="text-green-400 font-bold text-lg">
-                ✨ Pattern Mastered! +{showHint ? 5 : 10} pts ✨
-              </p>
-              <p className="text-sm text-green-300/70 mt-1">📸 Saved to Memory Book</p>
+                <Trans i18nKey="auto.patternpuzzle.pattern_mastered">✨ Pattern Mastered! +</Trans>{showHint ? 5 : 10} <Trans i18nKey="auto.patternpuzzle.pts">pts ✨</Trans>
+                                            </p>
+              <p className="text-sm text-green-300/70 mt-1"><Trans i18nKey="auto.patternpuzzle.saved_to_memory_book">📸 Saved to Memory Book</Trans></p>
             </motion.div>
           )}
-          {feedback === 'wrong' && (
+          {feedback === 'hint' && (
             <motion.div
               className="mt-4 text-center relative"
               initial={{ x: -10 }}
               animate={{ x: [10, -10, 5, 0] }}
               exit={{ opacity: 0 }}
             >
-              <p className="text-orange-400 font-bold">🤔 Not quite! Try another option!</p>
+              <p className="text-sky-400 font-bold"><Trans i18nKey="auto.patternpuzzle.not_quite_try_another_option">🤔 Not quite! Try another option!</Trans></p>
             </motion.div>
           )}
         </AnimatePresence>
@@ -989,8 +990,8 @@ export default function PatternPuzzle() {
           className="text-gray-500 hover:text-gray-400 text-sm underline"
           onClick={newPuzzle}
         >
-          Skip this puzzle →
-        </button>
+          <Trans i18nKey="auto.patternpuzzle.skip_this_puzzle">Skip this puzzle →</Trans>
+                          </button>
       </div>
 
       {/* Memory Book Modal */}
@@ -1013,18 +1014,18 @@ export default function PatternPuzzle() {
               <div className="flex items-center justify-between mb-4 relative">
                 <div>
                   <h3 className="text-2xl font-bold text-white flex items-center gap-2">
-                    📖 Memory Book
-                  </h3>
-                  <p className="text-purple-300 text-sm">Your solved pattern snapshots</p>
+                    <Trans i18nKey="auto.patternpuzzle.memory_book">📖 Memory Book</Trans>
+                                                        </h3>
+                  <p className="text-purple-300 text-sm"><Trans i18nKey="auto.patternpuzzle.your_solved_pattern_snapshots">Your solved pattern snapshots</Trans></p>
                 </div>
                 <div className="flex items-center gap-2">
                   {snapshots.length > 0 && (
                     <button
-                      className="text-sm text-gray-400 hover:text-orange-400 px-2 py-1 rounded-lg hover:bg-red-500/10"
+                      className="text-sm text-gray-400 hover:text-sky-400 px-2 py-1 rounded-lg hover:bg-red-500/10"
                       onClick={clearSnapshots}
                     >
-                      🗑️ Clear
-                    </button>
+                      <Trans i18nKey="auto.patternpuzzle.clear">🗑️ Clear</Trans>
+                                                              </button>
                   )}
                   <button
                     className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center"
@@ -1044,8 +1045,8 @@ export default function PatternPuzzle() {
                   >
                     📭
                   </motion.div>
-                  <p className="text-gray-400">No snapshots yet!</p>
-                  <p className="text-gray-500 text-sm mt-1">Solve puzzles to fill your Memory Book ✨</p>
+                  <p className="text-gray-400"><Trans i18nKey="auto.patternpuzzle.no_snapshots_yet">No snapshots yet!</Trans></p>
+                  <p className="text-gray-500 text-sm mt-1"><Trans i18nKey="auto.patternpuzzle.solve_puzzles_to_fill_your_mem">Solve puzzles to fill your Memory Book ✨</Trans></p>
                 </div>
               ) : (
                 <div className="overflow-y-auto max-h-[calc(85vh-150px)] pr-2">

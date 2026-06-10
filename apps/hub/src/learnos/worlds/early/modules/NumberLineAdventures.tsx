@@ -1,7 +1,7 @@
 // src/worlds/early/modules/NumberLineAdventures.tsx
 
 import { useRef, useEffect, useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { useSettingsStore } from '@/store';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
@@ -184,8 +184,8 @@ export default function NumberLineAdventures() {
             <div className="flex items-center gap-3">
               <span className="text-3xl">{problem.emoji}</span>
               <div>
-                <p className="text-xl font-bold text-gray-800">Start at <span className="text-blue-600">{problem.startNumber}</span></p>
-                <p className="text-lg text-gray-600">Jump <span className="font-bold text-indigo-600">{problem.steps}</span> steps <span className="font-bold">{problem.direction === 'forward' ? 'forward →' : '← backward'}</span></p>
+                <p className="text-xl font-bold text-gray-800"><Trans i18nKey="auto.numberlineadventures.start_at">Start at</Trans> <span className="text-blue-600">{problem.startNumber}</span></p>
+                <p className="text-lg text-gray-600"><Trans i18nKey="auto.numberlineadventures.jump">Jump</Trans> <span className="font-bold text-indigo-600">{problem.steps}</span> <Trans i18nKey="auto.numberlineadventures.steps">steps</Trans> <span className="font-bold">{problem.direction === 'forward' ? 'forward →' : '← backward'}</span></p>
               </div>
             </div>
           </div>

@@ -3,6 +3,8 @@
 import { campWeeks } from '../data/campWeeks';
 import { useReveal } from '../hooks/useReveal';
 import { useTranslation } from 'react-i18next';
+import { pillars } from '../data/categories';
+import { useFormatNumber } from '../../hooks/useFormatNumber';
 
 interface CampWeeksPreviewProps {
   onSelectWeek: (weekId: string) => void;
@@ -12,6 +14,7 @@ interface CampWeeksPreviewProps {
 export default function CampWeeksPreview({ onSelectWeek, getWeekStatus }: CampWeeksPreviewProps) {
   const { ref, isVisible } = useReveal<HTMLDivElement>();
   const { t } = useTranslation();
+  const formatNumber = useFormatNumber();
 
   const getStatusBadge = (weekId: string) => {
     const status = getWeekStatus(weekId);
@@ -95,11 +98,9 @@ export default function CampWeeksPreview({ onSelectWeek, getWeekStatus }: CampWe
                       key={day.day}
                       className="flex-shrink-0 flex flex-col items-center gap-1 p-2 rounded-xl bg-gray-50 dark:bg-gray-700/50"
                     >
-                      <span className="text-sm text-gray-500 dark:text-gray-400">{t('camp_weeks.day', 'Day')} {day.day}</span>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">{t('camp_weeks.day', 'Day')} {formatNumber(day.day)}</span>
                       <span className="text-lg">
-                        {day.pillar === 'toybox' ? '🧸' : 
-                         day.pillar === 'sciencelab' ? '🔬' :
-                         day.pillar === 'artstudio' ? '🎨' : '🌿'}
+                        {pillars.find(p => p.id === day.pillar)?.icon || '✨'}
                       </span>
                     </div>
                   ))}

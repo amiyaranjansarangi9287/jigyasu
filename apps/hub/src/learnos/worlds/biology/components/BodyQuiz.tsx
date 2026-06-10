@@ -2,6 +2,10 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle2, XCircle, RotateCcw, Award, ArrowRight, Zap, Filter } from 'lucide-react';
 import { playCorrect, playWrong, playVictory } from '../lib/sounds';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface Question {
   id: number;
@@ -65,6 +69,22 @@ function shuffleArray<T>(arr: T[]): T[] {
 }
 
 export default function BodyQuiz() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.body_quiz_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.body_quiz_prompt', "How well do you know the vessel you live in? Let's test your knowledge of the human body!"),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'body-quiz', 60);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   const [selectedSystem, setSelectedSystem] = useState<string>('all');
   const [selectedDifficulty, setSelectedDifficulty] = useState<string>('all');
   const [questionCount, setQuestionCount] = useState(10);
@@ -147,17 +167,17 @@ export default function BodyQuiz() {
       <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
         <div className="max-w-xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-black text-white mb-2">❤️ Body Systems Quiz</h2>
-            <p className="text-gray-400 text-lg">30 questions across all body systems!</p>
+            <h2 className="text-3xl md:text-4xl font-black text-white mb-2"><Trans i18nKey="auto.bodyquiz.body_systems_quiz">❤️ Body Systems Quiz</Trans></h2>
+            <p className="text-gray-400 text-lg"><Trans i18nKey="auto.bodyquiz.30_questions_across_all_body_s">30 questions across all body systems!</Trans></p>
           </motion.div>
 
           <div className="bg-gray-900 rounded-2xl border border-gray-800 p-6 space-y-5">
             {/* System filter */}
             <div>
-              <label className="text-sm font-bold text-white mb-2 flex items-center gap-1"><Filter className="w-3 h-3" /> Body System</label>
+              <label className="text-sm font-bold text-white mb-2 flex items-center gap-1"><Filter className="w-3 h-3" /> <Trans i18nKey="auto.bodyquiz.body_system">Body System</Trans></label>
               <div className="flex flex-wrap gap-1.5 mt-2">
                 <button onClick={() => setSelectedSystem('all')}
-                  className={`px-3 py-1.5 rounded-full text-sm font-medium ${selectedSystem === 'all' ? 'bg-emerald-500 text-white' : 'bg-gray-800 text-gray-400'}`}>All Systems</button>
+                  className={`px-3 py-1.5 rounded-full text-sm font-medium ${selectedSystem === 'all' ? 'bg-emerald-500 text-white' : 'bg-gray-800 text-gray-400'}`}><Trans i18nKey="auto.bodyquiz.all_systems">All Systems</Trans></button>
                 {systems.map(s => (
                   <button key={s} onClick={() => setSelectedSystem(s)}
                     className={`px-3 py-1.5 rounded-full text-sm font-medium ${selectedSystem === s ? 'bg-emerald-500 text-white' : 'bg-gray-800 text-gray-400 hover:text-white'}`}>{s}</button>
@@ -167,10 +187,10 @@ export default function BodyQuiz() {
 
             {/* Difficulty */}
             <div>
-              <label className="text-sm font-bold text-white mb-2 block">🎯 Difficulty</label>
+              <label className="text-sm font-bold text-white mb-2 block"><Trans i18nKey="auto.bodyquiz.difficulty">🎯 Difficulty</Trans></label>
               <div className="flex gap-2 mt-2">
                 <button onClick={() => setSelectedDifficulty('all')}
-                  className={`flex-1 py-2 rounded-xl text-sm font-medium ${selectedDifficulty === 'all' ? 'bg-emerald-500 text-white' : 'bg-gray-800 text-gray-400'}`}>All</button>
+                  className={`flex-1 py-2 rounded-xl text-sm font-medium ${selectedDifficulty === 'all' ? 'bg-emerald-500 text-white' : 'bg-gray-800 text-gray-400'}`}><Trans i18nKey="auto.bodyquiz.all">All</Trans></button>
                 {difficulties.map(d => (
                   <button key={d} onClick={() => setSelectedDifficulty(d)}
                     className={`flex-1 py-2 rounded-xl text-sm font-medium capitalize ${selectedDifficulty === d ? 'bg-emerald-500 text-white' : 'bg-gray-800 text-gray-400'}`}>
@@ -182,7 +202,7 @@ export default function BodyQuiz() {
 
             {/* Question count */}
             <div>
-              <label className="text-sm font-bold text-white mb-2 block">📝 Questions</label>
+              <label className="text-sm font-bold text-white mb-2 block"><Trans i18nKey="auto.bodyquiz.questions">📝 Questions</Trans></label>
               <div className="flex gap-2 mt-2">
                 {[5, 10, 15, 20].map(n => (
                   <button key={n} onClick={() => setQuestionCount(n)}
@@ -193,14 +213,14 @@ export default function BodyQuiz() {
 
             {/* Streak bonus info */}
             <div className="bg-yellow-500/10 rounded-xl p-3 border border-yellow-500/20">
-              <div className="text-sm text-yellow-400 font-bold flex items-center gap-1"><Zap className="w-3 h-3" /> Streak Bonus!</div>
-              <p className="text-sm text-gray-400 mt-1">Answer 3+ in a row correctly to earn <strong className="text-yellow-300">double points</strong>!</p>
+              <div className="text-sm text-yellow-400 font-bold flex items-center gap-1"><Zap className="w-3 h-3" /> <Trans i18nKey="auto.bodyquiz.streak_bonus">Streak Bonus!</Trans></div>
+              <p className="text-sm text-gray-400 mt-1"><Trans i18nKey="auto.bodyquiz.answer_3_in_a_row_correctly_to">Answer 3+ in a row correctly to earn</Trans> <strong className="text-yellow-300"><Trans i18nKey="auto.bodyquiz.double_points">double points</Trans></strong>!</p>
             </div>
 
             <button onClick={startQuiz}
               className="w-full py-3 rounded-xl bg-emerald-500 text-white font-bold text-lg hover:bg-emerald-600 transition-colors">
-              Start Quiz →
-            </button>
+              <Trans i18nKey="auto.bodyquiz.start_quiz">Start Quiz →</Trans>
+                                    </button>
           </div>
         </div>
       </div>
@@ -216,7 +236,7 @@ export default function BodyQuiz() {
           <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }}
             className="bg-gray-900 rounded-2xl border border-gray-800 p-8 text-center">
             <div className="text-6xl mb-4">{grade.emoji}</div>
-            <h2 className="text-3xl font-black text-white mb-2">Quiz Complete!</h2>
+            <h2 className="text-3xl font-black text-white mb-2"><Trans i18nKey="auto.bodyquiz.quiz_complete">Quiz Complete!</Trans></h2>
             <p className="text-gray-400 mb-4">{grade.message}</p>
 
             <div className="w-24 h-24 mx-auto rounded-full border-4 border-emerald-500 flex items-center justify-center mb-4">
@@ -230,8 +250,8 @@ export default function BodyQuiz() {
 
             {maxStreak >= 3 && (
               <div className="text-sm text-yellow-400 mb-3 flex items-center justify-center gap-1">
-                <Zap className="w-4 h-4" /> Best streak: {maxStreak} in a row! 🔥
-              </div>
+                <Zap className="w-4 h-4" /> <Trans i18nKey="auto.bodyquiz.best_streak">Best streak:</Trans> {maxStreak} <Trans i18nKey="auto.bodyquiz.in_a_row">in a row! 🔥</Trans>
+                                          </div>
             )}
 
             <div className="flex flex-wrap justify-center gap-1.5 mb-6">
@@ -244,8 +264,8 @@ export default function BodyQuiz() {
 
             <div className="flex gap-2">
               <button onClick={restart} className="flex-1 py-2.5 rounded-xl bg-emerald-500 text-white font-bold flex items-center justify-center gap-1">
-                <RotateCcw className="w-4 h-4" /> New Quiz
-              </button>
+                <RotateCcw className="w-4 h-4" /> <Trans i18nKey="auto.bodyquiz.new_quiz">New Quiz</Trans>
+                                          </button>
             </div>
           </motion.div>
         </div>
@@ -258,15 +278,15 @@ export default function BodyQuiz() {
     <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
       <div className="max-w-2xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-6">
-          <h2 className="text-2xl font-black text-white">❤️ Body Systems Quiz</h2>
+          <h2 className="text-2xl font-black text-white"><Trans i18nKey="auto.bodyquiz.body_systems_quiz">❤️ Body Systems Quiz</Trans></h2>
         </motion.div>
 
         {/* Progress + streak */}
         <div className="flex items-center gap-3 mb-5">
           <div className="flex-1">
             <div className="flex justify-between text-sm text-gray-400 mb-1">
-              <span>Q{currentQ + 1}/{activeQuestions.length}</span>
-              <span>Mastery: {mastery}</span>
+              <span><Trans i18nKey="auto.bodyquiz.q">Q</Trans>{currentQ + 1}/{activeQuestions.length}</span>
+              <span><Trans i18nKey="auto.bodyquiz.mastery">Mastery:</Trans> {mastery}</span>
             </div>
             <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
               <motion.div className="h-full bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full"
@@ -276,7 +296,7 @@ export default function BodyQuiz() {
           {streak >= 2 && (
             <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}
               className="flex items-center gap-1 px-3 py-1.5 rounded-full bg-yellow-500/20 text-yellow-400 text-sm font-bold">
-              <Zap className="w-3 h-3" /> {streak}x {streak >= 3 ? '🔥 2x!' : ''}
+              <Zap className="w-3 h-3" /> {streak}<Trans i18nKey="auto.bodyquiz.x">x</Trans> {streak >= 3 ? '🔥 2x!' : ''}
             </motion.div>
           )}
         </div>
@@ -324,7 +344,7 @@ export default function BodyQuiz() {
                   <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} className="mt-4 overflow-hidden">
                     <div className={`p-3 rounded-xl border text-sm ${selectedAnswer === question.correct ? 'bg-emerald-900/20 border-emerald-500/30' : 'bg-blue-900/20 border-blue-500/30'}`}>
                       <div className="font-bold text-white mb-0.5 text-sm flex items-center gap-1">
-                        {selectedAnswer === question.correct ? <><CheckCircle2 className="w-3 h-3 text-emerald-400" /> Correct!</> : <><Award className="w-3 h-3 text-blue-400" /> Learn:</>}
+                        {selectedAnswer === question.correct ? <><CheckCircle2 className="w-3 h-3 text-emerald-400" /> <Trans i18nKey="auto.bodyquiz.correct">Correct!</Trans></> : <><Award className="w-3 h-3 text-blue-400" /> <Trans i18nKey="auto.bodyquiz.learn">Learn:</Trans></>}
                       </div>
                       <p className="text-sm text-gray-300">{question.explanation}</p>
                     </div>
@@ -339,7 +359,7 @@ export default function BodyQuiz() {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center">
             <button onClick={nextQuestion}
               className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-emerald-500 text-white font-bold text-sm hover:bg-emerald-600">
-              {currentQ < activeQuestions.length - 1 ? <><span>Next</span><ArrowRight className="w-4 h-4" /></> : <><span>Results</span><Award className="w-4 h-4" /></>}
+              {currentQ < activeQuestions.length - 1 ? <><span><Trans i18nKey="auto.bodyquiz.next">Next</Trans></span><ArrowRight className="w-4 h-4" /></> : <><span><Trans i18nKey="auto.bodyquiz.results">Results</Trans></span><Award className="w-4 h-4" /></>}
             </button>
           </motion.div>
         )}

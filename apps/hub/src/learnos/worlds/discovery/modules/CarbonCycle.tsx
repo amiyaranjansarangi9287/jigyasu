@@ -1,6 +1,6 @@
 // src/worlds/discovery/modules/CarbonCycle.tsx
 import { useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion } from 'framer-motion';
 import DiscoveryShell from '../DiscoveryShell';
 import { useLumoSage } from '../hooks/useLumoSage';
@@ -41,7 +41,7 @@ export default function CarbonCycle() {
       <div className="flex-1 flex flex-col p-5 bg-slate-900 pb-24">
         <div className="bg-slate-800 rounded-2xl p-4 border border-slate-700 mb-4">
           <p className="text-white font-bold">{t('discovery.modules.CarbonCycle.txt_CarbonCycl', '🌿 Carbon Cycle')}</p>
-          <p className="text-slate-400 text-sm mt-1">A carbon atom has been in dinosaurs, oceans, and you ({tracked.length}/{FLOWS.length} flows tracked)</p>
+          <p className="text-slate-400 text-sm mt-1"><Trans i18nKey="auto.carboncycle.a_carbon_atom_has_been_in_dino">A carbon atom has been in dinosaurs, oceans, and you (</Trans>{tracked.length}/{FLOWS.length} <Trans i18nKey="auto.carboncycle.flows_tracked">flows tracked)</Trans></p>
         </div>
 
         {/* Reservoirs */}

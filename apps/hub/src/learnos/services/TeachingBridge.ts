@@ -217,6 +217,83 @@ export async function requestNextActivity(
   };
 }
 
+// ---------------------------------------------------------------------------
+// In-memory response cache (BIP27-C01: cache safe responses locally)
+// Key: non-PII request fields only — no learner IDs, no session IDs.
+// TTL: 5 minutes (refreshed per new bridge request).
+// ---------------------------------------------------------------------------
+
+const CACHE_TTL_MS = 5 * 60 * 1_000;
+
+interface CacheEntry<T> {
+  result: T;
+  expiresAt: number;
+}
+
+const _hintCache = new Map<string, CacheEntry<TeachingBridgeHint>>();
+const _conceptMapCache = new Map<string, CacheEntry<TeachingBridgeConceptMap>>();
+
+function cacheKey(request: TeachingBridgeRequest): string {
+  return [
+    request.query.trim().toLowerCase(),
+    request.subject ?? '',
+    request.moduleId ?? '',
+    request.learnerLevel ?? 'beginner',
+    request.language ?? 'en',
+  ].join('|');
+}
+
+function getCached<T>(cache: Map<string, CacheEntry<T>>, key: string): T | undefined {
+  const entry = cache.get(key);
+  if (!entry) return undefined;
+  if (Date.now() > entry.expiresAt) {
+    cache.delete(key);
+    return undefined;
+  }
+  return entry.result;
+}
+
+function setCached<T>(cache: Map<string, CacheEntry<T>>, key: string, result: T): void {
+  cache.set(key, { result, expiresAt: Date.now() + CACHE_TTL_MS });
+}
+
+/** Return a cached hint if available; otherwise fetch and cache the result. */
+export async function requestHintCached(
+  request: TeachingBridgeRequest,
+  options: TeachingBridgeClientOptions = {}
+): Promise<TeachingBridgeHint> {
+  const key = cacheKey(request);
+  const cached = getCached(_hintCache, key);
+  if (cached) return cached;
+  const result = await requestHint(request, options);
+  if (!result.fallback) {
+    setCached(_hintCache, key, result);
+  }
+  return result;
+}
+
+/** Return a cached concept map if available; otherwise fetch and cache the result. */
+export async function requestConceptMapCached(
+  request: TeachingBridgeRequest,
+  options: TeachingBridgeClientOptions = {}
+): Promise<TeachingBridgeConceptMap> {
+  const key = cacheKey(request);
+  const cached = getCached(_conceptMapCache, key);
+  if (cached) return cached;
+  const result = await requestConceptMap(request, options);
+  if (!result.fallback) {
+    setCached(_conceptMapCache, key, result);
+  }
+  return result;
+}
+
+/** Clear all cached teaching bridge responses (useful for testing). */
+export function clearTeachingBridgeCache(): void {
+  _hintCache.clear();
+  _conceptMapCache.clear();
+}
+
+
 export function getTeachingBridgeStatus(
   options: Pick<TeachingBridgeClientOptions, 'enabled' | 'endpoint'> = {}
 ): TeachingBridgeFeatureStatus {

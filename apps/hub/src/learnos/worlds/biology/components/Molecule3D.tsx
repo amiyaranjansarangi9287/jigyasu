@@ -1,6 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { RotateCcw, ZoomIn, ZoomOut } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface Atom3D {
   x: number; y: number; z: number;
@@ -175,6 +179,22 @@ const molecules: Record<string, MoleculeData> = {
 };
 
 export default function Molecule3D() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.molecule_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.molecule_prompt', "Everything around us is made of tiny building blocks called molecules. Let's build and examine them in 3D!"),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'molecule-3d', 60);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   const [currentMol, setCurrentMol] = useState<string>('water');
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const [zoom, setZoom] = useState(1);

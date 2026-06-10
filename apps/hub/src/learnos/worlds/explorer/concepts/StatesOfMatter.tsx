@@ -7,6 +7,7 @@ import { EverydayConnection } from '../components/EverydayConnection';
 import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
+import { Trans } from "react-i18next";
 
 interface Molecule {
   x: number;
@@ -162,8 +163,8 @@ export default function StatesOfMatter() {
         <div className="px-5 py-4">
           <div className="mb-4">
             <div className="flex justify-between mb-1">
-              <span className="text-slate-500 text-sm">Temperature</span>
-              <span className="text-slate-400 text-sm font-mono">{temperature}°C</span>
+              <span className="text-slate-500 text-sm"><Trans i18nKey="auto.statesofmatter.temperature">Temperature</Trans></span>
+              <span className="text-slate-400 text-sm font-mono">{temperature}<Trans i18nKey="auto.statesofmatter.c">°C</Trans></span>
             </div>
             <input
               type="range" min="-30" max="150" value={temperature}
@@ -176,26 +177,26 @@ export default function StatesOfMatter() {
           <div className="space-y-3">
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-slate-300 text-sm leading-relaxed mb-2">
-                The same H₂O molecules form ice, water, or steam depending
-                solely on how much energy they have. More energy means
-                faster movement and weaker bonds.
-              </p>
+                <Trans i18nKey="auto.statesofmatter.the_same_h_o_molecules_form_ic">The same H₂O molecules form ice, water, or steam depending
+                                              solely on how much energy they have. More energy means
+                                              faster movement and weaker bonds.</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Water is unusual — it expands when freezing. This is why
-                ice floats, why pipes burst in winter, and why life in
-                frozen ponds survives.
-              </p>
+                <Trans i18nKey="auto.statesofmatter.water_is_unusual_it_expands_wh">Water is unusual — it expands when freezing. This is why
+                                              ice floats, why pipes burst in winter, and why life in
+                                              frozen ponds survives.</Trans>
+                                            </p>
             </div>
 
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-violet-400 text-sm font-bold uppercase tracking-wider mb-2">
-                History of the idea
-              </p>
+                <Trans i18nKey="auto.statesofmatter.history_of_the_idea">History of the idea</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Lavoisier proved that matter is conserved in phase transitions.
-                The same atoms, just different arrangements. This overturned
-                the ancient belief that fire "destroyed" things.
-              </p>
+                <Trans i18nKey="auto.statesofmatter.lavoisier_proved_that_matter_i">Lavoisier proved that matter is conserved in phase transitions.
+                                              The same atoms, just different arrangements. This overturned
+                                              the ancient belief that fire "destroyed" things.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

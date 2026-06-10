@@ -1,6 +1,6 @@
 // src/worlds/discovery/modules/EconomicSimulation.tsx
 import { useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import DiscoveryShell from '../DiscoveryShell';
 import { useLumoSage } from '../hooks/useLumoSage';
 import { useDiscoveryProgress } from '../hooks/useDiscoveryProgress';
@@ -64,7 +64,7 @@ export default function EconomicSimulation() {
         <div className="space-y-2">
           {EVENTS.map(ev => (
             <button key={ev.id} onClick={() => applyEvent(ev)} className={`w-full bg-slate-800 rounded-xl p-3 border text-left min-h-[52px] transition-all ${activeEvent === ev.id ? 'border-indigo-500' : 'border-slate-700'}`}>
-              <div className="flex items-center gap-2"><span className="text-xl">{ev.emoji}</span><div><p className="text-white text-sm font-bold">{ev.name}</p><p className="text-slate-500 text-sm">GDP: {ev.gdp > 0 ? '+' : ''}{ev.gdp}% · Inflation: {ev.inflation > 0 ? '+' : ''}{ev.inflation}%</p></div></div>
+              <div className="flex items-center gap-2"><span className="text-xl">{ev.emoji}</span><div><p className="text-white text-sm font-bold">{ev.name}</p><p className="text-slate-500 text-sm"><Trans i18nKey="auto.economicsimulation.gdp">GDP:</Trans> {ev.gdp > 0 ? '+' : ''}{ev.gdp}<Trans i18nKey="auto.economicsimulation.inflation">% · Inflation:</Trans> {ev.inflation > 0 ? '+' : ''}{ev.inflation}%</p></div></div>
             </button>
           ))}
         </div>

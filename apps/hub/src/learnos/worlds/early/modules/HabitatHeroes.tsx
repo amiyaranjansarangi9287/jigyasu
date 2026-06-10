@@ -1,7 +1,7 @@
 // src/worlds/early/modules/HabitatHeroes.tsx
 
 import { useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import EarlyShell from '../EarlyShell';
 import { usePip } from '../hooks/usePip';
@@ -97,7 +97,7 @@ export default function HabitatHeroes() {
                 </motion.div>
               )}</AnimatePresence>
 
-              {!showQ && <button onClick={() => setShowQ(true)} className="w-full py-4 font-bold text-lg rounded-2xl min-h-[56px] text-white" style={{ backgroundColor: habitat.color }}>Test My Knowledge! 🧠</button>}
+              {!showQ && <button onClick={() => setShowQ(true)} className="w-full py-4 font-bold text-lg rounded-2xl min-h-[56px] text-white" style={{ backgroundColor: habitat.color }}><Trans i18nKey="auto.habitatheroes.test_my_knowledge">Test My Knowledge! 🧠</Trans></button>}
 
               <AnimatePresence>{showQ && (
                 <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="bg-white rounded-2xl p-4 border border-teal-200">

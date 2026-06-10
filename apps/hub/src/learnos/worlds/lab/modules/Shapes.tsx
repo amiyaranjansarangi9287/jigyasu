@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/Shapes.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -57,8 +57,8 @@ export default function Shapes() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.Shapes.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-600 font-bold text-sm mb-1">Indian Geometry Heritage</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">The <strong>Sulba Sutras</strong> (800-500 BCE) contain geometry rules for building fire altars — including the Pythagorean theorem 1,000 years before Pythagoras! Baudhayana described constructing squares, circles, and triangles with precision.</p>
+              <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.shapes.indian_geometry_heritage">Indian Geometry Heritage</Trans></h3>
+              <p className="text-gray-600 text-sm leading-relaxed"><Trans i18nKey="auto.shapes.the">The</Trans> <strong><Trans i18nKey="auto.shapes.sulba_sutras">Sulba Sutras</Trans></strong> <Trans i18nKey="auto.shapes.800_500_bce_contain_geometry_r">(800-500 BCE) contain geometry rules for building fire altars — including the Pythagorean theorem 1,000 years before Pythagoras! Baudhayana described constructing squares, circles, and triangles with precision.</Trans></p>
             </div>
           </div>
         </div>

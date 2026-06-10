@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from "react-i18next";
 
 export function AudioNarration({ text }: { text: string }) {
+    const { t } = useTranslation();
   const handleReadAloud = () => {
     if ('speechSynthesis' in window) {
       window.speechSynthesis.cancel();
@@ -14,7 +16,7 @@ export function AudioNarration({ text }: { text: string }) {
     <button
       onClick={handleReadAloud}
       className="p-2 bg-white/10 hover:bg-white/20 rounded-full text-lg shadow-sm active:scale-95 transition-all flex items-center justify-center"
-      title="Read Aloud"
+      title={t('auto.attr.multimodallearning.read_aloud')}
     >
       🔊
     </button>
@@ -22,6 +24,7 @@ export function AudioNarration({ text }: { text: string }) {
 }
 
 export function VideoPlayer({ url, title }: { url: string, title?: string }) {
+    const { t } = useTranslation();
   const [isPlaying, setIsPlaying] = useState(false);
   
   return (

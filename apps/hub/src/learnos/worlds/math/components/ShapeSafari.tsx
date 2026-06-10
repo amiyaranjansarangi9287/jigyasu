@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Trans } from "react-i18next";
 
 interface ShapeInfo {
   name: string; emoji: string; sides: number | string; vertices: number | string;
@@ -9,7 +10,7 @@ interface ShapeInfo {
 }
 
 const shapes2D: ShapeInfo[] = [
-  { name: 'Triangle', emoji: '🔺', sides: 3, vertices: 3, angle: '60° (equilateral)', formula: 'A = ½bh', color: 'text-orange-400', dim: '2D',
+  { name: 'Triangle', emoji: '🔺', sides: 3, vertices: 3, angle: '60° (equilateral)', formula: 'A = ½bh', color: 'text-sky-400', dim: '2D',
     draw: (cx, cy, r) => { const pts = [0, 1, 2].map(i => { const a = (i * 120 - 90) * Math.PI / 180; return `${cx + Math.cos(a) * r},${cy + Math.sin(a) * r}`; }); return `M ${pts.join(' L ')} Z`; } },
   { name: 'Square', emoji: '🟦', sides: 4, vertices: 4, angle: '90°', formula: 'A = s²', color: 'text-blue-400', dim: '2D',
     draw: (cx, cy, r) => { const pts = [0, 1, 2, 3].map(i => { const a = (i * 90 + 45) * Math.PI / 180; return `${cx + Math.cos(a) * r},${cy + Math.sin(a) * r}`; }); return `M ${pts.join(' L ')} Z`; } },
@@ -17,7 +18,7 @@ const shapes2D: ShapeInfo[] = [
     draw: (cx, cy, r) => { const pts = [0, 1, 2, 3, 4].map(i => { const a = (i * 72 - 90) * Math.PI / 180; return `${cx + Math.cos(a) * r},${cy + Math.sin(a) * r}`; }); return `M ${pts.join(' L ')} Z`; } },
   { name: 'Hexagon', emoji: '⬡', sides: 6, vertices: 6, angle: '120°', formula: 'A = (3√3/2)s²', color: 'text-yellow-400', dim: '2D',
     draw: (cx, cy, r) => { const pts = [0, 1, 2, 3, 4, 5].map(i => { const a = (i * 60 - 90) * Math.PI / 180; return `${cx + Math.cos(a) * r},${cy + Math.sin(a) * r}`; }); return `M ${pts.join(' L ')} Z`; } },
-  { name: 'Octagon', emoji: '🛑', sides: 8, vertices: 8, angle: '135°', formula: 'A = 2(1+√2)s²', color: 'text-orange-400', dim: '2D',
+  { name: 'Octagon', emoji: '🛑', sides: 8, vertices: 8, angle: '135°', formula: 'A = 2(1+√2)s²', color: 'text-sky-400', dim: '2D',
     draw: (cx, cy, r) => { const pts = [0,1,2,3,4,5,6,7].map(i => { const a = (i * 45 - 22.5) * Math.PI / 180; return `${cx + Math.cos(a) * r},${cy + Math.sin(a) * r}`; }); return `M ${pts.join(' L ')} Z`; } },
   { name: 'Circle', emoji: '🔴', sides: '∞', vertices: 0, angle: '—', formula: 'A = πr²', color: 'text-pink-400', dim: '2D',
     draw: (cx, cy, r) => `M ${cx - r},${cy} A ${r} ${r} 0 1 0 ${cx + r},${cy} A ${r} ${r} 0 1 0 ${cx - r},${cy}` },
@@ -56,7 +57,7 @@ export default function ShapeSafari() {
   const [selectedIdx, setSelectedIdx] = useState(0);
   const [mode, setMode] = useState<'explore' | 'quiz'>('explore');
   const [quiz, setQuiz] = useState(makeQuiz);
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [mastery, setMastery] = useState(0);
 
   const list = dim === '2D' ? shapes2D : shapes3D;
@@ -67,29 +68,29 @@ export default function ShapeSafari() {
     if (opt === quiz.answer) {
       setFeedback('correct'); setMastery(m => m + 1);
       setTimeout(() => { setQuiz(makeQuiz()); setFeedback(null); }, 1200);
-    } else { setFeedback('wrong'); setTimeout(() => setFeedback(null), 900); }
+    } else { setFeedback('hint'); setTimeout(() => setFeedback(null), 900); }
   };
 
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🔷 Shape Safari</h2>
-        <p className="text-purple-300 text-lg">Discover 2D and 3D shapes and their properties!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.shapesafari.shape_safari">🔷 Shape Safari</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.shapesafari.discover_2d_and_3d_shapes_and_">Discover 2D and 3D shapes and their properties!</Trans></p>
       </div>
 
       <div className="flex justify-center gap-2 mb-4">
-        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${dim === '2D' ? 'bg-blue-500/30 text-blue-300 border border-blue-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => { setDim('2D'); setSelectedIdx(0); }}>🔷 2D Shapes</button>
-        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${dim === '3D' ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => { setDim('3D'); setSelectedIdx(0); }}>🧊 3D Shapes</button>
+        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${dim === '2D' ? 'bg-blue-500/30 text-blue-300 border border-blue-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => { setDim('2D'); setSelectedIdx(0); }}><Trans i18nKey="auto.shapesafari.2d_shapes">🔷 2D Shapes</Trans></button>
+        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${dim === '3D' ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => { setDim('3D'); setSelectedIdx(0); }}><Trans i18nKey="auto.shapesafari.3d_shapes">🧊 3D Shapes</Trans></button>
       </div>
       <div className="flex justify-center gap-2 mb-6">
-        <button className={`px-4 py-2 rounded-xl text-sm font-bold ${mode === 'explore' ? 'bg-green-500/30 text-green-300' : 'bg-white/5 text-gray-400'}`} onClick={() => setMode('explore')}>🔍 Explore</button>
-        <button className={`px-4 py-2 rounded-xl text-sm font-bold ${mode === 'quiz' ? 'bg-orange-500/30 text-orange-300' : 'bg-white/5 text-gray-400'}`} onClick={() => { setMode('quiz'); setQuiz(makeQuiz()); }}>🎯 Quiz</button>
+        <button className={`px-4 py-2 rounded-xl text-sm font-bold ${mode === 'explore' ? 'bg-green-500/30 text-green-300' : 'bg-white/5 text-gray-400'}`} onClick={() => setMode('explore')}><Trans i18nKey="auto.shapesafari.explore">🔍 Explore</Trans></button>
+        <button className={`px-4 py-2 rounded-xl text-sm font-bold ${mode === 'quiz' ? 'bg-orange-500/30 text-orange-300' : 'bg-white/5 text-gray-400'}`} onClick={() => { setMode('quiz'); setQuiz(makeQuiz()); }}><Trans i18nKey="auto.shapesafari.quiz">🎯 Quiz</Trans></button>
       </div>
 
       <AnimatePresence mode="wait">
         {mode === 'quiz' ? (
           <motion.div key="quiz" className="max-w-lg mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
+            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'hint' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
               <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {mastery}</span></div>
               <div className="flex justify-center mb-4">
                 <svg width="120" height="120" viewBox="0 0 120 120"><path d={quiz.shape.draw(60, 60, 40)} fill="rgba(168,85,247,0.2)" stroke="#a855f7" strokeWidth="2.5" /></svg>
@@ -104,8 +105,8 @@ export default function ShapeSafari() {
                   <motion.button key={opt} className={`py-3 rounded-xl text-lg font-bold ${feedback === 'correct' && opt === quiz.answer ? 'bg-green-500 text-white' : feedback ? 'bg-white/5 text-gray-500' : 'bg-white/10 text-white hover:bg-white/20 border border-white/20'}`} whileHover={!feedback ? { scale: 1.05 } : {}} whileTap={!feedback ? { scale: 0.95 } : {}} onClick={() => answerQuiz(opt)} disabled={!!feedback}>{opt}</motion.button>
                 ))}
               </div>
-              {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✅ Correct!</p>}
-              {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Answer: {quiz.answer}</p>}
+              {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4"><Trans i18nKey="auto.shapesafari.correct">✅ Correct!</Trans></p>}
+              {feedback === 'hint' && <p className="text-sky-400 font-bold text-center mt-4"><Trans i18nKey="auto.shapesafari.answer">Answer:</Trans> {quiz.answer}</p>}
             </div>
           </motion.div>
         ) : (
@@ -143,8 +144,8 @@ export default function ShapeSafari() {
               ))}
               {selected.dim === '3D' && (
                 <div className="bg-purple-500/10 rounded-xl p-3 border border-purple-500/20 text-sm text-purple-300">
-                  💡 <strong>Euler's formula:</strong> V − E + F = {selected.vertices} − {selected.edges} + {selected.faces} = {Number(selected.vertices) - Number(selected.edges) + Number(selected.faces!)} (always 2 for simple polyhedra)
-                </div>
+                  💡 <strong><Trans i18nKey="auto.shapesafari.euler_s_formula">Euler's formula:</Trans></strong> <Trans i18nKey="auto.shapesafari.v_e_f">V − E + F =</Trans> {selected.vertices} − {selected.edges} + {selected.faces} = {Number(selected.vertices) - Number(selected.edges) + Number(selected.faces!)} <Trans i18nKey="auto.shapesafari.always_2_for_simple_polyhedra">(always 2 for simple polyhedra)</Trans>
+                                                      </div>
               )}
             </div>
           </motion.div>

@@ -162,9 +162,7 @@ function AngleExplorer() {
           <p className="text-red-400">🔄 Reflex: 180° &lt; θ &lt; 360°</p>
         </div>
 
-        <motion.button className="w-full py-2 rounded-xl bg-purple-500/30 text-purple-300 font-bold border border-purple-500/30" whileTap={{ scale: 0.97 }} onClick={generateQuiz}>
-          🧠 Quiz Me!
-        </motion.button>
+        
 
         {quizMode && (
           <motion.div className="bg-purple-500/10 rounded-xl p-4 border border-purple-500/30" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>

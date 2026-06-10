@@ -1,6 +1,6 @@
 // src/worlds/lab/modules/HumanBody.tsx
 import { useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import LabShell from '../LabShell';
 import { useLumoOwl } from '../hooks/useLumoOwl';
@@ -33,7 +33,7 @@ export default function HumanBody() {
     <LabShell module="human-body" subject="biology">
       <div className="min-h-screen bg-red-50 flex flex-col p-6 pb-24">
         <div className="bg-white rounded-3xl p-5 shadow-sm border border-red-100 mb-4">
-          <h2 className="font-bold text-lg">🫀 Human Body Systems</h2>
+          <h2 className="font-bold text-lg"><Trans i18nKey="auto.humanbody.human_body_systems">🫀 Human Body Systems</Trans></h2>
           <p className="text-sm text-slate-500">{t('lab.modules.HumanBody.txt_Explorehow', 'Explore how your body works!')}</p>
         </div>
 

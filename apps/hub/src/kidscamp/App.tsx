@@ -4,7 +4,7 @@ import { useState, useRef, useCallback } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Activity } from './data/activities.en';
 import { useLocalizedActivities } from '../hooks/useLocalizedData';
-import { AgeTier, PillarId } from './data/categories';
+import { AgeTier, PillarId, pillars } from './data/categories';
 import {
   useAgeFilter,
   useActivityStatus,
@@ -192,9 +192,7 @@ export default function App() {
 
               <div className="text-center">
                 <div className="text-6xl mb-4">
-                  {selectedActivity.pillar === 'toybox' ? '🧸' :
-                   selectedActivity.pillar === 'sciencelab' ? '🔬' :
-                   selectedActivity.pillar === 'artstudio' ? '🎨' : '🌿'}
+                  {pillars.find(p => p.id === selectedActivity.pillar)?.icon || '✨'}
                 </div>
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
                   {selectedActivity.name}
@@ -252,7 +250,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <div className="min-h-screen bg-jigyasu-grid text-slate-900 dark:text-slate-100 transition-colors duration-300">
       {/* Navigation */}
       <Navbar
         onNavigate={handleNavigate}
@@ -272,7 +270,7 @@ export default function App() {
           onGetStarted={() => ageRef.current?.scrollIntoView({ behavior: 'smooth' })}
           onExploreCampWeeks={() => campWeeksRef.current?.scrollIntoView({ behavior: 'smooth' })}
           totalActivities={activities.length}
-          totalPillars={4}
+          totalPillars={pillars.length}
         />
       </div>
 

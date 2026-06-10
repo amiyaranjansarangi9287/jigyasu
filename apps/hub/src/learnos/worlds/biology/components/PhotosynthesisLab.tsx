@@ -1,6 +1,11 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sun, Droplets, Wind, Zap, RotateCcw } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import PremiumSlider from '../../../shared/ui/PremiumSlider';
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface LabState {
   lightIntensity: number; // 0-100
@@ -77,6 +82,9 @@ const lightRays = Array.from({ length: 7 }, (_, i) => ({
 }));
 
 export default function PhotosynthesisLab() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
   const [lab, setLab] = useState<LabState>({
     lightIntensity: 50,
     waterLevel: 50,
@@ -89,6 +97,18 @@ export default function PhotosynthesisLab() {
   const [activeStage, setActiveStage] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
   const [animatedBubbles, setAnimatedBubbles] = useState<{ id: number; x: number }[]>([]);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.photosynthesis_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.photosynthesis_prompt', 'Plants make their own food out of thin air and sunlight! Sounds like magic, right? Let\'s experiment to see what plants need to survive and thrive.'),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'photosynthesis-lab', 80);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
   const activeStageInfo = stageInfo[activeStage];
 
   // Simulation
@@ -130,11 +150,13 @@ export default function PhotosynthesisLab() {
   const tempOk = lab.temperature >= 15 && lab.temperature <= 35;
 
   return (
-    <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
+    <ModuleWrapper moduleId="photosynthesis-lab" progress={progress} setProgress={setProgress} onNavigate={() => {}}>
+      {showChallenge && <ChallengeOverlay challenge={activeChallenge} onClose={() => setShowChallenge(false)} />}
+      <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-2">🧫 Photosynthesis Lab</h2>
-          <p className="text-gray-400 text-lg">Control light, water & CO₂ to power photosynthesis!</p>
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-2"><Trans i18nKey="auto.photosynthesislab.photosynthesis_lab">🧫 Photosynthesis Lab</Trans></h2>
+          <p className="text-gray-400 text-lg"><Trans i18nKey="auto.photosynthesislab.control_light_water_co_to_powe">Control light, water & CO₂ to power photosynthesis!</Trans></p>
         </motion.div>
 
         <div className="grid lg:grid-cols-3 gap-5">
@@ -193,15 +215,15 @@ export default function PhotosynthesisLab() {
                   {/* Stomata */}
                   <g transform="translate(120, 170)">
                     <ellipse cx="0" cy="0" rx="6" ry="3" fill="none" stroke="#15803d" strokeWidth="1.5" />
-                    <text x="0" y="-8" textAnchor="middle" fontSize="7" fill="#9ca3af">CO₂ in</text>
+                    <text x="0" y="-8" textAnchor="middle" fontSize="7" fill="#9ca3af"><Trans i18nKey="auto.photosynthesislab.co_in">CO₂ in</Trans></text>
                   </g>
                   <g transform="translate(180, 170)">
                     <ellipse cx="0" cy="0" rx="6" ry="3" fill="none" stroke="#15803d" strokeWidth="1.5" />
-                    <text x="0" y="-8" textAnchor="middle" fontSize="7" fill="#9ca3af">O₂ out</text>
+                    <text x="0" y="-8" textAnchor="middle" fontSize="7" fill="#9ca3af"><Trans i18nKey="auto.photosynthesislab.o_out">O₂ out</Trans></text>
                   </g>
 
                   {/* Water arrows */}
-                  <text x="150" y="195" textAnchor="middle" fontSize="8" fill="#38bdf8">↑ H₂O</text>
+                  <text x="150" y="195" textAnchor="middle" fontSize="8" fill="#38bdf8"><Trans i18nKey="auto.photosynthesislab.h_o">↑ H₂O</Trans></text>
                 </svg>
               </div>
 
@@ -218,15 +240,15 @@ export default function PhotosynthesisLab() {
               {/* Production meters */}
               <div className="absolute bottom-4 left-4 right-4 flex gap-3">
                 <div className="flex-1 bg-gray-900/80 backdrop-blur rounded-lg p-2">
-                  <div className="text-sm text-blue-400 font-bold">O₂ Produced</div>
-                  <div className="text-lg font-black text-blue-300">{lab.oxygenProduced.toFixed(1)} ml</div>
+                  <div className="text-sm text-blue-400 font-bold"><Trans i18nKey="auto.photosynthesislab.o_produced">O₂ Produced</Trans></div>
+                  <div className="text-lg font-black text-blue-300">{lab.oxygenProduced.toFixed(1)} <Trans i18nKey="auto.photosynthesislab.ml">ml</Trans></div>
                 </div>
                 <div className="flex-1 bg-gray-900/80 backdrop-blur rounded-lg p-2">
-                  <div className="text-sm text-amber-400 font-bold">Glucose Made</div>
-                  <div className="text-lg font-black text-amber-300">{lab.glucoseProduced.toFixed(1)} mg</div>
+                  <div className="text-sm text-amber-400 font-bold"><Trans i18nKey="auto.photosynthesislab.glucose_made">Glucose Made</Trans></div>
+                  <div className="text-lg font-black text-amber-300">{lab.glucoseProduced.toFixed(1)} <Trans i18nKey="auto.photosynthesislab.mg">mg</Trans></div>
                 </div>
                 <div className="flex-1 bg-gray-900/80 backdrop-blur rounded-lg p-2">
-                  <div className="text-sm text-emerald-400 font-bold">Efficiency</div>
+                  <div className="text-sm text-emerald-400 font-bold"><Trans i18nKey="auto.photosynthesislab.efficiency">Efficiency</Trans></div>
                   <div className={`text-lg font-black ${efficiency > 0.5 ? 'text-emerald-300' : efficiency > 0.2 ? 'text-yellow-300' : 'text-red-300'}`}>
                     {(efficiency * (tempOk ? 100 : 50)).toFixed(0)}%
                   </div>
@@ -237,26 +259,21 @@ export default function PhotosynthesisLab() {
             {/* Controls */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-4">
               {[
-                { label: 'Light', icon: Sun, value: lab.lightIntensity, key: 'lightIntensity' as const, color: '#facc15', unit: '%' },
-                { label: 'Water', icon: Droplets, value: lab.waterLevel, key: 'waterLevel' as const, color: '#38bdf8', unit: '%' },
-                { label: 'CO₂', icon: Wind, value: lab.co2Level, key: 'co2Level' as const, color: '#a3a3a3', unit: '%' },
-                { label: 'Temp', icon: Zap, value: lab.temperature, key: 'temperature' as const, color: '#f97316', unit: '°C' },
+                { label: 'Light', icon: Sun, value: lab.lightIntensity, key: 'lightIntensity' as const, color: 'blue' as any, unit: '%' },
+                { label: 'Water', icon: Droplets, value: lab.waterLevel, key: 'waterLevel' as const, color: 'blue' as any, unit: '%' },
+                { label: 'CO₂', icon: Wind, value: lab.co2Level, key: 'co2Level' as const, color: 'green' as any, unit: '%' },
+                { label: 'Temp', icon: Zap, value: lab.temperature, key: 'temperature' as const, color: 'red' as any, unit: '°C' },
               ].map(ctrl => (
                 <div key={ctrl.label} className="bg-gray-900 rounded-xl border border-gray-800 p-3">
-                  <div className="flex items-center gap-1.5 mb-2">
-                    <ctrl.icon className="w-4 h-4" style={{ color: ctrl.color }} />
-                    <span className="text-sm font-bold text-gray-300">{ctrl.label}</span>
-                    <span className="ml-auto text-sm font-mono" style={{ color: ctrl.color }}>
-                      {ctrl.key === 'temperature' ? `${ctrl.value}${ctrl.unit}` : `${ctrl.value}${ctrl.unit}`}
-                    </span>
-                  </div>
-                  <input type="range"
-                    min={ctrl.key === 'temperature' ? 0 : 0}
-                    max={ctrl.key === 'temperature' ? 50 : 100}
+                  <PremiumSlider
+                    label={ctrl.label}
                     value={ctrl.value}
-                    onChange={e => setLab(prev => ({ ...prev, [ctrl.key]: Number(e.target.value) }))}
-                    className="w-full h-1.5 rounded-full appearance-none cursor-pointer"
-                    style={{ background: `linear-gradient(to right, ${ctrl.color}66 0%, ${ctrl.color}66 ${ctrl.key === 'temperature' ? ctrl.value * 2 : ctrl.value}%, #374151 ${ctrl.key === 'temperature' ? ctrl.value * 2 : ctrl.value}%, #374151 100%)` }}
+                    min={0}
+                    max={ctrl.key === 'temperature' ? 50 : 100}
+                    step={1}
+                    unit={ctrl.unit}
+                    color={ctrl.color}
+                    onChange={val => setLab(prev => ({ ...prev, [ctrl.key]: val }))}
                   />
                 </div>
               ))}
@@ -275,9 +292,9 @@ export default function PhotosynthesisLab() {
             {/* Warnings */}
             {isRunning && (
               <div className="mt-3 space-y-1">
-                {lab.waterLevel < 10 && <div className="text-sm text-orange-400 bg-red-500/10 rounded-lg px-3 py-1.5 border border-red-500/20">⚠️ Water level critically low! Photosynthesis slowing down.</div>}
-                {lab.co2Level < 10 && <div className="text-sm text-orange-400 bg-red-500/10 rounded-lg px-3 py-1.5 border border-red-500/20">⚠️ CO₂ depleted! Calvin cycle cannot fix carbon.</div>}
-                {!tempOk && <div className="text-sm text-orange-400 bg-orange-500/10 rounded-lg px-3 py-1.5 border border-orange-500/20">⚠️ Temperature outside optimal range (15-35°C). Enzymes less efficient.</div>}
+                {lab.waterLevel < 10 && <div className="text-sm text-orange-400 bg-red-500/10 rounded-lg px-3 py-1.5 border border-red-500/20"><Trans i18nKey="auto.photosynthesislab.water_level_critically_low_pho">⚠️ Water level critically low! Photosynthesis slowing down.</Trans></div>}
+                {lab.co2Level < 10 && <div className="text-sm text-orange-400 bg-red-500/10 rounded-lg px-3 py-1.5 border border-red-500/20"><Trans i18nKey="auto.photosynthesislab.co_depleted_calvin_cycle_canno">⚠️ CO₂ depleted! Calvin cycle cannot fix carbon.</Trans></div>}
+                {!tempOk && <div className="text-sm text-orange-400 bg-orange-500/10 rounded-lg px-3 py-1.5 border border-orange-500/20"><Trans i18nKey="auto.photosynthesislab.temperature_outside_optimal_ra">⚠️ Temperature outside optimal range (15-35°C). Enzymes less efficient.</Trans></div>}
               </div>
             )}
           </div>
@@ -312,7 +329,7 @@ export default function PhotosynthesisLab() {
 
                 {hasSteps(activeStageInfo) && (
                   <>
-                    <h4 className="text-sm font-bold text-white mb-2">Steps:</h4>
+                    <h4 className="text-sm font-bold text-white mb-2"><Trans i18nKey="auto.photosynthesislab.steps">Steps:</Trans></h4>
                     <ol className="space-y-1.5">
                       {activeStageInfo.steps.map((step, i) => (
                         <motion.li key={i} initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }}
@@ -326,13 +343,13 @@ export default function PhotosynthesisLab() {
 
                     <div className="grid grid-cols-2 gap-2 mt-3">
                       <div className="bg-blue-500/10 rounded-lg p-2 border border-blue-500/20">
-                        <div className="text-sm text-blue-400 font-bold mb-1">Inputs →</div>
+                        <div className="text-sm text-blue-400 font-bold mb-1"><Trans i18nKey="auto.photosynthesislab.inputs">Inputs →</Trans></div>
                         {activeStageInfo.inputs.map((inp) => (
                           <div key={inp} className="text-sm text-gray-300">• {inp}</div>
                         ))}
                       </div>
                       <div className="bg-green-500/10 rounded-lg p-2 border border-green-500/20">
-                        <div className="text-sm text-green-400 font-bold mb-1">→ Outputs</div>
+                        <div className="text-sm text-green-400 font-bold mb-1"><Trans i18nKey="auto.photosynthesislab.outputs">→ Outputs</Trans></div>
                         {activeStageInfo.outputs.map((out) => (
                           <div key={out} className="text-sm text-gray-300">• {out}</div>
                         ))}
@@ -345,18 +362,19 @@ export default function PhotosynthesisLab() {
 
             {/* Quick facts */}
             <div className="bg-gradient-to-br from-green-900/20 to-emerald-900/20 rounded-2xl border border-green-500/20 p-4">
-              <div className="text-sm font-bold text-emerald-400 mb-2">🌍 Why It Matters</div>
+              <div className="text-sm font-bold text-emerald-400 mb-2"><Trans i18nKey="auto.photosynthesislab.why_it_matters">🌍 Why It Matters</Trans></div>
               <ul className="text-[11px] text-gray-300 space-y-1">
-                <li>• Photosynthesis produces ALL the oxygen we breathe</li>
-                <li>• It's the base of almost every food chain on Earth</li>
-                <li>• Plants fix ~120 billion tons of carbon per year</li>
-                <li>• Algae produce more O₂ than all land plants combined</li>
-                <li>• Without it, Earth would have no free oxygen</li>
+                <li><Trans i18nKey="auto.photosynthesislab.photosynthesis_produces_all_th">• Photosynthesis produces ALL the oxygen we breathe</Trans></li>
+                <li><Trans i18nKey="auto.photosynthesislab.it_s_the_base_of_almost_every_">• It's the base of almost every food chain on Earth</Trans></li>
+                <li><Trans i18nKey="auto.photosynthesislab.plants_fix_120_billion_tons_of">• Plants fix ~120 billion tons of carbon per year</Trans></li>
+                <li><Trans i18nKey="auto.photosynthesislab.algae_produce_more_o_than_all_">• Algae produce more O₂ than all land plants combined</Trans></li>
+                <li><Trans i18nKey="auto.photosynthesislab.without_it_earth_would_have_no">• Without it, Earth would have no free oxygen</Trans></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
+    </ModuleWrapper>
   );
 }

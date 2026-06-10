@@ -3,7 +3,7 @@
 
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -57,8 +57,8 @@ export default function StatesOfMatter() {
             className="px-6 py-3 rounded-2xl font-bold text-lg text-white"
             style={{ backgroundColor: state.color }}
           >
-            {state.label} — {temperature}°C
-          </div>
+            {state.label} — {temperature}<Trans i18nKey="auto.statesofmatter.c">°C</Trans>
+                                </div>
         </div>
 
         {/* Canvas */}
@@ -95,17 +95,17 @@ export default function StatesOfMatter() {
         <div className="mt-6 grid grid-cols-3 gap-4">
           <div className="bg-blue-50 rounded-2xl p-4 text-center">
             <div className="text-3xl mb-2">🧊</div>
-            <div className="font-bold text-blue-600 text-sm">Solid</div>
+            <div className="font-bold text-blue-600 text-sm"><Trans i18nKey="auto.statesofmatter.solid">Solid</Trans></div>
             <p className="text-sm text-blue-400 mt-1">{t('lab.modules.StatesOfMatter.txt_Particlesv', 'Particles vibrate in place')}</p>
           </div>
           <div className="bg-cyan-50 rounded-2xl p-4 text-center">
             <div className="text-3xl mb-2">💧</div>
-            <div className="font-bold text-cyan-600 text-sm">Liquid</div>
+            <div className="font-bold text-cyan-600 text-sm"><Trans i18nKey="auto.statesofmatter.liquid">Liquid</Trans></div>
             <p className="text-sm text-cyan-400 mt-1">{t('lab.modules.StatesOfMatter.txt_Particless', 'Particles slide past each other')}</p>
           </div>
           <div className="bg-orange-50 rounded-2xl p-4 text-center">
             <div className="text-3xl mb-2">💨</div>
-            <div className="font-bold text-orange-600 text-sm">Gas</div>
+            <div className="font-bold text-orange-600 text-sm"><Trans i18nKey="auto.statesofmatter.gas">Gas</Trans></div>
             <p className="text-sm text-orange-400 mt-1">{t('lab.modules.StatesOfMatter.txt_Particlesf', 'Particles fly freely')}</p>
           </div>
         </div>
@@ -115,12 +115,12 @@ export default function StatesOfMatter() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.StatesOfMatter.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-600 font-bold text-sm mb-1">Ancient Indian Connection</h3>
+              <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.statesofmatter.ancient_indian_connection">Ancient Indian Connection</Trans></h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Maharishi Kanad (~600 BCE) described these states as <strong>Prithvi</strong> (solid),
-                <strong> Jala</strong> (liquid), and <strong>Vāyu</strong> (gas) — 2,400 years before
-                modern science! The Panchabhutas framework maps perfectly to today's states of matter.
-              </p>
+                <Trans i18nKey="auto.statesofmatter.maharishi_kanad_600_bce_descri">Maharishi Kanad (~600 BCE) described these states as</Trans> <strong><Trans i18nKey="auto.statesofmatter.prithvi">Prithvi</Trans></strong> <Trans i18nKey="auto.statesofmatter.solid">(solid),</Trans>
+                                              <strong> <Trans i18nKey="auto.statesofmatter.jala">Jala</Trans></strong> <Trans i18nKey="auto.statesofmatter.liquid_and">(liquid), and</Trans> <strong><Trans i18nKey="auto.statesofmatter.v_yu">Vāyu</Trans></strong> <Trans i18nKey="auto.statesofmatter.gas_2_400_years_before_modern_">(gas) — 2,400 years before
+                                              modern science! The Panchabhutas framework maps perfectly to today's states of matter.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

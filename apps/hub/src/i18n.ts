@@ -129,7 +129,6 @@ import ur from './learnos/i18n/locales/ur.json';
 import sa from './learnos/i18n/locales/sa.json';
 import sat from './learnos/i18n/locales/sat.json';
 import ne from './learnos/i18n/locales/ne.json';
-import kok from './learnos/i18n/locales/kok.json';
 import brx from './learnos/i18n/locales/brx.json';
 import doi from './learnos/i18n/locales/doi.json';
 import ks from './learnos/i18n/locales/ks.json';
@@ -156,7 +155,6 @@ const resources = {
   sa: { translation: sa },
   sat: { translation: sat },
   ne: { translation: ne },
-  kok: { translation: kok },
   brx: { translation: brx },
   doi: { translation: doi },
   ks: { translation: ks },

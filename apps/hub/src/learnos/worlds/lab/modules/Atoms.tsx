@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/Atoms.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -56,8 +56,8 @@ export default function Atoms() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.Atoms.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-400 font-bold text-sm mb-1">Vaisheshika Atomic Theory</h3>
-              <p className="text-gray-300 text-sm leading-relaxed">Maharishi Kanad (~600 BCE) proposed <strong>Paramanu</strong> — indivisible atoms — 2,000 years before Dalton! He said atoms combine to form molecules (Dyanuka), predating modern chemistry by millennia.</p>
+              <h3 className="text-orange-400 font-bold text-sm mb-1"><Trans i18nKey="auto.atoms.vaisheshika_atomic_theory">Vaisheshika Atomic Theory</Trans></h3>
+              <p className="text-gray-300 text-sm leading-relaxed"><Trans i18nKey="auto.atoms.maharishi_kanad_600_bce_propos">Maharishi Kanad (~600 BCE) proposed</Trans> <strong><Trans i18nKey="auto.atoms.paramanu">Paramanu</Trans></strong> <Trans i18nKey="auto.atoms.indivisible_atoms_2_000_years_">— indivisible atoms — 2,000 years before Dalton! He said atoms combine to form molecules (Dyanuka), predating modern chemistry by millennia.</Trans></p>
             </div>
           </div>
         </div>

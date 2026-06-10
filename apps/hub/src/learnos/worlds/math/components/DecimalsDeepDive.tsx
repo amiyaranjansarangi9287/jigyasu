@@ -1,5 +1,6 @@
 import { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Trans } from "react-i18next";
 
 function makeChallenge() {
   const type = Math.floor(Math.random() * 4);
@@ -18,7 +19,7 @@ export default function DecimalsDeepDive() {
   const [mode, setMode] = useState<'explore' | 'convert' | 'challenge'>('explore');
   const [value, setValue] = useState(3.14);
   const [challenge, setChallenge] = useState(makeChallenge);
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [mastery, setMastery] = useState(0);
 
   const parts = useMemo(() => {
@@ -50,14 +51,14 @@ export default function DecimalsDeepDive() {
     if (opt === challenge.answer) {
       setFeedback('correct'); setMastery(m => m + 1);
       setTimeout(() => { setChallenge(makeChallenge()); setFeedback(null); }, 1200);
-    } else { setFeedback('wrong'); setTimeout(() => setFeedback(null), 900); }
+    } else { setFeedback('hint'); setTimeout(() => setFeedback(null), 900); }
   }, [feedback, challenge]);
 
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🔢 Decimals Deep Dive</h2>
-        <p className="text-purple-300 text-lg">Place value, conversions, and operations with decimals!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.decimalsdeepdive.decimals_deep_dive">🔢 Decimals Deep Dive</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.decimalsdeepdive.place_value_conversions_and_op">Place value, conversions, and operations with decimals!</Trans></p>
       </div>
 
       <div className="flex justify-center gap-2 mb-6">
@@ -78,9 +79,9 @@ export default function DecimalsDeepDive() {
 
             {/* Place value breakdown */}
             <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
-              <h4 className="text-white font-bold mb-3">Decimal Place Value</h4>
+              <h4 className="text-white font-bold mb-3"><Trans i18nKey="auto.decimalsdeepdive.decimal_place_value">Decimal Place Value</Trans></h4>
               <div className="grid grid-cols-5 gap-2 text-center">
-                <div className="bg-purple-500/20 rounded-lg p-2 border border-purple-400/40"><p className="text-gray-400 text-sm">Ones</p><p className="text-purple-300 font-bold text-2xl">{parts.integer}</p></div>
+                <div className="bg-purple-500/20 rounded-lg p-2 border border-purple-400/40"><p className="text-gray-400 text-sm"><Trans i18nKey="auto.decimalsdeepdive.ones">Ones</Trans></p><p className="text-purple-300 font-bold text-2xl">{parts.integer}</p></div>
                 <div className="text-gray-500 flex items-center justify-center text-3xl font-bold">.</div>
                 {parts.digits.slice(0, 3).map((d, i) => (
                   <div key={i} className={`rounded-lg p-2 border ${d.digit > 0 ? 'bg-blue-500/20 border-blue-400/40' : 'bg-white/5 border-white/10'}`}>
@@ -97,7 +98,7 @@ export default function DecimalsDeepDive() {
 
             {/* Number line zoom */}
             <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
-              <h4 className="text-white font-bold mb-3">🔎 Number Line Zoom ({lineMin}–{lineMax})</h4>
+              <h4 className="text-white font-bold mb-3"><Trans i18nKey="auto.decimalsdeepdive.number_line_zoom">🔎 Number Line Zoom (</Trans>{lineMin}–{lineMax})</h4>
               <svg width="100%" height="60" viewBox="0 0 500 60">
                 <line x1="20" y1="30" x2="480" y2="30" stroke="rgba(255,255,255,0.3)" strokeWidth="2" />
                 {zoomTicks.map((t, i) => {
@@ -120,14 +121,14 @@ export default function DecimalsDeepDive() {
               <input type="number" step="0.01" value={value} onChange={e => setValue(Math.max(0, Number(e.target.value) || 0))}
                 className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white text-2xl font-bold text-center font-mono mb-4" />
               <div className="grid grid-cols-3 gap-3">
-                <div className="bg-blue-500/10 rounded-xl p-4 border border-blue-500/20"><p className="text-gray-400 text-sm">Decimal</p><motion.p key={value} className="text-blue-400 font-bold text-xl font-mono" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>{value}</motion.p></div>
-                <div className="bg-green-500/10 rounded-xl p-4 border border-green-500/20"><p className="text-gray-400 text-sm">Fraction</p><motion.p key={`${fraction.num}/${fraction.den}`} className="text-green-400 font-bold text-xl font-mono" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>{parts.integer > 0 && fraction.num > 0 ? `${parts.integer} ` : ''}{fraction.num}/{fraction.den}</motion.p></div>
-                <div className="bg-purple-500/10 rounded-xl p-4 border border-purple-500/20"><p className="text-gray-400 text-sm">Percentage</p><motion.p key={value} className="text-purple-400 font-bold text-xl font-mono" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>{(value * 100).toFixed(1)}%</motion.p></div>
+                <div className="bg-blue-500/10 rounded-xl p-4 border border-blue-500/20"><p className="text-gray-400 text-sm"><Trans i18nKey="auto.decimalsdeepdive.decimal">Decimal</Trans></p><motion.p key={value} className="text-blue-400 font-bold text-xl font-mono" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>{value}</motion.p></div>
+                <div className="bg-green-500/10 rounded-xl p-4 border border-green-500/20"><p className="text-gray-400 text-sm"><Trans i18nKey="auto.decimalsdeepdive.fraction">Fraction</Trans></p><motion.p key={`${fraction.num}/${fraction.den}`} className="text-green-400 font-bold text-xl font-mono" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>{parts.integer > 0 && fraction.num > 0 ? `${parts.integer} ` : ''}{fraction.num}/{fraction.den}</motion.p></div>
+                <div className="bg-purple-500/10 rounded-xl p-4 border border-purple-500/20"><p className="text-gray-400 text-sm"><Trans i18nKey="auto.decimalsdeepdive.percentage">Percentage</Trans></p><motion.p key={value} className="text-purple-400 font-bold text-xl font-mono" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>{(value * 100).toFixed(1)}%</motion.p></div>
               </div>
             </div>
 
             <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-              <h4 className="text-white font-bold mb-2">Quick conversions</h4>
+              <h4 className="text-white font-bold mb-2"><Trans i18nKey="auto.decimalsdeepdive.quick_conversions">Quick conversions</Trans></h4>
               <div className="grid grid-cols-2 gap-2 text-sm">
                 {[0.1, 0.25, 0.333, 0.5, 0.75, 1.5].map(v => (
                   <button key={v} className="bg-white/5 rounded-lg px-3 py-2 text-left hover:bg-white/10" onClick={() => setValue(v)}>
@@ -141,7 +142,7 @@ export default function DecimalsDeepDive() {
 
         {mode === 'challenge' && (
           <motion.div key="ch" className="max-w-lg mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
+            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'hint' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
               <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {mastery}</span></div>
               <p className="text-3xl font-bold text-white text-center font-mono mb-5">{challenge.question} = ?</p>
               <div className="grid grid-cols-2 gap-3">
@@ -151,8 +152,8 @@ export default function DecimalsDeepDive() {
                     onClick={() => answerChallenge(opt)} disabled={!!feedback}>{opt}</motion.button>
                 ))}
               </div>
-              {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✅ Correct!</p>}
-              {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Answer: {challenge.answer}</p>}
+              {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4"><Trans i18nKey="auto.decimalsdeepdive.correct">✅ Correct!</Trans></p>}
+              {feedback === 'hint' && <p className="text-sky-400 font-bold text-center mt-4"><Trans i18nKey="auto.decimalsdeepdive.answer">Answer:</Trans> {challenge.answer}</p>}
             </div>
           </motion.div>
         )}

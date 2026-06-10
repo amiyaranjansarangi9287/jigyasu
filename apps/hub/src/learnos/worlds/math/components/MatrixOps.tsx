@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Trans, useTranslation } from "react-i18next";
 
 type M2 = [[number, number], [number, number]];
 
@@ -11,6 +12,7 @@ function scaleM(a: M2, k: number): M2 { return [[a[0][0]*k, a[0][1]*k], [a[1][0]
 function transposeM(a: M2): M2 { return [[a[0][0], a[1][0]], [a[0][1], a[1][1]]]; }
 
 function MatrixInput({ label, matrix, setMatrix, color }: { label: string; matrix: M2; setMatrix: (m: M2) => void; color: string }) {
+    const { t } = useTranslation();
   const set = (r: number, c: number, v: number) => { const m: M2 = [[...matrix[0]], [...matrix[1]]]; m[r][c] = v; setMatrix(m); };
   return (
     <div className={`bg-${color}-500/10 rounded-2xl p-4 border border-${color}-500/20`}>
@@ -27,6 +29,7 @@ function MatrixInput({ label, matrix, setMatrix, color }: { label: string; matri
 }
 
 function MatrixDisplay({ matrix, color, label }: { matrix: M2; color: string; label: string }) {
+    const { t } = useTranslation();
   return (
     <div className={`bg-${color}-500/10 rounded-xl p-3 border border-${color}-500/20`}>
       <p className="text-gray-400 text-sm mb-1">{label}</p>
@@ -63,11 +66,12 @@ function makeChallenge() {
 }
 
 export default function MatrixOps() {
+    const { t } = useTranslation();
   const [matA, setMatA] = useState<M2>([[1, 2], [3, 4]]);
   const [matB, setMatB] = useState<M2>([[5, 6], [7, 8]]);
   const [mode, setMode] = useState<'explore' | 'challenge'>('explore');
   const [challenge, setChallenge] = useState(makeChallenge);
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [mastery, setMastery] = useState(0);
 
   const results = useMemo(() => ({
@@ -82,25 +86,25 @@ export default function MatrixOps() {
   const answerChallenge = (opt: string) => {
     if (feedback) return;
     if (opt === challenge.answer) { setFeedback('correct'); setMastery(m => m + 1); setTimeout(() => { setChallenge(makeChallenge()); setFeedback(null); }, 1200); }
-    else { setFeedback('wrong'); setTimeout(() => setFeedback(null), 900); }
+    else { setFeedback('hint'); setTimeout(() => setFeedback(null), 900); }
   };
 
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🧮 Matrix Operations</h2>
-        <p className="text-purple-300 text-lg">Add, multiply, transpose, and find determinants of 2×2 matrices!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.matrixops.matrix_operations">🧮 Matrix Operations</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.matrixops.add_multiply_transpose_and_fin">Add, multiply, transpose, and find determinants of 2×2 matrices!</Trans></p>
       </div>
 
       <div className="flex justify-center gap-2 mb-6">
-        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'explore' ? 'bg-blue-500/30 text-blue-300 border border-blue-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => setMode('explore')}>🔍 Explore</button>
-        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'challenge' ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => { setMode('challenge'); setChallenge(makeChallenge()); }}>🎯 Challenge</button>
+        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'explore' ? 'bg-blue-500/30 text-blue-300 border border-blue-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => setMode('explore')}><Trans i18nKey="auto.matrixops.explore">🔍 Explore</Trans></button>
+        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'challenge' ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => { setMode('challenge'); setChallenge(makeChallenge()); }}><Trans i18nKey="auto.matrixops.challenge">🎯 Challenge</Trans></button>
       </div>
 
       <AnimatePresence mode="wait">
         {mode === 'challenge' ? (
           <motion.div key="ch" className="max-w-lg mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
+            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'hint' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
               <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {mastery}</span><span className="text-sm text-gray-400">{challenge.type}</span></div>
               <p className="text-lg font-bold text-white text-center font-mono mb-5">{challenge.question}</p>
               <div className="grid grid-cols-2 gap-3">
@@ -110,28 +114,28 @@ export default function MatrixOps() {
                     onClick={() => answerChallenge(opt)} disabled={!!feedback}>{opt}</motion.button>
                 ))}
               </div>
-              {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✅ Correct!</p>}
-              {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Answer: {challenge.answer}</p>}
+              {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4"><Trans i18nKey="auto.matrixops.correct">✅ Correct!</Trans></p>}
+              {feedback === 'hint' && <p className="text-sky-400 font-bold text-center mt-4"><Trans i18nKey="auto.matrixops.answer">Answer:</Trans> {challenge.answer}</p>}
             </div>
           </motion.div>
         ) : (
           <motion.div key="ex" className="space-y-4 max-w-3xl mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
             <div className="grid grid-cols-2 gap-4">
-              <MatrixInput label="Matrix A" matrix={matA} setMatrix={setMatA} color="blue" />
-              <MatrixInput label="Matrix B" matrix={matB} setMatrix={setMatB} color="orange" />
+              <MatrixInput label={t('auto.attr.matrixops.matrix_a')} matrix={matA} setMatrix={setMatA} color="blue" />
+              <MatrixInput label={t('auto.attr.matrixops.matrix_b')} matrix={matB} setMatrix={setMatB} color="orange" />
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              <MatrixDisplay matrix={results.sum} color="green" label="A + B" />
-              <MatrixDisplay matrix={results.product} color="purple" label="A × B" />
-              <MatrixDisplay matrix={results.transA} color="cyan" label="Aᵀ (Transpose)" />
-              <MatrixDisplay matrix={results.scaled} color="yellow" label="2A (Scalar)" />
-              <div className="bg-pink-500/10 rounded-xl p-3 border border-pink-500/20"><p className="text-gray-400 text-sm mb-1">det(A)</p><motion.p key={results.detA} className="text-pink-300 font-bold text-2xl" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>{results.detA}</motion.p></div>
-              <div className="bg-red-500/10 rounded-xl p-3 border border-red-500/20"><p className="text-gray-400 text-sm mb-1">det(B)</p><motion.p key={results.detB} className="text-red-300 font-bold text-2xl" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>{results.detB}</motion.p></div>
+              <MatrixDisplay matrix={results.sum} color="green" label={t('auto.attr.matrixops.a_b')} />
+              <MatrixDisplay matrix={results.product} color="purple" label={t('auto.attr.matrixops.a_b')} />
+              <MatrixDisplay matrix={results.transA} color="cyan" label={t('auto.attr.matrixops.a_transpose')} />
+              <MatrixDisplay matrix={results.scaled} color="yellow" label={t('auto.attr.matrixops.2a_scalar')} />
+              <div className="bg-pink-500/10 rounded-xl p-3 border border-pink-500/20"><p className="text-gray-400 text-sm mb-1"><Trans i18nKey="auto.matrixops.det_a">det(A)</Trans></p><motion.p key={results.detA} className="text-pink-300 font-bold text-2xl" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>{results.detA}</motion.p></div>
+              <div className="bg-red-500/10 rounded-xl p-3 border border-red-500/20"><p className="text-gray-400 text-sm mb-1"><Trans i18nKey="auto.matrixops.det_b">det(B)</Trans></p><motion.p key={results.detB} className="text-red-300 font-bold text-2xl" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>{results.detB}</motion.p></div>
             </div>
             <div className="bg-white/5 rounded-xl p-4 border border-white/10 text-sm text-gray-300 space-y-1">
-              <p>📝 <strong>det</strong> [[a,b],[c,d]] = ad − bc</p>
-              <p>📝 <strong>A×B</strong> multiplies rows of A by columns of B</p>
-              <p>📝 <strong>Aᵀ</strong> swaps rows and columns</p>
+              <p>📝 <strong><Trans i18nKey="auto.matrixops.det">det</Trans></strong> <Trans i18nKey="auto.matrixops.a_b_c_d_ad_bc">[[a,b],[c,d]] = ad − bc</Trans></p>
+              <p>📝 <strong><Trans i18nKey="auto.matrixops.a_b">A×B</Trans></strong> <Trans i18nKey="auto.matrixops.multiplies_rows_of_a_by_column">multiplies rows of A by columns of B</Trans></p>
+              <p>📝 <strong><Trans i18nKey="auto.matrixops.a">Aᵀ</Trans></strong> <Trans i18nKey="auto.matrixops.swaps_rows_and_columns">swaps rows and columns</Trans></p>
             </div>
           </motion.div>
         )}

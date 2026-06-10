@@ -1,6 +1,10 @@
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { RotateCcw, Trophy, Clock, Star, Zap, BookOpen } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 import { playMatch, playWrong, playClick, playVictory } from '../lib/sounds';
 
 interface MicrobeInfo {
@@ -59,6 +63,22 @@ function createCards(difficulty: Difficulty): Card[] {
 }
 
 export default function MicrobeMatch() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.microbe_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.microbe_prompt', "Invisible creatures are everywhere! Some make you sick, but some make your yogurt. Can you match the microbes?"),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'microbe-match', 60);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   const [difficulty, setDifficulty] = useState<Difficulty>('medium');
   const [cards, setCards] = useState<Card[]>(createCards('medium'));
   const [flippedIds, setFlippedIds] = useState<number[]>([]);

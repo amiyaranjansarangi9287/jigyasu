@@ -8,6 +8,10 @@ export interface Pillar {
   gradientFrom: string;
   gradientTo: string;
   description: string;
+  badgeClass: string;
+  showcaseImage: string;
+  showcasePreview: string[];
+  colSpan: string;
 }
 
 export interface Category {
@@ -24,7 +28,11 @@ export const pillars: Pillar[] = [
     color: '#FFD93D',
     gradientFrom: 'from-yellow-400',
     gradientTo: 'to-orange-400',
-    description: 'Build amazing handcrafted toys from scratch'
+    description: 'Build amazing handcrafted toys from scratch',
+    badgeClass: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400',
+    showcaseImage: '/images/blocks.webp',
+    showcasePreview: ['Wooden Cars', 'Puppets', 'Puzzles'],
+    colSpan: 'md:col-span-1'
   },
   {
     id: 'sciencelab',
@@ -33,26 +41,12 @@ export const pillars: Pillar[] = [
     color: '#6BCB77',
     gradientFrom: 'from-green-400',
     gradientTo: 'to-emerald-500',
-    description: 'Explore Jigyasu Labs: Physics, Chemistry, Biology and more!'
+    description: 'Explore Jigyasu Labs: Physics, Chemistry, Biology and more!',
+    badgeClass: 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400',
+    showcaseImage: '/images/sciencelab.webp',
+    showcasePreview: ['Chemistry', 'Physics', 'Biology'],
+    colSpan: 'md:col-span-1'
   },
-  {
-    id: 'artstudio',
-    name: 'ArtStudio',
-    icon: '🎨',
-    color: '#FF6B9D',
-    gradientFrom: 'from-pink-400',
-    gradientTo: 'to-rose-500',
-    description: 'Express your creativity through art and crafts'
-  },
-  {
-    id: 'outdoorquest',
-    name: 'Outdoor Activity',
-    icon: '🌿',
-    color: '#4D96FF',
-    gradientFrom: 'from-blue-400',
-    gradientTo: 'to-cyan-500',
-    description: 'Explore nature and outdoor adventures'
-  }
 ];
 
 export const categories: Category[] = [
@@ -71,17 +65,6 @@ export const categories: Category[] = [
   { name: 'Biology', icon: '🌱', pillar: 'sciencelab' },
   { name: 'Engineering', icon: '⚙️', pillar: 'sciencelab' },
   
-  // ArtStudio categories
-  { name: 'Painting', icon: '🖌️', pillar: 'artstudio' },
-  { name: 'Crafts', icon: '✂️', pillar: 'artstudio' },
-  { name: 'Sculpture', icon: '🏺', pillar: 'artstudio' },
-  { name: 'Paper Art', icon: '📄', pillar: 'artstudio' },
-  
-  // OutdoorQuest categories
-  { name: 'Nature', icon: '🍃', pillar: 'outdoorquest' },
-  { name: 'Garden', icon: '🌻', pillar: 'outdoorquest' },
-  { name: 'Adventure', icon: '🧭', pillar: 'outdoorquest' },
-  { name: 'Wildlife', icon: '🦋', pillar: 'outdoorquest' }
 ];
 
 export const ageTiers = [
@@ -130,4 +113,4 @@ export const ageTiers = [
 export type AgeTier = '3-5' | '6-8' | '9-12' | '13-17' | '18+';
 export type AgeRange = '3-5' | '6-8' | '9-12' | '13-17' | '18+' | '3-12' | '6-12' | '3-8';
 export type Difficulty = 'Easy' | 'Medium' | 'Hard';
-export type PillarId = 'toybox' | 'sciencelab' | 'artstudio' | 'outdoorquest';
+export type PillarId = string;

@@ -4,7 +4,9 @@ import { getCampWeekById } from '../data/campWeeks';
 import { Activity } from '../data/activities.en';
 import { useCampWeekProgress } from '../hooks/useCampWeekProgress';
 import { useLocalizedActivities } from '../../hooks/useLocalizedData';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
+import { pillars } from '../data/categories';
+import { useFormatNumber } from '../../hooks/useFormatNumber';
 
 interface CampWeekModalProps {
   weekId: string;
@@ -23,6 +25,7 @@ export default function CampWeekModal({
   const week = getCampWeekById(weekId);
   const { progress, startWeek, completeDay, isCompleted } = useCampWeekProgress(weekId);
   const { getActivityById } = useLocalizedActivities();
+  const formatNumber = useFormatNumber();
 
   if (!week) {
     return null;
@@ -78,7 +81,7 @@ export default function CampWeekModal({
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={onClose} />
       
-      <div className="relative bg-white dark:bg-gray-900 rounded-3xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden animate-modal-in">
+      <div className="relative glass-panel rounded-3xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden animate-modal-in">
         {/* Header with gradient */}
         <div className={`relative p-6 bg-gradient-to-r ${week.color} overflow-hidden`}>
           <button
@@ -117,7 +120,7 @@ export default function CampWeekModal({
                   />
                 </div>
                 <span className="text-white font-medium text-sm">
-                  {completedDaysCount}/5 {t('kidscamp.modal.days', 'days')}
+                  {formatNumber(completedDaysCount)}<Trans i18nKey="auto.campweekmodal.5">/{formatNumber(5)}</Trans> {t('kidscamp.modal.days', 'days')}
                 </span>
               </div>
             </div>
@@ -169,7 +172,7 @@ export default function CampWeekModal({
                       ) : (
                         <>
                           <span className="text-sm font-medium opacity-70">{t('kidscamp.modal.day', 'Day')}</span>
-                          <span className="text-xl font-bold">{day.day}</span>
+                          <span className="text-xl font-bold">{formatNumber(day.day)}</span>
                         </>
                       )}
                     </div>
@@ -178,9 +181,7 @@ export default function CampWeekModal({
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-1">
                         <span className="text-xl">
-                          {day.pillar === 'toybox' ? '🧸' :
-                           day.pillar === 'sciencelab' ? '🔬' :
-                           day.pillar === 'artstudio' ? '🎨' : '🌿'}
+                          {pillars.find(p => p.id === day.pillar)?.icon || '✨'}
                         </span>
                         <span className="text-sm px-2 py-0.5 rounded-full bg-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-300 capitalize">
                           {day.pillar}
@@ -198,7 +199,7 @@ export default function CampWeekModal({
                       </p>
                       {activity && (
                         <p className="text-sm text-gray-500 mt-1">
-                          {activity.difficulty} • {activity.timeToMake} • Ages {activity.ageRange}
+                          {activity.difficulty} • {activity.timeToMake} <Trans i18nKey="auto.campweekmodal.ages">• Ages</Trans> {activity.ageRange}
                         </p>
                       )}
                     </div>
@@ -227,8 +228,8 @@ export default function CampWeekModal({
           {/* Materials for the Week */}
           <div className="bg-blue-50 dark:bg-blue-900/20 rounded-2xl p-5 mb-6">
             <h4 className="font-bold text-blue-800 dark:text-blue-200 mb-3 flex items-center gap-2">
-              <span>📦</span> Materials for This Week
-            </h4>
+              <span>📦</span> <Trans i18nKey="auto.campweekmodal.materials_for_this_week">Materials for This Week</Trans>
+                                      </h4>
             <div className="flex flex-wrap gap-2">
               {week.materials.map((material, i) => (
                 <span
@@ -260,7 +261,7 @@ export default function CampWeekModal({
               <div>
                 <p className="text-sm text-orange-600 dark:text-orange-300">{t('kidscamp.modal.ready_next', 'Ready for your next activity?')}</p>
                 <p className="font-bold text-gray-900 dark:text-white">
-                  {t('kidscamp.modal.day', 'Day')} {nextDay}: {t(`kidscamp.campWeeks.${week.id}.day${nextDay}.title`, week.days.find(d => d.day === nextDay)?.title || '')}
+                  {t('kidscamp.modal.day', 'Day')} {formatNumber(nextDay)}: {t(`kidscamp.campWeeks.${week.id}.day${nextDay}.title`, week.days.find(d => d.day === nextDay)?.title || '')}
                 </p>
               </div>
               <button
@@ -269,7 +270,7 @@ export default function CampWeekModal({
                   if (day) handleStartDayActivity(day);
                 }}
                 className="btn btn-primary"
-              >{t('kidscamp.modal.start_day', '🚀 Start Day')} {nextDay}</button>
+              >{t('kidscamp.modal.start_day', '🚀 Start Day')} {formatNumber(nextDay)}</button>
             </div>
           )}
         </div>

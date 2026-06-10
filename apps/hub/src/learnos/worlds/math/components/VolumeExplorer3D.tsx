@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Trans, useTranslation } from "react-i18next";
 
 type Shape = 'cube' | 'rectPrism' | 'cylinder' | 'cone' | 'sphere';
 
@@ -32,13 +33,14 @@ function makeVolumeChallenge() {
 }
 
 export default function VolumeExplorer3D() {
+    const { t } = useTranslation();
   const [shape, setShape] = useState<Shape>('cube');
   const [a, setA] = useState(4);
   const [b, setB] = useState(6);
   const [c, setC] = useState(5);
   const [mode, setMode] = useState<'explore' | 'challenge'>('explore');
   const [challenge, setChallenge] = useState(makeVolumeChallenge);
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [mastery, setMastery] = useState(0);
 
   const calc = useMemo(() => {
@@ -58,12 +60,13 @@ export default function VolumeExplorer3D() {
       setMastery((s) => s + 10);
       setTimeout(() => { setChallenge(makeVolumeChallenge()); setFeedback(null); }, 1200);
     } else {
-      setFeedback('wrong');
+      setFeedback('hint');
       setTimeout(() => setFeedback(null), 900);
     }
   };
 
   const renderShape = () => {
+      const { t } = useTranslation();
     const active = shapeMeta.find((s) => s.id === shape)!;
     if (shape === 'cube' || shape === 'rectPrism') {
       return (
@@ -87,26 +90,26 @@ export default function VolumeExplorer3D() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">📦 3D Volume Explorer</h2>
-        <p className="text-purple-300 text-lg">Rotate shapes in your mind and calculate volume and surface area.</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.volumeexplorer3d.3d_volume_explorer">📦 3D Volume Explorer</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.volumeexplorer3d.rotate_shapes_in_your_mind_and">Rotate shapes in your mind and calculate volume and surface area.</Trans></p>
       </div>
 
       <div className="flex justify-center gap-2 mb-6">
-        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'explore' ? 'bg-blue-500/30 text-blue-300 border border-blue-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => setMode('explore')}>🔍 Explore</button>
-        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'challenge' ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => { setMode('challenge'); setChallenge(makeVolumeChallenge()); }}>🎯 Challenge</button>
+        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'explore' ? 'bg-blue-500/30 text-blue-300 border border-blue-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => setMode('explore')}><Trans i18nKey="auto.volumeexplorer3d.explore">🔍 Explore</Trans></button>
+        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'challenge' ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => { setMode('challenge'); setChallenge(makeVolumeChallenge()); }}><Trans i18nKey="auto.volumeexplorer3d.challenge">🎯 Challenge</Trans></button>
       </div>
 
       <AnimatePresence mode="wait">
         {mode === 'challenge' ? (
           <motion.div key="challenge" className="max-w-lg mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
-              <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {mastery}</span><span className="text-gray-400 text-sm">Round answers</span></div>
+            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'hint' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
+              <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {mastery}</span><span className="text-gray-400 text-sm"><Trans i18nKey="auto.volumeexplorer3d.round_answers">Round answers</Trans></span></div>
               <p className="text-2xl font-bold text-white text-center mb-5">{challenge.question}</p>
               <div className="grid grid-cols-2 gap-3">
                 {challenge.options.map((option) => <motion.button key={option} className={`py-3 rounded-xl text-xl font-bold ${feedback === 'correct' && option === challenge.answer ? 'bg-green-500 text-white' : feedback ? 'bg-white/5 text-gray-500' : 'bg-white/10 text-white hover:bg-white/20 border border-white/20'}`} whileHover={!feedback ? { scale: 1.05 } : {}} whileTap={!feedback ? { scale: 0.95 } : {}} onClick={() => answerChallenge(option)} disabled={!!feedback}>{option}</motion.button>)}
               </div>
-              {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✅ Correct!</p>}
-              {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Try again.</p>}
+              {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4"><Trans i18nKey="auto.volumeexplorer3d.correct">✅ Correct!</Trans></p>}
+              {feedback === 'hint' && <p className="text-sky-400 font-bold text-center mt-4"><Trans i18nKey="auto.volumeexplorer3d.try_again">Try again.</Trans></p>}
             </div>
           </motion.div>
         ) : (
@@ -118,24 +121,24 @@ export default function VolumeExplorer3D() {
               <div className="bg-white/5 rounded-3xl p-8 border border-white/10 flex items-center justify-center min-h-72 perspective-1000">{renderShape()}</div>
               <div className="bg-white/5 rounded-2xl p-4 border border-white/10 space-y-3">
                 <Slider label={shape === 'cube' ? 'Side' : shape === 'sphere' ? 'Radius' : 'Radius / Length'} value={a} setValue={setA} color="accent-blue-500" />
-                {shape !== 'cube' && shape !== 'sphere' && <Slider label="Height / Width" value={b} setValue={setB} color="accent-green-500" />}
-                {shape === 'rectPrism' && <Slider label="Depth" value={c} setValue={setC} color="accent-yellow-500" />}
+                {shape !== 'cube' && shape !== 'sphere' && <Slider label={t('auto.attr.volumeexplorer3d.height_width')} value={b} setValue={setB} color="accent-green-500" />}
+                {shape === 'rectPrism' && <Slider label={t('auto.attr.volumeexplorer3d.depth')} value={c} setValue={setC} color="accent-yellow-500" />}
               </div>
             </div>
             <div className="space-y-4">
               <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 rounded-2xl p-6 border border-blue-500/20">
-                <p className="text-gray-400 text-sm">Volume formula</p>
+                <p className="text-gray-400 text-sm"><Trans i18nKey="auto.volumeexplorer3d.volume_formula">Volume formula</Trans></p>
                 <p className="text-white font-mono text-lg font-bold">{calc.formula}</p>
-                <motion.p key={calc.volume} className="text-4xl font-bold text-blue-400 mt-3" initial={{ scale: 0.6 }} animate={{ scale: 1 }}>V = {calc.volume.toFixed(2)}</motion.p>
+                <motion.p key={calc.volume} className="text-4xl font-bold text-blue-400 mt-3" initial={{ scale: 0.6 }} animate={{ scale: 1 }}><Trans i18nKey="auto.volumeexplorer3d.v">V =</Trans> {calc.volume.toFixed(2)}</motion.p>
               </div>
               <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 rounded-2xl p-6 border border-green-500/20">
-                <p className="text-gray-400 text-sm">Surface area formula</p>
+                <p className="text-gray-400 text-sm"><Trans i18nKey="auto.volumeexplorer3d.surface_area_formula">Surface area formula</Trans></p>
                 <p className="text-white font-mono text-lg font-bold">{calc.surfaceFormula}</p>
-                <motion.p key={calc.surface} className="text-4xl font-bold text-green-400 mt-3" initial={{ scale: 0.6 }} animate={{ scale: 1 }}>SA = {calc.surface.toFixed(2)}</motion.p>
+                <motion.p key={calc.surface} className="text-4xl font-bold text-green-400 mt-3" initial={{ scale: 0.6 }} animate={{ scale: 1 }}><Trans i18nKey="auto.volumeexplorer3d.sa">SA =</Trans> {calc.surface.toFixed(2)}</motion.p>
               </div>
               <div className="bg-purple-500/10 rounded-xl p-4 border border-purple-500/20 text-sm text-purple-200">
-                💡 Volume measures how much space is inside. Surface area measures the total outside skin.
-              </div>
+                <Trans i18nKey="auto.volumeexplorer3d.volume_measures_how_much_space">💡 Volume measures how much space is inside. Surface area measures the total outside skin.</Trans>
+                                                </div>
             </div>
           </motion.div>
         )}
@@ -145,6 +148,7 @@ export default function VolumeExplorer3D() {
 }
 
 function Slider({ label, value, setValue, color }: { label: string; value: number; setValue: (v: number) => void; color: string }) {
+    const { t } = useTranslation();
   return (
     <div className="flex items-center gap-3">
       <label className="text-gray-400 text-sm w-28">{label}</label>

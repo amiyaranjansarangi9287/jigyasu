@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/SensesWonderFirst.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout';
@@ -51,7 +51,7 @@ function ExplorationComponent() {
           <div className="text-8xl mb-4">{currentSense?.emoji}</div>
           <div className="text-2xl font-bold text-slate-800 mb-2">{currentSense?.name}</div>
           <div className="text-sm text-slate-500 mb-2">{currentSense?.description}</div>
-          <div className="text-xs text-pink-600 font-medium">Element: {currentSense?.element}</div>
+          <div className="text-xs text-pink-600 font-medium"><Trans i18nKey="auto.senseswonderfirst.element">Element:</Trans> {currentSense?.element}</div>
         </div>
       </div>
 
@@ -69,13 +69,13 @@ function ExplorationComponent() {
       <div className="bg-blue-50 rounded-2xl p-4 border border-blue-200">
         <h3 className="font-bold text-blue-900 mb-2 flex items-center gap-2">
           <span className="text-xl">👀</span>
-          What do you notice?
-        </h3>
+          <Trans i18nKey="auto.senseswonderfirst.what_do_you_notice">What do you notice?</Trans>
+                          </h3>
         <ul className="text-slate-700 text-sm space-y-2">
-          <li>• How do your senses help you understand the world?</li>
-          <li>• What happens when you close your eyes and rely on other senses?</li>
-          <li>• Which sense do you use most in your daily life?</li>
-          <li>• How do senses work together to give you a complete picture?</li>
+          <li><Trans i18nKey="auto.senseswonderfirst.how_do_your_senses_help_you_un">• How do your senses help you understand the world?</Trans></li>
+          <li><Trans i18nKey="auto.senseswonderfirst.what_happens_when_you_close_yo">• What happens when you close your eyes and rely on other senses?</Trans></li>
+          <li><Trans i18nKey="auto.senseswonderfirst.which_sense_do_you_use_most_in">• Which sense do you use most in your daily life?</Trans></li>
+          <li><Trans i18nKey="auto.senseswonderfirst.how_do_senses_work_together_to">• How do senses work together to give you a complete picture?</Trans></li>
         </ul>
       </div>
     </div>

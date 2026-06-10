@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/ElectricityWonderFirst.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout';
@@ -50,8 +50,8 @@ function ExplorationComponent() {
       <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 space-y-4">
         <div>
           <div className="flex items-center justify-between mb-2">
-            <span className="text-sm text-slate-400">🔋 Voltage</span>
-            <span className="text-sm font-medium text-yellow-600">{voltage}V</span>
+            <span className="text-sm text-slate-400"><Trans i18nKey="auto.electricitywonderfirst.voltage">🔋 Voltage</Trans></span>
+            <span className="text-sm font-medium text-yellow-600">{voltage}<Trans i18nKey="auto.electricitywonderfirst.v">V</Trans></span>
           </div>
           <input
             type="range"
@@ -65,7 +65,7 @@ function ExplorationComponent() {
         </div>
         <div>
           <div className="flex items-center justify-between mb-2">
-            <span className="text-sm text-slate-400">🔧 Resistance</span>
+            <span className="text-sm text-slate-400"><Trans i18nKey="auto.electricitywonderfirst.resistance">🔧 Resistance</Trans></span>
             <span className="text-sm font-medium text-orange-600">{resistance}Ω</span>
           </div>
           <input
@@ -83,11 +83,11 @@ function ExplorationComponent() {
       {/* Ohm's Law display */}
       <div className="bg-slate-800/50 rounded-2xl p-5 text-center border border-slate-700">
         <div className="text-sm text-yellow-400 font-mono font-bold">
-          I = V/R = {voltage}/{resistance} = {current.toFixed(2)}A
-        </div>
+          <Trans i18nKey="auto.electricitywonderfirst.i_v_r">I = V/R =</Trans> {voltage}/{resistance} = {current.toFixed(2)}<Trans i18nKey="auto.electricitywonderfirst.a">A</Trans>
+                          </div>
         <div className="text-sm text-slate-300 mt-2">
-          More voltage = more current • More resistance = less current
-        </div>
+          <Trans i18nKey="auto.electricitywonderfirst.more_voltage_more_current_more">More voltage = more current • More resistance = less current</Trans>
+                          </div>
       </div>
 
       {/* Circuit visualization */}
@@ -107,13 +107,13 @@ function ExplorationComponent() {
       <div className="bg-blue-50 rounded-2xl p-4 border border-blue-200">
         <h3 className="font-bold text-blue-900 mb-2 flex items-center gap-2">
           <span className="text-xl">👀</span>
-          What do you notice?
-        </h3>
+          <Trans i18nKey="auto.electricitywonderfirst.what_do_you_notice">What do you notice?</Trans>
+                          </h3>
         <ul className="text-slate-700 text-sm space-y-2">
-          <li>• What happens when you increase voltage?</li>
-          <li>• What happens when you increase resistance?</li>
-          <li>• Why does the switch stop the current?</li>
-          <li>• How does Ohm's Law explain the relationship?</li>
+          <li><Trans i18nKey="auto.electricitywonderfirst.what_happens_when_you_increase">• What happens when you increase voltage?</Trans></li>
+          <li><Trans i18nKey="auto.electricitywonderfirst.what_happens_when_you_increase">• What happens when you increase resistance?</Trans></li>
+          <li><Trans i18nKey="auto.electricitywonderfirst.why_does_the_switch_stop_the_c">• Why does the switch stop the current?</Trans></li>
+          <li><Trans i18nKey="auto.electricitywonderfirst.how_does_ohm_s_law_explain_the">• How does Ohm's Law explain the relationship?</Trans></li>
         </ul>
       </div>
     </div>

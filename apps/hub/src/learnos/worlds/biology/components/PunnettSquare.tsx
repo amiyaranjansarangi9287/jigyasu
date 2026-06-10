@@ -1,6 +1,10 @@
 import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { Shuffle, Info, BookOpen } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface Trait {
   id: string;
@@ -32,6 +36,22 @@ const genotypeLabels: Record<Genotype, string> = {
 };
 
 export default function PunnettSquare() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.punnett_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.punnett_prompt', "Why do some kids have blue eyes when both parents have brown? Traits follow rules of probability! Let's play with genetics."),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'punnett-square', 60);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   const [selectedTrait, setSelectedTrait] = useState(traits[0]);
   const [parent1Genotype, setParent1Genotype] = useState<Genotype>('heterozygous');
   const [parent2Genotype, setParent2Genotype] = useState<Genotype>('heterozygous');

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useUserProfile } from '@jigyasu/storage';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useFormatNumber } from '../hooks/useFormatNumber';
 import { Button } from '@jigyasu/ui';
 const AVATARS = [
@@ -46,8 +46,8 @@ export default function AvatarStore() {
           <p className="text-slate-500 font-medium">{t('avatar_store_desc', 'Spend your XP to unlock new looks!')}</p>
         </div>
         <div className="bg-sky-50 text-sky-600 px-4 py-2 rounded-xl font-bold border border-sky-100 flex items-center gap-2 shadow-inner">
-          <span>✨</span> {formatNumber(currentXP)} XP
-        </div>
+          <span>✨</span> {formatNumber(currentXP)} <Trans i18nKey="auto.avatarstore.xp">XP</Trans>
+                          </div>
       </div>
 
       {purchaseError && (

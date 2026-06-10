@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '../store';
 import { LearningService } from '../services';
 import { ROUTES } from '../constants/routes';
@@ -154,7 +154,7 @@ export default function TimeCapsule() {
             ←
           </button>
           <span className="text-sm text-gray-400">
-            {capsules.length} capsule{capsules.length !== 1 ? 's' : ''}
+            {capsules.length} <Trans i18nKey="auto.timecapsule.capsule">capsule</Trans>{capsules.length !== 1 ? 's' : ''}
           </span>
         </div>
 
@@ -192,7 +192,7 @@ export default function TimeCapsule() {
                       >
                         <p className="font-bold text-gray-800">{capsule.conceptTitle}</p>
                         <p className="text-sm text-gray-400">
-                          Sealed {new Date(capsule.sealedAt).toLocaleDateString()}
+                          <Trans i18nKey="auto.timecapsule.sealed">Sealed</Trans> {new Date(capsule.sealedAt).toLocaleDateString()}
                         </p>
                       </button>
                     ))}
@@ -214,7 +214,7 @@ export default function TimeCapsule() {
                       >
                         <p className="font-bold text-gray-800">{capsule.conceptTitle}</p>
                         <p className="text-sm text-amber-500">
-                          Opens in {formatOpensAt(capsule.opensAt)}
+                          <Trans i18nKey="auto.timecapsule.opens_in">Opens in</Trans> {formatOpensAt(capsule.opensAt)}
                         </p>
                       </div>
                     ))}
@@ -239,8 +239,8 @@ export default function TimeCapsule() {
                 onClick={() => setState('list')}
                 className="text-gray-400 hover:text-gray-600 mb-4"
               >
-                ← Back
-              </button>
+                <Trans i18nKey="auto.timecapsule.back">← Back</Trans>
+                                            </button>
 
               <div className="bg-white rounded-3xl p-6 shadow-sm mb-4">
                 <label htmlFor="concept-select" className="sr-only">
@@ -252,7 +252,7 @@ export default function TimeCapsule() {
                   onChange={(e) => setSelectedConcept(e.target.value)}
                   className="w-full p-3 bg-gray-50 rounded-xl border border-gray-200 mb-4"
                 >
-                  <option value="">Select a concept...</option>
+                  <option value=""><Trans i18nKey="auto.timecapsule.select_a_concept">Select a concept...</Trans></option>
                   {CONCEPTS.map((c) => (
                     <option key={c} value={c}>{c}</option>
                   ))}
@@ -270,7 +270,7 @@ export default function TimeCapsule() {
                       setPrivacyWarning('');
                     }
                   }}
-                  placeholder="What do you know about this concept right now?"
+                  placeholder={t('auto.attr.timecapsule.what_do_you_know_about_this_co')}
                   maxLength={280}
                   aria-describedby={`capsule-message-hint${privacyWarning ? ' capsule-message-warning' : ''}`}
                   className="w-full p-4 bg-gray-50 rounded-xl border border-gray-200
@@ -283,8 +283,8 @@ export default function TimeCapsule() {
                   </p>
                 )}
                 <span id="capsule-message-hint" className="block text-sm text-gray-400 mb-4">
-                  {content.length}/280 characters
-                </span>
+                  {content.length}<Trans i18nKey="auto.timecapsule.280_characters">/280 characters</Trans>
+                                                  </span>
 
                 <p className="text-sm text-gray-500 mb-2">
                   {t('crosscutting.time_capsule.seal_for')}
@@ -332,12 +332,12 @@ export default function TimeCapsule() {
               >
                 🔒
               </motion.div>
-              <h2 className="text-2xl font-bold text-amber-700 mb-2">Sealed!</h2>
+              <h2 className="text-2xl font-bold text-amber-700 mb-2"><Trans i18nKey="auto.timecapsule.sealed">Sealed!</Trans></h2>
               <p className="text-gray-500 mb-4">
-                Your thoughts on <strong>{newCapsule.conceptTitle}</strong> are safe.
-              </p>
+                <Trans i18nKey="auto.timecapsule.your_thoughts_on">Your thoughts on</Trans> <strong>{newCapsule.conceptTitle}</strong> <Trans i18nKey="auto.timecapsule.are_safe">are safe.</Trans>
+                                            </p>
               <div className="bg-white rounded-2xl p-4 mb-6">
-                <p className="text-sm text-gray-400">Opens in</p>
+                <p className="text-sm text-gray-400"><Trans i18nKey="auto.timecapsule.opens_in">Opens in</Trans></p>
                 <p className="text-2xl font-bold text-amber-600">
                   {formatOpensAt(newCapsule.opensAt)}
                 </p>
@@ -368,10 +368,10 @@ export default function TimeCapsule() {
               </h2>
               <div className="bg-white rounded-3xl p-6 shadow-sm mb-4 text-left">
                 <p className="text-sm text-gray-400 mb-2">
-                  About: {openingCapsule.conceptTitle}
+                  <Trans i18nKey="auto.timecapsule.about">About:</Trans> {openingCapsule.conceptTitle}
                 </p>
                 <p className="text-sm text-gray-400 mb-4">
-                  Sealed: {new Date(openingCapsule.sealedAt).toLocaleDateString()}
+                  <Trans i18nKey="auto.timecapsule.sealed">Sealed:</Trans> {new Date(openingCapsule.sealedAt).toLocaleDateString()}
                 </p>
                 <div className="bg-amber-50 rounded-2xl p-4">
                   <p className="text-gray-800 whitespace-pre-wrap">{openingCapsule.content}</p>

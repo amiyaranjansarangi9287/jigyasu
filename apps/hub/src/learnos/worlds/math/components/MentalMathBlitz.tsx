@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { sfx } from '../lib/soundEngine';
 import { useFormatNumber } from '../../../../hooks/useFormatNumber';
+import { Trans } from "react-i18next";
 
 type Category = 'bodmas' | 'squares' | 'percentages' | 'powers' | 'mixed';
 
@@ -96,7 +97,7 @@ export default function MentalMathBlitz() {
   const [maxStreak, setMaxStreak] = useState(0);
   const [correct, setCorrect] = useState(0);
   const [total, setTotal] = useState(0);
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const qRef = useRef(0);
 
   const nextQ = useCallback(() => {
@@ -128,7 +129,7 @@ export default function MentalMathBlitz() {
       if (streak > 0 && streak % 5 === 0 && difficulty < 3) setDifficulty(d => d + 1);
       setTimeout(nextQ, 500);
     } else {
-      setFeedback('wrong');
+      setFeedback('hint');
       sfx.wrong();
       setStreak(0);
       setTimeout(() => setFeedback(null), 1000);
@@ -148,15 +149,15 @@ export default function MentalMathBlitz() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🧠 Mental Math Mastery</h2>
-        <p className="text-purple-300 text-lg">Sharpen your mind without the pressure!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.mentalmathblitz.mental_math_mastery">🧠 Mental Math Mastery</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.mentalmathblitz.sharpen_your_mind_without_the_">Sharpen your mind without the pressure!</Trans></p>
       </div>
 
       <AnimatePresence mode="wait">
         {gameState === 'menu' && (
           <motion.div key="menu" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="max-w-lg mx-auto space-y-4">
             <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
-              <p className="text-gray-400 text-sm mb-3">Choose category:</p>
+              <p className="text-gray-400 text-sm mb-3"><Trans i18nKey="auto.mentalmathblitz.choose_category">Choose category:</Trans></p>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                 {categories.map(c => (
                   <motion.button key={c.id}
@@ -173,7 +174,7 @@ export default function MentalMathBlitz() {
             </div>
 
             <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
-              <p className="text-gray-400 text-sm mb-3">Difficulty:</p>
+              <p className="text-gray-400 text-sm mb-3"><Trans i18nKey="auto.mentalmathblitz.difficulty">Difficulty:</Trans></p>
               <div className="flex gap-2">
                 {[1, 2, 3].map(d => (
                   <motion.button key={d}
@@ -193,8 +194,8 @@ export default function MentalMathBlitz() {
               whileTap={{ scale: 0.97 }}
               onClick={startGame}
             >
-              🚀 Start Journey
-            </motion.button>
+              <Trans i18nKey="auto.mentalmathblitz.start_journey">🚀 Start Journey</Trans>
+                                      </motion.button>
           </motion.div>
         )}
 
@@ -203,22 +204,22 @@ export default function MentalMathBlitz() {
             {/* Stats bar */}
             <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
               <div className="flex gap-2">
-                <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">🌟 Mastery {formatNumber(mastery)}</span>
-                <span className="bg-white/5 px-3 py-1.5 rounded-lg text-orange-400 font-bold text-sm">🔥 Streak {formatNumber(streak)}</span>
+                <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm"><Trans i18nKey="auto.mentalmathblitz.mastery">🌟 Mastery</Trans> {formatNumber(mastery)}</span>
+                <span className="bg-white/5 px-3 py-1.5 rounded-lg text-sky-400 font-bold text-sm"><Trans i18nKey="auto.mentalmathblitz.streak">🔥 Streak</Trans> {formatNumber(streak)}</span>
                 <span className="bg-white/5 px-3 py-1.5 rounded-lg text-blue-400 font-bold text-sm">{getCatEmoji(question.category)}</span>
               </div>
-              <span className="text-green-400 font-bold text-sm">Take your time 🌱</span>
+              <span className="text-green-400 font-bold text-sm"><Trans i18nKey="auto.mentalmathblitz.take_your_time">Take your time 🌱</Trans></span>
             </div>
 
             <motion.div
               key={qRef.current}
-              className={`rounded-3xl p-8 text-center border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-red-500/10 border-red-500/40' : 'bg-white/5 border-white/10'}`}
+              className={`rounded-3xl p-8 text-center border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'hint' ? 'bg-red-500/10 border-red-500/40' : 'bg-white/5 border-white/10'}`}
               initial={{ scale: 0.9, rotateY: 90 }}
               animate={{ scale: 1, rotateY: 0 }}
               transition={{ type: 'spring' }}
             >
               <span className="text-sm bg-purple-500/30 text-purple-300 px-2 py-0.5 rounded-full">
-                {question.category.toUpperCase()} · Lv{formatNumber(question.difficulty)}
+                {question.category.toUpperCase()} <Trans i18nKey="auto.mentalmathblitz.lv">· Lv</Trans>{formatNumber(question.difficulty)}
               </span>
               <p className="text-3xl sm:text-4xl font-bold text-white mt-4 mb-6 font-mono">{question.display}</p>
 
@@ -228,8 +229,8 @@ export default function MentalMathBlitz() {
                     key={`${qRef.current}-${i}`}
                     className={`py-3 rounded-xl text-xl font-bold ${
                       feedback === 'correct' && opt === question.answer ? 'bg-green-500 text-white'
-                      : feedback === 'wrong' && opt === question.answer ? 'bg-green-500/50 text-green-200'
-                      : feedback === 'wrong' ? 'bg-white/5 text-gray-500'
+                      : feedback === 'hint' && opt === question.answer ? 'bg-green-500/50 text-green-200'
+                      : feedback === 'hint' ? 'bg-white/5 text-gray-500'
                       : 'bg-white/10 text-white hover:bg-white/20 border border-white/20'
                     }`}
                     whileHover={!feedback ? { scale: 1.05 } : {}}
@@ -242,8 +243,8 @@ export default function MentalMathBlitz() {
                 ))}
               </div>
 
-              {feedback === 'correct' && <motion.p className="mt-3 text-green-400 font-bold" initial={{ scale: 0 }} animate={{ scale: 1 }}>✨ Correct!</motion.p>}
-              {feedback === 'wrong' && <p className="mt-3 text-red-400 font-bold">🤔 Try again!</p>}
+              {feedback === 'correct' && <motion.p className="mt-3 text-green-400 font-bold" initial={{ scale: 0 }} animate={{ scale: 1 }}><Trans i18nKey="auto.mentalmathblitz.correct">✨ Correct!</Trans></motion.p>}
+              {feedback === 'hint' && <p className="mt-3 text-sky-400 font-bold"><Trans i18nKey="auto.mentalmathblitz.try_again">🤔 Let us explore!</Trans></p>}
             </motion.div>
           </motion.div>
         )}

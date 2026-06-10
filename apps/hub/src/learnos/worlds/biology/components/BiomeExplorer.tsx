@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Thermometer, Droplets, TreeDeciduous, Bug } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface Biome {
   id: string;
@@ -115,14 +119,30 @@ const biomeDecorations = Array.from({ length: 20 }, (_, i) => ({
 }));
 
 export default function BiomeExplorer() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.biome_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.biome_prompt', "From icy tundras to lush rainforests, Earth is home to diverse habitats. Let's explore the biomes!"),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'biome-explorer', 60);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   const [selectedBiome, setSelectedBiome] = useState<Biome>(biomes[0]);
 
   return (
     <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-2">🏔️ Biome Explorer</h2>
-          <p className="text-gray-400 text-lg">Discover Earth's major ecosystems and their unique life!</p>
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-2"><Trans i18nKey="auto.biomeexplorer.biome_explorer">🏔️ Biome Explorer</Trans></h2>
+          <p className="text-gray-400 text-lg"><Trans i18nKey="auto.biomeexplorer.discover_earth_s_major_ecosyst">Discover Earth's major ecosystems and their unique life!</Trans></p>
         </motion.div>
 
         {/* Biome selector */}
@@ -170,18 +190,18 @@ export default function BiomeExplorer() {
                   <div className="flex-shrink-0 w-full md:w-64 space-y-3">
                     <div className="bg-black/30 backdrop-blur rounded-xl p-4">
                       <div className="flex items-center gap-2 text-sm text-gray-400 mb-1">
-                        <Thermometer className="w-3 h-3" /> Temperature
-                      </div>
+                        <Thermometer className="w-3 h-3" /> <Trans i18nKey="auto.biomeexplorer.temperature">Temperature</Trans>
+                                                                    </div>
                       <div className="text-white font-bold">{selectedBiome.temperature}</div>
                     </div>
                     <div className="bg-black/30 backdrop-blur rounded-xl p-4">
                       <div className="flex items-center gap-2 text-sm text-gray-400 mb-1">
-                        <Droplets className="w-3 h-3" /> Precipitation
-                      </div>
+                        <Droplets className="w-3 h-3" /> <Trans i18nKey="auto.biomeexplorer.precipitation">Precipitation</Trans>
+                                                                    </div>
                       <div className="text-white font-bold">{selectedBiome.precipitation}</div>
                     </div>
                     <div className="bg-black/30 backdrop-blur rounded-xl p-4">
-                      <div className="text-sm text-gray-400 mb-1">🌤️ Climate</div>
+                      <div className="text-sm text-gray-400 mb-1"><Trans i18nKey="auto.biomeexplorer.climate">🌤️ Climate</Trans></div>
                       <div className="text-white text-sm">{selectedBiome.climate}</div>
                     </div>
                   </div>
@@ -193,8 +213,8 @@ export default function BiomeExplorer() {
             <div className="grid md:grid-cols-2 gap-4 mb-6">
               <div className="bg-gray-900 rounded-xl border border-gray-800 p-5">
                 <h4 className="text-sm font-bold text-white mb-3 flex items-center gap-2">
-                  <TreeDeciduous className="w-4 h-4 text-green-400" /> Flora (Plants)
-                </h4>
+                  <TreeDeciduous className="w-4 h-4 text-green-400" /> <Trans i18nKey="auto.biomeexplorer.flora_plants">Flora (Plants)</Trans>
+                                                  </h4>
                 <div className="grid grid-cols-2 gap-2">
                   {selectedBiome.flora.map(f => (
                     <motion.div key={f.name} initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
@@ -208,8 +228,8 @@ export default function BiomeExplorer() {
 
               <div className="bg-gray-900 rounded-xl border border-gray-800 p-5">
                 <h4 className="text-sm font-bold text-white mb-3 flex items-center gap-2">
-                  <Bug className="w-4 h-4 text-amber-400" /> Fauna (Animals)
-                </h4>
+                  <Bug className="w-4 h-4 text-amber-400" /> <Trans i18nKey="auto.biomeexplorer.fauna_animals">Fauna (Animals)</Trans>
+                                                  </h4>
                 <div className="grid grid-cols-2 gap-2">
                   {selectedBiome.fauna.map(f => (
                     <motion.div key={f.name} initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
@@ -224,7 +244,7 @@ export default function BiomeExplorer() {
 
             {/* Fun Facts */}
             <div className="bg-gradient-to-r from-purple-900/30 to-blue-900/30 rounded-xl border border-purple-500/20 p-5">
-              <h4 className="text-sm font-bold text-white mb-3">💡 Amazing Facts</h4>
+              <h4 className="text-sm font-bold text-white mb-3"><Trans i18nKey="auto.biomeexplorer.amazing_facts">💡 Amazing Facts</Trans></h4>
               <div className="grid md:grid-cols-3 gap-3">
                 {selectedBiome.funFacts.map((fact, i) => (
                   <motion.div key={i}

@@ -129,14 +129,6 @@ export const LANGUAGES = {
     direction: 'ltr' as const,
     script: 'Devanagari',
   },
-  kok: {
-    code: 'kok' as const,
-    nativeName: 'कोंकणी',
-    fontFamily: '"Noto Sans Devanagari", sans-serif',
-    googleFont: 'Noto+Sans+Devanagari:wght@400;600;700;800',
-    direction: 'ltr' as const,
-    script: 'Devanagari',
-  },
   brx: {
     code: 'brx' as const,
     nativeName: 'बड़ो',

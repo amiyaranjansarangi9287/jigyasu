@@ -10,6 +10,7 @@ import { HintSystem } from '../../../../../components/HintSystem';
 import { ExplanatoryFeedback } from '../../../../../components/ExplanatoryFeedback';
 import { ShakeError, PulseSuccess } from '../../../../../components/MicroInteractions';
 import { AudioNarration } from '../../../../../components/MultimodalLearning';
+import { Trans } from "react-i18next";
 
 export interface QuizQuestion {
   question: string;
@@ -39,7 +40,7 @@ export default function QuizShell({ emoji, moduleId, generateQuestion }: QuizShe
   const stats = getTopicStats(moduleId);
   const [level, setLevel] = useState<DiffLevel>(stats.level);
   const [question, setQuestion] = useState<QuizQuestion>(() => generateQuestion(stats.level));
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [mastery, setMastery] = useState(0);
   const [streak, setStreak] = useState(0);
   const [total, setTotal] = useState(0);
@@ -111,7 +112,7 @@ export default function QuizShell({ emoji, moduleId, generateQuestion }: QuizShe
 
       setTimeout(nextQ, 1200);
     } else {
-      setFeedback('wrong');
+      setFeedback('hint');
       sfx.wrong();
       setStreak(0);
 
@@ -131,7 +132,7 @@ export default function QuizShell({ emoji, moduleId, generateQuestion }: QuizShe
       <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
         <div className="flex items-center gap-2 flex-wrap">
           <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">⭐ {mastery}</span>
-          <span className="bg-white/5 px-3 py-1.5 rounded-lg text-orange-400 font-bold text-sm">🔥 {streak}</span>
+          <span className="bg-white/5 px-3 py-1.5 rounded-lg text-sky-400 font-bold text-sm">🔥 {streak}</span>
           {total > 0 && <span className="bg-white/5 px-3 py-1.5 rounded-lg text-green-400 font-bold text-sm">🎯 {accuracy}%</span>}
         </div>
         <DifficultyBadge level={level} />
@@ -153,7 +154,7 @@ export default function QuizShell({ emoji, moduleId, generateQuestion }: QuizShe
               exit={{ scale: 0, opacity: 0 }}
             >
               <span className="text-6xl block mb-2">🎉</span>
-              <p className="text-yellow-400 font-bold text-2xl">Level Up!</p>
+              <p className="text-yellow-400 font-bold text-2xl"><Trans i18nKey="auto.quizshell.level_up">Level Up!</Trans></p>
               <p className="text-white text-lg">{getDifficultyEmoji(level)} {getDifficultyLabel(level)}</p>
             </motion.div>
           </motion.div>
@@ -164,14 +165,14 @@ export default function QuizShell({ emoji, moduleId, generateQuestion }: QuizShe
       <VariableRewardOverlay chestUnlocked={chestUnlocked} bonusXP={bonusXP} />
 
       {/* Question card */}
-      <ShakeError isError={feedback === 'wrong'}>
+      <ShakeError isError={feedback === 'hint'}>
         <PulseSuccess isSuccess={feedback === 'correct'}>
           <div
             key={question.question}
             className={`max-w-lg mx-auto rounded-3xl p-6 sm:p-8 border-2 transition-colors ${
               feedback === 'correct'
                 ? 'bg-green-500/10 border-green-500/40'
-                : feedback === 'wrong'
+                : feedback === 'hint'
                 ? 'bg-white/5 border-white/10'
                 : 'bg-white/5 border-white/10'
             }`}
@@ -209,7 +210,7 @@ export default function QuizShell({ emoji, moduleId, generateQuestion }: QuizShe
                   ? 'opacity-20 bg-white/5 text-gray-500 scale-95 cursor-not-allowed'
                   : feedback === 'correct' && opt === question.answer
                   ? 'bg-green-500 text-white ring-4 ring-green-400/50 shadow-lg'
-                  : feedback === 'wrong' && opt === question.answer
+                  : feedback === 'hint' && opt === question.answer
                   ? 'bg-green-500/50 text-green-200'
                   : feedback
                   ? 'bg-white/5 text-gray-500'
@@ -241,16 +242,16 @@ export default function QuizShell({ emoji, moduleId, generateQuestion }: QuizShe
               </div>
             </motion.div>
           )}
-          {feedback === 'wrong' && (
+          {feedback === 'hint' && (
             <motion.div
               className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none"
               initial={{ scale: 0, opacity: 0 }}
               animate={{ scale: [0, 1.5, 1], opacity: 1 }}
               exit={{ opacity: 0 }}
             >
-              <div className="bg-red-500 rounded-full w-32 h-32 flex items-center justify-center shadow-[0_0_40px_rgba(239,68,68,0.6)]">
+              <div className="bg-sky-500 rounded-full w-32 h-32 flex items-center justify-center shadow-[0_0_40px_rgba(14,165,233,0.6)]">
                 <svg className="w-20 h-20 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M6 18L18 6M6 6l12 12" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
             </motion.div>
@@ -265,26 +266,26 @@ export default function QuizShell({ emoji, moduleId, generateQuestion }: QuizShe
               initial={{ scale: 0 }}
               animate={{ scale: [0, 1.3, 1] }}
             >
-              ✨ Correct! {hintLevel >= 3 ? '+0 pts (Answer Revealed)' : `+${level * 5} pts`}
+              <Trans i18nKey="auto.quizshell.correct">✨ Correct!</Trans> 
               {bonusXP > 0 && (
                 <motion.span 
                   className="block text-amber-300 font-black mt-1"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                 >
-                  🎉 BONUS DROP: +{bonusXP} XP!
-                </motion.span>
+                  <Trans i18nKey="auto.quizshell.bonus_drop">🎉 BONUS DROP: +</Trans>{bonusXP} <Trans i18nKey="auto.quizshell.xp">XP!</Trans>
+                                                          </motion.span>
               )}
             </motion.p>
           )}
-          {feedback === 'wrong' && (
+          {feedback === 'hint' && (
             <motion.div className="mt-4 text-center relative z-20">
               <motion.p
-                className="text-orange-400 font-bold"
+                className="text-sky-400 font-bold"
                 initial={{ x: -10 }}
                 animate={{ x: [10, -10, 5, 0] }}
               >
-                🤔 Answer: {question.answer}
+                <Trans i18nKey="auto.quizshell.answer">🤔 Answer:</Trans> {question.answer}
               </motion.p>
               {question.explanation && (
                 <ExplanatoryFeedback explanation={question.explanation} />
@@ -298,20 +299,20 @@ export default function QuizShell({ emoji, moduleId, generateQuestion }: QuizShe
 
       {/* Skip / Next */}
       <div className="text-center mt-4">
-        {feedback === 'wrong' ? (
+        {feedback === 'hint' ? (
           <button
             className="bg-slate-800 text-white hover:bg-slate-700 px-6 py-3 rounded-full font-bold shadow-lg transition-all active:scale-95"
             onClick={nextQ}
           >
-            Next Question →
-          </button>
+            <Trans i18nKey="auto.quizshell.next_question">Next Question →</Trans>
+                                </button>
         ) : (
           <button
             className="text-gray-500 hover:text-gray-400 text-sm underline"
             onClick={nextQ}
           >
-            Skip →
-          </button>
+            <Trans i18nKey="auto.quizshell.skip">Skip →</Trans>
+                                    </button>
         )}
       </div>
 

@@ -7,6 +7,7 @@ import { EverydayConnection } from '../components/EverydayConnection';
 import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
+import { Trans } from "react-i18next";
 
 export default function PiVisual() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -191,25 +192,25 @@ export default function PiVisual() {
           <div className="space-y-3">
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-slate-300 text-sm leading-relaxed mb-2">
-                If you measure any circle's circumference and divide by its
-                diameter, you always get the same number: π ≈ 3.14159...
-              </p>
+                <Trans i18nKey="auto.pivisual.if_you_measure_any_circle_s_ci">If you measure any circle's circumference and divide by its
+                                              diameter, you always get the same number: π ≈ 3.14159...</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                This number is irrational — its decimals never repeat and
-                never end. Yet it appears everywhere in nature, from the
-                spirals of galaxies to the ripples in a pond.
-              </p>
+                <Trans i18nKey="auto.pivisual.this_number_is_irrational_its_">This number is irrational — its decimals never repeat and
+                                              never end. Yet it appears everywhere in nature, from the
+                                              spirals of galaxies to the ripples in a pond.</Trans>
+                                            </p>
             </div>
 
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-violet-400 text-sm font-bold uppercase tracking-wider mb-2">
-                History of the idea
-              </p>
+                <Trans i18nKey="auto.pivisual.history_of_the_idea">History of the idea</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Aryabhata in 499 AD calculated π as 3.1416. Madhava of
-                Sangamagrama discovered infinite series for π in the 14th
-                century — predating European mathematicians by 200 years.
-              </p>
+                <Trans i18nKey="auto.pivisual.aryabhata_in_499_ad_calculated">Aryabhata in 499 AD calculated π as 3.1416. Madhava of
+                                              Sangamagrama discovered infinite series for π in the 14th
+                                              century — predating European mathematicians by 200 years.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

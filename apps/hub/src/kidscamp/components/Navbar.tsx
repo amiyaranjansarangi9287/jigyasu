@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useLearnerStore } from '../../learnos/store';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { pillars } from '../data/categories';
 
 interface NavbarProps {
@@ -121,8 +121,8 @@ export default function Navbar({
                         className="w-full px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700 flex items-center gap-3"
                       >
                         <span className="text-xl">{pillar.icon}</span>
-                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                        <span className="text-gray-700 dark:text-gray-200">{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
+                        <Trans i18nKey="auto.navbar.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
+                                                    <span className="text-gray-700 dark:text-gray-200">{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
                       </button>
                     ))}
                   </div>
@@ -238,7 +238,7 @@ export default function Navbar({
           />
           <div className="absolute right-0 top-0 bottom-0 w-72 bg-white dark:bg-gray-900 shadow-2xl animate-slide-in-mobile">
             <div className="p-4 border-b border-gray-100 dark:border-gray-800 flex items-center justify-between">
-              <span className="text-lg font-bold text-gray-900 dark:text-white">Menu</span>
+              <span className="text-lg font-bold text-gray-900 dark:text-white"><Trans i18nKey="auto.navbar.menu">Menu</Trans></span>
               <button
                 onClick={() => setMobileMenuOpen(false)}
                 className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
@@ -267,7 +267,7 @@ export default function Navbar({
               </button>
 
               <div className="pt-2 border-t border-gray-100 dark:border-gray-800">
-                <p className="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wide px-3 py-2">Activities</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wide px-3 py-2"><Trans i18nKey="auto.navbar.activities">Activities</Trans></p>
                 {pillars.map((pillar) => (
                   <button
                     key={pillar.id}
@@ -278,8 +278,8 @@ export default function Navbar({
                     className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800"
                   >
                     <span className="text-2xl">{pillar.icon}</span>
-                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                    <span className="text-gray-700 dark:text-gray-200">{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
+                    <Trans i18nKey="auto.navbar.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
+                                            <span className="text-gray-700 dark:text-gray-200">{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
                   </button>
                 ))}
               </div>
@@ -293,7 +293,7 @@ export default function Navbar({
                   className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800"
                 >
                   <span className="text-2xl">📅</span>
-                  <span className="text-gray-700 dark:text-gray-200">Project Weeks</span>
+                  <span className="text-gray-700 dark:text-gray-200"><Trans i18nKey="auto.navbar.project_weeks">Project Weeks</Trans></span>
                 </button>
 
                 <button
@@ -304,7 +304,7 @@ export default function Navbar({
                   className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800"
                 >
                   <span className="text-2xl">📊</span>
-                  <span className="text-gray-700 dark:text-gray-200">My Progress</span>
+                  <span className="text-gray-700 dark:text-gray-200"><Trans i18nKey="auto.navbar.my_progress">My Progress</Trans></span>
                   {completedCount > 0 && (
                     <span className="ml-auto bg-gradient-to-r from-orange-500 to-pink-500 text-white text-sm px-2 py-0.5 rounded-full">
                       {completedCount}

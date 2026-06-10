@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { Button } from '@jigyasu/ui';
 
 export default function Hero() {
@@ -77,9 +77,9 @@ export default function Hero() {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <span className="text-3xl">�</span>
-                        <span className="font-display font-bold text-slate-800">{t('landing.hero.lesson_label')} 12</span>
+                        <span className="font-display font-bold text-slate-800">{t('landing.hero.lesson_label')} <Trans i18nKey="auto.hero.12">12</Trans></span>
                       </div>
-                      <span className="rounded-full bg-orange-100 px-2.5 py-1 text-sm font-bold text-brand">+15 XP</span>
+                      <span className="rounded-full bg-orange-100 px-2.5 py-1 text-sm font-bold text-brand"><Trans i18nKey="auto.hero.15_xp">+15 XP</Trans></span>
                     </div>
                     <div className="mt-4 flex-1 rounded-2xl bg-gradient-to-br from-amber-100 to-orange-100 p-5">
                       <p className="text-sm font-semibold text-slate-500">{t('landing.hero.question_prompt')}</p>
@@ -103,7 +103,7 @@ export default function Hero() {
                       <div className="h-2 flex-1 rounded-full bg-orange-100">
                         <div className="h-full w-3/4 rounded-full bg-gradient-to-r from-orange-400 to-rose-400" />
                       </div>
-                      <span className="text-sm font-bold text-slate-500">9/12</span>
+                      <span className="text-sm font-bold text-slate-500"><Trans i18nKey="auto.hero.9_12">9/12</Trans></span>
                     </div>
                   </div>
                 </div>
@@ -113,7 +113,7 @@ export default function Hero() {
                 <div className="flex items-center gap-2">
                   <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-100 text-xl">🎯</span>
                   <div>
-                    <p className="text-sm font-bold text-slate-800">5-day {t('landing.hero.streak_label')}</p>
+                    <p className="text-sm font-bold text-slate-800"><Trans i18nKey="auto.hero.5_day">5-day</Trans> {t('landing.hero.streak_label')}</p>
                     <p className="text-sm text-slate-500">{t('landing.hero.streak_keep')} 🔥</p>
                   </div>
                 </div>

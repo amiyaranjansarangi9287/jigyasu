@@ -7,6 +7,7 @@ import { EverydayConnection } from '../components/EverydayConnection';
 import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
+import { Trans } from "react-i18next";
 
 export default function ProbabilityAdult() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -142,46 +143,46 @@ export default function ProbabilityAdult() {
               onClick={flipCoin}
               className="flex-1 py-3 bg-violet-700 text-white rounded-xl text-sm font-medium min-h-[44px]"
             >
-              Flip Once
-            </button>
+              <Trans i18nKey="auto.probabilityadult.flip_once">Flip Once</Trans>
+                                      </button>
             <button
               onClick={flip100}
               className="flex-1 py-3 bg-slate-800 text-white rounded-xl text-sm font-medium min-h-[44px]"
             >
-              Flip 100×
-            </button>
+              <Trans i18nKey="auto.probabilityadult.flip_100">Flip 100×</Trans>
+                                      </button>
             <button
               onClick={() => setFlips([])}
               className="px-4 py-3 bg-slate-900 text-slate-400 rounded-xl text-sm font-medium min-h-[44px]"
             >
-              Reset
-            </button>
+              <Trans i18nKey="auto.probabilityadult.reset">Reset</Trans>
+                                      </button>
           </div>
 
           <div className="space-y-3">
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-slate-300 text-sm leading-relaxed mb-2">
-                After 5 flips, anything can happen. After 1,000 flips,
-                the ratio will be remarkably close to 50%. This is the
-                Law of Large Numbers — certainty emerges from randomness.
-              </p>
+                <Trans i18nKey="auto.probabilityadult.after_5_flips_anything_can_hap">After 5 flips, anything can happen. After 1,000 flips,
+                                              the ratio will be remarkably close to 50%. This is the
+                                              Law of Large Numbers — certainty emerges from randomness.</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Insurance companies use this. They can't predict if YOU
-                will crash, but they know exactly what percentage of
-                drivers will. Individual randomness, aggregate certainty.
-              </p>
+                <Trans i18nKey="auto.probabilityadult.insurance_companies_use_this_t">Insurance companies use this. They can't predict if YOU
+                                              will crash, but they know exactly what percentage of
+                                              drivers will. Individual randomness, aggregate certainty.</Trans>
+                                            </p>
             </div>
 
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-violet-400 text-sm font-bold uppercase tracking-wider mb-2">
-                History of the idea
-              </p>
+                <Trans i18nKey="auto.probabilityadult.history_of_the_idea">History of the idea</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Pascal and Fermat invented probability theory in 1654
-                to solve a gambling problem. Bayes gave us conditional
-                probability. Today it underpins medicine, finance, AI,
-                and nearly every quantitative field.
-              </p>
+                <Trans i18nKey="auto.probabilityadult.pascal_and_fermat_invented_pro">Pascal and Fermat invented probability theory in 1654
+                                              to solve a gambling problem. Bayes gave us conditional
+                                              probability. Today it underpins medicine, finance, AI,
+                                              and nearly every quantitative field.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

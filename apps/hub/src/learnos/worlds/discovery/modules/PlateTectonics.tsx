@@ -1,6 +1,6 @@
 // src/worlds/discovery/modules/PlateTectonics.tsx
 import { useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import DiscoveryShell from '../DiscoveryShell';
 import { useLumoSage } from '../hooks/useLumoSage';
@@ -41,7 +41,7 @@ export default function PlateTectonics() {
       <div className="flex-1 flex flex-col p-5 bg-slate-900 pb-24">
         <div className="bg-slate-800 rounded-2xl p-4 border border-slate-700 mb-4">
           <p className="text-white font-bold text-sm">{t('discovery.modules.PlateTectonics.txt_MovingCont', '🌍 Moving Continents')}</p>
-          <p className="text-slate-400 text-sm mt-1">Discover what happens at plate boundaries ({discovered.length}/4)</p>
+          <p className="text-slate-400 text-sm mt-1"><Trans i18nKey="auto.platetectonics.discover_what_happens_at_plate">Discover what happens at plate boundaries (</Trans>{discovered.length}<Trans i18nKey="auto.platetectonics.4">/4)</Trans></p>
           <div className="flex gap-1 mt-2">{BOUNDARIES.map(b => <div key={b.id} className={`flex-1 h-1.5 rounded-full ${discovered.includes(b.id) ? 'bg-indigo-500' : 'bg-slate-700'}`} />)}</div>
         </div>
 

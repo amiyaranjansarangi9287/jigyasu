@@ -1,12 +1,32 @@
 import { useState, useEffect, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { Play, Pause, RotateCcw, Thermometer, Beaker } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import PremiumSlider from '../../../shared/ui/PremiumSlider';
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 export default function EnzymeLab() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
   const [temperature, setTemperature] = useState(37);
   const [pH, setPH] = useState(7);
   const [substrate, setSubstrate] = useState(50);
   const [isRunning, setIsRunning] = useState(false);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.enzyme_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.enzyme_prompt', 'How does your body digest food so quickly without burning up? Biological machines called enzymes! Let\'s play with them and see what makes them tick.'),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'enzyme-lab', 55);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
   const [productAmount, setProductAmount] = useState(0);
   const [selectedEnzyme, setSelectedEnzyme] = useState('amylase');
   const [time, setTime] = useState(0);
@@ -59,11 +79,13 @@ export default function EnzymeLab() {
   const maxHist = Math.max(1, ...history.map(h => h.v));
 
   return (
-    <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
+    <ModuleWrapper moduleId="enzyme-lab" progress={progress} setProgress={setProgress} onNavigate={() => {}}>
+      {showChallenge && <ChallengeOverlay challenge={activeChallenge} onClose={() => setShowChallenge(false)} />}
+      <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-2">⚗️ Enzyme Lab</h2>
-          <p className="text-gray-400 text-lg">Adjust temperature, pH & substrate to study enzyme activity!</p>
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-2"><Trans i18nKey="auto.enzymelab.enzyme_lab">⚗️ Enzyme Lab</Trans></h2>
+          <p className="text-gray-400 text-lg"><Trans i18nKey="auto.enzymelab.adjust_temperature_ph_substrat">Adjust temperature, pH & substrate to study enzyme activity!</Trans></p>
         </motion.div>
 
         {/* Enzyme selector */}
@@ -81,45 +103,31 @@ export default function EnzymeLab() {
           <div className="space-y-4">
             <div className="bg-gray-900 rounded-2xl border border-gray-800 p-5">
               <h3 className="text-sm font-bold text-white mb-4 flex items-center gap-2">
-                <Beaker className="w-4 h-4 text-emerald-400" /> Experiment Controls
-              </h3>
+                <Beaker className="w-4 h-4 text-emerald-400" /> <Trans i18nKey="auto.enzymelab.experiment_controls">Experiment Controls</Trans>
+                                            </h3>
 
               {/* Temperature */}
               <div className="mb-5">
-                <div className="flex justify-between mb-1">
-                  <span className="text-sm text-gray-400 flex items-center gap-1"><Thermometer className="w-3 h-3" /> Temperature</span>
-                  <span className={`text-sm font-mono font-bold ${temperature > 60 ? 'text-orange-400' : temperature < 10 ? 'text-blue-400' : 'text-white'}`}>{temperature}°C</span>
-                </div>
-                <input type="range" min="0" max="80" value={temperature} onChange={e => setTemperature(Number(e.target.value))}
-                  className="w-full h-2 rounded-full appearance-none cursor-pointer"
-                  style={{ background: `linear-gradient(to right, #3b82f6 0%, #22c55e 46%, #f59e0b 62%, #ef4444 100%)` }} />
-                <div className="flex justify-between text-[9px] text-gray-600 mt-0.5">
-                  <span>0°C ❄️</span>
-                  <span>37°C ✅</span>
-                  <span>80°C 🔥</span>
-                </div>
+                <PremiumSlider
+                  label={t('auto.enzymelab.temperature', 'Temperature')}
+                  value={temperature} min={0} max={80} step={1} unit="°C"
+                  color="blue" onChange={setTemperature}
+                />
               </div>
 
               {/* pH */}
               <div className="mb-5">
-                <div className="flex justify-between mb-1">
-                  <span className="text-sm text-gray-400">⚗️ pH Level</span>
-                  <span className={`text-sm font-mono font-bold ${Math.abs(pH - enzyme.optPH) < 1 ? 'text-emerald-400' : 'text-yellow-400'}`}>{pH.toFixed(1)}</span>
-                </div>
-                <input type="range" min="0" max="14" step="0.5" value={pH} onChange={e => setPH(Number(e.target.value))}
-                  className="w-full h-2 rounded-full appearance-none cursor-pointer"
-                  style={{ background: `linear-gradient(to right, #ef4444 0%, #f59e0b 25%, #22c55e 50%, #3b82f6 75%, #8b5cf6 100%)` }} />
-                <div className="flex justify-between text-[9px] text-gray-600 mt-0.5">
-                  <span>0 Acidic</span>
-                  <span>7 Neutral</span>
-                  <span>14 Basic</span>
-                </div>
+                <PremiumSlider
+                  label={t('auto.enzymelab.ph_level', 'pH Level')}
+                  value={pH} min={0} max={14} step={0.5} unit=""
+                  color="purple" onChange={setPH}
+                />
               </div>
 
               {/* Substrate */}
               <div className="mb-4">
                 <div className="flex justify-between mb-1">
-                  <span className="text-sm text-gray-400">📦 Substrate Concentration</span>
+                  <span className="text-sm text-gray-400"><Trans i18nKey="auto.enzymelab.substrate_concentration">📦 Substrate Concentration</Trans></span>
                   <span className="text-sm font-mono text-white">{substrate.toFixed(0)}%</span>
                 </div>
                 <div className="h-3 bg-gray-800 rounded-full overflow-hidden">
@@ -132,7 +140,7 @@ export default function EnzymeLab() {
               <div className="flex gap-2">
                 <button onClick={() => setIsRunning(!isRunning)}
                   className={`flex-1 py-2.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2 ${isRunning ? 'bg-red-500 text-white' : 'bg-emerald-500 text-white'}`}>
-                  {isRunning ? <><Pause className="w-4 h-4" /> Pause</> : <><Play className="w-4 h-4" /> Run</>}
+                  {isRunning ? <><Pause className="w-4 h-4" /> <Trans i18nKey="auto.enzymelab.pause">Pause</Trans></> : <><Play className="w-4 h-4" /> <Trans i18nKey="auto.enzymelab.run">Run</Trans></>}
                 </button>
                 <button onClick={reset} className="px-4 py-2.5 rounded-xl bg-gray-800 text-gray-300">
                   <RotateCcw className="w-4 h-4" />
@@ -145,19 +153,19 @@ export default function EnzymeLab() {
               <div className="text-3xl mb-2">{enzyme.emoji}</div>
               <h4 className="text-lg font-bold text-white">{enzyme.name}</h4>
               <div className="text-sm text-gray-500 mb-2">📍 {enzyme.location}</div>
-              <div className="text-sm text-gray-400 mb-3">Reaction: <span className="text-white font-mono">{enzyme.substrate}</span></div>
+              <div className="text-sm text-gray-400 mb-3"><Trans i18nKey="auto.enzymelab.reaction">Reaction:</Trans> <span className="text-white font-mono">{enzyme.substrate}</span></div>
               <div className="grid grid-cols-2 gap-2 mb-3">
                 <div className="bg-gray-800/50 rounded-lg p-2 text-center">
-                  <div className="text-sm text-gray-500">Optimal Temp</div>
-                  <div className="text-sm font-bold text-emerald-400">{enzyme.optTemp}°C</div>
+                  <div className="text-sm text-gray-500"><Trans i18nKey="auto.enzymelab.optimal_temp">Optimal Temp</Trans></div>
+                  <div className="text-sm font-bold text-emerald-400">{enzyme.optTemp}<Trans i18nKey="auto.enzymelab.c">°C</Trans></div>
                 </div>
                 <div className="bg-gray-800/50 rounded-lg p-2 text-center">
-                  <div className="text-sm text-gray-500">Optimal pH</div>
+                  <div className="text-sm text-gray-500"><Trans i18nKey="auto.enzymelab.optimal_ph">Optimal pH</Trans></div>
                   <div className="text-sm font-bold text-emerald-400">{enzyme.optPH}</div>
                 </div>
               </div>
               <div className="bg-blue-500/10 rounded-lg p-2 border border-blue-500/20">
-                <div className="text-sm text-blue-400 font-bold">💡 Fun Fact</div>
+                <div className="text-sm text-blue-400 font-bold"><Trans i18nKey="auto.enzymelab.fun_fact">💡 Fun Fact</Trans></div>
                 <div className="text-sm text-gray-300">{enzyme.fact}</div>
               </div>
             </div>
@@ -167,22 +175,22 @@ export default function EnzymeLab() {
           <div className="lg:col-span-2 space-y-4">
             {/* Activity Meter */}
             <div className="bg-gray-900 rounded-2xl border border-gray-800 p-5">
-              <h3 className="text-sm font-bold text-white mb-4">📊 Enzyme Activity</h3>
+              <h3 className="text-sm font-bold text-white mb-4"><Trans i18nKey="auto.enzymelab.enzyme_activity">📊 Enzyme Activity</Trans></h3>
               <div className="grid grid-cols-3 gap-4 mb-5">
                 <div className="text-center">
-                  <div className="text-sm text-gray-500 mb-1">Activity Rate</div>
+                  <div className="text-sm text-gray-500 mb-1"><Trans i18nKey="auto.enzymelab.activity_rate">Activity Rate</Trans></div>
                   <div className={`text-3xl font-black ${activityRate > 0.7 ? 'text-emerald-400' : activityRate > 0.3 ? 'text-yellow-400' : 'text-orange-400'}`}>
                     {isDenatured ? '☠️' : `${(activityRate * 100).toFixed(0)}%`}
                   </div>
-                  {isDenatured && <div className="text-sm text-orange-400 font-bold">DENATURED!</div>}
+                  {isDenatured && <div className="text-sm text-orange-400 font-bold"><Trans i18nKey="auto.enzymelab.denatured">DENATURED!</Trans></div>}
                 </div>
                 <div className="text-center">
-                  <div className="text-sm text-gray-500 mb-1">Product Made</div>
+                  <div className="text-sm text-gray-500 mb-1"><Trans i18nKey="auto.enzymelab.product_made">Product Made</Trans></div>
                   <div className="text-3xl font-black text-blue-400">{productAmount.toFixed(1)}</div>
-                  <div className="text-sm text-gray-600">units</div>
+                  <div className="text-sm text-gray-600"><Trans i18nKey="auto.enzymelab.units">units</Trans></div>
                 </div>
                 <div className="text-center">
-                  <div className="text-sm text-gray-500 mb-1">Substrate Left</div>
+                  <div className="text-sm text-gray-500 mb-1"><Trans i18nKey="auto.enzymelab.substrate_left">Substrate Left</Trans></div>
                   <div className="text-3xl font-black text-orange-400">{substrate.toFixed(0)}%</div>
                 </div>
               </div>
@@ -190,7 +198,7 @@ export default function EnzymeLab() {
               {/* Activity graph */}
               {history.length > 1 && (
                 <div>
-                  <div className="text-sm text-gray-500 mb-2">Activity Over Time</div>
+                  <div className="text-sm text-gray-500 mb-2"><Trans i18nKey="auto.enzymelab.activity_over_time">Activity Over Time</Trans></div>
                   <div className="flex items-end gap-0.5 h-20 bg-gray-800/30 rounded-lg p-2">
                     {history.map((h, i) => (
                       <div key={i} className="flex-1 rounded-t-sm transition-all"
@@ -208,20 +216,20 @@ export default function EnzymeLab() {
               <div className="mt-4 space-y-1.5">
                 {isDenatured && (
                   <div className="text-sm text-orange-400 bg-red-500/10 rounded-lg px-3 py-2 border border-red-500/20">
-                    ⚠️ Enzyme is DENATURED! Its 3D shape is destroyed. {temperature > 60 ? 'Temperature too high!' : 'Extreme pH has broken hydrogen bonds.'}
+                    <Trans i18nKey="auto.enzymelab.enzyme_is_denatured_its_3d_sha">⚠️ Enzyme is DENATURED! Its 3D shape is destroyed.</Trans> {temperature > 60 ? 'Temperature too high!' : 'Extreme pH has broken hydrogen bonds.'}
                   </div>
                 )}
                 {substrate <= 0 && (
                   <div className="text-sm text-orange-400 bg-orange-500/10 rounded-lg px-3 py-2 border border-orange-500/20">
-                    📦 No substrate remaining! All substrate has been converted to product.
-                  </div>
+                    <Trans i18nKey="auto.enzymelab.no_substrate_remaining_all_sub">📦 No substrate remaining! All substrate has been converted to product.</Trans>
+                                                        </div>
                 )}
               </div>
             </div>
 
             {/* Key Concepts */}
             <div className="bg-gray-900 rounded-2xl border border-gray-800 p-5">
-              <h3 className="text-sm font-bold text-white mb-3">🎓 Key Enzyme Concepts</h3>
+              <h3 className="text-sm font-bold text-white mb-3"><Trans i18nKey="auto.enzymelab.key_enzyme_concepts">🎓 Key Enzyme Concepts</Trans></h3>
               <div className="grid sm:grid-cols-2 gap-3">
                 {[
                   { title: 'Lock & Key Model', desc: 'Enzymes have a specific active site that fits only certain substrates, like a key in a lock.', emoji: '🔑' },
@@ -241,5 +249,6 @@ export default function EnzymeLab() {
         </div>
       </div>
     </div>
+    </ModuleWrapper>
   );
 }

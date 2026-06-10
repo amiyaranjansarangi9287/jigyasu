@@ -7,6 +7,7 @@ import { EverydayConnection } from '../components/EverydayConnection';
 import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
+import { Trans } from "react-i18next";
 
 export default function DayNightAdult() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -165,8 +166,8 @@ export default function DayNightAdult() {
         <div className="px-5 py-4">
           <div className="mb-4">
             <div className="flex justify-between mb-1">
-              <span className="text-slate-500 text-sm">Rotation speed</span>
-              <span className="text-slate-400 text-sm font-mono">{rotationSpeed}x</span>
+              <span className="text-slate-500 text-sm"><Trans i18nKey="auto.daynightadult.rotation_speed">Rotation speed</Trans></span>
+              <span className="text-slate-400 text-sm font-mono">{rotationSpeed}<Trans i18nKey="auto.daynightadult.x">x</Trans></span>
             </div>
             <input
               type="range" min="0.1" max="3" step="0.1" value={rotationSpeed}
@@ -179,27 +180,27 @@ export default function DayNightAdult() {
           <div className="space-y-3">
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-slate-300 text-sm leading-relaxed mb-2">
-                The Sun doesn't "rise" — Earth rotates, bringing you into
-                sunlight. This Copernican insight took centuries to accept
-                because our intuition says the Sun moves.
-              </p>
+                <Trans i18nKey="auto.daynightadult.the_sun_doesn_t_rise_earth_rot">The Sun doesn't "rise" — Earth rotates, bringing you into
+                                              sunlight. This Copernican insight took centuries to accept
+                                              because our intuition says the Sun moves.</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Earth rotates once every 24 hours. Time zones exist because
-                different places face the Sun at different times. Jet lag
-                is your body catching up to a new rotation position.
-              </p>
+                <Trans i18nKey="auto.daynightadult.earth_rotates_once_every_24_ho">Earth rotates once every 24 hours. Time zones exist because
+                                              different places face the Sun at different times. Jet lag
+                                              is your body catching up to a new rotation position.</Trans>
+                                            </p>
             </div>
 
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-violet-400 text-sm font-bold uppercase tracking-wider mb-2">
-                History of the idea
-              </p>
+                <Trans i18nKey="auto.daynightadult.history_of_the_idea">History of the idea</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Aryabhata in 499 AD proposed Earth's rotation. Copernicus
-                revived the idea in 1543 Europe. Galileo was put under
-                house arrest for supporting it. The idea that our daily
-                experience could be an illusion was revolutionary.
-              </p>
+                <Trans i18nKey="auto.daynightadult.aryabhata_in_499_ad_proposed_e">Aryabhata in 499 AD proposed Earth's rotation. Copernicus
+                                              revived the idea in 1543 Europe. Galileo was put under
+                                              house arrest for supporting it. The idea that our daily
+                                              experience could be an illusion was revolutionary.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

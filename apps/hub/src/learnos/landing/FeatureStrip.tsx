@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 const FEATURES = [
   { icon: "🔒", titleKey: "landing.features.zero_friction", descKey: "landing.features.zero_friction_desc" },
@@ -30,8 +30,8 @@ export default function FeatureStrip() {
         ))}
       </div>
       <p className="mt-4 text-center text-xs text-slate-500">
-        * Features in development for full launch
-      </p>
+        <Trans i18nKey="auto.featurestrip.features_in_development_for_fu">* Features in development for full launch</Trans>
+                    </p>
     </section>
   );
 }

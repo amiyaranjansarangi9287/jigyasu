@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Play, Pause, RotateCcw, Thermometer, TreeDeciduous, Factory, Waves } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface SimulationState {
   year: number;
@@ -27,6 +31,22 @@ const co2Molecules = Array.from({ length: 20 }, (_, i) => ({
 }));
 
 export default function ClimateSimulator() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.climate_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.climate_prompt', "How does carbon dioxide act like a blanket for the Earth? Let's simulate the greenhouse effect and see what happens."),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'climate-simulator', 60);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   const [isRunning, setIsRunning] = useState(false);
   const [speed, setSpeed] = useState(1);
   const [state, setState] = useState<SimulationState>({
@@ -135,18 +155,18 @@ export default function ClimateSimulator() {
     <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-2">🌡️ Climate Simulator</h2>
-          <p className="text-gray-400 text-lg">Explore how our choices today shape the planet's future</p>
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-2"><Trans i18nKey="auto.climatesimulator.climate_simulator">🌡️ Climate Simulator</Trans></h2>
+          <p className="text-gray-400 text-lg"><Trans i18nKey="auto.climatesimulator.explore_how_our_choices_today_">Explore how our choices today shape the planet's future</Trans></p>
         </motion.div>
 
         {/* Year & Scenario */}
         <div className="flex flex-wrap justify-center gap-4 mb-6">
           <div className="bg-gray-900 rounded-xl border border-gray-800 px-6 py-3 text-center">
-            <div className="text-sm text-gray-500 uppercase font-bold">Year</div>
+            <div className="text-sm text-gray-500 uppercase font-bold"><Trans i18nKey="auto.climatesimulator.year">Year</Trans></div>
             <div className="text-3xl font-black text-white">{state.year}</div>
           </div>
           <div className={`bg-gray-900 rounded-xl border border-gray-800 px-6 py-3 text-center`}>
-            <div className="text-sm text-gray-500 uppercase font-bold">Scenario</div>
+            <div className="text-sm text-gray-500 uppercase font-bold"><Trans i18nKey="auto.climatesimulator.scenario">Scenario</Trans></div>
             <div className={`text-lg font-bold ${scenario.color}`}>{scenario.emoji} {scenario.label}</div>
           </div>
         </div>
@@ -156,51 +176,51 @@ export default function ClimateSimulator() {
           <div className="space-y-4">
             <div className="bg-gray-900 rounded-2xl border border-gray-800 p-5">
               <h3 className="text-sm font-bold text-white mb-4 flex items-center gap-2">
-                <Factory className="w-4 h-4 text-gray-400" /> Policy Controls
-              </h3>
+                <Factory className="w-4 h-4 text-gray-400" /> <Trans i18nKey="auto.climatesimulator.policy_controls">Policy Controls</Trans>
+                                            </h3>
 
               {/* Emissions */}
               <div className="mb-4">
                 <div className="flex justify-between mb-1">
-                  <span className="text-sm text-gray-400">Fossil Fuel Emissions</span>
+                  <span className="text-sm text-gray-400"><Trans i18nKey="auto.climatesimulator.fossil_fuel_emissions">Fossil Fuel Emissions</Trans></span>
                   <span className="text-sm font-mono text-gray-300">{emissions < 30 ? 'Net Zero Path' : emissions < 70 ? 'Moderate' : 'High'}</span>
                 </div>
                 <input type="range" min="0" max="100" value={emissions} onChange={e => setEmissions(Number(e.target.value))}
                   className="w-full h-2 rounded-full appearance-none cursor-pointer"
                   style={{ background: `linear-gradient(to right, #22c55e ${emissions}%, #374151 ${emissions}%)` }} />
                 <div className="flex justify-between text-sm text-gray-600 mt-0.5">
-                  <span>🌱 Net Zero</span>
-                  <span>🏭 High Emissions</span>
+                  <span><Trans i18nKey="auto.climatesimulator.net_zero">🌱 Net Zero</Trans></span>
+                  <span><Trans i18nKey="auto.climatesimulator.high_emissions">🏭 High Emissions</Trans></span>
                 </div>
               </div>
 
               {/* Deforestation */}
               <div className="mb-4">
                 <div className="flex justify-between mb-1">
-                  <span className="text-sm text-gray-400">Deforestation Rate</span>
+                  <span className="text-sm text-gray-400"><Trans i18nKey="auto.climatesimulator.deforestation_rate">Deforestation Rate</Trans></span>
                   <span className="text-sm font-mono text-gray-300">{deforestation < 30 ? 'Reforestation' : deforestation < 70 ? 'Current' : 'Accelerated'}</span>
                 </div>
                 <input type="range" min="0" max="100" value={deforestation} onChange={e => setDeforestation(Number(e.target.value))}
                   className="w-full h-2 rounded-full appearance-none cursor-pointer"
                   style={{ background: `linear-gradient(to right, #22c55e ${deforestation}%, #374151 ${deforestation}%)` }} />
                 <div className="flex justify-between text-sm text-gray-600 mt-0.5">
-                  <span>🌳 Reforestation</span>
-                  <span>🪓 Deforestation</span>
+                  <span><Trans i18nKey="auto.climatesimulator.reforestation">🌳 Reforestation</Trans></span>
+                  <span><Trans i18nKey="auto.climatesimulator.deforestation">🪓 Deforestation</Trans></span>
                 </div>
               </div>
 
               {/* Renewables */}
               <div className="mb-4">
                 <div className="flex justify-between mb-1">
-                  <span className="text-sm text-gray-400">Renewable Energy</span>
+                  <span className="text-sm text-gray-400"><Trans i18nKey="auto.climatesimulator.renewable_energy">Renewable Energy</Trans></span>
                   <span className="text-sm font-mono text-emerald-400">{renewables}%</span>
                 </div>
                 <input type="range" min="0" max="100" value={renewables} onChange={e => setRenewables(Number(e.target.value))}
                   className="w-full h-2 rounded-full appearance-none cursor-pointer"
                   style={{ background: `linear-gradient(to right, #22c55e ${renewables}%, #374151 ${renewables}%)` }} />
                 <div className="flex justify-between text-sm text-gray-600 mt-0.5">
-                  <span>⛽ Fossil</span>
-                  <span>☀️ 100% Renewable</span>
+                  <span><Trans i18nKey="auto.climatesimulator.fossil">⛽ Fossil</Trans></span>
+                  <span><Trans i18nKey="auto.climatesimulator.100_renewable">☀️ 100% Renewable</Trans></span>
                 </div>
               </div>
             </div>
@@ -218,32 +238,32 @@ export default function ClimateSimulator() {
                 </button>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-sm text-gray-500">Speed:</span>
+                <span className="text-sm text-gray-500"><Trans i18nKey="auto.climatesimulator.speed">Speed:</Trans></span>
                 {[1, 2, 5, 10].map(s => (
                   <button key={s} onClick={() => setSpeed(s)}
                     className={`px-2 py-0.5 rounded text-sm font-bold ${speed === s ? 'bg-emerald-500 text-white' : 'bg-gray-800 text-gray-400'}`}>
-                    {s}x
-                  </button>
+                    {s}<Trans i18nKey="auto.climatesimulator.x">x</Trans>
+                                          </button>
                 ))}
               </div>
             </div>
 
             {/* Paris Agreement targets */}
             <div className="bg-blue-500/10 rounded-xl border border-blue-500/20 p-4">
-              <div className="text-sm text-blue-400 font-bold mb-2">🌍 Paris Agreement Targets</div>
+              <div className="text-sm text-blue-400 font-bold mb-2"><Trans i18nKey="auto.climatesimulator.paris_agreement_targets">🌍 Paris Agreement Targets</Trans></div>
               <ul className="text-sm text-gray-300 space-y-1">
                 <li className="flex items-center gap-2">
                   <span className={state.temperature < 1.5 ? 'text-green-400' : 'text-orange-400'}>
                     {state.temperature < 1.5 ? '✓' : '✗'}
                   </span>
-                  Keep warming below 1.5°C
-                </li>
+                  <Trans i18nKey="auto.climatesimulator.keep_warming_below_1_5_c">Keep warming below 1.5°C</Trans>
+                                                  </li>
                 <li className="flex items-center gap-2">
                   <span className={state.temperature < 2 ? 'text-green-400' : 'text-orange-400'}>
                     {state.temperature < 2 ? '✓' : '✗'}
                   </span>
-                  Keep warming below 2°C
-                </li>
+                  <Trans i18nKey="auto.climatesimulator.keep_warming_below_2_c">Keep warming below 2°C</Trans>
+                                                  </li>
               </ul>
             </div>
           </div>
@@ -254,58 +274,58 @@ export default function ClimateSimulator() {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
               <div className="bg-gray-900 rounded-xl border border-gray-800 p-4">
                 <div className="flex items-center gap-2 text-sm text-gray-500 mb-1">
-                  <Thermometer className="w-3 h-3" /> Temperature Rise
-                </div>
+                  <Thermometer className="w-3 h-3" /> <Trans i18nKey="auto.climatesimulator.temperature_rise">Temperature Rise</Trans>
+                                                  </div>
                 <div className={`text-2xl font-black ${getTemperatureColor(state.temperature)}`}>
-                  +{state.temperature.toFixed(1)}°C
-                </div>
-                <div className="text-sm text-gray-600">vs pre-industrial</div>
+                  +{state.temperature.toFixed(1)}<Trans i18nKey="auto.climatesimulator.c">°C</Trans>
+                                                  </div>
+                <div className="text-sm text-gray-600"><Trans i18nKey="auto.climatesimulator.vs_pre_industrial">vs pre-industrial</Trans></div>
               </div>
 
               <div className="bg-gray-900 rounded-xl border border-gray-800 p-4">
                 <div className="flex items-center gap-2 text-sm text-gray-500 mb-1">
-                  <Factory className="w-3 h-3" /> CO₂ Level
-                </div>
+                  <Factory className="w-3 h-3" /> <Trans i18nKey="auto.climatesimulator.co_level">CO₂ Level</Trans>
+                                                  </div>
                 <div className={`text-2xl font-black ${state.co2 > 450 ? 'text-orange-400' : state.co2 > 400 ? 'text-yellow-400' : 'text-green-400'}`}>
-                  {Math.round(state.co2)} ppm
-                </div>
-                <div className="text-sm text-gray-600">Pre-industrial: 280 ppm</div>
+                  {Math.round(state.co2)} <Trans i18nKey="auto.climatesimulator.ppm">ppm</Trans>
+                                                  </div>
+                <div className="text-sm text-gray-600"><Trans i18nKey="auto.climatesimulator.pre_industrial_280_ppm">Pre-industrial: 280 ppm</Trans></div>
               </div>
 
               <div className="bg-gray-900 rounded-xl border border-gray-800 p-4">
                 <div className="flex items-center gap-2 text-sm text-gray-500 mb-1">
-                  <Waves className="w-3 h-3" /> Sea Level Rise
-                </div>
+                  <Waves className="w-3 h-3" /> <Trans i18nKey="auto.climatesimulator.sea_level_rise">Sea Level Rise</Trans>
+                                                  </div>
                 <div className={`text-2xl font-black ${state.seaLevel > 50 ? 'text-orange-400' : state.seaLevel > 30 ? 'text-yellow-400' : 'text-blue-400'}`}>
-                  +{state.seaLevel.toFixed(0)} cm
-                </div>
-                <div className="text-sm text-gray-600">vs 1900 baseline</div>
+                  +{state.seaLevel.toFixed(0)} <Trans i18nKey="auto.climatesimulator.cm">cm</Trans>
+                                                  </div>
+                <div className="text-sm text-gray-600"><Trans i18nKey="auto.climatesimulator.vs_1900_baseline">vs 1900 baseline</Trans></div>
               </div>
 
               <div className="bg-gray-900 rounded-xl border border-gray-800 p-4">
                 <div className="flex items-center gap-2 text-sm text-gray-500 mb-1">
-                  <TreeDeciduous className="w-3 h-3" /> Forest Cover
-                </div>
+                  <TreeDeciduous className="w-3 h-3" /> <Trans i18nKey="auto.climatesimulator.forest_cover">Forest Cover</Trans>
+                                                  </div>
                 <div className={`text-2xl font-black ${state.forestCover > 30 ? 'text-green-400' : state.forestCover > 20 ? 'text-yellow-400' : 'text-orange-400'}`}>
                   {state.forestCover.toFixed(0)}%
                 </div>
-                <div className="text-sm text-gray-600">of land surface</div>
+                <div className="text-sm text-gray-600"><Trans i18nKey="auto.climatesimulator.of_land_surface">of land surface</Trans></div>
               </div>
 
               <div className="bg-gray-900 rounded-xl border border-gray-800 p-4">
-                <div className="text-sm text-gray-500 mb-1">🧊 Ice Sheets</div>
+                <div className="text-sm text-gray-500 mb-1"><Trans i18nKey="auto.climatesimulator.ice_sheets">🧊 Ice Sheets</Trans></div>
                 <div className={`text-2xl font-black ${state.iceSheets > 70 ? 'text-cyan-400' : state.iceSheets > 40 ? 'text-yellow-400' : 'text-orange-400'}`}>
                   {state.iceSheets.toFixed(0)}%
                 </div>
-                <div className="text-sm text-gray-600">remaining</div>
+                <div className="text-sm text-gray-600"><Trans i18nKey="auto.climatesimulator.remaining">remaining</Trans></div>
               </div>
 
               <div className="bg-gray-900 rounded-xl border border-gray-800 p-4">
-                <div className="text-sm text-gray-500 mb-1">⛈️ Extreme Events</div>
+                <div className="text-sm text-gray-500 mb-1"><Trans i18nKey="auto.climatesimulator.extreme_events">⛈️ Extreme Events</Trans></div>
                 <div className={`text-2xl font-black ${state.extremeEvents > 30 ? 'text-orange-400' : state.extremeEvents > 20 ? 'text-orange-400' : 'text-yellow-400'}`}>
-                  ~{state.extremeEvents}/decade
-                </div>
-                <div className="text-sm text-gray-600">floods, fires, storms</div>
+                  ~{state.extremeEvents}<Trans i18nKey="auto.climatesimulator.decade">/decade</Trans>
+                                                  </div>
+                <div className="text-sm text-gray-600"><Trans i18nKey="auto.climatesimulator.floods_fires_storms">floods, fires, storms</Trans></div>
               </div>
             </div>
 
@@ -326,8 +346,8 @@ export default function ClimateSimulator() {
                   initial={{ x: molecule.x, y: molecule.y }}
                   animate={{ y: [0, -10, 0] }}
                   transition={{ repeat: Infinity, duration: molecule.duration, delay: molecule.delay }}>
-                  CO₂
-                </motion.div>
+                  <Trans i18nKey="auto.climatesimulator.co">CO₂</Trans>
+                                      </motion.div>
               ))}
 
               {/* Water level */}
@@ -352,14 +372,14 @@ export default function ClimateSimulator() {
               {/* Temperature indicator */}
               <div className="absolute bottom-4 right-4 bg-black/50 backdrop-blur rounded-lg px-3 py-2">
                 <span className={`text-lg font-bold ${getTemperatureColor(state.temperature)}`}>
-                  +{state.temperature.toFixed(1)}°C
-                </span>
+                  +{state.temperature.toFixed(1)}<Trans i18nKey="auto.climatesimulator.c">°C</Trans>
+                                                  </span>
               </div>
             </div>
 
             {/* Impacts */}
             <div className="bg-gray-900 rounded-xl border border-gray-800 p-4">
-              <h4 className="text-sm font-bold text-white mb-3">📊 Projected Impacts at Current Trajectory</h4>
+              <h4 className="text-sm font-bold text-white mb-3"><Trans i18nKey="auto.climatesimulator.projected_impacts_at_current_t">📊 Projected Impacts at Current Trajectory</Trans></h4>
               <div className="grid sm:grid-cols-2 gap-2 text-sm">
                 {[
                   { temp: 1.5, impact: 'Coral reefs decline 70-90%', emoji: '🪸' },
@@ -372,7 +392,7 @@ export default function ClimateSimulator() {
                   <div key={item.temp}
                     className={`flex items-center gap-2 p-2 rounded-lg ${state.temperature >= item.temp ? 'bg-red-500/20 text-red-300' : 'bg-gray-800/50 text-gray-500'}`}>
                     <span>{item.emoji}</span>
-                    <span>+{item.temp}°C: {item.impact}</span>
+                    <span>+{item.temp}<Trans i18nKey="auto.climatesimulator.c">°C:</Trans> {item.impact}</span>
                   </div>
                 ))}
               </div>

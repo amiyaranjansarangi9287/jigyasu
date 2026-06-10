@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Scissors, RotateCcw, Zap, Info, CheckCircle2 } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface GeneTarget {
   id: string;
@@ -31,10 +35,25 @@ const crisprSteps = [
 ];
 
 export default function CrisprEditor() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
   const [selectedTarget, setSelectedTarget] = useState(targets[0]);
   const [currentStep, setCurrentStep] = useState(-1);
   const [isEditing, setIsEditing] = useState(false);
   const [editComplete, setEditComplete] = useState(false);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.crispr_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.crispr_prompt', 'What if we could rewrite the code of life to cure diseases, just like fixing a typo in a book? Welcome to CRISPR! Ready to edit some DNA?'),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'crispr-editor', 65);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
 
   const startEditing = () => {
     setIsEditing(true);
@@ -59,11 +78,13 @@ export default function CrisprEditor() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
+    <ModuleWrapper moduleId="crispr-editor" progress={progress} setProgress={setProgress} onNavigate={() => {}}>
+      {showChallenge && <ChallengeOverlay challenge={activeChallenge} onClose={() => setShowChallenge(false)} />}
+      <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-2">✂️ CRISPR Gene Editor</h2>
-          <p className="text-gray-400 text-lg">Simulate cutting and editing DNA with CRISPR-Cas9!</p>
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-2"><Trans i18nKey="auto.crispreditor.crispr_gene_editor">✂️ CRISPR Gene Editor</Trans></h2>
+          <p className="text-gray-400 text-lg"><Trans i18nKey="auto.crispreditor.simulate_cutting_and_editing_d">Simulate cutting and editing DNA with CRISPR-Cas9!</Trans></p>
         </motion.div>
 
         {/* Target selector */}
@@ -80,7 +101,7 @@ export default function CrisprEditor() {
           {/* DNA Editing Visualization */}
           <div className="space-y-4">
             <div className="bg-gray-900 rounded-2xl border border-gray-800 p-6">
-              <h3 className="text-sm font-bold text-white mb-4">{selectedTarget.emoji} Target: {selectedTarget.name}</h3>
+              <h3 className="text-sm font-bold text-white mb-4">{selectedTarget.emoji} <Trans i18nKey="auto.crispreditor.target">Target:</Trans> {selectedTarget.name}</h3>
 
               {/* DNA Sequence */}
               <div className="mb-5">
@@ -106,7 +127,7 @@ export default function CrisprEditor() {
                     );
                   })}
                 </div>
-                <div className="text-sm text-gray-600 mt-1">Edit target: <span className="text-yellow-400">{selectedTarget.targetSite}</span></div>
+                <div className="text-sm text-gray-600 mt-1"><Trans i18nKey="auto.crispreditor.edit_target">Edit target:</Trans> <span className="text-yellow-400">{selectedTarget.targetSite}</span></div>
               </div>
 
               {/* CRISPR Steps Animation */}
@@ -142,9 +163,9 @@ export default function CrisprEditor() {
               <div className="flex gap-2">
                 <button onClick={startEditing} disabled={isEditing}
                   className={`flex-1 py-2.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2 ${isEditing ? 'bg-gray-700 text-gray-500 cursor-not-allowed' : editComplete ? 'bg-purple-500 text-white' : 'bg-emerald-500 text-white hover:bg-emerald-600'}`}>
-                  {editComplete ? <><RotateCcw className="w-4 h-4" /> Edit Again</> :
-                   isEditing ? <><Scissors className="w-4 h-4 animate-bounce" /> Editing...</> :
-                   <><Scissors className="w-4 h-4" /> Start CRISPR Edit</>}
+                  {editComplete ? <><RotateCcw className="w-4 h-4" /> <Trans i18nKey="auto.crispreditor.edit_again">Edit Again</Trans></> :
+                   isEditing ? <><Scissors className="w-4 h-4 animate-bounce" /> <Trans i18nKey="auto.crispreditor.editing">Editing...</Trans></> :
+                   <><Scissors className="w-4 h-4" /> <Trans i18nKey="auto.crispreditor.start_crispr_edit">Start CRISPR Edit</Trans></>}
                 </button>
                 <button onClick={reset} className="px-4 py-2.5 rounded-xl bg-gray-800 text-gray-300">
                   <RotateCcw className="w-4 h-4" />
@@ -163,12 +184,12 @@ export default function CrisprEditor() {
                 <p className="text-sm text-gray-300 leading-relaxed mb-4">{selectedTarget.effect}</p>
 
                 <div className="bg-blue-500/10 rounded-xl p-3 border border-blue-500/20 mb-3">
-                  <div className="text-sm text-blue-400 font-bold flex items-center gap-1 mb-1"><Zap className="w-3 h-3" /> Application</div>
+                  <div className="text-sm text-blue-400 font-bold flex items-center gap-1 mb-1"><Zap className="w-3 h-3" /> <Trans i18nKey="auto.crispreditor.application">Application</Trans></div>
                   <p className="text-sm text-gray-300">{selectedTarget.application}</p>
                 </div>
 
                 <div className="bg-green-500/10 rounded-xl p-3 border border-green-500/20">
-                  <div className="text-sm text-green-400 font-bold flex items-center gap-1 mb-1"><Info className="w-3 h-3" /> Real World</div>
+                  <div className="text-sm text-green-400 font-bold flex items-center gap-1 mb-1"><Info className="w-3 h-3" /> <Trans i18nKey="auto.crispreditor.real_world">Real World</Trans></div>
                   <p className="text-sm text-gray-300">{selectedTarget.realWorld}</p>
                 </div>
               </motion.div>
@@ -176,17 +197,17 @@ export default function CrisprEditor() {
 
             {/* How CRISPR Works */}
             <div className="bg-gray-900 rounded-2xl border border-gray-800 p-5">
-              <h4 className="text-sm font-bold text-white mb-3">🧬 What is CRISPR?</h4>
+              <h4 className="text-sm font-bold text-white mb-3"><Trans i18nKey="auto.crispreditor.what_is_crispr">🧬 What is CRISPR?</Trans></h4>
               <div className="text-sm text-gray-300 space-y-2">
-                <p><strong className="text-white">CRISPR-Cas9</strong> is a revolutionary gene-editing tool discovered from bacteria's immune system. It lets scientists precisely cut and edit DNA.</p>
+                <p><strong className="text-white"><Trans i18nKey="auto.crispreditor.crispr_cas9">CRISPR-Cas9</Trans></strong> <Trans i18nKey="auto.crispreditor.is_a_revolutionary_gene_editin">is a revolutionary gene-editing tool discovered from bacteria's immune system. It lets scientists precisely cut and edit DNA.</Trans></p>
                 <div className="grid grid-cols-2 gap-2 mt-2">
                   <div className="bg-gray-800/50 rounded-lg p-2">
-                    <div className="font-bold text-purple-400 text-sm">CRISPR</div>
-                    <div className="text-sm text-gray-500">The GPS — guides Cas9 to the right spot</div>
+                    <div className="font-bold text-purple-400 text-sm"><Trans i18nKey="auto.crispreditor.crispr">CRISPR</Trans></div>
+                    <div className="text-sm text-gray-500"><Trans i18nKey="auto.crispreditor.the_gps_guides_cas9_to_the_rig">The GPS — guides Cas9 to the right spot</Trans></div>
                   </div>
                   <div className="bg-gray-800/50 rounded-lg p-2">
-                    <div className="font-bold text-orange-400 text-sm">Cas9</div>
-                    <div className="text-sm text-gray-500">The scissors — cuts DNA at target</div>
+                    <div className="font-bold text-orange-400 text-sm"><Trans i18nKey="auto.crispreditor.cas9">Cas9</Trans></div>
+                    <div className="text-sm text-gray-500"><Trans i18nKey="auto.crispreditor.the_scissors_cuts_dna_at_targe">The scissors — cuts DNA at target</Trans></div>
                   </div>
                 </div>
               </div>
@@ -194,18 +215,19 @@ export default function CrisprEditor() {
 
             {/* Ethics */}
             <div className="bg-yellow-500/10 rounded-xl border border-yellow-500/20 p-4">
-              <div className="text-sm text-yellow-400 font-bold mb-1">⚖️ Ethical Considerations</div>
+              <div className="text-sm text-yellow-400 font-bold mb-1"><Trans i18nKey="auto.crispreditor.ethical_considerations">⚖️ Ethical Considerations</Trans></div>
               <ul className="text-sm text-gray-300 space-y-1">
-                <li>• Somatic edits (body cells) are temporary; germline edits (eggs/sperm) are inherited</li>
-                <li>• Editing human embryos is banned in most countries</li>
-                <li>• Gene drives could eliminate species — ecological risks</li>
-                <li>• "Designer babies" raise equity and consent concerns</li>
-                <li>• Approved therapies treat serious diseases only</li>
+                <li><Trans i18nKey="auto.crispreditor.somatic_edits_body_cells_are_t">• Somatic edits (body cells) are temporary; germline edits (eggs/sperm) are inherited</Trans></li>
+                <li><Trans i18nKey="auto.crispreditor.editing_human_embryos_is_banne">• Editing human embryos is banned in most countries</Trans></li>
+                <li><Trans i18nKey="auto.crispreditor.gene_drives_could_eliminate_sp">• Gene drives could eliminate species — ecological risks</Trans></li>
+                <li><Trans i18nKey="auto.crispreditor.designer_babies_raise_equity_a">• "Designer babies" raise equity and consent concerns</Trans></li>
+                <li><Trans i18nKey="auto.crispreditor.approved_therapies_treat_serio">• Approved therapies treat serious diseases only</Trans></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
+    </ModuleWrapper>
   );
 }

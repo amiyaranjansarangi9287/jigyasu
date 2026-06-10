@@ -5,7 +5,7 @@ export interface Achievement {
   name: string;
   description: string;
   icon: string;
-  pillar?: 'toybox' | 'sciencelab' | 'artstudio' | 'outdoorquest' | 'global';
+  pillar?: string;
   category: 'milestone' | 'pillar' | 'special' | 'streak' | 'campweek';
   condition: string; // Human-readable condition for documentation
   threshold?: number; // Number needed to unlock (if applicable)

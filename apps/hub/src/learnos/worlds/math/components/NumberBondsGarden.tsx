@@ -124,7 +124,7 @@ export default function NumberBondsGarden() {
                   <span className="text-lg font-bold text-white">
                     <span className="text-blue-400">{pair.a}</span>
                     <span className="text-purple-400 mx-1">+</span>
-                    <span className="text-orange-400">{pair.b}</span>
+                    <span className="text-sky-400">{pair.b}</span>
                   </span>
                 </div>
                 <div className="flex items-center gap-2">

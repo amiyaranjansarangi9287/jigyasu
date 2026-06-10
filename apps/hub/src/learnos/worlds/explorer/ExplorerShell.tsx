@@ -6,6 +6,7 @@ import { useExplorerSession } from './hooks/useExplorerSession';
 import { useLumoPeer } from './hooks/useLumoPeer';
 import type { ExplorerConcept } from './types/explorer.types';
 import { EXPLORER_CONCEPTS } from './data/explorerContent';
+import { Trans } from "react-i18next";
 
 interface ExplorerShellProps {
   concept: ExplorerConcept;
@@ -41,8 +42,8 @@ export default function ExplorerShell({ concept, children }: ExplorerShellProps)
           className="text-slate-600 hover:text-slate-400 text-sm
                      transition-colors flex items-center gap-1"
         >
-          ← Explorer
-        </button>
+          <Trans i18nKey="auto.explorershell.explorer">← Explorer</Trans>
+                          </button>
         {/* Subject tag — very subtle */}
         <span className="text-slate-700 text-sm capitalize">
           {conceptInfo?.subject}

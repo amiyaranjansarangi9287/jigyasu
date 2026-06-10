@@ -6,6 +6,7 @@
 
 import { useOnlineStatus } from '../hooks/useOnlineStatus';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Trans } from "react-i18next";
 
 export function OfflineStatusBanner() {
   const { isOnline, wasOffline } = useOnlineStatus();
@@ -27,8 +28,8 @@ export function OfflineStatusBanner() {
           <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-center gap-3">
             <span className="text-2xl">📴</span>
             <p className="text-amber-900 font-medium text-sm">
-              You're offline. Don't worry — Jigyasu works without internet!
-            </p>
+              <Trans i18nKey="auto.offlinestatusbanner.you_re_offline_don_t_worry_jig">You're offline. Don't worry — Jigyasu works without internet!</Trans>
+                                      </p>
           </div>
         </motion.div>
       )}
@@ -42,8 +43,8 @@ export function OfflineStatusBanner() {
           <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-center gap-3">
             <span className="text-2xl">📶</span>
             <p className="text-green-900 font-medium text-sm">
-              You're back online! Your progress will sync when ready.
-            </p>
+              <Trans i18nKey="auto.offlinestatusbanner.you_re_back_online_your_progre">You're back online! Your progress will sync when ready.</Trans>
+                                      </p>
           </div>
         </motion.div>
       )}

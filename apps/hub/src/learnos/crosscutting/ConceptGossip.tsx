@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { ROUTES } from '../constants/routes';
 import { ParentCorner } from '../shared/layout';
 import { Button, Card } from '@jigyasu/ui';
@@ -69,8 +69,8 @@ export default function ConceptGossip() {
             ←
           </button>
           <span className="text-sm text-gray-400">
-            {CONCEPT_GOSSIPS.length} conversations
-          </span>
+            {CONCEPT_GOSSIPS.length} <Trans i18nKey="auto.conceptgossip.conversations">conversations</Trans>
+                                </span>
         </div>
 
         <AnimatePresence mode="wait">

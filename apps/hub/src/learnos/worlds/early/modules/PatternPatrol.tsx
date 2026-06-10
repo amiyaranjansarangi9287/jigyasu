@@ -2,7 +2,7 @@
 // Detective-themed pattern completion. Difficulty escalates.
 
 import { useState, useCallback, useMemo } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { useSettingsStore } from '@/store';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
@@ -98,7 +98,7 @@ export default function PatternPatrol() {
             <span className="text-3xl">{t('early.modules.PatternPatrol.spn_', '🐤🔍')}</span>
             <div>
               <p className="text-lg font-bold text-gray-700">{t('early.modules.PatternPatrol.txt_Whatcomesn', 'What comes next?')}</p>
-              <p className="text-sm text-gray-500">Level {difficulty} · {consecutiveCorrect}/3 to level up</p>
+              <p className="text-sm text-gray-500"><Trans i18nKey="auto.patternpatrol.level">Level</Trans> {difficulty} · {consecutiveCorrect}<Trans i18nKey="auto.patternpatrol.3_to_level_up">/3 to level up</Trans></p>
             </div>
           </div>
         </div>

@@ -6,6 +6,7 @@
 import { useState } from 'react';
 import { usePWAInstall } from '../hooks/usePWAInstall';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Trans } from "react-i18next";
 
 export function PWAInstallPrompt() {
   const { isInstallable, promptInstall } = usePWAInstall();
@@ -39,24 +40,24 @@ export function PWAInstallPrompt() {
             <div className="text-4xl flex-shrink-0">🦚</div>
             <div className="flex-1">
               <h3 className="font-bold text-indigo-900 text-lg mb-1">
-                Install Jigyasu
-              </h3>
+                <Trans i18nKey="auto.pwainstallprompt.install_jigyasu">Install Jigyasu</Trans>
+                                            </h3>
               <p className="text-slate-600 text-sm mb-3">
-                Get the full experience with offline access and faster loading.
-              </p>
+                <Trans i18nKey="auto.pwainstallprompt.get_the_full_experience_with_o">Get the full experience with offline access and faster loading.</Trans>
+                                            </p>
               <div className="flex gap-2">
                 <button
                   onClick={handleInstall}
                   className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2.5 px-4 rounded-xl transition-colors"
                 >
-                  Install
-                </button>
+                  <Trans i18nKey="auto.pwainstallprompt.install">Install</Trans>
+                                                  </button>
                 <button
                   onClick={handleDismiss}
                   className="px-4 py-2.5 text-slate-500 hover:text-slate-700 font-medium transition-colors"
                 >
-                  Later
-                </button>
+                  <Trans i18nKey="auto.pwainstallprompt.later">Later</Trans>
+                                                  </button>
               </div>
             </div>
           </div>

@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Zap, Info } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface BrainRegion {
   id: string;
@@ -86,6 +90,22 @@ const synapticSparks = Array.from({ length: 5 }, (_, i) => ({
 }));
 
 export default function BrainExplorer() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.brain_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.brain_prompt', "Your brain is a supercomputer that runs on electricity and chemicals! Let's explore its incredible regions and functions."),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'brain-explorer', 60);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   const [selected, setSelected] = useState<BrainRegion | null>(null);
   const [hovered, setHovered] = useState<string | null>(null);
   const [showNeuronAnim] = useState(true);
@@ -94,8 +114,8 @@ export default function BrainExplorer() {
     <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-2">🧠 Brain Explorer</h2>
-          <p className="text-gray-400 text-lg">Click on any brain region to discover its functions!</p>
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-2"><Trans i18nKey="auto.brainexplorer.brain_explorer">🧠 Brain Explorer</Trans></h2>
+          <p className="text-gray-400 text-lg"><Trans i18nKey="auto.brainexplorer.click_on_any_brain_region_to_d">Click on any brain region to discover its functions!</Trans></p>
         </motion.div>
 
         {/* Neuron facts ticker */}
@@ -164,7 +184,7 @@ export default function BrainExplorer() {
                     className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-gray-900/95 backdrop-blur px-4 py-2 rounded-xl border border-purple-500/30 z-20 pointer-events-none">
                     <div className="flex items-center gap-2 text-sm text-white">
                       <Zap className="w-4 h-4 text-purple-400" />
-                      Click to explore <strong>{regions.find(r => r.id === hovered)?.name}</strong>
+                      <Trans i18nKey="auto.brainexplorer.click_to_explore">Click to explore</Trans> <strong>{regions.find(r => r.id === hovered)?.name}</strong>
                     </div>
                   </motion.div>
                 )}
@@ -205,7 +225,7 @@ export default function BrainExplorer() {
                   <div className="w-14 h-1 rounded-full mb-3" style={{ backgroundColor: selected.color }} />
                   <p className="text-gray-300 text-sm leading-relaxed mb-4">{selected.description}</p>
 
-                  <h4 className="text-sm font-bold text-white mb-2 uppercase tracking-wider">Key Functions</h4>
+                  <h4 className="text-sm font-bold text-white mb-2 uppercase tracking-wider"><Trans i18nKey="auto.brainexplorer.key_functions">Key Functions</Trans></h4>
                   <ul className="space-y-1.5 mb-4">
                     {selected.functions.map((f, i) => (
                       <motion.li key={i} initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }}
@@ -219,13 +239,13 @@ export default function BrainExplorer() {
 
                   <div className="bg-gradient-to-br from-purple-900/20 to-indigo-900/20 rounded-xl p-3 mb-3 border border-purple-500/20">
                     <div className="flex items-center gap-1.5 text-purple-400 font-bold text-sm mb-1">
-                      <Info className="w-3 h-3" /> Fun Fact
-                    </div>
+                      <Info className="w-3 h-3" /> <Trans i18nKey="auto.brainexplorer.fun_fact">Fun Fact</Trans>
+                                                              </div>
                     <p className="text-gray-300 text-sm italic">{selected.funFact}</p>
                   </div>
 
                   <div className="bg-red-500/10 rounded-xl p-3 border border-red-500/20">
-                    <div className="text-sm text-orange-400 font-bold mb-1">⚠️ If Damaged</div>
+                    <div className="text-sm text-orange-400 font-bold mb-1"><Trans i18nKey="auto.brainexplorer.if_damaged">⚠️ If Damaged</Trans></div>
                     <p className="text-sm text-gray-300">{selected.damage}</p>
                   </div>
                 </motion.div>
@@ -233,15 +253,15 @@ export default function BrainExplorer() {
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
                   className="bg-gray-900 rounded-2xl border border-gray-800 p-5 text-center sticky top-20">
                   <div className="text-5xl mb-3">🧠</div>
-                  <h3 className="text-lg font-bold text-white mb-2">Select a Region</h3>
-                  <p className="text-gray-400 text-sm mb-4">Click any region on the brain map to learn about its functions.</p>
+                  <h3 className="text-lg font-bold text-white mb-2"><Trans i18nKey="auto.brainexplorer.select_a_region">Select a Region</Trans></h3>
+                  <p className="text-gray-400 text-sm mb-4"><Trans i18nKey="auto.brainexplorer.click_any_region_on_the_brain_">Click any region on the brain map to learn about its functions.</Trans></p>
                   <div className="bg-gray-800/30 rounded-xl p-3 text-left">
-                    <h4 className="text-sm font-bold text-gray-400 mb-2">💡 Quick Facts</h4>
+                    <h4 className="text-sm font-bold text-gray-400 mb-2"><Trans i18nKey="auto.brainexplorer.quick_facts">💡 Quick Facts</Trans></h4>
                     <ul className="text-sm text-gray-400 space-y-1">
-                      <li>• The brain weighs about 3 pounds (1.4 kg)</li>
-                      <li>• It generates about 20 watts of power</li>
-                      <li>• Left hemisphere ≠ "logical" / Right ≠ "creative" (it's a myth!)</li>
-                      <li>• You don't use only 10% — you use all of it</li>
+                      <li><Trans i18nKey="auto.brainexplorer.the_brain_weighs_about_3_pound">• The brain weighs about 3 pounds (1.4 kg)</Trans></li>
+                      <li><Trans i18nKey="auto.brainexplorer.it_generates_about_20_watts_of">• It generates about 20 watts of power</Trans></li>
+                      <li><Trans i18nKey="auto.brainexplorer.left_hemisphere_logical_right_">• Left hemisphere ≠ "logical" / Right ≠ "creative" (it's a myth!)</Trans></li>
+                      <li><Trans i18nKey="auto.brainexplorer.you_don_t_use_only_10_you_use_">• You don't use only 10% — you use all of it</Trans></li>
                     </ul>
                   </div>
                 </motion.div>

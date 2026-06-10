@@ -1,5 +1,6 @@
 import { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Trans } from "react-i18next";
 
 function makeChallenge() {
   const ops = ['+', '-', '×'] as const;
@@ -21,7 +22,7 @@ export default function IntegersNumberLine() {
   const [rangeStart, setRangeStart] = useState(-10);
   const [rangeEnd, setRangeEnd] = useState(10);
   const [challenge, setChallenge] = useState(makeChallenge);
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [mastery, setMastery] = useState(0);
   const [opA, setOpA] = useState(-3);
   const [opB, setOpB] = useState(5);
@@ -42,7 +43,7 @@ export default function IntegersNumberLine() {
     if (opt === challenge.answer) {
       setFeedback('correct'); setMastery(m => m + 1);
       setTimeout(() => { setChallenge(makeChallenge()); setFeedback(null); }, 1200);
-    } else { setFeedback('wrong'); setTimeout(() => setFeedback(null), 900); }
+    } else { setFeedback('hint'); setTimeout(() => setFeedback(null), 900); }
   };
 
   const nums = useMemo(() => {
@@ -55,19 +56,19 @@ export default function IntegersNumberLine() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🔢 Integers & Number Line</h2>
-        <p className="text-purple-300 text-lg">Explore negative numbers, zero, and integer operations.</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.integersnumberline.integers_number_line">🔢 Integers & Number Line</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.integersnumberline.explore_negative_numbers_zero_">Explore negative numbers, zero, and integer operations.</Trans></p>
       </div>
 
       <div className="flex justify-center gap-2 mb-6">
-        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'explore' ? 'bg-blue-500/30 text-blue-300 border border-blue-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => setMode('explore')}>🔍 Explore</button>
-        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'challenge' ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => { setMode('challenge'); setChallenge(makeChallenge()); }}>🎯 Challenge</button>
+        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'explore' ? 'bg-blue-500/30 text-blue-300 border border-blue-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => setMode('explore')}><Trans i18nKey="auto.integersnumberline.explore">🔍 Explore</Trans></button>
+        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'challenge' ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => { setMode('challenge'); setChallenge(makeChallenge()); }}><Trans i18nKey="auto.integersnumberline.challenge">🎯 Challenge</Trans></button>
       </div>
 
       <AnimatePresence mode="wait">
         {mode === 'challenge' ? (
           <motion.div key="ch" className="max-w-lg mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
+            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'hint' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
               <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {mastery}</span></div>
               <p className="text-3xl font-bold text-white text-center font-mono mb-5">{challenge.display} = ?</p>
               <div className="grid grid-cols-2 gap-3">
@@ -75,19 +76,19 @@ export default function IntegersNumberLine() {
                   <motion.button key={opt} className={`py-3 rounded-xl text-xl font-bold ${feedback === 'correct' && opt === challenge.answer ? 'bg-green-500 text-white' : feedback ? 'bg-white/5 text-gray-500' : 'bg-white/10 text-white hover:bg-white/20 border border-white/20'}`} whileHover={!feedback ? { scale: 1.05 } : {}} whileTap={!feedback ? { scale: 0.95 } : {}} onClick={() => answerChallenge(opt)} disabled={!!feedback}>{opt}</motion.button>
                 ))}
               </div>
-              {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✅ Correct!</p>}
-              {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Answer: {challenge.answer}</p>}
+              {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4"><Trans i18nKey="auto.integersnumberline.correct">✅ Correct!</Trans></p>}
+              {feedback === 'hint' && <p className="text-sky-400 font-bold text-center mt-4"><Trans i18nKey="auto.integersnumberline.answer">Answer:</Trans> {challenge.answer}</p>}
             </div>
           </motion.div>
         ) : (
           <motion.div key="ex" className="space-y-6" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
             {/* Number line */}
             <div className="bg-white/5 rounded-2xl p-5 border border-white/10 overflow-x-auto">
-              <h4 className="text-white font-bold mb-3 text-center">Number Line</h4>
+              <h4 className="text-white font-bold mb-3 text-center"><Trans i18nKey="auto.integersnumberline.number_line">Number Line</Trans></h4>
               <div className="flex items-center gap-3 mb-3 justify-center">
-                <label className="text-gray-400 text-sm">Range</label>
+                <label className="text-gray-400 text-sm"><Trans i18nKey="auto.integersnumberline.range">Range</Trans></label>
                 <input type="number" value={rangeStart} onChange={e => setRangeStart(Number(e.target.value))} className="w-16 bg-white/10 border border-white/20 rounded px-2 py-1 text-white text-sm text-center" />
-                <span className="text-gray-400">to</span>
+                <span className="text-gray-400"><Trans i18nKey="auto.integersnumberline.to">to</Trans></span>
                 <input type="number" value={rangeEnd} onChange={e => setRangeEnd(Math.max(Number(e.target.value), rangeStart + 1))} className="w-16 bg-white/10 border border-white/20 rounded px-2 py-1 text-white text-sm text-center" />
               </div>
               <svg width={lineWidth + 40} height="80" viewBox={`-20 0 ${lineWidth + 40} 80`} className="mx-auto">
@@ -113,13 +114,13 @@ export default function IntegersNumberLine() {
                 <input type="range" min={rangeStart} max={rangeEnd} value={value} onChange={e => setValue(Number(e.target.value))} className="w-64 accent-yellow-500" />
               </div>
               <p className="text-center text-gray-400 text-sm mt-1">
-                {value < 0 ? '🔴 Negative' : value === 0 ? '🟣 Zero' : '🟢 Positive'} integer: <span className="text-white font-bold">{value}</span> — Absolute value |{value}| = {Math.abs(value)}
+                {value < 0 ? '🔴 Negative' : value === 0 ? '🟣 Zero' : '🟢 Positive'} <Trans i18nKey="auto.integersnumberline.integer">integer:</Trans> <span className="text-white font-bold">{value}</span> <Trans i18nKey="auto.integersnumberline.absolute_value">— Absolute value |</Trans>{value}| = {Math.abs(value)}
               </p>
             </div>
 
             {/* Operations calculator */}
             <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
-              <h4 className="text-white font-bold mb-3 text-center">Integer Operations</h4>
+              <h4 className="text-white font-bold mb-3 text-center"><Trans i18nKey="auto.integersnumberline.integer_operations">Integer Operations</Trans></h4>
               <div className="flex flex-wrap items-center justify-center gap-3 mb-4">
                 <input type="number" value={opA} onChange={e => setOpA(Number(e.target.value))} className="w-20 bg-white/10 border border-blue-400/30 rounded-lg px-3 py-2 text-blue-400 font-bold text-center text-xl" />
                 <div className="flex gap-1">
@@ -127,23 +128,23 @@ export default function IntegersNumberLine() {
                     <button key={o} className={`w-10 h-10 rounded-lg font-bold text-xl ${opType === o ? 'bg-purple-500/40 text-purple-300' : 'bg-white/10 text-gray-400'}`} onClick={() => setOpType(o)}>{o}</button>
                   ))}
                 </div>
-                <input type="number" value={opB} onChange={e => setOpB(Number(e.target.value))} className="w-20 bg-white/10 border border-orange-400/30 rounded-lg px-3 py-2 text-orange-400 font-bold text-center text-xl" />
+                <input type="number" value={opB} onChange={e => setOpB(Number(e.target.value))} className="w-20 bg-white/10 border border-orange-400/30 rounded-lg px-3 py-2 text-sky-400 font-bold text-center text-xl" />
                 <span className="text-gray-400 text-2xl">=</span>
                 <motion.span key={result} className="text-green-400 font-bold text-3xl" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>{result}</motion.span>
               </div>
 
               {/* Rules */}
               <div className="bg-black/20 rounded-xl p-4 text-sm space-y-1">
-                <p className="text-gray-300">📘 <strong className="text-blue-300">Adding:</strong> same signs → add & keep sign. Different signs → subtract & keep sign of larger absolute.</p>
-                <p className="text-gray-300">📙 <strong className="text-orange-300">Subtracting:</strong> change to adding the opposite. a - b = a + (-b)</p>
-                <p className="text-gray-300">📗 <strong className="text-green-300">Multiplying:</strong> same signs → positive. Different signs → negative.</p>
-                <p className="text-gray-300 mt-2">Example: <span className="text-white font-mono">{opA < 0 ? `(${opA})` : opA} {opType} {opB < 0 ? `(${opB})` : opB} = {result}</span></p>
+                <p className="text-gray-300">📘 <strong className="text-blue-300"><Trans i18nKey="auto.integersnumberline.adding">Adding:</Trans></strong> <Trans i18nKey="auto.integersnumberline.same_signs_add_keep_sign_diffe">same signs → add & keep sign. Different signs → subtract & keep sign of larger absolute.</Trans></p>
+                <p className="text-gray-300">📙 <strong className="text-orange-300"><Trans i18nKey="auto.integersnumberline.subtracting">Subtracting:</Trans></strong> <Trans i18nKey="auto.integersnumberline.change_to_adding_the_opposite_">change to adding the opposite. a - b = a + (-b)</Trans></p>
+                <p className="text-gray-300">📗 <strong className="text-green-300"><Trans i18nKey="auto.integersnumberline.multiplying">Multiplying:</Trans></strong> <Trans i18nKey="auto.integersnumberline.same_signs_positive_different_">same signs → positive. Different signs → negative.</Trans></p>
+                <p className="text-gray-300 mt-2"><Trans i18nKey="auto.integersnumberline.example">Example:</Trans> <span className="text-white font-mono">{opA < 0 ? `(${opA})` : opA} {opType} {opB < 0 ? `(${opB})` : opB} = {result}</span></p>
               </div>
             </div>
 
             {/* Ordering */}
             <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
-              <h4 className="text-white font-bold mb-3 text-center">Number Order</h4>
+              <h4 className="text-white font-bold mb-3 text-center"><Trans i18nKey="auto.integersnumberline.number_order">Number Order</Trans></h4>
               <div className="flex items-center justify-center gap-2 flex-wrap">
                 {[...Array(11)].map((_, i) => {
                   const n = i - 5;
@@ -155,7 +156,7 @@ export default function IntegersNumberLine() {
                   );
                 })}
               </div>
-              <p className="text-center text-gray-500 text-sm mt-2">-5 &lt; -4 &lt; … &lt; 0 &lt; … &lt; 4 &lt; 5</p>
+              <p className="text-center text-gray-500 text-sm mt-2"><Trans i18nKey="auto.integersnumberline.5_lt_4_lt_lt_0_lt_lt_4_lt_5">-5 &lt; -4 &lt; … &lt; 0 &lt; … &lt; 4 &lt; 5</Trans></p>
             </div>
           </motion.div>
         )}

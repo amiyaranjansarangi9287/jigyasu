@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { sfx } from '../../lib/soundEngine';
+import { Trans } from "react-i18next";
 
 export interface HubItem {
   id: string;
@@ -82,7 +83,7 @@ export default function HubNav({ items, active, onSelect, layoutId }: HubNavProp
               <span>{items.find(i => i.id === active)?.emoji}</span>
               {items.find(i => i.id === active)?.label}
             </span>
-            <span className="text-gray-500 text-sm">tap below to switch</span>
+            <span className="text-gray-500 text-sm"><Trans i18nKey="auto.hubnav.tap_below_to_switch">tap below to switch</Trans></span>
           </div>
 
           {/* Category groups */}

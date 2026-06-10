@@ -1,5 +1,6 @@
 import type { InterestLens } from '../types/explorer.types';
 import { INTEREST_LENSES } from '../data/explorerContent';
+import { Trans } from "react-i18next";
 
 interface ExplorerNavProps {
   selectedLens: InterestLens | 'all';
@@ -11,8 +12,8 @@ export function ExplorerNav({ selectedLens, onSelectLens }: ExplorerNavProps) {
   return (
     <div className="px-5 mb-4">
       <p className="text-slate-600 text-sm mb-2">
-        What are you here for today?
-      </p>
+        <Trans i18nKey="auto.explorernav.what_are_you_here_for_today">What are you here for today?</Trans>
+                    </p>
       <div className="flex gap-2 overflow-x-auto no-scrollbar pb-1">
         <button
           onClick={() => onSelectLens('all')}
@@ -23,8 +24,8 @@ export function ExplorerNav({ selectedLens, onSelectLens }: ExplorerNavProps) {
               : 'bg-slate-900 text-slate-400 border border-slate-800'
           }`}
         >
-          Everything
-        </button>
+          <Trans i18nKey="auto.explorernav.everything">Everything</Trans>
+                          </button>
         {(Object.entries(INTEREST_LENSES) as [InterestLens, typeof INTEREST_LENSES[InterestLens]][]).map(([key, lens]) => (
           <button
             key={key}

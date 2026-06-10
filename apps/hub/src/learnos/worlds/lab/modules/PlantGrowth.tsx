@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/PlantGrowth.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -70,8 +70,8 @@ export default function PlantGrowth() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.PlantGrowth.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-600 font-bold text-sm mb-1">Indian Agriculture</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">India's Green Revolution (1960s) transformed food production. Ancient <strong>Vrikshayurveda</strong> (1000 BCE) documented plant science — grafting, soil types, and seasonal cycles — 3,000 years before modern botany.</p>
+              <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.plantgrowth.indian_agriculture">Indian Agriculture</Trans></h3>
+              <p className="text-gray-600 text-sm leading-relaxed"><Trans i18nKey="auto.plantgrowth.india_s_green_revolution_1960s">India's Green Revolution (1960s) transformed food production. Ancient</Trans> <strong><Trans i18nKey="auto.plantgrowth.vrikshayurveda">Vrikshayurveda</Trans></strong> <Trans i18nKey="auto.plantgrowth.1000_bce_documented_plant_scie">(1000 BCE) documented plant science — grafting, soil types, and seasonal cycles — 3,000 years before modern botany.</Trans></p>
             </div>
           </div>
         </div>

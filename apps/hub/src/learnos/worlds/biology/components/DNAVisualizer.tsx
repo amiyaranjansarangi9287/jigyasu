@@ -1,6 +1,11 @@
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Play, Pause, RotateCcw, Zap, BookOpen, FlaskConical } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import PremiumSlider from '../../../shared/ui/PremiumSlider';
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 const basePairs = [
   { left: 'A', right: 'T', colorL: '#ef4444', colorR: '#3b82f6' },
@@ -69,7 +74,22 @@ const dnaParticles = Array.from({ length: 25 }, (_, i) => ({
 }));
 
 export default function DNAVisualizer() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
   const [playing, setPlaying] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.dna_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.dna_prompt', 'Inside every cell in your body is a tiny instruction manual that makes you YOU! How does it work? Let\'s unwind the double helix!'),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'dna-visualizer', 70);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
   const [time, setTime] = useState(0);
   const [speed, setSpeed] = useState(1);
   const [factIndex, setFactIndex] = useState(0);
@@ -112,11 +132,13 @@ export default function DNAVisualizer() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
+    <ModuleWrapper moduleId="dna-visualizer" progress={progress} setProgress={setProgress} onNavigate={() => {}}>
+      {showChallenge && <ChallengeOverlay challenge={activeChallenge} onClose={() => setShowChallenge(false)} />}
+      <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-2">🧬 DNA Visualizer</h2>
-          <p className="text-gray-400 text-lg">Watch the double helix twist, unwind, and transcribe!</p>
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-2"><Trans i18nKey="auto.dnavisualizer.dna_visualizer">🧬 DNA Visualizer</Trans></h2>
+          <p className="text-gray-400 text-lg"><Trans i18nKey="auto.dnavisualizer.watch_the_double_helix_twist_u">Watch the double helix twist, unwind, and transcribe!</Trans></p>
         </motion.div>
 
         {/* View Mode Tabs */}
@@ -142,8 +164,8 @@ export default function DNAVisualizer() {
             {playing ? 'Pause' : 'Play'}
           </button>
           <button onClick={reset} className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800 text-gray-300 text-sm font-medium hover:bg-gray-700">
-            <RotateCcw className="w-4 h-4" /> Reset
-          </button>
+            <RotateCcw className="w-4 h-4" /> <Trans i18nKey="auto.dnavisualizer.reset">Reset</Trans>
+                                </button>
           {viewMode === 'helix' && (
             <button onClick={() => setUnzipping(!unzipping)} className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium ${unzipping ? 'bg-red-500 text-white' : 'bg-gray-800 text-gray-300 hover:bg-gray-700'}`}>
               <Zap className="w-4 h-4" /> {unzipping ? 'Stop Unzip' : 'Unzip DNA'}
@@ -154,13 +176,8 @@ export default function DNAVisualizer() {
               <FlaskConical className="w-4 h-4" /> {showMRNA ? 'Hide mRNA' : 'Show mRNA'}
             </button>
           )}
-          <div className="flex items-center gap-1 px-3 py-1.5 rounded-full bg-gray-800">
-            <span className="text-gray-400 text-sm">Speed:</span>
-            {[0.5, 1, 2, 3].map(s => (
-              <button key={s} onClick={() => setSpeed(s)} className={`px-2 py-0.5 rounded-full text-sm font-bold ${speed === s ? 'bg-emerald-500 text-white' : 'text-gray-400 hover:text-white'}`}>
-                {s}x
-              </button>
-            ))}
+          <div className="w-48 ml-4">
+            <PremiumSlider label={t('auto.dnavisualizer.speed', 'Speed')} value={speed} min={0.5} max={3} step={0.5} unit="x" color="purple" onChange={setSpeed} />
           </div>
         </div>
 
@@ -227,7 +244,7 @@ export default function DNAVisualizer() {
 
                   {highlightedPair !== null && (
                     <div className="absolute top-3 left-3 bg-gray-900/90 backdrop-blur px-3 py-2 rounded-lg border border-purple-500/30 text-sm">
-                      <span className="text-purple-400 font-bold">Pair #{highlightedPair + 1}:</span>{' '}
+                      <span className="text-purple-400 font-bold"><Trans i18nKey="auto.dnavisualizer.pair">Pair #</Trans>{highlightedPair + 1}:</span>{' '}
                       <span style={{ color: basePairs[highlightedPair].colorL }}>{basePairs[highlightedPair].left}</span>
                       <span className="text-gray-500"> — </span>
                       <span style={{ color: basePairs[highlightedPair].colorR }}>{basePairs[highlightedPair].right}</span>
@@ -240,12 +257,12 @@ export default function DNAVisualizer() {
             {viewMode === 'transcription' && (
               <div className="bg-gray-900 rounded-2xl border border-gray-800 p-6">
                 <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
-                  <BookOpen className="w-5 h-5 text-purple-400" /> DNA → mRNA Transcription
-                </h3>
+                  <BookOpen className="w-5 h-5 text-purple-400" /> <Trans i18nKey="auto.dnavisualizer.dna_mrna_transcription">DNA → mRNA Transcription</Trans>
+                                                  </h3>
                 <div className="space-y-1 font-mono text-sm overflow-x-auto">
                   {/* DNA Template strand */}
                   <div className="flex items-center gap-1">
-                    <span className="text-gray-500 text-sm w-24 shrink-0">3' DNA:</span>
+                    <span className="text-gray-500 text-sm w-24 shrink-0"><Trans i18nKey="auto.dnavisualizer.3_dna">3' DNA:</Trans></span>
                     <div className="flex gap-0.5">
                       {basePairs.map((bp, i) => (
                         <motion.div key={i} initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }}
@@ -256,7 +273,7 @@ export default function DNAVisualizer() {
                         </motion.div>
                       ))}
                     </div>
-                    <span className="text-gray-500 text-sm ml-1">5'</span>
+                    <span className="text-gray-500 text-sm ml-1"><Trans i18nKey="auto.dnavisualizer.5">5'</Trans></span>
                   </div>
 
                   {/* Bonds */}
@@ -271,7 +288,7 @@ export default function DNAVisualizer() {
 
                   {/* DNA Coding strand */}
                   <div className="flex items-center gap-1">
-                    <span className="text-gray-500 text-sm w-24 shrink-0">5' DNA:</span>
+                    <span className="text-gray-500 text-sm w-24 shrink-0"><Trans i18nKey="auto.dnavisualizer.5_dna">5' DNA:</Trans></span>
                     <div className="flex gap-0.5">
                       {basePairs.map((bp, i) => (
                         <motion.div key={i} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
@@ -282,7 +299,7 @@ export default function DNAVisualizer() {
                         </motion.div>
                       ))}
                     </div>
-                    <span className="text-gray-500 text-sm ml-1">3'</span>
+                    <span className="text-gray-500 text-sm ml-1"><Trans i18nKey="auto.dnavisualizer.3">3'</Trans></span>
                   </div>
 
                   {/* Arrow */}
@@ -292,13 +309,13 @@ export default function DNAVisualizer() {
                         <div className="flex items-center gap-1 py-2">
                           <span className="w-24 shrink-0" />
                           <div className="text-purple-400 text-sm flex items-center gap-1">
-                            ↓ RNA Polymerase transcribes template strand → mRNA
-                          </div>
+                            <Trans i18nKey="auto.dnavisualizer.rna_polymerase_transcribes_tem">↓ RNA Polymerase transcribes template strand → mRNA</Trans>
+                                                                                </div>
                         </div>
 
                         {/* mRNA */}
                         <div className="flex items-center gap-1">
-                          <span className="text-orange-400 text-sm w-24 shrink-0 font-bold">5' mRNA:</span>
+                          <span className="text-orange-400 text-sm w-24 shrink-0 font-bold"><Trans i18nKey="auto.dnavisualizer.5_mrna">5' mRNA:</Trans></span>
                           <div className="flex gap-0.5">
                             {mRNASequence.map((base, i) => {
                               const colors: Record<string, string> = { A: '#ef4444', U: '#8b5cf6', G: '#10b981', C: '#f59e0b' };
@@ -314,7 +331,7 @@ export default function DNAVisualizer() {
                               );
                             })}
                           </div>
-                          <span className="text-gray-500 text-sm ml-1">3'</span>
+                          <span className="text-gray-500 text-sm ml-1"><Trans i18nKey="auto.dnavisualizer.3">3'</Trans></span>
                         </div>
                       </motion.div>
                     )}
@@ -322,13 +339,13 @@ export default function DNAVisualizer() {
                 </div>
 
                 <div className="mt-6 bg-gray-800/50 rounded-xl p-4">
-                  <h4 className="text-sm font-bold text-white mb-2">📖 How Transcription Works</h4>
+                  <h4 className="text-sm font-bold text-white mb-2"><Trans i18nKey="auto.dnavisualizer.how_transcription_works">📖 How Transcription Works</Trans></h4>
                   <ol className="text-sm text-gray-300 space-y-1.5 list-decimal list-inside">
-                    <li>RNA Polymerase binds to the <span className="text-purple-400 font-bold">promoter</span> region of DNA</li>
-                    <li>The enzyme reads the <span className="text-blue-400 font-bold">template strand</span> (3' → 5')</li>
-                    <li>It builds <span className="text-orange-400 font-bold">mRNA</span> using complementary bases (A→U, T→A, G→C, C→G)</li>
-                    <li>Note: RNA uses <span className="text-purple-400 font-bold">Uracil (U)</span> instead of Thymine (T)</li>
-                    <li>The mRNA travels to ribosomes for <span className="text-emerald-400 font-bold">translation</span></li>
+                    <li><Trans i18nKey="auto.dnavisualizer.rna_polymerase_binds_to_the">RNA Polymerase binds to the</Trans> <span className="text-purple-400 font-bold"><Trans i18nKey="auto.dnavisualizer.promoter">promoter</Trans></span> <Trans i18nKey="auto.dnavisualizer.region_of_dna">region of DNA</Trans></li>
+                    <li><Trans i18nKey="auto.dnavisualizer.the_enzyme_reads_the">The enzyme reads the</Trans> <span className="text-blue-400 font-bold"><Trans i18nKey="auto.dnavisualizer.template_strand">template strand</Trans></span> <Trans i18nKey="auto.dnavisualizer.3_5">(3' → 5')</Trans></li>
+                    <li><Trans i18nKey="auto.dnavisualizer.it_builds">It builds</Trans> <span className="text-orange-400 font-bold"><Trans i18nKey="auto.dnavisualizer.mrna">mRNA</Trans></span> <Trans i18nKey="auto.dnavisualizer.using_complementary_bases_a_u_">using complementary bases (A→U, T→A, G→C, C→G)</Trans></li>
+                    <li><Trans i18nKey="auto.dnavisualizer.note_rna_uses">Note: RNA uses</Trans> <span className="text-purple-400 font-bold"><Trans i18nKey="auto.dnavisualizer.uracil_u">Uracil (U)</Trans></span> <Trans i18nKey="auto.dnavisualizer.instead_of_thymine_t">instead of Thymine (T)</Trans></li>
+                    <li><Trans i18nKey="auto.dnavisualizer.the_mrna_travels_to_ribosomes_">The mRNA travels to ribosomes for</Trans> <span className="text-emerald-400 font-bold"><Trans i18nKey="auto.dnavisualizer.translation">translation</Trans></span></li>
                   </ol>
                 </div>
               </div>
@@ -337,9 +354,9 @@ export default function DNAVisualizer() {
             {viewMode === 'codon' && (
               <div className="bg-gray-900 rounded-2xl border border-gray-800 p-6">
                 <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
-                  🧩 Codon → Amino Acid Reader
-                </h3>
-                <p className="text-gray-400 text-sm mb-5">Each group of 3 mRNA nucleotides (codon) codes for a specific amino acid:</p>
+                  <Trans i18nKey="auto.dnavisualizer.codon_amino_acid_reader">🧩 Codon → Amino Acid Reader</Trans>
+                                                  </h3>
+                <p className="text-gray-400 text-sm mb-5"><Trans i18nKey="auto.dnavisualizer.each_group_of_3_mrna_nucleotid">Each group of 3 mRNA nucleotides (codon) codes for a specific amino acid:</Trans></p>
 
                 <div className="space-y-3">
                   {codons.map((codon, i) => {
@@ -377,13 +394,13 @@ export default function DNAVisualizer() {
                 </div>
 
                 <div className="mt-5 bg-gradient-to-br from-purple-900/20 to-blue-900/20 rounded-xl p-4 border border-purple-500/20">
-                  <h4 className="text-sm font-bold text-white mb-2">🎓 The Genetic Code</h4>
+                  <h4 className="text-sm font-bold text-white mb-2"><Trans i18nKey="auto.dnavisualizer.the_genetic_code">🎓 The Genetic Code</Trans></h4>
                   <ul className="text-sm text-gray-300 space-y-1">
-                    <li>• There are <strong className="text-white">64 possible codons</strong> (4³ combinations)</li>
-                    <li>• They code for only <strong className="text-white">20 amino acids</strong> + STOP signals</li>
-                    <li>• This means the code is <strong className="text-purple-400">degenerate</strong> — multiple codons can code for the same amino acid</li>
-                    <li>• <strong className="text-green-400">AUG</strong> is the universal START codon (also codes for Methionine)</li>
-                    <li>• <strong className="text-orange-400">UAA, UAG, UGA</strong> are the three STOP codons</li>
+                    <li><Trans i18nKey="auto.dnavisualizer.there_are">• There are</Trans> <strong className="text-white"><Trans i18nKey="auto.dnavisualizer.64_possible_codons">64 possible codons</Trans></strong> <Trans i18nKey="auto.dnavisualizer.4_combinations">(4³ combinations)</Trans></li>
+                    <li><Trans i18nKey="auto.dnavisualizer.they_code_for_only">• They code for only</Trans> <strong className="text-white"><Trans i18nKey="auto.dnavisualizer.20_amino_acids">20 amino acids</Trans></strong> <Trans i18nKey="auto.dnavisualizer.stop_signals">+ STOP signals</Trans></li>
+                    <li><Trans i18nKey="auto.dnavisualizer.this_means_the_code_is">• This means the code is</Trans> <strong className="text-purple-400"><Trans i18nKey="auto.dnavisualizer.degenerate">degenerate</Trans></strong> <Trans i18nKey="auto.dnavisualizer.multiple_codons_can_code_for_t">— multiple codons can code for the same amino acid</Trans></li>
+                    <li>• <strong className="text-green-400"><Trans i18nKey="auto.dnavisualizer.aug">AUG</Trans></strong> <Trans i18nKey="auto.dnavisualizer.is_the_universal_start_codon_a">is the universal START codon (also codes for Methionine)</Trans></li>
+                    <li>• <strong className="text-orange-400"><Trans i18nKey="auto.dnavisualizer.uaa_uag_uga">UAA, UAG, UGA</Trans></strong> <Trans i18nKey="auto.dnavisualizer.are_the_three_stop_codons">are the three STOP codons</Trans></li>
                   </ul>
                 </div>
               </div>
@@ -394,7 +411,7 @@ export default function DNAVisualizer() {
           <div className="space-y-4">
             {/* Nucleotide Counter */}
             <div className="bg-gray-900 rounded-2xl border border-gray-800 p-5">
-              <h3 className="text-white font-bold mb-3 text-sm">📊 Nucleotide Count</h3>
+              <h3 className="text-white font-bold mb-3 text-sm"><Trans i18nKey="auto.dnavisualizer.nucleotide_count">📊 Nucleotide Count</Trans></h3>
               <div className="grid grid-cols-2 gap-2">
                 {[
                   { base: 'A', full: 'Adenine', color: '#ef4444' },
@@ -413,17 +430,17 @@ export default function DNAVisualizer() {
                 ))}
               </div>
               <div className="mt-3 text-center">
-                <div className="text-sm text-gray-500">Total base pairs</div>
+                <div className="text-sm text-gray-500"><Trans i18nKey="auto.dnavisualizer.total_base_pairs">Total base pairs</Trans></div>
                 <div className="text-xl font-black text-white">{basePairs.length}</div>
               </div>
               <div className="mt-2 text-sm text-gray-500 text-center">
-                Chargaff's Rule: A=T, G=C ✓
-              </div>
+                <Trans i18nKey="auto.dnavisualizer.chargaff_s_rule_a_t_g_c">Chargaff's Rule: A=T, G=C ✓</Trans>
+                                            </div>
             </div>
 
             {/* Base Pair Legend */}
             <div className="bg-gray-900 rounded-2xl border border-gray-800 p-5">
-              <h3 className="text-white font-bold mb-3 text-sm">🔗 Base Pair Legend</h3>
+              <h3 className="text-white font-bold mb-3 text-sm"><Trans i18nKey="auto.dnavisualizer.base_pair_legend">🔗 Base Pair Legend</Trans></h3>
               <div className="space-y-2">
                 {[
                   { base: 'A — T', desc: '2 hydrogen bonds', color1: '#ef4444', color2: '#3b82f6' },
@@ -448,26 +465,27 @@ export default function DNAVisualizer() {
               <motion.div key={factIndex}
                 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}
                 className="bg-gradient-to-br from-purple-900/30 to-blue-900/30 rounded-2xl border border-purple-500/20 p-5">
-                <div className="text-purple-400 font-bold text-sm mb-1">💡 Did you know?</div>
+                <div className="text-purple-400 font-bold text-sm mb-1"><Trans i18nKey="auto.dnavisualizer.did_you_know">💡 Did you know?</Trans></div>
                 <p className="text-gray-200 text-sm leading-relaxed">{facts[factIndex]}</p>
               </motion.div>
             </AnimatePresence>
 
             {/* Structure info */}
             <div className="bg-gray-900 rounded-2xl border border-gray-800 p-5">
-              <h3 className="text-white font-bold mb-2 text-sm">🏗️ DNA Structure</h3>
+              <h3 className="text-white font-bold mb-2 text-sm"><Trans i18nKey="auto.dnavisualizer.dna_structure">🏗️ DNA Structure</Trans></h3>
               <ul className="text-sm text-gray-400 space-y-1.5">
-                <li className="flex gap-1.5"><span className="text-emerald-400">•</span> Sugar-phosphate backbone</li>
-                <li className="flex gap-1.5"><span className="text-emerald-400">•</span> Antiparallel strands (5'→3')</li>
-                <li className="flex gap-1.5"><span className="text-emerald-400">•</span> Right-handed double helix</li>
-                <li className="flex gap-1.5"><span className="text-emerald-400">•</span> Major & minor grooves</li>
-                <li className="flex gap-1.5"><span className="text-emerald-400">•</span> 10 bp per full turn</li>
-                <li className="flex gap-1.5"><span className="text-emerald-400">•</span> 3.4 nm per turn</li>
+                <li className="flex gap-1.5"><span className="text-emerald-400">•</span> <Trans i18nKey="auto.dnavisualizer.sugar_phosphate_backbone">Sugar-phosphate backbone</Trans></li>
+                <li className="flex gap-1.5"><span className="text-emerald-400">•</span> <Trans i18nKey="auto.dnavisualizer.antiparallel_strands_5_3">Antiparallel strands (5'→3')</Trans></li>
+                <li className="flex gap-1.5"><span className="text-emerald-400">•</span> <Trans i18nKey="auto.dnavisualizer.right_handed_double_helix">Right-handed double helix</Trans></li>
+                <li className="flex gap-1.5"><span className="text-emerald-400">•</span> <Trans i18nKey="auto.dnavisualizer.major_minor_grooves">Major & minor grooves</Trans></li>
+                <li className="flex gap-1.5"><span className="text-emerald-400">•</span> <Trans i18nKey="auto.dnavisualizer.10_bp_per_full_turn">10 bp per full turn</Trans></li>
+                <li className="flex gap-1.5"><span className="text-emerald-400">•</span> <Trans i18nKey="auto.dnavisualizer.3_4_nm_per_turn">3.4 nm per turn</Trans></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
+    </ModuleWrapper>
   );
 }

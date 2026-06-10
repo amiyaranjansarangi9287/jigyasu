@@ -4,7 +4,7 @@
 
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -214,9 +214,9 @@ export default function Panchabhutas() {
           </h1>
           <p className="text-sm text-orange-400 mt-1">{t('lab.modules.Panchabhutas.txt_TheFiveGre', 'पञ्चभूत — The Five Great Elements')}</p>
           <p className="text-gray-500 text-sm mt-2 max-w-xl mx-auto">
-            Ancient Indian philosophy meets modern chemistry. Maharishi Kanad (~600 BCE) described atoms
-            2,400 years before modern science!
-          </p>
+            <Trans i18nKey="auto.panchabhutas.ancient_indian_philosophy_meet">Ancient Indian philosophy meets modern chemistry. Maharishi Kanad (~600 BCE) described atoms
+                                  2,400 years before modern science!</Trans>
+                                </p>
         </div>
 
         {/* Vaisheshika Philosophy Card */}
@@ -229,17 +229,17 @@ export default function Panchabhutas() {
             </div>
             <div>
               <h3 className="text-orange-400 font-bold text-lg mb-2">
-                The Vaisheshika School — वैशेषिक दर्शन
-              </h3>
+                <Trans i18nKey="auto.panchabhutas.the_vaisheshika_school">The Vaisheshika School — वैशेषिक दर्शन</Trans>
+                                            </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Around <strong className="text-orange-600">600 BCE</strong>, Maharishi Kanad founded
-                the Vaisheshika school. He taught that all matter is made of tiny, indivisible particles
-                called <strong className="text-orange-600">Anu</strong> (अणु) — atoms! His ideas predate
-                Greek atomism (Democritus, ~400 BCE) by over two centuries.
-              </p>
+                <Trans i18nKey="auto.panchabhutas.around">Around</Trans> <strong className="text-orange-600"><Trans i18nKey="auto.panchabhutas.600_bce">600 BCE</Trans></strong><Trans i18nKey="auto.panchabhutas.maharishi_kanad_founded_the_va">, Maharishi Kanad founded
+                                              the Vaisheshika school. He taught that all matter is made of tiny, indivisible particles
+                                              called</Trans> <strong className="text-orange-600"><Trans i18nKey="auto.panchabhutas.anu">Anu</Trans></strong> <Trans i18nKey="auto.panchabhutas.atoms_his_ideas_predate_greek_">(अणु) — atoms! His ideas predate
+                                              Greek atomism (Democritus, ~400 BCE) by over two centuries.</Trans>
+                                            </p>
               <div className="mt-2 text-sm text-gray-400 font-mono italic">
-                "The atom is eternal, invisible, and the ultimate cause of all material effects." — Vaisheshika Sutra 4.2.4
-              </div>
+                <Trans i18nKey="auto.panchabhutas.the_atom_is_eternal_invisible_">"The atom is eternal, invisible, and the ultimate cause of all material effects." — Vaisheshika Sutra 4.2.4</Trans>
+                                            </div>
             </div>
           </div>
         </div>
@@ -295,12 +295,12 @@ export default function Panchabhutas() {
             {/* Right: Info */}
             <div className="space-y-4">
               <div>
-                <div className="text-gray-400 text-sm uppercase tracking-wider mb-1">Ancient Name</div>
+                <div className="text-gray-400 text-sm uppercase tracking-wider mb-1"><Trans i18nKey="auto.panchabhutas.ancient_name">Ancient Name</Trans></div>
                 <div className="text-gray-800 text-2xl font-bold">{bhuta.english} <span style={{ color: bhuta.color }}>• {bhuta.property}</span></div>
               </div>
 
               <div className="p-4 rounded-xl border" style={{ borderColor: `${bhuta.color}33`, backgroundColor: `${bhuta.color}08` }}>
-                <div className="text-gray-400 text-sm uppercase tracking-wider mb-1">🔬 Modern Chemistry</div>
+                <div className="text-gray-400 text-sm uppercase tracking-wider mb-1"><Trans i18nKey="auto.panchabhutas.modern_chemistry">🔬 Modern Chemistry</Trans></div>
                 <div className="text-xl font-bold" style={{ color: bhuta.color }}>{bhuta.modern}</div>
                 <p className="text-gray-500 text-sm mt-2 leading-relaxed">{bhuta.description}</p>
               </div>
@@ -309,7 +309,7 @@ export default function Panchabhutas() {
                 <div className="flex items-start gap-3">
                   <div className="shrink-0 mt-1 text-2xl">🦚</div>
                   <div>
-                    <div className="text-orange-400 text-sm font-bold mb-1">Lumo speaks 🕉️</div>
+                    <div className="text-orange-400 text-sm font-bold mb-1"><Trans i18nKey="auto.panchabhutas.lumo_speaks">Lumo speaks 🕉️</Trans></div>
                     <p className="text-orange-600 text-sm leading-relaxed italic">{bhuta.anuWisdom}</p>
                   </div>
                 </div>
@@ -325,16 +325,16 @@ export default function Panchabhutas() {
             className="p-5 rounded-2xl border border-cyan-500/20 hover:border-cyan-500/40 transition-all hover:scale-[1.02] text-left bg-white"
           >
             <div className="text-2xl mb-2">🧊</div>
-            <div className="text-cyan-600 font-bold">Explore States of Matter</div>
-            <div className="text-gray-400 text-sm mt-1">Watch particles dance like Kanad described!</div>
+            <div className="text-cyan-600 font-bold"><Trans i18nKey="auto.panchabhutas.explore_states_of_matter">Explore States of Matter</Trans></div>
+            <div className="text-gray-400 text-sm mt-1"><Trans i18nKey="auto.panchabhutas.watch_particles_dance_like_kan">Watch particles dance like Kanad described!</Trans></div>
           </button>
           <button
             onClick={() => navigate('/lab/atoms-intro')}
             className="p-5 rounded-2xl border border-purple-500/20 hover:border-purple-500/40 transition-all hover:scale-[1.02] text-left bg-white"
           >
             <div className="text-2xl mb-2">⚛️</div>
-            <div className="text-purple-600 font-bold">Meet the Modern Atom</div>
-            <div className="text-gray-400 text-sm mt-1">See Bohr and orbital models — Kanad would smile!</div>
+            <div className="text-purple-600 font-bold"><Trans i18nKey="auto.panchabhutas.meet_the_modern_atom">Meet the Modern Atom</Trans></div>
+            <div className="text-gray-400 text-sm mt-1"><Trans i18nKey="auto.panchabhutas.see_bohr_and_orbital_models_ka">See Bohr and orbital models — Kanad would smile!</Trans></div>
           </button>
         </div>
       </div>

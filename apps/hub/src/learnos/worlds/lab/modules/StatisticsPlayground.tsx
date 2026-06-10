@@ -1,6 +1,6 @@
 // src/worlds/lab/modules/StatisticsPlayground.tsx
 import { useState, useCallback, useMemo } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import LabShell from '../LabShell';
 import { useLumoOwl } from '../hooks/useLumoOwl';
 import { useLabProgress } from '../hooks/useLabProgress';
@@ -44,7 +44,7 @@ export default function StatisticsPlayground() {
     <LabShell module="statistics-playground" subject="math">
       <div className="min-h-screen bg-pink-50 flex flex-col p-6 pb-24">
         <div className="bg-white rounded-3xl p-5 shadow-sm border border-pink-100 mb-4">
-          <h2 className="font-bold text-lg">📊 Statistics Playground</h2>
+          <h2 className="font-bold text-lg"><Trans i18nKey="auto.statisticsplayground.statistics_playground">📊 Statistics Playground</Trans></h2>
           <p className="text-sm text-slate-500">{t('lab.modules.StatisticsPlayground.txt_Selectadat', 'Select a dataset and explore the numbers!')}</p>
         </div>
 

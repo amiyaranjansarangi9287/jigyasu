@@ -1,6 +1,6 @@
 // src/worlds/discovery/modules/PeriodicTableExplorer.tsx
 import { useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import DiscoveryShell from '../DiscoveryShell';
 import { useDiscoveryProgress } from '../hooks/useDiscoveryProgress';
@@ -34,7 +34,7 @@ export default function PeriodicTableExplorer() {
       <div className="flex-1 flex flex-col p-5 bg-slate-900 pb-24">
         <div className="bg-slate-800 rounded-2xl p-4 border border-slate-700 mb-4">
           <p className="text-white font-bold">{t('discovery.modules.PeriodicTableExplorer.txt_PeriodicTa', '🧪 Periodic Table Explorer')}</p>
-          <p className="text-slate-400 text-sm mt-1">Tap elements to discover patterns ({explored.length}/{ELEMENTS.length})</p>
+          <p className="text-slate-400 text-sm mt-1"><Trans i18nKey="auto.periodictableexplorer.tap_elements_to_discover_patte">Tap elements to discover patterns (</Trans>{explored.length}/{ELEMENTS.length})</p>
         </div>
         <div className="grid grid-cols-3 gap-3 mb-4">{ELEMENTS.map(e => (
           <button key={e.symbol} onClick={() => handleSelect(e.symbol)}
@@ -48,8 +48,8 @@ export default function PeriodicTableExplorer() {
         <AnimatePresence>{el && (
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="bg-slate-800 rounded-2xl p-4 border border-slate-700">
             <div className="flex items-center gap-3 mb-2"><div className="w-12 h-12 rounded-xl flex items-center justify-center text-xl font-extrabold" style={{ backgroundColor: `${el.color}33`, color: el.color }}>{el.symbol}</div>
-              <div><p className="text-white font-bold">{el.name}</p><p className="text-slate-500 text-sm">Atomic number: {el.num}</p></div></div>
-            <p className="text-slate-300 text-sm mb-1">Used in: {el.use}</p>
+              <div><p className="text-white font-bold">{el.name}</p><p className="text-slate-500 text-sm"><Trans i18nKey="auto.periodictableexplorer.atomic_number">Atomic number:</Trans> {el.num}</p></div></div>
+            <p className="text-slate-300 text-sm mb-1"><Trans i18nKey="auto.periodictableexplorer.used_in">Used in:</Trans> {el.use}</p>
             <p className="text-amber-400 text-sm font-medium">{el.fact}</p>
           </motion.div>
         )}</AnimatePresence>

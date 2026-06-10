@@ -7,6 +7,7 @@ import { EverydayConnection } from '../components/EverydayConnection';
 import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
+import { Trans } from "react-i18next";
 
 export default function FractionsSharing() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -125,7 +126,7 @@ export default function FractionsSharing() {
           <div className="grid grid-cols-2 gap-4 mb-4">
             <div>
               <div className="flex justify-between mb-1">
-                <span className="text-slate-500 text-sm">Total slices</span>
+                <span className="text-slate-500 text-sm"><Trans i18nKey="auto.fractionssharing.total_slices">Total slices</Trans></span>
                 <span className="text-slate-400 text-sm font-mono">{divisions}</span>
               </div>
               <input
@@ -141,7 +142,7 @@ export default function FractionsSharing() {
             </div>
             <div>
               <div className="flex justify-between mb-1">
-                <span className="text-slate-500 text-sm">Slices taken</span>
+                <span className="text-slate-500 text-sm"><Trans i18nKey="auto.fractionssharing.slices_taken">Slices taken</Trans></span>
                 <span className="text-slate-400 text-sm font-mono">{selected}</span>
               </div>
               <input
@@ -156,26 +157,26 @@ export default function FractionsSharing() {
           <div className="space-y-3">
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-slate-300 text-sm leading-relaxed mb-2">
-                A fraction is simply "how many parts of the whole?" The bottom
-                number says how many equal pieces exist. The top says how
-                many you're talking about. That's it.
-              </p>
+                <Trans i18nKey="auto.fractionssharing.a_fraction_is_simply_how_many_">A fraction is simply "how many parts of the whole?" The bottom
+                                              number says how many equal pieces exist. The top says how
+                                              many you're talking about. That's it.</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Fractions, decimals, and percentages are three ways of
-                writing the same idea. 1/2 = 0.5 = 50%. Once you see
-                this, they all become intuitive.
-              </p>
+                <Trans i18nKey="auto.fractionssharing.fractions_decimals_and_percent">Fractions, decimals, and percentages are three ways of
+                                              writing the same idea. 1/2 = 0.5 = 50%. Once you see
+                                              this, they all become intuitive.</Trans>
+                                            </p>
             </div>
 
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-violet-400 text-sm font-bold uppercase tracking-wider mb-2">
-                History of the idea
-              </p>
+                <Trans i18nKey="auto.fractionssharing.history_of_the_idea">History of the idea</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Egyptians used unit fractions (1/n) exclusively. Indians
-                invented modern fraction notation. The decimal system came
-                from India through Arab mathematicians to Europe.
-              </p>
+                <Trans i18nKey="auto.fractionssharing.egyptians_used_unit_fractions_">Egyptians used unit fractions (1/n) exclusively. Indians
+                                              invented modern fraction notation. The decimal system came
+                                              from India through Arab mathematicians to Europe.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

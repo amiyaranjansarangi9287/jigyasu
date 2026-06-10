@@ -3,7 +3,7 @@
 import { pillars } from '../data/categories';
 import { useLocalizedActivities } from '../../hooks/useLocalizedData';
 import { useReveal } from '../hooks/useReveal';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 interface PillarShowcaseProps {
   onSelectPillar: (pillarId: string) => void;
@@ -29,32 +29,7 @@ export default function PillarShowcase({ onSelectPillar, selectedAge }: PillarSh
     return filtered.length;
   };
 
-  const pillarExtras = {
-    toybox: {
-      tagline: t('pillar_showcase.toybox.tagline', 'Build amazing handcrafted toys'),
-      preview: [t('pillar_showcase.toybox.preview.0', 'Wooden Cars'), t('pillar_showcase.toybox.preview.1', 'Puppets'), t('pillar_showcase.toybox.preview.2', 'Puzzles')],
-      image: '/images/blocks.webp',
-      colSpan: 'md:col-span-1'
-    },
-    sciencelab: {
-      tagline: t('pillar_showcase.sciencelab.tagline', 'Run interactive simulations & experiments'),
-      preview: [t('pillar_showcase.sciencelab.preview.0', 'Physics Lab'), t('pillar_showcase.sciencelab.preview.1', 'Chemistry Lab'), t('pillar_showcase.sciencelab.preview.2', 'Biology Lab'), t('pillar_showcase.sciencelab.preview.3', 'Cosmos Lab')],
-      image: '/images/volcano.webp',
-      colSpan: 'md:col-span-2'
-    },
-    artstudio: {
-      tagline: t('pillar_showcase.artstudio.tagline', 'Express your creativity'),
-      preview: [t('pillar_showcase.artstudio.preview.0', 'Painting'), t('pillar_showcase.artstudio.preview.1', 'Origami'), t('pillar_showcase.artstudio.preview.2', 'Sculpture')],
-      image: '/images/finger-paint.webp',
-      colSpan: 'md:col-span-1'
-    },
-    outdoorquest: {
-      tagline: t('pillar_showcase.outdoorquest.tagline', 'Explore nature and adventure'),
-      preview: [t('pillar_showcase.outdoorquest.preview.0', 'Scavenger Hunts'), t('pillar_showcase.outdoorquest.preview.1', 'Gardening'), t('pillar_showcase.outdoorquest.preview.2', 'Stargazing')],
-      image: '/images/nature-hunt.webp',
-      colSpan: 'md:col-span-2'
-    }
-  };
+
 
   return (
     <section className="py-24 px-4 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
@@ -75,16 +50,17 @@ export default function PillarShowcase({ onSelectPillar, selectedAge }: PillarSh
         </div>
 
         {/* Bento Box Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[320px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 auto-rows-[320px]">
           {pillars.map((pillar, index) => {
-            const extras = pillarExtras[pillar.id as keyof typeof pillarExtras];
             const count = getActivityCount(pillar.id);
+            const tagline = t(`pillar_showcase.${pillar.id}.tagline` as any, pillar.description);
+            const preview = pillar.showcasePreview.map((item, i) => t(`pillar_showcase.${pillar.id}.preview.${i}` as any, item));
 
             return (
               <button
                 key={pillar.id}
                 onClick={() => onSelectPillar(pillar.id)}
-                className={`group relative overflow-hidden rounded-[2rem] shadow-xl hover:shadow-2xl transition-all duration-500 text-left hover:-translate-y-2 ${extras.colSpan} ${
+                className={`group relative overflow-hidden rounded-[2rem] shadow-xl hover:shadow-2xl transition-all duration-500 text-left hover:-translate-y-2 ${pillar.colSpan} ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
                 style={{
@@ -94,7 +70,7 @@ export default function PillarShowcase({ onSelectPillar, selectedAge }: PillarSh
                 {/* Full Cover Background Image */}
                 <div className="absolute inset-0 w-full h-full">
                   <img
-                    src={extras.image}
+                    src={pillar.showcaseImage}
                     // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     alt={t(`pillar_${pillar.id}` as any, pillar.name)}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -119,15 +95,15 @@ export default function PillarShowcase({ onSelectPillar, selectedAge }: PillarSh
 
                 {/* Bottom Overlay: Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-8 transform transition-transform duration-500">
-                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                  <h3 className="text-3xl font-bold text-white mb-2 group-hover:-translate-y-1 transition-transform duration-300">{t(`pillar_${pillar.id}` as any, pillar.name)}</h3>
+                  <Trans i18nKey="auto.pillarshowcase.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
+                                          <h3 className="text-3xl font-bold text-white mb-2 group-hover:-translate-y-1 transition-transform duration-300">{t(`pillar_${pillar.id}` as any, pillar.name)}</h3>
                   <p className="text-white/80 text-base md:text-lg mb-6 group-hover:-translate-y-1 transition-transform duration-300 delay-75 max-w-md">
-                    {extras.tagline}
+                    {tagline}
                   </p>
 
                   {/* Previews (Hidden on small screens, reveals on hover) */}
                   <div className="flex flex-wrap gap-2 group-hover:-translate-y-1 transition-transform duration-300 delay-100">
-                    {extras.preview.map((item, i) => (
+                    {preview.map((item, i) => (
                       <span
                         key={i}
                         className="px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-sm font-medium text-white/90"

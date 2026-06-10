@@ -1,6 +1,6 @@
 // src/worlds/lab/modules/TimelineExplorer.tsx
 import { useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import LabShell from '../LabShell';
 import { useLumoOwl } from '../hooks/useLumoOwl';
@@ -28,7 +28,7 @@ export default function TimelineExplorer() {
   return (
     <LabShell module="timeline-explorer" subject="earth-science">
       <div className="flex flex-col h-screen bg-indigo-50 overflow-hidden">
-        <div className="bg-white p-6 border-b"><h2 className="font-bold text-lg">Timeline Explorer</h2><p className="text-sm text-slate-400">{t('lab.modules.TimelineExplorer.txt_Discoverwh', 'Discover when major scientific breakthroughs happened.')}</p></div>
+        <div className="bg-white p-6 border-b"><h2 className="font-bold text-lg"><Trans i18nKey="auto.timelineexplorer.timeline_explorer">Timeline Explorer</Trans></h2><p className="text-sm text-slate-400">{t('lab.modules.TimelineExplorer.txt_Discoverwh', 'Discover when major scientific breakthroughs happened.')}</p></div>
         <div className="flex-1 overflow-x-auto overflow-y-hidden relative p-12 whitespace-nowrap">
           <div className="absolute top-1/2 left-0 right-0 h-1 bg-indigo-200 -translate-y-1/2" />
           <div className="inline-flex gap-24 items-center h-full">
@@ -53,7 +53,7 @@ export default function TimelineExplorer() {
                   <p className="text-sm text-slate-400 max-w-sm whitespace-normal">{TIMELINE_EVENTS.find(e => e.id === active)?.description}</p>
                 </div>
               </div>
-              <button onClick={() => handlePlace(active)} className="px-6 py-3 bg-indigo-600 text-white font-bold rounded-xl shadow-lg">Place on Timeline</button>
+              <button onClick={() => handlePlace(active)} className="px-6 py-3 bg-indigo-600 text-white font-bold rounded-xl shadow-lg"><Trans i18nKey="auto.timelineexplorer.place_on_timeline">Place on Timeline</Trans></button>
             </motion.div>
           )}
         </AnimatePresence>

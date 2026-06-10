@@ -1,5 +1,6 @@
 import { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Trans } from "react-i18next";
 
 type ProbMode = 'coins' | 'dice' | 'cards' | 'challenge';
 
@@ -16,8 +17,8 @@ export default function ProbabilityPlayground() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🎲 Probability Playground</h2>
-        <p className="text-purple-300 text-lg">Explore chance and randomness!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.probabilityplayground.probability_playground">🎲 Probability Playground</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.probabilityplayground.explore_chance_and_randomness">Explore chance and randomness!</Trans></p>
       </div>
 
       <div className="flex justify-center gap-2 mb-6">
@@ -73,7 +74,7 @@ function CoinFlip() {
       <div className="space-y-4">
         <div className="bg-white/5 rounded-2xl p-5 border border-white/10 text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <label className="text-gray-400">Coins per flip:</label>
+            <label className="text-gray-400"><Trans i18nKey="auto.probabilityplayground.coins_per_flip">Coins per flip:</Trans></label>
             <select value={numCoins} onChange={e => setNumCoins(Number(e.target.value))}
               className="bg-white/10 border border-white/20 rounded px-2 py-1 text-white">
               {[1, 2, 3, 5, 10].map(n => <option key={n} value={n}>{n}</option>)}
@@ -100,17 +101,17 @@ function CoinFlip() {
               onClick={flip}
               disabled={flipping}
             >
-              🪙 Flip!
-            </motion.button>
-            <button className="px-4 py-2 rounded-xl bg-white/10 text-gray-400" onClick={() => setFlips([])}>Reset</button>
+              <Trans i18nKey="auto.probabilityplayground.flip">🪙 Flip!</Trans>
+                                      </motion.button>
+            <button className="px-4 py-2 rounded-xl bg-white/10 text-gray-400" onClick={() => setFlips([])}><Trans i18nKey="auto.probabilityplayground.reset">Reset</Trans></button>
           </div>
         </div>
 
         {/* Probability theory */}
         <div className="bg-purple-500/10 rounded-xl p-4 border border-purple-500/20">
-          <h4 className="text-white font-bold mb-2">📊 Theory</h4>
-          <p className="text-gray-300 text-sm">P(Heads) = P(Tails) = <span className="text-purple-400 font-bold">1/2 = 50%</span></p>
-          <p className="text-gray-400 text-sm mt-1">Each flip is independent — past results don't affect future flips!</p>
+          <h4 className="text-white font-bold mb-2"><Trans i18nKey="auto.probabilityplayground.theory">📊 Theory</Trans></h4>
+          <p className="text-gray-300 text-sm"><Trans i18nKey="auto.probabilityplayground.p_heads_p_tails">P(Heads) = P(Tails) =</Trans> <span className="text-purple-400 font-bold"><Trans i18nKey="auto.probabilityplayground.1_2_50">1/2 = 50%</Trans></span></p>
+          <p className="text-gray-400 text-sm mt-1"><Trans i18nKey="auto.probabilityplayground.each_flip_is_independent_past_">Each flip is independent — past results don't affect future flips!</Trans></p>
         </div>
       </div>
 
@@ -119,17 +120,17 @@ function CoinFlip() {
           <div className="bg-yellow-500/10 rounded-xl p-4 border border-yellow-500/20 text-center">
             <span className="text-3xl">🪙</span>
             <p className="text-yellow-400 font-bold text-2xl">{stats.heads}</p>
-            <p className="text-gray-400 text-sm">Heads ({stats.headsPercent}%)</p>
+            <p className="text-gray-400 text-sm"><Trans i18nKey="auto.probabilityplayground.heads">Heads (</Trans>{stats.headsPercent}%)</p>
           </div>
           <div className="bg-gray-500/10 rounded-xl p-4 border border-gray-500/20 text-center">
             <span className="text-3xl">⭕</span>
             <p className="text-gray-300 font-bold text-2xl">{stats.tails}</p>
-            <p className="text-gray-400 text-sm">Tails ({stats.tailsPercent}%)</p>
+            <p className="text-gray-400 text-sm"><Trans i18nKey="auto.probabilityplayground.tails">Tails (</Trans>{stats.tailsPercent}%)</p>
           </div>
         </div>
 
         <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-          <h4 className="text-white font-bold mb-2">📜 History ({stats.total} flips)</h4>
+          <h4 className="text-white font-bold mb-2"><Trans i18nKey="auto.probabilityplayground.history">📜 History (</Trans>{stats.total} <Trans i18nKey="auto.probabilityplayground.flips">flips)</Trans></h4>
           <div className="flex flex-wrap gap-1 max-h-32 overflow-y-auto">
             {flips.slice(-50).map((f, i) => (
               <motion.span key={i}
@@ -191,7 +192,7 @@ function DiceRoll() {
       <div className="space-y-4">
         <div className="bg-white/5 rounded-2xl p-5 border border-white/10 text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <label className="text-gray-400">Number of dice:</label>
+            <label className="text-gray-400"><Trans i18nKey="auto.probabilityplayground.number_of_dice">Number of dice:</Trans></label>
             <select value={numDice} onChange={e => setNumDice(Number(e.target.value))}
               className="bg-white/10 border border-white/20 rounded px-2 py-1 text-white">
               {[1, 2, 3, 4, 5].map(n => <option key={n} value={n}>{n}</option>)}
@@ -211,7 +212,7 @@ function DiceRoll() {
           </div>
 
           {lastRoll.length > 1 && !rolling && (
-            <p className="text-green-400 font-bold text-lg mb-2">Sum: {lastRoll.reduce((a, b) => a + b, 0)}</p>
+            <p className="text-green-400 font-bold text-lg mb-2"><Trans i18nKey="auto.probabilityplayground.sum">Sum:</Trans> {lastRoll.reduce((a, b) => a + b, 0)}</p>
           )}
 
           <div className="flex justify-center gap-2">
@@ -222,22 +223,22 @@ function DiceRoll() {
               onClick={roll}
               disabled={rolling}
             >
-              🎲 Roll!
-            </motion.button>
-            <button className="px-4 py-2 rounded-xl bg-white/10 text-gray-400" onClick={() => setRolls([])}>Reset</button>
+              <Trans i18nKey="auto.probabilityplayground.roll">🎲 Roll!</Trans>
+                                      </motion.button>
+            <button className="px-4 py-2 rounded-xl bg-white/10 text-gray-400" onClick={() => setRolls([])}><Trans i18nKey="auto.probabilityplayground.reset">Reset</Trans></button>
           </div>
         </div>
 
         <div className="bg-purple-500/10 rounded-xl p-4 border border-purple-500/20">
-          <h4 className="text-white font-bold mb-2">📊 Theory</h4>
-          <p className="text-gray-300 text-sm">P(any number) = <span className="text-purple-400 font-bold">1/6 ≈ 16.67%</span></p>
-          <p className="text-gray-400 text-sm mt-1">Expected average = 3.5</p>
+          <h4 className="text-white font-bold mb-2"><Trans i18nKey="auto.probabilityplayground.theory">📊 Theory</Trans></h4>
+          <p className="text-gray-300 text-sm"><Trans i18nKey="auto.probabilityplayground.p_any_number">P(any number) =</Trans> <span className="text-purple-400 font-bold"><Trans i18nKey="auto.probabilityplayground.1_6_16_67">1/6 ≈ 16.67%</Trans></span></p>
+          <p className="text-gray-400 text-sm mt-1"><Trans i18nKey="auto.probabilityplayground.expected_average_3_5">Expected average = 3.5</Trans></p>
         </div>
       </div>
 
       <div className="space-y-4">
         <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-          <h4 className="text-white font-bold mb-3">📊 Frequency ({stats.total} rolls)</h4>
+          <h4 className="text-white font-bold mb-3"><Trans i18nKey="auto.probabilityplayground.frequency">📊 Frequency (</Trans>{stats.total} <Trans i18nKey="auto.probabilityplayground.rolls">rolls)</Trans></h4>
           <div className="space-y-2">
             {[1, 2, 3, 4, 5, 6].map(n => {
               const pct = stats.total > 0 ? (stats.freq[n] / stats.total) * 100 : 0;
@@ -261,11 +262,11 @@ function DiceRoll() {
 
         <div className="grid grid-cols-2 gap-3">
           <div className="bg-blue-500/10 rounded-xl p-4 border border-blue-500/20 text-center">
-            <p className="text-gray-400 text-sm">Average</p>
+            <p className="text-gray-400 text-sm"><Trans i18nKey="auto.probabilityplayground.average">Average</Trans></p>
             <p className="text-blue-400 font-bold text-2xl">{stats.avg}</p>
           </div>
           <div className="bg-green-500/10 rounded-xl p-4 border border-green-500/20 text-center">
-            <p className="text-gray-400 text-sm">Total Sum</p>
+            <p className="text-gray-400 text-sm"><Trans i18nKey="auto.probabilityplayground.total_sum">Total Sum</Trans></p>
             <p className="text-green-400 font-bold text-2xl">{stats.sum}</p>
           </div>
         </div>
@@ -307,7 +308,7 @@ function CardDraw() {
       <div className="space-y-4">
         <div className="bg-white/5 rounded-2xl p-5 border border-white/10 text-center">
           <div className="mb-4">
-            <p className="text-gray-400 text-sm">Cards remaining: <span className="text-white font-bold">{deck.length}</span> / 52</p>
+            <p className="text-gray-400 text-sm"><Trans i18nKey="auto.probabilityplayground.cards_remaining">Cards remaining:</Trans> <span className="text-white font-bold">{deck.length}</span> <Trans i18nKey="auto.probabilityplayground.52">/ 52</Trans></p>
           </div>
 
           <div className="flex justify-center mb-4">
@@ -336,25 +337,25 @@ function CardDraw() {
               onClick={draw}
               disabled={drawing || deck.length === 0}
             >
-              🃏 Draw Card
-            </motion.button>
-            <button className="px-4 py-2 rounded-xl bg-white/10 text-gray-400" onClick={reset}>Shuffle</button>
+              <Trans i18nKey="auto.probabilityplayground.draw_card">🃏 Draw Card</Trans>
+                                      </motion.button>
+            <button className="px-4 py-2 rounded-xl bg-white/10 text-gray-400" onClick={reset}><Trans i18nKey="auto.probabilityplayground.shuffle">Shuffle</Trans></button>
           </div>
         </div>
 
         <div className="bg-purple-500/10 rounded-xl p-4 border border-purple-500/20 text-sm">
-          <h4 className="text-white font-bold mb-2">📊 Probabilities</h4>
+          <h4 className="text-white font-bold mb-2"><Trans i18nKey="auto.probabilityplayground.probabilities">📊 Probabilities</Trans></h4>
           <div className="grid grid-cols-2 gap-2 text-sm">
-            <p className="text-gray-300">P(any card) = 1/{deck.length} = {deck.length > 0 ? ((1 / deck.length) * 100).toFixed(1) : 0}%</p>
-            <p className="text-gray-300">P(Ace) = {deck.filter(c => c.rank === 'A').length}/{deck.length}</p>
-            <p className="text-red-300">P(Red) = {deck.filter(c => isRed(c.suit)).length}/{deck.length}</p>
-            <p className="text-gray-300">P(Face) = {deck.filter(c => ['J', 'Q', 'K'].includes(c.rank)).length}/{deck.length}</p>
+            <p className="text-gray-300"><Trans i18nKey="auto.probabilityplayground.p_any_card_1">P(any card) = 1/</Trans>{deck.length} = {deck.length > 0 ? ((1 / deck.length) * 100).toFixed(1) : 0}%</p>
+            <p className="text-gray-300"><Trans i18nKey="auto.probabilityplayground.p_ace">P(Ace) =</Trans> {deck.filter(c => c.rank === 'A').length}/{deck.length}</p>
+            <p className="text-red-300"><Trans i18nKey="auto.probabilityplayground.p_red">P(Red) =</Trans> {deck.filter(c => isRed(c.suit)).length}/{deck.length}</p>
+            <p className="text-gray-300"><Trans i18nKey="auto.probabilityplayground.p_face">P(Face) =</Trans> {deck.filter(c => ['J', 'Q', 'K'].includes(c.rank)).length}/{deck.length}</p>
           </div>
         </div>
       </div>
 
       <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-        <h4 className="text-white font-bold mb-3">📜 Drawn Cards ({drawn.length})</h4>
+        <h4 className="text-white font-bold mb-3"><Trans i18nKey="auto.probabilityplayground.drawn_cards">📜 Drawn Cards (</Trans>{drawn.length})</h4>
         <div className="flex flex-wrap gap-1 max-h-64 overflow-y-auto">
           {drawn.map((card, i) => (
             <motion.div key={i}
@@ -375,7 +376,7 @@ function CardDraw() {
 
 function ProbabilityChallenge() {
   const [question, setQuestion] = useState<{ q: string; answer: string; options: string[]; explanation: string } | null>(null);
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [mastery, setMastery] = useState(0);
 
   const generateQuestion = useCallback(() => {
@@ -401,7 +402,7 @@ function ProbabilityChallenge() {
       setMastery(m => m + 1);
       setTimeout(generateQuestion, 1500);
     } else {
-      setFeedback('wrong');
+      setFeedback('hint');
       setTimeout(() => setFeedback(null), 1500);
     }
   };
@@ -416,7 +417,7 @@ function ProbabilityChallenge() {
 
       <motion.div
         key={question.q}
-        className={`rounded-2xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}
+        className={`rounded-2xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'hint' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}
         initial={{ scale: 0.9 }}
         animate={{ scale: 1 }}
       >
@@ -442,13 +443,13 @@ function ProbabilityChallenge() {
 
         {feedback === 'correct' && (
           <div className="mt-4 text-center">
-            <p className="text-green-400 font-bold">✅ Correct!</p>
+            <p className="text-green-400 font-bold"><Trans i18nKey="auto.probabilityplayground.correct">✅ Correct!</Trans></p>
             <p className="text-gray-400 text-sm">{question.explanation}</p>
           </div>
         )}
-        {feedback === 'wrong' && (
+        {feedback === 'hint' && (
           <div className="mt-4 text-center">
-            <p className="text-orange-400 font-bold">🤔 Answer: {question.answer}</p>
+            <p className="text-sky-400 font-bold"><Trans i18nKey="auto.probabilityplayground.answer">🤔 Answer:</Trans> {question.answer}</p>
             <p className="text-gray-400 text-sm">{question.explanation}</p>
           </div>
         )}

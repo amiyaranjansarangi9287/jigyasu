@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/DigestiveSystemWonderFirst.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout';
@@ -80,13 +80,13 @@ function ExplorationComponent() {
       <div className="grid grid-cols-2 gap-3">
         <div className="bg-rose-50 rounded-2xl p-4 text-center">
           <div className="text-2xl mb-1">📏</div>
-          <div className="font-bold text-rose-600 text-sm">6m Long</div>
-          <p className="text-sm text-rose-400 mt-1">Small intestine length</p>
+          <div className="font-bold text-rose-600 text-sm"><Trans i18nKey="auto.digestivesystemwonderfirst.6m_long">6m Long</Trans></div>
+          <p className="text-sm text-rose-400 mt-1"><Trans i18nKey="auto.digestivesystemwonderfirst.small_intestine_length">Small intestine length</Trans></p>
         </div>
         <div className="bg-orange-50 rounded-2xl p-4 text-center">
           <div className="text-2xl mb-1">⏱️</div>
-          <div className="font-bold text-orange-600 text-sm">24-72 hrs</div>
-          <p className="text-sm text-orange-400 mt-1">Total digestion time</p>
+          <div className="font-bold text-orange-600 text-sm"><Trans i18nKey="auto.digestivesystemwonderfirst.24_72_hrs">24-72 hrs</Trans></div>
+          <p className="text-sm text-orange-400 mt-1"><Trans i18nKey="auto.digestivesystemwonderfirst.total_digestion_time">Total digestion time</Trans></p>
         </div>
       </div>
 
@@ -94,13 +94,13 @@ function ExplorationComponent() {
       <div className="bg-blue-50 rounded-2xl p-4 border border-blue-200">
         <h3 className="font-bold text-blue-900 mb-2 flex items-center gap-2">
           <span className="text-xl">👀</span>
-          What do you notice?
-        </h3>
+          <Trans i18nKey="auto.digestivesystemwonderfirst.what_do_you_notice">What do you notice?</Trans>
+                          </h3>
         <ul className="text-slate-700 text-sm space-y-2">
-          <li>• How does food change at each stage?</li>
-          <li>• Why does the body need to break food down?</li>
-          <li>• What would happen if one stage didn't work?</li>
-          <li>• How does the body absorb nutrients?</li>
+          <li><Trans i18nKey="auto.digestivesystemwonderfirst.how_does_food_change_at_each_s">• How does food change at each stage?</Trans></li>
+          <li><Trans i18nKey="auto.digestivesystemwonderfirst.why_does_the_body_need_to_brea">• Why does the body need to break food down?</Trans></li>
+          <li><Trans i18nKey="auto.digestivesystemwonderfirst.what_would_happen_if_one_stage">• What would happen if one stage didn't work?</Trans></li>
+          <li><Trans i18nKey="auto.digestivesystemwonderfirst.how_does_the_body_absorb_nutri">• How does the body absorb nutrients?</Trans></li>
         </ul>
       </div>
     </div>

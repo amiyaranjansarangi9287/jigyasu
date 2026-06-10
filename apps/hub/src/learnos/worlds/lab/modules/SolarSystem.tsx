@@ -3,7 +3,7 @@
 
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -67,27 +67,27 @@ export default function SolarSystem() {
             }}
           />
           <div className="text-center mt-2 text-sm text-slate-400">
-            Speed: {speed.toFixed(1)}x
-          </div>
+            <Trans i18nKey="auto.solarsystem.speed">Speed:</Trans> {speed.toFixed(1)}<Trans i18nKey="auto.solarsystem.x">x</Trans>
+                                </div>
         </div>
 
         {/* Planet facts */}
         <div className="mt-6 grid grid-cols-4 gap-3">
           <div className="bg-yellow-900/20 rounded-xl p-3 text-center border border-yellow-700/30">
             <div className="text-xl mb-1">☀️</div>
-            <div className="font-bold text-yellow-300 text-sm">Sun</div>
+            <div className="font-bold text-yellow-300 text-sm"><Trans i18nKey="auto.solarsystem.sun">Sun</Trans></div>
           </div>
           <div className="bg-gray-700/30 rounded-xl p-3 text-center border border-gray-600/30">
             <div className="text-xl mb-1">🌍</div>
-            <div className="font-bold text-blue-300 text-sm">Earth</div>
+            <div className="font-bold text-blue-300 text-sm"><Trans i18nKey="auto.solarsystem.earth">Earth</Trans></div>
           </div>
           <div className="bg-red-900/20 rounded-xl p-3 text-center border border-red-700/30">
             <div className="text-xl mb-1">🪐</div>
-            <div className="font-bold text-red-300 text-sm">Saturn</div>
+            <div className="font-bold text-red-300 text-sm"><Trans i18nKey="auto.solarsystem.saturn">Saturn</Trans></div>
           </div>
           <div className="bg-orange-900/20 rounded-xl p-3 text-center border border-orange-700/30">
             <div className="text-xl mb-1">🔴</div>
-            <div className="font-bold text-orange-300 text-sm">Mars</div>
+            <div className="font-bold text-orange-300 text-sm"><Trans i18nKey="auto.solarsystem.mars">Mars</Trans></div>
           </div>
         </div>
 
@@ -96,12 +96,12 @@ export default function SolarSystem() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.SolarSystem.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-400 font-bold text-sm mb-1">Ancient Indian Astronomy</h3>
+              <h3 className="text-orange-400 font-bold text-sm mb-1"><Trans i18nKey="auto.solarsystem.ancient_indian_astronomy">Ancient Indian Astronomy</Trans></h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Aryabhata (499 CE) calculated Earth's circumference with 99% accuracy and described
-                heliocentric motion 1,000 years before Copernicus! The <strong>Surya Siddhanta</strong>
-                (400 CE) described planetary orbits and eclipses with remarkable precision.
-              </p>
+                <Trans i18nKey="auto.solarsystem.aryabhata_499_ce_calculated_ea">Aryabhata (499 CE) calculated Earth's circumference with 99% accuracy and described
+                                              heliocentric motion 1,000 years before Copernicus! The</Trans> <strong><Trans i18nKey="auto.solarsystem.surya_siddhanta">Surya Siddhanta</Trans></strong>
+                <Trans i18nKey="auto.solarsystem.400_ce_described_planetary_orb">(400 CE) described planetary orbits and eclipses with remarkable precision.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

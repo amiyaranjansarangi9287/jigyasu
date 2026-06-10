@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Play, Pause, ChevronLeft, ChevronRight, Clock } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface DigestiveOrgan {
   id: string;
@@ -59,6 +63,22 @@ const organs: DigestiveOrgan[] = [
 ];
 
 export default function DigestiveJourney() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.digestion_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.digestion_prompt', "Where does your sandwich go after you swallow? Follow the epic journey of food through the digestive tract!"),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'digestive-journey', 60);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   const [currentOrgan, setCurrentOrgan] = useState(0);
   const [autoPlay, setAutoPlay] = useState(false);
   const [foodEmoji, setFoodEmoji] = useState('🍔');
@@ -81,13 +101,13 @@ export default function DigestiveJourney() {
     <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-2">🦷 Digestive Journey</h2>
-          <p className="text-gray-400 text-lg">Follow your {foodEmoji} from mouth to exit!</p>
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-2"><Trans i18nKey="auto.digestivejourney.digestive_journey">🦷 Digestive Journey</Trans></h2>
+          <p className="text-gray-400 text-lg"><Trans i18nKey="auto.digestivejourney.follow_your">Follow your</Trans> {foodEmoji} <Trans i18nKey="auto.digestivejourney.from_mouth_to_exit">from mouth to exit!</Trans></p>
         </motion.div>
 
         {/* Food selector */}
         <div className="flex justify-center gap-2 mb-5">
-          <span className="text-sm text-gray-500 self-center mr-1">Track:</span>
+          <span className="text-sm text-gray-500 self-center mr-1"><Trans i18nKey="auto.digestivejourney.track">Track:</Trans></span>
           {foods.map(f => (
             <button key={f} onClick={() => setFoodEmoji(f)}
               className={`text-2xl p-1 rounded-lg transition-all ${foodEmoji === f ? 'bg-gray-700 scale-110' : 'hover:bg-gray-800'}`}>{f}</button>
@@ -140,14 +160,14 @@ export default function DigestiveJourney() {
                 <h3 className="text-2xl font-black text-white mb-1">{organ.name}</h3>
                 <div className="flex gap-3 text-sm text-gray-400">
                   <span className="flex items-center gap-1"><Clock className="w-3 h-3" /> {organ.time}</span>
-                  <span>pH: {organ.pH}</span>
+                  <span><Trans i18nKey="auto.digestivejourney.ph">pH:</Trans> {organ.pH}</span>
                 </div>
 
                 {/* Food traveling animation */}
                 <motion.div className="mt-6 flex items-center gap-2"
                   initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                   <span className="text-2xl">{foodEmoji}</span>
-                  <span className="text-gray-500 text-sm">is being processed here</span>
+                  <span className="text-gray-500 text-sm"><Trans i18nKey="auto.digestivejourney.is_being_processed_here">is being processed here</Trans></span>
                 </motion.div>
               </motion.div>
             </AnimatePresence>
@@ -160,7 +180,7 @@ export default function DigestiveJourney() {
               </button>
               <button onClick={() => { setAutoPlay(!autoPlay); if (!autoPlay) setCurrentOrgan(0); }}
                 className={`px-5 py-2.5 rounded-full font-medium text-sm flex items-center gap-2 ${autoPlay ? 'bg-red-500 text-white' : 'bg-emerald-500 text-white'}`}>
-                {autoPlay ? <><Pause className="w-4 h-4" /> Pause</> : <><Play className="w-4 h-4" /> Follow Food</>}
+                {autoPlay ? <><Pause className="w-4 h-4" /> <Trans i18nKey="auto.digestivejourney.pause">Pause</Trans></> : <><Play className="w-4 h-4" /> <Trans i18nKey="auto.digestivejourney.follow_food">Follow Food</Trans></>}
               </button>
               <button onClick={() => setCurrentOrgan(c => Math.min(organs.length - 1, c + 1))} disabled={currentOrgan === organs.length - 1}
                 className="p-2.5 rounded-full bg-gray-800 text-gray-300 hover:bg-gray-700 disabled:opacity-30">
@@ -174,7 +194,7 @@ export default function DigestiveJourney() {
             className="bg-gray-900 rounded-2xl border border-gray-800 p-5">
             <p className="text-gray-300 text-sm leading-relaxed mb-4">{organ.description}</p>
 
-            <h4 className="text-sm font-bold text-white mb-2 uppercase tracking-wider">🧪 Enzymes & Chemicals</h4>
+            <h4 className="text-sm font-bold text-white mb-2 uppercase tracking-wider"><Trans i18nKey="auto.digestivejourney.enzymes_chemicals">🧪 Enzymes & Chemicals</Trans></h4>
             <ul className="space-y-1 mb-4">
               {organ.enzymes.map((e, i) => (
                 <li key={i} className="text-sm text-gray-300 flex items-start gap-1.5">
@@ -183,7 +203,7 @@ export default function DigestiveJourney() {
               ))}
             </ul>
 
-            <h4 className="text-sm font-bold text-white mb-2 uppercase tracking-wider">⚙️ What Happens</h4>
+            <h4 className="text-sm font-bold text-white mb-2 uppercase tracking-wider"><Trans i18nKey="auto.digestivejourney.what_happens">⚙️ What Happens</Trans></h4>
             <ul className="space-y-1.5 mb-4">
               {organ.whatHappens.map((w, i) => (
                 <motion.li key={i} initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }}
@@ -197,7 +217,7 @@ export default function DigestiveJourney() {
             </ul>
 
             <div className="bg-gradient-to-r from-orange-900/20 to-yellow-900/20 rounded-xl p-3 border border-orange-500/20">
-              <div className="text-sm text-orange-400 font-bold mb-1">💡 Fun Fact</div>
+              <div className="text-sm text-orange-400 font-bold mb-1"><Trans i18nKey="auto.digestivejourney.fun_fact">💡 Fun Fact</Trans></div>
               <p className="text-sm text-gray-300 italic">{organ.funFact}</p>
             </div>
           </motion.div>

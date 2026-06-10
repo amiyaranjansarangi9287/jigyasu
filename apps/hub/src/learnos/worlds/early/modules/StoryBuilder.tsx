@@ -1,7 +1,7 @@
 // src/worlds/early/modules/StoryBuilder.tsx
 
 import { useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import EarlyShell from '../EarlyShell';
 import { usePip } from '../hooks/usePip';
@@ -75,7 +75,7 @@ export default function StoryBuilder() {
   return (
     <EarlyShell module="story-builder">
       <AnimatePresence mode="wait">
-        {step === 'character' && <motion.div key="char" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }}><SelectionGrid items={STORY_CHARACTERS} onSelect={handleCharSelect} title="Who is the hero of our story?" /></motion.div>}
+        {step === 'character' && <motion.div key="char" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }}><SelectionGrid items={STORY_CHARACTERS} onSelect={handleCharSelect} title={t('auto.attr.storybuilder.who_is_the_hero_of_our_story')} /></motion.div>}
         {step === 'place' && <motion.div key="place" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }}><SelectionGrid items={STORY_PLACES} onSelect={handlePlaceSelect} title={`Where does ${selectedChar?.name} live?`} /></motion.div>}
         {step === 'problem' && <motion.div key="prob" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }}><SelectionGrid items={STORY_PROBLEMS} onSelect={handleProblemSelect} title={`What happened to ${selectedChar?.name}?`} /></motion.div>}
 
@@ -105,6 +105,7 @@ export default function StoryBuilder() {
             </div>
             <div className="space-y-3">
               {comprehensionOptions.map((opt, i) => {
+                  const { t } = useTranslation();
                 const isCorrect = opt === selectedChar?.name;
                 const isSelected = quizAnswer === i;
                 const done = quizAnswer !== null;
@@ -118,7 +119,7 @@ export default function StoryBuilder() {
             </div>
             {quizAnswer !== null && (
               <motion.button initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 }} onClick={handleBuildNew}
-                className="w-full py-4 bg-purple-600 text-white font-bold text-xl rounded-2xl mt-6 min-h-[56px]">🐤 Build a New Story!</motion.button>
+                className="w-full py-4 bg-purple-600 text-white font-bold text-xl rounded-2xl mt-6 min-h-[56px]"><Trans i18nKey="auto.storybuilder.build_a_new_story">🐤 Build a New Story!</Trans></motion.button>
             )}
           </motion.div>
         )}

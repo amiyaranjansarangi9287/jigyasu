@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/ShapesWonderFirst.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout';
@@ -73,13 +73,13 @@ function ExplorationComponent() {
       <div className="bg-blue-50 rounded-2xl p-4 border border-blue-200">
         <h3 className="font-bold text-blue-900 mb-2 flex items-center gap-2">
           <span className="text-xl">👀</span>
-          What do you notice?
-        </h3>
+          <Trans i18nKey="auto.shapeswonderfirst.what_do_you_notice">What do you notice?</Trans>
+                          </h3>
         <ul className="text-slate-700 text-sm space-y-2">
-          <li>• How many sides does each shape have?</li>
-          <li>• What happens to the angles as you add more sides?</li>
-          <li>• What's special about the circle?</li>
-          <li>• Can you find these shapes in real life?</li>
+          <li><Trans i18nKey="auto.shapeswonderfirst.how_many_sides_does_each_shape">• How many sides does each shape have?</Trans></li>
+          <li><Trans i18nKey="auto.shapeswonderfirst.what_happens_to_the_angles_as_">• What happens to the angles as you add more sides?</Trans></li>
+          <li><Trans i18nKey="auto.shapeswonderfirst.what_s_special_about_the_circl">• What's special about the circle?</Trans></li>
+          <li><Trans i18nKey="auto.shapeswonderfirst.can_you_find_these_shapes_in_r">• Can you find these shapes in real life?</Trans></li>
         </ul>
       </div>
     </div>

@@ -7,6 +7,7 @@ import { EverydayConnection } from '../components/EverydayConnection';
 import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
+import { Trans } from "react-i18next";
 
 export default function GravityOrbits() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -238,7 +239,7 @@ export default function GravityOrbits() {
           <div className="flex items-center gap-4 mb-3">
             <div className="flex-1">
               <div className="flex justify-between mb-1">
-                <span className="text-slate-500 text-sm">Mass of star</span>
+                <span className="text-slate-500 text-sm"><Trans i18nKey="auto.gravityorbits.mass_of_star">Mass of star</Trans></span>
                 <span className="text-slate-400 text-sm font-mono">{mass}</span>
               </div>
               <input
@@ -257,41 +258,41 @@ export default function GravityOrbits() {
                   : 'bg-slate-900 border border-slate-800 text-slate-500'
               }`}
             >
-              Newton
-            </button>
+              <Trans i18nKey="auto.gravityorbits.newton">Newton</Trans>
+                                      </button>
           </div>
 
           {/* Explanation — adult-level text */}
           <div className="space-y-3">
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-slate-300 text-sm leading-relaxed mb-2">
-                The planet is in constant free fall toward the Sun.
-                But it also has sideways velocity. The result: it
-                keeps falling, but the Earth curves away beneath it.
-              </p>
+                <Trans i18nKey="auto.gravityorbits.the_planet_is_in_constant_free">The planet is in constant free fall toward the Sun.
+                                              But it also has sideways velocity. The result: it
+                                              keeps falling, but the Earth curves away beneath it.</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Newton realised that the Moon and a falling apple
-                are obeying the same force. That unification —
-                Earth physics and sky physics are the same —
-                was revolutionary.
-              </p>
+                <Trans i18nKey="auto.gravityorbits.newton_realised_that_the_moon_">Newton realised that the Moon and a falling apple
+                                              are obeying the same force. That unification —
+                                              Earth physics and sky physics are the same —
+                                              was revolutionary.</Trans>
+                                            </p>
             </div>
 
             {/* Historical context */}
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-violet-400 text-sm font-bold uppercase
                             tracking-wider mb-2">
-                History of the idea
-              </p>
+                <Trans i18nKey="auto.gravityorbits.history_of_the_idea">History of the idea</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                For 2,000 years, "heavenly motion" and "earthly motion"
-                were thought to be fundamentally different. The sky
-                followed perfect circular paths; the Earth was messy.
-                Newton's law showed they were one thing.
-                Einstein later showed Newton was slightly wrong —
-                it's not force but curved spacetime.
-                This canvas shows Newton's version.
-              </p>
+                <Trans i18nKey="auto.gravityorbits.for_2_000_years_heavenly_motio">For 2,000 years, "heavenly motion" and "earthly motion"
+                                              were thought to be fundamentally different. The sky
+                                              followed perfect circular paths; the Earth was messy.
+                                              Newton's law showed they were one thing.
+                                              Einstein later showed Newton was slightly wrong —
+                                              it's not force but curved spacetime.
+                                              This canvas shows Newton's version.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

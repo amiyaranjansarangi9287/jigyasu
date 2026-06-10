@@ -2,6 +2,10 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { RotateCcw, Heart, Zap, Star, Trophy } from 'lucide-react';
 import { playCollect, playHit, playGameOver, playVictory, playLevelUp } from '../lib/sounds';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface Entity {
   id: number;
@@ -55,6 +59,22 @@ const GAME_H = 400;
 const PLAYER_SIZE = 30;
 
 export default function FoodChainDash() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.food_chain_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.food_chain_prompt', "Who eats whom? Energy flows from the sun to plants, to animals, and back to the earth. Let's trace the flow!"),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'food-chain', 60);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   const [currentLevel, setCurrentLevel] = useState(0);
   const [gameState, setGameState] = useState<'menu' | 'playing' | 'gameover' | 'win'>('menu');
   const [player, setPlayer] = useState({ x: GAME_W / 2, y: GAME_H / 2 });
@@ -264,8 +284,8 @@ export default function FoodChainDash() {
       <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
         <div className="max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-black text-white mb-2">🏊 Food Chain Dash</h2>
-            <p className="text-gray-400 text-lg">Eat food, avoid predators, survive the food chain!</p>
+            <h2 className="text-3xl md:text-4xl font-black text-white mb-2"><Trans i18nKey="auto.foodchaindash.food_chain_dash">🏊 Food Chain Dash</Trans></h2>
+            <p className="text-gray-400 text-lg"><Trans i18nKey="auto.foodchaindash.eat_food_avoid_predators_survi">Eat food, avoid predators, survive the food chain!</Trans></p>
           </motion.div>
 
           <div className="grid gap-4 max-w-md mx-auto">
@@ -277,15 +297,15 @@ export default function FoodChainDash() {
                 <div className="flex items-center gap-4">
                   <div className="text-5xl">{lvl.playerEmoji}</div>
                   <div>
-                    <div className="text-sm text-emerald-400 font-bold uppercase">Level {lvl.id}</div>
+                    <div className="text-sm text-emerald-400 font-bold uppercase"><Trans i18nKey="auto.foodchaindash.level">Level</Trans> {lvl.id}</div>
                     <div className="text-xl font-bold text-white">{lvl.name}</div>
                     <div className="text-sm text-gray-400 mt-1">{lvl.description}</div>
                     <div className="flex gap-2 mt-2">
                       <span className="text-sm bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full">
-                        Food: {lvl.foods.map(f => f.emoji).join('')}
+                        <Trans i18nKey="auto.foodchaindash.food">Food:</Trans> {lvl.foods.map(f => f.emoji).join('')}
                       </span>
                       <span className="text-sm bg-red-500/20 text-orange-400 px-2 py-0.5 rounded-full">
-                        Danger: {lvl.predators.map(p => p.emoji).join('')}
+                        <Trans i18nKey="auto.foodchaindash.danger">Danger:</Trans> {lvl.predators.map(p => p.emoji).join('')}
                       </span>
                     </div>
                   </div>
@@ -296,16 +316,16 @@ export default function FoodChainDash() {
 
           {highScore > 0 && (
             <div className="text-center mt-6 text-sm text-gray-400">
-              <Trophy className="w-4 h-4 inline mr-1 text-yellow-400" /> High Mastery: {highScore}
+              <Trophy className="w-4 h-4 inline mr-1 text-yellow-400" /> <Trans i18nKey="auto.foodchaindash.high_mastery">High Mastery:</Trans> {highScore}
             </div>
           )}
 
           <div className="text-center mt-6 bg-gray-900 rounded-xl p-4 max-w-md mx-auto border border-gray-800">
-            <h3 className="text-sm font-bold text-white mb-2">🎮 Controls</h3>
+            <h3 className="text-sm font-bold text-white mb-2"><Trans i18nKey="auto.foodchaindash.controls">🎮 Controls</Trans></h3>
             <p className="text-sm text-gray-400">
-              <strong>Desktop:</strong> Arrow keys or WASD to move<br />
-              <strong>Mobile:</strong> Touch/drag on the game area
-            </p>
+              <strong><Trans i18nKey="auto.foodchaindash.desktop">Desktop:</Trans></strong> <Trans i18nKey="auto.foodchaindash.arrow_keys_or_wasd_to_move">Arrow keys or WASD to move</Trans><br />
+              <strong><Trans i18nKey="auto.foodchaindash.mobile">Mobile:</Trans></strong> <Trans i18nKey="auto.foodchaindash.touch_drag_on_the_game_area">Touch/drag on the game area</Trans>
+                                    </p>
           </div>
         </div>
       </div>
@@ -329,15 +349,15 @@ export default function FoodChainDash() {
             </div>
             {combo > 1 && (
               <div className="flex items-center gap-1 text-yellow-400 text-sm font-bold">
-                <Zap className="w-3 h-3" /> x{combo} combo!
-              </div>
+                <Zap className="w-3 h-3" /> <Trans i18nKey="auto.foodchaindash.x">x</Trans>{combo} <Trans i18nKey="auto.foodchaindash.combo">combo!</Trans>
+                                            </div>
             )}
           </div>
           <div className="flex items-center gap-4">
             <div className="text-sm text-gray-400">
               <Star className="w-3 h-3 inline mr-1 text-yellow-400" />{mastery}/{targetScore}
             </div>
-            {invincible && <div className="text-sm text-cyan-400 font-bold animate-pulse">🛡️ Shield!</div>}
+            {invincible && <div className="text-sm text-cyan-400 font-bold animate-pulse"><Trans i18nKey="auto.foodchaindash.shield">🛡️ Shield!</Trans></div>}
           </div>
         </div>
 
@@ -387,7 +407,7 @@ export default function FoodChainDash() {
         </div>
 
         <div className="text-center mt-3">
-          <button onClick={() => setGameState('menu')} className="text-sm text-gray-500 hover:text-gray-300">← Back to Menu</button>
+          <button onClick={() => setGameState('menu')} className="text-sm text-gray-500 hover:text-gray-300"><Trans i18nKey="auto.foodchaindash.back_to_menu">← Back to Menu</Trans></button>
         </div>
 
         {/* Game Over / Win overlay */}
@@ -406,24 +426,24 @@ export default function FoodChainDash() {
                   : `The food chain caught up with you!`}
               </p>
               <div className="bg-gray-800 rounded-xl p-3 mb-5">
-                <div className="text-gray-500 text-sm">Mastery</div>
+                <div className="text-gray-500 text-sm"><Trans i18nKey="auto.foodchaindash.mastery">Mastery</Trans></div>
                 <div className="text-3xl font-black text-emerald-400">{mastery}</div>
               </div>
               <div className="flex gap-2">
                 <button onClick={() => startGame(currentLevel)}
                   className="flex-1 py-2.5 rounded-xl bg-emerald-500 text-white text-sm font-bold hover:bg-emerald-600 flex items-center justify-center gap-1">
-                  <RotateCcw className="w-4 h-4" /> Retry
-                </button>
+                  <RotateCcw className="w-4 h-4" /> <Trans i18nKey="auto.foodchaindash.retry">Retry</Trans>
+                                                  </button>
                 {gameState === 'win' && currentLevel < levels.length - 1 && (
                   <button onClick={() => { playLevelUp(); startGame(currentLevel + 1); }}
                     className="flex-1 py-2.5 rounded-xl bg-purple-500 text-white text-sm font-bold hover:bg-purple-600">
-                    Next Level →
-                  </button>
+                    <Trans i18nKey="auto.foodchaindash.next_level">Next Level →</Trans>
+                                                        </button>
                 )}
                 <button onClick={() => setGameState('menu')}
                   className="flex-1 py-2.5 rounded-xl bg-gray-800 text-gray-300 text-sm font-bold hover:bg-gray-700">
-                  Menu
-                </button>
+                  <Trans i18nKey="auto.foodchaindash.menu">Menu</Trans>
+                                                  </button>
               </div>
             </motion.div>
           </motion.div>

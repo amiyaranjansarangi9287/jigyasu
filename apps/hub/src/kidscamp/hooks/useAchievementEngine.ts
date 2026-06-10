@@ -41,8 +41,6 @@ export function useAchievementEngine() {
     // Pillar achievements
     const toyboxCount = getCompletedByPillar('toybox');
     const sciencelabCount = getCompletedByPillar('sciencelab');
-    const artstudioCount = getCompletedByPillar('artstudio');
-    const outdoorquestCount = getCompletedByPillar('outdoorquest');
 
     if (toyboxCount >= 1 && !isUnlocked('toybox-starter')) {
       unlock('toybox-starter');
@@ -60,25 +58,8 @@ export function useAchievementEngine() {
       unlock('sciencelab-master');
       playAchievement();
     }
-    if (artstudioCount >= 1 && !isUnlocked('artstudio-starter')) {
-      unlock('artstudio-starter');
-      playAchievement();
-    }
-    if (artstudioCount >= 10 && !isUnlocked('artstudio-master')) {
-      unlock('artstudio-master');
-      playAchievement();
-    }
-    if (outdoorquestCount >= 1 && !isUnlocked('outdoorquest-starter')) {
-      unlock('outdoorquest-starter');
-      playAchievement();
-    }
-    if (outdoorquestCount >= 10 && !isUnlocked('outdoorquest-master')) {
-      unlock('outdoorquest-master');
-      playAchievement();
-    }
-
     // Renaissance camper
-    if (toyboxCount >= 1 && sciencelabCount >= 1 && artstudioCount >= 1 && outdoorquestCount >= 1 && !isUnlocked('renaissance-camper')) {
+    if (toyboxCount >= 1 && sciencelabCount >= 1 && !isUnlocked('renaissance-camper')) {
       unlock('renaissance-camper');
       playAchievement();
     }

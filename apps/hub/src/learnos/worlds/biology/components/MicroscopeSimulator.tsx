@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ZoomIn, ZoomOut, RotateCcw, ChevronLeft, ChevronRight, Eye } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface Specimen {
   id: string;
@@ -186,6 +190,22 @@ const specimens: Specimen[] = [
 ];
 
 export default function MicroscopeSimulator() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.microscope_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.microscope_prompt', "What does a butterfly wing look like up close? Let's zoom in and discover the microscopic world!"),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'microscope-simulator', 60);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   const [currentSlide, setCurrentSlide] = useState(0);
   const [zoom, setZoom] = useState(2);
   const [viewOffset, setViewOffset] = useState({ x: 0, y: 0 });

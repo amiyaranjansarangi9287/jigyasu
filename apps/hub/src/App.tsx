@@ -1,6 +1,6 @@
 import { Suspense, lazy, useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useUserProfile } from '@jigyasu/storage';
 import { useLearnerStore } from './learnos/store/learnerStore';
 import TopNav from './components/TopNav';
@@ -81,6 +81,7 @@ import { useSettingsStore } from './learnos/store';
 import { motion, AnimatePresence } from 'framer-motion';
 
 function SwipeableRoutes() {
+    const { t } = useTranslation();
   const location = useLocation();
   const navigate = useNavigate();
   const ROUTES = ['/', '/home', '/execute', '/profile'];
@@ -137,16 +138,16 @@ function SwipeableRoutes() {
         className="flex-1 flex flex-col w-full h-full"
       >
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<ErrorBoundary><Suspense fallback={<RouteLoading label="Loading..." />}><LandingPage /></Suspense></ErrorBoundary>} />
+          <Route path="/" element={<ErrorBoundary><Suspense fallback={<RouteLoading label={t('auto.attr.app.loading')} />}><LandingPage /></Suspense></ErrorBoundary>} />
           <Route path="/profile" element={<ErrorBoundary><ProfilePage /></ErrorBoundary>} />
           <Route path="/about" element={<ErrorBoundary><AboutPage /></ErrorBoundary>} />
           <Route path="/privacy" element={<ErrorBoundary><PrivacyPolicy /></ErrorBoundary>} />
           <Route path="/terms" element={<ErrorBoundary><TermsOfService /></ErrorBoundary>} />
           <Route path="/parents" element={<ErrorBoundary><ParentDashboard /></ErrorBoundary>} />
           <Route path="/contact" element={<ErrorBoundary><ContactPage /></ErrorBoundary>} />
-          <Route path="/execute" element={<ErrorBoundary><Suspense fallback={<RouteLoading label="Opening Maker Space" />}><KidsCampApp /></Suspense></ErrorBoundary>} />
-          <Route path="/execute/*" element={<ErrorBoundary><Suspense fallback={<RouteLoading label="Opening Maker Space" />}><KidsCampApp /></Suspense></ErrorBoundary>} />
-          <Route path="*" element={<ErrorBoundary><Suspense fallback={<RouteLoading label="Opening Learning Paths" />}><JigyasuApp /></Suspense></ErrorBoundary>} />
+          <Route path="/execute" element={<ErrorBoundary><Suspense fallback={<RouteLoading label={t('auto.attr.app.opening_maker_space')} />}><KidsCampApp /></Suspense></ErrorBoundary>} />
+          <Route path="/execute/*" element={<ErrorBoundary><Suspense fallback={<RouteLoading label={t('auto.attr.app.opening_maker_space')} />}><KidsCampApp /></Suspense></ErrorBoundary>} />
+          <Route path="*" element={<ErrorBoundary><Suspense fallback={<RouteLoading label={t('auto.attr.app.opening_learning_paths')} />}><JigyasuApp /></Suspense></ErrorBoundary>} />
         </Routes>
       </motion.div>
     </AnimatePresence>
@@ -154,6 +155,7 @@ function SwipeableRoutes() {
 }
 
 export default function App() {
+    const { t } = useTranslation();
   const { highContrast, dyslexiaFont } = useSettingsStore();
 
   useEffect(() => {
@@ -174,13 +176,13 @@ export default function App() {
     <ErrorBoundary>
       <BrowserRouter>
         <a href="#main-content" className="skip-to-content">
-          Skip to main content
-        </a>
+          <Trans i18nKey="auto.app.skip_to_main_content">Skip to main content</Trans>
+                          </a>
         <TopNav />
         <GlobalNav />
         <AnalyticsDashboard />
         <ImpactDashboard />
-        <div id="main-content" className="min-h-screen md:pl-24 pb-[84px] md:pb-0 flex flex-col pt-[72px] overflow-hidden w-full max-w-[100vw]">
+        <div id="main-content" className="min-h-screen bg-jigyasu-grid text-slate-900 dark:text-slate-100 md:pl-24 pb-[84px] md:pb-0 flex flex-col pt-[72px] overflow-hidden w-full max-w-[100vw]">
           <SwipeableRoutes />
         </div>
       </BrowserRouter>

@@ -1,6 +1,6 @@
 // src/worlds/lab/modules/EcosystemSandbox.tsx
 import { useRef, useEffect, useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import LabShell from '../LabShell';
 import { useLumoOwl } from '../hooks/useLumoOwl';
@@ -60,7 +60,7 @@ export default function EcosystemSandbox() {
     <LabShell module="ecosystem-sandbox" subject="biology">
       <div className="flex flex-col h-screen">
         <div className="bg-white p-4 border-b flex justify-between items-center">
-          <h2 className="font-bold">Ecosystem Sandbox</h2>
+          <h2 className="font-bold"><Trans i18nKey="auto.ecosystemsandbox.ecosystem_sandbox">Ecosystem Sandbox</Trans></h2>
           <button onClick={() => { setIsRunning(!isRunning); recordEcosystemEvent(false); updateCertification('ecosystem-sandbox', 'explorer'); trackEvent('ecosystem-sandbox', 'canvas_interaction'); }} className={`px-6 py-2 rounded-full font-bold text-white ${isRunning ? 'bg-red-500' : 'bg-green-600'}`}>{isRunning ? 'Pause' : 'Run'}</button>
         </div>
         <canvas ref={canvasRef} className="flex-1 w-full block" />

@@ -1,6 +1,6 @@
 // src/shared/layout/ParentCorner.tsx
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLearnerStore, useSettingsStore } from '../../store';
 import { LANGUAGES } from '../../constants/languages';
@@ -41,7 +41,7 @@ export function ParentCorner({ onExit }: ParentCornerProps) {
                    flex items-center justify-center
                    text-gray-500 shadow-sm
                    select-none"
-        title="Hold 3 seconds for parent options"
+        title={t('auto.attr.parentcorner.hold_3_seconds_for_parent_opti')}
         aria-label="Parent corner - hold for 3 seconds"
       >
         ⚙️
@@ -102,7 +102,7 @@ export function ParentCorner({ onExit }: ParentCornerProps) {
 
               {/* Sound toggle */}
               <div className="flex items-center justify-between py-2">
-                <span className="text-sm text-gray-600">Sound</span>
+                <span className="text-sm text-gray-600"><Trans i18nKey="auto.parentcorner.sound">Sound</Trans></span>
                 <button
                   onClick={toggleSound}
                   className={`w-14 h-8 rounded-full transition-colors flex items-center px-1 ${
@@ -121,7 +121,7 @@ export function ParentCorner({ onExit }: ParentCornerProps) {
 
               {/* High Contrast toggle */}
               <div className="flex items-center justify-between py-2 border-t border-gray-100">
-                <span className="text-sm text-gray-600">High Contrast Mode</span>
+                <span className="text-sm text-gray-600"><Trans i18nKey="auto.parentcorner.high_contrast_mode">High Contrast Mode</Trans></span>
                 <button
                   onClick={toggleHighContrast}
                   className={`w-14 h-8 rounded-full transition-colors flex items-center px-1 ${
@@ -140,7 +140,7 @@ export function ParentCorner({ onExit }: ParentCornerProps) {
 
               {/* Dyslexia Font toggle */}
               <div className="flex items-center justify-between py-2 border-t border-gray-100">
-                <span className="text-sm text-gray-600">Dyslexia-Friendly Font</span>
+                <span className="text-sm text-gray-600"><Trans i18nKey="auto.parentcorner.dyslexia_friendly_font">Dyslexia-Friendly Font</Trans></span>
                 <button
                   onClick={toggleDyslexiaFont}
                   className={`w-14 h-8 rounded-full transition-colors flex items-center px-1 ${
@@ -169,8 +169,8 @@ export function ParentCorner({ onExit }: ParentCornerProps) {
                              transition-colors min-h-[48px]"
                   aria-label="Exit to Family Home"
                 >
-                  Exit to Family Home
-                </button>
+                  <Trans i18nKey="auto.parentcorner.exit_to_family_home">Exit to Family Home</Trans>
+                                                  </button>
               )}
             </motion.div>
           </div>

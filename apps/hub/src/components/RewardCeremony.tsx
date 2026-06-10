@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Mascot } from './Mascot';
+import { Trans } from "react-i18next";
 
 interface RewardCeremonyProps {
   xpEarned?: number;
@@ -48,7 +49,7 @@ export function RewardCeremony({ xpEarned = 50, message = 'Awesome Job!', onClos
           
           <div className="inline-flex items-center justify-center gap-3 text-3xl font-bold text-sky-500 bg-sky-50 px-8 py-3 rounded-full border-2 border-sky-200">
             <span className="animate-pulse">✨</span>
-            <span>+{xpEarned} XP</span>
+            <span>+{xpEarned} <Trans i18nKey="auto.rewardceremony.xp">XP</Trans></span>
           </div>
 
           <div className="mt-8">
@@ -56,8 +57,8 @@ export function RewardCeremony({ xpEarned = 50, message = 'Awesome Job!', onClos
               onClick={handleClose}
               className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-10 rounded-full shadow-lg shadow-orange-500/30 transition-transform active:scale-95 text-lg"
             >
-              Continue Adventure
-            </button>
+              <Trans i18nKey="auto.rewardceremony.continue_adventure">Continue Adventure</Trans>
+                                      </button>
           </div>
         </div>
       </div>

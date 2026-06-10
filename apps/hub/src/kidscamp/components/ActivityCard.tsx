@@ -17,7 +17,7 @@ import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import GestureWrapper from '../../components/GestureWrapper';
 import { HeartBurst as HeartButton } from '../../components/MicroInteractions';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { Button, Card } from '@jigyasu/ui';
 
 export default React.memo(function ActivityCard({
@@ -36,13 +36,6 @@ export default React.memo(function ActivityCard({
     Easy: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400',
     Medium: 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400',
     Hard: 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400'
-  };
-
-  const pillarColors = {
-    toybox: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400',
-    sciencelab: 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400',
-    artstudio: 'bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-400',
-    outdoorquest: 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400'
   };
 
   const getStatusBadge = () => {
@@ -95,7 +88,7 @@ export default React.memo(function ActivityCard({
         <Card
           hoverable
           onClick={() => onSelect(activity)}
-          className="group flex flex-row gap-4 p-4 dark:bg-gray-800 border-gray-100 dark:border-gray-700"
+          className="group flex flex-row gap-4 p-4 dark:bg-gray-800 border-gray-100 dark:border-gray-700 card-wonder"
         >
         {/* Image */}
         <div className="relative w-24 min-h-24 flex-shrink-0 rounded-xl overflow-hidden">
@@ -114,11 +107,11 @@ export default React.memo(function ActivityCard({
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">{pillar?.icon}</span>
             <span className={`px-2 py-0.5 rounded-full text-sm font-medium ${difficultyColors[activity.difficulty]}`}>
-              // eslint-disable-next-line @typescript-eslint/no-explicit-any
-              {t(`difficulty_${activity.difficulty.toLowerCase()}` as any, activity.difficulty)}
+              <Trans i18nKey="auto.activitycard.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
+                                          {t(`difficulty_${activity.difficulty.toLowerCase()}` as any, activity.difficulty)}
             </span>
           </div>
-          <h4 className="font-bold text-gray-900 dark:text-white truncate group-hover:text-orange-500 transition-colors">
+          <h4 className="font-bold text-gray-900 dark:text-white truncate group-hover:text-orange-500 transition-colors text-balance">
             {activity.name}
           </h4>
           <p className="text-sm text-gray-500 dark:text-gray-400 line-clamp-1">
@@ -142,6 +135,7 @@ export default React.memo(function ActivityCard({
               onStart(activity);
             }}
             size="sm"
+            className="btn-wonder"
           >
             {getButtonText()}
           </Button>
@@ -157,16 +151,16 @@ export default React.memo(function ActivityCard({
         <Card
           hoverable
           onClick={() => onSelect(activity)}
-          className="group text-left p-3 dark:bg-gray-800 border-gray-100 dark:border-gray-700"
+          className="group text-left p-3 dark:bg-gray-800 border-gray-100 dark:border-gray-700 card-wonder"
         >
         <div className="flex items-center gap-3">
           <span className="text-2xl">{pillar?.icon}</span>
           <div className="flex-1 min-w-0">
-            <p className="font-medium text-gray-900 dark:text-white truncate group-hover:text-orange-500 transition-colors">
+            <p className="font-medium text-gray-900 dark:text-white truncate group-hover:text-orange-500 transition-colors text-balance">
               {activity.name}
             </p>
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            <p className="text-sm text-gray-500">{t(`difficulty_${activity.difficulty.toLowerCase()}` as any, activity.difficulty)}</p>
+            <Trans i18nKey="auto.activitycard.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
+                                    <p className="text-sm text-gray-500">{t(`difficulty_${activity.difficulty.toLowerCase()}` as any, activity.difficulty)}</p>
           </div>
           {status === 'completed' && (
             <svg className="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -185,7 +179,7 @@ export default React.memo(function ActivityCard({
       <Card
         hoverable
         onClick={() => onSelect(activity)}
-        className="group relative dark:bg-gray-800 border-gray-100 dark:border-gray-700"
+        className="group relative dark:bg-gray-800 border-gray-100 dark:border-gray-700 card-wonder"
       >
       {/* Image */}
       <div className="relative min-h-40 overflow-hidden aspect-[16/10]">
@@ -217,16 +211,16 @@ export default React.memo(function ActivityCard({
             onStart(activity);
           }}
           size="sm"
-          className="absolute bottom-3 right-3 z-10 shadow-lg"
+          className="absolute bottom-3 right-3 z-10 shadow-lg btn-wonder"
         >
           {getButtonText()}
         </Button>
 
         {/* Pillar Badge */}
         <div className="absolute bottom-3 left-3 z-10">
-          <span className={`px-2.5 py-1 rounded-full text-sm font-medium flex items-center gap-1 ${pillarColors[activity.pillar]}`}>
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            {pillar?.icon} {t(`pillar_${activity.pillar}` as any, pillar?.name || '')}
+          <span className={`px-2.5 py-1 rounded-full text-sm font-medium flex items-center gap-1 ${pillar?.badgeClass || 'bg-gray-100 text-gray-700'}`}>
+            <Trans i18nKey="auto.activitycard.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
+                                      {pillar?.icon} {t(`pillar_${activity.pillar}` as any, pillar?.name || '')}
           </span>
         </div>
       </div>
@@ -235,8 +229,8 @@ export default React.memo(function ActivityCard({
       <div className="p-4">
         <div className="flex items-center gap-2 mb-2">
           <span className={`px-2 py-0.5 rounded-full text-sm font-medium ${difficultyColors[activity.difficulty]}`}>
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            {t(`difficulty_${activity.difficulty.toLowerCase()}` as any, activity.difficulty)}
+            <Trans i18nKey="auto.activitycard.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
+                                      {t(`difficulty_${activity.difficulty.toLowerCase()}` as any, activity.difficulty)}
           </span>
           <span className="text-sm text-gray-500 dark:text-gray-400">
             {activity.timeToMake.replace('min', t('min', 'min')).replace('hour', t('hour', 'hour')).replace('hours', t('hours', 'hours')).replace('play', t('play', 'play'))}
@@ -246,11 +240,11 @@ export default React.memo(function ActivityCard({
           </span>
         </div>
 
-        <h4 className="font-bold text-gray-900 dark:text-white mb-1 group-hover:text-orange-500 transition-colors line-clamp-1">
+        <h4 className="font-bold text-gray-900 dark:text-white mb-1 group-hover:text-orange-500 transition-colors line-clamp-1 text-balance">
           {activity.name}
         </h4>
 
-        <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-2 mb-3">
+        <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-2 mb-3 text-balance">
           {activity.description}
         </p>
 

@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { translateText } = require('./translation_service.cjs');
 
-const TARGET_LANGUAGES = ['hi', 'od', 'kn', 'ta', 'te', 'mr', 'bn', 'gu', 'ml', 'pa', 'as', 'ur', 'sa', 'sat', 'ne', 'kok', 'brx', 'doi', 'ks', 'mai', 'sd', 'mni'];
+const TARGET_LANGUAGES = ['hi', 'od', 'kn', 'ta', 'te', 'mr', 'bn', 'gu', 'ml', 'pa', 'as', 'ur', 'sa', 'sat', 'ne', 'brx', 'doi', 'ks', 'mai', 'sd', 'mni'];
 const LOCALES_DIR = path.join(__dirname, '../../src/learnos/i18n/locales');
 const EN_FILE_PATH = path.join(LOCALES_DIR, 'en.json');
 

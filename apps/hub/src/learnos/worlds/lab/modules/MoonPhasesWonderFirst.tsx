@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/MoonPhasesWonderFirst.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout';
@@ -66,13 +66,13 @@ function ExplorationComponent() {
       <div className="bg-blue-50 rounded-2xl p-4 border border-blue-200">
         <h3 className="font-bold text-blue-900 mb-2 flex items-center gap-2">
           <span className="text-xl">👀</span>
-          What do you notice?
-        </h3>
+          <Trans i18nKey="auto.moonphaseswonderfirst.what_do_you_notice">What do you notice?</Trans>
+                          </h3>
         <ul className="text-slate-700 text-sm space-y-2">
-          <li>• How does the Moon's appearance change through the phases?</li>
-          <li>• What pattern do you see in the sequence?</li>
-          <li>• Why does the Moon look different from Earth vs from orbit?</li>
-          <li>• How long does it take to complete all 8 phases?</li>
+          <li><Trans i18nKey="auto.moonphaseswonderfirst.how_does_the_moon_s_appearance">• How does the Moon's appearance change through the phases?</Trans></li>
+          <li><Trans i18nKey="auto.moonphaseswonderfirst.what_pattern_do_you_see_in_the">• What pattern do you see in the sequence?</Trans></li>
+          <li><Trans i18nKey="auto.moonphaseswonderfirst.why_does_the_moon_look_differe">• Why does the Moon look different from Earth vs from orbit?</Trans></li>
+          <li><Trans i18nKey="auto.moonphaseswonderfirst.how_long_does_it_take_to_compl">• How long does it take to complete all 8 phases?</Trans></li>
         </ul>
       </div>
     </div>

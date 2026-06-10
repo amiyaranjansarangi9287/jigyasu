@@ -1,6 +1,8 @@
 import { Activity } from '../data/activities.en';
 import { useLocalizedActivities } from '../../hooks/useLocalizedData';
 import { useTranslation } from 'react-i18next';
+import { pillars } from '../data/categories';
+import { useFormatNumber } from '../../hooks/useFormatNumber';
 
 interface Props {
   favorites: string[];
@@ -17,15 +19,16 @@ export default function FavoritesPanel({
 }: Props) {
   const { t } = useTranslation();
   const { activities } = useLocalizedActivities();
+  const formatNumber = useFormatNumber();
   return (
     <div className="fixed inset-0 z-50">
       <div
         className="absolute inset-0 bg-black/50 backdrop-blur-sm"
         onClick={() => setFavoritesOpen(false)}
       />
-      <div className="absolute right-0 top-0 bottom-0 w-full max-w-md bg-white dark:bg-gray-900 shadow-2xl animate-slide-in-mobile">
-        <div className="p-4 border-b border-gray-100 dark:border-gray-800 flex items-center justify-between">
-          <h2 className="text-lg font-bold text-gray-900 dark:text-white">{t('kidscamp.favorites.title', 'Favorites')} ({favoritesCount})</h2>
+      <div className="absolute right-0 top-0 bottom-0 w-full max-w-md glass-panel shadow-2xl animate-slide-in-mobile">
+        <div className="p-4 border-b border-gray-100/20 dark:border-gray-800/20 flex items-center justify-between">
+          <h2 className="text-lg font-bold text-gray-900 dark:text-white">{t('kidscamp.favorites.title', 'Favorites')} ({formatNumber(favoritesCount)})</h2>
           <button
             onClick={() => setFavoritesOpen(false)}
             className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
@@ -58,9 +61,7 @@ export default function FavoritesPanel({
                     className="w-full flex items-center gap-3 p-3 rounded-xl bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-left"
                   >
                     <span className="text-2xl">
-                      {activity.pillar === 'toybox' ? '🧸' :
-                       activity.pillar === 'sciencelab' ? '🔬' :
-                       activity.pillar === 'artstudio' ? '🎨' : '🌿'}
+                      {pillars.find(p => p.id === activity.pillar)?.icon || '✨'}
                     </span>
                     <div className="flex-1">
                       <p className="font-medium text-gray-900 dark:text-white">{activity.name}</p>

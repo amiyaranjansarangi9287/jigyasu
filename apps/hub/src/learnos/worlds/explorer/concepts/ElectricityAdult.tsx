@@ -7,6 +7,7 @@ import { EverydayConnection } from '../components/EverydayConnection';
 import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
+import { Trans } from "react-i18next";
 
 export default function ElectricityAdult() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -199,27 +200,27 @@ export default function ElectricityAdult() {
           <div className="space-y-3">
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-slate-300 text-sm leading-relaxed mb-2">
-                Electrons don't zoom through wires like water. They drift
-                slowly — millimeters per second. But the electromagnetic
-                wave that carries the signal travels at near light speed.
-              </p>
+                <Trans i18nKey="auto.electricityadult.electrons_don_t_zoom_through_w">Electrons don't zoom through wires like water. They drift
+                                              slowly — millimeters per second. But the electromagnetic
+                                              wave that carries the signal travels at near light speed.</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Your charger gets warm because electrons collide with atoms
-                (resistance). That wasted energy becomes heat. Higher
-                resistance means more heat, more energy loss.
-              </p>
+                <Trans i18nKey="auto.electricityadult.your_charger_gets_warm_because">Your charger gets warm because electrons collide with atoms
+                                              (resistance). That wasted energy becomes heat. Higher
+                                              resistance means more heat, more energy loss.</Trans>
+                                            </p>
             </div>
 
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-violet-400 text-sm font-bold uppercase tracking-wider mb-2">
-                History of the idea
-              </p>
+                <Trans i18nKey="auto.electricityadult.history_of_the_idea">History of the idea</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Franklin thought electricity flowed from positive to
-                negative. He was wrong — electrons flow the other way.
-                We still use his convention. Faraday and Ohm gave us
-                the laws that govern circuits.
-              </p>
+                <Trans i18nKey="auto.electricityadult.franklin_thought_electricity_f">Franklin thought electricity flowed from positive to
+                                              negative. He was wrong — electrons flow the other way.
+                                              We still use his convention. Faraday and Ohm gave us
+                                              the laws that govern circuits.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

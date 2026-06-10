@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/FloatSinkWonderFirst.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout';
@@ -45,24 +45,24 @@ function ExplorationComponent() {
       {/* Score */}
       <div className="flex justify-center gap-4">
         <div className="px-4 py-2 rounded-xl bg-green-100 text-green-700 font-bold text-sm">
-          ✓ Floats: {floats}
+          <Trans i18nKey="auto.floatsinkwonderfirst.floats">✓ Floats:</Trans> {floats}
         </div>
         <div className="px-4 py-2 rounded-xl bg-red-100 text-red-700 font-bold text-sm">
-          ✗ Sinks: {sinks}
+          <Trans i18nKey="auto.floatsinkwonderfirst.sinks">✗ Sinks:</Trans> {sinks}
         </div>
         <button
           onClick={handleReset}
           className="px-4 py-2 rounded-xl bg-slate-200 text-slate-600 font-bold text-sm hover:bg-slate-300 transition"
         >
-          🔄 Reset
-        </button>
+          <Trans i18nKey="auto.floatsinkwonderfirst.reset">🔄 Reset</Trans>
+                          </button>
       </div>
 
       {/* Water tank visualization */}
       <div className="bg-blue-100 rounded-2xl p-6 border-4 border-blue-300">
         <div className="text-center mb-4">
           <div className="text-4xl mb-2">🌊</div>
-          <div className="text-sm text-blue-600 font-bold">Water Tank (Density = 1.0)</div>
+          <div className="text-sm text-blue-600 font-bold"><Trans i18nKey="auto.floatsinkwonderfirst.water_tank_density_1_0">Water Tank (Density = 1.0)</Trans></div>
         </div>
         <div className="grid grid-cols-4 gap-3">
           {objects.map((obj) => (
@@ -112,24 +112,24 @@ function ExplorationComponent() {
       {/* Explanation */}
       <div className="bg-blue-50 rounded-2xl p-5 text-center">
         <div className="text-sm text-blue-600 font-bold">
-          Density &lt; 1.0 = Floats • Density &gt; 1.0 = Sinks
-        </div>
+          <Trans i18nKey="auto.floatsinkwonderfirst.density_lt_1_0_floats_density_">Density &lt; 1.0 = Floats • Density &gt; 1.0 = Sinks</Trans>
+                          </div>
         <div className="text-sm text-blue-400 mt-2">
-          Water has density = 1.0. Objects lighter than water float!
-        </div>
+          <Trans i18nKey="auto.floatsinkwonderfirst.water_has_density_1_0_objects_">Water has density = 1.0. Objects lighter than water float!</Trans>
+                          </div>
       </div>
 
       {/* Observation prompts */}
       <div className="bg-blue-50 rounded-2xl p-4 border border-blue-200">
         <h3 className="font-bold text-blue-900 mb-2 flex items-center gap-2">
           <span className="text-xl">👀</span>
-          What do you notice?
-        </h3>
+          <Trans i18nKey="auto.floatsinkwonderfirst.what_do_you_notice">What do you notice?</Trans>
+                          </h3>
         <ul className="text-slate-700 text-sm space-y-2">
-          <li>• Which objects float and which sink?</li>
-          <li>• What pattern do you see in the density numbers?</li>
-          <li>• Can you predict if an object will float before dropping it?</li>
-          <li>• What would happen if you changed the liquid (not water)?</li>
+          <li><Trans i18nKey="auto.floatsinkwonderfirst.which_objects_float_and_which_">• Which objects float and which sink?</Trans></li>
+          <li><Trans i18nKey="auto.floatsinkwonderfirst.what_pattern_do_you_see_in_the">• What pattern do you see in the density numbers?</Trans></li>
+          <li><Trans i18nKey="auto.floatsinkwonderfirst.can_you_predict_if_an_object_w">• Can you predict if an object will float before dropping it?</Trans></li>
+          <li><Trans i18nKey="auto.floatsinkwonderfirst.what_would_happen_if_you_chang">• What would happen if you changed the liquid (not water)?</Trans></li>
         </ul>
       </div>
     </div>

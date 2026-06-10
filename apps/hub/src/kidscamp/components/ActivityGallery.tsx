@@ -7,7 +7,7 @@ import { pillars, ageTiers, PillarId, AgeTier, Difficulty } from '../data/catego
 import ActivityCard from './ActivityCard';
 import { useReveal } from '../hooks/useReveal';
 import { useActivityFilters } from '../hooks/useActivityFilters';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 interface ActivityGalleryProps {
   onSelectActivity: (activity: Activity) => void;
@@ -85,8 +85,8 @@ export default function ActivityGallery({
               }`}
             >
               <span>{pillar.icon}</span>
-              // eslint-disable-next-line @typescript-eslint/no-explicit-any
-              <span className="text-sm">{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
+              <Trans i18nKey="auto.activitygallery.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
+                                <span className="text-sm">{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
             </button>
           ))}
         </div>
@@ -181,8 +181,8 @@ export default function ActivityGallery({
                 {/* Pillar Filter */}
                 <div>
                   <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Pillar
-                  </label>
+                    <Trans i18nKey="auto.activitygallery.pillar">Pillar</Trans>
+                                                        </label>
                   <div className="flex flex-wrap gap-2">
                     <button
                       onClick={() => setSelectedPillar('all')}

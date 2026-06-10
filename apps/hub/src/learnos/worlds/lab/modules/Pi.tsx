@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/Pi.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -48,13 +48,13 @@ export default function Pi() {
         </div>
         <div className="mt-6 bg-cyan-50 rounded-2xl p-5 text-center">
           <div className="text-3xl font-bold text-cyan-600 font-mono">π = {piValue}</div>
-          <div className="text-sm text-cyan-400 mt-2">Circumference = π × Diameter</div>
+          <div className="text-sm text-cyan-400 mt-2"><Trans i18nKey="auto.pi.circumference_diameter">Circumference = π × Diameter</Trans></div>
         </div>
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.Pi.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-600 font-bold text-sm mb-1">Aryabhata's Pi</h3>
+              <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.pi.aryabhata_s_pi">Aryabhata's Pi</Trans></h3>
               <p className="text-gray-600 text-sm leading-relaxed">{t('lab.modules.Pi.txt_Aryabhata4', 'Aryabhata (499 CE) calculated π ≈ 3.1416 — accurate to 4 decimal places! His method: "Add 4 to 100, multiply by 8, add 62,000. The diameter of a circle with circumference 20,000 is approximately this." That\'s 3.1416!')}</p>
             </div>
           </div>

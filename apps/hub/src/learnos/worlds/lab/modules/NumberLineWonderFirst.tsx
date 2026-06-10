@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/NumberLineWonderFirst.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout';
@@ -65,7 +65,7 @@ function ExplorationComponent() {
             {position} → {targetPosition}
           </div>
           <div className="text-sm text-slate-500">
-            Distance: {distance} {distance === 1 ? 'jump' : 'jumps'}
+            <Trans i18nKey="auto.numberlinewonderfirst.distance">Distance:</Trans> {distance} {distance === 1 ? 'jump' : 'jumps'}
           </div>
         </div>
       </div>
@@ -82,13 +82,13 @@ function ExplorationComponent() {
       <div className="bg-blue-50 rounded-2xl p-4 border border-blue-200">
         <h3 className="font-bold text-blue-900 mb-2 flex items-center gap-2">
           <span className="text-xl">👀</span>
-          What do you notice?
-        </h3>
+          <Trans i18nKey="auto.numberlinewonderfirst.what_do_you_notice">What do you notice?</Trans>
+                          </h3>
         <ul className="text-slate-700 text-sm space-y-2">
-          <li>• What happens when you go from 0 to 5? How many jumps?</li>
-          <li>• What about going from 0 to -5? How is it different?</li>
-          <li>• What's the distance between -5 and 5?</li>
-          <li>• Can you reach negative numbers by jumping left?</li>
+          <li><Trans i18nKey="auto.numberlinewonderfirst.what_happens_when_you_go_from_">• What happens when you go from 0 to 5? How many jumps?</Trans></li>
+          <li><Trans i18nKey="auto.numberlinewonderfirst.what_about_going_from_0_to_5_h">• What about going from 0 to -5? How is it different?</Trans></li>
+          <li><Trans i18nKey="auto.numberlinewonderfirst.what_s_the_distance_between_5_">• What's the distance between -5 and 5?</Trans></li>
+          <li><Trans i18nKey="auto.numberlinewonderfirst.can_you_reach_negative_numbers">• Can you reach negative numbers by jumping left?</Trans></li>
         </ul>
       </div>
     </div>

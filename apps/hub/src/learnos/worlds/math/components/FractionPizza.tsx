@@ -9,7 +9,7 @@ export default function FractionPizza() {
   const [eaten, setEaten] = useState<Set<number>>(new Set());
   const [mode, setMode] = useState<'explore' | 'challenge'>('explore');
   const [challenge, setChallenge] = useState<{ numerator: number; denominator: number } | null>(null);
-  const [challengeFeedback, setChallengeFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [challengeFeedback, setChallengeFeedback] = useState<'correct' | 'hint' | null>(null);
   const [mastery, setMastery] = useState(0);
 
   const remaining = slices - eaten.size;
@@ -37,7 +37,7 @@ export default function FractionPizza() {
           setChallengeFeedback(null);
         }, 1200);
       } else if (newEaten.size > target) {
-        setChallengeFeedback('wrong');
+        setChallengeFeedback('hint');
         sfx.wrong();
         setTimeout(() => setChallengeFeedback(null), 800);
       }
@@ -219,8 +219,8 @@ export default function FractionPizza() {
               <p className="text-gray-400 text-sm mb-2">{t('math_modules.FractionPizza.challengeLabel', 'Challenge:')}</p>
               <p className="text-2xl font-bold text-white text-center">
                 <Trans i18nKey="math_modules.FractionPizza.eatSlices" values={{ num: challenge.numerator, den: challenge.denominator }}>
-                  Eat <span className="text-orange-400">{challenge.numerator}</span> out of <span className="text-blue-400">{challenge.denominator}</span> slices
-                </Trans>
+                  <Trans i18nKey="auto.fractionpizza.eat">Eat</Trans> <span className="text-sky-400">{challenge.numerator}</span> <Trans i18nKey="auto.fractionpizza.out_of">out of</Trans> <span className="text-blue-400">{challenge.denominator}</span> <Trans i18nKey="auto.fractionpizza.slices">slices</Trans>
+                                                  </Trans>
               </p>
               <p className="text-center text-purple-300 text-lg mt-2">
                 = <span className="font-bold">{challenge.numerator}/{challenge.denominator}</span>
@@ -236,9 +236,9 @@ export default function FractionPizza() {
                     ✨ {t('math_modules.FractionPizza.correct', 'Correct!')}
                   </motion.span>
                 )}
-                {challengeFeedback === 'wrong' && (
+                {challengeFeedback === 'hint' && (
                   <motion.span
-                    className="text-red-400 font-bold"
+                    className="text-sky-400 font-bold"
                     initial={{ x: -10 }}
                     animate={{ x: [10, -10, 5, 0] }}
                   >
@@ -255,7 +255,7 @@ export default function FractionPizza() {
             <div className="space-y-3">
               <div className="flex justify-between items-center">
                 <span className="text-gray-400">{t('math_modules.FractionPizza.eaten', 'Eaten:')}</span>
-                <span className="text-2xl font-bold text-orange-400">{fraction}</span>
+                <span className="text-2xl font-bold text-sky-400">{fraction}</span>
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-gray-400">{t('math_modules.FractionPizza.remaining', 'Remaining:')}</span>
@@ -281,9 +281,9 @@ export default function FractionPizza() {
                 />
               </div>
               <div className="flex justify-between text-sm text-gray-500 mt-1">
-                <span>0%</span>
-                <span>50%</span>
-                <span>100%</span>
+                <span><Trans i18nKey="auto.fractionpizza.0">0%</Trans></span>
+                <span><Trans i18nKey="auto.fractionpizza.50">50%</Trans></span>
+                <span><Trans i18nKey="auto.fractionpizza.100">100%</Trans></span>
               </div>
             </div>
           </div>

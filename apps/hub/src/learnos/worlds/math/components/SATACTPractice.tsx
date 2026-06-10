@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { sfx } from '../lib/soundEngine';
 import { useFormatNumber } from '../../../../hooks/useFormatNumber';
+import { Trans } from "react-i18next";
 
 interface Question { id: number; question: string; options: string[]; answer: string; category: string; difficulty: 'Easy' | 'Medium' | 'Hard'; explanation: string; }
 
@@ -41,41 +42,41 @@ export default function SATACTPractice() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🎓 Deep Concepts Practice</h2>
-        <p className="text-purple-300 text-lg">Self-paced advanced math exploration!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.satactpractice.deep_concepts_practice">🎓 Deep Concepts Practice</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.satactpractice.self_paced_advanced_math_explo">Self-paced advanced math exploration!</Trans></p>
       </div>
 
       {!started ? (
         <motion.div className="max-w-md mx-auto text-center bg-gradient-to-br from-blue-900/40 to-indigo-900/40 rounded-3xl border border-blue-500/30 p-8" initial={{ scale: 0.9 }} animate={{ scale: 1 }}>
           <span className="text-6xl">🧠</span>
-          <h3 className="text-2xl font-bold text-white mt-4 mb-2">Explore Deeply</h3>
-          <p className="text-gray-400 mb-6">8 questions • Take your time • Mixed topics</p>
-          <motion.button className="w-full py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold text-xl" whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={generateTest}>🚀 Begin Exploration</motion.button>
+          <h3 className="text-2xl font-bold text-white mt-4 mb-2"><Trans i18nKey="auto.satactpractice.explore_deeply">Explore Deeply</Trans></h3>
+          <p className="text-gray-400 mb-6"><Trans i18nKey="auto.satactpractice.8_questions_take_your_time_mix">8 questions • Take your time • Mixed topics</Trans></p>
+          <motion.button className="w-full py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold text-xl" whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={generateTest}><Trans i18nKey="auto.satactpractice.begin_exploration">🚀 Begin Exploration</Trans></motion.button>
         </motion.div>
       ) : submitted ? (
         <motion.div className="max-w-lg mx-auto space-y-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <div className="bg-gradient-to-br from-purple-900/40 to-indigo-900/40 rounded-3xl border border-purple-500/30 p-8 text-center">
             <span className="text-6xl">🌟</span>
-            <h3 className="text-3xl font-bold text-white mt-4">Concepts Mastered: {formatNumber(mastery)}</h3>
-            <p className="text-purple-300 font-bold mt-2">You are exploring {formatNumber(mastery)} concepts deeply. {formatNumber(questions.length - mastery)} more to discover!</p>
+            <h3 className="text-3xl font-bold text-white mt-4"><Trans i18nKey="auto.satactpractice.concepts_mastered">Concepts Mastered:</Trans> {formatNumber(mastery)}</h3>
+            <p className="text-purple-300 font-bold mt-2"><Trans i18nKey="auto.satactpractice.you_are_exploring">You are exploring</Trans> {formatNumber(mastery)} <Trans i18nKey="auto.satactpractice.concepts_deeply">concepts deeply.</Trans> {formatNumber(questions.length - mastery)} <Trans i18nKey="auto.satactpractice.more_to_discover">more to discover!</Trans></p>
           </div>
           <div className="space-y-3">
             {questions.map((q, i) => {
               const correct = answers[i] === q.answer;
               return (
                 <div key={i} className={`rounded-xl p-4 border ${correct ? 'bg-green-500/10 border-green-500/30' : 'bg-white/5 border-white/10'}`}>
-                  <div className="flex items-start gap-2"><span>{correct ? '✅' : '🤔'}</span><div><p className="text-white text-sm">{q.question}</p>{!correct && <p className="text-green-400 text-sm mt-1">Correct: {q.answer}</p>}<p className="text-gray-400 text-sm mt-1">{q.explanation}</p></div></div>
+                  <div className="flex items-start gap-2"><span>{correct ? '✅' : '🤔'}</span><div><p className="text-white text-sm">{q.question}</p>{!correct && <p className="text-green-400 text-sm mt-1"><Trans i18nKey="auto.satactpractice.correct">Correct:</Trans> {q.answer}</p>}<p className="text-gray-400 text-sm mt-1">{q.explanation}</p></div></div>
                 </div>
               );
             })}
           </div>
-          <motion.button className="w-full py-3 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold" whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={generateTest}>🔄 Explore New Concepts</motion.button>
+          <motion.button className="w-full py-3 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold" whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={generateTest}><Trans i18nKey="auto.satactpractice.explore_new_concepts">🔄 Explore New Concepts</Trans></motion.button>
         </motion.div>
       ) : q ? (
         <div className="max-w-lg mx-auto space-y-4">
           <div className="flex justify-between items-center">
-            <span className="text-gray-400 text-sm">Concept {formatNumber(current + 1)} of {formatNumber(questions.length)}</span>
-            <span className="text-green-400 font-bold text-sm">Take your time 🌱</span>
+            <span className="text-gray-400 text-sm"><Trans i18nKey="auto.satactpractice.concept">Concept</Trans> {formatNumber(current + 1)} <Trans i18nKey="auto.satactpractice.of">of</Trans> {formatNumber(questions.length)}</span>
+            <span className="text-green-400 font-bold text-sm"><Trans i18nKey="auto.satactpractice.take_your_time">Take your time 🌱</Trans></span>
           </div>
           <div className="h-2 w-full bg-gray-700 rounded-full overflow-hidden"><div className="h-full bg-blue-500 rounded-full" style={{ width: `${((current + 1) / questions.length) * 100}%` }} /></div>
           <div className="rounded-3xl p-6 bg-white/5 border border-white/10">
@@ -92,11 +93,11 @@ export default function SATACTPractice() {
             </div>
           </div>
           <div className="flex justify-between">
-            <button className="px-4 py-2 rounded-xl bg-white/10 text-gray-400 text-sm" disabled={current === 0} onClick={() => setCurrent(c => c - 1)}>← Prev</button>
+            <button className="px-4 py-2 rounded-xl bg-white/10 text-gray-400 text-sm" disabled={current === 0} onClick={() => setCurrent(c => c - 1)}><Trans i18nKey="auto.satactpractice.prev">← Prev</Trans></button>
             {current < questions.length - 1 ? (
-              <button className="px-4 py-2 rounded-xl bg-purple-600 text-white font-bold text-sm" onClick={() => setCurrent(c => c + 1)}>Next →</button>
+              <button className="px-4 py-2 rounded-xl bg-purple-600 text-white font-bold text-sm" onClick={() => setCurrent(c => c + 1)}><Trans i18nKey="auto.satactpractice.next">Next →</Trans></button>
             ) : (
-              <button className="px-4 py-2 rounded-xl bg-green-600 text-white font-bold text-sm" onClick={() => { setSubmitted(true); sfx.celebrate(); }}>Submit ✓</button>
+              <button className="px-4 py-2 rounded-xl bg-green-600 text-white font-bold text-sm" onClick={() => { setSubmitted(true); sfx.celebrate(); }}><Trans i18nKey="auto.satactpractice.submit">Submit ✓</Trans></button>
             )}
           </div>
           <div className="flex justify-center gap-1">{questions.map((_, i) => <button key={i} className={`w-8 h-8 rounded-lg text-sm font-bold ${i === current ? 'bg-purple-500 text-white' : answers[i] ? 'bg-green-500/30 text-green-300' : 'bg-white/10 text-gray-500'}`} onClick={() => setCurrent(i)}>{formatNumber(i + 1)}</button>)}</div>

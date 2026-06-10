@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 export default function TermsOfService() {
   const { t } = useTranslation();
@@ -60,8 +60,8 @@ export default function TermsOfService() {
             {t('terms_contact_text', 'For any questions about these Terms, please contact us at legal@jigyasu.app.')}
           </p>
           <p className="mt-2 text-sm text-slate-600">
-            For general inquiries: contact@jigyasu.app
-          </p>
+            <Trans i18nKey="auto.termsofservice.for_general_inquiries_contact_">For general inquiries: contact@jigyasu.app</Trans>
+                                </p>
         </section>
       </div>
     </div>

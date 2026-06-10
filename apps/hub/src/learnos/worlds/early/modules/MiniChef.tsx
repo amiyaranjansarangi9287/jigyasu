@@ -2,7 +2,7 @@
 // Select a recipe, add ingredients in order, celebrate the dish.
 
 import { useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSettingsStore } from '@/store';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
@@ -93,7 +93,7 @@ export default function MiniChef() {
                   <span className="text-5xl">{r.emoji}</span>
                   <div>
                     <p className="font-bold text-gray-800 text-xl">{r.name}</p>
-                    <p className="text-base text-gray-500">{r.ingredients.length} ingredients · {r.isIndian ? '🇮🇳' : '🌍'}</p>
+                    <p className="text-base text-gray-500">{r.ingredients.length} <Trans i18nKey="auto.minichef.ingredients">ingredients ·</Trans> {r.isIndian ? '🇮🇳' : '🌍'}</p>
                     <div className="flex gap-1 mt-1">{Array.from({ length: r.difficulty }, (_, i) => <span key={i} className="text-sm">{t('early.modules.MiniChef.spn_', '⭐')}</span>)}</div>
                   </div>
                 </motion.button>
@@ -111,7 +111,7 @@ export default function MiniChef() {
                 <span className="text-4xl">{recipe.emoji}</span>
                 <div>
                   <p className="font-bold text-gray-800">{recipe.name}</p>
-                  <p className="text-base text-gray-500">{addedIngredients.length} / {recipe.ingredients.length} ingredients</p>
+                  <p className="text-base text-gray-500">{addedIngredients.length} / {recipe.ingredients.length} <Trans i18nKey="auto.minichef.ingredients">ingredients</Trans></p>
                 </div>
               </div>
               {/* Progress bar */}
@@ -124,7 +124,7 @@ export default function MiniChef() {
             {!showMixing && currentIngIdx < recipe.ingredients.length && (
               <div className="bg-yellow-50 rounded-2xl p-4 mb-4 border border-yellow-200">
                 <p className="text-center font-bold text-gray-700">
-                  Add <span className="text-orange-600">{recipe.ingredients[currentIngIdx].amount} {recipe.ingredients[currentIngIdx].unit}</span> of{' '}
+                  <Trans i18nKey="auto.minichef.add">Add</Trans> <span className="text-orange-600">{recipe.ingredients[currentIngIdx].amount} {recipe.ingredients[currentIngIdx].unit}</span> <Trans i18nKey="auto.minichef.of">of</Trans>{' '}
                   <span className="text-orange-600">{recipe.ingredients[currentIngIdx].name}</span> {recipe.ingredients[currentIngIdx].emoji}
                 </p>
                 {recipe.ingredients[currentIngIdx].visualFraction && (

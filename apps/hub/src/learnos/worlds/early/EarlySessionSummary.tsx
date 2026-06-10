@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import type { EarlyProgress } from './types/early.types';
+import { Trans } from "react-i18next";
 
 interface EarlySessionSummaryProps {
   visible: boolean;
@@ -40,13 +41,13 @@ export default function EarlySessionSummary({ visible, progress, sessionMinutes,
             <div className="text-center mb-4">
               <div className="text-4xl mb-2">🐤</div>
               <div className="flex justify-center gap-1 mb-1">{Array.from({ length: 3 }, (_, i) => (<span key={i} className={`text-3xl ${i < stars ? '' : 'opacity-20'}`}>⭐</span>))}</div>
-              <p className="text-base text-gray-500">{sessionMinutes} minutes of adventure!</p>
+              <p className="text-base text-gray-500">{sessionMinutes} <Trans i18nKey="auto.earlysessionsummary.minutes_of_adventure">minutes of adventure!</Trans></p>
             </div>
             {achievements.length > 0 && (
               <div className="flex flex-wrap gap-2 justify-center mb-4">{achievements.map((a, i) => (<span key={i} className="px-3 py-1.5 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium">{a}</span>))}</div>
             )}
-            <div className="bg-indigo-50 rounded-2xl p-3 mb-4 border border-indigo-100"><p className="text-base text-indigo-800 font-medium text-center">"What a wonderful adventure today! Come back tomorrow! 🐤"</p></div>
-            <button onClick={onClose} className="w-full py-4 bg-indigo-600 text-white font-bold text-xl rounded-2xl min-h-[56px]">See you next time! 👋</button>
+            <div className="bg-indigo-50 rounded-2xl p-3 mb-4 border border-indigo-100"><p className="text-base text-indigo-800 font-medium text-center"><Trans i18nKey="auto.earlysessionsummary.what_a_wonderful_adventure_tod">"What a wonderful adventure today! Come back tomorrow! 🐤"</Trans></p></div>
+            <button onClick={onClose} className="w-full py-4 bg-indigo-600 text-white font-bold text-xl rounded-2xl min-h-[56px]"><Trans i18nKey="auto.earlysessionsummary.see_you_next_time">See you next time! 👋</Trans></button>
           </motion.div>
         </motion.div>
       )}

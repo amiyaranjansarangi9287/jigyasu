@@ -1,6 +1,6 @@
 // src/worlds/academy/modules/ProjectileMotion.tsx
 import { useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion } from 'framer-motion';
 import AcademyShell from '../AcademyShell';
 import { useLumoAncient } from '../hooks/useLumoAncient';
@@ -45,15 +45,15 @@ export default function ProjectileMotion() {
             <input type="range" min={5} max={85} value={angle} onChange={e => { setAngle(Number(e.target.value)); setFired(false); }} className="w-full h-2 rounded-full appearance-none cursor-pointer" style={{ accentColor: '#0EA5E9' }} />
           </div>
           <div className="bg-slate-900 rounded-xl p-3 border border-slate-800">
-            <div className="flex justify-between text-sm mb-1"><span className="text-slate-400">{t('academy.modules.ProjectileMotion.spn_InitialSpe', 'Initial Speed')}</span><span className="text-white font-bold">{speed} m/s</span></div>
+            <div className="flex justify-between text-sm mb-1"><span className="text-slate-400">{t('academy.modules.ProjectileMotion.spn_InitialSpe', 'Initial Speed')}</span><span className="text-white font-bold">{speed} <Trans i18nKey="auto.projectilemotion.m_s">m/s</Trans></span></div>
             <input type="range" min={10} max={80} value={speed} onChange={e => { setSpeed(Number(e.target.value)); setFired(false); }} className="w-full h-2 rounded-full appearance-none cursor-pointer" style={{ accentColor: '#0EA5E9' }} />
           </div>
         </div>
 
         <div className="grid grid-cols-3 gap-2 mb-4">
-          <div className="bg-slate-900 rounded-xl p-3 text-center border border-slate-800"><p className="text-cyan-400 text-sm font-bold">{t('academy.modules.ProjectileMotion.txt_Range', 'Range')}</p><p className="text-white font-mono font-bold">{range}m</p></div>
-          <div className="bg-slate-900 rounded-xl p-3 text-center border border-slate-800"><p className="text-amber-400 text-sm font-bold">{t('academy.modules.ProjectileMotion.txt_MaxHeight', 'Max Height')}</p><p className="text-white font-mono font-bold">{maxH}m</p></div>
-          <div className="bg-slate-900 rounded-xl p-3 text-center border border-slate-800"><p className="text-purple-400 text-sm font-bold">{t('academy.modules.ProjectileMotion.txt_Time', 'Time')}</p><p className="text-white font-mono font-bold">{tof}s</p></div>
+          <div className="bg-slate-900 rounded-xl p-3 text-center border border-slate-800"><p className="text-cyan-400 text-sm font-bold">{t('academy.modules.ProjectileMotion.txt_Range', 'Range')}</p><p className="text-white font-mono font-bold">{range}<Trans i18nKey="auto.projectilemotion.m">m</Trans></p></div>
+          <div className="bg-slate-900 rounded-xl p-3 text-center border border-slate-800"><p className="text-amber-400 text-sm font-bold">{t('academy.modules.ProjectileMotion.txt_MaxHeight', 'Max Height')}</p><p className="text-white font-mono font-bold">{maxH}<Trans i18nKey="auto.projectilemotion.m">m</Trans></p></div>
+          <div className="bg-slate-900 rounded-xl p-3 text-center border border-slate-800"><p className="text-purple-400 text-sm font-bold">{t('academy.modules.ProjectileMotion.txt_Time', 'Time')}</p><p className="text-white font-mono font-bold">{tof}<Trans i18nKey="auto.projectilemotion.s">s</Trans></p></div>
         </div>
 
         <button onClick={handleFire} className="w-full py-4 bg-cyan-600 text-white font-bold rounded-2xl min-h-[52px]">{t('academy.modules.ProjectileMotion.btn_Fire', '🚀 Fire!')}</button>

@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/Pythagorean.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -53,14 +53,14 @@ export default function Pythagorean() {
         </div>
         <div className="mt-6 bg-indigo-50 rounded-2xl p-5 text-center">
           <div className="text-lg font-bold text-indigo-600 font-mono">{sideA}² + {sideB}² = {sideA * sideA} + {sideB * sideB} = {sideA * sideA + sideB * sideB}</div>
-          <div className="text-2xl font-bold text-purple-600 mt-2">c = √{sideA * sideA + sideB * sideB} = {hypotenuse.toFixed(2)}</div>
+          <div className="text-2xl font-bold text-purple-600 mt-2"><Trans i18nKey="auto.pythagorean.c">c = √</Trans>{sideA * sideA + sideB * sideB} = {hypotenuse.toFixed(2)}</div>
         </div>
         <div className="mt-6 rounded-2xl p-5 border border-orange-500/20" style={{ background: 'linear-gradient(135deg, rgba(255, 140, 66, 0.08), rgba(212, 75, 31, 0.05))' }}>
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.Pythagorean.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-600 font-bold text-sm mb-1">Baudhayana's Theorem</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">The <strong>Baudhayana Sulba Sutra</strong> (800 BCE) states the Pythagorean theorem 1,000 years before Pythagoras! "The diagonal of a rectangle produces both areas that its sides produce separately." Indians used this for altar construction.</p>
+              <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.pythagorean.baudhayana_s_theorem">Baudhayana's Theorem</Trans></h3>
+              <p className="text-gray-600 text-sm leading-relaxed"><Trans i18nKey="auto.pythagorean.the">The</Trans> <strong><Trans i18nKey="auto.pythagorean.baudhayana_sulba_sutra">Baudhayana Sulba Sutra</Trans></strong> <Trans i18nKey="auto.pythagorean.800_bce_states_the_pythagorean">(800 BCE) states the Pythagorean theorem 1,000 years before Pythagoras! "The diagonal of a rectangle produces both areas that its sides produce separately." Indians used this for altar construction.</Trans></p>
             </div>
           </div>
         </div>

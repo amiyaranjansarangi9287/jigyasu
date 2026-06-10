@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ChevronRight, Info } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface TreeNode {
   id: string;
@@ -128,22 +132,38 @@ function TreeBranch({ node, depth = 0, onSelect }: { node: TreeNode; depth?: num
 }
 
 export default function EvolutionTree() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.evolution_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.evolution_prompt', "We share DNA with bananas and dinosaurs! How did life branch out into so many forms? Let's explore the tree of life."),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'evolution-tree', 60);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   const [selected, setSelected] = useState<TreeNode | null>(null);
 
   return (
     <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-2">🌳 Evolution Tree</h2>
-          <p className="text-gray-400 text-lg">Explore the whimsical Tree of Life!</p>
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-2"><Trans i18nKey="auto.evolutiontree.evolution_tree">🌳 Evolution Tree</Trans></h2>
+          <p className="text-gray-400 text-lg"><Trans i18nKey="auto.evolutiontree.explore_the_whimsical_tree_of_">Explore the whimsical Tree of Life!</Trans></p>
         </motion.div>
 
         <div className="grid lg:grid-cols-5 gap-6">
           {/* Tree */}
           <div className="lg:col-span-3 bg-gray-900 rounded-2xl border border-gray-800 p-5 max-h-[70vh] overflow-y-auto">
             <div className="text-sm text-gray-500 mb-3 flex items-center gap-1">
-              <Info className="w-3 h-3" /> Click to expand branches and learn more
-            </div>
+              <Info className="w-3 h-3" /> <Trans i18nKey="auto.evolutiontree.click_to_expand_branches_and_l">Click to expand branches and learn more</Trans>
+                                      </div>
             <TreeBranch node={treeOfLife} onSelect={setSelected} />
           </div>
 
@@ -164,7 +184,7 @@ export default function EvolutionTree() {
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-white">{selected.name}</h3>
-                      <div className="text-sm" style={{ color: selected.color }}>{selected.era} Era</div>
+                      <div className="text-sm" style={{ color: selected.color }}>{selected.era} <Trans i18nKey="auto.evolutiontree.era">Era</Trans></div>
                     </div>
                   </div>
 
@@ -176,7 +196,7 @@ export default function EvolutionTree() {
 
                   {selected.children && selected.children.length > 0 && (
                     <div>
-                      <h4 className="text-sm font-bold text-white mb-2 uppercase tracking-wider">Descendants</h4>
+                      <h4 className="text-sm font-bold text-white mb-2 uppercase tracking-wider"><Trans i18nKey="auto.evolutiontree.descendants">Descendants</Trans></h4>
                       <div className="flex flex-wrap gap-2">
                         {selected.children.map(c => (
                           <span key={c.id} className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-sm font-medium bg-gray-800 text-gray-300">
@@ -190,15 +210,15 @@ export default function EvolutionTree() {
               ) : (
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-gray-900 rounded-2xl border border-gray-800 p-6 text-center">
                   <div className="text-6xl mb-4">🌍</div>
-                  <h3 className="text-xl font-bold text-white mb-2">Explore Life's History</h3>
-                  <p className="text-gray-400 text-sm">Click on any branch in the tree to learn about that group of organisms and their evolutionary journey.</p>
+                  <h3 className="text-xl font-bold text-white mb-2"><Trans i18nKey="auto.evolutiontree.explore_life_s_history">Explore Life's History</Trans></h3>
+                  <p className="text-gray-400 text-sm"><Trans i18nKey="auto.evolutiontree.click_on_any_branch_in_the_tre">Click on any branch in the tree to learn about that group of organisms and their evolutionary journey.</Trans></p>
                 </motion.div>
               )}
             </AnimatePresence>
 
             {/* Timeline */}
             <div className="mt-6 bg-gray-900 rounded-2xl border border-gray-800 p-5">
-              <h4 className="text-sm font-bold text-white mb-3">📅 Geological Timeline</h4>
+              <h4 className="text-sm font-bold text-white mb-3"><Trans i18nKey="auto.evolutiontree.geological_timeline">📅 Geological Timeline</Trans></h4>
               <div className="space-y-2">
                 {[
                   { era: 'Hadean', years: '4.6-4.0 bya', color: '#6b7280', emoji: '🌑' },

@@ -1,6 +1,6 @@
 // src/worlds/lab/modules/CircuitBuilder.tsx
 import { useRef, useEffect, useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
 import LabShell from '../LabShell';
@@ -77,7 +77,7 @@ export default function CircuitBuilder() {
               <span className="text-2xl">{l.emoji}</span>
             </button>
           ))}
-          <button onClick={() => { setComps([]); setWires([]); setIsOn(false); }} className="ml-auto p-3 text-red-500 font-bold text-sm">Clear</button>
+          <button onClick={() => { setComps([]); setWires([]); setIsOn(false); }} className="ml-auto p-3 text-red-500 font-bold text-sm"><Trans i18nKey="auto.circuitbuilder.clear">Clear</Trans></button>
         </div>
         <canvas ref={canvasRef} onClick={handleTap} onTouchStart={handleTap} className="flex-1 w-full block touch-none" />
       </div>

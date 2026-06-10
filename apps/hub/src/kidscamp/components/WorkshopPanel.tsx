@@ -14,7 +14,10 @@ interface Props {
   getLockedAchievements: () => AchievementSummary[];
 }
 
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
+import { pillars } from '../data/categories';
+import { useLocalizedActivities } from '../../hooks/useLocalizedData';
+import { useFormatNumber } from '../../hooks/useFormatNumber';
 
 export default function WorkshopPanel({
   setWorkshopOpen,
@@ -26,11 +29,13 @@ export default function WorkshopPanel({
   getLockedAchievements
 }: Props) {
   const { t } = useTranslation();
+  const { activities } = useLocalizedActivities();
+  const formatNumber = useFormatNumber();
   return (
     <div className="fixed inset-0 z-50">
       <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={() => setWorkshopOpen(false)} />
-      <div className="absolute right-0 top-0 bottom-0 w-full max-w-lg bg-white dark:bg-gray-900 shadow-2xl animate-slide-in-mobile overflow-y-auto">
-        <div className="p-4 border-b border-gray-100 dark:border-gray-800 flex items-center justify-between sticky top-0 bg-white dark:bg-gray-900 z-10">
+      <div className="absolute right-0 top-0 bottom-0 w-full max-w-lg glass-panel shadow-2xl animate-slide-in-mobile overflow-y-auto">
+        <div className="p-4 border-b border-gray-100/20 dark:border-gray-800/20 flex items-center justify-between sticky top-0 z-10">
           <h2 className="text-xl font-bold text-gray-900 dark:text-white">{t('kidscamp.workshop.title', 'My Progress')}</h2>
           <button
             onClick={() => setWorkshopOpen(false)}
@@ -47,13 +52,13 @@ export default function WorkshopPanel({
           <div className="grid grid-cols-2 gap-4">
             <div className="p-4 rounded-2xl bg-gradient-to-br from-orange-100 to-pink-100 dark:from-orange-900/30 dark:to-pink-900/30">
               <div className="text-3xl font-bold text-orange-600 dark:text-orange-400">
-                {getCompletedCount()}
+                {formatNumber(getCompletedCount())}
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-400">{t('kidscamp.workshop.completed', 'Completed')}</div>
             </div>
             <div className="p-4 rounded-2xl bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/30">
               <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">
-                {Math.floor(getTotalTime() / 60)}{t('kidscamp.workshop.minutes', 'm')}
+                {formatNumber(Math.floor(getTotalTime() / 60))}{t('kidscamp.workshop.minutes', 'm')}
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-400">{t('kidscamp.workshop.total_time', 'Total Time')}</div>
             </div>
@@ -63,22 +68,18 @@ export default function WorkshopPanel({
           <div>
             <h3 className="font-bold text-gray-900 dark:text-white mb-4">{t('kidscamp.workshop.pillar_progress', 'Pillar Progress')}</h3>
             <div className="space-y-3">
-              {[
-                { id: 'toybox', name: 'ToyBox', icon: '🧸', total: 24 },
-                { id: 'sciencelab', name: 'ScienceLab', icon: '🔬', total: 12 },
-                { id: 'artstudio', name: 'ArtStudio', icon: '🎨', total: 12 },
-                { id: 'outdoorquest', name: 'OutdoorQuest', icon: '🌿', total: 12 }
-              ].map((pillar) => {
+              {pillars.map((pillar) => {
                 const completed = getCompletedByPillar(pillar.id);
-                const percentage = Math.round((completed / pillar.total) * 100);
+                const total = activities.filter(a => a.pillar === pillar.id).length;
+                const percentage = total > 0 ? Math.round((completed / total) * 100) : 0;
                 return (
                   <div key={pillar.id} className="flex items-center gap-3">
                     <span className="text-2xl">{pillar.icon}</span>
                     <div className="flex-1">
                       <div className="flex justify-between text-sm mb-1">
-                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                        <span className="font-medium text-gray-900 dark:text-white">{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
-                        <span className="text-gray-500">{completed}/{pillar.total}</span>
+                        <Trans i18nKey="auto.workshoppanel.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
+                                                        <span className="font-medium text-gray-900 dark:text-white">{t(`pillar_${pillar.id}` as any, pillar.name)}</span>
+                        <span className="text-gray-500">{formatNumber(completed)}/{formatNumber(total)}</span>
                       </div>
                       <div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
                         <div
@@ -95,7 +96,7 @@ export default function WorkshopPanel({
 
           {/* Recent Achievements */}
           <div>
-            <h3 className="font-bold text-gray-900 dark:text-white mb-4">{t('kidscamp.workshop.achievements', 'Achievements')} ({getAchievementProgress().unlocked}/{getAchievementProgress().total})
+            <h3 className="font-bold text-gray-900 dark:text-white mb-4">{t('kidscamp.workshop.achievements', 'Achievements')} ({formatNumber(getAchievementProgress().unlocked)}/{formatNumber(getAchievementProgress().total)})
             </h3>
             <div className="grid grid-cols-4 gap-3">
               {getUnlockedAchievements().slice(0, 8).map((achievement) => (

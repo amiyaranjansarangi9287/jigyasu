@@ -3,7 +3,7 @@
 
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -49,7 +49,7 @@ export default function LightShadows() {
         {/* Time indicator */}
         <div className="flex justify-center mb-6">
           <div className="px-6 py-3 rounded-2xl font-bold text-lg bg-amber-100 text-amber-700">
-            {timeOfDay} — Sun at {Math.round(lightX)}%, {Math.round(lightY)}%
+            {timeOfDay} <Trans i18nKey="auto.lightshadows.sun_at">— Sun at</Trans> {Math.round(lightX)}%, {Math.round(lightY)}%
           </div>
         </div>
 
@@ -62,17 +62,17 @@ export default function LightShadows() {
         <div className="mt-6 grid grid-cols-3 gap-4">
           <div className="bg-yellow-50 rounded-2xl p-4 text-center">
             <div className="text-2xl mb-1">☀️</div>
-            <div className="font-bold text-yellow-600 text-sm">Light Source</div>
+            <div className="font-bold text-yellow-600 text-sm"><Trans i18nKey="auto.lightshadows.light_source">Light Source</Trans></div>
             <p className="text-sm text-yellow-400 mt-1">{t('lab.modules.LightShadows.txt_Lighttrave', 'Light travels in straight lines')}</p>
           </div>
           <div className="bg-slate-50 rounded-2xl p-4 text-center">
             <div className="text-2xl mb-1">🌳</div>
-            <div className="font-bold text-slate-600 text-sm">Object Blocks</div>
+            <div className="font-bold text-slate-600 text-sm"><Trans i18nKey="auto.lightshadows.object_blocks">Object Blocks</Trans></div>
             <p className="text-sm text-slate-400 mt-1">{t('lab.modules.LightShadows.txt_Opaqueobje', 'Opaque objects block light')}</p>
           </div>
           <div className="bg-gray-100 rounded-2xl p-4 text-center">
             <div className="text-2xl mb-1">🌑</div>
-            <div className="font-bold text-gray-600 text-sm">Shadow Forms</div>
+            <div className="font-bold text-gray-600 text-sm"><Trans i18nKey="auto.lightshadows.shadow_forms">Shadow Forms</Trans></div>
             <p className="text-sm text-gray-400 mt-1">{t('lab.modules.LightShadows.txt_Darkareabe', 'Dark area behind the object')}</p>
           </div>
         </div>
@@ -82,13 +82,13 @@ export default function LightShadows() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.LightShadows.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-600 font-bold text-sm mb-1">Ancient Indian Shadow Science</h3>
+              <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.lightshadows.ancient_indian_shadow_science">Ancient Indian Shadow Science</Trans></h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Aryabhata (499 CE) correctly explained eclipses as shadows — the Moon blocks sunlight
-                for lunar eclipses, Earth's shadow falls on the Moon for solar eclipses! Ancient Indians
-                used <strong>Shanku Yantra</strong> (shadow sticks) to measure time and calculate
-                Earth's tilt with remarkable accuracy.
-              </p>
+                <Trans i18nKey="auto.lightshadows.aryabhata_499_ce_correctly_exp">Aryabhata (499 CE) correctly explained eclipses as shadows — the Moon blocks sunlight
+                                              for lunar eclipses, Earth's shadow falls on the Moon for solar eclipses! Ancient Indians
+                                              used</Trans> <strong><Trans i18nKey="auto.lightshadows.shanku_yantra">Shanku Yantra</Trans></strong> <Trans i18nKey="auto.lightshadows.shadow_sticks_to_measure_time_">(shadow sticks) to measure time and calculate
+                                              Earth's tilt with remarkable accuracy.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

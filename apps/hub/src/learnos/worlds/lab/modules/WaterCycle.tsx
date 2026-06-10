@@ -3,7 +3,7 @@
 
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -86,7 +86,7 @@ export default function WaterCycle() {
             }}
           />
           <div className="text-center mt-2 text-sm text-slate-400">
-            Sun intensity: {Math.round(sunIntensity * 100)}%
+            <Trans i18nKey="auto.watercycle.sun_intensity">Sun intensity:</Trans> {Math.round(sunIntensity * 100)}%
           </div>
         </div>
 
@@ -94,19 +94,19 @@ export default function WaterCycle() {
         <div className="mt-6 grid grid-cols-4 gap-3">
           <div className="bg-amber-50 rounded-2xl p-3 text-center">
             <div className="text-2xl mb-1">☀️</div>
-            <div className="font-bold text-amber-600 text-sm">Evaporation</div>
+            <div className="font-bold text-amber-600 text-sm"><Trans i18nKey="auto.watercycle.evaporation">Evaporation</Trans></div>
           </div>
           <div className="bg-slate-50 rounded-2xl p-3 text-center">
             <div className="text-2xl mb-1">☁️</div>
-            <div className="font-bold text-slate-600 text-sm">Condensation</div>
+            <div className="font-bold text-slate-600 text-sm"><Trans i18nKey="auto.watercycle.condensation">Condensation</Trans></div>
           </div>
           <div className="bg-blue-50 rounded-2xl p-3 text-center">
             <div className="text-2xl mb-1">🌧️</div>
-            <div className="font-bold text-blue-600 text-sm">Precipitation</div>
+            <div className="font-bold text-blue-600 text-sm"><Trans i18nKey="auto.watercycle.precipitation">Precipitation</Trans></div>
           </div>
           <div className="bg-green-50 rounded-2xl p-3 text-center">
             <div className="text-2xl mb-1">🌊</div>
-            <div className="font-bold text-green-600 text-sm">Collection</div>
+            <div className="font-bold text-green-600 text-sm"><Trans i18nKey="auto.watercycle.collection">Collection</Trans></div>
           </div>
         </div>
 
@@ -115,13 +115,13 @@ export default function WaterCycle() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.WaterCycle.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-600 font-bold text-sm mb-1">Indian Monsoon Connection</h3>
+              <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.watercycle.indian_monsoon_connection">Indian Monsoon Connection</Trans></h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                The Indian monsoon is the world's largest water cycle event! Ancient Indians tracked
-                this through <strong>Nakshatras</strong> (lunar mansions) and built stepwells like
-                <strong> Chand Baori</strong> (800 CE) to harvest rainwater — engineering that
-                modern scientists still study today.
-              </p>
+                <Trans i18nKey="auto.watercycle.the_indian_monsoon_is_the_worl">The Indian monsoon is the world's largest water cycle event! Ancient Indians tracked
+                                              this through</Trans> <strong><Trans i18nKey="auto.watercycle.nakshatras">Nakshatras</Trans></strong> <Trans i18nKey="auto.watercycle.lunar_mansions_and_built_stepw">(lunar mansions) and built stepwells like</Trans>
+                                              <strong> <Trans i18nKey="auto.watercycle.chand_baori">Chand Baori</Trans></strong> <Trans i18nKey="auto.watercycle.800_ce_to_harvest_rainwater_en">(800 CE) to harvest rainwater — engineering that
+                                              modern scientists still study today.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 // src/worlds/discovery/modules/AlgebraScales.tsx
 import { useRef, useEffect, useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import DiscoveryShell from '../DiscoveryShell';
 import { useLumoSage } from '../hooks/useLumoSage';
@@ -64,7 +64,7 @@ export default function AlgebraScales() {
         <AnimatePresence>{chk && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={`p-4 rounded-2xl ${ok ? 'bg-green-900/30 text-green-400' : 'bg-red-900/30 text-red-400'}`}>
             <p className="font-bold">{ok ? 'Correct! The scale balances.' : `Not quite. ${ch.hint}`}</p>
-            {ok && <button onClick={() => { setIdx(i => i+1); setAns(''); setChk(false); }} className="mt-4 w-full py-3 bg-indigo-600 text-white rounded-xl font-bold">Next Equation</button>}
+            {ok && <button onClick={() => { setIdx(i => i+1); setAns(''); setChk(false); }} className="mt-4 w-full py-3 bg-indigo-600 text-white rounded-xl font-bold"><Trans i18nKey="auto.algebrascales.next_equation">Next Equation</Trans></button>}
           </motion.div>
         )}</AnimatePresence>
       </div>

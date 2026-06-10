@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
+import { Trans } from "react-i18next";
 
 type LabMode = 'factors' | 'gcdlcm' | 'primecheck';
 
@@ -15,8 +16,8 @@ export default function NumberTheoryLab() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🔬 Number Theory Lab</h2>
-        <p className="text-purple-300 text-lg">Explore the deep secrets of numbers!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.numbertheorylab.number_theory_lab">🔬 Number Theory Lab</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.numbertheorylab.explore_the_deep_secrets_of_nu">Explore the deep secrets of numbers!</Trans></p>
       </div>
 
       <div className="grid grid-cols-3 gap-2 mb-6">
@@ -122,7 +123,7 @@ function FactorTree() {
     <div className="space-y-4">
       <div className="bg-white/5 rounded-2xl p-4 border border-white/10">
         <div className="flex items-center justify-center gap-3 mb-4">
-          <label className="text-gray-400 text-sm">Number:</label>
+          <label className="text-gray-400 text-sm"><Trans i18nKey="auto.numbertheorylab.number">Number:</Trans></label>
           <input type="number" value={num} min={2} max={500}
             onChange={e => setNum(Math.max(2, Math.min(500, parseInt(e.target.value) || 2)))}
             className="w-20 text-center bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white font-bold focus:outline-none focus:border-purple-400"
@@ -139,7 +140,7 @@ function FactorTree() {
 
       {/* Factor tree visualization */}
       <div className="bg-gradient-to-br from-green-900/20 to-emerald-900/20 rounded-2xl p-4 border border-green-500/30">
-        <h4 className="text-white font-bold text-center mb-4">🌳 Factor Tree for {num}</h4>
+        <h4 className="text-white font-bold text-center mb-4"><Trans i18nKey="auto.numbertheorylab.factor_tree_for">🌳 Factor Tree for</Trans> {num}</h4>
         <div className="space-y-3 overflow-x-auto">
           {treeNodes.map((level, li) => (
             <motion.div
@@ -176,7 +177,7 @@ function FactorTree() {
       {/* Results */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-          <h4 className="text-white font-bold mb-2">🔢 All Factors ({factors.length})</h4>
+          <h4 className="text-white font-bold mb-2"><Trans i18nKey="auto.numbertheorylab.all_factors">🔢 All Factors (</Trans>{factors.length})</h4>
           <div className="flex flex-wrap gap-1">
             {factors.map(f => (
               <span key={f} className={`px-2 py-1 rounded text-sm font-bold ${isPrime(f) ? 'bg-yellow-500/20 text-yellow-300' : 'bg-white/10 text-gray-300'}`}>
@@ -186,7 +187,7 @@ function FactorTree() {
           </div>
         </div>
         <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-          <h4 className="text-white font-bold mb-2">⭐ Prime Factorization</h4>
+          <h4 className="text-white font-bold mb-2"><Trans i18nKey="auto.numbertheorylab.prime_factorization">⭐ Prime Factorization</Trans></h4>
           <p className="text-purple-400 font-bold text-lg font-mono">
             {num} = {Object.entries(primeCount).map(([base, exp]) =>
               exp > 1 ? `${base}${toSup(exp)}` : base
@@ -225,7 +226,7 @@ function GcdLcmExplorer() {
       <div className="bg-white/5 rounded-2xl p-4 border border-white/10">
         <div className="flex items-center justify-center gap-4 flex-wrap">
           <div className="flex flex-col items-center gap-1">
-            <label className="text-blue-400 text-sm font-bold">Number A</label>
+            <label className="text-blue-400 text-sm font-bold"><Trans i18nKey="auto.numbertheorylab.number_a">Number A</Trans></label>
             <input type="number" value={a} min={1} max={200}
               onChange={e => setA(Math.max(1, Math.min(200, parseInt(e.target.value) || 1)))}
               className="w-20 text-center bg-white/10 border border-blue-400/30 rounded-lg px-3 py-2 text-white font-bold focus:outline-none"
@@ -233,7 +234,7 @@ function GcdLcmExplorer() {
           </div>
           <span className="text-gray-400 text-2xl mt-4">🔗</span>
           <div className="flex flex-col items-center gap-1">
-            <label className="text-orange-400 text-sm font-bold">Number B</label>
+            <label className="text-sky-400 text-sm font-bold"><Trans i18nKey="auto.numbertheorylab.number_b">Number B</Trans></label>
             <input type="number" value={b} min={1} max={200}
               onChange={e => setB(Math.max(1, Math.min(200, parseInt(e.target.value) || 1)))}
               className="w-20 text-center bg-white/10 border border-orange-400/30 rounded-lg px-3 py-2 text-white font-bold focus:outline-none"
@@ -245,26 +246,26 @@ function GcdLcmExplorer() {
       {/* Results */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 rounded-2xl p-5 border border-green-500/20">
-          <h4 className="text-green-400 font-bold mb-2">GCD (Greatest Common Divisor)</h4>
+          <h4 className="text-green-400 font-bold mb-2"><Trans i18nKey="auto.numbertheorylab.gcd_greatest_common_divisor">GCD (Greatest Common Divisor)</Trans></h4>
           <motion.p key={gcdVal} className="text-4xl font-bold text-white" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>
             {gcdVal}
           </motion.p>
-          <p className="text-gray-400 text-sm mt-2">The largest number that divides both {a} and {b}</p>
-          <p className="text-green-300 text-sm mt-2 font-mono">GCD({a}, {b}) = {gcdVal}</p>
+          <p className="text-gray-400 text-sm mt-2"><Trans i18nKey="auto.numbertheorylab.the_largest_number_that_divide">The largest number that divides both</Trans> {a} <Trans i18nKey="auto.numbertheorylab.and">and</Trans> {b}</p>
+          <p className="text-green-300 text-sm mt-2 font-mono"><Trans i18nKey="auto.numbertheorylab.gcd">GCD(</Trans>{a}, {b}) = {gcdVal}</p>
         </div>
         <div className="bg-gradient-to-br from-blue-500/10 to-indigo-500/10 rounded-2xl p-5 border border-blue-500/20">
-          <h4 className="text-blue-400 font-bold mb-2">LCM (Least Common Multiple)</h4>
+          <h4 className="text-blue-400 font-bold mb-2"><Trans i18nKey="auto.numbertheorylab.lcm_least_common_multiple">LCM (Least Common Multiple)</Trans></h4>
           <motion.p key={lcmVal} className="text-4xl font-bold text-white" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>
             {lcmVal}
           </motion.p>
-          <p className="text-gray-400 text-sm mt-2">The smallest number divisible by both {a} and {b}</p>
-          <p className="text-blue-300 text-sm mt-2 font-mono">LCM({a}, {b}) = {lcmVal}</p>
+          <p className="text-gray-400 text-sm mt-2"><Trans i18nKey="auto.numbertheorylab.the_smallest_number_divisible_">The smallest number divisible by both</Trans> {a} <Trans i18nKey="auto.numbertheorylab.and">and</Trans> {b}</p>
+          <p className="text-blue-300 text-sm mt-2 font-mono"><Trans i18nKey="auto.numbertheorylab.lcm">LCM(</Trans>{a}, {b}) = {lcmVal}</p>
         </div>
       </div>
 
       {/* Venn diagram style */}
       <div className="bg-white/5 rounded-2xl p-4 border border-white/10">
-        <h4 className="text-white font-bold mb-3 text-center">🔍 Common Factors</h4>
+        <h4 className="text-white font-bold mb-3 text-center"><Trans i18nKey="auto.numbertheorylab.common_factors">🔍 Common Factors</Trans></h4>
         <div className="flex flex-wrap gap-1 justify-center">
           {factorsA.map(f => {
             const isCommon = commonFactors.includes(f);
@@ -277,13 +278,13 @@ function GcdLcmExplorer() {
           })}
         </div>
         <p className="text-center text-gray-500 text-sm mt-2">
-          <span className="text-blue-300">Blue</span> = factors of {a} | <span className="text-green-300">Green</span> = common
-        </p>
+          <span className="text-blue-300"><Trans i18nKey="auto.numbertheorylab.blue">Blue</Trans></span> <Trans i18nKey="auto.numbertheorylab.factors_of">= factors of</Trans> {a} | <span className="text-green-300"><Trans i18nKey="auto.numbertheorylab.green">Green</Trans></span> <Trans i18nKey="auto.numbertheorylab.common">= common</Trans>
+                          </p>
       </div>
 
       {/* Multiples */}
       <div className="bg-white/5 rounded-2xl p-4 border border-white/10">
-        <h4 className="text-white font-bold mb-2 text-center">📊 First Common Multiples</h4>
+        <h4 className="text-white font-bold mb-2 text-center"><Trans i18nKey="auto.numbertheorylab.first_common_multiples">📊 First Common Multiples</Trans></h4>
         <div className="flex flex-wrap gap-1 justify-center">
           {multiplesA.slice(0, 8).map(m => {
             const isCommon = commonMultiples.includes(m);
@@ -297,7 +298,7 @@ function GcdLcmExplorer() {
       </div>
 
       <div className="bg-purple-500/10 rounded-xl p-3 border border-purple-500/20 text-center text-sm">
-        <p className="text-purple-300">💡 <strong>Tip:</strong> GCD × LCM = a × b → {gcdVal} × {lcmVal} = {gcdVal * lcmVal} = {a} × {b} = {a * b}</p>
+        <p className="text-purple-300">💡 <strong><Trans i18nKey="auto.numbertheorylab.tip">Tip:</Trans></strong> <Trans i18nKey="auto.numbertheorylab.gcd_lcm_a_b">GCD × LCM = a × b →</Trans> {gcdVal} × {lcmVal} = {gcdVal * lcmVal} = {a} × {b} = {a * b}</p>
       </div>
     </div>
   );
@@ -324,7 +325,7 @@ function PrimeChecker() {
     <div className="space-y-4">
       <div className="bg-white/5 rounded-2xl p-4 border border-white/10">
         <div className="flex items-center justify-center gap-3">
-          <label className="text-gray-400 text-sm">Test number:</label>
+          <label className="text-gray-400 text-sm"><Trans i18nKey="auto.numbertheorylab.test_number">Test number:</Trans></label>
           <input type="number" value={num} min={2} max={10000}
             onChange={e => setNum(Math.max(2, Math.min(10000, parseInt(e.target.value) || 2)))}
             className="w-24 text-center bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white text-xl font-bold focus:outline-none"
@@ -345,23 +346,23 @@ function PrimeChecker() {
         >
           {prime ? '👑' : '🔨'}
         </motion.span>
-        <h3 className={`text-3xl font-bold ${prime ? 'text-yellow-400' : 'text-orange-400'}`}>
-          {num} is {prime ? 'PRIME!' : 'NOT prime'}
+        <h3 className={`text-3xl font-bold ${prime ? 'text-yellow-400' : 'text-sky-400'}`}>
+          {num} <Trans i18nKey="auto.numbertheorylab.is">is</Trans> {prime ? 'PRIME!' : 'NOT prime'}
         </h3>
         {!prime && (
           <div className="mt-3">
-            <p className="text-gray-400 text-sm">Factors: {primeFactors.join(' × ')} = {num}</p>
-            <p className="text-gray-400 text-sm mt-1">Smallest factor: {primeFactors[0]}</p>
+            <p className="text-gray-400 text-sm"><Trans i18nKey="auto.numbertheorylab.factors">Factors:</Trans> {primeFactors.join(' × ')} = {num}</p>
+            <p className="text-gray-400 text-sm mt-1"><Trans i18nKey="auto.numbertheorylab.smallest_factor">Smallest factor:</Trans> {primeFactors[0]}</p>
           </div>
         )}
         {prime && (
-          <p className="text-gray-400 text-sm mt-2">Only divisible by 1 and {num}</p>
+          <p className="text-gray-400 text-sm mt-2"><Trans i18nKey="auto.numbertheorylab.only_divisible_by_1_and">Only divisible by 1 and</Trans> {num}</p>
         )}
       </motion.div>
 
       {/* Sieve of Eratosthenes (1-100) */}
       <div className="bg-white/5 rounded-2xl p-4 border border-white/10">
-        <h4 className="text-white font-bold mb-3 text-center">🔬 Sieve of Eratosthenes (1-100)</h4>
+        <h4 className="text-white font-bold mb-3 text-center"><Trans i18nKey="auto.numbertheorylab.sieve_of_eratosthenes_1_100">🔬 Sieve of Eratosthenes (1-100)</Trans></h4>
         <div className="grid grid-cols-10 gap-1">
           {Array.from({ length: 100 }, (_, i) => i + 1).map(n => (
             <motion.div
@@ -379,12 +380,12 @@ function PrimeChecker() {
           ))}
         </div>
         <div className="flex items-center justify-center gap-4 mt-3 text-sm">
-          <span className="text-yellow-300">🟡 Prime</span>
-          <span className="text-gray-500">⬜ Composite</span>
+          <span className="text-yellow-300"><Trans i18nKey="auto.numbertheorylab.prime">🟡 Prime</Trans></span>
+          <span className="text-gray-500"><Trans i18nKey="auto.numbertheorylab.composite">⬜ Composite</Trans></span>
         </div>
         <p className="text-gray-500 text-sm text-center mt-1">
-          There are {sieve.filter(Boolean).length} primes between 1 and 100 • Click any number to test
-        </p>
+          <Trans i18nKey="auto.numbertheorylab.there_are">There are</Trans> {sieve.filter(Boolean).length} <Trans i18nKey="auto.numbertheorylab.primes_between_1_and_100_click">primes between 1 and 100 • Click any number to test</Trans>
+                          </p>
       </div>
     </div>
   );

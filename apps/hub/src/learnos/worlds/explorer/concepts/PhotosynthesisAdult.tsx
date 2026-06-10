@@ -7,6 +7,7 @@ import { EverydayConnection } from '../components/EverydayConnection';
 import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
+import { Trans } from "react-i18next";
 
 export default function PhotosynthesisAdult() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -165,7 +166,7 @@ export default function PhotosynthesisAdult() {
         <div className="px-5 py-4">
           <div className="mb-4">
             <div className="flex justify-between mb-1">
-              <span className="text-slate-500 text-sm">Light intensity</span>
+              <span className="text-slate-500 text-sm"><Trans i18nKey="auto.photosynthesisadult.light_intensity">Light intensity</Trans></span>
               <span className="text-slate-400 text-sm font-mono">{lightIntensity}%</span>
             </div>
             <input
@@ -179,27 +180,27 @@ export default function PhotosynthesisAdult() {
           <div className="space-y-3">
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-slate-300 text-sm leading-relaxed mb-2">
-                Photons from the sun strike chlorophyll molecules. Their
-                energy splits water, releasing oxygen. The hydrogen
-                combines with CO₂ to make glucose — stored sunlight.
-              </p>
+                <Trans i18nKey="auto.photosynthesisadult.photons_from_the_sun_strike_ch">Photons from the sun strike chlorophyll molecules. Their
+                                              energy splits water, releasing oxygen. The hydrogen
+                                              combines with CO₂ to make glucose — stored sunlight.</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Coal and petrol are ancient photosynthesis — sunlight
-                captured by plants millions of years ago, compressed
-                underground. Burning them releases that ancient light.
-              </p>
+                <Trans i18nKey="auto.photosynthesisadult.coal_and_petrol_are_ancient_ph">Coal and petrol are ancient photosynthesis — sunlight
+                                              captured by plants millions of years ago, compressed
+                                              underground. Burning them releases that ancient light.</Trans>
+                                            </p>
             </div>
 
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-violet-400 text-sm font-bold uppercase tracking-wider mb-2">
-                History of the idea
-              </p>
+                <Trans i18nKey="auto.photosynthesisadult.history_of_the_idea">History of the idea</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                For centuries, people believed plants ate soil. Jan van Helmont
-                in 1648 proved this wrong. Joseph Priestley in 1771 showed plants
-                produce oxygen. Melvin Calvin won the Nobel Prize in 1961 for
-                mapping the exact chemical pathway.
-              </p>
+                <Trans i18nKey="auto.photosynthesisadult.for_centuries_people_believed_">For centuries, people believed plants ate soil. Jan van Helmont
+                                              in 1648 proved this wrong. Joseph Priestley in 1771 showed plants
+                                              produce oxygen. Melvin Calvin won the Nobel Prize in 1961 for
+                                              mapping the exact chemical pathway.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

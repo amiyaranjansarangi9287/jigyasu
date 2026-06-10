@@ -1,5 +1,6 @@
 import { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Trans } from "react-i18next";
 
 type ChessMode = 'queens' | 'knights' | 'counting';
 
@@ -8,8 +9,8 @@ export default function ChessStrategy() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">♟️ Chess & Strategy</h2>
-        <p className="text-purple-300 text-lg">Math puzzles on the chessboard — combinatorics & logic!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.chessstrategy.chess_strategy">♟️ Chess & Strategy</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.chessstrategy.math_puzzles_on_the_chessboard">Math puzzles on the chessboard — combinatorics & logic!</Trans></p>
       </div>
       <div className="flex justify-center gap-2 mb-6">
         {[{ id: 'queens' as ChessMode, e: '👑', l: 'N-Queens' }, { id: 'knights' as ChessMode, e: '🐴', l: "Knight's Tour" }, { id: 'counting' as ChessMode, e: '🔢', l: 'Counting' }].map(m => (
@@ -54,16 +55,16 @@ function NQueens() {
   return (
     <div className="max-w-lg mx-auto space-y-4">
       <div className="flex items-center justify-between bg-white/5 rounded-xl px-4 py-2 border border-white/10">
-        <div className="flex items-center gap-2"><label className="text-gray-400 text-sm">Board size:</label>
+        <div className="flex items-center gap-2"><label className="text-gray-400 text-sm"><Trans i18nKey="auto.chessstrategy.board_size">Board size:</Trans></label>
           <select value={n} onChange={e => { setN(Number(e.target.value)); setQueens([]); }} className="bg-white/10 border border-white/20 rounded px-2 py-1 text-white">
             {[4, 5, 6, 7, 8].map(s => <option key={s} value={s}>{s}×{s}</option>)}
           </select>
         </div>
         <div className="flex items-center gap-3">
-          <span className={`text-sm font-bold ${solved ? 'text-green-400' : conflicts.size > 0 ? 'text-orange-400' : 'text-gray-400'}`}>
+          <span className={`text-sm font-bold ${solved ? 'text-green-400' : conflicts.size > 0 ? 'text-sky-400' : 'text-gray-400'}`}>
             {solved ? '✅ Solved!' : `👑 ${queens.length}/${n}`}
           </span>
-          <button className="text-sm text-gray-500 hover:text-white" onClick={() => setQueens([])}>Reset</button>
+          <button className="text-sm text-gray-500 hover:text-white" onClick={() => setQueens([])}><Trans i18nKey="auto.chessstrategy.reset">Reset</Trans></button>
         </div>
       </div>
       <div className="flex justify-center">
@@ -85,8 +86,8 @@ function NQueens() {
         </div>
       </div>
       <div className="bg-amber-500/10 rounded-xl p-3 border border-amber-500/20 text-sm text-amber-300">
-        💡 Place {n} queens so no two attack each other — no shared row, column, or diagonal. This is a classic <strong>combinatorics</strong> problem!
-      </div>
+        <Trans i18nKey="auto.chessstrategy.place">💡 Place</Trans> {n} <Trans i18nKey="auto.chessstrategy.queens_so_no_two_attack_each_o">queens so no two attack each other — no shared row, column, or diagonal. This is a classic</Trans> <strong><Trans i18nKey="auto.chessstrategy.combinatorics">combinatorics</Trans></strong> <Trans i18nKey="auto.chessstrategy.problem">problem!</Trans>
+                    </div>
     </div>
   );
 }
@@ -124,10 +125,10 @@ function KnightsTour() {
   return (
     <div className="max-w-lg mx-auto space-y-4">
       <div className="flex items-center justify-between bg-white/5 rounded-xl px-4 py-2 border border-white/10">
-        <span className={`text-sm font-bold ${complete ? 'text-green-400' : stuck ? 'text-orange-400' : 'text-gray-400'}`}>
+        <span className={`text-sm font-bold ${complete ? 'text-green-400' : stuck ? 'text-sky-400' : 'text-gray-400'}`}>
           {complete ? '✅ Complete tour!' : stuck ? '🤔 Stuck! Reset and try again.' : `🐴 Moves: ${path.length}/${size * size}`}
         </span>
-        <button className="text-sm text-gray-500 hover:text-white" onClick={() => { setPath([]); setStuck(false); }}>Reset</button>
+        <button className="text-sm text-gray-500 hover:text-white" onClick={() => { setPath([]); setStuck(false); }}><Trans i18nKey="auto.chessstrategy.reset">Reset</Trans></button>
       </div>
       <div className="flex justify-center">
         <div className="inline-grid gap-0" style={{ gridTemplateColumns: `repeat(${size}, 1fr)` }}>
@@ -151,8 +152,8 @@ function KnightsTour() {
         </div>
       </div>
       <div className="bg-amber-500/10 rounded-xl p-3 border border-amber-500/20 text-sm text-amber-300">
-        💡 Move the knight to visit every square exactly once. Green dots show valid moves. A 5×5 tour has <strong>5! × many</strong> possible paths!
-      </div>
+        <Trans i18nKey="auto.chessstrategy.move_the_knight_to_visit_every">💡 Move the knight to visit every square exactly once. Green dots show valid moves. A 5×5 tour has</Trans> <strong><Trans i18nKey="auto.chessstrategy.5_many">5! × many</Trans></strong> <Trans i18nKey="auto.chessstrategy.possible_paths">possible paths!</Trans>
+                    </div>
     </div>
   );
 }
@@ -168,7 +169,7 @@ function ChessCounting() {
   ], []);
 
   const [qIdx, setQIdx] = useState(0);
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [mastery, setMastery] = useState(0);
 
   const current = questions[qIdx % questions.length];
@@ -176,13 +177,13 @@ function ChessCounting() {
   const handleAnswer = (opt: number) => {
     if (feedback) return;
     if (opt === current.a) { setFeedback('correct'); setMastery(m => m + 1); setTimeout(() => { setQIdx(i => i + 1); setFeedback(null); }, 1200); }
-    else { setFeedback('wrong'); setTimeout(() => setFeedback(null), 900); }
+    else { setFeedback('hint'); setTimeout(() => setFeedback(null), 900); }
   };
 
   return (
     <div className="max-w-lg mx-auto">
-      <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {mastery}</span><span className="text-gray-400 text-sm">Q{(qIdx % questions.length) + 1}/{questions.length}</span></div>
-      <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
+      <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {mastery}</span><span className="text-gray-400 text-sm"><Trans i18nKey="auto.chessstrategy.q">Q</Trans>{(qIdx % questions.length) + 1}/{questions.length}</span></div>
+      <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'hint' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
         <p className="text-xl font-bold text-white text-center mb-6">♟️ {current.q}</p>
         <div className="grid grid-cols-2 gap-3">
           {current.opts.sort(() => Math.random() - 0.5).map(opt => (
@@ -191,8 +192,8 @@ function ChessCounting() {
               onClick={() => handleAnswer(opt)} disabled={!!feedback}>{opt}</motion.button>
           ))}
         </div>
-        {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✅ Correct!</p>}
-        {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Answer: {current.a}</p>}
+        {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4"><Trans i18nKey="auto.chessstrategy.correct">✅ Correct!</Trans></p>}
+        {feedback === 'hint' && <p className="text-sky-400 font-bold text-center mt-4"><Trans i18nKey="auto.chessstrategy.answer">Answer:</Trans> {current.a}</p>}
       </div>
     </div>
   );

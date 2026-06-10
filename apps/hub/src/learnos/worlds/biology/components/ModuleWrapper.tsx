@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Sparkles, Trophy, Award } from 'lucide-react';
 import { MODULE_CONNECTIONS, MODULE_NAMES, UserProgress, visitModule, saveProgress, getLevelTitle } from '../lib/progress';
 import { playLevelUp } from '../lib/sounds';
+import { Trans } from "react-i18next";
 
 interface ModuleWrapperProps {
   moduleId: string;
@@ -73,8 +74,8 @@ export default function ModuleWrapper({ moduleId, children, progress, setProgres
             exit={{ opacity: 0, y: -10, scale: 0.9 }}
             className="fixed bottom-20 right-4 bg-emerald-500/90 backdrop-blur text-white px-4 py-2.5 rounded-xl shadow-lg shadow-emerald-500/30 z-40 flex items-center gap-2">
             <Sparkles className="w-4 h-4" />
-            <span className="text-sm font-bold">+25 XP</span>
-            <span className="text-sm opacity-80">New module!</span>
+            <span className="text-sm font-bold"><Trans i18nKey="auto.modulewrapper.25_xp">+25 XP</Trans></span>
+            <span className="text-sm opacity-80"><Trans i18nKey="auto.modulewrapper.new_module">New module!</Trans></span>
           </motion.div>
         )}
       </AnimatePresence>
@@ -117,12 +118,12 @@ export default function ModuleWrapper({ moduleId, children, progress, setProgres
                 transition={{ duration: 0.6 }}>
                 🎉
               </motion.div>
-              <div className="text-sm text-yellow-400 font-bold uppercase tracking-wider mb-1">Level Up!</div>
-              <div className="text-4xl font-black text-white mb-1">Level {newLevel}</div>
+              <div className="text-sm text-yellow-400 font-bold uppercase tracking-wider mb-1"><Trans i18nKey="auto.modulewrapper.level_up">Level Up!</Trans></div>
+              <div className="text-4xl font-black text-white mb-1"><Trans i18nKey="auto.modulewrapper.level">Level</Trans> {newLevel}</div>
               <div className="text-sm text-yellow-400/80">{getLevelTitle(newLevel)}</div>
               <div className="flex items-center justify-center gap-1 mt-2 text-sm text-gray-400">
-                <Award className="w-3 h-3" /> Keep exploring to level up more!
-              </div>
+                <Award className="w-3 h-3" /> <Trans i18nKey="auto.modulewrapper.keep_exploring_to_level_up_mor">Keep exploring to level up more!</Trans>
+                                            </div>
             </motion.div>
           </motion.div>
         )}
@@ -135,18 +136,18 @@ export default function ModuleWrapper({ moduleId, children, progress, setProgres
           <button onClick={() => onNavigate('home')}
             className="flex items-center gap-1 text-gray-400 hover:text-white text-sm shrink-0 transition-colors px-2 py-1 rounded-lg hover:bg-gray-800 active:scale-95">
             <ArrowLeft className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">Home</span>
+            <span className="hidden sm:inline"><Trans i18nKey="auto.modulewrapper.home">Home</Trans></span>
           </button>
 
           {/* XP bar */}
           <div className="flex items-center gap-1.5 shrink-0">
             <Trophy className="w-3 h-3 text-yellow-400" />
-            <span className="text-sm text-yellow-400 font-bold">Lv.{progress.level}</span>
+            <span className="text-sm text-yellow-400 font-bold"><Trans i18nKey="auto.modulewrapper.lv">Lv.</Trans>{progress.level}</span>
             <div className="w-12 sm:w-16 h-1.5 bg-gray-800 rounded-full overflow-hidden">
               <div className="h-full bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full transition-all"
                 style={{ width: `${((progress.xp % 100) / 100) * 100}%` }} />
             </div>
-            <span className="text-[9px] text-gray-600 hidden sm:inline">{xpToNext}→next</span>
+            <span className="text-[9px] text-gray-600 hidden sm:inline">{xpToNext}<Trans i18nKey="auto.modulewrapper.next">→next</Trans></span>
           </div>
 
           <div className="flex-1" />
@@ -154,7 +155,7 @@ export default function ModuleWrapper({ moduleId, children, progress, setProgres
           {/* Related modules */}
           {connections && (
             <div className="flex items-center gap-1">
-              <span className="text-[9px] text-gray-600 hidden sm:inline">Next:</span>
+              <span className="text-[9px] text-gray-600 hidden sm:inline"><Trans i18nKey="auto.modulewrapper.next">Next:</Trans></span>
               {connections.related.slice(0, 3).map(relId => {
                 const mod = MODULE_NAMES[relId];
                 if (!mod) return null;
@@ -164,7 +165,7 @@ export default function ModuleWrapper({ moduleId, children, progress, setProgres
                     className={`flex items-center gap-0.5 px-1.5 sm:px-2 py-1 rounded-lg text-[9px] sm:text-sm font-medium transition-all active:scale-95 ${isVisited ? 'bg-gray-800 text-gray-500 hover:text-white' : 'bg-emerald-500/15 text-emerald-400 hover:bg-emerald-500/25 border border-emerald-500/30'}`}>
                     <span>{mod.emoji}</span>
                     <span className="hidden md:inline">{mod.name}</span>
-                    {!isVisited && <span className="text-[7px] text-yellow-400 hidden sm:inline">+25</span>}
+                    {!isVisited && <span className="text-[7px] text-yellow-400 hidden sm:inline"><Trans i18nKey="auto.modulewrapper.25">+25</Trans></span>}
                   </button>
                 );
               })}

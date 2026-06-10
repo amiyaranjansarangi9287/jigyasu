@@ -3,7 +3,7 @@
 
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -104,12 +104,12 @@ export default function CellExplorer() {
         <div className="mt-6 grid grid-cols-2 gap-4">
           <div className="bg-teal-50 rounded-2xl p-4 text-center">
             <div className="text-2xl mb-1">🔢</div>
-            <div className="font-bold text-teal-600 text-sm">37.2T</div>
+            <div className="font-bold text-teal-600 text-sm"><Trans i18nKey="auto.cellexplorer.37_2t">37.2T</Trans></div>
             <p className="text-sm text-teal-400 mt-1">{t('lab.modules.CellExplorer.txt_Cellsinyou', 'Cells in your body')}</p>
           </div>
           <div className="bg-blue-50 rounded-2xl p-4 text-center">
             <div className="text-2xl mb-1">📏</div>
-            <div className="font-bold text-blue-600 text-sm">10-100μm</div>
+            <div className="font-bold text-blue-600 text-sm"><Trans i18nKey="auto.cellexplorer.10_100_m">10-100μm</Trans></div>
             <p className="text-sm text-blue-400 mt-1">{t('lab.modules.CellExplorer.txt_Typicalcel', 'Typical cell size')}</p>
           </div>
         </div>
@@ -119,13 +119,13 @@ export default function CellExplorer() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.CellExplorer.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-600 font-bold text-sm mb-1">Ancient Indian Insight</h3>
+              <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.cellexplorer.ancient_indian_insight">Ancient Indian Insight</Trans></h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Maharishi Kanad (~600 BCE) proposed <strong>Paramanu</strong> — the smallest
-                indivisible particle — 2,000 years before Dalton's atomic theory! The Vaisheshika
-                school described matter as composed of tiny units, remarkably close to modern
-                cell and atomic theory.
-              </p>
+                <Trans i18nKey="auto.cellexplorer.maharishi_kanad_600_bce_propos">Maharishi Kanad (~600 BCE) proposed</Trans> <strong><Trans i18nKey="auto.cellexplorer.paramanu">Paramanu</Trans></strong> <Trans i18nKey="auto.cellexplorer.the_smallest_indivisible_parti">— the smallest
+                                              indivisible particle — 2,000 years before Dalton's atomic theory! The Vaisheshika
+                                              school described matter as composed of tiny units, remarkably close to modern
+                                              cell and atomic theory.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

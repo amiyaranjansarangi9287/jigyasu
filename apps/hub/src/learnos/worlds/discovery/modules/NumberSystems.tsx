@@ -1,6 +1,6 @@
 // src/worlds/discovery/modules/NumberSystems.tsx
 import { useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion } from 'framer-motion';
 import DiscoveryShell from '../DiscoveryShell';
 import { useLumoSage } from '../hooks/useLumoSage';
@@ -56,9 +56,9 @@ export default function NumberSystems() {
             ))}
           </div>
           <div className="text-center mt-3 space-y-1">
-            <p className="text-slate-500 text-sm">Binary: <span className="text-cyan-400 font-mono font-bold">{binary}</span></p>
-            <p className="text-slate-500 text-sm">Decimal: <span className="text-white font-bold text-lg">{decimal}</span></p>
-            <p className="text-slate-500 text-sm">Hex: <span className="text-purple-400 font-mono font-bold">0x{hex}</span></p>
+            <p className="text-slate-500 text-sm"><Trans i18nKey="auto.numbersystems.binary">Binary:</Trans> <span className="text-cyan-400 font-mono font-bold">{binary}</span></p>
+            <p className="text-slate-500 text-sm"><Trans i18nKey="auto.numbersystems.decimal">Decimal:</Trans> <span className="text-white font-bold text-lg">{decimal}</span></p>
+            <p className="text-slate-500 text-sm"><Trans i18nKey="auto.numbersystems.hex">Hex:</Trans> <span className="text-purple-400 font-mono font-bold"><Trans i18nKey="auto.numbersystems.0x">0x</Trans>{hex}</span></p>
           </div>
         </div>
 

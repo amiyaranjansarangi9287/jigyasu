@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 const CRISIS_RESOURCES = [
   {
@@ -57,8 +57,8 @@ export default function CrisisResources() {
         <div className="p-6">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-slate-900">
-              🆘 Help & Support
-            </h2>
+              <Trans i18nKey="auto.crisisresources.help_support">🆘 Help & Support</Trans>
+                                      </h2>
             <button
               onClick={() => setIsOpen(false)}
               className="text-slate-400 hover:text-slate-600 text-2xl font-bold"
@@ -70,18 +70,18 @@ export default function CrisisResources() {
 
           <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 mb-6">
             <p className="text-sm text-amber-800 font-semibold mb-2">
-              If you or someone you know is in immediate danger, please call emergency services:
-            </p>
-            <p className="text-2xl font-bold text-amber-900">112</p>
+              <Trans i18nKey="auto.crisisresources.if_you_or_someone_you_know_is_">If you or someone you know is in immediate danger, please call emergency services:</Trans>
+                                      </p>
+            <p className="text-2xl font-bold text-amber-900"><Trans i18nKey="auto.crisisresources.112">112</Trans></p>
           </div>
 
           <div className="space-y-4">
             <h3 className="text-lg font-bold text-slate-900">
-              Crisis Helplines (India)
-            </h3>
+              <Trans i18nKey="auto.crisisresources.crisis_helplines_india">Crisis Helplines (India)</Trans>
+                                      </h3>
             <p className="text-sm text-slate-600">
-              These services are free, confidential, and available 24/7. You can call anytime.
-            </p>
+              <Trans i18nKey="auto.crisisresources.these_services_are_free_confid">These services are free, confidential, and available 24/7. You can call anytime.</Trans>
+                                      </p>
 
             {CRISIS_RESOURCES.map((resource) => (
               <div
@@ -113,15 +113,15 @@ export default function CrisisResources() {
 
           <div className="mt-6 pt-6 border-t border-slate-200">
             <h3 className="text-lg font-bold text-slate-900 mb-2">
-              Need to talk to someone?
-            </h3>
+              <Trans i18nKey="auto.crisisresources.need_to_talk_to_someone">Need to talk to someone?</Trans>
+                                      </h3>
             <p className="text-sm text-slate-600 mb-4">
-              It's okay to ask for help. Speaking with a trusted adult, counselor, or helpline can make a big difference.
-            </p>
+              <Trans i18nKey="auto.crisisresources.it_s_okay_to_ask_for_help_spea">It's okay to ask for help. Speaking with a trusted adult, counselor, or helpline can make a big difference.</Trans>
+                                      </p>
             <div className="bg-blue-50 border border-blue-200 rounded-2xl p-4">
               <p className="text-sm text-blue-800">
-                <strong>Remember:</strong> You are not alone. There are people who care and want to help.
-              </p>
+                <strong><Trans i18nKey="auto.crisisresources.remember">Remember:</Trans></strong> <Trans i18nKey="auto.crisisresources.you_are_not_alone_there_are_pe">You are not alone. There are people who care and want to help.</Trans>
+                                            </p>
             </div>
           </div>
 
@@ -129,8 +129,8 @@ export default function CrisisResources() {
             onClick={() => setIsOpen(false)}
             className="mt-6 w-full bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold py-3 rounded-xl transition"
           >
-            Close
-          </button>
+            <Trans i18nKey="auto.crisisresources.close">Close</Trans>
+                                </button>
         </div>
       </div>
     </div>

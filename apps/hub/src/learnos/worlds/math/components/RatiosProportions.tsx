@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Trans } from "react-i18next";
 
 function gcd(a: number, b: number): number { while (b) { [a, b] = [b, a % b]; } return a; }
 
@@ -52,7 +53,7 @@ export default function RatiosProportions() {
   const [recipe] = useState(makeRecipe);
   const [servings, setServings] = useState(recipe.baseServings);
   const [challenge, setChallenge] = useState(makeChallenge);
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [mastery, setMastery] = useState(0);
 
   const g = useMemo(() => gcd(a, b), [a, b]);
@@ -63,14 +64,14 @@ export default function RatiosProportions() {
     if (opt === challenge.answer) {
       setFeedback('correct'); setMastery(m => m + 1);
       setTimeout(() => { setChallenge(makeChallenge()); setFeedback(null); }, 1200);
-    } else { setFeedback('wrong'); setTimeout(() => setFeedback(null), 900); }
+    } else { setFeedback('hint'); setTimeout(() => setFeedback(null), 900); }
   };
 
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">⚖️ Ratios & Proportions</h2>
-        <p className="text-purple-300 text-lg">Scale recipes, compare ratios, and solve proportions!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.ratiosproportions.ratios_proportions">⚖️ Ratios & Proportions</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.ratiosproportions.scale_recipes_compare_ratios_a">Scale recipes, compare ratios, and solve proportions!</Trans></p>
       </div>
 
       <div className="flex justify-center gap-2 mb-6">
@@ -89,31 +90,31 @@ export default function RatiosProportions() {
           <motion.div key="r" className="max-w-lg mx-auto space-y-4" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
             <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
               <div className="grid grid-cols-2 gap-4 mb-4">
-                <div><label className="text-blue-400 text-sm font-bold">A</label>
+                <div><label className="text-blue-400 text-sm font-bold"><Trans i18nKey="auto.ratiosproportions.a">A</Trans></label>
                   <input type="range" min="1" max="20" value={a} onChange={e => setA(Number(e.target.value))} className="w-full accent-blue-500" />
                   <p className="text-white font-bold text-center text-2xl">{a}</p></div>
-                <div><label className="text-orange-400 text-sm font-bold">B</label>
+                <div><label className="text-sky-400 text-sm font-bold"><Trans i18nKey="auto.ratiosproportions.b">B</Trans></label>
                   <input type="range" min="1" max="20" value={b} onChange={e => setB(Number(e.target.value))} className="w-full accent-orange-500" />
                   <p className="text-white font-bold text-center text-2xl">{b}</p></div>
               </div>
               <div className="text-center text-3xl font-bold text-white mb-2">{a} : {b}</div>
-              <p className="text-gray-400 text-center text-sm">Simplified: <span className="text-purple-300 font-bold">{a / g} : {b / g}</span></p>
-              <p className="text-gray-400 text-center text-sm">Fraction: <span className="text-green-300 font-bold">{a}/{b} = {(a / b).toFixed(3)}</span></p>
+              <p className="text-gray-400 text-center text-sm"><Trans i18nKey="auto.ratiosproportions.simplified">Simplified:</Trans> <span className="text-purple-300 font-bold">{a / g} : {b / g}</span></p>
+              <p className="text-gray-400 text-center text-sm"><Trans i18nKey="auto.ratiosproportions.fraction">Fraction:</Trans> <span className="text-green-300 font-bold">{a}/{b} = {(a / b).toFixed(3)}</span></p>
             </div>
 
             {/* Visual bar */}
             <div className="bg-white/5 rounded-2xl p-4 border border-white/10">
-              <p className="text-gray-400 text-sm mb-2">Visual ratio</p>
+              <p className="text-gray-400 text-sm mb-2"><Trans i18nKey="auto.ratiosproportions.visual_ratio">Visual ratio</Trans></p>
               <div className="flex h-10 rounded-lg overflow-hidden">
                 <motion.div className="bg-blue-500 flex items-center justify-center text-sm font-bold text-white" animate={{ width: `${(a / (a + b)) * 100}%` }}>{a}</motion.div>
                 <motion.div className="bg-orange-500 flex items-center justify-center text-sm font-bold text-white" animate={{ width: `${(b / (a + b)) * 100}%` }}>{b}</motion.div>
               </div>
-              <div className="flex justify-between text-sm mt-1"><span className="text-blue-400">A: {((a / (a + b)) * 100).toFixed(1)}%</span><span className="text-orange-400">B: {((b / (a + b)) * 100).toFixed(1)}%</span></div>
+              <div className="flex justify-between text-sm mt-1"><span className="text-blue-400"><Trans i18nKey="auto.ratiosproportions.a">A:</Trans> {((a / (a + b)) * 100).toFixed(1)}%</span><span className="text-sky-400"><Trans i18nKey="auto.ratiosproportions.b">B:</Trans> {((b / (a + b)) * 100).toFixed(1)}%</span></div>
             </div>
 
             {/* Equivalent ratios */}
             <div className="bg-white/5 rounded-2xl p-4 border border-white/10">
-              <p className="text-gray-400 text-sm mb-2">Equivalent ratios</p>
+              <p className="text-gray-400 text-sm mb-2"><Trans i18nKey="auto.ratiosproportions.equivalent_ratios">Equivalent ratios</Trans></p>
               <div className="flex flex-wrap gap-2">
                 {[1, 2, 3, 4, 5].map(m => (
                   <span key={m} className="px-3 py-1.5 rounded-lg bg-purple-500/20 text-purple-300 text-sm font-mono">{(a / g) * m} : {(b / g) * m}</span>
@@ -127,21 +128,21 @@ export default function RatiosProportions() {
           <motion.div key="re" className="max-w-lg mx-auto space-y-4" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
             <div className="bg-gradient-to-br from-orange-500/10 to-amber-500/10 rounded-2xl p-5 border border-orange-500/20">
               <h3 className="text-xl font-bold text-white mb-1">🍳 {recipe.name}</h3>
-              <p className="text-gray-400 text-sm mb-3">Base recipe: {recipe.baseServings} servings</p>
+              <p className="text-gray-400 text-sm mb-3"><Trans i18nKey="auto.ratiosproportions.base_recipe">Base recipe:</Trans> {recipe.baseServings} <Trans i18nKey="auto.ratiosproportions.servings">servings</Trans></p>
               <div className="flex items-center gap-3 mb-4">
-                <label className="text-gray-400 text-sm">Scale to</label>
+                <label className="text-gray-400 text-sm"><Trans i18nKey="auto.ratiosproportions.scale_to">Scale to</Trans></label>
                 <input type="range" min="1" max={recipe.baseServings * 4} value={servings} onChange={e => setServings(Number(e.target.value))} className="flex-1 accent-orange-500" />
-                <span className="text-orange-400 font-bold text-xl w-12 text-right">{servings}</span>
-                <span className="text-gray-400 text-sm">servings</span>
+                <span className="text-sky-400 font-bold text-xl w-12 text-right">{servings}</span>
+                <span className="text-gray-400 text-sm"><Trans i18nKey="auto.ratiosproportions.servings">servings</Trans></span>
               </div>
-              <p className="text-sm text-gray-400 mb-3">Scale factor: <span className="text-orange-300 font-bold">×{scale.toFixed(2)}</span></p>
+              <p className="text-sm text-gray-400 mb-3"><Trans i18nKey="auto.ratiosproportions.scale_factor">Scale factor:</Trans> <span className="text-orange-300 font-bold">×{scale.toFixed(2)}</span></p>
               <div className="space-y-2">
                 {recipe.ingredients.map(ing => (
                   <div key={ing.name} className="flex items-center justify-between bg-white/5 rounded-lg px-4 py-2">
                     <span className="text-white">{ing.name}</span>
                     <div className="text-right">
                       <span className="text-gray-500 text-sm line-through mr-2">{ing.amount} {ing.unit}</span>
-                      <motion.span key={servings} className="text-orange-400 font-bold" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>
+                      <motion.span key={servings} className="text-sky-400 font-bold" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>
                         {(Math.round(ing.amount * scale * 100) / 100)} {ing.unit}
                       </motion.span>
                     </div>
@@ -154,7 +155,7 @@ export default function RatiosProportions() {
 
         {mode === 'challenge' && (
           <motion.div key="ch" className="max-w-lg mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
+            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'hint' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
               <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {mastery}</span></div>
               <p className="text-xl font-bold text-white text-center mb-5">{challenge.question}</p>
               <div className="grid grid-cols-2 gap-3">
@@ -162,8 +163,8 @@ export default function RatiosProportions() {
                   <motion.button key={opt} className={`py-3 rounded-xl text-xl font-bold ${feedback === 'correct' && opt === challenge.answer ? 'bg-green-500 text-white' : feedback ? 'bg-white/5 text-gray-500' : 'bg-white/10 text-white hover:bg-white/20 border border-white/20'}`} whileHover={!feedback ? { scale: 1.05 } : {}} whileTap={!feedback ? { scale: 0.95 } : {}} onClick={() => answerChallenge(opt)} disabled={!!feedback}>{opt}</motion.button>
                 ))}
               </div>
-              {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✅ Correct!</p>}
-              {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Answer: {challenge.answer}</p>}
+              {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4"><Trans i18nKey="auto.ratiosproportions.correct">✅ Correct!</Trans></p>}
+              {feedback === 'hint' && <p className="text-sky-400 font-bold text-center mt-4"><Trans i18nKey="auto.ratiosproportions.answer">Answer:</Trans> {challenge.answer}</p>}
             </div>
           </motion.div>
         )}

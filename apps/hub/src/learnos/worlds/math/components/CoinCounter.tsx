@@ -1,5 +1,6 @@
 import { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Trans } from "react-i18next";
 
 interface Coin { name: string; value: number; emoji: string; color: string }
 
@@ -65,8 +66,8 @@ export default function CoinCounter() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🪙 Coin Counter</h2>
-        <p className="text-purple-300 text-lg">Count coins, make change, and master money!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.coincounter.coin_counter">🪙 Coin Counter</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.coincounter.count_coins_make_change_and_ma">Count coins, make change, and master money!</Trans></p>
       </div>
 
       <div className="flex justify-center gap-2 mb-6">
@@ -82,7 +83,7 @@ export default function CoinCounter() {
 
       {/* Coin tray */}
       <div className="bg-white/5 rounded-2xl p-5 border border-white/10 mb-4">
-        <p className="text-gray-400 text-sm mb-3">Click coins to add them:</p>
+        <p className="text-gray-400 text-sm mb-3"><Trans i18nKey="auto.coincounter.click_coins_to_add_them">Click coins to add them:</Trans></p>
         <div className="grid grid-cols-3 sm:grid-cols-6 gap-3">
           {COINS.map(c => (
             <motion.button key={c.value}
@@ -111,30 +112,30 @@ export default function CoinCounter() {
                   title={`Remove ${c.name}`}>{c.emoji}</motion.button>
               )))}
             </div>
-            <button className="text-sm text-orange-400 hover:text-red-300 ml-4" onClick={clear}>Clear</button>
+            <button className="text-sm text-sky-400 hover:text-red-300 ml-4" onClick={clear}><Trans i18nKey="auto.coincounter.clear">Clear</Trans></button>
           </div>
         )}
       </div>
 
       {/* Total */}
       <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 rounded-2xl p-5 border border-green-500/30 text-center mb-4">
-        <p className="text-gray-400 text-sm">Your total</p>
+        <p className="text-gray-400 text-sm"><Trans i18nKey="auto.coincounter.your_total">Your total</Trans></p>
         <motion.p key={total} className="text-5xl font-bold text-green-400" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>
           {formatMoney(total)}
         </motion.p>
-        <p className="text-gray-500 text-sm mt-1">{totalCoins} coin{totalCoins !== 1 ? 's' : ''}</p>
+        <p className="text-gray-500 text-sm mt-1">{totalCoins} <Trans i18nKey="auto.coincounter.coin">coin</Trans>{totalCoins !== 1 ? 's' : ''}</p>
       </div>
 
       <AnimatePresence mode="wait">
         {mode === 'makechange' && (
           <motion.div key="mc" className="bg-white/5 rounded-2xl p-5 border border-white/10 max-w-lg mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <h4 className="text-white font-bold mb-3">💡 Fewest Coins for Any Amount</h4>
+            <h4 className="text-white font-bold mb-3"><Trans i18nKey="auto.coincounter.fewest_coins_for_any_amount">💡 Fewest Coins for Any Amount</Trans></h4>
             <div className="flex items-center gap-3 mb-4">
-              <label className="text-gray-400 text-sm">Amount:</label>
+              <label className="text-gray-400 text-sm"><Trans i18nKey="auto.coincounter.amount">Amount:</Trans></label>
               <input type="number" value={target} min={1} max={999}
                 onChange={e => setTarget(Math.max(1, Math.min(999, Number(e.target.value) || 1)))}
                 className="w-24 bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white font-bold text-center" />
-              <span className="text-gray-400">cents = {formatMoney(target)}</span>
+              <span className="text-gray-400"><Trans i18nKey="auto.coincounter.cents">cents =</Trans> {formatMoney(target)}</span>
             </div>
             <div className="space-y-2">
               {COINS.filter(c => optimalChange[c.value]).map(c => (
@@ -146,7 +147,7 @@ export default function CoinCounter() {
               ))}
             </div>
             <p className="text-gray-400 text-sm mt-3">
-              Total coins needed: {Object.values(optimalChange).reduce((a, b) => a + b, 0)}
+              <Trans i18nKey="auto.coincounter.total_coins_needed">Total coins needed:</Trans> {Object.values(optimalChange).reduce((a, b) => a + b, 0)}
             </p>
           </motion.div>
         )}
@@ -156,18 +157,18 @@ export default function CoinCounter() {
             <div className={`rounded-2xl p-5 border-2 text-center ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback ? 'bg-white/5 border-white/10' : 'bg-purple-500/10 border-purple-500/30'}`}>
               <div className="flex justify-between mb-3">
                 <span className="text-yellow-400 font-bold">⭐ {mastery}</span>
-                <span className="text-gray-400 text-sm">Make exact change</span>
+                <span className="text-gray-400 text-sm"><Trans i18nKey="auto.coincounter.make_exact_change">Make exact change</Trans></span>
               </div>
-              <p className="text-gray-400">Use coins above to make exactly</p>
+              <p className="text-gray-400"><Trans i18nKey="auto.coincounter.use_coins_above_to_make_exactl">Use coins above to make exactly</Trans></p>
               <p className="text-4xl font-bold text-purple-300 my-2">{formatMoney(target)}</p>
-              <p className="text-gray-500 text-sm mb-4">Your total so far: <span className={`font-bold ${total === target ? 'text-green-400' : total > target ? 'text-orange-400' : 'text-yellow-400'}`}>{formatMoney(total)}</span></p>
+              <p className="text-gray-500 text-sm mb-4"><Trans i18nKey="auto.coincounter.your_total_so_far">Your total so far:</Trans> <span className={`font-bold ${total === target ? 'text-green-400' : total > target ? 'text-sky-400' : 'text-yellow-400'}`}>{formatMoney(total)}</span></p>
               <motion.button className="px-8 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold"
                 whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={checkChange}>
-                ✓ Check
-              </motion.button>
-              {feedback === 'correct' && <p className="text-green-400 font-bold mt-4">✅ Perfect change!</p>}
-              {feedback === 'too-much' && <p className="text-orange-400 font-bold mt-4">Too much! Remove some coins.</p>}
-              {feedback === 'not-enough' && <p className="text-yellow-400 font-bold mt-4">Not enough yet — keep adding coins.</p>}
+                <Trans i18nKey="auto.coincounter.check">✓ Check</Trans>
+                                            </motion.button>
+              {feedback === 'correct' && <p className="text-green-400 font-bold mt-4"><Trans i18nKey="auto.coincounter.perfect_change">✅ Perfect change!</Trans></p>}
+              {feedback === 'too-much' && <p className="text-sky-400 font-bold mt-4"><Trans i18nKey="auto.coincounter.too_much_remove_some_coins">Too much! Remove some coins.</Trans></p>}
+              {feedback === 'not-enough' && <p className="text-yellow-400 font-bold mt-4"><Trans i18nKey="auto.coincounter.not_enough_yet_keep_adding_coi">Not enough yet — keep adding coins.</Trans></p>}
             </div>
           </motion.div>
         )}

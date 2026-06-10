@@ -1,5 +1,5 @@
 import { Theme } from '../hooks/useTheme';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 interface Props {
   theme: Theme;
@@ -23,7 +23,7 @@ export default function SettingsModal({
         className="absolute inset-0 bg-black/50 backdrop-blur-sm"
         onClick={() => setSettingsOpen(false)}
       />
-      <div className="relative bg-white dark:bg-gray-900 rounded-3xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto p-6 animate-modal-in">
+      <div className="relative glass-panel rounded-3xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto p-6 animate-modal-in">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-xl font-bold text-gray-900 dark:text-white">{t('kidscamp.settings.title', 'Settings')}</h2>
           <button
@@ -80,7 +80,7 @@ export default function SettingsModal({
 
         {/* App Info */}
         <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
-          <p className="text-sm text-gray-500 dark:text-gray-400 text-center">CampCraft v1.0 • {t('kidscamp.settings.made_with', 'Made with ❤️ for creative families')}</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400 text-center"><Trans i18nKey="auto.settingsmodal.campcraft_v1_0">CampCraft v1.0 •</Trans> {t('kidscamp.settings.made_with', 'Made with ❤️ for creative families')}</p>
         </div>
       </div>
     </div>

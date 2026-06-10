@@ -1,7 +1,7 @@
 // src/worlds/early/modules/AlphabetForest.tsx
 
 import { useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSettingsStore } from '@/store';
 import { AudioEngine } from '@/shared/audio/AudioEngine';
@@ -89,7 +89,7 @@ export default function AlphabetForest() {
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 30 }} className="flex-1 px-5 pb-24">
               <div className="text-center mb-4">
                 <span className="text-7xl font-extrabold text-green-600">{ALPHABET_CONTENT[selectedIdx].letter}</span>
-                <p className="text-base text-gray-500 font-medium mt-1">sounds like: {ALPHABET_CONTENT[selectedIdx].phonemeSound}</p>
+                <p className="text-base text-gray-500 font-medium mt-1"><Trans i18nKey="auto.alphabetforest.sounds_like">sounds like:</Trans> {ALPHABET_CONTENT[selectedIdx].phonemeSound}</p>
               </div>
               <div className="grid grid-cols-3 gap-3">
                 {ALPHABET_CONTENT[selectedIdx].items.map((item, i) => {
@@ -109,7 +109,7 @@ export default function AlphabetForest() {
               </div>
               {answeredCorrect !== null && (
                 <motion.button initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }} onClick={handleClose}
-                  className="w-full py-4 bg-green-600 text-white font-bold text-xl rounded-2xl mt-5 min-h-[56px]">Next Letter 🌳</motion.button>
+                  className="w-full py-4 bg-green-600 text-white font-bold text-xl rounded-2xl mt-5 min-h-[56px]"><Trans i18nKey="auto.alphabetforest.next_letter">Next Letter 🌳</Trans></motion.button>
               )}
             </motion.div>
           )}

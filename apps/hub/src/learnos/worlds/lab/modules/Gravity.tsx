@@ -3,7 +3,7 @@
 
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -81,7 +81,7 @@ export default function Gravity() {
             }}
           />
           <div className="text-center mt-2 text-sm text-slate-400">
-            Mass: {mass}
+            <Trans i18nKey="auto.gravity.mass">Mass:</Trans> {mass}
           </div>
         </div>
 
@@ -89,12 +89,12 @@ export default function Gravity() {
         <div className="mt-6 grid grid-cols-2 gap-4">
           <div className="bg-amber-900/20 rounded-2xl p-4 text-center border border-amber-700/30">
             <div className="text-3xl mb-2">🍎</div>
-            <div className="font-bold text-amber-300 text-sm">Newton's View</div>
+            <div className="font-bold text-amber-300 text-sm"><Trans i18nKey="auto.gravity.newton_s_view">Newton's View</Trans></div>
             <p className="text-sm text-amber-400/70 mt-1">{t('lab.modules.Gravity.txt_Gravityisa', 'Gravity is a force pulling objects together')}</p>
           </div>
           <div className="bg-indigo-900/20 rounded-2xl p-4 text-center border border-indigo-700/30">
             <div className="text-3xl mb-2">🌊</div>
-            <div className="font-bold text-indigo-300 text-sm">Einstein's View</div>
+            <div className="font-bold text-indigo-300 text-sm"><Trans i18nKey="auto.gravity.einstein_s_view">Einstein's View</Trans></div>
             <p className="text-sm text-indigo-400/70 mt-1">{t('lab.modules.Gravity.txt_Masscurves', 'Mass curves spacetime, objects follow the curve')}</p>
           </div>
         </div>
@@ -104,12 +104,12 @@ export default function Gravity() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.Gravity.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-400 font-bold text-sm mb-1">Ancient Indian Insight</h3>
+              <h3 className="text-orange-400 font-bold text-sm mb-1"><Trans i18nKey="auto.gravity.ancient_indian_insight">Ancient Indian Insight</Trans></h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Aryabhata (499 CE) described gravity as a natural attraction — 1,100 years before Newton!
-                The concept of <strong>Gurutva</strong> (गुरुत्व) literally means "heaviness" and described
-                how Earth attracts objects toward its center.
-              </p>
+                <Trans i18nKey="auto.gravity.aryabhata_499_ce_described_gra">Aryabhata (499 CE) described gravity as a natural attraction — 1,100 years before Newton!
+                                              The concept of</Trans> <strong><Trans i18nKey="auto.gravity.gurutva">Gurutva</Trans></strong> <Trans i18nKey="auto.gravity.literally_means_heaviness_and_">(गुरुत्व) literally means "heaviness" and described
+                                              how Earth attracts objects toward its center.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

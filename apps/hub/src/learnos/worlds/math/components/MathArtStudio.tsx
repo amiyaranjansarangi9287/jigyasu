@@ -1,9 +1,11 @@
 import { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Trans, useTranslation } from "react-i18next";
 
 type ArtMode = 'fractals' | 'tessellations' | 'golden';
 
 export default function MathArtStudio() {
+    const { t } = useTranslation();
   const [mode, setMode] = useState<ArtMode>('fractals');
   const modes = [
     { id: 'fractals' as ArtMode, emoji: '🌳', label: 'Fractals' },
@@ -14,8 +16,8 @@ export default function MathArtStudio() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🎨 Math & Art Studio</h2>
-        <p className="text-purple-300 text-lg">Create beauty with patterns, ratios, symmetry, and recursion.</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.mathartstudio.math_art_studio">🎨 Math & Art Studio</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.mathartstudio.create_beauty_with_patterns_ra">Create beauty with patterns, ratios, symmetry, and recursion.</Trans></p>
       </div>
 
       <div className="flex justify-center gap-2 mb-6">
@@ -48,6 +50,7 @@ function branch(x: number, y: number, len: number, angle: number, depth: number,
 }
 
 function FractalTree() {
+    const { t } = useTranslation();
   const [depth, setDepth] = useState(7);
   const [spread, setSpread] = useState(28);
   const [length, setLength] = useState(72);
@@ -65,13 +68,13 @@ function FractalTree() {
         </svg>
       </div>
       <div className="space-y-4">
-        <Control label="Recursion depth" value={depth} min={1} max={10} setValue={setDepth} />
-        <Control label="Branch angle" value={spread} min={5} max={60} setValue={setSpread} suffix="°" />
-        <Control label="Trunk length" value={length} min={35} max={95} setValue={setLength} />
+        <Control label={t('auto.attr.mathartstudio.recursion_depth')} value={depth} min={1} max={10} setValue={setDepth} />
+        <Control label={t('auto.attr.mathartstudio.branch_angle')} value={spread} min={5} max={60} setValue={setSpread} suffix="°" />
+        <Control label={t('auto.attr.mathartstudio.trunk_length')} value={length} min={35} max={95} setValue={setLength} />
         <div className="bg-green-500/10 rounded-2xl p-5 border border-green-500/20">
-          <h4 className="text-white font-bold mb-2">🌳 Why this is math</h4>
-          <p className="text-gray-300 text-sm">A fractal repeats a rule at smaller scales. Each branch creates two smaller branches, so the count grows roughly like powers of 2.</p>
-          <p className="text-green-300 font-bold mt-2">Branches drawn: {branches.length}</p>
+          <h4 className="text-white font-bold mb-2"><Trans i18nKey="auto.mathartstudio.why_this_is_math">🌳 Why this is math</Trans></h4>
+          <p className="text-gray-300 text-sm"><Trans i18nKey="auto.mathartstudio.a_fractal_repeats_a_rule_at_sm">A fractal repeats a rule at smaller scales. Each branch creates two smaller branches, so the count grows roughly like powers of 2.</Trans></p>
+          <p className="text-green-300 font-bold mt-2"><Trans i18nKey="auto.mathartstudio.branches_drawn">Branches drawn:</Trans> {branches.length}</p>
         </div>
       </div>
     </div>
@@ -79,6 +82,7 @@ function FractalTree() {
 }
 
 function TessellationMaker() {
+    const { t } = useTranslation();
   const [shape, setShape] = useState<'triangles' | 'hexagons' | 'squares'>('hexagons');
   const [colors, setColors] = useState(4);
 
@@ -107,15 +111,15 @@ function TessellationMaker() {
       </div>
       <div className="space-y-4">
         <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
-          <h4 className="text-white font-bold mb-3">Choose a tile</h4>
+          <h4 className="text-white font-bold mb-3"><Trans i18nKey="auto.mathartstudio.choose_a_tile">Choose a tile</Trans></h4>
           <div className="grid grid-cols-3 gap-2">
             {(['triangles', 'hexagons', 'squares'] as const).map((s) => <button key={s} className={`py-3 rounded-xl font-bold text-sm capitalize ${shape === s ? 'bg-purple-500/40 text-white border border-purple-400' : 'bg-white/10 text-gray-400'}`} onClick={() => setShape(s)}>{s}</button>)}
           </div>
         </div>
-        <Control label="Color cycle" value={colors} min={2} max={6} setValue={setColors} />
+        <Control label={t('auto.attr.mathartstudio.color_cycle')} value={colors} min={2} max={6} setValue={setColors} />
         <div className="bg-purple-500/10 rounded-2xl p-5 border border-purple-500/20">
-          <h4 className="text-white font-bold mb-2">🔷 Tessellation rule</h4>
-          <p className="text-gray-300 text-sm">A tessellation covers a surface with no gaps and no overlaps. Squares, triangles, and hexagons work perfectly because their angles fit around a point.</p>
+          <h4 className="text-white font-bold mb-2"><Trans i18nKey="auto.mathartstudio.tessellation_rule">🔷 Tessellation rule</Trans></h4>
+          <p className="text-gray-300 text-sm"><Trans i18nKey="auto.mathartstudio.a_tessellation_covers_a_surfac">A tessellation covers a surface with no gaps and no overlaps. Squares, triangles, and hexagons work perfectly because their angles fit around a point.</Trans></p>
         </div>
       </div>
     </div>
@@ -123,6 +127,7 @@ function TessellationMaker() {
 }
 
 function GoldenRatio() {
+    const { t } = useTranslation();
   const [size, setSize] = useState(260);
   const phi = 1.61803398875;
   const rectW = size;
@@ -152,18 +157,18 @@ function GoldenRatio() {
               <path d={arcPath(sq.x, sq.y, sq.s, sq.dir)} fill="none" stroke="#fbbf24" strokeWidth="3" strokeLinecap="round" />
             </g>
           ))}
-          <text x="22" y="28" fill="#fbbf24" fontSize="14" fontWeight="bold">Golden rectangle: width / height ≈ φ</text>
+          <text x="22" y="28" fill="#fbbf24" fontSize="14" fontWeight="bold"><Trans i18nKey="auto.mathartstudio.golden_rectangle_width_height">Golden rectangle: width / height ≈ φ</Trans></text>
         </svg>
       </div>
       <div className="space-y-4">
-        <Control label="Rectangle width" value={size} min={160} max={300} setValue={setSize} />
+        <Control label={t('auto.attr.mathartstudio.rectangle_width')} value={size} min={160} max={300} setValue={setSize} />
         <div className="bg-yellow-500/10 rounded-2xl p-5 border border-yellow-500/20">
-          <h4 className="text-white font-bold mb-2">🌀 Golden Ratio</h4>
-          <p className="text-gray-300 text-sm">φ ≈ 1.618. A golden rectangle has width ÷ height = φ. Splitting it into squares creates a spiral often found in art and nature.</p>
+          <h4 className="text-white font-bold mb-2"><Trans i18nKey="auto.mathartstudio.golden_ratio">🌀 Golden Ratio</Trans></h4>
+          <p className="text-gray-300 text-sm"><Trans i18nKey="auto.mathartstudio.1_618_a_golden_rectangle_has_w">φ ≈ 1.618. A golden rectangle has width ÷ height = φ. Splitting it into squares creates a spiral often found in art and nature.</Trans></p>
           <div className="grid grid-cols-2 gap-2 mt-4">
-            <div className="bg-white/5 rounded-xl p-3 text-center"><p className="text-gray-500 text-sm">Width</p><p className="text-white font-bold">{rectW.toFixed(0)}</p></div>
-            <div className="bg-white/5 rounded-xl p-3 text-center"><p className="text-gray-500 text-sm">Height</p><p className="text-white font-bold">{rectH.toFixed(1)}</p></div>
-            <div className="bg-white/5 rounded-xl p-3 text-center col-span-2"><p className="text-gray-500 text-sm">Width ÷ Height</p><p className="text-yellow-400 font-bold text-2xl">{(rectW / rectH).toFixed(3)}</p></div>
+            <div className="bg-white/5 rounded-xl p-3 text-center"><p className="text-gray-500 text-sm"><Trans i18nKey="auto.mathartstudio.width">Width</Trans></p><p className="text-white font-bold">{rectW.toFixed(0)}</p></div>
+            <div className="bg-white/5 rounded-xl p-3 text-center"><p className="text-gray-500 text-sm"><Trans i18nKey="auto.mathartstudio.height">Height</Trans></p><p className="text-white font-bold">{rectH.toFixed(1)}</p></div>
+            <div className="bg-white/5 rounded-xl p-3 text-center col-span-2"><p className="text-gray-500 text-sm"><Trans i18nKey="auto.mathartstudio.width_height">Width ÷ Height</Trans></p><p className="text-yellow-400 font-bold text-2xl">{(rectW / rectH).toFixed(3)}</p></div>
           </div>
         </div>
       </div>
@@ -179,6 +184,7 @@ function arcPath(x: number, y: number, s: number, dir: number) {
 }
 
 function Control({ label, value, min, max, setValue, suffix = '' }: { label: string; value: number; min: number; max: number; setValue: (n: number) => void; suffix?: string }) {
+    const { t } = useTranslation();
   return (
     <div className="bg-white/5 rounded-2xl p-4 border border-white/10">
       <div className="flex justify-between text-sm mb-2"><span className="text-gray-400">{label}</span><span className="text-white font-bold">{value}{suffix}</span></div>

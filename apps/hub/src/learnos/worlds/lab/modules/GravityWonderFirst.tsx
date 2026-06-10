@@ -4,7 +4,7 @@
 
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout';
@@ -65,8 +65,8 @@ export default function GravityWonderFirst() {
         {/* Mass slider */}
         <div className="bg-slate-800/50 rounded-2xl p-6 shadow-sm border border-slate-700/50">
           <div className="flex items-center justify-between mb-3">
-            <span className="text-sm text-slate-400">🌑 Small mass</span>
-            <span className="text-sm text-slate-400">☀️ Large mass</span>
+            <span className="text-sm text-slate-400"><Trans i18nKey="auto.gravitywonderfirst.small_mass">🌑 Small mass</Trans></span>
+            <span className="text-sm text-slate-400"><Trans i18nKey="auto.gravitywonderfirst.large_mass">☀️ Large mass</Trans></span>
           </div>
           <input
             type="range"
@@ -80,15 +80,15 @@ export default function GravityWonderFirst() {
             }}
           />
           <div className="text-center mt-2 text-sm text-slate-400">
-            Mass: {mass}
+            <Trans i18nKey="auto.gravitywonderfirst.mass">Mass:</Trans> {mass}
           </div>
         </div>
 
         {/* Rotation speed slider */}
         <div className="bg-slate-800/50 rounded-2xl p-6 shadow-sm border border-slate-700/50">
           <div className="flex items-center justify-between mb-3">
-            <span className="text-sm text-slate-400">🐢 Slow rotation</span>
-            <span className="text-sm text-slate-400">🚀 Fast rotation</span>
+            <span className="text-sm text-slate-400"><Trans i18nKey="auto.gravitywonderfirst.slow_rotation">🐢 Slow rotation</Trans></span>
+            <span className="text-sm text-slate-400"><Trans i18nKey="auto.gravitywonderfirst.fast_rotation">🚀 Fast rotation</Trans></span>
           </div>
           <input
             type="range"
@@ -102,7 +102,7 @@ export default function GravityWonderFirst() {
             }}
           />
           <div className="text-center mt-2 text-sm text-slate-400">
-            Rotation: {rotationSpeed}
+            <Trans i18nKey="auto.gravitywonderfirst.rotation">Rotation:</Trans> {rotationSpeed}
           </div>
         </div>
       </div>
@@ -121,13 +121,13 @@ export default function GravityWonderFirst() {
       <div className="bg-indigo-50 rounded-2xl p-4 border border-indigo-200">
         <h3 className="font-bold text-indigo-900 mb-2 flex items-center gap-2">
           <span className="text-xl">👀</span>
-          What do you notice?
-        </h3>
+          <Trans i18nKey="auto.gravitywonderfirst.what_do_you_notice">What do you notice?</Trans>
+                          </h3>
         <ul className="text-slate-700 text-sm space-y-2">
-          <li>• What happens when you increase the mass?</li>
-          <li>• What happens when you increase the rotation speed?</li>
-          <li>• What happens when you change both together?</li>
-          <li>• How does the Newton view differ from Einstein view?</li>
+          <li><Trans i18nKey="auto.gravitywonderfirst.what_happens_when_you_increase">• What happens when you increase the mass?</Trans></li>
+          <li><Trans i18nKey="auto.gravitywonderfirst.what_happens_when_you_increase">• What happens when you increase the rotation speed?</Trans></li>
+          <li><Trans i18nKey="auto.gravitywonderfirst.what_happens_when_you_change_b">• What happens when you change both together?</Trans></li>
+          <li><Trans i18nKey="auto.gravitywonderfirst.how_does_the_newton_view_diffe">• How does the Newton view differ from Einstein view?</Trans></li>
         </ul>
       </div>
     </div>
@@ -161,6 +161,7 @@ export default function GravityWonderFirst() {
       indianContext: "ISRO's satellites use this same principle. When Chandrayaan-3 orbited the Moon, it was following the Moon's gravitational curves. Indian scientists have made remarkable contributions to understanding gravity:\n\n👨‍🔬 **Aryabhata (499 CE)** - Described gravity as a natural attraction called 'Gurutva' (गुरुत्व) - 1,100 years before Newton! He explained that Earth holds objects down due to this force.\n\n👨‍🔬 **Bhaskaracharya II (1114-1185 CE)** - In his work Siddhanta Shiromani, he described gravitational force and how planets are held in their orbits by an attractive force.\n\n👨‍🔬 **C.V. Raman (1888-1970)** - Nobel laureate who studied how light and gravity interact in space, contributing to our understanding of gravitational effects on light.\n\n👨‍🔬 **Satyendra Nath Bose (1894-1974)** - His work on quantum statistics helped Einstein develop his theory of gravity, showing how Indian scientists contributed to modern gravitational theory.",
       tryIt: "Next time you see a satellite in the night sky, remember: it's not being held up by anything - it's falling around Earth, forever curious about our planet. And you're doing the same thing right now - falling around Earth while exploring the universe!",
     },
+    makerSpaceActivityId: 'toybox-marble-run',
   };
 
   return (

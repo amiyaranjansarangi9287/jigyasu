@@ -4,6 +4,7 @@ import DiscoveryShell from '../DiscoveryShell';
 import { useLumoSage } from '../hooks/useLumoSage';
 import { useDiscoveryProgress } from '../hooks/useDiscoveryProgress';
 import { GEOMETRY_THEOREMS } from '../data/discoveryContent';
+import { Trans } from "react-i18next";
 
 export default function GeometryProofBuilder() {
   const lumo = useLumoSage();
@@ -25,14 +26,14 @@ export default function GeometryProofBuilder() {
           <p className="text-sm text-slate-400 font-medium italic">"{t.statement}"</p>
         </div>
         <div className="flex-1 border border-slate-700 rounded-2xl p-4 mb-6 flex flex-col">
-          <p className="text-sm text-slate-500 font-bold uppercase mb-4 tracking-widest">Formal Proof Steps</p>
+          <p className="text-sm text-slate-500 font-bold uppercase mb-4 tracking-widest"><Trans i18nKey="auto.geometryproofbuilder.formal_proof_steps">Formal Proof Steps</Trans></p>
           <div className="space-y-3">{t.proofSteps.map((step, i) => (
             <div key={i} className="bg-slate-800/50 p-3 rounded-xl border border-slate-700 text-sm text-slate-300">
               <span className="text-indigo-400 font-bold mr-2">{i+1}.</span>{step}
             </div>
           ))}</div>
         </div>
-        <button onClick={handleComplete} className="w-full py-4 bg-indigo-600 text-white font-bold rounded-2xl">I Understand the Proof</button>
+        <button onClick={handleComplete} className="w-full py-4 bg-indigo-600 text-white font-bold rounded-2xl"><Trans i18nKey="auto.geometryproofbuilder.i_understand_the_proof">I Understand the Proof</Trans></button>
       </div>
     </DiscoveryShell>
   );

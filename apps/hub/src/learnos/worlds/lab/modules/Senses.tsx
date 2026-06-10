@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/Senses.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -51,8 +51,8 @@ export default function Senses() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.Senses.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-600 font-bold text-sm mb-1">Indian Philosophy of Senses</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">Indian philosophy describes <strong>5 Indriyas</strong> (senses) connected to 5 elements: sight→fire, hearing→space, touch→air, taste→water, smell→earth. The <strong>Tanmatras</strong> (subtle elements) theory maps senses to atomic properties — remarkably aligned with neuroscience!</p>
+              <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.senses.indian_philosophy_of_senses">Indian Philosophy of Senses</Trans></h3>
+              <p className="text-gray-600 text-sm leading-relaxed"><Trans i18nKey="auto.senses.indian_philosophy_describes">Indian philosophy describes</Trans> <strong><Trans i18nKey="auto.senses.5_indriyas">5 Indriyas</Trans></strong> <Trans i18nKey="auto.senses.senses_connected_to_5_elements">(senses) connected to 5 elements: sight→fire, hearing→space, touch→air, taste→water, smell→earth. The</Trans> <strong><Trans i18nKey="auto.senses.tanmatras">Tanmatras</Trans></strong> <Trans i18nKey="auto.senses.subtle_elements_theory_maps_se">(subtle elements) theory maps senses to atomic properties — remarkably aligned with neuroscience!</Trans></p>
             </div>
           </div>
         </div>

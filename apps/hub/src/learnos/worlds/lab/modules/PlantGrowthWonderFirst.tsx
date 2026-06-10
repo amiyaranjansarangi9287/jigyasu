@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/PlantGrowthWonderFirst.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout';
@@ -72,7 +72,7 @@ function ExplorationComponent() {
       <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 space-y-4">
         <div>
           <div className="flex justify-between mb-2">
-            <span className="text-sm text-slate-400">💧 Water</span>
+            <span className="text-sm text-slate-400"><Trans i18nKey="auto.plantgrowthwonderfirst.water">💧 Water</Trans></span>
             <span className="text-sm font-medium text-blue-600">{Math.round(waterLevel * 100)}%</span>
           </div>
           <input 
@@ -88,7 +88,7 @@ function ExplorationComponent() {
         </div>
         <div>
           <div className="flex justify-between mb-2">
-            <span className="text-sm text-slate-400">☀️ Sunlight</span>
+            <span className="text-sm text-slate-400"><Trans i18nKey="auto.plantgrowthwonderfirst.sunlight">☀️ Sunlight</Trans></span>
             <span className="text-sm font-medium text-yellow-600">{Math.round(sunLevel * 100)}%</span>
           </div>
           <input 
@@ -108,13 +108,13 @@ function ExplorationComponent() {
       <div className="bg-blue-50 rounded-2xl p-4 border border-blue-200">
         <h3 className="font-bold text-blue-900 mb-2 flex items-center gap-2">
           <span className="text-xl">👀</span>
-          What do you notice?
-        </h3>
+          <Trans i18nKey="auto.plantgrowthwonderfirst.what_do_you_notice">What do you notice?</Trans>
+                          </h3>
         <ul className="text-slate-700 text-sm space-y-2">
-          <li>• What does a plant need at each stage?</li>
-          <li>• How do water and sunlight affect growth?</li>
-          <li>• Why do plants flower before producing fruit?</li>
-          <li>• What would happen without water or sunlight?</li>
+          <li><Trans i18nKey="auto.plantgrowthwonderfirst.what_does_a_plant_need_at_each">• What does a plant need at each stage?</Trans></li>
+          <li><Trans i18nKey="auto.plantgrowthwonderfirst.how_do_water_and_sunlight_affe">• How do water and sunlight affect growth?</Trans></li>
+          <li><Trans i18nKey="auto.plantgrowthwonderfirst.why_do_plants_flower_before_pr">• Why do plants flower before producing fruit?</Trans></li>
+          <li><Trans i18nKey="auto.plantgrowthwonderfirst.what_would_happen_without_wate">• What would happen without water or sunlight?</Trans></li>
         </ul>
       </div>
     </div>

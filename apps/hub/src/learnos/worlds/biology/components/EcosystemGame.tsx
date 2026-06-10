@@ -1,6 +1,10 @@
 import { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Trash2, RotateCcw, TrendingUp, AlertTriangle, Cloud } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface Organism {
   id: string;
@@ -47,6 +51,22 @@ const weatherEvents: WeatherEvent[] = [
 ];
 
 export default function EcosystemGame() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.ecosystem_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.ecosystem_prompt', "Can you balance an entire ecosystem? Too many predators, and the prey disappears. Let's find the harmony of nature!"),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'ecosystem-game', 60);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   const [ecosystem, setEcosystem] = useState<Organism[]>([]);
   const [turn, setTurn] = useState(0);
   const [messages, setMessages] = useState<string[]>(['🌍 Welcome! Start adding organisms to build your ecosystem.']);
@@ -169,8 +189,8 @@ export default function EcosystemGame() {
     <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-5">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-2">🌿 Ecosystem Builder</h2>
-          <p className="text-gray-400 text-lg">Build, balance, and survive weather events!</p>
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-2"><Trans i18nKey="auto.ecosystemgame.ecosystem_builder">🌿 Ecosystem Builder</Trans></h2>
+          <p className="text-gray-400 text-lg"><Trans i18nKey="auto.ecosystemgame.build_balance_and_survive_weat">Build, balance, and survive weather events!</Trans></p>
         </motion.div>
 
         {/* Stats Bar */}
@@ -196,11 +216,11 @@ export default function EcosystemGame() {
               {ecosystem.length === 0 ? (
                 <div className="flex flex-col items-center justify-center text-center py-12">
                   <div className="text-6xl mb-4">🏞️</div>
-                  <h3 className="text-xl font-bold text-white mb-2">Empty Ecosystem</h3>
-                  <p className="text-gray-400 text-sm mb-4 max-w-md">Start by adding producers (plants), then herbivores, predators, and decomposers!</p>
+                  <h3 className="text-xl font-bold text-white mb-2"><Trans i18nKey="auto.ecosystemgame.empty_ecosystem">Empty Ecosystem</Trans></h3>
+                  <p className="text-gray-400 text-sm mb-4 max-w-md"><Trans i18nKey="auto.ecosystemgame.start_by_adding_producers_plan">Start by adding producers (plants), then herbivores, predators, and decomposers!</Trans></p>
                   <button onClick={() => setShowAdd(true)} className="px-5 py-2.5 rounded-full bg-emerald-500 text-white font-medium hover:bg-emerald-600">
-                    <Plus className="w-4 h-4 inline mr-1" /> Add First Organism
-                  </button>
+                    <Plus className="w-4 h-4 inline mr-1" /> <Trans i18nKey="auto.ecosystemgame.add_first_organism">Add First Organism</Trans>
+                                                        </button>
                 </div>
               ) : (
                 <div className="space-y-4">
@@ -241,12 +261,12 @@ export default function EcosystemGame() {
             {/* Food Web Visualization */}
             {ecosystem.length >= 3 && (
               <div className="mt-4 bg-gray-900 rounded-2xl border border-gray-800 p-5">
-                <h3 className="text-sm font-bold text-white mb-3">🕸️ Food Web Connections</h3>
+                <h3 className="text-sm font-bold text-white mb-3"><Trans i18nKey="auto.ecosystemgame.food_web_connections">🕸️ Food Web Connections</Trans></h3>
                 <div className="flex flex-wrap gap-2">
                   {ecosystem.filter(o => o.eats.length > 0).map(predator => (
                     <div key={predator.id} className="bg-gray-800/50 rounded-lg p-2 text-sm">
                       <span className="text-white font-bold">{predator.emoji} {predator.name}</span>
-                      <span className="text-gray-500 mx-1">eats</span>
+                      <span className="text-gray-500 mx-1"><Trans i18nKey="auto.ecosystemgame.eats">eats</Trans></span>
                       {predator.eats.filter(prey => ecosystem.some(e => e.name === prey)).map((prey, i) => (
                         <span key={prey}>
                           {i > 0 && <span className="text-gray-600">, </span>}
@@ -254,7 +274,7 @@ export default function EcosystemGame() {
                         </span>
                       ))}
                       {predator.eats.filter(prey => !ecosystem.some(e => e.name === prey)).length > 0 && (
-                        <span className="text-orange-400/60 ml-1">(missing: {predator.eats.filter(p => !ecosystem.some(e => e.name === p)).join(', ')})</span>
+                        <span className="text-orange-400/60 ml-1"><Trans i18nKey="auto.ecosystemgame.missing">(missing:</Trans> {predator.eats.filter(p => !ecosystem.some(e => e.name === p)).join(', ')})</span>
                       )}
                     </div>
                   ))}
@@ -265,7 +285,7 @@ export default function EcosystemGame() {
             {/* Population Chart */}
             {popHistory.length > 1 && (
               <div className="mt-4 bg-gray-900 rounded-2xl border border-gray-800 p-5">
-                <h3 className="text-sm font-bold text-white mb-3">📈 Population Trends</h3>
+                <h3 className="text-sm font-bold text-white mb-3"><Trans i18nKey="auto.ecosystemgame.population_trends">📈 Population Trends</Trans></h3>
                 <div className="flex items-end gap-0.5 h-24">
                   {popHistory.map((h, i) => (
                     <div key={i} className="flex-1 flex flex-col justify-end gap-px" title={`Turn ${h.turn}`}>
@@ -276,9 +296,9 @@ export default function EcosystemGame() {
                   ))}
                 </div>
                 <div className="flex gap-4 mt-2 text-sm text-gray-400">
-                  <span className="flex items-center gap-1"><span className="w-2 h-2 rounded bg-green-500" />Producers</span>
-                  <span className="flex items-center gap-1"><span className="w-2 h-2 rounded bg-blue-500" />Consumers</span>
-                  <span className="flex items-center gap-1"><span className="w-2 h-2 rounded bg-orange-500" />Predators</span>
+                  <span className="flex items-center gap-1"><span className="w-2 h-2 rounded bg-green-500" /><Trans i18nKey="auto.ecosystemgame.producers">Producers</Trans></span>
+                  <span className="flex items-center gap-1"><span className="w-2 h-2 rounded bg-blue-500" /><Trans i18nKey="auto.ecosystemgame.consumers">Consumers</Trans></span>
+                  <span className="flex items-center gap-1"><span className="w-2 h-2 rounded bg-orange-500" /><Trans i18nKey="auto.ecosystemgame.predators">Predators</Trans></span>
                 </div>
               </div>
             )}
@@ -286,14 +306,14 @@ export default function EcosystemGame() {
             {/* Action buttons */}
             <div className="flex flex-wrap gap-2 mt-4">
               <button onClick={() => setShowAdd(true)} className="flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500 text-white text-sm font-medium hover:bg-emerald-600">
-                <Plus className="w-4 h-4" /> Add Organism
-              </button>
+                <Plus className="w-4 h-4" /> <Trans i18nKey="auto.ecosystemgame.add_organism">Add Organism</Trans>
+                                            </button>
               <button onClick={simulateTurn} disabled={ecosystem.length === 0} className="flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-medium hover:bg-blue-600 disabled:opacity-40">
-                <TrendingUp className="w-4 h-4" /> Simulate Turn
-              </button>
+                <TrendingUp className="w-4 h-4" /> <Trans i18nKey="auto.ecosystemgame.simulate_turn">Simulate Turn</Trans>
+                                            </button>
               <button onClick={reset} className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800 text-gray-300 text-sm font-medium hover:bg-gray-700">
-                <RotateCcw className="w-4 h-4" /> Reset
-              </button>
+                <RotateCcw className="w-4 h-4" /> <Trans i18nKey="auto.ecosystemgame.reset">Reset</Trans>
+                                            </button>
             </div>
           </div>
 
@@ -302,21 +322,21 @@ export default function EcosystemGame() {
             {/* Weather Panel */}
             <div className="bg-gray-900 rounded-2xl border border-gray-800 p-4">
               <h3 className="text-sm font-bold text-white mb-2 flex items-center gap-1.5">
-                <Cloud className="w-4 h-4 text-blue-400" /> Current Weather
-              </h3>
+                <Cloud className="w-4 h-4 text-blue-400" /> <Trans i18nKey="auto.ecosystemgame.current_weather">Current Weather</Trans>
+                                            </h3>
               <div className="text-3xl text-center mb-1">{currentWeather.emoji}</div>
               <div className="text-white text-center text-sm font-bold">{currentWeather.name}</div>
               <div className="text-gray-400 text-center text-sm">{currentWeather.effect}</div>
               {weatherTurnsLeft > 0 && (
-                <div className="text-center text-sm text-gray-500 mt-1">{weatherTurnsLeft} turns remaining</div>
+                <div className="text-center text-sm text-gray-500 mt-1">{weatherTurnsLeft} <Trans i18nKey="auto.ecosystemgame.turns_remaining">turns remaining</Trans></div>
               )}
             </div>
 
             {/* Event Log */}
             <div className="bg-gray-900 rounded-2xl border border-gray-800 p-4">
               <h3 className="text-sm font-bold text-white mb-2 flex items-center gap-1.5">
-                <AlertTriangle className="w-4 h-4 text-yellow-400" /> Event Log
-              </h3>
+                <AlertTriangle className="w-4 h-4 text-yellow-400" /> <Trans i18nKey="auto.ecosystemgame.event_log">Event Log</Trans>
+                                            </h3>
               <div className="space-y-1.5 max-h-[250px] overflow-y-auto">
                 {messages.map((msg, i) => (
                   <motion.div key={`${i}-${msg}`}
@@ -330,15 +350,15 @@ export default function EcosystemGame() {
 
             {/* Tips */}
             <div className="bg-gray-900 rounded-2xl border border-gray-800 p-4">
-              <h4 className="text-sm font-bold text-white mb-2">🎯 Strategy Tips</h4>
+              <h4 className="text-sm font-bold text-white mb-2"><Trans i18nKey="auto.ecosystemgame.strategy_tips">🎯 Strategy Tips</Trans></h4>
               <ul className="text-[11px] text-gray-400 space-y-1">
-                <li>• Start with 2-3 producers for a food base</li>
-                <li>• Add herbivores that eat your producers</li>
-                <li>• Predators need prey to survive</li>
-                <li>• Decomposers stabilize the ecosystem</li>
-                <li>• Watch weather — droughts kill!</li>
-                <li>• Too many predators = prey extinction</li>
-                <li>• Diversity = higher mastery</li>
+                <li><Trans i18nKey="auto.ecosystemgame.start_with_2_3_producers_for_a">• Start with 2-3 producers for a food base</Trans></li>
+                <li><Trans i18nKey="auto.ecosystemgame.add_herbivores_that_eat_your_p">• Add herbivores that eat your producers</Trans></li>
+                <li><Trans i18nKey="auto.ecosystemgame.predators_need_prey_to_survive">• Predators need prey to survive</Trans></li>
+                <li><Trans i18nKey="auto.ecosystemgame.decomposers_stabilize_the_ecos">• Decomposers stabilize the ecosystem</Trans></li>
+                <li><Trans i18nKey="auto.ecosystemgame.watch_weather_droughts_kill">• Watch weather — droughts kill!</Trans></li>
+                <li><Trans i18nKey="auto.ecosystemgame.too_many_predators_prey_extinc">• Too many predators = prey extinction</Trans></li>
+                <li><Trans i18nKey="auto.ecosystemgame.diversity_higher_mastery">• Diversity = higher mastery</Trans></li>
               </ul>
             </div>
           </div>
@@ -353,7 +373,7 @@ export default function EcosystemGame() {
               <motion.div initial={{ scale: 0.9 }} animate={{ scale: 1 }} exit={{ scale: 0.9 }}
                 className="bg-gray-900 rounded-2xl border border-gray-700 p-5 max-w-lg w-full max-h-[80vh] overflow-y-auto"
                 onClick={e => e.stopPropagation()}>
-                <h3 className="text-lg font-bold text-white mb-4">Add Organism</h3>
+                <h3 className="text-lg font-bold text-white mb-4"><Trans i18nKey="auto.ecosystemgame.add_organism">Add Organism</Trans></h3>
                 {(['producer', 'primary', 'secondary', 'apex', 'decomposer'] as const).map(type => (
                   <div key={type} className="mb-4">
                     <div className="text-sm font-bold text-gray-500 uppercase mb-2">{typeLabels[type]}</div>
@@ -367,7 +387,7 @@ export default function EcosystemGame() {
                             <span className="text-xl">{org.emoji}</span>
                             <div className="min-w-0">
                               <div className="text-white font-bold truncate">{org.name}</div>
-                              {org.eats.length > 0 && <div className="text-gray-500 text-sm truncate">Eats: {org.eats.join(', ')}</div>}
+                              {org.eats.length > 0 && <div className="text-gray-500 text-sm truncate"><Trans i18nKey="auto.ecosystemgame.eats">Eats:</Trans> {org.eats.join(', ')}</div>}
                             </div>
                           </button>
                         );
@@ -375,7 +395,7 @@ export default function EcosystemGame() {
                     </div>
                   </div>
                 ))}
-                <button onClick={() => setShowAdd(false)} className="mt-2 w-full py-2 rounded-xl bg-gray-800 text-gray-300 hover:bg-gray-700 text-sm font-medium">Close</button>
+                <button onClick={() => setShowAdd(false)} className="mt-2 w-full py-2 rounded-xl bg-gray-800 text-gray-300 hover:bg-gray-700 text-sm font-medium"><Trans i18nKey="auto.ecosystemgame.close">Close</Trans></button>
               </motion.div>
             </motion.div>
           )}

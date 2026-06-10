@@ -5,6 +5,7 @@ import DiscoveryShell from '../DiscoveryShell';
 import { useLumoSage } from '../hooks/useLumoSage';
 import { useDiscoveryProgress } from '../hooks/useDiscoveryProgress';
 import { useDiscoverySession } from '../hooks/useDiscoverySession';
+import { Trans } from "react-i18next";
 
 const ORG = [
   { id: 'nucleus', name: 'Nucleus', emoji: '🏢', role: 'City Hall — controls everything' },
@@ -31,7 +32,7 @@ export default function CellCity() {
   return (
     <DiscoveryShell module="cell-city">
       <div className="flex-1 flex flex-col p-6 bg-slate-900">
-        <div className="bg-slate-800 p-4 rounded-2xl border border-slate-700 mb-6"><p className="text-white font-bold text-sm">Cell City Architect</p><p className="text-slate-400 text-sm">Drag organelles to the cell city</p></div>
+        <div className="bg-slate-800 p-4 rounded-2xl border border-slate-700 mb-6"><p className="text-white font-bold text-sm"><Trans i18nKey="auto.cellcity.cell_city_architect">Cell City Architect</Trans></p><p className="text-slate-400 text-sm"><Trans i18nKey="auto.cellcity.drag_organelles_to_the_cell_ci">Drag organelles to the cell city</Trans></p></div>
         <div className="flex-1 border-2 border-dashed border-slate-700 rounded-3xl relative flex items-center justify-center">
           <div className="w-64 h-64 border-4 border-indigo-500/30 rounded-full flex flex-wrap gap-4 items-center justify-center p-8">
             {placed.map(id => <motion.div key={id} initial={{ scale: 0 }} animate={{ scale: 1 }} className="text-4xl">{ORG.find(x => x.id === id)?.emoji}</motion.div>)}
@@ -49,7 +50,7 @@ export default function CellCity() {
             </button>
           ))}
         </div>
-        {placed.length === ORG.length && <button onClick={() => setPlaced([])} className="mt-4 w-full py-4 bg-indigo-600 text-white font-bold rounded-2xl">Reset Cell</button>}
+        {placed.length === ORG.length && <button onClick={() => setPlaced([])} className="mt-4 w-full py-4 bg-indigo-600 text-white font-bold rounded-2xl"><Trans i18nKey="auto.cellcity.reset_cell">Reset Cell</Trans></button>}
       </div>
     </DiscoveryShell>
   );

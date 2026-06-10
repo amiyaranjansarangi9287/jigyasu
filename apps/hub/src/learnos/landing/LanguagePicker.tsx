@@ -19,7 +19,6 @@ const LANGUAGES = [
   { code: "sa" as const, flag: "🇮🇳", name: "Sanskrit", native: "संस्कृतम्" },
   { code: "sat" as const, flag: "🇮🇳", name: "Santhali", native: "ᱥᱟᱱᱛᱟᱲᱤ" },
   { code: "ne" as const, flag: "🇳🇵", name: "Nepali", native: "नेपाली" },
-  { code: "kok" as const, flag: "🇮🇳", name: "Konkani", native: "कोंकणी" },
   { code: "brx" as const, flag: "🇮🇳", name: "Bodo", native: "बड़ो" },
   { code: "doi" as const, flag: "🇮🇳", name: "Dogri", native: "डोगरी" },
   { code: "ks" as const, flag: "🇮🇳", name: "Kashmiri", native: "کٲشُر" },

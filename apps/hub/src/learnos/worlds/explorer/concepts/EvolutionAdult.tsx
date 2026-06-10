@@ -7,6 +7,7 @@ import { EverydayConnection } from '../components/EverydayConnection';
 import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
+import { Trans } from "react-i18next";
 
 export default function EvolutionAdult() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -157,27 +158,27 @@ export default function EvolutionAdult() {
           <div className="space-y-3">
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-slate-300 text-sm leading-relaxed mb-2">
-                Humans didn't descend from chimps. Humans and chimps share
-                a common ancestor. That's very different — we're cousins,
-                not descendants.
-              </p>
+                <Trans i18nKey="auto.evolutionadult.humans_didn_t_descend_from_chi">Humans didn't descend from chimps. Humans and chimps share
+                                              a common ancestor. That's very different — we're cousins,
+                                              not descendants.</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                The 60% DNA shared with bananas represents the core
-                machinery of life — cell division, energy production —
-                that hasn't changed in billions of years.
-              </p>
+                <Trans i18nKey="auto.evolutionadult.the_60_dna_shared_with_bananas">The 60% DNA shared with bananas represents the core
+                                              machinery of life — cell division, energy production —
+                                              that hasn't changed in billions of years.</Trans>
+                                            </p>
             </div>
 
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-violet-400 text-sm font-bold uppercase tracking-wider mb-2">
-                History of the idea
-              </p>
+                <Trans i18nKey="auto.evolutionadult.history_of_the_idea">History of the idea</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Darwin gathered evidence for 20 years before publishing
-                "On the Origin of Species" in 1859. He knew it would be
-                controversial. That patience — evidence before claim —
-                remains a model for science.
-              </p>
+                <Trans i18nKey="auto.evolutionadult.darwin_gathered_evidence_for_2">Darwin gathered evidence for 20 years before publishing
+                                              "On the Origin of Species" in 1859. He knew it would be
+                                              controversial. That patience — evidence before claim —
+                                              remains a model for science.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

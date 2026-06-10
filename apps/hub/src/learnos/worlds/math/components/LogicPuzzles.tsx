@@ -1,4 +1,5 @@
 import { useState, useCallback } from 'react';
+import { Trans } from "react-i18next";
 
 function generateSudoku4(): { puzzle: number[][]; solution: number[][] } {
   // Generate a valid 4x4 Sudoku and remove some cells
@@ -118,23 +119,23 @@ export default function LogicPuzzles() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🧩 Logic Puzzles</h2>
-        <p className="text-purple-300 text-lg">Sudoku and KenKen — pure logical reasoning!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.logicpuzzles.logic_puzzles">🧩 Logic Puzzles</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.logicpuzzles.sudoku_and_kenken_pure_logical">Sudoku and KenKen — pure logical reasoning!</Trans></p>
       </div>
 
       <div className="flex justify-center gap-2 mb-6">
         <button className={`px-4 py-2 rounded-xl font-bold text-sm ${puzzleType === 'sudoku' ? 'bg-blue-500/30 text-blue-300 border border-blue-400/50' : 'bg-white/5 text-gray-400'}`}
-          onClick={() => { setPuzzleType('sudoku'); newSudoku(); }}>🔢 Mini Sudoku (4×4)</button>
+          onClick={() => { setPuzzleType('sudoku'); newSudoku(); }}><Trans i18nKey="auto.logicpuzzles.mini_sudoku_4_4">🔢 Mini Sudoku (4×4)</Trans></button>
         <button className={`px-4 py-2 rounded-xl font-bold text-sm ${puzzleType === 'kenken' ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`}
-          onClick={() => { setPuzzleType('kenken'); newKenKen(); }}>🧮 KenKen (3×3)</button>
+          onClick={() => { setPuzzleType('kenken'); newKenKen(); }}><Trans i18nKey="auto.logicpuzzles.kenken_3_3">🧮 KenKen (3×3)</Trans></button>
       </div>
 
       <div className="max-w-md mx-auto space-y-4">
         <div className="flex justify-between items-center">
           <span className={`font-bold ${solved ? 'text-green-400' : 'text-gray-400'}`}>{solved ? '🎉 Solved!' : `Fill all cells with 1-${size}`}</span>
           <div className="flex gap-2">
-            <button className="text-sm text-gray-500 hover:text-white px-2 py-1 rounded bg-white/5" onClick={puzzleType === 'sudoku' ? checkSudoku : checkKenKen}>Check</button>
-            <button className="text-sm text-gray-500 hover:text-white px-2 py-1 rounded bg-white/5" onClick={puzzleType === 'sudoku' ? newSudoku : newKenKen}>New</button>
+            <button className="text-sm text-gray-500 hover:text-white px-2 py-1 rounded bg-white/5" onClick={puzzleType === 'sudoku' ? checkSudoku : checkKenKen}><Trans i18nKey="auto.logicpuzzles.check">Check</Trans></button>
+            <button className="text-sm text-gray-500 hover:text-white px-2 py-1 rounded bg-white/5" onClick={puzzleType === 'sudoku' ? newSudoku : newKenKen}><Trans i18nKey="auto.logicpuzzles.new">New</Trans></button>
           </div>
         </div>
 
@@ -181,15 +182,15 @@ export default function LogicPuzzles() {
         <div className="bg-white/5 rounded-xl p-4 border border-white/10 text-sm text-gray-300 space-y-1">
           {puzzleType === 'sudoku' ? (
             <>
-              <p>📝 Fill each row, column, and 2×2 box with numbers 1-4.</p>
-              <p>📝 No repeats in any row, column, or box.</p>
-              <p>📝 Gray cells are given — you fill the rest!</p>
+              <p><Trans i18nKey="auto.logicpuzzles.fill_each_row_column_and_2_2_b">📝 Fill each row, column, and 2×2 box with numbers 1-4.</Trans></p>
+              <p><Trans i18nKey="auto.logicpuzzles.no_repeats_in_any_row_column_o">📝 No repeats in any row, column, or box.</Trans></p>
+              <p><Trans i18nKey="auto.logicpuzzles.gray_cells_are_given_you_fill_">📝 Gray cells are given — you fill the rest!</Trans></p>
             </>
           ) : (
             <>
-              <p>📝 Fill each row and column with numbers 1-3, no repeats.</p>
-              <p>📝 Yellow labels show the target: e.g. "5+" means cells in that group add to 5.</p>
-              <p>📝 Operations: + (add), - (subtract), × (multiply).</p>
+              <p><Trans i18nKey="auto.logicpuzzles.fill_each_row_and_column_with_">📝 Fill each row and column with numbers 1-3, no repeats.</Trans></p>
+              <p><Trans i18nKey="auto.logicpuzzles.yellow_labels_show_the_target_">📝 Yellow labels show the target: e.g. "5+" means cells in that group add to 5.</Trans></p>
+              <p><Trans i18nKey="auto.logicpuzzles.operations_add_subtract_multip">📝 Operations: + (add), - (subtract), × (multiply).</Trans></p>
             </>
           )}
         </div>

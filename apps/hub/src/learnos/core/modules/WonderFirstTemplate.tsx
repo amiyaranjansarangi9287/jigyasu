@@ -3,7 +3,8 @@
 // Mission Alignment: Wonder Value - "We begin with questions, not answers"
 
 import { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ErrorBoundary } from '@jigyasu/ui';
 import { useConnectionOptimization } from '../../../hooks/useConnectionOptimization';
@@ -31,6 +32,7 @@ export interface WonderFirstModule {
     indianContext: string;
     tryIt: string;
   };
+  makerSpaceActivityId?: string;
 }
 
 interface WonderFirstTemplateProps {
@@ -40,6 +42,7 @@ interface WonderFirstTemplateProps {
 
 export default function WonderFirstTemplate({ module, onComplete }: WonderFirstTemplateProps) {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const [phase, setPhase] = useState<'mystery' | 'exploration' | 'insight' | 'application'>('mystery');
   const [explorationTime, setExplorationTime] = useState(0);
   const [hintsUsed, setHintsUsed] = useState(0);
@@ -316,7 +319,7 @@ export default function WonderFirstTemplate({ module, onComplete }: WonderFirstT
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button
                 onClick={handleComplete}
-                className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-2xl text-lg shadow-lg shadow-green-500/30 transition-all transform hover:scale-105"
+                className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-2xl text-lg shadow-lg shadow-green-500/30 transition-all transform hover:scale-105 btn-wonder"
                 aria-label={t('core.wonder_template.application.btn_aria', 'Complete module and return to home')}
               >
                 <span className="flex items-center justify-center gap-2">
@@ -324,6 +327,16 @@ export default function WonderFirstTemplate({ module, onComplete }: WonderFirstT
                   <span>{t('core.wonder_template.application.btn_complete', 'I Understand!')}</span>
                 </span>
               </button>
+              {module.makerSpaceActivityId && (
+                <button
+                  onClick={() => navigate(`/execute/activity/${module.makerSpaceActivityId}`)}
+                  className="w-full sm:w-auto bg-gradient-to-r from-pink-500 to-orange-400 hover:from-pink-600 hover:to-orange-500 text-white font-bold py-4 px-8 rounded-2xl text-lg shadow-lg shadow-pink-500/30 transition-all transform hover:scale-105 flex items-center justify-center gap-2 btn-wonder"
+                  aria-label={t('core.wonder_template.application.btn_maker_aria', 'Build this in Maker Space')}
+                >
+                  <span className="text-2xl" aria-hidden="true">🛠️</span>
+                  <span>{t('core.wonder_template.application.btn_maker', 'Build it in Maker Space!')}</span>
+                </button>
+              )}
               <WhatsAppShare 
                 moduleName={module.id}
                 progress={100}
@@ -355,12 +368,12 @@ export const GRAVITY_WONDER_MODULE: WonderFirstModule = {
     component: (
       <div className="bg-slate-100 rounded-2xl p-8 min-h-[400px] flex items-center justify-center">
         <p className="text-slate-500 text-center">
-          [Interactive Gravity Simulation Component]
-          <br />
+          <Trans i18nKey="auto.wonderfirsttemplate.interactive_gravity_simulation">[Interactive Gravity Simulation Component]</Trans>
+                          <br />
           <span className="text-sm">
-            (This would be the actual interactive canvas where users can adjust
-            Earth's rotation speed and mass, observing how objects behave)
-          </span>
+            <Trans i18nKey="auto.wonderfirsttemplate.this_would_be_the_actual_inter">(This would be the actual interactive canvas where users can adjust
+                                Earth's rotation speed and mass, observing how objects behave)</Trans>
+                              </span>
         </p>
       </div>
     ),

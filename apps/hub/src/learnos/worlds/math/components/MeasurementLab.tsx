@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Trans } from "react-i18next";
 
 type Category = 'length' | 'weight' | 'volume';
 
@@ -54,7 +55,7 @@ export default function MeasurementLab() {
   const [fromIdx, setFromIdx] = useState(2);
   const [mode, setMode] = useState<'explore' | 'challenge'>('explore');
   const [challenge, setChallenge] = useState(() => makeChallenge('length'));
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [mastery, setMastery] = useState(0);
 
   const list = units[category];
@@ -81,7 +82,7 @@ export default function MeasurementLab() {
       setMastery(m => m + 1);
       setTimeout(() => { setChallenge(makeChallenge(category)); setFeedback(null); }, 1200);
     } else {
-      setFeedback('wrong');
+      setFeedback('hint');
       setTimeout(() => setFeedback(null), 900);
     }
   };
@@ -89,8 +90,8 @@ export default function MeasurementLab() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">📏 Measurement Lab</h2>
-        <p className="text-purple-300 text-lg">Convert between units of length, weight, and volume!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.measurementlab.measurement_lab">📏 Measurement Lab</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.measurementlab.convert_between_units_of_lengt">Convert between units of length, weight, and volume!</Trans></p>
       </div>
 
       <div className="flex justify-center gap-2 mb-4">
@@ -100,14 +101,14 @@ export default function MeasurementLab() {
         ))}
       </div>
       <div className="flex justify-center gap-2 mb-6">
-        <button className={`px-4 py-2 rounded-xl text-sm font-bold ${mode === 'explore' ? 'bg-green-500/30 text-green-300 border border-green-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => setMode('explore')}>🔍 Explore</button>
-        <button className={`px-4 py-2 rounded-xl text-sm font-bold ${mode === 'challenge' ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => { setMode('challenge'); setChallenge(makeChallenge(category)); }}>🎯 Challenge</button>
+        <button className={`px-4 py-2 rounded-xl text-sm font-bold ${mode === 'explore' ? 'bg-green-500/30 text-green-300 border border-green-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => setMode('explore')}><Trans i18nKey="auto.measurementlab.explore">🔍 Explore</Trans></button>
+        <button className={`px-4 py-2 rounded-xl text-sm font-bold ${mode === 'challenge' ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => { setMode('challenge'); setChallenge(makeChallenge(category)); }}><Trans i18nKey="auto.measurementlab.challenge">🎯 Challenge</Trans></button>
       </div>
 
       <AnimatePresence mode="wait">
         {mode === 'challenge' ? (
           <motion.div key="ch" className="max-w-lg mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
+            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'hint' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
               <div className="flex justify-between mb-4"><span className="text-yellow-400 font-bold">⭐ {mastery}</span></div>
               <p className="text-2xl font-bold text-white text-center mb-5">
                 {challenge.value} {challenge.fromU.short} = ? {challenge.toU.short}
@@ -119,8 +120,8 @@ export default function MeasurementLab() {
                   </motion.button>
                 ))}
               </div>
-              {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✅ Correct!</p>}
-              {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Answer: {challenge.answer} {challenge.toU.short}</p>}
+              {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4"><Trans i18nKey="auto.measurementlab.correct">✅ Correct!</Trans></p>}
+              {feedback === 'hint' && <p className="text-sky-400 font-bold text-center mt-4"><Trans i18nKey="auto.measurementlab.answer">Answer:</Trans> {challenge.answer} {challenge.toU.short}</p>}
             </div>
           </motion.div>
         ) : (

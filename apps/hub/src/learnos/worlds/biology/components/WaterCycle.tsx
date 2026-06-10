@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Sun, Cloud, Droplets, Info } from 'lucide-react';
+import { Trans, useTranslation } from "react-i18next";
+import ChallengeOverlay, { ChallengeData } from '../../../shared/ui/ChallengeOverlay';
+import ModuleWrapper from './ModuleWrapper';
+import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 
 interface WaterProcess {
   id: string;
@@ -33,6 +37,22 @@ const processes: WaterProcess[] = [
 ];
 
 export default function WaterCycle() {
+  const { t } = useTranslation();
+  const [progress, setProgress] = useState<UserProgress>(loadProgress);
+  const [showChallenge, setShowChallenge] = useState(true);
+
+  const activeChallenge: ChallengeData = {
+    title: t('learnos.biology.water_wonder', 'A Curious Question...'),
+    prompt: t('learnos.biology.water_prompt', "The water you drink today might have been a cloud yesterday or snow a thousand years ago. Let's trace the cycle!"),
+    options: [t('learnos.challenge.explore', "Let's explore and find out!")],
+    onSuccess: () => {
+      setShowChallenge(false);
+      const updated = completeModule(progress, 'water-cycle', 60);
+      setProgress(updated);
+      saveProgress(updated);
+    }
+  };
+
   const [selectedProcess, setSelectedProcess] = useState<WaterProcess | null>(null);
   const [sunIntensity, setSunIntensity] = useState(60);
   const [raindrops, setRaindrops] = useState<{ id: number; x: number; delay: number }[]>([]);
@@ -51,14 +71,14 @@ export default function WaterCycle() {
     <div className="min-h-screen bg-gray-950 pt-20 pb-10 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-2">💧 Water Cycle Lab</h2>
-          <p className="text-gray-400 text-lg">Control the sun and watch water move through the cycle!</p>
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-2"><Trans i18nKey="auto.watercycle.water_cycle_lab">💧 Water Cycle Lab</Trans></h2>
+          <p className="text-gray-400 text-lg"><Trans i18nKey="auto.watercycle.control_the_sun_and_watch_wate">Control the sun and watch water move through the cycle!</Trans></p>
         </motion.div>
 
         {/* Sun control */}
         <div className="flex items-center justify-center gap-3 mb-5">
           <Sun className="w-5 h-5 text-yellow-400" />
-          <span className="text-sm text-gray-400">Sun Intensity:</span>
+          <span className="text-sm text-gray-400"><Trans i18nKey="auto.watercycle.sun_intensity">Sun Intensity:</Trans></span>
           <input type="range" min="10" max="100" value={sunIntensity} onChange={e => setSunIntensity(Number(e.target.value))}
             className="w-40 h-2 rounded-full appearance-none cursor-pointer"
             style={{ background: `linear-gradient(to right, #f59e0b88 0%, #f59e0b ${sunIntensity}%, #374151 ${sunIntensity}%, #374151 100%)` }} />
@@ -106,8 +126,8 @@ export default function WaterCycle() {
                   style={{ left: `${v.x}%`, bottom: '35%' }}
                   animate={{ y: [0, -80], opacity: [0.4, 0] }}
                   transition={{ repeat: Infinity, duration: 3, delay: v.delay, ease: 'easeOut' }}>
-                  ↑ H₂O
-                </motion.div>
+                  <Trans i18nKey="auto.watercycle.h_o">↑ H₂O</Trans>
+                                      </motion.div>
               ))}
 
               {/* Rain */}
@@ -152,18 +172,18 @@ export default function WaterCycle() {
               <div className="absolute bottom-0 left-0 right-0 h-[10%] bg-gradient-to-t from-blue-900/30 to-transparent" />
 
               {/* Labels */}
-              <div className="absolute top-[12%] left-[12%] text-sm text-blue-300/60 font-bold">EVAPORATION ↑</div>
-              <div className="absolute top-[28%] left-[48%] text-sm text-gray-300/60 font-bold">PRECIPITATION ↓</div>
-              <div className="absolute bottom-[38%] left-[22%] text-sm text-green-300/60 font-bold">TRANSPIRATION</div>
-              <div className="absolute bottom-[12%] right-[15%] text-sm text-cyan-300/60 font-bold">RUNOFF →</div>
-              <div className="absolute bottom-[3%] left-[45%] text-sm text-blue-300/40 font-bold">GROUNDWATER</div>
+              <div className="absolute top-[12%] left-[12%] text-sm text-blue-300/60 font-bold"><Trans i18nKey="auto.watercycle.evaporation">EVAPORATION ↑</Trans></div>
+              <div className="absolute top-[28%] left-[48%] text-sm text-gray-300/60 font-bold"><Trans i18nKey="auto.watercycle.precipitation">PRECIPITATION ↓</Trans></div>
+              <div className="absolute bottom-[38%] left-[22%] text-sm text-green-300/60 font-bold"><Trans i18nKey="auto.watercycle.transpiration">TRANSPIRATION</Trans></div>
+              <div className="absolute bottom-[12%] right-[15%] text-sm text-cyan-300/60 font-bold"><Trans i18nKey="auto.watercycle.runoff">RUNOFF →</Trans></div>
+              <div className="absolute bottom-[3%] left-[45%] text-sm text-blue-300/40 font-bold"><Trans i18nKey="auto.watercycle.groundwater">GROUNDWATER</Trans></div>
             </div>
           </div>
 
           {/* Process Info */}
           <div className="lg:col-span-2 space-y-3">
             <div className="bg-gray-900 rounded-xl border border-gray-800 p-4">
-              <h3 className="text-sm font-bold text-white mb-3">🔄 Water Cycle Processes</h3>
+              <h3 className="text-sm font-bold text-white mb-3"><Trans i18nKey="auto.watercycle.water_cycle_processes">🔄 Water Cycle Processes</Trans></h3>
               <div className="space-y-1.5">
                 {processes.map(p => (
                   <button key={p.id}
@@ -195,8 +215,8 @@ export default function WaterCycle() {
             {/* Key numbers */}
             <div className="bg-gray-900 rounded-xl border border-gray-800 p-4">
               <h4 className="text-sm font-bold text-white mb-2 flex items-center gap-1.5">
-                <Info className="w-3 h-3 text-blue-400" /> Water Distribution
-              </h4>
+                <Info className="w-3 h-3 text-blue-400" /> <Trans i18nKey="auto.watercycle.water_distribution">Water Distribution</Trans>
+                                            </h4>
               <div className="space-y-1.5 text-[11px]">
                 {[
                   { label: 'Oceans (saltwater)', pct: '97.2%', color: '#1d4ed8' },
@@ -213,7 +233,7 @@ export default function WaterCycle() {
                 ))}
               </div>
               <div className="mt-3 bg-blue-500/10 rounded-lg p-2 border border-blue-500/20">
-                <p className="text-sm text-blue-300">💡 Only 0.61% of all water on Earth is freshwater accessible to humans! The rest is saltwater or locked in ice.</p>
+                <p className="text-sm text-blue-300"><Trans i18nKey="auto.watercycle.only_0_61_of_all_water_on_eart">💡 Only 0.61% of all water on Earth is freshwater accessible to humans! The rest is saltwater or locked in ice.</Trans></p>
               </div>
             </div>
           </div>

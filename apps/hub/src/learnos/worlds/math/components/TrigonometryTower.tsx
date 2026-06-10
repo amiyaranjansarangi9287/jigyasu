@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Trans, useTranslation } from "react-i18next";
 
 export default function TrigonometryTower() {
+    const { t } = useTranslation();
   const [angle, setAngle] = useState(45);
   const [mode, setMode] = useState<'explore' | 'challenge'>('explore');
   const [challengeFunc, setChallengeFunc] = useState<'sin' | 'cos' | 'tan'>('sin');
@@ -84,7 +86,7 @@ export default function TrigonometryTower() {
       setMastery(m => m + 1);
       setTimeout(generateChallenge, 1500);
     } else {
-      setFeedback(`Wrong! ${challengeFunc}(${challengeAngle}°) = ${correct}`);
+      setFeedback(`Almost! ${challengeFunc}(${challengeAngle}°) = ${correct}`);
       setTimeout(() => setFeedback(null), 2000);
     }
   };
@@ -92,40 +94,40 @@ export default function TrigonometryTower() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">📐 Trigonometry Tower</h2>
-        <p className="text-purple-300 text-lg">Master sine, cosine, and tangent!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.trigonometrytower.trigonometry_tower">📐 Trigonometry Tower</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.trigonometrytower.master_sine_cosine_and_tangent">Master sine, cosine, and tangent!</Trans></p>
       </div>
 
       <div className="flex justify-center gap-2 mb-6">
         <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'explore' ? 'bg-blue-500/30 text-blue-300' : 'bg-white/5 text-gray-400'}`}
-          onClick={() => setMode('explore')}>🔍 Explore</button>
+          onClick={() => setMode('explore')}><Trans i18nKey="auto.trigonometrytower.explore">🔍 Explore</Trans></button>
         <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'challenge' ? 'bg-purple-500/30 text-purple-300' : 'bg-white/5 text-gray-400'}`}
-          onClick={() => { setMode('challenge'); generateChallenge(); }}>🎯 Challenge</button>
+          onClick={() => { setMode('challenge'); generateChallenge(); }}><Trans i18nKey="auto.trigonometrytower.challenge">🎯 Challenge</Trans></button>
       </div>
 
       {mode === 'challenge' && (
         <motion.div className="max-w-md mx-auto bg-purple-500/10 rounded-2xl p-6 border border-purple-500/30 mb-6"
           initial={{ scale: 0.9 }} animate={{ scale: 1 }}>
-          <span className="bg-yellow-500/20 text-yellow-300 px-2 py-1 rounded text-sm font-bold">⭐ Mastery: {mastery}</span>
+          <span className="bg-yellow-500/20 text-yellow-300 px-2 py-1 rounded text-sm font-bold"><Trans i18nKey="auto.trigonometrytower.mastery">⭐ Mastery:</Trans> {mastery}</span>
           <p className="text-2xl font-bold text-white text-center mt-4">
             {challengeFunc}(<span className="text-purple-400">{challengeAngle}°</span>) = ?
           </p>
           <div className="flex gap-2 mt-4">
             <input value={answer} onChange={e => setAnswer(e.target.value)}
               className="flex-1 bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white font-mono text-center"
-              placeholder="e.g., 1/2 or √3/2"
+              placeholder={t('auto.attr.trigonometrytower.e_g_1_2_or_3_2')}
               onKeyDown={e => e.key === 'Enter' && checkAnswer()} />
-            <button onClick={checkAnswer} className="px-4 py-2 rounded-lg bg-purple-600 text-white font-bold">Check</button>
+            <button onClick={checkAnswer} className="px-4 py-2 rounded-lg bg-purple-600 text-white font-bold"><Trans i18nKey="auto.trigonometrytower.check">Check</Trans></button>
           </div>
-          {feedback === 'correct' && <p className="text-green-400 font-bold mt-3 text-center">✅ Correct!</p>}
-          {feedback && feedback !== 'correct' && <p className="text-red-400 text-sm mt-3 text-center">{feedback}</p>}
+          {feedback === 'correct' && <p className="text-green-400 font-bold mt-3 text-center"><Trans i18nKey="auto.trigonometrytower.correct">✅ Correct!</Trans></p>}
+          {feedback && feedback !== 'correct' && <p className="text-sky-400 text-sm mt-3 text-center">{feedback}</p>}
         </motion.div>
       )}
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Unit circle visualization */}
         <div className="bg-white/5 rounded-2xl p-4 border border-white/10">
-          <h4 className="text-white font-bold mb-3 text-center">📊 Unit Circle</h4>
+          <h4 className="text-white font-bold mb-3 text-center"><Trans i18nKey="auto.trigonometrytower.unit_circle">📊 Unit Circle</Trans></h4>
           <div className="flex justify-center">
             <svg width={svgSize} height={svgSize} className="bg-gray-900/50 rounded-xl">
               {/* Grid */}
@@ -167,17 +169,17 @@ export default function TrigonometryTower() {
               />
 
               {/* Labels */}
-              <text x={cx + 5} y={cy - 5} fill="rgba(255,255,255,0.4)" fontSize="12">0°</text>
-              <text x={cx + 5} y={20} fill="rgba(255,255,255,0.4)" fontSize="12">90°</text>
-              <text x={15} y={cy - 5} fill="rgba(255,255,255,0.4)" fontSize="12">180°</text>
-              <text x={cx + 5} y={svgSize - 10} fill="rgba(255,255,255,0.4)" fontSize="12">270°</text>
+              <text x={cx + 5} y={cy - 5} fill="rgba(255,255,255,0.4)" fontSize="12"><Trans i18nKey="auto.trigonometrytower.0">0°</Trans></text>
+              <text x={cx + 5} y={20} fill="rgba(255,255,255,0.4)" fontSize="12"><Trans i18nKey="auto.trigonometrytower.90">90°</Trans></text>
+              <text x={15} y={cy - 5} fill="rgba(255,255,255,0.4)" fontSize="12"><Trans i18nKey="auto.trigonometrytower.180">180°</Trans></text>
+              <text x={cx + 5} y={svgSize - 10} fill="rgba(255,255,255,0.4)" fontSize="12"><Trans i18nKey="auto.trigonometrytower.270">270°</Trans></text>
 
               {/* Angle text */}
               <text x={cx + 40} y={cy - 35} fill="white" fontSize="14" fontWeight="bold">{angle}°</text>
 
               {/* Legend */}
-              <text x={10} y={svgSize - 30} fill="#22c55e" fontSize="11">— sin</text>
-              <text x={10} y={svgSize - 15} fill="#3b82f6" fontSize="11">— cos</text>
+              <text x={10} y={svgSize - 30} fill="#22c55e" fontSize="11"><Trans i18nKey="auto.trigonometrytower.sin">— sin</Trans></text>
+              <text x={10} y={svgSize - 15} fill="#3b82f6" fontSize="11"><Trans i18nKey="auto.trigonometrytower.cos">— cos</Trans></text>
             </svg>
           </div>
 
@@ -225,18 +227,18 @@ export default function TrigonometryTower() {
           {trigValues[angle] && (
             <motion.div className="bg-yellow-500/10 rounded-xl p-4 border border-yellow-500/20"
               initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-              <h4 className="text-yellow-400 font-bold mb-2">⭐ Exact Values for {angle}°</h4>
+              <h4 className="text-yellow-400 font-bold mb-2"><Trans i18nKey="auto.trigonometrytower.exact_values_for">⭐ Exact Values for</Trans> {angle}°</h4>
               <div className="grid grid-cols-3 gap-2 text-center">
                 <div>
-                  <p className="text-green-400 text-sm">sin</p>
+                  <p className="text-green-400 text-sm"><Trans i18nKey="auto.trigonometrytower.sin">sin</Trans></p>
                   <p className="text-white font-bold">{trigValues[angle].sin}</p>
                 </div>
                 <div>
-                  <p className="text-blue-400 text-sm">cos</p>
+                  <p className="text-blue-400 text-sm"><Trans i18nKey="auto.trigonometrytower.cos">cos</Trans></p>
                   <p className="text-white font-bold">{trigValues[angle].cos}</p>
                 </div>
                 <div>
-                  <p className="text-orange-400 text-sm">tan</p>
+                  <p className="text-sky-400 text-sm"><Trans i18nKey="auto.trigonometrytower.tan">tan</Trans></p>
                   <p className="text-white font-bold">{trigValues[angle].tan}</p>
                 </div>
               </div>
@@ -245,38 +247,38 @@ export default function TrigonometryTower() {
 
           {/* Formulas */}
           <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-            <h4 className="text-white font-bold mb-2">📝 Key Formulas</h4>
+            <h4 className="text-white font-bold mb-2"><Trans i18nKey="auto.trigonometrytower.key_formulas">📝 Key Formulas</Trans></h4>
             <div className="text-sm font-mono space-y-1 text-gray-300">
-              <p>sin²(θ) + cos²(θ) = 1</p>
-              <p>tan(θ) = sin(θ) / cos(θ)</p>
-              <p>sin(90° - θ) = cos(θ)</p>
-              <p>cos(90° - θ) = sin(θ)</p>
+              <p><Trans i18nKey="auto.trigonometrytower.sin_cos_1">sin²(θ) + cos²(θ) = 1</Trans></p>
+              <p><Trans i18nKey="auto.trigonometrytower.tan_sin_cos">tan(θ) = sin(θ) / cos(θ)</Trans></p>
+              <p><Trans i18nKey="auto.trigonometrytower.sin_90_cos">sin(90° - θ) = cos(θ)</Trans></p>
+              <p><Trans i18nKey="auto.trigonometrytower.cos_90_sin">cos(90° - θ) = sin(θ)</Trans></p>
             </div>
           </div>
 
           {/* Verify identity */}
           <div className="bg-purple-500/10 rounded-xl p-3 border border-purple-500/20 text-center">
             <p className="text-gray-300 text-sm">
-              Verify: sin²({angle}°) + cos²({angle}°) =
+              <Trans i18nKey="auto.trigonometrytower.verify_sin">Verify: sin²(</Trans>{angle}<Trans i18nKey="auto.trigonometrytower.cos">°) + cos²(</Trans>{angle}°) =
             </p>
             <p className="text-purple-400 font-bold">
-              {sinVal.toFixed(4)}² + {cosVal.toFixed(4)}² = {(sinVal * sinVal + cosVal * cosVal).toFixed(4)} ≈ 1 ✓
-            </p>
+              {sinVal.toFixed(4)}² + {cosVal.toFixed(4)}² = {(sinVal * sinVal + cosVal * cosVal).toFixed(4)} <Trans i18nKey="auto.trigonometrytower.1">≈ 1 ✓</Trans>
+                                      </p>
           </div>
         </div>
       </div>
 
       {/* Reference table */}
       <div className="bg-white/5 rounded-xl p-4 border border-white/10 mt-6">
-        <h4 className="text-white font-bold mb-3">📋 Special Angles Reference</h4>
+        <h4 className="text-white font-bold mb-3"><Trans i18nKey="auto.trigonometrytower.special_angles_reference">📋 Special Angles Reference</Trans></h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm text-center">
             <thead>
               <tr className="text-gray-400 border-b border-white/10">
                 <th className="py-2">θ</th>
-                <th className="py-2 text-green-400">sin</th>
-                <th className="py-2 text-blue-400">cos</th>
-                <th className="py-2 text-orange-400">tan</th>
+                <th className="py-2 text-green-400"><Trans i18nKey="auto.trigonometrytower.sin">sin</Trans></th>
+                <th className="py-2 text-blue-400"><Trans i18nKey="auto.trigonometrytower.cos">cos</Trans></th>
+                <th className="py-2 text-sky-400"><Trans i18nKey="auto.trigonometrytower.tan">tan</Trans></th>
               </tr>
             </thead>
             <tbody className="text-white">

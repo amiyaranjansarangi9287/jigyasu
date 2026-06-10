@@ -4,7 +4,7 @@
 
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout';
@@ -63,8 +63,8 @@ export default function PhotosynthesisWonderFirst() {
       {/* Sun intensity slider */}
       <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
         <div className="flex items-center justify-between mb-3">
-          <span className="text-sm text-slate-400">🌥️ Low light</span>
-          <span className="text-sm text-slate-400">☀️ Bright sun</span>
+          <span className="text-sm text-slate-400"><Trans i18nKey="auto.photosynthesiswonderfirst.low_light">🌥️ Low light</Trans></span>
+          <span className="text-sm text-slate-400"><Trans i18nKey="auto.photosynthesiswonderfirst.bright_sun">☀️ Bright sun</Trans></span>
         </div>
         <input
           type="range"
@@ -79,7 +79,7 @@ export default function PhotosynthesisWonderFirst() {
           }}
         />
         <div className="text-center mt-2 text-sm text-slate-400">
-          Sun intensity: {Math.round(sunIntensity * 100)}%
+          <Trans i18nKey="auto.photosynthesiswonderfirst.sun_intensity">Sun intensity:</Trans> {Math.round(sunIntensity * 100)}%
         </div>
       </div>
 
@@ -87,13 +87,13 @@ export default function PhotosynthesisWonderFirst() {
       <div className="bg-green-50 rounded-2xl p-4 border border-green-200">
         <h3 className="font-bold text-green-900 mb-2 flex items-center gap-2">
           <span className="text-xl">👀</span>
-          What do you notice?
-        </h3>
+          <Trans i18nKey="auto.photosynthesiswonderfirst.what_do_you_notice">What do you notice?</Trans>
+                          </h3>
         <ul className="text-slate-700 text-sm space-y-2">
-          <li>• What happens to the plant when sunlight is low?</li>
-          <li>• What happens when sunlight is bright?</li>
-          <li>• What does the plant produce in each case?</li>
-          <li>• How does the plant's energy change with sunlight?</li>
+          <li><Trans i18nKey="auto.photosynthesiswonderfirst.what_happens_to_the_plant_when">• What happens to the plant when sunlight is low?</Trans></li>
+          <li><Trans i18nKey="auto.photosynthesiswonderfirst.what_happens_when_sunlight_is_">• What happens when sunlight is bright?</Trans></li>
+          <li><Trans i18nKey="auto.photosynthesiswonderfirst.what_does_the_plant_produce_in">• What does the plant produce in each case?</Trans></li>
+          <li><Trans i18nKey="auto.photosynthesiswonderfirst.how_does_the_plant_s_energy_ch">• How does the plant's energy change with sunlight?</Trans></li>
         </ul>
       </div>
     </div>

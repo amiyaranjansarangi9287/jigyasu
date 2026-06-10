@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/MoonPhases.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -56,8 +56,8 @@ export default function MoonPhases() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.MoonPhases.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-400 font-bold text-sm mb-1">Indian Lunar Calendar</h3>
-              <p className="text-gray-300 text-sm leading-relaxed">India's <strong>Panchang</strong> calendar tracks 30 lunar phases (Tithis). Festivals like Diwali (Amavasya) and Karwa Chauth (Purnima) are based on moon phases. Ancient Indians calculated the lunar month at 29.53 days — accurate to modern science!</p>
+              <h3 className="text-orange-400 font-bold text-sm mb-1"><Trans i18nKey="auto.moonphases.indian_lunar_calendar">Indian Lunar Calendar</Trans></h3>
+              <p className="text-gray-300 text-sm leading-relaxed"><Trans i18nKey="auto.moonphases.india_s">India's</Trans> <strong><Trans i18nKey="auto.moonphases.panchang">Panchang</Trans></strong> <Trans i18nKey="auto.moonphases.calendar_tracks_30_lunar_phase">calendar tracks 30 lunar phases (Tithis). Festivals like Diwali (Amavasya) and Karwa Chauth (Purnima) are based on moon phases. Ancient Indians calculated the lunar month at 29.53 days — accurate to modern science!</Trans></p>
             </div>
           </div>
         </div>

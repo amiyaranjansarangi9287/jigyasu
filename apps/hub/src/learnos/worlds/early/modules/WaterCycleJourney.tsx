@@ -1,7 +1,7 @@
 // src/worlds/early/modules/WaterCycleJourney.tsx
 
 import { useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import EarlyShell from '../EarlyShell';
 import { usePip } from '../hooks/usePip';
@@ -72,7 +72,7 @@ export default function WaterCycleJourney() {
         </div>
 
         {!showQuestion && !cycleComplete && (
-          <div className="px-5"><motion.button whileTap={{ scale: 0.97 }} onClick={handleReady} className="w-full py-4 bg-blue-600 text-white font-bold text-xl rounded-2xl min-h-[56px]">What happens next? →</motion.button></div>
+          <div className="px-5"><motion.button whileTap={{ scale: 0.97 }} onClick={handleReady} className="w-full py-4 bg-blue-600 text-white font-bold text-xl rounded-2xl min-h-[56px]"><Trans i18nKey="auto.watercyclejourney.what_happens_next">What happens next? →</Trans></motion.button></div>
         )}
 
         <AnimatePresence>
@@ -89,7 +89,7 @@ export default function WaterCycleJourney() {
           {cycleComplete && (
             <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="mx-5 bg-gradient-to-br from-blue-500 to-sky-600 rounded-3xl p-6 text-white text-center">
               <div className="text-5xl mb-3">💧🌊☁️🌧️</div>
-              <h3 className="text-2xl font-extrabold mb-2">Water Cycle Complete!</h3>
+              <h3 className="text-2xl font-extrabold mb-2"><Trans i18nKey="auto.watercyclejourney.water_cycle_complete">Water Cycle Complete!</Trans></h3>
               <p className="text-base text-blue-100 mb-4">{t('early.modules.WaterCycleJourney.txt_Droppythan', 'Droppy thanks you!')}</p>
               <button onClick={handleRestart} className="px-6 py-3 bg-white text-blue-600 font-bold rounded-2xl min-h-[48px]">{t('early.modules.WaterCycleJourney.btn_FollowDrop', 'Follow Droppy Again 💧')}</button>
             </motion.div>

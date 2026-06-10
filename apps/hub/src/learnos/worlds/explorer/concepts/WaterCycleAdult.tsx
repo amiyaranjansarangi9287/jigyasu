@@ -7,6 +7,7 @@ import { EverydayConnection } from '../components/EverydayConnection';
 import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
+import { Trans } from "react-i18next";
 
 export default function WaterCycleAdult() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -184,27 +185,27 @@ export default function WaterCycleAdult() {
           <div className="space-y-3">
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-slate-300 text-sm leading-relaxed mb-2">
-                Earth has had the same water for 4 billion years. The water
-                you drink today was once in a dinosaur, an ice age glacier,
-                and countless other organisms.
-              </p>
+                <Trans i18nKey="auto.watercycleadult.earth_has_had_the_same_water_f">Earth has had the same water for 4 billion years. The water
+                                              you drink today was once in a dinosaur, an ice age glacier,
+                                              and countless other organisms.</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Evaporation, condensation, precipitation — an endless cycle
-                powered entirely by the sun's energy. Understanding this
-                cycle explains droughts, floods, and groundwater depletion.
-              </p>
+                <Trans i18nKey="auto.watercycleadult.evaporation_condensation_preci">Evaporation, condensation, precipitation — an endless cycle
+                                              powered entirely by the sun's energy. Understanding this
+                                              cycle explains droughts, floods, and groundwater depletion.</Trans>
+                                            </p>
             </div>
 
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-violet-400 text-sm font-bold uppercase tracking-wider mb-2">
-                History of the idea
-              </p>
+                <Trans i18nKey="auto.watercycleadult.history_of_the_idea">History of the idea</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Ancient civilizations understood rain as divine gift. The
-                scientific water cycle was first correctly described by
-                Bernard Palissy in 1580. Understanding groundwater flow
-                came much later — and is still being refined today.
-              </p>
+                <Trans i18nKey="auto.watercycleadult.ancient_civilizations_understo">Ancient civilizations understood rain as divine gift. The
+                                              scientific water cycle was first correctly described by
+                                              Bernard Palissy in 1580. Understanding groundwater flow
+                                              came much later — and is still being refined today.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

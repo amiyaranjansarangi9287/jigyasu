@@ -5,6 +5,7 @@ import { useLumoSage } from '../hooks/useLumoSage';
 import { useDiscoveryProgress } from '../hooks/useDiscoveryProgress';
 import { useDiscoverySession } from '../hooks/useDiscoverySession';
 import { CHEMICAL_REACTIONS } from '../data/discoveryContent';
+import { Trans } from "react-i18next";
 
 export default function ChemicalBalancer() {
   const lumo = useLumoSage();
@@ -30,8 +31,8 @@ export default function ChemicalBalancer() {
             <div><button onClick={() => setPc(p => Math.max(1, p-1))} className="text-sm px-2">▼</button> <span className="text-white">{pc}</span>{r.products[0].formula} <button onClick={() => setPc(p => p+1)} className="text-sm px-2">▲</button></div>
           </div>
         </div>
-        <button onClick={handleCheck} className="w-full py-4 bg-indigo-600 text-white font-bold rounded-2xl mb-4">Check Balance</button>
-        <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700"><p className="text-sm text-slate-400">Real World: {r.realWorldContext}</p></div>
+        <button onClick={handleCheck} className="w-full py-4 bg-indigo-600 text-white font-bold rounded-2xl mb-4"><Trans i18nKey="auto.chemicalbalancer.check_balance">Check Balance</Trans></button>
+        <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700"><p className="text-sm text-slate-400"><Trans i18nKey="auto.chemicalbalancer.real_world">Real World:</Trans> {r.realWorldContext}</p></div>
       </div>
     </DiscoveryShell>
   );

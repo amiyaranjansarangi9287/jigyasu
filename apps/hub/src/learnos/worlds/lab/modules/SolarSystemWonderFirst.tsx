@@ -4,7 +4,7 @@
 
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout';
@@ -44,8 +44,8 @@ export default function SolarSystemWonderFirst() {
       {/* Speed slider */}
       <div className="bg-slate-800/50 rounded-2xl p-6 shadow-sm border border-slate-700/50">
         <div className="flex items-center justify-between mb-3">
-          <span className="text-sm text-slate-400">🐢 Slow</span>
-          <span className="text-sm text-slate-400">🚀 Fast</span>
+          <span className="text-sm text-slate-400"><Trans i18nKey="auto.solarsystemwonderfirst.slow">🐢 Slow</Trans></span>
+          <span className="text-sm text-slate-400"><Trans i18nKey="auto.solarsystemwonderfirst.fast">🚀 Fast</Trans></span>
         </div>
         <input
           type="range"
@@ -60,27 +60,27 @@ export default function SolarSystemWonderFirst() {
           }}
         />
         <div className="text-center mt-2 text-sm text-slate-400">
-          Speed: {speed.toFixed(1)}x
-        </div>
+          <Trans i18nKey="auto.solarsystemwonderfirst.speed">Speed:</Trans> {speed.toFixed(1)}<Trans i18nKey="auto.solarsystemwonderfirst.x">x</Trans>
+                          </div>
       </div>
 
       {/* Planet facts */}
       <div className="grid grid-cols-4 gap-3">
         <div className="bg-yellow-900/20 rounded-xl p-3 text-center border border-yellow-700/30">
           <div className="text-xl mb-1">☀️</div>
-          <div className="font-bold text-yellow-300 text-sm">Sun</div>
+          <div className="font-bold text-yellow-300 text-sm"><Trans i18nKey="auto.solarsystemwonderfirst.sun">Sun</Trans></div>
         </div>
         <div className="bg-gray-700/30 rounded-xl p-3 text-center border border-gray-600/30">
           <div className="text-xl mb-1">🌍</div>
-          <div className="font-bold text-blue-300 text-sm">Earth</div>
+          <div className="font-bold text-blue-300 text-sm"><Trans i18nKey="auto.solarsystemwonderfirst.earth">Earth</Trans></div>
         </div>
         <div className="bg-red-900/20 rounded-xl p-3 text-center border border-red-700/30">
           <div className="text-xl mb-1">🪐</div>
-          <div className="font-bold text-red-300 text-sm">Saturn</div>
+          <div className="font-bold text-red-300 text-sm"><Trans i18nKey="auto.solarsystemwonderfirst.saturn">Saturn</Trans></div>
         </div>
         <div className="bg-orange-900/20 rounded-xl p-3 text-center border border-orange-700/30">
           <div className="text-xl mb-1">🔴</div>
-          <div className="font-bold text-orange-300 text-sm">Mars</div>
+          <div className="font-bold text-orange-300 text-sm"><Trans i18nKey="auto.solarsystemwonderfirst.mars">Mars</Trans></div>
         </div>
       </div>
 
@@ -88,13 +88,13 @@ export default function SolarSystemWonderFirst() {
       <div className="bg-indigo-50 rounded-2xl p-4 border border-indigo-200">
         <h3 className="font-bold text-indigo-900 mb-2 flex items-center gap-2">
           <span className="text-xl">👀</span>
-          What do you notice?
-        </h3>
+          <Trans i18nKey="auto.solarsystemwonderfirst.what_do_you_notice">What do you notice?</Trans>
+                          </h3>
         <ul className="text-slate-700 text-sm space-y-2">
-          <li>• Which planet moves fastest around the Sun?</li>
-          <li>• Which planet moves slowest?</li>
-          <li>• What happens when you increase the speed?</li>
-          <li>• Why do planets closer to the Sun move faster?</li>
+          <li><Trans i18nKey="auto.solarsystemwonderfirst.which_planet_moves_fastest_aro">• Which planet moves fastest around the Sun?</Trans></li>
+          <li><Trans i18nKey="auto.solarsystemwonderfirst.which_planet_moves_slowest">• Which planet moves slowest?</Trans></li>
+          <li><Trans i18nKey="auto.solarsystemwonderfirst.what_happens_when_you_increase">• What happens when you increase the speed?</Trans></li>
+          <li><Trans i18nKey="auto.solarsystemwonderfirst.why_do_planets_closer_to_the_s">• Why do planets closer to the Sun move faster?</Trans></li>
         </ul>
       </div>
     </div>

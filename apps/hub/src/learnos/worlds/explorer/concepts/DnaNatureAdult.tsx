@@ -7,6 +7,7 @@ import { EverydayConnection } from '../components/EverydayConnection';
 import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
+import { Trans } from "react-i18next";
 
 export default function DnaNatureAdult() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -174,28 +175,28 @@ export default function DnaNatureAdult() {
           <div className="space-y-3">
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-slate-300 text-sm leading-relaxed mb-2">
-                The human genome has 3 billion base pairs. If you printed
-                them as letters, it would fill 200 phone books. Yet only
-                about 2% codes for proteins — the rest was once called
-                "junk DNA" but isn't junk at all.
-              </p>
+                <Trans i18nKey="auto.dnanatureadult.the_human_genome_has_3_billion">The human genome has 3 billion base pairs. If you printed
+                                              them as letters, it would fill 200 phone books. Yet only
+                                              about 2% codes for proteins — the rest was once called
+                                              "junk DNA" but isn't junk at all.</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                mRNA vaccines work by giving your cells the instructions
-                (in this same code) to make a harmless piece of a virus.
-                Your immune system learns from it. The code is the key.
-              </p>
+                <Trans i18nKey="auto.dnanatureadult.mrna_vaccines_work_by_giving_y">mRNA vaccines work by giving your cells the instructions
+                                              (in this same code) to make a harmless piece of a virus.
+                                              Your immune system learns from it. The code is the key.</Trans>
+                                            </p>
             </div>
 
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-violet-400 text-sm font-bold uppercase tracking-wider mb-2">
-                History of the idea
-              </p>
+                <Trans i18nKey="auto.dnanatureadult.history_of_the_idea">History of the idea</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Watson and Crick discovered the structure in 1953. Rosalind
-                Franklin's X-ray crystallography was essential — she received
-                almost no credit in her lifetime. The Human Genome Project
-                completed in 2003. CRISPR gene editing arrived in 2012.
-              </p>
+                <Trans i18nKey="auto.dnanatureadult.watson_and_crick_discovered_th">Watson and Crick discovered the structure in 1953. Rosalind
+                                              Franklin's X-ray crystallography was essential — she received
+                                              almost no credit in her lifetime. The Human Genome Project
+                                              completed in 2003. CRISPR gene editing arrived in 2012.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

@@ -113,7 +113,7 @@ export default function AdventureMap({ onComplete }: { onComplete: () => void })
   const [zones] = useState(initialZones);
   const [selectedZone, setSelectedZone] = useState<Zone | null>(null);
   const [answer, setAnswer] = useState<number | null>(null);
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [solvedCount, setSolvedCount] = useState(0);
   const [solvedZones, setSolvedZones] = useState<Set<string>>(new Set());
   const [stars, setStars] = useState(0);
@@ -136,7 +136,7 @@ export default function AdventureMap({ onComplete }: { onComplete: () => void })
         }
       }, 1500);
     } else {
-      setFeedback('wrong');
+      setFeedback('hint');
       math.wrong('adventure-map');
       setTimeout(() => {
         setFeedback(null);
@@ -346,7 +346,7 @@ export default function AdventureMap({ onComplete }: { onComplete: () => void })
                       className={`py-3 px-4 rounded-xl text-xl font-bold transition-all ${
                         answer === option && feedback === 'correct'
                           ? 'bg-green-500 text-white ring-4 ring-green-400/50'
-                          : answer === option && feedback === 'wrong'
+                          : answer === option && feedback === 'hint'
                           ? 'bg-red-500 text-white ring-4 ring-red-400/50'
                           : 'bg-white/10 text-white hover:bg-white/20 border border-white/20 hover:border-white/40'
                       }`}
@@ -370,14 +370,14 @@ export default function AdventureMap({ onComplete }: { onComplete: () => void })
                   {t('math_modules.AdventureMap.correct', '✨ Brilliant! You\'re a Math Wizard! ✨')}
                 </motion.p>
               )}
-              {feedback === 'wrong' && (
+              {feedback === 'hint' && (
                 <motion.p
-                  className="text-center mt-4 text-orange-400 font-bold text-lg"
+                  className="text-center mt-4 text-sky-400 font-bold text-lg"
                   initial={{ x: -10 }}
                   animate={{ x: [10, -10, 10, 0] }}
                   transition={{ duration: 0.4 }}
                 >
-                  {t('math_modules.AdventureMap.wrong', '🤔 Try again, brave explorer!')}
+                  {t('math_modules.AdventureMap.wrong', '🤔 Let us explore, brave explorer!')}
                 </motion.p>
               )}
             </motion.div>

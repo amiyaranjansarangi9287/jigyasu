@@ -3,7 +3,7 @@
 
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -86,18 +86,18 @@ export default function Photosynthesis() {
             }}
           />
           <div className="text-center mt-2 text-sm text-slate-400">
-            Sun intensity: {Math.round(sunIntensity * 100)}%
+            <Trans i18nKey="auto.photosynthesis.sun_intensity">Sun intensity:</Trans> {Math.round(sunIntensity * 100)}%
           </div>
         </div>
 
         {/* Equation */}
         <div className="mt-6 bg-green-50 rounded-2xl p-5 text-center">
           <div className="text-sm text-green-600 font-mono font-bold">
-            6CO₂ + 6H₂O + Light → C₆H₁₂O₆ + 6O₂
-          </div>
+            <Trans i18nKey="auto.photosynthesis.6co_6h_o_light_c_h_o_6o">6CO₂ + 6H₂O + Light → C₆H₁₂O₆ + 6O₂</Trans>
+                                </div>
           <div className="text-sm text-green-500 mt-2">
-            Carbon dioxide + Water + Sunlight → Glucose + Oxygen
-          </div>
+            <Trans i18nKey="auto.photosynthesis.carbon_dioxide_water_sunlight_">Carbon dioxide + Water + Sunlight → Glucose + Oxygen</Trans>
+                                </div>
         </div>
 
         {/* Indian context */}
@@ -105,13 +105,13 @@ export default function Photosynthesis() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.Photosynthesis.spn_', '🌾')}</span>
             <div>
-              <h3 className="text-orange-600 font-bold text-sm mb-1">Indian Agriculture Connection</h3>
+              <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.photosynthesis.indian_agriculture_connection">Indian Agriculture Connection</Trans></h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                India's Green Revolution (1960s) maximized photosynthesis through better crop varieties.
-                Ancient Indians understood plant nutrition through <strong>Vrikshayurveda</strong>
-                (Science of Plant Life), documented ~1000 BCE — describing how sunlight, water, and
-                soil nourish plants.
-              </p>
+                <Trans i18nKey="auto.photosynthesis.india_s_green_revolution_1960s">India's Green Revolution (1960s) maximized photosynthesis through better crop varieties.
+                                              Ancient Indians understood plant nutrition through</Trans> <strong><Trans i18nKey="auto.photosynthesis.vrikshayurveda">Vrikshayurveda</Trans></strong>
+                <Trans i18nKey="auto.photosynthesis.science_of_plant_life_document">(Science of Plant Life), documented ~1000 BCE — describing how sunlight, water, and
+                                              soil nourish plants.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

@@ -1,13 +1,15 @@
 import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
+import { Trans, useTranslation } from "react-i18next";
 
 export default function StatisticsLab() {
+    const { t } = useTranslation();
   const [data, setData] = useState<number[]>([4, 7, 2, 9, 5, 7, 3, 8, 7, 6]);
   const [inputValue, setInputValue] = useState('');
   const [mode, setMode] = useState<'explore' | 'challenge'>('explore');
   const [challengeType, setChallengeType] = useState<'mean' | 'median' | 'mode' | 'range'>('mean');
   const [answer, setAnswer] = useState('');
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [mastery, setMastery] = useState(0);
 
   const stats = useMemo(() => {
@@ -75,7 +77,7 @@ export default function StatisticsLab() {
       setMastery(m => m + 1);
       setTimeout(() => generateChallenge(), 1500);
     } else {
-      setFeedback('wrong');
+      setFeedback('hint');
       setTimeout(() => setFeedback(null), 1000);
     }
   };
@@ -85,24 +87,24 @@ export default function StatisticsLab() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">📊 Statistics Lab</h2>
-        <p className="text-purple-300 text-lg">Analyze data like a data scientist!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.statisticslab.statistics_lab">📊 Statistics Lab</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.statisticslab.analyze_data_like_a_data_scien">Analyze data like a data scientist!</Trans></p>
       </div>
 
       {/* Mode toggle */}
       <div className="flex justify-center gap-2 mb-6">
         <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'explore' ? 'bg-blue-500/30 text-blue-300 border border-blue-400/50' : 'bg-white/5 text-gray-400'}`}
-          onClick={() => setMode('explore')}>🔍 Explore</button>
+          onClick={() => setMode('explore')}><Trans i18nKey="auto.statisticslab.explore">🔍 Explore</Trans></button>
         <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'challenge' ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`}
-          onClick={() => { setMode('challenge'); generateChallenge(); }}>🎯 Challenge</button>
+          onClick={() => { setMode('challenge'); generateChallenge(); }}><Trans i18nKey="auto.statisticslab.challenge">🎯 Challenge</Trans></button>
       </div>
 
       {mode === 'challenge' && (
         <div className="bg-purple-500/10 rounded-xl p-4 border border-purple-500/30 mb-4 text-center">
-          <span className="bg-yellow-500/20 text-yellow-300 px-2 py-1 rounded text-sm font-bold">⭐ Mastery: {mastery}</span>
+          <span className="bg-yellow-500/20 text-yellow-300 px-2 py-1 rounded text-sm font-bold"><Trans i18nKey="auto.statisticslab.mastery">⭐ Mastery:</Trans> {mastery}</span>
           <p className="text-white font-bold text-xl mt-2">
-            Find the <span className="text-purple-400 uppercase">{challengeType}</span> of this data set:
-          </p>
+            <Trans i18nKey="auto.statisticslab.find_the">Find the</Trans> <span className="text-purple-400 uppercase">{challengeType}</span> <Trans i18nKey="auto.statisticslab.of_this_data_set">of this data set:</Trans>
+                                </p>
           <div className="flex flex-wrap justify-center gap-2 mt-3">
             {data.map((n, i) => (
               <span key={i} className="px-3 py-1 bg-white/10 rounded-lg text-white font-bold">{n}</span>
@@ -112,10 +114,10 @@ export default function StatisticsLab() {
             <input type="number" value={answer} onChange={e => setAnswer(e.target.value)}
               className="w-24 text-center bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white font-bold"
               placeholder="?" onKeyDown={e => e.key === 'Enter' && checkAnswer()} />
-            <button onClick={checkAnswer} className="px-4 py-2 rounded-lg bg-purple-600 text-white font-bold">Check</button>
+            <button onClick={checkAnswer} className="px-4 py-2 rounded-lg bg-purple-600 text-white font-bold"><Trans i18nKey="auto.statisticslab.check">Check</Trans></button>
           </div>
-          {feedback === 'correct' && <p className="text-green-400 font-bold mt-2">✅ Correct!</p>}
-          {feedback === 'wrong' && <p className="text-orange-400 font-bold mt-2">🤔 Try again! (Answer: {
+          {feedback === 'correct' && <p className="text-green-400 font-bold mt-2"><Trans i18nKey="auto.statisticslab.correct">✅ Correct!</Trans></p>}
+          {feedback === 'hint' && <p className="text-sky-400 font-bold mt-2"><Trans i18nKey="auto.statisticslab.try_again_answer">🤔 Let us explore! (Answer:</Trans> {
             challengeType === 'mean' ? stats.mean :
             challengeType === 'median' ? stats.median :
             challengeType === 'mode' ? (stats.mode.length > 0 ? stats.mode.join(', ') : 'No mode') :
@@ -129,13 +131,13 @@ export default function StatisticsLab() {
         <div className="space-y-4">
           {mode === 'explore' && (
             <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-              <h4 className="text-white font-bold mb-3">📝 Your Data Set</h4>
+              <h4 className="text-white font-bold mb-3"><Trans i18nKey="auto.statisticslab.your_data_set">📝 Your Data Set</Trans></h4>
               <div className="flex gap-2 mb-3">
                 <input type="number" value={inputValue} onChange={e => setInputValue(e.target.value)}
                   className="flex-1 bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white"
-                  placeholder="Enter a number (0-100)"
+                  placeholder={t('auto.attr.statisticslab.enter_a_number_0_100')}
                   onKeyDown={e => e.key === 'Enter' && addNumber()} />
-                <button onClick={addNumber} className="px-4 py-2 rounded-lg bg-blue-600 text-white font-bold">Add</button>
+                <button onClick={addNumber} className="px-4 py-2 rounded-lg bg-blue-600 text-white font-bold"><Trans i18nKey="auto.statisticslab.add">Add</Trans></button>
               </div>
               <div className="flex flex-wrap gap-2">
                 {data.map((n, i) => (
@@ -148,16 +150,16 @@ export default function StatisticsLab() {
                 ))}
               </div>
               <div className="flex gap-2 mt-3">
-                <button onClick={() => setData([4, 7, 2, 9, 5, 7, 3, 8, 7, 6])} className="text-sm text-gray-400 hover:text-white">Reset</button>
-                <button onClick={() => setData(Array.from({ length: 10 }, () => Math.floor(Math.random() * 20) + 1))} className="text-sm text-gray-400 hover:text-white">Random</button>
-                <button onClick={() => setData([])} className="text-sm text-gray-400 hover:text-orange-400">Clear</button>
+                <button onClick={() => setData([4, 7, 2, 9, 5, 7, 3, 8, 7, 6])} className="text-sm text-gray-400 hover:text-white"><Trans i18nKey="auto.statisticslab.reset">Reset</Trans></button>
+                <button onClick={() => setData(Array.from({ length: 10 }, () => Math.floor(Math.random() * 20) + 1))} className="text-sm text-gray-400 hover:text-white"><Trans i18nKey="auto.statisticslab.random">Random</Trans></button>
+                <button onClick={() => setData([])} className="text-sm text-gray-400 hover:text-sky-400"><Trans i18nKey="auto.statisticslab.clear">Clear</Trans></button>
               </div>
             </div>
           )}
 
           {/* Bar chart */}
           <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-            <h4 className="text-white font-bold mb-3">📊 Bar Chart</h4>
+            <h4 className="text-white font-bold mb-3"><Trans i18nKey="auto.statisticslab.bar_chart">📊 Bar Chart</Trans></h4>
             <div className="flex items-end gap-1 h-40 px-2">
               {data.map((n, i) => (
                 <motion.div key={i} className="flex-1 flex flex-col items-center"
@@ -173,14 +175,14 @@ export default function StatisticsLab() {
               ))}
             </div>
             <div className="flex justify-between text-sm text-gray-500 mt-2 px-2">
-              <span>1</span>
+              <span><Trans i18nKey="auto.statisticslab.1">1</Trans></span>
               <span>{data.length}</span>
             </div>
           </div>
 
           {/* Dot plot */}
           <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-            <h4 className="text-white font-bold mb-3">🔵 Dot Plot</h4>
+            <h4 className="text-white font-bold mb-3"><Trans i18nKey="auto.statisticslab.dot_plot">🔵 Dot Plot</Trans></h4>
             <div className="relative h-20">
               {/* Number line */}
               <div className="absolute bottom-4 left-0 right-0 h-px bg-gray-600" />

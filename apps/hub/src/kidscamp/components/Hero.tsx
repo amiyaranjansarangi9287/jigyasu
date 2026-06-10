@@ -1,7 +1,7 @@
 // CampCraft - Hero Section
 
 import { useEffect, useState, useRef } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useCountUp } from '../hooks/useReveal';
 import { useFormatNumber } from '../../hooks/useFormatNumber';
 import { Button } from '@jigyasu/ui';
@@ -68,7 +68,7 @@ export default function Hero({
       >
         <img
           src="/images/hero-camp.webp"
-          alt="Kids camp activities"
+          alt={t('auto.attr.hero.kids_camp_activities')}
           className="w-full h-[120%] object-cover"
           onError={(e) => {
             e.currentTarget.src = '/images/fallback-placeholder.png';
@@ -106,7 +106,7 @@ export default function Hero({
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
             <span className="animate-bounce-slow">🦚</span>
-            <span className="text-white/90 text-sm font-medium">{t('maker_space.badge', 'Kids Camp at Home')}</span>
+            <span className="text-white/90 text-sm font-medium">{t('maker_space.badge', 'Jigyasu Maker Space')}</span>
           </div>
 
           {/* Main Headline */}
@@ -117,7 +117,7 @@ export default function Hero({
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto mb-8">
-            {t('maker_space.description', { activitiesCount: totalActivities, defaultValue: 'Discover ' + totalActivities + '+ hands-on activities across science, art, building, and outdoor adventures. Perfect for ages 3-12 — no screens, just pure creative fun!' })}
+            {t('maker_space.description', { activitiesCount: totalActivities, defaultValue: 'Experience science and wonder through ' + totalActivities + '+ interactive builds and visual labs. Perfect for ages 2 to 80+.' })}
           </p>
 
           {/* CTA Buttons */}
@@ -126,7 +126,7 @@ export default function Hero({
               onClick={onGetStarted}
               variant="primary"
               size="lg"
-              className="px-8 group"
+              className="px-8 group btn-wonder"
             >
               <div className="flex items-center gap-2">
                 <span>{t('maker_space.get_started', 'Get Started')}</span>
@@ -144,7 +144,7 @@ export default function Hero({
               onClick={onExploreCampWeeks}
               variant="glass"
               size="lg"
-              className="px-8"
+              className="px-8 btn-wonder"
             >
               <div className="flex items-center gap-2">
                 <span>📅</span>
@@ -164,12 +164,12 @@ export default function Hero({
               <div className="text-4xl md:text-5xl font-bold text-white mb-1">
                 {formatNumber(pillarsCount)}
               </div>
-              <div className="text-white/70 text-sm">{t('maker_space.creative_pillars', 'Creative Pillars')}</div>
+              <div className="text-white/70 text-sm">{t('maker_space.learning_realms', 'Learning Realms')}</div>
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-white mb-1">
-                100%
-              </div>
+                <Trans i18nKey="auto.hero.100">100%</Trans>
+                                            </div>
               <div className="text-white/70 text-sm">{t('maker_space.ad_free', 'Ad-Free Fun')}</div>
             </div>
           </div>

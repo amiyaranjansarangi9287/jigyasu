@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { ROUTES } from '../constants/routes';
 import { ParentCorner } from '../shared/layout';
 import { Button } from '@jigyasu/ui';
@@ -160,8 +160,8 @@ export default function WonderGarden() {
             ←
           </button>
           <span className="text-sm text-gray-400">
-            {unlockedCount} / {totalCount} plants
-          </span>
+            {unlockedCount} / {totalCount} <Trans i18nKey="auto.wondergarden.plants">plants</Trans>
+                                </span>
         </div>
 
         <div className="text-center mb-6">
@@ -181,7 +181,7 @@ export default function WonderGarden() {
                 style={{ width: `${progress}%` }}
               />
             </div>
-            <p className="text-sm text-gray-400 mt-2">{progress}% grown</p>
+            <p className="text-sm text-gray-400 mt-2">{progress}<Trans i18nKey="auto.wondergarden.grown">% grown</Trans></p>
           </div>
         </div>
 
@@ -210,8 +210,8 @@ export default function WonderGarden() {
                 {hoveredPlant.emoji} {hoveredPlant.concept.replace('-', ' ')}
               </p>
               <p className="text-sm text-gray-500 capitalize">
-                {hoveredPlant.world} World
-              </p>
+                {hoveredPlant.world} <Trans i18nKey="auto.wondergarden.world">World</Trans>
+                                            </p>
               <p className="text-sm text-green-600 font-medium">
                 {hoveredPlant.unlocked ? '✨ Discovered' : '🔒 Not yet explored'}
               </p>
@@ -227,7 +227,7 @@ export default function WonderGarden() {
             return (
               <div key={world} className="bg-white rounded-2xl p-4">
                 <div className="flex items-center justify-between mb-2">
-                  <p className="font-bold text-gray-800 capitalize">{world} World</p>
+                  <p className="font-bold text-gray-800 capitalize">{world} <Trans i18nKey="auto.wondergarden.world">World</Trans></p>
                   <p className="text-sm text-gray-400">
                     {worldUnlocked}/{worldPlants.length}
                   </p>

@@ -25,7 +25,6 @@ export function useFormatNumber() {
         sa: 'deva',    // Sanskrit
         sat: 'olck',   // Santhali
         ne: 'deva',    // Nepali
-        kok: 'deva',   // Konkani
         brx: 'deva',   // Bodo
         doi: 'deva',   // Dogri
         ks: 'arabext', // Kashmiri

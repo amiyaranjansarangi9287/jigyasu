@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { sfx } from '../lib/soundEngine';
 import { useFormatNumber } from '../../../../hooks/useFormatNumber';
 
@@ -14,10 +14,10 @@ export default function TimesTableTrainer() {
   const { t } = useTranslation();
   const formatNumber = useFormatNumber();
   const [table, setTable] = useState<number>(2);
-  const [mode, setMode] = useState<'practice' | 'quiz'>('practice');
+  const [mode, setMode] = useState<'practice' | 'zen'>('practice');
   const [question, setQuestion] = useState<Question | null>(null);
   const [userAnswer, setUserAnswer] = useState('');
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [mastery, setMastery] = useState(0);
   const [streak, setStreak] = useState(0);
   const [mistakes, setMistakes] = useState<Set<string>>(new Set());
@@ -92,7 +92,7 @@ export default function TimesTableTrainer() {
         }, 800);
       }
     } else {
-      setFeedback('wrong');
+      setFeedback('hint');
       sfx.wrong();
       setStreak(0);
       setMistakes((prev) => new Set([...prev, `${question.a}×${question.b}`]));
@@ -152,11 +152,11 @@ export default function TimesTableTrainer() {
           </button>
           <button
             className={`px-4 sm:px-6 py-2 rounded-xl font-medium text-sm transition-colors ${
-              mode === 'quiz' ? 'bg-purple-500/30 text-purple-300 border border-purple-400/30' : 'text-gray-400'
+              mode === 'zen' ? 'bg-purple-500/30 text-purple-300 border border-purple-400/30' : 'text-gray-400'
             }`}
-            onClick={() => setMode('quiz')}
+            onClick={() => setMode('zen')}
           >
-            ⚡ {t('math_modules.TimesTableTrainer.speedQuiz', 'Speed Quiz')}
+            ⚡ {t('math_modules.TimesTableTrainer.zenMode', 'Zen Mode')}
           </button>
         </div>
       </div>
@@ -204,7 +204,7 @@ export default function TimesTableTrainer() {
               <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">
                 ⭐ {formatNumber(mastery)}
               </span>
-              <span className="bg-white/5 px-3 py-1.5 rounded-lg text-orange-400 font-bold text-sm">
+              <span className="bg-white/5 px-3 py-1.5 rounded-lg text-sky-300 font-bold text-sm">
                 🔥 {formatNumber(streak)}
               </span>
             </div>
@@ -214,7 +214,7 @@ export default function TimesTableTrainer() {
               className={`rounded-3xl p-8 text-center border-2 transition-colors ${
                 feedback === 'correct'
                   ? 'bg-green-500/10 border-green-500/50'
-                  : feedback === 'wrong'
+                  : feedback === 'hint'
                   ? 'bg-white/5 border-white/10'
                   : 'bg-white/5 border-white/10'
               }`}
@@ -226,7 +226,7 @@ export default function TimesTableTrainer() {
               <div className="text-4xl sm:text-5xl font-bold text-white mt-3 mb-4">
                 <span className="text-blue-400">{formatNumber(question.a)}</span>
                 <span className="text-purple-400 mx-2">×</span>
-                <span className="text-orange-400">{formatNumber(question.b)}</span>
+                <span className="text-sky-300">{formatNumber(question.b)}</span>
                 <span className="text-gray-400 mx-2">=</span>
                 <span className="text-green-400">?</span>
               </div>
@@ -261,9 +261,9 @@ export default function TimesTableTrainer() {
                   ✨ {t('math_modules.TimesTableTrainer.correct', 'Correct!')}
                 </motion.p>
               )}
-              {feedback === 'wrong' && (
+              {feedback === 'hint' && (
                 <motion.p
-                  className="mt-4 text-orange-400 font-bold text-xl"
+                  className="mt-4 text-sky-300 font-bold text-xl"
                   initial={{ x: -10 }}
                   animate={{ x: [10, -10, 5, 0] }}
                 >
@@ -304,7 +304,7 @@ export default function TimesTableTrainer() {
                       key={n}
                       className={`text-center px-2 py-1.5 rounded-lg text-sm ${
                         mistakes.has(`${table}×${n}`)
-                          ? 'bg-red-500/20 text-red-300'
+                          ? 'bg-sky-500/20 text-sky-300'
                           : 'bg-white/5 text-gray-300'
                       }`}
                     >
@@ -313,8 +313,8 @@ export default function TimesTableTrainer() {
                   ))}
                 </div>
                 {mistakes.size > 0 && (
-                  <p className="text-sm text-orange-400 mt-2 text-center">
-                    {t('math_modules.TimesTableTrainer.redMistakes', '🔴 Red = mistakes made (review these!)')}
+                  <p className="text-sm text-sky-300 mt-2 text-center">
+                    {t('math_modules.TimesTableTrainer.redMistakes', '🔴 Blue = pathways to explore further')}
                   </p>
                 )}
               </motion.div>
@@ -323,7 +323,7 @@ export default function TimesTableTrainer() {
         )}
 
         {/* Quiz Mode */}
-        {mode === 'quiz' && (
+        {mode === 'zen' && (
           <motion.div
             key="quiz"
             initial={{ opacity: 0, y: 20 }}
@@ -331,7 +331,7 @@ export default function TimesTableTrainer() {
             exit={{ opacity: 0, y: -20 }}
             className="max-w-md mx-auto"
           >
-            {!quizActive && quizTime === 60 ? (
+            {!quizActive && !quizActive ? (
               <div className="text-center bg-gradient-to-br from-purple-900/40 to-indigo-900/40 rounded-3xl border border-purple-500/30 p-8">
                 <motion.div
                   className="text-6xl mb-4"
@@ -340,9 +340,9 @@ export default function TimesTableTrainer() {
                 >
                   ⚡
                 </motion.div>
-                <h3 className="text-2xl font-bold text-white mb-2">{t('math_modules.TimesTableTrainer.speedQuizTitle', 'Speed Quiz')}</h3>
+                <h3 className="text-2xl font-bold text-white mb-2">{t('math_modules.TimesTableTrainer.zenModeTitle', 'Zen Mode')}</h3>
                 <p className="text-gray-400 mb-6">
-                  {t('math_modules.TimesTableTrainer.quizDesc1', 'Answer as many multiplication questions as possible in 60 seconds!')}
+                  {t('math_modules.TimesTableTrainer.quizDesc1', 'Answer as many multiplication questions as you want, pressure-free!')}
                   <br />{t('math_modules.TimesTableTrainer.quizDesc2', 'All tables mixed together!')}
                 </p>
                 <motion.button
@@ -354,36 +354,13 @@ export default function TimesTableTrainer() {
                   🚀 {t('math_modules.TimesTableTrainer.startBtn', 'Start!')}
                 </motion.button>
               </div>
-            ) : !quizActive && quizTime <= 0 ? (
-              <div className="text-center bg-gradient-to-br from-purple-900/40 to-indigo-900/40 rounded-3xl border border-purple-500/30 p-8">
-                <motion.div
-                  className="text-6xl mb-4"
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 2 }}
-                >
-                  🏆
-                </motion.div>
-                <h3 className="text-2xl font-bold text-white mb-2">{t('math_modules.TimesTableTrainer.timesUp', "Time's Up!")}</h3>
-                <div className="text-5xl font-bold text-yellow-400 my-4">{formatNumber(quizScore)}</div>
-                <p className="text-gray-400 mb-6">
-                  {quizScore >= 20 ? t('math_modules.TimesTableTrainer.champ', '🌟 Times Table Champion!') : quizScore >= 10 ? t('math_modules.TimesTableTrainer.wizard', '🧙 Math Wizard!') : t('math_modules.TimesTableTrainer.keepPracticing', '🌱 Keep practicing!')}
-                </p>
-                <motion.button
-                  className="px-8 py-3 rounded-2xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold text-lg"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={() => { setQuizTime(60); setQuizScore(0); }}
-                >
-                  🔄 {t('math_modules.TimesTableTrainer.tryAgain', 'Try Again')}
-                </motion.button>
-              </div>
             ) : question ? (
               <div>
                 <div className="flex justify-between mb-4">
                   <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold">⭐ {formatNumber(quizScore)}</span>
-                  <span className={`font-bold ${quizTime > 10 ? 'text-green-400' : 'text-orange-400'}`}>
-                    ⏱️ {formatNumber(quizTime)}s
-                  </span>
+                  <span className={`font-bold ${quizTime > 10 ? 'text-green-400' : 'text-sky-300'}`}>
+                    ⏱️ {formatNumber(quizTime)}<Trans i18nKey="auto.timestabletrainer.s">s</Trans>
+                                                                </span>
                 </div>
                 <div className="h-2 w-full bg-gray-700 rounded-full mb-4 overflow-hidden">
                   <motion.div
@@ -400,7 +377,7 @@ export default function TimesTableTrainer() {
                   <div className="text-4xl font-bold text-white mb-4">
                     <span className="text-blue-400">{formatNumber(question.a)}</span>
                     <span className="text-purple-400 mx-2">×</span>
-                    <span className="text-orange-400">{formatNumber(question.b)}</span>
+                    <span className="text-sky-300">{formatNumber(question.b)}</span>
                     <span className="text-gray-400 mx-2">=</span>
                     <span className="text-green-400">?</span>
                   </div>
@@ -426,11 +403,11 @@ export default function TimesTableTrainer() {
                   </form>
                   {feedback === 'correct' && (
                     <motion.p className="mt-3 text-green-400 font-bold" initial={{ scale: 0 }} animate={{ scale: 1 }}>
-                      ✨ +1!
-                    </motion.p>
+                      <Trans i18nKey="auto.timestabletrainer.1">✨ +1!</Trans>
+                                                                      </motion.p>
                   )}
-                  {feedback === 'wrong' && (
-                    <p className="mt-3 text-orange-400 font-bold">{t('math_modules.TimesTableTrainer.answerIs', 'Answer: {{answer}}', { answer: formatNumber(question.answer) })}</p>
+                  {feedback === 'hint' && (
+                    <p className="mt-3 text-sky-300 font-bold">{t('math_modules.TimesTableTrainer.answerIs', 'Answer: {{answer}}', { answer: formatNumber(question.answer) })}</p>
                   )}
                 </motion.div>
               </div>

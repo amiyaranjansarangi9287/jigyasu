@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 type Topic = 'addition' | 'subtraction' | 'multiplication' | 'division' | 'mixed' | 'fractions' | 'algebra' | 'exponents';
 
@@ -123,7 +123,7 @@ export default function WorksheetGenerator() {
               {t('math_modules.WorksheetGenerator.worksheetTitle', '📝 Math Worksheet — {{topic}}', { topic: topics.find(t_ => t_.id === topic)?.label })}
             </h3>
             <p className="print-subtext text-gray-400 text-sm mt-1">
-              {t('math_modules.WorksheetGenerator.name', 'Name')}: _________________ &nbsp;&nbsp; {t('math_modules.WorksheetGenerator.date', 'Date')}: _________________ &nbsp;&nbsp; {t('math_modules.WorksheetGenerator.score', 'Score')}: ___/{count}
+              {t('math_modules.WorksheetGenerator.name', 'Name')}<Trans i18nKey="auto.worksheetgenerator.nbsp_nbsp">: _________________ &nbsp;&nbsp;</Trans> {t('math_modules.WorksheetGenerator.date', 'Date')}<Trans i18nKey="auto.worksheetgenerator.nbsp_nbsp">: _________________ &nbsp;&nbsp;</Trans> {t('math_modules.WorksheetGenerator.score', 'Score')}: ___/{count}
             </p>
           </div>
 

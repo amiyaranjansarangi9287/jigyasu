@@ -10,6 +10,7 @@ import { usePip } from '../hooks/usePip';
 import { useEarlyProgress } from '../hooks/useEarlyProgress';
 import { useEarlySession } from '../hooks/useEarlySession';
 import { INDIAN_COINS, SHOP_ITEMS } from '../data/earlyContent';
+import { Trans } from "react-i18next";
 
 export default function CoinCounter() {
   const soundEnabled = useSettingsStore((s) => s.soundEnabled);
@@ -87,8 +88,8 @@ export default function CoinCounter() {
             <div className="flex items-center gap-3">
               <span className="text-3xl">🐤🏪</span>
               <div>
-                <p className="text-lg font-bold text-gray-700">Pip's Shop</p>
-                <p className="text-sm text-gray-500">{purchaseCount} items purchased</p>
+                <p className="text-lg font-bold text-gray-700"><Trans i18nKey="auto.coincounter.pip_s_shop">Pip's Shop</Trans></p>
+                <p className="text-sm text-gray-500">{purchaseCount} <Trans i18nKey="auto.coincounter.items_purchased">items purchased</Trans></p>
               </div>
             </div>
           </div>
@@ -104,8 +105,8 @@ export default function CoinCounter() {
         {/* Payment progress */}
         <div className="mx-5 mb-4">
           <div className="flex justify-between items-center mb-2">
-            <span className="text-base font-bold text-gray-600">Paid: ₹{(paidPaise / 100).toFixed(paidPaise % 100 === 0 ? 0 : 2)}</span>
-            <span className="text-base text-gray-500">Need: {item.priceDisplay}</span>
+            <span className="text-base font-bold text-gray-600"><Trans i18nKey="auto.coincounter.paid">Paid: ₹</Trans>{(paidPaise / 100).toFixed(paidPaise % 100 === 0 ? 0 : 2)}</span>
+            <span className="text-base text-gray-500"><Trans i18nKey="auto.coincounter.need">Need:</Trans> {item.priceDisplay}</span>
           </div>
           <div className="h-4 bg-gray-200 rounded-full overflow-hidden">
             <motion.div className="h-full rounded-full" animate={{ width: `${fillPct}%` }}
@@ -123,7 +124,7 @@ export default function CoinCounter() {
 
         {/* Coins tray */}
         <div className="px-5 mb-4">
-          <p className="text-sm text-gray-500 text-center mb-2">Tap coins to add</p>
+          <p className="text-sm text-gray-500 text-center mb-2"><Trans i18nKey="auto.coincounter.tap_coins_to_add">Tap coins to add</Trans></p>
           <div className="flex gap-3 justify-center flex-wrap">
             {INDIAN_COINS.map(coin => (
               <motion.button key={coin.value} whileTap={{ scale: 0.85 }} onClick={() => handleAddCoin(coin.value)}
@@ -147,7 +148,7 @@ export default function CoinCounter() {
                 {paidPaise >= item.priceInPaise ? '💰 Pay Now!' : 'Add more coins...'}
               </motion.button>
               {coinsUsed.length > 0 && (
-                <button onClick={handleReset} className="w-full py-3 text-gray-500 font-medium text-base min-h-[44px]">Reset coins</button>
+                <button onClick={handleReset} className="w-full py-3 text-gray-500 font-medium text-base min-h-[44px]"><Trans i18nKey="auto.coincounter.reset_coins">Reset coins</Trans></button>
               )}
             </>
           )}
@@ -157,11 +158,11 @@ export default function CoinCounter() {
               <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }}
                 className="bg-green-50 rounded-2xl p-5 border border-green-200 text-center">
                 <div className="text-5xl mb-2">{item.emoji}</div>
-                <p className="font-extrabold text-green-700 text-xl mb-1">Purchased!</p>
+                <p className="font-extrabold text-green-700 text-xl mb-1"><Trans i18nKey="auto.coincounter.purchased">Purchased!</Trans></p>
                 {isOver && paidPaise > item.priceInPaise && (
-                  <p className="text-base text-amber-600 mb-2">Change: ₹{((paidPaise - item.priceInPaise) / 100).toFixed(0)}</p>
+                  <p className="text-base text-amber-600 mb-2"><Trans i18nKey="auto.coincounter.change">Change: ₹</Trans>{((paidPaise - item.priceInPaise) / 100).toFixed(0)}</p>
                 )}
-                <button onClick={handleNext} className="mt-3 px-6 py-3 bg-amber-500 text-white font-bold rounded-2xl min-h-[48px]">Next Item! 🏪</button>
+                <button onClick={handleNext} className="mt-3 px-6 py-3 bg-amber-500 text-white font-bold rounded-2xl min-h-[48px]"><Trans i18nKey="auto.coincounter.next_item">Next Item! 🏪</Trans></button>
               </motion.div>
             )}
           </AnimatePresence>

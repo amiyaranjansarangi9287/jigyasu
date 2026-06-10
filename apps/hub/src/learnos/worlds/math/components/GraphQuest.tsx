@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
+import { Trans } from "react-i18next";
 
 export default function GraphQuest() {
   const [slope, setSlope] = useState(1);
@@ -46,8 +47,8 @@ export default function GraphQuest() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">📈 Graph Quest</h2>
-        <p className="text-purple-300 text-lg">See equations become lines and curves!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.graphquest.graph_quest">📈 Graph Quest</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.graphquest.see_equations_become_lines_and">See equations become lines and curves!</Trans></p>
       </div>
 
       {/* Mode toggle */}
@@ -55,11 +56,11 @@ export default function GraphQuest() {
         <motion.button
           className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'linear' ? 'bg-blue-500/30 text-blue-300 border border-blue-400/50' : 'bg-white/5 text-gray-400'}`}
           onClick={() => setMode('linear')} whileTap={{ scale: 0.95 }}
-        >📏 Linear (y = mx + b)</motion.button>
+        ><Trans i18nKey="auto.graphquest.linear_y_mx_b">📏 Linear (y = mx + b)</Trans></motion.button>
         <motion.button
           className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'quadratic' ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`}
           onClick={() => setMode('quadratic')} whileTap={{ scale: 0.95 }}
-        >🔄 Quadratic (y = ax² + c)</motion.button>
+        ><Trans i18nKey="auto.graphquest.quadratic_y_ax_c">🔄 Quadratic (y = ax² + c)</Trans></motion.button>
       </div>
 
       {/* Equation display */}
@@ -72,20 +73,20 @@ export default function GraphQuest() {
         >
           {mode === 'linear' ? (
             <span className="text-2xl sm:text-3xl font-bold font-mono">
-              <span className="text-gray-400">y = </span>
+              <span className="text-gray-400"><Trans i18nKey="auto.graphquest.y">y =</Trans> </span>
               <span className="text-blue-400">{slope === 1 ? '' : slope === -1 ? '-' : slope}</span>
-              <span className="text-blue-400">x</span>
+              <span className="text-blue-400"><Trans i18nKey="auto.graphquest.x">x</Trans></span>
               {intercept !== 0 && (
-                <span className="text-orange-400"> {intercept > 0 ? '+' : ''} {intercept}</span>
+                <span className="text-sky-400"> {intercept > 0 ? '+' : ''} {intercept}</span>
               )}
             </span>
           ) : (
             <span className="text-2xl sm:text-3xl font-bold font-mono">
-              <span className="text-gray-400">y = </span>
+              <span className="text-gray-400"><Trans i18nKey="auto.graphquest.y">y =</Trans> </span>
               <span className="text-purple-400">{quadA === 1 ? '' : quadA === -1 ? '-' : quadA}</span>
-              <span className="text-purple-400">x²</span>
+              <span className="text-purple-400"><Trans i18nKey="auto.graphquest.x">x²</Trans></span>
               {quadC !== 0 && (
-                <span className="text-orange-400"> {quadC > 0 ? '+' : ''} {quadC}</span>
+                <span className="text-sky-400"> {quadC > 0 ? '+' : ''} {quadC}</span>
               )}
             </span>
           )}
@@ -116,8 +117,8 @@ export default function GraphQuest() {
                 <text x={cx - 10} y={toSvgY(n) + 3} fill="rgba(255,255,255,0.3)" fontSize="8" textAnchor="middle">{n}</text>
               </g>
             ))}
-            <text x={gridSize - 10} y={cy - 5} fill="rgba(255,255,255,0.4)" fontSize="10">x</text>
-            <text x={cx + 5} y={12} fill="rgba(255,255,255,0.4)" fontSize="10">y</text>
+            <text x={gridSize - 10} y={cy - 5} fill="rgba(255,255,255,0.4)" fontSize="10"><Trans i18nKey="auto.graphquest.x">x</Trans></text>
+            <text x={cx + 5} y={12} fill="rgba(255,255,255,0.4)" fontSize="10"><Trans i18nKey="auto.graphquest.y">y</Trans></text>
             {/* Graph line */}
             <motion.path
               d={pathD}
@@ -134,12 +135,12 @@ export default function GraphQuest() {
               <>
                 {/* y-intercept */}
                 <circle cx={toSvgX(0)} cy={toSvgY(intercept)} r="5" fill="#fb923c" />
-                <text x={toSvgX(0) + 8} y={toSvgY(intercept) - 8} fill="#fb923c" fontSize="10">(0, {intercept})</text>
+                <text x={toSvgX(0) + 8} y={toSvgY(intercept) - 8} fill="#fb923c" fontSize="10"><Trans i18nKey="auto.graphquest.0">(0,</Trans> {intercept})</text>
                 {/* x-intercept if exists */}
                 {slope !== 0 && Math.abs(-intercept / slope) <= gridRange && (
                   <>
                     <circle cx={toSvgX(-intercept / slope)} cy={toSvgY(0)} r="5" fill="#22c55e" />
-                    <text x={toSvgX(-intercept / slope) + 8} y={toSvgY(0) - 8} fill="#22c55e" fontSize="10">({(-intercept / slope).toFixed(1)}, 0)</text>
+                    <text x={toSvgX(-intercept / slope) + 8} y={toSvgY(0) - 8} fill="#22c55e" fontSize="10">({(-intercept / slope).toFixed(1)}<Trans i18nKey="auto.graphquest.0">, 0)</Trans></text>
                   </>
                 )}
               </>
@@ -147,7 +148,7 @@ export default function GraphQuest() {
             {mode === 'quadratic' && (
               <>
                 <circle cx={toSvgX(0)} cy={toSvgY(quadC)} r="5" fill="#fb923c" />
-                <text x={toSvgX(0) + 8} y={toSvgY(quadC) - 8} fill="#fb923c" fontSize="10">vertex (0, {quadC})</text>
+                <text x={toSvgX(0) + 8} y={toSvgY(quadC) - 8} fill="#fb923c" fontSize="10"><Trans i18nKey="auto.graphquest.vertex_0">vertex (0,</Trans> {quadC})</text>
               </>
             )}
           </svg>
@@ -159,37 +160,37 @@ export default function GraphQuest() {
             {mode === 'linear' ? (
               <>
                 <div className="flex items-center gap-2">
-                  <label className="text-blue-400 text-sm font-bold w-24">Slope (m)</label>
+                  <label className="text-blue-400 text-sm font-bold w-24"><Trans i18nKey="auto.graphquest.slope_m">Slope (m)</Trans></label>
                   <input type="range" min="-5" max="5" step="0.5" value={slope} onChange={e => setSlope(parseFloat(e.target.value))} className="flex-1 accent-blue-500" />
                   <span className="text-white font-bold w-10 text-right">{slope}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <label className="text-orange-400 text-sm font-bold w-24">Intercept (b)</label>
+                  <label className="text-sky-400 text-sm font-bold w-24"><Trans i18nKey="auto.graphquest.intercept_b">Intercept (b)</Trans></label>
                   <input type="range" min="-8" max="8" value={intercept} onChange={e => setIntercept(parseInt(e.target.value))} className="flex-1 accent-orange-500" />
                   <span className="text-white font-bold w-10 text-right">{intercept}</span>
                 </div>
                 <div className="bg-white/5 rounded-lg p-3 text-sm space-y-1">
-                  <p className="text-gray-400">📊 <strong className="text-white">Slope = {slope}</strong> → {slope > 0 ? 'line goes ↗ uphill' : slope < 0 ? 'line goes ↘ downhill' : 'horizontal line ↔'}</p>
-                  <p className="text-gray-400">📍 <strong className="text-white">Y-intercept = {intercept}</strong> → crosses y-axis at (0, {intercept})</p>
-                  {slope !== 0 && <p className="text-gray-400">📍 <strong className="text-white">X-intercept = {(-intercept / slope).toFixed(1)}</strong> → crosses x-axis at ({(-intercept / slope).toFixed(1)}, 0)</p>}
+                  <p className="text-gray-400">📊 <strong className="text-white"><Trans i18nKey="auto.graphquest.slope">Slope =</Trans> {slope}</strong> → {slope > 0 ? 'line goes ↗ uphill' : slope < 0 ? 'line goes ↘ downhill' : 'horizontal line ↔'}</p>
+                  <p className="text-gray-400">📍 <strong className="text-white"><Trans i18nKey="auto.graphquest.y_intercept">Y-intercept =</Trans> {intercept}</strong> <Trans i18nKey="auto.graphquest.crosses_y_axis_at_0">→ crosses y-axis at (0,</Trans> {intercept})</p>
+                  {slope !== 0 && <p className="text-gray-400">📍 <strong className="text-white"><Trans i18nKey="auto.graphquest.x_intercept">X-intercept =</Trans> {(-intercept / slope).toFixed(1)}</strong> <Trans i18nKey="auto.graphquest.crosses_x_axis_at">→ crosses x-axis at (</Trans>{(-intercept / slope).toFixed(1)}<Trans i18nKey="auto.graphquest.0">, 0)</Trans></p>}
                 </div>
               </>
             ) : (
               <>
                 <div className="flex items-center gap-2">
-                  <label className="text-purple-400 text-sm font-bold w-24">a</label>
+                  <label className="text-purple-400 text-sm font-bold w-24"><Trans i18nKey="auto.graphquest.a">a</Trans></label>
                   <input type="range" min="-3" max="3" step="0.5" value={quadA} onChange={e => setQuadA(parseFloat(e.target.value))} className="flex-1 accent-purple-500" />
                   <span className="text-white font-bold w-10 text-right">{quadA}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <label className="text-orange-400 text-sm font-bold w-24">c (shift)</label>
+                  <label className="text-sky-400 text-sm font-bold w-24"><Trans i18nKey="auto.graphquest.c_shift">c (shift)</Trans></label>
                   <input type="range" min="-8" max="8" value={quadC} onChange={e => setQuadC(parseInt(e.target.value))} className="flex-1 accent-orange-500" />
                   <span className="text-white font-bold w-10 text-right">{quadC}</span>
                 </div>
                 <div className="bg-white/5 rounded-lg p-3 text-sm space-y-1">
-                  <p className="text-gray-400">📊 <strong className="text-white">a = {quadA}</strong> → {quadA > 0 ? 'parabola opens ∪ upward' : quadA < 0 ? 'parabola opens ∩ downward' : 'flat line'}</p>
-                  <p className="text-gray-400">📍 <strong className="text-white">Vertex at (0, {quadC})</strong></p>
-                  <p className="text-gray-400">📏 <strong className="text-white">|a| = {Math.abs(quadA)}</strong> → {Math.abs(quadA) > 1 ? 'narrow (steep)' : Math.abs(quadA) < 1 ? 'wide (flat)' : 'standard width'}</p>
+                  <p className="text-gray-400">📊 <strong className="text-white"><Trans i18nKey="auto.graphquest.a">a =</Trans> {quadA}</strong> → {quadA > 0 ? 'parabola opens ∪ upward' : quadA < 0 ? 'parabola opens ∩ downward' : 'flat line'}</p>
+                  <p className="text-gray-400">📍 <strong className="text-white"><Trans i18nKey="auto.graphquest.vertex_at_0">Vertex at (0,</Trans> {quadC})</strong></p>
+                  <p className="text-gray-400">📏 <strong className="text-white"><Trans i18nKey="auto.graphquest.a">|a| =</Trans> {Math.abs(quadA)}</strong> → {Math.abs(quadA) > 1 ? 'narrow (steep)' : Math.abs(quadA) < 1 ? 'wide (flat)' : 'standard width'}</p>
                 </div>
               </>
             )}
@@ -198,7 +199,7 @@ export default function GraphQuest() {
           {/* Values table */}
           <div className="bg-white/5 rounded-2xl border border-white/10 overflow-hidden">
             <button className="w-full px-4 py-2 text-left text-white font-bold text-sm flex justify-between items-center hover:bg-white/5" onClick={() => setShowTable(!showTable)}>
-              <span>📋 Values Table</span>
+              <span><Trans i18nKey="auto.graphquest.values_table">📋 Values Table</Trans></span>
               <span>{showTable ? '▼' : '▶'}</span>
             </button>
             {showTable && (
@@ -206,9 +207,9 @@ export default function GraphQuest() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr>
-                      <th className="text-blue-400 text-left pb-2">x</th>
-                      <th className="text-green-400 text-left pb-2">y</th>
-                      <th className="text-gray-400 text-left pb-2">(x, y)</th>
+                      <th className="text-blue-400 text-left pb-2"><Trans i18nKey="auto.graphquest.x">x</Trans></th>
+                      <th className="text-green-400 text-left pb-2"><Trans i18nKey="auto.graphquest.y">y</Trans></th>
+                      <th className="text-gray-400 text-left pb-2"><Trans i18nKey="auto.graphquest.x_y">(x, y)</Trans></th>
                     </tr>
                   </thead>
                   <tbody>

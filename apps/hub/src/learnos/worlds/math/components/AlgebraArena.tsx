@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useMathFeedback } from '../lib/MathContext';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import WhatsNext from './shared/WhatsNext';
 
 interface Equation {
@@ -144,7 +144,7 @@ export default function AlgebraArena() {
   const math = useMathFeedback();
   const [difficulty, setDifficulty] = useState<'basic' | 'intermediate' | 'advanced'>('basic');
   const [equation, setEquation] = useState<Equation | null>(null);
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [showSteps, setShowSteps] = useState(false);
   const [mastery, setMastery] = useState(0);
   const [streak, setStreak] = useState(0);
@@ -168,7 +168,7 @@ export default function AlgebraArena() {
       setStreak(s => s + 1);
       setTimeout(nextEquation, 1500);
     } else {
-      setFeedback('wrong');
+      setFeedback('hint');
       math.wrong('algebra');
       setStreak(0);
       setTimeout(() => setFeedback(null), 1000);
@@ -256,7 +256,7 @@ export default function AlgebraArena() {
       {/* Stats */}
       <div className="flex justify-center gap-4 mb-4">
         <span className="bg-white/5 px-3 py-1.5 rounded-lg text-yellow-400 font-bold text-sm">⭐ {mastery}</span>
-        <span className="bg-white/5 px-3 py-1.5 rounded-lg text-orange-400 font-bold text-sm">🔥 {streak}</span>
+        <span className="bg-white/5 px-3 py-1.5 rounded-lg text-sky-400 font-bold text-sm">🔥 {streak}</span>
         <span className="bg-white/5 px-3 py-1.5 rounded-lg text-blue-400 font-bold text-sm">🔄 {round}</span>
       </div>
 
@@ -264,7 +264,7 @@ export default function AlgebraArena() {
       <motion.div
         key={round}
         className={`max-w-lg mx-auto rounded-3xl p-6 sm:p-8 border-2 transition-colors ${
-          feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'
+          feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'hint' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'
         }`}
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
@@ -296,7 +296,7 @@ export default function AlgebraArena() {
               key={`${round}-${i}`}
               className={`py-3 rounded-xl text-xl font-bold transition-all ${
                 feedback === 'correct' && opt === equation.answer ? 'bg-green-500 text-white ring-4 ring-green-400/50'
-                : feedback === 'wrong' ? 'bg-white/5 text-gray-500'
+                : feedback === 'hint' ? 'bg-white/5 text-gray-500'
                 : 'bg-white/10 text-white hover:bg-white/20 border border-white/20 hover:border-white/40'
               }`}
               whileHover={feedback === null ? { scale: 1.05 } : {}}
@@ -304,7 +304,7 @@ export default function AlgebraArena() {
               onClick={() => handleAnswer(opt)}
               disabled={feedback !== null}
             >
-              x = {opt}
+              <Trans i18nKey="auto.algebraarena.x">x =</Trans> {opt}
             </motion.button>
           ))}
         </div>
@@ -334,9 +334,9 @@ export default function AlgebraArena() {
             {t('math_modules.AlgebraArena.correct', '✨ x = {{ans}} is correct! ✨', { ans: equation.answer })}
           </motion.p>
         )}
-        {feedback === 'wrong' && (
-          <motion.p className="mt-4 text-center text-orange-400 font-bold" initial={{ x: -10 }} animate={{ x: [10, -10, 5, 0] }}>
-            {t('math_modules.AlgebraArena.wrong', '🤔 Try again! Check the steps for a hint.')}
+        {feedback === 'hint' && (
+          <motion.p className="mt-4 text-center text-sky-400 font-bold" initial={{ x: -10 }} animate={{ x: [10, -10, 5, 0] }}>
+            {t('math_modules.AlgebraArena.wrong', '🤔 Let us explore! Check the steps for a hint.')}
           </motion.p>
         )}
       </motion.div>

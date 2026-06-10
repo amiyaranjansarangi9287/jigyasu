@@ -3,7 +3,7 @@
 // Jigyasu About Page - Mission and Vision
 
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion } from 'framer-motion';
 
 const FADE_UP = {
@@ -63,7 +63,7 @@ export default function AboutPage() {
     {
       emoji: '🗣️',
       title: t('about.differences.2.title', '22 Indian Languages'),
-      desc: t('about.differences.2.desc', 'Assamese, Bengali, Bodo, Dogri, Gujarati, Hindi, Kannada, Kashmiri, Konkani, Maithili, Malayalam, Manipuri, Marathi, Nepali, Odia, Punjabi, Sanskrit, Santali, Sindhi, Tamil, Telugu, and Urdu from day one. Understanding begins in the language closest to the learner.'),
+      desc: t('about.differences.2.desc', 'Assamese, Bengali, Bodo, Dogri, Gujarati, Hindi, Kannada, Kashmiri, Maithili, Malayalam, Manipuri, Marathi, Nepali, Odia, Punjabi, Sanskrit, Santali, Sindhi, Tamil, Telugu, and Urdu from day one. Understanding begins in the language closest to the learner.'),
     },
     {
       emoji: '📴',
@@ -117,7 +117,7 @@ export default function AboutPage() {
                      text-base hover:text-indigo-900 transition-colors"
         >
           <span className="text-xl">🦚</span>
-          <span>Jigyasu</span>
+          <span><Trans i18nKey="auto.aboutpage.jigyasu">Jigyasu</Trans></span>
         </button>
         <div className="flex gap-4 text-sm text-slate-500">
           <a href="#mission" className="hover:text-indigo-700 transition-colors hidden sm:block"> {t('about.mission', 'Mission')} </a>
@@ -138,8 +138,8 @@ export default function AboutPage() {
           <div className="text-7xl">🦚</div>
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight
                          text-indigo-900 leading-tight">
-            Jigyasu
-          </h1>
+            <Trans i18nKey="auto.aboutpage.jigyasu">Jigyasu</Trans>
+                                </h1>
           <p className="text-2xl font-bold text-indigo-500"> {t('about.tagline', 'Install Wonder.')} </p>
           <p className="text-lg text-slate-500 italic max-w-xl mx-auto leading-relaxed whitespace-pre-line">
             {t('about.hero_quote', '"Every child is born a scientist.\nThey ask why. They test everything.\nThen school happens — and the why gets quieter.\nWe are here to keep the why loud. Forever."')}
@@ -155,27 +155,27 @@ export default function AboutPage() {
           </h2>
 
           <p className="text-lg leading-relaxed text-slate-700">
-            In many parts of India, education is still not equally accessible.
-            Some children study in overcrowded classrooms.
-            Some share one phone with the entire family.
-            Some learn in a language that is not the language they think in.
-            Some cannot afford coaching, tutors, or premium apps.
-          </p>
+            <Trans i18nKey="auto.aboutpage.in_many_parts_of_india_educati">In many parts of India, education is still not equally accessible.
+                                  Some children study in overcrowded classrooms.
+                                  Some share one phone with the entire family.
+                                  Some learn in a language that is not the language they think in.
+                                  Some cannot afford coaching, tutors, or premium apps.</Trans>
+                                </p>
           <p className="text-lg leading-relaxed text-slate-700">
-            And outside of childhood — many adults carry questions from school
-            that were never answered clearly. Questions they felt embarrassed
-            to ask. Concepts that never quite made sense in the way they were taught.
-          </p>
+            <Trans i18nKey="auto.aboutpage.and_outside_of_childhood_many_">And outside of childhood — many adults carry questions from school
+                                  that were never answered clearly. Questions they felt embarrassed
+                                  to ask. Concepts that never quite made sense in the way they were taught.</Trans>
+                                </p>
           <p className="text-lg leading-relaxed text-slate-700 font-semibold">
-            People do not hate learning.
-            They hate feeling confused, judged, or left behind.
-          </p>
+            <Trans i18nKey="auto.aboutpage.people_do_not_hate_learning_th">People do not hate learning.
+                                  They hate feeling confused, judged, or left behind.</Trans>
+                                </p>
           <p className="text-lg leading-relaxed text-slate-700">
-            When an idea is shown clearly — when it moves, when it responds
-            to your touch, when it connects to something you already know
-            from daily life — learning becomes natural again.
-            That is what Jigyasu is built for.
-          </p>
+            <Trans i18nKey="auto.aboutpage.when_an_idea_is_shown_clearly_">When an idea is shown clearly — when it moves, when it responds
+                                  to your touch, when it connects to something you already know
+                                  from daily life — learning becomes natural again.
+                                  That is what Jigyasu is built for.</Trans>
+                                </p>
         </motion.section>
 
         {/* ═══════════════════════════════════════════
@@ -188,13 +188,13 @@ export default function AboutPage() {
                      border border-indigo-100 mb-16 space-y-4"
         >
           <h2 className="text-2xl font-bold text-indigo-900">
-            Our Mission
-          </h2>
+            <Trans i18nKey="auto.aboutpage.our_mission">Our Mission</Trans>
+                                </h2>
           <p className="text-lg font-semibold text-indigo-800 leading-relaxed">
-            Every child in India — and every adult who missed their chance —
-            deserves to experience the joy of truly understanding something.
-            Not memorizing. Understanding.
-          </p>
+            <Trans i18nKey="auto.aboutpage.every_child_in_india_and_every">Every child in India — and every adult who missed their chance —
+                                  deserves to experience the joy of truly understanding something.
+                                  Not memorizing. Understanding.</Trans>
+                                </p>
           <div className="pt-2 space-y-3 text-indigo-700 text-base">
             {[
               'Not just reading about gravity — seeing it bend space.',
@@ -209,8 +209,8 @@ export default function AboutPage() {
             ))}
           </div>
           <p className="text-indigo-600 text-sm pt-2 italic">
-            This is not a feature. It is the entire reason Jigyasu exists.
-          </p>
+            <Trans i18nKey="auto.aboutpage.this_is_not_a_feature_it_is_th">This is not a feature. It is the entire reason Jigyasu exists.</Trans>
+                                </p>
         </motion.section>
 
         {/* ═══════════════════════════════════════════
@@ -218,8 +218,8 @@ export default function AboutPage() {
         ═══════════════════════════════════════════ */}
         <motion.section {...FADE_UP} className="mb-16 space-y-5">
           <h2 className="text-2xl font-bold text-indigo-900">
-            Who Jigyasu Is For
-          </h2>
+            <Trans i18nKey="auto.aboutpage.who_jigyasu_is_for">Who Jigyasu Is For</Trans>
+                                </h2>
           <div className="space-y-4">
             {[
               {
@@ -336,9 +336,9 @@ export default function AboutPage() {
             </h2>
           </div>
           <p className="text-orange-800 text-base leading-relaxed">
-            This is not a global platform lightly translated for India.
-            It is built from India, for Indian learners — and open to everyone.
-          </p>
+            <Trans i18nKey="auto.aboutpage.this_is_not_a_global_platform_">This is not a global platform lightly translated for India.
+                                  It is built from India, for Indian learners — and open to everyone.</Trans>
+                                </p>
           <div className="grid sm:grid-cols-2 gap-3 pt-1">
             {[
               t('about.indian_context.0', 'Rupees, not dollars'),
@@ -348,7 +348,7 @@ export default function AboutPage() {
               t('about.indian_context.4', 'APJ Abdul Kalam, Sushruta, Brahmagupta'),
               t('about.indian_context.5', '22 Indian languages from day one'),
               t('about.indian_context.6', 'Designed for 2G and shared phones'),
-              'Offline-first for rural learners',
+              t('about.indian_context.7', 'Offline-first for rural learners'),
             ].map((item) => (
               <div
                 key={item}
@@ -366,31 +366,31 @@ export default function AboutPage() {
         ═══════════════════════════════════════════ */}
         <motion.section {...FADE_UP} className="mb-16 space-y-5">
           <h2 className="text-2xl font-bold text-indigo-900">
-            How We Plan to Sustain This
-          </h2>
+            <Trans i18nKey="auto.aboutpage.how_we_plan_to_sustain_this">How We Plan to Sustain This</Trans>
+                                </h2>
           <p className="text-slate-700 text-base leading-relaxed">
-            Jigyasu is mission-first. The goal is never to make education expensive.
-            The goal is to keep learning free and make the platform sustainable
-            through a simple principle:
-          </p>
+            <Trans i18nKey="auto.aboutpage.jigyasu_is_mission_first_the_g">Jigyasu is mission-first. The goal is never to make education expensive.
+                                  The goal is to keep learning free and make the platform sustainable
+                                  through a simple principle:</Trans>
+                                </p>
           <div className="bg-indigo-50 rounded-2xl p-6 border border-indigo-100">
             <p className="text-indigo-800 font-semibold text-base leading-relaxed">
-              Those who can support the mission help keep it free
-              for those who cannot.
-            </p>
+              <Trans i18nKey="auto.aboutpage.those_who_can_support_the_miss">Those who can support the mission help keep it free
+                                        for those who cannot.</Trans>
+                                      </p>
             <p className="text-indigo-600 text-sm mt-2 leading-relaxed">
-              The child who cannot pay and the child who can pay will always
-              see the same platform, the same concepts, the same quality.
-              There is no premium version. There is no locked content.
-              There is only Jigyasu — for everyone.
-            </p>
+              <Trans i18nKey="auto.aboutpage.the_child_who_cannot_pay_and_t">The child who cannot pay and the child who can pay will always
+                                        see the same platform, the same concepts, the same quality.
+                                        There is no premium version. There is no locked content.
+                                        There is only Jigyasu — for everyone.</Trans>
+                                      </p>
           </div>
           <p className="text-slate-600 text-sm leading-relaxed">
-            Support may come through individuals who care about equity in
-            education, organisations with a shared mission, CSR partnerships,
-            government grants, or institutional collaborations. All of these
-            fund one thing only: access for learners who need it most.
-          </p>
+            <Trans i18nKey="auto.aboutpage.support_may_come_through_indiv">Support may come through individuals who care about equity in
+                                  education, organisations with a shared mission, CSR partnerships,
+                                  government grants, or institutional collaborations. All of these
+                                  fund one thing only: access for learners who need it most.</Trans>
+                                </p>
         </motion.section>
 
         {/* ═══════════════════════════════════════════
@@ -405,34 +405,34 @@ export default function AboutPage() {
           <div className="space-y-2">
             <h2 className="text-2xl font-bold"> {t('about.join_mission', 'Join the Mission')} </h2>
             <p className="text-slate-300 text-base leading-relaxed">
-              If you feel connected to what Jigyasu is trying to do —
-              if the idea of a free, visual, multilingual learning platform
-              for every Indian child and adult resonates with you —
-              we would love to hear from you.
-            </p>
+              <Trans i18nKey="auto.aboutpage.if_you_feel_connected_to_what_">If you feel connected to what Jigyasu is trying to do —
+                                        if the idea of a free, visual, multilingual learning platform
+                                        for every Indian child and adult resonates with you —
+                                        we would love to hear from you.</Trans>
+                                      </p>
           </div>
 
           {/* Key statement */}
           <div className="bg-slate-800 rounded-2xl p-5 border border-slate-700">
             <p className="text-indigo-300 font-bold text-base mb-2"> {t('about.relationships', 'We believe in relationships before transactions.')} </p>
             <p className="text-slate-300 text-sm leading-relaxed">
-              We are not collecting payments online yet. Before accepting
-              any support, we want to understand who you are, why this
-              mission matters to you, and how your contribution can
-              create the most learning impact.
-            </p>
+              <Trans i18nKey="auto.aboutpage.we_are_not_collecting_payments">We are not collecting payments online yet. Before accepting
+                                        any support, we want to understand who you are, why this
+                                        mission matters to you, and how your contribution can
+                                        create the most learning impact.</Trans>
+                                      </p>
             <p className="text-slate-400 text-sm mt-3 leading-relaxed">
-              This ensures that every partner who joins us is genuinely
-              aligned with our values — especially our commitment to
-              keeping Jigyasu completely free and equal for all learners.
-            </p>
+              <Trans i18nKey="auto.aboutpage.this_ensures_that_every_partne">This ensures that every partner who joins us is genuinely
+                                        aligned with our values — especially our commitment to
+                                        keeping Jigyasu completely free and equal for all learners.</Trans>
+                                      </p>
           </div>
 
           {/* Contact */}
           <div className="space-y-3">
             <p className="text-slate-200 text-base font-semibold">
-              Reach out to us at:
-            </p>
+              <Trans i18nKey="auto.aboutpage.reach_out_to_us_at">Reach out to us at:</Trans>
+                                      </p>
             <button
               onClick={() => navigate('/contact')}
               className="inline-flex items-center gap-2 bg-indigo-600
@@ -478,14 +478,14 @@ export default function AboutPage() {
             </p>
             <div className="grid grid-cols-2 gap-2 text-sm text-slate-400">
               {[
-                '💰 Individual monthly contribution',
-                '🏢 Corporate CSR partnership',
-                '🗣️ Funding a language translation',
-                '📱 Sponsoring offline device access',
-                '🏫 School or NGO partnership',
-                '🌐 Infrastructure sponsorship',
-                '🎓 Content or curriculum review',
-                '📢 Spreading the word',
+                t('about.support_ways.0', '💰 Individual monthly contribution'),
+                t('about.support_ways.1', '🏢 Corporate CSR partnership'),
+                t('about.support_ways.2', '🗣️ Funding a language translation'),
+                t('about.support_ways.3', '📱 Sponsoring offline device access'),
+                t('about.support_ways.4', '🏫 School or NGO partnership'),
+                t('about.support_ways.5', '🌐 Infrastructure sponsorship'),
+                t('about.support_ways.6', '🎓 Content or curriculum review'),
+                t('about.support_ways.7', '📢 Spreading the word'),
               ].map((item) => (
                 <div
                   key={item}
@@ -497,10 +497,10 @@ export default function AboutPage() {
               ))}
             </div>
             <p className="text-slate-500 text-sm leading-relaxed">
-              There is no minimum. There is no fixed format. The most
-              valuable thing a partner can bring is genuine alignment
-              with the mission. Everything else can be figured out together.
-            </p>
+              <Trans i18nKey="auto.aboutpage.there_is_no_minimum_there_is_n">There is no minimum. There is no fixed format. The most
+                                        valuable thing a partner can bring is genuine alignment
+                                        with the mission. Everything else can be figured out together.</Trans>
+                                      </p>
           </div>
         </motion.section>
 
@@ -515,18 +515,18 @@ export default function AboutPage() {
           <div className="text-5xl">🦚</div>
           <div className="space-y-2">
             <p className="text-slate-700 text-base leading-relaxed max-w-lg mx-auto">
-              Jigyasu exists for the child who could not afford tuition.
-              For the parent who wants to help but feels unsure.
-              For the adult who still wants to understand.
-              For the learner who was never the problem —
-              only the explanation was.
-            </p>
+              <Trans i18nKey="auto.aboutpage.jigyasu_exists_for_the_child_w">Jigyasu exists for the child who could not afford tuition.
+                                        For the parent who wants to help but feels unsure.
+                                        For the adult who still wants to understand.
+                                        For the learner who was never the problem —
+                                        only the explanation was.</Trans>
+                                      </p>
           </div>
           <p className="font-extrabold text-indigo-900 text-2xl tracking-tight">
-            Install Wonder.
-          </p>
+            <Trans i18nKey="auto.aboutpage.install_wonder">Install Wonder.</Trans>
+                                </p>
           <p className="text-slate-400 text-sm">
-            © {new Date().getFullYear()} Jigyasu ·{' '}
+            © {new Date().getFullYear()} <Trans i18nKey="auto.aboutpage.jigyasu">Jigyasu ·</Trans>{' '}
             <button
               onClick={() => navigate('/contact')}
               className="hover:text-indigo-500 transition-colors"

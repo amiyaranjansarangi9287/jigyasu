@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Activity } from '../data/activities.en';
 import { pillars } from '../data/categories';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useActivityProgress } from '../hooks/useActivityProgress';
 import ModuleTutorialOverlay from '../../learnos/shared/ModuleTutorialOverlay';
 import { useTutorialStore } from '../../learnos/store/tutorialStore';
@@ -86,6 +86,14 @@ export default function ActivityMode({
   const [confettiPieces, setConfettiPieces] = useState<ConfettiPiece[]>([]);
   const [showExitConfirm, setShowExitConfirm] = useState(false);
   const [stepFeedback, setStepFeedback] = useState<boolean>(false);
+  const [learningSelectedOption, setLearningSelectedOption] = useState<string | null>(null);
+  const [showLearningFeedback, setShowLearningFeedback] = useState(false);
+
+  // Reset learning moment state when step changes
+  useEffect(() => {
+    setLearningSelectedOption(null);
+    setShowLearningFeedback(false);
+  }, [activeStep]);
 
   const { hasCompletedTutorial, markTutorialCompleted } = useTutorialStore();
   const [showTutorial, setShowTutorial] = useState(() => !hasCompletedTutorial('maker_space'));
@@ -274,34 +282,7 @@ export default function ActivityMode({
               <span className="text-lg">💡</span> <span className="hidden sm:inline">{t('tutorials.help', 'Help')}</span>
             </button>
 
-            {/* Timer */}
-            <div className="flex items-center gap-2">
-              <div className={`font-mono text-base sm:text-lg font-medium ${timerRunning ? 'text-green-500' : 'text-gray-500 dark:text-gray-400'}`}>
-                {formatTime(elapsed)}
-              </div>
-              {phase === 'building' && (
-                <button
-                  onClick={() => setTimerRunning(!timerRunning)}
-                  className={`p-2 rounded-full transition-colors ${
-                    timerRunning
-                      ? 'bg-green-100 dark:bg-green-900/30 text-green-600'
-                      : 'bg-gray-100 dark:bg-gray-700 text-gray-500'
-                  }`}
-                  title={timerRunning ? t('kidscamp.activity_mode.pause_timer', 'Pause timer') : t('kidscamp.activity_mode.resume_timer', 'Resume timer')}
-                >
-                  {timerRunning ? (
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  ) : (
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  )}
-                </button>
-              )}
-            </div>
+            {/* Timer removed for zero-pressure pedagogical alignment */}
 
             {/* Progress Badge */}
             <div className="hidden sm:flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700">
@@ -405,7 +386,7 @@ export default function ActivityMode({
 
               {/* Progress indicator */}
               <div className="mt-6 flex items-center justify-between text-sm">
-                <span className="text-gray-500 dark:text-gray-400">{progress.materialsChecked.length} of {activity.materials.length} {t('kidscamp.activity_mode.items', 'items')}</span>
+                <span className="text-gray-500 dark:text-gray-400">{progress.materialsChecked.length} <Trans i18nKey="auto.activitymode.of">of</Trans> {activity.materials.length} {t('kidscamp.activity_mode.items', 'items')}</span>
                 <div className="w-32 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
                   <div
                     className="h-full bg-green-500 rounded-full transition-all"
@@ -449,8 +430,8 @@ export default function ActivityMode({
                 onClick={handleSkipMaterials}
                 className="btn btn-secondary sm:w-auto"
                aria-label="Action button">
-                Skip for now
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <Trans i18nKey="auto.activitymode.skip_for_now">Skip for now</Trans>
+                                              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" />
                 </svg>
               </button>
@@ -580,8 +561,8 @@ export default function ActivityMode({
                     <div>
                       <p className="font-medium text-purple-800 dark:text-purple-200 mb-1">{t('kidscamp.activity_mode.parent_help', 'Parent Help Needed')}</p>
                       <p className="text-purple-700 dark:text-purple-300 text-sm">
-                        This step may require adult assistance for safety or complexity.
-                      </p>
+                        <Trans i18nKey="auto.activitymode.this_step_may_require_adult_as">This step may require adult assistance for safety or complexity.</Trans>
+                                                                    </p>
                     </div>
                   </div>
                 )}
@@ -673,14 +654,13 @@ export default function ActivityMode({
               </p>
             </div>
 
-            {/* Stats */}
             <div className="grid grid-cols-3 gap-3 sm:gap-4 mb-8">
               <div className="bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 shadow-sm">
-                <div className="text-2xl sm:text-3xl mb-2">⏱️</div>
+                <div className="text-2xl sm:text-3xl mb-2">🛠️</div>
                 <div className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
-                  {formatTime(elapsed)}
+                  {activity.materials.length}
                 </div>
-                <div className="text-sm sm:text-sm text-gray-500 dark:text-gray-400">{t('kidscamp.activity_mode.total_time', 'Total Time')}</div>
+                <div className="text-sm sm:text-sm text-gray-500 dark:text-gray-400">{t('kidscamp.activity_mode.materials_used', 'Materials')}</div>
               </div>
               <div className="bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 shadow-sm">
                 <div className="text-2xl sm:text-3xl mb-2">✅</div>
@@ -718,8 +698,8 @@ export default function ActivityMode({
                 <span>🚀</span> {t('kidscamp.activity_mode.whats_next', "What's Next?")}
               </h4>
               <p className="text-orange-700 dark:text-orange-300 text-sm">
-                Check your progress in the Workshop to see your achievements, or explore more activities in the same pillar!
-              </p>
+                <Trans i18nKey="auto.activitymode.check_your_progress_in_the_wor">Check your progress in the Workshop to see your achievements, or explore more activities in the same pillar!</Trans>
+                                            </p>
             </div>
 
             {/* Actions */}

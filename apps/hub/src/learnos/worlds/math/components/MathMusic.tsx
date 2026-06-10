@@ -1,5 +1,6 @@
 import { useState, useMemo, useCallback, useRef } from 'react';
 import { motion } from 'framer-motion';
+import { Trans } from "react-i18next";
 
 const NOTES = [
   { name: 'C', freq: 261.63, color: '#ef4444' },
@@ -63,8 +64,8 @@ export default function MathMusic() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🎵 Math & Music</h2>
-        <p className="text-purple-300 text-lg">Discover the mathematics hiding inside every sound!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.mathmusic.math_music">🎵 Math & Music</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.mathmusic.discover_the_mathematics_hidin">Discover the mathematics hiding inside every sound!</Trans></p>
       </div>
       <div className="flex justify-center gap-2 mb-6">
         {[{ id: 'piano' as const, e: '🎹', l: 'Piano' }, { id: 'waveform' as const, e: '〰️', l: 'Waveforms' }, { id: 'intervals' as const, e: '🎼', l: 'Intervals' }].map(m => (
@@ -75,7 +76,7 @@ export default function MathMusic() {
       {mode === 'piano' && (
         <div className="max-w-2xl mx-auto space-y-4">
           <div className="bg-white/5 rounded-3xl p-6 border border-white/10">
-            <h4 className="text-white font-bold mb-4 text-center">🎹 Click to play — each note is a frequency!</h4>
+            <h4 className="text-white font-bold mb-4 text-center"><Trans i18nKey="auto.mathmusic.click_to_play_each_note_is_a_f">🎹 Click to play — each note is a frequency!</Trans></h4>
             <div className="flex gap-1 justify-center">
               {NOTES.map(note => (
                 <motion.button key={note.name}
@@ -83,15 +84,15 @@ export default function MathMusic() {
                   whileTap={{ scale: 0.95, backgroundColor: note.color }}
                   onClick={() => playTone(note.freq)}>
                   <span className="text-gray-800 font-bold text-sm">{note.name}</span>
-                  <span className="text-gray-400 text-[9px]">{note.freq.toFixed(0)} Hz</span>
+                  <span className="text-gray-400 text-[9px]">{note.freq.toFixed(0)} <Trans i18nKey="auto.mathmusic.hz">Hz</Trans></span>
                 </motion.button>
               ))}
             </div>
           </div>
           <div className="bg-white/5 rounded-xl p-4 border border-white/10 text-sm text-gray-300 space-y-1">
-            <p>📝 <strong>A4 = 440 Hz</strong> means air vibrates 440 times per second.</p>
-            <p>📝 Going up one octave <strong>doubles</strong> the frequency.</p>
-            <p>📝 Note ratios create harmony: 3:2 (fifth), 5:4 (major third).</p>
+            <p>📝 <strong><Trans i18nKey="auto.mathmusic.a4_440_hz">A4 = 440 Hz</Trans></strong> <Trans i18nKey="auto.mathmusic.means_air_vibrates_440_times_p">means air vibrates 440 times per second.</Trans></p>
+            <p><Trans i18nKey="auto.mathmusic.going_up_one_octave">📝 Going up one octave</Trans> <strong><Trans i18nKey="auto.mathmusic.doubles">doubles</Trans></strong> <Trans i18nKey="auto.mathmusic.the_frequency">the frequency.</Trans></p>
+            <p><Trans i18nKey="auto.mathmusic.note_ratios_create_harmony_3_2">📝 Note ratios create harmony: 3:2 (fifth), 5:4 (major third).</Trans></p>
           </div>
         </div>
       )}
@@ -100,9 +101,9 @@ export default function MathMusic() {
         <div className="max-w-2xl mx-auto space-y-4">
           <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
             <div className="flex items-center gap-3 mb-4">
-              <label className="text-gray-400 text-sm">Frequency</label>
+              <label className="text-gray-400 text-sm"><Trans i18nKey="auto.mathmusic.frequency">Frequency</Trans></label>
               <input type="range" min="100" max="1000" value={freq} onChange={e => setFreq(Number(e.target.value))} className="flex-1 accent-purple-500" />
-              <span className="text-purple-400 font-bold w-20">{freq} Hz</span>
+              <span className="text-purple-400 font-bold w-20">{freq} <Trans i18nKey="auto.mathmusic.hz">Hz</Trans></span>
             </div>
             <div className="flex gap-2 mb-4">
               {(['sine', 'square', 'sawtooth', 'triangle'] as OscillatorType[]).map(w => (
@@ -114,19 +115,19 @@ export default function MathMusic() {
               <motion.path d={wavePoints} fill="none" stroke="#8b5cf6" strokeWidth="2.5" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 0.5 }} />
             </svg>
             <motion.button className="w-full mt-3 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={() => playTone(freq, 1)}>
-              🔊 Play {freq} Hz {waveType} wave
-            </motion.button>
+              <Trans i18nKey="auto.mathmusic.play">🔊 Play</Trans> {freq} <Trans i18nKey="auto.mathmusic.hz">Hz</Trans> {waveType} <Trans i18nKey="auto.mathmusic.wave">wave</Trans>
+                                      </motion.button>
           </div>
           <div className="bg-purple-500/10 rounded-xl p-3 border border-purple-500/20 text-sm text-purple-300">
-            💡 <strong>Sine</strong> = pure tone. <strong>Square</strong> = hollow/buzzy. <strong>Sawtooth</strong> = bright/harsh. <strong>Triangle</strong> = soft/mellow.
-          </div>
+            💡 <strong><Trans i18nKey="auto.mathmusic.sine">Sine</Trans></strong> <Trans i18nKey="auto.mathmusic.pure_tone">= pure tone.</Trans> <strong><Trans i18nKey="auto.mathmusic.square">Square</Trans></strong> <Trans i18nKey="auto.mathmusic.hollow_buzzy">= hollow/buzzy.</Trans> <strong><Trans i18nKey="auto.mathmusic.sawtooth">Sawtooth</Trans></strong> <Trans i18nKey="auto.mathmusic.bright_harsh">= bright/harsh.</Trans> <strong><Trans i18nKey="auto.mathmusic.triangle">Triangle</Trans></strong> <Trans i18nKey="auto.mathmusic.soft_mellow">= soft/mellow.</Trans>
+                                </div>
         </div>
       )}
 
       {mode === 'intervals' && (
         <div className="max-w-2xl mx-auto space-y-4">
           <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
-            <h4 className="text-white font-bold mb-4">🎼 Musical Intervals as Ratios</h4>
+            <h4 className="text-white font-bold mb-4"><Trans i18nKey="auto.mathmusic.musical_intervals_as_ratios">🎼 Musical Intervals as Ratios</Trans></h4>
             <div className="space-y-3">
               {INTERVALS.map(interval => (
                 <motion.div key={interval.name} className="flex items-center gap-3 bg-white/5 rounded-xl px-4 py-3 border border-white/10 hover:bg-white/10 cursor-pointer"
@@ -134,7 +135,7 @@ export default function MathMusic() {
                   <span className="text-2xl">🎵</span>
                   <div className="flex-1">
                     <p className="text-white font-bold">{interval.name}</p>
-                    <p className="text-gray-400 text-sm">Ratio: {interval.ratio} → {440} Hz + {(440 * interval.value).toFixed(1)} Hz</p>
+                    <p className="text-gray-400 text-sm"><Trans i18nKey="auto.mathmusic.ratio">Ratio:</Trans> {interval.ratio} → {440} <Trans i18nKey="auto.mathmusic.hz">Hz +</Trans> {(440 * interval.value).toFixed(1)} <Trans i18nKey="auto.mathmusic.hz">Hz</Trans></p>
                   </div>
                   <span className="text-purple-400 font-bold font-mono text-lg">{interval.ratio}</span>
                 </motion.div>
@@ -142,7 +143,7 @@ export default function MathMusic() {
             </div>
           </div>
           <div className="bg-white/5 rounded-xl p-4 border border-white/10 text-sm text-gray-300">
-            <p>📝 Click any interval to hear both notes played. Simple ratios like 2:1 and 3:2 sound pleasing (consonant) to our ears.</p>
+            <p><Trans i18nKey="auto.mathmusic.click_any_interval_to_hear_bot">📝 Click any interval to hear both notes played. Simple ratios like 2:1 and 3:2 sound pleasing (consonant) to our ears.</Trans></p>
           </div>
         </div>
       )}

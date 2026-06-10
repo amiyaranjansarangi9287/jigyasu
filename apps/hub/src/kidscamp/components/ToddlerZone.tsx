@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { activities, Activity } from '../data/activities.en';
 import { useLocalizedActivities } from '../../hooks/useLocalizedData';
 import { pillars } from '../data/categories';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 interface ToddlerZoneProps {
   onSelectActivity: (activity: Activity) => void;
@@ -131,8 +131,8 @@ export default function ToddlerZone({
                 >
                   <div className="text-5xl mb-2">{pillar.icon}</div>
                   <div className={`font-bold text-lg ${selectedPillar === pillar.id ? 'text-white' : 'text-gray-900 dark:text-white'}`}>
-                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                    {t(`pillar_${pillar.id}` as any, pillar.name || '')}
+                    <Trans i18nKey="auto.toddlerzone.eslint_disable_next_line_types">// eslint-disable-next-line @typescript-eslint/no-explicit-any</Trans>
+                                              {t(`pillar_${pillar.id}` as any, pillar.name || '')}
                   </div>
                   <div className={`text-sm ${selectedPillar === pillar.id ? 'text-white/80' : 'text-gray-500'}`}>
                     {count} {t('kidscamp.toddler.activities_count', 'activities')}
@@ -226,8 +226,8 @@ export default function ToddlerZone({
                     {/* Info badges */}
                     <div className="flex flex-wrap gap-2 mb-4">
                       <span className="px-3 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-sm font-medium">
-                        Easy
-                      </span>
+                        <Trans i18nKey="auto.toddlerzone.easy">Easy</Trans>
+                                                        </span>
                       <span className="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-sm">
                         ⏱️ {activity.timeToMake}
                       </span>
@@ -236,7 +236,7 @@ export default function ToddlerZone({
                     {/* Parent Help Indicator */}
                     <div className="flex items-center gap-2 text-sm text-purple-600 dark:text-purple-400 mb-4">
                       <span>👨‍👩‍👧</span>
-                      <span>With a grown-up</span>
+                      <span><Trans i18nKey="auto.toddlerzone.with_a_grown_up">With a grown-up</Trans></span>
                     </div>
 
                     {/* Actions */}
@@ -272,14 +272,14 @@ export default function ToddlerZone({
             <div className="text-center py-16">
               <div className="text-6xl mb-4">🔍</div>
               <p className="text-xl text-gray-600 dark:text-gray-300">
-                No activities found for this category!
-              </p>
+                <Trans i18nKey="auto.toddlerzone.no_activities_found_for_this_c">No activities found for this category!</Trans>
+                                            </p>
               <button
                 onClick={() => setSelectedPillar(null)}
                 className="mt-4 px-6 py-3 bg-orange-500 text-white font-bold rounded-full hover:bg-orange-600 transition-colors text-lg"
               >
-                Show All Activities
-              </button>
+                <Trans i18nKey="auto.toddlerzone.show_all_activities">Show All Activities</Trans>
+                                            </button>
             </div>
           )}
         </div>
@@ -288,8 +288,8 @@ export default function ToddlerZone({
       {/* Fun Footer */}
       <footer className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 py-8 text-center text-white">
         <div className="text-4xl mb-2">🌟 🎨 🧸 🔬 🌿</div>
-        <p className="text-xl font-bold">Keep being creative!</p>
-        <p className="text-white/80">Made with ❤️ for little makers</p>
+        <p className="text-xl font-bold"><Trans i18nKey="auto.toddlerzone.keep_being_creative">Keep being creative!</Trans></p>
+        <p className="text-white/80"><Trans i18nKey="auto.toddlerzone.made_with_for_little_makers">Made with ❤️ for little makers</Trans></p>
       </footer>
     </div>
   );

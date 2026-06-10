@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/Fractions.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout/ParentCorner';
@@ -57,8 +57,8 @@ export default function Fractions() {
           <div className="flex items-start gap-3">
             <span className="text-2xl">{t('lab.modules.Fractions.spn_', '🕉️')}</span>
             <div>
-              <h3 className="text-orange-600 font-bold text-sm mb-1">Indian Fraction Heritage</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">Ancient Indians used fractions in the <strong>Sulba Sutras</strong> (800 BCE) for altar construction! Aryabhata worked with fractions of fractions — 1,500 years before European mathematicians formalized fraction arithmetic.</p>
+              <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.fractions.indian_fraction_heritage">Indian Fraction Heritage</Trans></h3>
+              <p className="text-gray-600 text-sm leading-relaxed"><Trans i18nKey="auto.fractions.ancient_indians_used_fractions">Ancient Indians used fractions in the</Trans> <strong><Trans i18nKey="auto.fractions.sulba_sutras">Sulba Sutras</Trans></strong> <Trans i18nKey="auto.fractions.800_bce_for_altar_construction">(800 BCE) for altar construction! Aryabhata worked with fractions of fractions — 1,500 years before European mathematicians formalized fraction arithmetic.</Trans></p>
             </div>
           </div>
         </div>

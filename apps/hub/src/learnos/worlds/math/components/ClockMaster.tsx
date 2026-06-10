@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Trans } from "react-i18next";
 
 function formatTime(totalMinutes: number) {
   const normalized = ((totalMinutes % 720) + 720) % 720;
@@ -58,7 +59,7 @@ export default function ClockMaster() {
   const [minutes, setMinutes] = useState(10 * 60 + 15);
   const [mode, setMode] = useState<'explore' | 'challenge'>('explore');
   const [challenge, setChallenge] = useState(makeClockChallenge);
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [mastery, setMastery] = useState(0);
 
   const hour = Math.floor(minutes / 60) % 12 || 12;
@@ -85,7 +86,7 @@ export default function ClockMaster() {
         setFeedback(null);
       }, 1200);
     } else {
-      setFeedback('wrong');
+      setFeedback('hint');
       setTimeout(() => setFeedback(null), 900);
     }
   };
@@ -93,30 +94,30 @@ export default function ClockMaster() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">⏰ Clock Master</h2>
-        <p className="text-purple-300 text-lg">Tell time, add minutes, and solve elapsed-time puzzles.</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.clockmaster.clock_master">⏰ Clock Master</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.clockmaster.tell_time_add_minutes_and_solv">Tell time, add minutes, and solve elapsed-time puzzles.</Trans></p>
       </div>
 
       <div className="flex justify-center gap-2 mb-6">
-        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'explore' ? 'bg-blue-500/30 text-blue-300 border border-blue-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => setMode('explore')}>🔍 Explore</button>
-        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'challenge' ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => { setMode('challenge'); setChallenge(makeClockChallenge()); }}>🎯 Challenge</button>
+        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'explore' ? 'bg-blue-500/30 text-blue-300 border border-blue-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => setMode('explore')}><Trans i18nKey="auto.clockmaster.explore">🔍 Explore</Trans></button>
+        <button className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === 'challenge' ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => { setMode('challenge'); setChallenge(makeClockChallenge()); }}><Trans i18nKey="auto.clockmaster.challenge">🎯 Challenge</Trans></button>
       </div>
 
       <AnimatePresence mode="wait">
         {mode === 'challenge' ? (
           <motion.div key="challenge" className="max-w-xl mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'wrong' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
+            <div className={`rounded-3xl p-6 border-2 ${feedback === 'correct' ? 'bg-green-500/10 border-green-500/40' : feedback === 'hint' ? 'bg-white/5 border-white/10' : 'bg-white/5 border-white/10'}`}>
               <div className="flex justify-between mb-4">
                 <span className="text-yellow-400 font-bold">⭐ {mastery}</span>
-                <span className="text-gray-400 text-sm">Elapsed time</span>
+                <span className="text-gray-400 text-sm"><Trans i18nKey="auto.clockmaster.elapsed_time">Elapsed time</Trans></span>
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-5">
                 <AnalogClock minutes={challenge.start} />
                 <div className="flex-1 text-center sm:text-left">
-                  <p className="text-gray-400 text-sm">Start time</p>
+                  <p className="text-gray-400 text-sm"><Trans i18nKey="auto.clockmaster.start_time">Start time</Trans></p>
                   <p className="text-4xl font-bold text-white font-mono">{formatTime(challenge.start)}</p>
-                  <p className="text-xl text-purple-300 mt-3">Add <span className="font-bold text-yellow-300">{challenge.elapsed} minutes</span></p>
-                  <p className="text-white font-bold mt-1">What time will it be?</p>
+                  <p className="text-xl text-purple-300 mt-3"><Trans i18nKey="auto.clockmaster.add">Add</Trans> <span className="font-bold text-yellow-300">{challenge.elapsed} <Trans i18nKey="auto.clockmaster.minutes">minutes</Trans></span></p>
+                  <p className="text-white font-bold mt-1"><Trans i18nKey="auto.clockmaster.what_time_will_it_be">What time will it be?</Trans></p>
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-3 mt-5">
@@ -124,8 +125,8 @@ export default function ClockMaster() {
                   <motion.button key={option} className={`py-3 rounded-xl text-xl font-bold font-mono ${feedback === 'correct' && option === challenge.answer ? 'bg-green-500 text-white' : feedback ? 'bg-white/5 text-gray-500' : 'bg-white/10 text-white hover:bg-white/20 border border-white/20'}`} whileHover={!feedback ? { scale: 1.05 } : {}} whileTap={!feedback ? { scale: 0.95 } : {}} onClick={() => answerChallenge(option)} disabled={!!feedback}>{option}</motion.button>
                 ))}
               </div>
-              {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4">✅ Correct! {challenge.answer}</p>}
-              {feedback === 'wrong' && <p className="text-orange-400 font-bold text-center mt-4">Try again.</p>}
+              {feedback === 'correct' && <p className="text-green-400 font-bold text-center mt-4"><Trans i18nKey="auto.clockmaster.correct">✅ Correct!</Trans> {challenge.answer}</p>}
+              {feedback === 'hint' && <p className="text-sky-400 font-bold text-center mt-4"><Trans i18nKey="auto.clockmaster.try_again">Try again.</Trans></p>}
             </div>
           </motion.div>
         ) : (
@@ -139,28 +140,28 @@ export default function ClockMaster() {
 
             <div className="space-y-4">
               <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
-                <h4 className="text-white font-bold mb-3">Time Controls</h4>
+                <h4 className="text-white font-bold mb-3"><Trans i18nKey="auto.clockmaster.time_controls">Time Controls</Trans></h4>
                 <input type="range" min="0" max="719" value={minutes} onChange={(e) => setMinutes(Number(e.target.value))} className="w-full accent-purple-500" />
                 <div className="grid grid-cols-4 gap-2 mt-4">
                   {[-60, -15, -5, 5, 15, 30, 45, 60].map((d) => (
                     <button key={d} className="py-2 rounded-lg bg-white/10 text-white text-sm font-bold hover:bg-white/20" onClick={() => changeTime(d)}>
-                      {d > 0 ? '+' : ''}{d}m
-                    </button>
+                      {d > 0 ? '+' : ''}{d}<Trans i18nKey="auto.clockmaster.m">m</Trans>
+                                              </button>
                   ))}
                 </div>
               </div>
               <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-2xl p-5 border border-blue-500/20">
-                <h4 className="text-white font-bold mb-3">How to read it</h4>
+                <h4 className="text-white font-bold mb-3"><Trans i18nKey="auto.clockmaster.how_to_read_it">How to read it</Trans></h4>
                 <div className="space-y-2 text-sm">
-                  <p className="text-gray-300"><span className="text-orange-400 font-bold">Short orange hand</span> points to the hour.</p>
-                  <p className="text-gray-300"><span className="text-blue-400 font-bold">Long blue hand</span> points to minutes.</p>
-                  <p className="text-gray-300">Each small tick is 1 minute. Each number jump is 5 minutes.</p>
+                  <p className="text-gray-300"><span className="text-sky-400 font-bold"><Trans i18nKey="auto.clockmaster.short_orange_hand">Short orange hand</Trans></span> <Trans i18nKey="auto.clockmaster.points_to_the_hour">points to the hour.</Trans></p>
+                  <p className="text-gray-300"><span className="text-blue-400 font-bold"><Trans i18nKey="auto.clockmaster.long_blue_hand">Long blue hand</Trans></span> <Trans i18nKey="auto.clockmaster.points_to_minutes">points to minutes.</Trans></p>
+                  <p className="text-gray-300"><Trans i18nKey="auto.clockmaster.each_small_tick_is_1_minute_ea">Each small tick is 1 minute. Each number jump is 5 minutes.</Trans></p>
                 </div>
               </div>
               <div className="grid grid-cols-3 gap-2">
                 {[0, 15, 30, 45, 60, 90].map((d) => (
                   <div key={d} className="bg-white/5 rounded-xl p-3 text-center border border-white/10">
-                    <p className="text-gray-500 text-sm">+{d} min</p>
+                    <p className="text-gray-500 text-sm">+{d} <Trans i18nKey="auto.clockmaster.min">min</Trans></p>
                     <p className="text-white font-bold font-mono">{formatTime(minutes + d)}</p>
                   </div>
                 ))}

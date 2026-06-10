@@ -7,6 +7,7 @@ import { EverydayConnection } from '../components/EverydayConnection';
 import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
+import { Trans } from "react-i18next";
 
 export default function FoodChainAdult() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -142,27 +143,27 @@ export default function FoodChainAdult() {
           <div className="space-y-3">
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-slate-300 text-sm leading-relaxed mb-2">
-                Only 10% of energy transfers between levels. A tiger needs
-                to eat 100 deer to get the energy those deer got from 10,000
-                plants. This is why top predators are rare.
-              </p>
+                <Trans i18nKey="auto.foodchainadult.only_10_of_energy_transfers_be">Only 10% of energy transfers between levels. A tiger needs
+                                              to eat 100 deer to get the energy those deer got from 10,000
+                                              plants. This is why top predators are rare.</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Remove one species and cascades happen. When wolves returned
-                to Yellowstone, deer behaviour changed, riverbanks recovered,
-                and the rivers themselves changed course.
-              </p>
+                <Trans i18nKey="auto.foodchainadult.remove_one_species_and_cascade">Remove one species and cascades happen. When wolves returned
+                                              to Yellowstone, deer behaviour changed, riverbanks recovered,
+                                              and the rivers themselves changed course.</Trans>
+                                            </p>
             </div>
 
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-violet-400 text-sm font-bold uppercase tracking-wider mb-2">
-                History of the idea
-              </p>
+                <Trans i18nKey="auto.foodchainadult.history_of_the_idea">History of the idea</Trans>
+                                            </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Charles Elton formalized food chains in 1927. The term
-                "trophic cascade" came later. The Yellowstone wolf
-                reintroduction (1995) became the most dramatic demonstration
-                of how interconnected ecosystems truly are.
-              </p>
+                <Trans i18nKey="auto.foodchainadult.charles_elton_formalized_food_">Charles Elton formalized food chains in 1927. The term
+                                              "trophic cascade" came later. The Yellowstone wolf
+                                              reintroduction (1995) became the most dramatic demonstration
+                                              of how interconnected ecosystems truly are.</Trans>
+                                            </p>
             </div>
           </div>
         </div>

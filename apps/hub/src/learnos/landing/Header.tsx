@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useLearnerStore } from '../store';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 export default function Header() {
   const { language, setLanguage } = useLearnerStore();
@@ -14,7 +14,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
         <a href="/" className="flex items-center gap-2.5" aria-label="Jigyasu home">
           <span className="text-3xl">🦚</span>
-          <span className="font-display text-2xl font-bold text-brand">Jigyasu</span>
+          <span className="font-display text-2xl font-bold text-brand"><Trans i18nKey="auto.header.jigyasu">Jigyasu</Trans></span>
         </a>
 
         <nav className="hidden items-center gap-7 text-sm font-semibold text-slate-600 md:flex" aria-label="Main navigation">

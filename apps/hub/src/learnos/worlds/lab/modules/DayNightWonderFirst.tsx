@@ -1,7 +1,7 @@
 // src/worlds/lab/modules/DayNightWonderFirst.tsx
 import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useLearnerStore } from '@/store';
 import { LearningService } from '@/services';
 import { ParentCorner } from '@/shared/layout';
@@ -36,8 +36,8 @@ function ExplorationComponent() {
       {/* Speed control */}
       <div className="bg-slate-800/50 rounded-2xl p-6 shadow-sm border border-slate-700/50">
         <div className="flex justify-between mb-2">
-          <span className="text-sm text-slate-400">🔄 Speed</span>
-          <span className="text-sm font-medium text-indigo-400">{rotationSpeed.toFixed(1)}x</span>
+          <span className="text-sm text-slate-400"><Trans i18nKey="auto.daynightwonderfirst.speed">🔄 Speed</Trans></span>
+          <span className="text-sm font-medium text-indigo-400">{rotationSpeed.toFixed(1)}<Trans i18nKey="auto.daynightwonderfirst.x">x</Trans></span>
         </div>
         <input 
           type="range" 
@@ -55,7 +55,7 @@ function ExplorationComponent() {
       <div className="bg-gradient-to-br from-slate-800 to-indigo-900 rounded-2xl p-6 shadow-sm border border-slate-700">
         <div className="text-center">
           <div className="text-6xl mb-4">🌍</div>
-          <div className="text-white font-bold text-xl mb-2">Earth Rotating</div>
+          <div className="text-white font-bold text-xl mb-2"><Trans i18nKey="auto.daynightwonderfirst.earth_rotating">Earth Rotating</Trans></div>
           <div className="text-slate-300 text-sm">
             {autoRotate ? 'Earth is spinning on its axis' : 'Rotation paused'}
           </div>
@@ -66,13 +66,13 @@ function ExplorationComponent() {
       <div className="grid grid-cols-2 gap-3">
         <div className="bg-yellow-100 rounded-2xl p-4 text-center">
           <div className="text-3xl mb-2">☀️</div>
-          <div className="font-bold text-yellow-700 text-sm">Day Side</div>
-          <div className="text-xs text-yellow-600 mt-1">Facing the sun</div>
+          <div className="font-bold text-yellow-700 text-sm"><Trans i18nKey="auto.daynightwonderfirst.day_side">Day Side</Trans></div>
+          <div className="text-xs text-yellow-600 mt-1"><Trans i18nKey="auto.daynightwonderfirst.facing_the_sun">Facing the sun</Trans></div>
         </div>
         <div className="bg-indigo-100 rounded-2xl p-4 text-center">
           <div className="text-3xl mb-2">🌙</div>
-          <div className="font-bold text-indigo-700 text-sm">Night Side</div>
-          <div className="text-xs text-indigo-600 mt-1">Facing away</div>
+          <div className="font-bold text-indigo-700 text-sm"><Trans i18nKey="auto.daynightwonderfirst.night_side">Night Side</Trans></div>
+          <div className="text-xs text-indigo-600 mt-1"><Trans i18nKey="auto.daynightwonderfirst.facing_away">Facing away</Trans></div>
         </div>
       </div>
 
@@ -80,13 +80,13 @@ function ExplorationComponent() {
       <div className="bg-blue-50 rounded-2xl p-4 border border-blue-200">
         <h3 className="font-bold text-blue-900 mb-2 flex items-center gap-2">
           <span className="text-xl">👀</span>
-          What do you notice?
-        </h3>
+          <Trans i18nKey="auto.daynightwonderfirst.what_do_you_notice">What do you notice?</Trans>
+                          </h3>
         <ul className="text-slate-700 text-sm space-y-2">
-          <li>• What happens as Earth rotates?</li>
-          <li>• How long does it take for one full rotation?</li>
-          <li>• Why do we have day and night?</li>
-          <li>• What would happen if Earth stopped rotating?</li>
+          <li><Trans i18nKey="auto.daynightwonderfirst.what_happens_as_earth_rotates">• What happens as Earth rotates?</Trans></li>
+          <li><Trans i18nKey="auto.daynightwonderfirst.how_long_does_it_take_for_one_">• How long does it take for one full rotation?</Trans></li>
+          <li><Trans i18nKey="auto.daynightwonderfirst.why_do_we_have_day_and_night">• Why do we have day and night?</Trans></li>
+          <li><Trans i18nKey="auto.daynightwonderfirst.what_would_happen_if_earth_sto">• What would happen if Earth stopped rotating?</Trans></li>
         </ul>
       </div>
     </div>

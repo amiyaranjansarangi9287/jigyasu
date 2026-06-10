@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useMathFeedback } from '../lib/MathContext';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import WhatsNext from './shared/WhatsNext';
 import { useFormatNumber } from '../../../../hooks/useFormatNumber';
 
@@ -73,7 +73,7 @@ export default function NumberCrunchGame() {
   const [streak, setStreak] = useState(0);
   const [bestStreak, setBestStreak] = useState(0);
   const [question, setQuestion] = useState<Question | null>(null);
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+  const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [difficulty, setDifficulty] = useState(1);
   const [totalAnswered, setTotalAnswered] = useState(0);
   const [totalCorrect, setTotalCorrect] = useState(0);
@@ -125,7 +125,7 @@ export default function NumberCrunchGame() {
       spawnParticles(e.clientX, e.clientY);
       setTimeout(() => nextQuestion(), 600);
     } else {
-      setFeedback('wrong');
+      setFeedback('hint');
       math.wrong('number-crunch');
       setStreak(0);
       setCombo(1);
@@ -145,8 +145,8 @@ export default function NumberCrunchGame() {
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">🧠 Number Exploration</h2>
-        <p className="text-purple-300 text-lg">Take your time and explore number patterns!</p>
+        <h2 className="text-3xl font-bold text-white mb-2"><Trans i18nKey="auto.numbercrunchgame.number_exploration">🧠 Number Exploration</Trans></h2>
+        <p className="text-purple-300 text-lg"><Trans i18nKey="auto.numbercrunchgame.take_your_time_and_explore_num">Take your time and explore number patterns!</Trans></p>
       </div>
 
       {/* Floating Particles */}
@@ -184,10 +184,10 @@ export default function NumberCrunchGame() {
               >
                 🧠
               </motion.div>
-              <h3 className="text-2xl font-bold text-white mb-2">Ready to explore?</h3>
+              <h3 className="text-2xl font-bold text-white mb-2"><Trans i18nKey="auto.numbercrunchgame.ready_to_explore">Ready to explore?</Trans></h3>
               <p className="text-gray-400 mb-6">
-                Take your time to deeply understand numbers.<br />Build streaks to level up! 🌱
-              </p>
+                <Trans i18nKey="auto.numbercrunchgame.take_your_time_to_deeply_under">Take your time to deeply understand numbers.</Trans><br /><Trans i18nKey="auto.numbercrunchgame.build_streaks_to_level_up">Build streaks to level up! 🌱</Trans>
+                                            </p>
               <div className="space-y-3 text-left text-sm text-gray-400 mb-6 bg-white/5 rounded-xl p-4">
                 <p dangerouslySetInnerHTML={{ __html: '🌱 <span className="text-white">Patience</span> ➝ No timers. Think deeply.' }} />
                 <p dangerouslySetInnerHTML={{ __html: '✨ <span className="text-white">Streaks</span> ➝ Consistent understanding multiplier' }} />
@@ -199,8 +199,8 @@ export default function NumberCrunchGame() {
                 whileTap={{ scale: 0.97 }}
                 onClick={startGame}
               >
-                🚀 Begin Journey
-              </motion.button>
+                <Trans i18nKey="auto.numbercrunchgame.begin_journey">🚀 Begin Journey</Trans>
+                                            </motion.button>
             </div>
           </motion.div>
         )}
@@ -218,16 +218,16 @@ export default function NumberCrunchGame() {
             <div className="flex justify-between items-center mb-8 bg-white/5 rounded-2xl p-4 border border-white/10 backdrop-blur-sm">
               <div className="flex items-center gap-4">
                 <div className="bg-purple-500/20 px-4 py-2 rounded-xl border border-purple-500/30">
-                  <span className="text-gray-400 text-sm uppercase font-bold tracking-wider block mb-1">Mastery</span>
+                  <span className="text-gray-400 text-sm uppercase font-bold tracking-wider block mb-1"><Trans i18nKey="auto.numbercrunchgame.mastery">Mastery</Trans></span>
                   <div className="text-2xl font-bold text-white">
                     🌟 {formatNumber(mastery)}
                   </div>
                 </div>
                 <div className="bg-pink-500/20 px-4 py-2 rounded-xl border border-pink-500/30">
-                  <span className="text-gray-400 text-sm uppercase font-bold tracking-wider block mb-1">Streak</span>
+                  <span className="text-gray-400 text-sm uppercase font-bold tracking-wider block mb-1"><Trans i18nKey="auto.numbercrunchgame.streak">Streak</Trans></span>
                   <div className="text-2xl font-bold text-white flex items-center gap-2">
                     🔥 {formatNumber(streak)} 
-                    {combo > 1 && <span className="text-sm bg-pink-500 text-white px-2 py-0.5 rounded-lg">x{formatNumber(combo)}</span>}
+                    {combo > 1 && <span className="text-sm bg-pink-500 text-white px-2 py-0.5 rounded-lg"><Trans i18nKey="auto.numbercrunchgame.x">x</Trans>{formatNumber(combo)}</span>}
                   </div>
                 </div>
               </div>
@@ -246,7 +246,7 @@ export default function NumberCrunchGame() {
               className={`max-w-md mx-auto rounded-3xl p-8 text-center border-2 transition-colors ${
                 feedback === 'correct'
                   ? 'bg-green-500/10 border-green-500/50'
-                  : feedback === 'wrong'
+                  : feedback === 'hint'
                   ? 'bg-white/5 border-white/10'
                   : 'bg-white/5 border-white/10'
               }`}
@@ -270,7 +270,7 @@ export default function NumberCrunchGame() {
                     className={`py-4 rounded-xl text-xl font-bold transition-all ${
                       feedback !== null && option === question.answer
                         ? 'bg-green-500 text-white ring-4 ring-green-400/50'
-                        : feedback === 'wrong' && option !== question.answer
+                        : feedback === 'hint' && option !== question.answer
                         ? 'bg-white/5 text-gray-500'
                         : 'bg-white/10 text-white hover:bg-white/20 border border-white/20 hover:border-white/40 active:scale-95'
                     }`}
@@ -293,9 +293,9 @@ export default function NumberCrunchGame() {
                   ✨ {t('math_modules.NumberCrunchGame.correct', 'Correct!')}
                 </motion.p>
               )}
-              {feedback === 'wrong' && (
+              {feedback === 'hint' && (
                 <motion.p
-                  className="mt-4 text-orange-400 font-bold"
+                  className="mt-4 text-sky-400 font-bold"
                   initial={{ x: -10 }}
                   animate={{ x: [10, -10, 5, 0] }}
                 >
