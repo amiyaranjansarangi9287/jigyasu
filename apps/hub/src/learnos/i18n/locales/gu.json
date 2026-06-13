@@ -2901,7 +2901,8 @@
       "reflect": "પ્રતિબિંબિત કરવા માટે ટેપ કરો",
       "save_thought": "આ વિચાર સાચવો",
       "saved": "તમારા ટાઈમ કેપ્સ્યુલમાં સાચવેલ",
-      "write_thinking": "તમારા વિચારો અહીં લખો - કોઈ સાચો જવાબ નથી..."
+      "write_thinking": "તમારા વિચારો અહીં લખો - કોઈ સાચો જવાબ નથી...",
+      "hide": "છુપાવો"
     },
     "lumo": {
       "sharing": "આ રસપ્રદ લાગે છે",
@@ -5346,7 +5347,8 @@
     "teachmemode": {
       "max_is_listening": "મેક્સ સાંભળી રહ્યો છે",
       "you_answered": "તમે જવાબ આપ્યો.",
-      "of_max_s_questions": "મેક્સના પ્રશ્નો!"
+      "of_max_s_questions": "મેક્સના પ્રશ્નો!",
+      "write_your_explanation_here": "તમારો ખુલાસો અહીં લખો..."
     },
     "timecapsule": {
       "capsule": "કેપ્સ્યુલ",
@@ -5357,7 +5359,8 @@
       "280_characters": "/ 280 અક્ષરો",
       "your_thoughts_on": "તમારા વિચારો",
       "are_safe": "સલામત છે.",
-      "about": "વિશેઃ"
+      "about": "વિશેઃ",
+      "what_do_you_know_about_this_co": "તમે આ ખ્યાલ વિશે શું જાણો છો?"
     },
     "wondergarden": {
       "plants": "છોડ",
@@ -5368,7 +5371,8 @@
       "features_in_development_for_fu": "* સંપૂર્ણ પ્રક્ષેપણ માટે વિકાસમાં સુવિધાઓ"
     },
     "header": {
-      "jigyasu": "જિગ્યાસુ"
+      "jigyasu": "જિગ્યાસુ",
+      "ai_explorers": "AI સંશોધકો"
     },
     "howitworks": {
       "step": "પગલું"
@@ -5381,7 +5385,8 @@
       "sound": "અવાજ.",
       "high_contrast_mode": "ઉચ્ચ કોન્ટ્રાસ્ટ સ્થિતિ",
       "dyslexia_friendly_font": "ડિસ્લેક્સીયા-મૈત્રીપૂર્ણ ફોન્ટ",
-      "exit_to_family_home": "ફેમિલી હોમમાંથી બહાર નીકળો"
+      "exit_to_family_home": "ફેમિલી હોમમાંથી બહાર નીકળો",
+      "hold_3_seconds_for_parent_opti": "પેરેન્ટ વિકલ્પો માટે 3 સેકન્ડ હોલ્ડ કરો"
     },
     "academyreport": {
       "100": "/ 100",
@@ -5390,12 +5395,19 @@
       "exam_readiness": "પરીક્ષાની તૈયારી",
       "depth_breakdown": "ઊંડાઈનું ભંગાણ",
       "not_started": "શરૂ થયું નથી",
-      "back_to_academy": "એકેડેમી પર પાછા ફરો"
+      "back_to_academy": "એકેડેમી પર પાછા ફરો",
+      "depth_surface": "સપાટી",
+      "depth_mechanism": "મિકેનિઝમ",
+      "depth_principle": "સિદ્ધાંત",
+      "depth_frontier": "સરહદ"
     },
     "academyshell": {
       "academy": "કોલેજ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |",
       "help": "મદદ કરો",
-      "tap_to_return": "પરત કરવા માટે ટેપ કરો"
+      "tap_to_return": "પરત કરવા માટે ટેપ કરો",
+      "exam": "પરીક્ષા",
+      "explore": "અન્વેષણ કરો",
+      "the_beauty": "ગણિતની સુંદરતા"
     },
     "peerchallenge": {
       "challenge_mode": "ચેલેન્જ મોડ",
@@ -5406,7 +5418,8 @@
       "no_challenges_yet": "હજુ સુધી કોઈ પડકારો નથી.",
       "done": "વાય પૂર્ણ થયું",
       "mark_as_complete": "પૂર્ણ તરીકે ચિહ્નિત કરો →",
-      "phase_2_send_challenges_to_cla": "તબક્કો 2: સહપાઠીઓને પડકારો મોકલો."
+      "phase_2_send_challenges_to_cla": "તબક્કો 2: સહપાઠીઓને પડકારો મોકલો.",
+      "write_your_challenge_question": "તમારો પડકારનો પ્રશ્ન લખો..."
     },
     "conceptbridge": {
       "connects_the_dots": "બિંદુઓને જોડે છે"
@@ -5422,7 +5435,11 @@
       "connections": "જોડાણો",
       "the_measure_of_intelligence_is": "\"બુદ્ધિનું માપ એ બદલવાની ક્ષમતા છે\".",
       "lumo": "- લુમો",
-      "return_to_constellation": "નક્ષત્ર પર પાછા ફરો"
+      "return_to_constellation": "નક્ષત્ર પર પાછા ફરો",
+      "level_aware": "જાગૃત રહો.",
+      "level_understand": "સમજો.",
+      "level_apply": "અરજી કરો",
+      "level_connect": "કનેક્ટ કરો"
     },
     "discoveryshell": {
       "map": "| નકશો | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |",
@@ -5434,7 +5451,19 @@
     "earlysessionsummary": {
       "minutes_of_adventure": "મિનિટ ઓફ એડવેન્ચર!",
       "what_a_wonderful_adventure_tod": "\"આજે કેવું અદ્ભુત સાહસ! કાલે પાછા આવો!\"",
-      "see_you_next_time": "આગલી વખતે મળીશું!"
+      "see_you_next_time": "આગલી વખતે મળીશું!",
+      "stories": "વાર્તાઓ",
+      "problems": "સમસ્યાઓ",
+      "letters": "પત્રો",
+      "recipes": "વાનગીઓ",
+      "patterns": "પેટર્ન",
+      "sentences": "વાક્યો",
+      "stages": "તબક્કાઓ",
+      "water_cycle": "જળ ચક્ર",
+      "habitats": "વસવાટો",
+      "shadows": "પડછાયાઓ",
+      "magnets": "ચુંબક",
+      "purchases": "ખરીદીઓ"
     },
     "pipadventuremap": {
       "pip_s_adventure_map": "પિપનો સાહસિક નકશો"
@@ -5452,7 +5481,17 @@
       "follow_up": "ફોલો-અપ",
       "final_answer": "અંતિમ જવાબ →",
       "try_again": "ફરી પ્રયાસ કરો",
-      "back": "પાછા"
+      "back": "પાછા",
+      "type_your_explanation": "તમારું સમજૂતી લખો...",
+      "good_explanation": "સારું સમજૂતી!",
+      "reasonable_start": "Â વાજબી શરૂઆત.",
+      "think_carefully": "ધ્યાનથી વિચારો...",
+      "excellent": "વાય ઉત્તમ!",
+      "good_effort": "Â સારો પ્રયાસ.",
+      "expert_earned": "નિષ્ણાતની કમાણી!",
+      "scientist_level": "વૈજ્ઞાનિક સ્તર",
+      "you_can_explain_this_clearly": "તમે આને સ્પષ્ટ રીતે સમજાવી શકો છો. તે નિપુણતા છે.",
+      "keep_practicing": "પ્રેક્ટિસ કરતા રહો-સમજાવવું સરળ બને છે."
     },
     "labhome": {
       "no_experiments_found": "કોઈ પ્રયોગો મળ્યા નથી",
@@ -5468,14 +5507,18 @@
       "minutes": "મિનિટો",
       "certifications": "પ્રમાણપત્રો",
       "every_experiment_taught_you_so": "\"દરેક પ્રયોગે તમને કંઈક શીખવ્યું. તે વિજ્ઞાન છે\".",
-      "back_to_lab": "લેબ પર પાછા જાઓ"
+      "back_to_lab": "લેબ પર પાછા જાઓ",
+      "cert_explorer": "એક્સપ્લોરર",
+      "cert_scientist": "વૈજ્ઞાનિક ડો.",
+      "cert_expert": "નિષ્ણાત"
     },
     "labshell": {
       "lab": "← પ્રયોગશાળા",
       "great_work_today": "આજે મહાન કાર્ય",
       "you_ve_been_doing_science_for_": "તમે 20 મિનિટથી વિજ્ઞાન કરી રહ્યા છો. તમારું મગજ આરામને પાત્ર છે.",
       "5_more_minutes": "વધુ 5 મિનિટ",
-      "go_to_lab_home": "લેબ હોમ પર જાઓ"
+      "go_to_lab_home": "લેબ હોમ પર જાઓ",
+      "back_to_lab": "લેબ ઝીરો પર પાછા જાઓ"
     },
     "exambridge": {
       "correct": "સાચો",
@@ -6015,7 +6058,12 @@
       "key_events": "મુખ્ય ઘટનાઓ",
       "previous": "અગાઉના",
       "next": "આગળ →",
-      "amazing_facts_about": "ચોંકાવનારી હકીકતો"
+      "amazing_facts_about": "ચોંકાવનારી હકીકતો",
+      "butterfly": "પતંગિયા",
+      "frog": "દેડકો",
+      "dragonfly": "ડ્રેગનફ્લાય",
+      "type_complete": "પૂર્ણ કરો",
+      "type_incomplete": "અપૂર્ણ"
     },
     "microbematch": {
       "microbe_match": "માઇક્રોબે મેચ",
@@ -6190,7 +6238,13 @@
     },
     "economicsimulation": {
       "gdp": "જીડીપીઃ",
-      "inflation": "% · ફુગાવોઃ"
+      "inflation": "% · ફુગાવોઃ",
+      "monsoon": "ચોમાસાની નિષ્ફળતા",
+      "monsoon_note": "ભારતના જી. ડી. પી. માં કૃષિનો હિસ્સો 15 ટકા છે.",
+      "oil": "તેલની કિંમતોમાં વધારો",
+      "oil_note": "ભારત તેના 80 ટકા તેલની આયાત કરે છે.",
+      "tech": "ટેક બૂમ",
+      "tech_note": "ભારતનું આઇટી ક્ષેત્ર ₹20 લાખ કરોડ છે."
     },
     "fermiestimation": {
       "step": "પગલું",
@@ -6223,11 +6277,14 @@
     },
     "speeddistancetime": {
       "speed_monitor": "સ્પીડ મોનિટર",
-      "km_h": "કિમી/કલાક"
+      "km_h": "કિમી/કલાક",
+      "engine_output_speed": "એન્જિન આઉટપુટ/ઝડપ"
     },
     "alphabetforest": {
       "sounds_like": "જેવો સંભળાય છેઃ",
-      "next_letter": "આગામી પત્ર"
+      "next_letter": "આગામી પત્ર",
+      "find": "શોધોઃ",
+      "tap_letter": "અન્વેષણ કરવા માટે એક પત્ર ટેપ કરો!"
     },
     "coincounter": {
       "pip_s_shop": "પીપની દુકાન",
@@ -6255,10 +6312,23 @@
       "check": "વાય ચેક કરો",
       "perfect_change": "સંપૂર્ણ પરિવર્તન!",
       "too_much_remove_some_coins": "ખૂબ! કેટલાક સિક્કા દૂર કરો.",
-      "not_enough_yet_keep_adding_coi": "હજુ પૂરતું નથી-સિક્કા ઉમેરતા રહો."
+      "not_enough_yet_keep_adding_coi": "હજુ પૂરતું નથી-સિક્કા ઉમેરતા રહો.",
+      "pay_now": "હમણાં જ ચૂકવણી કરો!",
+      "add_more_coins": "વધુ સિક્કા ઉમેરો...",
+      "plural_s": "એસ.",
+      "too_many": "ઓહ! તે ઘણા બધા સિક્કા હોઈ શકે છે! યોગ્ય રકમ અજમાવી જુઓ.",
+      "here_is": "અહીં તે છે",
+      "change_excl": "બદલો!",
+      "not_enough": "હજુ પૂરતા સિક્કા નથી! વધુ ઉમેરો.",
+      "what_next": "તમે આગળ શું કરવા માંગો છો?",
+      "count": "ગણતરી કરો",
+      "make_change": "ફેરફાર કરો",
+      "challenge": "પડકાર"
     },
     "habitatheroes": {
-      "test_my_knowledge": "મારા જ્ઞાનનું પરીક્ષણ કરો!"
+      "test_my_knowledge": "મારા જ્ઞાનનું પરીક્ષણ કરો!",
+      "exploring": "અન્વેષણ કરો",
+      "choose_habitat": "નિવાસસ્થાન પસંદ કરો!"
     },
     "magnetexplorer": {
       "objects_left_to_sort": "ક્રમમાં મૂકવા માટે બાકી રહેલા પદાર્થો"
@@ -6266,30 +6336,61 @@
     "minichef": {
       "ingredients": "ઘટકો",
       "add": "ઉમેરો",
-      "of": "ના"
+      "of": "ના",
+      "lets_make": "ચાલો {{નામ}} બનાવીએ! પ્રથમ ઘટક!",
+      "time_to_mix": "તે બધાને એકસાથે ભેળવવાનો સમય છે!",
+      "next_add": "આગળઃ {{નામ}} ની {{રકમ}} {{એકમ}} ઉમેરો!"
     },
     "numberlineadventures": {
       "start_at": "થી શરૂ કરો",
       "jump": "કૂદકો મારવો.",
-      "steps": "પગલાંઓ"
+      "steps": "પગલાંઓ",
+      "forward": "આગળ →",
+      "backward": "← પાછળની બાજુ",
+      "ready_bigger": "ઓહ! તમે મોટી સંખ્યા માટે તૈયાર છો!"
     },
     "patternpatrol": {
       "level": "સ્તર",
-      "3_to_level_up": "/ 3 સ્તર ઊંચું કરવા માટે"
+      "3_to_level_up": "/ 3 સ્તર ઊંચું કરવા માટે",
+      "real_detective": "ઓહ! તમે હવે એક વાસ્તવિક જાસૂસ છો!",
+      "look_at_colours": "રંગો જુઓ... શું પુનરાવર્તન થાય છે?"
     },
     "plantgrowthexplorer": {
-      "stage": "સ્ટેજ"
+      "stage": "સ્ટેજ",
+      "thirsty": "છોડ તરસ્યો છે! વધારે પાણી ઉમેરો!",
+      "more_sun": "તેને વધુ સૂર્યપ્રકાશની જરૂર છે!",
+      "amazing_grew": "અમેઝિંગ! તમે બીજથી ફળ સુધી એક છોડ ઉગાડ્યો!"
     },
     "shadowdetective": {
       "drag_the_torch": "મશાલ ખેંચો!",
-      "solved": "ઉકેલાઈ ગયો"
+      "solved": "ઉકેલાઈ ગયો",
+      "next_challenge": "આગામી શેડો ચેલેન્જ!",
+      "long_left": "પડછાયાને લાંબી બનાવો (ડાબે)",
+      "short": "પડછાયાને ટૂંકી બનાવો",
+      "long_right": "Â છાયા બિંદુને યોગ્ય બનાવો",
+      "gone": "Â છાયાને અદૃશ્ય કરી દો"
     },
     "storybuilder": {
-      "build_a_new_story": "એક નવી વાર્તા બનાવો!"
+      "build_a_new_story": "એક નવી વાર્તા બનાવો!",
+      "ooh": "ઓહ!",
+      "great_choice": "મહાન પસંદગી!",
+      "the": "ધ.",
+      "how_exciting": "કેવું રોમાંચક!",
+      "ready_read": "તૈયાર? ચાલો આપણી વાર્તા વાંચીએ!",
+      "did_follow": "શું તમે વાર્તાને અનુસરી? ચાલો હું તમને કંઈક પૂછું!",
+      "build_new_story": "ચાલો એક નવી વાર્તા બનાવીએ!",
+      "where_live": "ક્યાં કરે છે?",
+      "live_q": "જીવંત?",
+      "what_happened": "શું થયું?",
+      "next": "આગળ →",
+      "finish_story": "વાર્તા પૂરી કરો!",
+      "who_is_the_hero_of_our_story": "આપણી વાર્તાનો નાયક કોણ છે?"
     },
     "watercyclejourney": {
       "what_happens_next": "આગળ શું થાય છે?",
-      "water_cycle_complete": "જળચક્ર પૂર્ણ થયું!"
+      "water_cycle_complete": "જળચક્ર પૂર્ણ થયું!",
+      "next_stage": "આગામી તબક્કો →",
+      "complete_cycle": "ચક્ર પૂર્ણ કરો!"
     },
     "wordscramble": {
       "next_sentence": "આગામી વાક્ય |"
@@ -6312,7 +6413,8 @@
       "the_sun_doesn_t_rise_earth_rot": "સૂર્ય \"ઉગતો\" નથી-પૃથ્વી ફરે છે, તમને સૂર્યપ્રકાશમાં લાવે છે. કોપરનિકની આ આંતરદૃષ્ટિને સ્વીકારવામાં સદીઓ લાગી કારણ કે આપણી અંતઃપ્રેરણા કહે છે કે સૂર્ય ફરે છે.",
       "earth_rotates_once_every_24_ho": "પૃથ્વી દર 24 કલાકમાં એકવાર ફરે છે. ટાઈમ ઝોન અસ્તિત્વ ધરાવે છે કારણ કે જુદા જુદા સ્થળોએ જુદા જુદા સમયે સૂર્યનો સામનો કરવો પડે છે. જેટ લેગ એ તમારું શરીર એક નવી પરિભ્રમણ સ્થિતિને પકડે છે.",
       "history_of_the_idea": "વિચારનો ઇતિહાસ",
-      "aryabhata_in_499_ad_proposed_e": "ઈ. સ. 499માં આર્યભટ્ટએ પૃથ્વીના પરિભ્રમણનો પ્રસ્તાવ મૂક્યો હતો. કોપરનિકસે 1543માં યુરોપમાં આ વિચારને પુનર્જીવિત કર્યો હતો. તેને ટેકો આપવા બદલ ગેલિલિયોને નજરકેદ કરવામાં આવ્યો હતો. આપણો રોજિંદો અનુભવ એક ભ્રમ હોઈ શકે છે તે વિચાર ક્રાંતિકારી હતો."
+      "aryabhata_in_499_ad_proposed_e": "ઈ. સ. 499માં આર્યભટ્ટએ પૃથ્વીના પરિભ્રમણનો પ્રસ્તાવ મૂક્યો હતો. કોપરનિકસે 1543માં યુરોપમાં આ વિચારને પુનર્જીવિત કર્યો હતો. તેને ટેકો આપવા બદલ ગેલિલિયોને નજરકેદ કરવામાં આવ્યો હતો. આપણો રોજિંદો અનુભવ એક ભ્રમ હોઈ શકે છે તે વિચાર ક્રાંતિકારી હતો.",
+      "aryabhata_in_499_ce_proposed_e": "ઈ. સ. 499માં આર્યભટ્ટએ પૃથ્વીના પરિભ્રમણનો પ્રસ્તાવ મૂક્યો હતો. કોપરનિકસે 1543માં યુરોપમાં આ વિચારને પુનર્જીવિત કર્યો હતો. તેને ટેકો આપવા બદલ ગેલિલિયોને નજરકેદ કરવામાં આવ્યો હતો. આપણો રોજિંદો અનુભવ એક ભ્રમ હોઈ શકે છે તે વિચાર ક્રાંતિકારી હતો."
     },
     "dnanatureadult": {
       "the_human_genome_has_3_billion": "માનવ જીનોમમાં 3 અબજ આધાર જોડીઓ હોય છે. જો તમે તેને અક્ષરો તરીકે છાપશો, તો તે 200 ફોન પુસ્તકો ભરી દેશે. તેમ છતાં પ્રોટીન માટે માત્ર 2 ટકા કોડ-બાકીનાને એક સમયે \"જંક ડીએનએ\" કહેવામાં આવતું હતું પરંતુ તે બિલકુલ નકામું નથી.",
@@ -6635,7 +6737,10 @@
     "leverexplorer": {
       "lever_explorer": "લીવર એક્સપ્લોરર",
       "kg": "કિલો",
-      "t": "ટી ="
+      "t": "ટી =",
+      "fulcrum_position": "ફુલક્રમ સ્થિતિ",
+      "left_weight": "ડાબી બાજુનું વજન",
+      "right_weight": "યોગ્ય વજન"
     },
     "lightshadows": {
       "sun_at": "- સૂર્ય",
@@ -6659,7 +6764,10 @@
       "what_happens_to_the_shadow_whe": "જ્યારે તમે સૂર્યને ઊંચો ખસેડો છો ત્યારે પડછાયાનું શું થાય છે?",
       "what_happens_when_you_move_the": "જ્યારે તમે સૂર્યને નીચે (સૂર્યાસ્તની નજીક) ખસેડો છો ત્યારે શું થાય છે?",
       "which_direction_does_the_shado": "સૂર્યની સરખામણીમાં પડછાયો કઈ દિશામાં નિર્દેશ કરે છે?",
-      "why_are_shadows_longer_at_suns": "સૂર્યાસ્ત સમયે પડછાયાઓ બપોર કરતાં શા માટે લાંબા હોય છે?"
+      "why_are_shadows_longer_at_suns": "સૂર્યાસ્ત સમયે પડછાયાઓ બપોર કરતાં શા માટે લાંબા હોય છે?",
+      "noon": "બપોર.",
+      "afternoon": "બપોર પછી",
+      "sunset": "સૂર્યાસ્ત"
     },
     "magnets": {
       "magnet_1": "ચુંબક 1:",
@@ -6927,7 +7035,10 @@
       "what_happens_to_the_particles_": "જ્યારે તમે કણોને ઠંડુ કરો છો ત્યારે તેમનું શું થાય છે?",
       "what_happens_when_you_heat_the": "જ્યારે તમે તેમને ગરમ કરો છો ત્યારે શું થાય છે?",
       "at_what_temperature_does_ice_b": "કયા તાપમાને બરફ પાણી બને છે?",
-      "at_what_temperature_does_water": "પાણી કયા તાપમાને વરાળ બને છે?"
+      "at_what_temperature_does_water": "પાણી કયા તાપમાને વરાળ બને છે?",
+      "label_solid": "સોલીડ",
+      "label_liquid": "LIQUID",
+      "label_gas": "ગેસ"
     },
     "statisticsplayground": {
       "statistics_playground": "આંકડાકીય રમતનું મેદાન"
@@ -6986,7 +7097,13 @@
       "x_dx_x_3": "x2dx = [x3/3] b =",
       "green_rectangles": "લીલા લંબચોરસ",
       "approximate_the_area_under_the": "વળાંક હેઠળના વિસ્તારનો અંદાજ કાઢો.",
-      "more_rectangles_better_approxi": "વધુ લંબચોરસ → વધુ સારો અંદાજ → ઇન્ટિગ્રલ એ ચોક્કસ મર્યાદા છે."
+      "more_rectangles_better_approxi": "વધુ લંબચોરસ → વધુ સારો અંદાજ → ઇન્ટિગ્રલ એ ચોક્કસ મર્યાદા છે.",
+      "limits": "મર્યાદાઓ",
+      "derivatives": "વ્યુત્પન્ન",
+      "integrals": "ઇન્ટિગ્રલ્સ",
+      "positive_slope_function_increasing": "સકારાત્મક ઢોળાવ → કાર્યમાં વધારો",
+      "negative_slope_function_decreasing": "નકારાત્મક ઢોળાવ → કાર્ય ઘટતું જાય છે",
+      "zero_slope_function_flat": "શૂન્ય ઢોળાવ → કાર્ય સપાટ (શક્ય મહત્તમ/લઘુત્તમ)"
     },
     "chessstrategy": {
       "chess_strategy": "ચેસ અને વ્યૂહરચના",
@@ -7002,7 +7119,10 @@
       "possible_paths": "સંભવિત માર્ગો!",
       "q": "ક્યૂ.",
       "correct": "સાચો!",
-      "answer": "જવાબઃ"
+      "answer": "જવાબઃ",
+      "n_queens": "એન-રાણીઓ",
+      "knights_tour": "નાઈટ્સ ટૂર",
+      "counting": "ગણતરી"
     },
     "clockmaster": {
       "clock_master": "ઘડિયાળ માસ્ટર",
@@ -7024,7 +7144,13 @@
       "long_blue_hand": "લાંબો વાદળી હાથ",
       "points_to_minutes": "મિનિટો તરફ નિર્દેશ કરે છે.",
       "each_small_tick_is_1_minute_ea": "દરેક નાની ટિક 1 મિનિટની હોય છે. દરેક નંબર જમ્પ 5 મિનિટનો હોય છે.",
-      "min": "લઘુત્તમ"
+      "min": "લઘુત્તમ",
+      "exact_hour": "ચોક્કસ કલાક",
+      "15_minutes_past": "15 મિનિટનો સમય વીતી ગયો",
+      "30_minutes_past": "30 મિનિટનો સમય વીતી ગયો",
+      "15_minutes_until": "આગામી કલાક સુધી 15 મિનિટ",
+      "past_the_hour": "કલાક વીતી ગયો",
+      "to_the_next_hour": "આગામી કલાક સુધી"
     },
     "codinglogic": {
       "coding_logic": "કોડિંગ અને તર્ક",
@@ -7037,7 +7163,17 @@
       "b": "બી.",
       "a_and_b": "A અને B",
       "correct": "સાચો!",
-      "answer": "જવાબઃ"
+      "answer": "જવાબઃ",
+      "binary": "દ્વિસંગી",
+      "boolean": "બુલિયન",
+      "challenge": "પડકાર",
+      "binary_type": "દ્વિસંગી",
+      "boolean_type": "બુલિયન",
+      "decimal": "દશાંશ",
+      "hexadecimal": "હેક્સાડેસિમલ",
+      "octal": "ઓક્ટલ",
+      "true": "સાચું",
+      "false": "ખોટી વાત"
     },
     "complexnumbers": {
       "complex_numbers": "સી જટિલ સંખ્યાઓ",
@@ -7069,7 +7205,10 @@
       "percentage": "ટકાવારી",
       "quick_conversions": "ઝડપી રૂપાંતરણો",
       "correct": "સાચો!",
-      "answer": "જવાબઃ"
+      "answer": "જવાબઃ",
+      "explore": "અન્વેષણ કરો",
+      "convert": "રૂપાંતર કરો",
+      "challenge": "પડકાર"
     },
     "engineeringmath": {
       "engineering_math": "Â એન્જિનિયરિંગ ગણિત",
@@ -7106,7 +7245,12 @@
       "a": "એ.",
       "cube": "ક્યુબ",
       "all_sides_equal": "(બધી બાજુઓ સમાન =",
-      "cm_uses_the_least_material_for": "સે. મી.) આપેલ વોલ્યુમ માટે સૌથી ઓછી સામગ્રીનો ઉપયોગ કરે છે. શ્રેષ્ઠ બાજુ = વોલ્યુમ. કાર્યક્ષમતા કેવી રીતે બદલાય છે તે જોવા માટે લંબાઈને સમાયોજિત કરવાનો પ્રયાસ કરો!"
+      "cm_uses_the_least_material_for": "સે. મી.) આપેલ વોલ્યુમ માટે સૌથી ઓછી સામગ્રીનો ઉપયોગ કરે છે. શ્રેષ્ઠ બાજુ = વોલ્યુમ. કાર્યક્ષમતા કેવી રીતે બદલાય છે તે જોવા માટે લંબાઈને સમાયોજિત કરવાનો પ્રયાસ કરો!",
+      "bridges": "પુલો",
+      "projectile": "પ્રક્ષેપ્ય",
+      "optimize": "ઓપ્ટિમાઇઝ કરો",
+      "high_stress": "ઉચ્ચ તણાવ! બીમ ઊંચાઈ વધારો અથવા ભાર ઘટાડે છે.",
+      "safe_range": "તણાવને સુરક્ષિત મર્યાદામાં રાખો."
     },
     "exponentspowers": {
       "10": "× 10",
@@ -7128,7 +7272,11 @@
       "to_the_right": "જમણી બાજુએ",
       "writes_numbers_as_a_coefficien": "સંખ્યાઓને 1 અને 10 વચ્ચેના ગુણાંક તરીકે 10 ની ઘાત વડે ગુણાકાર કરીને લખો. ખૂબ મોટી અથવા ખૂબ નાની સંખ્યાઓ માટે ઉપયોગી!",
       "correct": "સાચો!",
-      "answer": "જવાબઃ"
+      "answer": "જવાબઃ",
+      "explore": "અન્વેષણ કરો",
+      "laws": "કાયદાઓ",
+      "sci_notation": "વિજ્ઞાન નોટેશન",
+      "challenge": "પડકાર"
     },
     "fractionpizza": {
       "0": "0 ટકા",
@@ -7173,7 +7321,39 @@
       "area": "વિસ્તાર =",
       "sq_units": "ચોરસ એકમો",
       "perimeter_circumference": "પરિમિતિ/પરિઘ",
-      "units": "એકમો"
+      "units": "એકમો",
+      "angles": "ખૂણાઓ",
+      "explore_calculate": "અન્વેષણ કરો અને ગણતરી કરો",
+      "pythagoras": "પાયથાગોરસ",
+      "a2_b2_c2": "a2 + b2 = c2",
+      "areas": "વિસ્તારો",
+      "shapes_formulas": "આકારો અને સૂત્રો",
+      "zero": "શૂન્ય",
+      "acute": "તીવ્ર.",
+      "right": "બરાબર.",
+      "obtuse": "અવ્યવસ્થિત",
+      "straight": "સીધી રીતે",
+      "reflex": "રીફ્લેક્સ",
+      "shape_your_understanding": "ભૂમિતિ વિશેની તમારી સમજણને આકાર આપો!",
+      "complement": "પૂરક (90°-θ):",
+      "na": "એન/એ",
+      "supplement": "પૂરક (180°-θ):",
+      "acute_ref": "તીવ્રઃ 0° <θ <90°",
+      "right_ref": "જમણેઃ θ = 90°",
+      "obtuse_ref": "અવરોધઃ 90° <θ <180°",
+      "straight_ref": "સીધુંઃ θ = 180°",
+      "reflex_ref": "રીફ્લેક્સઃ 180° <θ <360°",
+      "acute_right_obtuse": "તીવ્ર/જમણી/અસ્પષ્ટ...",
+      "degrees": "ડિગ્રી",
+      "rectangle": "લંબચોરસ",
+      "triangle": "ત્રિકોણ",
+      "circle": "વર્તુળ",
+      "trapezoid": "ટ્રેપઝોઇડ",
+      "radius": "ત્રિજ્યા",
+      "base_b": "બેઝ બી",
+      "length": "લંબાઈ",
+      "width": "પહોળાઈ",
+      "height": "ઊંચાઈ"
     },
     "graphcreator": {
       "graph_creator": "આલેખ નિર્માતા",
@@ -7184,7 +7364,9 @@
       "mean": "મતલબ",
       "max": "મહત્તમ",
       "items": "વસ્તુઓ",
-      "legend": "દંતકથા"
+      "legend": "દંતકથા",
+      "label": "લેબલ",
+      "value": "મૂલ્ય"
     },
     "graphquest": {
       "0": ", 0)",
@@ -7206,7 +7388,16 @@
       "c_shift": "સી (શિફ્ટ)",
       "vertex_at_0": "વર્ટેક્સ (0,",
       "values_table": "મૂલ્યો કોષ્ટક",
-      "x_y": "(x, y)"
+      "x_y": "(x, y)",
+      "line_goes_uphill": "લાઇન ઉપર તરફ જાય છે",
+      "line_goes_downhill": "રેખા નીચે તરફ જાય છે",
+      "horizontal_line": "આડી રેખા",
+      "parabola_opens_upward": "પેરાબોલા ઉપરની તરફ ખુલે છે",
+      "parabola_opens_downward": "પેરાબોલા નીચે તરફ ખુલે છે",
+      "flat_line": "સપાટ રેખા",
+      "narrow_steep": "સાંકડી (ઊભી)",
+      "wide_flat": "વિશાળ (સપાટ)",
+      "standard_width": "પ્રમાણભૂત પહોળાઈ"
     },
     "integersnumberline": {
       "integers_number_line": "પૂર્ણાંકો અને સંખ્યા રેખા",
@@ -7229,7 +7420,10 @@
       "same_signs_positive_different_": "સમાન સંકેતો સકારાત્મક. વિવિધ સંકેતો નકારાત્મક.",
       "example": "ઉદાહરણ તરીકેઃ",
       "number_order": "નંબર ક્રમ",
-      "5_lt_4_lt_lt_0_lt_lt_4_lt_5": "- 5 & lt;-4 & lt;... & lt; 0 & lt;... & lt; 4 & lt; 5"
+      "5_lt_4_lt_lt_0_lt_lt_4_lt_5": "- 5 & lt;-4 & lt;... & lt; 0 & lt;... & lt; 4 & lt; 5",
+      "negative": "નકારાત્મક",
+      "zero": "શૂન્ય",
+      "positive": "હકારાત્મક"
     },
     "logarithmslab": {
       "logarithms_lab": "લઘુગણક પ્રયોગશાળા",
@@ -7247,7 +7441,10 @@
       "what_power": "કઈ શક્તિ છે?",
       "gives": "આપે છે",
       "correct": "સાચો!",
-      "answer": "જવાબઃ"
+      "answer": "જવાબઃ",
+      "explore": "અન્વેષણ કરો",
+      "rules": "નિયમો",
+      "challenge": "પડકાર"
     },
     "logicpuzzles": {
       "logic_puzzles": "તર્ક કોયડાઓ",
@@ -7261,7 +7458,9 @@
       "gray_cells_are_given_you_fill_": "ગ્રે કોષો આપવામાં આવે છે-તમે બાકીના ભરો!",
       "fill_each_row_and_column_with_": "દરેક પંક્તિ અને સ્તંભને 1-3 નંબરોથી ભરો, કોઈ પુનરાવર્તન નહીં.",
       "yellow_labels_show_the_target_": "પીળા લેબલ લક્ષ્ય દર્શાવે છેઃ દા. ત. \"5 +\" નો અર્થ એ છે કે તે જૂથના કોષો 5 માં ઉમેરે છે.",
-      "operations_add_subtract_multip": "ક્રિયાઓઃ + (ઉમેરો),-(બાદબાકી), × (ગુણાકાર)."
+      "operations_add_subtract_multip": "ક્રિયાઓઃ + (ઉમેરો),-(બાદબાકી), × (ગુણાકાર).",
+      "solved": "ઉકેલાઈ ગયો!",
+      "fill_all_cells_with_1_n": "બધા કોષો 1-{{સાઈઝ}} થી ભરો."
     },
     "mathartstudio": {
       "math_art_studio": "ગણિત અને આર્ટ સ્ટુડિયો",
@@ -7277,7 +7476,18 @@
       "1_618_a_golden_rectangle_has_w": "φ ≈ 1.618. એક સુવર્ણ લંબચોરસની પહોળાઈ ± ઊંચાઈ = φ હોય છે. તેને ચોરસમાં વિભાજીત કરવાથી ઘણીવાર કલા અને પ્રકૃતિમાં જોવા મળતા સર્પાકારની રચના થાય છે.",
       "width": "પહોળાઈ",
       "height": "ઊંચાઈ",
-      "width_height": "પહોળાઈ ± ઊંચાઈ"
+      "width_height": "પહોળાઈ ± ઊંચાઈ",
+      "fractals": "ફ્રેક્ટલ્સ",
+      "tessellations": "ટેસેલેશન",
+      "golden_ratio_label": "સુવર્ણ ગુણોત્તર",
+      "recursion_depth": "પુનરાવર્તન ઊંડાઈ",
+      "branch_angle": "શાખા ખૂણો",
+      "trunk_length": "દાંડીની લંબાઈ",
+      "triangles": "ત્રિકોણ",
+      "hexagons": "ષટ્કોણ",
+      "squares": "ચોરસ",
+      "color_cycle": "રંગ ચક્ર",
+      "rectangle_width": "લંબચોરસ પહોળાઈ"
     },
     "mathmusic": {
       "math_music": "ગણિત અને સંગીત",
@@ -7303,7 +7513,10 @@
       "soft_mellow": "= નરમ/મધુર.",
       "musical_intervals_as_ratios": "ગુણોત્તર તરીકે સંગીતનાં અંતરાલો",
       "ratio": "ગુણોત્તરઃ",
-      "click_any_interval_to_hear_bot": "વગાડવામાં આવતા બન્ને સ્વરો સાંભળવા માટે કોઈપણ અંતરાલ પર ક્લિક કરો. 2:1 અને 3:2 જેવા સરળ ગુણોત્તર આપણા કાનને આનંદદાયક (વ્યંજન) લાગે છે."
+      "click_any_interval_to_hear_bot": "વગાડવામાં આવતા બન્ને સ્વરો સાંભળવા માટે કોઈપણ અંતરાલ પર ક્લિક કરો. 2:1 અને 3:2 જેવા સરળ ગુણોત્તર આપણા કાનને આનંદદાયક (વ્યંજન) લાગે છે.",
+      "piano": "પિયાનો",
+      "waveforms": "તરંગરૂપો",
+      "intervals": "અંતરાલ"
     },
     "matholympiad": {
       "math_olympiad": "ગણિત ઓલિમ્પિયાડ",
@@ -7314,7 +7527,8 @@
       "brilliant": "બ્રિલિયન્ટ! +",
       "points": "પોઇંટ્સ",
       "answer": "જવાબ આપોઃ",
-      "check_the_solution": "ઉકેલ તપાસો!"
+      "check_the_solution": "ઉકેલ તપાસો!",
+      "your_answer": "તમારો જવાબ"
     },
     "matrixops": {
       "matrix_operations": "મેટ્રિક્સ ઓપરેશન્સ",
@@ -7330,7 +7544,13 @@
       "a_b": "A × B",
       "multiplies_rows_of_a_by_column": "A ની હરોળને B ની હરોળ વડે ગુણાકાર કરે છે",
       "a": "એ. ટી.",
-      "swaps_rows_and_columns": "પંક્તિઓ અને સ્તંભોની અદલાબદલી કરે છે"
+      "swaps_rows_and_columns": "પંક્તિઓ અને સ્તંભોની અદલાબદલી કરે છે",
+      "matrix_a": "મેટ્રિક્સ એ",
+      "matrix_b": "મેટ્રિક્સ બી",
+      "a_plus_b": "એ + બી",
+      "a_times_b": "A × B",
+      "a_transpose": "એ. ટી. ટ્રાન્સપોઝ",
+      "2a_scalar": "2એ (સ્કેલર)"
     },
     "measurementlab": {
       "measurement_lab": "માપન પ્રયોગશાળા",
@@ -7338,7 +7558,29 @@
       "explore": "અન્વેષણ કરો",
       "challenge": "પડકાર",
       "correct": "સાચો!",
-      "answer": "જવાબઃ"
+      "answer": "જવાબઃ",
+      "length": "લંબાઈ",
+      "weight": "વજન",
+      "volume": "વોલ્યુમ",
+      "millimeters": "મિલીમીટર",
+      "centimeters": "સેન્ટીમીટર",
+      "meters": "મીટર",
+      "kilometers": "કિલોમીટર",
+      "inches": "ઇંચ.",
+      "feet": "પગ.",
+      "yards": "યાર્ડ્સ",
+      "miles": "માઇલ્સ",
+      "milligrams": "મિલીગ્રામ",
+      "grams": "ગ્રામ",
+      "kilograms": "કિલોગ્રામ",
+      "ounces": "ઔંશ.",
+      "pounds": "પાઉન્ડ",
+      "milliliters": "મિલિલીટર",
+      "liters": "લિટર",
+      "cups": "કપ",
+      "pints": "પિન્ટ્સ",
+      "quarts": "ક્વાર્ટ્સ",
+      "gallons": "ગૅલન્સ"
     },
     "memorymatch": {
       "memory_match_magic": "મેમરી મેચ મેજિક",
@@ -7352,7 +7594,18 @@
       "victory": "વિજય મેળવ્યો!",
       "you_matched_all_the_pairs": "તમે બધી જોડીઓ સાથે મેળ ખાતા હતા!",
       "time": "સમય",
-      "play_again": "ફરીથી રમો"
+      "play_again": "ફરીથી રમો",
+      "apprentice": "એપ્રેન્ટિસ",
+      "sorcerer": "જાદુગર",
+      "grand_wizard": "ગ્રાન્ડ વિઝાર્ડ",
+      "classic": "ક્લાસિક",
+      "timed": "Â સમયબદ્ધ",
+      "zen": "ઝેન",
+      "you_won": "તમે જીતી ગયા!",
+      "score": "સ્કોરઃ",
+      "max_combo": "મહત્તમ કોમ્બોઃ",
+      "found_pairs": "મળી આવી છે.",
+      "times_up": "સમય પૂરો થઇ ગયો છે!"
     },
     "mentalmathblitz": {
       "mental_math_mastery": "માનસિક ગણિતમાં નિપુણતા",
@@ -7365,7 +7618,25 @@
       "take_your_time": "તમારો સમય લો",
       "lv": "એલ. વી.",
       "correct": "Â સાચો!",
-      "try_again": "ફરી પ્રયાસ કરો!"
+      "try_again": "ફરી પ્રયાસ કરો!",
+      "bodmas": "BODMAS",
+      "squares_roots": "ચોરસ અને મૂળ",
+      "percentages": "ટકાવારી",
+      "powers": "સત્તાઓ",
+      "mixed": "મિશ્ર",
+      "order_of_operations": "કામગીરીનો ક્રમ",
+      "n2_and_sqrt_n": "એન 2 અને એન",
+      "pct_calculations": "% ગણતરીઓ",
+      "exponents": "પ્રદર્શકો",
+      "all_topics": "બધા વિષયો!",
+      "normal": "સામાન્ય",
+      "hard": "Â હાર્ડ",
+      "extreme": "એક્સ્ટ્રીમ",
+      "category_bodmas": "BODMAS",
+      "category_squares": "સ્ક્વેર",
+      "category_percentages": "વ્યક્તિઓ",
+      "category_powers": "સત્તાઓ",
+      "category_mixed": "મિશ્ર"
     },
     "moneymathmarket": {
       "1": "× (1 +",
@@ -7407,7 +7678,25 @@
       "year": "વર્ષ",
       "correct": "સાચો!",
       "answer": "જવાબઃ $",
-      "skip": "સ્કિપ કરો →"
+      "skip": "સ્કિપ કરો →",
+      "discounts": "ડિસ્કાઉન્ટ",
+      "pct_off_prices": "કિંમતો પર% ડિસ્કાઉન્ટ",
+      "profit_loss": "નફો/નુકસાન",
+      "business_math": "વ્યવસાયનું ગણિત",
+      "interest": "વ્યાજ",
+      "simple_compound": "સરળ અને સંયોજન",
+      "challenge": "પડકાર",
+      "mixed_quiz": "મિશ્ર ક્વિઝ",
+      "profit": "નફો",
+      "loss": "ખોટ.",
+      "q_discount": "એક શર્ટની કિંમત ₹ {{કિંમત}} છે. {{ડિસ્ક}% ની છૂટ પછી તેની કિંમત શું છે?",
+      "type_discount": "Â ડિસ્કાઉન્ટ",
+      "q_profit": "₹ {{cp}} માં ખરીદવામાં આવ્યું, ₹ {{sp}} માં વેચવામાં આવ્યું. નફો કેટલો છે?",
+      "type_profit": "નફો",
+      "q_interest": "{{સમય}} વર્ષ {{સમય _ બહુવચન}} માટે {{દર}}% પર ₹ {{p}} પર સરળ વ્યાજ?",
+      "type_interest": "વ્યાજ",
+      "q_percentage": "₹ {{સંપૂર્ણ}} નો {{pct}}% શું છે?",
+      "type_percentage": "ટકાવારી%"
     },
     "numbercrunchgame": {
       "number_exploration": "નંબર એક્સપ્લોરેશન",
@@ -7418,7 +7707,13 @@
       "begin_journey": "સફરની શરૂઆત",
       "mastery": "નિપુણતા",
       "streak": "સ્ટ્રીક",
-      "x": "x"
+      "x": "x",
+      "patience": "ધીરજ",
+      "no_timers": "ટાઈમરો નહીં. ઊંડાણપૂર્વક વિચારો.",
+      "streaks_label": "સ્ટ્રીક્સ",
+      "consistent_multiplier": "સુસંગત સમજણ ગુણક",
+      "adaptive": "અનુકૂલનશીલ",
+      "gets_harder": "જેમ જેમ તમે વિભાવનાઓમાં નિપુણતા મેળવો છો તેમ તેમ તે વધુ મુશ્કેલ બને છે"
     },
     "numbertheorylab": {
       "number_theory_lab": "સંખ્યા સિદ્ધાંત પ્રયોગશાળા",
@@ -7453,7 +7748,12 @@
       "prime": "પ્રાઇમ",
       "composite": "કોમ્પોઝિટ",
       "there_are": "ત્યાં છે",
-      "primes_between_1_and_100_click": "1 અને 100 વચ્ચેની અવિભાજ્ય સંખ્યાઓ-ચકાસવા માટે કોઈપણ સંખ્યાને ક્લિક કરો"
+      "primes_between_1_and_100_click": "1 અને 100 વચ્ચેની અવિભાજ્ય સંખ્યાઓ-ચકાસવા માટે કોઈપણ સંખ્યાને ક્લિક કરો",
+      "factor_tree": "પરિબળ વૃક્ષ",
+      "gcd_lcm": "જીસીડી અને એલસીએમ",
+      "prime_checker": "મુખ્ય તપાસનાર",
+      "greatest_least_common": "સૌથી મોટું અને સૌથી ઓછું સામાન્ય",
+      "is_it_prime": "શું તે મુખ્ય છે?"
     },
     "patternpuzzle": {
       "pattern_puzzle_quest": "પેટર્ન પઝલ ક્વેસ્ટ",
@@ -7493,7 +7793,11 @@
       "hundreds": "સેંકડો,",
       "tens_and": "દસ, અને",
       "ones": "જેઓને.",
-      "base_10_blocks": "બેઝ-10 બ્લોક"
+      "base_10_blocks": "બેઝ-10 બ્લોક",
+      "label_thousands": "હજારો",
+      "label_hundreds": "સેંકડો",
+      "label_tens": "દસ.",
+      "label_ones": "એક એક."
     },
     "probabilityplayground": {
       "52": "/ 52",
@@ -7530,7 +7834,25 @@
       "p_face": "પી (ચહેરો) =",
       "drawn_cards": "દોરેલા કાર્ડ્સ (",
       "correct": "સાચો!",
-      "answer": "જવાબ આપોઃ"
+      "answer": "જવાબ આપોઃ",
+      "coin_flip": "સિક્કા પલટી નાંખવા",
+      "dice_roll": "ડાઇસ રોલ",
+      "card_draw": "કાર્ડ ડ્રો",
+      "challenge": "પડકાર",
+      "q_heads": "વાજબી સિક્કા પર પી (હેડ)?",
+      "exp_heads": "2 પરિણામોઃ એચ અથવા ટી. પી. = 1/2",
+      "q_six": "પી (રોલિંગ એ 6) એક ડાઈ પર?",
+      "exp_six": "6 પરિણામો, 1 એ 6 છે. પી = 1/6",
+      "q_heart": "ડેકમાંથી પી (હૃદય દોરવું)?",
+      "exp_heart": "52 કાર્ડમાં 13 હૃદય. પી = 13/52 = 1/4",
+      "q_odd": "પી (રોલિંગ ઓડ) ઓન અ ડાઈ?",
+      "exp_odd": "6 માંથી 3 વિષમ સંખ્યાઓ (1,3,5). P = 3/6 = 1/2",
+      "q_at_least_one_head": "પી (2 પલટીઓમાં ઓછામાં ઓછું 1 માથું મેળવવું)?",
+      "exp_at_least_one_head": "HH, HT, TH, TT-3 પાસે હેડ છે. P = 3/4",
+      "q_ace": "ડેકમાંથી પી (એસ દોરવું)?",
+      "exp_ace": "52 કાર્ડમાં 4 એસ. પી. = 4/52 = 1/13",
+      "q_sum_seven": "પી (7 નો રોલિંગ સરવાળો) 2 પાસા સાથે?",
+      "exp_sum_seven": "36 સંયોજનોમાંથી 7 મેળવવાની 6 રીતો. P = 6/36 = 1/6"
     },
     "quadraticsolver": {
       "quadratic_solver": "ક્વાડ્રેટિક સોલ્વર",
@@ -7544,7 +7866,19 @@
       "vertex": "શિરોબિંદુ",
       "quadratic_formula": "ક્વાડ્રેટિક ફોર્મ્યુલા",
       "x_b_b_4ac_2a": "x = (-b ± σ (b2-4ac))/2a",
-      "here_x": "અહીંઃ x = ("
+      "here_x": "અહીંઃ x = (",
+      "discriminant": "ભેદભાવપૂર્ણ",
+      "two_real_roots": "બે વાસ્તવિક મૂળ",
+      "one_repeated_root": "એક પુનરાવર્તિત મૂળ",
+      "no_real_roots": "કોઈ વાસ્તવિક મૂળ નથી",
+      "minimum_point": "લઘુતમ બિંદુ",
+      "maximum_point": "મહત્તમ બિંદુ",
+      "roots": "મૂળિયા",
+      "factorable_with_integer_roots": "પૂર્ણાંક મૂળ સાથે પરિબળ",
+      "use_formula_or_graph": "સૂત્ર અથવા આલેખ વાપરો",
+      "a_coeff": "અ.",
+      "b_coeff": "બી.",
+      "c_coeff": "સી."
     },
     "ratiosproportions": {
       "ratios_proportions": "ગુણોત્તર અને પ્રમાણ",
@@ -7560,7 +7894,10 @@
       "scale_to": "સુધી સ્કેલ કરો",
       "scale_factor": "સ્કેલ પરિબળઃ",
       "correct": "સાચો!",
-      "answer": "જવાબઃ"
+      "answer": "જવાબઃ",
+      "ratio_explorer": "રેશિયો એક્સપ્લોરર",
+      "recipe_scaler": "રેસીપી સ્કેલર",
+      "challenge": "પડકાર"
     },
     "satactpractice": {
       "deep_concepts_practice": "ઊંડા ખ્યાલોની પ્રેક્ટિસ",
@@ -7621,7 +7958,29 @@
       "answer": "જવાબઃ",
       "euler_s_formula": "યુલરનું સૂત્રઃ",
       "v_e_f": "V − E + F =",
-      "always_2_for_simple_polyhedra": "(હંમેશા સરળ પોલિહેડ્રા માટે 2)"
+      "always_2_for_simple_polyhedra": "(હંમેશા સરળ પોલિહેડ્રા માટે 2)",
+      "triangle": "ત્રિકોણ",
+      "square": "ચોરસ",
+      "pentagon": "પેન્ટાગોન",
+      "hexagon": "ષટ્કોણ",
+      "octagon": "અષ્ટકોણ",
+      "circle": "વર્તુળ",
+      "tetrahedron": "ટેટ્રાહેડ્રોન",
+      "cube": "ક્યૂબ",
+      "sphere": "ગોળા",
+      "cylinder": "સિલિન્ડર",
+      "cone": "શંકુ",
+      "how_many_sides": "{{નામ}} ને કેટલી બાજુઓ હોય છે?",
+      "how_many_vertices": "{{નામ}} માં કેટલા શિરોબિંદુઓ હોય છે?",
+      "what_is_this_shape": "આ આકારનું નામ શું છે?",
+      "sides_faces": "બાજુઓ/ચહેરાઓ",
+      "faces": "ચહેરાઓ",
+      "edges": "કિનારીઓ",
+      "sides": "બાજુઓ",
+      "vertices_label": "વર્ટિસીસ",
+      "interior_angle": "આંતરિક ખૂણો",
+      "key_formula": "મુખ્ય સૂત્ર",
+      "dimension": "પરિમાણ"
     },
     "sportsstats": {
       "sports_statistics": "રમતગમતના આંકડા",
@@ -7639,7 +7998,21 @@
       "hits_at_bats": "= હિટ્સ એટ-બેટ્સ.",
       "total_points_games_played_clic": "= કુલ પોઇંટ્સ રમેલી રમતો. વિવિધ આંકડાઓ દ્વારા ખેલાડીઓને ક્રમ આપવા માટે \"સૉર્ટ\" પર ક્લિક કરો!",
       "correct": "સાચો!",
-      "answer": "જવાબઃ"
+      "answer": "જવાબઃ",
+      "batting_avg": "સરેરાશ",
+      "pts_game": "પી. ટી. એસ./મેચ",
+      "goals": "લક્ષ્યાંકો",
+      "chart_avg": "સરેરાશ",
+      "chart_ppg": "મેચ દીઠ પોઇંટ્સ",
+      "chart_goals": "લક્ષ્યાંકો",
+      "q_avg": "{{નેમ}} પાસે {{એટબેટ્સ}} મેચોમાં {{હિટ્સ} પોઈન્ટ હોય છે. સરેરાશ?",
+      "q_ppg": "{{નેમ}} એ {{ગેમ્સપ્લેઇડ}} મેચોમાં {{પોઈન્ટ} મેળવ્યા. મેચ દીઠ પોઈન્ટ?",
+      "q_total": "{{નામ}}: {{ગોલ્સ} લક્ષ્યો, {{આસિસ્ટ્સ} સહાય કરે છે. કુલ યોગદાન?",
+      "q_win": "ટીમ રેકોર્ડઃ {{જીત}} જીત, {{હાર}} હાર. જીતની ટકાવારી?",
+      "type_avg": "સરેરાશ",
+      "type_ppg": "પોઇંટ્સ/મેચ",
+      "type_total": "કુલ",
+      "type_win": "જીત%"
     },
     "statisticslab": {
       "1": "1.",
@@ -7659,7 +8032,25 @@
       "random": "અવ્યવસ્થિત",
       "clear": "સાફ કરો",
       "bar_chart": "બાર ચાર્ટ",
-      "dot_plot": "ડોટ પ્લોટ"
+      "dot_plot": "ડોટ પ્લોટ",
+      "enter_a_number_0_100": "સંખ્યા દાખલ કરો (0-100)",
+      "no_mode": "કોઈ સ્થિતિ નથી",
+      "mean_average": "સરેરાશ (સરેરાશ)",
+      "add_all_numbers": "બધી સંખ્યાઓ ઉમેરો, ગણતરી દ્વારા વિભાજીત કરો",
+      "median_middle": "મધ્ય (મધ્ય)",
+      "middle_value_when_sorted": "જ્યારે સૉર્ટ કરવામાં આવે ત્યારે મધ્યમ મૂલ્ય",
+      "middle_number_when_data_is": "જ્યારે માહિતીનો ઓર્ડર આપવામાં આવે ત્યારે મધ્ય નંબર",
+      "mode_most_common": "સ્થિતિ (સૌથી સામાન્ય)",
+      "none": "કંઈ નહીં",
+      "most_frequent_values": "સૌથી વધુ વારંવાર મૂલ્ય (ઓ)",
+      "number_that_appears_most": "સૌથી વધુ જોવા મળતી સંખ્યા",
+      "range_spread": "શ્રેણી (ફેલાવો)",
+      "difference_between_highest": "ઉચ્ચતમ અને નિમ્નતમ વચ્ચેનો તફાવત",
+      "sum_total": "સરવાળો (કુલ)",
+      "all_numbers_added_together": "બધી સંખ્યાઓ એકસાથે ઉમેરવામાં આવી",
+      "count": "ગણતરી કરો",
+      "number_of_data_points": "ડેટા પોઇન્ટ્સની સંખ્યા",
+      "how_many_numbers_in_the": "સમૂહમાં કેટલી સંખ્યાઓ છે?"
     },
     "systemsofequations": {
       "systems_of_equations": "સમીકરણોની પ્રણાલીઓ",
@@ -7672,7 +8063,10 @@
       "line_1": "રેખા 1",
       "line_2": "પંક્તિ 2",
       "intersection": "આંતરછેદ",
-      "no_unique_solution_lines_are_p": "કોઈ અનન્ય ઉકેલ નથી-રેખાઓ સમાંતર હોય છે."
+      "no_unique_solution_lines_are_p": "કોઈ અનન્ય ઉકેલ નથી-રેખાઓ સમાંતર હોય છે.",
+      "a": "અ.",
+      "b": "બી.",
+      "c": "સી."
     },
     "timestabletrainer": {
       "1": "Â + 1!",
@@ -7702,7 +8096,9 @@
       "sin_90_cos": "sin (90°-θ) = cos (θ)",
       "cos_90_sin": "cos (90°-θ) = sin (θ)",
       "verify_sin": "ચકાસોઃ પાપ 2 (",
-      "special_angles_reference": "વિશેષ ખૂણા સંદર્ભ"
+      "special_angles_reference": "વિશેષ ખૂણા સંદર્ભ",
+      "almost_n_func_n_angle_n_equals_n": "લગભગ! {{ચેલેન્જફંક}} ({{ચેલેન્જએંગલ}} °) = {{સાચું}}",
+      "e_g_1_2_or_sqrt3_2": "દા. ત. 1/2 અથવા π3/2"
     },
     "vectorsarena": {
       "vectors_arena": "વેક્ટર્સ એરેના",
@@ -7718,7 +8114,10 @@
       "a_b": "એ. બી.",
       "a": "|A |",
       "b": "|B |",
-      "angle_between": "વચ્ચેનો ખૂણો"
+      "angle_between": "વચ્ચેનો ખૂણો",
+      "a_label": "એ.",
+      "b_label": "બી.",
+      "a_b_label": "એ + બી"
     },
     "visualizer3d": {
       "r": "આર."
@@ -7735,7 +8134,14 @@
       "v": "વી =",
       "surface_area_formula": "સપાટી વિસ્તાર સૂત્ર",
       "sa": "SA =",
-      "volume_measures_how_much_space": "વોલ્યુમ અંદર કેટલી જગ્યા છે તે માપે છે. સપાટીનો વિસ્તાર કુલ બહારની ત્વચાને માપે છે."
+      "volume_measures_how_much_space": "વોલ્યુમ અંદર કેટલી જગ્યા છે તે માપે છે. સપાટીનો વિસ્તાર કુલ બહારની ત્વચાને માપે છે.",
+      "cube": "ક્યૂબ",
+      "rectangular_prism": "લંબચોરસ પ્રિઝમ",
+      "cylinder": "સિલિન્ડર",
+      "cone": "શંકુ",
+      "sphere": "ગોળા",
+      "height_width": "ઊંચાઈ/પહોળાઈ",
+      "depth": "ઊંડાઈ"
     },
     "wordproblemstories": {
       "word_problem_stories": "શબ્દ સમસ્યા વાર્તાઓ",
@@ -7744,7 +8150,49 @@
       "solution": "ઉકેલ",
       "skip": "સ્કિપ કરો →",
       "great_reading_solving": "Â સરસ વાંચન અને ઉકેલ!",
-      "re_read_the_story_carefully": "વાર્તા કાળજીપૂર્વક ફરીથી વાંચો!"
+      "re_read_the_story_carefully": "વાર્તા કાળજીપૂર્વક ફરીથી વાંચો!",
+      "name_rahul": "રાહુલ",
+      "name_priya": "પ્રિયા",
+      "addition": "ઉમેરો",
+      "subtraction": "બાદબાકી",
+      "multiplication": "ગુણાકાર",
+      "division": "વિભાગ",
+      "multi_step": "બહુવિધ પગલાંઓ",
+      "distance": "અંતર",
+      "perimeter": "પરિમિતિ",
+      "fractions": "અપૂર્ણાંકો",
+      "story_apples": "{{નામ}} એ સવારે {{a}} સફરજન ઉપાડ્યું. બપોરે, તેણે {{b}} વધુ ઉપાડ્યું.",
+      "story_cookies": "એક બેકરીએ {{a}} કૂકીઝ બનાવી. તેઓ બપોરના ભોજન પહેલાં {{b}} કૂકીઝ વેચતા.",
+      "story_oranges": "ખેડૂત પાસે નારંગીની થેલીઓ હોય છે. દરેક થેલીમાં નારંગી હોય છે.",
+      "story_stickers": "{{ટોટલ}} સ્ટીકરો {{કિડ્સ}} બાળકોમાં સમાન રીતે વહેંચવામાં આવે છે.",
+      "story_notebooks": "{{નામ}} દરેક ₹ {{કિંમત}} પર {{qty}} નોટબુક્સ ખરીદે છે. તે ₹ {{પેઇડ}} નોટ સાથે ચૂકવણી કરે છે.",
+      "story_train": "એક ટ્રેન {{સમય}} કલાક માટે {{ઝડપ}} કિમી/કલાકની ઝડપે મુસાફરી કરે છે.",
+      "story_garden": "એક લંબચોરસ બગીચો મીટર લાંબો અને મીટર પહોળો છે.",
+      "story_glasses": "વર્ગમાં {{adjTotal}} વિદ્યાર્થીઓ હોય છે. તેમાંથી 1/{{{અપૂર્ણાંક}} ચશ્મા પહેરે છે.",
+      "q_apples": "{{નામ}} એ કુલ કેટલા સફરજન પસંદ કર્યા?",
+      "q_cookies": "કેટલી કૂકીઝ બાકી છે?",
+      "q_oranges": "કુલ કેટલા નારંગી છે?",
+      "q_stickers": "દરેક બાળકને કેટલા સ્ટીકર મળે છે?",
+      "q_notebooks": "{{નામ}} માં કેટલો ફેરફાર થાય છે?",
+      "q_train": "ટ્રેન કેટલી દૂર જાય છે?",
+      "q_garden": "બગીચાની પરિમિતિ શું છે?",
+      "q_glasses": "કેટલા વિદ્યાર્થીઓ ચશ્મા પહેરે છે?",
+      "hint_apples": "સવાર અને બપોરની રકમ ઉમેરો.",
+      "hint_cookies": "કુલમાંથી વેચવામાં આવેલી કૂકીઝને બાદ કરો.",
+      "hint_oranges": "થેલીની સંખ્યાને થેલી દીઠ નારંગી વડે ગુણાકાર કરો.",
+      "hint_stickers": "કુલ સ્ટીકરોને બાળકોની સંખ્યા દ્વારા વિભાજીત કરો.",
+      "hint_notebooks": "પહેલા કુલ કિંમત શોધોઃ {{qty}} × ₹ {{કિંમત}}.",
+      "hint_train": "અંતર = ઝડપ × સમય",
+      "hint_garden": "પરિમિતિ = 2 × (લંબાઈ + પહોળાઈ)",
+      "hint_glasses": "કુલને {{fraction}} વડે ભાગાકાર કરો.",
+      "sol_apples": "{{a}} + {{b}} = {{ansuples",
+      "sol_cookies": "{{a}}-{{b}} = {{ansair}} કૂકીઝ",
+      "sol_oranges": "{{બેગ્સ}} × {{પ્રતિ}} = {{જવાબ}} નારંગી",
+      "sol_stickers": "{{ટોટલ}} r {{કિડ્સ}} = {{પ્રતિ}} દરેક સ્ટીકરો",
+      "sol_notebooks": "કુલ = {{qty}} × ₹ {{કિંમત}} = ₹ {{કુલ}}. ફેરફાર = ₹ {{ચૂકવેલ}}-₹ {{કુલ}} = ₹ {{જવાબ}",
+      "sol_train": "{{ઝડપ}} × {{સમય}} = {{જવાબ}} કિમી",
+      "sol_garden": "2 × ({{l}} + {{w}}) = 2 × {{સરવાળો} = {{જવાબ}} m",
+      "sol_glasses": "{{adjTotal}} ± {{fraction}} = {{adjAnswer}} વિદ્યાર્થીઓ"
     },
     "atomicstructure": {
       "build_an_atom": "બિલ્ડ-એન-એટમ",
@@ -8193,6 +8641,364 @@
     },
     "worksheetgenerator": {
       "nbsp_nbsp": ":......................................................................................................................................................................................................."
+    },
+    "discovery": {
+      "subjects": {
+        "math": "ગણિત",
+        "biology": "જીવવિજ્ઞાન",
+        "chemistry": "રસાયણશાસ્ત્ર",
+        "physics": "ભૌતિકશાસ્ત્ર",
+        "earth-science": "પૃથ્વી વિજ્ઞાન",
+        "language": "ભાષા",
+        "economics": "અર્થશાસ્ત્ર"
+      }
+    },
+    "pipspeechbubble": {
+      "unmute_pip": "પીપને નિષ્ક્રિય કરો",
+      "mute_pip": "પાઇપને મ્યૂટ કરો",
+      "dismiss_pip": "પીપ કાઢી નાંખો"
+    },
+    "interestlenses": {
+      "always_wondered": "જે બાબતો વિશે હું હંમેશા વિચારતો હતો",
+      "everyday_science": "રોજિંદા જીવન પાછળનું વિજ્ઞાન",
+      "my_children": "મારા બાળકો શું શીખી રહ્યાં છે",
+      "never_understood": "વિષયો જે મને ક્યારેય મળ્યા નથી",
+      "visual_math": "ગણિત દ્રશ્યમાં બનેલું",
+      "history_of_ideas": "મહાન વિચારોનો ઇતિહાસ"
+    },
+    "audiosettings": {
+      "audio_settings": "ઓડિયો સુયોજનો",
+      "voice_not_available": "આ બ્રાઉઝરમાં અવાજ ઉપલબ્ધ નથી"
+    },
+    "learning": {
+      "s786_sound_settings": "ધ્વનિ સુયોજનો",
+      "s787_voice_narration": "અવાજ વર્ણન",
+      "s788_read_stories_aloud": "વાર્તાઓ મોટેથી વાંચો",
+      "s789_sound_effects": "ધ્વનિ અસરો",
+      "s790_button_clicks_and_celebrations": "બટન ક્લિક અને ઉજવણીઓ",
+      "s791_volume": "વોલ્યુમ",
+      "s792_quiet": "શાંત રહો.",
+      "s793_loud": "મોટેથી બોલાય છે.",
+      "s794_every_concept_you_learn_is_a_superpower": "તમે જે દરેક ખ્યાલ શીખો છો તે એક મહાશક્તિ છે!",
+      "s795_pixel_says": "પિક્સેલ કહે છેઃ",
+      "s796_continue_learning": "શીખવાનું ચાલુ રાખો",
+      "s873_this_certifies_that": "આ પ્રમાણિત કરે છે કે",
+      "s874_pledge_progress": "પ્રગતિની પ્રતિજ્ઞા લો",
+      "s875_remember": "યાદ રાખોઃ",
+      "s876_quiz_complete": "ક્વિઝ પૂર્ણ!",
+      "s877_test_your_knowledge": "તમારા જ્ઞાનનું પરીક્ષણ કરો!",
+      "s878_tip": "ટીપઃ",
+      "s879_checklist_progress": "ચેકલિસ્ટ પ્રગતિ",
+      "s880_next_scenario": "આગામી દૃશ્ય",
+      "s881_quiz_complete": "ક્વિઝ પૂર્ણ!",
+      "s882_try_another_category": "બીજી શ્રેણી અજમાવી જુઓ",
+      "s883_original_image": "મૂળ છબી",
+      "s884_pixel_view": "પિક્સેલ દૃશ્ય",
+      "s885_fun_fact": "રસપ્રદ હકીકતઃ",
+      "s886_this_is_computer_vision": "આ કમ્પ્યુટર વિઝન છે!",
+      "s887_next": "આગળ →",
+      "s888_quiz_complete": "ક્વિઝ પૂર્ણ!",
+      "s889_test_your_knowledge": "તમારા જ્ઞાનનું પરીક્ષણ કરો!",
+      "s890_drag_words_to_create_your_own_word_map": "તમારો પોતાનો શબ્દ નકશો બનાવવા માટે શબ્દો ખેંચો!",
+      "s891_drag_words": "શબ્દો ખેંચો",
+      "s892_see_how_words_cluster_by_meaning": "જુઓ શબ્દો અર્થ દ્વારા કેવી રીતે ભેગા થાય છે!",
+      "s893_click_on_any_word": "કોઈપણ શબ્દ પર ક્લિક કરો",
+      "s894_quiz_complete": "ક્વિઝ પૂર્ણ!",
+      "s895_test_your_knowledge": "તમારા જ્ઞાનનું પરીક્ષણ કરો!",
+      "s896_your_prompt": "તમારો પ્રોમ્પ્ટઃ",
+      "s897_key_idea": "મુખ્ય વિચારઃ",
+      "s898_diffusion_models": "પ્રસરણ નમૂનાઓ",
+      "s899_next": "આગળ →",
+      "s900_quiz_complete": "ક્વિઝ પૂર્ણ!",
+      "s901_see_how_llms_predict_the_next_word": "એલ. એલ. એમ. કેવી રીતે આગામી શબ્દની આગાહી કરે છે તે જુઓ!",
+      "s902_choose_a_starting_phrase": "પ્રારંભિક શબ્દસમૂહ પસંદ કરો.",
+      "s903_click_words_to_add_them_here": "શબ્દોને અહીં ઉમેરવા માટે ક્લિક કરો...",
+      "s904_clear": "સાફ કરો",
+      "s905_try_another": "બીજો પ્રયાસ કરો",
+      "s906_next": "આગળ →",
+      "s907_quiz_complete": "ક્વિઝ પૂર્ણ!",
+      "s908_test_your_knowledge": "તમારા જ્ઞાનનું પરીક્ષણ કરો!",
+      "s909_drag_the_sliders_and_watch_how_the_netwo": "સ્લાઈડર ખેંચો અને જુઓ કે નેટવર્ક કેવી પ્રતિક્રિયા આપે છે!",
+      "s910_watch_and_learn": "જુઓ અને શીખો!",
+      "s911_next": "આગળ →",
+      "s912_quiz_complete": "ક્વિઝ પૂર્ણ!",
+      "s913_test_your_knowledge": "તમારા જ્ઞાનનું પરીક્ષણ કરો!",
+      "s914_build_your_own_prompt_by_clicking_blocks": "બ્લોક પર ક્લિક કરીને તમારું પોતાનું પ્રોમ્પ્ટ બનાવો!",
+      "s915_about_what": "વિશે શું?",
+      "s916_for_who": "કોના માટે?",
+      "s917_what_style": "કઈ શૈલી?",
+      "s918_your_prompt": "તમારો પ્રોમ્પ્ટઃ",
+      "s919_prompt_quality": "તાત્કાલિક ગુણવત્તા",
+      "s920_try_it": "અજમાવી જુઓઃ",
+      "s921_vague_prompt": "અસ્પષ્ટ પ્રોમ્પ્ટ",
+      "s922_great_prompt": "ગ્રેટ પ્રોમ્પ્ટ",
+      "s923_pro_tip": "પ્રો ટીપઃ",
+      "s924_next": "આગળ →",
+      "s925_quiz_complete": "ક્વિઝ પૂર્ણ!",
+      "s926_test_your_knowledge": "તમારા જ્ઞાનનું પરીક્ષણ કરો!",
+      "s927_search_the_library_and_see_rag_in_action": "લાઈબ્રેરીમાં શોધો અને ક્રિયામાં આરએજી જુઓ!",
+      "s928_try_a_question": "એક પ્રશ્ન અજમાવી જુઓઃ",
+      "s929_searching_library": "પુસ્તકાલય શોધી રહ્યા છીએ...",
+      "s930_watch_the_magic_happen": "જુઓ ચમત્કાર થાય છે!",
+      "s931_question": "પ્રશ્નકર્તાઃ",
+      "s933_what_you_learned": "તમે શું શીખ્યાઃ",
+      "s934_retrieve": "પુનઃપ્રાપ્ત કરો",
+      "s935_augment": "વૃદ્ધિ",
+      "s936_generate": "જનરેટ કરો",
+      "s932_youve_seen_rag_in_action": "તમે આરએજીને એક્શનમાં જોયો છે!",
+      "s937_quiz_complete": "ક્વિઝ પૂર્ણ!",
+      "s938_test_your_knowledge": "તમારા જ્ઞાનનું પરીક્ષણ કરો!",
+      "s940_score": "સ્કોર",
+      "s941_moves": "હિલચાલ",
+      "s942_reset": "રીસેટ કરો",
+      "s943_this_is_rl": "આ આરએલ છે!",
+      "s939_youre_the_reward_system_guide_the_robot_": "તમે પુરસ્કાર પ્રણાલી છો! રોબોટને તારો તરફ માર્ગદર્શન આપો.",
+      "s944_agent": "એજન્ટ",
+      "s945_environment": "પર્યાવરણ",
+      "s946_action": "ક્રિયા",
+      "s947_reward": "પુરસ્કાર",
+      "s948_state": "રાજ્ય",
+      "s949_key_insight": "મુખ્ય સમજઃ",
+      "s950_next": "આગળ →",
+      "s951_quiz_complete": "ક્વિઝ પૂર્ણ!",
+      "s952_build_and_explore_attention_patterns": "ધ્યાનની પેટર્ન બનાવો અને તેનું અન્વેષણ કરો!",
+      "s953_choose_a_sentence": "એક વાક્ય પસંદ કરો.",
+      "s954_low_attention": "ઓછું ધ્યાન",
+      "s955_high_attention": "ઉચ્ચ ધ્યાન",
+      "s956_see_how_words_connect_to_each_other": "શબ્દો એકબીજા સાથે કેવી રીતે જોડાય છે તે જુઓ!",
+      "s957_hover_over_words": "શબ્દો પર હોવર કરો",
+      "s958_quiz_complete": "ક્વિઝ પૂર્ણ!",
+      "s959_test_your_knowledge": "તમારા જ્ઞાનનું પરીક્ષણ કરો!",
+      "s801_match_games_shuffle_each_time_play_again": "મેચ રમતો દરેક વખતે બદલાતી રહે છે-નવી જોડીઓ માટે ફરીથી રમો!",
+      "s802_speed_round_has_streak_bonuses_keep_answ": "સ્પીડ રાઉન્ડમાં સ્ટ્રીક બોનસ છે-સાચો જવાબ આપતા રહો!",
+      "s803_moves": "ચાલઃ",
+      "s804_matched": "મેળ ખાતોઃ",
+      "s805_all_matched": "બધા મેળ ખાય છે!",
+      "s806_speed_round": "સ્પીડ રાઉન્ડ!",
+      "s807_answer_true_or_false_as_fast_as_you_can": "શક્ય તેટલી ઝડપથી સાચો કે ખોટો જવાબ આપો.",
+      "s808_game_over": "રમત પૂરી થઇ!",
+      "s809_generate_your_certificate": "તમારું પ્રમાણપત્ર બનાવો!",
+      "s810_start_learning": "શીખવાનું શરૂ કરો →",
+      "s811_close": "બંધ કરો",
+      "s812_this_certifies_that": "આ પ્રમાણિત કરે છે કે",
+      "s813_concepts": "વિભાવનાઓ",
+      "s814_xp_earned": "XP કમાણી કરી",
+      "s815_badges": "બેજેસ",
+      "s816_perfect_quizzes": "પરફેક્ટ ક્વિઝ",
+      "s817_topics_mastered": "વિષયોમાં નિપુણતાઃ",
+      "s818_badges_earned": "કમાણી કરેલ બેજીસઃ",
+      "s819_level": "સ્તરઃ",
+      "s820_completion": "પૂર્ણતાઃ",
+      "s821_date_issued": "જાહેર કરાયેલી તારીખ",
+      "s822_awesome": "અદ્ભુત!",
+      "s823_my_progress": "મારી પ્રગતિ",
+      "s824_current_level": "વર્તમાન સ્તર",
+      "s825_learning_streak": "લર્નિંગ સ્ટ્રીક",
+      "s826_journey_progress": "પ્રવાસની પ્રગતિ",
+      "s827_total_xp": "કુલ XP",
+      "s828_badges_earned": "કમાણી કરેલ બેજેસ",
+      "s829_concepts_completed": "સિદ્ધાંતો પૂર્ણ થયા",
+      "s830_perfect_quizzes": "પરફેક્ટ ક્વિઝ",
+      "s831_not_started": "શરૂ થયું નથી",
+      "s832_complete_concepts_to_earn_badges": "બેજેસ મેળવવા માટે સંપૂર્ણ વિભાવનાઓ!",
+      "s833_start_a_streak": "એક દોર શરૂ કરો!",
+      "s834_weekly_challenges": "સાપ્તાહિક પડકારો",
+      "s835_input": "ઇનપુટ કરો",
+      "s836_hidden": "છુપાયેલું",
+      "s837_output": "આઉટપુટ",
+      "s838_learn": "શીખો.",
+      "s839_reading_millions_of_books": "લાખો પુસ્તકો વાંચો!",
+      "s840_hello": "નમસ્તે.",
+      "s841_i_love_to_eat": "મને ખાવાનું ગમે છે...",
+      "s842_most_likely": "મોટે ભાગે!",
+      "s843_each_square_is_a_pixel": "દરેક ચોરસ એક પિક્સેલ છે!",
+      "s844_looking_at_all_clues_at_once": "એક જ સમયે તમામ સંકેતો જુઓ!",
+      "s845_attention": "ધ્યાન આપો!",
+      "s846_finding_the_right_book_for_you": "તમારા માટે યોગ્ય પુસ્તક શોધો!",
+      "s847_question": "પ્રશ્ન",
+      "s848_retrieve": "પુનઃપ્રાપ્ત કરો",
+      "s849_generate": "જનરેટ કરો",
+      "s850_similar_words_cluster_together": "આવા જ શબ્દો ભેગા થાય છે!",
+      "s851_responsibility": "જવાબદારી",
+      "s852_balance_power_with_responsibility": "સત્તા અને જવાબદારી વચ્ચે સંતુલન રાખો.",
+      "s853_keep_personal_info_private": "વ્યક્તિગત માહિતી ખાનગી રાખો!",
+      "s854_boring_answer": "કંટાળાજનક જવાબ...",
+      "s855_actions_rewards_learning": "ક્રિયાઓ → પુરસ્કારો → શીખવું!",
+      "s856_agent": "એજન્ટ",
+      "s857_action": "ક્રિયા",
+      "s858_reward": "પુરસ્કાર",
+      "s859_state": "રાજ્ય",
+      "s860_find_the_shortest_path": "સૌથી ટૂંકો રસ્તો શોધો!",
+      "s861_noise": "ઘોંઘાટ",
+      "s862_forming": "રચના",
+      "s863_image": "છબી!",
+      "s864_noise_shapes_image": "ઘોંઘાટ → આકારો → છબી!",
+      "s865_diffusion_removes_noise_step_by_step": "પ્રસરણ અવાજને તબક્કાવાર દૂર કરે છે",
+      "s798_your_level": "તમારું સ્તર",
+      "s799_journey_progress": "પ્રવાસની પ્રગતિ",
+      "s800_learning_streak": "લર્નિંગ સ્ટ્રીક",
+      "s866_pixel": "પિક્સેલ",
+      "s867_story_time": "વાર્તા સમય!",
+      "s868_remember": "યાદ રાખોઃ",
+      "s869_back": "પાછા",
+      "s870_next": "આગળ →",
+      "s871_loading": "લોડ કરી રહ્યા છે...",
+      "s872_skip_to_main_content": "મુખ્ય સામગ્રી પર જાઓ",
+      "s513_play_now": "હમણાં રમો",
+      "s052_loading_game": "રમતને લોડ કરી રહ્યા છે...",
+      "s514_catch_powerups_for_special_abilities": "વિશેષ ક્ષમતાઓ માટે પાવર-અપ્સ પકડો!",
+      "s515_new_game": "નવી રમત",
+      "s516_move_history": "ઇતિહાસ ખસેડો",
+      "s517_no_moves_yet": "હજુ સુધી કોઈ હિલચાલ નથી",
+      "s518_new_game": "નવી રમત",
+      "s519_tap_or_press_space_to_start": "પ્રારંભ કરવા માટે જગ્યાને ટેપ કરો અથવા દબાવો!",
+      "s520_keep_going": "આગળ વધતા રહો!",
+      "s521_new_game": "નવી રમત",
+      "s522_new_word": "નવો શબ્દ",
+      "s523_shuffle_puzzle": "પઝલને ફેરબદલ કરો",
+      "s524_new_game": "નવી રમત",
+      "s525_new_game": "નવી રમત",
+      "s526_rally_to_spawn_powerups": "પાવર-અપ્સ પેદા કરવા માટે રેલી!",
+      "s527_recent_times": "તાજેતરના સમય",
+      "s528_shuffle": "ફેરબદલી કરો",
+      "s529_press_arrow_keys_or_tap_start": "તીર કી દબાવો અથવા સ્ટાર્ટ દબાવો!",
+      "s530_pause": "વિરામ લો",
+      "s531_new_puzzle": "નવી કોયડો",
+      "s532_empty": "ખાલી કરો",
+      "s533_new_round": "નવો રાઉન્ડ",
+      "s534_new_puzzle": "નવી કોયડો",
+      "s508_teaching_moment": "શીખવવાની ક્ષણ",
+      "s509_story_quiz": "વાર્તા ક્વિઝ",
+      "s510_check_answer": "જવાબ તપાસો",
+      "s511_previous": "અગાઉના",
+      "s512_next": "આગામી તા.",
+      "s053_heritageworld": "વારસાની દુનિયા",
+      "s054_all_ages": "તમામ ઉંમરના",
+      "s055_back_to_collections": "સંગ્રહો પર પાછા જાઓ",
+      "s056_no_stories_found": "કોઈ વાર્તાઓ મળી નથી",
+      "s057_try_adjusting_your_filters_or_search_ter": "તમારા ગાળકો અથવા શોધ શબ્દોને સમાયોજિત કરવાનો પ્રયાસ કરો"
+    },
+    "completioncelebration": {
+      "congratulations": "Â અભિનંદન! ÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂ",
+      "back_adventures": "બેક ટુ ઓલ એડવેન્ચર્સ",
+      "explore_adventures": "વધુ એડવેન્ચર્સનું અન્વેષણ કરો",
+      "becoming_expert": "તમે AI નિષ્ણાત બની રહ્યા છો!",
+      "pixel_proud": "તમે અદ્ભુત કર્યું! આજે કંઈક નવું શીખવા બદલ મને તમારા પર ખૂબ ગર્વ છે. યાદ રાખો, દરેક નિષ્ણાત એક સમયે શિખાઉ હતો!",
+      "fun_fact": "રમૂજી હકીકતઃ તમે હમણાં જ કંઈક શીખ્યા છો જે ઘણા પુખ્ત વયના લોકો જાણતા નથી!"
+    },
+    "worlds_ai_components_CompletionCelebration": {
+      "you_ve_completed": "તમે પૂર્ણ કર્યું છે"
+    },
+    "worlds_ai_components_concepts_AIEthics_PlayPhase": {
+      "always_verify_ai_s_answers": "હંમેશા AIના જવાબોની ચકાસણી કરો"
+    },
+    "worlds_ai_components_concepts_AISafety_LearnPhase": {
+      "it_s_fake": "તે નકલી છે!"
+    },
+    "worlds_ai_components_concepts_Transformers_ExplorePhase": {
+      "what_you_re_seeing": "તમે શું જોઈ રહ્યાં છોઃ"
+    },
+    "gameshub": {
+      "mini_games": "મિની-ગેમ્સ",
+      "test_your_ai_knowledge": "તમારા AI જ્ઞાનને મનોરંજક રીતે ચકાસો!",
+      "back": "| પાછા ફરી રહ્યા છીએ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |",
+      "tips": "ટીપ્સ"
+    },
+    "worlds_ai_components_games_GamesHub": {
+      "scramble_gives_you_hints___use": "સ્ક્રેમ્બલ તમને સંકેત આપે છે-જો તમે અટવાઇ ગયા હોવ તો તેનો ઉપયોગ કરો!"
+    },
+    "worlds_ai_components_games_SpeedRound": {
+      "time_s_up": "સમય પૂરો થઇ ગયો છે!"
+    },
+    "landingpage": {
+      "ready_explore": "AIનું અન્વેષણ કરવા માટે તૈયાર છો?",
+      "adventures_left": "સાહસો બાકી છે!",
+      "welcome_explorer": "સ્વાગત છે, એક્સપ્લોરર!",
+      "welcome_back": "પાછા આવકાર!",
+      "continue_adventure": "તમારા AI શીખવાનું સાહસ ચાલુ રાખો!",
+      "concepts": "વિભાવનાઓ",
+      "recent_badges": "તાજેતરના બેજેસ",
+      "earned": "કમાણી કરી",
+      "your_journey": "તમારી શીખવાની સફર",
+      "phase_story": "વાર્તા",
+      "desc_listen": "સાંભળો અને શીખો",
+      "phase_discover": "શોધો",
+      "desc_see": "તે કેવી રીતે કાર્ય કરે છે તે જુઓ",
+      "phase_explore": "અન્વેષણ કરો",
+      "desc_try": "જાતે પ્રયાસ કરો",
+      "phase_play": "રમો.",
+      "desc_test": "તમારી કુશળતા તપાસો",
+      "mini_games": "મિની-ગેમ્સ",
+      "mini_games_desc": "મેચ, મૂંઝવણ અને ઝડપ પડકારો!",
+      "choose_adventure": "તમારું પ્રથમ સાહસ પસંદ કરો!",
+      "continue_learning": "શીખવાનું ચાલુ રાખો",
+      "pick_topic": "કોઈપણ વિષય પસંદ કરો જે ઉત્તેજક લાગે!",
+      "adventures_waiting": "સાહસો તમારી રાહ જોઈ રહ્યા છે!",
+      "review": "સમીક્ષા",
+      "start": "Â પ્રારંભ કરો",
+      "footer_message": "તમારો સમય લો, મજા કરો અને યાદ રાખો-પ્રશ્નો પૂછવા એ આપણે કેવી રીતે શીખીએ છીએ!",
+      "ai_master": "તમે AI માસ્ટર છો!",
+      "discover_ai": "AIની અદભૂત દુનિયાને શોધવા માટે તૈયાર? ચાલો સાથે મળીને શીખીએ!"
+    },
+    "worlds_ai_components_story_StoryPlayer": {
+      "let_s_learn_together": "ચાલો સાથે મળીને શીખીએ.",
+      "let_s_learn": "ચાલો શીખીએ!"
+    },
+    "earlyhome": {
+      "adventure_map": "સાહસ નકશો"
+    },
+    "earlyshell": {
+      "back_to_adventure": "એડવેન્ચર એકેડેમી પર પાછા જાઓ"
+    },
+    "breakout": {
+      "title": "બ્રેકઆઉટ",
+      "wide": "વાય વાઈડ",
+      "multi": "બહુવિધ",
+      "laser": "લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર",
+      "slow": "ધીમું",
+      "life": "Â જીવન",
+      "next_level": "Â આગામી સ્તર",
+      "restart": "પુનઃપ્રારંભ કરો",
+      "playing": "રમી રહ્યા છે...",
+      "start": "Â પ્રારંભ કરો",
+      "controls": "ખસેડોઃ માઉસ/ટચ/| સ્પેસ/ક્લિકઃ શૂટ લેસર (જ્યારે સક્રિય હોય ત્યારે)"
+    },
+    "pong": {
+      "title": "પોંગ",
+      "controls_pvp": "પી1: ડબલ્યુ/એસ | પી2:",
+      "controls_ai": "ખસેડવા માટે W/S નો ઉપયોગ કરો",
+      "rematch": "રીમેચ",
+      "playing": "વગાડવું",
+      "start": "Â પ્રારંભ કરો",
+      "footer_pvp": "ખેલાડી 1: ડબલ્યુ/એસ | ખેલાડી 2:",
+      "footer_ai": "ડબલ્યુ/એસ અથવા ટચ કંટ્રોલ્સનો ઉપયોગ કરો",
+      "rally": "સત્તા માટે રેલી!"
+    },
+    "snake": {
+      "classic": "ક્લાસિક",
+      "wrap": "વીંટાળવું",
+      "obstacles": "અવરોધો",
+      "slow": "ધીમું",
+      "normal": "સામાન્ય",
+      "fast": "ઝડપી",
+      "insane": "ની ગાંડપણ"
+    },
+    "tetris": {
+      "lines": "રેખાઓઃ",
+      "lv": "એલ. વી.",
+      "game_over": "રમત પૂરી થઇ!",
+      "score_label": "સ્કોરઃ",
+      "paused": "થોભાવવામાં આવે છે",
+      "hold": "HOLD (C)",
+      "next": "આગામી તા."
+    },
+    "forcelab": {
+      "push_force": "દબાણ બળ",
+      "box_mass": "બોક્સ સમૂહ"
+    },
+    "mathapp": {
+      "adventure_map_complete": "સાહસ નકશો પૂર્ણ! + 5",
+      "experience_points_earned_acros": "તમામ મોડ્યુલોમાં મેળવેલા અનુભવ ગુણ"
     }
   },
   "about": {
@@ -8321,7 +9127,24 @@
         "heading": "દાદા-દાદી જે જોડાવા માંગે છે",
         "body": "તેમના પૌત્ર જેવી જ વિભાવના શીખવી. એપ્લિકેશન દ્વારા તેમને પ્રોત્સાહક સંદેશ મોકલવો. સહિયારી શોધ દ્વારા બંધન બનાવવું."
       }
-    }
+    },
+    "title": "જિગ્યાસુ",
+    "why_we_build_title": "શા માટે આપણે આ બનાવી રહ્યા છીએ?",
+    "mission_title": "અમારું મિશન",
+    "who_it_is_for_title": "જિગ્યાસુ કોના માટે છે?",
+    "values_title": "અમે શું માનીએ છીએ",
+    "differences_title": "અમે શું બનાવ્યું-અને શા માટે",
+    "built_for_india_title": "ભારત માટે બનાવાયું",
+    "sustainability_title": "અમે આને કેવી રીતે ટકાવી રાખવાની યોજના બનાવીએ છીએ",
+    "support_title": "મિશનમાં જોડાઓ",
+    "contact_label": "અમારો સંપર્ક કરો અહીંઃ",
+    "contact_email": "contact@jigyasu.app",
+    "contact_desc": "જ્યારે તમે અમને લખો છો, ત્યારે અમને જાણવું ગમશેઃ",
+    "support_ways_title": "તમે અમને કઈ રીતે ટેકો આપી શકો છોઃ",
+    "closing_tagline": "વન્ડર સ્થાપિત કરો.",
+    "copyright_name": "જિગ્યાસુ",
+    "page_title": "જિગ્યાસુ વિશે-ઇન્સ્ટોલ વન્ડર",
+    "meta_description": "જિજ્ઞાસા એ દરેક ભારતીય બાળક અને પુખ્ત વયના લોકો માટે બનાવવામાં આવેલું એક મફત, દ્રશ્ય, બહુભાષી શિક્ષણ મંચ છે."
   },
   "floating_buttons": {
     "analytics": "એનાલિટિક્સ",
@@ -8640,6 +9463,279 @@
       "date": "તારીખ",
       "score": "સ્કોર",
       "generatedBy": "વિચિત્ર ગણિત કિંગડમ 🧙‍♂️ દ્વારા જનરેટ કરેલ"
+    },
+    "breakout": {
+      "title": "બ્રેકઆઉટ",
+      "wide": "વાય વાઈડ",
+      "multi": "બહુવિધ",
+      "laser": "લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર લેસર",
+      "slow": "ધીમું",
+      "life": "Â જીવન",
+      "next_level": "Â આગામી સ્તર",
+      "restart": "પુનઃપ્રારંભ કરો",
+      "playing": "રમી રહ્યા છે...",
+      "start": "Â પ્રારંભ કરો",
+      "controls": "ખસેડોઃ માઉસ/ટચ/| સ્પેસ/ક્લિકઃ શૂટ લેસર (જ્યારે સક્રિય હોય ત્યારે)"
+    },
+    "pong": {
+      "title": "પોંગ",
+      "controls_pvp": "પી1: ડબલ્યુ/એસ | પી2:",
+      "controls_ai": "ખસેડવા માટે W/S નો ઉપયોગ કરો",
+      "powerup_speed": "ઝડપમાં વધારો",
+      "powerup_big": "મોટી પાંખડી",
+      "powerup_small": "પ્રતિસ્પર્ધીને સંકોચો",
+      "powerup_multi": "મલ્ટી-બોલ",
+      "rematch": "રીમેચ",
+      "playing": "વગાડવું",
+      "start": "Â પ્રારંભ કરો",
+      "footer_pvp": "ખેલાડી 1: ડબલ્યુ/એસ | ખેલાડી 2:",
+      "footer_ai": "ડબલ્યુ/એસ અથવા ટચ કંટ્રોલ્સનો ઉપયોગ કરો",
+      "rally": "સત્તા માટે રેલી!"
+    },
+    "gameshub": {
+      "mini_games": "મિની-ગેમ્સ",
+      "test_your_ai_knowledge": "તમારા AI જ્ઞાનને મનોરંજક રીતે ચકાસો!",
+      "back": "| પાછા ફરી રહ્યા છીએ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |",
+      "match_the_pairs": "જોડીઓને સરખાવો",
+      "match_description": "AI શરતોને તેમની વ્યાખ્યાઓ સાથે સરખાવો!",
+      "word_scramble": "શબ્દ મૂંઝવણ",
+      "scramble_description": "અવ્યવસ્થિત AI શબ્દભંડોળ શબ્દો!",
+      "speed_round": "સ્પીડ રાઉન્ડ",
+      "speed_description": "સાચું કે ખોટું-ઘડિયાળની દોડ કરો!",
+      "easy": "સરળ",
+      "medium": "મધ્યમ",
+      "fast": "ઝડપથી!",
+      "time_2_3": "2-3 મિનિટ",
+      "time_3_5": "3-5 મિનિટ",
+      "time_60": "60 સેકન્ડ",
+      "tips": "ટીપ્સ"
+    },
+    "certificationbadge": {
+      "explorer": "એક્સપ્લોરર",
+      "scientist": "વૈજ્ઞાનિક ડો.",
+      "expert": "નિષ્ણાત"
+    },
+    "snake": {
+      "classic": "ક્લાસિક",
+      "wrap": "વીંટાળવું",
+      "obstacles": "અવરોધો",
+      "slow": "ધીમું",
+      "normal": "સામાન્ય",
+      "fast": "ઝડપી",
+      "insane": "ની ગાંડપણ",
+      "skin_green": "ક્લાસિક ગ્રીન",
+      "skin_blue": "મહાસાગર વાદળી",
+      "skin_rainbow": "મેઘધનુષ",
+      "skin_fire": "આગની જ્વાળાઓ"
+    },
+    "memorymatch": {
+      "theme_emoji": "Â ઇમોજી",
+      "theme_animals": "પ્રાણીઓ",
+      "theme_food": "ખોરાક",
+      "theme_nature": "પ્રકૃતિ",
+      "diff_easy": "સરળ",
+      "diff_medium": "મધ્યમ",
+      "diff_hard": "અઘરું",
+      "classic": "ક્લાસિક",
+      "timed": "Â સમયબદ્ધ",
+      "zen": "ઝેન",
+      "moves": "ચાલ",
+      "you_won": "તમે જીતી ગયા!",
+      "score": "સ્કોરઃ",
+      "max_combo": "મહત્તમ કોમ્બોઃ",
+      "times_up": "સમય પૂરો થઇ ગયો છે!",
+      "found_pairs": "મળી આવી છે.",
+      "pairs": "જોડી"
+    },
+    "tetris": {
+      "lines": "રેખાઓઃ",
+      "lv": "એલ. વી.",
+      "game_over": "રમત પૂરી થઇ!",
+      "score_label": "સ્કોરઃ",
+      "paused": "થોભાવવામાં આવે છે",
+      "hold": "HOLD (C)",
+      "next": "આગામી તા."
+    },
+    "header": {
+      "ai_explorers": "AI સંશોધકો"
+    },
+    "audiosettings": {
+      "audio_settings": "ઓડિયો સુયોજનો",
+      "voice_not_available": "આ બ્રાઉઝરમાં અવાજ ઉપલબ્ધ નથી"
+    },
+    "mathapp": {
+      "adventure_map_complete": "સાહસ નકશો પૂર્ણ! + 5",
+      "experience_points_earned_acros": "તમામ મોડ્યુલોમાં મેળવેલા અનુભવ ગુણ"
+    },
+    "advancedhub": {
+      "algebra": "બીજગણિત",
+      "geometry": "ભૂમિતિ",
+      "graphs": "આલેખ",
+      "trig": "ટ્રિગ",
+      "decimals": "દશાંશ",
+      "vectors": "વેક્ટર",
+      "matrices": "મેટ્રિક્સ",
+      "logs": "લોગ્સ",
+      "series": "શ્રેણીબદ્ધ",
+      "complex": "કોમ્પ્લેક્સ",
+      "calculus": "ગણતરી",
+      "statistics": "આંકડા",
+      "probability": "સંભાવના",
+      "money": "પૈસા",
+      "mental": "માનસિક",
+      "theory": "સિદ્ધાંત",
+      "sat_act": "SAT/ACT",
+      "olympiad": "ઓલિમ્પિયાડ",
+      "core_math": "કોર ગણિત",
+      "higher_math": "ઉચ્ચ ગણિત",
+      "data_applied": "ડેટા એન્ડ એપ્લાઇડ",
+      "test_prep": "ટેસ્ટ તૈયારી"
+    },
+    "earlyshell": {
+      "back_to_adventure": "એડવેન્ચર એકેડેમી પર પાછા જાઓ"
+    },
+    "earlyhome": {
+      "adventure_map": "સાહસ નકશો"
+    },
+    "explorershub": {
+      "place_value": "મૂલ્ય મૂકો",
+      "clock": "ઘડિયાળ",
+      "measurement": "માપન",
+      "coins": "સિક્કાઓ",
+      "shapes": "આકારો",
+      "word_problems": "શબ્દોની સમસ્યાઓ",
+      "ratios": "ગુણોત્તર",
+      "integers": "પૂર્ણાંકો",
+      "graph_creator": "આલેખ નિર્માતા",
+      "exponents": "પ્રદર્શકો",
+      "3d_volume": "3D વોલ્યુમ",
+      "quadratics": "ચતુર્ભુજ",
+      "systems": "સિસ્ટમો",
+      "coding": "કોડિંગ",
+      "math_art": "ગણિત કલા",
+      "music": "સંગીત",
+      "chess": "ચેસ",
+      "logic": "તર્કશાસ્ત્ર",
+      "sports": "રમતગમત",
+      "engineering": "ઇજનેરી",
+      "elementary": "પ્રાથમિક",
+      "middle_school": "મધ્યમ શાળા",
+      "high_school": "ઉચ્ચ શાળા",
+      "applied": "લાગુ કરાયેલ"
+    },
+    "completioncelebration": {
+      "congratulations": "Â અભિનંદન! ÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂ",
+      "becoming_expert": "તમે AI નિષ્ણાત બની રહ્યા છો!",
+      "pixel_proud": "તમે અદ્ભુત કર્યું! આજે કંઈક નવું શીખવા બદલ મને તમારા પર ખૂબ ગર્વ છે. યાદ રાખો, દરેક નિષ્ણાત એક સમયે શિખાઉ હતો!",
+      "back_adventures": "બેક ટુ ઓલ એડવેન્ચર્સ",
+      "explore_adventures": "વધુ એડવેન્ચર્સનું અન્વેષણ કરો",
+      "fun_fact": "રમૂજી હકીકતઃ તમે હમણાં જ કંઈક શીખ્યા છો જે ઘણા પુખ્ત વયના લોકો જાણતા નથી!"
+    },
+    "phaseindicator": {
+      "story": "વાર્તા",
+      "learn": "શીખો.",
+      "explore": "અન્વેષણ કરો",
+      "play": "રમો."
+    },
+    "landingpage": {
+      "ready_explore": "AIનું અન્વેષણ કરવા માટે તૈયાર છો?",
+      "ai_master": "તમે AI માસ્ટર છો!",
+      "adventures_left": "સાહસો બાકી છે!",
+      "welcome_explorer": "સ્વાગત છે, એક્સપ્લોરર!",
+      "welcome_back": "પાછા આવકાર!",
+      "discover_ai": "AIની અદભૂત દુનિયાને શોધવા માટે તૈયાર? ચાલો સાથે મળીને શીખીએ!",
+      "continue_adventure": "તમારા AI શીખવાનું સાહસ ચાલુ રાખો!",
+      "concepts": "વિભાવનાઓ",
+      "recent_badges": "તાજેતરના બેજેસ",
+      "earned": "કમાણી કરી",
+      "your_journey": "તમારી શીખવાની સફર",
+      "phase_story": "વાર્તા",
+      "desc_listen": "સાંભળો અને શીખો",
+      "phase_discover": "શોધો",
+      "desc_see": "તે કેવી રીતે કાર્ય કરે છે તે જુઓ",
+      "phase_explore": "અન્વેષણ કરો",
+      "desc_try": "જાતે પ્રયાસ કરો",
+      "phase_play": "રમો.",
+      "desc_test": "તમારી કુશળતા તપાસો",
+      "mini_games": "મિની-ગેમ્સ",
+      "mini_games_desc": "મેચ, મૂંઝવણ અને ઝડપ પડકારો!",
+      "choose_adventure": "તમારું પ્રથમ સાહસ પસંદ કરો!",
+      "continue_learning": "શીખવાનું ચાલુ રાખો",
+      "pick_topic": "કોઈપણ વિષય પસંદ કરો જે ઉત્તેજક લાગે!",
+      "adventures_waiting": "સાહસો તમારી રાહ જોઈ રહ્યા છે!",
+      "review": "સમીક્ષા",
+      "start": "Â પ્રારંભ કરો",
+      "expert_beginner": "\"દરેક નિષ્ણાત એક સમયે શિખાઉ માણસ હતો!\"",
+      "footer_message": "તમારો સમય લો, મજા કરો અને યાદ રાખો-પ્રશ્નો પૂછવા એ આપણે કેવી રીતે શીખીએ છીએ!"
     }
-  }
+  },
+  "loading": "લોડ કરી રહ્યા છે...",
+  "opening_maker_space": "મેકર સ્પેસ ખોલવું...",
+  "opening_learning_paths": "શીખવાના માર્ગો ખોલવા...",
+  "skip_to_main_content": "મુખ્ય સામગ્રી પર જાઓ",
+  "contact": {
+    "page_title": "અમારો સંપર્ક કરો-જિગ્યાસુ",
+    "meta_description": "જિગ્યાસુની ટીમનો સંપર્ક કરો. અમે તમારી પાસેથી સાંભળવા માંગીએ છીએ.",
+    "title": "અમારો સંપર્ક કરો",
+    "body": "શું તમારી પાસે પ્રશ્નો, પ્રતિક્રિયાઓ છે અથવા તમે જિગ્યાસુને ટેકો આપવા માંગો છો? મહેરબાની કરીને અમારું સંપર્ક ફોર્મ ભરો અને અમે શક્ય તેટલી વહેલી તકે તમારી પાસે પાછા આવીશું.",
+    "form_url": "https://forms.zohopublic.in/arsjobs2019gm1/form/JigyasuFeedbackSupport/formperma/WLidd2lYcJF7F35E8PvPQVfaBL8OMgCC9yMcSokcQCc",
+    "open_form_aria": "નવા ટૅબમાં સંપર્ક ફોર્મ ખોલો",
+    "open_form": "સંપર્ક ફોર્મ ખોલો",
+    "email_us": "અમને સીધો ઇમેઇલ કરો",
+    "heading": "અમે તમારી પાસેથી સાંભળવા માંગીએ છીએ"
+  },
+  "error": {
+    "title": "અરેરે! કંઇક ખોટું થયું છે.",
+    "try_again": "ફરી પ્રયાસ કરો",
+    "go_home": "ઘરે જાઓ",
+    "technical_details": "તકનીકી વિગતો (વિકાસકર્તાઓ માટે)",
+    "subtitle": "ચિંતા ન કરો, તમારી પ્રગતિ સુરક્ષિત છે!",
+    "help_text": "ચાલો ફરીથી પ્રયાસ કરીએ અથવા વધુ મનોરંજક પ્રવૃત્તિઓનું અન્વેષણ કરવા માટે પાછા જઈએ."
+  },
+  "heritage_world": "વારસાની દુનિયા",
+  "heritage_world_desc": "ભારતીય પરંપરાઓમાંથી શાણપણ, હિંમત અને પ્રેમની વાર્તાઓ-ગીતા, રામાયણ, સંતો અને ઓડિશાની લોકકથાઓ.",
+  "go_to_heritage_world": "હેરિટેજવર્લ્ડ \\u2192 નું અન્વેષણ કરો",
+  "gita_stories": "ગીતાની દંતકથાઓ",
+  "gita_stories_desc": "ભગવદ ગીતાનું જ્ઞાન શીખવતી સચિત્ર વાર્તાઓ.",
+  "ramayana_stories": "રામાયણની વાર્તાઓ",
+  "ramayana_stories_desc": "ભગવાન રામની મહાકાવ્ય યાત્રા દ્વારા નૈતિક મૂલ્યો.",
+  "indian_saints": "ભારતીય સંતો",
+  "indian_saints_desc": "ભારતના મહાન સંતોની ડહાપણ અને હિંમતની વાર્તાઓ.",
+  "ai_world": "AI સંશોધકો",
+  "ai_world_desc": "ઇન્ટરેક્ટિવ વાર્તાઓ, રમતો અને પડકારો દ્વારા AI કેવી રીતે કાર્ય કરે છે તે શોધો. ન્યુરલ નેટવર્ક્સ, LLMs, કમ્પ્યુટર વિઝન અને વધુ વિશે જાણો!",
+  "go_to_ai_world": "AI વર્લ્ડ \\u2192 નું અન્વેષણ કરો",
+  "neural_networks": "ન્યુરલ નેટવર્ક્સ",
+  "neural_networks_desc": "AI મગજ તમારી જેમ કેવી રીતે શીખે છે.",
+  "llm_world": "ભાષા નમૂનાઓ",
+  "llm_world_desc": "ચેટજીપીટી અને મિત્રો લખાણને કેવી રીતે સમજે છે.",
+  "ai_games": "AI ગેમ્સ",
+  "ai_games_desc": "મેળ ખાતી રમતો, શબ્દ મૂંઝવણ અને સ્પીડ રાઉન્ડ રમો.",
+  "game_hub": "રમતનું કેન્દ્ર",
+  "game_hub_desc": "બાળકો અને પરિવારો માટે 20 + મનોરંજક અને મગજની તાલીમ આપતી રમતો! ચેસ, સાપ, ટેટ્રિસ, સુડોકુ, મેમરી મેચ અને વધુ.",
+  "go_to_game_hub": "રમતો રમો \\u2192",
+  "strategy_games": "વ્યૂહરચના",
+  "strategy_games_desc": "ચેસ, કનેક્ટ ફોર અને ટિક-ટેક-ટો.",
+  "puzzle_games": "કોયડાઓ",
+  "puzzle_games_desc": "સુડોકુ, 2048, જીગ્સૉ, મેમરી મેચ.",
+  "arcade_games": "આર્કેડ",
+  "arcade_games_desc": "સાપ, ટેટ્રિસ, પોંગ, બ્રેકઆઉટ, ડિનો રન.",
+  "what_youll_read": "તમે શું વાંચશોઃ",
+  "what_youll_learn": "તમે શું શીખશોઃ",
+  "what_youll_play": "તમે શું રમશોઃ",
+  "privacy": {
+    "page_title": "ગોપનીયતા નીતિ-જિગ્યાસુ",
+    "meta_description": "જિગ્યાસુ ગોપનીયતા નીતિ. અમે તમારી ગોપનીયતાનું રક્ષણ કરવા અને સુરક્ષિત શૈક્ષણિક વાતાવરણ સુનિશ્ચિત કરવા માટે પ્રતિબદ્ધ છીએ."
+  },
+  "profile": {
+    "meta_description": "તમારી જિજ્ઞાસા શીખવાની રૂપરેખા, પ્રગતિ અને સેટિંગ્સ."
+  },
+  "terms": {
+    "page_title": "સેવાની શરતો-જિગ્યાસુ",
+    "meta_description": "જિગ્યાસુની સેવાની શરતો. મહેરબાની કરીને અમારા પ્લેટફોર્મનો ઉપયોગ કરતા પહેલા આ શરતોને કાળજીપૂર્વક વાંચો."
+  },
+  "terms_general_contact": "સામાન્ય પૂછપરછ માટેઃ contact@jigyasu.app",
+  "app_name": "જિગ્યાસુ",
+  "app_version": "v1.0.0",
+  "xp_label": "એક્સ. પી.",
+  "txt_Zerowasinv": "એક સંખ્યા તરીકે શૂન્યની વિભાવના ભારતમાં વિકસાવવામાં આવી હતી, જેમાં બ્રહ્મગુપ્ત (ઇ. સ. 628) એ શૂન્ય સાથે અંકગણિત માટે પ્રથમ ઔપચારિક નિયમો પૂરા પાડ્યા હતા. દશાંશ સ્થાન-મૂલ્ય પ્રણાલી, જેમાં શૂન્યનો સમાવેશ થાય છે, કાર્યક્ષમ ગણતરીને સક્ષમ કરે છે અને તે આધુનિક ગણિત અને ગણતરી માટે પાયાની છે."
 }

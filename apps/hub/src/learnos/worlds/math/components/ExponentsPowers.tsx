@@ -1,6 +1,7 @@
 import { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 function toSup(n: number): string {
   const m: Record<string, string> = { '0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴', '5': '⁵', '6': '⁶', '7': '⁷', '8': '⁸', '9': '⁹', '-': '⁻' };
@@ -21,6 +22,7 @@ function makeChallenge() {
 }
 
 export default function ExponentsPowers() {
+  const { t } = useTranslation();
   const [base, setBase] = useState(2);
   const [exp, setExp] = useState(3);
   const [mode, setMode] = useState<'explore' | 'laws' | 'scientific' | 'challenge'>('explore');
@@ -58,10 +60,10 @@ export default function ExponentsPowers() {
 
       <div className="flex flex-wrap justify-center gap-2 mb-6">
         {([
-          { id: 'explore' as const, emoji: '🔍', label: 'Explore' },
-          { id: 'laws' as const, emoji: '📜', label: 'Laws' },
-          { id: 'scientific' as const, emoji: '🔬', label: 'Sci Notation' },
-          { id: 'challenge' as const, emoji: '🎯', label: 'Challenge' },
+          { id: 'explore' as const, emoji: '🔍', label: t('auto.exponentspowers.explore', 'Explore') },
+          { id: 'laws' as const, emoji: '📜', label: t('auto.exponentspowers.laws', 'Laws') },
+          { id: 'scientific' as const, emoji: '🔬', label: t('auto.exponentspowers.sci_notation', 'Sci Notation') },
+          { id: 'challenge' as const, emoji: '🎯', label: t('auto.exponentspowers.challenge', 'Challenge') },
         ]).map(m => (
           <button key={m.id} className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === m.id ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`}
             onClick={() => { setMode(m.id); if (m.id === 'challenge') setChallenge(makeChallenge()); }}>{m.emoji} {m.label}</button>

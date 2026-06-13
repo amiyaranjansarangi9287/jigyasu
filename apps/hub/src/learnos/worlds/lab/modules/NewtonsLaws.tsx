@@ -150,8 +150,8 @@ export default function NewtonsLaws() {
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.newtonslaws.ancient_indian_physics">Ancient Indian Physics</Trans></h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                <Trans i18nKey="auto.newtonslaws.kanada_600_bce_described_motio">Kanada (~600 BCE) described motion laws in Vaisheshika sutras — 2,000 years before
-                                              Newton! He classified motion into 5 types and described how force causes change in
+                <Trans i18nKey="auto.newtonslaws.kanada_600_bce_described_motio">Kanada (traditionally dated around 600 BCE) described motion laws in the Vaisheshika sutras.
+                                              He classified motion into 5 types and described how force causes change in
                                               motion. The concept of</Trans> <strong><Trans i18nKey="auto.newtonslaws.vega">Vega</Trans></strong> <Trans i18nKey="auto.newtonslaws.velocity_and">(velocity) and</Trans> <strong><Trans i18nKey="auto.newtonslaws.prayatna">Prayatna</Trans></strong>
                 <Trans i18nKey="auto.newtonslaws.effort_force_matches_newton_s_">(effort/force) matches Newton's framework.</Trans>
                                             </p>

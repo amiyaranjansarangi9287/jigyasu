@@ -49,7 +49,7 @@ export default function DayNight() {
             <span className="text-2xl">{t('lab.modules.DayNight.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-400 font-bold text-sm mb-1"><Trans i18nKey="auto.daynight.ancient_indian_astronomy">Ancient Indian Astronomy</Trans></h3>
-              <p className="text-gray-300 text-sm leading-relaxed">{t('lab.modules.DayNight.txt_Aryabhata4', 'Aryabhata (499 CE) correctly explained day/night as Earth\'s rotation — 1,000 years before Galileo! He calculated Earth\'s circumference at 24,835 miles (actual: 24,901).')}</p>
+              <p className="text-gray-300 text-sm leading-relaxed">{t('lab.modules.DayNight.txt_Aryabhata4', 'Aryabhata (499 CE) correctly explained day/night as Earth\'s rotation — an insight that predated its widespread acceptance in Europe by centuries. He calculated Earth\'s circumference with remarkable accuracy (about 39,968 km vs. the actual ~40,075 km).')}</p>
             </div>
           </div>
         </div>

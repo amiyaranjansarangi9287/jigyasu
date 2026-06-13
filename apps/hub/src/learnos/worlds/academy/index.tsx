@@ -4,6 +4,7 @@ import { Suspense, lazy } from 'react';
 import { LoadingScreen } from '@/shared/ui';
 import AcademyHome from './AcademyHome';
 import withWonderFirst from '../../core/modules/withWonderFirst';
+import { useTranslation } from 'react-i18next';
 
 const TrigonometryCircle = lazy(async () => { const m = await import('./modules/TrigonometryCircle'); return { default: withWonderFirst(m.default, 'academy', 'trigonometry') }; });
 const ProjectileMotion = lazy(async () => { const m = await import('./modules/ProjectileMotion'); return { default: withWonderFirst(m.default, 'academy', 'projectile-motion') }; });
@@ -19,6 +20,7 @@ const TrigIdentities = lazy(async () => { const m = await import('./modules/Trig
 const ClimateSystems = lazy(async () => { const m = await import('./modules/ClimateSystems'); return { default: withWonderFirst(m.default, 'academy', 'climate-systems') }; });
 
 export default function AcademyWorld() {
+  const { t } = useTranslation();
   return (
     <Suspense fallback={<LoadingScreen />}>
       <Routes>

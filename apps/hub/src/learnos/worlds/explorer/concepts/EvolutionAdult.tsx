@@ -8,8 +8,10 @@ import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 export default function EvolutionAdult() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const lumo = useLumoPeer();
@@ -106,7 +108,7 @@ export default function EvolutionAdult() {
       ctx.font = '11px sans-serif';
       ctx.textAlign = 'center';
       ctx.fillText('Humans share DNA with:', w / 2, 25);
-      ctx.fillText('🐵 98% Chimps  |  🍌 60% Bananas  |  🪰 40% Flies', w / 2, 42);
+      ctx.fillText('🐵 98% Chimps  |  🍌 ~60% Genes with Bananas  |  🪰 40% Flies', w / 2, 42);
 
       // Generation label
       ctx.fillStyle = '#8B5CF6';
@@ -163,9 +165,9 @@ export default function EvolutionAdult() {
                                               not descendants.</Trans>
                                             </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                <Trans i18nKey="auto.evolutionadult.the_60_dna_shared_with_bananas">The 60% DNA shared with bananas represents the core
+                <Trans i18nKey="auto.evolutionadult.the_60_dna_shared_with_bananas">The ~60% of protein-coding genes shared with bananas represents the core
                                               machinery of life — cell division, energy production —
-                                              that hasn't changed in billions of years.</Trans>
+                                              that hasn't changed in billions of years. Total DNA similarity is much lower.</Trans>
                                             </p>
             </div>
 

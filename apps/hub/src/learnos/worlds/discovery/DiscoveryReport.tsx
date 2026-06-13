@@ -3,11 +3,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useDiscoveryReport } from './hooks/useDiscoveryReport';
 import { DISCOVERY_MODULES } from './data/discoveryContent';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 interface Props { visible: boolean; onClose: () => void; }
 const MC = { aware: '#6366F1', understand: '#8B5CF6', apply: '#06B6D4', connect: '#F59E0B' };
 
 export default function DiscoveryReport({ visible, onClose }: Props) {
+  const { t } = useTranslation();
   const { generateReport, getMastery } = useDiscoveryReport();
   const report = generateReport();
 
@@ -23,7 +25,7 @@ export default function DiscoveryReport({ visible, onClose }: Props) {
             <div className="p-5 space-y-4">
               <div className="grid grid-cols-4 gap-2">{(['aware','understand','apply','connect'] as const).map(l => {
                 const c = l === 'aware' ? report.modulesAware : l === 'understand' ? report.modulesUnderstood : l === 'apply' ? report.modulesApplied : report.modulesConnected;
-                return <div key={l} className="bg-slate-800 rounded-xl p-3 text-center"><div className="text-xl font-bold" style={{ color: MC[l] }}>{c}</div><div className="text-slate-500 text-sm capitalize">{l}</div></div>;
+                return <div key={l} className="bg-slate-800 rounded-xl p-3 text-center"><div className="text-xl font-bold" style={{ color: MC[l] }}>{c}</div><div className="text-slate-500 text-sm">{t(`auto.discoveryreport.level_${l}`, l.charAt(0).toUpperCase() + l.slice(1))}</div></div>;
               })}</div>
               <div className="bg-gradient-to-r from-indigo-900/50 to-purple-900/50 rounded-2xl p-4 border border-indigo-700/30 flex items-center justify-between">
                 <div><p className="text-indigo-400 text-sm font-bold uppercase"><Trans i18nKey="auto.discoveryreport.wonder_score">Wonder Score</Trans></p><p className="text-white text-sm mt-1">{report.rabbitHoles} <Trans i18nKey="auto.discoveryreport.rabbit_holes">rabbit holes ·</Trans> {report.connectionsFound} <Trans i18nKey="auto.discoveryreport.connections">connections</Trans></p></div>

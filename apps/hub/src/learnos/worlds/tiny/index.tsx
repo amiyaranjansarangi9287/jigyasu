@@ -12,6 +12,7 @@ import WeatherMakerModule from './modules/WeatherMaker';
 import FarmFriendsModule from './modules/FarmFriends';
 import DayAndNightModule from './modules/DayAndNight';
 import withWonderFirst from '../../core/modules/withWonderFirst';
+import { useTranslation } from 'react-i18next';
 
 const TapWorld = withWonderFirst(TapWorldModule, 'tiny', 'tap-world');
 const ColorMixer = withWonderFirst(ColorMixerModule, 'tiny', 'color-mixer');
@@ -23,6 +24,7 @@ const FarmFriends = withWonderFirst(FarmFriendsModule, 'tiny', 'farm-friends');
 const DayAndNight = withWonderFirst(DayAndNightModule, 'tiny', 'day-and-night');
 
 export default function TinyWorld() {
+  const { t } = useTranslation();
   return (
     <Routes>
       <Route index element={<TinyHome />} />

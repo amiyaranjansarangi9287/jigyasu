@@ -1,20 +1,21 @@
 import { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 interface Coin { name: string; value: number; emoji: string; color: string }
 
 const COINS: Coin[] = [
-  { name: 'Penny', value: 1, emoji: '🟤', color: 'from-amber-700 to-amber-900' },
-  { name: 'Nickel', value: 5, emoji: '⚪', color: 'from-gray-400 to-gray-600' },
-  { name: 'Dime', value: 10, emoji: '🪙', color: 'from-gray-300 to-gray-500' },
-  { name: 'Quarter', value: 25, emoji: '🥇', color: 'from-yellow-300 to-yellow-600' },
-  { name: 'Half Dollar', value: 50, emoji: '🏅', color: 'from-yellow-400 to-amber-600' },
-  { name: 'Dollar', value: 100, emoji: '💵', color: 'from-green-400 to-green-600' },
+  { name: '1 Paisa', value: 1, emoji: '🟤', color: 'from-amber-700 to-amber-900' },
+  { name: '5 Paise', value: 5, emoji: '⚪', color: 'from-gray-400 to-gray-600' },
+  { name: '10 Paise', value: 10, emoji: '🪙', color: 'from-gray-300 to-gray-500' },
+  { name: '25 Paise', value: 25, emoji: '🥇', color: 'from-yellow-300 to-yellow-600' },
+  { name: '50 Paise', value: 50, emoji: '🏅', color: 'from-yellow-400 to-amber-600' },
+  { name: '1 Rupee', value: 100, emoji: '💵', color: 'from-green-400 to-green-600' },
 ];
 
-function makeChange(amountCents: number): Record<number, number> {
-  let rem = amountCents;
+function makeChange(amountPaise: number): Record<number, number> {
+  let rem = amountPaise;
   const result: Record<number, number> = {};
   for (const c of [...COINS].reverse()) {
     const count = Math.floor(rem / c.value);
@@ -29,6 +30,7 @@ function makeChallenge() {
 }
 
 export default function CoinCounter() {
+  const { t } = useTranslation();
   const [mode, setMode] = useState<'explore' | 'makechange' | 'challenge'>('explore');
   const [counts, setCounts] = useState<Record<number, number>>({});
   const [target, setTarget] = useState(() => makeChallenge());
@@ -45,7 +47,7 @@ export default function CoinCounter() {
   const clear = () => setCounts({});
   const totalCoins = useMemo(() => Object.values(counts).reduce((a, b) => a + b, 0), [counts]);
 
-  const formatMoney = (cents: number) => `$${(cents / 100).toFixed(2)}`;
+  const formatMoney = (paise: number) => `₹${(paise / 100).toFixed(2)}`;
 
   const optimalChange = useMemo(() => makeChange(target), [target]);
 
@@ -72,9 +74,9 @@ export default function CoinCounter() {
 
       <div className="flex justify-center gap-2 mb-6">
         {[
-          { id: 'explore' as const, emoji: '🔍', label: 'Count' },
-          { id: 'makechange' as const, emoji: '💰', label: 'Make Change' },
-          { id: 'challenge' as const, emoji: '🎯', label: 'Challenge' },
+          { id: 'explore' as const, emoji: '🔍', label: t('auto.coincounter.count', 'Count') },
+          { id: 'makechange' as const, emoji: '💰', label: t('auto.coincounter.make_change', 'Make Change') },
+          { id: 'challenge' as const, emoji: '🎯', label: t('auto.coincounter.challenge', 'Challenge') },
         ].map(m => (
           <button key={m.id} className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === m.id ? 'bg-green-500/30 text-green-300 border border-green-400/50' : 'bg-white/5 text-gray-400'}`}
             onClick={() => { setMode(m.id); clear(); if (m.id === 'challenge') setTarget(makeChallenge()); }}>{m.emoji} {m.label}</button>
@@ -93,7 +95,7 @@ export default function CoinCounter() {
               onClick={() => addCoin(c.value)}>
               <span className="text-3xl">{c.emoji}</span>
               <p className="text-white font-bold text-sm mt-1">{c.name}</p>
-              <p className="text-white/70 text-sm">{c.value}¢</p>
+              <p className="text-white/70 text-sm">{c.value}p</p>
               {(counts[c.value] || 0) > 0 && (
                 <motion.span className="absolute -top-2 -right-2 w-6 h-6 bg-white text-black rounded-full text-sm font-bold flex items-center justify-center"
                   initial={{ scale: 0 }} animate={{ scale: 1 }} key={counts[c.value]}>
@@ -123,7 +125,7 @@ export default function CoinCounter() {
         <motion.p key={total} className="text-5xl font-bold text-green-400" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>
           {formatMoney(total)}
         </motion.p>
-        <p className="text-gray-500 text-sm mt-1">{totalCoins} <Trans i18nKey="auto.coincounter.coin">coin</Trans>{totalCoins !== 1 ? 's' : ''}</p>
+        <p className="text-gray-500 text-sm mt-1">{totalCoins} {t('auto.coincounter.coin', 'coin')}{totalCoins !== 1 ? t('auto.coincounter.plural_s', 's') : ''}</p>
       </div>
 
       <AnimatePresence mode="wait">
@@ -135,7 +137,7 @@ export default function CoinCounter() {
               <input type="number" value={target} min={1} max={999}
                 onChange={e => setTarget(Math.max(1, Math.min(999, Number(e.target.value) || 1)))}
                 className="w-24 bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white font-bold text-center" />
-              <span className="text-gray-400"><Trans i18nKey="auto.coincounter.cents">cents =</Trans> {formatMoney(target)}</span>
+              <span className="text-gray-400"><Trans i18nKey="auto.coincounter.cents">paise =</Trans> {formatMoney(target)}</span>
             </div>
             <div className="space-y-2">
               {COINS.filter(c => optimalChange[c.value]).map(c => (

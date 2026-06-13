@@ -41,7 +41,7 @@ export default function DiscoveryShell({ module, children, showGoDeeper = true }
         <button onClick={() => navigate('/discovery')} className="text-slate-400 hover:text-white text-sm flex items-center gap-1"><Trans i18nKey="auto.discoveryshell.map">← Map</Trans></button>
         <div className="text-center text-white font-bold text-sm">{mod?.emoji} {mod?.title}</div>
         <div className="flex items-center gap-4">
-          <div className="text-slate-500 text-sm uppercase hidden sm:block">{mod?.subject}</div>
+          <div className="text-slate-500 text-sm uppercase hidden sm:block">{t(`auto.discovery.subjects.${mod?.subject}`, mod?.subject || '')}</div>
           <button 
             onClick={() => setShowTutorial(true)}
             className="text-slate-400 hover:text-white text-sm flex items-center gap-1 font-bold"

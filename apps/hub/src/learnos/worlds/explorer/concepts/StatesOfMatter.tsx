@@ -8,6 +8,7 @@ import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 interface Molecule {
   x: number;
@@ -17,6 +18,7 @@ interface Molecule {
 }
 
 export default function StatesOfMatter() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const lumo = useLumoPeer();

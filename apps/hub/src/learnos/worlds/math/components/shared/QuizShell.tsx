@@ -11,6 +11,7 @@ import { ExplanatoryFeedback } from '../../../../../components/ExplanatoryFeedba
 import { ShakeError, PulseSuccess } from '../../../../../components/MicroInteractions';
 import { AudioNarration } from '../../../../../components/MultimodalLearning';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 export interface QuizQuestion {
   question: string;
@@ -37,6 +38,7 @@ interface QuizShellProps {
  * - Level-up celebration animation
  */
 export default function QuizShell({ emoji, moduleId, generateQuestion }: QuizShellProps) {
+  const { t } = useTranslation();
   const stats = getTopicStats(moduleId);
   const [level, setLevel] = useState<DiffLevel>(stats.level);
   const [question, setQuestion] = useState<QuizQuestion>(() => generateQuestion(stats.level));

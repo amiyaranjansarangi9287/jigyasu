@@ -9,6 +9,7 @@ import { PipSpeechBubble } from './components/PipSpeechBubble';
 import { useEarlySession } from './hooks/useEarlySession';
 import { usePip } from './hooks/usePip';
 import type { EarlyModule } from './types/early.types';
+import { useTranslation } from 'react-i18next';
 
 interface EarlyShellProps {
   module: EarlyModule;
@@ -18,6 +19,7 @@ interface EarlyShellProps {
 }
 
 export default function EarlyShell({ module, children, showPip = true, pipPosition = 'bottom-right' }: EarlyShellProps) {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const { showBreak, trackModuleOpen, trackModuleClose, dismissBreak } = useEarlySession();
   const pip = usePip();
@@ -50,7 +52,7 @@ export default function EarlyShell({ module, children, showPip = true, pipPositi
       <button
         onClick={() => navigate('/early')}
         className="fixed bottom-6 left-6 z-40 w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-3xl transition-transform active:scale-95"
-        aria-label="Back to Adventure Academy"
+        aria-label={t('auto.earlyshell.back_to_adventure', 'Back to Adventure Academy')}
       >
         🏠
       </button>

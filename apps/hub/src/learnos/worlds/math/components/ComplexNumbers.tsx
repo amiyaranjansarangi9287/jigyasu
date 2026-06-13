@@ -1,6 +1,7 @@
 import { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 function makeChallenge() {
   const type = Math.floor(Math.random() * 3);

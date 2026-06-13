@@ -109,7 +109,7 @@ export default function Photosynthesis() {
               <p className="text-gray-600 text-sm leading-relaxed">
                 <Trans i18nKey="auto.photosynthesis.india_s_green_revolution_1960s">India's Green Revolution (1960s) maximized photosynthesis through better crop varieties.
                                               Ancient Indians understood plant nutrition through</Trans> <strong><Trans i18nKey="auto.photosynthesis.vrikshayurveda">Vrikshayurveda</Trans></strong>
-                <Trans i18nKey="auto.photosynthesis.science_of_plant_life_document">(Science of Plant Life), documented ~1000 BCE — describing how sunlight, water, and
+                <Trans i18nKey="auto.photosynthesis.science_of_plant_life_document">(Science of Plant Life), documented around the 10th century CE — describing how sunlight, water, and
                                               soil nourish plants.</Trans>
                                             </p>
             </div>

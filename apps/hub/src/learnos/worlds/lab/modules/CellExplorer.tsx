@@ -122,7 +122,7 @@ export default function CellExplorer() {
               <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.cellexplorer.ancient_indian_insight">Ancient Indian Insight</Trans></h3>
               <p className="text-gray-600 text-sm leading-relaxed">
                 <Trans i18nKey="auto.cellexplorer.maharishi_kanad_600_bce_propos">Maharishi Kanad (~600 BCE) proposed</Trans> <strong><Trans i18nKey="auto.cellexplorer.paramanu">Paramanu</Trans></strong> <Trans i18nKey="auto.cellexplorer.the_smallest_indivisible_parti">— the smallest
-                                              indivisible particle — 2,000 years before Dalton's atomic theory! The Vaisheshika
+                                              indivisible particle — an early philosophical idea about matter's composition, distinct from Dalton's experimental atomic theory (1803). The Vaisheshika
                                               school described matter as composed of tiny units, remarkably close to modern
                                               cell and atomic theory.</Trans>
                                             </p>

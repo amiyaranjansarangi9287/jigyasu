@@ -1,6 +1,6 @@
 import { Suspense, lazy, useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import { useUserProfile } from '@jigyasu/storage';
 import { useLearnerStore } from './learnos/store/learnerStore';
 import TopNav from './components/TopNav';
@@ -78,12 +78,13 @@ function RouteLoading({ label }: { label: string }) {
 }
 
 import { useSettingsStore } from './learnos/store';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 
 function SwipeableRoutes() {
     const { t } = useTranslation();
   const location = useLocation();
   const navigate = useNavigate();
+  const shouldReduceMotion = useReducedMotion();
   const ROUTES = ['/', '/home', '/execute', '/profile'];
   const currentIndex = ROUTES.indexOf(location.pathname === '/' ? '/' : ROUTES.find(r => location.pathname.startsWith(r) && r !== '/') || '/home');
   const [touchStart, setTouchStart] = useState<number | null>(null);
@@ -131,23 +132,23 @@ function SwipeableRoutes() {
         key={location.pathname}
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
-        initial={{ opacity: 0, x: 20 }}
+        initial={shouldReduceMotion ? undefined : { opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -20 }}
-        transition={{ duration: 0.2 }}
+        exit={shouldReduceMotion ? undefined : { opacity: 0, x: -20 }}
+        transition={{ duration: shouldReduceMotion ? 0 : 0.2 }}
         className="flex-1 flex flex-col w-full h-full"
       >
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<ErrorBoundary><Suspense fallback={<RouteLoading label={t('auto.attr.app.loading')} />}><LandingPage /></Suspense></ErrorBoundary>} />
+          <Route path="/" element={<ErrorBoundary><Suspense fallback={<RouteLoading label={t('loading', 'Loading...')} />}><LandingPage /></Suspense></ErrorBoundary>} />
           <Route path="/profile" element={<ErrorBoundary><ProfilePage /></ErrorBoundary>} />
           <Route path="/about" element={<ErrorBoundary><AboutPage /></ErrorBoundary>} />
           <Route path="/privacy" element={<ErrorBoundary><PrivacyPolicy /></ErrorBoundary>} />
           <Route path="/terms" element={<ErrorBoundary><TermsOfService /></ErrorBoundary>} />
           <Route path="/parents" element={<ErrorBoundary><ParentDashboard /></ErrorBoundary>} />
           <Route path="/contact" element={<ErrorBoundary><ContactPage /></ErrorBoundary>} />
-          <Route path="/execute" element={<ErrorBoundary><Suspense fallback={<RouteLoading label={t('auto.attr.app.opening_maker_space')} />}><KidsCampApp /></Suspense></ErrorBoundary>} />
-          <Route path="/execute/*" element={<ErrorBoundary><Suspense fallback={<RouteLoading label={t('auto.attr.app.opening_maker_space')} />}><KidsCampApp /></Suspense></ErrorBoundary>} />
-          <Route path="*" element={<ErrorBoundary><Suspense fallback={<RouteLoading label={t('auto.attr.app.opening_learning_paths')} />}><JigyasuApp /></Suspense></ErrorBoundary>} />
+          <Route path="/execute" element={<ErrorBoundary><Suspense fallback={<RouteLoading label={t('opening_maker_space', 'Opening Maker Space...')} />}><KidsCampApp /></Suspense></ErrorBoundary>} />
+          <Route path="/execute/*" element={<ErrorBoundary><Suspense fallback={<RouteLoading label={t('opening_maker_space', 'Opening Maker Space...')} />}><KidsCampApp /></Suspense></ErrorBoundary>} />
+          <Route path="*" element={<ErrorBoundary><Suspense fallback={<RouteLoading label={t('opening_learning_paths', 'Opening Learning Paths...')} />}><JigyasuApp /></Suspense></ErrorBoundary>} />
         </Routes>
       </motion.div>
     </AnimatePresence>
@@ -176,8 +177,8 @@ export default function App() {
     <ErrorBoundary>
       <BrowserRouter>
         <a href="#main-content" className="skip-to-content">
-          <Trans i18nKey="auto.app.skip_to_main_content">Skip to main content</Trans>
-                          </a>
+          {t('skip_to_main_content', 'Skip to main content')}
+        </a>
         <TopNav />
         <GlobalNav />
         <AnalyticsDashboard />

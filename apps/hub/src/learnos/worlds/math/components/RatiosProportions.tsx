@@ -1,18 +1,21 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
-function gcd(a: number, b: number): number { while (b) { [a, b] = [b, a % b]; } return a; }
+function gcd(a: number, b: number): number {
+  while (b) { [a, b] = [b, a % b]; } return a;
+}
 
 function makeRecipe() {
-  const names = ['Pancakes', 'Cookies', 'Smoothie', 'Lemonade', 'Muffins', 'Pasta Sauce'];
+  const names = ['Dosa', 'Ladoo', 'Lassi', 'Nimbu Pani', 'Idli', 'Chutney'];
   const ingredientSets = [
-    [{ name: 'Flour', amount: 2, unit: 'cups' }, { name: 'Eggs', amount: 3, unit: '' }, { name: 'Milk', amount: 1, unit: 'cup' }, { name: 'Sugar', amount: 2, unit: 'tbsp' }],
-    [{ name: 'Butter', amount: 1, unit: 'cup' }, { name: 'Sugar', amount: 2, unit: 'cups' }, { name: 'Flour', amount: 3, unit: 'cups' }, { name: 'Chocolate chips', amount: 1, unit: 'cup' }],
-    [{ name: 'Bananas', amount: 2, unit: '' }, { name: 'Yogurt', amount: 1, unit: 'cup' }, { name: 'Honey', amount: 2, unit: 'tbsp' }, { name: 'Ice', amount: 4, unit: 'cubes' }],
-    [{ name: 'Lemons', amount: 6, unit: '' }, { name: 'Sugar', amount: 1, unit: 'cup' }, { name: 'Water', amount: 8, unit: 'cups' }, { name: 'Ice', amount: 10, unit: 'cubes' }],
-    [{ name: 'Flour', amount: 3, unit: 'cups' }, { name: 'Blueberries', amount: 1, unit: 'cup' }, { name: 'Egg', amount: 1, unit: '' }, { name: 'Milk', amount: 1, unit: 'cup' }],
-    [{ name: 'Tomatoes', amount: 4, unit: '' }, { name: 'Garlic cloves', amount: 3, unit: '' }, { name: 'Olive oil', amount: 2, unit: 'tbsp' }, { name: 'Basil', amount: 5, unit: 'leaves' }],
+    [{ name: 'Rice flour', amount: 2, unit: 'cups' }, { name: 'Urad dal', amount: 0.5, unit: 'cup' }, { name: 'Water', amount: 1, unit: 'cup' }, { name: 'Salt', amount: 1, unit: 'tsp' }],
+    [{ name: 'Besan', amount: 1, unit: 'cup' }, { name: 'Sugar', amount: 0.5, unit: 'cup' }, { name: 'Ghee', amount: 0.25, unit: 'cup' }, { name: 'Cardamom', amount: 1, unit: 'tsp' }],
+    [{ name: 'Mango', amount: 2, unit: '' }, { name: 'Yogurt', amount: 1, unit: 'cup' }, { name: 'Sugar', amount: 2, unit: 'tbsp' }, { name: 'Ice', amount: 4, unit: 'cubes' }],
+    [{ name: 'Lemons', amount: 6, unit: '' }, { name: 'Sugar', amount: 3, unit: 'tbsp' }, { name: 'Water', amount: 4, unit: 'cups' }, { name: 'Ice', amount: 10, unit: 'cubes' }],
+    [{ name: 'Rice flour', amount: 2, unit: 'cups' }, { name: 'Urad dal', amount: 1, unit: 'cup' }, { name: 'Salt', amount: 1, unit: 'tsp' }, { name: 'Water', amount: 1.5, unit: 'cups' }],
+    [{ name: 'Tomatoes', amount: 4, unit: '' }, { name: 'Garlic cloves', amount: 3, unit: '' }, { name: 'Oil', amount: 2, unit: 'tbsp' }, { name: 'Coriander', amount: 5, unit: 'leaves' }],
   ];
   const idx = Math.floor(Math.random() * names.length);
   return { name: names[idx], baseServings: [4, 6, 8, 12][Math.floor(Math.random() * 4)], ingredients: ingredientSets[idx] };
@@ -47,6 +50,7 @@ function makeChallenge() {
 }
 
 export default function RatiosProportions() {
+  const { t } = useTranslation();
   const [mode, setMode] = useState<'ratio' | 'recipe' | 'challenge'>('ratio');
   const [a, setA] = useState(3);
   const [b, setB] = useState(4);
@@ -76,9 +80,9 @@ export default function RatiosProportions() {
 
       <div className="flex justify-center gap-2 mb-6">
         {[
-          { id: 'ratio' as const, emoji: '⚖️', label: 'Ratio Explorer' },
-          { id: 'recipe' as const, emoji: '🍳', label: 'Recipe Scaler' },
-          { id: 'challenge' as const, emoji: '🎯', label: 'Challenge' },
+          { id: 'ratio' as const, emoji: '⚖️', label: t('auto.ratiosproportions.ratio_explorer', 'Ratio Explorer') },
+          { id: 'recipe' as const, emoji: '🍳', label: t('auto.ratiosproportions.recipe_scaler', 'Recipe Scaler') },
+          { id: 'challenge' as const, emoji: '🎯', label: t('auto.ratiosproportions.challenge', 'Challenge') },
         ].map(m => (
           <button key={m.id} className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === m.id ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`}
             onClick={() => setMode(m.id)}>{m.emoji} {m.label}</button>

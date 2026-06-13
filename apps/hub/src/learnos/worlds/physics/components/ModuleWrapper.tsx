@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { MODULE_CONNECTIONS, MODULE_NAMES, UserProgress, visitModule, saveProgress } from '../lib/progress';
 import Navbar from './Navbar';
+import { useTranslation } from 'react-i18next';
 
 interface ModuleWrapperProps {
   moduleId: string;
@@ -14,6 +15,7 @@ interface ModuleWrapperProps {
 }
 
 export default function ModuleWrapper({ moduleId, children, progress, setProgress, onNavigate }: ModuleWrapperProps) {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [startTime] = useState(Date.now());
   const [showComplete, setShowComplete] = useState(false);

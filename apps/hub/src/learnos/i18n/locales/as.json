@@ -2901,7 +2901,8 @@
       "reflect": "প্ৰতিফলিত কৰিবলৈ টেপ কৰক",
       "save_thought": "এই চিন্তাটো বচাওক",
       "saved": "আপোনাৰ টাইম কেপচুলত সংৰক্ষণ কৰা হৈছে",
-      "write_thinking": "ইয়াত আপোনাৰ চিন্তাধাৰা লিখক — কোনো সঠিক উত্তৰ নাই..."
+      "write_thinking": "ইয়াত আপোনাৰ চিন্তাধাৰা লিখক — কোনো সঠিক উত্তৰ নাই...",
+      "hide": "লুকুৱাই ৰাখক"
     },
     "lumo": {
       "sharing": "এইটো আকৰ্ষণীয় বুলি বিবেচনা কৰে",
@@ -5113,9 +5114,10 @@
       "built_for_india": "ভাৰতৰ বাবে নিৰ্মিত",
       "join_the_mission": "মিছনত যোগদান কৰক",
       "we_believe_in_relationships_be": "আমি লেনদেনৰ আগতে সম্পৰ্কত বিশ্বাস কৰোঁ।",
-      "ars_jobs2019_gmail_com": "ars.jobs2019@gmail.com ত যোগদান কৰক",
+      "contact_jigyasu_app": "contact@jigyasu.app ত যোগদান কৰক",
       "when_you_write_to_us_we_would_": "যেতিয়া আপুনি আমাক লিখিব, আমি জানিব বিচাৰিমঃ",
-      "ways_you_can_support_us": "আপুনি আমাক সহায় কৰিব পৰা উপায়সমূহঃ"
+      "ways_you_can_support_us": "আপুনি আমাক সহায় কৰিব পৰা উপায়সমূহঃ",
+      "ars_jobs2019_gmail_com": "ars.jobs2019@gmail.com"
     },
     "analyticsdashboard": {
       "analytics_validation_dashboard": "বিশ্লেষণ বৈধকৰণ ডেশ্বব'ৰ্ড",
@@ -5346,7 +5348,8 @@
     "teachmemode": {
       "max_is_listening": "মেক্সে শুনি আছে",
       "you_answered": "আপুনি উত্তৰ দিলে।",
-      "of_max_s_questions": "মেক্সৰ প্ৰশ্নবোৰৰ পৰা!"
+      "of_max_s_questions": "মেক্সৰ প্ৰশ্নবোৰৰ পৰা!",
+      "write_your_explanation_here": "ইয়াত আপোনাৰ ব্যাখ্যা লিখক..."
     },
     "timecapsule": {
       "capsule": "কেপচুল",
@@ -5357,7 +5360,8 @@
       "280_characters": "/ 280টা আখৰ",
       "your_thoughts_on": "আপোনাৰ চিন্তাধাৰা",
       "are_safe": "নিৰাপদে আছে।",
-      "about": "বিষয়েঃ"
+      "about": "বিষয়েঃ",
+      "what_do_you_know_about_this_co": "এই ধাৰণাটোৰ বিষয়ে আপুনি কি জানে?"
     },
     "wondergarden": {
       "plants": "উদ্ভিদসমূহ",
@@ -5368,7 +5372,8 @@
       "features_in_development_for_fu": "* সম্পূৰ্ণ মুকলিৰ বাবে বিকাশত থকা বৈশিষ্ট্যসমূহ"
     },
     "header": {
-      "jigyasu": "জিগ্যাসু"
+      "jigyasu": "জিগ্যাসু",
+      "ai_explorers": "এআই অন্বেষণকাৰীসকল"
     },
     "howitworks": {
       "step": "পদক্ষেপ"
@@ -5381,7 +5386,8 @@
       "sound": "ধ্বনি।",
       "high_contrast_mode": "উচ্চ বৈসাদৃশ্য অৱস্থা",
       "dyslexia_friendly_font": "ডিস্লেক্সিয়া-বন্ধুত্বপূৰ্ণ ফন্ট",
-      "exit_to_family_home": "পৰিয়াল গৃহলৈ প্ৰস্থান কৰক"
+      "exit_to_family_home": "পৰিয়াল গৃহলৈ প্ৰস্থান কৰক",
+      "hold_3_seconds_for_parent_opti": "মূল বিকল্পসমূহৰ বাবে 3 ছেকেণ্ড ধৰি ৰাখক"
     },
     "academyreport": {
       "100": "/ 100",
@@ -5390,12 +5396,19 @@
       "exam_readiness": "পৰীক্ষাৰ প্ৰস্তুতি",
       "depth_breakdown": "গভীৰতা বিভাজন",
       "not_started": "আৰম্ভ হোৱা নাই",
-      "back_to_academy": "একাডেমীলৈ ঘূৰি যাওক"
+      "back_to_academy": "একাডেমীলৈ ঘূৰি যাওক",
+      "depth_surface": "পৃষ্ঠভাগ",
+      "depth_mechanism": "যান্ত্ৰিকতা",
+      "depth_principle": "মূলনীতি",
+      "depth_frontier": "সীমান্ত"
     },
     "academyshell": {
       "academy": "অকাডেমি",
       "help": "সহায় কৰক",
-      "tap_to_return": "ঘূৰাই আনিবলৈ টেপ কৰক"
+      "tap_to_return": "ঘূৰাই আনিবলৈ টেপ কৰক",
+      "exam": "পৰীক্ষা",
+      "explore": "অন্বেষণ কৰক",
+      "the_beauty": "গণিতৰ সৌন্দৰ্য্য"
     },
     "peerchallenge": {
       "challenge_mode": "প্ৰত্যাহ্বান অৱস্থা",
@@ -5406,7 +5419,8 @@
       "no_challenges_yet": "এতিয়ালৈকে কোনো প্ৰত্যাহ্বানৰ সন্মুখীন হোৱা নাই।",
       "done": "হোৱা হৈ গ \"ল",
       "mark_as_complete": "সম্পূৰ্ণ বুলি চিহ্নিত কৰক",
-      "phase_2_send_challenges_to_cla": "দ্বিতীয় পৰ্যায়ঃ সহপাঠীসকলক প্ৰত্যাহ্বান পঠিওৱা।"
+      "phase_2_send_challenges_to_cla": "দ্বিতীয় পৰ্যায়ঃ সহপাঠীসকলক প্ৰত্যাহ্বান পঠিওৱা।",
+      "write_your_challenge_question": "আপোনাৰ প্ৰত্যাহ্বানৰ প্ৰশ্নটো লিখক..."
     },
     "conceptbridge": {
       "connects_the_dots": "বিন্দুবোৰ সংযোগ কৰক"
@@ -5422,7 +5436,11 @@
       "connections": "সংযোগসমূহ",
       "the_measure_of_intelligence_is": "\"বুদ্ধিমত্তাৰ মাপকাঠি হৈছে পৰিৱৰ্তনৰ ক্ষমতা\"।",
       "lumo": "- লুমো।",
-      "return_to_constellation": "নক্ষত্রমণ্ডলত ঘূৰি যাওক"
+      "return_to_constellation": "নক্ষত্রমণ্ডলত ঘূৰি যাওক",
+      "level_aware": "সচেতন।",
+      "level_understand": "বুজি পোৱা।",
+      "level_apply": "আবেদন কৰক",
+      "level_connect": "সংযোগ কৰক"
     },
     "discoveryshell": {
       "map": "মানচিত্ৰ",
@@ -5434,7 +5452,19 @@
     "earlysessionsummary": {
       "minutes_of_adventure": "দুঃসাহসিক অভিযানৰ মিনিট!",
       "what_a_wonderful_adventure_tod": "\"আজি কি সুন্দৰ দুঃসাহসিক অভিযান! কাইলৈ ঘূৰি আহোঁ!\"",
-      "see_you_next_time": "পৰৱৰ্তী সময়ত দেখা হ \"ব!"
+      "see_you_next_time": "পৰৱৰ্তী সময়ত দেখা হ \"ব!",
+      "stories": "কাহিনীবোৰ",
+      "problems": "সমস্যাবোৰ",
+      "letters": "চিঠি-পত্ৰ",
+      "recipes": "ৰন্ধন প্ৰণালী",
+      "patterns": "আৰ্হিবোৰ",
+      "sentences": "বাক্যসমূহ",
+      "stages": "পৰ্যায়সমূহ",
+      "water_cycle": "জল চক্ৰ",
+      "habitats": "বাসস্থানসমূহ",
+      "shadows": "ছায়ামূৰ্তি",
+      "magnets": "চুম্বকসমূহ",
+      "purchases": "ক্ৰয় কৰা"
     },
     "pipadventuremap": {
       "pip_s_adventure_map": "পিপৰ দুঃসাহসিক অভিযানৰ মানচিত্ৰ"
@@ -5452,7 +5482,17 @@
       "follow_up": "অনুসৰণ",
       "final_answer": "চূড়ান্ত উত্তৰ",
       "try_again": "পুনৰ চেষ্টা কৰক",
-      "back": "পিছফালে"
+      "back": "পিছফালে",
+      "type_your_explanation": "আপোনাৰ ব্যাখ্যা টাইপ কৰক...",
+      "good_explanation": "ভাল ব্যাখ্যা!",
+      "reasonable_start": "যুক্তিসঙ্গত আৰম্ভণি।",
+      "think_carefully": "সাৱধানে চিন্তা কৰক...",
+      "excellent": "ৱাই এক্সেলেণ্ট!",
+      "good_effort": "Â ভাল প্ৰচেষ্টা।",
+      "expert_earned": "বিশেষজ্ঞৰ উপাৰ্জন!",
+      "scientist_level": "বিজ্ঞানীৰ স্তৰ",
+      "you_can_explain_this_clearly": "আপুনি এইটো স্পষ্টভাৱে ব্যাখ্যা কৰিব পাৰে। সেইটো হ'ল পাৰদৰ্শিতা।",
+      "keep_practicing": "অনুশীলন কৰি থাকক-ব্যাখ্যা কৰাটো সহজ হৈ পৰে।"
     },
     "labhome": {
       "no_experiments_found": "কোনো পৰীক্ষা পোৱা নগ \"ল",
@@ -5468,14 +5508,18 @@
       "minutes": "মিনিটসমূহ",
       "certifications": "প্ৰমাণপত্ৰ",
       "every_experiment_taught_you_so": "\"প্ৰতিটো পৰীক্ষাই আপোনাক কিবা এটা শিকাইছিল। সেইটোৱেই বিজ্ঞান।\"",
-      "back_to_lab": "পৰীক্ষাগাৰলৈ ঘূৰি যাওক"
+      "back_to_lab": "পৰীক্ষাগাৰলৈ ঘূৰি যাওক",
+      "cert_explorer": "অন্বেষণকাৰী",
+      "cert_scientist": "বিজ্ঞানী।",
+      "cert_expert": "বিশেষজ্ঞ"
     },
     "labshell": {
       "lab": "← পৰীক্ষাগাৰ",
       "great_work_today": "আজিৰ মহান কাম",
       "you_ve_been_doing_science_for_": "আপুনি 20 মিনিট ধৰি বিজ্ঞান কৰি আছে। আপোনাৰ মগজু আৰামৰ যোগ্য।",
       "5_more_minutes": "আৰু 5 মিনিট",
-      "go_to_lab_home": "লেব হোমলৈ যাওক"
+      "go_to_lab_home": "লেব হোমলৈ যাওক",
+      "back_to_lab": "লেব জিৰোলৈ ঘূৰি যাওক"
     },
     "exambridge": {
       "correct": "সঠিক",
@@ -6015,7 +6059,12 @@
       "key_events": "গুৰুত্বপূৰ্ণ অনুষ্ঠানসমূহ",
       "previous": "পূৰ্বৱৰ্তী",
       "next": "পৰৱৰ্তী →",
-      "amazing_facts_about": "আচৰিত কৰিব পৰা তথ্যসমূহ"
+      "amazing_facts_about": "আচৰিত কৰিব পৰা তথ্যসমূহ",
+      "butterfly": "পখিলা",
+      "frog": "মেকুৰী",
+      "dragonfly": "ড্ৰেগনফ্লাই",
+      "type_complete": "সম্পূৰ্ণ কৰক",
+      "type_incomplete": "অসম্পূৰ্ণ"
     },
     "microbematch": {
       "microbe_match": "মাইক্ৰ'ব মেচ",
@@ -6190,7 +6239,13 @@
     },
     "economicsimulation": {
       "gdp": "জিডিপিঃ",
-      "inflation": "% · মুদ্ৰাস্ফীতিঃ"
+      "inflation": "% · মুদ্ৰাস্ফীতিঃ",
+      "monsoon": "বাৰিষাৰ বিফলতা",
+      "monsoon_note": "কৃষি হৈছে ভাৰতৰ জিডিপিৰ 15 শতাংশ।",
+      "oil": "খাৰুৱা তেলৰ মূল্য বৃদ্ধি",
+      "oil_note": "ভাৰতে ইয়াৰ 80 শতাংশ তেল আমদানি কৰে।",
+      "tech": "টেক বুম",
+      "tech_note": "ভাৰতৰ তথ্য প্ৰযুক্তি খণ্ড হৈছে 20 লাখ কোটি টকা।"
     },
     "fermiestimation": {
       "step": "পদক্ষেপ",
@@ -6223,11 +6278,14 @@
     },
     "speeddistancetime": {
       "speed_monitor": "স্পিড মনিটৰ",
-      "km_h": "কিমি/ঘণ্টা"
+      "km_h": "কিমি/ঘণ্টা",
+      "engine_output_speed": "ইঞ্জিন আউটপুট/গতি"
     },
     "alphabetforest": {
       "sounds_like": "এনে ধৰণৰ শব্দ হয়ঃ",
-      "next_letter": "পৰৱৰ্তী চিঠি"
+      "next_letter": "পৰৱৰ্তী চিঠি",
+      "find": "বিচাৰকঃ",
+      "tap_letter": "অন্বেষণ কৰিবলৈ এখন পত্ৰ টেপ কৰক!"
     },
     "coincounter": {
       "pip_s_shop": "পিপৰ দোকান",
@@ -6255,10 +6313,23 @@
       "check": "পৰীক্ষা কৰক",
       "perfect_change": "নিখুঁত পৰিৱৰ্তন!",
       "too_much_remove_some_coins": "বহুত বেছি! কিছুমান মুদ্ৰা আঁতৰাই দিয়ক।",
-      "not_enough_yet_keep_adding_coi": "এতিয়াও যথেষ্ট হোৱা নাই-মুদ্ৰা যোগ কৰি থাকক।"
+      "not_enough_yet_keep_adding_coi": "এতিয়াও যথেষ্ট হোৱা নাই-মুদ্ৰা যোগ কৰি থাকক।",
+      "pay_now": "এতিয়া পৰিশোধ কৰক!",
+      "add_more_coins": "অধিক মুদ্ৰা যোগ কৰক...",
+      "plural_s": "এছ।",
+      "too_many": "আহ! সেইটো হয়তো বহুত বেছি মুদ্ৰা হ'ব পাৰে! সঠিক পৰিমাণটো চেষ্টা কৰক।",
+      "here_is": "ইয়াতে আছে",
+      "change_excl": "পৰিৱৰ্তন!",
+      "not_enough": "এতিয়াও পৰ্যাপ্ত মুদ্ৰা নাই! আৰু যোগ কৰক।",
+      "what_next": "আপুনি পৰৱৰ্তী সময়ত কি বিচাৰিব?",
+      "count": "গণনা কৰক",
+      "make_change": "পৰিৱৰ্তন কৰক",
+      "challenge": "প্ৰত্যাহ্বান"
     },
     "habitatheroes": {
-      "test_my_knowledge": "মোৰ জ্ঞান পৰীক্ষা কৰক!"
+      "test_my_knowledge": "মোৰ জ্ঞান পৰীক্ষা কৰক!",
+      "exploring": "অন্বেষণ কৰা হৈছে",
+      "choose_habitat": "বাসস্থান এটা বাছনি কৰক!"
     },
     "magnetexplorer": {
       "objects_left_to_sort": "বস্তুবোৰ ছৰ্ট কৰিবলৈ বাকী আছে"
@@ -6266,30 +6337,61 @@
     "minichef": {
       "ingredients": "উপাদানসমূহ",
       "add": "যোগ কৰক",
-      "of": "ইয়াৰ পৰা"
+      "of": "ইয়াৰ পৰা",
+      "lets_make": "এতিয়া {{নাম}} তৈয়াৰ কৰো! প্ৰথম উপাদান!",
+      "time_to_mix": "এই সকলোবোৰ একত্ৰিত কৰাৰ সময়!",
+      "next_add": "পৰৱৰ্তীঃ {{নাম}} ৰ {{পৰিমাণ}} {{একক}} যোগ কৰক!"
     },
     "numberlineadventures": {
       "start_at": "আৰম্ভ কৰক",
       "jump": "জপিয়াই যোৱা।",
-      "steps": "পদক্ষেপসমূহ"
+      "steps": "পদক্ষেপসমূহ",
+      "forward": "আগলৈ",
+      "backward": "← পিছফালৰ পৰা",
+      "ready_bigger": "আহ! আপুনি অধিক সংখ্যাৰ বাবে সাজু!"
     },
     "patternpatrol": {
       "level": "স্তৰ",
-      "3_to_level_up": "/ 3 স্তৰ বৃদ্ধি কৰিবলৈ"
+      "3_to_level_up": "/ 3 স্তৰ বৃদ্ধি কৰিবলৈ",
+      "real_detective": "আহ! তুমি এতিয়া এজন প্ৰকৃত চোৰাংচোৱা!",
+      "look_at_colours": "ৰংবোৰ চাওক... কি পুনৰাবৃত্তি হয়?"
     },
     "plantgrowthexplorer": {
-      "stage": "পৰ্যায়"
+      "stage": "পৰ্যায়",
+      "thirsty": "উদ্ভিদটো পিয়াহ খাইছে! আৰু অধিক পানী যোগ কৰক!",
+      "more_sun": "ইয়াৰ বাবে অধিক সূৰ্য্যৰ পোহৰৰ প্ৰয়োজন!",
+      "amazing_grew": "আচৰিত! আপুনি বীজৰ পৰা ফললৈ এটা উদ্ভিদ বৃদ্ধি কৰিলে!"
     },
     "shadowdetective": {
       "drag_the_torch": "টর্চটো টানি আনক!",
-      "solved": "সমাধান কৰা হৈছে"
+      "solved": "সমাধান কৰা হৈছে",
+      "next_challenge": "পৰৱৰ্তী ছায়া প্ৰত্যাহ্বান!",
+      "long_left": "ছায়া দীঘল কৰক (বাওঁফালে)",
+      "short": "ছায়া চুটি কৰক",
+      "long_right": "ছায়া বিন্দু সঠিক কৰক",
+      "gone": "Â ছাঁ নাইকিয়া কৰা"
     },
     "storybuilder": {
-      "build_a_new_story": "এটা নতুন কাহিনী নিৰ্মাণ কৰক!"
+      "build_a_new_story": "এটা নতুন কাহিনী নিৰ্মাণ কৰক!",
+      "ooh": "অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\" অ \"অ\"",
+      "great_choice": "ভাল বিকল্প!",
+      "the": "ইয়াৰ পৰা",
+      "how_exciting": "কিমান উত্তেজনাপূৰ্ণ!",
+      "ready_read": "সাজু! আমাৰ কাহিনীটো পঢ়ক!",
+      "did_follow": "আপুনি কাহিনীটো অনুসৰণ কৰিছিল নেকি? মই আপোনাক এটা কথা সুধিম!",
+      "build_new_story": "এখন নতুন কাহিনী সৃষ্টি কৰক!",
+      "where_live": "ক \"ত কৰে?",
+      "live_q": "জীয়াই আছেনে?",
+      "what_happened": "কি হৈছিল?",
+      "next": "পৰৱৰ্তী →",
+      "finish_story": "কাহিনীটো শেষ কৰক!",
+      "who_is_the_hero_of_our_story": "আমাৰ কাহিনীৰ নায়ক কোন?"
     },
     "watercyclejourney": {
       "what_happens_next": "পৰৱৰ্তী সময়ত কি হ \"ব?",
-      "water_cycle_complete": "পানী চক্ৰ সম্পূৰ্ণ!"
+      "water_cycle_complete": "পানী চক্ৰ সম্পূৰ্ণ!",
+      "next_stage": "পৰৱৰ্তী পৰ্যায়",
+      "complete_cycle": "চক্ৰটো সম্পূৰ্ণ কৰক!"
     },
     "wordscramble": {
       "next_sentence": "পৰৱৰ্তী বাক্য"
@@ -6312,7 +6414,8 @@
       "the_sun_doesn_t_rise_earth_rot": "সূৰ্য্য \"উদয়\" নহয়-পৃথিৱী ঘূৰে, আপোনাক সূৰ্য্যৰ পোহৰলৈ আনে। এই ক'পাৰ্নিকান অন্তৰ্দৃষ্টিয়ে গ্ৰহণ কৰিবলৈ বহু শতিকা সময় লৈছিল কাৰণ আমাৰ অন্তৰ্দৃষ্টিয়ে সূৰ্যটো গতি কৰে বুলি কয়।",
       "earth_rotates_once_every_24_ho": "পৃথিৱী প্ৰতি 24 ঘণ্টাত এবাৰ ঘূৰে। সময় অঞ্চল বিদ্যমান কাৰণ বিভিন্ন ঠাইত বিভিন্ন সময়ত সূৰ্য্যৰ ফালে মুখ কৰি থাকে। জেট লেগ হৈছে আপোনাৰ শৰীৰটোৱে এক নতুন ঘূৰণ অৱস্থানত উপনীত হোৱা।",
       "history_of_the_idea": "ধাৰণাটোৰ ইতিহাস",
-      "aryabhata_in_499_ad_proposed_e": "499 খ্ৰীষ্টাব্দত আৰ্যভট্টই পৃথিৱীৰ ঘূৰণৰ প্ৰস্তাৱ দিছিল। 1543 চনত ক'পাৰ্নিকাছে এই ধাৰণাটো পুনৰুজ্জীৱিত কৰিছিল। ইয়াক সমৰ্থন কৰাৰ বাবে গেলিলিঅ'ক গৃহবন্দী কৰি ৰখা হৈছিল। আমাৰ দৈনন্দিন অভিজ্ঞতাটো এটা ভ্ৰম হ'ব পাৰে বুলি ধাৰণাটো বিপ্লৱী আছিল।"
+      "aryabhata_in_499_ad_proposed_e": "499 খ্ৰীষ্টাব্দত আৰ্যভট্টই পৃথিৱীৰ ঘূৰণৰ প্ৰস্তাৱ দিছিল। 1543 চনত ক'পাৰ্নিকাছে এই ধাৰণাটো পুনৰুজ্জীৱিত কৰিছিল। ইয়াক সমৰ্থন কৰাৰ বাবে গেলিলিঅ'ক গৃহবন্দী কৰি ৰখা হৈছিল। আমাৰ দৈনন্দিন অভিজ্ঞতাটো এটা ভ্ৰম হ'ব পাৰে বুলি ধাৰণাটো বিপ্লৱী আছিল।",
+      "aryabhata_in_499_ce_proposed_e": "499 খ্ৰীষ্টাব্দত আৰ্যভট্টই পৃথিৱীৰ ঘূৰণৰ প্ৰস্তাৱ দিছিল। 1543 চনত ক'পাৰ্নিকাছে এই ধাৰণাটো পুনৰুজ্জীৱিত কৰিছিল। ইয়াক সমৰ্থন কৰাৰ বাবে গেলিলিঅ'ক গৃহবন্দী কৰি ৰখা হৈছিল। আমাৰ দৈনন্দিন অভিজ্ঞতাটো এটা ভ্ৰম হ'ব পাৰে বুলি ধাৰণাটো বিপ্লৱী আছিল।"
     },
     "dnanatureadult": {
       "the_human_genome_has_3_billion": "মানৱ জিন'মত 3 বিলিয়ন আধাৰ জোড়া আছে। যদি আপুনি সেইবোৰ আখৰ হিচাপে ছপা কৰে, ই 200 ফোন বুক পূৰণ কৰিব। তথাপিও প্ৰ'টিনৰ বাবে মাত্ৰ 2 শতাংশ কোড-বাকীবোৰক এসময়ত \"জাঙ্ক ডিএনএ\" বুলি কোৱা হৈছিল কিন্তু একেবাৰে জাঙ্ক নহয়।",
@@ -6635,7 +6738,10 @@
     "leverexplorer": {
       "lever_explorer": "লিভাৰ এক্সপ্লোৰাৰ",
       "kg": "কেজি",
-      "t": "টি ="
+      "t": "টি =",
+      "fulcrum_position": "ফুলক্ৰাম অৱস্থান",
+      "left_weight": "বাওঁ ওজন",
+      "right_weight": "সঠিক ওজন"
     },
     "lightshadows": {
       "sun_at": "- সূৰ্য্য অৱতৰণ",
@@ -6659,7 +6765,10 @@
       "what_happens_to_the_shadow_whe": "আপুনি সূৰ্যটো ওপৰলৈ স্থানান্তৰ কৰিলে ছাঁটোৰ কি হয়?",
       "what_happens_when_you_move_the": "যেতিয়া আপুনি সূৰ্য্যৰ পোহৰ হ্ৰাস কৰে (সূৰ্যাস্তৰ ওচৰলৈ) তেতিয়া কি হয়?",
       "which_direction_does_the_shado": "ছায়াত সূৰ্য্যৰ সাপেক্ষে কোনটো দিশ নিৰ্ধাৰণ কৰা হয়?",
-      "why_are_shadows_longer_at_suns": "সূৰ্যাস্তৰ সময়ত দুপৰীয়াৰ তুলনাত ছাঁ কিয় দীঘল হয়?"
+      "why_are_shadows_longer_at_suns": "সূৰ্যাস্তৰ সময়ত দুপৰীয়াৰ তুলনাত ছাঁ কিয় দীঘল হয়?",
+      "noon": "দুপৰীয়া।",
+      "afternoon": "দুপৰীয়া",
+      "sunset": "সূৰ্যাস্ত।"
     },
     "magnets": {
       "magnet_1": "চুম্বক 1:",
@@ -6927,7 +7036,10 @@
       "what_happens_to_the_particles_": "আপুনি কণাবোৰ ঠাণ্ডা কৰিলে কি হয়?",
       "what_happens_when_you_heat_the": "যেতিয়া আপুনি সেইবোৰ গৰম কৰে তেতিয়া কি হয়?",
       "at_what_temperature_does_ice_b": "কি তাপমাত্ৰাত বৰফ পানী হৈ পৰে?",
-      "at_what_temperature_does_water": "কি তাপমাত্ৰাত পানী বাষ্পত পৰিণত হয়?"
+      "at_what_temperature_does_water": "কি তাপমাত্ৰাত পানী বাষ্পত পৰিণত হয়?",
+      "label_solid": "সলিড",
+      "label_liquid": "LIQUID-ৰ দৰে",
+      "label_gas": "গেছ"
     },
     "statisticsplayground": {
       "statistics_playground": "পৰিসংখ্যাৰ খেলৰ মাঠ"
@@ -6986,7 +7098,13 @@
       "x_dx_x_3": "x2dx = [x3/3] ab =",
       "green_rectangles": "সেউজীয়া আয়তক্ষেত্র",
       "approximate_the_area_under_the": "বক্ৰ ৰেখাৰ তলৰ এলেকাটো আনুমানিক কৰক।",
-      "more_rectangles_better_approxi": "অধিক আয়তক্ষেত্র → উন্নত আনুমানিক → অবিচ্ছেদ্য হৈছে সঠিক সীমা।"
+      "more_rectangles_better_approxi": "অধিক আয়তক্ষেত্র → উন্নত আনুমানিক → অবিচ্ছেদ্য হৈছে সঠিক সীমা।",
+      "limits": "সীমাবদ্ধতা",
+      "derivatives": "আহৰণ কৰা বস্তুসমূহ",
+      "integrals": "ইন্টিগ্ৰেলছ",
+      "positive_slope_function_increasing": "ধনাত্মক ঢাল → কাৰ্য্য বৃদ্ধি হোৱা",
+      "negative_slope_function_decreasing": "ঋণাত্মক ঢাল → কাৰ্য্য হ্ৰাস হৈ গৈ আছে",
+      "zero_slope_function_flat": "শূন্য ঢাল → ফাংশন সমতল (সম্ভৱ সৰ্বাধিক/মিনিট)"
     },
     "chessstrategy": {
       "chess_strategy": "Â দবা আৰু ৰণনীতি",
@@ -7002,7 +7120,10 @@
       "possible_paths": "সম্ভাৱ্য পথ!",
       "q": "প্ৰশ্নঃ",
       "correct": "ঠিকেই কৈছে!",
-      "answer": "উত্তৰঃ"
+      "answer": "উত্তৰঃ",
+      "n_queens": "এন-ৰাণী",
+      "knights_tour": "নাইটছ ট্যুৰ",
+      "counting": "গণনা কৰা হৈছে"
     },
     "clockmaster": {
       "clock_master": "ঘড়ী মাষ্টাৰ",
@@ -7024,7 +7145,13 @@
       "long_blue_hand": "দীঘল নীলা হাত",
       "points_to_minutes": "মিনিটবোৰলৈ আঙুলিয়াই দিয়ে।",
       "each_small_tick_is_1_minute_ea": "প্ৰতিটো সৰু টিক হৈছে 1 মিনিট। প্ৰতিটো নম্বৰ জাম্প হৈছে 5 মিনিট।",
-      "min": "ন্যূনতম"
+      "min": "ন্যূনতম",
+      "exact_hour": "সঠিক সময়",
+      "15_minutes_past": "15 মিনিট পাৰ হৈ গ \"ল",
+      "30_minutes_past": "30 মিনিট পাৰ হৈ গ \"ল",
+      "15_minutes_until": "পৰৱৰ্তী ঘণ্টালৈ 15 মিনিট",
+      "past_the_hour": "ঘণ্টাটো পাৰ হৈ গ \"ল",
+      "to_the_next_hour": "পৰৱৰ্তী ঘণ্টালৈ"
     },
     "codinglogic": {
       "coding_logic": "কোডিং আৰু লজিক",
@@ -7037,7 +7164,17 @@
       "b": "বি।",
       "a_and_b": "এ আৰু বি",
       "correct": "ঠিকেই কৈছে!",
-      "answer": "উত্তৰঃ"
+      "answer": "উত্তৰঃ",
+      "binary": "বাইনাৰী",
+      "boolean": "বুলিয়ান",
+      "challenge": "প্ৰত্যাহ্বান",
+      "binary_type": "বাইনাৰী",
+      "boolean_type": "বুলিয়ান",
+      "decimal": "দশমিক",
+      "hexadecimal": "হেক্সাডেচিমেল",
+      "octal": "অক্টাৰ",
+      "true": "সঁচা",
+      "false": "ভুৱা।"
     },
     "complexnumbers": {
       "complex_numbers": "চি জটিল সংখ্যাসমূহ",
@@ -7069,7 +7206,10 @@
       "percentage": "শতাংশ",
       "quick_conversions": "দ্ৰুত ৰূপান্তৰসমূহ",
       "correct": "ঠিকেই কৈছে!",
-      "answer": "উত্তৰঃ"
+      "answer": "উত্তৰঃ",
+      "explore": "অন্বেষণ কৰক",
+      "convert": "ৰূপান্তৰ কৰক",
+      "challenge": "প্ৰত্যাহ্বান"
     },
     "engineeringmath": {
       "engineering_math": "অভিযান্ত্ৰিক গণিত",
@@ -7106,7 +7246,12 @@
       "a": "এ.",
       "cube": "ঘনক্ষেত্র",
       "all_sides_equal": "(সকলো পক্ষ সমান =",
-      "cm_uses_the_least_material_for": "ছে. মি.) এ এটা নিৰ্দিষ্ট আয়তনৰ বাবে সৰ্বনিম্ন উপাদান ব্যৱহাৰ কৰে। সৰ্বোত্তম ফালে = আয়তন। দক্ষতা কেনেদৰে সলনি হয় চাবলৈ দৈৰ্ঘ্য সামঞ্জস্য কৰিবলৈ চেষ্টা কৰক!"
+      "cm_uses_the_least_material_for": "ছে. মি.) এ এটা নিৰ্দিষ্ট আয়তনৰ বাবে সৰ্বনিম্ন উপাদান ব্যৱহাৰ কৰে। সৰ্বোত্তম ফালে = আয়তন। দক্ষতা কেনেদৰে সলনি হয় চাবলৈ দৈৰ্ঘ্য সামঞ্জস্য কৰিবলৈ চেষ্টা কৰক!",
+      "bridges": "দলংবোৰ",
+      "projectile": "প্ৰক্ষেপণমূলক",
+      "optimize": "অপ্টিমাইজ কৰক",
+      "high_stress": "উচ্চ চাপ! বীমৰ উচ্চতা বৃদ্ধি কৰক বা লোড হ্ৰাস কৰক।",
+      "safe_range": "সুৰক্ষিত পৰিসৰৰ ভিতৰত মানসিক চাপ সৃষ্টি কৰক।"
     },
     "exponentspowers": {
       "10": "× ১০",
@@ -7128,7 +7273,11 @@
       "to_the_right": "সোঁফালে",
       "writes_numbers_as_a_coefficien": "সংখ্যাবোৰক 1 আৰু 10 ৰ মাজৰ গুণাঙ্ক হিচাপে 10 ৰ ঘাতৰ দ্বাৰা গুণ কৰা হয়। অতি ডাঙৰ বা অতি সৰু সংখ্যাৰ বাবে উপযোগী!",
       "correct": "ঠিকেই কৈছে!",
-      "answer": "উত্তৰঃ"
+      "answer": "উত্তৰঃ",
+      "explore": "অন্বেষণ কৰক",
+      "laws": "আইনসমূহ",
+      "sci_notation": "বিজ্ঞান স্বরলিপি",
+      "challenge": "প্ৰত্যাহ্বান"
     },
     "fractionpizza": {
       "0": "০%",
@@ -7173,7 +7322,39 @@
       "area": "এলেকা =",
       "sq_units": "বৰ্গ একক",
       "perimeter_circumference": "পৰিসৰ/পৰিসৰ",
-      "units": "এককসমূহ"
+      "units": "এককসমূহ",
+      "angles": "কোণবোৰ",
+      "explore_calculate": "অন্বেষণ কৰক আৰু গণনা কৰক",
+      "pythagoras": "পাইথাগোৰাছ",
+      "a2_b2_c2": "a2 + b2 = c2",
+      "areas": "অঞ্চলসমূহ",
+      "shapes_formulas": "আকৃতি আৰু সূত্ৰসমূহ",
+      "zero": "শূন্য",
+      "acute": "তীব্ৰ।",
+      "right": "ঠিকেই।",
+      "obtuse": "অপৰিহাৰ্য।",
+      "straight": "পোনপটীয়া।",
+      "reflex": "ৰিফ্লেক্স",
+      "shape_your_understanding": "জ্যামিতিৰ বিষয়ে আপোনাৰ বোধগম্যত আকৃতি দিয়ক!",
+      "complement": "পূৰণ (90°-θ):",
+      "na": "এন/এ",
+      "supplement": "সম্পূরক (180°-θ):",
+      "acute_ref": "তীব্ৰঃ 0° <θ <90°",
+      "right_ref": "সোঁফালেঃ θ = 90°",
+      "obtuse_ref": "অপব্যৱহাৰঃ 90° <θ <180°",
+      "straight_ref": "পোনপটীয়াঃ θ = 180°",
+      "reflex_ref": "ৰিফ্লেক্সঃ 180° <θ <360°",
+      "acute_right_obtuse": "একিউট/ৰাইট/অবটুজ...",
+      "degrees": "ডিগ্ৰী",
+      "rectangle": "আয়তক্ষেত্র",
+      "triangle": "ত্ৰিভুজ",
+      "circle": "বৃত্ত",
+      "trapezoid": "ট্ৰেপজয়েড",
+      "radius": "ব্যাসার্ধ",
+      "base_b": "ভিত্তি বি",
+      "length": "দৈৰ্ঘ্য",
+      "width": "প্ৰস্থ",
+      "height": "উচ্চতা."
     },
     "graphcreator": {
       "graph_creator": "গ্ৰাফ সৃষ্টিকৰ্তা",
@@ -7184,7 +7365,9 @@
       "mean": "অৰ্থ",
       "max": "সৰ্বাধিক",
       "items": "বস্তুবোৰ",
-      "legend": "কিংবদন্তি"
+      "legend": "কিংবদন্তি",
+      "label": "লেবেল",
+      "value": "মূল্য"
     },
     "graphquest": {
       "0": ", ০)",
@@ -7206,7 +7389,16 @@
       "c_shift": "চি (স্থানান্তৰ)",
       "vertex_at_0": "ভাৰ্টেক্স (0,",
       "values_table": "মানৰ তালিকা",
-      "x_y": "(x, y)"
+      "x_y": "(x, y)",
+      "line_goes_uphill": "শাৰীটো ওপৰলৈ যায়",
+      "line_goes_downhill": "শাৰীটো পাহাৰৰ ওপৰলৈ নামি যায়",
+      "horizontal_line": "আনুভূমিক ৰেখা",
+      "parabola_opens_upward": "পেৰাবোলা ওপৰলৈ খোলে",
+      "parabola_opens_downward": "পেৰাবোলা তলৰ ফালে খোলে",
+      "flat_line": "সমতল ৰেখা",
+      "narrow_steep": "ঠেক (থিয়)",
+      "wide_flat": "বহল (সমতল)",
+      "standard_width": "মানক প্ৰস্থ"
     },
     "integersnumberline": {
       "integers_number_line": "পূৰ্ণসংখ্যা আৰু সংখ্যা ৰেখা",
@@ -7229,7 +7421,10 @@
       "same_signs_positive_different_": "একেই চিহ্নসমূহ ধনাত্মক। বিভিন্ন চিহ্নসমূহ ঋণাত্মক।",
       "example": "উদাহৰণঃ",
       "number_order": "সংখ্যাৰ ক্ৰম",
-      "5_lt_4_lt_lt_0_lt_lt_4_lt_5": "- 5 & lt;-4 & lt;... & lt; 0 & lt;... & lt; 4 & lt; 5"
+      "5_lt_4_lt_lt_0_lt_lt_4_lt_5": "- 5 & lt;-4 & lt;... & lt; 0 & lt;... & lt; 4 & lt; 5",
+      "negative": "নেতিবাচক।",
+      "zero": "শূন্য",
+      "positive": "ইতিবাচক।"
     },
     "logarithmslab": {
       "logarithms_lab": "লগৰিথমছ লেব",
@@ -7247,7 +7442,10 @@
       "what_power": "কি শক্তি",
       "gives": "দিয়ে",
       "correct": "ঠিকেই কৈছে!",
-      "answer": "উত্তৰঃ"
+      "answer": "উত্তৰঃ",
+      "explore": "অন্বেষণ কৰক",
+      "rules": "নিয়মাৱলী",
+      "challenge": "প্ৰত্যাহ্বান"
     },
     "logicpuzzles": {
       "logic_puzzles": "লজিক পাজলসমূহ",
@@ -7261,7 +7459,9 @@
       "gray_cells_are_given_you_fill_": "ধূসর কোষ দিয়া হয়-বাকীখিনি আপুনি পূৰণ কৰক!",
       "fill_each_row_and_column_with_": "প্ৰতিটো শাৰী আৰু স্তম্ভ 1-3 নম্বৰেৰে পূৰণ কৰক, কোনো পুনৰাবৃত্তি নকৰিব।",
       "yellow_labels_show_the_target_": "হালধীয়া লেবেলবোৰে লক্ষ্য দেখুৱায়ঃ উদাহৰণস্বৰূপে \"5 +\" মানে সেই গোটৰ কোষবোৰে 5ত যোগ কৰে।",
-      "operations_add_subtract_multip": "কাৰ্য্যকলাপসমূহঃ + (যোগ কৰক),-(বিয়োগ কৰক), × (গুণ কৰক)।"
+      "operations_add_subtract_multip": "কাৰ্য্যকলাপসমূহঃ + (যোগ কৰক),-(বিয়োগ কৰক), × (গুণ কৰক)।",
+      "solved": "সমাধান কৰা হ \"ল!",
+      "fill_all_cells_with_1_n": "সকলো কোষ 1-{{সাইজ}} ৰে পূৰণ কৰক"
     },
     "mathartstudio": {
       "math_art_studio": "গণিত আৰু আৰ্ট ষ্টুডিঅ '",
@@ -7277,7 +7477,18 @@
       "1_618_a_golden_rectangle_has_w": "φ ≈ 1.618। এখন সোণালী আয়তক্ষেত্রৰ প্ৰস্থ ± উচ্চতা = φ হয়। ইয়াক বৰ্গত বিভক্ত কৰিলে প্ৰায়ে কলা আৰু প্ৰকৃতিত পোৱা স্পাইৰেলৰ সৃষ্টি হয়।",
       "width": "প্ৰস্থ",
       "height": "উচ্চতা.",
-      "width_height": "প্ৰস্থ উচ্চতা"
+      "width_height": "প্ৰস্থ উচ্চতা",
+      "fractals": "ফ্ৰেকটালছ",
+      "tessellations": "টেছেলেচনসমূহ",
+      "golden_ratio_label": "সোণালী অনুপাত",
+      "recursion_depth": "পুনৰাবৃত্তিৰ গভীৰতা",
+      "branch_angle": "শাখা কোণ",
+      "trunk_length": "ট্ৰাংকৰ দৈৰ্ঘ্য",
+      "triangles": "ত্ৰিভুজসমূহ",
+      "hexagons": "হেক্সাগনছ",
+      "squares": "বৰ্গসমূহ",
+      "color_cycle": "ৰঙৰ চক্ৰ",
+      "rectangle_width": "আয়তক্ষেত্রৰ প্ৰস্থ"
     },
     "mathmusic": {
       "math_music": "গণিত আৰু সংগীত",
@@ -7303,7 +7514,10 @@
       "soft_mellow": "= কোমল/কোমল।",
       "musical_intervals_as_ratios": "অনুপাত হিচাপে সংগীতৰ অন্তৰালসমূহ",
       "ratio": "অনুপাতঃ",
-      "click_any_interval_to_hear_bot": "দুয়োটা স্বৰ বজোৱা শুনিবলৈ যিকোনো বিৰতি ক্লিক কৰক। 2ঃ1 আৰু 3ঃ2 ৰ দৰে সৰল অনুপাত আমাৰ কাণত আনন্দদায়ক (ব্যঞ্জনবৰ্ণ) শব্দ হয়।"
+      "click_any_interval_to_hear_bot": "দুয়োটা স্বৰ বজোৱা শুনিবলৈ যিকোনো বিৰতি ক্লিক কৰক। 2ঃ1 আৰু 3ঃ2 ৰ দৰে সৰল অনুপাত আমাৰ কাণত আনন্দদায়ক (ব্যঞ্জনবৰ্ণ) শব্দ হয়।",
+      "piano": "পিয়ানো",
+      "waveforms": "তৰংগৰ ৰূপসমূহ",
+      "intervals": "অন্তৰালসমূহ"
     },
     "matholympiad": {
       "math_olympiad": "গণিত অলিম্পিয়াড",
@@ -7314,7 +7528,8 @@
       "brilliant": "ব্ৰিলিয়ান্ট! +",
       "points": "পয়েন্টসমূহ",
       "answer": "উত্তৰঃ",
-      "check_the_solution": "সমাধানটো পৰীক্ষা কৰক!"
+      "check_the_solution": "সমাধানটো পৰীক্ষা কৰক!",
+      "your_answer": "আপোনাৰ উত্তৰ।"
     },
     "matrixops": {
       "matrix_operations": "মেট্ৰিক্স অপাৰেচনসমূহ",
@@ -7330,7 +7545,13 @@
       "a_b": "এ × বি",
       "multiplies_rows_of_a_by_column": "এ-ৰ শাৰীবোৰক বি-ৰ স্তম্ভবোৰেৰে গুণ কৰে",
       "a": "এ. টি.",
-      "swaps_rows_and_columns": "শাৰী আৰু স্তম্ভসমূহ অদল-বদল কৰে"
+      "swaps_rows_and_columns": "শাৰী আৰু স্তম্ভসমূহ অদল-বদল কৰে",
+      "matrix_a": "মেট্ৰিক্স এ",
+      "matrix_b": "মেট্ৰিক্স বি",
+      "a_plus_b": "এ + বি",
+      "a_times_b": "এ × বি",
+      "a_transpose": "এ. টি. ট্ৰান্সপোজ",
+      "2a_scalar": "2এ (স্কেলাৰ)"
     },
     "measurementlab": {
       "measurement_lab": "পৰিমাপ পৰীক্ষাগাৰ",
@@ -7338,7 +7559,29 @@
       "explore": "অন্বেষণ কৰক",
       "challenge": "প্ৰত্যাহ্বান",
       "correct": "ঠিকেই কৈছে!",
-      "answer": "উত্তৰঃ"
+      "answer": "উত্তৰঃ",
+      "length": "দৈৰ্ঘ্য",
+      "weight": "ওজন",
+      "volume": "ভলিউম",
+      "millimeters": "মিলিমিটাৰ",
+      "centimeters": "চেণ্টিমিটাৰ",
+      "meters": "মিটাৰসমূহ",
+      "kilometers": "কিলোমিটাৰ।",
+      "inches": "ইঞ্চি।",
+      "feet": "ভৰি।",
+      "yards": "ইয়ৰ্ডছ",
+      "miles": "মাইলছ",
+      "milligrams": "মিলিগ্ৰাম",
+      "grams": "গ্ৰাম",
+      "kilograms": "কিল'গ্ৰাম",
+      "ounces": "আউন্স",
+      "pounds": "পাউণ্ড।",
+      "milliliters": "মিলিলিটাৰ",
+      "liters": "লিটাৰ।",
+      "cups": "কাপবোৰ",
+      "pints": "পিণ্টসমূহ",
+      "quarts": "কোৱাৰ্টছ",
+      "gallons": "গেলোনবোৰ"
     },
     "memorymatch": {
       "memory_match_magic": "মেম'ৰি মেচ মেজিক",
@@ -7352,7 +7595,18 @@
       "victory": "বিজয়!",
       "you_matched_all_the_pairs": "আপুনি সকলো যোৰাৰ সৈতে মিল কৰিলে!",
       "time": "সময়",
-      "play_again": "পুনৰ খেলক"
+      "play_again": "পুনৰ খেলক",
+      "apprentice": "শিক্ষানবিশ",
+      "sorcerer": "যাদুকৰ।",
+      "grand_wizard": "গ্ৰেণ্ড উইজাৰ্ড",
+      "classic": "ক্লাছিক",
+      "timed": "সময় নিৰ্ধাৰিত",
+      "zen": "জেন",
+      "you_won": "আপুনি জয়ী হৈছে!",
+      "score": "স্কোৰঃ",
+      "max_combo": "সৰ্বাধিক কম্বোঃ",
+      "found_pairs": "পোৱা গ \"ল",
+      "times_up": "সময় পাৰ হৈ গ \"ল!"
     },
     "mentalmathblitz": {
       "mental_math_mastery": "মানসিক গণিতৰ পাৰদৰ্শিতা",
@@ -7365,7 +7619,25 @@
       "take_your_time": "আপোনাৰ সময় লওক",
       "lv": "এল. ভি.",
       "correct": "Â সঠিক!",
-      "try_again": "পুনৰ চেষ্টা কৰক!"
+      "try_again": "পুনৰ চেষ্টা কৰক!",
+      "bodmas": "ব'ডমাছ",
+      "squares_roots": "বৰ্গ আৰু মূলসমূহ",
+      "percentages": "শতাংশসমূহ",
+      "powers": "ক্ষমতা",
+      "mixed": "মিশ্ৰিত",
+      "order_of_operations": "কাৰ্য্যকলাপৰ ক্ৰম",
+      "n2_and_sqrt_n": "এন 2 আৰু এন",
+      "pct_calculations": "% গণনাসমূহ",
+      "exponents": "প্ৰদৰ্শনকাৰীসকল",
+      "all_topics": "সকলো বিষয়!",
+      "normal": "সাধাৰণ",
+      "hard": "হাৰ্ড",
+      "extreme": "এক্সট্ৰিম",
+      "category_bodmas": "ব'ডমাছ",
+      "category_squares": "স্কোৱাৰ্ছ",
+      "category_percentages": "ব্যক্তিসমূহ",
+      "category_powers": "ক্ষমতাসমূহ",
+      "category_mixed": "মিক্স কৰা হৈছে।"
     },
     "moneymathmarket": {
       "1": "× (১ +",
@@ -7407,7 +7679,25 @@
       "year": "বছৰ",
       "correct": "শুদ্ধ!",
       "answer": "উত্তৰঃ $",
-      "skip": "স্কিপ কৰক →"
+      "skip": "স্কিপ কৰক →",
+      "discounts": "ৰেহাইসমূহ",
+      "pct_off_prices": "মূল্যত% ৰেহাই",
+      "profit_loss": "লাভ/লোকচান",
+      "business_math": "ব্যৱসায়িক গণিত",
+      "interest": "আগ্ৰহ",
+      "simple_compound": "সৰল আৰু যৌগিক",
+      "challenge": "প্ৰত্যাহ্বান",
+      "mixed_quiz": "মিশ্ৰিত কুইজ",
+      "profit": "লাভ",
+      "loss": "হেৰুৱা",
+      "q_discount": "এখন চাৰ্টৰ মূল্য ₹ {{প্রাইস}}। {{ডিস্ক}% ৰেহাইৰ পিছত মূল্য কিমান?",
+      "type_discount": "ৰেহাই",
+      "q_profit": "₹ {{cp}}-ত ক্ৰয় কৰা হৈছিল, ₹ {{sp}}-ত বিক্ৰী কৰা হৈছিল। লাভ কিমান?",
+      "type_profit": "লাভ",
+      "q_interest": "{{সময়}} বছৰ {{সময় _ বহুবচন}} ৰ বাবে {{হাৰ}}% ত ₹ {{p}} ৰ ওপৰত সাধাৰণ সুত?",
+      "type_interest": "সুদ",
+      "q_percentage": "₹ {{সম্পূৰ্ণ}} ৰ% {{pct}} কিমান?",
+      "type_percentage": "% শতাংশ"
     },
     "numbercrunchgame": {
       "number_exploration": "সংখ্যা অন্বেষণ",
@@ -7418,7 +7708,13 @@
       "begin_journey": "যাত্ৰা আৰম্ভ কৰক",
       "mastery": "পাৰদৰ্শিতা",
       "streak": "ষ্ট্ৰীক",
-      "x": "x"
+      "x": "x",
+      "patience": "ধৈৰ্য্য।",
+      "no_timers": "কোনো টাইমাৰ নাই। গভীৰভাৱে চিন্তা কৰক।",
+      "streaks_label": "শাৰীবোৰ",
+      "consistent_multiplier": "ধাৰাবাহিক বুজা-বুজি গুণক",
+      "adaptive": "অভিযোজিত।",
+      "gets_harder": "আপুনি ধাৰণাবোৰ আয়ত্ত কৰাৰ লগে লগে কঠিন হৈ পৰে"
     },
     "numbertheorylab": {
       "number_theory_lab": "সংখ্যা তত্ত্ব পৰীক্ষাগাৰ",
@@ -7453,7 +7749,12 @@
       "prime": "প্ৰাইম",
       "composite": "সংমিশ্ৰণ",
       "there_are": "তাত আছে।",
-      "primes_between_1_and_100_click": "1 আৰু 100ৰ মাজৰ মৌলিক সংখ্যাবোৰ পৰীক্ষা কৰিবলৈ যিকোনো নম্বৰত ক্লিক কৰক"
+      "primes_between_1_and_100_click": "1 আৰু 100ৰ মাজৰ মৌলিক সংখ্যাবোৰ পৰীক্ষা কৰিবলৈ যিকোনো নম্বৰত ক্লিক কৰক",
+      "factor_tree": "কাৰক গছ",
+      "gcd_lcm": "জিচিডি আৰু এলচিএম",
+      "prime_checker": "প্ৰাইম চেকাৰ",
+      "greatest_least_common": "সৰ্বশ্ৰেষ্ঠ আৰু আটাইতকৈ কম সাধাৰণ",
+      "is_it_prime": "ই প্ৰাইম নেকি?"
     },
     "patternpuzzle": {
       "pattern_puzzle_quest": "প্যাটার্ন পাজল কোৱেষ্ট",
@@ -7493,7 +7794,11 @@
       "hundreds": "শ শ,",
       "tens_and": "দহ, আৰু",
       "ones": "সেইবোৰ।",
-      "base_10_blocks": "বেছ-10 ব্লকসমূহ"
+      "base_10_blocks": "বেছ-10 ব্লকসমূহ",
+      "label_thousands": "হাজাৰ হাজাৰ",
+      "label_hundreds": "শ শ",
+      "label_tens": "দহটা।",
+      "label_ones": "এগৰাকী।"
     },
     "probabilityplayground": {
       "52": "/ ৫২",
@@ -7530,7 +7835,25 @@
       "p_face": "পি (মুখ) =",
       "drawn_cards": "ড্ৰন কাৰ্ড (",
       "correct": "ঠিকেই কৈছে!",
-      "answer": "উত্তৰঃ"
+      "answer": "উত্তৰঃ",
+      "coin_flip": "মুদ্ৰা ঘূৰাই দিয়া",
+      "dice_roll": "পাশা ৰোল",
+      "card_draw": "কাৰ্ড ড্ৰ \"",
+      "challenge": "প্ৰত্যাহ্বান",
+      "q_heads": "এটা ন্যায্য মুদ্ৰাৰ ওপৰত পি (হেডছ)?",
+      "exp_heads": "2 টা ফলাফলঃ এইচ বা টি. পি = 1/2",
+      "q_six": "পি (এটা 6 ৰোলিং কৰা) এটা ডাইৰ ওপৰত?",
+      "exp_six": "6 টা ফলাফল, 1 হ'ল 6। পি = 1/6",
+      "q_heart": "ডেকৰ পৰা পি (হৃদয় আঁকি)?",
+      "exp_heart": "52টা কাৰ্ডত 13টা হৃদয়। পি = 13/52 = 1/4",
+      "q_odd": "এটা ডাইৰ ওপৰত পি (ৰোলিং বিচিত্ৰ)?",
+      "exp_odd": "6টাৰ ভিতৰত 3টা বিচিত্ৰ সংখ্যা (1,3,5)।",
+      "q_at_least_one_head": "পি (2 টা ফ্লিপ্পত কমেও 1 টা মূৰ পোৱা)?",
+      "exp_at_least_one_head": "এইচ. এইচ., এইচ. টি., টি. এইচ., টি. টি.-3ৰ মূৰ আছে। পি = 3/4",
+      "q_ace": "এটা ডেকৰ পৰা পি (এখন এচ আঁকা)?",
+      "exp_ace": "52টা কাৰ্ডত 4টা এচ। পি = 4/52 = 1/13",
+      "q_sum_seven": "2টা পাশাৰ সৈতে পি (ৰোলিং যোগফল 7)?",
+      "exp_sum_seven": "36টা সংমিশ্ৰণৰ ভিতৰত 7টা পোৱাৰ 6টা উপায়। পি = 6/36 = 1/6"
     },
     "quadraticsolver": {
       "quadratic_solver": "চতুৰ্ভুজ সমাধানকাৰী",
@@ -7544,7 +7867,19 @@
       "vertex": "শীৰ্ষস্থান",
       "quadratic_formula": "চতুৰ্ভুজ সূত্ৰ",
       "x_b_b_4ac_2a": "x = (-b ± σ (b2-4ac))/2a",
-      "here_x": "ইয়াতঃ x = ("
+      "here_x": "ইয়াতঃ x = (",
+      "discriminant": "বৈষম্যমূলক",
+      "two_real_roots": "দুটা প্ৰকৃত মূল",
+      "one_repeated_root": "এটা পুনৰাবৃত্তি মূল",
+      "no_real_roots": "কোনো প্ৰকৃত মূল নাই",
+      "minimum_point": "নূন্যতম বিন্দু",
+      "maximum_point": "সৰ্বাধিক বিন্দু",
+      "roots": "শিপা",
+      "factorable_with_integer_roots": "পূৰ্ণসংখ্যাৰ মূলৰ সৈতে কাৰ্য্যকৰী",
+      "use_formula_or_graph": "সূত্ৰ বা গ্ৰাফ ব্যৱহাৰ কৰক",
+      "a_coeff": "এ",
+      "b_coeff": "বি।",
+      "c_coeff": "চি"
     },
     "ratiosproportions": {
       "ratios_proportions": "অনুপাত আৰু অনুপাত",
@@ -7560,7 +7895,10 @@
       "scale_to": "স্কেল কৰক",
       "scale_factor": "স্কেল কাৰকঃ",
       "correct": "ঠিকেই কৈছে!",
-      "answer": "উত্তৰঃ"
+      "answer": "উত্তৰঃ",
+      "ratio_explorer": "অনুপাত অন্বেষণকাৰী",
+      "recipe_scaler": "ৰন্ধন প্ৰণালী স্কেলৰ",
+      "challenge": "প্ৰত্যাহ্বান"
     },
     "satactpractice": {
       "deep_concepts_practice": "গভীৰ ধাৰণাৰ অনুশীলন",
@@ -7621,7 +7959,29 @@
       "answer": "উত্তৰঃ",
       "euler_s_formula": "ইউলাৰৰ সূত্ৰঃ",
       "v_e_f": "V − E + F =",
-      "always_2_for_simple_polyhedra": "(সাধাৰণ পলিহেড্ৰাৰ বাবে সদায় 2)"
+      "always_2_for_simple_polyhedra": "(সাধাৰণ পলিহেড্ৰাৰ বাবে সদায় 2)",
+      "triangle": "ত্ৰিভুজ",
+      "square": "বৰ্গক্ষেত্ৰ",
+      "pentagon": "পেন্টাগন",
+      "hexagon": "ষড়ভুজ",
+      "octagon": "অষ্টভুজ",
+      "circle": "বৃত্ত",
+      "tetrahedron": "টেট্রাহেড্ৰন",
+      "cube": "ঘনক্ষেত্র",
+      "sphere": "গোলক",
+      "cylinder": "সিলিণ্ডাৰ",
+      "cone": "শঙ্কু।",
+      "how_many_sides": "এটা {{নাম}} ৰ কিমানটা বাহু আছে?",
+      "how_many_vertices": "এটা {{নাম}} ৰ কিমানটা শৃংগ আছে?",
+      "what_is_this_shape": "এই আকৃতিটোক কি বুলি কোৱা হয়?",
+      "sides_faces": "কাষবোৰ/মুখবোৰ",
+      "faces": "মুখবোৰ",
+      "edges": "প্ৰান্তবোৰ",
+      "sides": "পক্ষসমূহ",
+      "vertices_label": "ভাৰ্টিচেছসমূহ",
+      "interior_angle": "অভ্যন্তৰীণ কোণ",
+      "key_formula": "মূল সূত্ৰ",
+      "dimension": "মাত্ৰা"
     },
     "sportsstats": {
       "sports_statistics": "ক্ৰীড়াৰ পৰিসংখ্যা",
@@ -7639,7 +7999,21 @@
       "hits_at_bats": "= হিটছ এট-বেটছ।",
       "total_points_games_played_clic": "= মুঠ পইণ্ট খেল খেলা হৈছে। বিভিন্ন পৰিসংখ্যাৰ দ্বাৰা খেলুৱৈসকলক ৰেংক কৰিবলৈ \"ছাৰ্ট\" ত ক্লিক কৰক!",
       "correct": "ঠিকেই কৈছে!",
-      "answer": "উত্তৰঃ"
+      "answer": "উত্তৰঃ",
+      "batting_avg": "গড়",
+      "pts_game": "পি. টি. এছ./মেচ",
+      "goals": "লক্ষ্যসমূহ",
+      "chart_avg": "গড়",
+      "chart_ppg": "প্ৰতিটো মেচত পইণ্ট",
+      "chart_goals": "লক্ষ্যসমূহ",
+      "q_avg": "{{নেম}} ৰ {{এটবেটছ}} মেচত {{হিটছ} পইণ্ট আছে। গড়?",
+      "q_ppg": "{{নাম}} এ {{গেমছপ্লেইড}} মেচত {{পইণ্টছ} পইণ্ট অৰ্জন কৰিছিল। প্ৰতিটো মেচত পইণ্ট?",
+      "q_total": "{{নাম}}: {{লক্ষ্যসমূহ} লক্ষ্য, {{সহায়সমূহ} সহায় কৰে। মুঠ অৱদান?",
+      "q_win": "দলীয় ৰেকৰ্ডঃ {{জয়}} জয়, {{পৰাজয়} পৰাজয়। জয়ৰ শতাংশ?",
+      "type_avg": "গড়",
+      "type_ppg": "পইণ্ট/মেচ",
+      "type_total": "মুঠ",
+      "type_win": "জয়%"
     },
     "statisticslab": {
       "1": "1.",
@@ -7659,7 +8033,25 @@
       "random": "যাদৃচ্ছিকভাৱে",
       "clear": "পৰিষ্কাৰ কৰক",
       "bar_chart": "বাৰ চাৰ্ট",
-      "dot_plot": "ডট প্লট"
+      "dot_plot": "ডট প্লট",
+      "enter_a_number_0_100": "এটা সংখ্যা প্ৰবিষ্ট কৰক (0-100)",
+      "no_mode": "কোনো অৱস্থা নাই",
+      "mean_average": "গড় (গড়)",
+      "add_all_numbers": "সকলো সংখ্যা যোগ কৰক, গণনাৰ দ্বাৰা ভাগ কৰক",
+      "median_middle": "মধ্যৱৰ্তী (মধ্যৱৰ্তী)",
+      "middle_value_when_sorted": "শ্ৰেণীবদ্ধ কৰা হ'লে মধ্য মান",
+      "middle_number_when_data_is": "তথ্য অৰ্ডাৰ কৰাৰ সময়ত মধ্য নম্বৰটো",
+      "mode_most_common": "মোড (আটাইতকৈ সচৰাচৰ)",
+      "none": "একোৱেই নাই",
+      "most_frequent_values": "সৰ্বাধিক ঘন মান (সমূহ)",
+      "number_that_appears_most": "আটাইতকৈ বেছিকৈ দেখা দিয়া সংখ্যাটো",
+      "range_spread": "পৰিসৰ (বিস্তাৰ)",
+      "difference_between_highest": "সৰ্বোচ্চ আৰু নিম্নতমৰ মাজৰ পাৰ্থক্য",
+      "sum_total": "যোগফল (মুঠ)",
+      "all_numbers_added_together": "সকলো সংখ্যা একেলগে যোগ কৰা হৈছে",
+      "count": "গণনা কৰক",
+      "number_of_data_points": "তথ্য বিন্দুৰ সংখ্যা",
+      "how_many_numbers_in_the": "ছেটত কিমান সংখ্যা আছে"
     },
     "systemsofequations": {
       "systems_of_equations": "সমীকৰণৰ প্ৰণালীসমূহ",
@@ -7672,7 +8064,10 @@
       "line_1": "শাৰী 1",
       "line_2": "শাৰী 2",
       "intersection": "ছেদন",
-      "no_unique_solution_lines_are_p": "কোনো অনন্য সমাধান নাই-ৰেখাবোৰ সমান্তৰালভাৱে আছে।"
+      "no_unique_solution_lines_are_p": "কোনো অনন্য সমাধান নাই-ৰেখাবোৰ সমান্তৰালভাৱে আছে।",
+      "a": "এ",
+      "b": "বি।",
+      "c": "চি"
     },
     "timestabletrainer": {
       "1": "+ 1!",
@@ -7702,7 +8097,9 @@
       "sin_90_cos": "sin (90°-θ) = cos (θ)",
       "cos_90_sin": "cos (90°-θ) = sin (θ)",
       "verify_sin": "পৰীক্ষা কৰকঃ sin 2 (",
-      "special_angles_reference": "বিশেষ এঙ্গেল ৰেফাৰেন্স"
+      "special_angles_reference": "বিশেষ এঙ্গেল ৰেফাৰেন্স",
+      "almost_n_func_n_angle_n_equals_n": "প্ৰায়! {{চ্যালেঞ্জফান্ক}} ({{চেলেঞ্জএংগল}} °) = {{সঠিক}}",
+      "e_g_1_2_or_sqrt3_2": "উদাহৰণস্বৰূপে 1/2 বা 3/2"
     },
     "vectorsarena": {
       "vectors_arena": "ভেক্ট'ৰ্ছ এৰিনা",
@@ -7718,7 +8115,10 @@
       "a_b": "এ. বি.",
       "a": "|A।",
       "b": "|B।",
-      "angle_between": "মাজত কোণ"
+      "angle_between": "মাজত কোণ",
+      "a_label": "এ.",
+      "b_label": "বি।",
+      "a_b_label": "এ + বি"
     },
     "visualizer3d": {
       "r": "আৰ."
@@ -7735,7 +8135,14 @@
       "v": "ভি =",
       "surface_area_formula": "পৃষ্ঠভাগৰ আয়তনৰ সূত্ৰ",
       "sa": "SA =",
-      "volume_measures_how_much_space": "আয়তনৰ দ্বাৰা ভিতৰত কিমান ঠাই আছে পৰিমাপ কৰা হয়। পৃষ্ঠভাগৰ এলেকাৰ দ্বাৰা বাহ্যিক ছালৰ মুঠ পৰিমাপ কৰা হয়।"
+      "volume_measures_how_much_space": "আয়তনৰ দ্বাৰা ভিতৰত কিমান ঠাই আছে পৰিমাপ কৰা হয়। পৃষ্ঠভাগৰ এলেকাৰ দ্বাৰা বাহ্যিক ছালৰ মুঠ পৰিমাপ কৰা হয়।",
+      "cube": "ঘনক্ষেত্র",
+      "rectangular_prism": "আয়তাকাৰ প্ৰিজম",
+      "cylinder": "সিলিণ্ডাৰ",
+      "cone": "শঙ্কু।",
+      "sphere": "গোলক",
+      "height_width": "উচ্চতা/প্ৰস্থ",
+      "depth": "গভীৰতা"
     },
     "wordproblemstories": {
       "word_problem_stories": "শব্দ সমস্যাৰ কাহিনী",
@@ -7744,7 +8151,49 @@
       "solution": "সমাধান",
       "skip": "স্কিপ কৰক →",
       "great_reading_solving": "অতি সুন্দৰ পঢ়া আৰু সমাধান কৰা!",
-      "re_read_the_story_carefully": "কাহিনীটো সাৱধানে পুনৰ পঢ়ক!"
+      "re_read_the_story_carefully": "কাহিনীটো সাৱধানে পুনৰ পঢ়ক!",
+      "name_rahul": "ৰাহুল",
+      "name_priya": "প্ৰিয়া",
+      "addition": "সংযোজন",
+      "subtraction": "বিয়োগ",
+      "multiplication": "গুণন",
+      "division": "বিভাগ",
+      "multi_step": "বহু-পৰ্য্যায়",
+      "distance": "দূৰত্ব",
+      "perimeter": "পৰিসৰ",
+      "fractions": "ভগ্নাংশসমূহ",
+      "story_apples": "ৰাতিপুৱা {{নাম}} এ {{এ}} আপেল বাছি লৈছিল। দুপৰীয়া, তেওঁ আৰু অধিক বাছি লৈছিল।",
+      "story_cookies": "এটা বেকাৰীয়ে {{a}} কুকিজ তৈয়াৰ কৰিছিল। তেওঁলোকে দুপৰীয়াৰ আহাৰৰ আগতে {{b}} কুকিজ বিক্ৰী কৰিছিল।",
+      "story_oranges": "এজন কৃষকৰ ওচৰত কমলা ৰঙৰ মোনা থাকে। প্ৰতিটো মোনাতে কমলা ৰঙৰ মোনা থাকে।",
+      "story_stickers": "{{টোটাল}} ষ্টিকাৰবোৰ শিশুৰ মাজত সমানভাৱে ভাগ-বতৰা কৰা হয়।",
+      "story_notebooks": "{{নাম}} এ প্ৰতিটো নোটবুক ₹ {{মূল্য}} ত ক্ৰয় কৰে। তেওঁ এটা ₹ {{পেইড}} নোটৰ জৰিয়তে পৰিশোধ কৰে।",
+      "story_train": "ৰে \"লখনে {{গতি}} ঘণ্টাত {{সময়} ঘণ্টাৰ বাবে যাত্ৰা কৰে।",
+      "story_garden": "এটা আয়তাকাৰ বাগিছা হৈছে মিটাৰ দীঘল আৰু মিটাৰ বহল।",
+      "story_glasses": "এটা শ্ৰেণীত {{adjTotal}} ছাত্ৰ-ছাত্ৰী আছে। 1/{{{fraction}} ছাত্ৰ-ছাত্ৰীয়ে চশমা পিন্ধে।",
+      "q_apples": "{{নাম}} এ মুঠ কিমানখন আপেল বাছিছিল?",
+      "q_cookies": "কিমানটা কুকি বাকী আছে?",
+      "q_oranges": "মুঠ কিমানটা কমলা আছে?",
+      "q_stickers": "প্ৰতিটো শিশুৱে কিমানটা ষ্টিকাৰ পায়?",
+      "q_notebooks": "{{নাম}}-এ কিমান পৰিৱৰ্তন লাভ কৰে?",
+      "q_train": "ৰে \"লখনে কিমান দূৰ যাত্ৰা কৰে?",
+      "q_garden": "বাগিচাখনৰ পৰিসৰ কিমান?",
+      "q_glasses": "কিমানজন শিক্ষাৰ্থীয়ে চশমা পিন্ধে?",
+      "hint_apples": "ৰাতিপুৱা আৰু দুপৰীয়াৰ পৰিমাণ যোগ কৰক।",
+      "hint_cookies": "বিক্ৰী কৰা কুকিজসমূহ মুঠৰ পৰা বিয়োগ কৰক।",
+      "hint_oranges": "প্ৰতিটো মোনাৰ বেগৰ সংখ্যা কমলা ৰঙেৰে গুণ কৰক।",
+      "hint_stickers": "মুঠ ষ্টিকাৰবোৰক শিশুৰ সংখ্যাৰে ভাগ কৰক।",
+      "hint_notebooks": "প্ৰথমে মুঠ খৰচ বিচাৰকঃ {{qty}} × ₹ {{প্রাইস}}।",
+      "hint_train": "দূৰত্ব = গতি × সময়",
+      "hint_garden": "পৰিসৰ = 2 × (দৈৰ্ঘ্য + প্ৰস্থ)",
+      "hint_glasses": "মুঠটোক {{fraction}} ৰে ভাগ কৰক।",
+      "sol_apples": "{{a}} + {{b}} = {{ansuples",
+      "sol_cookies": "{{a}}-{{b}} = {{answere} কুকিজ",
+      "sol_oranges": "{{বস্তা} × {{প্ৰতি}} = {{উত্তৰ}} কমলা",
+      "sol_stickers": "প্ৰতিটোতে {{মুঠ}} ঱্হোৱা {{শিশু}} = {{প্ৰতি}} ষ্টিকাৰ।",
+      "sol_notebooks": "মুঠ = {{qty}} × ₹ {{মূল্য}} = ₹ {{মুঠ}}। পৰিৱৰ্তন = ₹ {{পেইড}}-₹ {{মুঠ}} = ₹ {{উত্তৰ}",
+      "sol_train": "{{গতি}} × {{সময়}} = {{উত্তৰ}} কি. মি.",
+      "sol_garden": "2 × ({{l}} + {{w}}) = 2 × {{যোগফল} = {{উত্তৰ}} m",
+      "sol_glasses": "ছাত্ৰ-ছাত্ৰীসকলৰ বাবে {{adjTotal}} ± {{fraction}} = {{adjAnswer}"
     },
     "atomicstructure": {
       "build_an_atom": "বিল্ড-এ-এটম",
@@ -8193,6 +8642,364 @@
     },
     "worksheetgenerator": {
       "nbsp_nbsp": ":------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -"
+    },
+    "discovery": {
+      "subjects": {
+        "math": "গণিত",
+        "biology": "জীৱবিজ্ঞান",
+        "chemistry": "ৰসায়ন বিজ্ঞান",
+        "physics": "পদাৰ্থ বিজ্ঞান",
+        "earth-science": "পৃথিৱী বিজ্ঞান",
+        "language": "ভাষা",
+        "economics": "অৰ্থনীতি"
+      }
+    },
+    "pipspeechbubble": {
+      "unmute_pip": "পাইপ আনমিউট কৰক",
+      "mute_pip": "পাইপ মিউট কৰক",
+      "dismiss_pip": "পিপ বাতিল কৰক"
+    },
+    "interestlenses": {
+      "always_wondered": "যিবোৰ বিষয়ৰ বিষয়ে মই সদায় আচৰিত হৈছিলোঁ",
+      "everyday_science": "দৈনন্দিন জীৱনৰ আঁৰৰ বিজ্ঞান",
+      "my_children": "মোৰ ল'ৰা-ছোৱালীবোৰে কি শিকি আছে",
+      "never_understood": "মই কেতিয়াও পোৱা নাই বিষয়সমূহ",
+      "visual_math": "গণিত দৃশ্যমান কৰা হৈছে",
+      "history_of_ideas": "মহান ধাৰণাসমূহৰ ইতিহাস"
+    },
+    "audiosettings": {
+      "audio_settings": "অডিঅ'সংহতিসমূহ",
+      "voice_not_available": "এই ব্ৰাউজাৰত কণ্ঠস্বৰ উপলব্ধ নহয়"
+    },
+    "learning": {
+      "s786_sound_settings": "ধ্বনিৰ সংহতিসমূহ",
+      "s787_voice_narration": "কণ্ঠৰ বৰ্ণনা",
+      "s788_read_stories_aloud": "ডাঙৰকৈ কাহিনী পঢ়ক",
+      "s789_sound_effects": "ধ্বনিৰ প্ৰভাৱসমূহ",
+      "s790_button_clicks_and_celebrations": "বুটাম ক্লিক আৰু উদযাপন",
+      "s791_volume": "ভলিউম",
+      "s792_quiet": "নীৰৱ।",
+      "s793_loud": "জোৰেৰে।",
+      "s794_every_concept_you_learn_is_a_superpower": "আপুনি শিকা প্ৰতিটো ধাৰণা এক মহাশক্তি!",
+      "s795_pixel_says": "পিক্সেলে কৈছেঃ",
+      "s796_continue_learning": "শিকাটো অব্যাহত ৰাখক",
+      "s873_this_certifies_that": "এইটোৱে প্ৰমাণ কৰে যে",
+      "s874_pledge_progress": "প্ৰগতিৰ প্ৰতিশ্ৰুতি",
+      "s875_remember": "মনত ৰাখিবঃ",
+      "s876_quiz_complete": "কুইজ সম্পূৰ্ণ!",
+      "s877_test_your_knowledge": "আপোনাৰ জ্ঞান পৰীক্ষা কৰক!",
+      "s878_tip": "পৰামৰ্শঃ",
+      "s879_checklist_progress": "পৰীক্ষা তালিকাৰ প্ৰগতি",
+      "s880_next_scenario": "পৰৱৰ্তী পৰিস্থিতি",
+      "s881_quiz_complete": "কুইজ সম্পূৰ্ণ!",
+      "s882_try_another_category": "আন এটা শ্ৰেণী চেষ্টা কৰক",
+      "s883_original_image": "মূল ছবি",
+      "s884_pixel_view": "পিক্সেল ভিউ",
+      "s885_fun_fact": "আকৰ্ষণীয় তথ্যঃ",
+      "s886_this_is_computer_vision": "এয়া হৈছে কম্পিউটাৰ ভিজন!",
+      "s887_next": "পৰৱৰ্তী →",
+      "s888_quiz_complete": "কুইজ সম্পূৰ্ণ!",
+      "s889_test_your_knowledge": "আপোনাৰ জ্ঞান পৰীক্ষা কৰক!",
+      "s890_drag_words_to_create_your_own_word_map": "আপোনাৰ নিজৰ শব্দৰ মানচিত্ৰ তৈয়াৰ কৰিবলৈ শব্দবোৰ টানি আনক!",
+      "s891_drag_words": "শব্দবোৰ টানি আনক",
+      "s892_see_how_words_cluster_by_meaning": "শব্দবোৰ কেনেদৰে অৰ্থৰ দ্বাৰা গোট খায় চাওক!",
+      "s893_click_on_any_word": "যিকোনো শব্দত ক্লিক কৰক",
+      "s894_quiz_complete": "কুইজ সম্পূৰ্ণ!",
+      "s895_test_your_knowledge": "আপোনাৰ জ্ঞান পৰীক্ষা কৰক!",
+      "s896_your_prompt": "আপোনাৰ প্ৰমপ্টঃ",
+      "s897_key_idea": "মূল ধাৰণাঃ",
+      "s898_diffusion_models": "বিতৰণ মডেলসমূহ",
+      "s899_next": "পৰৱৰ্তী →",
+      "s900_quiz_complete": "কুইজ সম্পূৰ্ণ!",
+      "s901_see_how_llms_predict_the_next_word": "এল. এল. এম.-এ পৰৱৰ্তী শব্দটো কেনেকৈ ভৱিষ্যদ্বাণী কৰে চাওক!",
+      "s902_choose_a_starting_phrase": "এটা আৰম্ভণি বাক্যাংশ বাছনি কৰকঃ",
+      "s903_click_words_to_add_them_here": "শব্দবোৰ ইয়াত যোগ কৰিবলৈ ক্লিক কৰক...",
+      "s904_clear": "পৰিষ্কাৰ কৰক",
+      "s905_try_another": "আন এটা চেষ্টা কৰক",
+      "s906_next": "পৰৱৰ্তী →",
+      "s907_quiz_complete": "কুইজ সম্পূৰ্ণ!",
+      "s908_test_your_knowledge": "আপোনাৰ জ্ঞান পৰীক্ষা কৰক!",
+      "s909_drag_the_sliders_and_watch_how_the_netwo": "স্লাইডাৰবোৰ ড্ৰেগ কৰক আৰু নেটৱৰ্কে কেনেদৰে সঁহাৰি দিয়ে চাওক!",
+      "s910_watch_and_learn": "চাওক আৰু শিকাওক!",
+      "s911_next": "পৰৱৰ্তী →",
+      "s912_quiz_complete": "কুইজ সম্পূৰ্ণ!",
+      "s913_test_your_knowledge": "আপোনাৰ জ্ঞান পৰীক্ষা কৰক!",
+      "s914_build_your_own_prompt_by_clicking_blocks": "ব্লকবোৰ ক্লিক কৰি আপোনাৰ নিজৰ প্ৰমপ্ট নিৰ্মাণ কৰক!",
+      "s915_about_what": "কি বিষয়ে?",
+      "s916_for_who": "কাৰ বাবে?",
+      "s917_what_style": "কি শৈলী?",
+      "s918_your_prompt": "আপোনাৰ প্ৰমপ্টঃ",
+      "s919_prompt_quality": "তৎক্ষণাত গুণগত মান",
+      "s920_try_it": "চেষ্টা কৰকঃ",
+      "s921_vague_prompt": "অস্পষ্ট প্ৰমপ্ট",
+      "s922_great_prompt": "গ্ৰেট প্ৰমপ্ট",
+      "s923_pro_tip": "উপযুক্ত পৰামৰ্শঃ",
+      "s924_next": "পৰৱৰ্তী →",
+      "s925_quiz_complete": "কুইজ সম্পূৰ্ণ!",
+      "s926_test_your_knowledge": "আপোনাৰ জ্ঞান পৰীক্ষা কৰক!",
+      "s927_search_the_library_and_see_rag_in_action": "লাইব্ৰেৰীত সন্ধান কৰক আৰু আৰ. এ. জি. কাৰ্য্যক্ষম হোৱাটো চাওক!",
+      "s928_try_a_question": "এটা প্ৰশ্ন সুধিবলৈ চেষ্টা কৰকঃ",
+      "s929_searching_library": "লাইব্ৰেৰীত সন্ধান কৰা হৈছে...",
+      "s930_watch_the_magic_happen": "যাদুটিটো হোৱাটো চাওক!",
+      "s931_question": "প্ৰশ্নঃ",
+      "s933_what_you_learned": "আপুনি কি শিকিলেঃ",
+      "s934_retrieve": "পুনৰুদ্ধাৰ কৰক",
+      "s935_augment": "বৃদ্ধি কৰক",
+      "s936_generate": "সৃষ্টি কৰক",
+      "s932_youve_seen_rag_in_action": "আপুনি আৰ. এ. জি.-ক সক্ৰিয় হৈ থকা দেখিছে!",
+      "s937_quiz_complete": "কুইজ সম্পূৰ্ণ!",
+      "s938_test_your_knowledge": "আপোনাৰ জ্ঞান পৰীক্ষা কৰক!",
+      "s940_score": "স্ক \"ৰ",
+      "s941_moves": "চলা-ফুৰা কৰা।",
+      "s942_reset": "পুনৰ ছেট কৰক",
+      "s943_this_is_rl": "এয়া আৰ. এল.!",
+      "s939_youre_the_reward_system_guide_the_robot_": "আপুনি হৈছে পুৰস্কাৰৰ ব্যৱস্থা! ৰবটটোক তৰাৰ ফালে পথ দেখুৱাওক।",
+      "s944_agent": "এজেণ্ট",
+      "s945_environment": "পৰিৱেশ",
+      "s946_action": "কাৰ্য্য",
+      "s947_reward": "পুৰস্কাৰ",
+      "s948_state": "ৰাজ্য",
+      "s949_key_insight": "মূল অন্তৰ্দৃষ্টিঃ",
+      "s950_next": "পৰৱৰ্তী →",
+      "s951_quiz_complete": "কুইজ সম্পূৰ্ণ!",
+      "s952_build_and_explore_attention_patterns": "মনোযোগৰ আৰ্হি নিৰ্মাণ আৰু অন্বেষণ কৰক!",
+      "s953_choose_a_sentence": "এটা বাক্য বাছনি কৰকঃ",
+      "s954_low_attention": "কম মনোযোগ",
+      "s955_high_attention": "উচ্চ মনোযোগ",
+      "s956_see_how_words_connect_to_each_other": "শব্দবোৰে কেনেদৰে ইজনে সিজনক সংযোগ কৰে চাওক!",
+      "s957_hover_over_words": "শব্দবোৰৰ ওপৰত ঘূৰি ফুৰক",
+      "s958_quiz_complete": "কুইজ সম্পূৰ্ণ!",
+      "s959_test_your_knowledge": "আপোনাৰ জ্ঞান পৰীক্ষা কৰক!",
+      "s801_match_games_shuffle_each_time_play_again": "প্ৰতিবাৰেই খেলৰ খেলবোৰ সলনি হয়-নতুন যুটিৰ বাবে পুনৰ খেলক!",
+      "s802_speed_round_has_streak_bonuses_keep_answ": "স্পিড ৰাউণ্ডত ষ্ট্ৰাইক বোনাছ আছে-সঠিক উত্তৰ দি থাকক!",
+      "s803_moves": "চলা-ফুৰা কৰকঃ",
+      "s804_matched": "মিল খোৱা হৈছেঃ",
+      "s805_all_matched": "সকলো খাপ খাইছে!",
+      "s806_speed_round": "স্পিড ৰাউণ্ড!",
+      "s807_answer_true_or_false_as_fast_as_you_can": "যিমান সোনকালে পাৰে সঁচা বা মিছা উত্তৰ দিয়ক!",
+      "s808_game_over": "খেল শেষ!",
+      "s809_generate_your_certificate": "আপোনাৰ প্ৰমাণপত্ৰ সৃষ্টি কৰক!",
+      "s810_start_learning": "শিকিবলৈ আৰম্ভ কৰক",
+      "s811_close": "বন্ধ কৰক",
+      "s812_this_certifies_that": "এইটোৱে প্ৰমাণ কৰে যে",
+      "s813_concepts": "ধাৰণাসমূহ",
+      "s814_xp_earned": "এক্স. পি. উপাৰ্জন কৰা হৈছে",
+      "s815_badges": "বেটছসমূহ",
+      "s816_perfect_quizzes": "নিখুঁত কুইজসমূহ",
+      "s817_topics_mastered": "আয়ত্ত কৰা বিষয়সমূহঃ",
+      "s818_badges_earned": "উপাৰ্জন কৰা ব্যাজসমূহঃ",
+      "s819_level": "স্তৰঃ",
+      "s820_completion": "সম্পূৰ্ণ কৰকঃ",
+      "s821_date_issued": "জাৰী কৰা তাৰিখ",
+      "s822_awesome": "আচৰিত!",
+      "s823_my_progress": "মোৰ প্ৰগতি",
+      "s824_current_level": "বৰ্তমানৰ স্তৰ",
+      "s825_learning_streak": "ষ্ট্ৰীক শিকা",
+      "s826_journey_progress": "যাত্ৰাৰ অগ্ৰগতি",
+      "s827_total_xp": "মুঠ এক্স. পি.",
+      "s828_badges_earned": "উপাৰ্জন কৰা ব্যাজসমূহ",
+      "s829_concepts_completed": "ধাৰণাবোৰ সম্পূৰ্ণ কৰা হৈছে",
+      "s830_perfect_quizzes": "নিখুঁত কুইজসমূহ",
+      "s831_not_started": "আৰম্ভ হোৱা নাই",
+      "s832_complete_concepts_to_earn_badges": "ব্যাজ অৰ্জন কৰিবলৈ সম্পূৰ্ণ ধাৰণা!",
+      "s833_start_a_streak": "এটা ধাৰা আৰম্ভ কৰক!",
+      "s834_weekly_challenges": "সাপ্তাহিক প্ৰত্যাহ্বানসমূহ",
+      "s835_input": "ইনপুট কৰক",
+      "s836_hidden": "লুকুৱাই ৰখা হৈছে।",
+      "s837_output": "আউটপুট",
+      "s838_learn": "শিকা।",
+      "s839_reading_millions_of_books": "লাখ লাখ কিতাপ পঢ়ি!",
+      "s840_hello": "নমস্কাৰ।",
+      "s841_i_love_to_eat": "মই খাবলৈ ভাল পাওঁ...",
+      "s842_most_likely": "সম্ভৱতঃ!",
+      "s843_each_square_is_a_pixel": "প্ৰতিটো বৰ্গ হৈছে এটা পিক্সেল!",
+      "s844_looking_at_all_clues_at_once": "একেলগে সকলো সংকেত চাওক!",
+      "s845_attention": "সাৱধান!",
+      "s846_finding_the_right_book_for_you": "আপোনাৰ বাবে সঠিক কিতাপখন বিচাৰি উলিয়াওক!",
+      "s847_question": "প্ৰশ্ন",
+      "s848_retrieve": "পুনৰুদ্ধাৰ কৰক",
+      "s849_generate": "সৃষ্টি কৰক",
+      "s850_similar_words_cluster_together": "একেধৰণৰ শব্দবোৰ একেলগে গোট খায়!",
+      "s851_responsibility": "দায়িত্ববোধ।",
+      "s852_balance_power_with_responsibility": "ক্ষমতা আৰু দায়িত্বৰ মাজত ভাৰসাম্য বজাই ৰাখক।",
+      "s853_keep_personal_info_private": "ব্যক্তিগত তথ্য গোপনীয় ৰাখক!",
+      "s854_boring_answer": "বিৰক্তিকৰ উত্তৰ...",
+      "s855_actions_rewards_learning": "কাৰ্য্যসমূহ → পুৰস্কাৰসমূহ → শিকা!",
+      "s856_agent": "এজেণ্ট",
+      "s857_action": "কাৰ্য্য",
+      "s858_reward": "পুৰস্কাৰ",
+      "s859_state": "ৰাজ্য",
+      "s860_find_the_shortest_path": "আটাইতকৈ চুটি পথটো বিচাৰি উলিয়াওক!",
+      "s861_noise": "কোলাহল।",
+      "s862_forming": "গঠন কৰা হৈছে",
+      "s863_image": "ছবি!",
+      "s864_noise_shapes_image": "শব্দ আৰু আকৃতি আৰু ছবি!",
+      "s865_diffusion_removes_noise_step_by_step": "বিস্তাৰে ক্ৰমান্বয়ে শব্দ আঁতৰ কৰে",
+      "s798_your_level": "আপোনাৰ স্তৰ",
+      "s799_journey_progress": "যাত্ৰাৰ অগ্ৰগতি",
+      "s800_learning_streak": "ষ্ট্ৰীক শিকা",
+      "s866_pixel": "পিক্সেল",
+      "s867_story_time": "কাহিনীৰ সময়!",
+      "s868_remember": "মনত ৰাখিবঃ",
+      "s869_back": "পিছফালে",
+      "s870_next": "পৰৱৰ্তী →",
+      "s871_loading": "ল'ড কৰা হৈছে...",
+      "s872_skip_to_main_content": "মূল সমললৈ যাওক",
+      "s513_play_now": "এতিয়া বজোৱা",
+      "s052_loading_game": "খেল ল'ড কৰা হৈছে...",
+      "s514_catch_powerups_for_special_abilities": "বিশেষ সামৰ্থ্যৰ বাবে পাৱাৰ-আপসমূহ ধৰক!",
+      "s515_new_game": "নতুন খেল",
+      "s516_move_history": "ইতিহাস স্থানান্তৰ কৰক",
+      "s517_no_moves_yet": "এতিয়ালৈকে কোনো পদক্ষেপ লোৱা হোৱা নাই",
+      "s518_new_game": "নতুন খেল",
+      "s519_tap_or_press_space_to_start": "আৰম্ভ কৰিবলৈ স্পেচত টিপক বা টিপক!",
+      "s520_keep_going": "গৈ থাকক!",
+      "s521_new_game": "নতুন খেল",
+      "s522_new_word": "নতুন শব্দ",
+      "s523_shuffle_puzzle": "ধাঁধাৰ সালসলনি কৰক",
+      "s524_new_game": "নতুন খেল",
+      "s525_new_game": "নতুন খেল",
+      "s526_rally_to_spawn_powerups": "পাৱাৰ-আপ সৃষ্টি কৰিবলৈ ৰেলী!",
+      "s527_recent_times": "শেহতীয়া সময়সমূহ",
+      "s528_shuffle": "পৰিবৰ্তন কৰক",
+      "s529_press_arrow_keys_or_tap_start": "এৰো কি টিপক বা ষ্টাৰ্ট টিপক!",
+      "s530_pause": "ৰৈ থাকক",
+      "s531_new_puzzle": "নতুন পাজল",
+      "s532_empty": "খালী কৰক",
+      "s533_new_round": "নতুন ৰাউণ্ড",
+      "s534_new_puzzle": "নতুন পাজল",
+      "s508_teaching_moment": "শিক্ষণৰ মুহূৰ্ত",
+      "s509_story_quiz": "কাহিনীৰ কুইজ",
+      "s510_check_answer": "উত্তৰ পৰীক্ষা কৰক",
+      "s511_previous": "পূৰ্বৰ",
+      "s512_next": "পৰৱৰ্তী",
+      "s053_heritageworld": "হেৰিটেজ ৱৰ্ল্ড",
+      "s054_all_ages": "সকলো বয়সৰ",
+      "s055_back_to_collections": "সংগ্ৰহসমূহলৈ ঘূৰি যাওক",
+      "s056_no_stories_found": "কোনো কাহিনী পোৱা নগ \"ল",
+      "s057_try_adjusting_your_filters_or_search_ter": "আপোনাৰ ফিল্টাৰ বা সন্ধানৰ শব্দবোৰ সামঞ্জস্য কৰিবলৈ চেষ্টা কৰক"
+    },
+    "completioncelebration": {
+      "congratulations": "অভিনন্দন!",
+      "back_adventures": "সকলো দুঃসাহসিক অভিযানলৈ ঘূৰি যাওক",
+      "explore_adventures": "অধিক দুঃসাহসিক অভিযান অন্বেষণ কৰক",
+      "becoming_expert": "আপুনি এগৰাকী এআই বিশেষজ্ঞ হৈ পৰিছে!",
+      "pixel_proud": "আপুনি বিস্ময়কৰ কাম কৰিছে! আজি নতুন কিবা এটা শিকাৰ বাবে মই আপোনাক লৈ অতি গৌৰৱান্বিত। মনত ৰাখিব, প্ৰতিজন বিশেষজ্ঞ এসময়ত এজন নৱাগত আছিল!",
+      "fun_fact": "মজাৰ কথাঃ আপুনি এইমাত্ৰ এনেকুৱা এটা কথা শিকিলে যিটো বহু প্ৰাপ্তবয়স্ক লোকে নাজানে!"
+    },
+    "worlds_ai_components_CompletionCelebration": {
+      "you_ve_completed": "আপুনি সম্পূৰ্ণ কৰিছে"
+    },
+    "worlds_ai_components_concepts_AIEthics_PlayPhase": {
+      "always_verify_ai_s_answers": "সদায় এ. আই.-ৰ উত্তৰসমূহ পৰীক্ষা কৰক"
+    },
+    "worlds_ai_components_concepts_AISafety_LearnPhase": {
+      "it_s_fake": "এইটো ভুৱা!"
+    },
+    "worlds_ai_components_concepts_Transformers_ExplorePhase": {
+      "what_you_re_seeing": "আপুনি কি দেখিছেঃ"
+    },
+    "gameshub": {
+      "mini_games": "মিনি-গেমছ",
+      "test_your_ai_knowledge": "আপোনাৰ এ. আই. জ্ঞানক আমোদজনক উপায়েৰে পৰীক্ষা কৰক!",
+      "back": "এতিয়াৰে পৰা পুনৰ আৰম্ভ কৰা হ'ল",
+      "tips": "পৰামৰ্শসমূহ"
+    },
+    "worlds_ai_components_games_GamesHub": {
+      "scramble_gives_you_hints___use": "স্ক্ৰেম্বলে আপোনাক ইংগিত দিয়ে-যদি আপুনি আবদ্ধ হৈ আছে তেন্তে সেইবোৰ ব্যৱহাৰ কৰক!"
+    },
+    "worlds_ai_components_games_SpeedRound": {
+      "time_s_up": "সময় পাৰ হৈ গ \"ল!"
+    },
+    "landingpage": {
+      "ready_explore": "এআই অন্বেষণ কৰিবলৈ সাজু?",
+      "adventures_left": "দুঃসাহসিক অভিযান বাকী!",
+      "welcome_explorer": "স্বাগতম, এক্সপ্লোৰাৰ!",
+      "welcome_back": "পুনৰ স্বাগতম!",
+      "continue_adventure": "আপোনাৰ এআই শিকাৰ দুঃসাহসিক অভিযান অব্যাহত ৰাখক!",
+      "concepts": "ধাৰণাসমূহ",
+      "recent_badges": "শেহতীয়া ব্যাজসমূহ",
+      "earned": "উপাৰ্জন কৰিছিল",
+      "your_journey": "আপোনাৰ শিক্ষণ যাত্ৰা",
+      "phase_story": "কাহিনী",
+      "desc_listen": "শুনক আৰু শিকাওক",
+      "phase_discover": "আৱিষ্কাৰ কৰক",
+      "desc_see": "এইটো কেনেকৈ কাম কৰে চাওক",
+      "phase_explore": "অন্বেষণ কৰক",
+      "desc_try": "নিজে চেষ্টা কৰক।",
+      "phase_play": "বজোৱা",
+      "desc_test": "আপোনাৰ দক্ষতা পৰীক্ষা কৰক",
+      "mini_games": "মিনি-গেমছ",
+      "mini_games_desc": "মেচ, স্ক্ৰেম্বল আৰু গতিৰ প্ৰত্যাহ্বান!",
+      "choose_adventure": "আপোনাৰ প্ৰথম দুঃসাহসিক অভিযান বাছনি কৰক!",
+      "continue_learning": "শিকাটো অব্যাহত ৰাখক",
+      "pick_topic": "আকৰ্ষণীয় যেন লগা যিকোনো বিষয় বাছনি কৰক!",
+      "adventures_waiting": "দুঃসাহসিক কাৰ্য্যই আপোনাক অপেক্ষা কৰি আছে!",
+      "review": "ৰিভিউ",
+      "start": "আৰম্ভ কৰক",
+      "footer_message": "আপোনাৰ সময় লওক, আনন্দ কৰক, আৰু মনত ৰাখক-প্ৰশ্ন সুধিলে আমি কেনেকৈ শিকিছো!",
+      "ai_master": "আপুনি এগৰাকী এ. আই. মাষ্টাৰ!",
+      "discover_ai": "এআইৰ বিস্ময়কৰ পৃথিৱীখন আৱিষ্কাৰ কৰিবলৈ সাজু? আহক একেলগে শিকি লওঁ!"
+    },
+    "worlds_ai_components_story_StoryPlayer": {
+      "let_s_learn_together": "আহক একেলগে শিকি লওঁ।",
+      "let_s_learn": "আহক শিকি লওঁ!"
+    },
+    "earlyhome": {
+      "adventure_map": "দুঃসাহসিক অভিযানৰ মানচিত্ৰ"
+    },
+    "earlyshell": {
+      "back_to_adventure": "দুঃসাহসিক একাডেমীলৈ ঘূৰি যাওক"
+    },
+    "breakout": {
+      "title": "ব্ৰেকআউট",
+      "wide": "প্ৰসাৰিত",
+      "multi": "বহু",
+      "laser": "লেজাৰ",
+      "slow": "ধীৰ গতিত",
+      "life": "Â জীৱন",
+      "next_level": "পৰৱৰ্তী স্তৰ",
+      "restart": "পুনৰ আৰম্ভ কৰক",
+      "playing": "খেলিছে...",
+      "start": "আৰম্ভ কৰক",
+      "controls": "স্থানান্তৰ কৰকঃ মাউছ/স্পৰ্শ/। স্থান/ক্লিক কৰকঃ লেজাৰ শ্বুট কৰক (সক্ৰিয় হ'লে)"
+    },
+    "pong": {
+      "title": "পঙ",
+      "controls_pvp": "পি1: ডব্লিউ/এছ। পি2:",
+      "controls_ai": "স্থানান্তৰ কৰিবলৈ W/S ব্যৱহাৰ কৰক",
+      "rematch": "পুনৰাবৃত্তি কৰক",
+      "playing": "বজোৱা",
+      "start": "আৰম্ভ কৰক",
+      "footer_pvp": "খেলুৱৈ 1: ডব্লিউ/এছ। খেলুৱৈ 2:",
+      "footer_ai": "ডব্লিউ/এছ বা স্পৰ্শ নিয়ন্ত্ৰণ ব্যৱহাৰ কৰক",
+      "rally": "পাৱাৰ-আপৰ বাবে ৰেলী!"
+    },
+    "snake": {
+      "classic": "ক্লাছিক",
+      "wrap": "ৰেপ কৰক",
+      "obstacles": "বাধা-বিপত্তি",
+      "slow": "ধীৰ গতিত",
+      "normal": "সাধাৰণ",
+      "fast": "দ্ৰুত",
+      "insane": "সি উন্মাদ হৈ পৰিছে।"
+    },
+    "tetris": {
+      "lines": "শাৰীঃ",
+      "lv": "এল. ভি.",
+      "game_over": "খেল শেষ!",
+      "score_label": "স্কোৰঃ",
+      "paused": "থমকি ৰৈছে।",
+      "hold": "হোল্ড (চি)",
+      "next": "পৰৱৰ্তী"
+    },
+    "forcelab": {
+      "push_force": "ঠেলিব পৰা বল",
+      "box_mass": "বাকচৰ ভৰ"
+    },
+    "mathapp": {
+      "adventure_map_complete": "দুঃসাহসিক অভিযানৰ মানচিত্ৰ সম্পূৰ্ণ! + 5",
+      "experience_points_earned_acros": "সকলো মডিউলতে অৰ্জন কৰা অভিজ্ঞতা পইণ্ট"
     }
   },
   "about": {
@@ -8321,7 +9128,24 @@
         "heading": "সংযোগ স্থাপন কৰিব বিচৰা পিতৃ-মাতৃগৰাকী",
         "body": "তেওঁলোকৰ নাতিৰ দৰে একে ধাৰণা শিকা। এপটোৰ জৰিয়তে তেওঁলোকক এক উৎসাহজনক বাৰ্তা প্ৰেৰণ কৰা। ভাগ-বতৰা আৱিষ্কাৰৰ জৰিয়তে এক বান্ধোন গঢ়ি তোলা।"
       }
-    }
+    },
+    "title": "জিগ্যাসু",
+    "why_we_build_title": "আমি এইটো কিয় নিৰ্মাণ কৰি আছো",
+    "mission_title": "আমাৰ উদ্দেশ্য",
+    "who_it_is_for_title": "জিগ্যাসু কাৰ বাবে",
+    "values_title": "আমি কি বিশ্বাস কৰোঁ",
+    "differences_title": "আমি কি নিৰ্মাণ কৰিছিলো-আৰু কিয়",
+    "built_for_india_title": "ভাৰতৰ বাবে নিৰ্মিত",
+    "sustainability_title": "আমি ইয়াক কেনেদৰে বজাই ৰখাৰ পৰিকল্পনা কৰোঁ",
+    "support_title": "মিছনত যোগদান কৰক",
+    "contact_label": "আমাৰ সৈতে যোগাযোগ কৰকঃ",
+    "contact_email": "contact@jigyasu.app",
+    "contact_desc": "যেতিয়া আপুনি আমাক লিখিব, আমি জানিব বিচাৰিমঃ",
+    "support_ways_title": "আপুনি আমাক সহায় কৰিব পৰা উপায়সমূহঃ",
+    "closing_tagline": "ৱাণ্ডাৰ ইনস্টল কৰক।",
+    "copyright_name": "জিগ্যাসু",
+    "page_title": "জিগ্যাসুৰ বিষয়ে-ইনষ্টল ৱাণ্ডাৰ",
+    "meta_description": "জিগ্যাসু হৈছে প্ৰতিজন ভাৰতীয় শিশু আৰু প্ৰাপ্তবয়স্কৰ বাবে নিৰ্মাণ কৰা এক বিনামূলীয়া, দৃশ্যগত, বহুভাষিক শিক্ষণ মঞ্চ।"
   },
   "floating_buttons": {
     "analytics": "বিশ্লেষণ",
@@ -8640,6 +9464,279 @@
       "date": "তাৰিখ",
       "score": "মানংক",
       "generatedBy": "হুইমচিকেল মেথ কিংডমৰ দ্বাৰা সৃষ্টি কৰা হৈছে 🧙 ♂️"
+    },
+    "breakout": {
+      "title": "ব্ৰেকআউট",
+      "wide": "প্ৰসাৰিত",
+      "multi": "বহু",
+      "laser": "লেজাৰ",
+      "slow": "ধীৰ গতিত",
+      "life": "Â জীৱন",
+      "next_level": "পৰৱৰ্তী স্তৰ",
+      "restart": "পুনৰ আৰম্ভ কৰক",
+      "playing": "খেলিছে...",
+      "start": "আৰম্ভ কৰক",
+      "controls": "স্থানান্তৰ কৰকঃ মাউছ/স্পৰ্শ/। স্থান/ক্লিক কৰকঃ লেজাৰ শ্বুট কৰক (সক্ৰিয় হ'লে)"
+    },
+    "pong": {
+      "title": "পঙ",
+      "controls_pvp": "পি1: ডব্লিউ/এছ। পি2:",
+      "controls_ai": "স্থানান্তৰ কৰিবলৈ W/S ব্যৱহাৰ কৰক",
+      "powerup_speed": "দ্ৰুততা বৃদ্ধি",
+      "powerup_big": "ডাঙৰ পেডেল",
+      "powerup_small": "প্ৰতিপক্ষক সংকুচিত কৰক",
+      "powerup_multi": "মাল্টি-বল",
+      "rematch": "পুনৰাবৃত্তি কৰক",
+      "playing": "বজোৱা",
+      "start": "আৰম্ভ কৰক",
+      "footer_pvp": "খেলুৱৈ 1: ডব্লিউ/এছ। খেলুৱৈ 2:",
+      "footer_ai": "ডব্লিউ/এছ বা স্পৰ্শ নিয়ন্ত্ৰণ ব্যৱহাৰ কৰক",
+      "rally": "পাৱাৰ-আপৰ বাবে ৰেলী!"
+    },
+    "gameshub": {
+      "mini_games": "মিনি-গেমছ",
+      "test_your_ai_knowledge": "আপোনাৰ এ. আই. জ্ঞানক আমোদজনক উপায়েৰে পৰীক্ষা কৰক!",
+      "back": "এতিয়াৰে পৰা পুনৰ আৰম্ভ কৰা হ'ল",
+      "match_the_pairs": "যোৰাবোৰ মিলাব",
+      "match_description": "এআই শব্দবোৰক সেইবোৰৰ সংজ্ঞাৰ সৈতে মিলাব!",
+      "word_scramble": "শব্দ স্ক্ৰেম্বল",
+      "scramble_description": "এ. আই. শব্দভাণ্ডারৰ শব্দবোৰ আনস্ক্ৰেম্বল কৰক!",
+      "speed_round": "গতিৰ ৰাউণ্ড",
+      "speed_description": "সঁচা বা মিছা-ঘড়ীটো দৌৰা!",
+      "easy": "সহজ-সৰল।",
+      "medium": "মধ্যমীয়া",
+      "fast": "দ্ৰুত!",
+      "time_2_3": "2-3 মিনিট",
+      "time_3_5": "3-5 মিনিট",
+      "time_60": "60 ছেকেণ্ড",
+      "tips": "পৰামৰ্শসমূহ"
+    },
+    "certificationbadge": {
+      "explorer": "অন্বেষণকাৰী",
+      "scientist": "বিজ্ঞানী।",
+      "expert": "বিশেষজ্ঞ"
+    },
+    "snake": {
+      "classic": "ক্লাছিক",
+      "wrap": "ৰেপ কৰক",
+      "obstacles": "বাধা-বিপত্তি",
+      "slow": "ধীৰ গতিত",
+      "normal": "সাধাৰণ",
+      "fast": "দ্ৰুত",
+      "insane": "সি উন্মাদ হৈ পৰিছে।",
+      "skin_green": "ক্লাছিক গ্ৰীণ",
+      "skin_blue": "মহাসাগৰৰ নীলা",
+      "skin_rainbow": "ৰেইনবো",
+      "skin_fire": "অগ্নিকুণ্ড।"
+    },
+    "memorymatch": {
+      "theme_emoji": "Â ইমোজি",
+      "theme_animals": "জীৱ-জন্তু",
+      "theme_food": "খাদ্য",
+      "theme_nature": "প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰকৃতি প্ৰ",
+      "diff_easy": "সহজ-সৰল।",
+      "diff_medium": "মধ্যমীয়া",
+      "diff_hard": "কঠিন।",
+      "classic": "ক্লাছিক",
+      "timed": "সময় নিৰ্ধাৰিত",
+      "zen": "জেন",
+      "moves": "চলা-ফুৰা কৰা",
+      "you_won": "আপুনি জয়ী হৈছে!",
+      "score": "স্কোৰঃ",
+      "max_combo": "সৰ্বাধিক কম্বোঃ",
+      "times_up": "সময় পাৰ হৈ গ \"ল!",
+      "found_pairs": "পোৱা গ \"ল",
+      "pairs": "যোৰা"
+    },
+    "tetris": {
+      "lines": "শাৰীঃ",
+      "lv": "এল. ভি.",
+      "game_over": "খেল শেষ!",
+      "score_label": "স্কোৰঃ",
+      "paused": "থমকি ৰৈছে।",
+      "hold": "হোল্ড (চি)",
+      "next": "পৰৱৰ্তী"
+    },
+    "header": {
+      "ai_explorers": "এআই অন্বেষণকাৰীসকল"
+    },
+    "audiosettings": {
+      "audio_settings": "অডিঅ'সংহতিসমূহ",
+      "voice_not_available": "এই ব্ৰাউজাৰত কণ্ঠস্বৰ উপলব্ধ নহয়"
+    },
+    "mathapp": {
+      "adventure_map_complete": "দুঃসাহসিক অভিযানৰ মানচিত্ৰ সম্পূৰ্ণ! + 5",
+      "experience_points_earned_acros": "সকলো মডিউলতে অৰ্জন কৰা অভিজ্ঞতা পইণ্ট"
+    },
+    "advancedhub": {
+      "algebra": "বীজগণিত",
+      "geometry": "জ্যামিতি",
+      "graphs": "গ্ৰাফসমূহ",
+      "trig": "ট্ৰিগ",
+      "decimals": "দশমিকসমূহ",
+      "vectors": "ভেক্টৰসমূহ",
+      "matrices": "মেট্ৰিকসমূহ",
+      "logs": "লগসমূহ",
+      "series": "ধাৰাবাহিক",
+      "complex": "জটিল",
+      "calculus": "কেল্কুলাছ",
+      "statistics": "পৰিসংখ্যা",
+      "probability": "সম্ভাৱনা",
+      "money": "টকা-পইচা।",
+      "mental": "মানসিকভাৱে",
+      "theory": "তত্ত্ব",
+      "sat_act": "এছ. এ. টি./এ. চি. টি.",
+      "olympiad": "অলিম্পিয়াড",
+      "core_math": "মূল গণিত",
+      "higher_math": "উচ্চ গণিত",
+      "data_applied": "তথ্য আৰু প্ৰয়োগ",
+      "test_prep": "পৰীক্ষাৰ প্ৰস্তুতি"
+    },
+    "earlyshell": {
+      "back_to_adventure": "দুঃসাহসিক একাডেমীলৈ ঘূৰি যাওক"
+    },
+    "earlyhome": {
+      "adventure_map": "দুঃসাহসিক অভিযানৰ মানচিত্ৰ"
+    },
+    "explorershub": {
+      "place_value": "স্থানৰ মান",
+      "clock": "ঘড়ী",
+      "measurement": "পৰিমাপ",
+      "coins": "মুদ্ৰাসমূহ",
+      "shapes": "আকৃতিবোৰ",
+      "word_problems": "শব্দৰ সমস্যাবোৰ",
+      "ratios": "অনুপাতসমূহ",
+      "integers": "পূৰ্ণসংখ্যাসমূহ",
+      "graph_creator": "গ্ৰাফ সৃষ্টিকৰ্তা",
+      "exponents": "প্ৰদৰ্শনকাৰীসকল",
+      "3d_volume": "3D ভলিউম",
+      "quadratics": "চতুৰ্ভুজসমূহ",
+      "systems": "ব্যৱস্থাসমূহ",
+      "coding": "কোডিং",
+      "math_art": "গণিত কলা",
+      "music": "সংগীত",
+      "chess": "দবা খেল",
+      "logic": "যুক্তি",
+      "sports": "ক্ৰীড়া",
+      "engineering": "অভিযান্ত্ৰিক",
+      "elementary": "প্ৰাথমিক",
+      "middle_school": "মিডল স্কুল",
+      "high_school": "উচ্চ মাধ্যমিক বিদ্যালয়",
+      "applied": "প্ৰয়োগ কৰা হৈছে"
+    },
+    "completioncelebration": {
+      "congratulations": "অভিনন্দন!",
+      "becoming_expert": "আপুনি এগৰাকী এআই বিশেষজ্ঞ হৈ পৰিছে!",
+      "pixel_proud": "আপুনি বিস্ময়কৰ কাম কৰিছে! আজি নতুন কিবা এটা শিকাৰ বাবে মই আপোনাক লৈ অতি গৌৰৱান্বিত। মনত ৰাখিব, প্ৰতিজন বিশেষজ্ঞ এসময়ত এজন নৱাগত আছিল!",
+      "back_adventures": "সকলো দুঃসাহসিক অভিযানলৈ ঘূৰি যাওক",
+      "explore_adventures": "অধিক দুঃসাহসিক অভিযান অন্বেষণ কৰক",
+      "fun_fact": "মজাৰ কথাঃ আপুনি এইমাত্ৰ এনেকুৱা এটা কথা শিকিলে যিটো বহু প্ৰাপ্তবয়স্ক লোকে নাজানে!"
+    },
+    "phaseindicator": {
+      "story": "কাহিনী",
+      "learn": "শিকা।",
+      "explore": "অন্বেষণ কৰক",
+      "play": "বজোৱা"
+    },
+    "landingpage": {
+      "ready_explore": "এআই অন্বেষণ কৰিবলৈ সাজু?",
+      "ai_master": "আপুনি এগৰাকী এ. আই. মাষ্টাৰ!",
+      "adventures_left": "দুঃসাহসিক অভিযান বাকী!",
+      "welcome_explorer": "স্বাগতম, এক্সপ্লোৰাৰ!",
+      "welcome_back": "পুনৰ স্বাগতম!",
+      "discover_ai": "এআইৰ বিস্ময়কৰ পৃথিৱীখন আৱিষ্কাৰ কৰিবলৈ সাজু? আহক একেলগে শিকি লওঁ!",
+      "continue_adventure": "আপোনাৰ এআই শিকাৰ দুঃসাহসিক অভিযান অব্যাহত ৰাখক!",
+      "concepts": "ধাৰণাসমূহ",
+      "recent_badges": "শেহতীয়া ব্যাজসমূহ",
+      "earned": "উপাৰ্জন কৰিছিল",
+      "your_journey": "আপোনাৰ শিক্ষণ যাত্ৰা",
+      "phase_story": "কাহিনী",
+      "desc_listen": "শুনক আৰু শিকাওক",
+      "phase_discover": "আৱিষ্কাৰ কৰক",
+      "desc_see": "এইটো কেনেকৈ কাম কৰে চাওক",
+      "phase_explore": "অন্বেষণ কৰক",
+      "desc_try": "নিজে চেষ্টা কৰক।",
+      "phase_play": "বজোৱা",
+      "desc_test": "আপোনাৰ দক্ষতা পৰীক্ষা কৰক",
+      "mini_games": "মিনি-গেমছ",
+      "mini_games_desc": "মেচ, স্ক্ৰেম্বল আৰু গতিৰ প্ৰত্যাহ্বান!",
+      "choose_adventure": "আপোনাৰ প্ৰথম দুঃসাহসিক অভিযান বাছনি কৰক!",
+      "continue_learning": "শিকাটো অব্যাহত ৰাখক",
+      "pick_topic": "আকৰ্ষণীয় যেন লগা যিকোনো বিষয় বাছনি কৰক!",
+      "adventures_waiting": "দুঃসাহসিক কাৰ্য্যই আপোনাক অপেক্ষা কৰি আছে!",
+      "review": "ৰিভিউ",
+      "start": "আৰম্ভ কৰক",
+      "expert_beginner": "\"প্ৰতিজন বিশেষজ্ঞ এসময়ত এজন নৱাগত আছিল!\"",
+      "footer_message": "আপোনাৰ সময় লওক, আনন্দ কৰক, আৰু মনত ৰাখক-প্ৰশ্ন সুধিলে আমি কেনেকৈ শিকিছো!"
     }
-  }
+  },
+  "loading": "ল'ড কৰা হৈছে...",
+  "opening_maker_space": "মেকাৰ স্পেচ মুকলি কৰা হৈছে...",
+  "opening_learning_paths": "শিকাৰ পথ মুকলি কৰা...",
+  "skip_to_main_content": "মূল সমললৈ যাওক",
+  "contact": {
+    "page_title": "আমাৰ সৈতে যোগাযোগ কৰক-জিগ্যাসু",
+    "meta_description": "জিগ্যাসু দলৰ সৈতে যোগাযোগ কৰক। আমি আপোনাৰ পৰা শুনি ভাল পাম।",
+    "title": "আমাৰ সৈতে যোগাযোগ কৰক",
+    "body": "আপোনাৰ কিবা প্ৰশ্ন আছে, মতামত আছে, বা জিগ্যাসুক সমৰ্থন কৰিব বিচাৰে নেকি? অনুগ্ৰহ কৰি আমাৰ যোগাযোগ প্ৰ-পত্ৰখন পূৰণ কৰক আৰু আমি যিমান সোনকালে পাৰো আপোনাৰ সৈতে যোগাযোগ কৰিম।",
+    "form_url": "https://forms.zohopublic.in/arsjobs2019gm1/form/JigyasuFeedbackSupport/formperma/WLidd2lYcJF7F35E8PvPQVfaBL8OMgCC9yMcSokcQCc",
+    "open_form_aria": "নতুন টেবত যোগাযোগ প্ৰ-পত্ৰ খোলক",
+    "open_form": "যোগাযোগ প্ৰ-পত্ৰ খোলক",
+    "email_us": "আমাক পোনপটীয়াকৈ ইমেইল কৰক",
+    "heading": "আমি আপোনাৰ পৰা শুনি ভাল পাম।"
+  },
+  "error": {
+    "title": "অ'প্ছ! কিবা ভুল হৈছে।",
+    "try_again": "পুনৰ চেষ্টা কৰক",
+    "go_home": "ঘৰলৈ যাওক।",
+    "technical_details": "কাৰিকৰী বিৱৰণ (বিকাশকাৰীসকলৰ বাবে)",
+    "subtitle": "চিন্তা নকৰিব, আপোনাৰ অগ্ৰগতি সুৰক্ষিত!",
+    "help_text": "পুনৰ চেষ্টা কৰক বা অধিক আমোদজনক কাৰ্যকলাপ অন্বেষণ কৰিবলৈ ঘূৰি যাওক।"
+  },
+  "heritage_world": "হেৰিটেজ ৱৰ্ল্ড",
+  "heritage_world_desc": "ভাৰতীয় পৰম্পৰাৰ জ্ঞান, সাহস আৰু প্ৰেমৰ কাহিনী-গীতা, ৰামায়ণ, সাধু আৰু উৰিষ্যাৰ লোককথা।",
+  "go_to_heritage_world": "হেৰিটেজ ৱৰ্ল্ড \\u2192 অন্বেষণ কৰক",
+  "gita_stories": "গীতাৰ কাহিনী",
+  "gita_stories_desc": "ভগৱত গীতাৰ প্রজ্ঞাৰ বিষয়ে শিকোৱা সচিত্র কাহিনীবোৰ।",
+  "ramayana_stories": "ৰামায়ণৰ কাহিনী",
+  "ramayana_stories_desc": "ভগৱান ৰামৰ মহাকাব্যিক যাত্ৰাৰ জৰিয়তে নৈতিক মূল্যবোধ।",
+  "indian_saints": "ভাৰতীয় সাধুসকল",
+  "indian_saints_desc": "ভাৰতৰ সৰ্বশ্ৰেষ্ঠ সাধুসকলৰ পৰা জ্ঞান আৰু সাহসৰ কাহিনী।",
+  "ai_world": "এআই অন্বেষণকাৰীসকল",
+  "ai_world_desc": "ইন্টাৰেক্টিভ কাহিনী, খেল আৰু প্ৰত্যাহ্বানৰ জৰিয়তে এআইয়ে কেনেদৰে কাম কৰে তাক আৱিষ্কাৰ কৰক। নিউৰেল নেটৱৰ্ক, এল. এল. এম., কম্পিউটাৰ ভিজন আৰু অধিকৰ বিষয়ে শিকা!",
+  "go_to_ai_world": "এআই ৱৰ্ল্ড \\u2192 অন্বেষণ কৰক",
+  "neural_networks": "স্নায়ৱিক নেটৱৰ্কসমূহ",
+  "neural_networks_desc": "এআই মগজু কেনেকৈ আপোনাৰ দৰে শিকিব পাৰে।",
+  "llm_world": "ভাষাৰ আৰ্হিসমূহ",
+  "llm_world_desc": "চেটজিপিটি আৰু বন্ধুসকলে কেনেদৰে লিখনি বুজি পায়।",
+  "ai_games": "এআই গেইমছ",
+  "ai_games_desc": "মিল খোৱা খেল, শব্দ স্ক্ৰেম্বল আৰু স্পিড ৰাউণ্ড খেলক।",
+  "game_hub": "খেলৰ কেন্দ্ৰ",
+  "game_hub_desc": "শিশু আৰু পৰিয়ালৰ বাবে 20 + আমোদজনক আৰু মস্তিষ্ক-প্ৰশিক্ষণমূলক খেল! দবা, স্নেক, টেট্ৰিছ, ছুডোকু, মেমৰী মেচ, আৰু অধিক।",
+  "go_to_game_hub": "খেলসমূহ খেলক \\u2192",
+  "strategy_games": "ৰণনীতি",
+  "strategy_games_desc": "দবা, কানেক্ট ফোৰ, আৰু টিক-টেক-টো।",
+  "puzzle_games": "প্ৰশ্নবোৰ",
+  "puzzle_games_desc": "ছুডোকু, 2048, জিগসঅ ', মেম'ৰী মেচ।",
+  "arcade_games": "আৰ্কেড",
+  "arcade_games_desc": "স্নেক, টেট্ৰিছ, পং, ব্ৰেকআউট, ডিনো ৰান।",
+  "what_youll_read": "আপুনি কি পঢ়িবঃ",
+  "what_youll_learn": "আপুনি কি শিকিবঃ",
+  "what_youll_play": "আপুনি কি খেলিবঃ",
+  "privacy": {
+    "page_title": "গোপনীয়তা নীতি-জিগ্যাসু",
+    "meta_description": "জিগ্যাসু গোপনীয়তা নীতি। আমি আপোনাৰ গোপনীয়তা সুৰক্ষিত কৰা আৰু এক নিৰাপদ শৈক্ষিক পৰিৱেশ নিশ্চিত কৰাৰ বাবে প্ৰতিশ্ৰুতিবদ্ধ।"
+  },
+  "profile": {
+    "meta_description": "আপোনাৰ জিগ্যাসু লার্নিং প্ৰফাইল, প্ৰগতি, আৰু ছেটিংছ।"
+  },
+  "terms": {
+    "page_title": "সেৱাৰ চৰ্তসমূহ-জিগ্যাসু",
+    "meta_description": "জিগ্যাসু সেৱাৰ চৰ্তাৱলী। অনুগ্ৰহ কৰি আমাৰ প্লেটফৰ্ম ব্যৱহাৰ কৰাৰ আগতে এই চৰ্তাৱলীবোৰ সাৱধানে পঢ়ক।"
+  },
+  "terms_general_contact": "সাধাৰণ অনুসন্ধানৰ বাবেঃ contact@jigyasu.app",
+  "app_name": "জিগ্যাসু",
+  "app_version": "v1.0.0",
+  "xp_label": "এক্স. পি.",
+  "txt_Zerowasinv": "সংখ্যা হিচাপে শূন্যৰ ধাৰণাটো ভাৰতত বিকশিত কৰা হৈছিল, ব্ৰহ্মগুপ্তই (628 খ্ৰীষ্টাব্দ) শূন্যৰ সৈতে গাণিতিকৰ বাবে প্ৰথম আনুষ্ঠানিক নিয়ম প্ৰদান কৰিছিল। দশমিক স্থান-মান প্ৰণালী, য'ত শূন্য অন্তৰ্ভুক্ত থাকে, দক্ষ গণনা সক্ষম কৰে আৰু আধুনিক গণিত আৰু কম্পিউটাৰৰ বাবে প্ৰাথমিক।"
 }

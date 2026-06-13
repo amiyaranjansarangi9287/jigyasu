@@ -27,7 +27,7 @@ export default function SpeedDistanceTime() {
           <div className="w-full h-1 bg-slate-800 absolute bottom-1/2" />
           <motion.div animate={{ x: ['-20%', '120%'] }} transition={{ duration: 120/speed, repeat: Infinity, ease: 'linear' }} className="text-5xl">🚀</motion.div>
         </div>
-        <div className="mb-6"><ScientificSlider label={t('auto.attr.speeddistancetime.engine_output_speed')} emoji="⚡" value={speed} min={10} max={120} unit="km/h" color="#6366F1" onChange={setSpeed} /></div>
+        <div className="mb-6"><ScientificSlider label={t('auto.speeddistancetime.engine_output_speed', 'Engine output / speed')} emoji="⚡" value={speed} min={10} max={120} unit="km/h" color="#6366F1" onChange={setSpeed} /></div>
         <button onClick={handleDiscover} className="w-full py-4 bg-indigo-600 text-white font-bold rounded-2xl">{t('discovery.modules.SpeedDistanceTime.btn_ConfirmSpe', 'Confirm Speed Discovery')}</button>
       </div>
     </DiscoveryShell>

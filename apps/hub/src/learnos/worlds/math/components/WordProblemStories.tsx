@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { sfx } from '../lib/soundEngine';
 import WhatsNext from './shared/WhatsNext';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 interface Problem {
   story: string;
@@ -15,61 +16,6 @@ interface Problem {
   solution: string;
 }
 
-const templates: (() => Problem)[] = [
-  () => {
-    const a = Math.floor(Math.random() * 20) + 5;
-    const b = Math.floor(Math.random() * 15) + 3;
-    const answer = a + b;
-    return { story: `Sam picked ${a} apples in the morning. In the afternoon, he picked ${b} more.`, emoji: '🍎', category: 'Addition', question: 'How many apples did Sam pick in total?', answer, options: opts(answer), hint: 'Add the morning and afternoon amounts.', solution: `${a} + ${b} = ${answer} apples` };
-  },
-  () => {
-    const a = Math.floor(Math.random() * 30) + 20;
-    const b = Math.floor(Math.random() * 15) + 5;
-    const answer = a - b;
-    return { story: `A bakery made ${a} cookies. They sold ${b} cookies before lunch.`, emoji: '🍪', category: 'Subtraction', question: 'How many cookies are left?', answer, options: opts(answer), hint: 'Subtract the cookies sold from the total.', solution: `${a} - ${b} = ${answer} cookies` };
-  },
-  () => {
-    const bags = Math.floor(Math.random() * 6) + 3;
-    const per = Math.floor(Math.random() * 8) + 4;
-    const answer = bags * per;
-    return { story: `A farmer has ${bags} bags of oranges. Each bag holds ${per} oranges.`, emoji: '🍊', category: 'Multiplication', question: 'How many oranges are there in total?', answer, options: opts(answer), hint: 'Multiply the number of bags by oranges per bag.', solution: `${bags} × ${per} = ${answer} oranges` };
-  },
-  () => {
-    const kids = Math.floor(Math.random() * 5) + 3;
-    const per = Math.floor(Math.random() * 8) + 4;
-    const total = kids * per;
-    return { story: `${total} stickers are shared equally among ${kids} children.`, emoji: '⭐', category: 'Division', question: 'How many stickers does each child get?', answer: per, options: opts(per), hint: 'Divide the total stickers by the number of children.', solution: `${total} ÷ ${kids} = ${per} stickers each` };
-  },
-  () => {
-    const price = Math.floor(Math.random() * 8 + 2) * 5;
-    const qty = Math.floor(Math.random() * 4) + 2;
-    const paid = price * qty + Math.floor(Math.random() * 3) * 10 + 10;
-    const total = price * qty;
-    const answer = paid - total;
-    return { story: `Emma buys ${qty} notebooks at $${price} each. She pays with a $${paid} bill.`, emoji: '📓', category: 'Multi-step', question: 'How much change does Emma get?', answer, options: opts(answer), hint: `First find the total cost: ${qty} × $${price}.`, solution: `Total = ${qty} × $${price} = $${total}. Change = $${paid} - $${total} = $${answer}` };
-  },
-  () => {
-    const speed = [30, 40, 50, 60][Math.floor(Math.random() * 4)];
-    const time = Math.floor(Math.random() * 4) + 2;
-    const answer = speed * time;
-    return { story: `A train travels at ${speed} km/h for ${time} hours.`, emoji: '🚂', category: 'Distance', question: 'How far does the train travel?', answer, options: opts(answer), hint: 'Distance = Speed × Time', solution: `${speed} × ${time} = ${answer} km` };
-  },
-  () => {
-    const l = Math.floor(Math.random() * 10) + 5;
-    const w = Math.floor(Math.random() * 8) + 3;
-    const answer = 2 * (l + w);
-    return { story: `A rectangular garden is ${l} meters long and ${w} meters wide.`, emoji: '🌿', category: 'Perimeter', question: 'What is the perimeter of the garden?', answer, options: opts(answer), hint: 'Perimeter = 2 × (length + width)', solution: `2 × (${l} + ${w}) = 2 × ${l + w} = ${answer} m` };
-  },
-  () => {
-    const total = Math.floor(Math.random() * 30) + 20;
-    const fraction = [2, 3, 4, 5][Math.floor(Math.random() * 4)];
-    const answer = total / fraction;
-    const adjTotal = Math.round(answer) * fraction;
-    const adjAnswer = adjTotal / fraction;
-    return { story: `There are ${adjTotal} students in a class. 1/${fraction} of them wear glasses.`, emoji: '👓', category: 'Fractions', question: 'How many students wear glasses?', answer: adjAnswer, options: opts(adjAnswer), hint: `Divide the total by ${fraction}.`, solution: `${adjTotal} ÷ ${fraction} = ${adjAnswer} students` };
-  },
-];
-
 function opts(answer: number): number[] {
   const s = new Set([answer]);
   while (s.size < 4) {
@@ -80,6 +26,63 @@ function opts(answer: number): number[] {
 }
 
 export default function WordProblemStories() {
+  const { t } = useTranslation();
+
+  const templates: (() => Problem)[] = [
+    () => {
+      const a = Math.floor(Math.random() * 20) + 5;
+      const b = Math.floor(Math.random() * 15) + 3;
+      const answer = a + b;
+      return { story: t('auto.wordproblemstories.story_apples', '{{name}} picked {{a}} apples in the morning. In the afternoon, he picked {{b}} more.', { name: t('auto.wordproblemstories.name_rahul', 'Rahul'), a, b }), emoji: '🍎', category: t('auto.wordproblemstories.addition', 'Addition'), question: t('auto.wordproblemstories.q_apples', 'How many apples did {{name}} pick in total?', { name: t('auto.wordproblemstories.name_rahul', 'Rahul') }), answer, options: opts(answer), hint: t('auto.wordproblemstories.hint_apples', 'Add the morning and afternoon amounts.'), solution: t('auto.wordproblemstories.sol_apples', '{{a}} + {{b}} = {{answer}} apples', { a, b, answer }) };
+    },
+    () => {
+      const a = Math.floor(Math.random() * 30) + 20;
+      const b = Math.floor(Math.random() * 15) + 5;
+      const answer = a - b;
+      return { story: t('auto.wordproblemstories.story_cookies', 'A bakery made {{a}} cookies. They sold {{b}} cookies before lunch.', { a, b }), emoji: '🍪', category: t('auto.wordproblemstories.subtraction', 'Subtraction'), question: t('auto.wordproblemstories.q_cookies', 'How many cookies are left?'), answer, options: opts(answer), hint: t('auto.wordproblemstories.hint_cookies', 'Subtract the cookies sold from the total.'), solution: t('auto.wordproblemstories.sol_cookies', '{{a}} - {{b}} = {{answer}} cookies', { a, b, answer }) };
+    },
+    () => {
+      const bags = Math.floor(Math.random() * 6) + 3;
+      const per = Math.floor(Math.random() * 8) + 4;
+      const answer = bags * per;
+      return { story: t('auto.wordproblemstories.story_oranges', 'A farmer has {{bags}} bags of oranges. Each bag holds {{per}} oranges.', { bags, per }), emoji: '🍊', category: t('auto.wordproblemstories.multiplication', 'Multiplication'), question: t('auto.wordproblemstories.q_oranges', 'How many oranges are there in total?'), answer, options: opts(answer), hint: t('auto.wordproblemstories.hint_oranges', 'Multiply the number of bags by oranges per bag.'), solution: t('auto.wordproblemstories.sol_oranges', '{{bags}} × {{per}} = {{answer}} oranges', { bags, per, answer }) };
+    },
+    () => {
+      const kids = Math.floor(Math.random() * 5) + 3;
+      const per = Math.floor(Math.random() * 8) + 4;
+      const total = kids * per;
+      return { story: t('auto.wordproblemstories.story_stickers', '{{total}} stickers are shared equally among {{kids}} children.', { total, kids }), emoji: '⭐', category: t('auto.wordproblemstories.division', 'Division'), question: t('auto.wordproblemstories.q_stickers', 'How many stickers does each child get?'), answer: per, options: opts(per), hint: t('auto.wordproblemstories.hint_stickers', 'Divide the total stickers by the number of children.'), solution: t('auto.wordproblemstories.sol_stickers', '{{total}} ÷ {{kids}} = {{per}} stickers each', { total, kids, per }) };
+    },
+    () => {
+      const price = Math.floor(Math.random() * 8 + 2) * 5;
+      const qty = Math.floor(Math.random() * 4) + 2;
+      const paid = price * qty + Math.floor(Math.random() * 3) * 10 + 10;
+      const total = price * qty;
+      const answer = paid - total;
+      return { story: t('auto.wordproblemstories.story_notebooks', '{{name}} buys {{qty}} notebooks at ₹{{price}} each. She pays with a ₹{{paid}} note.', { name: t('auto.wordproblemstories.name_priya', 'Priya'), qty, price, paid }), emoji: '📓', category: t('auto.wordproblemstories.multi_step', 'Multi-step'), question: t('auto.wordproblemstories.q_notebooks', 'How much change does {{name}} get?', { name: t('auto.wordproblemstories.name_priya', 'Priya') }), answer, options: opts(answer), hint: t('auto.wordproblemstories.hint_notebooks', 'First find the total cost: {{qty}} × ₹{{price}}.', { qty, price }), solution: t('auto.wordproblemstories.sol_notebooks', 'Total = {{qty}} × ₹{{price}} = ₹{{total}}. Change = ₹{{paid}} - ₹{{total}} = ₹{{answer}}', { qty, price, total, paid, answer }) };
+    },
+    () => {
+      const speed = [30, 40, 50, 60][Math.floor(Math.random() * 4)];
+      const time = Math.floor(Math.random() * 4) + 2;
+      const answer = speed * time;
+      return { story: t('auto.wordproblemstories.story_train', 'A train travels at {{speed}} km/h for {{time}} hours.', { speed, time }), emoji: '🚂', category: t('auto.wordproblemstories.distance', 'Distance'), question: t('auto.wordproblemstories.q_train', 'How far does the train travel?'), answer, options: opts(answer), hint: t('auto.wordproblemstories.hint_train', 'Distance = Speed × Time'), solution: t('auto.wordproblemstories.sol_train', '{{speed}} × {{time}} = {{answer}} km', { speed, time, answer }) };
+    },
+    () => {
+      const l = Math.floor(Math.random() * 10) + 5;
+      const w = Math.floor(Math.random() * 8) + 3;
+      const answer = 2 * (l + w);
+      return { story: t('auto.wordproblemstories.story_garden', 'A rectangular garden is {{l}} meters long and {{w}} meters wide.', { l, w }), emoji: '🌿', category: t('auto.wordproblemstories.perimeter', 'Perimeter'), question: t('auto.wordproblemstories.q_garden', 'What is the perimeter of the garden?'), answer, options: opts(answer), hint: t('auto.wordproblemstories.hint_garden', 'Perimeter = 2 × (length + width)'), solution: t('auto.wordproblemstories.sol_garden', '2 × ({{l}} + {{w}}) = 2 × {{sum}} = {{answer}} m', { l, w, sum: l + w, answer }) };
+    },
+    () => {
+      const total = Math.floor(Math.random() * 30) + 20;
+      const fraction = [2, 3, 4, 5][Math.floor(Math.random() * 4)];
+      const answer = total / fraction;
+      const adjTotal = Math.round(answer) * fraction;
+      const adjAnswer = adjTotal / fraction;
+      return { story: t('auto.wordproblemstories.story_glasses', 'There are {{adjTotal}} students in a class. 1/{{fraction}} of them wear glasses.', { adjTotal, fraction }), emoji: '👓', category: t('auto.wordproblemstories.fractions', 'Fractions'), question: t('auto.wordproblemstories.q_glasses', 'How many students wear glasses?'), answer: adjAnswer, options: opts(adjAnswer), hint: t('auto.wordproblemstories.hint_glasses', 'Divide the total by {{fraction}}.', { fraction }), solution: t('auto.wordproblemstories.sol_glasses', '{{adjTotal}} ÷ {{fraction}} = {{adjAnswer}} students', { adjTotal, fraction, adjAnswer }) };
+    },
+  ];
+
   const [problem, setProblem] = useState<Problem>(() => templates[0]());
   const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [showHint, setShowHint] = useState(false);
@@ -92,7 +95,7 @@ export default function WordProblemStories() {
     setFeedback(null);
     setShowHint(false);
     setShowSolution(false);
-  }, []);
+  }, [templates]);
 
   const handleAnswer = (opt: number) => {
     if (feedback) return;

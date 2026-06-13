@@ -38,7 +38,6 @@ export default function VectorsArena() {
   };
 
   const Arrow = ({ x, y, color, label }: { x: number; y: number; color: string; label: string }) => {
-      const { t } = useTranslation();
     const len = Math.sqrt(x * x + y * y);
     if (len < 0.01) return null;
     const angle = Math.atan2(-y, x);
@@ -111,13 +110,13 @@ export default function VectorsArena() {
             <div className="bg-white/5 rounded-3xl p-4 border border-white/10 flex justify-center">
               <svg width={gSize} height={gSize} className="bg-black/20 rounded-xl">
                 {Array.from({ length: gRange * 2 + 1 }).map((_, i) => {
-                    const { t } = useTranslation(); const p = i * unit; return <g key={i}><line x1={p} y1={0} x2={p} y2={gSize} stroke="rgba(255,255,255,0.05)" /><line x1={0} y1={p} x2={gSize} y2={p} stroke="rgba(255,255,255,0.05)" /></g>; })}
+                    const p = i * unit; return <g key={i}><line x1={p} y1={0} x2={p} y2={gSize} stroke="rgba(255,255,255,0.05)" /><line x1={0} y1={p} x2={gSize} y2={p} stroke="rgba(255,255,255,0.05)" /></g>; })}
                 <line x1={0} y1={cy} x2={gSize} y2={cy} stroke="rgba(255,255,255,0.25)" /><line x1={cx} y1={0} x2={cx} y2={gSize} stroke="rgba(255,255,255,0.25)" />
                 {/* Parallelogram */}
                 <motion.polygon points={`${cx},${cy} ${sx(ax)},${sy(ay)} ${sx(sum.x)},${sy(sum.y)} ${sx(bx)},${sy(by)}`} fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.25)" strokeWidth="1" strokeDasharray="4" />
-                <Arrow x={ax} y={ay} color="#3b82f6" label={t('auto.attr.vectorsarena.a')} />
-                <Arrow x={bx} y={by} color="#f97316" label={t('auto.attr.vectorsarena.b')} />
-                <Arrow x={sum.x} y={sum.y} color="#22c55e" label={t('auto.attr.vectorsarena.a_b')} />
+                <Arrow x={ax} y={ay} color="#3b82f6" label={t('auto.vectorsarena.a_label', 'A')} />
+                <Arrow x={bx} y={by} color="#f97316" label={t('auto.vectorsarena.b_label', 'B')} />
+                <Arrow x={sum.x} y={sum.y} color="#22c55e" label={t('auto.vectorsarena.a_b_label', 'A+B')} />
               </svg>
             </div>
           </motion.div>

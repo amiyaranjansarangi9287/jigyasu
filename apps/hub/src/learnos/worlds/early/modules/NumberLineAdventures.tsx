@@ -88,7 +88,7 @@ export default function NumberLineAdventures() {
       const next = prev + 1;
       if (next >= problemsForDifficulty.length && difficulty < 3) {
         setDifficulty(d => Math.min(3, d + 1));
-        pip.sayCustom("Ooh! You're ready for bigger numbers!", 'celebrating');
+        pip.sayCustom(t('auto.numberlineadventures.ready_bigger', "Ooh! You're ready for bigger numbers!"), 'celebrating');
         return 0;
       }
       return next;
@@ -185,7 +185,7 @@ export default function NumberLineAdventures() {
               <span className="text-3xl">{problem.emoji}</span>
               <div>
                 <p className="text-xl font-bold text-gray-800"><Trans i18nKey="auto.numberlineadventures.start_at">Start at</Trans> <span className="text-blue-600">{problem.startNumber}</span></p>
-                <p className="text-lg text-gray-600"><Trans i18nKey="auto.numberlineadventures.jump">Jump</Trans> <span className="font-bold text-indigo-600">{problem.steps}</span> <Trans i18nKey="auto.numberlineadventures.steps">steps</Trans> <span className="font-bold">{problem.direction === 'forward' ? 'forward →' : '← backward'}</span></p>
+                <p className="text-lg text-gray-600"><Trans i18nKey="auto.numberlineadventures.jump">Jump</Trans> <span className="font-bold text-indigo-600">{problem.steps}</span> <Trans i18nKey="auto.numberlineadventures.steps">steps</Trans> <span className="font-bold">{problem.direction === 'forward' ? t('auto.numberlineadventures.forward', 'forward →') : t('auto.numberlineadventures.backward', '← backward')}</span></p>
               </div>
             </div>
           </div>

@@ -11,8 +11,10 @@ import { useEarlyProgress } from '../hooks/useEarlyProgress';
 import { useEarlySession } from '../hooks/useEarlySession';
 import { INDIAN_COINS, SHOP_ITEMS } from '../data/earlyContent';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 export default function CoinCounter() {
+  const { t } = useTranslation();
   const soundEnabled = useSettingsStore((s) => s.soundEnabled);
   const pip = usePip();
   const { recordPurchase } = useEarlyProgress();
@@ -36,7 +38,7 @@ export default function CoinCounter() {
     if (soundEnabled) try { AudioEngine.playTone({ frequency: 500 + coinValue * 0.3, type: 'sine', duration: 0.15, volume: 0.2, attack: 0.01, decay: 0.05 }); } catch (_) {}
 
     if (newPaid > item.priceInPaise + 500) {
-      pip.sayCustom("Ooh! That might be too many coins! Try the right amount.", 'curious');
+      pip.sayCustom(t('auto.coincounter.too_many', 'Ooh! That might be too many coins! Try the right amount.'), 'curious');
     }
   }, [purchased, paidPaise, item, soundEnabled, pip]);
 
@@ -52,13 +54,13 @@ export default function CoinCounter() {
     } else if (isOver) {
       const change = paidPaise - item.priceInPaise;
       setPurchased(true);
-      pip.sayCustom(`Here is ₹${(change / 100).toFixed(change % 100 === 0 ? 0 : 2)} change!`, 'excited');
+      pip.sayCustom(`${t('auto.coincounter.here_is', 'Here is')} ₹${(change / 100).toFixed(change % 100 === 0 ? 0 : 2)} ${t('auto.coincounter.change_excl', 'change!')}`, 'excited');
       if (soundEnabled) try { AudioEngine.playSuccess(); } catch (_) {}
       await trackCorrect('coin-counter', { item: item.id, paid: paidPaise, change });
       await recordPurchase(true);
       setPurchaseCount(c => c + 1);
     } else {
-      pip.sayCustom("Not enough coins yet! Add more.", 'thinking');
+      pip.sayCustom(t('auto.coincounter.not_enough', 'Not enough coins yet! Add more.'), 'thinking');
       await trackWrong('coin-counter', { item: item.id, paid: paidPaise, needed: item.priceInPaise });
     }
   }, [purchased, isExact, isOver, paidPaise, item, soundEnabled, pip, trackCorrect, trackWrong, recordPurchase]);
@@ -68,7 +70,7 @@ export default function CoinCounter() {
     setPaidPaise(0);
     setCoinsUsed([]);
     setPurchased(false);
-    pip.sayCustom("What would you like next?", 'excited');
+    pip.sayCustom(t('auto.coincounter.what_next', 'What would you like next?'), 'excited');
   };
 
   const handleReset = () => {
@@ -145,7 +147,7 @@ export default function CoinCounter() {
                 className={`w-full py-4 rounded-2xl font-bold text-xl min-h-[56px] transition-all ${
                   paidPaise >= item.priceInPaise ? 'bg-green-600 text-white shadow-lg' : 'bg-gray-200 text-gray-500'
                 }`}>
-                {paidPaise >= item.priceInPaise ? '💰 Pay Now!' : 'Add more coins...'}
+                {paidPaise >= item.priceInPaise ? t('auto.coincounter.pay_now', '💰 Pay Now!') : t('auto.coincounter.add_more_coins', 'Add more coins...')}
               </motion.button>
               {coinsUsed.length > 0 && (
                 <button onClick={handleReset} className="w-full py-3 text-gray-500 font-medium text-base min-h-[44px]"><Trans i18nKey="auto.coincounter.reset_coins">Reset coins</Trans></button>

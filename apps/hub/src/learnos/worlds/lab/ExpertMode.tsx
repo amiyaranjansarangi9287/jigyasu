@@ -65,8 +65,8 @@ export default function ExpertMode({ visible, module, onClose, onExpertEarned }:
           {phase === 'q1' && (
             <div>
               <div className="bg-slate-800 rounded-2xl p-4 mb-4"><p className="text-white text-sm font-medium">{qs.q1}</p></div>
-              <textarea value={a1} onChange={e => setA1(e.target.value)} placeholder={t('auto.attr.expertmode.type_your_explanation')} rows={4} className="w-full bg-slate-800 text-white rounded-2xl p-4 text-sm resize-none border border-slate-700 focus:border-blue-500 focus:outline-none placeholder-slate-500" />
-              {f1 !== 'none' && <div className={`mt-3 rounded-xl p-3 text-sm font-medium ${f1 === 'good' ? 'bg-green-900/50 text-green-300' : 'bg-amber-900/50 text-amber-300'}`}>{f1 === 'good' ? '✓ Good explanation!' : '◎ Reasonable start.'}</div>}
+              <textarea value={a1} onChange={e => setA1(e.target.value)} placeholder={t('auto.expertmode.type_your_explanation', 'Type your explanation...')} rows={4} className="w-full bg-slate-800 text-white rounded-2xl p-4 text-sm resize-none border border-slate-700 focus:border-blue-500 focus:outline-none placeholder-slate-500" />
+              {f1 !== 'none' && <div className={`mt-3 rounded-xl p-3 text-sm font-medium ${f1 === 'good' ? 'bg-green-900/50 text-green-300' : 'bg-amber-900/50 text-amber-300'}`}>{f1 === 'good' ? t('auto.expertmode.good_explanation', '✓ Good explanation!') : t('auto.expertmode.reasonable_start', '◎ Reasonable start.')}</div>}
               {f1 === 'none' && <button onClick={submitQ1} disabled={a1.trim().length < 10} className={`w-full py-4 rounded-2xl font-bold mt-3 min-h-[52px] ${a1.trim().length >= 10 ? 'bg-blue-600 text-white' : 'bg-slate-800 text-slate-500'}`}><Trans i18nKey="auto.expertmode.submit">Submit →</Trans></button>}
             </div>
           )}
@@ -74,8 +74,8 @@ export default function ExpertMode({ visible, module, onClose, onExpertEarned }:
           {phase === 'q2' && (
             <div>
               <div className="bg-slate-800 rounded-2xl p-4 mb-4"><p className="text-slate-400 text-sm mb-1"><Trans i18nKey="auto.expertmode.follow_up">Follow-up</Trans></p><p className="text-white text-sm font-medium">{qs.q2}</p></div>
-              <textarea value={a2} onChange={e => setA2(e.target.value)} placeholder={t('auto.attr.expertmode.think_carefully')} rows={4} className="w-full bg-slate-800 text-white rounded-2xl p-4 text-sm resize-none border border-slate-700 focus:border-blue-500 focus:outline-none placeholder-slate-500" />
-              {f2 !== 'none' && <div className={`mt-3 rounded-xl p-3 text-sm font-medium ${f2 === 'good' ? 'bg-green-900/50 text-green-300' : 'bg-amber-900/50 text-amber-300'}`}>{f2 === 'good' ? '✓ Excellent!' : '◎ Good effort.'}</div>}
+              <textarea value={a2} onChange={e => setA2(e.target.value)} placeholder={t('auto.expertmode.think_carefully', 'Think carefully...')} rows={4} className="w-full bg-slate-800 text-white rounded-2xl p-4 text-sm resize-none border border-slate-700 focus:border-blue-500 focus:outline-none placeholder-slate-500" />
+              {f2 !== 'none' && <div className={`mt-3 rounded-xl p-3 text-sm font-medium ${f2 === 'good' ? 'bg-green-900/50 text-green-300' : 'bg-amber-900/50 text-amber-300'}`}>{f2 === 'good' ? t('auto.expertmode.excellent', '✓ Excellent!') : t('auto.expertmode.good_effort', '◎ Good effort.')}</div>}
               {f2 === 'none' && <button onClick={submitQ2} disabled={a2.trim().length < 10} className={`w-full py-4 rounded-2xl font-bold mt-3 min-h-[52px] ${a2.trim().length >= 10 ? 'bg-blue-600 text-white' : 'bg-slate-800 text-slate-500'}`}><Trans i18nKey="auto.expertmode.final_answer">Final Answer →</Trans></button>}
             </div>
           )}
@@ -83,8 +83,8 @@ export default function ExpertMode({ visible, module, onClose, onExpertEarned }:
           {phase === 'done' && (
             <div className="text-center py-4">
               <div className="text-6xl mb-4">{f1 === 'good' || f2 === 'good' ? '⭐' : '🔬'}</div>
-              <h3 className="text-xl font-extrabold text-white mb-2">{f1 === 'good' || f2 === 'good' ? 'Expert Earned!' : 'Scientist Level'}</h3>
-              <p className="text-slate-400 text-sm mb-6">{f1 === 'good' || f2 === 'good' ? 'You can explain this clearly. That is mastery.' : 'Keep practicing — explaining gets easier.'}</p>
+              <h3 className="text-xl font-extrabold text-white mb-2">{f1 === 'good' || f2 === 'good' ? t('auto.expertmode.expert_earned', 'Expert Earned!') : t('auto.expertmode.scientist_level', 'Scientist Level')}</h3>
+              <p className="text-slate-400 text-sm mb-6">{f1 === 'good' || f2 === 'good' ? t('auto.expertmode.you_can_explain_this_clearly', 'You can explain this clearly. That is mastery.') : t('auto.expertmode.keep_practicing', 'Keep practicing — explaining gets easier.')}</p>
               <div className="flex gap-3"><button onClick={reset} className="flex-1 py-3 bg-slate-800 text-slate-300 font-bold rounded-2xl"><Trans i18nKey="auto.expertmode.try_again">Try Again</Trans></button><button onClick={onClose} className="flex-1 py-3 bg-blue-600 text-white font-bold rounded-2xl"><Trans i18nKey="auto.expertmode.back">Back</Trans></button></div>
             </div>
           )}

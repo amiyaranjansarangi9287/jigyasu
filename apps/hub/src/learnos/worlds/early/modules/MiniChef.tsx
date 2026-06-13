@@ -34,7 +34,7 @@ export default function MiniChef() {
     setStep('cook');
     setCurrentIngIdx(0);
     setAddedIngredients([]);
-    pip.sayCustom(`Let's make ${r.name}! First ingredient!`, 'excited');
+    pip.sayCustom(t('auto.minichef.lets_make', 'Let\'s make {{name}}! First ingredient!', { name: r.name }), 'excited');
   };
 
   const handleIngredientTap = useCallback(async (ingIdx: number) => {
@@ -51,7 +51,7 @@ export default function MiniChef() {
       if (newAdded.length >= recipe.ingredients.length) {
         // All ingredients added — mixing!
         setShowMixing(true);
-        pip.sayCustom('Time to mix it all together!', 'celebrating');
+        pip.sayCustom(t('auto.minichef.time_to_mix', 'Time to mix it all together!'), 'celebrating');
         await trackCorrect('mini-chef', { recipe: recipe.id });
 
         setTimeout(() => {
@@ -64,7 +64,7 @@ export default function MiniChef() {
       } else {
         setCurrentIngIdx(ingIdx + 1);
         const nextIng = recipe.ingredients[ingIdx + 1];
-        pip.sayCustom(`Next: add ${nextIng.amount} ${nextIng.unit} of ${nextIng.name}!`, 'encouraging');
+        pip.sayCustom(t('auto.minichef.next_add', 'Next: add {{amount}} {{unit}} of {{name}}!', { amount: String(nextIng.amount), unit: nextIng.unit, name: nextIng.name }), 'encouraging');
       }
     } else {
       // Wrong ingredient

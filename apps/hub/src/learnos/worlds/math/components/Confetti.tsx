@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const COLORS = ['#ef4444', '#f97316', '#eab308', '#22c55e', '#3b82f6', '#8b5cf6', '#ec4899'];
 const EMOJIS = ['⭐', '🌟', '✨', '🎉', '🎊', '🏆', '💫', '🎇'];
@@ -15,6 +16,7 @@ interface Particle {
 }
 
 export default function Confetti({ active }: { active: boolean }) {
+  const { t } = useTranslation();
   const [particles, setParticles] = useState<Particle[]>([]);
 
   useEffect(() => {

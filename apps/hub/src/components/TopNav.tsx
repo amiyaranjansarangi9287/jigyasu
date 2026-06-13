@@ -47,9 +47,9 @@ export default function TopNav() {
         className="flex items-center gap-3 cursor-pointer group"
         onClick={() => navigate('/')}
       >
-        <span className="text-3xl group-hover:scale-110 transition-transform">🌟</span>
-        <h1 className={`text-2xl font-extrabold tracking-tight transition-colors ${isTransparentWithWhiteText ? 'text-white drop-shadow-md group-hover:text-sky-300' : 'text-slate-800 group-hover:text-sky-500'}`}><Trans i18nKey="auto.topnav.jigyasu">Jigyasu</Trans></h1>
-        <span className={`text-sm font-bold self-end mb-1 ml-1 hidden sm:block ${isTransparentWithWhiteText ? 'text-white/80' : 'text-slate-400'}`}><Trans i18nKey="auto.topnav.v1_0_0">v1.0.0</Trans></span>
+        <span className="text-3xl group-hover:scale-110 transition-transform" aria-hidden="true">🌟</span>
+        <h1 className={`text-2xl font-extrabold tracking-tight transition-colors ${isTransparentWithWhiteText ? 'text-white drop-shadow-md group-hover:text-sky-300' : 'text-slate-800 group-hover:text-sky-500'}`}>{t('app_name', 'Jigyasu')}</h1>
+        <span className={`text-sm font-bold self-end mb-1 ml-1 hidden sm:block ${isTransparentWithWhiteText ? 'text-white/80' : 'text-slate-400'}`}>{t('app_version', 'v1.0.0')}</span>
         {location.pathname !== '/' && (
           <span className={`ml-2 px-3 py-1 rounded-full text-sm font-bold hidden sm:block transition-colors ${
             isTransparentWithWhiteText 
@@ -70,13 +70,13 @@ export default function TopNav() {
         {profile && (
           <div className="hidden sm:flex items-center gap-3 text-sm font-bold text-slate-700 bg-slate-100 rounded-full px-4 py-1.5 border border-slate-200 shadow-sm">
             <div className="flex items-center gap-1.5" title={t('daily_streak', 'Daily Streak')}>
-              <span className="text-orange-500 text-lg">🔥</span>
+              <span className="text-orange-500 text-lg" aria-hidden="true">🔥</span>
               <span>{profile.streakDays || 0}</span>
             </div>
             <div className="w-px h-4 bg-slate-300"></div>
             <div className="flex items-center gap-1.5" title={`${t('daily_goal', 'Daily Goal')}: ${profile.dailyXP || 0} / ${profile.dailyGoalXP || 50} XP`}>
               <DailyGoalRing currentXP={profile.dailyXP || 0} goalXP={profile.dailyGoalXP || 50} size={24} />
-              <span>{xp} <Trans i18nKey="auto.topnav.xp">XP</Trans></span>
+              <span>{xp} {t('xp_label', 'XP')}</span>
             </div>
           </div>
         )}
@@ -87,7 +87,7 @@ export default function TopNav() {
             className="w-10 h-10 flex items-center justify-center bg-slate-100 hover:bg-slate-200 rounded-full transition-colors text-xl shadow-sm border border-slate-200"
             title={t('search', 'Search')}
           >
-            🔍
+            <span aria-hidden="true">🔍</span>
           </button>
         )}
 

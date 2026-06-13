@@ -51,7 +51,7 @@ export default function NumberLine() {
             <span className="text-2xl">{t('lab.modules.NumberLine.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.numberline.indian_number_innovation">Indian Number Innovation</Trans></h3>
-              <p className="text-gray-600 text-sm leading-relaxed"><Trans i18nKey="auto.numberline.india_gave_the_world">India gave the world</Trans> <strong><Trans i18nKey="auto.numberline.zero">zero</Trans></strong> <Trans i18nKey="auto.numberline.and">and</Trans> <strong><Trans i18nKey="auto.numberline.negative_numbers">negative numbers</Trans></strong><Trans i18nKey="auto.numberline.brahmagupta_628_ce_defined_rul">! Brahmagupta (628 CE) defined rules for negative numbers — calling them "debt" vs "fortune." The number line concept with negatives was understood 1,000 years before Europe!</Trans></p>
+              <p className="text-gray-600 text-sm leading-relaxed"><Trans i18nKey="auto.numberline.india_gave_the_world">India gave the world</Trans> <strong><Trans i18nKey="auto.numberline.zero">zero</Trans></strong> <Trans i18nKey="auto.numberline.and">and</Trans> <strong><Trans i18nKey="auto.numberline.negative_numbers">negative numbers</Trans></strong><Trans i18nKey="auto.numberline.brahmagupta_628_ce_defined_rul">! Brahmagupta (628 CE) defined formal rules for arithmetic with negative numbers — calling them "debt" vs "fortune" — centuries before negative numbers were widely accepted in European mathematics.</Trans></p>
             </div>
           </div>
         </div>

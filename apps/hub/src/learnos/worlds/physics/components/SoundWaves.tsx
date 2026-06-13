@@ -2,8 +2,10 @@
 import { useRef, useEffect, useState, useCallback } from 'react';
 import ModuleWrapper from './ModuleWrapper';
 import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
+import { useTranslation } from 'react-i18next';
 
 export default function SoundWaves() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animRef = useRef<number>(0);
   const [progress, setProgress] = useState<UserProgress>(loadProgress);
@@ -62,7 +64,7 @@ export default function SoundWaves() {
     ctx.fillText(`${frequency} Hz — ${waveform}`, 20, 30);
     ctx.fillStyle = '#888';
     ctx.font = '10px sans-serif';
-    const note = frequency < 262 ? 'C4' : frequency < 294 ? 'D4' : frequency < 330 ? 'E4' : frequency < 349 ? 'F4' : frequency < 392 ? 'G4' : frequency < 440 ? 'A4' : 'A4';
+    const note = frequency < 262 ? 'C4' : frequency < 294 ? 'D4' : frequency < 330 ? 'E4' : frequency < 349 ? 'F4' : frequency < 392 ? 'G4' : frequency < 440 ? 'A4' : frequency < 494 ? 'B4' : 'C5+';
     ctx.fillText(`Note: ${note} | λ = ${(343 / frequency).toFixed(2)}m`, 20, 45);
     ctx.fillText(`Speed of sound: 343 m/s`, 20, 60);
   }, [frequency, amplitude, waveform, time]);

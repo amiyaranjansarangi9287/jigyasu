@@ -96,7 +96,7 @@ export const EXPLORER_CONCEPTS: ExplorerConceptMetadata[] = [
     path: 'magnets',
     lumoOpener: "Faraday, who discovered electromagnetic induction, had almost no formal education. His notebooks are extraordinary. He kept asking: what does a magnetic field look like?",
     thinkingPrompt: 'If magnetism and electricity are one force, why do we treat them as separate subjects in school?',
-    indianContext: "JC Bose was demonstrating wireless communication before Marconi patented it. India's contribution to electromagnetism research is systematically underappreciated.",
+    indianContext: "Jagadish Chandra Bose pioneered research on radio waves and millimetre-wave communication in the 1890s, independently exploring wireless transmission around the same time as Marconi. India's contributions to electromagnetism research deserve wider recognition.",
     estimatedMinutes: 8,
   },
   {
@@ -213,34 +213,40 @@ export const EXPLORER_CONCEPTS: ExplorerConceptMetadata[] = [
   },
 ];
 
-export const INTEREST_LENSES: Record<InterestLens, { label: string; emoji: string; description: string }> = {
+export const INTEREST_LENSES: Record<InterestLens, { label: string; labelKey: string; emoji: string; description: string }> = {
   'always-wondered': {
     label: 'Things I Always Wondered About',
+    labelKey: 'auto.interestlenses.always_wondered',
     emoji: '🤔',
     description: 'Questions you never got a satisfying answer to',
   },
   'everyday-science': {
     label: 'Science Behind Everyday Life',
+    labelKey: 'auto.interestlenses.everyday_science',
     emoji: '🔬',
     description: 'The physics and chemistry of your daily routines',
   },
   'my-children': {
     label: 'What My Children Are Learning',
+    labelKey: 'auto.interestlenses.my_children',
     emoji: '👨‍👩‍👧',
     description: 'Understand what your children study — so you can discuss it',
   },
   'never-understood': {
     label: 'Topics I Never Quite Got',
+    labelKey: 'auto.interestlenses.never_understood',
     emoji: '📚',
     description: 'School topics that never quite clicked — explained differently',
   },
   'visual-math': {
     label: 'Mathematics Made Visual',
+    labelKey: 'auto.interestlenses.visual_math',
     emoji: '📐',
     description: 'Mathematical ideas that make sense when you see them move',
   },
   'history-of-ideas': {
     label: 'History of Great Ideas',
+    labelKey: 'auto.interestlenses.history_of_ideas',
     emoji: '🏛️',
     description: 'How humans discovered the things we now take for granted',
   },

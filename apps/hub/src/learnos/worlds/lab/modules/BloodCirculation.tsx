@@ -115,9 +115,8 @@ export default function BloodCirculation() {
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.bloodcirculation.ayurvedic_connection">Ayurvedic Connection</Trans></h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                <Trans i18nKey="auto.bloodcirculation.sushruta_600_bce_described_blo">Sushruta (600 BCE) described blood circulation 1,500 years before William Harvey!
-                                              His</Trans> <strong><Trans i18nKey="auto.bloodcirculation.sushruta_samhita">Sushruta Samhita</Trans></strong> <Trans i18nKey="auto.bloodcirculation.detailed_360_bones_blood_vesse">detailed 360 bones, blood vessels (</Trans><strong><Trans i18nKey="auto.bloodcirculation.sira">Sira</Trans></strong><Trans i18nKey="auto.bloodcirculation.and_surgical_techniques_that_a">),
-                                              and surgical techniques that are still studied today. He's called the "Father of Surgery."</Trans>
+                <Trans i18nKey="auto.bloodcirculation.sushruta_600_bce_described_blo">Sushruta (traditionally dated around 600 BCE) described blood vessels (</Trans><strong><Trans i18nKey="auto.bloodcirculation.sira">Sira</Trans></strong><Trans i18nKey="auto.bloodcirculation.and_surgical_techniques_that_a">)
+                                              and advanced surgical techniques in his</Trans> <strong><Trans i18nKey="auto.bloodcirculation.sushruta_samhita">Sushruta Samhita</Trans></strong><Trans i18nKey="auto.bloodcirculation.detailed_360_bones_blood_vesse">, which detailed 360 bones and surgical methods still studied today. While Sushruta understood blood vessels carried vital fluids, the modern concept of blood circulation was later described by William Harvey (1628). Sushruta is widely respected as a pioneer of surgery.</Trans>
                                             </p>
             </div>
           </div>

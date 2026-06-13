@@ -6,8 +6,10 @@ import { useDiscoveryProgress } from '../hooks/useDiscoveryProgress';
 import { useDiscoverySession } from '../hooks/useDiscoverySession';
 import { CHEMICAL_REACTIONS } from '../data/discoveryContent';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 export default function ChemicalBalancer() {
+  const { t } = useTranslation();
   const lumo = useLumoSage();
   const { recordReactionBalanced, updateMastery } = useDiscoveryProgress();
   const { trackEvent } = useDiscoverySession();

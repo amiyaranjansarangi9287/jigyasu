@@ -2,6 +2,7 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
+import { useTranslation } from 'react-i18next';
 
 interface Challenge {
   id: string;
@@ -15,6 +16,7 @@ interface Challenge {
 }
 
 function seededRandom(seed: number) {
+  const { t } = useTranslation();
   const x = Math.sin(seed) * 10000;
   return x - Math.floor(x);
 }

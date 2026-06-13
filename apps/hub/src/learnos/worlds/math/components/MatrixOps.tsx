@@ -121,14 +121,14 @@ export default function MatrixOps() {
         ) : (
           <motion.div key="ex" className="space-y-4 max-w-3xl mx-auto" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
             <div className="grid grid-cols-2 gap-4">
-              <MatrixInput label={t('auto.attr.matrixops.matrix_a')} matrix={matA} setMatrix={setMatA} color="blue" />
-              <MatrixInput label={t('auto.attr.matrixops.matrix_b')} matrix={matB} setMatrix={setMatB} color="orange" />
+              <MatrixInput label={t('auto.matrixops.matrix_a', 'Matrix A')} matrix={matA} setMatrix={setMatA} color="blue" />
+              <MatrixInput label={t('auto.matrixops.matrix_b', 'Matrix B')} matrix={matB} setMatrix={setMatB} color="orange" />
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              <MatrixDisplay matrix={results.sum} color="green" label={t('auto.attr.matrixops.a_b')} />
-              <MatrixDisplay matrix={results.product} color="purple" label={t('auto.attr.matrixops.a_b')} />
-              <MatrixDisplay matrix={results.transA} color="cyan" label={t('auto.attr.matrixops.a_transpose')} />
-              <MatrixDisplay matrix={results.scaled} color="yellow" label={t('auto.attr.matrixops.2a_scalar')} />
+              <MatrixDisplay matrix={results.sum} color="green" label={t('auto.matrixops.a_plus_b', 'A + B')} />
+              <MatrixDisplay matrix={results.product} color="purple" label={t('auto.matrixops.a_times_b', 'A × B')} />
+              <MatrixDisplay matrix={results.transA} color="cyan" label={t('auto.matrixops.a_transpose', 'Aᵀ transpose')} />
+              <MatrixDisplay matrix={results.scaled} color="yellow" label={t('auto.matrixops.2a_scalar', '2A (scalar)')} />
               <div className="bg-pink-500/10 rounded-xl p-3 border border-pink-500/20"><p className="text-gray-400 text-sm mb-1"><Trans i18nKey="auto.matrixops.det_a">det(A)</Trans></p><motion.p key={results.detA} className="text-pink-300 font-bold text-2xl" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>{results.detA}</motion.p></div>
               <div className="bg-red-500/10 rounded-xl p-3 border border-red-500/20"><p className="text-gray-400 text-sm mb-1"><Trans i18nKey="auto.matrixops.det_b">det(B)</Trans></p><motion.p key={results.detB} className="text-red-300 font-bold text-2xl" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>{results.detB}</motion.p></div>
             </div>

@@ -5,8 +5,10 @@ import AcademyShell from '../AcademyShell';
 import { useLumoAncient } from '../hooks/useLumoAncient';
 import { useAcademyProgress } from '../hooks/useAcademyProgress';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 export default function WaveInterference() {
+  const { t } = useTranslation();
   const lumo = useLumoAncient();
   const { recordWaves } = useAcademyProgress();
   const [freq1, setFreq1] = useState(440);

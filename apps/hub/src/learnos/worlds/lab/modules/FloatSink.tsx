@@ -122,7 +122,7 @@ export default function FloatSink() {
               <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.floatsink.ancient_indian_shipbuilding">Ancient Indian Shipbuilding</Trans></h3>
               <p className="text-gray-600 text-sm leading-relaxed">
                 <Trans i18nKey="auto.floatsink.indians_built_ships_using_buoy">Indians built ships using buoyancy principles 4,000 years ago! The Lothal dockyard
-                                              (2400 BCE) in Gujarat is the world's oldest known tidal dock. Ancient shipbuilders
+                                              (traditionally dated around 2400 BCE) in Gujarat is the world's oldest known tidal dock. Ancient shipbuilders
                                               knew which woods floated — teak (ρ=0.6) and bamboo (ρ=0.4) were preferred.</Trans>
                                             </p>
             </div>

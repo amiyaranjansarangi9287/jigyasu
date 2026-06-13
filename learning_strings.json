@@ -1,0 +1,577 @@
+{
+  "total": 113,
+  "categories": {
+    "proper_nouns": [
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\math\\components\\MoneyMathMarket.tsx",
+        "line": 233,
+        "text": "Compound Interest"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\math\\components\\SportsStats.tsx",
+        "line": 93,
+        "text": "Batting Average"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\lab\\modules\\CellExplorer.tsx",
+        "line": 124,
+        "text": "Paramanu"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\lab\\modules\\DigestiveSystem.tsx",
+        "line": 121,
+        "text": "Ayurveda described"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\lab\\modules\\DigestiveSystem.tsx",
+        "line": 122,
+        "text": "Jatharagni"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\lab\\modules\\Electricity.tsx",
+        "line": 138,
+        "text": "Jagadish Chandra Bose"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\lab\\modules\\Gravity.tsx",
+        "line": 110,
+        "text": "Gurutva"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\lab\\modules\\Magnets.tsx",
+        "line": 133,
+        "text": "Magnesia"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\lab\\modules\\Magnets.tsx",
+        "line": 133,
+        "text": "Ayaskanta"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\lab\\modules\\NewtonsLaws.tsx",
+        "line": 154,
+        "text": "Prayatna"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\lab\\modules\\Photosynthesis.tsx",
+        "line": 111,
+        "text": "Vrikshayurveda"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\lab\\modules\\WaterCycle.tsx",
+        "line": 121,
+        "text": "Nakshatras"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\lab\\modules\\WaterCycle.tsx",
+        "line": 122,
+        "text": "Chand Baori"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\biology\\components\\FoodChainDash.tsx",
+        "line": 325,
+        "text": "Arrow keys or WASD to move"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 578,
+        "text": "AI Power"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 861,
+        "text": "AI creates new art from patterns!"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 917,
+        "text": "Gen AI"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\concepts\\ComputerVision\\ExplorePhase.tsx",
+        "line": 164,
+        "text": "You're doing what AI does!"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\concepts\\GenerativeAI\\ExplorePhase.tsx",
+        "line": 121,
+        "text": "Real AI art"
+      }
+    ],
+    "ui_labels": [
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\App.tsx",
+        "line": 53,
+        "text": "Oops!"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\crosscutting\\TeachMeMode.tsx",
+        "line": 230,
+        "text": "You answered"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\crosscutting\\TimeCapsule.tsx",
+        "line": 335,
+        "text": "Your thoughts on"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\crosscutting\\WonderGarden.tsx",
+        "line": 212,
+        "text": "World"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\landing\\Footer.tsx",
+        "line": 37,
+        "text": "Jigyasu."
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\math\\components\\MathMusic.tsx",
+        "line": 122,
+        "text": "Triangle"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\math\\components\\MemoryMatch.tsx",
+        "line": 233,
+        "text": "Clear"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\math\\components\\NumberTheoryLab.tsx",
+        "line": 385,
+        "text": "There are"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\math\\lib\\MathContext.tsx",
+        "line": 21,
+        "text": "Record"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\lab\\modules\\DayNightWonderFirst.tsx",
+        "line": 82,
+        "text": "What do you notice?"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\lab\\modules\\DigestiveSystem.tsx",
+        "line": 121,
+        "text": "Agni"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\lab\\modules\\NewtonsLaws.tsx",
+        "line": 154,
+        "text": "Vega"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\lab\\modules\\StatesOfMatter.tsx",
+        "line": 120,
+        "text": "Prithvi"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\lab\\modules\\StatesOfMatter.tsx",
+        "line": 121,
+        "text": "Jala"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\heritage\\components\\StoryReader.tsx",
+        "line": 164,
+        "text": "Check Answer"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\games\\games\\Chess.tsx",
+        "line": 653,
+        "text": "New Game"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\games\\games\\Hangman.tsx",
+        "line": 216,
+        "text": "New Word"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\games\\games\\Snake.tsx",
+        "line": 414,
+        "text": "Pause"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\games\\games\\Sudoku.tsx",
+        "line": 476,
+        "text": "New Puzzle"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\games\\games\\TicTacToe.tsx",
+        "line": 213,
+        "text": "New Round"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\explorer\\components\\ExplorerNav.tsx",
+        "line": 27,
+        "text": "Everything"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\explorer\\concepts\\ClimateAdult.tsx",
+        "line": 189,
+        "text": "History of the idea"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\explorer\\concepts\\GravityOrbits.tsx",
+        "line": 261,
+        "text": "Newton"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\explorer\\concepts\\ProbabilityAdult.tsx",
+        "line": 146,
+        "text": "Flip Once"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\explorer\\concepts\\ProbabilityAdult.tsx",
+        "line": 158,
+        "text": "Reset"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\biology\\components\\BrainExplorer.tsx",
+        "line": 186,
+        "text": "Click to explore"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\biology\\components\\CellularRespiration.tsx",
+        "line": 319,
+        "text": "Fermentation"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\biology\\components\\FoodChainDash.tsx",
+        "line": 443,
+        "text": "Menu"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\biology\\components\\MeiosisSimulator.tsx",
+        "line": 297,
+        "text": "No crossing over"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\biology\\components\\MeiosisSimulator.tsx",
+        "line": 308,
+        "text": "Crossing over"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\biology\\components\\Metamorphosis.tsx",
+        "line": 201,
+        "text": "Metamorphosis"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\biology\\components\\PlantAnatomy.tsx",
+        "line": 175,
+        "text": "Cuticle"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\biology\\components\\PlantAnatomy.tsx",
+        "line": 177,
+        "text": "Epidermis"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\biology\\components\\PlantAnatomy.tsx",
+        "line": 183,
+        "text": "Palisade"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\biology\\components\\PlantAnatomy.tsx",
+        "line": 211,
+        "text": "Cortex"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\biology\\components\\PlantAnatomy.tsx",
+        "line": 227,
+        "text": "Pith"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\biology\\components\\PlantAnatomy.tsx",
+        "line": 241,
+        "text": "Root Hairs"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\biology\\components\\PlantAnatomy.tsx",
+        "line": 245,
+        "text": "Root Cap"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\biology\\components\\PunnettSquare.tsx",
+        "line": 311,
+        "text": "Dominant alleles"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\biology\\components\\PunnettSquare.tsx",
+        "line": 312,
+        "text": "Homozygous"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\biology\\components\\PunnettSquare.tsx",
+        "line": 313,
+        "text": "Heterozygous"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\biology\\components\\PunnettSquare.tsx",
+        "line": 314,
+        "text": "Genotype"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\biology\\components\\PunnettSquare.tsx",
+        "line": 314,
+        "text": "Phenotype"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\AudioSettings.tsx",
+        "line": 53,
+        "text": "Voice Narration"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\AudioSettings.tsx",
+        "line": 107,
+        "text": "Volume"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\AudioSettings.tsx",
+        "line": 120,
+        "text": "Quiet"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\AudioSettings.tsx",
+        "line": 121,
+        "text": "Loud"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\CompletionCelebration.tsx",
+        "line": 115,
+        "text": "Continue Learning"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\gamification\\WeeklyChallenges.tsx",
+        "line": 44,
+        "text": "Weekly Challenges"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 121,
+        "text": "Input"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 123,
+        "text": "Output"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 141,
+        "text": "Learn"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 212,
+        "text": "Hello"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 239,
+        "text": "I love to eat..."
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 259,
+        "text": "Most likely!"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 336,
+        "text": "Each square is a pixel!"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 405,
+        "text": "Attention!"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 472,
+        "text": "Question"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 482,
+        "text": "Retrieve"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 492,
+        "text": "Generate"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 586,
+        "text": "Responsibility"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 704,
+        "text": "Boring answer..."
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 766,
+        "text": "Agent"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 778,
+        "text": "Action"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 782,
+        "text": "Reward"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 815,
+        "text": "Find the shortest path!"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 876,
+        "text": "Noise"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 891,
+        "text": "Forming"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 901,
+        "text": "Image!"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\concepts\\ComputerVision\\LearnPhase.tsx",
+        "line": 195,
+        "text": "This is Computer Vision!"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\concepts\\Embeddings\\ExplorePhase.tsx",
+        "line": 100,
+        "text": "Drag words"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\concepts\\Embeddings\\LearnPhase.tsx",
+        "line": 61,
+        "text": "Click on any word"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\concepts\\GenerativeAI\\LearnPhase.tsx",
+        "line": 137,
+        "text": "Diffusion models"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\concepts\\RAG\\LearnPhase.tsx",
+        "line": 181,
+        "text": "Augment"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\concepts\\ReinforcementLearning\\ExplorePhase.tsx",
+        "line": 159,
+        "text": "This is RL!"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\concepts\\ReinforcementLearning\\LearnPhase.tsx",
+        "line": 45,
+        "text": "Environment"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\concepts\\Transformers\\LearnPhase.tsx",
+        "line": 65,
+        "text": "Hover over words"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\shared\\layout\\ParentCorner.tsx",
+        "line": 172,
+        "text": "Exit to Family Home"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\core\\modules\\WonderFirstTemplate.tsx",
+        "line": 168,
+        "text": "Let's Explore Together"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\core\\modules\\WonderFirstTemplate.tsx",
+        "line": 232,
+        "text": "I Think I Understand"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\core\\modules\\WonderFirstTemplate.tsx",
+        "line": 327,
+        "text": "I Understand!"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\core\\modules\\WonderFirstTemplate.tsx",
+        "line": 337,
+        "text": "Build it in Maker Space!"
+      }
+    ],
+    "sentences": [
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\math\\components\\NumberCrunchGame.tsx",
+        "line": 189,
+        "text": "Take your time to deeply understand numbers."
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\lab\\modules\\SoundWaves.tsx",
+        "line": 127,
+        "text": "Ancient Indians classified sound into"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\games\\games\\DinoRun.tsx",
+        "line": 350,
+        "text": "Tap or Press Space to Start!"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\games\\games\\Snake.tsx",
+        "line": 292,
+        "text": "Press arrow keys or tap Start!"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\explorer\\components\\ExplorerNav.tsx",
+        "line": 15,
+        "text": "What are you here for today?"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\gamification\\ProfilePage.tsx",
+        "line": 158,
+        "text": "Complete concepts to earn badges!"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 198,
+        "text": "Reading millions of books!"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 376,
+        "text": "Looking at ALL clues at once!"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 458,
+        "text": "Finding the right book for you!"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 589,
+        "text": "Balance power with responsibility!"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 621,
+        "text": "Keep personal info private!"
+      },
+      {
+        "file": "D:\\vision_agentic\\jigyasu\\apps\\hub\\src\\learnos\\worlds\\ai\\components\\illustrations\\index.tsx",
+        "line": 906,
+        "text": "Diffusion removes noise step by step"
+      }
+    ],
+    "technical": []
+  }
+}

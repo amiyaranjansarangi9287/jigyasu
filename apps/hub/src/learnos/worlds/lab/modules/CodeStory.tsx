@@ -8,6 +8,7 @@ import { useLabSession } from '../hooks/useLabSession';
 import { useCrossConceptDetector } from '../hooks/useCrossConceptDetector';
 import { CODE_CHALLENGES } from '../data/labContent';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 const BLOCK_DEFS: Record<string, { label: string; emoji: string; color: string }> = {
   'move-right': { label: 'Move Right', emoji: '➡️', color: '#3B82F6' },
@@ -23,6 +24,7 @@ const BLOCK_DEFS: Record<string, { label: string; emoji: string; color: string }
 };
 
 export default function CodeStory() {
+  const { t } = useTranslation();
   const lumo = useLumoOwl('code-story');
   const { recordCodeStory, updateCertification } = useLabProgress();
   const { trackEvent } = useLabSession();

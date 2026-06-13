@@ -189,9 +189,9 @@ export default function NumberCrunchGame() {
                 <Trans i18nKey="auto.numbercrunchgame.take_your_time_to_deeply_under">Take your time to deeply understand numbers.</Trans><br /><Trans i18nKey="auto.numbercrunchgame.build_streaks_to_level_up">Build streaks to level up! 🌱</Trans>
                                             </p>
               <div className="space-y-3 text-left text-sm text-gray-400 mb-6 bg-white/5 rounded-xl p-4">
-                <p dangerouslySetInnerHTML={{ __html: '🌱 <span className="text-white">Patience</span> ➝ No timers. Think deeply.' }} />
-                <p dangerouslySetInnerHTML={{ __html: '✨ <span className="text-white">Streaks</span> ➝ Consistent understanding multiplier' }} />
-                <p dangerouslySetInnerHTML={{ __html: '📈 <span className="text-white">Adaptive</span> ➝ Gets harder as you master concepts' }} />
+                <p>🌱 <span className="text-white">{t('auto.numbercrunchgame.patience', 'Patience')}</span> ➝ {t('auto.numbercrunchgame.no_timers', 'No timers. Think deeply.')}</p>
+                <p>✨ <span className="text-white">{t('auto.numbercrunchgame.streaks_label', 'Streaks')}</span> ➝ {t('auto.numbercrunchgame.consistent_multiplier', 'Consistent understanding multiplier')}</p>
+                <p>📈 <span className="text-white">{t('auto.numbercrunchgame.adaptive', 'Adaptive')}</span> ➝ {t('auto.numbercrunchgame.gets_harder', 'Gets harder as you master concepts')}</p>
               </div>
               <motion.button
                 className="w-full py-4 rounded-2xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold text-xl shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-shadow"

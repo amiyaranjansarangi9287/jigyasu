@@ -98,8 +98,8 @@ export default function SolarSystem() {
             <div>
               <h3 className="text-orange-400 font-bold text-sm mb-1"><Trans i18nKey="auto.solarsystem.ancient_indian_astronomy">Ancient Indian Astronomy</Trans></h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                <Trans i18nKey="auto.solarsystem.aryabhata_499_ce_calculated_ea">Aryabhata (499 CE) calculated Earth's circumference with 99% accuracy and described
-                                              heliocentric motion 1,000 years before Copernicus! The</Trans> <strong><Trans i18nKey="auto.solarsystem.surya_siddhanta">Surya Siddhanta</Trans></strong>
+                <Trans i18nKey="auto.solarsystem.aryabhata_499_ce_calculated_ea">Aryabhata (499 CE) calculated Earth's circumference with remarkable accuracy and described
+                                              a model where planets orbit the Sun — an insight that predated Copernicus's heliocentric model by centuries, though Aryabhata's system differed in important ways. The</Trans> <strong><Trans i18nKey="auto.solarsystem.surya_siddhanta">Surya Siddhanta</Trans></strong>
                 <Trans i18nKey="auto.solarsystem.400_ce_described_planetary_orb">(400 CE) described planetary orbits and eclipses with remarkable precision.</Trans>
                                             </p>
             </div>

@@ -173,17 +173,17 @@ export const WEATHER_CONTENT: Record<WeatherType, {
 export interface FarmAnimal {
   emoji: string;
   label: string;
-  zone: 'barn' | 'sky' | 'pond' | 'field';
+  zone: 'shed' | 'sky' | 'pond' | 'field';
   soundFreq: number;
   soundType: OscillatorType;
   positionHint: { x: number; y: number };
 }
 
 export const FARM_ANIMALS: FarmAnimal[] = [
-  { emoji: '🐄', label: 'cow', zone: 'barn', soundFreq: 80, soundType: 'sine', positionHint: { x: 0.30, y: 0.62 } },
-  { emoji: '🐷', label: 'pig', zone: 'barn', soundFreq: 300, soundType: 'triangle', positionHint: { x: 0.22, y: 0.68 } },
-  { emoji: '🐴', label: 'horse', zone: 'barn', soundFreq: 220, soundType: 'sine', positionHint: { x: 0.38, y: 0.60 } },
-  { emoji: '🐔', label: 'chicken', zone: 'barn', soundFreq: 400, soundType: 'square', positionHint: { x: 0.26, y: 0.72 } },
+  { emoji: '🐄', label: 'cow', zone: 'shed', soundFreq: 80, soundType: 'sine', positionHint: { x: 0.30, y: 0.62 } },
+  { emoji: '🐷', label: 'pig', zone: 'shed', soundFreq: 300, soundType: 'triangle', positionHint: { x: 0.22, y: 0.68 } },
+  { emoji: '🐴', label: 'horse', zone: 'shed', soundFreq: 220, soundType: 'sine', positionHint: { x: 0.38, y: 0.60 } },
+  { emoji: '🐔', label: 'chicken', zone: 'shed', soundFreq: 400, soundType: 'square', positionHint: { x: 0.26, y: 0.72 } },
   { emoji: '🐦', label: 'sparrow', zone: 'sky', soundFreq: 1200, soundType: 'triangle', positionHint: { x: 0.55, y: 0.18 } },
   { emoji: '🦋', label: 'butterfly', zone: 'sky', soundFreq: 900, soundType: 'sine', positionHint: { x: 0.70, y: 0.22 } },
   { emoji: '🦗', label: 'dragonfly', zone: 'sky', soundFreq: 800, soundType: 'triangle', positionHint: { x: 0.45, y: 0.15 } },

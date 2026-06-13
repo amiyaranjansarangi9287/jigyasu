@@ -85,7 +85,7 @@ function MathAppInner() {
   const handleMapComplete = () => {
     setShowConfetti(true);
     setStars((prev) => prev + 5);
-    celebrate('Adventure Map Complete! ⭐+5');
+    celebrate(t('auto.mathapp.adventure_map_complete', 'Adventure Map Complete! ⭐+5'));
     setTimeout(() => setShowConfetti(false), 4000);
   };
 
@@ -154,7 +154,7 @@ function MathAppInner() {
               className="flex items-center gap-1.5 bg-purple-500/10 border border-purple-500/30 rounded-full px-3 py-1.5"
               initial={{ x: 30, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              title={t('auto.attr.mathapp.experience_points_earned_acros')}
+              title={t('auto.mathapp.experience_points_earned_acros', 'Experience points earned across all modules')}
             >
               <span className="text-purple-400 text-sm">⚡</span>
               <span className="text-purple-400 font-bold text-sm">{totalXP}</span>

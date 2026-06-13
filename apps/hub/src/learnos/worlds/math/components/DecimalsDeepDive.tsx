@@ -1,6 +1,7 @@
 import { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 function makeChallenge() {
   const type = Math.floor(Math.random() * 4);
@@ -16,6 +17,7 @@ function makeChallenge() {
 }
 
 export default function DecimalsDeepDive() {
+  const { t } = useTranslation();
   const [mode, setMode] = useState<'explore' | 'convert' | 'challenge'>('explore');
   const [value, setValue] = useState(3.14);
   const [challenge, setChallenge] = useState(makeChallenge);
@@ -62,9 +64,9 @@ export default function DecimalsDeepDive() {
       </div>
 
       <div className="flex justify-center gap-2 mb-6">
-        {[{ id: 'explore' as const, emoji: '🔍', label: 'Explore' }, { id: 'convert' as const, emoji: '🔄', label: 'Convert' }, { id: 'challenge' as const, emoji: '🎯', label: 'Challenge' }].map(m => (
+        {[{ id: 'explore' as const, emoji: '🔍', label: 'Explore', k: 'auto.decimalsdeepdive.explore' }, { id: 'convert' as const, emoji: '🔄', label: 'Convert', k: 'auto.decimalsdeepdive.convert' }, { id: 'challenge' as const, emoji: '🎯', label: 'Challenge', k: 'auto.decimalsdeepdive.challenge' }].map(m => (
           <button key={m.id} className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === m.id ? 'bg-blue-500/30 text-blue-300 border border-blue-400/50' : 'bg-white/5 text-gray-400'}`}
-            onClick={() => { setMode(m.id); if (m.id === 'challenge') setChallenge(makeChallenge()); }}>{m.emoji} {m.label}</button>
+            onClick={() => { setMode(m.id); if (m.id === 'challenge') setChallenge(makeChallenge()); }}>{m.emoji} {t(m.k, m.label)}</button>
         ))}
       </div>
 

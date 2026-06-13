@@ -2,8 +2,10 @@
 import { useRef, useEffect, useState } from 'react';
 import ModuleWrapper from './ModuleWrapper';
 import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
+import { useTranslation } from 'react-i18next';
 
 export default function DopplerEffect() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animRef = useRef<number>(0);
   const [progress, setProgress] = useState<UserProgress>(loadProgress);
@@ -54,7 +56,10 @@ export default function DopplerEffect() {
 
     const vSound = 343;
     const vSource = sourceSpeed * 10;
-    const fObs = frequency * vSound / (vSound - vSource);
+    const isApproaching = sourceX < w - 80;
+    const fObs = isApproaching
+      ? frequency * vSound / (vSound - vSource)
+      : frequency * vSound / (vSound + vSource);
     const fRatio = fObs / frequency;
 
     ctx.fillStyle = 'rgba(0,0,0,0.5)';
@@ -65,7 +70,7 @@ export default function DopplerEffect() {
     ctx.fillText(`f_observed = ${fObs.toFixed(1)} Hz`, 20, 30);
     ctx.fillStyle = '#888';
     ctx.font = '10px sans-serif';
-    ctx.fillText(fRatio > 1 ? '🔴 Approaching (higher pitch)' : '🔵 Receding (lower pitch)', 20, 50);
+    ctx.fillText(isApproaching ? '🔴 Approaching (higher pitch)' : '🔵 Receding (lower pitch)', 20, 50);
     ctx.fillText(`Speed: ${vSource.toFixed(0)} m/s`, 20, 65);
   };
 

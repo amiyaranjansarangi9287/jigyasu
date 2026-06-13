@@ -1,10 +1,12 @@
 import { Component, type ReactNode } from 'react';
 import { SentryService } from '../learnos/services/sentry';
-import { Trans } from "react-i18next";
+import { withTranslation } from 'react-i18next';
+import type { TFunction } from 'i18next';
 
 interface Props {
   children: ReactNode;
   fallback?: ReactNode;
+  t: TFunction;
 }
 
 interface State {
@@ -13,7 +15,7 @@ interface State {
   copied: boolean;
 }
 
-export class ErrorBoundary extends Component<Props, State> {
+class ErrorBoundaryBase extends Component<Props, State> {
   state: State = { hasError: false, error: undefined, copied: false };
 
   private copyResetTimer: ReturnType<typeof setTimeout> | null = null;
@@ -59,6 +61,7 @@ export class ErrorBoundary extends Component<Props, State> {
   };
 
   render() {
+    const { t } = this.props;
     if (this.state.hasError) {
       if (this.props.fallback) {
         return this.props.fallback;
@@ -71,13 +74,13 @@ export class ErrorBoundary extends Component<Props, State> {
               🦚
             </div>
             <h2 id="error-title" className="text-3xl font-black text-gray-800 mb-3">
-              <Trans i18nKey="auto.errorboundary.oops_something_went_wrong">Oops! Something went wrong</Trans>
+              {t('error.title', "Oops! Something went wrong")}
                                   </h2>
             <p className="text-gray-600 mb-2 text-lg">
-              <Trans i18nKey="auto.errorboundary.don_t_worry_your_progress_is_s">Don't worry, your progress is safe!</Trans>
+              {t('error.subtitle', "Don't worry, your progress is safe!")}
                                   </p>
             <p className="text-gray-500 mb-8">
-              <Trans i18nKey="auto.errorboundary.let_s_try_again_or_go_back_to_">Let's try again or go back to explore more fun activities.</Trans>
+              {t('error.help_text', "Let's try again or go back to explore more fun activities.")}
                                   </p>
 
             <div className="space-y-4">
@@ -86,7 +89,7 @@ export class ErrorBoundary extends Component<Props, State> {
                 onClick={this.handleReset}
                 className="w-full px-8 py-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-2xl font-bold hover:from-orange-600 hover:to-pink-600 transition-all transform hover:scale-105 shadow-lg min-h-[52px] text-lg focus-visible:outline-2 focus-visible:outline-orange-500 focus-visible:outline-offset-2"
               >
-                <Trans i18nKey="auto.errorboundary.try_again">🔄 Try Again</Trans>
+                <span aria-hidden="true">🔄</span> {t('error.try_again', 'Try Again')}
                                         </button>
 
               <button
@@ -94,7 +97,7 @@ export class ErrorBoundary extends Component<Props, State> {
                 onClick={this.handleGoHome}
                 className="w-full px-8 py-4 bg-white text-gray-700 rounded-2xl font-bold border-2 border-gray-200 hover:border-orange-300 hover:bg-orange-50 transition-all transform hover:scale-105 shadow-md min-h-[52px] text-lg focus-visible:outline-2 focus-visible:outline-orange-500 focus-visible:outline-offset-2"
               >
-                <Trans i18nKey="auto.errorboundary.go_home">🏠 Go Home</Trans>
+                <span aria-hidden="true">🏠</span> {t('error.go_home', 'Go Home')}
                                         </button>
 
               {import.meta.env.DEV && (
@@ -104,7 +107,7 @@ export class ErrorBoundary extends Component<Props, State> {
                   className="w-full px-6 py-3 bg-gray-100 text-gray-600 rounded-xl font-medium hover:bg-gray-200 transition-colors min-h-[44px] text-sm focus-visible:outline-2 focus-visible:outline-gray-400 focus-visible:outline-offset-2"
                   aria-label={this.state.copied ? 'Error details copied to clipboard' : 'Copy error details to clipboard'}
                 >
-                  {this.state.copied ? '✓ Copied!' : '📋 Copy Error Details'}
+                  {this.state.copied ? '✓ Copied!' : <><span aria-hidden="true">📋</span> Copy Error Details</>}
                 </button>
               )}
             </div>
@@ -112,7 +115,7 @@ export class ErrorBoundary extends Component<Props, State> {
             {import.meta.env.DEV && this.state.error && (
               <details className="mt-8 text-left">
                 <summary className="text-sm text-gray-500 cursor-pointer hover:text-gray-700 font-medium">
-                  <Trans i18nKey="auto.errorboundary.technical_details_for_develope">🔧 Technical details (for developers)</Trans>
+                  <span aria-hidden="true">🔧</span> {t('error.technical_details', 'Technical details (for developers)')}
                                               </summary>
                 <pre className="mt-3 p-4 bg-gray-100 rounded-xl text-sm text-gray-600 overflow-auto max-min-h-40 border border-gray-200">
                   {this.state.error.message}
@@ -127,3 +130,5 @@ export class ErrorBoundary extends Component<Props, State> {
     return this.props.children;
   }
 }
+
+export const ErrorBoundary = withTranslation()(ErrorBoundaryBase);

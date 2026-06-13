@@ -3,8 +3,8 @@ import { useLearnerStore } from '../store';
 import { useTranslation, Trans } from 'react-i18next';
 
 export default function Header() {
-  const { language, setLanguage } = useLearnerStore();
   const { t, i18n } = useTranslation();
+  const { language, setLanguage } = useLearnerStore();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 

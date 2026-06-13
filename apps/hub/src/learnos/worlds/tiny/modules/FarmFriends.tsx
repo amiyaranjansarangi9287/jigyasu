@@ -93,7 +93,7 @@ export default function FarmFriends() {
       ctx.moveTo(w * 0.42, h); ctx.lineTo(w * 0.46, groundY);
       ctx.lineTo(w * 0.54, groundY); ctx.lineTo(w * 0.58, h); ctx.fill();
 
-      // Barn
+      // Hut
       const bX = w * 0.22;
       ctx.fillStyle = '#DC2626'; ctx.fillRect(bX - 50, groundY - 100, 100, 100);
       ctx.fillStyle = '#B91C1C';

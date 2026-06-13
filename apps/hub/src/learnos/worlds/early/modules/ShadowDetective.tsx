@@ -165,9 +165,9 @@ export default function ShadowDetective() {
     return () => clearInterval(interval);
   }, [solved, checkSolved, pip, recordShadowChallenge, trackCorrect, challenge, soundEnabled]);
 
-  const handleNext = () => { setChallengeIdx(p => p + 1); setSolved(false); torchRef.current = { x: 0.7, y: 0.3 }; pip.sayCustom("Next shadow challenge!", 'excited'); };
+  const handleNext = () => { setChallengeIdx(p => p + 1); setSolved(false); torchRef.current = { x: 0.7, y: 0.3 }; pip.sayCustom(t('auto.shadowdetective.next_challenge', 'Next shadow challenge!'), 'excited'); };
 
-  const targetLabels = { 'long-left': '📏 Make shadow long (left)', 'short': '📐 Make shadow short', 'long-right': '➡️ Make shadow point right', 'gone': '✨ Make shadow disappear' };
+  const targetLabels = { 'long-left': t('auto.shadowdetective.long_left', '📏 Make shadow long (left)'), 'short': t('auto.shadowdetective.short', '📐 Make shadow short'), 'long-right': t('auto.shadowdetective.long_right', '➡️ Make shadow point right'), 'gone': t('auto.shadowdetective.gone', '✨ Make shadow disappear') };
 
   return (
     <EarlyShell module="shadow-detective">

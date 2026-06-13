@@ -41,7 +41,7 @@ export function ParentCorner({ onExit }: ParentCornerProps) {
                    flex items-center justify-center
                    text-gray-500 shadow-sm
                    select-none"
-        title={t('auto.attr.parentcorner.hold_3_seconds_for_parent_opti')}
+        title={t('auto.parentcorner.hold_3_seconds_for_parent_opti', 'Hold 3 seconds for parent options')}
         aria-label="Parent corner - hold for 3 seconds"
       >
         ⚙️

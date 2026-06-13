@@ -5,6 +5,7 @@ import { useLumoAncient } from '../hooks/useLumoAncient';
 import { useAcademyProgress } from '../hooks/useAcademyProgress';
 import { ENVIRONMENTS } from '../data/academyContent';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 const TRAITS = [
   { id: 'white', emoji: '⚪', count: 30 },
@@ -13,6 +14,7 @@ const TRAITS = [
 ];
 
 export default function NaturalSelection() {
+  const { t } = useTranslation();
   const lumo = useLumoAncient();
   const { recordNaturalSelection } = useAcademyProgress();
   const [envIdx, setEnvIdx] = useState(0);

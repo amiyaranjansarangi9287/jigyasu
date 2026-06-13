@@ -129,7 +129,7 @@ export default function Magnets() {
             <div>
               <h3 className="text-orange-400 font-bold text-sm mb-1"><Trans i18nKey="auto.magnets.ancient_indian_discovery">Ancient Indian Discovery</Trans></h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                <Trans i18nKey="auto.magnets.indians_discovered_magnetism_6">Indians discovered magnetism ~600 BCE! The word "magnet" may come from</Trans>
+                <Trans i18nKey="auto.magnets.indians_discovered_magnetism_6">Indians used lodestones for navigation and medicine by ~600 BCE! The word "magnet" may come from</Trans>
                                               <strong> <Trans i18nKey="auto.magnets.magnesia">Magnesia</Trans></strong><Trans i18nKey="auto.magnets.but_indian_sailors_used">, but Indian sailors used</Trans> <strong><Trans i18nKey="auto.magnets.ayaskanta">Ayaskanta</Trans></strong>
                 <Trans i18nKey="auto.magnets.iron_lover_lodestones_for_navi">(iron-lover) lodestones for navigation. Sushruta used magnets in surgery to
                                               remove iron arrows from wounds.</Trans>

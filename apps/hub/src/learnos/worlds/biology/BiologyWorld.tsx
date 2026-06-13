@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { Suspense, lazy, useEffect } from 'react';
 import { LoadingScreen } from '@/shared/ui';
 import { useLearnerStore } from '@/store';
+import { useTranslation } from 'react-i18next';
 
 const Home = lazy(() => import('./components/Home'));
 const CellExplorer = lazy(() => import('./components/CellExplorer'));
@@ -33,6 +34,7 @@ const WaterCycle = lazy(() => import('./components/WaterCycle'));
 const CrisprEditor = lazy(() => import('./components/CrisprEditor'));
 
 export default function BiologyWorld() {
+  const { t } = useTranslation();
   const location = useLocation();
   const { enterModule } = useLearnerStore();
 

@@ -85,7 +85,7 @@ export default function LightShadows() {
               <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.lightshadows.ancient_indian_shadow_science">Ancient Indian Shadow Science</Trans></h3>
               <p className="text-gray-600 text-sm leading-relaxed">
                 <Trans i18nKey="auto.lightshadows.aryabhata_499_ce_correctly_exp">Aryabhata (499 CE) correctly explained eclipses as shadows — the Moon blocks sunlight
-                                              for lunar eclipses, Earth's shadow falls on the Moon for solar eclipses! Ancient Indians
+                                              for solar eclipses, Earth's shadow falls on the Moon for lunar eclipses! Ancient Indians
                                               used</Trans> <strong><Trans i18nKey="auto.lightshadows.shanku_yantra">Shanku Yantra</Trans></strong> <Trans i18nKey="auto.lightshadows.shadow_sticks_to_measure_time_">(shadow sticks) to measure time and calculate
                                               Earth's tilt with remarkable accuracy.</Trans>
                                             </p>

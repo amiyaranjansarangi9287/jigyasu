@@ -2,13 +2,16 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { sfx } from '../../lib/soundEngine';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 export interface HubItem {
   id: string;
   emoji: string;
   label: string;
+  labelKey?: string;
   color: string;
   category?: string;
+  categoryKey?: string;
 }
 
 interface HubNavProps {
@@ -26,6 +29,7 @@ interface HubNavProps {
  * - Highlights active item with animated indicator
  */
 export default function HubNav({ items, active, onSelect, layoutId }: HubNavProps) {
+  const { t } = useTranslation();
   const [expandedCat, setExpandedCat] = useState<string | null>(null);
 
   // Group by category
@@ -68,7 +72,7 @@ export default function HubNav({ items, active, onSelect, layoutId }: HubNavProp
             )}
             <span className="relative z-10 flex items-center gap-1">
               <span>{m.emoji}</span>
-              <span className="hidden sm:inline">{m.label}</span>
+              <span className="hidden sm:inline">{t(m.labelKey || m.label, m.label)}</span>
             </span>
           </motion.button>
         ))}
@@ -81,7 +85,7 @@ export default function HubNav({ items, active, onSelect, layoutId }: HubNavProp
           <div className="flex items-center justify-between bg-white/5 rounded-xl px-4 py-2 border border-white/10">
             <span className="text-white font-bold text-sm flex items-center gap-2">
               <span>{items.find(i => i.id === active)?.emoji}</span>
-              {items.find(i => i.id === active)?.label}
+              {t(items.find(i => i.id === active)?.labelKey || items.find(i => i.id === active)?.label || '', items.find(i => i.id === active)?.label || '')}
             </span>
             <span className="text-gray-500 text-sm"><Trans i18nKey="auto.hubnav.tap_below_to_switch">tap below to switch</Trans></span>
           </div>
@@ -93,7 +97,7 @@ export default function HubNav({ items, active, onSelect, layoutId }: HubNavProp
                 className="w-full flex items-center justify-between px-4 py-2.5 bg-white/5 text-left"
                 onClick={() => setExpandedCat(expandedCat === cat ? null : cat)}
               >
-                <span className="text-gray-300 text-sm font-bold">{cat}</span>
+                <span className="text-gray-300 text-sm font-bold">{t(catItems[0]?.categoryKey || cat, cat)}</span>
                 <span className="text-gray-500 text-sm">
                   {catItems.length} · {expandedCat === cat ? '▼' : '▶'}
                 </span>
@@ -118,7 +122,7 @@ export default function HubNav({ items, active, onSelect, layoutId }: HubNavProp
                         onClick={() => handleSelect(item.id)}
                       >
                         <span className="text-lg block">{item.emoji}</span>
-                        {item.label}
+                        {t(item.labelKey || item.label, item.label)}
                       </motion.button>
                     ))}
                   </motion.div>

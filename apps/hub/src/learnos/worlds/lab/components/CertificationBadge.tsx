@@ -4,8 +4,10 @@ import type { CertificationLevel } from '../types/lab.types';
 interface CertificationBadgeProps { level: CertificationLevel; size?: 'sm' | 'md' | 'lg'; }
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const CertificationBadge = React.memo(function CertificationBadge({ level, size = 'md' }: CertificationBadgeProps) {
+  const { t } = useTranslation();
   const configs = {
     explorer: { emoji: '🔍', color: 'bg-sky-100 text-sky-700', border: 'border-sky-200' },
     scientist: { emoji: '🔬', color: 'bg-violet-100 text-violet-700', border: 'border-violet-200' },
@@ -17,7 +19,7 @@ export const CertificationBadge = React.memo(function CertificationBadge({ level
   return (
     <div className={`inline-flex items-center gap-1.5 rounded-xl border-2 font-bold ${configs.color} ${configs.border} ${sz}`}>
       <span>{configs.emoji}</span>
-      <span className="capitalize">{level}</span>
+      <span className="capitalize">{t(`auto.certificationbadge.${level}`, level)}</span>
     </div>
   );
 });

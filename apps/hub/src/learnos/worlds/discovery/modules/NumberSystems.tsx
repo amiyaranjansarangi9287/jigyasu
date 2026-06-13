@@ -80,7 +80,7 @@ export default function NumberSystems() {
 
         {/* India connection */}
         <div className="bg-amber-950/30 rounded-2xl p-4 border border-amber-900/30">
-          <p className="text-amber-400 text-sm font-medium">{t('discovery.modules.NumberSystems.txt_Zerowasinv', '🇮🇳 Zero was invented in India by Brahmagupta (628 AD). Without zero, binary is impossible. Without binary, no computer exists. India made the digital age possible.')}</p>
+          <p className="text-amber-400 text-sm font-medium">{t('discovery.modules.NumberSystems.txt_Zerowasinv', '🇮🇳 The concept of zero as a number was developed in India, with Brahmagupta (628 CE) providing the first formal rules for arithmetic with zero. The decimal place-value system, which includes zero, enabled efficient computation and is foundational to modern mathematics and computing.')}</p>
         </div>
       </div>
     </DiscoveryShell>

@@ -50,7 +50,7 @@ const facts = [
   "Human DNA is 99.9% identical between all people!",
   "DNA stands for Deoxyribonucleic Acid.",
   "A always pairs with T, and G always pairs with C.",
-  "If unwound, the DNA in all your cells would stretch to the sun and back 600 times!",
+  "If unwound, the DNA in all your cells would stretch to the sun and back over 100 times!",
   "Your body produces ~3.8 million cells per second, each needing DNA replication.",
   "DNA was first discovered by Friedrich Miescher in 1869.",
   "The human genome contains about 3 billion base pairs.",

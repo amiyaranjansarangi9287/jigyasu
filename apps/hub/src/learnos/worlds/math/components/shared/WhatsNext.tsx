@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
 import { getLinksFor } from '../../lib/crossLinks';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 export default function WhatsNext({ moduleId }: { moduleId: string }) {
+  const { t } = useTranslation();
   const links = getLinksFor(moduleId);
   if (links.length === 0) return null;
 

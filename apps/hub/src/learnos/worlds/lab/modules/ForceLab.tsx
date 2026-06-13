@@ -26,11 +26,14 @@ export default function ForceLab() {
     const w = canvas.getBoundingClientRect().width, h = 200;
     let frame: number, last = performance.now();
     const render = (now: number) => {
-      const dt = (now - last) / 1000; last = now;
+      const dt = Math.min((now - last) / 1000, 0.05); last = now;
       const fr = scenario.frictionCoefficient * m * 9.8;
-      const acc = Math.max(0, (f - fr) / m);
-      const nv = v > 0 || f > fr ? v + acc * dt : 0;
-      setV(nv); setPx(p => (p + nv * 10) % w);
+      const netF = f - fr;
+      let acc = netF / m;
+      if (v <= 0 && netF <= 0) acc = 0; // static friction prevents motion
+      let nv = v + acc * dt;
+      if (nv < 0) nv = 0; // friction cannot reverse direction
+      setV(nv); setPx(p => (p + nv * dt * 600) % w);
       ctx.clearRect(0, 0, w, h); ctx.fillStyle = '#F8FAFC'; ctx.fillRect(0, 0, w, h);
       ctx.fillStyle = '#E2E8F0'; ctx.fillRect(0, 150, w, 50);
       ctx.font = '50px sans-serif'; ctx.fillText(scenario.boxEmoji, px, 140);
@@ -46,8 +49,8 @@ export default function ForceLab() {
       <div className="flex flex-col h-screen bg-slate-50 overflow-auto pb-24 p-6">
         <canvas ref={canvasRef} className="w-full rounded-2xl border bg-white mb-6" style={{ height: '200px' }} />
         <div className="grid gap-4 mb-6">
-          <ScientificSlider label={t('auto.attr.forcelab.push_force')} emoji="💪" value={f} min={0} max={100} unit="N" onChange={v => { setF(v); recordForceExperiment(false, false); updateCertification('force-lab', 'explorer'); trackEvent('force-lab', 'canvas_interaction'); }} />
-          <ScientificSlider label={t('auto.attr.forcelab.box_mass')} emoji="⚖️" value={m} min={1} max={20} unit="kg" onChange={setM} />
+          <ScientificSlider label={t('auto.forcelab.push_force', 'Push force')} emoji="💪" value={f} min={0} max={100} unit="N" onChange={v => { setF(v); recordForceExperiment(false, false); updateCertification('force-lab', 'explorer'); trackEvent('force-lab', 'canvas_interaction'); }} />
+          <ScientificSlider label={t('auto.forcelab.box_mass', 'Box mass')} emoji="⚖️" value={m} min={1} max={20} unit="kg" onChange={setM} />
         </div>
         <div className="flex gap-2 overflow-x-auto pb-2">
           {FORCE_SCENARIOS.map((s, i) => (

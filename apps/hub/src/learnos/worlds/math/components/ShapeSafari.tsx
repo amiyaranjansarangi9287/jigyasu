@@ -1,39 +1,40 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 interface ShapeInfo {
-  name: string; emoji: string; sides: number | string; vertices: number | string;
+  name: string; nameKey?: string; emoji: string; sides: number | string; vertices: number | string;
   angle: string; formula: string; color: string; dim: '2D' | '3D';
   faces?: number; edges?: number;
   draw: (cx: number, cy: number, r: number) => string;
 }
 
 const shapes2D: ShapeInfo[] = [
-  { name: 'Triangle', emoji: '🔺', sides: 3, vertices: 3, angle: '60° (equilateral)', formula: 'A = ½bh', color: 'text-sky-400', dim: '2D',
+  { name: 'Triangle', nameKey: 'auto.shapesafari.triangle', emoji: '🔺', sides: 3, vertices: 3, angle: '60° (equilateral)', formula: 'A = ½bh', color: 'text-sky-400', dim: '2D',
     draw: (cx, cy, r) => { const pts = [0, 1, 2].map(i => { const a = (i * 120 - 90) * Math.PI / 180; return `${cx + Math.cos(a) * r},${cy + Math.sin(a) * r}`; }); return `M ${pts.join(' L ')} Z`; } },
-  { name: 'Square', emoji: '🟦', sides: 4, vertices: 4, angle: '90°', formula: 'A = s²', color: 'text-blue-400', dim: '2D',
+  { name: 'Square', nameKey: 'auto.shapesafari.square', emoji: '🟦', sides: 4, vertices: 4, angle: '90°', formula: 'A = s²', color: 'text-blue-400', dim: '2D',
     draw: (cx, cy, r) => { const pts = [0, 1, 2, 3].map(i => { const a = (i * 90 + 45) * Math.PI / 180; return `${cx + Math.cos(a) * r},${cy + Math.sin(a) * r}`; }); return `M ${pts.join(' L ')} Z`; } },
-  { name: 'Pentagon', emoji: '⬠', sides: 5, vertices: 5, angle: '108°', formula: 'A = ¼√(5(5+2√5))s²', color: 'text-green-400', dim: '2D',
+  { name: 'Pentagon', nameKey: 'auto.shapesafari.pentagon', emoji: '⬠', sides: 5, vertices: 5, angle: '108°', formula: 'A = ¼√(5(5+2√5))s²', color: 'text-green-400', dim: '2D',
     draw: (cx, cy, r) => { const pts = [0, 1, 2, 3, 4].map(i => { const a = (i * 72 - 90) * Math.PI / 180; return `${cx + Math.cos(a) * r},${cy + Math.sin(a) * r}`; }); return `M ${pts.join(' L ')} Z`; } },
-  { name: 'Hexagon', emoji: '⬡', sides: 6, vertices: 6, angle: '120°', formula: 'A = (3√3/2)s²', color: 'text-yellow-400', dim: '2D',
+  { name: 'Hexagon', nameKey: 'auto.shapesafari.hexagon', emoji: '⬡', sides: 6, vertices: 6, angle: '120°', formula: 'A = (3√3/2)s²', color: 'text-yellow-400', dim: '2D',
     draw: (cx, cy, r) => { const pts = [0, 1, 2, 3, 4, 5].map(i => { const a = (i * 60 - 90) * Math.PI / 180; return `${cx + Math.cos(a) * r},${cy + Math.sin(a) * r}`; }); return `M ${pts.join(' L ')} Z`; } },
-  { name: 'Octagon', emoji: '🛑', sides: 8, vertices: 8, angle: '135°', formula: 'A = 2(1+√2)s²', color: 'text-sky-400', dim: '2D',
+  { name: 'Octagon', nameKey: 'auto.shapesafari.octagon', emoji: '🛑', sides: 8, vertices: 8, angle: '135°', formula: 'A = 2(1+√2)s²', color: 'text-sky-400', dim: '2D',
     draw: (cx, cy, r) => { const pts = [0,1,2,3,4,5,6,7].map(i => { const a = (i * 45 - 22.5) * Math.PI / 180; return `${cx + Math.cos(a) * r},${cy + Math.sin(a) * r}`; }); return `M ${pts.join(' L ')} Z`; } },
-  { name: 'Circle', emoji: '🔴', sides: '∞', vertices: 0, angle: '—', formula: 'A = πr²', color: 'text-pink-400', dim: '2D',
+  { name: 'Circle', nameKey: 'auto.shapesafari.circle', emoji: '🔴', sides: '∞', vertices: 0, angle: '—', formula: 'A = πr²', color: 'text-pink-400', dim: '2D',
     draw: (cx, cy, r) => `M ${cx - r},${cy} A ${r} ${r} 0 1 0 ${cx + r},${cy} A ${r} ${r} 0 1 0 ${cx - r},${cy}` },
 ];
 
 const shapes3D: ShapeInfo[] = [
-  { name: 'Tetrahedron', emoji: '🔺', sides: 4, vertices: 4, faces: 4, edges: 6, angle: '60°', formula: 'V = (√2/12)a³', color: 'text-red-300', dim: '3D',
+  { name: 'Tetrahedron', nameKey: 'auto.shapesafari.tetrahedron', emoji: '🔺', sides: 4, vertices: 4, faces: 4, edges: 6, angle: '60°', formula: 'V = (√2/12)a³', color: 'text-red-300', dim: '3D',
     draw: (cx, cy, r) => { const pts = [0, 1, 2].map(i => { const a = (i * 120 - 90) * Math.PI / 180; return `${cx + Math.cos(a) * r},${cy + Math.sin(a) * r}`; }); return `M ${pts.join(' L ')} Z M ${pts[0]} L ${cx},${cy - r * 0.3} L ${pts[2]}`; } },
-  { name: 'Cube', emoji: '🧊', sides: 6, vertices: 8, faces: 6, edges: 12, angle: '90°', formula: 'V = s³', color: 'text-cyan-300', dim: '3D',
+  { name: 'Cube', nameKey: 'auto.shapesafari.cube', emoji: '🧊', sides: 6, vertices: 8, faces: 6, edges: 12, angle: '90°', formula: 'V = s³', color: 'text-cyan-300', dim: '3D',
     draw: (cx, cy, r) => `M ${cx - r * 0.7},${cy - r * 0.4} L ${cx + r * 0.3},${cy - r * 0.8} L ${cx + r * 0.9},${cy - r * 0.2} L ${cx - r * 0.1},${cy + r * 0.2} Z M ${cx - r * 0.1},${cy + r * 0.2} L ${cx - r * 0.1},${cy + r * 0.9} L ${cx + r * 0.9},${cy + r * 0.5} L ${cx + r * 0.9},${cy - r * 0.2} M ${cx - r * 0.1},${cy + r * 0.9} L ${cx - r * 0.7},${cy + r * 0.3} L ${cx - r * 0.7},${cy - r * 0.4}` },
-  { name: 'Sphere', emoji: '🌐', sides: '—', vertices: 0, faces: 1, edges: 0, angle: '—', formula: 'V = 4/3πr³', color: 'text-purple-300', dim: '3D',
+  { name: 'Sphere', nameKey: 'auto.shapesafari.sphere', emoji: '🌐', sides: '—', vertices: 0, faces: 1, edges: 0, angle: '—', formula: 'V = 4/3πr³', color: 'text-purple-300', dim: '3D',
     draw: (cx, cy, r) => `M ${cx - r},${cy} A ${r} ${r} 0 1 0 ${cx + r},${cy} A ${r} ${r} 0 1 0 ${cx - r},${cy} M ${cx - r},${cy} Q ${cx},${cy + r * 0.35} ${cx + r},${cy} M ${cx - r},${cy} Q ${cx},${cy - r * 0.35} ${cx + r},${cy}` },
-  { name: 'Cylinder', emoji: '🥫', sides: 3, vertices: 0, faces: 3, edges: 2, angle: '—', formula: 'V = πr²h', color: 'text-green-300', dim: '3D',
+  { name: 'Cylinder', nameKey: 'auto.shapesafari.cylinder', emoji: '🥫', sides: 3, vertices: 0, faces: 3, edges: 2, angle: '—', formula: 'V = πr²h', color: 'text-green-300', dim: '3D',
     draw: (cx, cy, r) => `M ${cx - r * 0.8},${cy - r * 0.5} L ${cx - r * 0.8},${cy + r * 0.5} A ${r * 0.8} ${r * 0.3} 0 0 0 ${cx + r * 0.8},${cy + r * 0.5} L ${cx + r * 0.8},${cy - r * 0.5} A ${r * 0.8} ${r * 0.3} 0 0 0 ${cx - r * 0.8},${cy - r * 0.5} A ${r * 0.8} ${r * 0.3} 0 0 1 ${cx + r * 0.8},${cy - r * 0.5}` },
-  { name: 'Cone', emoji: '🍦', sides: 2, vertices: 1, faces: 2, edges: 1, angle: '—', formula: 'V = ⅓πr²h', color: 'text-amber-300', dim: '3D',
+  { name: 'Cone', nameKey: 'auto.shapesafari.cone', emoji: '🍦', sides: 2, vertices: 1, faces: 2, edges: 1, angle: '—', formula: 'V = ⅓πr²h', color: 'text-amber-300', dim: '3D',
     draw: (cx, cy, r) => `M ${cx},${cy - r} L ${cx - r * 0.8},${cy + r * 0.5} A ${r * 0.8} ${r * 0.3} 0 0 0 ${cx + r * 0.8},${cy + r * 0.5} Z` },
 ];
 
@@ -53,6 +54,7 @@ function makeQuiz() {
 }
 
 export default function ShapeSafari() {
+  const { t } = useTranslation();
   const [dim, setDim] = useState<'2D' | '3D'>('2D');
   const [selectedIdx, setSelectedIdx] = useState(0);
   const [mode, setMode] = useState<'explore' | 'quiz'>('explore');
@@ -96,9 +98,9 @@ export default function ShapeSafari() {
                 <svg width="120" height="120" viewBox="0 0 120 120"><path d={quiz.shape.draw(60, 60, 40)} fill="rgba(168,85,247,0.2)" stroke="#a855f7" strokeWidth="2.5" /></svg>
               </div>
               <p className="text-xl font-bold text-white text-center mb-4">
-                {quiz.prop === 'sides' && `How many sides does a ${quiz.shape.name} have?`}
-                {quiz.prop === 'vertices' && `How many vertices does a ${quiz.shape.name} have?`}
-                {quiz.prop === 'name' && 'What is this shape called?'}
+                {quiz.prop === 'sides' && t('auto.shapesafari.how_many_sides', 'How many sides does a {{name}} have?', { name: t(quiz.shape.nameKey || '', quiz.shape.name) })}
+                {quiz.prop === 'vertices' && t('auto.shapesafari.how_many_vertices', 'How many vertices does a {{name}} have?', { name: t(quiz.shape.nameKey || '', quiz.shape.name) })}
+                {quiz.prop === 'name' && t('auto.shapesafari.what_is_this_shape', 'What is this shape called?')}
               </p>
               <div className="grid grid-cols-2 gap-3">
                 {quiz.options.map(opt => (
@@ -117,7 +119,7 @@ export default function ShapeSafari() {
                   <motion.button key={s.name} className={`p-3 rounded-xl border-2 text-center ${selectedIdx === i ? 'border-purple-400 bg-purple-500/20' : 'border-white/10 bg-white/5'}`}
                     whileTap={{ scale: 0.95 }} onClick={() => setSelectedIdx(i)}>
                     <span className="text-2xl">{s.emoji}</span>
-                    <p className="text-white text-sm font-bold mt-1">{s.name}</p>
+                    <p className="text-white text-sm font-bold mt-1">{t(s.nameKey || '', s.name)}</p>
                   </motion.button>
                 ))}
               </div>
@@ -129,13 +131,13 @@ export default function ShapeSafari() {
               </div>
             </div>
             <div className="space-y-3">
-              <h3 className={`text-3xl font-bold ${selected.color}`}>{selected.emoji} {selected.name}</h3>
+              <h3 className={`text-3xl font-bold ${selected.color}`}>{selected.emoji} {t(selected.nameKey || '', selected.name)}</h3>
               {[
-                { label: 'Sides / Faces', value: selected.dim === '3D' ? `${selected.faces} faces, ${selected.edges} edges` : `${selected.sides} sides` },
-                { label: 'Vertices', value: String(selected.vertices) },
-                { label: 'Interior angle', value: selected.angle },
-                { label: 'Key formula', value: selected.formula },
-                { label: 'Dimension', value: selected.dim },
+                { label: t('auto.shapesafari.sides_faces', 'Sides / Faces'), value: selected.dim === '3D' ? `${selected.faces} ${t('auto.shapesafari.faces', 'faces')}, ${selected.edges} ${t('auto.shapesafari.edges', 'edges')}` : `${selected.sides} ${t('auto.shapesafari.sides', 'sides')}` },
+                { label: t('auto.shapesafari.vertices_label', 'Vertices'), value: String(selected.vertices) },
+                { label: t('auto.shapesafari.interior_angle', 'Interior angle'), value: selected.angle },
+                { label: t('auto.shapesafari.key_formula', 'Key formula'), value: selected.formula },
+                { label: t('auto.shapesafari.dimension', 'Dimension'), value: selected.dim },
               ].map(p => (
                 <div key={p.label} className="bg-white/5 rounded-xl px-4 py-3 border border-white/10 flex justify-between">
                   <span className="text-gray-400 text-sm">{p.label}</span>

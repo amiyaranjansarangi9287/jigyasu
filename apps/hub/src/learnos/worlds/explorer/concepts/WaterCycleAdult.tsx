@@ -8,8 +8,10 @@ import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 export default function WaterCycleAdult() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const lumo = useLumoPeer();
@@ -201,10 +203,11 @@ export default function WaterCycleAdult() {
                 <Trans i18nKey="auto.watercycleadult.history_of_the_idea">History of the idea</Trans>
                                             </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                <Trans i18nKey="auto.watercycleadult.ancient_civilizations_understo">Ancient civilizations understood rain as divine gift. The
-                                              scientific water cycle was first correctly described by
-                                              Bernard Palissy in 1580. Understanding groundwater flow
-                                              came much later — and is still being refined today.</Trans>
+                <Trans i18nKey="auto.watercycleadult.ancient_civilizations_understo">Ancient civilizations understood rain as essential for life. Greek,
+                                              Roman, Indian, and Islamic scholars developed early ideas about
+                                              evaporation and precipitation long before Bernard Palissy described
+                                              the cycle in 1580. Understanding groundwater flow came much later —
+                                              and is still being refined today.</Trans>
                                             </p>
             </div>
           </div>

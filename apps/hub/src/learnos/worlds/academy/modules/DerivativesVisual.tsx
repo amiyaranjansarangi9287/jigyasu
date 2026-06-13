@@ -6,8 +6,10 @@ import { useAcademyProgress } from '../hooks/useAcademyProgress';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { CURVES } from '../data/academyContent';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 export default function DerivativesVisual() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const lumo = useLumoAncient();
   const { recordDerivatives } = useAcademyProgress();

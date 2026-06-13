@@ -1,22 +1,24 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation, Trans } from 'react-i18next';
 
 type GeoMode = 'angles' | 'pythagoras' | 'areas';
 
 export default function GeometryForge() {
+  const { t } = useTranslation();
   const [mode, setMode] = useState<GeoMode>('angles');
 
   const modes = [
-    { id: 'angles' as GeoMode, emoji: '📐', label: 'Angles', desc: 'Explore & calculate' },
-    { id: 'pythagoras' as GeoMode, emoji: '📏', label: 'Pythagoras', desc: 'a² + b² = c²' },
-    { id: 'areas' as GeoMode, emoji: '🔷', label: 'Areas', desc: 'Shapes & formulas' },
+    { id: 'angles' as GeoMode, emoji: '📐', label: t('auto.geometryforge.angles', 'Angles'), desc: t('auto.geometryforge.explore_calculate', 'Explore & calculate') },
+    { id: 'pythagoras' as GeoMode, emoji: '📏', label: t('auto.geometryforge.pythagoras', 'Pythagoras'), desc: t('auto.geometryforge.a2_b2_c2', 'a² + b² = c²') },
+    { id: 'areas' as GeoMode, emoji: '🔷', label: t('auto.geometryforge.areas', 'Areas'), desc: t('auto.geometryforge.shapes_formulas', 'Shapes & formulas') },
   ];
 
   return (
     <div className="w-full">
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-white mb-2">📐 Geometry Forge</h2>
-        <p className="text-purple-300 text-lg">Shape your understanding of geometry!</p>
+        <h2 className="text-3xl font-bold text-white mb-2">{t('auto.geometryforge.geometry_forge', '📐 Geometry Forge')}</h2>
+        <p className="text-purple-300 text-lg">{t('auto.geometryforge.shape_your_understanding', 'Shape your understanding of geometry!')}</p>
       </div>
 
       <div className="grid grid-cols-3 gap-2 mb-6">
@@ -45,6 +47,7 @@ export default function GeometryForge() {
 }
 
 function AngleExplorer() {
+  const { t } = useTranslation();
   const [angle, setAngle] = useState(45);
   const [quizMode, setQuizMode] = useState(false);
   const [quizAngle, setQuizAngle] = useState(0);
@@ -53,12 +56,12 @@ function AngleExplorer() {
   const [quizType, setQuizType] = useState<'identify' | 'complementary' | 'supplementary'>('identify');
 
   const getAngleType = (a: number) => {
-    if (a === 0) return { name: 'Zero', emoji: '⬜', color: 'text-gray-400' };
-    if (a < 90) return { name: 'Acute', emoji: '📐', color: 'text-green-400' };
-    if (a === 90) return { name: 'Right', emoji: '📏', color: 'text-blue-400' };
-    if (a < 180) return { name: 'Obtuse', emoji: '📐', color: 'text-orange-400' };
-    if (a === 180) return { name: 'Straight', emoji: '➖', color: 'text-yellow-400' };
-    return { name: 'Reflex', emoji: '🔄', color: 'text-red-400' };
+    if (a === 0) return { name: t('auto.geometryforge.zero', 'Zero'), emoji: '⬜', color: 'text-gray-400' };
+    if (a < 90) return { name: t('auto.geometryforge.acute', 'Acute'), emoji: '📐', color: 'text-green-400' };
+    if (a === 90) return { name: t('auto.geometryforge.right', 'Right'), emoji: '📏', color: 'text-blue-400' };
+    if (a < 180) return { name: t('auto.geometryforge.obtuse', 'Obtuse'), emoji: '📐', color: 'text-orange-400' };
+    if (a === 180) return { name: t('auto.geometryforge.straight', 'Straight'), emoji: '➖', color: 'text-yellow-400' };
+    return { name: t('auto.geometryforge.reflex', 'Reflex'), emoji: '🔄', color: 'text-red-400' };
   };
 
   const info = getAngleType(angle);
@@ -125,7 +128,7 @@ function AngleExplorer() {
 
         <input type="range" min="0" max="360" value={angle} onChange={e => setAngle(parseInt(e.target.value))}
           className="w-48 mt-2 accent-purple-500" />
-        <p className="text-gray-400 text-sm mt-1">Drag to change angle</p>
+        <p className="text-gray-400 text-sm mt-1">{t('auto.geometryforge.drag_to_change_angle', 'Drag to change angle')}</p>
       </div>
 
       <div className="space-y-4">
@@ -133,33 +136,33 @@ function AngleExplorer() {
           <div className="flex items-center gap-3 mb-3">
             <span className="text-3xl">{info.emoji}</span>
             <div>
-              <p className={`font-bold text-xl ${info.color}`}>{info.name} Angle</p>
+              <p className={`font-bold text-xl ${info.color}`}>{info.name} {t('auto.geometryforge.angle', 'Angle')}</p>
               <p className="text-gray-400 text-sm">{angle}°</p>
             </div>
           </div>
           <div className="space-y-2 text-sm">
             <div className="flex justify-between bg-white/5 px-3 py-2 rounded-lg">
-              <span className="text-gray-400">Complement (90° - θ):</span>
-              <span className="text-blue-400 font-bold">{angle <= 90 ? `${90 - angle}°` : 'N/A'}</span>
+              <span className="text-gray-400">{t('auto.geometryforge.complement', 'Complement (90° - θ):')}</span>
+              <span className="text-blue-400 font-bold">{angle <= 90 ? `${90 - angle}°` : t('auto.geometryforge.na', 'N/A')}</span>
             </div>
             <div className="flex justify-between bg-white/5 px-3 py-2 rounded-lg">
-              <span className="text-gray-400">Supplement (180° - θ):</span>
-              <span className="text-orange-400 font-bold">{angle <= 180 ? `${180 - angle}°` : 'N/A'}</span>
+              <span className="text-gray-400">{t('auto.geometryforge.supplement', 'Supplement (180° - θ):')}</span>
+              <span className="text-orange-400 font-bold">{angle <= 180 ? `${180 - angle}°` : t('auto.geometryforge.na', 'N/A')}</span>
             </div>
             <div className="flex justify-between bg-white/5 px-3 py-2 rounded-lg">
-              <span className="text-gray-400">Radians:</span>
-              <span className="text-purple-400 font-bold">{(angle * Math.PI / 180).toFixed(3)} rad</span>
+              <span className="text-gray-400">{t('auto.geometryforge.radians', 'Radians:')}</span>
+              <span className="text-purple-400 font-bold">{(angle * Math.PI / 180).toFixed(3)} {t('auto.geometryforge.rad', 'rad')}</span>
             </div>
           </div>
         </div>
 
         {/* Angle types reference */}
         <div className="bg-white/5 rounded-xl p-3 border border-white/10 text-sm space-y-1">
-          <p className="text-green-400">📐 Acute: 0° &lt; θ &lt; 90°</p>
-          <p className="text-blue-400">📏 Right: θ = 90°</p>
-          <p className="text-orange-400">📐 Obtuse: 90° &lt; θ &lt; 180°</p>
-          <p className="text-yellow-400">➖ Straight: θ = 180°</p>
-          <p className="text-red-400">🔄 Reflex: 180° &lt; θ &lt; 360°</p>
+          <p className="text-green-400">📐 {t('auto.geometryforge.acute_ref', 'Acute: 0° < θ < 90°')}</p>
+          <p className="text-blue-400">📏 {t('auto.geometryforge.right_ref', 'Right: θ = 90°')}</p>
+          <p className="text-orange-400">📐 {t('auto.geometryforge.obtuse_ref', 'Obtuse: 90° < θ < 180°')}</p>
+          <p className="text-yellow-400">➖ {t('auto.geometryforge.straight_ref', 'Straight: θ = 180°')}</p>
+          <p className="text-red-400">🔄 {t('auto.geometryforge.reflex_ref', 'Reflex: 180° < θ < 360°')}</p>
         </div>
 
         
@@ -167,20 +170,20 @@ function AngleExplorer() {
         {quizMode && (
           <motion.div className="bg-purple-500/10 rounded-xl p-4 border border-purple-500/30" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
             {quizType === 'identify' ? (
-              <p className="text-white mb-2">What type of angle is <span className="text-purple-400 font-bold">{quizAngle}°</span>?</p>
+              <p className="text-white mb-2">{t('auto.geometryforge.what_type_of_angle_is', 'What type of angle is')} <span className="text-purple-400 font-bold">{quizAngle}°</span>?</p>
             ) : quizType === 'complementary' ? (
-              <p className="text-white mb-2">What is the complement of <span className="text-purple-400 font-bold">{quizAngle}°</span>?</p>
+              <p className="text-white mb-2">{t('auto.geometryforge.what_is_the_complement_of', 'What is the complement of')} <span className="text-purple-400 font-bold">{quizAngle}°</span>?</p>
             ) : (
-              <p className="text-white mb-2">What is the supplement of <span className="text-purple-400 font-bold">{quizAngle}°</span>?</p>
+              <p className="text-white mb-2">{t('auto.geometryforge.what_is_the_supplement_of', 'What is the supplement of')} <span className="text-purple-400 font-bold">{quizAngle}°</span>?</p>
             )}
             <div className="flex gap-2">
               <input value={quizAnswer} onChange={e => setQuizAnswer(e.target.value)}
                 className="flex-1 bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white text-sm focus:outline-none"
-                placeholder={quizType === 'identify' ? 'acute/right/obtuse...' : 'degrees'}
+                placeholder={quizType === 'identify' ? t('auto.geometryforge.acute_right_obtuse', 'acute/right/obtuse...') : t('auto.geometryforge.degrees', 'degrees')}
                 onKeyDown={e => e.key === 'Enter' && checkQuizAnswer()} />
-              <button className="px-4 py-2 rounded-lg bg-purple-600 text-white font-bold text-sm" onClick={checkQuizAnswer}>Check</button>
+              <button className="px-4 py-2 rounded-lg bg-purple-600 text-white font-bold text-sm" onClick={checkQuizAnswer}>{t('auto.geometryforge.check', 'Check')}</button>
             </div>
-            {quizFeedback === 'correct' && <p className="text-green-400 font-bold mt-2">✅ Correct!</p>}
+            {quizFeedback === 'correct' && <p className="text-green-400 font-bold mt-2"><Trans i18nKey="auto.geometryforge.correct">✅ Correct!</Trans></p>}
             {quizFeedback && quizFeedback !== 'correct' && <p className="text-red-400 text-sm mt-2">{quizFeedback}</p>}
           </motion.div>
         )}
@@ -190,6 +193,7 @@ function AngleExplorer() {
 }
 
 function PythagorasVisualizer() {
+  const { t } = useTranslation();
   const [a, setA] = useState(3);
   const [b, setB] = useState(4);
   const c = useMemo(() => Math.sqrt(a * a + b * b), [a, b]);
@@ -207,12 +211,12 @@ function PythagorasVisualizer() {
       <div className="bg-white/5 rounded-2xl p-4 border border-white/10">
         <div className="flex items-center justify-center gap-4 mb-4 flex-wrap">
           <div className="flex flex-col items-center gap-1">
-            <label className="text-gray-400 text-sm">Side a</label>
+            <label className="text-gray-400 text-sm">{t('auto.geometryforge.side_a', 'Side a')}</label>
             <input type="range" min="1" max="12" value={a} onChange={e => setA(parseInt(e.target.value))} className="w-24 accent-blue-500" />
             <span className="text-blue-400 font-bold">{a}</span>
           </div>
           <div className="flex flex-col items-center gap-1">
-            <label className="text-gray-400 text-sm">Side b</label>
+            <label className="text-gray-400 text-sm">{t('auto.geometryforge.side_b', 'Side b')}</label>
             <input type="range" min="1" max="12" value={b} onChange={e => setB(parseInt(e.target.value))} className="w-24 accent-orange-500" />
             <span className="text-orange-400 font-bold">{b}</span>
           </div>
@@ -259,7 +263,7 @@ function PythagorasVisualizer() {
 
       {/* Pythagorean triples */}
       <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-        <h4 className="text-white font-bold mb-2">⭐ Pythagorean Triples</h4>
+        <h4 className="text-white font-bold mb-2">⭐ {t('auto.geometryforge.pythagorean_triples', 'Pythagorean Triples')}</h4>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
           {triples.map(([ta, tb, tc]) => (
             <motion.button key={`${ta}-${tb}`}
@@ -277,6 +281,7 @@ function PythagorasVisualizer() {
 }
 
 function AreaCalculator() {
+  const { t } = useTranslation();
   const [shape, setShape] = useState<'rectangle' | 'triangle' | 'circle' | 'trapezoid'>('rectangle');
   const [dim1, setDim1] = useState(8);
   const [dim2, setDim2] = useState(5);
@@ -296,10 +301,10 @@ function AreaCalculator() {
   }, [shape, dim1, dim2, dim3]);
 
   const shapes = [
-    { id: 'rectangle' as const, emoji: '🟦', label: 'Rectangle' },
-    { id: 'triangle' as const, emoji: '🔺', label: 'Triangle' },
-    { id: 'circle' as const, emoji: '🔴', label: 'Circle' },
-    { id: 'trapezoid' as const, emoji: '⬡', label: 'Trapezoid' },
+    { id: 'rectangle' as const, emoji: '🟦', label: t('auto.geometryforge.rectangle', 'Rectangle') },
+    { id: 'triangle' as const, emoji: '🔺', label: t('auto.geometryforge.triangle', 'Triangle') },
+    { id: 'circle' as const, emoji: '🔴', label: t('auto.geometryforge.circle', 'Circle') },
+    { id: 'trapezoid' as const, emoji: '⬡', label: t('auto.geometryforge.trapezoid', 'Trapezoid') },
   ];
 
   const svgW = 300, svgH = 200;
@@ -381,20 +386,20 @@ function AreaCalculator() {
 
           <div className="space-y-2 w-full">
             <div className="flex items-center gap-2">
-              <label className="text-gray-400 text-sm w-24">{shape === 'circle' ? 'Radius' : shape === 'trapezoid' ? 'Base b' : 'Length'}</label>
+              <label className="text-gray-400 text-sm w-24">{shape === 'circle' ? t('auto.geometryforge.radius', 'Radius') : shape === 'trapezoid' ? t('auto.geometryforge.base_b', 'Base b') : t('auto.geometryforge.length', 'Length')}</label>
               <input type="range" min="1" max="12" value={dim1} onChange={e => setDim1(parseInt(e.target.value))} className="flex-1 accent-blue-500" />
               <span className="text-white font-bold w-6">{dim1}</span>
             </div>
             {shape !== 'circle' && (
               <div className="flex items-center gap-2">
-                <label className="text-gray-400 text-sm w-24">{shape === 'rectangle' ? 'Width' : 'Height'}</label>
+                <label className="text-gray-400 text-sm w-24">{shape === 'rectangle' ? t('auto.geometryforge.width', 'Width') : t('auto.geometryforge.height', 'Height')}</label>
                 <input type="range" min="1" max="12" value={dim2} onChange={e => setDim2(parseInt(e.target.value))} className="flex-1 accent-orange-500" />
                 <span className="text-white font-bold w-6">{dim2}</span>
               </div>
             )}
             {shape === 'trapezoid' && (
               <div className="flex items-center gap-2">
-                <label className="text-gray-400 text-sm w-24">Top a</label>
+                <label className="text-gray-400 text-sm w-24">{t('auto.geometryforge.top_a', 'Top a')}</label>
                 <input type="range" min="1" max="12" value={dim3} onChange={e => setDim3(parseInt(e.target.value))} className="flex-1 accent-yellow-500" />
                 <span className="text-white font-bold w-6">{dim3}</span>
               </div>
@@ -404,17 +409,17 @@ function AreaCalculator() {
 
         <div className="space-y-3">
           <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-2xl p-5 border border-blue-500/20">
-            <p className="text-gray-400 text-sm mb-1">Formula</p>
+            <p className="text-gray-400 text-sm mb-1">{t('auto.geometryforge.formula', 'Formula')}</p>
             <p className="text-white font-mono font-bold text-lg">{calculations.formula}</p>
             <motion.p key={calculations.area} className="text-3xl font-bold text-blue-400 mt-2" initial={{ scale: 0.8 }} animate={{ scale: 1 }}>
-              Area = {calculations.area.toFixed(2)} sq units
+              {t('auto.geometryforge.area_equals', 'Area = {{area}} sq units', { area: calculations.area.toFixed(2) })}
             </motion.p>
           </div>
           <div className="bg-gradient-to-br from-green-500/10 to-teal-500/10 rounded-2xl p-5 border border-green-500/20">
-            <p className="text-gray-400 text-sm mb-1">Perimeter / Circumference</p>
+            <p className="text-gray-400 text-sm mb-1">{t('auto.geometryforge.perimeter_circumference', 'Perimeter / Circumference')}</p>
             <p className="text-white font-mono text-sm">{calculations.perimFormula}</p>
             <motion.p key={calculations.perimeter} className="text-2xl font-bold text-green-400 mt-2" initial={{ scale: 0.8 }} animate={{ scale: 1 }}>
-              {shape === 'circle' ? 'C' : 'P'} = {calculations.perimeter > 0 ? calculations.perimeter.toFixed(2) : '—'} units
+              {shape === 'circle' ? t('auto.geometryforge.circumference', 'C = {{perimeter}} units', { perimeter: calculations.perimeter > 0 ? calculations.perimeter.toFixed(2) : '—' }) : t('auto.geometryforge.perimeter', 'P = {{perimeter}} units', { perimeter: calculations.perimeter > 0 ? calculations.perimeter.toFixed(2) : '—' })}
             </motion.p>
           </div>
         </div>

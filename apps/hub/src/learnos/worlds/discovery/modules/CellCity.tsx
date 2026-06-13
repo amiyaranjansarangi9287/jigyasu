@@ -6,6 +6,7 @@ import { useLumoSage } from '../hooks/useLumoSage';
 import { useDiscoveryProgress } from '../hooks/useDiscoveryProgress';
 import { useDiscoverySession } from '../hooks/useDiscoverySession';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 const ORG = [
   { id: 'nucleus', name: 'Nucleus', emoji: '🏢', role: 'City Hall — controls everything' },
@@ -15,6 +16,7 @@ const ORG = [
 ];
 
 export default function CellCity() {
+  const { t } = useTranslation();
   const lumo = useLumoSage();
   const { recordCellPlacement, updateMastery } = useDiscoveryProgress();
   const { trackEvent } = useDiscoverySession();

@@ -1,16 +1,18 @@
 import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 type LabMode = 'factors' | 'gcdlcm' | 'primecheck';
 
 export default function NumberTheoryLab() {
+  const { t } = useTranslation();
   const [mode, setMode] = useState<LabMode>('factors');
 
   const modes = [
-    { id: 'factors' as LabMode, emoji: '🌳', label: 'Factor Tree', desc: 'Prime factorization' },
-    { id: 'gcdlcm' as LabMode, emoji: '🔗', label: 'GCD & LCM', desc: 'Greatest & least common' },
-    { id: 'primecheck' as LabMode, emoji: '🔬', label: 'Prime Checker', desc: 'Is it prime?' },
+    { id: 'factors' as LabMode, emoji: '🌳', label: t('auto.numbertheorylab.factor_tree', 'Factor Tree'), desc: t('auto.numbertheorylab.prime_factorization', 'Prime factorization') },
+    { id: 'gcdlcm' as LabMode, emoji: '🔗', label: t('auto.numbertheorylab.gcd_lcm', 'GCD & LCM'), desc: t('auto.numbertheorylab.greatest_least_common', 'Greatest & least common') },
+    { id: 'primecheck' as LabMode, emoji: '🔬', label: t('auto.numbertheorylab.prime_checker', 'Prime Checker'), desc: t('auto.numbertheorylab.is_it_prime', 'Is it prime?') },
   ];
 
   return (

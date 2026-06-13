@@ -58,7 +58,7 @@ export default function Fractions() {
             <span className="text-2xl">{t('lab.modules.Fractions.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.fractions.indian_fraction_heritage">Indian Fraction Heritage</Trans></h3>
-              <p className="text-gray-600 text-sm leading-relaxed"><Trans i18nKey="auto.fractions.ancient_indians_used_fractions">Ancient Indians used fractions in the</Trans> <strong><Trans i18nKey="auto.fractions.sulba_sutras">Sulba Sutras</Trans></strong> <Trans i18nKey="auto.fractions.800_bce_for_altar_construction">(800 BCE) for altar construction! Aryabhata worked with fractions of fractions — 1,500 years before European mathematicians formalized fraction arithmetic.</Trans></p>
+              <p className="text-gray-600 text-sm leading-relaxed"><Trans i18nKey="auto.fractions.ancient_indians_used_fractions">Ancient Indians used fractions in the</Trans> <strong><Trans i18nKey="auto.fractions.sulba_sutras">Sulba Sutras</Trans></strong> <Trans i18nKey="auto.fractions.800_bce_for_altar_construction">(traditionally dated around 800 BCE) for altar construction! Aryabhata later developed sophisticated methods for working with fractions and fractions of fractions in his mathematical and astronomical work.</Trans></p>
             </div>
           </div>
         </div>

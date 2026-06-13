@@ -64,9 +64,9 @@ export default function LeverExplorer() {
 
         {/* Controls */}
         <div className="space-y-3 mb-6">
-          <ScientificSlider label={t('auto.attr.leverexplorer.fulcrum_position')} emoji="🔺" value={fulcrum} min={10} max={90} unit="%" color="#78716C" onChange={setFulcrum} />
-          <ScientificSlider label={t('auto.attr.leverexplorer.left_weight')} emoji="🏋️" value={leftW} min={1} max={30} unit="kg" color="#EF4444" onChange={setLeftW} />
-          <ScientificSlider label={t('auto.attr.leverexplorer.right_weight')} emoji="📦" value={rightW} min={1} max={30} unit="kg" color="#3B82F6" onChange={setRightW} />
+          <ScientificSlider label={t('auto.leverexplorer.fulcrum_position', 'Fulcrum position')} emoji="🔺" value={fulcrum} min={10} max={90} unit="%" color="#78716C" onChange={setFulcrum} />
+          <ScientificSlider label={t('auto.leverexplorer.left_weight', 'Left weight')} emoji="🏋️" value={leftW} min={1} max={30} unit="kg" color="#EF4444" onChange={setLeftW} />
+          <ScientificSlider label={t('auto.leverexplorer.right_weight', 'Right weight')} emoji="📦" value={rightW} min={1} max={30} unit="kg" color="#3B82F6" onChange={setRightW} />
         </div>
 
         {balanced && <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-green-50 rounded-2xl p-4 border border-green-200 mb-4 text-center"><p className="font-bold text-green-700 text-lg">{t('lab.modules.LeverExplorer.txt_Balanced', '⚖️ Balanced!')}</p><p className="text-sm text-green-600">{t('lab.modules.LeverExplorer.txt_Lefttorque', 'Left torque = Right torque')}</p></motion.div>}

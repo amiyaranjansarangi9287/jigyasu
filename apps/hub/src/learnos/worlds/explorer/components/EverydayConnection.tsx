@@ -41,7 +41,7 @@ export function EverydayConnection({
           className="mt-3 text-violet-500 text-sm hover:text-violet-400
                      transition-colors underline"
         >
-          {showIndian ? 'Hide' : `${t('explorer.concept.indian_context')} →`}
+          {showIndian ? t('explorer.concept.hide', 'Hide') : `${t('explorer.concept.indian_context')} →`}
         </button>
 
         <AnimatePresence>

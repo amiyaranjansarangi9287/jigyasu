@@ -2,6 +2,7 @@
 import { useRef, useEffect, useState } from 'react';
 import ModuleWrapper from './ModuleWrapper';
 import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
+import { useTranslation } from 'react-i18next';
 
 const ELEMENTS: Record<number, { name: string; symbol: string; protons: number; neutrons: number; electrons: number; shells: number[] }> = {
   1: { name: 'Hydrogen', symbol: 'H', protons: 1, neutrons: 0, electrons: 1, shells: [1] },
@@ -15,6 +16,7 @@ const ELEMENTS: Record<number, { name: string; symbol: string; protons: number; 
 };
 
 export default function AtomicStructure() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animRef = useRef<number>(0);
   const [progress, setProgress] = useState<UserProgress>(loadProgress);

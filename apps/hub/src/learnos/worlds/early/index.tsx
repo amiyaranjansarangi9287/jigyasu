@@ -15,6 +15,7 @@ import ShadowDetectiveModule from './modules/ShadowDetective';
 import MagnetExplorerModule from './modules/MagnetExplorer';
 import CoinCounterModule from './modules/CoinCounter';
 import withWonderFirst from '../../core/modules/withWonderFirst';
+import { useTranslation } from 'react-i18next';
 
 const StoryBuilder = withWonderFirst(StoryBuilderModule, 'early', 'story-builder');
 const NumberLineAdventures = withWonderFirst(NumberLineAdventuresModule, 'early', 'number-line');
@@ -30,6 +31,7 @@ const MagnetExplorer = withWonderFirst(MagnetExplorerModule, 'early', 'magnet-ex
 const CoinCounter = withWonderFirst(CoinCounterModule, 'early', 'coin-counter');
 
 export default function EarlyWorld() {
+  const { t } = useTranslation();
   return (
     <Routes>
       <Route index element={<EarlyHome />} />

@@ -144,8 +144,6 @@ import mai from './learnos/i18n/locales/mai.json';
 import sd from './learnos/i18n/locales/sd.json';
 import mni from './learnos/i18n/locales/mni.json';
 import od from './learnos/i18n/locales/od.json';
-import es from './learnos/i18n/locales/es.json';
-import fr from './learnos/i18n/locales/fr.json';
 
 const resources = {
   en: { translation: en },
@@ -169,9 +167,7 @@ const resources = {
   mai: { translation: mai },
   sd: { translation: sd },
   mni: { translation: mni },
-  od: { translation: od },
-  es: { translation: es },
-  fr: { translation: fr }
+  od: { translation: od }
 };
 
 // Safely get initial language from localStorage

@@ -88,7 +88,7 @@ export default function MathOlympiad() {
           <div className="flex gap-2 mb-4">
             <input type="number" value={userAnswer} onChange={e => setUserAnswer(e.target.value)}
               className="flex-1 bg-white/10 border-2 border-white/20 rounded-xl px-4 py-3 text-white text-xl font-bold text-center focus:outline-none focus:border-yellow-400"
-              placeholder={t('auto.attr.matholympiad.your_answer')}
+              placeholder={t('auto.matholympiad.your_answer', 'Your answer')}
               onKeyDown={e => e.key === 'Enter' && checkAnswer()} />
             <motion.button className="px-6 rounded-xl bg-gradient-to-r from-yellow-600 to-amber-600 text-white font-bold text-lg"
               whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={checkAnswer}>✓</motion.button>

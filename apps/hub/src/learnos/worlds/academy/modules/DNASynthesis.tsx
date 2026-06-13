@@ -5,6 +5,7 @@ import AcademyShell from '../AcademyShell';
 import { useLumoAncient } from '../hooks/useLumoAncient';
 import { useAcademyProgress } from '../hooks/useAcademyProgress';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 const SCENARIOS = [
   { id: 'normal', name: 'Normal Haemoglobin', template: 'TAC-CAC-GTT-GAA', mrna: 'AUG-GUG-CAA-CUU', protein: 'Met-Val-Gln-Leu', mutation: 'none', effect: '', medical: '' },
@@ -17,6 +18,7 @@ const BASE_PAIRS: Record<string, string> = { A: 'T', T: 'A', G: 'C', C: 'G' };
 const BASE_COLORS: Record<string, string> = { A: '#EF4444', T: '#3B82F6', G: '#22C55E', C: '#F59E0B', U: '#8B5CF6' };
 
 export default function DNASynthesis() {
+  const { t } = useTranslation();
   const lumo = useLumoAncient();
   const { recordDNA } = useAcademyProgress();
   const [scenarioIdx, setScenarioIdx] = useState(0);

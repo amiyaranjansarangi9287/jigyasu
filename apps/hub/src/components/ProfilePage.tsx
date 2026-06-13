@@ -4,6 +4,7 @@ import EmptyState from './EmptyState';
 import AvatarStore from './AvatarStore';
 import DataDeletionButton from './DataDeletionButton';
 import ParentalControls from './ParentalControls';
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useFormatNumber } from '../hooks/useFormatNumber';
 export default function ProfilePage() {
@@ -12,14 +13,24 @@ export default function ProfilePage() {
   const { t } = useTranslation();
   const formatNumber = useFormatNumber();
 
+  useEffect(() => {
+    if (profile) {
+      document.title = t('profile.page_title', `${profile.name}'s Profile — Jigyasu`);
+    }
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) {
+      meta.setAttribute('content', t('profile.meta_description', 'Your Jigyasu learning profile, progress, and settings.'));
+    }
+  }, [t, profile]);
+
   if (!profile) return null;
 
   const hasProgress = (profile.streakDays || 0) > 0;
 
   return (
-    <div className="flex-1 max-w-4xl mx-auto w-full p-6 pb-24">
+    <main className="flex-1 max-w-4xl mx-auto w-full p-6 pb-24">
       <div className="flex items-center gap-6 mb-12 p-8 bg-white rounded-3xl shadow-sm border border-slate-200">
-        <span className="text-6xl">{profile.avatar}</span>
+        <span className="text-6xl" aria-hidden="true">{profile.avatar}</span>
         <div>
           <h1 className="text-3xl font-black text-slate-800">{profile.name}{t('profile_suffix', "'s Profile")}</h1>
           <p className="text-slate-500 font-medium mt-1">{t('ready_next_adventure', 'Ready for the next adventure?')}</p>
@@ -38,7 +49,7 @@ export default function ProfilePage() {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
            <div className="p-6 bg-orange-50 rounded-2xl border border-orange-100 flex items-center gap-4">
-              <span className="text-4xl block">🔥</span>
+              <span className="text-4xl block" aria-hidden="true">🔥</span>
               <div>
                 <div className="text-2xl font-bold text-slate-800">{formatNumber(profile.streakDays)} {t('day_streak', 'Day Streak')}</div>
                 <div className="text-sm text-slate-500">{t('keep_it_up', 'Keep it up!')}</div>
@@ -62,6 +73,6 @@ export default function ProfilePage() {
         <h2 className="text-2xl font-bold text-slate-800 mb-6">{t('parental_controls', 'Parental Controls')}</h2>
         <ParentalControls />
       </div>
-    </div>
+    </main>
   );
 }

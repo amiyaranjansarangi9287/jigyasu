@@ -4,6 +4,7 @@ import { ArrowLeft, Sparkles, Trophy, Award } from 'lucide-react';
 import { MODULE_CONNECTIONS, MODULE_NAMES, UserProgress, visitModule, saveProgress, getLevelTitle } from '../lib/progress';
 import { playLevelUp } from '../lib/sounds';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 interface ModuleWrapperProps {
   moduleId: string;
@@ -20,6 +21,7 @@ const levelUpParticles = Array.from({ length: 30 }, (_, i) => ({
 }));
 
 export default function ModuleWrapper({ moduleId, children, progress, setProgress, onNavigate }: ModuleWrapperProps) {
+  const { t } = useTranslation();
   const [showXP, setShowXP] = useState(false);
   const [showLevelUp, setShowLevelUp] = useState(false);
   const [newLevel, setNewLevel] = useState(0);

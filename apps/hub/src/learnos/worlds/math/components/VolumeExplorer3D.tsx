@@ -4,12 +4,12 @@ import { Trans, useTranslation } from "react-i18next";
 
 type Shape = 'cube' | 'rectPrism' | 'cylinder' | 'cone' | 'sphere';
 
-const shapeMeta: { id: Shape; label: string; emoji: string; color: string }[] = [
-  { id: 'cube', label: 'Cube', emoji: '🧊', color: 'from-blue-500 to-cyan-500' },
-  { id: 'rectPrism', label: 'Rectangular Prism', emoji: '📦', color: 'from-purple-500 to-indigo-500' },
-  { id: 'cylinder', label: 'Cylinder', emoji: '🥫', color: 'from-green-500 to-emerald-500' },
-  { id: 'cone', label: 'Cone', emoji: '🍦', color: 'from-orange-500 to-amber-500' },
-  { id: 'sphere', label: 'Sphere', emoji: '🌐', color: 'from-pink-500 to-rose-500' },
+const shapeMeta: { id: Shape; label: string; labelKey: string; emoji: string; color: string }[] = [
+  { id: 'cube', label: 'Cube', labelKey: 'auto.volumeexplorer3d.cube', emoji: '🧊', color: 'from-blue-500 to-cyan-500' },
+  { id: 'rectPrism', label: 'Rectangular Prism', labelKey: 'auto.volumeexplorer3d.rectangular_prism', emoji: '📦', color: 'from-purple-500 to-indigo-500' },
+  { id: 'cylinder', label: 'Cylinder', labelKey: 'auto.volumeexplorer3d.cylinder', emoji: '🥫', color: 'from-green-500 to-emerald-500' },
+  { id: 'cone', label: 'Cone', labelKey: 'auto.volumeexplorer3d.cone', emoji: '🍦', color: 'from-orange-500 to-amber-500' },
+  { id: 'sphere', label: 'Sphere', labelKey: 'auto.volumeexplorer3d.sphere', emoji: '🌐', color: 'from-pink-500 to-rose-500' },
 ];
 
 function makeVolumeChallenge() {
@@ -66,7 +66,6 @@ export default function VolumeExplorer3D() {
   };
 
   const renderShape = () => {
-      const { t } = useTranslation();
     const active = shapeMeta.find((s) => s.id === shape)!;
     if (shape === 'cube' || shape === 'rectPrism') {
       return (
@@ -116,13 +115,13 @@ export default function VolumeExplorer3D() {
           <motion.div key="explore" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="space-y-4">
               <div className="flex flex-wrap justify-center gap-2">
-                {shapeMeta.map((s) => <button key={s.id} className={`px-3 py-2 rounded-xl text-sm font-bold ${shape === s.id ? 'bg-purple-500/40 text-white border border-purple-400' : 'bg-white/10 text-gray-400'}`} onClick={() => setShape(s.id)}>{s.emoji} {s.label}</button>)}
+                {shapeMeta.map((s) => <button key={s.id} className={`px-3 py-2 rounded-xl text-sm font-bold ${shape === s.id ? 'bg-purple-500/40 text-white border border-purple-400' : 'bg-white/10 text-gray-400'}`} onClick={() => setShape(s.id)}>{s.emoji} {t(s.labelKey, s.label)}</button>)}
               </div>
               <div className="bg-white/5 rounded-3xl p-8 border border-white/10 flex items-center justify-center min-h-72 perspective-1000">{renderShape()}</div>
               <div className="bg-white/5 rounded-2xl p-4 border border-white/10 space-y-3">
                 <Slider label={shape === 'cube' ? 'Side' : shape === 'sphere' ? 'Radius' : 'Radius / Length'} value={a} setValue={setA} color="accent-blue-500" />
-                {shape !== 'cube' && shape !== 'sphere' && <Slider label={t('auto.attr.volumeexplorer3d.height_width')} value={b} setValue={setB} color="accent-green-500" />}
-                {shape === 'rectPrism' && <Slider label={t('auto.attr.volumeexplorer3d.depth')} value={c} setValue={setC} color="accent-yellow-500" />}
+                {shape !== 'cube' && shape !== 'sphere' && <Slider label={t('auto.volumeexplorer3d.height_width', 'Height / Width')} value={b} setValue={setB} color="accent-green-500" />}
+                {shape === 'rectPrism' && <Slider label={t('auto.volumeexplorer3d.depth', 'Depth')} value={c} setValue={setC} color="accent-yellow-500" />}
               </div>
             </div>
             <div className="space-y-4">

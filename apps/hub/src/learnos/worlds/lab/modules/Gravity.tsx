@@ -106,7 +106,7 @@ export default function Gravity() {
             <div>
               <h3 className="text-orange-400 font-bold text-sm mb-1"><Trans i18nKey="auto.gravity.ancient_indian_insight">Ancient Indian Insight</Trans></h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                <Trans i18nKey="auto.gravity.aryabhata_499_ce_described_gra">Aryabhata (499 CE) described gravity as a natural attraction — 1,100 years before Newton!
+                <Trans i18nKey="auto.gravity.aryabhata_499_ce_described_gra">Aryabhata (499 CE) described a natural attractive force that pulls objects toward Earth — an early insight into what we now call gravity.
                                               The concept of</Trans> <strong><Trans i18nKey="auto.gravity.gurutva">Gurutva</Trans></strong> <Trans i18nKey="auto.gravity.literally_means_heaviness_and_">(गुरुत्व) literally means "heaviness" and described
                                               how Earth attracts objects toward its center.</Trans>
                                             </p>

@@ -60,7 +60,7 @@ export default function Pythagorean() {
             <span className="text-2xl">{t('lab.modules.Pythagorean.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.pythagorean.baudhayana_s_theorem">Baudhayana's Theorem</Trans></h3>
-              <p className="text-gray-600 text-sm leading-relaxed"><Trans i18nKey="auto.pythagorean.the">The</Trans> <strong><Trans i18nKey="auto.pythagorean.baudhayana_sulba_sutra">Baudhayana Sulba Sutra</Trans></strong> <Trans i18nKey="auto.pythagorean.800_bce_states_the_pythagorean">(800 BCE) states the Pythagorean theorem 1,000 years before Pythagoras! "The diagonal of a rectangle produces both areas that its sides produce separately." Indians used this for altar construction.</Trans></p>
+              <p className="text-gray-600 text-sm leading-relaxed"><Trans i18nKey="auto.pythagorean.the">The</Trans> <strong><Trans i18nKey="auto.pythagorean.baudhayana_sulba_sutra">Baudhayana Sulba Sutra</Trans></strong> <Trans i18nKey="auto.pythagorean.800_bce_states_the_pythagorean">(traditionally dated around 800 BCE) describes the relationship between the sides of a right triangle — an early form of what we now call the Pythagorean theorem. Similar knowledge existed in Babylonian and Egyptian mathematics too. "The diagonal of a rectangle produces both areas that its sides produce separately." Indians used this for altar construction.</Trans></p>
             </div>
           </div>
         </div>

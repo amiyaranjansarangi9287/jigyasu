@@ -1,14 +1,15 @@
 import { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 type Place = 'thousands' | 'hundreds' | 'tens' | 'ones';
 
-const placeMeta: { key: Place; label: string; value: number; color: string; bg: string; emoji: string }[] = [
-  { key: 'thousands', label: 'Thousands', value: 1000, color: 'text-purple-300', bg: 'bg-purple-500/25 border-purple-400/50', emoji: '🟪' },
-  { key: 'hundreds', label: 'Hundreds', value: 100, color: 'text-blue-300', bg: 'bg-blue-500/25 border-blue-400/50', emoji: '🟦' },
-  { key: 'tens', label: 'Tens', value: 10, color: 'text-green-300', bg: 'bg-green-500/25 border-green-400/50', emoji: '🟩' },
-  { key: 'ones', label: 'Ones', value: 1, color: 'text-yellow-300', bg: 'bg-yellow-500/25 border-yellow-400/50', emoji: '🟨' },
+const placeMeta: { key: Place; label: string; labelKey: string; value: number; color: string; bg: string; emoji: string }[] = [
+  { key: 'thousands', label: 'Thousands', labelKey: 'auto.placevalueexplorer.label_thousands', value: 1000, color: 'text-purple-300', bg: 'bg-purple-500/25 border-purple-400/50', emoji: '🟪' },
+  { key: 'hundreds', label: 'Hundreds', labelKey: 'auto.placevalueexplorer.label_hundreds', value: 100, color: 'text-blue-300', bg: 'bg-blue-500/25 border-blue-400/50', emoji: '🟦' },
+  { key: 'tens', label: 'Tens', labelKey: 'auto.placevalueexplorer.label_tens', value: 10, color: 'text-green-300', bg: 'bg-green-500/25 border-green-400/50', emoji: '🟩' },
+  { key: 'ones', label: 'Ones', labelKey: 'auto.placevalueexplorer.label_ones', value: 1, color: 'text-yellow-300', bg: 'bg-yellow-500/25 border-yellow-400/50', emoji: '🟨' },
 ];
 
 function splitDigits(value: number) {
@@ -40,6 +41,7 @@ function makeChallenge() {
 }
 
 export default function PlaceValueExplorer() {
+  const { t } = useTranslation();
   const [value, setValue] = useState(3427);
   const [mode, setMode] = useState<'explore' | 'challenge'>('explore');
   const [challenge, setChallenge] = useState(makeChallenge);
@@ -98,7 +100,7 @@ export default function PlaceValueExplorer() {
               <p className="text-center text-gray-400 text-sm"><Trans i18nKey="auto.placevalueexplorer.in_the_number">In the number</Trans></p>
               <p className="text-center text-5xl font-bold text-white font-mono my-2">{challenge.value}</p>
               <p className="text-center text-xl font-bold text-white mb-5">
-                <Trans i18nKey="auto.placevalueexplorer.what_is_the_value_of_the">What is the value of the</Trans> <span className={challenge.place.color}>{challenge.place.label}</span> <Trans i18nKey="auto.placevalueexplorer.digit">digit?</Trans>
+                <Trans i18nKey="auto.placevalueexplorer.what_is_the_value_of_the">What is the value of the</Trans> <span className={challenge.place.color}>{t(challenge.place.labelKey, challenge.place.label)}</span> <Trans i18nKey="auto.placevalueexplorer.digit">digit?</Trans>
                                             </p>
               <div className="grid grid-cols-2 gap-3">
                 {challenge.options.map((option) => (
@@ -126,7 +128,7 @@ export default function PlaceValueExplorer() {
                 <div className="grid grid-cols-4 gap-2">
                   {placeMeta.map((p) => (
                     <div key={p.key} className={`rounded-2xl p-3 border ${p.bg}`}>
-                      <p className="text-sm text-gray-300 text-center mb-2">{p.label}</p>
+                      <p className="text-sm text-gray-300 text-center mb-2">{t(p.labelKey, p.label)}</p>
                       <div className="flex items-center justify-center gap-1">
                         <button className="w-7 h-7 rounded-full bg-black/30 text-white" onClick={() => updateDigit(p.key, digits[p.key] - 1)}>-</button>
                         <motion.span key={digits[p.key]} className="text-3xl font-bold text-white w-8 text-center" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>{digits[p.key]}</motion.span>
@@ -154,7 +156,7 @@ export default function PlaceValueExplorer() {
                   {placeMeta.map((p) => (
                     <div key={p.key}>
                       <div className="flex justify-between text-sm mb-1">
-                        <span className={p.color}>{p.emoji} {p.label}</span>
+                        <span className={p.color}>{p.emoji} {t(p.labelKey, p.label)}</span>
                         <span className="text-gray-400">{digits[p.key]} × {p.value}</span>
                       </div>
                       <div className="flex flex-wrap gap-1 min-h-8 bg-black/20 rounded-lg p-2">

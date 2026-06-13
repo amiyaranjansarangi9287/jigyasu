@@ -1,5 +1,6 @@
 // src/App.tsx
 import { Suspense, lazy } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { ErrorBoundary } from '../components/ErrorBoundary';
 import { KidFriendlyNotFound } from '../components/KidFriendlyNotFound';
@@ -39,10 +40,11 @@ const TeachMeMode = lazy(() => import('./crosscutting/TeachMeMode'));
 const TimeCapsule = lazy(() => import('./crosscutting/TimeCapsule'));
 const ConceptGossip = lazy(() => import('./crosscutting/ConceptGossip'));
 const WonderGarden = lazy(() => import('./crosscutting/WonderGarden'));
-const AboutPage = lazy(() => import('./crosscutting/AboutPage'));
 
 /** Child-safe recovery UI shown when a world crashes — isolates fault to that world only */
-function WorldRecovery({ worldName }: { worldName: string }) {
+function WorldRecovery({
+  worldName }: { worldName: string }) {
+  const { t } = useTranslation();
   return (
     <main className="min-h-screen grid place-items-center bg-orange-50 p-6 text-center">
       <section className="max-w-md">
@@ -105,8 +107,6 @@ export default function App() {
           <Route path={ROUTES.TIME_CAPSULE}   element={<TimeCapsule />} />
           <Route path={ROUTES.CONCEPT_GOSSIP} element={<ConceptGossip />} />
           <Route path="/wonder-garden"        element={<WonderGarden />} />
-          <Route path={ROUTES.ABOUT}          element={<AboutPage />} />
-
           {/* Catch all */}
           <Route path="*" element={<KidFriendlyNotFound />} />
         </Routes>

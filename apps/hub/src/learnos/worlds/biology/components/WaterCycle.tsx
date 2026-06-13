@@ -20,7 +20,7 @@ const processes: WaterProcess[] = [
     description: 'Sun heats water in oceans, lakes, and rivers, turning liquid water into water vapor (gas). This is the main driver of the water cycle.',
     details: ['Ocean surface = primary source', '~500,000 km³ evaporates/year', 'More heat = more evaporation', 'Sea water leaves salt behind'] },
   { id: 'transpiration', name: 'Transpiration', emoji: '🌿', color: '#22c55e',
-    description: 'Plants release water vapor through stomata in their leaves. A large oak tree can transpire 40,000 gallons of water per year!',
+    description: 'Plants release water vapor through stomata in their leaves. A large oak tree can transpire over 150,000 litres of water per year!',
     details: ['Water exits through stomata', 'Pulls water up from roots', '10% of atmospheric moisture', 'Drives nutrient transport in plants'] },
   { id: 'condensation', name: 'Condensation', emoji: '☁️', color: '#94a3b8',
     description: 'Water vapor cools as it rises and condenses around dust particles to form tiny water droplets — creating clouds and fog.',

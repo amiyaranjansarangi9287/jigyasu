@@ -1,10 +1,12 @@
 import { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 type ChessMode = 'queens' | 'knights' | 'counting';
 
 export default function ChessStrategy() {
+  const { t } = useTranslation();
   const [mode, setMode] = useState<ChessMode>('queens');
   return (
     <div className="w-full">
@@ -13,7 +15,7 @@ export default function ChessStrategy() {
         <p className="text-purple-300 text-lg"><Trans i18nKey="auto.chessstrategy.math_puzzles_on_the_chessboard">Math puzzles on the chessboard — combinatorics & logic!</Trans></p>
       </div>
       <div className="flex justify-center gap-2 mb-6">
-        {[{ id: 'queens' as ChessMode, e: '👑', l: 'N-Queens' }, { id: 'knights' as ChessMode, e: '🐴', l: "Knight's Tour" }, { id: 'counting' as ChessMode, e: '🔢', l: 'Counting' }].map(m => (
+        {[{ id: 'queens' as ChessMode, e: '👑', l: t('auto.chessstrategy.n_queens', 'N-Queens') }, { id: 'knights' as ChessMode, e: '🐴', l: t('auto.chessstrategy.knights_tour', "Knight's Tour") }, { id: 'counting' as ChessMode, e: '🔢', l: t('auto.chessstrategy.counting', 'Counting') }].map(m => (
           <button key={m.id} className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === m.id ? 'bg-amber-500/30 text-amber-300 border border-amber-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => setMode(m.id)}>{m.e} {m.l}</button>
         ))}
       </div>

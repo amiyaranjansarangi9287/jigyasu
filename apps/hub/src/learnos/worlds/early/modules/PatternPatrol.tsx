@@ -69,7 +69,7 @@ export default function PatternPatrol() {
         if (newConsec >= 3 && difficulty < 3) {
           setDifficulty(d => d + 1);
           setConsecutiveCorrect(0);
-          pip.sayCustom("Ooh! You're a REAL detective now!", 'celebrating');
+          pip.sayCustom(t('auto.patternpatrol.real_detective', "Ooh! You're a REAL detective now!"), 'celebrating');
         }
         setPatternIdx(p => p + 1);
         setSelectedOption(null);
@@ -82,7 +82,7 @@ export default function PatternPatrol() {
       setConsecutiveCorrect(0);
       // Shake wrong option briefly, allow retry
       setTimeout(() => setSelectedOption(null), 600);
-      if (wrongCount >= 1) pip.sayCustom('Look at the colours... what repeats?', 'thinking');
+      if (wrongCount >= 1) pip.sayCustom(t('auto.patternpatrol.look_at_colours', 'Look at the colours... what repeats?'), 'thinking');
     }
   }, [showResult, getCorrectAnswer, pip, soundEnabled, trackCorrect, trackWrong, recordPatternCompleted, difficulty, pattern.id, consecutiveCorrect, wrongCount]);
 

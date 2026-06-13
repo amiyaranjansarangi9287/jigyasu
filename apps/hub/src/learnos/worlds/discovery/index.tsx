@@ -4,6 +4,7 @@ import { Suspense, lazy } from 'react';
 import { LoadingScreen } from '@/shared/ui';
 import DiscoveryHome from './DiscoveryHome';
 import withWonderFirst from '../../core/modules/withWonderFirst';
+import { useTranslation } from 'react-i18next';
 
 const AlgebraScales = lazy(async () => { const m = await import('./modules/AlgebraScales'); return { default: withWonderFirst(m.default, 'discovery', 'algebra-scales') }; });
 const CellCity = lazy(async () => { const m = await import('./modules/CellCity'); return { default: withWonderFirst(m.default, 'discovery', 'cell-city') }; });
@@ -21,6 +22,7 @@ const NumberSystems = lazy(async () => { const m = await import('./modules/Numbe
 const FermiEstimation = lazy(async () => { const m = await import('./modules/FermiEstimation'); return { default: withWonderFirst(m.default, 'discovery', 'fermi-estimation') }; });
 
 export default function DiscoveryWorld() {
+  const { t } = useTranslation();
   return (
     <Suspense fallback={<LoadingScreen />}>
       <Routes>

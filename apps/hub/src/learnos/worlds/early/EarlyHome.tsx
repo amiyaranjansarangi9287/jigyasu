@@ -102,7 +102,7 @@ export default function EarlyHome() {
       <button
         onClick={() => setShowMap(true)}
         className="fixed bottom-6 right-6 z-10 w-16 h-16 rounded-full bg-amber-500 shadow-xl flex items-center justify-center text-3xl active:scale-95 transition-transform select-none"
-        aria-label="Adventure Map"
+        aria-label={t('auto.earlyhome.adventure_map', 'Adventure Map')}
       >
         🗺️
       </button>

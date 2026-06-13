@@ -2,6 +2,7 @@
 import { useRef, useEffect, useState } from 'react';
 import ModuleWrapper from './ModuleWrapper';
 import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
+import { useTranslation } from 'react-i18next';
 
 interface Racer {
   id: number;
@@ -21,6 +22,7 @@ const FLUIDS = [
 ];
 
 export default function Viscosity() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animRef = useRef<number>(0);
   const [progress, setProgress] = useState<UserProgress>(loadProgress);

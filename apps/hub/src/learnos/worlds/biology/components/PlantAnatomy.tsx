@@ -35,11 +35,11 @@ const parts: Record<string, PlantPart> = {
       { name: 'Ovary', function: 'Contains ovules (eggs). After fertilization, becomes the fruit; ovules become seeds' },
       { name: 'Nectary', function: 'Produces sweet nectar to attract pollinators like bees and butterflies' },
     ],
-    funFact: 'The world\'s largest flower (Rafflesia arnoldii) is 3 feet wide and smells like rotting meat to attract fly pollinators!',
+    funFact: 'The world\'s largest flower (Rafflesia arnoldii) is about 1 metre wide and smells like rotting meat to attract fly pollinators!',
   },
   leaf: {
     id: 'leaf', name: 'Leaf', emoji: '🍃', color: '#22c55e',
-    description: 'The primary site of photosynthesis. Leaves are designed to maximize light absorption and gas exchange while minimizing water loss.',
+    description: 'The primary site of photosynthesis. Leaves have structures that maximize light absorption and gas exchange while minimizing water loss.',
     structures: [
       { name: 'Cuticle', function: 'Waxy waterproof layer on top surface — prevents water loss' },
       { name: 'Upper Epidermis', function: 'Transparent protective layer — lets light through to photosynthetic cells' },
@@ -61,7 +61,7 @@ const parts: Record<string, PlantPart> = {
       { name: 'Cortex', function: 'Storage tissue between epidermis and vascular bundles, may store starch' },
       { name: 'Pith', function: 'Central storage tissue, may become hollow in older stems' },
     ],
-    funFact: 'Xylem transports water using transpiration pull — no energy required! Water climbs 100+ meters in giant redwoods through capillary action and cohesion.',
+    funFact: 'Xylem transports water using transpiration pull — powered by evaporation from leaves! Water climbs 100+ meters in giant redwoods through cohesion-tension (water molecules sticking together), not capillary action alone.',
   },
   root: {
     id: 'root', name: 'Root', emoji: '🌱', color: '#92400e',
@@ -74,7 +74,7 @@ const parts: Record<string, PlantPart> = {
       { name: 'Endodermis (Casparian Strip)', function: 'Selective barrier forcing water through cells — controls what enters the xylem' },
       { name: 'Vascular Cylinder', function: 'Central core containing xylem and phloem — connects to stem vascular system' },
     ],
-    funFact: 'A single rye plant can grow 14 billion root hairs with a total length of 6,200 miles! Mycorrhizal fungi extend roots by 100-1000x.',
+    funFact: 'A single rye plant can grow millions of root hairs with a combined length of several kilometers! Mycorrhizal fungi extend the root absorption area by 100-1000x.'
   },
 };
 

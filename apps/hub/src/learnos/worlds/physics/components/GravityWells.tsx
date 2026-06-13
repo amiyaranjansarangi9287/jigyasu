@@ -3,8 +3,10 @@ import { useRef, useEffect, useState } from 'react';
 import ModuleWrapper from './ModuleWrapper';
 import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
 import GravityTeachingBridge from './GravityTeachingBridge';
+import { useTranslation } from 'react-i18next';
 
 export default function GravityWells() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animRef = useRef<number>(0);
   const [progress, setProgress] = useState<UserProgress>(loadProgress);

@@ -8,8 +8,10 @@ import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 export default function DayNightAdult() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const lumo = useLumoPeer();
@@ -196,7 +198,7 @@ export default function DayNightAdult() {
                 <Trans i18nKey="auto.daynightadult.history_of_the_idea">History of the idea</Trans>
                                             </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                <Trans i18nKey="auto.daynightadult.aryabhata_in_499_ad_proposed_e">Aryabhata in 499 AD proposed Earth's rotation. Copernicus
+                <Trans i18nKey="auto.daynightadult.aryabhata_in_499_ce_proposed_e">Aryabhata in 499 CE proposed Earth's rotation. Copernicus
                                               revived the idea in 1543 Europe. Galileo was put under
                                               house arrest for supporting it. The idea that our daily
                                               experience could be an illusion was revolutionary.</Trans>

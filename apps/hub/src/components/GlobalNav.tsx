@@ -7,10 +7,10 @@ export default function GlobalNav() {
   const { isChild } = useAgeTheme();
   
   const childNavItems = [
-    { to: '/', icon: '🏠', label: t('nav_home', 'Home') },
-    { to: '/home', icon: '📚', label: t('nav_learn', 'Learn') },
-    { to: '/execute', icon: '🛠️', label: t('nav_create', 'Create') },
-    { to: '/profile', icon: '👤', label: t('nav_profile', 'Profile') }
+    { to: '/', icon: <span aria-hidden="true">🏠</span>, label: t('nav_home', 'Home') },
+    { to: '/home', icon: <span aria-hidden="true">📚</span>, label: t('nav_learn', 'Learn') },
+    { to: '/execute', icon: <span aria-hidden="true">🛠️</span>, label: t('nav_create', 'Create') },
+    { to: '/profile', icon: <span aria-hidden="true">👤</span>, label: t('nav_profile', 'Profile') }
   ];
 
   const adultNavItems = [

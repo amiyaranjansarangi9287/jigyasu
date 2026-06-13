@@ -51,7 +51,7 @@ export default function Habitats() {
             <span className="text-2xl">{t('lab.modules.Habitats.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.habitats.indian_biodiversity">Indian Biodiversity</Trans></h3>
-              <p className="text-gray-600 text-sm leading-relaxed"><Trans i18nKey="auto.habitats.india_has_4_biodiversity_hotsp">India has 4 biodiversity hotspots! From Himalayan snow leopards to Western Ghats frogs, India's habitats are incredibly diverse. Ancient Indians practiced</Trans> <strong><Trans i18nKey="auto.habitats.van_prastha">Van Prastha</Trans></strong> <Trans i18nKey="auto.habitats.forest_conservation_3_000_year">— forest conservation — 3,000 years before modern ecology.</Trans></p>
+              <p className="text-gray-600 text-sm leading-relaxed"><Trans i18nKey="auto.habitats.india_has_4_biodiversity_hotsp">India has 4 biodiversity hotspots! From Himalayan snow leopards to Western Ghats frogs, India's habitats are incredibly diverse. Ancient Indians practiced</Trans> <strong><Trans i18nKey="auto.habitats.van_prastha">Van Prastha</Trans></strong> <Trans i18nKey="auto.habitats.forest_conservation_3_000_year">— forest conservation — an early framework for ecological stewardship.</Trans></p>
             </div>
           </div>
         </div>

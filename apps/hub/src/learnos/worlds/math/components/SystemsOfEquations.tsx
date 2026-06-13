@@ -114,18 +114,18 @@ export default function SystemsOfEquations() {
                 <h4 className="text-blue-400 font-bold mb-2"><Trans i18nKey="auto.systemsofequations.line_1">Line 1</Trans></h4>
                 <p className="text-white font-mono text-lg mb-2">{fmtEq(a1, b1, c1)}</p>
                 <div className="grid grid-cols-3 gap-2">
-                  <Slider label={t('auto.attr.systemsofequations.a')} value={a1} min={-5} max={5} set={setA1} />
-                  <Slider label={t('auto.attr.systemsofequations.b')} value={b1} min={-5} max={5} set={setB1} />
-                  <Slider label={t('auto.attr.systemsofequations.c')} value={c1} min={-10} max={10} set={setC1} />
+                  <Slider label={t('auto.systemsofequations.a', 'a')} value={a1} min={-5} max={5} set={setA1} />
+                  <Slider label={t('auto.systemsofequations.b', 'b')} value={b1} min={-5} max={5} set={setB1} />
+                  <Slider label={t('auto.systemsofequations.c', 'c')} value={c1} min={-10} max={10} set={setC1} />
                 </div>
               </div>
               <div className="bg-white/5 rounded-2xl p-4 border border-white/10">
                 <h4 className="text-sky-400 font-bold mb-2"><Trans i18nKey="auto.systemsofequations.line_2">Line 2</Trans></h4>
                 <p className="text-white font-mono text-lg mb-2">{fmtEq(a2, b2, c2)}</p>
                 <div className="grid grid-cols-3 gap-2">
-                  <Slider label={t('auto.attr.systemsofequations.a')} value={a2} min={-5} max={5} set={setA2} />
-                  <Slider label={t('auto.attr.systemsofequations.b')} value={b2} min={-5} max={5} set={setB2} />
-                  <Slider label={t('auto.attr.systemsofequations.c')} value={c2} min={-10} max={10} set={setC2} />
+                  <Slider label={t('auto.systemsofequations.a', 'a')} value={a2} min={-5} max={5} set={setA2} />
+                  <Slider label={t('auto.systemsofequations.b', 'b')} value={b2} min={-5} max={5} set={setB2} />
+                  <Slider label={t('auto.systemsofequations.c', 'c')} value={c2} min={-10} max={10} set={setC2} />
                 </div>
               </div>
 

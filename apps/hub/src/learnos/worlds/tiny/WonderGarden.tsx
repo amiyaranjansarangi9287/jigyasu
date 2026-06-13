@@ -5,6 +5,7 @@ import { useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTinyProgress } from './hooks/useTinyProgress';
 import { TINY_MODULES } from './data/tinyContent';
+import { useTranslation } from 'react-i18next';
 
 interface WonderGardenProps {
   visible: boolean;
@@ -12,6 +13,7 @@ interface WonderGardenProps {
 }
 
 export default function WonderGarden({ visible, onClose }: WonderGardenProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const { progress } = useTinyProgress();

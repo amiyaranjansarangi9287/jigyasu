@@ -2,6 +2,7 @@
 import { useRef, useEffect, useState, useCallback } from 'react';
 import ModuleWrapper from './ModuleWrapper';
 import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
+import { useTranslation } from 'react-i18next';
 
 const SNELLEN_LINES = [
   { size: 48, letters: 'E', acuity: '6/60' },
@@ -21,6 +22,7 @@ const COLOR_BLINDNESS_TESTS = [
 ];
 
 export default function HumanEye() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animRef = useRef<number>(0);
   const [progress, setProgress] = useState<UserProgress>(loadProgress);

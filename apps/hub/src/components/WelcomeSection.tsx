@@ -40,7 +40,7 @@ export default function WelcomeSection({ profile }: WelcomeSectionProps) {
               }
             }}
           >
-            <span className="text-xl">👥</span>
+            <span className="text-xl" aria-hidden="true">👥</span>
             <span className="hidden sm:inline">{t('switch_profile', 'Switch Profile')}</span>
           </button>
           

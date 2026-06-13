@@ -1,17 +1,19 @@
 import { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 type ProbMode = 'coins' | 'dice' | 'cards' | 'challenge';
 
 export default function ProbabilityPlayground() {
+  const { t } = useTranslation();
   const [mode, setMode] = useState<ProbMode>('coins');
 
   const modes = [
-    { id: 'coins' as ProbMode, emoji: '🪙', label: 'Coin Flip' },
-    { id: 'dice' as ProbMode, emoji: '🎲', label: 'Dice Roll' },
-    { id: 'cards' as ProbMode, emoji: '🃏', label: 'Card Draw' },
-    { id: 'challenge' as ProbMode, emoji: '🎯', label: 'Challenge' },
+    { id: 'coins' as ProbMode, emoji: '🪙', label: t('auto.probabilityplayground.coin_flip', 'Coin Flip') },
+    { id: 'dice' as ProbMode, emoji: '🎲', label: t('auto.probabilityplayground.dice_roll', 'Dice Roll') },
+    { id: 'cards' as ProbMode, emoji: '🃏', label: t('auto.probabilityplayground.card_draw', 'Card Draw') },
+    { id: 'challenge' as ProbMode, emoji: '🎯', label: t('auto.probabilityplayground.challenge', 'Challenge') },
   ];
 
   return (
@@ -375,23 +377,24 @@ function CardDraw() {
 }
 
 function ProbabilityChallenge() {
+  const { t } = useTranslation();
   const [question, setQuestion] = useState<{ q: string; answer: string; options: string[]; explanation: string } | null>(null);
   const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [mastery, setMastery] = useState(0);
 
   const generateQuestion = useCallback(() => {
     const questions = [
-      { q: 'P(heads) on a fair coin?', answer: '1/2', options: ['1/2', '1/4', '1/6', '2/3'], explanation: '2 outcomes: H or T. P = 1/2' },
-      { q: 'P(rolling a 6) on a die?', answer: '1/6', options: ['1/2', '1/6', '1/3', '6/6'], explanation: '6 outcomes, 1 is a 6. P = 1/6' },
-      { q: 'P(drawing a heart) from a deck?', answer: '1/4', options: ['1/4', '1/13', '1/52', '1/2'], explanation: '13 hearts in 52 cards. P = 13/52 = 1/4' },
-      { q: 'P(rolling odd) on a die?', answer: '1/2', options: ['1/3', '1/2', '1/6', '2/3'], explanation: '3 odd numbers (1,3,5) out of 6. P = 3/6 = 1/2' },
-      { q: 'P(getting at least 1 head in 2 flips)?', answer: '3/4', options: ['1/2', '1/4', '3/4', '1/3'], explanation: 'HH,HT,TH,TT - 3 have heads. P = 3/4' },
-      { q: 'P(drawing an Ace) from a deck?', answer: '1/13', options: ['1/52', '1/13', '1/4', '4/13'], explanation: '4 Aces in 52 cards. P = 4/52 = 1/13' },
-      { q: 'P(rolling sum of 7) with 2 dice?', answer: '1/6', options: ['1/6', '1/12', '7/36', '1/7'], explanation: '6 ways to get 7 out of 36 combinations. P = 6/36 = 1/6' },
+      { q: t('auto.probabilityplayground.q_heads', 'P(heads) on a fair coin?'), answer: '1/2', options: ['1/2', '1/4', '1/6', '2/3'], explanation: t('auto.probabilityplayground.exp_heads', '2 outcomes: H or T. P = 1/2') },
+      { q: t('auto.probabilityplayground.q_six', 'P(rolling a 6) on a die?'), answer: '1/6', options: ['1/2', '1/6', '1/3', '6/6'], explanation: t('auto.probabilityplayground.exp_six', '6 outcomes, 1 is a 6. P = 1/6') },
+      { q: t('auto.probabilityplayground.q_heart', 'P(drawing a heart) from a deck?'), answer: '1/4', options: ['1/4', '1/13', '1/52', '1/2'], explanation: t('auto.probabilityplayground.exp_heart', '13 hearts in 52 cards. P = 13/52 = 1/4') },
+      { q: t('auto.probabilityplayground.q_odd', 'P(rolling odd) on a die?'), answer: '1/2', options: ['1/3', '1/2', '1/6', '2/3'], explanation: t('auto.probabilityplayground.exp_odd', '3 odd numbers (1,3,5) out of 6. P = 3/6 = 1/2') },
+      { q: t('auto.probabilityplayground.q_at_least_one_head', 'P(getting at least 1 head in 2 flips)?'), answer: '3/4', options: ['1/2', '1/4', '3/4', '1/3'], explanation: t('auto.probabilityplayground.exp_at_least_one_head', 'HH,HT,TH,TT - 3 have heads. P = 3/4') },
+      { q: t('auto.probabilityplayground.q_ace', 'P(drawing an Ace) from a deck?'), answer: '1/13', options: ['1/52', '1/13', '1/4', '4/13'], explanation: t('auto.probabilityplayground.exp_ace', '4 Aces in 52 cards. P = 4/52 = 1/13') },
+      { q: t('auto.probabilityplayground.q_sum_seven', 'P(rolling sum of 7) with 2 dice?'), answer: '1/6', options: ['1/6', '1/12', '7/36', '1/7'], explanation: t('auto.probabilityplayground.exp_sum_seven', '6 ways to get 7 out of 36 combinations. P = 6/36 = 1/6') },
     ];
     setQuestion(questions[Math.floor(Math.random() * questions.length)]);
     setFeedback(null);
-  }, []);
+  }, [t]);
 
   useState(() => { generateQuestion(); });
 

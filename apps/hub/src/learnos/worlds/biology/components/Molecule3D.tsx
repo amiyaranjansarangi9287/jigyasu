@@ -150,7 +150,7 @@ const molecules: Record<string, MoleculeData> = {
   caffeine: {
     name: 'Caffeine', formula: 'C₈H₁₀N₄O₂',
     description: 'The world\'s most popular psychoactive substance. Blocks adenosine receptors in the brain, preventing drowsiness.',
-    funFact: 'Caffeine was evolved by plants as a natural insecticide! It paralyzes and kills insects that try to eat the leaves.',
+    funFact: 'Caffeine occurs naturally in plants and acts as a natural insecticide — it deters insects that try to eat the leaves!',
     atoms: [
       // Double ring system (simplified)
       { x: -30, y: -20, z: 0, element: 'N', color: '#3b82f6', radius: 12 },

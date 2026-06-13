@@ -6,14 +6,14 @@ import { useLumoSage } from '../hooks/useLumoSage';
 import { useDiscoveryProgress } from '../hooks/useDiscoveryProgress';
 import { useDiscoverySession } from '../hooks/useDiscoverySession';
 
-const EVENTS = [
-  { id: 'monsoon', name: 'Monsoon Failure', emoji: '☀️', gdp: -2, inflation: +3, note: 'Agriculture is 15% of India\'s GDP' },
-  { id: 'oil', name: 'Oil Price Rise', emoji: '🛢️', gdp: -1, inflation: +2, note: 'India imports 80% of its oil' },
-  { id: 'tech', name: 'Tech Boom', emoji: '💻', gdp: +2, inflation: 0, note: 'India\'s IT sector is $250B' },
-];
-
 export default function EconomicSimulation() {
   const { t } = useTranslation();
+
+  const EVENTS = [
+    { id: 'monsoon', name: t('auto.economicsimulation.monsoon', 'Monsoon Failure'), emoji: '☀️', gdp: -2, inflation: +3, note: t('auto.economicsimulation.monsoon_note', 'Agriculture is 15% of India\'s GDP') },
+    { id: 'oil', name: t('auto.economicsimulation.oil', 'Oil Price Rise'), emoji: '🛢️', gdp: -1, inflation: +2, note: t('auto.economicsimulation.oil_note', 'India imports 80% of its oil') },
+    { id: 'tech', name: t('auto.economicsimulation.tech', 'Tech Boom'), emoji: '💻', gdp: +2, inflation: 0, note: t('auto.economicsimulation.tech_note', 'India\'s IT sector is ₹20 lakh crore') },
+  ];
   const lumo = useLumoSage();
   const { recordEconomicSim, updateMastery } = useDiscoveryProgress();
   const { trackEvent } = useDiscoverySession();

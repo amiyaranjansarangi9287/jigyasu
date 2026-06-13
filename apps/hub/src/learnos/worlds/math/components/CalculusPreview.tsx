@@ -1,8 +1,9 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Trans } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 export default function CalculusPreview() {
+  const { t } = useTranslation();
   const [mode, setMode] = useState<'limits' | 'derivatives' | 'integrals'>('limits');
   return (
     <div className="w-full">
@@ -11,7 +12,7 @@ export default function CalculusPreview() {
         <p className="text-purple-300 text-lg"><Trans i18nKey="auto.calculuspreview.limits_tangent_slopes_and_area">Limits, tangent slopes, and area under curves — a visual first look!</Trans></p>
       </div>
       <div className="flex justify-center gap-2 mb-6">
-        {[{ id: 'limits' as const, e: '🎯', l: 'Limits' }, { id: 'derivatives' as const, e: '📐', l: 'Derivatives' }, { id: 'integrals' as const, e: '📊', l: 'Integrals' }].map(m => (
+        {[{ id: 'limits' as const, e: '🎯', l: t('auto.calculuspreview.limits', 'Limits') }, { id: 'derivatives' as const, e: '📐', l: t('auto.calculuspreview.derivatives', 'Derivatives') }, { id: 'integrals' as const, e: '📊', l: t('auto.calculuspreview.integrals', 'Integrals') }].map(m => (
           <button key={m.id} className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === m.id ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => setMode(m.id)}>{m.e} {m.l}</button>
         ))}
       </div>
@@ -65,6 +66,7 @@ function LimitsExplorer() {
 }
 
 function DerivativeExplorer() {
+  const { t } = useTranslation();
   const [xVal, setXVal] = useState(1);
   const [funcType, setFuncType] = useState<'x2' | 'x3' | 'sinx'>('x2');
 
@@ -96,7 +98,7 @@ function DerivativeExplorer() {
       </div>
       <div className="space-y-4">
         <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
-          <div className="flex gap-2 mb-3">{(['x2', 'x3', 'sinx'] as const).map(f => <button key={f} className={`flex-1 py-2 rounded-lg font-bold text-sm ${funcType === f ? 'bg-purple-500/30 text-purple-300' : 'bg-white/10 text-gray-400'}`} onClick={() => setFuncType(f)}>{f === 'x2' ? 'x²' : f === 'x3' ? 'x³' : 'sin(x)'}</button>)}</div>
+          <div className="flex gap-2 mb-3">{(['x2', 'x3', 'sinx'] as const).map(f => <button key={f} className={`flex-1 py-2 rounded-lg font-bold text-sm ${funcType === f ? 'bg-purple-500/30 text-purple-300' : 'bg-white/10 text-gray-400'}`} onClick={() => setFuncType(f)}>{f === 'x2' ? 'x²' : f === 'x3' ? 'x³' : '3sin(x)'}</button>)}</div>
           <div className="flex items-center gap-3"><label className="text-gray-400 text-sm"><Trans i18nKey="auto.calculuspreview.x">x =</Trans></label><input type="range" min="-4" max="4" step="0.1" value={xVal} onChange={e => setXVal(Number(e.target.value))} className="flex-1 accent-yellow-500" /><span className="text-yellow-400 font-bold w-10">{xVal}</span></div>
         </div>
         <div className="grid grid-cols-2 gap-3">
@@ -105,7 +107,7 @@ function DerivativeExplorer() {
         </div>
         <div className="bg-white/5 rounded-xl p-3 border border-white/10 text-sm text-gray-300 space-y-1">
           <p><Trans i18nKey="auto.calculuspreview.the">📝 The</Trans> <span className="text-sky-400"><Trans i18nKey="auto.calculuspreview.derivative_f_x">derivative f'(x)</Trans></span> <Trans i18nKey="auto.calculuspreview.is_the">is the</Trans> <strong><Trans i18nKey="auto.calculuspreview.slope_of_the_tangent_line">slope of the tangent line</Trans></strong> <Trans i18nKey="auto.calculuspreview.at_x">at x.</Trans></p>
-          <p>📝 {slope > 0 ? '📈 Positive slope → function increasing' : slope < 0 ? '📉 Negative slope → function decreasing' : '➖ Zero slope → function flat (possible max/min)'}</p>
+          <p>📝 {slope > 0 ? t('auto.calculuspreview.positive_slope_function_increasing', '📈 Positive slope → function increasing') : slope < 0 ? t('auto.calculuspreview.negative_slope_function_decreasing', '📉 Negative slope → function decreasing') : t('auto.calculuspreview.zero_slope_function_flat', '➖ Zero slope → function flat (possible max/min)')}</p>
         </div>
       </div>
     </div>

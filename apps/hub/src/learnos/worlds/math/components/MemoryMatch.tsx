@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { sfx } from '../lib/soundEngine';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 interface Card {
   id: number;
@@ -90,6 +91,7 @@ const generateDeck = (difficulty: 'easy' | 'medium' | 'hard'): Card[] => {
 };
 
 export default function MemoryMatch() {
+  const { t } = useTranslation();
   const [difficulty, setDifficulty] = useState<'easy' | 'medium' | 'hard'>('easy');
   const [cards, setCards] = useState<Card[]>([]);
   const [flipped, setFlipped] = useState<number[]>([]);
@@ -200,9 +202,9 @@ export default function MemoryMatch() {
           <div className="space-y-3">
             {(['easy', 'medium', 'hard'] as const).map((d) => {
               const config = {
-                easy: { pairs: 4, color: 'from-green-600 to-emerald-600', label: 'Apprentice', emoji: '🌱' },
-                medium: { pairs: 6, color: 'from-blue-600 to-indigo-600', label: 'Sorcerer', emoji: '🔮' },
-                hard: { pairs: 8, color: 'from-purple-600 to-pink-600', label: 'Grand Wizard', emoji: '🧙‍♂️' },
+                easy: { pairs: 4, color: 'from-green-600 to-emerald-600', label: t('auto.memorymatch.apprentice', 'Apprentice'), emoji: '🌱' },
+                medium: { pairs: 6, color: 'from-blue-600 to-indigo-600', label: t('auto.memorymatch.sorcerer', 'Sorcerer'), emoji: '🔮' },
+                hard: { pairs: 8, color: 'from-purple-600 to-pink-600', label: t('auto.memorymatch.grand_wizard', 'Grand Wizard'), emoji: '🧙‍♂️' },
               }[d];
               return (
                 <motion.button

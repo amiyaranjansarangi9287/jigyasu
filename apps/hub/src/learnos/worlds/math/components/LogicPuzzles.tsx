@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import { Trans } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 function generateSudoku4(): { puzzle: number[][]; solution: number[][] } {
   // Generate a valid 4x4 Sudoku and remove some cells
@@ -66,6 +66,7 @@ function generateKenKen(): { size: number; cells: { row: number; col: number; gr
 }
 
 export default function LogicPuzzles() {
+  const { t } = useTranslation();
   const [puzzleType, setPuzzleType] = useState<'sudoku' | 'kenken'>('sudoku');
   const [sudokuData, setSudokuData] = useState(() => generateSudoku4());
   const [kenkenData, setKenkenData] = useState(() => generateKenKen());
@@ -132,7 +133,7 @@ export default function LogicPuzzles() {
 
       <div className="max-w-md mx-auto space-y-4">
         <div className="flex justify-between items-center">
-          <span className={`font-bold ${solved ? 'text-green-400' : 'text-gray-400'}`}>{solved ? '🎉 Solved!' : `Fill all cells with 1-${size}`}</span>
+          <span className={`font-bold ${solved ? 'text-green-400' : 'text-gray-400'}`}>{solved ? t('auto.logicpuzzles.solved', '🎉 Solved!') : t('auto.logicpuzzles.fill_all_cells_with_1_n', 'Fill all cells with 1-{{size}}', { size })}</span>
           <div className="flex gap-2">
             <button className="text-sm text-gray-500 hover:text-white px-2 py-1 rounded bg-white/5" onClick={puzzleType === 'sudoku' ? checkSudoku : checkKenKen}><Trans i18nKey="auto.logicpuzzles.check">Check</Trans></button>
             <button className="text-sm text-gray-500 hover:text-white px-2 py-1 rounded bg-white/5" onClick={puzzleType === 'sudoku' ? newSudoku : newKenKen}><Trans i18nKey="auto.logicpuzzles.new">New</Trans></button>

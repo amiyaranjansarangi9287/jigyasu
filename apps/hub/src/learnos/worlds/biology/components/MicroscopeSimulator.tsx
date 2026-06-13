@@ -104,7 +104,7 @@ const specimens: Specimen[] = [
   {
     id: 'leaf', name: 'Leaf Cross-Section', emoji: '🍃', category: 'Plant',
     description: 'A cross-section revealing the internal structure of a leaf: epidermis, palisade mesophyll, spongy mesophyll, and vascular bundles.',
-    funFact: 'Leaves are perfectly designed for photosynthesis: the palisade cells are packed with chloroplasts and arranged vertically to maximize light absorption!',
+    funFact: 'Leaves have structures well-suited for photosynthesis: the palisade cells are packed with chloroplasts and arranged vertically to maximize light absorption!',
     magnification: '100x', stain: 'Toluidine blue',
     structures: [
       { name: 'Upper Epidermis', description: 'Protective outer layer + cuticle', color: '#22c55e' },

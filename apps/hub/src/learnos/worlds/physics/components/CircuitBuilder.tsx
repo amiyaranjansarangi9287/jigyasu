@@ -2,8 +2,10 @@
 import { useRef, useEffect, useState, useCallback } from 'react';
 import ModuleWrapper from './ModuleWrapper';
 import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
+import { useTranslation } from 'react-i18next';
 
 export default function CircuitBuilder() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [progress, setProgress] = useState<UserProgress>(loadProgress);
   const [voltage, setVoltage] = useState(9);

@@ -108,15 +108,14 @@ export default function QuadraticSolver() {
             <div className="space-y-4">
               <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
                 <p className="text-center text-2xl sm:text-3xl font-bold text-white font-mono mb-4">{fmtEquation(a, b, c)}</p>
-                <CoeffSlider label={t('auto.attr.quadraticsolver.a')} value={a} setValue={setA} min={-5} max={5} avoidZero />
-                <CoeffSlider label={t('auto.attr.quadraticsolver.b')} value={b} setValue={setB} min={-10} max={10} />
-                <CoeffSlider label={t('auto.attr.quadraticsolver.c')} value={c} setValue={setC} min={-10} max={10} />
+                <CoeffSlider label={t('auto.quadraticsolver.a_coeff', 'a')} value={a} setValue={setA} min={-5} max={5} avoidZero />
+                <CoeffSlider label={t('auto.quadraticsolver.b_coeff', 'b')} value={b} setValue={setB} min={-10} max={10} />
+                <CoeffSlider label={t('auto.quadraticsolver.c_coeff', 'c')} value={c} setValue={setC} min={-10} max={10} />
               </div>
 
               <div className="bg-white/5 rounded-2xl p-4 border border-white/10 flex justify-center">
                 <svg width={graph.size} height={graph.size} className="bg-black/20 rounded-xl">
                   {Array.from({ length: graph.range * 2 + 1 }).map((_, i) => {
-                      const { t } = useTranslation();
                     const pos = i * graph.unit;
                     return <g key={i}><line x1={pos} y1={0} x2={pos} y2={graph.size} stroke="rgba(255,255,255,0.05)" /><line x1={0} y1={pos} x2={graph.size} y2={pos} stroke="rgba(255,255,255,0.05)" /></g>;
                   })}
@@ -130,9 +129,9 @@ export default function QuadraticSolver() {
             </div>
 
             <div className="space-y-4">
-              <InfoCard title={t('auto.attr.quadraticsolver.discriminant')} value={`D = ${calc.d.toFixed(2)}`} desc={calc.d > 0 ? 'Two real roots' : calc.d === 0 ? 'One repeated root' : 'No real roots'} color="text-yellow-400" />
-              <InfoCard title={t('auto.attr.quadraticsolver.vertex')} value={`(${calc.vertexX.toFixed(2)}, ${calc.vertexY.toFixed(2)})`} desc={a > 0 ? 'Minimum point' : 'Maximum point'} color="text-sky-400" />
-              <InfoCard title={t('auto.attr.quadraticsolver.roots')} value={calc.roots.length ? calc.roots.map((r) => r.toFixed(2)).join(', ') : 'No real roots'} desc={calc.factorable ? 'Factorable with integer roots' : 'Use formula or graph'} color="text-green-400" />
+              <InfoCard title={t('auto.quadraticsolver.discriminant', 'Discriminant')} value={`D = ${calc.d.toFixed(2)}`} desc={calc.d > 0 ? t('auto.quadraticsolver.two_real_roots', 'Two real roots') : calc.d === 0 ? t('auto.quadraticsolver.one_repeated_root', 'One repeated root') : t('auto.quadraticsolver.no_real_roots', 'No real roots')} color="text-yellow-400" />
+              <InfoCard title={t('auto.quadraticsolver.vertex', 'Vertex')} value={`(${calc.vertexX.toFixed(2)}, ${calc.vertexY.toFixed(2)})`} desc={a > 0 ? t('auto.quadraticsolver.minimum_point', 'Minimum point') : t('auto.quadraticsolver.maximum_point', 'Maximum point')} color="text-sky-400" />
+              <InfoCard title={t('auto.quadraticsolver.roots', 'Roots')} value={calc.roots.length ? calc.roots.map((r) => r.toFixed(2)).join(', ') : t('auto.quadraticsolver.no_real_roots', 'No real roots')} desc={calc.factorable ? t('auto.quadraticsolver.factorable_with_integer_roots', 'Factorable with integer roots') : t('auto.quadraticsolver.use_formula_or_graph', 'Use formula or graph')} color="text-green-400" />
               <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
                 <h4 className="text-white font-bold mb-2"><Trans i18nKey="auto.quadraticsolver.quadratic_formula">📝 Quadratic Formula</Trans></h4>
                 <p className="text-gray-300 font-mono text-sm"><Trans i18nKey="auto.quadraticsolver.x_b_b_4ac_2a">x = (-b ± √(b² - 4ac)) / 2a</Trans></p>

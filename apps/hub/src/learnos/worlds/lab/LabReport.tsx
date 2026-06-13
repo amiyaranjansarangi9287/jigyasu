@@ -3,12 +3,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useLabReport } from './hooks/useLabReport';
 import { LAB_MODULES } from './data/labContent';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 interface Props { visible: boolean; onClose: () => void; }
 const certEmoji: Record<string, string> = { explorer: '🔍', scientist: '🔬', expert: '⭐' };
 const certColor: Record<string, string> = { explorer: '#0EA5E9', scientist: '#8B5CF6', expert: '#F59E0B' };
 
 export default function LabReport({ visible, onClose }: Props) {
+  const { t } = useTranslation();
   const { generateReport, getCertification } = useLabReport();
   const report = generateReport();
 
@@ -30,7 +32,7 @@ export default function LabReport({ visible, onClose }: Props) {
               <div className="bg-slate-800 rounded-2xl p-4">
                 <p className="text-slate-400 text-sm font-bold uppercase mb-3"><Trans i18nKey="auto.labreport.certifications">Certifications</Trans></p>
                 <div className="flex gap-3">{(['explorer','scientist','expert'] as const).map(l => (
-                  <div key={l} className="flex-1 text-center"><div className="text-2xl mb-1">{certEmoji[l]}</div><div className="text-xl font-bold" style={{ color: certColor[l] }}>{report.certs[l]}</div><div className="text-sm text-slate-400 capitalize">{l}</div></div>
+                  <div key={l} className="flex-1 text-center"><div className="text-2xl mb-1">{certEmoji[l]}</div><div className="text-xl font-bold" style={{ color: certColor[l] }}>{report.certs[l]}</div><div className="text-sm text-slate-400">{t(`auto.labreport.cert_${l}`, l.charAt(0).toUpperCase() + l.slice(1))}</div></div>
                 ))}</div>
               </div>
               <div className="grid grid-cols-4 gap-2">{LAB_MODULES.map(m => {

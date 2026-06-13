@@ -12,13 +12,17 @@ export function useLocalizedActivities() {
 
   useEffect(() => {
     const loadActivities = async () => {
-      const lang = i18n.language || 'en';
-      const path = `../kidscamp/data/activities.${lang}.json`;
-      if (activityModules[path]) {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const mod: any = await activityModules[path]();
-        setCurrentActivities(mod.default as unknown as Activity[]);
-      } else {
+      try {
+        const lang = i18n.language || 'en';
+        const path = `../kidscamp/data/activities.${lang}.json`;
+        if (activityModules[path]) {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          const mod: any = await activityModules[path]();
+          setCurrentActivities(mod.default as unknown as Activity[]);
+        } else {
+          setCurrentActivities(fallbackActivities as unknown as Activity[]);
+        }
+      } catch {
         setCurrentActivities(fallbackActivities as unknown as Activity[]);
       }
     };

@@ -9,10 +9,12 @@ import { useLabSession } from './hooks/useLabSession';
 import { useLumoOwl } from './hooks/useLumoOwl';
 import type { LabModule, LabSubject } from './types/lab.types';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 interface LabShellProps { module: LabModule; subject: LabSubject; children: ReactNode; showLumo?: boolean; }
 
 export default function LabShell({ module, children, showLumo = true }: LabShellProps) {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const { enterModule } = useLearnerStore();
   const { showBreak, trackEvent, dismissBreak } = useLabSession();
@@ -29,7 +31,7 @@ export default function LabShell({ module, children, showLumo = true }: LabShell
       {children}
       {showLumo && <LumoSpeechBubble visible={lumo.guideVisible} message={lumo.guideMessage} name={lumo.guideName} onDismiss={lumo.dismiss} />}
       <ParentCorner onExit={() => navigate('/lab')} />
-      <button onClick={() => navigate('/lab')} className="fixed bottom-6 left-6 z-40 w-12 h-12 rounded-xl bg-white shadow-lg border border-slate-200 flex items-center justify-center text-sm font-bold text-slate-600 hover:bg-slate-50 transition-colors" aria-label="Back to Lab Zero"><Trans i18nKey="auto.labshell.lab">← Lab</Trans></button>
+      <button onClick={() => navigate('/lab')} className="fixed bottom-6 left-6 z-40 w-12 h-12 rounded-xl bg-white shadow-lg border border-slate-200 flex items-center justify-center text-sm font-bold text-slate-600 hover:bg-slate-50 transition-colors" aria-label={t('auto.labshell.back_to_lab', 'Back to Lab Zero')}><Trans i18nKey="auto.labshell.lab">← Lab</Trans></button>
       <AnimatePresence>
         {showBreak && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-50 bg-slate-900/95 flex flex-col items-center justify-center p-8">

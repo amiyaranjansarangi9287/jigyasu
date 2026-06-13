@@ -24,7 +24,7 @@ const organelles: Organelle[] = [
     id: 'nucleus', name: 'Nucleus', emoji: '🟣',
     color: '#8b5cf6',
     description: 'The command center of the cell, housing DNA organized into chromosomes wrapped around histone proteins. It controls gene expression, cell growth, and reproduction.',
-    funFact: 'If you stretched out all the DNA in ONE cell, it would be about 2 meters long! Stretched out from all cells in your body, it would reach the sun and back over 600 times.',
+    funFact: 'If you stretched out all the DNA in ONE cell, it would be about 2 metres long! Stretched out from all cells in your body, it would reach the sun and back over 600 times.',
     functions: ['Stores genetic information (DNA)', 'Controls gene expression & cell activities', 'Contains nucleolus for ribosome production', 'Houses 46 chromosomes in humans', 'DNA replication occurs here'],
     size: '5-10 μm diameter',
     discovered: 'Robert Brown, 1831',

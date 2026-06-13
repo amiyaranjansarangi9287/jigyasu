@@ -71,7 +71,7 @@ const treeOfLife: TreeNode = {
                 { id: 'amphibians', name: 'Amphibians', emoji: '🐸', era: 'Devonian', years: '~370 mya', description: 'First vertebrates to walk on land! Live part of their lives in water and part on land.', color: '#84cc16' },
                 { id: 'reptiles', name: 'Reptiles', emoji: '🦎', era: 'Carboniferous', years: '~320 mya', description: 'First fully land-dwelling vertebrates. Include modern lizards, snakes, and turtles.', color: '#65a30d' },
                 { id: 'dinosaurs', name: 'Dinosaurs/Birds', emoji: '🦕', era: 'Triassic', years: '~230 mya', description: 'Dinosaurs dominated for 165 million years. Birds are their living descendants!', color: '#eab308' },
-                { id: 'mammals', name: 'Mammals', emoji: '🐘', era: 'Triassic', years: '~225 mya', description: 'Warm-blooded, milk-producing animals. Diversified after dinosaur extinction 66 mya.', color: '#f59e0b' },
+                { id: 'mammals', name: 'Mammals', emoji: '🐘', era: 'Triassic', years: '~225 mya', description: 'Warm-blooded, milk-producing animals. Diversified after non-avian dinosaurs went extinct 66 mya — but birds (living dinosaurs!) survived.', color: '#f59e0b' },
               ],
             },
           ],
@@ -138,7 +138,7 @@ export default function EvolutionTree() {
 
   const activeChallenge: ChallengeData = {
     title: t('learnos.biology.evolution_wonder', 'A Curious Question...'),
-    prompt: t('learnos.biology.evolution_prompt', "We share DNA with bananas and dinosaurs! How did life branch out into so many forms? Let's explore the tree of life."),
+    prompt: t('learnos.biology.evolution_prompt', "We share genes with bananas and ancestry with dinosaurs (through birds)! How did life branch out into so many forms? Let's explore the tree of life."),
     options: [t('learnos.challenge.explore', "Let's explore and find out!")],
     onSuccess: () => {
       setShowChallenge(false);

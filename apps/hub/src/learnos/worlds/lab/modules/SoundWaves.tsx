@@ -124,10 +124,10 @@ export default function SoundWaves() {
             <div>
               <h3 className="text-orange-400 font-bold text-sm mb-1"><Trans i18nKey="auto.soundwaves.indian_sound_science">Indian Sound Science</Trans></h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                <Trans i18nKey="auto.soundwaves.ancient_indians_classified_sou">Ancient Indians classified sound into</Trans> <strong><Trans i18nKey="auto.soundwaves.n_da_brahma">Nāda Brahma</Trans></strong> <Trans i18nKey="auto.soundwaves.sound_is_god_the_concept_of">(Sound is God)!
+                <Trans i18nKey="auto.soundwaves.ancient_indians_classified_sou">Ancient Indians classified sound into</Trans> <strong><Trans i18nKey="auto.soundwaves.n_da_brahma">Nāda Brahma</Trans></strong> <Trans i18nKey="auto.soundwaves.sound_is_god_the_concept_of">(a philosophical concept meaning sound is the essence of the universe).
                                               The concept of</Trans> <strong><Trans i18nKey="auto.soundwaves.abda">Śabda</Trans></strong> <Trans i18nKey="auto.soundwaves.sound_as_a_form_of_energy_date">(sound) as a form of energy dates back to
-                                              the Upanishads (800 BCE). Indian musicians understood harmonics and resonance
-                                              centuries before Western science formalized it.</Trans>
+                                              the Upanishads (traditionally dated around 800 BCE). Indian musicians explored harmonics and resonance through
+                                              practical musical knowledge, distinct from later Western scientific formalisation.</Trans>
                                             </p>
             </div>
           </div>

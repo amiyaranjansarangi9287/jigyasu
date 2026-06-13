@@ -1082,7 +1082,8 @@
       "reflect": "عکاسی کرنے کے لیے تھپتھپائیں۔",
       "save_thought": "اس سوچ کو بچائیں۔",
       "saved": "آپ کے ٹائم کیپسول میں محفوظ کیا گیا۔",
-      "write_thinking": "اپنی سوچ یہاں لکھیں - کوئی صحیح جواب نہیں..."
+      "write_thinking": "اپنی سوچ یہاں لکھیں - کوئی صحیح جواب نہیں...",
+      "hide": "چھپائیں"
     },
     "lumo": {
       "sharing": "یہ دلچسپ لگتا ہے",
@@ -3527,7 +3528,8 @@
     "teachmemode": {
       "max_is_listening": "میکس سن رہا ہے",
       "you_answered": "آپ نے جواب دیا۔",
-      "of_max_s_questions": "میکس کے سوالات!"
+      "of_max_s_questions": "میکس کے سوالات!",
+      "write_your_explanation_here": "اپنی وضاحت یہاں لکھیں..."
     },
     "timecapsule": {
       "capsule": "کیپسول",
@@ -3538,7 +3540,8 @@
       "280_characters": "/ 280 حروف",
       "your_thoughts_on": "آپ کے خیالات",
       "are_safe": "محفوظ ہیں۔",
-      "about": "کے بارے میں:"
+      "about": "کے بارے میں:",
+      "what_do_you_know_about_this_co": "آپ اس تصور کے بارے میں کیا جانتے ہیں؟"
     },
     "wondergarden": {
       "plants": "پودے",
@@ -3549,7 +3552,8 @@
       "features_in_development_for_fu": "* مکمل لانچ کے لیے فیچرز ڈویلپمنٹ میں ہیں"
     },
     "header": {
-      "jigyasu": "جگیاسو"
+      "jigyasu": "جگیاسو",
+      "ai_explorers": "اے آئی ایکسپلورر"
     },
     "howitworks": {
       "step": "قدم"
@@ -3562,7 +3566,8 @@
       "sound": "آواز۔",
       "high_contrast_mode": "ہائی کنٹریسٹ موڈ",
       "dyslexia_friendly_font": "ڈسلیکسیا دوستانہ فونٹ",
-      "exit_to_family_home": "فیملی ہوم سے باہر نکلیں"
+      "exit_to_family_home": "فیملی ہوم سے باہر نکلیں",
+      "hold_3_seconds_for_parent_opti": "پیرنٹ آپشنز کے لیے 3 سیکنڈ پکڑو"
     },
     "academyreport": {
       "100": "/ 100",
@@ -3571,12 +3576,19 @@
       "exam_readiness": "امتحان کی تیاری",
       "depth_breakdown": "ڈیپتھ بریک ڈاؤن",
       "not_started": "شروع نہیں ہوا",
-      "back_to_academy": "اکیڈمی پر واپس جائیں"
+      "back_to_academy": "اکیڈمی پر واپس جائیں",
+      "depth_surface": "سطح",
+      "depth_mechanism": "میکانزم",
+      "depth_principle": "اصول",
+      "depth_frontier": "سرحدیں"
     },
     "academyshell": {
       "academy": "اکیڈمی",
       "help": "مدد کریں",
-      "tap_to_return": "واپسی کے لیے ٹیپ کریں"
+      "tap_to_return": "واپسی کے لیے ٹیپ کریں",
+      "exam": "امتحان",
+      "explore": "Â ایکسپلور کریں",
+      "the_beauty": "ریاضی کی خوبصورتی"
     },
     "peerchallenge": {
       "challenge_mode": "چیلنج موڈ",
@@ -3587,7 +3599,8 @@
       "no_challenges_yet": "ابھی تک کوئی چیلنج نہیں۔",
       "done": "Â انجام دیا گیا",
       "mark_as_complete": "مکمل کے طور پر نشان زد کریں →",
-      "phase_2_send_challenges_to_cla": "مرحلہ 2: ہم جماعتوں کو چیلنجز بھیجیں۔"
+      "phase_2_send_challenges_to_cla": "مرحلہ 2: ہم جماعتوں کو چیلنجز بھیجیں۔",
+      "write_your_challenge_question": "اپنا چیلنج سوال لکھیں..."
     },
     "conceptbridge": {
       "connects_the_dots": "نقطوں کو جوڑتا ہے"
@@ -3603,7 +3616,11 @@
       "connections": "روابط",
       "the_measure_of_intelligence_is": "\"ذہانت کا پیمانہ تبدیلی کی صلاحیت ہے۔\"",
       "lumo": "- لومو",
-      "return_to_constellation": "نکشتر پر واپسی"
+      "return_to_constellation": "نکشتر پر واپسی",
+      "level_aware": "آگاہ ہیں۔",
+      "level_understand": "سمجھ لیں۔",
+      "level_apply": "درخواست دیں",
+      "level_connect": "مربوط کریں"
     },
     "discoveryshell": {
       "map": "نقشہ",
@@ -3615,7 +3632,19 @@
     "earlysessionsummary": {
       "minutes_of_adventure": "ایڈونچر کے منٹ!",
       "what_a_wonderful_adventure_tod": "\"آج کتنی شاندار مہم جوئی ہے! کل واپس آؤ!\"",
-      "see_you_next_time": "اگلی بار ملتے ہیں!"
+      "see_you_next_time": "اگلی بار ملتے ہیں!",
+      "stories": "کہانیاں",
+      "problems": "مسائل",
+      "letters": "خطوط",
+      "recipes": "ترکیبیں",
+      "patterns": "نمونے",
+      "sentences": "جملے",
+      "stages": "مراحل",
+      "water_cycle": "پانی کا چکر",
+      "habitats": "رہائش گاہیں",
+      "shadows": "سائے",
+      "magnets": "مقناطیسیں",
+      "purchases": "خریدیں"
     },
     "pipadventuremap": {
       "pip_s_adventure_map": "پیپس ایڈونچر کا نقشہ"
@@ -3633,7 +3662,17 @@
       "follow_up": "فالو اپ",
       "final_answer": "حتمی جواب →",
       "try_again": "دوبارہ کوشش کریں",
-      "back": "پیچھے"
+      "back": "پیچھے",
+      "type_your_explanation": "اپنی وضاحت ٹائپ کریں...",
+      "good_explanation": "اچھی وضاحت!",
+      "reasonable_start": "معقول آغاز۔",
+      "think_carefully": "غور سے سوچیں...",
+      "excellent": "بہترین!",
+      "good_effort": "Â اچھی کوشش۔",
+      "expert_earned": "ماہر نے کمائی!",
+      "scientist_level": "سائنس دان کی سطح",
+      "you_can_explain_this_clearly": "آپ اس کی واضح وضاحت کر سکتے ہیں۔ یہ مہارت ہے۔",
+      "keep_practicing": "مشق کرتے رہیں-وضاحت کرنا آسان ہو جاتا ہے۔"
     },
     "labhome": {
       "no_experiments_found": "کوئی تجربہ نہیں ملا",
@@ -3649,14 +3688,18 @@
       "minutes": "منٹ",
       "certifications": "سرٹیفیکیشن",
       "every_experiment_taught_you_so": "\"ہر تجربے نے آپ کو کچھ نہ کچھ سکھایا۔ یہی سائنس ہے۔\"",
-      "back_to_lab": "لیب پر واپس جائیں"
+      "back_to_lab": "لیب پر واپس جائیں",
+      "cert_explorer": "ایکسپلورر",
+      "cert_scientist": "سائنسدان",
+      "cert_expert": "ماہر"
     },
     "labshell": {
       "lab": "لیباریٹری",
       "great_work_today": "آج بہت اچھا کام ہے",
       "you_ve_been_doing_science_for_": "آپ 20 منٹ سے سائنس کر رہے ہیں۔ آپ کا دماغ آرام کا حقدار ہے۔",
       "5_more_minutes": "مزید 5 منٹ",
-      "go_to_lab_home": "لیب ہوم پر جائیں"
+      "go_to_lab_home": "لیب ہوم پر جائیں",
+      "back_to_lab": "لیب زیرو پر واپس جائیں"
     },
     "exambridge": {
       "correct": "درست ہے",
@@ -4196,7 +4239,12 @@
       "key_events": "اہم واقعات",
       "previous": "پچھلا",
       "next": "اگلا۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔",
-      "amazing_facts_about": "اس بارے میں حیران کن حقائق"
+      "amazing_facts_about": "اس بارے میں حیران کن حقائق",
+      "butterfly": "تتلیاں",
+      "frog": "مینڈک",
+      "dragonfly": "ڈریگن فلائی",
+      "type_complete": "مکمل کریں",
+      "type_incomplete": "نامکمل"
     },
     "microbematch": {
       "microbe_match": "مائکروب میچ",
@@ -4371,7 +4419,13 @@
     },
     "economicsimulation": {
       "gdp": "جی ڈی پی:",
-      "inflation": "% · افراط زر:"
+      "inflation": "% · افراط زر:",
+      "monsoon": "مانسون کی ناکامی",
+      "monsoon_note": "زراعت ہندوستان کی جی ڈی پی کا 15 فیصد ہے۔",
+      "oil": "تیل کی قیمتوں میں اضافہ",
+      "oil_note": "بھارت اپنا 80 فیصد تیل درآمد کرتا ہے",
+      "tech": "ٹیک بوم",
+      "tech_note": "ہندوستان کا آئی ٹی شعبہ 20 لاکھ کروڑ روپے کا ہے۔"
     },
     "fermiestimation": {
       "step": "قدم",
@@ -4404,11 +4458,14 @@
     },
     "speeddistancetime": {
       "speed_monitor": "سپیڈ مانیٹر",
-      "km_h": "کلومیٹر فی گھنٹہ"
+      "km_h": "کلومیٹر فی گھنٹہ",
+      "engine_output_speed": "انجن آؤٹ پٹ/رفتار"
     },
     "alphabetforest": {
       "sounds_like": "اس طرح لگتا ہے:",
-      "next_letter": "اگلا خط"
+      "next_letter": "اگلا خط",
+      "find": "تلاش کریں:",
+      "tap_letter": "تلاش کرنے کے لیے خط پر ٹیپ کریں!"
     },
     "coincounter": {
       "pip_s_shop": "پیپس شاپ",
@@ -4436,10 +4493,23 @@
       "check": "چیک کریں",
       "perfect_change": "کامل تبدیلی!",
       "too_much_remove_some_coins": "بہت زیادہ! کچھ سکے ہٹا دیں۔",
-      "not_enough_yet_keep_adding_coi": "ابھی کافی نہیں ہے-سکے شامل کرتے رہیں۔"
+      "not_enough_yet_keep_adding_coi": "ابھی کافی نہیں ہے-سکے شامل کرتے رہیں۔",
+      "pay_now": "ابھی ادائیگی کریں!",
+      "add_more_coins": "مزید سکے شامل کریں...",
+      "plural_s": "ایس",
+      "too_many": "اوہ! یہ بہت زیادہ سکے ہو سکتے ہیں! صحیح رقم آزمائیں۔",
+      "here_is": "یہاں ہے",
+      "change_excl": "تبدیل کریں!",
+      "not_enough": "ابھی کافی سکے نہیں! مزید شامل کریں۔",
+      "what_next": "آپ آگے کیا چاہتے ہیں؟",
+      "count": "شمار کریں",
+      "make_change": "تبدیلی لائیں",
+      "challenge": "چیلنج"
     },
     "habitatheroes": {
-      "test_my_knowledge": "میرے علم کو آزمائیں!"
+      "test_my_knowledge": "میرے علم کو آزمائیں!",
+      "exploring": "دریافت کرنا",
+      "choose_habitat": "رہائش گاہ کا انتخاب کریں!"
     },
     "magnetexplorer": {
       "objects_left_to_sort": "اشیاء کو ترتیب دینے کے لیے چھوڑ دیا گیا"
@@ -4447,30 +4517,61 @@
     "minichef": {
       "ingredients": "اجزاء",
       "add": "شامل کریں",
-      "of": "کی طرف سے"
+      "of": "کی طرف سے",
+      "lets_make": "آئیے {{نام}} بناتے ہیں! پہلا جزو!",
+      "time_to_mix": "یہ سب ملانے کا وقت ہے!",
+      "next_add": "اگلا: {{نام}} کا {{رقم}} {{یونٹ} شامل کریں!"
     },
     "numberlineadventures": {
       "start_at": "سے شروع کریں",
       "jump": "چھلانگ لگائیں",
-      "steps": "اقدامات"
+      "steps": "اقدامات",
+      "forward": "آگے۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔",
+      "backward": "← پیچھے کی طرف",
+      "ready_bigger": "اوہ! آپ بڑی تعداد کے لیے تیار ہیں!"
     },
     "patternpatrol": {
       "level": "سطح",
-      "3_to_level_up": "/ 3 سطح بلند کرنے کے لیے"
+      "3_to_level_up": "/ 3 سطح بلند کرنے کے لیے",
+      "real_detective": "اوہ! آپ اب ایک حقیقی جاسوس ہیں!",
+      "look_at_colours": "رنگوں کو دیکھیں... کیا دہرایا جاتا ہے؟"
     },
     "plantgrowthexplorer": {
-      "stage": "اسٹیج"
+      "stage": "اسٹیج",
+      "thirsty": "پودے کو پیاس لگی ہے! مزید پانی شامل کریں!",
+      "more_sun": "اسے زیادہ سورج کی روشنی کی ضرورت ہے!",
+      "amazing_grew": "حیرت انگیز! آپ نے ایک پودا بیج سے پھل تک بڑھایا!"
     },
     "shadowdetective": {
       "drag_the_torch": "مشعل کو گھسیٹیں!",
-      "solved": "حل کیا گیا"
+      "solved": "حل کیا گیا",
+      "next_challenge": "اگلا شیڈو چیلنج!",
+      "long_left": "سایہ کو لمبا بنائیں (بائیں)",
+      "short": "شیڈو کو چھوٹا بنائیں",
+      "long_right": "Â شیڈو پوائنٹ کو درست کریں",
+      "gone": "Â سایہ کو غائب کر دیں"
     },
     "storybuilder": {
-      "build_a_new_story": "ایک نئی کہانی بنائیں!"
+      "build_a_new_story": "ایک نئی کہانی بنائیں!",
+      "ooh": "ارے!",
+      "great_choice": "بہت اچھا انتخاب!",
+      "the": "دی۔",
+      "how_exciting": "کتنا دلچسپ!",
+      "ready_read": "تیار؟ آئیے اپنی کہانی پڑھیں!",
+      "did_follow": "کیا آپ نے کہانی کو فالو کیا؟ میں آپ سے کچھ پوچھتا ہوں!",
+      "build_new_story": "آئیے ایک نئی کہانی بنائیں!",
+      "where_live": "کہاں ہے؟",
+      "live_q": "زندہ؟",
+      "what_happened": "کیا ہوا؟",
+      "next": "اگلا۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔",
+      "finish_story": "کہانی ختم کریں!",
+      "who_is_the_hero_of_our_story": "ہماری کہانی کا ہیرو کون ہے؟"
     },
     "watercyclejourney": {
       "what_happens_next": "آگے کیا ہوتا ہے؟",
-      "water_cycle_complete": "پانی کا چکر مکمل!"
+      "water_cycle_complete": "پانی کا چکر مکمل!",
+      "next_stage": "اگلا مرحلہ →",
+      "complete_cycle": "Â سائیکل مکمل کریں!"
     },
     "wordscramble": {
       "next_sentence": "اگلا جملہ"
@@ -4493,7 +4594,8 @@
       "the_sun_doesn_t_rise_earth_rot": "سورج \"طلوع\" نہیں ہوتا-زمین گھومتی ہے، آپ کو سورج کی روشنی میں لاتی ہے۔ کوپرنیکس کی اس بصیرت کو قبول کرنے میں صدیوں کا وقت لگا کیونکہ ہمارا وجدان کہتا ہے کہ سورج حرکت کرتا ہے۔",
       "earth_rotates_once_every_24_ho": "زمین ہر 24 گھنٹے میں ایک بار گھومتی ہے۔ ٹائم زون موجود ہیں کیونکہ مختلف مقامات مختلف اوقات میں سورج کا سامنا کرتے ہیں۔ جیٹ لیگ آپ کا جسم ایک نئی گردش کی پوزیشن کو پکڑ رہا ہے۔",
       "history_of_the_idea": "خیال کی تاریخ",
-      "aryabhata_in_499_ad_proposed_e": "آریہ بھٹ نے 499 عیسوی میں زمین کی گردش کی تجویز پیش کی۔ کوپرنیکس نے 1543 میں یورپ میں اس خیال کو دوبارہ زندہ کیا۔ گیلیلیو کو اس کی حمایت کرنے پر گھر میں نظر بند کر دیا گیا۔ یہ خیال کہ ہمارا روزمرہ کا تجربہ ایک وہم ہو سکتا ہے انقلابی تھا۔"
+      "aryabhata_in_499_ad_proposed_e": "آریہ بھٹ نے 499 عیسوی میں زمین کی گردش کی تجویز پیش کی۔ کوپرنیکس نے 1543 میں یورپ میں اس خیال کو دوبارہ زندہ کیا۔ گیلیلیو کو اس کی حمایت کرنے پر گھر میں نظر بند کر دیا گیا۔ یہ خیال کہ ہمارا روزمرہ کا تجربہ ایک وہم ہو سکتا ہے انقلابی تھا۔",
+      "aryabhata_in_499_ce_proposed_e": "آریہ بھٹ نے 499 عیسوی میں زمین کی گردش کی تجویز پیش کی۔ کوپرنیکس نے 1543 میں یورپ میں اس خیال کو دوبارہ زندہ کیا۔ گیلیلیو کو اس کی حمایت کرنے پر گھر میں نظر بند کر دیا گیا۔ یہ خیال کہ ہمارا روزمرہ کا تجربہ ایک وہم ہو سکتا ہے انقلابی تھا۔"
     },
     "dnanatureadult": {
       "the_human_genome_has_3_billion": "انسانی جینوم میں 3 ارب بیس جوڑے ہوتے ہیں۔ اگر آپ انہیں حروف کے طور پر چھاپتے ہیں تو یہ 200 فون بک کو بھر دے گا۔ پھر بھی پروٹین کے لیے صرف 2 فیصد کوڈ-باقی کو کبھی \"جنک ڈی این اے\" کہا جاتا تھا لیکن یہ بالکل بھی فضول نہیں ہے۔",
@@ -4816,7 +4918,10 @@
     "leverexplorer": {
       "lever_explorer": "لیور ایکسپلورر ÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂ",
       "kg": "کلوگرام",
-      "t": "ٹی ="
+      "t": "ٹی =",
+      "fulcrum_position": "فلکرم پوزیشن",
+      "left_weight": "بائیں وزن",
+      "right_weight": "صحیح وزن"
     },
     "lightshadows": {
       "sun_at": "- سن ایٹ",
@@ -4840,7 +4945,10 @@
       "what_happens_to_the_shadow_whe": "جب آپ سورج کو اوپر لے جاتے ہیں تو سائے کا کیا ہوتا ہے؟",
       "what_happens_when_you_move_the": "جب آپ سورج کو نیچے (غروب آفتاب کے قریب) منتقل کرتے ہیں تو کیا ہوتا ہے؟",
       "which_direction_does_the_shado": "سایہ سورج کے مقابلے میں کس سمت کی طرف اشارہ کرتا ہے؟",
-      "why_are_shadows_longer_at_suns": "غروب آفتاب کے وقت سائے دوپہر سے زیادہ لمبے کیوں ہوتے ہیں؟"
+      "why_are_shadows_longer_at_suns": "غروب آفتاب کے وقت سائے دوپہر سے زیادہ لمبے کیوں ہوتے ہیں؟",
+      "noon": "دوپہر",
+      "afternoon": "دوپہر",
+      "sunset": "غروب آفتاب"
     },
     "magnets": {
       "magnet_1": "مقناطیسی 1:",
@@ -5108,7 +5216,10 @@
       "what_happens_to_the_particles_": "جب آپ ذرات کو ٹھنڈا کرتے ہیں تو ان کا کیا ہوتا ہے؟",
       "what_happens_when_you_heat_the": "جب آپ انہیں گرم کرتے ہیں تو کیا ہوتا ہے؟",
       "at_what_temperature_does_ice_b": "برف کس درجہ حرارت پر پانی بن جاتی ہے؟",
-      "at_what_temperature_does_water": "پانی کس درجہ حرارت پر بھاپ بن جاتا ہے؟"
+      "at_what_temperature_does_water": "پانی کس درجہ حرارت پر بھاپ بن جاتا ہے؟",
+      "label_solid": "سولڈ",
+      "label_liquid": "جیسا کہ",
+      "label_gas": "گیس"
     },
     "statisticsplayground": {
       "statistics_playground": "اعدادوشمار کا کھیل کا میدان"
@@ -5167,7 +5278,13 @@
       "x_dx_x_3": "x 2dx = [x 3/3] ab =",
       "green_rectangles": "سبز مستطیل",
       "approximate_the_area_under_the": "منحنی خطوط کے نیچے کے رقبے کا تخمینہ لگائیں۔",
-      "more_rectangles_better_approxi": "زیادہ آئتاکار → بہتر تخمینہ → انٹیگرل عین حد ہے۔"
+      "more_rectangles_better_approxi": "زیادہ آئتاکار → بہتر تخمینہ → انٹیگرل عین حد ہے۔",
+      "limits": "حدود",
+      "derivatives": "مشتقات",
+      "integrals": "انٹیگرلز",
+      "positive_slope_function_increasing": "مثبت ڈھلوان → فنکشن میں اضافہ",
+      "negative_slope_function_decreasing": "منفی ڈھلوان → فنکشن کم ہو رہا ہے",
+      "zero_slope_function_flat": "صفر ڈھلوان → فنکشن فلیٹ (ممکنہ زیادہ سے زیادہ/منٹ)"
     },
     "chessstrategy": {
       "chess_strategy": "شطرنج اور حکمت عملی",
@@ -5183,7 +5300,10 @@
       "possible_paths": "ممکنہ راستے!",
       "q": "ق۔",
       "correct": "ٹھیک ہے!",
-      "answer": "جواب:"
+      "answer": "جواب:",
+      "n_queens": "این-ملکہ",
+      "knights_tour": "نائٹس ٹور",
+      "counting": "گنتی"
     },
     "clockmaster": {
       "clock_master": "کلاک ماسٹر",
@@ -5205,7 +5325,13 @@
       "long_blue_hand": "لمبا نیلا ہاتھ",
       "points_to_minutes": "منٹ کی طرف اشارہ کرتا ہے۔",
       "each_small_tick_is_1_minute_ea": "ہر چھوٹا ٹک 1 منٹ کا ہوتا ہے۔ ہر نمبر جمپ 5 منٹ کا ہوتا ہے۔",
-      "min": "کم از کم"
+      "min": "کم از کم",
+      "exact_hour": "عین مطابق گھنٹہ",
+      "15_minutes_past": "15 منٹ گزر چکے ہیں",
+      "30_minutes_past": "30 منٹ گزر چکے ہیں",
+      "15_minutes_until": "اگلے گھنٹے تک 15 منٹ",
+      "past_the_hour": "گھنٹہ گزر گیا",
+      "to_the_next_hour": "اگلے گھنٹے تک"
     },
     "codinglogic": {
       "coding_logic": "کوڈنگ اور منطق",
@@ -5218,7 +5344,17 @@
       "b": "بی۔",
       "a_and_b": "اے اور بی",
       "correct": "ٹھیک ہے!",
-      "answer": "جواب:"
+      "answer": "جواب:",
+      "binary": "بائنری",
+      "boolean": "بولین",
+      "challenge": "چیلنج",
+      "binary_type": "بائنری",
+      "boolean_type": "بولین",
+      "decimal": "اعشاریہ",
+      "hexadecimal": "ہیکساڈیسیمل",
+      "octal": "آکٹل",
+      "true": "سچ۔",
+      "false": "غلط"
     },
     "complexnumbers": {
       "complex_numbers": "سی کمپلیکس نمبر",
@@ -5250,7 +5386,10 @@
       "percentage": "فیصد",
       "quick_conversions": "فوری تبدیلیاں",
       "correct": "ٹھیک ہے!",
-      "answer": "جواب:"
+      "answer": "جواب:",
+      "explore": "دریافت کریں",
+      "convert": "تبدیل کریں",
+      "challenge": "چیلنج"
     },
     "engineeringmath": {
       "engineering_math": "انجینئرنگ ریاضی",
@@ -5287,7 +5426,12 @@
       "a": "اے",
       "cube": "کیوب",
       "all_sides_equal": "(تمام اطراف برابر =",
-      "cm_uses_the_least_material_for": "سینٹی میٹر) کسی دیئے گئے حجم کے لیے سب سے کم مواد کا استعمال کرتا ہے۔ زیادہ سے زیادہ طرف = حجم۔ یہ دیکھنے کے لیے لمبائی کو ایڈجسٹ کرنے کی کوشش کریں کہ کارکردگی میں کتنی تبدیلی آتی ہے!"
+      "cm_uses_the_least_material_for": "سینٹی میٹر) کسی دیئے گئے حجم کے لیے سب سے کم مواد کا استعمال کرتا ہے۔ زیادہ سے زیادہ طرف = حجم۔ یہ دیکھنے کے لیے لمبائی کو ایڈجسٹ کرنے کی کوشش کریں کہ کارکردگی میں کتنی تبدیلی آتی ہے!",
+      "bridges": "پل",
+      "projectile": "پروجیکٹائل",
+      "optimize": "اصلاح کریں",
+      "high_stress": "ہائی اسٹریس! بیم کی اونچائی بڑھائیں یا بوجھ کم کریں۔",
+      "safe_range": "تناؤ کو محفوظ حد میں رکھیں۔"
     },
     "exponentspowers": {
       "10": "× 10",
@@ -5309,7 +5453,11 @@
       "to_the_right": "دائیں طرف",
       "writes_numbers_as_a_coefficien": "اعداد کو 1 اور 10 کے درمیان گتانک کے طور پر لکھیں جسے 10 کی طاقت سے ضرب دیں۔ بہت بڑی یا بہت چھوٹی تعداد کے لیے مفید!",
       "correct": "ٹھیک ہے!",
-      "answer": "جواب:"
+      "answer": "جواب:",
+      "explore": "دریافت کریں",
+      "laws": "قوانین",
+      "sci_notation": "سائنس نوٹیشن",
+      "challenge": "چیلنج"
     },
     "fractionpizza": {
       "0": "0 ٪",
@@ -5354,7 +5502,39 @@
       "area": "رقبہ =",
       "sq_units": "مربع اکائیاں",
       "perimeter_circumference": "دائرے/دائرہ کار",
-      "units": "اکائیاں"
+      "units": "اکائیاں",
+      "angles": "زاویے",
+      "explore_calculate": "دریافت کریں اور حساب لگائیں",
+      "pythagoras": "پایتھاگورس",
+      "a2_b2_c2": "a2 + b2 = c2",
+      "areas": "علاقے",
+      "shapes_formulas": "شکلیں اور فارمولے",
+      "zero": "صفر",
+      "acute": "شدید۔",
+      "right": "ٹھیک ہے۔",
+      "obtuse": "غیر متزلزل",
+      "straight": "سیدھا۔",
+      "reflex": "ریفلیکس",
+      "shape_your_understanding": "جیومیٹری کے بارے میں اپنی سمجھ کو شکل دیں!",
+      "complement": "تکمیل (90°-θ):",
+      "na": "این/اے",
+      "supplement": "ضمیمہ (180°-θ):",
+      "acute_ref": "تیز: 0° <θ <90°",
+      "right_ref": "دائیں: θ = 90°",
+      "obtuse_ref": "محرک: 90° <θ <180°",
+      "straight_ref": "سیدھا: θ = 180°",
+      "reflex_ref": "اضطراری: 180° <θ <360°",
+      "acute_right_obtuse": "ایکیوٹ/رائٹ/اوبٹیوز...",
+      "degrees": "ڈگریاں",
+      "rectangle": "مستطیل",
+      "triangle": "مثلث",
+      "circle": "دائرہ",
+      "trapezoid": "ٹریپیزائڈ",
+      "radius": "رداس",
+      "base_b": "بیس بی",
+      "length": "لمبائی",
+      "width": "چوڑائی",
+      "height": "اونچائی"
     },
     "graphcreator": {
       "graph_creator": "گراف تخلیق کار",
@@ -5365,7 +5545,9 @@
       "mean": "معنی۔",
       "max": "میکس",
       "items": "اشیا",
-      "legend": "لیجنڈ"
+      "legend": "لیجنڈ",
+      "label": "لیبل",
+      "value": "قدر"
     },
     "graphquest": {
       "0": "، 0)",
@@ -5387,7 +5569,16 @@
       "c_shift": "سی (شفٹ)",
       "vertex_at_0": "ورٹیکس (0،",
       "values_table": "ویلیوز ٹیبل",
-      "x_y": "(x، y)"
+      "x_y": "(x، y)",
+      "line_goes_uphill": "لائن اوپر جاتی ہے",
+      "line_goes_downhill": "لائن نیچے کی طرف جاتی ہے",
+      "horizontal_line": "افقی لکیر",
+      "parabola_opens_upward": "پیرابولہ اوپر کی طرف کھلتا ہے",
+      "parabola_opens_downward": "پیرابولہ نیچے کی طرف کھلتا ہے",
+      "flat_line": "فلیٹ لائن",
+      "narrow_steep": "تنگ (کھڑی)",
+      "wide_flat": "وسیع (فلیٹ)",
+      "standard_width": "معیاری چوڑائی"
     },
     "integersnumberline": {
       "integers_number_line": "انٹیگرز اور نمبر لائن",
@@ -5410,7 +5601,10 @@
       "same_signs_positive_different_": "ایک جیسی علامتیں مثبت۔ مختلف علامتیں منفی۔",
       "example": "مثال:",
       "number_order": "نمبر آرڈر",
-      "5_lt_4_lt_lt_0_lt_lt_4_lt_5": "- 5 & lt;-4 & lt;... & lt; 0 & lt;... & lt; 4 & lt; 5"
+      "5_lt_4_lt_lt_0_lt_lt_4_lt_5": "- 5 & lt;-4 & lt;... & lt; 0 & lt;... & lt; 4 & lt; 5",
+      "negative": "منفی",
+      "zero": "صفر",
+      "positive": "مثبت۔"
     },
     "logarithmslab": {
       "logarithms_lab": "لوگرتھمز لیب",
@@ -5428,7 +5622,10 @@
       "what_power": "کیا طاقت ہے",
       "gives": "دیتا ہے",
       "correct": "ٹھیک ہے!",
-      "answer": "جواب:"
+      "answer": "جواب:",
+      "explore": "دریافت کریں",
+      "rules": "قواعد و ضوابط",
+      "challenge": "چیلنج"
     },
     "logicpuzzles": {
       "logic_puzzles": "منطقی پہیلیاں",
@@ -5442,7 +5639,9 @@
       "gray_cells_are_given_you_fill_": "گرے سیل دیے جاتے ہیں-باقی آپ بھر دیتے ہیں!",
       "fill_each_row_and_column_with_": "ہر صف اور کالم کو 1-3 نمبروں سے پر کریں، کوئی تکرار نہیں۔",
       "yellow_labels_show_the_target_": "پیلے رنگ کے لیبل ہدف کو ظاہر کرتے ہیں: مثال کے طور پر \"5 +\" کا مطلب ہے کہ اس گروپ کے خلیات 5 میں اضافہ کرتے ہیں۔",
-      "operations_add_subtract_multip": "آپریشنز: + (ایڈ)،-(سبٹریکٹ)، × (ضرب)۔"
+      "operations_add_subtract_multip": "آپریشنز: + (ایڈ)،-(سبٹریکٹ)، × (ضرب)۔",
+      "solved": "حل ہو گیا!",
+      "fill_all_cells_with_1_n": "تمام خلیوں کو 1-{{سائز}} سے بھریں"
     },
     "mathartstudio": {
       "math_art_studio": "ریاضی اور آرٹ اسٹوڈیو",
@@ -5458,7 +5657,18 @@
       "1_618_a_golden_rectangle_has_w": "ایک سنہری مستطیل کی چوڑائی ± اونچائی = φ ہوتی ہے۔ اسے مربعوں میں تقسیم کرنے سے ایک سرپل پیدا ہوتا ہے جو اکثر آرٹ اور فطرت میں پایا جاتا ہے۔",
       "width": "چوڑائی",
       "height": "اونچائی",
-      "width_height": "چوڑائی ± اونچائی"
+      "width_height": "چوڑائی ± اونچائی",
+      "fractals": "فریکٹلز",
+      "tessellations": "ٹیسلیشنز",
+      "golden_ratio_label": "سنہری تناسب",
+      "recursion_depth": "تکرار کی گہرائی",
+      "branch_angle": "شاخ کا زاویہ",
+      "trunk_length": "ٹرنک کی لمبائی",
+      "triangles": "مثلث",
+      "hexagons": "ہیکساگونز",
+      "squares": "چوکیاں",
+      "color_cycle": "رنگوں کا چکر",
+      "rectangle_width": "آئتاکار چوڑائی"
     },
     "mathmusic": {
       "math_music": "ریاضی اور موسیقی",
@@ -5484,7 +5694,10 @@
       "soft_mellow": "= نرم/نرم۔",
       "musical_intervals_as_ratios": "تناسب کے طور پر موسیقی کے وقفے",
       "ratio": "تناسب:",
-      "click_any_interval_to_hear_bot": "دونوں سروں کو سننے کے لیے کسی بھی وقفے پر کلک کریں۔ 2:1 اور 3:2 جیسے سادہ تناسب ہمارے کانوں کو پسند آتے ہیں۔"
+      "click_any_interval_to_hear_bot": "دونوں سروں کو سننے کے لیے کسی بھی وقفے پر کلک کریں۔ 2:1 اور 3:2 جیسے سادہ تناسب ہمارے کانوں کو پسند آتے ہیں۔",
+      "piano": "پیانو",
+      "waveforms": "لہروں کی شکلیں",
+      "intervals": "وقفے"
     },
     "matholympiad": {
       "math_olympiad": "ریاضی اولمپیاڈ",
@@ -5495,7 +5708,8 @@
       "brilliant": "شاندار! +",
       "points": "پوائنٹس",
       "answer": "جواب:",
-      "check_the_solution": "حل چیک کریں!"
+      "check_the_solution": "حل چیک کریں!",
+      "your_answer": "آپ کا جواب"
     },
     "matrixops": {
       "matrix_operations": "میٹرکس آپریشنز",
@@ -5511,7 +5725,13 @@
       "a_b": "A × B",
       "multiplies_rows_of_a_by_column": "A کی صفوں کو B کے کالموں سے ضرب دیتا ہے",
       "a": "اے ٹی",
-      "swaps_rows_and_columns": "قطاریں اور کالم تبدیل کرتا ہے"
+      "swaps_rows_and_columns": "قطاریں اور کالم تبدیل کرتا ہے",
+      "matrix_a": "میٹرکس اے",
+      "matrix_b": "میٹرکس بی",
+      "a_plus_b": "اے + بی",
+      "a_times_b": "A × B",
+      "a_transpose": "اے ٹی ٹرانسپوز",
+      "2a_scalar": "2A (اسکیلر)"
     },
     "measurementlab": {
       "measurement_lab": "پیمائش لیب",
@@ -5519,7 +5739,29 @@
       "explore": "Â ایکسپلور کریں",
       "challenge": "چیلنج",
       "correct": "ٹھیک ہے!",
-      "answer": "جواب:"
+      "answer": "جواب:",
+      "length": "لمبائی",
+      "weight": "وزن",
+      "volume": "حجم",
+      "millimeters": "ملی میٹر",
+      "centimeters": "سینٹی میٹر",
+      "meters": "میٹر",
+      "kilometers": "کلومیٹر",
+      "inches": "انچ۔",
+      "feet": "پاؤں۔",
+      "yards": "یارڈز",
+      "miles": "میلز",
+      "milligrams": "ملیگرام",
+      "grams": "گرام",
+      "kilograms": "کلوگرام",
+      "ounces": "اونس",
+      "pounds": "پاؤنڈ",
+      "milliliters": "ملی لیٹر",
+      "liters": "لیٹر",
+      "cups": "کپ",
+      "pints": "پنٹ",
+      "quarts": "کواٹرس",
+      "gallons": "گیلن"
     },
     "memorymatch": {
       "memory_match_magic": "میموری میچ جادو",
@@ -5533,7 +5775,18 @@
       "victory": "فتح!",
       "you_matched_all_the_pairs": "آپ نے تمام جوڑوں کا موازنہ کیا!",
       "time": "وقت",
-      "play_again": "دوبارہ کھیلیں"
+      "play_again": "دوبارہ کھیلیں",
+      "apprentice": "اپرنٹس",
+      "sorcerer": "جادوگر",
+      "grand_wizard": "گرینڈ وزرڈ",
+      "classic": "کلاسیکی",
+      "timed": "وقتا فوقتا",
+      "zen": "زین",
+      "you_won": "آپ جیت گئے!",
+      "score": "اسکور:",
+      "max_combo": "میکس کمبو:",
+      "found_pairs": "پایا گیا۔",
+      "times_up": "وقت ختم ہو چکا ہے!"
     },
     "mentalmathblitz": {
       "mental_math_mastery": "ذہنی ریاضی کی مہارت",
@@ -5546,7 +5799,25 @@
       "take_your_time": "اپنا وقت نکالیں",
       "lv": "· ایل وی",
       "correct": "Â صحیح!",
-      "try_again": "دوبارہ کوشش کریں!"
+      "try_again": "دوبارہ کوشش کریں!",
+      "bodmas": "BODMAS",
+      "squares_roots": "مربع اور جڑیں",
+      "percentages": "فیصد",
+      "powers": "اختیارات",
+      "mixed": "مخلوط",
+      "order_of_operations": "آرڈر آف آپریشنز",
+      "n2_and_sqrt_n": "n2 اور ρn",
+      "pct_calculations": "٪ حسابات",
+      "exponents": "نمائش کنندگان",
+      "all_topics": "تمام موضوعات!",
+      "normal": "نارمل",
+      "hard": "Â سخت",
+      "extreme": "انتہائی",
+      "category_bodmas": "BODMAS",
+      "category_squares": "چوکیاں",
+      "category_percentages": "شخصیات",
+      "category_powers": "طاقتیں",
+      "category_mixed": "مکسڈ"
     },
     "moneymathmarket": {
       "1": "× (1 +",
@@ -5588,7 +5859,25 @@
       "year": "سال",
       "correct": "ٹھیک ہے!",
       "answer": "جواب: $",
-      "skip": "سکپ کریں →"
+      "skip": "سکپ کریں →",
+      "discounts": "رعایتیں",
+      "pct_off_prices": "قیمتوں پر% ڈسکاؤنٹ",
+      "profit_loss": "منافع/نقصان",
+      "business_math": "کاروباری ریاضی",
+      "interest": "دلچسپی",
+      "simple_compound": "سادہ اور مرکب",
+      "challenge": "چیلنج",
+      "mixed_quiz": "مخلوط کوئز",
+      "profit": "منافع",
+      "loss": "ہار۔",
+      "q_discount": "ایک قمیض کی قیمت ₹ {{قیمت}} ہے۔% آف کے بعد قیمت کتنی ہے؟",
+      "type_discount": "Â ڈسکاؤنٹ",
+      "q_profit": "₹ {{cp}} میں خریدا گیا، ₹ {{sp}} میں فروخت کیا گیا۔ منافع کیا ہے؟",
+      "type_profit": "منافع",
+      "q_interest": "{{وقت}} سال {{وقت _ جمع}} کے لیے {{شرح}} ٪ پر ₹ {{p}} پر سادہ سود؟",
+      "type_interest": "دلچسپی",
+      "q_percentage": "{{pct}} ₹ {{مکمل}} کا% کیا ہے؟",
+      "type_percentage": "فیصد فیصد"
     },
     "numbercrunchgame": {
       "number_exploration": "نمبر ایکسپلوریشن",
@@ -5599,7 +5888,13 @@
       "begin_journey": "سفر کا آغاز",
       "mastery": "مہارت",
       "streak": "سٹریک",
-      "x": "x"
+      "x": "x",
+      "patience": "صبر۔",
+      "no_timers": "کوئی ٹائمر نہیں۔ گہرائی سے سوچیں۔",
+      "streaks_label": "سٹریکس",
+      "consistent_multiplier": "مستقل تفہیم ضرب",
+      "adaptive": "موافقت پذیر",
+      "gets_harder": "جیسے جیسے آپ تصورات میں مہارت حاصل کرتے جاتے ہیں مشکل تر ہوتے جاتے ہیں"
     },
     "numbertheorylab": {
       "number_theory_lab": "نمبر تھیوری لیب",
@@ -5634,7 +5929,12 @@
       "prime": "پرائم",
       "composite": "کمپوزٹ",
       "there_are": "ہیں۔",
-      "primes_between_1_and_100_click": "1 اور 100 کے درمیان پرائمز۔ ٹیسٹ کرنے کے لیے کسی بھی نمبر پر کلک کریں"
+      "primes_between_1_and_100_click": "1 اور 100 کے درمیان پرائمز۔ ٹیسٹ کرنے کے لیے کسی بھی نمبر پر کلک کریں",
+      "factor_tree": "عنصر کا درخت",
+      "gcd_lcm": "جی سی ڈی اور ایل سی ایم",
+      "prime_checker": "پرائم چیکر",
+      "greatest_least_common": "سب سے بڑا اور سب سے کم عام",
+      "is_it_prime": "کیا یہ پرائم ہے؟"
     },
     "patternpuzzle": {
       "pattern_puzzle_quest": "پیٹرن پزل کویسٹ",
@@ -5674,7 +5974,11 @@
       "hundreds": "سینکڑوں،",
       "tens_and": "دس، اور",
       "ones": "ایک ہیں۔",
-      "base_10_blocks": "بیس-10 بلاکس"
+      "base_10_blocks": "بیس-10 بلاکس",
+      "label_thousands": "ہزاروں کی تعداد میں",
+      "label_hundreds": "سینکڑوں",
+      "label_tens": "دس۔",
+      "label_ones": "ان میں سے ایک۔"
     },
     "probabilityplayground": {
       "52": "/52",
@@ -5711,7 +6015,25 @@
       "p_face": "پی (چہرہ) =",
       "drawn_cards": "ڈراون کارڈز (",
       "correct": "ٹھیک ہے!",
-      "answer": "جواب:"
+      "answer": "جواب:",
+      "coin_flip": "سکے پلٹائیں",
+      "dice_roll": "ڈائس رول",
+      "card_draw": "کارڈ ڈرا",
+      "challenge": "چیلنج",
+      "q_heads": "پی (سر) منصفانہ سکے پر؟",
+      "exp_heads": "2 نتائج: H یا T. P = 1/2",
+      "q_six": "پی (6 کو رول کرنا) ڈائی پر؟",
+      "exp_six": "6 نتائج، 1 ایک 6 ہے۔ P = 1/6",
+      "q_heart": "پی (دل کھینچنا) ڈیک سے؟",
+      "exp_heart": "52 کارڈوں میں 13 دل۔ P = 13/52 = 1/4",
+      "q_odd": "پی (عجیب چل رہا ہے) ڈائی پر؟",
+      "exp_odd": "6 میں سے 3 عجیب اعداد (1,3,5)۔ P = 3/6 = 1/2",
+      "q_at_least_one_head": "پی (2 پلٹ میں کم از کم 1 سر حاصل کرنا)؟",
+      "exp_at_least_one_head": "HH، HT، TH، TT-3 کے سر ہیں۔ P = 3/4",
+      "q_ace": "پی (ایک ایس ڈرائنگ) ڈیک سے؟",
+      "exp_ace": "52 کارڈوں میں 4 ایس۔ P = 4/52 = 1/13",
+      "q_sum_seven": "پی (7 کا رولنگ مجموعہ) 2 پاسوں کے ساتھ؟",
+      "exp_sum_seven": "36 میں سے 7 امتزاج حاصل کرنے کے 6 طریقے۔ P = 6/36 = 1/6"
     },
     "quadraticsolver": {
       "quadratic_solver": "کواڈریٹک سولور",
@@ -5725,7 +6047,19 @@
       "vertex": "ورٹیکس",
       "quadratic_formula": "کواڈریٹک فارمولا",
       "x_b_b_4ac_2a": "x = (-b ± σ (b2-4ac))/2a",
-      "here_x": "یہاں: x = ("
+      "here_x": "یہاں: x = (",
+      "discriminant": "امتیازی سلوک کرنے والا",
+      "two_real_roots": "دو حقیقی جڑیں",
+      "one_repeated_root": "ایک بار بار جڑ",
+      "no_real_roots": "کوئی حقیقی جڑیں نہیں ہیں",
+      "minimum_point": "کم از کم پوائنٹ",
+      "maximum_point": "زیادہ سے زیادہ پوائنٹ",
+      "roots": "جڑیں",
+      "factorable_with_integer_roots": "انٹیجر روٹس کے ساتھ فیکٹر ایبل",
+      "use_formula_or_graph": "فارمولا یا گراف استعمال کریں",
+      "a_coeff": "اے",
+      "b_coeff": "ب۔",
+      "c_coeff": "سی"
     },
     "ratiosproportions": {
       "ratios_proportions": "تناسب اور تناسب",
@@ -5741,7 +6075,10 @@
       "scale_to": "تک اسکیل کریں",
       "scale_factor": "پیمانے کا عنصر:",
       "correct": "ٹھیک ہے!",
-      "answer": "جواب:"
+      "answer": "جواب:",
+      "ratio_explorer": "تناسب ایکسپلورر",
+      "recipe_scaler": "ترکیب اسکیلر",
+      "challenge": "چیلنج"
     },
     "satactpractice": {
       "deep_concepts_practice": "گہرے تصورات کی مشق",
@@ -5802,7 +6139,29 @@
       "answer": "جواب:",
       "euler_s_formula": "اویلر کا فارمولا:",
       "v_e_f": "V − E + F =",
-      "always_2_for_simple_polyhedra": "(سادہ پولی ہیڈرا کے لیے ہمیشہ 2)"
+      "always_2_for_simple_polyhedra": "(سادہ پولی ہیڈرا کے لیے ہمیشہ 2)",
+      "triangle": "مثلث",
+      "square": "مربع",
+      "pentagon": "پینٹاگون",
+      "hexagon": "مسدس",
+      "octagon": "آکٹگن",
+      "circle": "دائرہ",
+      "tetrahedron": "ٹیٹراہیڈرون",
+      "cube": "کیوب",
+      "sphere": "دائرہ",
+      "cylinder": "سلنڈر",
+      "cone": "شنک",
+      "how_many_sides": "ایک {{نام}} کے کتنے رخ ہوتے ہیں؟",
+      "how_many_vertices": "ایک {{نام}} کے کتنے عمودی حصے ہوتے ہیں؟",
+      "what_is_this_shape": "اس شکل کو کیا کہا جاتا ہے؟",
+      "sides_faces": "اطراف/چہرے",
+      "faces": "چہرے",
+      "edges": "کناروں",
+      "sides": "اطراف",
+      "vertices_label": "ورٹیسز",
+      "interior_angle": "اندرونی زاویہ",
+      "key_formula": "کلیدی فارمولا",
+      "dimension": "طول و عرض"
     },
     "sportsstats": {
       "sports_statistics": "کھیلوں کے اعداد و شمار",
@@ -5820,7 +6179,21 @@
       "hits_at_bats": "= ہٹس ایٹ بیٹس۔",
       "total_points_games_played_clic": "= کل پوائنٹس کھیل کھیلے گئے۔ مختلف اعداد و شمار کے لحاظ سے کھلاڑیوں کی درجہ بندی کرنے کے لیے \"ترتیب دیں\" پر کلک کریں!",
       "correct": "ٹھیک ہے!",
-      "answer": "جواب:"
+      "answer": "جواب:",
+      "batting_avg": "اوسط",
+      "pts_game": "پی ٹی ایس/میچ",
+      "goals": "اہداف",
+      "chart_avg": "اوسط",
+      "chart_ppg": "پوائنٹس فی میچ",
+      "chart_goals": "اہداف",
+      "q_avg": "{{नेम}} کے {{ایٹ بیٹس}} میچوں میں {{ہٹس} پوائنٹس ہوتے ہیں۔ اوسط؟",
+      "q_ppg": "{{نام}} نے {{گیمز پلےڈ}} میچوں میں {{پوائنٹس} پوائنٹس حاصل کیے۔ پوائنٹس فی میچ؟",
+      "q_total": "{{نام}}: {{اہداف} اہداف، {{اسسٹ}} اسسٹ۔ کل شراکت؟",
+      "q_win": "ٹیم ریکارڈ: {{جیت}} جیت، {{ہار}} ہار۔ جیت کا فیصد؟",
+      "type_avg": "اوسط",
+      "type_ppg": "پوائنٹس/میچ",
+      "type_total": "کل",
+      "type_win": "جیت%"
     },
     "statisticslab": {
       "1": "1.",
@@ -5840,7 +6213,25 @@
       "random": "بے ترتیب",
       "clear": "صاف کریں",
       "bar_chart": "بار چارٹ",
-      "dot_plot": "ڈاٹ پلاٹ"
+      "dot_plot": "ڈاٹ پلاٹ",
+      "enter_a_number_0_100": "ایک نمبر درج کریں (0-100)",
+      "no_mode": "کوئی موڈ نہیں",
+      "mean_average": "مطلب (اوسط)",
+      "add_all_numbers": "تمام اعداد شامل کریں، گنتی سے تقسیم کریں",
+      "median_middle": "میڈین (درمیانی)",
+      "middle_value_when_sorted": "درمیانی قیمت جب ترتیب دی جائے",
+      "middle_number_when_data_is": "درمیانی نمبر جب ڈیٹا آرڈر کیا جاتا ہے",
+      "mode_most_common": "موڈ (سب سے زیادہ عام)",
+      "none": "کوئی نہیں",
+      "most_frequent_values": "سب سے زیادہ بار بار قیمت (ے)",
+      "number_that_appears_most": "وہ نمبر جو اکثر ظاہر ہوتا ہے",
+      "range_spread": "رینج (پھیلاؤ)",
+      "difference_between_highest": "سب سے زیادہ اور سب سے کم کے درمیان فرق",
+      "sum_total": "رقم (کل)",
+      "all_numbers_added_together": "تمام اعداد ایک ساتھ شامل کیے گئے",
+      "count": "شمار کریں",
+      "number_of_data_points": "ڈیٹا پوائنٹس کی تعداد",
+      "how_many_numbers_in_the": "سیٹ میں کتنے نمبر ہیں"
     },
     "systemsofequations": {
       "systems_of_equations": "مساوات کے نظام",
@@ -5853,7 +6244,10 @@
       "line_1": "لائن 1",
       "line_2": "لائن 2",
       "intersection": "انٹرسیکشن",
-      "no_unique_solution_lines_are_p": "کوئی منفرد حل نہیں-لکیریں متوازی ہوتی ہیں"
+      "no_unique_solution_lines_are_p": "کوئی منفرد حل نہیں-لکیریں متوازی ہوتی ہیں",
+      "a": "اے",
+      "b": "ب۔",
+      "c": "سی"
     },
     "timestabletrainer": {
       "1": "Â + 1!",
@@ -5883,7 +6277,9 @@
       "sin_90_cos": "sin (90°-θ) = cos (θ)",
       "cos_90_sin": "cos (90°-θ) = sin (θ)",
       "verify_sin": "تصدیق کریں: گناہ 2 (",
-      "special_angles_reference": "خصوصی زاویہ حوالہ"
+      "special_angles_reference": "خصوصی زاویہ حوالہ",
+      "almost_n_func_n_angle_n_equals_n": "تقریبا! {{چیلنج فنک}} ({{چیلنج اینگل}} °) = {{درست}}",
+      "e_g_1_2_or_sqrt3_2": "مثال کے طور پر 1/2 یا 3/2"
     },
     "vectorsarena": {
       "vectors_arena": "ویکٹرز ایرینا",
@@ -5899,7 +6295,10 @@
       "a_b": "اے۔ بی",
       "a": "|A |",
       "b": "|B |",
-      "angle_between": "درمیان کا زاویہ"
+      "angle_between": "درمیان کا زاویہ",
+      "a_label": "اے۔",
+      "b_label": "بی۔",
+      "a_b_label": "اے + بی"
     },
     "visualizer3d": {
       "r": "آر۔"
@@ -5916,7 +6315,14 @@
       "v": "وی =",
       "surface_area_formula": "سطح کے رقبے کا فارمولا",
       "sa": "SA =",
-      "volume_measures_how_much_space": "حجم اس بات کی پیمائش کرتا ہے کہ اندر کتنی جگہ ہے۔ سطح کا رقبہ کل بیرونی جلد کی پیمائش کرتا ہے۔"
+      "volume_measures_how_much_space": "حجم اس بات کی پیمائش کرتا ہے کہ اندر کتنی جگہ ہے۔ سطح کا رقبہ کل بیرونی جلد کی پیمائش کرتا ہے۔",
+      "cube": "کیوب",
+      "rectangular_prism": "آئتاکار پرزم",
+      "cylinder": "سلنڈر",
+      "cone": "شنک",
+      "sphere": "دائرہ",
+      "height_width": "اونچائی/چوڑائی",
+      "depth": "گہرائی"
     },
     "wordproblemstories": {
       "word_problem_stories": "لفظ کے مسائل کی کہانیاں",
@@ -5925,7 +6331,49 @@
       "solution": "حل",
       "skip": "سکپ کریں →",
       "great_reading_solving": "بہت اچھا پڑھنا اور حل کرنا!",
-      "re_read_the_story_carefully": "کہانی کو غور سے دوبارہ پڑھیں!"
+      "re_read_the_story_carefully": "کہانی کو غور سے دوبارہ پڑھیں!",
+      "name_rahul": "راہول",
+      "name_priya": "پریا",
+      "addition": "اضافہ",
+      "subtraction": "گھٹاؤ",
+      "multiplication": "ضرب",
+      "division": "ڈویژن",
+      "multi_step": "ملٹی مرحلہ",
+      "distance": "فاصلہ",
+      "perimeter": "دائرے",
+      "fractions": "فریکشنز",
+      "story_apples": "{{نام}} نے صبح کے وقت {{a}} سیب چن لیے۔ دوپہر کے وقت، اس نے مزید {{b}} چن لیے۔",
+      "story_cookies": "ایک بیکری نے {{a}} کوکیز بنائیں۔ انہوں نے دوپہر کے کھانے سے پہلے {{b}} کوکیز فروخت کیں۔",
+      "story_oranges": "ایک کسان کے پاس سنتری کے تھیلے ہوتے ہیں۔ ہر تھیلے میں سنتری ہوتی ہے۔",
+      "story_stickers": "{{کل}} اسٹیکرز کو {{بچوں}} بچوں میں یکساں طور پر تقسیم کیا جاتا ہے۔",
+      "story_notebooks": "{{नेम}} ہر نوٹ بک ₹ {{قیمت}} پر خریدتی ہے۔ وہ ایک ₹ {{پیڈ}} نوٹ کے ساتھ ادائیگی کرتی ہے۔",
+      "story_train": "ایک ٹرین {{رفتار}} کلومیٹر فی گھنٹہ کی رفتار سے {{وقت}} گھنٹوں تک سفر کرتی ہے۔",
+      "story_garden": "ایک آئتاکار باغ میٹر لمبا اور میٹر چوڑا ہوتا ہے۔",
+      "story_glasses": "ایک کلاس میں {{adjTotal}} طلباء ہوتے ہیں۔ ان میں سے 1/{{{fraction}} شیشے پہنتے ہیں۔",
+      "q_apples": "{{نام}} نے مجموعی طور پر کتنے سیب منتخب کیے؟",
+      "q_cookies": "کتنے کوکیز باقی ہیں؟",
+      "q_oranges": "مجموعی طور پر کتنے سنتری ہوتے ہیں؟",
+      "q_stickers": "ہر بچے کو کتنے اسٹیکرز ملتے ہیں؟",
+      "q_notebooks": "{{نام}} میں کتنی تبدیلی آتی ہے؟",
+      "q_train": "ٹرین کتنی دور سفر کرتی ہے؟",
+      "q_garden": "باغ کا دائرہ کیا ہے؟",
+      "q_glasses": "کتنے طلباء شیشہ پہنتے ہیں؟",
+      "hint_apples": "صبح اور دوپہر کی مقدار شامل کریں۔",
+      "hint_cookies": "فروخت شدہ کوکیز کو کل میں سے گھٹا دیں۔",
+      "hint_oranges": "تھیلوں کی تعداد کو سنتری سے ضرب دیں۔",
+      "hint_stickers": "کل اسٹیکرز کو بچوں کی تعداد سے تقسیم کریں۔",
+      "hint_notebooks": "پہلے کل لاگت تلاش کریں: {{qty}} × ₹ {{قیمت}}۔",
+      "hint_train": "فاصلہ = رفتار × وقت",
+      "hint_garden": "دائرے = 2 × (لمبائی + چوڑائی)",
+      "hint_glasses": "کل کو {{fraction}} سے تقسیم کریں۔",
+      "sol_apples": "{{a}} + {{b}} = {{ansuples",
+      "sol_cookies": "{{a}}-{{b}} = {{answere} کوکیز",
+      "sol_oranges": "{{بیگز} × {{فی}} = {{جواب} سنتری",
+      "sol_stickers": "ہر ایک کے لیے {{کل}} ± {{بچوں}} = {{{فی}} اسٹیکرز",
+      "sol_notebooks": "کل = {{qty}} × ₹ {{قیمت}} = ₹ {{کل}}۔ تبدیلی = ₹ {{ادا شدہ}}-₹ {{کل}} = ₹ {{جواب}",
+      "sol_train": "{{رفتار}} × {{وقت}} = {{جواب}} کلومیٹر",
+      "sol_garden": "2 × ({{l}} + {{w}}) = 2 × {{sum}} = {{answere} m",
+      "sol_glasses": "{{adjTotal}} ± {{fraction}} = {{adjAnswer}} طلبا"
     },
     "atomicstructure": {
       "build_an_atom": "بلڈ-این-ایٹم",
@@ -6374,6 +6822,364 @@
     },
     "worksheetgenerator": {
       "nbsp_nbsp": ":۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔"
+    },
+    "discovery": {
+      "subjects": {
+        "math": "ریاضی",
+        "biology": "حیاتیات",
+        "chemistry": "کیمسٹری",
+        "physics": "طبیعیات",
+        "earth-science": "ارضیاتی سائنس",
+        "language": "زبان",
+        "economics": "معاشیات"
+      }
+    },
+    "pipspeechbubble": {
+      "unmute_pip": "ان میوٹ پائپ",
+      "mute_pip": "چپ کو خاموش کریں",
+      "dismiss_pip": "پیپ کو مسترد کریں"
+    },
+    "interestlenses": {
+      "always_wondered": "وہ چیزیں جن کے بارے میں میں ہمیشہ حیران رہتا تھا",
+      "everyday_science": "روزمرہ کی زندگی کے پیچھے سائنس",
+      "my_children": "میرے بچے کیا سیکھ رہے ہیں",
+      "never_understood": "موضوعات جو مجھے کبھی نہیں ملے",
+      "visual_math": "ریاضی کو بصری بنایا گیا",
+      "history_of_ideas": "عظیم خیالات کی تاریخ"
+    },
+    "audiosettings": {
+      "audio_settings": "آڈیو ترتیبات",
+      "voice_not_available": "اس براؤزر میں آواز دستیاب نہیں ہے"
+    },
+    "learning": {
+      "s786_sound_settings": "صوتی ترتیبات",
+      "s787_voice_narration": "صوتی بیان",
+      "s788_read_stories_aloud": "کہانیاں بلند آواز سے پڑھیں",
+      "s789_sound_effects": "صوتی اثرات",
+      "s790_button_clicks_and_celebrations": "بٹن کلکس اور جشن",
+      "s791_volume": "حجم",
+      "s792_quiet": "خاموش۔",
+      "s793_loud": "بلند آواز میں۔",
+      "s794_every_concept_you_learn_is_a_superpower": "آپ جو بھی تصور سیکھتے ہیں وہ ایک سپر پاور ہے!",
+      "s795_pixel_says": "پکسل کہتا ہے:",
+      "s796_continue_learning": "سیکھنا جاری رکھیں",
+      "s873_this_certifies_that": "اس سے تصدیق ہوتی ہے کہ",
+      "s874_pledge_progress": "پیش رفت کا عہد",
+      "s875_remember": "یاد رکھیں:",
+      "s876_quiz_complete": "کوئز مکمل!",
+      "s877_test_your_knowledge": "اپنے علم کو آزمائیں!",
+      "s878_tip": "ٹپ:",
+      "s879_checklist_progress": "چیک لسٹ کی پیش رفت",
+      "s880_next_scenario": "اگلا منظر نامہ →",
+      "s881_quiz_complete": "کوئز مکمل!",
+      "s882_try_another_category": "ایک اور زمرہ آزمائیں",
+      "s883_original_image": "اصل تصویر",
+      "s884_pixel_view": "پکسل ویو",
+      "s885_fun_fact": "دلچسپ حقیقت:",
+      "s886_this_is_computer_vision": "یہ کمپیوٹر ویژن ہے!",
+      "s887_next": "اگلا۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔",
+      "s888_quiz_complete": "کوئز مکمل!",
+      "s889_test_your_knowledge": "اپنے علم کو آزمائیں!",
+      "s890_drag_words_to_create_your_own_word_map": "اپنا لفظ کا نقشہ بنانے کے لیے الفاظ کو گھسیٹیں!",
+      "s891_drag_words": "الفاظ کھینچیں",
+      "s892_see_how_words_cluster_by_meaning": "دیکھیں کہ الفاظ معنی کے لحاظ سے کیسے جمع ہوتے ہیں!",
+      "s893_click_on_any_word": "کسی بھی لفظ پر کلک کریں",
+      "s894_quiz_complete": "کوئز مکمل!",
+      "s895_test_your_knowledge": "اپنے علم کو آزمائیں!",
+      "s896_your_prompt": "آپ کا اشارہ:",
+      "s897_key_idea": "کلیدی خیال:",
+      "s898_diffusion_models": "پھیلاؤ ماڈل",
+      "s899_next": "اگلا۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔",
+      "s900_quiz_complete": "کوئز مکمل!",
+      "s901_see_how_llms_predict_the_next_word": "دیکھیں کہ ایل ایل ایم اگلے لفظ کی پیش گوئی کیسے کرتے ہیں!",
+      "s902_choose_a_starting_phrase": "ایک ابتدائی فقرہ منتخب کریں:",
+      "s903_click_words_to_add_them_here": "الفاظ کو یہاں شامل کرنے کے لیے کلک کریں...",
+      "s904_clear": "صاف کریں",
+      "s905_try_another": "ایک اور آزمائیں →",
+      "s906_next": "اگلا۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔",
+      "s907_quiz_complete": "کوئز مکمل!",
+      "s908_test_your_knowledge": "اپنے علم کو آزمائیں!",
+      "s909_drag_the_sliders_and_watch_how_the_netwo": "سلائیڈرز کو گھسیٹیں اور دیکھیں کہ نیٹ ورک کس طرح جواب دیتا ہے!",
+      "s910_watch_and_learn": "دیکھیں اور سیکھیں!",
+      "s911_next": "اگلا۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔",
+      "s912_quiz_complete": "کوئز مکمل!",
+      "s913_test_your_knowledge": "اپنے علم کو آزمائیں!",
+      "s914_build_your_own_prompt_by_clicking_blocks": "بلاکس پر کلک کرکے اپنا خود کا پرامپٹ بنائیں!",
+      "s915_about_what": "کس بارے میں؟",
+      "s916_for_who": "کس کے لیے؟",
+      "s917_what_style": "کون سا انداز؟",
+      "s918_your_prompt": "آپ کا اشارہ:",
+      "s919_prompt_quality": "فوری معیار",
+      "s920_try_it": "آزمائیں:",
+      "s921_vague_prompt": "مبہم پرامپٹ",
+      "s922_great_prompt": "زبردست اشارہ",
+      "s923_pro_tip": "پرو ٹپ:",
+      "s924_next": "اگلا۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔",
+      "s925_quiz_complete": "کوئز مکمل!",
+      "s926_test_your_knowledge": "اپنے علم کو آزمائیں!",
+      "s927_search_the_library_and_see_rag_in_action": "لائبریری کو تلاش کریں اور عمل میں آر اے جی دیکھیں!",
+      "s928_try_a_question": "ایک سوال آزمائیں:",
+      "s929_searching_library": "لائبریری تلاش کر رہے ہیں...",
+      "s930_watch_the_magic_happen": "جادو ہوتے ہوئے دیکھیں!",
+      "s931_question": "سوال:",
+      "s933_what_you_learned": "آپ نے کیا سیکھا:",
+      "s934_retrieve": "بازیافت کریں",
+      "s935_augment": "اضافہ",
+      "s936_generate": "پیدا کریں",
+      "s932_youve_seen_rag_in_action": "آپ نے آر اے جی کو ایکشن میں دیکھا ہے!",
+      "s937_quiz_complete": "کوئز مکمل!",
+      "s938_test_your_knowledge": "اپنے علم کو آزمائیں!",
+      "s940_score": "اسکور",
+      "s941_moves": "حرکتیں",
+      "s942_reset": "ری سیٹ کریں",
+      "s943_this_is_rl": "یہ آر ایل ہے!",
+      "s939_youre_the_reward_system_guide_the_robot_": "آپ انعام کا نظام ہیں! روبوٹ کو ستارے تک لے جائیں۔",
+      "s944_agent": "ایجنٹ۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔",
+      "s945_environment": "ماحول",
+      "s946_action": "ایکشن",
+      "s947_reward": "انعام",
+      "s948_state": "ریاست",
+      "s949_key_insight": "کلیدی بصیرت:",
+      "s950_next": "اگلا۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔",
+      "s951_quiz_complete": "کوئز مکمل!",
+      "s952_build_and_explore_attention_patterns": "توجہ کے نمونوں کو بنائیں اور دریافت کریں!",
+      "s953_choose_a_sentence": "ایک جملہ منتخب کریں:",
+      "s954_low_attention": "کم توجہ",
+      "s955_high_attention": "اعلی توجہ",
+      "s956_see_how_words_connect_to_each_other": "دیکھیں کہ الفاظ کس طرح ایک دوسرے سے جڑے ہوئے ہیں!",
+      "s957_hover_over_words": "الفاظ پر گھومتے رہیں",
+      "s958_quiz_complete": "کوئز مکمل!",
+      "s959_test_your_knowledge": "اپنے علم کو آزمائیں!",
+      "s801_match_games_shuffle_each_time_play_again": "میچ کے کھیل ہر بار بدلتے ہیں-نئے جوڑوں کے لیے دوبارہ کھیلیں!",
+      "s802_speed_round_has_streak_bonuses_keep_answ": "سپیڈ راؤنڈ میں اسٹریک بونس ہوتے ہیں-صحیح جواب دیتے رہیں!",
+      "s803_moves": "حرکتیں:",
+      "s804_matched": "مماثل:",
+      "s805_all_matched": "سب مماثل!",
+      "s806_speed_round": "تیز رفتار راؤنڈ!",
+      "s807_answer_true_or_false_as_fast_as_you_can": "جتنی جلدی ہو سکے صحیح یا غلط جواب دیں!",
+      "s808_game_over": "گیم ختم!",
+      "s809_generate_your_certificate": "اپنا سرٹیفکیٹ بنائیں!",
+      "s810_start_learning": "سیکھنا شروع کریں →",
+      "s811_close": "بند کریں",
+      "s812_this_certifies_that": "اس سے تصدیق ہوتی ہے کہ",
+      "s813_concepts": "تصورات",
+      "s814_xp_earned": "ایکس پی کمائی ہوئی",
+      "s815_badges": "بیج",
+      "s816_perfect_quizzes": "کامل کوئزز",
+      "s817_topics_mastered": "مہارت حاصل کرنے والے موضوعات:",
+      "s818_badges_earned": "کمائے گئے بیج:",
+      "s819_level": "سطح:",
+      "s820_completion": "تکمیل:",
+      "s821_date_issued": "تاریخ جاری کی گئی",
+      "s822_awesome": "شاندار!",
+      "s823_my_progress": "میری ترقی",
+      "s824_current_level": "موجودہ سطح",
+      "s825_learning_streak": "اسٹریک سیکھنا",
+      "s826_journey_progress": "سفر کی پیش رفت",
+      "s827_total_xp": "کل ایکس پی",
+      "s828_badges_earned": "بیج کمائے گئے",
+      "s829_concepts_completed": "تصورات مکمل ہوئے",
+      "s830_perfect_quizzes": "کامل کوئزز",
+      "s831_not_started": "شروع نہیں ہوا",
+      "s832_complete_concepts_to_earn_badges": "بیج حاصل کرنے کے لیے مکمل تصورات!",
+      "s833_start_a_streak": "ایک سلسلہ شروع کریں!",
+      "s834_weekly_challenges": "ہفتہ وار چیلنجز",
+      "s835_input": "ان پٹ",
+      "s836_hidden": "چھپا ہوا۔",
+      "s837_output": "آؤٹ پٹ",
+      "s838_learn": "سیکھیں۔",
+      "s839_reading_millions_of_books": "لاکھوں کتابیں پڑھیں!",
+      "s840_hello": "ہیلو۔",
+      "s841_i_love_to_eat": "مجھے کھانا پسند ہے...",
+      "s842_most_likely": "سب سے زیادہ امکان ہے!",
+      "s843_each_square_is_a_pixel": "ہر مربع ایک پکسل ہے!",
+      "s844_looking_at_all_clues_at_once": "ایک ہی وقت میں تمام اشارے دیکھ رہے ہیں!",
+      "s845_attention": "دھیان دیں!",
+      "s846_finding_the_right_book_for_you": "آپ کے لیے صحیح کتاب تلاش کریں!",
+      "s847_question": "سوال",
+      "s848_retrieve": "بازیافت کریں",
+      "s849_generate": "پیدا کریں",
+      "s850_similar_words_cluster_together": "اسی طرح کے الفاظ ایک ساتھ جمع ہوتے ہیں!",
+      "s851_responsibility": "ذمہ داری",
+      "s852_balance_power_with_responsibility": "طاقت اور ذمہ داری میں توازن رکھیں!",
+      "s853_keep_personal_info_private": "ذاتی معلومات کو نجی رکھیں!",
+      "s854_boring_answer": "تھکا دینے والا جواب...",
+      "s855_actions_rewards_learning": "اعمال → انعامات → سیکھنا!",
+      "s856_agent": "ایجنٹ۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔",
+      "s857_action": "ایکشن",
+      "s858_reward": "انعام",
+      "s859_state": "ریاست",
+      "s860_find_the_shortest_path": "مختصر ترین راستہ تلاش کریں!",
+      "s861_noise": "شور۔",
+      "s862_forming": "تشکیل دے رہا ہے",
+      "s863_image": "تصویر!",
+      "s864_noise_shapes_image": "شور → شکلیں → تصویر!",
+      "s865_diffusion_removes_noise_step_by_step": "پھیلاؤ شور کو قدم بہ قدم دور کرتا ہے",
+      "s798_your_level": "آپ کی سطح",
+      "s799_journey_progress": "سفر کی پیش رفت",
+      "s800_learning_streak": "اسٹریک سیکھنا",
+      "s866_pixel": "پکسل",
+      "s867_story_time": "کہانی کا وقت!",
+      "s868_remember": "یاد رکھیں:",
+      "s869_back": "پیچھے",
+      "s870_next": "اگلا۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔",
+      "s871_loading": "لوڈ ہو رہا ہے...",
+      "s872_skip_to_main_content": "مرکزی مواد پر جائیں",
+      "s513_play_now": "ابھی کھیلیں",
+      "s052_loading_game": "گیم لوڈ ہو رہا ہے...",
+      "s514_catch_powerups_for_special_abilities": "خصوصی صلاحیتوں کے لیے پاور اپس پکڑو!",
+      "s515_new_game": "نیا کھیل",
+      "s516_move_history": "تاریخ منتقل کریں",
+      "s517_no_moves_yet": "ابھی تک کوئی حرکت نہیں ہوئی",
+      "s518_new_game": "نیا کھیل",
+      "s519_tap_or_press_space_to_start": "شروع کرنے کے لیے ٹیپ کریں یا سپیس دبائیں!",
+      "s520_keep_going": "چلتے رہیں!",
+      "s521_new_game": "نیا کھیل",
+      "s522_new_word": "نیا لفظ",
+      "s523_shuffle_puzzle": "پزل کو شفل کریں",
+      "s524_new_game": "نیا کھیل",
+      "s525_new_game": "نیا کھیل",
+      "s526_rally_to_spawn_powerups": "طاقت پیدا کرنے کے لیے ریلی!",
+      "s527_recent_times": "حالیہ اوقات",
+      "s528_shuffle": "شفل کریں",
+      "s529_press_arrow_keys_or_tap_start": "تیر کی چابیاں دبائیں یا اسٹارٹ پر ٹیپ کریں!",
+      "s530_pause": "رک جائیں",
+      "s531_new_puzzle": "نیا پہیلی",
+      "s532_empty": "خالی",
+      "s533_new_round": "نیا راؤنڈ",
+      "s534_new_puzzle": "نیا پہیلی",
+      "s508_teaching_moment": "سبق دینے کا لمحہ",
+      "s509_story_quiz": "کہانی کا کوئز",
+      "s510_check_answer": "جواب چیک کریں",
+      "s511_previous": "پچھلا",
+      "s512_next": "اگلا",
+      "s053_heritageworld": "ورثے کی دنیا",
+      "s054_all_ages": "تمام عمروں کے",
+      "s055_back_to_collections": "مجموعوں پر واپس جائیں",
+      "s056_no_stories_found": "کوئی کہانیاں نہیں ملیں",
+      "s057_try_adjusting_your_filters_or_search_ter": "اپنے فلٹرز یا تلاش کی اصطلاحات کو ایڈجسٹ کرنے کی کوشش کریں"
+    },
+    "completioncelebration": {
+      "congratulations": "Â مبارک ہو! Â",
+      "back_adventures": "تمام مہم جوئی پر واپس جائیں",
+      "explore_adventures": "مزید مہم جوئی دریافت کریں",
+      "becoming_expert": "آپ اے آئی ماہر بن رہے ہیں!",
+      "pixel_proud": "آپ نے حیرت انگیز کام کیا! آج کچھ نیا سیکھنے پر مجھے آپ پر بہت فخر ہے۔ یاد رکھیں، ہر ماہر کبھی ابتدائی تھا!",
+      "fun_fact": "دلچسپ حقیقت: آپ نے ابھی کچھ ایسا سیکھا ہے جو بہت سے بالغ نہیں جانتے ہیں!"
+    },
+    "worlds_ai_components_CompletionCelebration": {
+      "you_ve_completed": "آپ نے پورا کیا ہے"
+    },
+    "worlds_ai_components_concepts_AIEthics_PlayPhase": {
+      "always_verify_ai_s_answers": "ہمیشہ اے آئی کے جوابات کی تصدیق کریں"
+    },
+    "worlds_ai_components_concepts_AISafety_LearnPhase": {
+      "it_s_fake": "یہ جعلی ہے!"
+    },
+    "worlds_ai_components_concepts_Transformers_ExplorePhase": {
+      "what_you_re_seeing": "آپ کیا دیکھ رہے ہیں:"
+    },
+    "gameshub": {
+      "mini_games": "منی گیمز",
+      "test_your_ai_knowledge": "اپنے اے آئی علم کو تفریحی طریقوں سے آزمائیں!",
+      "back": "واپس",
+      "tips": "تجاویز"
+    },
+    "worlds_ai_components_games_GamesHub": {
+      "scramble_gives_you_hints___use": "سکرینبل آپ کو اشارے دیتا ہے-اگر آپ پھنس گئے ہیں تو ان کا استعمال کریں!"
+    },
+    "worlds_ai_components_games_SpeedRound": {
+      "time_s_up": "وقت گزر چکا ہے!"
+    },
+    "landingpage": {
+      "ready_explore": "اے آئی کو دریافت کرنے کے لیے تیار ہیں؟",
+      "adventures_left": "مہم جوئی باقی ہے!",
+      "welcome_explorer": "خوش آمدید، ایکسپلورر!",
+      "welcome_back": "واپس خوش آمدید!",
+      "continue_adventure": "اپنی اے آئی سیکھنے کی مہم جوئی جاری رکھیں!",
+      "concepts": "تصورات",
+      "recent_badges": "حالیہ بیج",
+      "earned": "کمایا۔",
+      "your_journey": "آپ کا سیکھنے کا سفر",
+      "phase_story": "کہانی",
+      "desc_listen": "سنیں اور سیکھیں",
+      "phase_discover": "دریافت کریں",
+      "desc_see": "دیکھیں کہ یہ کیسے کام کرتا ہے",
+      "phase_explore": "دریافت کریں",
+      "desc_try": "خود آزمائیں",
+      "phase_play": "کھیلیں",
+      "desc_test": "اپنی صلاحیتوں کو آزمائیں",
+      "mini_games": "منی گیمز",
+      "mini_games_desc": "میچ، اسکرینبل اور اسپیڈ چیلنجز!",
+      "choose_adventure": "اپنی پہلی مہم جوئی کا انتخاب کریں!",
+      "continue_learning": "سیکھنا جاری رکھیں",
+      "pick_topic": "کوئی بھی موضوع منتخب کریں جو دلچسپ لگے!",
+      "adventures_waiting": "مہم جوئی آپ کا انتظار کر رہی ہے!",
+      "review": "جائزہ",
+      "start": "Â آغاز کریں",
+      "footer_message": "اپنا وقت نکالیں، مزے کریں، اور یاد رکھیں-سوالات پوچھنا ہم کیسے سیکھتے ہیں!",
+      "ai_master": "آپ اے آئی ماسٹر ہیں!",
+      "discover_ai": "اے آئی کی حیرت انگیز دنیا کو دریافت کرنے کے لیے تیار؟ آئیے مل کر سیکھیں!"
+    },
+    "worlds_ai_components_story_StoryPlayer": {
+      "let_s_learn_together": "آؤ مل کر سیکھیں",
+      "let_s_learn": "آئیے سیکھیں!"
+    },
+    "earlyhome": {
+      "adventure_map": "ایڈونچر کا نقشہ"
+    },
+    "earlyshell": {
+      "back_to_adventure": "ایڈونچر اکیڈمی پر واپس جائیں"
+    },
+    "breakout": {
+      "title": "بریک آؤٹ",
+      "wide": "Â وسیع",
+      "multi": "ملٹی",
+      "laser": "لیزر",
+      "slow": "دھیرے دھیرے",
+      "life": "Â زندگی",
+      "next_level": "Â اگلی سطح",
+      "restart": "دوبارہ شروع کریں",
+      "playing": "کھیلنا...",
+      "start": "Â آغاز کریں",
+      "controls": "منتقل کریں: ماؤس/ٹچ/| اسپیس/کلک کریں: شوٹ لیزر (جب فعال ہو)"
+    },
+    "pong": {
+      "title": "پونگ",
+      "controls_pvp": "P1: W/S۔ P2:",
+      "controls_ai": "منتقل کرنے کے لیے W/S استعمال کریں",
+      "rematch": "ریمیچ",
+      "playing": "کھیلنا",
+      "start": "Â آغاز کریں",
+      "footer_pvp": "کھلاڑی 1: ڈبلیو/ایس۔ کھلاڑی 2:",
+      "footer_ai": "ڈبلیو/ایس یا ٹچ کنٹرول استعمال کریں",
+      "rally": "پاور اپس کے لیے ریلی!"
+    },
+    "snake": {
+      "classic": "کلاسیکی",
+      "wrap": "لپیٹ لیں",
+      "obstacles": "رکاوٹیں",
+      "slow": "دھیرے دھیرے",
+      "normal": "نارمل",
+      "fast": "تیز",
+      "insane": "نی پاگل"
+    },
+    "tetris": {
+      "lines": "لائنیں:",
+      "lv": "ایل وی۔",
+      "game_over": "گیم ختم!",
+      "score_label": "اسکور:",
+      "paused": "رک گیا",
+      "hold": "ہولڈ (سی)",
+      "next": "اگلا"
+    },
+    "forcelab": {
+      "push_force": "پش فورس",
+      "box_mass": "باکس ماس"
+    },
+    "mathapp": {
+      "adventure_map_complete": "ایڈونچر کا نقشہ مکمل! + 5",
+      "experience_points_earned_acros": "تمام ماڈیولز میں حاصل کردہ پوائنٹس کا تجربہ کریں"
     }
   },
   "about": {
@@ -6502,7 +7308,24 @@
         "heading": "دادا جو رابطہ کرنا چاہتے ہیں",
         "body": "اپنے پوتے کی طرح ہی تصور سیکھنا۔ ایپ کے ذریعے انہیں ایک حوصلہ افزا پیغام بھیجنا۔ مشترکہ دریافت کے ذریعے ایک بندھن بنانا۔"
       }
-    }
+    },
+    "title": "جگیاسو",
+    "why_we_build_title": "ہم یہ کیوں بنا رہے ہیں",
+    "mission_title": "ہمارا مشن",
+    "who_it_is_for_title": "جگیاسو کس کے لیے ہے",
+    "values_title": "ہم کیا مانتے ہیں",
+    "differences_title": "ہم نے کیا بنایا-اور کیوں",
+    "built_for_india_title": "ہندوستان کے لیے بنایا گیا",
+    "sustainability_title": "ہم اسے برقرار رکھنے کا منصوبہ کیسے بناتے ہیں",
+    "support_title": "مشن میں شامل ہوں",
+    "contact_label": "ہم سے رابطہ کریں:",
+    "contact_email": "contact@jigyasu.app",
+    "contact_desc": "جب آپ ہمیں لکھیں گے تو ہم جاننا پسند کریں گے:",
+    "support_ways_title": "آپ ہماری مدد کرنے کے طریقے:",
+    "closing_tagline": "ونڈر انسٹال کریں۔",
+    "copyright_name": "جگیاسو",
+    "page_title": "جگیاسو کے بارے میں-انسٹال ونڈر",
+    "meta_description": "جگیاسو ایک مفت، بصری، کثیر لسانی سیکھنے کا پلیٹ فارم ہے جو ہر ہندوستانی بچے اور بالغ کے لیے بنایا گیا ہے۔"
   },
   "floating_buttons": {
     "analytics": "تجزیات",
@@ -6821,6 +7644,279 @@
       "date": "تاریخ",
       "score": "سکور",
       "generatedBy": "Whimsical Math Kingdom 🧙‍♂️ کے ذریعے تیار کردہ"
+    },
+    "breakout": {
+      "title": "بریک آؤٹ",
+      "wide": "Â وسیع",
+      "multi": "ملٹی",
+      "laser": "لیزر",
+      "slow": "دھیرے دھیرے",
+      "life": "Â زندگی",
+      "next_level": "Â اگلی سطح",
+      "restart": "دوبارہ شروع کریں",
+      "playing": "کھیلنا...",
+      "start": "Â آغاز کریں",
+      "controls": "منتقل کریں: ماؤس/ٹچ/| اسپیس/کلک کریں: شوٹ لیزر (جب فعال ہو)"
+    },
+    "pong": {
+      "title": "پونگ",
+      "controls_pvp": "P1: W/S۔ P2:",
+      "controls_ai": "منتقل کرنے کے لیے W/S استعمال کریں",
+      "powerup_speed": "رفتار میں اضافہ",
+      "powerup_big": "بڑا پیڈل",
+      "powerup_small": "مخالف کو سکڑ دیں",
+      "powerup_multi": "ملٹی بال",
+      "rematch": "ریمیچ",
+      "playing": "کھیلنا",
+      "start": "Â آغاز کریں",
+      "footer_pvp": "کھلاڑی 1: ڈبلیو/ایس۔ کھلاڑی 2:",
+      "footer_ai": "ڈبلیو/ایس یا ٹچ کنٹرول استعمال کریں",
+      "rally": "پاور اپس کے لیے ریلی!"
+    },
+    "gameshub": {
+      "mini_games": "منی گیمز",
+      "test_your_ai_knowledge": "اپنے اے آئی علم کو تفریحی طریقوں سے آزمائیں!",
+      "back": "واپس",
+      "match_the_pairs": "جوڑوں کا موازنہ کریں",
+      "match_description": "اے آئی اصطلاحات کو ان کی تعریفوں سے ملا دیں!",
+      "word_scramble": "لفظ جھگڑا",
+      "scramble_description": "اے آئی الفاظ کے الفاظ کو بے ترتیب کریں!",
+      "speed_round": "رفتار راؤنڈ",
+      "speed_description": "سچ ہو یا غلط-گھڑی کی دوڑ لگائیں!",
+      "easy": "آسان ہے۔",
+      "medium": "میڈیم",
+      "fast": "جلدی کرو!",
+      "time_2_3": "2-3 منٹ",
+      "time_3_5": "3-5 منٹ",
+      "time_60": "60 سیکنڈ",
+      "tips": "تجاویز"
+    },
+    "certificationbadge": {
+      "explorer": "ایکسپلورر",
+      "scientist": "سائنسدان",
+      "expert": "ماہر"
+    },
+    "snake": {
+      "classic": "کلاسیکی",
+      "wrap": "لپیٹ لیں",
+      "obstacles": "رکاوٹیں",
+      "slow": "دھیرے دھیرے",
+      "normal": "نارمل",
+      "fast": "تیز",
+      "insane": "نی پاگل",
+      "skin_green": "کلاسیکی سبز",
+      "skin_blue": "اوقیانوس بلیو",
+      "skin_rainbow": "اندردخش",
+      "skin_fire": "آگ۔"
+    },
+    "memorymatch": {
+      "theme_emoji": "Â ایموجی",
+      "theme_animals": "جانور",
+      "theme_food": "کھانا",
+      "theme_nature": "نیچر",
+      "diff_easy": "آسان ہے۔",
+      "diff_medium": "میڈیم",
+      "diff_hard": "سخت۔",
+      "classic": "کلاسیکی",
+      "timed": "وقتا فوقتا",
+      "zen": "زین",
+      "moves": "حرکتیں",
+      "you_won": "آپ جیت گئے!",
+      "score": "اسکور:",
+      "max_combo": "میکس کمبو:",
+      "times_up": "وقت ختم ہو چکا ہے!",
+      "found_pairs": "پایا گیا۔",
+      "pairs": "جوڑے"
+    },
+    "tetris": {
+      "lines": "لائنیں:",
+      "lv": "ایل وی۔",
+      "game_over": "گیم ختم!",
+      "score_label": "اسکور:",
+      "paused": "رک گیا",
+      "hold": "ہولڈ (سی)",
+      "next": "اگلا"
+    },
+    "header": {
+      "ai_explorers": "اے آئی ایکسپلورر"
+    },
+    "audiosettings": {
+      "audio_settings": "آڈیو ترتیبات",
+      "voice_not_available": "اس براؤزر میں آواز دستیاب نہیں ہے"
+    },
+    "mathapp": {
+      "adventure_map_complete": "ایڈونچر کا نقشہ مکمل! + 5",
+      "experience_points_earned_acros": "تمام ماڈیولز میں حاصل کردہ پوائنٹس کا تجربہ کریں"
+    },
+    "advancedhub": {
+      "algebra": "الجبرہ",
+      "geometry": "جیومیٹری",
+      "graphs": "گراف",
+      "trig": "ٹریگ",
+      "decimals": "اعشاریں",
+      "vectors": "ویکٹرز",
+      "matrices": "میٹرکس",
+      "logs": "لاگ ان",
+      "series": "سلسلہ وار",
+      "complex": "پیچیدہ",
+      "calculus": "حساب کتاب",
+      "statistics": "اعداد و شمار",
+      "probability": "امکان",
+      "money": "پیسہ",
+      "mental": "ذہنی",
+      "theory": "نظریہ",
+      "sat_act": "SAT/ACT",
+      "olympiad": "اولمپیاڈ",
+      "core_math": "بنیادی ریاضی",
+      "higher_math": "اعلی ریاضی",
+      "data_applied": "ڈیٹا اینڈ اپلائیڈ",
+      "test_prep": "ٹیسٹ کی تیاری"
+    },
+    "earlyshell": {
+      "back_to_adventure": "ایڈونچر اکیڈمی پر واپس جائیں"
+    },
+    "earlyhome": {
+      "adventure_map": "ایڈونچر کا نقشہ"
+    },
+    "explorershub": {
+      "place_value": "جگہ کی قیمت",
+      "clock": "گھڑی",
+      "measurement": "پیمائش",
+      "coins": "سکے",
+      "shapes": "شکلیں",
+      "word_problems": "الفاظ کے مسائل",
+      "ratios": "تناسب",
+      "integers": "انٹیگرز",
+      "graph_creator": "گراف تخلیق کار",
+      "exponents": "نمائش کنندگان",
+      "3d_volume": "3D حجم",
+      "quadratics": "کواڈریٹکس",
+      "systems": "نظام",
+      "coding": "کوڈنگ",
+      "math_art": "ریاضی کا فن",
+      "music": "موسیقی",
+      "chess": "شطرنج",
+      "logic": "منطق",
+      "sports": "کھیل",
+      "engineering": "انجینئرنگ",
+      "elementary": "ابتدائی",
+      "middle_school": "مڈل اسکول",
+      "high_school": "ہائی اسکول",
+      "applied": "اپلائیڈ"
+    },
+    "completioncelebration": {
+      "congratulations": "Â مبارک ہو! Â",
+      "becoming_expert": "آپ اے آئی ماہر بن رہے ہیں!",
+      "pixel_proud": "آپ نے حیرت انگیز کام کیا! آج کچھ نیا سیکھنے پر مجھے آپ پر بہت فخر ہے۔ یاد رکھیں، ہر ماہر کبھی ابتدائی تھا!",
+      "back_adventures": "تمام مہم جوئی پر واپس جائیں",
+      "explore_adventures": "مزید مہم جوئی دریافت کریں",
+      "fun_fact": "دلچسپ حقیقت: آپ نے ابھی کچھ ایسا سیکھا ہے جو بہت سے بالغ نہیں جانتے ہیں!"
+    },
+    "phaseindicator": {
+      "story": "کہانی",
+      "learn": "سیکھیں۔",
+      "explore": "دریافت کریں",
+      "play": "کھیلیں"
+    },
+    "landingpage": {
+      "ready_explore": "اے آئی کو دریافت کرنے کے لیے تیار ہیں؟",
+      "ai_master": "آپ اے آئی ماسٹر ہیں!",
+      "adventures_left": "مہم جوئی باقی ہے!",
+      "welcome_explorer": "خوش آمدید، ایکسپلورر!",
+      "welcome_back": "واپس خوش آمدید!",
+      "discover_ai": "اے آئی کی حیرت انگیز دنیا کو دریافت کرنے کے لیے تیار؟ آئیے مل کر سیکھیں!",
+      "continue_adventure": "اپنی اے آئی سیکھنے کی مہم جوئی جاری رکھیں!",
+      "concepts": "تصورات",
+      "recent_badges": "حالیہ بیج",
+      "earned": "کمایا۔",
+      "your_journey": "آپ کا سیکھنے کا سفر",
+      "phase_story": "کہانی",
+      "desc_listen": "سنیں اور سیکھیں",
+      "phase_discover": "دریافت کریں",
+      "desc_see": "دیکھیں کہ یہ کیسے کام کرتا ہے",
+      "phase_explore": "دریافت کریں",
+      "desc_try": "خود آزمائیں",
+      "phase_play": "کھیلیں",
+      "desc_test": "اپنی صلاحیتوں کو آزمائیں",
+      "mini_games": "منی گیمز",
+      "mini_games_desc": "میچ، اسکرینبل اور اسپیڈ چیلنجز!",
+      "choose_adventure": "اپنی پہلی مہم جوئی کا انتخاب کریں!",
+      "continue_learning": "سیکھنا جاری رکھیں",
+      "pick_topic": "کوئی بھی موضوع منتخب کریں جو دلچسپ لگے!",
+      "adventures_waiting": "مہم جوئی آپ کا انتظار کر رہی ہے!",
+      "review": "جائزہ",
+      "start": "Â آغاز کریں",
+      "expert_beginner": "\"ہر ماہر ایک بار ابتدائی تھا!\"",
+      "footer_message": "اپنا وقت نکالیں، مزے کریں، اور یاد رکھیں-سوالات پوچھنا ہم کیسے سیکھتے ہیں!"
     }
-  }
+  },
+  "loading": "لوڈ ہو رہا ہے...",
+  "opening_maker_space": "اوپننگ میکر اسپیس...",
+  "opening_learning_paths": "سیکھنے کے راستے کھولنا...",
+  "skip_to_main_content": "مرکزی مواد پر جائیں",
+  "contact": {
+    "page_title": "ہم سے رابطہ کریں-جگیاسو",
+    "meta_description": "جگیاسو ٹیم سے رابطہ کریں۔ ہم آپ سے سننا پسند کریں گے۔",
+    "title": "ہم سے رابطہ کریں",
+    "body": "آپ کے کوئی سوالات، رائے، یا جگیاسو کی حمایت کرنا چاہتے ہیں؟ براہ کرم ہمارا رابطہ فارم پر کریں اور ہم جلد از جلد آپ سے رابطہ کریں گے۔",
+    "form_url": "https://forms.zohopublic.in/arsjobs2019gm1/form/JigyasuFeedbackSupport/formperma/WLidd2lYcJF7F35E8PvPQVfaBL8OMgCC9yMcSokcQCc",
+    "open_form_aria": "نئے ٹیب میں رابطہ فارم کھولیں",
+    "open_form": "رابطہ فارم کھولیں",
+    "email_us": "ہمیں براہ راست ای میل کریں",
+    "heading": "ہم آپ سے سننا پسند کریں گے"
+  },
+  "error": {
+    "title": "اف! کچھ گڑبڑ ہوئی ہے۔",
+    "try_again": "دوبارہ کوشش کریں",
+    "go_home": "گھر چلے جائیں۔",
+    "technical_details": "تکنیکی تفصیلات (ڈویلپرز کے لیے)",
+    "subtitle": "فکر نہ کریں، آپ کی پیش رفت محفوظ ہے!",
+    "help_text": "آئیے دوبارہ کوشش کریں یا مزید تفریحی سرگرمیوں کو تلاش کرنے کے لیے واپس جائیں۔"
+  },
+  "heritage_world": "ورثے کی دنیا",
+  "heritage_world_desc": "ہندوستانی روایات کی حکمت، ہمت اور محبت کی کہانیاں-گیتا، رامائن، سنت اور اڈیشہ کی لوک داستانیں۔",
+  "go_to_heritage_world": "ہیریٹیج ورلڈ \\u2192 تلاش کریں",
+  "gita_stories": "گیتا کی کہانیاں",
+  "gita_stories_desc": "بھگود گیتا کی حکمت کی تعلیم دینے والی مثالی کہانیاں۔",
+  "ramayana_stories": "رامائن کی کہانیاں",
+  "ramayana_stories_desc": "بھگوان رام کے مہاکاوی سفر کے ذریعے اخلاقی اقدار۔",
+  "indian_saints": "ہندوستانی سنت",
+  "indian_saints_desc": "ہندوستان کے عظیم ترین سنتوں کی حکمت اور ہمت کی کہانیاں۔",
+  "ai_world": "اے آئی ایکسپلورر",
+  "ai_world_desc": "دریافت کریں کہ انٹرایکٹو کہانیوں، کھیلوں اور چیلنجوں کے ذریعے اے آئی کیسے کام کرتا ہے۔ نیورل نیٹ ورک، ایل ایل ایم، کمپیوٹر وژن، اور مزید کے بارے میں جانیں!",
+  "go_to_ai_world": "اے آئی ورلڈ \\u2192 کو دریافت کریں",
+  "neural_networks": "عصبی نیٹ ورک",
+  "neural_networks_desc": "اے آئی دماغ آپ کی طرح کیسے سیکھتے ہیں۔",
+  "llm_world": "زبان کے نمونے",
+  "llm_world_desc": "چیٹ جی پی ٹی اور دوست متن کو کیسے سمجھتے ہیں۔",
+  "ai_games": "اے آئی گیمز",
+  "ai_games_desc": "مماثل گیمز، ورڈ سکریمبلز، اور اسپیڈ راؤنڈز کھیلیں۔",
+  "game_hub": "گیم ہب",
+  "game_hub_desc": "20 + تفریحی اور دماغی تربیت کے کھیل! شطرنج، سانپ، ٹیٹرس، سوڈوکو، میموری میچ، اور بہت کچھ-بچوں اور خاندانوں کے لیے۔",
+  "go_to_game_hub": "کھیل کھیلیں \\u2192",
+  "strategy_games": "حکمت عملی",
+  "strategy_games_desc": "شطرنج، کنیکٹ فور، اور ٹک ٹیک ٹو۔",
+  "puzzle_games": "پہیلیاں",
+  "puzzle_games_desc": "سوڈوکو، 2048، جیگسا، میموری میچ۔",
+  "arcade_games": "آرکیڈ",
+  "arcade_games_desc": "سانپ، ٹیٹرس، پونگ، بریک آؤٹ، ڈینو رن۔",
+  "what_youll_read": "آپ کیا پڑھیں گے:",
+  "what_youll_learn": "آپ کیا سیکھیں گے:",
+  "what_youll_play": "آپ کیا کھیلیں گے:",
+  "privacy": {
+    "page_title": "پرائیویسی پالیسی-جگیاسو",
+    "meta_description": "جگیاسو پرائیویسی پالیسی۔ ہم آپ کی پرائیویسی کے تحفظ اور محفوظ تعلیمی ماحول کو یقینی بنانے کے لیے پرعزم ہیں۔"
+  },
+  "profile": {
+    "meta_description": "آپ کا جگیاسو سیکھنے کا خاکہ، پیش رفت، اور ترتیبات۔"
+  },
+  "terms": {
+    "page_title": "سروس کی شرائط-جگیاسو",
+    "meta_description": "جگیاسو سروس کی شرائط۔ براہ کرم ہمارے پلیٹ فارم کو استعمال کرنے سے پہلے ان شرائط کو غور سے پڑھیں۔"
+  },
+  "terms_general_contact": "عمومی پوچھ گچھ کے لیے: contact@jigyasu.app",
+  "app_name": "جگیاسو",
+  "app_version": "v1.0.0",
+  "xp_label": "ایکس پی",
+  "txt_Zerowasinv": "ایک عدد کے طور پر صفر کا تصور ہندوستان میں تیار کیا گیا تھا، جس میں برہم گپتا (628 عیسوی) نے صفر کے ساتھ ریاضی کے لیے پہلے رسمی اصول فراہم کیے تھے۔ اعشاریہ جگہ کی قیمت کا نظام، جس میں صفر شامل ہے، موثر حساب کو فعال کرتا ہے اور جدید ریاضی اور کمپیوٹنگ کا بنیادی ہے۔"
 }

@@ -1,10 +1,12 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 type EngMode = 'bridges' | 'projectile' | 'optimize';
 
 export default function EngineeringMath() {
+  const { t } = useTranslation();
   const [mode, setMode] = useState<EngMode>('bridges');
   return (
     <div className="w-full">
@@ -13,8 +15,8 @@ export default function EngineeringMath() {
         <p className="text-purple-300 text-lg"><Trans i18nKey="auto.engineeringmath.bridges_projectiles_and_optimi">Bridges, projectiles, and optimization — math in the real world!</Trans></p>
       </div>
       <div className="flex justify-center gap-2 mb-6">
-        {[{ id: 'bridges' as EngMode, e: '🌉', l: 'Bridges' }, { id: 'projectile' as EngMode, e: '🚀', l: 'Projectile' }, { id: 'optimize' as EngMode, e: '📦', l: 'Optimize' }].map(m => (
-          <button key={m.id} className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === m.id ? 'bg-orange-500/30 text-orange-300 border border-orange-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => setMode(m.id)}>{m.e} {m.l}</button>
+        {[{ id: 'bridges' as EngMode, e: '🌉', l: 'Bridges', k: 'auto.engineeringmath.bridges' }, { id: 'projectile' as EngMode, e: '🚀', l: 'Projectile', k: 'auto.engineeringmath.projectile' }, { id: 'optimize' as EngMode, e: '📦', l: 'Optimize', k: 'auto.engineeringmath.optimize' }].map(m => (
+          <button key={m.id} className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === m.id ? 'bg-orange-500/30 text-orange-300 border border-orange-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => setMode(m.id)}>{m.e} {t(m.k, m.l)}</button>
         ))}
       </div>
       <AnimatePresence mode="wait">
@@ -27,6 +29,7 @@ export default function EngineeringMath() {
 }
 
 function BridgeLoad() {
+  const { t } = useTranslation();
   const [span, setSpan] = useState(20);
   const [load, setLoad] = useState(500);
   const [beamHeight, setBeamHeight] = useState(2);
@@ -67,7 +70,7 @@ function BridgeLoad() {
         </div>
         <div className="bg-white/5 rounded-xl p-3 border border-white/10 text-sm text-gray-300">
           <p><Trans i18nKey="auto.engineeringmath.bending_moment_m_fl_4_for_cent">📝 Bending moment M = FL/4 for center-loaded simply-supported beam.</Trans></p>
-          <p>📝 {stress > 100000 ? '⚠️ High stress! Increase beam height or reduce load.' : '✅ Stress within safe range.'}</p>
+          <p>📝 {stress > 100000 ? t('auto.engineeringmath.high_stress', '⚠️ High stress! Increase beam height or reduce load.') : t('auto.engineeringmath.safe_range', '✅ Stress within safe range.')}</p>
         </div>
       </div>
     </div>

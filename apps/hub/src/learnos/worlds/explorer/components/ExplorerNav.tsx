@@ -1,6 +1,6 @@
 import type { InterestLens } from '../types/explorer.types';
 import { INTEREST_LENSES } from '../data/explorerContent';
-import { Trans } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 interface ExplorerNavProps {
   selectedLens: InterestLens | 'all';
@@ -8,6 +8,7 @@ interface ExplorerNavProps {
 }
 
 export function ExplorerNav({ selectedLens, onSelectLens }: ExplorerNavProps) {
+  const { t } = useTranslation();
 
   return (
     <div className="px-5 mb-4">
@@ -39,7 +40,7 @@ export function ExplorerNav({ selectedLens, onSelectLens }: ExplorerNavProps) {
             }`}
           >
             <span>{lens.emoji}</span>
-            <span className="hidden sm:inline">{lens.label}</span>
+            <span className="hidden sm:inline">{t(lens.labelKey, lens.label)}</span>
           </button>
         ))}
       </div>

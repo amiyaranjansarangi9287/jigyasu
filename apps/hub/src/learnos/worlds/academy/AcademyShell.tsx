@@ -37,8 +37,8 @@ export default function AcademyShell({ module, children }: Props) {
         <button onClick={() => navigate('/academy')} className="text-slate-500 hover:text-slate-300 text-sm transition-colors min-h-[44px]"><Trans i18nKey="auto.academyshell.academy">← Academy</Trans></button>
         <div className="flex items-center gap-2">
           <button onClick={() => setShowTutorial(true)} className="text-slate-600 hover:text-slate-400 text-sm font-bold min-h-[36px] px-2 transition-colors"><Trans i18nKey="auto.academyshell.help">💡 Help</Trans></button>
-          <button onClick={() => setShowBeauty(!showBeauty)} className="text-slate-600 hover:text-yellow-500 text-sm transition-colors" title={t('auto.attr.academyshell.the_beauty')}>✦</button>
-          <button onClick={() => setExamMode(!examMode)} className={`px-3 py-1.5 rounded-lg text-sm font-bold min-h-[36px] transition-all ${examMode ? 'bg-indigo-900/50 text-indigo-400 border border-indigo-700' : 'text-slate-600 hover:text-slate-400'}`}>{examMode ? '📝 Exam' : '🔬 Explore'}</button>
+          <button onClick={() => setShowBeauty(!showBeauty)} className="text-slate-600 hover:text-yellow-500 text-sm transition-colors" title={t('auto.academyshell.the_beauty', 'The beauty of mathematics')}>✦</button>
+          <button onClick={() => setExamMode(!examMode)} className={`px-3 py-1.5 rounded-lg text-sm font-bold min-h-[36px] transition-all ${examMode ? 'bg-indigo-900/50 text-indigo-400 border border-indigo-700' : 'text-slate-600 hover:text-slate-400'}`}>{examMode ? t('auto.academyshell.exam', '📝 Exam') : t('auto.academyshell.explore', '🔬 Explore')}</button>
         </div>
       </div>
 

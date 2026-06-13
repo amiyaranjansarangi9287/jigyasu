@@ -83,7 +83,7 @@ export default function WaterCycleJourney() {
                 const done = selectedAnswer !== null;
                 return (<button key={opt} onClick={() => handleAnswer(i)} className={`w-full py-3 px-4 rounded-xl text-left font-medium text-base min-h-[48px] transition-all ${!done ? 'bg-gray-50 border-2 border-gray-200' : i === stage.correct ? 'bg-green-100 border-2 border-green-400 text-green-700' : selectedAnswer === i ? 'bg-red-100 border-2 border-red-300 text-red-600' : 'bg-white border-2 border-gray-100 text-gray-500'}`}>{opt} {done && i === stage.correct && '✓'}</button>);
               })}</div>
-              {canAdvance && <motion.button initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }} onClick={handleNext} className="w-full py-4 bg-blue-600 text-white font-bold text-xl rounded-2xl mt-4 min-h-[56px]">{currentStage < WATER_STAGES.length - 1 ? 'Next Stage →' : '🎉 Complete the Cycle!'}</motion.button>}
+              {canAdvance && <motion.button initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }} onClick={handleNext} className="w-full py-4 bg-blue-600 text-white font-bold text-xl rounded-2xl mt-4 min-h-[56px]">{currentStage < WATER_STAGES.length - 1 ? t('auto.watercyclejourney.next_stage', 'Next Stage →') : t('auto.watercyclejourney.complete_cycle', '🎉 Complete the Cycle!')}</motion.button>}
             </motion.div>
           )}
           {cycleComplete && (

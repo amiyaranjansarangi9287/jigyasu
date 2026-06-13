@@ -8,8 +8,10 @@ import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 export default function DnaNatureAdult() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const lumo = useLumoPeer();
@@ -192,9 +194,10 @@ export default function DnaNatureAdult() {
                 <Trans i18nKey="auto.dnanatureadult.history_of_the_idea">History of the idea</Trans>
                                             </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                <Trans i18nKey="auto.dnanatureadult.watson_and_crick_discovered_th">Watson and Crick discovered the structure in 1953. Rosalind
-                                              Franklin's X-ray crystallography was essential — she received
-                                              almost no credit in her lifetime. The Human Genome Project
+                <Trans i18nKey="auto.dnanatureadult.watson_and_crick_discovered_th">Watson and Crick described the structure in 1953, building on Rosalind
+                                              Franklin's essential X-ray crystallography. Indian scientists like
+                                              Har Gobind Khorana (Nobel Prize 1968 for genetic code) and M.S. Swaminathan
+                                              (Green Revolution) advanced genetics. The Human Genome Project
                                               completed in 2003. CRISPR gene editing arrived in 2012.</Trans>
                                             </p>
             </div>

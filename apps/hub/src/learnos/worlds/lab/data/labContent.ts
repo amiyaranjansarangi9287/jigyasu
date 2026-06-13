@@ -28,7 +28,7 @@ export const LAB_MODULES: LabModuleMetadata[] = [
   { id: 'lever-explorer', emoji: '⚙️', title: 'Lever Explorer', subject: 'physics', color: '#78716C', bgColor: '#F5F5F4', path: 'lever-explorer', realWorldConnection: 'Scissors, seesaws, and wheelbarrows are all levers', toyboxProject: 'Catapult with Fulcrum Variables', difficulty: 'beginner', tags: ['levers', 'mechanical-advantage', 'balance'] },
   { id: 'statistics-playground', emoji: '📊', title: 'Statistics Playground', subject: 'math', color: '#EC4899', bgColor: '#FDF2F8', path: 'statistics-playground', realWorldConnection: 'Cricket analysts use this every match', difficulty: 'intermediate', tags: ['mean', 'median', 'data-analysis'] },
   { id: 'human-body', emoji: '🫀', title: 'Human Body Systems', subject: 'biology', color: '#EF4444', bgColor: '#FFF5F5', path: 'human-body', realWorldConnection: 'Doctors need to understand all of this', difficulty: 'intermediate', tags: ['organs', 'systems', 'health'] },
-  { id: 'panchabhutas', emoji: '🕉️', title: 'Panchabhutas', subject: 'chemistry', color: '#FF8C42', bgColor: '#FFF7ED', path: 'panchabhutas', realWorldConnection: 'Ancient Indian atomic theory predates modern chemistry by 2,400 years', difficulty: 'beginner', tags: ['elements', 'ancient-science', 'indian'] },
+  { id: 'panchabhutas', emoji: '🕉️', title: 'Panchabhutas', subject: 'chemistry', color: '#FF8C42', bgColor: '#FFF7ED', path: 'panchabhutas', realWorldConnection: 'Ancient Indian atomic theory offered early insights into the nature of matter', difficulty: 'beginner', tags: ['elements', 'ancient-science', 'indian'] },
   { id: 'states-of-matter', emoji: '🧊', title: 'States of Matter', subject: 'physics', color: '#3B82F6', bgColor: '#EFF6FF', path: 'states-of-matter', realWorldConnection: 'Everything around you exists in one of these three states', difficulty: 'beginner', tags: ['solid', 'liquid', 'gas', 'particles'] },
   { id: 'gravity', emoji: '🌌', title: 'Gravity & Spacetime', subject: 'physics', color: '#8B5CF6', bgColor: '#F5F3FF', path: 'gravity', realWorldConnection: 'This is why planets orbit and apples fall', difficulty: 'advanced', tags: ['gravity', 'spacetime', 'einstein', 'newton'] },
   { id: 'water-cycle', emoji: '🌧️', title: 'Water Cycle', subject: 'earth-science', color: '#0EA5E9', bgColor: '#F0F9FF', path: 'water-cycle', realWorldConnection: 'Indian monsoons are the largest water cycle event on Earth', difficulty: 'beginner', tags: ['evaporation', 'rain', 'clouds', 'monsoon'] },
@@ -79,7 +79,7 @@ export const FORCE_SCENARIOS: ForceScenario[] = [
 export const TIMELINE_EVENTS: TimelineEvent[] = [
   { id: 'zero-india', year: 628, title: 'Zero Invented', emoji: '0️⃣', subject: 'math', description: 'Brahmagupta in India defined zero as a number', isIndian: true },
   { id: 'aryabhata', year: 499, title: 'Aryabhata Calculates Pi', emoji: '🔢', subject: 'math', description: 'Indian mathematician Aryabhata approximated pi', isIndian: true },
-  { id: 'archimedes', year: -250, title: 'Archimedes Eureka!', emoji: '🛁', subject: 'physics', description: 'Archimedes discovered buoyancy in his bathtub' },
+  { id: 'archimedes', year: -250, title: 'Archimedes Principle', emoji: '🛁', subject: 'physics', description: 'Archimedes formulated the principle of buoyancy, relating displacement to floating bodies' },
   { id: 'gutenberg', year: 1440, title: 'Printing Press', emoji: '📰', subject: 'computer-science', description: 'Gutenberg invented the printing press, spreading knowledge' },
   { id: 'galileo', year: 1610, title: 'Galileo Sees Moons', emoji: '🔭', subject: 'earth-science', description: 'Galileo saw moons of Jupiter with his telescope' },
   { id: 'newton-apple', year: 1666, title: 'Newton and Gravity', emoji: '🍎', subject: 'physics', description: 'Newton described the laws of motion and gravity' },
@@ -99,6 +99,8 @@ export const SCALABLE_RECIPES: ScalableRecipe[] = [
 export const WEATHER_SCENARIOS: WeatherScenario[] = [
   { id: 'hot-dry', name: 'Hot and Dry', emoji: '☀️', readings: { temperature: 38, humidity: 20, pressure: 1013, windSpeed: 5, cloudCover: 5 }, correctPrediction: 'sunny', explanation: 'High temperature and low humidity means sun!' },
   { id: 'monsoon', name: 'Monsoon', emoji: '🌧️', readings: { temperature: 28, humidity: 90, pressure: 995, windSpeed: 30, cloudCover: 95 }, correctPrediction: 'rainy', explanation: 'Low pressure and high humidity brings rain.' },
+  { id: 'overcast', name: 'Overcast', emoji: '☁️', readings: { temperature: 22, humidity: 65, pressure: 1008, windSpeed: 12, cloudCover: 85 }, correctPrediction: 'cloudy', explanation: 'High cloud cover blocks the sun even without rain.' },
+  { id: 'thunderstorm', name: 'Thunderstorm', emoji: '⛈️', readings: { temperature: 24, humidity: 80, pressure: 988, windSpeed: 55, cloudCover: 75 }, correctPrediction: 'stormy', explanation: 'Very low pressure and strong winds signal a storm.' },
 ];
 
 // === CODE STORY ===
@@ -169,7 +171,7 @@ export const BODY_SYSTEMS: BodySystem[] = [
 export const CROSS_CONCEPT_BRIDGES: CrossConceptBridge[] = [
   { id: 'circuit-force', module1: 'circuit-builder', module2: 'force-lab', bridgeMessage: 'Voltage pushes electrons like force pushes a box — both are "push"!', emoji: '⚡🔀⚡' },
   { id: 'fraction-stats', module1: 'fraction-kitchen', module2: 'statistics-playground', bridgeMessage: 'Fractions and statistics both describe parts of a whole.', emoji: '🍳🔀📊' },
-  { id: 'eco-timeline', module1: 'ecosystem-sandbox', module2: 'timeline-explorer', bridgeMessage: 'Darwin discovered evolution by observing ecosystems over time.', emoji: '🌿🔀📅' },
+  { id: 'eco-timeline', module1: 'ecosystem-sandbox', module2: 'timeline-explorer', bridgeMessage: 'Darwin proposed natural selection by observing ecosystems over time.', emoji: '🌿🔀📅' },
   { id: 'buoy-fraction', module1: 'buoyancy-lab', module2: 'fraction-kitchen', bridgeMessage: 'Density is mass/volume — a fraction! Density < 1 floats.', emoji: '🚢🔀🍳' },
   { id: 'lever-mult', module1: 'lever-explorer', module2: 'multiplication-lab', bridgeMessage: 'Levers multiply force. Force × distance = multiplication making work easier!', emoji: '⚙️🔀✖️' },
   { id: 'weather-stats', module1: 'weather-station', module2: 'statistics-playground', bridgeMessage: 'Weather forecasting IS statistics — collecting data and finding patterns.', emoji: '🌤️🔀📊' },

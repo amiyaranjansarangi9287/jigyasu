@@ -28,8 +28,8 @@ const LANGUAGES = [
 ];
 
 export default function LanguagePicker() {
-  const { language, setLanguage } = useLearnerStore();
   const { t, i18n } = useTranslation();
+  const { language, setLanguage } = useLearnerStore();
 
 
   const handleSelect = (code: string) => {

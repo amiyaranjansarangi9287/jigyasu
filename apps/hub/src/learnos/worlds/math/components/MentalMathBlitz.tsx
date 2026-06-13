@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { sfx } from '../lib/soundEngine';
 import { useFormatNumber } from '../../../../hooks/useFormatNumber';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 type Category = 'bodmas' | 'squares' | 'percentages' | 'powers' | 'mixed';
 
@@ -87,6 +88,7 @@ function toSup(n: number): string {
 }
 
 export default function MentalMathBlitz() {
+  const { t } = useTranslation();
   const formatNumber = useFormatNumber();
   const [gameState, setGameState] = useState<'menu' | 'playing'>('menu');
   const [category, setCategory] = useState<Category>('mixed');
@@ -136,12 +138,12 @@ export default function MentalMathBlitz() {
     }
   };
 
-  const categories: { id: Category; emoji: string; label: string; desc: string }[] = [
-    { id: 'bodmas', emoji: '🔢', label: 'BODMAS', desc: 'Order of operations' },
-    { id: 'squares', emoji: '²', label: 'Squares & Roots', desc: 'n² and √n' },
-    { id: 'percentages', emoji: '%', label: 'Percentages', desc: '% calculations' },
-    { id: 'powers', emoji: '⚡', label: 'Powers', desc: 'Exponents' },
-    { id: 'mixed', emoji: '🎲', label: 'Mixed', desc: 'All topics!' },
+  const categories: { id: Category; emoji: string; label: string; labelKey: string; desc: string; descKey: string }[] = [
+    { id: 'bodmas', emoji: '🔢', label: 'BODMAS', labelKey: 'auto.mentalmathblitz.bodmas', desc: 'Order of operations', descKey: 'auto.mentalmathblitz.order_of_operations' },
+    { id: 'squares', emoji: '²', label: 'Squares & Roots', labelKey: 'auto.mentalmathblitz.squares_roots', desc: 'n² and √n', descKey: 'auto.mentalmathblitz.n2_and_sqrt_n' },
+    { id: 'percentages', emoji: '%', label: 'Percentages', labelKey: 'auto.mentalmathblitz.percentages', desc: '% calculations', descKey: 'auto.mentalmathblitz.pct_calculations' },
+    { id: 'powers', emoji: '⚡', label: 'Powers', labelKey: 'auto.mentalmathblitz.powers', desc: 'Exponents', descKey: 'auto.mentalmathblitz.exponents' },
+    { id: 'mixed', emoji: '🎲', label: 'Mixed', labelKey: 'auto.mentalmathblitz.mixed', desc: 'All topics!', descKey: 'auto.mentalmathblitz.all_topics' },
   ];
 
   const getCatEmoji = (c: Category) => categories.find(x => x.id === c)?.emoji || '🎲';
@@ -166,8 +168,8 @@ export default function MentalMathBlitz() {
                     onClick={() => setCategory(c.id)}
                   >
                     <span className="text-2xl">{c.emoji}</span>
-                    <p className="text-white font-bold text-sm mt-1">{c.label}</p>
-                    <p className="text-gray-500 text-sm">{c.desc}</p>
+                    <p className="text-white font-bold text-sm mt-1">{t(c.labelKey, c.label)}</p>
+                    <p className="text-gray-500 text-sm">{t(c.descKey, c.desc)}</p>
                   </motion.button>
                 ))}
               </div>
@@ -182,7 +184,7 @@ export default function MentalMathBlitz() {
                     whileTap={{ scale: 0.95 }}
                     onClick={() => setDifficulty(d)}
                   >
-                    {d === 1 ? '🌱 Normal' : d === 2 ? '⚔️ Hard' : '🔥 Extreme'}
+                    {d === 1 ? t('auto.mentalmathblitz.normal', '🌱 Normal') : d === 2 ? t('auto.mentalmathblitz.hard', '⚔️ Hard') : t('auto.mentalmathblitz.extreme', '🔥 Extreme')}
                   </motion.button>
                 ))}
               </div>
@@ -219,7 +221,7 @@ export default function MentalMathBlitz() {
               transition={{ type: 'spring' }}
             >
               <span className="text-sm bg-purple-500/30 text-purple-300 px-2 py-0.5 rounded-full">
-                {question.category.toUpperCase()} <Trans i18nKey="auto.mentalmathblitz.lv">· Lv</Trans>{formatNumber(question.difficulty)}
+                {t(`auto.mentalmathblitz.category_${question.category}`, question.category.toUpperCase())} <Trans i18nKey="auto.mentalmathblitz.lv">· Lv</Trans>{formatNumber(question.difficulty)}
               </span>
               <p className="text-3xl sm:text-4xl font-bold text-white mt-4 mb-6 font-mono">{question.display}</p>
 

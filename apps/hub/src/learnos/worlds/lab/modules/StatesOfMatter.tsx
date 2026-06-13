@@ -91,6 +91,10 @@ export default function StatesOfMatter() {
           </div>
         </div>
 
+        <p className="text-xs text-slate-400 text-center mt-2">
+          <Trans i18nKey="auto.statesofmatter.model_note">This is a simplified model — real substances melt and boil at different temperatures (water: 0°C and 100°C).</Trans>
+        </p>
+
         {/* Explanation */}
         <div className="mt-6 grid grid-cols-3 gap-4">
           <div className="bg-blue-50 rounded-2xl p-4 text-center">
@@ -117,9 +121,8 @@ export default function StatesOfMatter() {
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.statesofmatter.ancient_indian_connection">Ancient Indian Connection</Trans></h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                <Trans i18nKey="auto.statesofmatter.maharishi_kanad_600_bce_descri">Maharishi Kanad (~600 BCE) described these states as</Trans> <strong><Trans i18nKey="auto.statesofmatter.prithvi">Prithvi</Trans></strong> <Trans i18nKey="auto.statesofmatter.solid">(solid),</Trans>
-                                              <strong> <Trans i18nKey="auto.statesofmatter.jala">Jala</Trans></strong> <Trans i18nKey="auto.statesofmatter.liquid_and">(liquid), and</Trans> <strong><Trans i18nKey="auto.statesofmatter.v_yu">Vāyu</Trans></strong> <Trans i18nKey="auto.statesofmatter.gas_2_400_years_before_modern_">(gas) — 2,400 years before
-                                              modern science! The Panchabhutas framework maps perfectly to today's states of matter.</Trans>
+                <Trans i18nKey="auto.statesofmatter.maharishi_kanad_600_bce_descri">Ancient Indian philosophers described these states as</Trans> <strong><Trans i18nKey="auto.statesofmatter.prithvi">Prithvi</Trans></strong> <Trans i18nKey="auto.statesofmatter.solid">(solid),</Trans>
+                                              <strong> <Trans i18nKey="auto.statesofmatter.jala">Jala</Trans></strong> <Trans i18nKey="auto.statesofmatter.liquid_and">(liquid), and</Trans> <strong><Trans i18nKey="auto.statesofmatter.v_yu">Vāyu</Trans></strong> <Trans i18nKey="auto.statesofmatter.gas_2_400_years_before_modern_">(gas) — an early intuitive framework. The Panchabhutas describe observable states of matter, though they differ from modern scientific definitions in important ways.</Trans>
                                             </p>
             </div>
           </div>

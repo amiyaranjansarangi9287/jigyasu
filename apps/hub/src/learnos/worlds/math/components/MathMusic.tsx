@@ -1,6 +1,7 @@
 import { useState, useMemo, useCallback, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 const NOTES = [
   { name: 'C', freq: 261.63, color: '#ef4444' },
@@ -23,6 +24,7 @@ const INTERVALS = [
 ];
 
 export default function MathMusic() {
+  const { t } = useTranslation();
   const [mode, setMode] = useState<'piano' | 'waveform' | 'intervals'>('piano');
   const [freq, setFreq] = useState(440);
   const [waveType, setWaveType] = useState<OscillatorType>('sine');
@@ -68,7 +70,7 @@ export default function MathMusic() {
         <p className="text-purple-300 text-lg"><Trans i18nKey="auto.mathmusic.discover_the_mathematics_hidin">Discover the mathematics hiding inside every sound!</Trans></p>
       </div>
       <div className="flex justify-center gap-2 mb-6">
-        {[{ id: 'piano' as const, e: '🎹', l: 'Piano' }, { id: 'waveform' as const, e: '〰️', l: 'Waveforms' }, { id: 'intervals' as const, e: '🎼', l: 'Intervals' }].map(m => (
+        {[{ id: 'piano' as const, e: '🎹', l: t('auto.mathmusic.piano', 'Piano') }, { id: 'waveform' as const, e: '〰️', l: t('auto.mathmusic.waveforms', 'Waveforms') }, { id: 'intervals' as const, e: '🎼', l: t('auto.mathmusic.intervals', 'Intervals') }].map(m => (
           <button key={m.id} className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === m.id ? 'bg-purple-500/30 text-purple-300 border border-purple-400/50' : 'bg-white/5 text-gray-400'}`} onClick={() => setMode(m.id)}>{m.e} {m.l}</button>
         ))}
       </div>

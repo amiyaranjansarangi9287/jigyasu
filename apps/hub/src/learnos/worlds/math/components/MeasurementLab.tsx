@@ -1,36 +1,30 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 type Category = 'length' | 'weight' | 'volume';
 
-interface ConversionUnit { name: string; short: string; factor: number; emoji: string }
+interface ConversionUnit { name: string; nameKey?: string; short: string; factor: number; emoji: string }
 
 const units: Record<Category, ConversionUnit[]> = {
   length: [
-    { name: 'Millimeters', short: 'mm', factor: 1, emoji: '📍' },
-    { name: 'Centimeters', short: 'cm', factor: 10, emoji: '📏' },
-    { name: 'Meters', short: 'm', factor: 1000, emoji: '🏃' },
-    { name: 'Kilometers', short: 'km', factor: 1_000_000, emoji: '🚗' },
-    { name: 'Inches', short: 'in', factor: 25.4, emoji: '📐' },
-    { name: 'Feet', short: 'ft', factor: 304.8, emoji: '🦶' },
-    { name: 'Yards', short: 'yd', factor: 914.4, emoji: '🏈' },
-    { name: 'Miles', short: 'mi', factor: 1_609_344, emoji: '🛣️' },
+    { name: 'Millimeters', nameKey: 'auto.measurementlab.millimeters', short: 'mm', factor: 1, emoji: '📍' },
+    { name: 'Centimeters', nameKey: 'auto.measurementlab.centimeters', short: 'cm', factor: 10, emoji: '📏' },
+    { name: 'Meters', nameKey: 'auto.measurementlab.meters', short: 'm', factor: 1000, emoji: '🏃' },
+    { name: 'Kilometers', nameKey: 'auto.measurementlab.kilometers', short: 'km', factor: 1_000_000, emoji: '🚗' },
+    { name: 'Inches', nameKey: 'auto.measurementlab.inches', short: 'in', factor: 25.4, emoji: '📐' },
+    { name: 'Feet', nameKey: 'auto.measurementlab.feet', short: 'ft', factor: 304.8, emoji: '🦶' },
   ],
   weight: [
-    { name: 'Milligrams', short: 'mg', factor: 1, emoji: '🧂' },
-    { name: 'Grams', short: 'g', factor: 1000, emoji: '🍬' },
-    { name: 'Kilograms', short: 'kg', factor: 1_000_000, emoji: '🏋️' },
-    { name: 'Ounces', short: 'oz', factor: 28349.5, emoji: '📦' },
-    { name: 'Pounds', short: 'lb', factor: 453592, emoji: '🎳' },
+    { name: 'Milligrams', nameKey: 'auto.measurementlab.milligrams', short: 'mg', factor: 1, emoji: '🧂' },
+    { name: 'Grams', nameKey: 'auto.measurementlab.grams', short: 'g', factor: 1000, emoji: '🍬' },
+    { name: 'Kilograms', nameKey: 'auto.measurementlab.kilograms', short: 'kg', factor: 1_000_000, emoji: '🏋️' },
   ],
   volume: [
-    { name: 'Milliliters', short: 'mL', factor: 1, emoji: '💧' },
-    { name: 'Liters', short: 'L', factor: 1000, emoji: '🧴' },
-    { name: 'Cups', short: 'cup', factor: 236.588, emoji: '☕' },
-    { name: 'Pints', short: 'pt', factor: 473.176, emoji: '🍺' },
-    { name: 'Quarts', short: 'qt', factor: 946.353, emoji: '🥛' },
-    { name: 'Gallons', short: 'gal', factor: 3785.41, emoji: '🪣' },
+    { name: 'Milliliters', nameKey: 'auto.measurementlab.milliliters', short: 'mL', factor: 1, emoji: '💧' },
+    { name: 'Liters', nameKey: 'auto.measurementlab.liters', short: 'L', factor: 1000, emoji: '🧴' },
+    { name: 'Cups', nameKey: 'auto.measurementlab.cups', short: 'cup', factor: 250, emoji: '☕' },
   ],
 };
 
@@ -50,6 +44,7 @@ function makeChallenge(cat: Category) {
 }
 
 export default function MeasurementLab() {
+  const { t } = useTranslation();
   const [category, setCategory] = useState<Category>('length');
   const [inputVal, setInputVal] = useState(1);
   const [fromIdx, setFromIdx] = useState(2);
@@ -69,10 +64,10 @@ export default function MeasurementLab() {
     [inputVal, fromUnit, list],
   );
 
-  const cats: { id: Category; emoji: string; label: string }[] = [
-    { id: 'length', emoji: '📏', label: 'Length' },
-    { id: 'weight', emoji: '⚖️', label: 'Weight' },
-    { id: 'volume', emoji: '🧪', label: 'Volume' },
+  const cats: { id: Category; emoji: string; label: string; labelKey: string }[] = [
+    { id: 'length', emoji: '📏', label: 'Length', labelKey: 'auto.measurementlab.length' },
+    { id: 'weight', emoji: '⚖️', label: 'Weight', labelKey: 'auto.measurementlab.weight' },
+    { id: 'volume', emoji: '🧪', label: 'Volume', labelKey: 'auto.measurementlab.volume' },
   ];
 
   const answerChallenge = (opt: number) => {
@@ -97,7 +92,7 @@ export default function MeasurementLab() {
       <div className="flex justify-center gap-2 mb-4">
         {cats.map(c => (
           <button key={c.id} className={`px-4 py-2 rounded-xl font-bold text-sm ${category === c.id ? 'bg-blue-500/30 text-blue-300 border border-blue-400/50' : 'bg-white/5 text-gray-400'}`}
-            onClick={() => { setCategory(c.id); setFromIdx(Math.min(fromIdx, units[c.id].length - 1)); }}>{c.emoji} {c.label}</button>
+            onClick={() => { setCategory(c.id); setFromIdx(Math.min(fromIdx, units[c.id].length - 1)); }}>{c.emoji} {t(c.labelKey, c.label)}</button>
         ))}
       </div>
       <div className="flex justify-center gap-2 mb-6">
@@ -132,7 +127,7 @@ export default function MeasurementLab() {
                   className="w-24 bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white font-bold text-center focus:outline-none" />
                 <select value={fromIdx} onChange={e => setFromIdx(Number(e.target.value))}
                   className="flex-1 bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white">
-                  {list.map((u, i) => <option key={u.short} value={i}>{u.emoji} {u.name} ({u.short})</option>)}
+                  {list.map((u, i) => <option key={u.short} value={i}>{u.emoji} {t(u.nameKey || '', u.name)} ({u.short})</option>)}
                 </select>
               </div>
             </div>
@@ -146,7 +141,7 @@ export default function MeasurementLab() {
                   <motion.p key={u.result} className="text-xl font-bold text-white mt-1" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>
                     {u.result < 0.01 ? u.result.toExponential(2) : u.result.toLocaleString(undefined, { maximumFractionDigits: 4 })}
                   </motion.p>
-                  <p className="text-gray-400 text-sm">{u.name} ({u.short})</p>
+                  <p className="text-gray-400 text-sm">{t(u.nameKey || '', u.name)} ({u.short})</p>
                 </motion.div>
               ))}
             </div>

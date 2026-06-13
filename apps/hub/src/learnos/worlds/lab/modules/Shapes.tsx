@@ -58,7 +58,7 @@ export default function Shapes() {
             <span className="text-2xl">{t('lab.modules.Shapes.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-600 font-bold text-sm mb-1"><Trans i18nKey="auto.shapes.indian_geometry_heritage">Indian Geometry Heritage</Trans></h3>
-              <p className="text-gray-600 text-sm leading-relaxed"><Trans i18nKey="auto.shapes.the">The</Trans> <strong><Trans i18nKey="auto.shapes.sulba_sutras">Sulba Sutras</Trans></strong> <Trans i18nKey="auto.shapes.800_500_bce_contain_geometry_r">(800-500 BCE) contain geometry rules for building fire altars — including the Pythagorean theorem 1,000 years before Pythagoras! Baudhayana described constructing squares, circles, and triangles with precision.</Trans></p>
+              <p className="text-gray-600 text-sm leading-relaxed"><Trans i18nKey="auto.shapes.the">The</Trans> <strong><Trans i18nKey="auto.shapes.sulba_sutras">Sulba Sutras</Trans></strong> <Trans i18nKey="auto.shapes.800_500_bce_contain_geometry_r">(800-500 BCE) contain geometry rules for building fire altars, including the relationship between the sides of right triangles — an early form of what we now call the Pythagorean theorem. Similar knowledge existed across ancient cultures. Baudhayana described constructing squares, circles, and triangles with precision.</Trans></p>
             </div>
           </div>
         </div>

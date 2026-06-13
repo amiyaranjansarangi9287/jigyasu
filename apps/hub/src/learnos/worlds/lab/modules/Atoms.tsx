@@ -57,7 +57,7 @@ export default function Atoms() {
             <span className="text-2xl">{t('lab.modules.Atoms.spn_', '🕉️')}</span>
             <div>
               <h3 className="text-orange-400 font-bold text-sm mb-1"><Trans i18nKey="auto.atoms.vaisheshika_atomic_theory">Vaisheshika Atomic Theory</Trans></h3>
-              <p className="text-gray-300 text-sm leading-relaxed"><Trans i18nKey="auto.atoms.maharishi_kanad_600_bce_propos">Maharishi Kanad (~600 BCE) proposed</Trans> <strong><Trans i18nKey="auto.atoms.paramanu">Paramanu</Trans></strong> <Trans i18nKey="auto.atoms.indivisible_atoms_2_000_years_">— indivisible atoms — 2,000 years before Dalton! He said atoms combine to form molecules (Dyanuka), predating modern chemistry by millennia.</Trans></p>
+              <p className="text-gray-300 text-sm leading-relaxed"><Trans i18nKey="auto.atoms.maharishi_kanad_600_bce_propos">Maharishi Kanad (~600 BCE) proposed</Trans> <strong><Trans i18nKey="auto.atoms.paramanu">Paramanu</Trans></strong> <Trans i18nKey="auto.atoms.indivisible_atoms_2_000_years_">— indivisible atoms — an early philosophical idea about matter's composition. While Kanad's concept resembled atomism, it was distinct from John Dalton's experimental atomic theory (1803), which was based on quantitative chemical evidence.</Trans></p>
             </div>
           </div>
         </div>

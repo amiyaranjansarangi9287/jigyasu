@@ -3,6 +3,7 @@ import { Suspense, lazy } from 'react';
 import { LoadingScreen } from '@/shared/ui';
 import ExplorerHome from './ExplorerHome';
 import withWonderFirst from '../../core/modules/withWonderFirst';
+import { useTranslation } from 'react-i18next';
 
 // Lazy load all concepts and wrap in Wonder-First pedagogy
 const GravityOrbits = lazy(async () => { const m = await import('./concepts/GravityOrbits'); return { default: withWonderFirst(m.default, 'explorer', 'gravity-orbits') }; });
@@ -22,6 +23,7 @@ const DnaNatureAdult = lazy(async () => { const m = await import('./concepts/Dna
 const ClimateAdult = lazy(async () => { const m = await import('./concepts/ClimateAdult'); return { default: withWonderFirst(m.default, 'explorer', 'climate') }; });
 
 export default function ExplorerWorld() {
+  const { t } = useTranslation();
   return (
     <Suspense fallback={<LoadingScreen />}>
       <Routes>

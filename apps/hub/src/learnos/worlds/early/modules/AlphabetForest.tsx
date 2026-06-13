@@ -55,7 +55,7 @@ export default function AlphabetForest() {
             <div className="flex items-center gap-3">
               <span className="text-3xl">{t('early.modules.AlphabetForest.spn_', '🐤')}</span>
               <p className="text-lg font-bold text-gray-700">
-                {selectedIdx !== null ? `Find: ${ALPHABET_CONTENT[selectedIdx].items[targetItemIdx].word}!` : 'Tap a letter to explore!'}
+                {selectedIdx !== null ? `${t('auto.alphabetforest.find', 'Find:')} ${ALPHABET_CONTENT[selectedIdx].items[targetItemIdx].word}!` : t('auto.alphabetforest.tap_letter', 'Tap a letter to explore!')}
               </p>
             </div>
           </div>

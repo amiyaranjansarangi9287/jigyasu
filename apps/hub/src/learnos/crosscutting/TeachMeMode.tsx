@@ -160,7 +160,7 @@ export default function TeachMeMode() {
                 ref={textareaRef}
                 value={explanation}
                 onChange={(e) => setExplanation(e.target.value)}
-                placeholder={t('auto.attr.teachmemode.write_your_explanation_here')}
+                placeholder={t('auto.teachmemode.write_your_explanation_here', 'Write your explanation here...')}
                 className="w-full p-4 bg-white rounded-2xl border-2 border-gray-200
                            focus:border-emerald-400 focus:outline-none min-h-[120px]
                            text-gray-800 resize-none mb-4"

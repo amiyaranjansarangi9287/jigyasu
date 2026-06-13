@@ -25,7 +25,7 @@ const HABITATS: Record<Habitat, {
     animals: [{ emoji: '🦎', name: 'Lizard', funFact: 'Lizards warm up in the sun!' }, { emoji: '🐪', name: 'Camel', funFact: 'Camels store fat in their humps!' }, { emoji: '🦂', name: 'Scorpion', funFact: 'Scorpions glow under UV light!' }, { emoji: '🦅', name: 'Eagle', funFact: 'Eagles see 4x better than humans!' }],
     pipIntro: "The desert! Animals found clever ways to live here!", question: "What do camels store in their humps?", options: ['Fat for energy', 'Water', 'Food', 'Sand'], correct: 0 },
   arctic: { name: 'Arctic', emoji: '❄️', color: '#7DD3FC', description: 'Icy cold world at the top of Earth!',
-    animals: [{ emoji: '🐧', name: 'Penguin', funFact: 'Penguins huddle for warmth!' }, { emoji: '🐻‍❄️', name: 'Polar Bear', funFact: 'Polar bears have black skin!' }, { emoji: '🦭', name: 'Seal', funFact: 'Seals hold breath 90 minutes!' }, { emoji: '🐳', name: 'Whale', funFact: 'Blue whales are the largest animals ever!' }],
+    animals: [{ emoji: '🐧', name: 'Penguin', funFact: 'Penguins huddle for warmth!' }, { emoji: '🐻‍❄️', name: 'Polar Bear', funFact: 'Polar bears have black skin!' }, { emoji: '🦭', name: 'Seal', funFact: 'Some seals can hold their breath for over an hour!' }, { emoji: '🐳', name: 'Whale', funFact: 'Blue whales are the largest animals ever!' }],
     pipIntro: "Brrr! The Arctic! These animals love the cold!", question: "What colour is a polar bear's skin?", options: ['Black', 'White', 'Pink', 'Yellow'], correct: 0 },
 };
 
@@ -64,7 +64,7 @@ export default function HabitatHeroes() {
     <EarlyShell module="habitat-heroes">
       <div className="min-h-screen bg-gradient-to-b from-teal-50 to-green-50 flex flex-col">
         <div className="px-5 pt-6 pb-3">
-          <div className="flex items-center gap-2 mb-3"><span className="text-3xl">{t('early.modules.HabitatHeroes.spn_', '🐤')}</span><p className="text-base font-bold text-gray-700">{habitat ? `Exploring the ${habitat.name}!` : 'Choose a habitat!'}</p></div>
+          <div className="flex items-center gap-2 mb-3"><span className="text-3xl">{t('early.modules.HabitatHeroes.spn_', '🐤')}</span><p className="text-base font-bold text-gray-700">{habitat ? `${t('auto.habitatheroes.exploring', 'Exploring the')} ${habitat.name}!` : t('auto.habitatheroes.choose_habitat', 'Choose a habitat!')}</p></div>
           <div className="grid grid-cols-2 gap-3">
             {(Object.keys(HABITATS) as Habitat[]).map(h => {
               const info = HABITATS[h];

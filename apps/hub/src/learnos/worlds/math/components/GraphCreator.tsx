@@ -99,7 +99,6 @@ export default function GraphCreator() {
               <line x1="40" y1={svgH - 30} x2={svgW} y2={svgH - 30} stroke="rgba(255,255,255,0.2)" />
               <line x1="40" y1="10" x2="40" y2={svgH - 30} stroke="rgba(255,255,255,0.2)" />
               {data.map((d, i) => {
-                  const { t } = useTranslation();
                 const barW = Math.max(10, (svgW - 60) / data.length - 8);
                 const barH = (d.value / maxVal) * (svgH - 50);
                 const x = 50 + i * ((svgW - 60) / data.length);
@@ -130,7 +129,6 @@ export default function GraphCreator() {
                 />
               )}
               {data.map((d, i) => {
-                  const { t } = useTranslation();
                 const x = 50 + i * ((svgW - 70) / Math.max(data.length - 1, 1));
                 const y = svgH - 30 - (d.value / maxVal) * (svgH - 50);
                 return (
@@ -187,9 +185,9 @@ export default function GraphCreator() {
               ))}
             </div>
             <div className="flex gap-2 mt-3">
-              <input value={newLabel} onChange={e => setNewLabel(e.target.value)} placeholder={t('auto.attr.graphcreator.label')}
+              <input value={newLabel} onChange={e => setNewLabel(e.target.value)} placeholder={t('auto.graphcreator.label', 'Label')}
                 className="flex-1 bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white text-sm" />
-              <input value={newValue} onChange={e => setNewValue(e.target.value)} placeholder={t('auto.attr.graphcreator.value')} type="number"
+              <input value={newValue} onChange={e => setNewValue(e.target.value)} placeholder={t('auto.graphcreator.value', 'Value')} type="number"
                 className="w-20 bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white text-sm text-center"
                 onKeyDown={e => e.key === 'Enter' && addPoint()} />
               <button className="px-4 py-2 rounded-lg bg-purple-600 text-white font-bold text-sm" onClick={addPoint}>+</button>

@@ -270,7 +270,7 @@ export default function TimeCapsule() {
                       setPrivacyWarning('');
                     }
                   }}
-                  placeholder={t('auto.attr.timecapsule.what_do_you_know_about_this_co')}
+                  placeholder={t('auto.timecapsule.what_do_you_know_about_this_co', 'What do you know about this concept?')}
                   maxLength={280}
                   aria-describedby={`capsule-message-hint${privacyWarning ? ' capsule-message-warning' : ''}`}
                   className="w-full p-4 bg-gray-50 rounded-xl border border-gray-200

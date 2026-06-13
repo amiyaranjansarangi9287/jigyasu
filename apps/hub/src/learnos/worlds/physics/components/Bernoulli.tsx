@@ -2,8 +2,10 @@
 import { useRef, useEffect, useState, useCallback } from 'react';
 import ModuleWrapper from './ModuleWrapper';
 import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
+import { useTranslation } from 'react-i18next';
 
 export default function Bernoulli() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animRef = useRef<number>(0);
   const [progress, setProgress] = useState<UserProgress>(loadProgress);
@@ -134,7 +136,7 @@ export default function Bernoulli() {
             <button onClick={handleComplete} className="w-full py-2 rounded-lg bg-cyan-600/20 border border-cyan-500/30 text-cyan-400 font-bold text-sm hover:bg-cyan-600/30">✓ Mark Complete (+25 XP)</button>
             <div className="text-sm text-gray-500 space-y-1">
               <p>💡 Narrower = faster = lower pressure</p>
-              <p>🔥 This is how airplane wings work!</p>
+              <p>🔥 Bernoulli's principle is one factor in wing lift, but angle of attack and Newton's 3rd Law (deflecting air downward) are equally important!</p>
             </div>
           </div>
         </div>

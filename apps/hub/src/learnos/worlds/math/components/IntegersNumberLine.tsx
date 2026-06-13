@@ -1,6 +1,7 @@
 import { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 function makeChallenge() {
   const ops = ['+', '-', '×'] as const;
@@ -17,6 +18,7 @@ function makeChallenge() {
 }
 
 export default function IntegersNumberLine() {
+  const { t } = useTranslation();
   const [mode, setMode] = useState<'explore' | 'challenge'>('explore');
   const [value, setValue] = useState(0);
   const [rangeStart, setRangeStart] = useState(-10);
@@ -114,7 +116,7 @@ export default function IntegersNumberLine() {
                 <input type="range" min={rangeStart} max={rangeEnd} value={value} onChange={e => setValue(Number(e.target.value))} className="w-64 accent-yellow-500" />
               </div>
               <p className="text-center text-gray-400 text-sm mt-1">
-                {value < 0 ? '🔴 Negative' : value === 0 ? '🟣 Zero' : '🟢 Positive'} <Trans i18nKey="auto.integersnumberline.integer">integer:</Trans> <span className="text-white font-bold">{value}</span> <Trans i18nKey="auto.integersnumberline.absolute_value">— Absolute value |</Trans>{value}| = {Math.abs(value)}
+                {value < 0 ? `🔴 ${t('auto.integersnumberline.negative', 'Negative')}` : value === 0 ? `🟣 ${t('auto.integersnumberline.zero', 'Zero')}` : `🟢 ${t('auto.integersnumberline.positive', 'Positive')}`} <Trans i18nKey="auto.integersnumberline.integer">integer:</Trans> <span className="text-white font-bold">{value}</span> <Trans i18nKey="auto.integersnumberline.absolute_value">— Absolute value |</Trans>{value}| = {Math.abs(value)}
               </p>
             </div>
 

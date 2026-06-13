@@ -9,6 +9,7 @@ import { ParentCorner } from '@/shared/layout/ParentCorner';
 import { ROUTES } from '@/constants/routes';
 import { useTinySession } from './hooks/useTinySession';
 import type { TinyModule } from './types/tiny.types';
+import { useTranslation } from 'react-i18next';
 
 interface TinyShellProps {
   module: TinyModule;
@@ -24,6 +25,7 @@ interface BreakStar {
 }
 
 function createBreakStars(): BreakStar[] {
+  const { t } = useTranslation();
   return Array.from({ length: 20 }, (_, i) => ({
     left: `${(i * 37) % 100}%`,
     top: `${8 + ((i * 23) % 52)}%`,

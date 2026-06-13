@@ -7,6 +7,7 @@ import { useLumoPeer } from './hooks/useLumoPeer';
 import type { ExplorerConcept } from './types/explorer.types';
 import { EXPLORER_CONCEPTS } from './data/explorerContent';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 interface ExplorerShellProps {
   concept: ExplorerConcept;
@@ -14,6 +15,7 @@ interface ExplorerShellProps {
 }
 
 export default function ExplorerShell({ concept, children }: ExplorerShellProps) {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const { trackConceptOpen } = useExplorerSession();
   const lumo = useLumoPeer();

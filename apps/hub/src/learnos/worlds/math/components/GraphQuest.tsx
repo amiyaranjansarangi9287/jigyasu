@@ -1,8 +1,10 @@
 import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 export default function GraphQuest() {
+  const { t } = useTranslation();
   const [slope, setSlope] = useState(1);
   const [intercept, setIntercept] = useState(0);
   const [showTable, setShowTable] = useState(true);
@@ -170,7 +172,7 @@ export default function GraphQuest() {
                   <span className="text-white font-bold w-10 text-right">{intercept}</span>
                 </div>
                 <div className="bg-white/5 rounded-lg p-3 text-sm space-y-1">
-                  <p className="text-gray-400">📊 <strong className="text-white"><Trans i18nKey="auto.graphquest.slope">Slope =</Trans> {slope}</strong> → {slope > 0 ? 'line goes ↗ uphill' : slope < 0 ? 'line goes ↘ downhill' : 'horizontal line ↔'}</p>
+                  <p className="text-gray-400">📊 <strong className="text-white"><Trans i18nKey="auto.graphquest.slope">Slope =</Trans> {slope}</strong> → {slope > 0 ? t('auto.graphquest.line_goes_uphill', 'line goes ↗ uphill') : slope < 0 ? t('auto.graphquest.line_goes_downhill', 'line goes ↘ downhill') : t('auto.graphquest.horizontal_line', 'horizontal line ↔')}</p>
                   <p className="text-gray-400">📍 <strong className="text-white"><Trans i18nKey="auto.graphquest.y_intercept">Y-intercept =</Trans> {intercept}</strong> <Trans i18nKey="auto.graphquest.crosses_y_axis_at_0">→ crosses y-axis at (0,</Trans> {intercept})</p>
                   {slope !== 0 && <p className="text-gray-400">📍 <strong className="text-white"><Trans i18nKey="auto.graphquest.x_intercept">X-intercept =</Trans> {(-intercept / slope).toFixed(1)}</strong> <Trans i18nKey="auto.graphquest.crosses_x_axis_at">→ crosses x-axis at (</Trans>{(-intercept / slope).toFixed(1)}<Trans i18nKey="auto.graphquest.0">, 0)</Trans></p>}
                 </div>
@@ -188,9 +190,9 @@ export default function GraphQuest() {
                   <span className="text-white font-bold w-10 text-right">{quadC}</span>
                 </div>
                 <div className="bg-white/5 rounded-lg p-3 text-sm space-y-1">
-                  <p className="text-gray-400">📊 <strong className="text-white"><Trans i18nKey="auto.graphquest.a">a =</Trans> {quadA}</strong> → {quadA > 0 ? 'parabola opens ∪ upward' : quadA < 0 ? 'parabola opens ∩ downward' : 'flat line'}</p>
+                  <p className="text-gray-400">📊 <strong className="text-white"><Trans i18nKey="auto.graphquest.a">a =</Trans> {quadA}</strong> → {quadA > 0 ? t('auto.graphquest.parabola_opens_upward', 'parabola opens ∪ upward') : quadA < 0 ? t('auto.graphquest.parabola_opens_downward', 'parabola opens ∩ downward') : t('auto.graphquest.flat_line', 'flat line')}</p>
                   <p className="text-gray-400">📍 <strong className="text-white"><Trans i18nKey="auto.graphquest.vertex_at_0">Vertex at (0,</Trans> {quadC})</strong></p>
-                  <p className="text-gray-400">📏 <strong className="text-white"><Trans i18nKey="auto.graphquest.a">|a| =</Trans> {Math.abs(quadA)}</strong> → {Math.abs(quadA) > 1 ? 'narrow (steep)' : Math.abs(quadA) < 1 ? 'wide (flat)' : 'standard width'}</p>
+                  <p className="text-gray-400">📏 <strong className="text-white"><Trans i18nKey="auto.graphquest.a">|a| =</Trans> {Math.abs(quadA)}</strong> → {Math.abs(quadA) > 1 ? t('auto.graphquest.narrow_steep', 'narrow (steep)') : Math.abs(quadA) < 1 ? t('auto.graphquest.wide_flat', 'wide (flat)') : t('auto.graphquest.standard_width', 'standard width')}</p>
                 </div>
               </>
             )}

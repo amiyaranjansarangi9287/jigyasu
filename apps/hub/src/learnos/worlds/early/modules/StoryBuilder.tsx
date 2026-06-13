@@ -37,13 +37,13 @@ export default function StoryBuilder() {
     ? [selectedChar.name, 'Dragon', 'Robot', 'Princess'].sort(() => Math.random() - 0.5)
     : [];
 
-  const handleCharSelect = (c: typeof STORY_CHARACTERS[0]) => { setSelectedChar(c); pip.sayCustom(`Ooh! ${c.name}! Great choice!`, 'excited'); setTimeout(() => setStep('place'), 800); };
-  const handlePlaceSelect = (p: typeof STORY_PLACES[0]) => { setSelectedPlace(p); pip.sayCustom(`The ${p.name}! How exciting!`, 'excited'); setTimeout(() => setStep('problem'), 800); };
-  const handleProblemSelect = (p: typeof STORY_PROBLEMS[0]) => { setSelectedProblem(p); pip.sayCustom("Ready? Let's read our story!", 'celebrating'); setTimeout(() => setStep('story'), 800); };
+  const handleCharSelect = (c: typeof STORY_CHARACTERS[0]) => { setSelectedChar(c); pip.sayCustom(`${t('auto.storybuilder.ooh', 'Ooh!')} ${c.name}! ${t('auto.storybuilder.great_choice', 'Great choice!')}`, 'excited'); setTimeout(() => setStep('place'), 800); };
+  const handlePlaceSelect = (p: typeof STORY_PLACES[0]) => { setSelectedPlace(p); pip.sayCustom(`${t('auto.storybuilder.the', 'The')} ${p.name}! ${t('auto.storybuilder.how_exciting', 'How exciting!')}`, 'excited'); setTimeout(() => setStep('problem'), 800); };
+  const handleProblemSelect = (p: typeof STORY_PROBLEMS[0]) => { setSelectedProblem(p); pip.sayCustom(t('auto.storybuilder.ready_read', "Ready? Let's read our story!"), 'celebrating'); setTimeout(() => setStep('story'), 800); };
 
   const handleNextPanel = () => {
     if (currentPanel < STORY_PANEL_TEMPLATES.length - 1) setCurrentPanel(p => p + 1);
-    else { setStep('quiz'); pip.sayCustom('Did you follow the story? Let me ask you something!', 'curious'); }
+    else { setStep('quiz'); pip.sayCustom(t('auto.storybuilder.did_follow', 'Did you follow the story? Let me ask you something!'), 'curious'); }
   };
 
   const handleQuizAnswer = async (index: number) => {
@@ -53,7 +53,7 @@ export default function StoryBuilder() {
     else { pip.reactToMistake(); await trackWrong('story-builder', {}); }
   };
 
-  const handleBuildNew = () => { setStep('character'); setSelectedChar(null); setSelectedPlace(null); setSelectedProblem(null); setCurrentPanel(0); setQuizAnswer(null); pip.sayCustom("Let's build a new story!", 'excited'); };
+  const handleBuildNew = () => { setStep('character'); setSelectedChar(null); setSelectedPlace(null); setSelectedProblem(null); setCurrentPanel(0); setQuizAnswer(null); pip.sayCustom(t('auto.storybuilder.build_new_story', "Let's build a new story!"), 'excited'); };
 
   const SelectionGrid = ({ items, onSelect, title }: { items: { id: string; name: string; emoji: string }[]; onSelect: (item: typeof items[0]) => void; title: string }) => (
     <div className="min-h-screen bg-gradient-to-b from-purple-50 to-indigo-50 flex flex-col p-6">
@@ -75,9 +75,9 @@ export default function StoryBuilder() {
   return (
     <EarlyShell module="story-builder">
       <AnimatePresence mode="wait">
-        {step === 'character' && <motion.div key="char" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }}><SelectionGrid items={STORY_CHARACTERS} onSelect={handleCharSelect} title={t('auto.attr.storybuilder.who_is_the_hero_of_our_story')} /></motion.div>}
-        {step === 'place' && <motion.div key="place" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }}><SelectionGrid items={STORY_PLACES} onSelect={handlePlaceSelect} title={`Where does ${selectedChar?.name} live?`} /></motion.div>}
-        {step === 'problem' && <motion.div key="prob" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }}><SelectionGrid items={STORY_PROBLEMS} onSelect={handleProblemSelect} title={`What happened to ${selectedChar?.name}?`} /></motion.div>}
+        {step === 'character' && <motion.div key="char" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }}><SelectionGrid items={STORY_CHARACTERS} onSelect={handleCharSelect} title={t('auto.storybuilder.who_is_the_hero_of_our_story', 'Who is the hero of our story?')} /></motion.div>}
+        {step === 'place' && <motion.div key="place" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }}><SelectionGrid items={STORY_PLACES} onSelect={handlePlaceSelect} title={`${t('auto.storybuilder.where_live', 'Where does')} ${selectedChar?.name} ${t('auto.storybuilder.live_q', 'live?')}`} /></motion.div>}
+        {step === 'problem' && <motion.div key="prob" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }}><SelectionGrid items={STORY_PROBLEMS} onSelect={handleProblemSelect} title={`${t('auto.storybuilder.what_happened', 'What happened to')} ${selectedChar?.name}?`} /></motion.div>}
 
         {step === 'story' && (
           <motion.div key={`panel-${currentPanel}`} initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.95 }}
@@ -90,7 +90,7 @@ export default function StoryBuilder() {
               </motion.div>
               <motion.button whileTap={{ scale: 0.97 }} onClick={handleNextPanel}
                 className="w-full py-5 bg-purple-600 text-white font-extrabold text-2xl rounded-2xl shadow-lg min-h-[64px]">
-                {currentPanel < STORY_PANEL_TEMPLATES.length - 1 ? 'Next →' : 'Finish Story! 🎉'}
+                {currentPanel < STORY_PANEL_TEMPLATES.length - 1 ? t('auto.storybuilder.next', 'Next →') : t('auto.storybuilder.finish_story', 'Finish Story! 🎉')}
               </motion.button>
             </div>
           </motion.div>
@@ -105,7 +105,6 @@ export default function StoryBuilder() {
             </div>
             <div className="space-y-3">
               {comprehensionOptions.map((opt, i) => {
-                  const { t } = useTranslation();
                 const isCorrect = opt === selectedChar?.name;
                 const isSelected = quizAnswer === i;
                 const done = quizAnswer !== null;

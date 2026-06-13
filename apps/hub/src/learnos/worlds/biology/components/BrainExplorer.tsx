@@ -35,12 +35,12 @@ const regions: BrainRegion[] = [
   { id: 'temporal', name: 'Temporal Lobe', emoji: '👂', color: '#3b82f6', x: 10, y: 48, w: 30, h: 28,
     description: 'Home to hearing, language comprehension, and memory formation. Contains the hippocampus for memory and amygdala for emotions.',
     functions: ['Hearing & audio processing', 'Language comprehension (Wernicke\'s area)', 'Memory formation (hippocampus)', 'Emotional processing (amygdala)', 'Face recognition'],
-    funFact: 'The hippocampus is named after a seahorse because of its shape! London taxi drivers have larger hippocampi from memorizing city maps.',
+    funFact: 'The hippocampus is named after a seahorse because of its shape! Studies show that taxi drivers who memorise complex city routes develop larger hippocampi — the brain literally reshapes itself with practice!',
     damage: 'Hearing problems, difficulty understanding speech, memory loss, emotional instability' },
   { id: 'occipital', name: 'Occipital Lobe', emoji: '👁️', color: '#8b5cf6', x: 65, y: 20, w: 22, h: 30,
     description: 'The visual processing center. Receives raw visual data from the eyes and transforms it into recognizable images, shapes, and colors.',
     functions: ['Visual processing & interpretation', 'Color perception', 'Shape & motion detection', 'Visual memory', 'Depth perception & spatial analysis'],
-    funFact: 'Your brain flips the image from your eyes right-side-up! The image hits your retina upside-down.',
+    funFact: 'Light enters your eye and projects an upside-down image on your retina. Your brain learns to interpret this from birth — it does not "flip" the image, but builds a coherent world from the signals!',
     damage: 'Blindness, visual hallucinations, inability to recognize faces or objects, color blindness' },
   { id: 'cerebellum', name: 'Cerebellum', emoji: '🎯', color: '#10b981', x: 62, y: 55, w: 25, h: 25,
     description: '"Little brain" — coordinates all voluntary movements, balance, posture, and motor learning. Contains more neurons than the rest of the brain combined!',
@@ -65,12 +65,12 @@ const regions: BrainRegion[] = [
 ];
 
 const neuronFacts = [
-  { title: 'Neuron Speed', value: '268 mph', detail: 'Signals travel at up to 268 mph along myelinated neurons' },
+  { title: 'Neuron Speed', value: '430 km/h', detail: 'Signals travel at up to 430 km/h along myelinated neurons' },
   { title: 'Total Neurons', value: '86 billion', detail: 'The average brain contains ~86 billion neurons' },
   { title: 'Synapses', value: '100 trillion', detail: 'Each neuron connects to ~7,000 others' },
   { title: 'Energy Use', value: '20%', detail: 'Brain uses 20% of body\'s energy despite being only 2% of weight' },
   { title: 'Water Content', value: '73%', detail: 'Your brain is about 73% water' },
-  { title: 'Length of Vessels', value: '100K miles', detail: 'Blood vessels in the brain stretch over 100,000 miles' },
+  { title: 'Vessel Network', value: '640+ km', detail: 'The brain contains over 640 km of capillaries in its blood vessel network' },
 ];
 
 const neuralParticles = Array.from({ length: 35 }, (_, i) => ({
@@ -258,7 +258,7 @@ export default function BrainExplorer() {
                   <div className="bg-gray-800/30 rounded-xl p-3 text-left">
                     <h4 className="text-sm font-bold text-gray-400 mb-2"><Trans i18nKey="auto.brainexplorer.quick_facts">💡 Quick Facts</Trans></h4>
                     <ul className="text-sm text-gray-400 space-y-1">
-                      <li><Trans i18nKey="auto.brainexplorer.the_brain_weighs_about_3_pound">• The brain weighs about 3 pounds (1.4 kg)</Trans></li>
+                      <li><Trans i18nKey="auto.brainexplorer.the_brain_weighs_about_3_pound">• The brain weighs about 1.4 kg</Trans></li>
                       <li><Trans i18nKey="auto.brainexplorer.it_generates_about_20_watts_of">• It generates about 20 watts of power</Trans></li>
                       <li><Trans i18nKey="auto.brainexplorer.left_hemisphere_logical_right_">• Left hemisphere ≠ "logical" / Right ≠ "creative" (it's a myth!)</Trans></li>
                       <li><Trans i18nKey="auto.brainexplorer.you_don_t_use_only_10_you_use_">• You don't use only 10% — you use all of it</Trans></li>

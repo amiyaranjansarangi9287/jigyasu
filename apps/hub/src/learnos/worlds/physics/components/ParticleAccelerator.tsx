@@ -2,6 +2,7 @@
 import { useRef, useEffect, useState, useCallback } from 'react';
 import ModuleWrapper from './ModuleWrapper';
 import { loadProgress, saveProgress, completeModule, UserProgress } from '../lib/progress';
+import { useTranslation } from 'react-i18next';
 
 interface Particle {
   id: number;
@@ -33,7 +34,7 @@ const PARTICLE_TYPES = [
 ];
 
 const DISCOVERY_TABLE: Record<string, { name: string; emoji: string; description: string; minEnergy: number }> = {
-  higgs: { name: 'Higgs Boson', emoji: '✨', description: 'The God Particle! Gives mass to all particles.', minEnergy: 80 },
+  higgs: { name: 'Higgs Boson', emoji: '✨', description: 'Associated with the Higgs field, which gives mass to fundamental particles like quarks and leptons.', minEnergy: 80 },
   top_quark: { name: 'Top Quark', emoji: '🔷', description: 'Heaviest elementary particle discovered.', minEnergy: 60 },
   w_boson: { name: 'W Boson', emoji: '⚡', description: 'Carrier of weak nuclear force.', minEnergy: 40 },
   z_boson: { name: 'Z Boson', emoji: '🌀', description: 'Neutral carrier of weak force.', minEnergy: 45 },
@@ -44,6 +45,7 @@ const DISCOVERY_TABLE: Record<string, { name: string; emoji: string; description
 };
 
 export default function ParticleAccelerator() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animRef = useRef<number>(0);
   const [progress, setProgress] = useState<UserProgress>(loadProgress);

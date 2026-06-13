@@ -33,7 +33,7 @@ export default function PlantGrowthExplorer() {
   const conditionsMet = waterLevel >= stage.waterNeeded && sunLevel >= stage.sunNeeded;
 
   const handleGrow = useCallback(() => {
-    if (!conditionsMet) { pip.sayCustom(waterLevel < stage.waterNeeded ? "The plant is thirsty! Add more water!" : "It needs more sunlight!", 'curious'); return; }
+    if (!conditionsMet) { pip.sayCustom(waterLevel < stage.waterNeeded ? t('auto.plantgrowthexplorer.thirsty', 'The plant is thirsty! Add more water!') : t('auto.plantgrowthexplorer.more_sun', 'It needs more sunlight!'), 'curious'); return; }
     pip.sayCustom(stage.pipMsg, 'excited');
     setShowQuestion(true);
   }, [conditionsMet, waterLevel, stage, pip]);
@@ -48,7 +48,7 @@ export default function PlantGrowthExplorer() {
 
   const handleNext = useCallback(() => {
     if (currentStage < PLANT_STAGES.length - 1) { setCurrentStage(p => p + 1); setShowQuestion(false); setSelectedAnswer(null); setCanAdvance(false); setWaterLevel(0.3); setSunLevel(0.3); }
-    else { pip.sayCustom("Amazing! You grew a plant from seed to fruit!", 'celebrating'); setShowQuestion(false); setCurrentStage(0); setWaterLevel(0.3); setSunLevel(0.3); }
+    else { pip.sayCustom(t('auto.plantgrowthexplorer.amazing_grew', 'Amazing! You grew a plant from seed to fruit!'), 'celebrating'); setShowQuestion(false); setCurrentStage(0); setWaterLevel(0.3); setSunLevel(0.3); }
   }, [currentStage, pip]);
 
   return (

@@ -86,7 +86,7 @@ export default function TrigonometryTower() {
       setMastery(m => m + 1);
       setTimeout(generateChallenge, 1500);
     } else {
-      setFeedback(`Almost! ${challengeFunc}(${challengeAngle}°) = ${correct}`);
+      setFeedback(t('auto.trigonometrytower.almost_n_func_n_angle_n_equals_n', 'Almost! {{challengeFunc}}({{challengeAngle}}°) = {{correct}}', { challengeFunc, challengeAngle: String(challengeAngle), correct }));
       setTimeout(() => setFeedback(null), 2000);
     }
   };
@@ -115,7 +115,7 @@ export default function TrigonometryTower() {
           <div className="flex gap-2 mt-4">
             <input value={answer} onChange={e => setAnswer(e.target.value)}
               className="flex-1 bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white font-mono text-center"
-              placeholder={t('auto.attr.trigonometrytower.e_g_1_2_or_3_2')}
+              placeholder={t('auto.trigonometrytower.e_g_1_2_or_sqrt3_2', 'e.g. 1/2 or √3/2')}
               onKeyDown={e => e.key === 'Enter' && checkAnswer()} />
             <button onClick={checkAnswer} className="px-4 py-2 rounded-lg bg-purple-600 text-white font-bold"><Trans i18nKey="auto.trigonometrytower.check">Check</Trans></button>
           </div>

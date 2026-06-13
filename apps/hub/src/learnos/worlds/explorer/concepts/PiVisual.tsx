@@ -8,8 +8,10 @@ import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 export default function PiVisual() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const lumo = useLumoPeer();
@@ -207,9 +209,9 @@ export default function PiVisual() {
                 <Trans i18nKey="auto.pivisual.history_of_the_idea">History of the idea</Trans>
                                             </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                <Trans i18nKey="auto.pivisual.aryabhata_in_499_ad_calculated">Aryabhata in 499 AD calculated π as 3.1416. Madhava of
-                                              Sangamagrama discovered infinite series for π in the 14th
-                                              century — predating European mathematicians by 200 years.</Trans>
+                <Trans i18nKey="auto.pivisual.aryabhata_in_499_ad_calculated">Aryabhata in 499 CE calculated π as 3.1416. Madhava of
+                                              Sangamagrama developed infinite series for π in the 14th
+                                              century, an important contribution that paralleled later European work.</Trans>
                                             </p>
             </div>
           </div>

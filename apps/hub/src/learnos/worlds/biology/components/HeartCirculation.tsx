@@ -285,9 +285,9 @@ export default function HeartCirculation() {
               <h4 className="text-sm font-bold text-white mb-3"><Trans i18nKey="auto.heartcirculation.heart_facts">❤️ Heart Facts</Trans></h4>
               <ul className="text-sm text-gray-300 space-y-2">
                 <li className="flex gap-2"><span className="text-orange-400">•</span> <Trans i18nKey="auto.heartcirculation.beats_100_000_times_per_day">Beats ~100,000 times per day</Trans></li>
-                <li className="flex gap-2"><span className="text-orange-400">•</span> <Trans i18nKey="auto.heartcirculation.pumps_2_000_gallons_of_blood_d">Pumps ~2,000 gallons of blood daily</Trans></li>
+                <li className="flex gap-2"><span className="text-orange-400">•</span> <Trans i18nKey="auto.heartcirculation.pumps_2_000_gallons_of_blood_d">Pumps ~7,500 litres of blood daily</Trans></li>
                 <li className="flex gap-2"><span className="text-orange-400">•</span> <Trans i18nKey="auto.heartcirculation.about_the_size_of_your_fist">About the size of your fist</Trans></li>
-                <li className="flex gap-2"><span className="text-orange-400">•</span> <Trans i18nKey="auto.heartcirculation.creates_enough_pressure_to_squ">Creates enough pressure to squirt blood 30 feet</Trans></li>
+                <li className="flex gap-2"><span className="text-orange-400">•</span> <Trans i18nKey="auto.heartcirculation.creates_enough_pressure_to_squ">Creates enough pressure to squirt blood ~9 metres</Trans></li>
                 <li className="flex gap-2"><span className="text-orange-400">•</span> <Trans i18nKey="auto.heartcirculation.has_its_own_electrical_system_">Has its own electrical system (SA & AV nodes)</Trans></li>
                 <li className="flex gap-2"><span className="text-orange-400">•</span> <Trans i18nKey="auto.heartcirculation.blood_completes_full_circuit_i">Blood completes full circuit in ~60 seconds</Trans></li>
               </ul>

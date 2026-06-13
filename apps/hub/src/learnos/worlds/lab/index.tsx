@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import { LoadingScreen } from '@/shared/ui';
 import LabHome from './LabHome';
+import { useTranslation } from 'react-i18next';
 
 const CircuitBuilder = lazy(() => import('./modules/CircuitBuilder'));
 const FractionKitchen = lazy(() => import('./modules/FractionKitchen'));
@@ -47,6 +48,7 @@ const Habitats = lazy(() => import('./modules/Habitats'));
 const FoodChain = lazy(() => import('./modules/FoodChain'));
 
 export default function LabWorld() {
+  const { t } = useTranslation();
   return (
     <Suspense fallback={<LoadingScreen />}>
       <Routes>

@@ -1,6 +1,7 @@
 // src/worlds/early/components/PipSpeechBubble.tsx
 
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 interface PipSpeechBubbleProps {
   visible: boolean;
@@ -12,6 +13,7 @@ interface PipSpeechBubbleProps {
 }
 
 export function PipSpeechBubble({ visible, message, position = 'bottom-right', onDismiss, onMuteToggle, muted }: PipSpeechBubbleProps) {
+  const { t } = useTranslation();
   const pos = {
     'bottom-right': 'bottom-24 right-4',
     'bottom-left': 'bottom-24 left-4',
@@ -32,10 +34,10 @@ export function PipSpeechBubble({ visible, message, position = 'bottom-right', o
             <div className="absolute -bottom-2 right-6 w-4 h-4 bg-white border-r-2 border-b-2 border-yellow-200 rotate-45" />
           </div>
           <div className="flex items-center gap-2">
-            <button onClick={onMuteToggle} className="w-8 h-8 rounded-full bg-white shadow flex items-center justify-center text-base" aria-label={muted ? 'Unmute Pip' : 'Mute Pip'}>
+            <button onClick={onMuteToggle} className="w-8 h-8 rounded-full bg-white shadow flex items-center justify-center text-base" aria-label={muted ? t('auto.pipspeechbubble.unmute_pip', 'Unmute Pip') : t('auto.pipspeechbubble.mute_pip', 'Mute Pip')}>
               {muted ? '🔇' : '🔊'}
             </button>
-            <button onClick={onDismiss} className="text-5xl" aria-label="Dismiss Pip">🐤</button>
+            <button onClick={onDismiss} className="text-5xl" aria-label={t('auto.pipspeechbubble.dismiss_pip', 'Dismiss Pip')}>🐤</button>
           </div>
         </motion.div>
       )}

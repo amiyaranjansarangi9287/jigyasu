@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useMathFeedback } from '../lib/MathContext';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 interface Puzzle {
   sequence: (number | string)[];
@@ -317,6 +318,7 @@ const puzzleTemplates: (() => Puzzle)[] = [
 ];
 
 function shuffleOptions(answer: number | string, wrongs: (number | string)[]): (number | string)[] {
+  const { t } = useTranslation();
   const uniqueWrongs = wrongs.filter(
     (w, i, arr) =>
       w !== answer &&

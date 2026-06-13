@@ -8,8 +8,10 @@ import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 export default function FoodChainAdult() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const lumo = useLumoPeer();
@@ -143,14 +145,15 @@ export default function FoodChainAdult() {
           <div className="space-y-3">
             <div className="bg-slate-900 rounded-2xl p-4 border border-slate-800">
               <p className="text-slate-300 text-sm leading-relaxed mb-2">
-                <Trans i18nKey="auto.foodchainadult.only_10_of_energy_transfers_be">Only 10% of energy transfers between levels. A tiger needs
-                                              to eat 100 deer to get the energy those deer got from 10,000
-                                              plants. This is why top predators are rare.</Trans>
+                <Trans i18nKey="auto.foodchainadult.only_10_of_energy_transfers_be">Only about 10% of energy transfers between levels. A tiger needs
+                                              to eat the equivalent of about 100 deer to get the energy
+                                              that 1,000 plants provided to those deer. This is why top predators are rare.</Trans>
                                             </p>
               <p className="text-slate-400 text-sm leading-relaxed">
                 <Trans i18nKey="auto.foodchainadult.remove_one_species_and_cascade">Remove one species and cascades happen. When wolves returned
-                                              to Yellowstone, deer behaviour changed, riverbanks recovered,
-                                              and the rivers themselves changed course.</Trans>
+                                              to Yellowstone, deer behaviour changed and rivers changed course.
+                                              In India, Project Tiger showed how protecting top predators restores
+                                              entire ecosystems — from prey populations to forest health.</Trans>
                                             </p>
             </div>
 
@@ -161,8 +164,8 @@ export default function FoodChainAdult() {
               <p className="text-slate-400 text-sm leading-relaxed">
                 <Trans i18nKey="auto.foodchainadult.charles_elton_formalized_food_">Charles Elton formalized food chains in 1927. The term
                                               "trophic cascade" came later. The Yellowstone wolf
-                                              reintroduction (1995) became the most dramatic demonstration
-                                              of how interconnected ecosystems truly are.</Trans>
+                                              reintroduction (1995) and India's Project Tiger (1973)
+                                              both showed how interconnected ecosystems truly are.</Trans>
                                             </p>
             </div>
           </div>

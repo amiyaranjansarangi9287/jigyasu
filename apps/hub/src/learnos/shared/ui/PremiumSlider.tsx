@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface PremiumSliderProps {
   label: React.ReactNode;
@@ -21,6 +22,7 @@ export default function PremiumSlider({
   unit = '',
   step = 1
 }: PremiumSliderProps) {
+  const { t } = useTranslation();
   const percentage = ((value - min) / (max - min)) * 100;
   
   const colorMap = {

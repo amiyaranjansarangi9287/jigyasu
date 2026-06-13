@@ -1,6 +1,6 @@
 import { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Trans } from "react-i18next";
+import { Trans, useTranslation } from 'react-i18next';
 
 type MoneyMode = 'discounts' | 'profit' | 'interest' | 'challenge';
 
@@ -12,13 +12,14 @@ interface ChallengeQ {
 }
 
 export default function MoneyMathMarket() {
+  const { t } = useTranslation();
   const [mode, setMode] = useState<MoneyMode>('discounts');
 
   const modes = [
-    { id: 'discounts' as MoneyMode, emoji: '🏷️', label: 'Discounts', desc: '% off prices' },
-    { id: 'profit' as MoneyMode, emoji: '📈', label: 'Profit/Loss', desc: 'Business math' },
-    { id: 'interest' as MoneyMode, emoji: '🏦', label: 'Interest', desc: 'Simple & compound' },
-    { id: 'challenge' as MoneyMode, emoji: '🎯', label: 'Challenge', desc: 'Mixed quiz' },
+    { id: 'discounts' as MoneyMode, emoji: '🏷️', label: t('auto.moneymathmarket.discounts', 'Discounts'), desc: t('auto.moneymathmarket.pct_off_prices', '% off prices') },
+    { id: 'profit' as MoneyMode, emoji: '📈', label: t('auto.moneymathmarket.profit_loss', 'Profit/Loss'), desc: t('auto.moneymathmarket.business_math', 'Business math') },
+    { id: 'interest' as MoneyMode, emoji: '🏦', label: t('auto.moneymathmarket.interest', 'Interest'), desc: t('auto.moneymathmarket.simple_compound', 'Simple & compound') },
+    { id: 'challenge' as MoneyMode, emoji: '🎯', label: t('auto.moneymathmarket.challenge', 'Challenge'), desc: t('auto.moneymathmarket.mixed_quiz', 'Mixed quiz') },
   ];
 
   return (
@@ -65,10 +66,10 @@ function DiscountCalculator() {
           <h4 className="text-white font-bold mb-4"><Trans i18nKey="auto.moneymathmarket.set_the_price_discount">🏷️ Set the Price & Discount</Trans></h4>
           <div className="space-y-4">
             <div>
-              <label className="text-gray-400 text-sm"><Trans i18nKey="auto.moneymathmarket.original_price">Original Price ($)</Trans></label>
+              <label className="text-gray-400 text-sm"><Trans i18nKey="auto.moneymathmarket.original_price">Original Price (₹)</Trans></label>
               <div className="flex items-center gap-3 mt-1">
                 <input type="range" min="10" max="500" value={originalPrice} onChange={e => setOriginalPrice(Number(e.target.value))} className="flex-1 accent-blue-500" />
-                <span className="text-white font-bold text-xl w-16">${originalPrice}</span>
+                <span className="text-white font-bold text-xl w-16">₹{originalPrice}</span>
               </div>
             </div>
             <div>
@@ -95,11 +96,11 @@ function DiscountCalculator() {
           <div className="h-8 bg-gray-700 rounded-full overflow-hidden flex">
             <motion.div className="h-full bg-green-500 flex items-center justify-center text-sm font-bold text-white"
               animate={{ width: `${(finalPrice / originalPrice) * 100}%` }} transition={{ duration: 0.5 }}>
-              ${finalPrice.toFixed(0)}
+              ₹{finalPrice.toFixed(0)}
             </motion.div>
             <motion.div className="h-full bg-red-500/60 flex items-center justify-center text-sm font-bold text-white"
               animate={{ width: `${(savings / originalPrice) * 100}%` }} transition={{ duration: 0.5 }}>
-              -${savings.toFixed(0)}
+              -₹{savings.toFixed(0)}
             </motion.div>
           </div>
           <div className="flex justify-between text-sm mt-2">
@@ -113,24 +114,24 @@ function DiscountCalculator() {
         <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 rounded-2xl p-6 border border-green-500/30 text-center">
           <p className="text-gray-400 text-sm"><Trans i18nKey="auto.moneymathmarket.final_price">Final Price</Trans></p>
           <motion.p key={finalPrice} className="text-5xl font-bold text-green-400" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>
-            ${finalPrice.toFixed(2)}
+            ₹{finalPrice.toFixed(2)}
           </motion.p>
         </div>
         <div className="bg-gradient-to-br from-red-500/10 to-rose-500/10 rounded-2xl p-6 border border-red-500/30 text-center">
           <p className="text-gray-400 text-sm"><Trans i18nKey="auto.moneymathmarket.you_save">You Save</Trans></p>
           <motion.p key={savings} className="text-4xl font-bold text-sky-400" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>
-            ${savings.toFixed(2)}
+            ₹{savings.toFixed(2)}
           </motion.p>
         </div>
         <div className="bg-white/5 rounded-xl p-4 border border-white/10">
           <h4 className="text-white font-bold mb-2"><Trans i18nKey="auto.moneymathmarket.formula">📝 Formula</Trans></h4>
           <p className="text-gray-300 text-sm font-mono">
             <Trans i18nKey="auto.moneymathmarket.savings_price_discount_100">Savings = Price × (Discount% ÷ 100)</Trans><br />
-            = ${originalPrice} × ({discount}<Trans i18nKey="auto.moneymathmarket.100">% ÷ 100)</Trans><br />
-            = ${originalPrice} × {(discount / 100).toFixed(2)} = <span className="text-sky-400">${savings.toFixed(2)}</span>
+            = ₹{originalPrice} × ({discount}<Trans i18nKey="auto.moneymathmarket.100">% ÷ 100)</Trans><br />
+            = ₹{originalPrice} × {(discount / 100).toFixed(2)} = <span className="text-sky-400">₹{savings.toFixed(2)}</span>
           </p>
           <p className="text-gray-300 text-sm font-mono mt-2">
-            <Trans i18nKey="auto.moneymathmarket.final">Final = $</Trans>{originalPrice} - ${savings.toFixed(2)} = <span className="text-green-400">${finalPrice.toFixed(2)}</span>
+            <Trans i18nKey="auto.moneymathmarket.final">Final = ₹</Trans>{originalPrice} - ₹{savings.toFixed(2)} = <span className="text-green-400">₹{finalPrice.toFixed(2)}</span>
           </p>
         </div>
       </div>
@@ -139,6 +140,7 @@ function DiscountCalculator() {
 }
 
 function ProfitLossCalculator() {
+  const { t } = useTranslation();
   const [costPrice, setCostPrice] = useState(50);
   const [sellingPrice, setSellingPrice] = useState(65);
 
@@ -155,14 +157,14 @@ function ProfitLossCalculator() {
             <label className="text-blue-400 text-sm font-bold"><Trans i18nKey="auto.moneymathmarket.cost_price_cp_what_you_paid">Cost Price (CP) - What you paid</Trans></label>
             <div className="flex items-center gap-3 mt-1">
               <input type="range" min="10" max="200" value={costPrice} onChange={e => setCostPrice(Number(e.target.value))} className="flex-1 accent-blue-500" />
-              <span className="text-blue-400 font-bold text-xl w-16">${costPrice}</span>
+              <span className="text-blue-400 font-bold text-xl w-16">₹{costPrice}</span>
             </div>
           </div>
           <div>
             <label className="text-sky-400 text-sm font-bold"><Trans i18nKey="auto.moneymathmarket.selling_price_sp_what_you_sold">Selling Price (SP) - What you sold for</Trans></label>
             <div className="flex items-center gap-3 mt-1">
               <input type="range" min="10" max="200" value={sellingPrice} onChange={e => setSellingPrice(Number(e.target.value))} className="flex-1 accent-orange-500" />
-              <span className="text-sky-400 font-bold text-xl w-16">${sellingPrice}</span>
+              <span className="text-sky-400 font-bold text-xl w-16">₹{sellingPrice}</span>
             </div>
           </div>
         </div>
@@ -180,7 +182,7 @@ function ProfitLossCalculator() {
         >
           <span className="text-5xl">{isProfit ? '📈' : '📉'}</span>
           <p className={`text-3xl font-bold mt-2 ${isProfit ? 'text-green-400' : 'text-sky-400'}`}>
-            {isProfit ? 'PROFIT' : 'LOSS'}: ${Math.abs(profitLoss).toFixed(2)}
+            {isProfit ? t('auto.moneymathmarket.profit', 'PROFIT') : t('auto.moneymathmarket.loss', 'LOSS')}: ₹{Math.abs(profitLoss).toFixed(2)}
           </p>
           <p className={`text-xl font-bold ${isProfit ? 'text-green-300' : 'text-red-300'}`}>
             {isProfit ? '+' : '-'}{Math.abs(percentage).toFixed(1)}%
@@ -190,7 +192,7 @@ function ProfitLossCalculator() {
         <div className="bg-white/5 rounded-xl p-4 border border-white/10">
           <h4 className="text-white font-bold mb-2"><Trans i18nKey="auto.moneymathmarket.formulas">📝 Formulas</Trans></h4>
           <div className="text-sm font-mono space-y-1">
-            <p className="text-gray-300"><Trans i18nKey="auto.moneymathmarket.profit_loss_sp_cp">Profit/Loss = SP - CP = $</Trans>{sellingPrice} - ${costPrice} = <span className={isProfit ? 'text-green-400' : 'text-sky-400'}>${profitLoss}</span></p>
+            <p className="text-gray-300"><Trans i18nKey="auto.moneymathmarket.profit_loss_sp_cp">Profit/Loss = SP - CP = ₹</Trans>{sellingPrice} - ₹{costPrice} = <span className={isProfit ? 'text-green-400' : 'text-sky-400'}>₹{profitLoss}</span></p>
             <p className="text-gray-300"><Trans i18nKey="auto.moneymathmarket.percentage_p_l_cp_100">Percentage = (P/L ÷ CP) × 100</Trans></p>
             <p className="text-gray-300">= ({Math.abs(profitLoss)} ÷ {costPrice}<Trans i18nKey="auto.moneymathmarket.100">) × 100 =</Trans> <span className={isProfit ? 'text-green-400' : 'text-sky-400'}>{percentage.toFixed(1)}%</span></p>
           </div>
@@ -243,7 +245,7 @@ function InterestCalculator() {
               <label className="text-green-400 text-sm font-bold"><Trans i18nKey="auto.moneymathmarket.principal_p_starting_amount">Principal (P) - Starting amount</Trans></label>
               <div className="flex items-center gap-3 mt-1">
                 <input type="range" min="100" max="10000" step="100" value={principal} onChange={e => setPrincipal(Number(e.target.value))} className="flex-1 accent-green-500" />
-                <span className="text-green-400 font-bold w-20">${principal}</span>
+                <span className="text-green-400 font-bold w-20">₹{principal}</span>
               </div>
             </div>
             <div>
@@ -267,13 +269,13 @@ function InterestCalculator() {
           <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 rounded-2xl p-5 border border-green-500/30 text-center">
             <p className="text-gray-400 text-sm"><Trans i18nKey="auto.moneymathmarket.final_amount">Final Amount</Trans></p>
             <motion.p key={finalAmount} className="text-4xl font-bold text-green-400" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>
-              ${finalAmount.toFixed(2)}
+              ₹{finalAmount.toFixed(2)}
             </motion.p>
           </div>
           <div className="bg-gradient-to-br from-yellow-500/10 to-amber-500/10 rounded-2xl p-5 border border-yellow-500/30 text-center">
             <p className="text-gray-400 text-sm"><Trans i18nKey="auto.moneymathmarket.interest_earned">Interest Earned</Trans></p>
             <motion.p key={interest} className="text-3xl font-bold text-yellow-400" initial={{ scale: 0.5 }} animate={{ scale: 1 }}>
-              +${interest.toFixed(2)}
+              +₹{interest.toFixed(2)}
             </motion.p>
           </div>
         </div>
@@ -283,13 +285,13 @@ function InterestCalculator() {
         <h4 className="text-white font-bold mb-2"><Trans i18nKey="auto.moneymathmarket.formula">📝 Formula</Trans></h4>
         {interestType === 'simple' ? (
           <p className="text-gray-300 text-sm font-mono">
-            <Trans i18nKey="auto.moneymathmarket.simple_interest_p_r_t_100">Simple Interest = (P × R × T) ÷ 100 = (</Trans>{principal} × {rate} × {time}<Trans i18nKey="auto.moneymathmarket.100">) ÷ 100 =</Trans> <span className="text-yellow-400">${simpleInterest.toFixed(2)}</span>
+            <Trans i18nKey="auto.moneymathmarket.simple_interest_p_r_t_100">Simple Interest = (P × R × T) ÷ 100 = (</Trans>{principal} × {rate} × {time}<Trans i18nKey="auto.moneymathmarket.100">) ÷ 100 =</Trans> <span className="text-yellow-400">₹{simpleInterest.toFixed(2)}</span>
           </p>
         ) : (
           <div className="text-sm font-mono">
             <p className="text-gray-300"><Trans i18nKey="auto.moneymathmarket.compound_interest_p_1_r_100_t_">Compound Interest = P × (1 + R/100)^T - P</Trans></p>
             <p className="text-gray-300">= {principal} <Trans i18nKey="auto.moneymathmarket.1">× (1 +</Trans> {rate}<Trans i18nKey="auto.moneymathmarket.100">/100)^</Trans>{time} - {principal}</p>
-            <p className="text-gray-300">= {principal} × {(Math.pow(1 + rate / 100, time)).toFixed(4)} - {principal} = <span className="text-yellow-400">${compoundInterest.toFixed(2)}</span></p>
+            <p className="text-gray-300">= {principal} × {(Math.pow(1 + rate / 100, time)).toFixed(4)} - {principal} = <span className="text-yellow-400">₹{compoundInterest.toFixed(2)}</span></p>
           </div>
         )}
       </div>
@@ -300,13 +302,13 @@ function InterestCalculator() {
           <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
             <div className="bg-white/5 rounded-lg p-2 text-center">
               <p className="text-gray-400 text-sm"><Trans i18nKey="auto.moneymathmarket.year_0">Year 0</Trans></p>
-              <p className="text-white font-bold">${principal}</p>
+              <p className="text-white font-bold">₹{principal}</p>
             </div>
             {yearlyBreakdown.map(y => (
               <div key={y.year} className="bg-white/5 rounded-lg p-2 text-center">
                 <p className="text-gray-400 text-sm"><Trans i18nKey="auto.moneymathmarket.year">Year</Trans> {y.year}</p>
-                <p className="text-white font-bold">${y.amount.toFixed(0)}</p>
-                <p className="text-green-400 text-sm">+${y.interest.toFixed(0)}</p>
+                <p className="text-white font-bold">₹{y.amount.toFixed(0)}</p>
+                <p className="text-green-400 text-sm">+₹{y.interest.toFixed(0)}</p>
               </div>
             ))}
           </div>
@@ -317,6 +319,7 @@ function InterestCalculator() {
 }
 
 function MoneyChallenge() {
+  const { t } = useTranslation();
   const [question, setQuestion] = useState<ChallengeQ | null>(null);
   const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [mastery, setMastery] = useState(0);
@@ -333,10 +336,10 @@ function MoneyChallenge() {
         const disc = [10, 20, 25, 50][r(0, 3)];
         const answer = price - (price * disc / 100);
         return {
-          question: `A shirt costs $${price}. What is the price after ${disc}% off?`,
+          question: t('auto.moneymathmarket.q_discount', 'A shirt costs ₹{{price}}. What is the price after {{disc}}% off?', { price, disc }),
           answer,
           options: [answer, answer + 10, answer - 5, answer + 15].sort(() => Math.random() - 0.5),
-          type: '🏷️ Discount'
+          type: t('auto.moneymathmarket.type_discount', '🏷️ Discount')
         };
       }
       case 'profit': {
@@ -344,22 +347,22 @@ function MoneyChallenge() {
         const sp = cp + r(1, 5) * 10;
         const answer = sp - cp;
         return {
-          question: `Bought for $${cp}, sold for $${sp}. What is the profit?`,
+          question: t('auto.moneymathmarket.q_profit', 'Bought for ₹{{cp}}, sold for ₹{{sp}}. What is the profit?', { cp, sp }),
           answer,
           options: [answer, answer + 10, answer - 10, cp].sort(() => Math.random() - 0.5),
-          type: '📈 Profit'
+          type: t('auto.moneymathmarket.type_profit', '📈 Profit')
         };
       }
       case 'interest': {
         const p = r(1, 10) * 100;
         const rate = r(2, 10);
-        const t = r(1, 3);
-        const answer = (p * rate * t) / 100;
+        const time = r(1, 3);
+        const answer = (p * rate * time) / 100;
         return {
-          question: `Simple interest on $${p} at ${rate}% for ${t} year${t > 1 ? 's' : ''}?`,
+          question: t('auto.moneymathmarket.q_interest', 'Simple interest on ₹{{p}} at {{rate}}% for {{time}} year{{time_plural}}?', { p, rate, time, time_plural: time > 1 ? 's' : '' }),
           answer,
           options: [answer, answer + 10, answer * 2, p * rate / 100].sort(() => Math.random() - 0.5),
-          type: '🏦 Interest'
+          type: t('auto.moneymathmarket.type_interest', '🏦 Interest')
         };
       }
       default: {
@@ -367,10 +370,10 @@ function MoneyChallenge() {
         const pct = [10, 20, 25, 50][r(0, 3)];
         const answer = (whole * pct) / 100;
         return {
-          question: `What is ${pct}% of $${whole}?`,
+          question: t('auto.moneymathmarket.q_percentage', 'What is {{pct}}% of ₹{{whole}}?', { pct, whole }),
           answer,
           options: [answer, answer + 5, whole / pct, answer * 2].sort(() => Math.random() - 0.5),
-          type: '% Percentage'
+          type: t('auto.moneymathmarket.type_percentage', '% Percentage')
         };
       }
     }
@@ -427,13 +430,13 @@ function MoneyChallenge() {
               onClick={() => handleAnswer(opt)}
               disabled={feedback !== null}
             >
-              ${opt}
+              ₹{opt}
             </motion.button>
           ))}
         </div>
 
         {feedback === 'correct' && <p className="text-green-400 font-bold mt-4 text-center"><Trans i18nKey="auto.moneymathmarket.correct">✅ Correct! 💰</Trans></p>}
-        {feedback === 'hint' && <p className="text-sky-400 font-bold mt-4 text-center"><Trans i18nKey="auto.moneymathmarket.answer">🤔 Answer: $</Trans>{question.answer}</p>}
+        {feedback === 'hint' && <p className="text-sky-400 font-bold mt-4 text-center"><Trans i18nKey="auto.moneymathmarket.answer">🤔 Answer: ₹</Trans>{question.answer}</p>}
       </motion.div>
 
       <button className="w-full mt-4 text-gray-500 hover:text-gray-400 text-sm" onClick={() => setQuestion(generateQuestion())}>

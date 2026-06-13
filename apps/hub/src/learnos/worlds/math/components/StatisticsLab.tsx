@@ -120,7 +120,7 @@ export default function StatisticsLab() {
           {feedback === 'hint' && <p className="text-sky-400 font-bold mt-2"><Trans i18nKey="auto.statisticslab.try_again_answer">🤔 Let us explore! (Answer:</Trans> {
             challengeType === 'mean' ? stats.mean :
             challengeType === 'median' ? stats.median :
-            challengeType === 'mode' ? (stats.mode.length > 0 ? stats.mode.join(', ') : 'No mode') :
+            challengeType === 'mode' ? (stats.mode.length > 0 ? stats.mode.join(', ') : t('auto.statisticslab.no_mode', 'No mode')) :
             stats.range
           })</p>}
         </div>
@@ -135,7 +135,7 @@ export default function StatisticsLab() {
               <div className="flex gap-2 mb-3">
                 <input type="number" value={inputValue} onChange={e => setInputValue(e.target.value)}
                   className="flex-1 bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white"
-                  placeholder={t('auto.attr.statisticslab.enter_a_number_0_100')}
+                  placeholder={t('auto.statisticslab.enter_a_number_0_100', 'Enter a number (0-100)')}
                   onKeyDown={e => e.key === 'Enter' && addNumber()} />
                 <button onClick={addNumber} className="px-4 py-2 rounded-lg bg-blue-600 text-white font-bold"><Trans i18nKey="auto.statisticslab.add">Add</Trans></button>
               </div>
@@ -210,12 +210,12 @@ export default function StatisticsLab() {
         {/* Statistics display */}
         <div className="space-y-3">
           {[
-            { label: 'Mean (Average)', value: stats.mean, emoji: '➗', color: 'blue', formula: `Sum ÷ Count = ${stats.sum} ÷ ${data.length}`, desc: 'Add all numbers, divide by count' },
-            { label: 'Median (Middle)', value: stats.median, emoji: '🎯', color: 'green', formula: `Middle value when sorted`, desc: 'The middle number when data is ordered' },
-            { label: 'Mode (Most Common)', value: stats.mode.length > 0 ? stats.mode.join(', ') : 'None', emoji: '🏆', color: 'yellow', formula: 'Most frequent value(s)', desc: 'The number that appears most often' },
-            { label: 'Range (Spread)', value: stats.range, emoji: '↔️', color: 'purple', formula: `Max - Min = ${stats.max} - ${stats.min}`, desc: 'Difference between highest and lowest' },
-            { label: 'Sum (Total)', value: stats.sum, emoji: '➕', color: 'cyan', formula: data.slice(0, 5).join(' + ') + (data.length > 5 ? ' + ...' : ''), desc: 'All numbers added together' },
-            { label: 'Count', value: data.length, emoji: '🔢', color: 'pink', formula: 'Number of data points', desc: 'How many numbers in the set' },
+            { label: t('auto.statisticslab.mean_average', 'Mean (Average)'), value: stats.mean, emoji: '➗', color: 'blue', formula: t('auto.statisticslab.sum_div_count', 'Sum ÷ Count = {{sum}} ÷ {{count}}', { sum: stats.sum, count: data.length }), desc: t('auto.statisticslab.add_all_numbers', 'Add all numbers, divide by count') },
+            { label: t('auto.statisticslab.median_middle', 'Median (Middle)'), value: stats.median, emoji: '🎯', color: 'green', formula: t('auto.statisticslab.middle_value_when_sorted', 'Middle value when sorted'), desc: t('auto.statisticslab.middle_number_when_data_is', 'The middle number when data is ordered') },
+            { label: t('auto.statisticslab.mode_most_common', 'Mode (Most Common)'), value: stats.mode.length > 0 ? stats.mode.join(', ') : t('auto.statisticslab.none', 'None'), emoji: '🏆', color: 'yellow', formula: t('auto.statisticslab.most_frequent_values', 'Most frequent value(s)'), desc: t('auto.statisticslab.number_that_appears_most', 'The number that appears most often') },
+            { label: t('auto.statisticslab.range_spread', 'Range (Spread)'), value: stats.range, emoji: '↔️', color: 'purple', formula: t('auto.statisticslab.max_min', 'Max - Min = {{max}} - {{min}}', { max: stats.max, min: stats.min }), desc: t('auto.statisticslab.difference_between_highest', 'Difference between highest and lowest') },
+            { label: t('auto.statisticslab.sum_total', 'Sum (Total)'), value: stats.sum, emoji: '➕', color: 'cyan', formula: data.slice(0, 5).join(' + ') + (data.length > 5 ? ' + ...' : ''), desc: t('auto.statisticslab.all_numbers_added_together', 'All numbers added together') },
+            { label: t('auto.statisticslab.count', 'Count'), value: data.length, emoji: '🔢', color: 'pink', formula: t('auto.statisticslab.number_of_data_points', 'Number of data points'), desc: t('auto.statisticslab.how_many_numbers_in_the', 'How many numbers in the set') },
           ].map((stat, i) => (
             <motion.div key={stat.label}
               className={`bg-${stat.color}-500/10 rounded-xl p-4 border border-${stat.color}-500/20`}

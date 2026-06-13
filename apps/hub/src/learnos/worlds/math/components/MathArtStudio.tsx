@@ -8,9 +8,9 @@ export default function MathArtStudio() {
     const { t } = useTranslation();
   const [mode, setMode] = useState<ArtMode>('fractals');
   const modes = [
-    { id: 'fractals' as ArtMode, emoji: '🌳', label: 'Fractals' },
-    { id: 'tessellations' as ArtMode, emoji: '🔷', label: 'Tessellations' },
-    { id: 'golden' as ArtMode, emoji: '🌀', label: 'Golden Ratio' },
+    { id: 'fractals' as ArtMode, emoji: '🌳', label: t('auto.mathartstudio.fractals', 'Fractals') },
+    { id: 'tessellations' as ArtMode, emoji: '🔷', label: t('auto.mathartstudio.tessellations', 'Tessellations') },
+    { id: 'golden' as ArtMode, emoji: '🌀', label: t('auto.mathartstudio.golden_ratio_label', 'Golden Ratio') },
   ];
 
   return (
@@ -68,9 +68,9 @@ function FractalTree() {
         </svg>
       </div>
       <div className="space-y-4">
-        <Control label={t('auto.attr.mathartstudio.recursion_depth')} value={depth} min={1} max={10} setValue={setDepth} />
-        <Control label={t('auto.attr.mathartstudio.branch_angle')} value={spread} min={5} max={60} setValue={setSpread} suffix="°" />
-        <Control label={t('auto.attr.mathartstudio.trunk_length')} value={length} min={35} max={95} setValue={setLength} />
+        <Control label={t('auto.mathartstudio.recursion_depth', 'Recursion depth')} value={depth} min={1} max={10} setValue={setDepth} />
+        <Control label={t('auto.mathartstudio.branch_angle', 'Branch angle')} value={spread} min={5} max={60} setValue={setSpread} suffix="°" />
+        <Control label={t('auto.mathartstudio.trunk_length', 'Trunk length')} value={length} min={35} max={95} setValue={setLength} />
         <div className="bg-green-500/10 rounded-2xl p-5 border border-green-500/20">
           <h4 className="text-white font-bold mb-2"><Trans i18nKey="auto.mathartstudio.why_this_is_math">🌳 Why this is math</Trans></h4>
           <p className="text-gray-300 text-sm"><Trans i18nKey="auto.mathartstudio.a_fractal_repeats_a_rule_at_sm">A fractal repeats a rule at smaller scales. Each branch creates two smaller branches, so the count grows roughly like powers of 2.</Trans></p>
@@ -113,10 +113,14 @@ function TessellationMaker() {
         <div className="bg-white/5 rounded-2xl p-5 border border-white/10">
           <h4 className="text-white font-bold mb-3"><Trans i18nKey="auto.mathartstudio.choose_a_tile">Choose a tile</Trans></h4>
           <div className="grid grid-cols-3 gap-2">
-            {(['triangles', 'hexagons', 'squares'] as const).map((s) => <button key={s} className={`py-3 rounded-xl font-bold text-sm capitalize ${shape === s ? 'bg-purple-500/40 text-white border border-purple-400' : 'bg-white/10 text-gray-400'}`} onClick={() => setShape(s)}>{s}</button>)}
+            {([
+              { id: 'triangles' as const, label: t('auto.mathartstudio.triangles', 'Triangles') },
+              { id: 'hexagons' as const, label: t('auto.mathartstudio.hexagons', 'Hexagons') },
+              { id: 'squares' as const, label: t('auto.mathartstudio.squares', 'Squares') },
+            ]).map((s) => <button key={s.id} className={`py-3 rounded-xl font-bold text-sm ${shape === s.id ? 'bg-purple-500/40 text-white border border-purple-400' : 'bg-white/10 text-gray-400'}`} onClick={() => setShape(s.id)}>{s.label}</button>)}
           </div>
         </div>
-        <Control label={t('auto.attr.mathartstudio.color_cycle')} value={colors} min={2} max={6} setValue={setColors} />
+        <Control label={t('auto.mathartstudio.color_cycle', 'Color cycle')} value={colors} min={2} max={6} setValue={setColors} />
         <div className="bg-purple-500/10 rounded-2xl p-5 border border-purple-500/20">
           <h4 className="text-white font-bold mb-2"><Trans i18nKey="auto.mathartstudio.tessellation_rule">🔷 Tessellation rule</Trans></h4>
           <p className="text-gray-300 text-sm"><Trans i18nKey="auto.mathartstudio.a_tessellation_covers_a_surfac">A tessellation covers a surface with no gaps and no overlaps. Squares, triangles, and hexagons work perfectly because their angles fit around a point.</Trans></p>
@@ -161,7 +165,7 @@ function GoldenRatio() {
         </svg>
       </div>
       <div className="space-y-4">
-        <Control label={t('auto.attr.mathartstudio.rectangle_width')} value={size} min={160} max={300} setValue={setSize} />
+        <Control label={t('auto.mathartstudio.rectangle_width', 'Rectangle width')} value={size} min={160} max={300} setValue={setSize} />
         <div className="bg-yellow-500/10 rounded-2xl p-5 border border-yellow-500/20">
           <h4 className="text-white font-bold mb-2"><Trans i18nKey="auto.mathartstudio.golden_ratio">🌀 Golden Ratio</Trans></h4>
           <p className="text-gray-300 text-sm"><Trans i18nKey="auto.mathartstudio.1_618_a_golden_rectangle_has_w">φ ≈ 1.618. A golden rectangle has width ÷ height = φ. Splitting it into squares creates a spiral often found in art and nature.</Trans></p>

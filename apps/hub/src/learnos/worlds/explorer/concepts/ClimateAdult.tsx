@@ -8,8 +8,10 @@ import { ThinkingPrompt } from '../components/ThinkingPrompt';
 import { CanvasHelpers } from '@/shared/canvas/helpers/CanvasHelpers';
 import { EXPLORER_CONCEPTS } from '../data/explorerContent';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 export default function ClimateAdult() {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const lumo = useLumoPeer();
@@ -189,7 +191,7 @@ export default function ClimateAdult() {
                 <Trans i18nKey="auto.climateadult.history_of_the_idea">History of the idea</Trans>
                                             </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                <Trans i18nKey="auto.climateadult.john_tyndall_discovered_the_gr">John Tyndall discovered the greenhouse effect in 1859.
+                <Trans i18nKey="auto.climateadult.john_tyndall_discovered_the_gr">Joseph Fourier first proposed the greenhouse effect in 1824. John Tyndall demonstrated its mechanism in 1859 by showing that gases like CO₂ absorb infrared radiation.
                                               Arrhenius linked it to fossil fuels in 1896. Charles
                                               Keeling began measuring CO₂ in 1958 — the "Keeling Curve"
                                               has risen uninterrupted ever since.</Trans>

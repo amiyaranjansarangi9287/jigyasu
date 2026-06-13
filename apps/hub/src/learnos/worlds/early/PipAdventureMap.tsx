@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useAdventureMap, EARLY_ACHIEVEMENTS } from './hooks/useAdventureMap';
 import { useEarlyProgress } from './hooks/useEarlyProgress';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 interface PipAdventureMapProps {
   visible: boolean;
@@ -12,6 +13,7 @@ interface PipAdventureMapProps {
 }
 
 export default function PipAdventureMap({ visible, onClose }: PipAdventureMapProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const { progress } = useEarlyProgress();

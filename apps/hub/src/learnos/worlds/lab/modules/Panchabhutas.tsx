@@ -75,11 +75,11 @@ const BHUTAS: Bhuta[] = [
     modern: 'GAS',
     property: 'Touch • Motion',
     description: 'The gaseous state — particles zoom freely at high speeds, filling any container. Air is invisible yet powerful, like motion itself.',
-    anuWisdom: '"The air atom (Vāyu-anu) moves in all directions and carries touch." Kanad anticipated Brownian motion — 2,400 years before Einstein proved it!',
+    anuWisdom: '"The air atom (Vāyu-anu) moves in all directions and carries touch." Kanad philosophically described atoms in motion — an early intuitive idea, distinct from the modern scientific description of Brownian motion.',
   },
   {
     id: 'akasha',
-    sanskrit: 'kāśa',
+    sanskrit: 'Ākāśa',
     devanagari: 'आकाश',
     english: 'Ether / Space',
     symbol: '✨',
@@ -214,8 +214,7 @@ export default function Panchabhutas() {
           </h1>
           <p className="text-sm text-orange-400 mt-1">{t('lab.modules.Panchabhutas.txt_TheFiveGre', 'पञ्चभूत — The Five Great Elements')}</p>
           <p className="text-gray-500 text-sm mt-2 max-w-xl mx-auto">
-            <Trans i18nKey="auto.panchabhutas.ancient_indian_philosophy_meet">Ancient Indian philosophy meets modern chemistry. Maharishi Kanad (~600 BCE) described atoms
-                                  2,400 years before modern science!</Trans>
+            <Trans i18nKey="auto.panchabhutas.ancient_indian_philosophy_meet">Ancient Indian philosophy meets modern chemistry. Maharishi Kanad (~600 BCE) proposed the concept of Parmanu (tiny indivisible particles) — an early philosophical idea about matter's composition, distinct from modern experimental atomic theory.</Trans>
                                 </p>
         </div>
 
@@ -234,8 +233,7 @@ export default function Panchabhutas() {
               <p className="text-gray-600 text-sm leading-relaxed">
                 <Trans i18nKey="auto.panchabhutas.around">Around</Trans> <strong className="text-orange-600"><Trans i18nKey="auto.panchabhutas.600_bce">600 BCE</Trans></strong><Trans i18nKey="auto.panchabhutas.maharishi_kanad_founded_the_va">, Maharishi Kanad founded
                                               the Vaisheshika school. He taught that all matter is made of tiny, indivisible particles
-                                              called</Trans> <strong className="text-orange-600"><Trans i18nKey="auto.panchabhutas.anu">Anu</Trans></strong> <Trans i18nKey="auto.panchabhutas.atoms_his_ideas_predate_greek_">(अणु) — atoms! His ideas predate
-                                              Greek atomism (Democritus, ~400 BCE) by over two centuries.</Trans>
+                                              called</Trans> <strong className="text-orange-600"><Trans i18nKey="auto.panchabhutas.anu">Anu</Trans></strong> <Trans i18nKey="auto.panchabhutas.atoms_his_ideas_predate_greek_">(अणु) — atoms! His ideas represent one of the world's earliest philosophical frameworks for atomism, emerging independently in India.</Trans>
                                             </p>
               <div className="mt-2 text-sm text-gray-400 font-mono italic">
                 <Trans i18nKey="auto.panchabhutas.the_atom_is_eternal_invisible_">"The atom is eternal, invisible, and the ultimate cause of all material effects." — Vaisheshika Sutra 4.2.4</Trans>

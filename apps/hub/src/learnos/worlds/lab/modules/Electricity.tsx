@@ -134,8 +134,8 @@ export default function Electricity() {
             <div>
               <h3 className="text-orange-400 font-bold text-sm mb-1"><Trans i18nKey="auto.electricity.india_s_electrical_legacy">India's Electrical Legacy</Trans></h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                <Trans i18nKey="auto.electricity.india_was_one_of_the_first_cou">India was one of the first countries to adopt electricity on a massive scale.</Trans>
-                                              <strong> <Trans i18nKey="auto.electricity.jagadish_chandra_bose">Jagadish Chandra Bose</Trans></strong> <Trans i18nKey="auto.electricity.1895_pioneered_radio_waves_bef">(1895) pioneered radio waves before Marconi!
+                <Trans i18nKey="auto.electricity.india_was_one_of_the_first_cou">Indian engineers have made significant contributions to electrical engineering, from power generation to electronics.</Trans>
+                                              <strong> <Trans i18nKey="auto.electricity.jagadish_chandra_bose">Jagadish Chandra Bose</Trans></strong> <Trans i18nKey="auto.electricity.1895_pioneered_radio_waves_bef">(1858-1937) pioneered research on radio waves and microwave optics, independently exploring wireless transmission around the same time as Marconi.
                                               Today, India's power grid is the world's largest synchronized grid, serving 1.4 billion people.</Trans>
                                             </p>
             </div>

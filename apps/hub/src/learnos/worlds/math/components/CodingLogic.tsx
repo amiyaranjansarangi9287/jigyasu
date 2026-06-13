@@ -1,26 +1,30 @@
 import { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Trans } from "react-i18next";
+import { Trans, useTranslation } from 'react-i18next';
+import type { TFunction } from 'i18next';
 
 type LogicMode = 'binary' | 'boolean' | 'challenge';
 
-function toBin(n: number) { return (n >>> 0).toString(2); }
+function toBin(n: number) {
+  return (n >>> 0).toString(2);
+}
 function fromBin(s: string) { return parseInt(s, 2) || 0; }
 
-function makeChallenge() {
+function makeChallenge(t: TFunction) {
   const type = Math.floor(Math.random() * 4);
-  if (type === 0) { const n = Math.floor(Math.random() * 64); const answer = toBin(n); const wrongs = new Set<string>([answer]); while (wrongs.size < 4) wrongs.add(toBin(n + Math.floor(Math.random() * 7) - 3)); return { question: `Convert ${n} to binary`, answer, options: [...wrongs].sort(() => Math.random() - 0.5), type: '🔢 Binary' }; }
-  if (type === 1) { const bits = Math.floor(Math.random() * 6) + 2; const n = Math.floor(Math.random() * Math.pow(2, bits)); const bin = toBin(n).padStart(bits, '0'); const answer = String(n); const wrongs = new Set<string>([answer]); while (wrongs.size < 4) wrongs.add(String(n + Math.floor(Math.random() * 7) - 3)); return { question: `Binary ${bin} = ? in decimal`, answer, options: [...wrongs].sort(() => Math.random() - 0.5), type: '🔢 Binary' }; }
-  if (type === 2) { const a = Math.random() < 0.5; const b = Math.random() < 0.5; const ops = ['AND', 'OR', 'XOR']; const op = ops[Math.floor(Math.random() * ops.length)]; let answer: string; if (op === 'AND') answer = String(a && b); else if (op === 'OR') answer = String(a || b); else answer = String(a !== b); return { question: `${String(a).toUpperCase()} ${op} ${String(b).toUpperCase()} = ?`, answer, options: ['true', 'false'].sort(() => Math.random() - 0.5).concat([]).slice(0, 2), type: '🔲 Boolean' }; }
-  const a = Math.random() < 0.5; const answer = String(!a); return { question: `NOT ${String(a).toUpperCase()} = ?`, answer, options: ['true', 'false'], type: '🔲 Boolean' };
+  if (type === 0) { const n = Math.floor(Math.random() * 64); const answer = toBin(n); const wrongs = new Set<string>([answer]); while (wrongs.size < 4) wrongs.add(toBin(n + Math.floor(Math.random() * 7) - 3)); return { question: t('auto.codinglogic.convert_n_to_binary', 'Convert {{n}} to binary', { n }), answer, options: [...wrongs].sort(() => Math.random() - 0.5), type: t('auto.codinglogic.binary_type', '🔢 Binary') }; }
+  if (type === 1) { const bits = Math.floor(Math.random() * 6) + 2; const n = Math.floor(Math.random() * Math.pow(2, bits)); const bin = toBin(n).padStart(bits, '0'); const answer = String(n); const wrongs = new Set<string>([answer]); while (wrongs.size < 4) wrongs.add(String(n + Math.floor(Math.random() * 7) - 3)); return { question: t('auto.codinglogic.binary_n_in_decimal', 'Binary {{bin}} = ? in decimal', { bin }), answer, options: [...wrongs].sort(() => Math.random() - 0.5), type: t('auto.codinglogic.binary_type', '🔢 Binary') }; }
+  if (type === 2) { const a = Math.random() < 0.5; const b = Math.random() < 0.5; const ops = ['AND', 'OR', 'XOR']; const op = ops[Math.floor(Math.random() * ops.length)]; let answer: string; if (op === 'AND') answer = String(a && b); else if (op === 'OR') answer = String(a || b); else answer = String(a !== b); return { question: t('auto.codinglogic.boolean_op', '{{a}} {{op}} {{b}} = ?', { a: String(a).toUpperCase(), op, b: String(b).toUpperCase() }), answer, options: ['true', 'false'].sort(() => Math.random() - 0.5).concat([]).slice(0, 2), type: t('auto.codinglogic.boolean_type', '🔲 Boolean') }; }
+  const a = Math.random() < 0.5; const answer = String(!a); return { question: t('auto.codinglogic.not_a', 'NOT {{a}} = ?', { a: String(a).toUpperCase() }), answer, options: ['true', 'false'], type: t('auto.codinglogic.boolean_type', '🔲 Boolean') };
 }
 
 export default function CodingLogic() {
+  const { t } = useTranslation();
   const [mode, setMode] = useState<LogicMode>('binary');
   const [decimal, setDecimal] = useState(42);
   const [boolA, setBoolA] = useState(true);
   const [boolB, setBoolB] = useState(false);
-  const [challenge, setChallenge] = useState(makeChallenge);
+  const [challenge, setChallenge] = useState(() => makeChallenge(t));
   const [feedback, setFeedback] = useState<'correct' | 'hint' | null>(null);
   const [mastery, setMastery] = useState(0);
 
@@ -42,7 +46,7 @@ export default function CodingLogic() {
     if (feedback) return;
     if (opt === challenge.answer) {
       setFeedback('correct'); setMastery(m => m + 1);
-      setTimeout(() => { setChallenge(makeChallenge()); setFeedback(null); }, 1200);
+      setTimeout(() => { setChallenge(makeChallenge(t)); setFeedback(null); }, 1200);
     } else { setFeedback('hint'); setTimeout(() => setFeedback(null), 900); }
   }, [feedback, challenge]);
 
@@ -55,12 +59,12 @@ export default function CodingLogic() {
 
       <div className="flex justify-center gap-2 mb-6">
         {([
-          { id: 'binary' as LogicMode, emoji: '🔢', label: 'Binary' },
-          { id: 'boolean' as LogicMode, emoji: '🔲', label: 'Boolean' },
-          { id: 'challenge' as LogicMode, emoji: '🎯', label: 'Challenge' },
+          { id: 'binary' as LogicMode, emoji: '🔢', label: t('auto.codinglogic.binary', 'Binary') },
+          { id: 'boolean' as LogicMode, emoji: '🔲', label: t('auto.codinglogic.boolean', 'Boolean') },
+          { id: 'challenge' as LogicMode, emoji: '🎯', label: t('auto.codinglogic.challenge', 'Challenge') },
         ]).map(m => (
           <button key={m.id} className={`px-4 py-2 rounded-xl font-bold text-sm ${mode === m.id ? 'bg-cyan-500/30 text-cyan-300 border border-cyan-400/50' : 'bg-white/5 text-gray-400'}`}
-            onClick={() => { setMode(m.id); if (m.id === 'challenge') setChallenge(makeChallenge()); }}>{m.emoji} {m.label}</button>
+            onClick={() => { setMode(m.id); if (m.id === 'challenge') setChallenge(makeChallenge(t)); }}>{m.emoji} {m.label}</button>
         ))}
       </div>
 
@@ -99,10 +103,10 @@ export default function CodingLogic() {
               {/* Conversions */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {[
-                  { label: 'Decimal', value: String(decimal), color: 'text-white' },
-                  { label: 'Binary', value: binary, color: 'text-cyan-400' },
-                  { label: 'Hexadecimal', value: `0x${hex}`, color: 'text-purple-400' },
-                  { label: 'Octal', value: `0o${octal}`, color: 'text-sky-400' },
+                  { label: t('auto.codinglogic.decimal', 'Decimal'), value: String(decimal), color: 'text-white' },
+                  { label: t('auto.codinglogic.binary', 'Binary'), value: binary, color: 'text-cyan-400' },
+                  { label: t('auto.codinglogic.hexadecimal', 'Hexadecimal'), value: `0x${hex}`, color: 'text-purple-400' },
+                  { label: t('auto.codinglogic.octal', 'Octal'), value: `0o${octal}`, color: 'text-sky-400' },
                 ].map(c => (
                   <div key={c.label} className="bg-white/5 rounded-xl p-3 text-center border border-white/10">
                     <p className="text-gray-400 text-sm">{c.label}</p>
@@ -133,7 +137,7 @@ export default function CodingLogic() {
                       className={`w-20 h-12 rounded-xl font-bold text-lg ${input.value ? 'bg-green-500 text-white' : 'bg-red-500/50 text-red-200'}`}
                       whileTap={{ scale: 0.9 }}
                       onClick={() => input.set(!input.value)}
-                    >{input.value ? 'TRUE' : 'FALSE'}</motion.button>
+                    >{input.value ? t('auto.codinglogic.true', 'TRUE') : t('auto.codinglogic.false', 'FALSE')}</motion.button>
                   </div>
                 ))}
               </div>
@@ -153,7 +157,7 @@ export default function CodingLogic() {
                     className={`rounded-xl p-3 text-center border ${gate.result ? 'bg-green-500/20 border-green-500/40' : 'bg-white/5 border-white/10'}`}
                     initial={{ scale: 0.8 }} animate={{ scale: 1 }}>
                     <p className="text-gray-400 text-sm">{gate.name} ({gate.symbol})</p>
-                    <p className={`font-bold text-lg ${gate.result ? 'text-green-400' : 'text-sky-400'}`}>{gate.result ? 'TRUE' : 'FALSE'}</p>
+                    <p className={`font-bold text-lg ${gate.result ? 'text-green-400' : 'text-sky-400'}`}>{gate.result ? t('auto.codinglogic.true', 'TRUE') : t('auto.codinglogic.false', 'FALSE')}</p>
                   </motion.div>
                 ))}
               </div>

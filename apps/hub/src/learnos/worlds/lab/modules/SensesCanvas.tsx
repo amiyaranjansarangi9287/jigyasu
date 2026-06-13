@@ -232,21 +232,26 @@ export default function SensesCanvas({ sense }: SensesCanvasProps) {
         ctx.lineWidth = 2;
         ctx.stroke();
 
-        // Taste zones
-        const zones = [
-          { x: 0, y: -8, label: 'Bitter', color: '#22c55e' },
-          { x: -12, y: 2, label: 'Sour', color: '#fbbf24' },
-          { x: 12, y: 2, label: 'Sour', color: '#fbbf24' },
-          { x: 0, y: 10, label: 'Sweet', color: '#ec4899' },
-          { x: -8, y: -2, label: 'Salty', color: '#3b82f6' },
-          { x: 8, y: -2, label: 'Salty', color: '#3b82f6' },
+        // Taste buds (all tastes detected everywhere on the tongue)
+        const budColors = ['#22c55e', '#fbbf24', '#ec4899', '#3b82f6', '#a855f7'];
+        const buds = [
+          { x: -8, y: -6 }, { x: 8, y: -6 }, { x: 0, y: -4 },
+          { x: -10, y: 0 }, { x: 10, y: 0 }, { x: -4, y: 2 },
+          { x: 4, y: 2 }, { x: 0, y: 6 }, { x: -6, y: 8 },
+          { x: 6, y: 8 }, { x: -12, y: -2 }, { x: 12, y: -2 },
         ];
-        zones.forEach(z => {
+        buds.forEach((b, i) => {
           ctx.beginPath();
-          ctx.arc(centerX + z.x, centerY + headR * 0.4 + z.y, 4, 0, Math.PI * 2);
-          ctx.fillStyle = z.color;
+          ctx.arc(centerX + b.x, centerY + headR * 0.4 + b.y, 3, 0, Math.PI * 2);
+          ctx.fillStyle = budColors[i % budColors.length];
           ctx.fill();
         });
+
+        // Label
+        ctx.fillStyle = '#334155';
+        ctx.font = 'bold 12px sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillText('All tastes detected everywhere!', centerX, centerY + headR * 0.4 + 30);
 
         // Food items
         ctx.font = '24px sans-serif';

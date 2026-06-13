@@ -18,6 +18,7 @@ interface Stage {
 interface LifeCycle {
   id: string;
   name: string;
+  nameKey?: string;
   emoji: string;
   color: string;
   bgGradient: string;
@@ -31,6 +32,7 @@ const lifeCycles: LifeCycle[] = [
   {
     id: 'butterfly',
     name: 'Butterfly',
+    nameKey: 'auto.metamorphosis.butterfly',
     emoji: '🦋',
     color: '#ec4899',
     bgGradient: 'from-pink-950 via-purple-950 to-indigo-950',
@@ -60,7 +62,7 @@ const lifeCycles: LifeCycle[] = [
     ],
     funFacts: [
       'Caterpillars have 4,000 muscles (humans have 629!)',
-      'Monarch butterflies migrate 3,000 miles',
+      'Monarch butterflies migrate ~4,800 km',
       'Butterflies taste with their feet',
       'Inside chrysalis, 50+ genes control transformation',
     ],
@@ -68,6 +70,7 @@ const lifeCycles: LifeCycle[] = [
   {
     id: 'frog',
     name: 'Frog',
+    nameKey: 'auto.metamorphosis.frog',
     emoji: '🐸',
     color: '#22c55e',
     bgGradient: 'from-green-950 via-emerald-950 to-teal-950',
@@ -110,6 +113,7 @@ const lifeCycles: LifeCycle[] = [
   {
     id: 'dragonfly',
     name: 'Dragonfly',
+    nameKey: 'auto.metamorphosis.dragonfly',
     emoji: '🪰',
     color: '#06b6d4',
     bgGradient: 'from-cyan-950 via-sky-950 to-blue-950',
@@ -140,7 +144,7 @@ const lifeCycles: LifeCycle[] = [
     funFacts: [
       'Nymph stage can last 5 years!',
       'Dragonflies catch 95% of prey they chase',
-      'They can fly 35 mph and hover',
+      'They can fly 56 km/h and hover',
       'Existed before dinosaurs (300 million years)',
     ],
   },
@@ -183,7 +187,7 @@ export default function Metamorphosis() {
               className={`px-5 py-3 rounded-xl text-sm font-medium transition-all flex items-center gap-2 ${selectedCycle.id === lc.id ? 'text-white shadow-lg' : 'bg-gray-800 text-gray-400 hover:text-white'}`}
               style={selectedCycle.id === lc.id ? { backgroundColor: lc.color } : {}}>
               <span className="text-2xl">{lc.emoji}</span>
-              <span>{lc.name}</span>
+              <span>{t(lc.nameKey || '', lc.name)}</span>
             </button>
           ))}
         </div>
@@ -195,10 +199,10 @@ export default function Metamorphosis() {
               <div className="flex flex-wrap items-center gap-4 mb-4">
                 <div className="text-5xl">{selectedCycle.emoji}</div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white">{selectedCycle.name} <Trans i18nKey="auto.metamorphosis.life_cycle">Life Cycle</Trans></h3>
+                  <h3 className="text-2xl font-bold text-white">{t(selectedCycle.nameKey || '', selectedCycle.name)} <Trans i18nKey="auto.metamorphosis.life_cycle">Life Cycle</Trans></h3>
                   <div className="flex gap-2 mt-1">
                     <span className={`px-2 py-0.5 rounded-full text-sm font-bold uppercase ${selectedCycle.type === 'complete' ? 'bg-purple-500/30 text-purple-300' : 'bg-cyan-500/30 text-cyan-300'}`}>
-                      {selectedCycle.type} <Trans i18nKey="auto.metamorphosis.metamorphosis">Metamorphosis</Trans>
+                      {t(`auto.metamorphosis.type_${selectedCycle.type}`, selectedCycle.type)} <Trans i18nKey="auto.metamorphosis.metamorphosis">Metamorphosis</Trans>
                                                               </span>
                     <span className="px-2 py-0.5 rounded-full text-sm font-bold uppercase bg-gray-500/30 text-gray-300">
                       {selectedCycle.stages.length} <Trans i18nKey="auto.metamorphosis.stages">Stages</Trans>

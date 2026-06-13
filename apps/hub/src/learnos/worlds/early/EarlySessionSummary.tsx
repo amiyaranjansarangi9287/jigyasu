@@ -2,7 +2,7 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import type { EarlyProgress } from './types/early.types';
-import { Trans } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 interface EarlySessionSummaryProps {
   visible: boolean;
@@ -12,21 +12,22 @@ interface EarlySessionSummaryProps {
 }
 
 export default function EarlySessionSummary({ visible, progress, sessionMinutes, onClose }: EarlySessionSummaryProps) {
+  const { t } = useTranslation();
   if (!progress) return null;
 
   const achievements = [
-    progress.storiesBuilt > 0 && `📖 ${progress.storiesBuilt} stories`,
-    progress.problemsSolved > 0 && `🔢 ${progress.problemsSolved} problems`,
-    progress.lettersExplored.length > 0 && `🌳 ${progress.lettersExplored.length} letters`,
-    progress.recipesCompleted.length > 0 && `👨‍🍳 ${progress.recipesCompleted.length} recipes`,
-    progress.patternsCompleted > 0 && `🔍 ${progress.patternsCompleted} patterns`,
-    progress.sentencesCompleted > 0 && `✏️ ${progress.sentencesCompleted} sentences`,
-    progress.plantStagesCompleted > 0 && `🌱 ${progress.plantStagesCompleted} stages`,
-    progress.waterCycleCompleted > 0 && '💧 Water cycle',
-    progress.habitatsExplored > 0 && `🌍 ${progress.habitatsExplored} habitats`,
-    progress.shadowChallengesSolved > 0 && `🔦 ${progress.shadowChallengesSolved} shadows`,
-    progress.magnetSortingCompleted > 0 && '🧲 Magnets',
-    progress.correctPurchases > 0 && `💰 ${progress.correctPurchases} purchases`,
+    progress.storiesBuilt > 0 && `📖 ${progress.storiesBuilt} ${t('auto.earlysessionsummary.stories', 'stories')}`,
+    progress.problemsSolved > 0 && `🔢 ${progress.problemsSolved} ${t('auto.earlysessionsummary.problems', 'problems')}`,
+    progress.lettersExplored.length > 0 && `🌳 ${progress.lettersExplored.length} ${t('auto.earlysessionsummary.letters', 'letters')}`,
+    progress.recipesCompleted.length > 0 && `👨‍🍳 ${progress.recipesCompleted.length} ${t('auto.earlysessionsummary.recipes', 'recipes')}`,
+    progress.patternsCompleted > 0 && `🔍 ${progress.patternsCompleted} ${t('auto.earlysessionsummary.patterns', 'patterns')}`,
+    progress.sentencesCompleted > 0 && `✏️ ${progress.sentencesCompleted} ${t('auto.earlysessionsummary.sentences', 'sentences')}`,
+    progress.plantStagesCompleted > 0 && `🌱 ${progress.plantStagesCompleted} ${t('auto.earlysessionsummary.stages', 'stages')}`,
+    progress.waterCycleCompleted > 0 && `💧 ${t('auto.earlysessionsummary.water_cycle', 'Water cycle')}`,
+    progress.habitatsExplored > 0 && `🌍 ${progress.habitatsExplored} ${t('auto.earlysessionsummary.habitats', 'habitats')}`,
+    progress.shadowChallengesSolved > 0 && `🔦 ${progress.shadowChallengesSolved} ${t('auto.earlysessionsummary.shadows', 'shadows')}`,
+    progress.magnetSortingCompleted > 0 && `🧲 ${t('auto.earlysessionsummary.magnets', 'Magnets')}`,
+    progress.correctPurchases > 0 && `💰 ${progress.correctPurchases} ${t('auto.earlysessionsummary.purchases', 'purchases')}`,
   ].filter(Boolean) as string[];
 
   const stars = sessionMinutes >= 12 ? 3 : sessionMinutes >= 8 ? 2 : 1;

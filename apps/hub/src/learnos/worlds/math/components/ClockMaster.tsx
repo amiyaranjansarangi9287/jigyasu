@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trans } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 function formatTime(totalMinutes: number) {
   const normalized = ((totalMinutes % 720) + 720) % 720;
@@ -56,6 +57,7 @@ function AnalogClock({ minutes }: { minutes: number }) {
 }
 
 export default function ClockMaster() {
+  const { t } = useTranslation();
   const [minutes, setMinutes] = useState(10 * 60 + 15);
   const [mode, setMode] = useState<'explore' | 'challenge'>('explore');
   const [challenge, setChallenge] = useState(makeClockChallenge);
@@ -66,13 +68,13 @@ export default function ClockMaster() {
   const min = minutes % 60;
 
   const timePhrases = useMemo(() => {
-    if (min === 0) return [`${hour} o'clock`, 'exact hour'];
-    if (min === 15) return [`quarter past ${hour}`, '15 minutes past'];
-    if (min === 30) return [`half past ${hour}`, '30 minutes past'];
-    if (min === 45) return [`quarter to ${hour === 12 ? 1 : hour + 1}`, '15 minutes until next hour'];
-    if (min < 30) return [`${min} minutes past ${hour}`, 'past the hour'];
-    return [`${60 - min} minutes to ${hour === 12 ? 1 : hour + 1}`, 'to the next hour'];
-  }, [hour, min]);
+    if (min === 0) return [t('auto.clockmaster.hour_oclock', '{{hour}} o\'clock', { hour }), t('auto.clockmaster.exact_hour', 'exact hour')];
+    if (min === 15) return [t('auto.clockmaster.quarter_past', 'quarter past {{hour}}', { hour }), t('auto.clockmaster.15_minutes_past', '15 minutes past')];
+    if (min === 30) return [t('auto.clockmaster.half_past', 'half past {{hour}}', { hour }), t('auto.clockmaster.30_minutes_past', '30 minutes past')];
+    if (min === 45) return [t('auto.clockmaster.quarter_to', 'quarter to {{nextHour}}', { nextHour: hour === 12 ? 1 : hour + 1 }), t('auto.clockmaster.15_minutes_until', '15 minutes until next hour')];
+    if (min < 30) return [t('auto.clockmaster.minutes_past', '{{min}} minutes past {{hour}}', { min, hour }), t('auto.clockmaster.past_the_hour', 'past the hour')];
+    return [t('auto.clockmaster.minutes_to', '{{min}} minutes to {{nextHour}}', { min: 60 - min, nextHour: hour === 12 ? 1 : hour + 1 }), t('auto.clockmaster.to_the_next_hour', 'to the next hour')];
+  }, [hour, min, t]);
 
   const changeTime = (delta: number) => setMinutes((m) => ((m + delta) % 720 + 720) % 720);
 
