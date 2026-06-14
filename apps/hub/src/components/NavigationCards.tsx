@@ -116,20 +116,11 @@ export default function NavigationCards() {
               </span>
               <span className="flex items-start gap-3">
                 <span className="text-2xl" aria-hidden="true">
-                  {'\u{1F3A8}'}
+                  {'\u{1F9F8}'}
                 </span>
                 <span>
-                  <strong className="block text-slate-800">{t('art_studio', 'Art Studio')}</strong>
-                  <span className="text-sm text-slate-600">{t('art_studio_desc', 'Digital painting and creative projects.')}</span>
-                </span>
-              </span>
-              <span className="flex items-start gap-3">
-                <span className="text-2xl" aria-hidden="true">
-                  {'\u{1F3DD}\uFE0F'}
-                </span>
-                <span>
-                  <strong className="block text-slate-800">{t('outdoor_quest', 'Outdoor Quest')}</strong>
-                  <span className="text-sm text-slate-600">{t('outdoor_quest_desc', 'Nature exploration and environmental science.')}</span>
+                  <strong className="block text-slate-800">{t('toy_box', 'ToyBox')}</strong>
+                  <span className="text-sm text-slate-600">{t('toy_box_desc', 'Build amazing handcrafted toys from scratch.')}</span>
                 </span>
               </span>
             </span>
