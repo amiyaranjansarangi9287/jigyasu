@@ -14,7 +14,11 @@ if (fs.existsSync(distDir)) {
 }
 
 const config = {
-  version: 3
+  version: 3,
+  routes: [
+    { handle: 'filesystem' },
+    { src: '/(.*)', dest: '/index.html' }
+  ]
 };
 
 fs.writeFileSync(
