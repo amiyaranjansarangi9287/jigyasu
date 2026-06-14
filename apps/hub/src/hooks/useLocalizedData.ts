@@ -48,6 +48,7 @@ export function useLocalizedActivities() {
                 isPremium: base.isPremium,
                 url: base.url
               };
+            });
             const filteredMerged = merged.filter((a: any) => a.pillar !== 'outdoorquest' && a.pillar !== 'artstudio');
             setCurrentActivities(filteredMerged as unknown as Activity[]);
           } else {

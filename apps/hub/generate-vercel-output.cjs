@@ -16,6 +16,14 @@ if (fs.existsSync(distDir)) {
 const config = {
   version: 3,
   routes: [
+    { src: '/physics/(.*)', dest: 'https://jigyasu-physics.vercel.app/$1' },
+    { src: '/toys/(.*)', dest: 'https://jigyasu-toys.vercel.app/$1' },
+    { src: '/bio/(.*)', dest: 'https://jigyasu-bio.vercel.app/$1' },
+    { src: '/math/(.*)', dest: 'https://jigyasu-math.vercel.app/$1' },
+    { src: '/chem/(.*)', dest: 'https://jigyasu-chem.vercel.app/$1' },
+    { src: '/cosmos/(.*)', dest: 'https://jigyasu-cosmos.vercel.app/$1' },
+    { src: '/camp/(.*)', dest: 'https://jigyasu-camp.vercel.app/$1' },
+    { src: '/api/(.*)', dest: 'https://jigyasu-api.up.railway.app/$1' },
     { handle: 'filesystem' },
     { src: '/(.*)', dest: '/index.html' }
   ]
