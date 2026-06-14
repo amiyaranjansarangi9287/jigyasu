@@ -48,16 +48,19 @@ export function useLocalizedActivities() {
                 isPremium: base.isPremium,
                 url: base.url
               };
-            });
-            setCurrentActivities(merged as unknown as Activity[]);
+            const filteredMerged = merged.filter((a: any) => a.pillar !== 'outdoorquest' && a.pillar !== 'artstudio');
+            setCurrentActivities(filteredMerged as unknown as Activity[]);
           } else {
-            setCurrentActivities(translatedList as unknown as Activity[]);
+            const filteredTranslated = translatedList.filter((a: any) => a.pillar !== 'outdoorquest' && a.pillar !== 'artstudio');
+            setCurrentActivities(filteredTranslated as unknown as Activity[]);
           }
         } else {
-          setCurrentActivities(fallbackActivities as unknown as Activity[]);
+          const filteredFallback = fallbackActivities.filter((a: any) => a.pillar !== 'outdoorquest' && a.pillar !== 'artstudio');
+          setCurrentActivities(filteredFallback as unknown as Activity[]);
         }
       } catch {
-        setCurrentActivities(fallbackActivities as unknown as Activity[]);
+        const filteredFallback = fallbackActivities.filter((a: any) => a.pillar !== 'outdoorquest' && a.pillar !== 'artstudio');
+        setCurrentActivities(filteredFallback as unknown as Activity[]);
       }
     };
     loadActivities();

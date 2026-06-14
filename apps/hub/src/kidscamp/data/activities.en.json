@@ -1842,7 +1842,7 @@
       "Chemical reactions",
       "Molecular structures"
     ],
-    "url": "/chem",
+    "url": "/lab/states-of-matter",
     "isPremium": false
   },
   {
@@ -1864,7 +1864,7 @@
       "Anatomy",
       "Ecosystems"
     ],
-    "url": "/bio",
+    "url": "/biology",
     "isPremium": false
   },
   {
@@ -1908,7 +1908,7 @@
       "Astronomy",
       "Space exploration"
     ],
-    "url": "/cosmos",
+    "url": "/lab/solar-system",
     "isPremium": false
   },
   {
