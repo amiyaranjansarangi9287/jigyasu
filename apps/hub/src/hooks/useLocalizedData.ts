@@ -18,7 +18,41 @@ export function useLocalizedActivities() {
         if (activityModules[path]) {
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           const mod: any = await activityModules[path]();
-          setCurrentActivities(mod.default as unknown as Activity[]);
+          const translatedList = mod.default;
+          
+          if (Array.isArray(translatedList) && translatedList.length === fallbackActivities.length) {
+            const merged = fallbackActivities.map((base: any, i: number) => {
+              const trans = translatedList[i];
+              return {
+                ...base,
+                // Take translated text
+                name: trans.name || base.name,
+                description: trans.description || base.description,
+                timeToMake: trans.timeToMake || base.timeToMake,
+                materials: trans.materials || base.materials,
+                steps: trans.steps || base.steps,
+                safetyNotes: trans.safetyNotes || base.safetyNotes,
+                learningOutcomes: trans.learningOutcomes || base.learningOutcomes,
+                
+                // Preserve technical fields from base
+                id: base.id,
+                pillar: base.pillar,
+                category: base.category,
+                ageRange: base.ageRange,
+                difficulty: base.difficulty,
+                image: base.image,
+                demoMedia: base.demoMedia,
+                featured: base.featured,
+                rating: base.rating,
+                reviewCount: base.reviewCount,
+                isPremium: base.isPremium,
+                url: base.url
+              };
+            });
+            setCurrentActivities(merged as unknown as Activity[]);
+          } else {
+            setCurrentActivities(translatedList as unknown as Activity[]);
+          }
         } else {
           setCurrentActivities(fallbackActivities as unknown as Activity[]);
         }

@@ -258,7 +258,7 @@ export default function AboutPage() {
               >
                 <span className="text-orange-600 mt-0.5 flex-shrink-0" aria-hidden="true">✓</span>
                 <span className="flex-1 min-w-0">
-                  {item.interpolate?.count ? item.text.replace('{{count}}', String(langCount)) : item.text}
+                  {item.interpolate?.count ? item.text.replace('{{count}}', String(langCount)) : (item.text || item)}
                 </span>
               </div>
             ))}

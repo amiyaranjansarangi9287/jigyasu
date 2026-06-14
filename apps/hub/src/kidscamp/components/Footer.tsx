@@ -15,7 +15,7 @@ export default function Footer({ onNavigate }: FooterProps) {
     <footer className="bg-gray-900 text-gray-300">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
@@ -52,30 +52,6 @@ export default function Footer({ onNavigate }: FooterProps) {
             </ul>
           </div>
 
-          {/* Resources */}
-          <div>
-            <h4 className="text-white font-bold mb-4">{t('kidscamp.footer.resources', 'Resources')}</h4>
-            <ul className="space-y-2">
-              <li>
-                <button
-                  onClick={() => onNavigate('camp-weeks')}
-                  className="hover:text-orange-400 transition-colors"
-                >{t('kidscamp.footer.project_weeks', 'Project Weeks')}</button>
-              </li>
-              <li>
-                <a href="/" className="hover:text-orange-400 transition-colors">{t('kidscamp.footer.printable_checklists', 'Printable Checklists')}</a>
-              </li>
-              <li>
-                <a href="/" className="hover:text-orange-400 transition-colors">{t('kidscamp.footer.safety_tips', 'Safety Tips')}</a>
-              </li>
-              <li>
-                <a href="/" className="hover:text-orange-400 transition-colors">{t('kidscamp.footer.material_substitutes', 'Material Substitutes')}</a>
-              </li>
-              <li>
-                <a href="/" className="hover:text-orange-400 transition-colors">{t('kidscamp.footer.faqs', 'FAQs')}</a>
-              </li>
-            </ul>
-          </div>
 
           {/* Information */}
           <div>

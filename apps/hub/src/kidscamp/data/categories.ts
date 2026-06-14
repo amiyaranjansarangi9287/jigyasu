@@ -43,7 +43,7 @@ export const pillars: Pillar[] = [
     gradientTo: 'to-emerald-500',
     description: 'Explore Jigyasu Labs: Physics, Chemistry, Biology and more!',
     badgeClass: 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400',
-    showcaseImage: '/images/sciencelab.webp',
+    showcaseImage: '/images/crystal.webp',
     showcasePreview: ['Chemistry', 'Physics', 'Biology'],
     colSpan: 'md:col-span-1'
   },

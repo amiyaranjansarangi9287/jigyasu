@@ -111,7 +111,7 @@ export default React.memo(function ActivityCard({
                                           {t(`difficulty_${activity.difficulty.toLowerCase()}` as any, activity.difficulty)}
             </span>
           </div>
-          <h4 className="font-bold text-gray-900 dark:text-white truncate group-hover:text-orange-500 transition-colors text-balance">
+          <h4 className="font-bold text-gray-900 dark:text-white truncate group-hover:text-orange-500 transition-colors">
             {activity.name}
           </h4>
           <p className="text-sm text-gray-500 dark:text-gray-400 line-clamp-1">
@@ -156,7 +156,7 @@ export default React.memo(function ActivityCard({
         <div className="flex items-center gap-3">
           <span className="text-2xl">{pillar?.icon}</span>
           <div className="flex-1 min-w-0">
-            <p className="font-medium text-gray-900 dark:text-white truncate group-hover:text-orange-500 transition-colors text-balance">
+            <p className="font-medium text-gray-900 dark:text-white truncate group-hover:text-orange-500 transition-colors">
               {activity.name}
             </p>
             {/* // eslint-disable-next-line @typescript-eslint/no-explicit-any */}
@@ -240,11 +240,11 @@ export default React.memo(function ActivityCard({
           </span>
         </div>
 
-        <h4 className="font-bold text-gray-900 dark:text-white mb-1 group-hover:text-orange-500 transition-colors line-clamp-1 text-balance">
+        <h4 className="font-bold text-gray-900 dark:text-white mb-1 group-hover:text-orange-500 transition-colors line-clamp-2">
           {activity.name}
         </h4>
 
-        <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-2 mb-3 text-balance">
+        <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-2 mb-3">
           {activity.description}
         </p>
 
